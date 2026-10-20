@@ -8,7 +8,7 @@
       "title": "Encargo y estado inicial",
       "topic": "01",
       "status": "exportado para revisión · voz pendiente",
-      "render": "Estado_Inicial_Motor_Sader_R04.mp4",
+      "render": "storyboard_assets/exports/01_01_Corregido_R38.mp4",
       "audio": "Estado_Inicial_Motor_Sader_R04_Voz_Sin_Ruido.wav",
       "exportRevision": 38
     },
@@ -17,7 +17,7 @@
       "title": "Operaciones: transformar un piso en uso",
       "topic": "01",
       "status": "exportado para revisión · voz pendiente",
-      "render": "Video_01_02_Voz_Real_R02.mp4",
+      "render": "storyboard_assets/exports/01_02_Corregido_R38.mp4",
       "audio": "Video_01_02_Voz_Real_R02_Voz.mp3",
       "exportRevision": 38
     },
@@ -26,7 +26,7 @@
       "title": "Demoler y mover: la logística entre pisos",
       "topic": "01",
       "status": "exportado para revisión",
-      "render": "Video_01_03_Voz_Real_R02.mp4",
+      "render": "storyboard_assets/exports/01_03_Corregido_R38.mp4",
       "audio": "Video_01_03_Voz_Real_R02_Voz.mp3",
       "exportRevision": 38
     },
@@ -35,7 +35,7 @@
       "title": "Del requerimiento al programa",
       "topic": "02",
       "status": "exportado para revisión",
-      "render": "Video_02_01_Voz_Nueva_R01.mp4",
+      "render": "storyboard_assets/exports/02_01_Corregido_R38.mp4",
       "audio": "Video_02_01_Voz_Nueva_R01_Voz.mp3",
       "exportRevision": 38
     },
@@ -44,7 +44,7 @@
       "title": "La cuadrícula 3×3",
       "topic": "02",
       "status": "exportado para revisión",
-      "render": "Video_02_02_Voz_Real_R01.mp4",
+      "render": "storyboard_assets/exports/02_02_Corregido_R38.mp4",
       "audio": "Video_02_02_Voz_Real_R01_Voz.mp3",
       "exportRevision": 38
     },
@@ -53,7 +53,7 @@
       "title": "Tres pisos, tres lógicas",
       "topic": "02",
       "status": "exportado para revisión",
-      "render": "Video_02_03_Voz_Real_R01.mp4",
+      "render": "storyboard_assets/exports/02_03_Corregido_R38.mp4",
       "audio": "Video_02_03_Voz_Real_R01_Voz.mp3",
       "exportRevision": 38
     },
@@ -62,7 +62,7 @@
       "title": "Tres pisos, una misma sede",
       "topic": "03",
       "status": "exportado para revisión",
-      "render": "Video_03_01_Voz_Real_R01.mp4",
+      "render": "storyboard_assets/exports/03_01_Corregido_R38.mp4",
       "audio": "Video_03_01_Voz_Real_R01_Voz.mp3",
       "exportRevision": 38
     },
@@ -71,7 +71,7 @@
       "title": "Una paleta que une",
       "topic": "03",
       "status": "exportado para revisión",
-      "render": "Video_03_02_Voz_Real_R01.mp4",
+      "render": "storyboard_assets/exports/03_02_Corregido_R38.mp4",
       "audio": "Video_03_02_Voz_Real_R01_Voz.mp3",
       "exportRevision": 38
     },
@@ -80,7 +80,7 @@
       "title": "Separar sin perder conexión",
       "topic": "03",
       "status": "exportado para revisión",
-      "render": "Video_03_03_Voz_Real_R01.mp4",
+      "render": "storyboard_assets/exports/03_03_Corregido_R39.mp4",
       "audio": "Video_03_03_Voz_Real_R01_Voz.mp3",
       "exportRevision": 39
     },
