@@ -1,6 +1,6 @@
 'use client';
 import {useState} from 'react';
-export type ContentPiece={id:string,title:string,idea:string,format:string,channel:string,date:string,status:string,text:string,archived?:boolean};
+export type ContentPiece={id:string,title:string,idea:string,format:string,channel:string,date:string,status:string,text:string,libraryVideo?:string,archived?:boolean};
 export type MarketingData={pieces?:ContentPiece[],plan?:string,knowledge:string,notes:{id:string,text:string,date:string}[],chatUrl:string};
 export default function Marketing({value,onSave,disabled}:{value?:MarketingData,onSave:(v:MarketingData)=>Promise<boolean>,disabled:boolean}){
  const [tab,setTab]=useState('Resumen'),[note,setNote]=useState(''),[base,setBase]=useState(value?.knowledge||BASE),[link,setLink]=useState(value?.chatUrl||''),[message,setMessage]=useState('');
@@ -28,4 +28,5 @@ Herramientas del estudio: Revit, SketchUp, D5, AutoCAD y Photoshop, confirmadas 
 No hay precios, plazos, disponibilidad ni vacantes confirmados.
 Fuentes: https://www.estudioader.com/proyectos/casa-angel ; versión consultada https://ader-studio.vercel.app/proyectos/casa-angel ; servicios adicionales autorizados por Eze el 20/10/2026.
 Estilo: responder solo lo pertinente, breve y sin redundancias. Se puede ofrecer ampliar una etapa; si responde sí, ampliarla. No preguntar por propuestas que no existen.`;
+
 
