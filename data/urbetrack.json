@@ -1,0 +1,412 @@
+{
+  "revision": 40,
+  "verifiedAt": "2026-10-20",
+  "savedAt": "2026-10-13T17:29:39.230749-03:00",
+  "videos": [
+    {
+      "id": "01.01",
+      "title": "Encargo y estado inicial",
+      "topic": "01",
+      "status": "exportado para revisión · voz pendiente",
+      "render": "Estado_Inicial_Motor_Sader_R04.mp4",
+      "audio": "Estado_Inicial_Motor_Sader_R04_Voz_Sin_Ruido.wav",
+      "exportRevision": 38
+    },
+    {
+      "id": "01.02",
+      "title": "Operaciones: transformar un piso en uso",
+      "topic": "01",
+      "status": "exportado para revisión · voz pendiente",
+      "render": "Video_01_02_Voz_Real_R02.mp4",
+      "audio": "Video_01_02_Voz_Real_R02_Voz.mp3",
+      "exportRevision": 38
+    },
+    {
+      "id": "01.03",
+      "title": "Demoler y mover: la logística entre pisos",
+      "topic": "01",
+      "status": "exportado para revisión",
+      "render": "Video_01_03_Voz_Real_R02.mp4",
+      "audio": "Video_01_03_Voz_Real_R02_Voz.mp3",
+      "exportRevision": 38
+    },
+    {
+      "id": "02.01",
+      "title": "Del requerimiento al programa",
+      "topic": "02",
+      "status": "exportado para revisión",
+      "render": "Video_02_01_Voz_Nueva_R01.mp4",
+      "audio": "Video_02_01_Voz_Nueva_R01_Voz.mp3",
+      "exportRevision": 38
+    },
+    {
+      "id": "02.02",
+      "title": "La cuadrícula 3×3",
+      "topic": "02",
+      "status": "exportado para revisión",
+      "render": "Video_02_02_Voz_Real_R01.mp4",
+      "audio": "Video_02_02_Voz_Real_R01_Voz.mp3",
+      "exportRevision": 38
+    },
+    {
+      "id": "02.03",
+      "title": "Tres pisos, tres lógicas",
+      "topic": "02",
+      "status": "exportado para revisión",
+      "render": "Video_02_03_Voz_Real_R01.mp4",
+      "audio": "Video_02_03_Voz_Real_R01_Voz.mp3",
+      "exportRevision": 38
+    },
+    {
+      "id": "03.01",
+      "title": "Tres pisos, una misma sede",
+      "topic": "03",
+      "status": "exportado para revisión",
+      "render": "Video_03_01_Voz_Real_R01.mp4",
+      "audio": "Video_03_01_Voz_Real_R01_Voz.mp3",
+      "exportRevision": 38
+    },
+    {
+      "id": "03.02",
+      "title": "Una paleta que une",
+      "topic": "03",
+      "status": "exportado para revisión",
+      "render": "Video_03_02_Voz_Real_R01.mp4",
+      "audio": "Video_03_02_Voz_Real_R01_Voz.mp3",
+      "exportRevision": 38
+    },
+    {
+      "id": "03.03",
+      "title": "Separar sin perder conexión",
+      "topic": "03",
+      "status": "exportado para revisión",
+      "render": "Video_03_03_Voz_Real_R01.mp4",
+      "audio": "Video_03_03_Voz_Real_R01_Voz.mp3",
+      "exportRevision": 39
+    },
+    {
+      "id": "04.01",
+      "title": "La obra mientras la empresa seguía trabajando",
+      "topic": "04",
+      "status": "en revisión",
+      "render": "Video_04_01_Voz_Real_R01.mp4",
+      "audio": "Video_04_01_Voz_Real_R01_Voz.mp3",
+      "exportRevision": null
+    },
+    {
+      "id": "04.02",
+      "title": "Comprar antes de construir",
+      "topic": "04",
+      "status": "en revisión",
+      "render": "Video_04_02_Voz_Real_R01.mp4",
+      "audio": "Video_04_02_Voz_Real_R01_Voz.mp3",
+      "exportRevision": null
+    },
+    {
+      "id": "04.03",
+      "title": "Cronograma de construcción y compras",
+      "topic": "04",
+      "status": "en revisión",
+      "render": "Video_04_03_Voz_Real_R01.mp4",
+      "audio": "Video_04_03_Voz_Real_R01_Voz.mp3",
+      "exportRevision": null
+    },
+    {
+      "id": "05.01",
+      "title": "Antes de cerrar una pared",
+      "topic": "05",
+      "status": "en revisión",
+      "render": "Video_05_01_Voz_Real_R01.mp4",
+      "audio": "Video_05_01_Voz_Real_R01_Voz.mp3",
+      "exportRevision": null
+    },
+    {
+      "id": "05.02",
+      "title": "Lo que queda debajo del piso",
+      "topic": "05",
+      "status": "en revisión",
+      "render": "Video_05_02_Voz_Real_R01.mp4",
+      "audio": "Video_05_02_Voz_Real_R01_Voz.mp3",
+      "exportRevision": null
+    },
+    {
+      "id": "05.03",
+      "title": "El encuentro entre tres gremios",
+      "topic": "05",
+      "status": "en revisión",
+      "render": "Video_05_03_Voz_Real_R01.mp4",
+      "audio": "Video_05_03_Voz_Real_R01_Voz.mp3",
+      "exportRevision": null
+    },
+    {
+      "id": "06.01",
+      "title": "Todo lo que necesita un puesto",
+      "topic": "06",
+      "status": "en revisión",
+      "render": "Video_06_01_Voz_Real_R01.mp4",
+      "audio": "Video_06_01_Voz_Real_R01_Voz.mp3",
+      "exportRevision": null
+    },
+    {
+      "id": "06.02",
+      "title": "Dos pisos, dos caminos para las instalaciones",
+      "topic": "06",
+      "status": "en revisión",
+      "render": "Video_06_02_Voz_Real_R01.mp4",
+      "audio": "Video_06_02_Voz_Real_R01_Voz.mp3",
+      "exportRevision": null
+    },
+    {
+      "id": "06.03",
+      "title": "Lo que organiza un tablero",
+      "topic": "06",
+      "status": "en revisión",
+      "render": "Video_06_03_Voz_Real_R01.mp4",
+      "audio": "Video_06_03_Voz_Real_R01_Voz.mp3",
+      "exportRevision": null
+    },
+    {
+      "id": "07.01",
+      "title": "Un equipo existente también puede tener futuro",
+      "topic": "07",
+      "status": "en revisión",
+      "render": "Video_07_01_Voz_Real_R01.mp4",
+      "audio": "Video_07_01_Voz_Real_R01_Voz.mp3",
+      "exportRevision": null
+    },
+    {
+      "id": "07.02",
+      "title": "Un espacio abierto y una oficina no piden lo mismo",
+      "topic": "07",
+      "status": "en revisión",
+      "render": "Video_07_02_Voz_Real_R01.mp4",
+      "audio": "Video_07_02_Voz_Real_R01_Voz.mp3",
+      "exportRevision": null
+    },
+    {
+      "id": "07.03",
+      "title": "Colocar el aire no termina en el equipo",
+      "topic": "07",
+      "status": "en revisión",
+      "render": "Video_07_03_Voz_Real_R01.mp4",
+      "audio": "Video_07_03_Voz_Real_R01_Voz.mp3",
+      "exportRevision": null
+    },
+    {
+      "id": "08.01",
+      "title": "Separar sin cerrar la oficina",
+      "topic": "08",
+      "status": "en revisión",
+      "render": "Video_08_01_Voz_Real_R01.mp4",
+      "audio": "Video_08_01_Voz_Real_R01_Voz.mp3",
+      "exportRevision": null
+    },
+    {
+      "id": "08.02",
+      "title": "Veinticuatro frentes que no eran iguales",
+      "topic": "08",
+      "status": "en revisión",
+      "render": "Video_08_02_Voz_Real_R01.mp4",
+      "audio": "Video_08_02_Voz_Real_R01_Voz.mp3",
+      "exportRevision": null
+    },
+    {
+      "id": "08.03",
+      "title": "El vidrio también organiza el baño",
+      "topic": "08",
+      "status": "en revisión",
+      "render": "Video_08_03_Voz_Real_R01.mp4",
+      "audio": "Video_08_03_Voz_Real_R01_Voz.mp3",
+      "exportRevision": null
+    },
+    {
+      "id": "09.01",
+      "title": "La carpintería que sostiene el uso diario",
+      "topic": "09",
+      "status": "en revisión",
+      "render": "Video_09_01_Voz_Real_R01.mp4",
+      "audio": "Video_09_01_Voz_Real_R01_Voz.mp3",
+      "exportRevision": null
+    },
+    {
+      "id": "09.02",
+      "title": "Cuando el mueble llega y falta resolver un detalle",
+      "topic": "09",
+      "status": "en revisión",
+      "render": "Video_09_02_Voz_Real_R01.mp4",
+      "audio": "Video_09_02_Voz_Real_R01_Voz.mp3",
+      "exportRevision": null
+    },
+    {
+      "id": "09.03",
+      "title": "La madera también organiza el recorrido",
+      "topic": "09",
+      "status": "en revisión",
+      "render": "Video_09_03_Voz_Real_R01.mp4",
+      "audio": "Video_09_03_Voz_Real_R01_Voz.mp3",
+      "exportRevision": null
+    },
+    {
+      "id": "10.01",
+      "title": "Dos islas cambiaron de piso",
+      "topic": "10",
+      "status": "en revisión",
+      "render": "Video_10_01_Voz_Real_R01.mp4",
+      "audio": "Video_10_01_Voz_Real_R01_Voz.mp3",
+      "exportRevision": null
+    },
+    {
+      "id": "10.02",
+      "title": "Una familia de muebles para toda la sede",
+      "topic": "10",
+      "status": "en revisión",
+      "render": "Video_10_02_Voz_Real_R01.mp4",
+      "audio": "Video_10_02_Voz_Real_R01_Voz.mp3",
+      "exportRevision": null
+    },
+    {
+      "id": "10.03",
+      "title": "La mesa cambia la conversación",
+      "topic": "10",
+      "status": "en revisión",
+      "render": "Video_10_03_Voz_Real_R01.mp4",
+      "audio": "Video_10_03_Voz_Real_R01_Voz.mp3",
+      "exportRevision": null
+    },
+    {
+      "id": "11.01",
+      "title": "La sala de reuniones también se proyecta para conectarse",
+      "topic": "11",
+      "status": "en revisión",
+      "render": "Video_11_01_Voz_Real_R01.mp4",
+      "audio": "Video_11_01_Voz_Real_R01_Voz.mp3",
+      "exportRevision": null
+    },
+    {
+      "id": "11.02",
+      "title": "Detrás del puesto hay una infraestructura",
+      "topic": "11",
+      "status": "en revisión",
+      "render": "Video_11_02_Voz_Real_R01.mp4",
+      "audio": "Video_11_02_Voz_Real_R01_Voz.mp3",
+      "exportRevision": null
+    },
+    {
+      "id": "11.03",
+      "title": "El acceso también forma parte del proyecto",
+      "topic": "11",
+      "status": "en revisión",
+      "render": "Video_11_03_Voz_Real_R01.mp4",
+      "audio": "Video_11_03_Voz_Real_R01_Voz.mp3",
+      "exportRevision": null
+    },
+    {
+      "id": "12.01",
+      "title": "Un comedor para salir del puesto",
+      "topic": "12",
+      "status": "en revisión",
+      "render": "Video_12_01_Voz_Real_R01.mp4",
+      "audio": "Video_12_01_Voz_Real_R01_Voz.mp3",
+      "exportRevision": null
+    },
+    {
+      "id": "12.02",
+      "title": "La cocina como espacio de apoyo",
+      "topic": "12",
+      "status": "en revisión",
+      "render": "Video_12_02_Voz_Real_R01.mp4",
+      "audio": "Video_12_02_Voz_Real_R01_Voz.mp3",
+      "exportRevision": null
+    },
+    {
+      "id": "12.03",
+      "title": "Baños: continuidad con una mejora concreta",
+      "topic": "12",
+      "status": "en revisión",
+      "render": "Video_12_03_Voz_Real_R01.mp4",
+      "audio": "Video_12_03_Voz_Real_R01_Voz.mp3",
+      "exportRevision": null
+    },
+    {
+      "id": "13.01",
+      "title": "La sala que cambió durante la obra",
+      "topic": "13",
+      "status": "en revisión",
+      "render": "Video_13_01_Voz_Real_R01.mp4",
+      "audio": "Video_13_01_Voz_Real_R01_Voz.mp3",
+      "exportRevision": null
+    },
+    {
+      "id": "13.02",
+      "title": "Seis pantallas, una señal que se organiza",
+      "topic": "13",
+      "status": "en revisión",
+      "render": "Video_13_02_Voz_Real_R01.mp4",
+      "audio": "Video_13_02_Voz_Real_R01_Voz.mp3",
+      "exportRevision": null
+    },
+    {
+      "id": "13.03",
+      "title": "El videowall empieza dentro de la pared",
+      "topic": "13",
+      "status": "en revisión",
+      "render": "Video_13_03_Voz_Real_R01.mp4",
+      "audio": "Video_13_03_Voz_Real_R01_Voz.mp3",
+      "exportRevision": null
+    },
+    {
+      "id": "14.01",
+      "title": "El vinilo también resuelve arquitectura",
+      "topic": "14",
+      "status": "en revisión",
+      "render": "Video_14_01_Voz_Real_R01.mp4",
+      "audio": "Video_14_01_Voz_Real_R01_Voz.mp3",
+      "exportRevision": null
+    },
+    {
+      "id": "14.02",
+      "title": "Una misma marca, tres pisos",
+      "topic": "14",
+      "status": "en revisión",
+      "render": "Video_14_02_Voz_Real_R01.mp4",
+      "audio": "Video_14_02_Voz_Real_R01_Voz.mp3",
+      "exportRevision": null
+    },
+    {
+      "id": "14.03",
+      "title": "Una imagen que terminó siendo parte del comedor",
+      "topic": "14",
+      "status": "en revisión",
+      "render": "Video_14_03_Voz_Real_R01.mp4",
+      "audio": "Video_14_03_Voz_Real_R01_Voz.mp3",
+      "exportRevision": null
+    },
+    {
+      "id": "15.01",
+      "title": "Del render a la oficina construida",
+      "topic": "15",
+      "status": "en revisión",
+      "render": "Video_15_01_Voz_Real_R01.mp4",
+      "audio": "Video_15_01_Voz_Real_R01_Voz.mp3",
+      "exportRevision": null
+    },
+    {
+      "id": "15.02",
+      "title": "Qué cambió cuando la oficina empezó a funcionar",
+      "topic": "15",
+      "status": "en revisión",
+      "render": "Video_15_02_Voz_Real_R01.mp4",
+      "audio": "Video_15_02_Voz_Real_R01_Voz.mp3",
+      "exportRevision": null
+    },
+    {
+      "id": "15.03",
+      "title": "Lo que aprendí en mi primera gran dirección de obra",
+      "topic": "15",
+      "status": "en revisión",
+      "render": "Video_15_03_Voz_Real_R01.mp4",
+      "audio": "Video_15_03_Voz_Real_R01_Voz.mp3",
+      "exportRevision": null
+    }
+  ]
+}
