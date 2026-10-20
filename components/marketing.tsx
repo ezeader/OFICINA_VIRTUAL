@@ -1,6 +1,6 @@
 'use client';
 import {useState} from 'react';
-export type MarketingData={knowledge:string,notes:{id:string,text:string,date:string}[],chatUrl:string};
+export type MarketingData={plan?:string,knowledge:string,notes:{id:string,text:string,date:string}[],chatUrl:string};
 export default function Marketing({value,onSave,disabled}:{value?:MarketingData,onSave:(v:MarketingData)=>Promise<boolean>,disabled:boolean}){
  const [tab,setTab]=useState('Resumen'),[note,setNote]=useState(''),[base,setBase]=useState(value?.knowledge||BASE),[link,setLink]=useState(value?.chatUrl||''),[message,setMessage]=useState('');
  const notes=value?.notes||[];
