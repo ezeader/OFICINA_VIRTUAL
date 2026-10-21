@@ -1,0 +1,130 @@
+[
+  {
+    "page": 1,
+    "name": "Tanques",
+    "number": "AFyAC",
+    "image": "/casa-angel/sheets/sheet-01.webp",
+    "width": 1801,
+    "height": 1391
+  },
+  {
+    "page": 2,
+    "name": "Planta baja",
+    "number": "AFyAC.00",
+    "image": "/casa-angel/sheets/sheet-02.webp",
+    "width": 1801,
+    "height": 1391
+  },
+  {
+    "page": 3,
+    "name": "Planta alta y entrepiso",
+    "number": "AFyAC.01-02",
+    "image": "/casa-angel/sheets/sheet-03.webp",
+    "width": 1801,
+    "height": 1391
+  },
+  {
+    "page": 4,
+    "name": "Baño invitados",
+    "number": "IS.0001",
+    "image": "/casa-angel/sheets/sheet-04.webp",
+    "width": 1801,
+    "height": 1391
+  },
+  {
+    "page": 5,
+    "name": "Baño principal",
+    "number": "IS.0002",
+    "image": "/casa-angel/sheets/sheet-05.webp",
+    "width": 1801,
+    "height": 1391
+  },
+  {
+    "page": 6,
+    "name": "Lavadero",
+    "number": "IS.0003",
+    "image": "/casa-angel/sheets/sheet-06.webp",
+    "width": 1801,
+    "height": 1391
+  },
+  {
+    "page": 7,
+    "name": "Toilette PB",
+    "number": "IS.0004",
+    "image": "/casa-angel/sheets/sheet-07.webp",
+    "width": 1801,
+    "height": 1391
+  },
+  {
+    "page": 8,
+    "name": "Baño PA",
+    "number": "IS.0101",
+    "image": "/casa-angel/sheets/sheet-08.webp",
+    "width": 1801,
+    "height": 1391
+  },
+  {
+    "page": 9,
+    "name": "Cocina",
+    "number": "IS.0102",
+    "image": "/casa-angel/sheets/sheet-09.webp",
+    "width": 1801,
+    "height": 1391
+  },
+  {
+    "page": 10,
+    "name": "Sala de máquinas PA",
+    "number": "IS.0103",
+    "image": "/casa-angel/sheets/sheet-10.webp",
+    "width": 1801,
+    "height": 1391
+  },
+  {
+    "page": 11,
+    "name": "Toilette PA",
+    "number": "IS.0104",
+    "image": "/casa-angel/sheets/sheet-11.webp",
+    "width": 1801,
+    "height": 1391
+  },
+  {
+    "page": 12,
+    "name": "Atelier",
+    "number": "IS.0201",
+    "image": "/casa-angel/sheets/sheet-12.webp",
+    "width": 1801,
+    "height": 1391
+  },
+  {
+    "page": 13,
+    "name": "Sala de máquinas PE",
+    "number": "IS.0202",
+    "image": "/casa-angel/sheets/sheet-13.webp",
+    "width": 1801,
+    "height": 1391
+  },
+  {
+    "page": 14,
+    "name": "Corte AA",
+    "number": "IS.0C01",
+    "image": "/casa-angel/sheets/sheet-14.webp",
+    "width": 1801,
+    "height": 1391
+  },
+  {
+    "page": 15,
+    "name": "Corte BB",
+    "number": "IS.0C02",
+    "image": "/casa-angel/sheets/sheet-15.webp",
+    "width": 1801,
+    "height": 1391
+  },
+  {
+    "page": 16,
+    "name": "Corte CC",
+    "number": "IS.0C03",
+    "image": "/casa-angel/sheets/sheet-16.webp",
+    "width": 1801,
+    "height": 1391
+  }
+]
