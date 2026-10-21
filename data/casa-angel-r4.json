@@ -1,5 +1,5 @@
 {
-  "revision": "R4",
+  "revision": "R8",
   "font": "Bahnschrift SB Condensed ADER",
   "views": [
     {
@@ -112,6 +112,12 @@
       "label_direction": [
         0.0,
         -1.0
+      ],
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AmancoWavin AC",
+      "family": "AmancoWavin AC",
+      "physical_connected_ids": [
+        2321648
       ]
     },
     {
@@ -159,6 +165,12 @@
       "label_direction": [
         0.0,
         -1.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AmancoWavin AF",
+      "family": "AmancoWavin AF",
+      "physical_connected_ids": [
+        2321550
       ]
     },
     {
@@ -205,6 +217,13 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AmancoWavin AC",
+      "family": "AmancoWavin AC",
+      "physical_connected_ids": [
+        1455071,
+        2366534
       ]
     },
     {
@@ -251,6 +270,13 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AmancoWavin AF",
+      "family": "AmancoWavin AF",
+      "physical_connected_ids": [
+        1457039,
+        1457172
       ]
     },
     {
@@ -298,6 +324,13 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AmancoWavin AF",
+      "family": "AmancoWavin AF",
+      "physical_connected_ids": [
+        1454564,
+        1488422
       ]
     },
     {
@@ -344,6 +377,13 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AmancoWavin AC",
+      "family": "AmancoWavin AC",
+      "physical_connected_ids": [
+        2321648,
+        2321652
       ]
     },
     {
@@ -390,6 +430,13 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AmancoWavin AF",
+      "family": "AmancoWavin AF",
+      "physical_connected_ids": [
+        2321550,
+        2321596
       ]
     },
     {
@@ -437,6 +484,13 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AmancoWavin AC",
+      "family": "AmancoWavin AC",
+      "physical_connected_ids": [
+        1488348,
+        2366034
       ]
     },
     {
@@ -484,6 +538,13 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AmancoWavin AC",
+      "family": "AmancoWavin AC",
+      "physical_connected_ids": [
+        1488177,
+        1488348
       ]
     },
     {
@@ -531,6 +592,13 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AmancoWavin AF",
+      "family": "AmancoWavin AF",
+      "physical_connected_ids": [
+        1488422,
+        2012166
       ]
     },
     {
@@ -577,6 +645,13 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AmancoWavin AC",
+      "family": "AmancoWavin AC",
+      "physical_connected_ids": [
+        1455067,
+        2321652
       ]
     },
     {
@@ -623,6 +698,12 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AmancoWavin AF",
+      "family": "AmancoWavin AF",
+      "physical_connected_ids": [
+        2321596
       ]
     },
     {
@@ -670,6 +751,13 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Sanitary",
+      "native_type": "AmancoWavin CL - Primario",
+      "family": "AmancoWavin CL - Primario",
+      "physical_connected_ids": [
+        2017891,
+        2018454
       ]
     },
     {
@@ -717,6 +805,13 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Sanitary",
+      "native_type": "AmancoWavin CL - Secundario",
+      "family": "AmancoWavin CL - Secundario",
+      "physical_connected_ids": [
+        2016127,
+        2019065
       ]
     },
     {
@@ -764,6 +859,12 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AmancoWavin AC",
+      "family": "AmancoWavin AC",
+      "physical_connected_ids": [
+        1488177
       ]
     },
     {
@@ -811,6 +912,12 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AmancoWavin AF",
+      "family": "AmancoWavin AF",
+      "physical_connected_ids": [
+        2012166
       ]
     },
     {
@@ -858,6 +965,13 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AmancoWavin AF",
+      "family": "AmancoWavin AF",
+      "physical_connected_ids": [
+        1488418,
+        1488422
       ]
     },
     {
@@ -905,6 +1019,13 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AmancoWavin AC",
+      "family": "AmancoWavin AC",
+      "physical_connected_ids": [
+        1488344,
+        1488348
       ]
     },
     {
@@ -952,6 +1073,13 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Sanitary",
+      "native_type": "AmancoWavin CL - Secundario",
+      "family": "AmancoWavin CL - Secundario",
+      "physical_connected_ids": [
+        2016133,
+        2019065
       ]
     },
     {
@@ -998,6 +1126,13 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AmancoWavin AF",
+      "family": "AmancoWavin AF",
+      "physical_connected_ids": [
+        1457172,
+        2366517
       ]
     },
     {
@@ -1044,6 +1179,12 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AmancoWavin AF",
+      "family": "AmancoWavin AF",
+      "physical_connected_ids": [
+        1457184
       ]
     },
     {
@@ -1091,6 +1232,12 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Sanitary",
+      "native_type": "AmancoWavin CL - Primario",
+      "family": "AmancoWavin CL - Primario",
+      "physical_connected_ids": [
+        2016418
       ]
     },
     {
@@ -1138,6 +1285,12 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AmancoWavin AC",
+      "family": "AmancoWavin AC",
+      "physical_connected_ids": [
+        2366034
       ]
     },
     {
@@ -1185,6 +1338,13 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AmancoWavin AF",
+      "family": "AmancoWavin AF",
+      "physical_connected_ids": [
+        1454564,
+        2366373
       ]
     },
     {
@@ -1232,6 +1392,13 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Sanitary",
+      "native_type": "AmancoWavin CL - Primario",
+      "family": "AmancoWavin CL - Primario",
+      "physical_connected_ids": [
+        2017891,
+        2018284
       ]
     },
     {
@@ -1279,6 +1446,12 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AmancoWavin AF",
+      "family": "AmancoWavin AF",
+      "physical_connected_ids": [
+        1488418
       ]
     },
     {
@@ -1326,6 +1499,12 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AmancoWavin AC",
+      "family": "AmancoWavin AC",
+      "physical_connected_ids": [
+        1488344
       ]
     },
     {
@@ -1373,6 +1552,12 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Sanitary",
+      "native_type": "AmancoWavin CL - Primario",
+      "family": "AmancoWavin CL - Primario",
+      "physical_connected_ids": [
+        2019065
       ]
     },
     {
@@ -1420,6 +1605,12 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Sanitary",
+      "native_type": "AmancoWavin CL - Secundario",
+      "family": "AmancoWavin CL - Secundario",
+      "physical_connected_ids": [
+        2016133
       ]
     },
     {
@@ -1467,6 +1658,12 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Sanitary",
+      "native_type": "AmancoWavin CL - Secundario",
+      "family": "AmancoWavin CL - Secundario",
+      "physical_connected_ids": [
+        2016127
       ]
     },
     {
@@ -1514,6 +1711,13 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Sanitary",
+      "native_type": "AmancoWavin CL - Secundario",
+      "family": "AmancoWavin CL - Secundario",
+      "physical_connected_ids": [
+        2016418,
+        2016439
       ]
     },
     {
@@ -1560,6 +1764,13 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Sanitary",
+      "native_type": "AmancoWavin CL - Primario",
+      "family": "AmancoWavin CL - Primario",
+      "physical_connected_ids": [
+        2013511,
+        2019752
       ]
     },
     {
@@ -1606,6 +1817,13 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Sanitary",
+      "native_type": "AmancoWavin CL - Secundario",
+      "family": "AmancoWavin CL - Secundario",
+      "physical_connected_ids": [
+        2013511,
+        2019413
       ]
     },
     {
@@ -1652,6 +1870,13 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Sanitary",
+      "native_type": "AmancoWavin CL - Primario",
+      "family": "AmancoWavin CL - Primario",
+      "physical_connected_ids": [
+        2018284,
+        2018290
       ]
     },
     {
@@ -1698,6 +1923,13 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AmancoWavin AF",
+      "family": "AmancoWavin AF",
+      "physical_connected_ids": [
+        1454294,
+        1457039
       ]
     },
     {
@@ -1744,6 +1976,13 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AmancoWavin AC",
+      "family": "AmancoWavin AC",
+      "physical_connected_ids": [
+        1455067,
+        1455071
       ]
     },
     {
@@ -1790,6 +2029,13 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AmancoWavin AC",
+      "family": "AmancoWavin AC",
+      "physical_connected_ids": [
+        2366534,
+        2366551
       ]
     },
     {
@@ -1836,6 +2082,13 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AmancoWavin AF",
+      "family": "AmancoWavin AF",
+      "physical_connected_ids": [
+        2366517,
+        2366530
       ]
     },
     {
@@ -1882,6 +2135,13 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AmancoWavin AF",
+      "family": "AmancoWavin AF",
+      "physical_connected_ids": [
+        1457172,
+        1457184
       ]
     },
     {
@@ -1938,6 +2198,12 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AF",
+      "physical_connected_ids": [
+        1454558,
+        1488423
       ]
     },
     {
@@ -1988,7 +2254,10 @@
       "label_direction": [
         1.0,
         0.0
-      ]
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AF",
+      "physical_connected_ids": []
     },
     {
       "type": "Valvula esferica union-fusion",
@@ -2038,7 +2307,11 @@
       "label_direction": [
         1.0,
         0.0
-      ]
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AC",
+      "physical_connected_ids": [],
+      "classification_note": "Válvula AC aislada: el sistema nativo sigue figurando como agua fría. Se computa en AC por su tipo; requiere resolver conexión en el modelo."
     },
     {
       "type": "Tee 90.00 grados",
@@ -2094,6 +2367,13 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AF",
+      "physical_connected_ids": [
+        1456739,
+        1457170,
+        1457173
       ]
     },
     {
@@ -2150,6 +2430,12 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AC",
+      "physical_connected_ids": [
+        1455292,
+        1488349
       ]
     },
     {
@@ -2206,6 +2492,12 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AC",
+      "physical_connected_ids": [
+        1455271,
+        1455332
       ]
     },
     {
@@ -2263,6 +2555,13 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AC",
+      "physical_connected_ids": [
+        1455271,
+        1455301,
+        1488349
       ]
     },
     {
@@ -2319,6 +2618,12 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AF",
+      "physical_connected_ids": [
+        1454570,
+        1455360
       ]
     },
     {
@@ -2376,6 +2681,13 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AF",
+      "physical_connected_ids": [
+        1454451,
+        1454570,
+        1488423
       ]
     },
     {
@@ -2432,6 +2744,12 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AF",
+      "physical_connected_ids": [
+        1454451,
+        1454590
       ]
     },
     {
@@ -2487,6 +2805,12 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AF",
+      "physical_connected_ids": [
+        1438638,
+        1454025
       ]
     },
     {
@@ -2543,6 +2867,12 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AF",
+      "physical_connected_ids": [
+        1454025,
+        2321588
       ]
     },
     {
@@ -2598,6 +2928,12 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AC",
+      "physical_connected_ids": [
+        1437779,
+        1454758
       ]
     },
     {
@@ -2654,6 +2990,12 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AC",
+      "physical_connected_ids": [
+        1454758,
+        1454828
       ]
     },
     {
@@ -2710,6 +3052,12 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AC",
+      "physical_connected_ids": [
+        1455261,
+        1455301
       ]
     },
     {
@@ -2769,6 +3117,13 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Sanitary",
+      "native_type": "BAT",
+      "physical_connected_ids": [
+        2018290,
+        2019394,
+        2019750
       ]
     },
     {
@@ -2825,6 +3180,12 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Sanitary",
+      "native_type": "CL - Secundario",
+      "physical_connected_ids": [
+        2014039,
+        2019066
       ]
     },
     {
@@ -2881,6 +3242,12 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Sanitary",
+      "native_type": "CL - Secundario",
+      "physical_connected_ids": [
+        2014045,
+        2019054
       ]
     },
     {
@@ -2938,6 +3305,12 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Sanitary",
+      "native_type": "CL - Primario",
+      "physical_connected_ids": [
+        2016380,
+        2016410
       ]
     },
     {
@@ -2994,6 +3367,12 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Sanitary",
+      "native_type": "CL - Primario",
+      "physical_connected_ids": [
+        2016410,
+        2018454
       ]
     },
     {
@@ -3050,6 +3429,12 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Sanitary",
+      "native_type": "CL - Primario",
+      "physical_connected_ids": [
+        2016433,
+        2017883
       ]
     },
     {
@@ -3107,6 +3492,12 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Sanitary",
+      "native_type": "Var.",
+      "physical_connected_ids": [
+        2013511,
+        2017994
       ]
     },
     {
@@ -3164,6 +3555,12 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Sanitary",
+      "native_type": "Var.",
+      "physical_connected_ids": [
+        2016433,
+        2016439
       ]
     },
     {
@@ -3222,6 +3619,13 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Sanitary",
+      "native_type": "Ramal CL",
+      "physical_connected_ids": [
+        2015975,
+        2019054,
+        2019066
       ]
     },
     {
@@ -3276,6 +3680,11 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AF",
+      "physical_connected_ids": [
+        1454292
       ]
     },
     {
@@ -3331,6 +3740,12 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AC",
+      "physical_connected_ids": [
+        1454828,
+        1455065
       ]
     },
     {
@@ -3386,6 +3801,12 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AC",
+      "physical_connected_ids": [
+        1455054,
+        1455065
       ]
     },
     {
@@ -3441,6 +3862,12 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AF",
+      "physical_connected_ids": [
+        1454292,
+        1457173
       ]
     },
     {
@@ -3496,6 +3923,12 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AF",
+      "physical_connected_ids": [
+        1457151,
+        1457170
       ]
     },
     {
@@ -3547,7 +3980,10 @@
       "label_direction": [
         1.0,
         0.0
-      ]
+      ],
+      "native_system_classification": "Sanitary",
+      "native_type": "CL - Primario",
+      "physical_connected_ids": []
     },
     {
       "type": "Codo 90.00 grados",
@@ -3602,6 +4038,12 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AF",
+      "physical_connected_ids": [
+        1454439,
+        1456739
       ]
     },
     {
@@ -3657,6 +4099,560 @@
       "label_direction": [
         1.0,
         0.0
+      ],
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AC",
+      "physical_connected_ids": [
+        1455054,
+        1455129
+      ]
+    },
+    {
+      "mode": "pipes",
+      "type": "AmancoWavin AF",
+      "size": "32 mm\\xf8",
+      "system": "AF",
+      "page": 0,
+      "family": "AmancoWavin AF",
+      "length_m": 1.8214450255686503,
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001630e0",
+      "status": "model",
+      "view_key": "axon",
+      "id": 1454304,
+      "code": "AF-V01",
+      "diameter_mm": 32.0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "kind": "pipe",
+      "source": "axon-visible-r8",
+      "view_id": 2406180,
+      "classification_basis": "Tipo y conexiones revisados en Revit; geometría conservada.",
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AmancoWavin AF",
+      "physical_connected_ids": [
+        2366373,
+        2366530
+      ]
+    },
+    {
+      "mode": "pipes",
+      "type": "AmancoWavin AC",
+      "size": "32 mm\\xf8",
+      "system": "AC",
+      "page": 0,
+      "family": "AmancoWavin AC",
+      "length_m": 1.7449999999999883,
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00163423",
+      "status": "model",
+      "view_key": "axon",
+      "id": 1455139,
+      "code": "AC-V01",
+      "diameter_mm": 32.0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "kind": "pipe",
+      "source": "axon-visible-r8",
+      "view_id": 2406180,
+      "classification_basis": "Tipo y conexiones revisados en Revit; geometría conservada.",
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AmancoWavin AC",
+      "physical_connected_ids": [
+        1455263,
+        2366472
+      ]
+    },
+    {
+      "mode": "pipes",
+      "type": "AmancoWavin AC",
+      "size": "32 mm\\xf8",
+      "system": "AC",
+      "page": 0,
+      "family": "AmancoWavin AC",
+      "length_m": 0.02294656488549836,
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00163771",
+      "status": "model",
+      "view_key": "axon",
+      "id": 1455985,
+      "code": "AC-V02",
+      "diameter_mm": 32.0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "kind": "pipe",
+      "source": "axon-visible-r8",
+      "view_id": 2406180,
+      "classification_basis": "Tipo y conexiones revisados en Revit; geometría conservada.",
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AmancoWavin AC",
+      "physical_connected_ids": [
+        2366551
+      ]
+    },
+    {
+      "mode": "pipes",
+      "type": "AmancoWavin AC",
+      "size": "32 mm\\xf8",
+      "system": "AC",
+      "page": 0,
+      "family": "AmancoWavin AC",
+      "length_m": 0.05,
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00163806",
+      "status": "model",
+      "view_key": "axon",
+      "id": 1456134,
+      "code": "AC-V03",
+      "diameter_mm": 32.0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "kind": "pipe",
+      "source": "axon-visible-r8",
+      "view_id": 2406180,
+      "classification_basis": "Tipo y conexiones revisados en Revit; geometría conservada.",
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AmancoWavin AC",
+      "physical_connected_ids": [
+        2366472
+      ]
+    },
+    {
+      "mode": "pipes",
+      "type": "AmancoWavin CL - Secundario",
+      "size": "40 mm\\xf8",
+      "system": "CS",
+      "page": 0,
+      "family": "AmancoWavin CL - Secundario",
+      "length_m": 0.04120000000002312,
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ed052",
+      "status": "model",
+      "view_key": "axon",
+      "id": 2019410,
+      "code": "CS-V01",
+      "diameter_mm": 40.0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "kind": "pipe",
+      "source": "axon-visible-r8",
+      "view_id": 2406180,
+      "classification_basis": "Tipo y conexiones revisados en Revit; geometría conservada.",
+      "native_system_classification": "Sanitary",
+      "native_type": "AmancoWavin CL - Secundario",
+      "physical_connected_ids": [
+        2019413
+      ]
+    },
+    {
+      "mode": "pipes",
+      "type": "AmancoWavin CL - Primario",
+      "size": "63 mm\\xf8",
+      "system": "CP",
+      "page": 0,
+      "family": "AmancoWavin CL - Primario",
+      "length_m": 0.0906034614265359,
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ed19a",
+      "status": "model",
+      "view_key": "axon",
+      "id": 2019738,
+      "code": "CP-V01",
+      "diameter_mm": 63.0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "kind": "pipe",
+      "source": "axon-visible-r8",
+      "view_id": 2406180,
+      "classification_basis": "Tipo y conexiones revisados en Revit; geometría conservada.",
+      "native_system_classification": "Sanitary",
+      "native_type": "AmancoWavin CL - Primario",
+      "physical_connected_ids": [
+        2019752,
+        2019764
+      ]
+    },
+    {
+      "mode": "pipes",
+      "type": "AmancoWavin CL - Primario",
+      "size": "63 mm\\xf8",
+      "system": "CP",
+      "page": 0,
+      "family": "AmancoWavin CL - Primario",
+      "length_m": 2.9578523015928835,
+      "unique_id": "a01bcada-8695-44d8-a949-29ca27694445-0020032b",
+      "status": "model",
+      "view_key": "axon",
+      "id": 2097963,
+      "code": "CP-V02",
+      "diameter_mm": 63.0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "kind": "pipe",
+      "source": "axon-visible-r8",
+      "view_id": 2406180,
+      "classification_basis": "Tipo y conexiones revisados en Revit; geometría conservada.",
+      "native_system_classification": "Sanitary",
+      "native_type": "AmancoWavin CL - Primario",
+      "physical_connected_ids": []
+    },
+    {
+      "mode": "accessories",
+      "type": "Codo 90.00 grados",
+      "size": "32 mm",
+      "system": "AC",
+      "page": 0,
+      "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
+      "length_m": 0,
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-0016349f",
+      "status": "model",
+      "view_key": "axon",
+      "id": 1455263,
+      "code": "AC-V04",
+      "diameter_mm": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "kind": "fitting",
+      "source": "axon-visible-r8",
+      "view_id": 2406180,
+      "diameters_mm": [
+        32.0
+      ],
+      "classification_basis": "Tipo y conexiones revisados en Revit; geometría conservada.",
+      "native_system_classification": "Domestic Cold Water,Domestic Hot Water",
+      "native_type": "AC",
+      "physical_connected_ids": [
+        1455139
+      ]
+    },
+    {
+      "mode": "accessories",
+      "type": "Codo 90.00 grados",
+      "size": "32 mm",
+      "system": "AC",
+      "page": 0,
+      "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
+      "length_m": 0,
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00163908",
+      "status": "check_connection",
+      "view_key": "axon",
+      "id": 1456392,
+      "code": "AC-V05",
+      "diameter_mm": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "kind": "fitting",
+      "source": "axon-visible-r8",
+      "view_id": 2406180,
+      "diameters_mm": [
+        32.0
+      ],
+      "classification_basis": "Tipo y conexiones revisados en Revit; geometría conservada.",
+      "native_system_classification": "Undefined",
+      "native_type": "AC",
+      "physical_connected_ids": [],
+      "classification_note": "Codo AC sin conexiones físicas. Incluido como pieza modelada; no equivale a una instalación conectada."
+    },
+    {
+      "mode": "accessories",
+      "type": "Codo 90.00 grados",
+      "size": "40 mm",
+      "system": "CP",
+      "page": 0,
+      "family": "AmancoWavin_Unionesdetubería_PVCNivel1Codo",
+      "length_m": 0,
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ecbec",
+      "status": "model",
+      "view_key": "axon",
+      "id": 2018284,
+      "code": "CP-V03",
+      "diameter_mm": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "kind": "fitting",
+      "source": "axon-visible-r8",
+      "view_id": 2406180,
+      "diameters_mm": [
+        40.0
+      ],
+      "classification_basis": "Tipo y conexiones revisados en Revit; geometría conservada.",
+      "native_system_classification": "Sanitary",
+      "native_type": "CL - Primario",
+      "physical_connected_ids": [
+        2017883,
+        2017994
+      ]
+    },
+    {
+      "mode": "accessories",
+      "type": "Codo 90.00 grados",
+      "size": "40 mm",
+      "system": "CS",
+      "page": 0,
+      "family": "AmancoWavin_Unionesdetubería_PVCNivel1Codo",
+      "length_m": 0,
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ed055",
+      "status": "model",
+      "view_key": "axon",
+      "id": 2019413,
+      "code": "CS-V02",
+      "diameter_mm": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "kind": "fitting",
+      "source": "axon-visible-r8",
+      "view_id": 2406180,
+      "diameters_mm": [
+        40.0
+      ],
+      "classification_basis": "Tipo y conexiones revisados en Revit; geometría conservada.",
+      "native_system_classification": "Sanitary",
+      "native_type": "CL - Secundario",
+      "physical_connected_ids": [
+        2019394,
+        2019410
+      ]
+    },
+    {
+      "mode": "accessories",
+      "type": "Codo 90.00 grados",
+      "size": "63 mm",
+      "system": "CP",
+      "page": 0,
+      "family": "AmancoWavin_Unionesdetubería_PVCNivel1Codo",
+      "length_m": 0,
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ed1a8",
+      "status": "model",
+      "view_key": "axon",
+      "id": 2019752,
+      "code": "CP-V04",
+      "diameter_mm": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "kind": "fitting",
+      "source": "axon-visible-r8",
+      "view_id": 2406180,
+      "diameters_mm": [
+        63.0
+      ],
+      "classification_basis": "Tipo y conexiones revisados en Revit; geometría conservada.",
+      "native_system_classification": "Sanitary",
+      "native_type": "CL - Primario",
+      "physical_connected_ids": [
+        2019738,
+        2019750
+      ]
+    },
+    {
+      "mode": "accessories",
+      "type": "Codo 90.00 grados",
+      "size": "63 mm",
+      "system": "CP",
+      "page": 0,
+      "family": "AmancoWavin_Unionesdetubería_PVCNivel1Codo",
+      "length_m": 0,
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ed1b4",
+      "status": "model",
+      "view_key": "axon",
+      "id": 2019764,
+      "code": "CP-V05",
+      "diameter_mm": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "kind": "fitting",
+      "source": "axon-visible-r8",
+      "view_id": 2406180,
+      "previous_code": "OT-V01",
+      "diameters_mm": [
+        63.0
+      ],
+      "classification_basis": "Tipo y conexiones revisados en Revit; geometría conservada.",
+      "native_system_classification": "Sanitary",
+      "native_type": "CL - Primario",
+      "physical_connected_ids": [
+        2019738
+      ]
+    },
+    {
+      "mode": "accessories",
+      "type": "Codo 90.00 grados",
+      "size": "32 mm",
+      "system": "AF",
+      "page": 0,
+      "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
+      "length_m": 0,
+      "unique_id": "5364294c-7216-4f8d-b4f6-1ad33687c1e9-00241ba5",
+      "status": "model",
+      "view_key": "axon",
+      "id": 2366373,
+      "code": "AF-V02",
+      "diameter_mm": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "kind": "fitting",
+      "source": "axon-visible-r8",
+      "view_id": 2406180,
+      "diameters_mm": [
+        32.0
+      ],
+      "classification_basis": "Tipo y conexiones revisados en Revit; geometría conservada.",
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AF",
+      "physical_connected_ids": [
+        1454304,
+        1454558
+      ]
+    },
+    {
+      "mode": "accessories",
+      "type": "Codo 90.00 grados",
+      "size": "32 mm",
+      "system": "AC",
+      "page": 0,
+      "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
+      "length_m": 0,
+      "unique_id": "5364294c-7216-4f8d-b4f6-1ad33687c1e9-00241c08",
+      "status": "model",
+      "view_key": "axon",
+      "id": 2366472,
+      "code": "AC-V06",
+      "diameter_mm": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "kind": "fitting",
+      "source": "axon-visible-r8",
+      "view_id": 2406180,
+      "diameters_mm": [
+        32.0
+      ],
+      "classification_basis": "Tipo y conexiones revisados en Revit; geometría conservada.",
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AC",
+      "physical_connected_ids": [
+        1455139,
+        1456134
+      ]
+    },
+    {
+      "mode": "accessories",
+      "type": "Codo 90.00 grados",
+      "size": "32 mm",
+      "system": "AF",
+      "page": 0,
+      "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
+      "length_m": 0,
+      "unique_id": "5364294c-7216-4f8d-b4f6-1ad33687c1e9-00241c42",
+      "status": "model",
+      "view_key": "axon",
+      "id": 2366530,
+      "code": "AF-V03",
+      "diameter_mm": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "kind": "fitting",
+      "source": "axon-visible-r8",
+      "view_id": 2406180,
+      "diameters_mm": [
+        32.0
+      ],
+      "classification_basis": "Tipo y conexiones revisados en Revit; geometría conservada.",
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AF",
+      "physical_connected_ids": [
+        1454304,
+        1454439
+      ]
+    },
+    {
+      "mode": "accessories",
+      "type": "Codo 90.00 grados",
+      "size": "32 mm",
+      "system": "AC",
+      "page": 0,
+      "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
+      "length_m": 0,
+      "unique_id": "5364294c-7216-4f8d-b4f6-1ad33687c1e9-00241c57",
+      "status": "model",
+      "view_key": "axon",
+      "id": 2366551,
+      "code": "AC-V07",
+      "diameter_mm": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "kind": "fitting",
+      "source": "axon-visible-r8",
+      "view_id": 2406180,
+      "diameters_mm": [
+        32.0
+      ],
+      "classification_basis": "Tipo y conexiones revisados en Revit; geometría conservada.",
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AC",
+      "physical_connected_ids": [
+        1455129,
+        1455985
       ]
     }
   ],
@@ -3668,7 +4664,11 @@
       "size": "50 mm",
       "quantity": 5.022014647586707,
       "unit": "m",
-      "alerts": 0
+      "alerts": 0,
+      "codes": [
+        "AC-T01",
+        "AC-T02"
+      ]
     },
     {
       "system": "AF",
@@ -3677,25 +4677,60 @@
       "size": "50 mm",
       "quantity": 5.0107086038448765,
       "unit": "m",
-      "alerts": 0
+      "alerts": 0,
+      "codes": [
+        "AF-T01",
+        "AF-T02"
+      ]
     },
     {
       "system": "AC",
       "type": "AmancoWavin AC",
       "family": "AmancoWavin AC",
       "size": "32 mm",
-      "quantity": 7.747053836729698,
+      "quantity": 9.565000401615185,
       "unit": "m",
-      "alerts": 0
+      "alerts": 0,
+      "codes": [
+        "AC-T04",
+        "AC-T10",
+        "AC-T12",
+        "AC-T03",
+        "AC-T09",
+        "AC-T08",
+        "AC-T07",
+        "AC-T11",
+        "AC-T05",
+        "AC-T06",
+        "AC-V01",
+        "AC-V02",
+        "AC-V03"
+      ]
     },
     {
       "system": "AF",
       "type": "AmancoWavin AF",
       "family": "AmancoWavin AF",
       "size": "32 mm",
-      "quantity": 8.018787442203182,
+      "quantity": 9.840232467771832,
       "unit": "m",
-      "alerts": 0
+      "alerts": 0,
+      "codes": [
+        "AF-T13",
+        "AF-T14",
+        "AF-T05",
+        "AF-T15",
+        "AF-T08",
+        "AF-T07",
+        "AF-T10",
+        "AF-T11",
+        "AF-T06",
+        "AF-T09",
+        "AF-T03",
+        "AF-T04",
+        "AF-T12",
+        "AF-V01"
+      ]
     },
     {
       "system": "CP",
@@ -3704,16 +4739,30 @@
       "size": "40 mm",
       "quantity": 0.8195158372207206,
       "unit": "m",
-      "alerts": 0
+      "alerts": 0,
+      "codes": [
+        "CP-T03",
+        "CP-T04",
+        "CP-T01",
+        "CP-T05"
+      ]
     },
     {
       "system": "CS",
       "type": "AmancoWavin CL - Secundario",
       "family": "AmancoWavin CL - Secundario",
       "size": "40 mm",
-      "quantity": 0.7923688573013576,
+      "quantity": 0.8335688573013808,
       "unit": "m",
-      "alerts": 0
+      "alerts": 0,
+      "codes": [
+        "CS-T05",
+        "CS-T04",
+        "CS-T02",
+        "CS-T01",
+        "CS-T06",
+        "CS-V01"
+      ]
     },
     {
       "system": "CP",
@@ -3722,7 +4771,10 @@
       "size": "50 mm",
       "quantity": 0.025871276715367056,
       "unit": "m",
-      "alerts": 0
+      "alerts": 0,
+      "codes": [
+        "CP-T02"
+      ]
     },
     {
       "system": "CS",
@@ -3731,25 +4783,44 @@
       "size": "50 mm",
       "quantity": 0.033802061004752686,
       "unit": "m",
-      "alerts": 0
+      "alerts": 0,
+      "codes": [
+        "CS-T03"
+      ]
     },
     {
       "system": "CP",
       "type": "AmancoWavin CL - Primario",
       "family": "AmancoWavin CL - Primario",
       "size": "63 mm",
-      "quantity": 0.02539972663999481,
+      "quantity": 3.0738554896594144,
       "unit": "m",
-      "alerts": 0
+      "alerts": 0,
+      "codes": [
+        "CP-T06",
+        "CP-V01",
+        "CP-V02"
+      ]
     },
     {
       "system": "AF",
       "type": "Codo 90.00 grados",
       "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
       "size": "32 mm",
-      "quantity": 7,
+      "quantity": 9,
       "unit": "un.",
-      "alerts": 0
+      "alerts": 0,
+      "codes": [
+        "AF-A02",
+        "AF-A07",
+        "AF-A09",
+        "AF-A01",
+        "AF-A04",
+        "AF-A06",
+        "AF-A12",
+        "AF-V02",
+        "AF-V03"
+      ]
     },
     {
       "system": "AF",
@@ -3758,7 +4829,10 @@
       "size": "32 mm",
       "quantity": 1,
       "unit": "un.",
-      "alerts": 1
+      "alerts": 1,
+      "codes": [
+        "AF-A03"
+      ]
     },
     {
       "system": "AC",
@@ -3767,7 +4841,10 @@
       "size": "32 mm",
       "quantity": 1,
       "unit": "un.",
-      "alerts": 1
+      "alerts": 1,
+      "codes": [
+        "AC-A03"
+      ]
     },
     {
       "system": "AF",
@@ -3776,16 +4853,32 @@
       "size": "32 mm",
       "quantity": 2,
       "unit": "un.",
-      "alerts": 0
+      "alerts": 0,
+      "codes": [
+        "AF-A05",
+        "AF-A08"
+      ]
     },
     {
       "system": "AC",
       "type": "Codo 90.00 grados",
       "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
       "size": "32 mm",
-      "quantity": 6,
+      "quantity": 10,
       "unit": "un.",
-      "alerts": 0
+      "alerts": 1,
+      "codes": [
+        "AC-A04",
+        "AC-A05",
+        "AC-A09",
+        "AC-A01",
+        "AC-A02",
+        "AC-A10",
+        "AC-V04",
+        "AC-V05",
+        "AC-V06",
+        "AC-V07"
+      ]
     },
     {
       "system": "AC",
@@ -3794,7 +4887,10 @@
       "size": "32 mm",
       "quantity": 1,
       "unit": "un.",
-      "alerts": 0
+      "alerts": 0,
+      "codes": [
+        "AC-A06"
+      ]
     },
     {
       "system": "AF",
@@ -3803,7 +4899,10 @@
       "size": "50 mm",
       "quantity": 1,
       "unit": "un.",
-      "alerts": 0
+      "alerts": 0,
+      "codes": [
+        "AF-A10"
+      ]
     },
     {
       "system": "AF",
@@ -3812,7 +4911,10 @@
       "size": "50x32 mm",
       "quantity": 1,
       "unit": "un.",
-      "alerts": 0
+      "alerts": 0,
+      "codes": [
+        "AF-A11"
+      ]
     },
     {
       "system": "AC",
@@ -3821,7 +4923,10 @@
       "size": "50 mm",
       "quantity": 1,
       "unit": "un.",
-      "alerts": 0
+      "alerts": 0,
+      "codes": [
+        "AC-A07"
+      ]
     },
     {
       "system": "AC",
@@ -3830,7 +4935,10 @@
       "size": "50x32 mm",
       "quantity": 1,
       "unit": "un.",
-      "alerts": 0
+      "alerts": 0,
+      "codes": [
+        "AC-A08"
+      ]
     },
     {
       "system": "CP",
@@ -3839,16 +4947,24 @@
       "size": "63x40 mm",
       "quantity": 1,
       "unit": "un.",
-      "alerts": 0
+      "alerts": 0,
+      "codes": [
+        "CP-A01"
+      ]
     },
     {
       "system": "CS",
       "type": "Codo 90.00 grados",
       "family": "AmancoWavin_Unionesdetubería_PVCNivel1Codo",
       "size": "40 mm",
-      "quantity": 2,
+      "quantity": 3,
       "unit": "un.",
-      "alerts": 0
+      "alerts": 0,
+      "codes": [
+        "CS-A01",
+        "CS-A02",
+        "CS-V02"
+      ]
     },
     {
       "system": "CP",
@@ -3857,16 +4973,25 @@
       "size": "50 mm",
       "quantity": 3,
       "unit": "un.",
-      "alerts": 1
+      "alerts": 1,
+      "codes": [
+        "CP-A02",
+        "CP-A03",
+        "CP-A04"
+      ]
     },
     {
       "system": "CP",
       "type": "Codo 90.00 grados",
       "family": "AmancoWavin_Unionesdetubería_PVCNivel1Codo",
       "size": "40 mm",
-      "quantity": 1,
+      "quantity": 2,
       "unit": "un.",
-      "alerts": 0
+      "alerts": 0,
+      "codes": [
+        "CP-A05",
+        "CP-V03"
+      ]
     },
     {
       "system": "CP",
@@ -3875,7 +5000,10 @@
       "size": "63x40 mm",
       "quantity": 1,
       "unit": "un.",
-      "alerts": 0
+      "alerts": 0,
+      "codes": [
+        "CP-A06"
+      ]
     },
     {
       "system": "CP",
@@ -3884,7 +5012,10 @@
       "size": "50x40 mm",
       "quantity": 1,
       "unit": "un.",
-      "alerts": 0
+      "alerts": 0,
+      "codes": [
+        "CP-A07"
+      ]
     },
     {
       "system": "CS",
@@ -3893,7 +5024,23 @@
       "size": "40 mm",
       "quantity": 1,
       "unit": "un.",
-      "alerts": 0
+      "alerts": 0,
+      "codes": [
+        "CS-A03"
+      ]
+    },
+    {
+      "system": "CP",
+      "type": "Codo 90.00 grados",
+      "family": "AmancoWavin_Unionesdetubería_PVCNivel1Codo",
+      "size": "63 mm",
+      "quantity": 2,
+      "unit": "un.",
+      "alerts": 0,
+      "codes": [
+        "CP-V04",
+        "CP-V05"
+      ]
     }
   ],
   "excluded": [
@@ -4151,10 +5298,23 @@
     "connection_alerts": [
       "AF-A03",
       "AC-A03",
-      "CP-A04"
+      "CP-A04",
+      "AC-V05"
     ],
     "pdf_exported": true,
-    "fittings": 32,
-    "pipes": 39
+    "fittings": 42,
+    "pipes": 46,
+    "unique_elements": 88,
+    "added_elements": 17,
+    "geometry_unchanged": true
+  },
+  "classification_review": {
+    "hot_water_networks_corrected": 3,
+    "fitting_type_corrected": "CP-V05",
+    "previous_code": "OT-V01",
+    "pending_native_classification": [
+      "AC-A03"
+    ],
+    "note": "Inventario completo del alcance visible de Cocina. No certifica continuidad hidráulica ni cantidades de compra."
   }
 }

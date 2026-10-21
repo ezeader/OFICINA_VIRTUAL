@@ -1,0 +1,5320 @@
+{
+  "revision": "R8",
+  "font": "Bahnschrift SB Condensed ADER",
+  "views": [
+    {
+      "mode": "pipes",
+      "name": "ADER SAN - PILOTO COCINA - PLANTA",
+      "source_id": 1445818,
+      "key": "plan",
+      "id": 2404690,
+      "page": 1,
+      "image": "/casa-angel/r4/plan-pipes.svg"
+    },
+    {
+      "mode": "pipes",
+      "name": "ADER SAN - PILOTO COCINA - CORTE AA",
+      "source_id": 1439889,
+      "key": "front",
+      "id": 2404710,
+      "page": 2,
+      "image": "/casa-angel/r4/front-pipes.svg"
+    },
+    {
+      "mode": "pipes",
+      "name": "ADER SAN - PILOTO COCINA - CORTE BB",
+      "source_id": 1489196,
+      "key": "side",
+      "id": 2404721,
+      "page": 3,
+      "image": "/casa-angel/r4/side-pipes.svg"
+    },
+    {
+      "mode": "overview",
+      "name": "ADER SAN - COCINA - AXONOMETRICA CONTROL",
+      "source_id": 1443740,
+      "key": "axon",
+      "id": 2405419,
+      "page": 4,
+      "image": "/casa-angel/r4/axon-overview.webp"
+    },
+    {
+      "mode": "accessories",
+      "name": "ADER SAN - COCINA - ACCESORIOS - PLAN",
+      "source_id": 1445818,
+      "key": "plan",
+      "id": 2405314,
+      "page": 5,
+      "image": "/casa-angel/r4/plan-accessories.svg"
+    },
+    {
+      "mode": "accessories",
+      "name": "ADER SAN - COCINA - ACCESORIOS - FRONT",
+      "source_id": 1439889,
+      "key": "front",
+      "id": 2405334,
+      "page": 6,
+      "image": "/casa-angel/r4/front-accessories.svg"
+    },
+    {
+      "mode": "accessories",
+      "name": "ADER SAN - COCINA - ACCESORIOS - SIDE",
+      "source_id": 1489196,
+      "key": "side",
+      "id": 2405345,
+      "page": 7,
+      "image": "/casa-angel/r4/side-accessories.svg"
+    }
+  ],
+  "items": [
+    {
+      "type": "AmancoWavin AC",
+      "mode": "pipes",
+      "reference_line": false,
+      "r6_code_offset": true,
+      "visible_in": [
+        1445818,
+        1489196,
+        1443740
+      ],
+      "system": "AC",
+      "unique_id": "d9dd681d-281d-46bc-8ccf-4bcf7888718f-0015f053",
+      "length_m": 3.9569146475867103,
+      "view_id": 2404690,
+      "code_note_id": 2405242,
+      "status": "model",
+      "anchor": [
+        0.5089372450641252,
+        22.84520651016479,
+        0.0
+      ],
+      "code_point": [
+        0.60912833799212,
+        23.114486049505814,
+        0.0
+      ],
+      "view_key": "plan",
+      "id": 1437779,
+      "code": "AC-T01",
+      "kind": "pipe",
+      "diameter_mm": 50.0,
+      "tag_id": 2404729,
+      "page": 1,
+      "box": [
+        0.21227248725961426,
+        0.45539374776253727,
+        0.019196373068562436,
+        0.05420089830548041
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "PPR.2 ø50 mm- 3.96 m",
+      "label_direction": [
+        0.0,
+        -1.0
+      ],
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AmancoWavin AC",
+      "family": "AmancoWavin AC",
+      "physical_connected_ids": [
+        2321648
+      ]
+    },
+    {
+      "type": "AmancoWavin AF",
+      "mode": "pipes",
+      "reference_line": false,
+      "r6_code_offset": true,
+      "visible_in": [
+        1445818,
+        1489196,
+        1443740
+      ],
+      "system": "AF",
+      "unique_id": "d9dd681d-281d-46bc-8ccf-4bcf7888718f-0015f3ae",
+      "length_m": 3.94600000037435,
+      "view_id": 2404690,
+      "code_note_id": 2405243,
+      "status": "model",
+      "anchor": [
+        0.1826938635047953,
+        22.564834713556557,
+        0.0
+      ],
+      "code_point": [
+        0.28288495643279,
+        22.834114252897585,
+        0.0
+      ],
+      "view_key": "plan",
+      "id": 1438638,
+      "code": "AF-T01",
+      "kind": "pipe",
+      "diameter_mm": 50.0,
+      "tag_id": 2404730,
+      "page": 1,
+      "box": [
+        0.20103653824450685,
+        0.4708658975232294,
+        0.0191963986712025,
+        0.05049637054368839
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "PPR ø50 mm- 3.95 m",
+      "label_direction": [
+        0.0,
+        -1.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AmancoWavin AF",
+      "family": "AmancoWavin AF",
+      "physical_connected_ids": [
+        2321550
+      ]
+    },
+    {
+      "type": "AmancoWavin AC",
+      "mode": "pipes",
+      "reference_line": false,
+      "visible_in": [
+        1445818,
+        1489196,
+        1443740
+      ],
+      "system": "AC",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001633ce",
+      "length_m": 1.5974659168901415,
+      "view_id": 2404690,
+      "code_note_id": 2405244,
+      "status": "model",
+      "anchor": [
+        6.8614075811699795,
+        15.051711353362409,
+        0.0
+      ],
+      "code_point": [
+        6.01140758116998,
+        15.121711353362409,
+        0.0
+      ],
+      "view_key": "plan",
+      "id": 1455054,
+      "code": "AC-T04",
+      "kind": "pipe",
+      "diameter_mm": 32.0,
+      "tag_id": 2404733,
+      "page": 1,
+      "box": [
+        0.42107922194191316,
+        0.8472927081878847,
+        0.040006710964013134,
+        0.01933660762302547
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "PPR.2 ø32 mm- 1.60 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AmancoWavin AC",
+      "family": "AmancoWavin AC",
+      "physical_connected_ids": [
+        1455071,
+        2366534
+      ]
+    },
+    {
+      "type": "AmancoWavin AF",
+      "mode": "pipes",
+      "reference_line": false,
+      "visible_in": [
+        1445818,
+        1489196,
+        1443740
+      ],
+      "system": "AF",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00163c15",
+      "length_m": 1.5036486064136163,
+      "view_id": 2404690,
+      "code_note_id": 2405245,
+      "status": "model",
+      "anchor": [
+        6.379980302734892,
+        15.051711353362416,
+        0.0
+      ],
+      "code_point": [
+        5.529980302734892,
+        14.441711353362415,
+        0.0
+      ],
+      "view_key": "plan",
+      "id": 1457173,
+      "code": "AF-T13",
+      "kind": "pipe",
+      "diameter_mm": 32.0,
+      "tag_id": 2404734,
+      "page": 1,
+      "box": [
+        0.40449872181379753,
+        0.8804505823964083,
+        0.03873474620307727,
+        0.01933660762302547
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "PPR ø32 mm- 1.50 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AmancoWavin AF",
+      "family": "AmancoWavin AF",
+      "physical_connected_ids": [
+        1457039,
+        1457172
+      ]
+    },
+    {
+      "type": "AmancoWavin AF",
+      "mode": "pipes",
+      "reference_line": true,
+      "visible_in": [
+        1445818,
+        1439889,
+        1489196,
+        1443740
+      ],
+      "system": "AF",
+      "unique_id": "7355c4a4-c4a4-4cf0-92b3-b73244e08c3e-0016b627",
+      "length_m": 1.2843705451701244,
+      "view_id": 2404690,
+      "code_note_id": 2405247,
+      "status": "model",
+      "anchor": [
+        15.379232262208424,
+        17.222594793602045,
+        0.0
+      ],
+      "code_point": [
+        18.349999999999998,
+        17.369999999999887,
+        11.482939632547652
+      ],
+      "view_key": "plan",
+      "id": 1488423,
+      "code": "AF-T14",
+      "kind": "pipe",
+      "diameter_mm": 32.0,
+      "tag_id": 2404735,
+      "page": 1,
+      "box": [
+        0.8460246985596365,
+        0.7376627267023674,
+        0.0387169267655939,
+        0.019336535125246437
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "PPR ø32 mm- 1.28 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AmancoWavin AF",
+      "family": "AmancoWavin AF",
+      "physical_connected_ids": [
+        1454564,
+        1488422
+      ]
+    },
+    {
+      "type": "AmancoWavin AC",
+      "mode": "pipes",
+      "reference_line": false,
+      "visible_in": [
+        1445818,
+        1489196,
+        1443740
+      ],
+      "system": "AC",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001632a6",
+      "length_m": 1.065099999999997,
+      "view_id": 2404690,
+      "code_note_id": 2405248,
+      "status": "model",
+      "anchor": [
+        2.344731208318712,
+        16.26562211451724,
+        0.0
+      ],
+      "code_point": [
+        1.4947312083187119,
+        16.33562211451724,
+        0.0
+      ],
+      "view_key": "plan",
+      "id": 1454758,
+      "code": "AC-T02",
+      "kind": "pipe",
+      "diameter_mm": 50.0,
+      "tag_id": 2404736,
+      "page": 1,
+      "box": [
+        0.2655233159146625,
+        0.7881005915383782,
+        0.04007320102025497,
+        0.019336535125246437
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "PPR.2 ø50 mm- 1.07 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AmancoWavin AC",
+      "family": "AmancoWavin AC",
+      "physical_connected_ids": [
+        2321648,
+        2321652
+      ]
+    },
+    {
+      "type": "AmancoWavin AF",
+      "mode": "pipes",
+      "reference_line": false,
+      "visible_in": [
+        1445818,
+        1489196,
+        1443740
+      ],
+      "system": "AF",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00162fc9",
+      "length_m": 1.0647086034705266,
+      "view_id": 2404690,
+      "code_note_id": 2405249,
+      "status": "model",
+      "anchor": [
+        2.017845772085054,
+        16.00315492291618,
+        0.0
+      ],
+      "code_point": [
+        1.167845772085054,
+        15.39315492291618,
+        0.0
+      ],
+      "view_key": "plan",
+      "id": 1454025,
+      "code": "AF-T02",
+      "kind": "pipe",
+      "diameter_mm": 50.0,
+      "tag_id": 2404737,
+      "page": 1,
+      "box": [
+        0.2542652718211813,
+        0.8340567161725001,
+        0.03871997347976132,
+        0.019336535125246437
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "PPR ø50 mm- 1.06 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AmancoWavin AF",
+      "family": "AmancoWavin AF",
+      "physical_connected_ids": [
+        2321550,
+        2321596
+      ]
+    },
+    {
+      "type": "AmancoWavin AC",
+      "mode": "pipes",
+      "reference_line": true,
+      "visible_in": [
+        1445818,
+        1439889,
+        1489196,
+        1443740
+      ],
+      "system": "AC",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001634c5",
+      "length_m": 1.036379619652849,
+      "view_id": 2404690,
+      "code_note_id": 2405251,
+      "status": "model",
+      "anchor": [
+        15.37923226593234,
+        17.006074246493633,
+        0.0
+      ],
+      "code_point": [
+        18.349999999999998,
+        16.900000000000002,
+        11.811023622048072
+      ],
+      "view_key": "plan",
+      "id": 1455301,
+      "code": "AC-T10",
+      "kind": "pipe",
+      "diameter_mm": 32.0,
+      "tag_id": 2404738,
+      "page": 1,
+      "box": [
+        0.8460246985596365,
+        0.7605805796139435,
+        0.040113704396833545,
+        0.01933660762302547
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "PPR.2 ø32 mm- 1.04 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AmancoWavin AC",
+      "family": "AmancoWavin AC",
+      "physical_connected_ids": [
+        1488348,
+        2366034
+      ]
+    },
+    {
+      "type": "AmancoWavin AC",
+      "mode": "pipes",
+      "reference_line": true,
+      "visible_in": [
+        1445818,
+        1439889,
+        1489196,
+        1443740
+      ],
+      "system": "AC",
+      "unique_id": "7355c4a4-c4a4-4cf0-92b3-b73244e08c3e-0016b5dd",
+      "length_m": 0.8962051125571141,
+      "view_id": 2404690,
+      "code_note_id": 2405253,
+      "status": "model",
+      "anchor": [
+        15.379232248525263,
+        20.294435027677956,
+        0.0
+      ],
+      "code_point": [
+        18.349999999999998,
+        21.1300000000001,
+        11.811023622048054
+      ],
+      "view_key": "plan",
+      "id": 1488349,
+      "code": "AC-T12",
+      "kind": "pipe",
+      "diameter_mm": 32.0,
+      "tag_id": 2404739,
+      "page": 1,
+      "box": [
+        0.8460246985596365,
+        0.5543192146808582,
+        0.040332146121845214,
+        0.01933657137413595
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "PPR.2 ø32 mm- 0.90 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AmancoWavin AC",
+      "family": "AmancoWavin AC",
+      "physical_connected_ids": [
+        1488177,
+        1488348
+      ]
+    },
+    {
+      "type": "AmancoWavin AF",
+      "mode": "pipes",
+      "reference_line": true,
+      "visible_in": [
+        1445818,
+        1439889,
+        1489196,
+        1443740
+      ],
+      "system": "AF",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00163173",
+      "length_m": 0.43556245395762727,
+      "view_id": 2404690,
+      "code_note_id": 2405255,
+      "status": "model",
+      "anchor": [
+        15.379232215906795,
+        20.16211742996647,
+        0.0
+      ],
+      "code_point": [
+        18.349999999999998,
+        20.660000000000228,
+        11.482939632547644
+      ],
+      "view_key": "plan",
+      "id": 1454451,
+      "code": "AF-T05",
+      "kind": "pipe",
+      "diameter_mm": 32.0,
+      "tag_id": 2404745,
+      "page": 1,
+      "box": [
+        0.8460246985596365,
+        0.5772371400902133,
+        0.03914336433847182,
+        0.01933657137413595
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "PPR ø32 mm- 0.44 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AmancoWavin AF",
+      "family": "AmancoWavin AF",
+      "physical_connected_ids": [
+        1488422,
+        2012166
+      ]
+    },
+    {
+      "type": "AmancoWavin AC",
+      "mode": "pipes",
+      "reference_line": true,
+      "visible_in": [
+        1445818,
+        1489196,
+        1443740
+      ],
+      "system": "AC",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001632ec",
+      "length_m": 0.33499999999995794,
+      "view_id": 2404690,
+      "code_note_id": 2405257,
+      "status": "model",
+      "anchor": [
+        4.1834779274788065,
+        15.658666733939775,
+        0.0
+      ],
+      "code_point": [
+        3.9499999999999997,
+        17.27,
+        18.536745406824146
+      ],
+      "view_key": "plan",
+      "id": 1454828,
+      "code": "AC-T03",
+      "kind": "pipe",
+      "diameter_mm": 32.0,
+      "tag_id": 2404748,
+      "page": 1,
+      "box": [
+        0.35008363870455556,
+        0.7425388548221825,
+        0.04043217563656868,
+        0.019336535125246437
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "PPR.2 ø32 mm- 0.34 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AmancoWavin AC",
+      "family": "AmancoWavin AC",
+      "physical_connected_ids": [
+        1455067,
+        2321652
+      ]
+    },
+    {
+      "type": "AmancoWavin AF",
+      "mode": "pipes",
+      "reference_line": true,
+      "visible_in": [
+        1445818,
+        1489196,
+        1443740
+      ],
+      "system": "AF",
+      "unique_id": "7068d757-a3d9-4226-8ada-391d4af114e1-00236cb4",
+      "length_m": 0.2724999999999873,
+      "view_id": 2404690,
+      "code_note_id": 2405259,
+      "status": "model",
+      "anchor": [
+        3.855950436570825,
+        15.498725789057893,
+        0.0
+      ],
+      "code_point": [
+        3.9499999999999997,
+        16.769999999999996,
+        18.536745405950843
+      ],
+      "view_key": "plan",
+      "id": 2321588,
+      "code": "AF-T15",
+      "kind": "pipe",
+      "diameter_mm": 32.0,
+      "tag_id": 2404749,
+      "page": 1,
+      "box": [
+        0.35008363870455556,
+        0.7669196404168158,
+        0.03897236430549562,
+        0.019336535125246437
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "PPR ø32 mm- 0.27 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AmancoWavin AF",
+      "family": "AmancoWavin AF",
+      "physical_connected_ids": [
+        2321596
+      ]
+    },
+    {
+      "type": "AmancoWavin CL - Primario",
+      "mode": "pipes",
+      "reference_line": true,
+      "visible_in": [
+        1445818,
+        1439889,
+        1489196,
+        1443740
+      ],
+      "system": "CP",
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ec4b1",
+      "length_m": 0.21909988399103833,
+      "view_id": 2404690,
+      "code_note_id": 2405261,
+      "status": "model",
+      "anchor": [
+        14.961517850030702,
+        19.07553571468997,
+        0.0
+      ],
+      "code_point": [
+        18.349999999999998,
+        19.25,
+        11.097334129706537
+      ],
+      "view_key": "plan",
+      "id": 2016433,
+      "code": "CP-T03",
+      "kind": "pipe",
+      "diameter_mm": 40.0,
+      "tag_id": 2404751,
+      "page": 1,
+      "box": [
+        0.8452058749251635,
+        0.6459909525671681,
+        0.043904994542541244,
+        0.019336535125246437
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "Premium ø40 mm- 0.22 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Sanitary",
+      "native_type": "AmancoWavin CL - Primario",
+      "family": "AmancoWavin CL - Primario",
+      "physical_connected_ids": [
+        2017891,
+        2018454
+      ]
+    },
+    {
+      "type": "AmancoWavin CL - Secundario",
+      "mode": "pipes",
+      "reference_line": true,
+      "visible_in": [
+        1445818,
+        1439889,
+        1489196,
+        1443740
+      ],
+      "system": "CS",
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ecefa",
+      "length_m": 0.17829721551144767,
+      "view_id": 2404690,
+      "code_note_id": 2405263,
+      "status": "model",
+      "anchor": [
+        14.131661069299485,
+        18.837096421056387,
+        0.0
+      ],
+      "code_point": [
+        18.349999999999998,
+        18.309999999999928,
+        11.646981627297457
+      ],
+      "view_key": "plan",
+      "id": 2019066,
+      "code": "CS-T05",
+      "kind": "pipe",
+      "diameter_mm": 40.0,
+      "tag_id": 2404752,
+      "page": 1,
+      "box": [
+        0.8432284806225907,
+        0.6918268758836573,
+        0.04783464135514569,
+        0.019336535125246437
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "Alta Rigidez ø40 mm- 0.18 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Sanitary",
+      "native_type": "AmancoWavin CL - Secundario",
+      "family": "AmancoWavin CL - Secundario",
+      "physical_connected_ids": [
+        2016127,
+        2019065
+      ]
+    },
+    {
+      "type": "AmancoWavin AC",
+      "mode": "pipes",
+      "reference_line": true,
+      "visible_in": [
+        1445818,
+        1439889,
+        1489196,
+        1443740
+      ],
+      "system": "AC",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001634bc",
+      "length_m": 0.1425000516676148,
+      "view_id": 2404690,
+      "code_note_id": 2405265,
+      "status": "model",
+      "anchor": [
+        15.088057650274951,
+        21.822002440702487,
+        0.0
+      ],
+      "code_point": [
+        18.350000000002016,
+        22.07,
+        11.811023622047387
+      ],
+      "view_key": "plan",
+      "id": 1455292,
+      "code": "AC-T09",
+      "kind": "pipe",
+      "diameter_mm": 32.0,
+      "tag_id": 2404753,
+      "page": 1,
+      "box": [
+        0.8460246985596365,
+        0.5084833638621481,
+        0.040113704396833545,
+        0.01933657137413595
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "PPR.2 ø32 mm- 0.14 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AmancoWavin AC",
+      "family": "AmancoWavin AC",
+      "physical_connected_ids": [
+        1488177
+      ]
+    },
+    {
+      "type": "AmancoWavin AF",
+      "mode": "pipes",
+      "reference_line": true,
+      "visible_in": [
+        1445818,
+        1439889,
+        1489196,
+        1443740
+      ],
+      "system": "AF",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001631fe",
+      "length_m": 0.14250000000000124,
+      "view_id": 2404690,
+      "code_note_id": 2405267,
+      "status": "model",
+      "anchor": [
+        15.08805767727591,
+        20.934037432010594,
+        0.0
+      ],
+      "code_point": [
+        18.350000000000694,
+        21.6,
+        11.482939632547408
+      ],
+      "view_key": "plan",
+      "id": 1454590,
+      "code": "AF-T08",
+      "kind": "pipe",
+      "diameter_mm": 32.0,
+      "tag_id": 2404754,
+      "page": 1,
+      "box": [
+        0.8460246985596365,
+        0.5314012892715032,
+        0.038776120069417976,
+        0.01933657137413595
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "PPR ø32 mm- 0.14 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AmancoWavin AF",
+      "family": "AmancoWavin AF",
+      "physical_connected_ids": [
+        2012166
+      ]
+    },
+    {
+      "type": "AmancoWavin AF",
+      "mode": "pipes",
+      "reference_line": true,
+      "visible_in": [
+        1445818,
+        1439889,
+        1489196,
+        1443740
+      ],
+      "system": "AF",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001631ea",
+      "length_m": 0.08449999999997494,
+      "view_id": 2404690,
+      "code_note_id": 2405269,
+      "status": "model",
+      "anchor": [
+        15.181561644310028,
+        19.38855700812862,
+        0.0
+      ],
+      "code_point": [
+        18.349999999999998,
+        19.720000000000002,
+        11.482939632547689
+      ],
+      "view_key": "plan",
+      "id": 1454570,
+      "code": "AF-T07",
+      "kind": "pipe",
+      "diameter_mm": 32.0,
+      "tag_id": 2404756,
+      "page": 1,
+      "box": [
+        0.8460246985596365,
+        0.623073027157813,
+        0.03907454444198431,
+        0.01933660762302547
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "PPR ø32 mm- 0.08 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AmancoWavin AF",
+      "family": "AmancoWavin AF",
+      "physical_connected_ids": [
+        1488418,
+        1488422
+      ]
+    },
+    {
+      "type": "AmancoWavin AC",
+      "mode": "pipes",
+      "reference_line": true,
+      "visible_in": [
+        1445818,
+        1439889,
+        1489196,
+        1443740
+      ],
+      "system": "AC",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001634a7",
+      "length_m": 0.08449997822995871,
+      "view_id": 2404690,
+      "code_note_id": 2405271,
+      "status": "model",
+      "anchor": [
+        15.181561687486557,
+        18.76522720201967,
+        0.0
+      ],
+      "code_point": [
+        18.350000000001888,
+        17.84,
+        11.811023622047468
+      ],
+      "view_key": "plan",
+      "id": 1455271,
+      "code": "AC-T08",
+      "kind": "pipe",
+      "diameter_mm": 32.0,
+      "tag_id": 2404757,
+      "page": 1,
+      "box": [
+        0.8460246985596365,
+        0.7147447287952333,
+        0.040417863760773845,
+        0.01933660762302547
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "PPR.2 ø32 mm- 0.08 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AmancoWavin AC",
+      "family": "AmancoWavin AC",
+      "physical_connected_ids": [
+        1488344,
+        1488348
+      ]
+    },
+    {
+      "type": "AmancoWavin CL - Secundario",
+      "mode": "pipes",
+      "reference_line": true,
+      "visible_in": [
+        1445818,
+        1439889,
+        1489196,
+        1443740
+      ],
+      "system": "CS",
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001eceee",
+      "length_m": 0.0838254295361353,
+      "view_id": 2404690,
+      "code_note_id": 2405273,
+      "status": "model",
+      "anchor": [
+        14.131659037212327,
+        19.46610338471378,
+        0.0
+      ],
+      "code_point": [
+        18.349999999999998,
+        20.19000000000015,
+        11.646981627297446
+      ],
+      "view_key": "plan",
+      "id": 2019054,
+      "code": "CS-T04",
+      "kind": "pipe",
+      "diameter_mm": 40.0,
+      "tag_id": 2404758,
+      "page": 1,
+      "box": [
+        0.8428556037727231,
+        0.6001550654995684,
+        0.04853297896548539,
+        0.01933657137413595
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "Alta Rigidez ø40 mm- 0.08 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Sanitary",
+      "native_type": "AmancoWavin CL - Secundario",
+      "family": "AmancoWavin CL - Secundario",
+      "physical_connected_ids": [
+        2016133,
+        2019065
+      ]
+    },
+    {
+      "type": "AmancoWavin AF",
+      "mode": "pipes",
+      "reference_line": true,
+      "visible_in": [
+        1445818,
+        1489196,
+        1443740
+      ],
+      "system": "AF",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00163a63",
+      "length_m": 0.08120266413660394,
+      "view_id": 2404690,
+      "code_note_id": 2405275,
+      "status": "model",
+      "anchor": [
+        9.097912176997063,
+        15.051711353362412,
+        0.0
+      ],
+      "code_point": [
+        8.6500010617389,
+        15.76999999999999,
+        11.482939645630056
+      ],
+      "view_key": "plan",
+      "id": 1456739,
+      "code": "AF-T10",
+      "kind": "pipe",
+      "diameter_mm": 32.0,
+      "tag_id": 2404759,
+      "page": 1,
+      "box": [
+        0.5119533093870134,
+        0.8156812116060824,
+        0.03907464685254457,
+        0.019336462627467407
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "PPR ø32 mm- 0.08 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AmancoWavin AF",
+      "family": "AmancoWavin AF",
+      "physical_connected_ids": [
+        1457172,
+        2366517
+      ]
+    },
+    {
+      "type": "AmancoWavin AF",
+      "mode": "pipes",
+      "reference_line": true,
+      "visible_in": [
+        1445818,
+        1489196,
+        1443740
+      ],
+      "system": "AF",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00163bff",
+      "length_m": 0.05250000000000052,
+      "view_id": 2404690,
+      "code_note_id": 2405277,
+      "status": "model",
+      "anchor": [
+        8.905650588846472,
+        15.201809778559188,
+        0.0
+      ],
+      "code_point": [
+        8.65,
+        16.269999999996887,
+        13.12335958005365
+      ],
+      "view_key": "plan",
+      "id": 1457151,
+      "code": "AF-T11",
+      "kind": "pipe",
+      "diameter_mm": 32.0,
+      "tag_id": 2404762,
+      "page": 1,
+      "box": [
+        0.5119532581817333,
+        0.7913003535136701,
+        0.03906030937410967,
+        0.01933660762302547
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "PPR ø32 mm- 0.05 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AmancoWavin AF",
+      "family": "AmancoWavin AF",
+      "physical_connected_ids": [
+        1457184
+      ]
+    },
+    {
+      "type": "AmancoWavin CL - Primario",
+      "mode": "pipes",
+      "reference_line": true,
+      "visible_in": [
+        1445818,
+        1439889,
+        1489196,
+        1443740
+      ],
+      "system": "CP",
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ec47c",
+      "length_m": 0.025871276715367056,
+      "view_id": 2404690,
+      "code_note_id": 2405279,
+      "status": "model",
+      "anchor": [
+        14.262122901365338,
+        19.075535714689966,
+        0.0
+      ],
+      "code_point": [
+        18.35000000001063,
+        18.78,
+        10.810385110657256
+      ],
+      "view_key": "plan",
+      "id": 2016380,
+      "code": "CP-T02",
+      "kind": "pipe",
+      "diameter_mm": 50.0,
+      "tag_id": 2404764,
+      "page": 1,
+      "box": [
+        0.8452849870829561,
+        0.6689088779765232,
+        0.043847593423521534,
+        0.01933660762302547
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "Premium ø50 mm- 0.03 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Sanitary",
+      "native_type": "AmancoWavin CL - Primario",
+      "family": "AmancoWavin CL - Primario",
+      "physical_connected_ids": [
+        2016418
+      ]
+    },
+    {
+      "type": "AmancoWavin AC",
+      "mode": "pipes",
+      "reference_line": true,
+      "visible_in": [
+        1445818,
+        1439889,
+        1489196,
+        1443740
+      ],
+      "system": "AC",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-0016349d",
+      "length_m": 0.732499999999997,
+      "view_id": 2404710,
+      "code_note_id": 2405281,
+      "status": "model",
+      "anchor": [
+        11.492600833522726,
+        15.248561747063146,
+        10.552001312336794
+      ],
+      "code_point": [
+        11.492600833522719,
+        10.849999999999982,
+        10.85
+      ],
+      "view_key": "front",
+      "id": 1455261,
+      "code": "AC-T07",
+      "kind": "pipe",
+      "diameter_mm": 32.0,
+      "tag_id": 2404740,
+      "page": 2,
+      "box": [
+        0.8562555135285375,
+        0.7186677286141339,
+        0.04696302507686424,
+        0.022100875439680905
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "PPR.2 ø32 mm- 0.73 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AmancoWavin AC",
+      "family": "AmancoWavin AC",
+      "physical_connected_ids": [
+        2366034
+      ]
+    },
+    {
+      "type": "AmancoWavin AF",
+      "mode": "pipes",
+      "reference_line": true,
+      "visible_in": [
+        1445818,
+        1439889,
+        1489196,
+        1443740
+      ],
+      "system": "AF",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001631de",
+      "length_m": 0.6150000000002598,
+      "view_id": 2404710,
+      "code_note_id": 2405283,
+      "status": "model",
+      "anchor": [
+        11.492600833522726,
+        15.058273033152373,
+        10.416666666667934
+      ],
+      "code_point": [
+        11.492600833522719,
+        10.849999999999982,
+        10.28
+      ],
+      "view_key": "front",
+      "id": 1454558,
+      "code": "AF-T06",
+      "kind": "pipe",
+      "diameter_mm": 32.0,
+      "tag_id": 2404743,
+      "page": 2,
+      "box": [
+        0.8562555135285375,
+        0.751332907916366,
+        0.04534309483484147,
+        0.022100875439680905
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "PPR ø32 mm- 0.62 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AmancoWavin AF",
+      "family": "AmancoWavin AF",
+      "physical_connected_ids": [
+        1454564,
+        2366373
+      ]
+    },
+    {
+      "type": "AmancoWavin CL - Primario",
+      "mode": "pipes",
+      "reference_line": true,
+      "visible_in": [
+        1445818,
+        1439889,
+        1489196,
+        1443740
+      ],
+      "system": "CP",
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001eca5b",
+      "length_m": 0.40051218355996926,
+      "view_id": 2404710,
+      "code_note_id": 2405285,
+      "status": "model",
+      "anchor": [
+        11.492600833522731,
+        19.075535714689977,
+        10.365522804969054
+      ],
+      "code_point": [
+        11.492600833522719,
+        10.849999999999982,
+        9.71
+      ],
+      "view_key": "front",
+      "id": 2017883,
+      "code": "CP-T04",
+      "kind": "pipe",
+      "diameter_mm": 40.0,
+      "tag_id": 2404746,
+      "page": 2,
+      "box": [
+        0.8551670940942083,
+        0.783998014720819,
+        0.051422800154598984,
+        0.022100947937459935
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "Premium ø40 mm- 0.40 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Sanitary",
+      "native_type": "AmancoWavin CL - Primario",
+      "family": "AmancoWavin CL - Primario",
+      "physical_connected_ids": [
+        2017891,
+        2018284
+      ]
+    },
+    {
+      "type": "AmancoWavin AF",
+      "mode": "pipes",
+      "reference_line": true,
+      "visible_in": [
+        1445818,
+        1439889,
+        1489196,
+        1443740
+      ],
+      "system": "AF",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00163500",
+      "length_m": 0.352499999999987,
+      "view_id": 2404710,
+      "code_note_id": 2405287,
+      "status": "model",
+      "anchor": [
+        11.492600833522733,
+        19.38855700227309,
+        12.118602362206461
+      ],
+      "code_point": [
+        11.492600833522719,
+        10.849999999999982,
+        13.7
+      ],
+      "view_key": "front",
+      "id": 1455360,
+      "code": "AF-T09",
+      "kind": "pipe",
+      "diameter_mm": 32.0,
+      "tag_id": 2404747,
+      "page": 2,
+      "box": [
+        0.8562555135285375,
+        0.5553419046007525,
+        0.04544980663862119,
+        0.02210091168857042
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "PPR ø32 mm- 0.35 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AmancoWavin AF",
+      "family": "AmancoWavin AF",
+      "physical_connected_ids": [
+        1488418
+      ]
+    },
+    {
+      "type": "AmancoWavin AC",
+      "mode": "pipes",
+      "reference_line": true,
+      "visible_in": [
+        1445818,
+        1439889,
+        1489196,
+        1443740
+      ],
+      "system": "AC",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001634e4",
+      "length_m": 0.2524999389648363,
+      "view_id": 2404710,
+      "code_note_id": 2405289,
+      "status": "model",
+      "anchor": [
+        11.492600833522731,
+        18.765227197579694,
+        12.282644256832972
+      ],
+      "code_point": [
+        11.492600833522719,
+        10.849999999999982,
+        14.27
+      ],
+      "view_key": "front",
+      "id": 1455332,
+      "code": "AC-T11",
+      "kind": "pipe",
+      "diameter_mm": 32.0,
+      "tag_id": 2404750,
+      "page": 2,
+      "box": [
+        0.8562555135285375,
+        0.5226767615474099,
+        0.04699886877295149,
+        0.022100875439680905
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "PPR.2 ø32 mm- 0.25 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AmancoWavin AC",
+      "family": "AmancoWavin AC",
+      "physical_connected_ids": [
+        1488344
+      ]
+    },
+    {
+      "type": "AmancoWavin CL - Primario",
+      "mode": "pipes",
+      "reference_line": true,
+      "visible_in": [
+        1445818,
+        1439889,
+        1489196,
+        1443740
+      ],
+      "system": "CP",
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ec2e7",
+      "length_m": 0.13067317617058985,
+      "view_id": 2404710,
+      "code_note_id": 2405291,
+      "status": "model",
+      "anchor": [
+        11.492600833522731,
+        19.076892099926294,
+        11.170290443174773
+      ],
+      "code_point": [
+        11.492600833522719,
+        10.849999999999982,
+        11.99
+      ],
+      "view_key": "front",
+      "id": 2015975,
+      "code": "CP-T01",
+      "kind": "pipe",
+      "diameter_mm": 40.0,
+      "tag_id": 2404755,
+      "page": 2,
+      "box": [
+        0.8557314786917419,
+        0.653337949991902,
+        0.050405248827962344,
+        0.02210036795522769
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "Premium ø40 mm- 0.13 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Sanitary",
+      "native_type": "AmancoWavin CL - Primario",
+      "family": "AmancoWavin CL - Primario",
+      "physical_connected_ids": [
+        2019065
+      ]
+    },
+    {
+      "type": "AmancoWavin CL - Secundario",
+      "mode": "pipes",
+      "reference_line": true,
+      "visible_in": [
+        1445818,
+        1439889,
+        1489196,
+        1443740
+      ],
+      "system": "CS",
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ebb5d",
+      "length_m": 0.07673667490027171,
+      "view_id": 2404710,
+      "code_note_id": 2405293,
+      "status": "model",
+      "anchor": [
+        11.492600833522733,
+        19.678415441038656,
+        11.84766514910369
+      ],
+      "code_point": [
+        11.492600833522719,
+        10.849999999999982,
+        13.129999999999999
+      ],
+      "view_key": "front",
+      "id": 2014045,
+      "code": "CS-T02",
+      "kind": "pipe",
+      "diameter_mm": 40.0,
+      "tag_id": 2404760,
+      "page": 2,
+      "box": [
+        0.8525310462733924,
+        0.588009150089687,
+        0.056597605763994044,
+        0.022098809252978534
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "Alta Rigidez ø40 mm- 0.08 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Sanitary",
+      "native_type": "AmancoWavin CL - Secundario",
+      "family": "AmancoWavin CL - Secundario",
+      "physical_connected_ids": [
+        2016133
+      ]
+    },
+    {
+      "type": "AmancoWavin CL - Secundario",
+      "mode": "pipes",
+      "reference_line": true,
+      "visible_in": [
+        1445818,
+        1439889,
+        1489196,
+        1443740
+      ],
+      "system": "CS",
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ebb57",
+      "length_m": 0.07673667489304105,
+      "view_id": 2404710,
+      "code_note_id": 2405295,
+      "status": "model",
+      "anchor": [
+        11.492600833522731,
+        18.46981096254248,
+        11.847665149103626
+      ],
+      "code_point": [
+        11.492600833522719,
+        10.849999999999982,
+        12.559999999999999
+      ],
+      "view_key": "front",
+      "id": 2014039,
+      "code": "CS-T01",
+      "kind": "pipe",
+      "diameter_mm": 40.0,
+      "tag_id": 2404761,
+      "page": 2,
+      "box": [
+        0.8525310462733924,
+        0.6206721907074377,
+        0.056597605763994044,
+        0.022100947937459935
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "Alta Rigidez ø40 mm- 0.08 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Sanitary",
+      "native_type": "AmancoWavin CL - Secundario",
+      "family": "AmancoWavin CL - Secundario",
+      "physical_connected_ids": [
+        2016127
+      ]
+    },
+    {
+      "type": "AmancoWavin CL - Secundario",
+      "mode": "pipes",
+      "reference_line": true,
+      "visible_in": [
+        1445818,
+        1439889,
+        1489196,
+        1443740
+      ],
+      "system": "CS",
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ec49a",
+      "length_m": 0.033802061004752686,
+      "view_id": 2404710,
+      "code_note_id": 2405297,
+      "status": "model",
+      "anchor": [
+        11.492600833522731,
+        19.07553571468997,
+        10.953859620184302
+      ],
+      "code_point": [
+        11.492600833522719,
+        10.849999999999982,
+        11.42
+      ],
+      "view_key": "front",
+      "id": 2016410,
+      "code": "CS-T03",
+      "kind": "pipe",
+      "diameter_mm": 50.0,
+      "tag_id": 2404763,
+      "page": 2,
+      "box": [
+        0.8526572160836194,
+        0.6860025493119019,
+        0.05638397733531409,
+        0.022100875439680905
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "Alta Rigidez ø50 mm- 0.03 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Sanitary",
+      "native_type": "AmancoWavin CL - Secundario",
+      "family": "AmancoWavin CL - Secundario",
+      "physical_connected_ids": [
+        2016418,
+        2016439
+      ]
+    },
+    {
+      "type": "AmancoWavin CL - Primario",
+      "mode": "pipes",
+      "reference_line": true,
+      "visible_in": [
+        1439889,
+        1489196,
+        1443740
+      ],
+      "system": "CP",
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ed1a6",
+      "length_m": 0.02539972663999481,
+      "view_id": 2404710,
+      "code_note_id": 2405299,
+      "status": "model",
+      "anchor": [
+        11.492600833522731,
+        19.07553571468997,
+        9.633711480231572
+      ],
+      "code_point": [
+        11.492600833522719,
+        10.849999999999982,
+        8.57
+      ],
+      "view_key": "front",
+      "id": 2019750,
+      "code": "CP-T06",
+      "kind": "pipe",
+      "diameter_mm": 63.0,
+      "tag_id": 2405239,
+      "page": 2,
+      "box": [
+        0.8555189767792247,
+        0.8493283733252832,
+        0.05086619875964426,
+        0.022100875439680905
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "Premium ø63 mm- 0.03 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Sanitary",
+      "native_type": "AmancoWavin CL - Primario",
+      "family": "AmancoWavin CL - Primario",
+      "physical_connected_ids": [
+        2013511,
+        2019752
+      ]
+    },
+    {
+      "type": "AmancoWavin CL - Secundario",
+      "mode": "pipes",
+      "reference_line": true,
+      "visible_in": [
+        1439889,
+        1489196,
+        1443740
+      ],
+      "system": "CS",
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ed042",
+      "length_m": 0.37677286246046193,
+      "view_id": 2404710,
+      "code_note_id": 2405301,
+      "status": "model",
+      "anchor": [
+        11.492600833522733,
+        19.884874125079516,
+        9.633128705995505
+      ],
+      "code_point": [
+        11.492600833522719,
+        10.849999999999982,
+        8.0
+      ],
+      "view_key": "front",
+      "id": 2019394,
+      "code": "CS-T06",
+      "kind": "pipe",
+      "diameter_mm": 40.0,
+      "tag_id": 2405240,
+      "page": 2,
+      "box": [
+        0.8526173783756825,
+        0.8819934801297362,
+        0.05649642413046778,
+        0.022100947937459935
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "Alta Rigidez ø40 mm- 0.38 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Sanitary",
+      "native_type": "AmancoWavin CL - Secundario",
+      "family": "AmancoWavin CL - Secundario",
+      "physical_connected_ids": [
+        2013511,
+        2019413
+      ]
+    },
+    {
+      "type": "AmancoWavin CL - Primario",
+      "mode": "pipes",
+      "reference_line": true,
+      "visible_in": [
+        1439889,
+        1489196,
+        1443740
+      ],
+      "system": "CP",
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ecaca",
+      "length_m": 0.0692305934991232,
+      "view_id": 2404710,
+      "code_note_id": 2405303,
+      "status": "model",
+      "anchor": [
+        11.492600833522731,
+        19.075535714689977,
+        9.633711480231574
+      ],
+      "code_point": [
+        11.492600833522719,
+        10.849999999999982,
+        9.14
+      ],
+      "view_key": "front",
+      "id": 2017994,
+      "code": "CP-T05",
+      "kind": "pipe",
+      "diameter_mm": 40.0,
+      "tag_id": 2405241,
+      "page": 2,
+      "box": [
+        0.8553397070935084,
+        0.8166631940230511,
+        0.05113610179118118,
+        0.022100875439680905
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "Premium ø40 mm- 0.07 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Sanitary",
+      "native_type": "AmancoWavin CL - Primario",
+      "family": "AmancoWavin CL - Primario",
+      "physical_connected_ids": [
+        2018284,
+        2018290
+      ]
+    },
+    {
+      "type": "AmancoWavin AF",
+      "mode": "pipes",
+      "reference_line": true,
+      "visible_in": [
+        1445818,
+        1489196,
+        1443740
+      ],
+      "system": "AF",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001630d4",
+      "length_m": 2.114999999999482,
+      "view_id": 2404721,
+      "code_note_id": 2405305,
+      "status": "model",
+      "anchor": [
+        3.8559504365708626,
+        27.208840970824234,
+        15.009842519685886
+      ],
+      "code_point": [
+        -3.5499999999999514,
+        15.051711353362437,
+        15.62
+      ],
+      "view_key": "side",
+      "id": 1454292,
+      "code": "AF-T03",
+      "kind": "pipe",
+      "diameter_mm": 32.0,
+      "tag_id": 2404731,
+      "page": 3,
+      "box": [
+        0.8858001408759667,
+        0.45306747527789487,
+        0.03447231627494286,
+        0.0175073436625269
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "PPR ø32 mm- 2.12 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AmancoWavin AF",
+      "family": "AmancoWavin AF",
+      "physical_connected_ids": [
+        1454294,
+        1457039
+      ]
+    },
+    {
+      "type": "AmancoWavin AC",
+      "mode": "pipes",
+      "reference_line": true,
+      "visible_in": [
+        1445818,
+        1489196,
+        1443740
+      ],
+      "system": "AC",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001633d9",
+      "length_m": 2.0149999999997306,
+      "view_id": 2404721,
+      "code_note_id": 2405307,
+      "status": "model",
+      "anchor": [
+        4.183477927478841,
+        27.208840970824234,
+        15.173884514436136
+      ],
+      "code_point": [
+        -3.5499999999999514,
+        15.051711353362439,
+        16.27
+      ],
+      "view_key": "side",
+      "id": 1455065,
+      "code": "AC-T05",
+      "kind": "pipe",
+      "diameter_mm": 32.0,
+      "tag_id": 2404732,
+      "page": 3,
+      "box": [
+        0.8858001408759667,
+        0.42504813490038734,
+        0.03594252227788122,
+        0.0175073436625269
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "PPR.2 ø32 mm- 2.02 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AmancoWavin AC",
+      "family": "AmancoWavin AC",
+      "physical_connected_ids": [
+        1455067,
+        1455071
+      ]
+    },
+    {
+      "type": "AmancoWavin AC",
+      "mode": "pipes",
+      "reference_line": true,
+      "visible_in": [
+        1445818,
+        1489196,
+        1443740
+      ],
+      "system": "AC",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00163419",
+      "length_m": 0.6550032187674991,
+      "view_id": 2404721,
+      "code_note_id": 2405309,
+      "status": "model",
+      "anchor": [
+        9.539337234861216,
+        27.208840970824216,
+        10.679133858268573
+      ],
+      "code_point": [
+        7.850000000000086,
+        27.20884097082422,
+        7.62
+      ],
+      "view_key": "side",
+      "id": 1455129,
+      "code": "AC-T06",
+      "kind": "pipe",
+      "diameter_mm": 32.0,
+      "tag_id": 2404741,
+      "page": 3,
+      "box": [
+        0.5387122158798224,
+        0.7979209956902971,
+        0.03588906396543111,
+        0.0175073436625269
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "PPR.2 ø32 mm- 0.66 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AmancoWavin AC",
+      "family": "AmancoWavin AC",
+      "physical_connected_ids": [
+        2366534,
+        2366551
+      ]
+    },
+    {
+      "type": "AmancoWavin AF",
+      "mode": "pipes",
+      "reference_line": true,
+      "visible_in": [
+        1445818,
+        1489196,
+        1443740
+      ],
+      "system": "AF",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00163167",
+      "length_m": 0.615003172525784,
+      "view_id": 2404721,
+      "code_note_id": 2405311,
+      "status": "model",
+      "anchor": [
+        9.288533343211864,
+        27.208840970824216,
+        10.416666531766886
+      ],
+      "code_point": [
+        7.850000000000086,
+        27.20884097082422,
+        7.07
+      ],
+      "view_key": "side",
+      "id": 1454439,
+      "code": "AF-T04",
+      "kind": "pipe",
+      "diameter_mm": 32.0,
+      "tag_id": 2404742,
+      "page": 3,
+      "box": [
+        0.5387122158798224,
+        0.8216296543755383,
+        0.03473085173429211,
+        0.0175073436625269
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "PPR ø32 mm- 0.62 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AmancoWavin AF",
+      "family": "AmancoWavin AF",
+      "physical_connected_ids": [
+        2366517,
+        2366530
+      ]
+    },
+    {
+      "type": "AmancoWavin AF",
+      "mode": "pipes",
+      "reference_line": true,
+      "visible_in": [
+        1445818,
+        1489196,
+        1443740
+      ],
+      "system": "AF",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00163c12",
+      "length_m": 0.46449999999973535,
+      "view_id": 2404721,
+      "code_note_id": 2405313,
+      "status": "model",
+      "anchor": [
+        8.90565060653077,
+        27.20884097082422,
+        12.303969816274227
+      ],
+      "code_point": [
+        7.850000000000047,
+        15.058273033152327,
+        8.170000000000098
+      ],
+      "view_key": "side",
+      "id": 1457170,
+      "code": "AF-T12",
+      "kind": "pipe",
+      "diameter_mm": 32.0,
+      "tag_id": 2404744,
+      "page": 3,
+      "box": [
+        0.5387122158798224,
+        0.7742123370050559,
+        0.03480120778918336,
+        0.01750727116474787
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "PPR ø32 mm- 0.46 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AmancoWavin AF",
+      "family": "AmancoWavin AF",
+      "physical_connected_ids": [
+        1457172,
+        1457184
+      ]
+    },
+    {
+      "type": "Codo 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "32 mm",
+      "interface": [
+        "AF"
+      ],
+      "visible_in": [
+        1445818,
+        1439889,
+        1489196,
+        1443740
+      ],
+      "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001631e4",
+      "connected_ids": [
+        1454558,
+        1488423
+      ],
+      "system": "AF",
+      "view_id": 2405314,
+      "code_note_id": 2405377,
+      "status": "model",
+      "anchor": [
+        15.379232247984522,
+        15.05827303315237,
+        0.0
+      ],
+      "code_point": [
+        17.8,
+        17.55,
+        0.0
+      ],
+      "view_key": "plan",
+      "id": 1454564,
+      "code": "AF-A02",
+      "kind": "fitting",
+      "diameters_mm": [
+        32.0
+      ],
+      "page": 5,
+      "box": [
+        0.8036998989617412,
+        0.6863700405538077,
+        0.05522975911602482,
+        0.012440691379419591
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "AF-A02 | Codo 90.00 grados | 32 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AF",
+      "physical_connected_ids": [
+        1454558,
+        1488423
+      ]
+    },
+    {
+      "type": "Valvula esferica union-fusion",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "32 mm",
+      "interface": [],
+      "visible_in": [
+        1445818,
+        1489196,
+        1443740
+      ],
+      "family": "AmancoWavin_Unionesdetubería_FusiónPPRUniónFusión",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00163a60",
+      "connected_ids": [],
+      "system": "AF",
+      "view_id": 2405314,
+      "code_note_id": 2405395,
+      "status": "check_connection",
+      "anchor": [
+        6.204479156140622,
+        15.051711353362347,
+        0.0
+      ],
+      "code_point": [
+        8.0,
+        13.5,
+        0.0
+      ],
+      "view_key": "plan",
+      "id": 1456736,
+      "code": "AF-A03",
+      "kind": "fitting",
+      "diameters_mm": [
+        32.0
+      ],
+      "page": 5,
+      "box": [
+        0.4912616653308916,
+        0.8691813101305641,
+        0.0987938801087764,
+        0.012440691379419591
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "AF-A03 | Valvula esferica union-fusion | 32 mm [revisar conexion]",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AF",
+      "physical_connected_ids": []
+    },
+    {
+      "type": "Valvula esferica union-fusion",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "32 mm",
+      "interface": [],
+      "visible_in": [
+        1445818,
+        1489196,
+        1443740
+      ],
+      "family": "AmancoWavin_Unionesdetubería_FusiónPPRUniónFusión",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00163bd3",
+      "connected_ids": [],
+      "system": "AC",
+      "view_id": 2405314,
+      "code_note_id": 2405397,
+      "status": "check_connection",
+      "anchor": [
+        6.204479156140622,
+        15.051711353362347,
+        0.0
+      ],
+      "code_point": [
+        8.0,
+        12.7,
+        0.0
+      ],
+      "view_key": "plan",
+      "id": 1457107,
+      "code": "AC-A03",
+      "kind": "fitting",
+      "diameters_mm": [
+        32.0
+      ],
+      "page": 5,
+      "box": [
+        0.4912616653308916,
+        0.9052921638745597,
+        0.09901355076051106,
+        0.012440691379419591
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "AC-A03 | Valvula esferica union-fusion | 32 mm [revisar conexion]",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AC",
+      "physical_connected_ids": [],
+      "classification_note": "Válvula AC aislada: el sistema nativo sigue figurando como agua fría. Se computa en AC por su tipo; requiere resolver conexión en el modelo."
+    },
+    {
+      "type": "Tee 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "32 mm",
+      "interface": [
+        "AF"
+      ],
+      "visible_in": [
+        1445818,
+        1489196,
+        1443740
+      ],
+      "family": "AmancoWavin_Unionesdetubería_FusiónPPRTee",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00163c14",
+      "connected_ids": [
+        1457170,
+        1456739,
+        1457173
+      ],
+      "system": "AF",
+      "view_id": 2405314,
+      "code_note_id": 2405379,
+      "status": "model",
+      "anchor": [
+        8.905650588846472,
+        15.058273033152366,
+        0.0
+      ],
+      "code_point": [
+        8.0,
+        11.9,
+        0.0
+      ],
+      "view_key": "plan",
+      "id": 1457172,
+      "code": "AF-A05",
+      "kind": "fitting",
+      "diameters_mm": [
+        32.0
+      ],
+      "page": 5,
+      "box": [
+        0.4912616653308916,
+        0.9414030176185553,
+        0.05327694334791182,
+        0.012440691379419591
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "AF-A05 | Tee 90.00 grados | 32 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AF",
+      "physical_connected_ids": [
+        1456739,
+        1457170,
+        1457173
+      ]
+    },
+    {
+      "type": "Codo 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "32 mm",
+      "interface": [
+        "AC"
+      ],
+      "visible_in": [
+        1445818,
+        1439889,
+        1489196,
+        1443740
+      ],
+      "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
+      "unique_id": "7355c4a4-c4a4-4cf0-92b3-b73244e08c3e-0016b531",
+      "connected_ids": [
+        1455292,
+        1488349
+      ],
+      "system": "AC",
+      "view_id": 2405314,
+      "code_note_id": 2405355,
+      "status": "model",
+      "anchor": [
+        15.379232275713948,
+        21.822002469536777,
+        0.0
+      ],
+      "code_point": [
+        17.8,
+        22.8,
+        0.0
+      ],
+      "view_key": "plan",
+      "id": 1488177,
+      "code": "AC-A04",
+      "kind": "fitting",
+      "diameters_mm": [
+        32.0
+      ],
+      "page": 5,
+      "box": [
+        0.8036998989617412,
+        0.44939238161438927,
+        0.05558840089801772,
+        0.012440655130530076
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "AC-A04 | Codo 90.00 grados | 32 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AC",
+      "physical_connected_ids": [
+        1455292,
+        1488349
+      ]
+    },
+    {
+      "type": "Codo 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "32 mm",
+      "interface": [
+        "AC"
+      ],
+      "visible_in": [
+        1445818,
+        1439889,
+        1489196,
+        1443740
+      ],
+      "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
+      "unique_id": "7355c4a4-c4a4-4cf0-92b3-b73244e08c3e-0016b5d8",
+      "connected_ids": [
+        1455332,
+        1455271
+      ],
+      "system": "AC",
+      "view_id": 2405314,
+      "code_note_id": 2405363,
+      "status": "model",
+      "anchor": [
+        14.985531539471534,
+        18.765227197579687,
+        0.0
+      ],
+      "code_point": [
+        17.8,
+        19.8,
+        0.0
+      ],
+      "view_key": "plan",
+      "id": 1488344,
+      "code": "AC-A05",
+      "kind": "fitting",
+      "diameters_mm": [
+        32.0
+      ],
+      "page": 5,
+      "box": [
+        0.8036998989617412,
+        0.5848081556521516,
+        0.05548214994175912,
+        0.012440655130530076
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "AC-A05 | Codo 90.00 grados | 32 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AC",
+      "physical_connected_ids": [
+        1455271,
+        1455332
+      ]
+    },
+    {
+      "type": "Tee 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "32 mm",
+      "interface": [
+        "AC"
+      ],
+      "visible_in": [
+        1445818,
+        1439889,
+        1489196,
+        1443740
+      ],
+      "family": "AmancoWavin_Unionesdetubería_FusiónPPRTee",
+      "unique_id": "7355c4a4-c4a4-4cf0-92b3-b73244e08c3e-0016b5dc",
+      "connected_ids": [
+        1488349,
+        1455301,
+        1455271
+      ],
+      "system": "AC",
+      "view_id": 2405314,
+      "code_note_id": 2405365,
+      "status": "model",
+      "anchor": [
+        15.379232255449084,
+        18.765227165871668,
+        0.0
+      ],
+      "code_point": [
+        17.8,
+        19.05,
+        0.0
+      ],
+      "view_key": "plan",
+      "id": 1488348,
+      "code": "AC-A06",
+      "kind": "fitting",
+      "diameters_mm": [
+        32.0
+      ],
+      "page": 5,
+      "box": [
+        0.8036998989617412,
+        0.6186621172860369,
+        0.05339655888228295,
+        0.012440691379419591
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "AC-A06 | Tee 90.00 grados | 32 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AC",
+      "physical_connected_ids": [
+        1455271,
+        1455301,
+        1488349
+      ]
+    },
+    {
+      "type": "Codo 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "32 mm",
+      "interface": [
+        "AF"
+      ],
+      "visible_in": [
+        1445818,
+        1439889,
+        1489196,
+        1443740
+      ],
+      "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
+      "unique_id": "7355c4a4-c4a4-4cf0-92b3-b73244e08c3e-0016b622",
+      "connected_ids": [
+        1455360,
+        1454570
+      ],
+      "system": "AF",
+      "view_id": 2405314,
+      "code_note_id": 2405359,
+      "status": "model",
+      "anchor": [
+        14.985531460583037,
+        19.388557002273085,
+        0.0
+      ],
+      "code_point": [
+        17.8,
+        21.3,
+        0.0
+      ],
+      "view_key": "plan",
+      "id": 1488418,
+      "code": "AF-A07",
+      "kind": "fitting",
+      "diameters_mm": [
+        32.0
+      ],
+      "page": 5,
+      "box": [
+        0.8036998989617412,
+        0.5171002686332704,
+        0.05514562884078005,
+        0.012440655130530076
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "AF-A07 | Codo 90.00 grados | 32 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AF",
+      "physical_connected_ids": [
+        1454570,
+        1455360
+      ]
+    },
+    {
+      "type": "Tee 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "32 mm",
+      "interface": [
+        "AF"
+      ],
+      "visible_in": [
+        1445818,
+        1439889,
+        1489196,
+        1443740
+      ],
+      "family": "AmancoWavin_Unionesdetubería_FusiónPPRTee",
+      "unique_id": "7355c4a4-c4a4-4cf0-92b3-b73244e08c3e-0016b626",
+      "connected_ids": [
+        1454570,
+        1454451,
+        1488423
+      ],
+      "system": "AF",
+      "view_id": 2405314,
+      "code_note_id": 2405361,
+      "status": "model",
+      "anchor": [
+        15.379232247984525,
+        19.388556973999236,
+        0.0
+      ],
+      "code_point": [
+        17.8,
+        20.55,
+        0.0
+      ],
+      "view_key": "plan",
+      "id": 1488422,
+      "code": "AF-A08",
+      "kind": "fitting",
+      "diameters_mm": [
+        32.0
+      ],
+      "page": 5,
+      "box": [
+        0.8036998989617412,
+        0.5509541940182663,
+        0.05329030792602435,
+        0.012440655130530076
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "AF-A08 | Tee 90.00 grados | 32 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AF",
+      "physical_connected_ids": [
+        1454451,
+        1454570,
+        1488423
+      ]
+    },
+    {
+      "type": "Codo 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "32 mm",
+      "interface": [
+        "AF"
+      ],
+      "visible_in": [
+        1445818,
+        1439889,
+        1489196,
+        1443740
+      ],
+      "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001eb406",
+      "connected_ids": [
+        1454451,
+        1454590
+      ],
+      "system": "AF",
+      "view_id": 2405314,
+      "code_note_id": 2405357,
+      "status": "model",
+      "anchor": [
+        15.379232217958322,
+        20.93403746598624,
+        0.0
+      ],
+      "code_point": [
+        17.8,
+        22.05,
+        0.0
+      ],
+      "view_key": "plan",
+      "id": 2012166,
+      "code": "AF-A09",
+      "kind": "fitting",
+      "diameters_mm": [
+        32.0
+      ],
+      "page": 5,
+      "box": [
+        0.8036998989617412,
+        0.4832463069993851,
+        0.055167800727074015,
+        0.012440655130530076
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "AF-A09 | Codo 90.00 grados | 32 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AF",
+      "physical_connected_ids": [
+        1454451,
+        1454590
+      ]
+    },
+    {
+      "type": "Codo 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "50 mm",
+      "interface": [
+        "AF"
+      ],
+      "visible_in": [
+        1445818,
+        1489196,
+        1443740
+      ],
+      "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
+      "unique_id": "7068d757-a3d9-4226-8ada-391d4af114e1-00236c8e",
+      "connected_ids": [
+        1454025,
+        1438638
+      ],
+      "system": "AF",
+      "view_id": 2405314,
+      "code_note_id": 2405371,
+      "status": "model",
+      "anchor": [
+        0.18269386350479672,
+        16.00315492291618,
+        0.0
+      ],
+      "code_point": [
+        -2.0,
+        17.1,
+        0.0
+      ],
+      "view_key": "plan",
+      "id": 2321550,
+      "code": "AF-A10",
+      "kind": "fitting",
+      "diameters_mm": [
+        50.0
+      ],
+      "page": 5,
+      "box": [
+        0.17244714539780256,
+        0.7066823232870261,
+        0.054764840775133244,
+        0.012440691379419591
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "AF-A10 | Codo 90.00 grados | 50 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AF",
+      "physical_connected_ids": [
+        1438638,
+        1454025
+      ]
+    },
+    {
+      "type": "Codo 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "50x32 mm",
+      "interface": [
+        "AF"
+      ],
+      "visible_in": [
+        1445818,
+        1489196,
+        1443740
+      ],
+      "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
+      "unique_id": "7068d757-a3d9-4226-8ada-391d4af114e1-00236cbc",
+      "connected_ids": [
+        1454025,
+        2321588
+      ],
+      "system": "AF",
+      "view_id": 2405314,
+      "code_note_id": 2405373,
+      "status": "model",
+      "anchor": [
+        3.855950436570823,
+        16.00315492291618,
+        0.0
+      ],
+      "code_point": [
+        -2.0,
+        15.500000000000002,
+        0.0
+      ],
+      "view_key": "plan",
+      "id": 2321596,
+      "code": "AF-A11",
+      "kind": "fitting",
+      "diameters_mm": [
+        32.0,
+        50.0
+      ],
+      "page": 5,
+      "box": [
+        0.17244714539780256,
+        0.7789041032727962,
+        0.0593876534647848,
+        0.012440691379419591
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "AF-A11 | Codo 90.00 grados | 50x32 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AF",
+      "physical_connected_ids": [
+        1454025,
+        2321588
+      ]
+    },
+    {
+      "type": "Codo 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "50 mm",
+      "interface": [
+        "AC"
+      ],
+      "visible_in": [
+        1445818,
+        1489196,
+        1443740
+      ],
+      "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
+      "unique_id": "7068d757-a3d9-4226-8ada-391d4af114e1-00236cf0",
+      "connected_ids": [
+        1437779,
+        1454758
+      ],
+      "system": "AC",
+      "view_id": 2405314,
+      "code_note_id": 2405367,
+      "status": "model",
+      "anchor": [
+        0.5089372450641266,
+        16.26562211451726,
+        0.0
+      ],
+      "code_point": [
+        -2.0,
+        16.3,
+        0.0
+      ],
+      "view_key": "plan",
+      "id": 2321648,
+      "code": "AC-A07",
+      "kind": "fitting",
+      "diameters_mm": [
+        50.0
+      ],
+      "page": 5,
+      "box": [
+        0.17244714539780256,
+        0.7427932495288007,
+        0.055477720685028334,
+        0.012440691379419591
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "AC-A07 | Codo 90.00 grados | 50 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AC",
+      "physical_connected_ids": [
+        1437779,
+        1454758
+      ]
+    },
+    {
+      "type": "Codo 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "50x32 mm",
+      "interface": [
+        "AC"
+      ],
+      "visible_in": [
+        1445818,
+        1489196,
+        1443740
+      ],
+      "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
+      "unique_id": "7068d757-a3d9-4226-8ada-391d4af114e1-00236cf4",
+      "connected_ids": [
+        1454828,
+        1454758
+      ],
+      "system": "AC",
+      "view_id": 2405314,
+      "code_note_id": 2405369,
+      "status": "model",
+      "anchor": [
+        4.183477927478809,
+        16.265622114517175,
+        0.0
+      ],
+      "code_point": [
+        -2.0,
+        14.700000000000001,
+        0.0
+      ],
+      "view_key": "plan",
+      "id": 2321652,
+      "code": "AC-A08",
+      "kind": "fitting",
+      "diameters_mm": [
+        32.0,
+        50.0
+      ],
+      "page": 5,
+      "box": [
+        0.17244714539780256,
+        0.8150150295145708,
+        0.06087982653289663,
+        0.012440691379419591
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "AC-A08 | Codo 90.00 grados | 50x32 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AC",
+      "physical_connected_ids": [
+        1454758,
+        1454828
+      ]
+    },
+    {
+      "type": "Codo 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "32 mm",
+      "interface": [
+        "AC"
+      ],
+      "visible_in": [
+        1445818,
+        1439889,
+        1489196,
+        1443740
+      ],
+      "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
+      "unique_id": "5364294c-7216-4f8d-b4f6-1ad33687c1e9-00241a52",
+      "connected_ids": [
+        1455301,
+        1455261
+      ],
+      "system": "AC",
+      "view_id": 2405314,
+      "code_note_id": 2405375,
+      "status": "model",
+      "anchor": [
+        15.379232247984545,
+        15.248561747063102,
+        0.0
+      ],
+      "code_point": [
+        17.8,
+        18.3,
+        0.0
+      ],
+      "view_key": "plan",
+      "id": 2366034,
+      "code": "AC-A09",
+      "kind": "fitting",
+      "diameters_mm": [
+        32.0
+      ],
+      "page": 5,
+      "box": [
+        0.8036998989617412,
+        0.6525160426710328,
+        0.055384706293681946,
+        0.012440691379419591
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "AC-A09 | Codo 90.00 grados | 32 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AC",
+      "physical_connected_ids": [
+        1455261,
+        1455301
+      ]
+    },
+    {
+      "type": "Boca de acceso",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "63x40 mm",
+      "interface": [
+        "CP",
+        "CS"
+      ],
+      "visible_in": [
+        1445818,
+        1439889,
+        1489196,
+        1443740
+      ],
+      "family": "AmancoWavin_Unionesdetubería_PVCNivel1BocadeAcceso",
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001eb947",
+      "connected_ids": [
+        2019394,
+        2018290,
+        2019750
+      ],
+      "system": "CP",
+      "view_id": 2405334,
+      "code_note_id": 2405413,
+      "status": "model",
+      "anchor": [
+        11.492600833522731,
+        19.075535714689973,
+        9.843685233512412
+      ],
+      "code_point": [
+        11.492600833522719,
+        11.499999999999982,
+        9.7
+      ],
+      "view_key": "front",
+      "id": 2013511,
+      "code": "CP-A01",
+      "kind": "fitting",
+      "diameters_mm": [
+        40.0,
+        63.0
+      ],
+      "page": 6,
+      "box": [
+        0.8316759037578326,
+        0.7952298781326834,
+        0.0703820159682642,
+        0.014833915562996727
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "CP-A01 | Boca de acceso | 63x40 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Sanitary",
+      "native_type": "BAT",
+      "physical_connected_ids": [
+        2018290,
+        2019394,
+        2019750
+      ]
+    },
+    {
+      "type": "Codo 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "40 mm",
+      "interface": [
+        "CS"
+      ],
+      "visible_in": [
+        1445818,
+        1439889,
+        1489196,
+        1443740
+      ],
+      "family": "AmancoWavin_Unionesdetubería_PVCNivel1Codo",
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ec37f",
+      "connected_ids": [
+        2019066,
+        2014039
+      ],
+      "system": "CS",
+      "view_id": 2405334,
+      "code_note_id": 2405403,
+      "status": "model",
+      "anchor": [
+        11.492600833522731,
+        18.469810962542518,
+        11.646981627297416
+      ],
+      "code_point": [
+        11.492600833522719,
+        11.499999999999982,
+        13.2
+      ],
+      "view_key": "front",
+      "id": 2016127,
+      "code": "CS-A01",
+      "kind": "fitting",
+      "diameters_mm": [
+        40.0
+      ],
+      "page": 6,
+      "box": [
+        0.8316759037578326,
+        0.5946542965156263,
+        0.069198661944584,
+        0.014833843065217697
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "CS-A01 | Codo 90.00 grados | 40 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Sanitary",
+      "native_type": "CL - Secundario",
+      "physical_connected_ids": [
+        2014039,
+        2019066
+      ]
+    },
+    {
+      "type": "Codo 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "40 mm",
+      "interface": [
+        "CS"
+      ],
+      "visible_in": [
+        1445818,
+        1439889,
+        1489196,
+        1443740
+      ],
+      "family": "AmancoWavin_Unionesdetubería_PVCNivel1Codo",
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ec385",
+      "connected_ids": [
+        2014045,
+        2019054
+      ],
+      "system": "CS",
+      "view_id": 2405334,
+      "code_note_id": 2405399,
+      "status": "model",
+      "anchor": [
+        11.492600833522733,
+        19.678415441038652,
+        11.646981627298834
+      ],
+      "code_point": [
+        11.492600833522719,
+        11.499999999999982,
+        14.6
+      ],
+      "view_key": "front",
+      "id": 2016133,
+      "code": "CS-A02",
+      "kind": "fitting",
+      "diameters_mm": [
+        40.0
+      ],
+      "page": 6,
+      "box": [
+        0.8316759037578326,
+        0.5144240493692476,
+        0.06993509628333643,
+        0.014833843065217697
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "CS-A02 | Codo 90.00 grados | 40 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Sanitary",
+      "native_type": "CL - Secundario",
+      "physical_connected_ids": [
+        2014045,
+        2019054
+      ]
+    },
+    {
+      "type": "Codo 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "50 mm",
+      "interface": [
+        "CP",
+        "CS"
+      ],
+      "visible_in": [
+        1445818,
+        1439889,
+        1489196,
+        1443740
+      ],
+      "family": "AmancoWavin_Unionesdetubería_PVCNivel1Codo",
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ec4a2",
+      "connected_ids": [
+        2016410,
+        2016380
+      ],
+      "system": "CP",
+      "view_id": 2405334,
+      "code_note_id": 2405411,
+      "status": "model",
+      "anchor": [
+        11.492600833522731,
+        19.07553571468997,
+        10.810385110662073
+      ],
+      "code_point": [
+        11.492600833522719,
+        11.499999999999982,
+        10.4
+      ],
+      "view_key": "front",
+      "id": 2016418,
+      "code": "CP-A02",
+      "kind": "fitting",
+      "diameters_mm": [
+        50.0
+      ],
+      "page": 6,
+      "box": [
+        0.8316759037578326,
+        0.7551146820617151,
+        0.06983391464981016,
+        0.014833915562996727
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "CP-A02 | Codo 90.00 grados | 50 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Sanitary",
+      "native_type": "CL - Primario",
+      "physical_connected_ids": [
+        2016380,
+        2016410
+      ]
+    },
+    {
+      "type": "Codo 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "50 mm",
+      "interface": [
+        "CS"
+      ],
+      "visible_in": [
+        1445818,
+        1439889,
+        1489196,
+        1443740
+      ],
+      "family": "AmancoWavin_Unionesdetubería_PVCNivel1Codo",
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ec4b7",
+      "connected_ids": [
+        2016410,
+        2018454
+      ],
+      "system": "CP",
+      "view_id": 2405334,
+      "code_note_id": 2405407,
+      "status": "model",
+      "anchor": [
+        11.492600833522731,
+        19.07553571468997,
+        11.097334129706576
+      ],
+      "code_point": [
+        11.492600833522719,
+        11.499999999999982,
+        11.8
+      ],
+      "view_key": "front",
+      "id": 2016439,
+      "code": "CP-A03",
+      "kind": "fitting",
+      "diameters_mm": [
+        50.0
+      ],
+      "page": 6,
+      "box": [
+        0.8316759037578326,
+        0.6748845074131155,
+        0.06981701690736904,
+        0.014833915562996727
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "CP-A03 | Codo 90.00 grados | 50 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Sanitary",
+      "native_type": "CL - Primario",
+      "physical_connected_ids": [
+        2016410,
+        2018454
+      ]
+    },
+    {
+      "type": "Codo 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "40 mm",
+      "interface": [
+        "CP"
+      ],
+      "visible_in": [
+        1445818,
+        1439889,
+        1489196,
+        1443740
+      ],
+      "family": "AmancoWavin_Unionesdetubería_PVCNivel1Codo",
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001eca63",
+      "connected_ids": [
+        2016433,
+        2017883
+      ],
+      "system": "CP",
+      "view_id": 2405334,
+      "code_note_id": 2405409,
+      "status": "model",
+      "anchor": [
+        11.492600833522731,
+        19.075535714689977,
+        11.097334129706534
+      ],
+      "code_point": [
+        11.492600833522719,
+        11.499999999999982,
+        11.1
+      ],
+      "view_key": "front",
+      "id": 2017891,
+      "code": "CP-A05",
+      "kind": "fitting",
+      "diameters_mm": [
+        40.0
+      ],
+      "page": 6,
+      "box": [
+        0.8316759037578326,
+        0.7149996309863047,
+        0.07001385000416811,
+        0.014833915562996727
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "CP-A05 | Codo 90.00 grados | 40 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Sanitary",
+      "native_type": "CL - Primario",
+      "physical_connected_ids": [
+        2016433,
+        2017883
+      ]
+    },
+    {
+      "type": "Reduccion",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "63x40 mm",
+      "interface": [
+        "CP"
+      ],
+      "visible_in": [
+        1445818,
+        1439889,
+        1489196,
+        1443740
+      ],
+      "family": "AmancoWavin_Unionesdetubería_PVCNivel1Reductor",
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ecbf2",
+      "connected_ids": [
+        2017994,
+        2013511
+      ],
+      "system": "CP",
+      "view_id": 2405334,
+      "code_note_id": 2405415,
+      "status": "model",
+      "anchor": [
+        11.492600833522731,
+        19.075535714689977,
+        9.633711480231577
+      ],
+      "code_point": [
+        11.492600833522719,
+        11.499999999999982,
+        9.0
+      ],
+      "view_key": "front",
+      "id": 2018290,
+      "code": "CP-A06",
+      "kind": "fitting",
+      "diameters_mm": [
+        40.0,
+        63.0
+      ],
+      "page": 6,
+      "box": [
+        0.8316759037578326,
+        0.8353449292080937,
+        0.06164301563051417,
+        0.014833915562996727
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "CP-A06 | Reduccion | 63x40 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Sanitary",
+      "native_type": "Var.",
+      "physical_connected_ids": [
+        2013511,
+        2017994
+      ]
+    },
+    {
+      "type": "Reduccion",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "50x40 mm",
+      "interface": [
+        "CP"
+      ],
+      "visible_in": [
+        1445818,
+        1439889,
+        1489196,
+        1443740
+      ],
+      "family": "AmancoWavin_Unionesdetubería_PVCNivel1Reductor",
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ecc96",
+      "connected_ids": [
+        2016433,
+        2016439
+      ],
+      "system": "CP",
+      "view_id": 2405334,
+      "code_note_id": 2405405,
+      "status": "model",
+      "anchor": [
+        11.492600833522731,
+        19.07689209992636,
+        11.098499678178548
+      ],
+      "code_point": [
+        11.492600833522719,
+        11.499999999999982,
+        12.5
+      ],
+      "view_key": "front",
+      "id": 2018454,
+      "code": "CP-A07",
+      "kind": "fitting",
+      "diameters_mm": [
+        40.0,
+        50.0
+      ],
+      "page": 6,
+      "box": [
+        0.8316759037578326,
+        0.6347693838399261,
+        0.061842613812439974,
+        0.014833915562996727
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "CP-A07 | Reduccion | 50x40 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Sanitary",
+      "native_type": "Var.",
+      "physical_connected_ids": [
+        2016433,
+        2016439
+      ]
+    },
+    {
+      "type": "Ramal 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "40 mm",
+      "interface": [
+        "CP",
+        "CS"
+      ],
+      "visible_in": [
+        1445818,
+        1439889,
+        1489196,
+        1443740
+      ],
+      "family": "AmancoWavin_Unionesdetubería_PVCNivel1Ramal",
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ecef9",
+      "connected_ids": [
+        2019066,
+        2019054,
+        2015975
+      ],
+      "system": "CS",
+      "view_id": 2405334,
+      "code_note_id": 2405401,
+      "status": "model",
+      "anchor": [
+        11.492600833522731,
+        19.076892099926223,
+        11.646981627297457
+      ],
+      "code_point": [
+        11.492600833522719,
+        11.499999999999982,
+        13.9
+      ],
+      "view_key": "front",
+      "id": 2019065,
+      "code": "CS-A03",
+      "kind": "fitting",
+      "diameters_mm": [
+        40.0
+      ],
+      "page": 6,
+      "box": [
+        0.8316759037578326,
+        0.5545391729424369,
+        0.07299891301431352,
+        0.014833843065217697
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "CS-A03 | Ramal 90.00 grados | 40 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Sanitary",
+      "native_type": "Ramal CL",
+      "physical_connected_ids": [
+        2015975,
+        2019054,
+        2019066
+      ]
+    },
+    {
+      "type": "Codo 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "32 mm",
+      "interface": [
+        "AF"
+      ],
+      "visible_in": [
+        1445818,
+        1489196,
+        1443740
+      ],
+      "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001630d6",
+      "connected_ids": [
+        1454292
+      ],
+      "system": "AF",
+      "view_id": 2405345,
+      "code_note_id": 2406171,
+      "status": "model",
+      "anchor": [
+        3.8559504365708626,
+        27.208840970824234,
+        18.536745406824142
+      ],
+      "code_point": [
+        -1.499999999999913,
+        27.20884097082425,
+        13.8
+      ],
+      "view_key": "side",
+      "id": 1454294,
+      "code": "AF-A01",
+      "kind": "fitting",
+      "diameters_mm": [
+        32.0
+      ],
+      "page": 7,
+      "box": [
+        0.8233852056475737,
+        0.5601473836349024,
+        0.052302814098820864,
+        0.012041047372513743
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "AF-A01 | Codo 90.00 grados | 32 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AF",
+      "physical_connected_ids": [
+        1454292
+      ]
+    },
+    {
+      "type": "Codo 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "32 mm",
+      "interface": [
+        "AC"
+      ],
+      "visible_in": [
+        1445818,
+        1489196,
+        1443740
+      ],
+      "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001633db",
+      "connected_ids": [
+        1455065,
+        1454828
+      ],
+      "system": "AC",
+      "view_id": 2405345,
+      "code_note_id": 2406172,
+      "status": "model",
+      "anchor": [
+        4.183477927478841,
+        27.208840970824234,
+        18.536745406824142
+      ],
+      "code_point": [
+        -1.499999999999913,
+        27.20884097082425,
+        13.05
+      ],
+      "view_key": "side",
+      "id": 1455067,
+      "code": "AC-A01",
+      "kind": "fitting",
+      "diameters_mm": [
+        32.0
+      ],
+      "page": 7,
+      "box": [
+        0.8233852056475737,
+        0.5924774057046762,
+        0.05250999066220512,
+        0.012041047372513743
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "AC-A01 | Codo 90.00 grados | 32 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AC",
+      "physical_connected_ids": [
+        1454828,
+        1455065
+      ]
+    },
+    {
+      "type": "Codo 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "32 mm",
+      "interface": [
+        "AC"
+      ],
+      "visible_in": [
+        1445818,
+        1489196,
+        1443740
+      ],
+      "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001633df",
+      "connected_ids": [
+        1455065,
+        1455054
+      ],
+      "system": "AC",
+      "view_id": 2405345,
+      "code_note_id": 2406173,
+      "status": "model",
+      "anchor": [
+        4.183477927478844,
+        27.208840970824234,
+        11.811023622048083
+      ],
+      "code_point": [
+        -1.499999999999913,
+        27.20884097082425,
+        10.8
+      ],
+      "view_key": "side",
+      "id": 1455071,
+      "code": "AC-A02",
+      "kind": "fitting",
+      "diameters_mm": [
+        32.0
+      ],
+      "page": 7,
+      "box": [
+        0.8233852056475737,
+        0.6894674356651084,
+        0.05306403179315361,
+        0.012041011123624228
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "AC-A02 | Codo 90.00 grados | 32 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AC",
+      "physical_connected_ids": [
+        1455054,
+        1455065
+      ]
+    },
+    {
+      "type": "Codo 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "32 mm",
+      "interface": [
+        "AF"
+      ],
+      "visible_in": [
+        1445818,
+        1489196,
+        1443740
+      ],
+      "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00163b8f",
+      "connected_ids": [
+        1454292,
+        1457173
+      ],
+      "system": "AF",
+      "view_id": 2405345,
+      "code_note_id": 2406174,
+      "status": "model",
+      "anchor": [
+        3.8559504365708652,
+        27.208840970824234,
+        11.482939632547588
+      ],
+      "code_point": [
+        -1.499999999999913,
+        27.20884097082425,
+        9.3
+      ],
+      "view_key": "side",
+      "id": 1457039,
+      "code": "AF-A04",
+      "kind": "fitting",
+      "diameters_mm": [
+        32.0
+      ],
+      "page": 7,
+      "box": [
+        0.8233852056475737,
+        0.7541274798046562,
+        0.05299213957985863,
+        0.012041011123624228
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "AF-A04 | Codo 90.00 grados | 32 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AF",
+      "physical_connected_ids": [
+        1454292,
+        1457173
+      ]
+    },
+    {
+      "type": "Codo 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "32 mm",
+      "interface": [
+        "AF"
+      ],
+      "visible_in": [
+        1445818,
+        1489196,
+        1443740
+      ],
+      "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00163c20",
+      "connected_ids": [
+        1457170,
+        1457151
+      ],
+      "system": "AF",
+      "view_id": 2405345,
+      "code_note_id": 2406175,
+      "status": "model",
+      "anchor": [
+        8.90565058884651,
+        27.20884097082422,
+        13.123359580053362
+      ],
+      "code_point": [
+        -1.499999999999913,
+        27.20884097082425,
+        12.3
+      ],
+      "view_key": "side",
+      "id": 1457184,
+      "code": "AF-A06",
+      "kind": "fitting",
+      "diameters_mm": [
+        32.0
+      ],
+      "page": 7,
+      "box": [
+        0.8233852056475737,
+        0.6248073915255606,
+        0.052797559515385034,
+        0.012041011123624228
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "AF-A06 | Codo 90.00 grados | 32 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AF",
+      "physical_connected_ids": [
+        1457151,
+        1457170
+      ]
+    },
+    {
+      "type": "Codo 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "50 mm",
+      "interface": [],
+      "visible_in": [
+        1445818,
+        1439889,
+        1489196,
+        1443740
+      ],
+      "family": "AmancoWavin_Unionesdetubería_PVCNivel1Codo",
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ec4ec",
+      "connected_ids": [],
+      "system": "CP",
+      "view_id": 2405345,
+      "code_note_id": 2405353,
+      "status": "check_connection",
+      "anchor": [
+        14.13165787787272,
+        27.2088409708242,
+        10.81155065913428
+      ],
+      "code_point": [
+        22.000000000000085,
+        27.208840970824177,
+        12.2
+      ],
+      "view_key": "side",
+      "id": 2016492,
+      "code": "CP-A04",
+      "kind": "fitting",
+      "diameters_mm": [
+        50.0
+      ],
+      "page": 7,
+      "box": [
+        0.10789694998821255,
+        0.6291181094667165,
+        0.07923930050310211,
+        0.012041011123624228
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "CP-A04 | Codo 90.00 grados | 50 mm [revisar conexion]",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Sanitary",
+      "native_type": "CL - Primario",
+      "physical_connected_ids": []
+    },
+    {
+      "type": "Codo 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "32 mm",
+      "interface": [
+        "AF"
+      ],
+      "visible_in": [
+        1445818,
+        1489196,
+        1443740
+      ],
+      "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
+      "unique_id": "5364294c-7216-4f8d-b4f6-1ad33687c1e9-00241c35",
+      "connected_ids": [
+        1456739,
+        1454439
+      ],
+      "system": "AF",
+      "view_id": 2405345,
+      "code_note_id": 2406176,
+      "status": "model",
+      "anchor": [
+        9.288533345200236,
+        27.208840970824216,
+        11.48293966651479
+      ],
+      "code_point": [
+        -1.499999999999913,
+        27.20884097082425,
+        10.05
+      ],
+      "view_key": "side",
+      "id": 2366517,
+      "code": "AF-A12",
+      "kind": "fitting",
+      "diameters_mm": [
+        32.0
+      ],
+      "page": 7,
+      "box": [
+        0.8233852056475737,
+        0.7217974577348822,
+        0.05223942196202657,
+        0.012041011123624228
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "AF-A12 | Codo 90.00 grados | 32 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AF",
+      "physical_connected_ids": [
+        1454439,
+        1456739
+      ]
+    },
+    {
+      "type": "Codo 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "32 mm",
+      "interface": [
+        "AC"
+      ],
+      "visible_in": [
+        1445818,
+        1489196,
+        1443740
+      ],
+      "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
+      "unique_id": "5364294c-7216-4f8d-b4f6-1ad33687c1e9-00241c46",
+      "connected_ids": [
+        1455129,
+        1455054
+      ],
+      "system": "AC",
+      "view_id": 2405345,
+      "code_note_id": 2406177,
+      "status": "model",
+      "anchor": [
+        9.539337234861238,
+        27.208840970824216,
+        11.811023622048117
+      ],
+      "code_point": [
+        -1.499999999999913,
+        27.20884097082425,
+        11.55
+      ],
+      "view_key": "side",
+      "id": 2366534,
+      "code": "AC-A10",
+      "kind": "fitting",
+      "diameters_mm": [
+        32.0
+      ],
+      "page": 7,
+      "box": [
+        0.8233852056475737,
+        0.6571374860931135,
+        0.05250999066220512,
+        0.012041011123624228
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "AC-A10 | Codo 90.00 grados | 32 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AC",
+      "physical_connected_ids": [
+        1455054,
+        1455129
+      ]
+    },
+    {
+      "mode": "pipes",
+      "type": "AmancoWavin AF",
+      "size": "32 mm\\xf8",
+      "system": "AF",
+      "page": 0,
+      "family": "AmancoWavin AF",
+      "length_m": 1.8214450255686503,
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001630e0",
+      "status": "model",
+      "view_key": "axon",
+      "id": 1454304,
+      "code": "AF-V01",
+      "diameter_mm": 32.0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "kind": "pipe",
+      "source": "axon-visible-r8",
+      "view_id": 2406180,
+      "classification_basis": "Tipo y conexiones revisados en Revit; geometría conservada.",
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AmancoWavin AF",
+      "physical_connected_ids": [
+        2366373,
+        2366530
+      ]
+    },
+    {
+      "mode": "pipes",
+      "type": "AmancoWavin AC",
+      "size": "32 mm\\xf8",
+      "system": "AC",
+      "page": 0,
+      "family": "AmancoWavin AC",
+      "length_m": 1.7449999999999883,
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00163423",
+      "status": "model",
+      "view_key": "axon",
+      "id": 1455139,
+      "code": "AC-V01",
+      "diameter_mm": 32.0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "kind": "pipe",
+      "source": "axon-visible-r8",
+      "view_id": 2406180,
+      "classification_basis": "Tipo y conexiones revisados en Revit; geometría conservada.",
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AmancoWavin AC",
+      "physical_connected_ids": [
+        1455263,
+        2366472
+      ]
+    },
+    {
+      "mode": "pipes",
+      "type": "AmancoWavin AC",
+      "size": "32 mm\\xf8",
+      "system": "AC",
+      "page": 0,
+      "family": "AmancoWavin AC",
+      "length_m": 0.02294656488549836,
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00163771",
+      "status": "model",
+      "view_key": "axon",
+      "id": 1455985,
+      "code": "AC-V02",
+      "diameter_mm": 32.0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "kind": "pipe",
+      "source": "axon-visible-r8",
+      "view_id": 2406180,
+      "classification_basis": "Tipo y conexiones revisados en Revit; geometría conservada.",
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AmancoWavin AC",
+      "physical_connected_ids": [
+        2366551
+      ]
+    },
+    {
+      "mode": "pipes",
+      "type": "AmancoWavin AC",
+      "size": "32 mm\\xf8",
+      "system": "AC",
+      "page": 0,
+      "family": "AmancoWavin AC",
+      "length_m": 0.05,
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00163806",
+      "status": "model",
+      "view_key": "axon",
+      "id": 1456134,
+      "code": "AC-V03",
+      "diameter_mm": 32.0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "kind": "pipe",
+      "source": "axon-visible-r8",
+      "view_id": 2406180,
+      "classification_basis": "Tipo y conexiones revisados en Revit; geometría conservada.",
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AmancoWavin AC",
+      "physical_connected_ids": [
+        2366472
+      ]
+    },
+    {
+      "mode": "pipes",
+      "type": "AmancoWavin CL - Secundario",
+      "size": "40 mm\\xf8",
+      "system": "CS",
+      "page": 0,
+      "family": "AmancoWavin CL - Secundario",
+      "length_m": 0.04120000000002312,
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ed052",
+      "status": "model",
+      "view_key": "axon",
+      "id": 2019410,
+      "code": "CS-V01",
+      "diameter_mm": 40.0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "kind": "pipe",
+      "source": "axon-visible-r8",
+      "view_id": 2406180,
+      "classification_basis": "Tipo y conexiones revisados en Revit; geometría conservada.",
+      "native_system_classification": "Sanitary",
+      "native_type": "AmancoWavin CL - Secundario",
+      "physical_connected_ids": [
+        2019413
+      ]
+    },
+    {
+      "mode": "pipes",
+      "type": "AmancoWavin CL - Primario",
+      "size": "63 mm\\xf8",
+      "system": "CP",
+      "page": 0,
+      "family": "AmancoWavin CL - Primario",
+      "length_m": 0.0906034614265359,
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ed19a",
+      "status": "model",
+      "view_key": "axon",
+      "id": 2019738,
+      "code": "CP-V01",
+      "diameter_mm": 63.0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "kind": "pipe",
+      "source": "axon-visible-r8",
+      "view_id": 2406180,
+      "classification_basis": "Tipo y conexiones revisados en Revit; geometría conservada.",
+      "native_system_classification": "Sanitary",
+      "native_type": "AmancoWavin CL - Primario",
+      "physical_connected_ids": [
+        2019752,
+        2019764
+      ]
+    },
+    {
+      "mode": "pipes",
+      "type": "AmancoWavin CL - Primario",
+      "size": "63 mm\\xf8",
+      "system": "CP",
+      "page": 0,
+      "family": "AmancoWavin CL - Primario",
+      "length_m": 2.9578523015928835,
+      "unique_id": "a01bcada-8695-44d8-a949-29ca27694445-0020032b",
+      "status": "model",
+      "view_key": "axon",
+      "id": 2097963,
+      "code": "CP-V02",
+      "diameter_mm": 63.0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "kind": "pipe",
+      "source": "axon-visible-r8",
+      "view_id": 2406180,
+      "classification_basis": "Tipo y conexiones revisados en Revit; geometría conservada.",
+      "native_system_classification": "Sanitary",
+      "native_type": "AmancoWavin CL - Primario",
+      "physical_connected_ids": []
+    },
+    {
+      "mode": "accessories",
+      "type": "Codo 90.00 grados",
+      "size": "32 mm",
+      "system": "AC",
+      "page": 0,
+      "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
+      "length_m": 0,
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-0016349f",
+      "status": "model",
+      "view_key": "axon",
+      "id": 1455263,
+      "code": "AC-V04",
+      "diameter_mm": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "kind": "fitting",
+      "source": "axon-visible-r8",
+      "view_id": 2406180,
+      "diameters_mm": [
+        32.0
+      ],
+      "classification_basis": "Tipo y conexiones revisados en Revit; geometría conservada.",
+      "native_system_classification": "Domestic Cold Water,Domestic Hot Water",
+      "native_type": "AC",
+      "physical_connected_ids": [
+        1455139
+      ]
+    },
+    {
+      "mode": "accessories",
+      "type": "Codo 90.00 grados",
+      "size": "32 mm",
+      "system": "AC",
+      "page": 0,
+      "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
+      "length_m": 0,
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00163908",
+      "status": "check_connection",
+      "view_key": "axon",
+      "id": 1456392,
+      "code": "AC-V05",
+      "diameter_mm": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "kind": "fitting",
+      "source": "axon-visible-r8",
+      "view_id": 2406180,
+      "diameters_mm": [
+        32.0
+      ],
+      "classification_basis": "Tipo y conexiones revisados en Revit; geometría conservada.",
+      "native_system_classification": "Undefined",
+      "native_type": "AC",
+      "physical_connected_ids": [],
+      "classification_note": "Codo AC sin conexiones físicas. Incluido como pieza modelada; no equivale a una instalación conectada."
+    },
+    {
+      "mode": "accessories",
+      "type": "Codo 90.00 grados",
+      "size": "40 mm",
+      "system": "CP",
+      "page": 0,
+      "family": "AmancoWavin_Unionesdetubería_PVCNivel1Codo",
+      "length_m": 0,
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ecbec",
+      "status": "model",
+      "view_key": "axon",
+      "id": 2018284,
+      "code": "CP-V03",
+      "diameter_mm": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "kind": "fitting",
+      "source": "axon-visible-r8",
+      "view_id": 2406180,
+      "diameters_mm": [
+        40.0
+      ],
+      "classification_basis": "Tipo y conexiones revisados en Revit; geometría conservada.",
+      "native_system_classification": "Sanitary",
+      "native_type": "CL - Primario",
+      "physical_connected_ids": [
+        2017883,
+        2017994
+      ]
+    },
+    {
+      "mode": "accessories",
+      "type": "Codo 90.00 grados",
+      "size": "40 mm",
+      "system": "CS",
+      "page": 0,
+      "family": "AmancoWavin_Unionesdetubería_PVCNivel1Codo",
+      "length_m": 0,
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ed055",
+      "status": "model",
+      "view_key": "axon",
+      "id": 2019413,
+      "code": "CS-V02",
+      "diameter_mm": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "kind": "fitting",
+      "source": "axon-visible-r8",
+      "view_id": 2406180,
+      "diameters_mm": [
+        40.0
+      ],
+      "classification_basis": "Tipo y conexiones revisados en Revit; geometría conservada.",
+      "native_system_classification": "Sanitary",
+      "native_type": "CL - Secundario",
+      "physical_connected_ids": [
+        2019394,
+        2019410
+      ]
+    },
+    {
+      "mode": "accessories",
+      "type": "Codo 90.00 grados",
+      "size": "63 mm",
+      "system": "CP",
+      "page": 0,
+      "family": "AmancoWavin_Unionesdetubería_PVCNivel1Codo",
+      "length_m": 0,
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ed1a8",
+      "status": "model",
+      "view_key": "axon",
+      "id": 2019752,
+      "code": "CP-V04",
+      "diameter_mm": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "kind": "fitting",
+      "source": "axon-visible-r8",
+      "view_id": 2406180,
+      "diameters_mm": [
+        63.0
+      ],
+      "classification_basis": "Tipo y conexiones revisados en Revit; geometría conservada.",
+      "native_system_classification": "Sanitary",
+      "native_type": "CL - Primario",
+      "physical_connected_ids": [
+        2019738,
+        2019750
+      ]
+    },
+    {
+      "mode": "accessories",
+      "type": "Codo 90.00 grados",
+      "size": "63 mm",
+      "system": "CP",
+      "page": 0,
+      "family": "AmancoWavin_Unionesdetubería_PVCNivel1Codo",
+      "length_m": 0,
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ed1b4",
+      "status": "model",
+      "view_key": "axon",
+      "id": 2019764,
+      "code": "CP-V05",
+      "diameter_mm": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "kind": "fitting",
+      "source": "axon-visible-r8",
+      "view_id": 2406180,
+      "previous_code": "OT-V01",
+      "diameters_mm": [
+        63.0
+      ],
+      "classification_basis": "Tipo y conexiones revisados en Revit; geometría conservada.",
+      "native_system_classification": "Sanitary",
+      "native_type": "CL - Primario",
+      "physical_connected_ids": [
+        2019738
+      ]
+    },
+    {
+      "mode": "accessories",
+      "type": "Codo 90.00 grados",
+      "size": "32 mm",
+      "system": "AF",
+      "page": 0,
+      "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
+      "length_m": 0,
+      "unique_id": "5364294c-7216-4f8d-b4f6-1ad33687c1e9-00241ba5",
+      "status": "model",
+      "view_key": "axon",
+      "id": 2366373,
+      "code": "AF-V02",
+      "diameter_mm": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "kind": "fitting",
+      "source": "axon-visible-r8",
+      "view_id": 2406180,
+      "diameters_mm": [
+        32.0
+      ],
+      "classification_basis": "Tipo y conexiones revisados en Revit; geometría conservada.",
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AF",
+      "physical_connected_ids": [
+        1454304,
+        1454558
+      ]
+    },
+    {
+      "mode": "accessories",
+      "type": "Codo 90.00 grados",
+      "size": "32 mm",
+      "system": "AC",
+      "page": 0,
+      "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
+      "length_m": 0,
+      "unique_id": "5364294c-7216-4f8d-b4f6-1ad33687c1e9-00241c08",
+      "status": "model",
+      "view_key": "axon",
+      "id": 2366472,
+      "code": "AC-V06",
+      "diameter_mm": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "kind": "fitting",
+      "source": "axon-visible-r8",
+      "view_id": 2406180,
+      "diameters_mm": [
+        32.0
+      ],
+      "classification_basis": "Tipo y conexiones revisados en Revit; geometría conservada.",
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AC",
+      "physical_connected_ids": [
+        1455139,
+        1456134
+      ]
+    },
+    {
+      "mode": "accessories",
+      "type": "Codo 90.00 grados",
+      "size": "32 mm",
+      "system": "AF",
+      "page": 0,
+      "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
+      "length_m": 0,
+      "unique_id": "5364294c-7216-4f8d-b4f6-1ad33687c1e9-00241c42",
+      "status": "model",
+      "view_key": "axon",
+      "id": 2366530,
+      "code": "AF-V03",
+      "diameter_mm": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "kind": "fitting",
+      "source": "axon-visible-r8",
+      "view_id": 2406180,
+      "diameters_mm": [
+        32.0
+      ],
+      "classification_basis": "Tipo y conexiones revisados en Revit; geometría conservada.",
+      "native_system_classification": "Domestic Cold Water",
+      "native_type": "AF",
+      "physical_connected_ids": [
+        1454304,
+        1454439
+      ]
+    },
+    {
+      "mode": "accessories",
+      "type": "Codo 90.00 grados",
+      "size": "32 mm",
+      "system": "AC",
+      "page": 0,
+      "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
+      "length_m": 0,
+      "unique_id": "5364294c-7216-4f8d-b4f6-1ad33687c1e9-00241c57",
+      "status": "model",
+      "view_key": "axon",
+      "id": 2366551,
+      "code": "AC-V07",
+      "diameter_mm": 0,
+      "box": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "kind": "fitting",
+      "source": "axon-visible-r8",
+      "view_id": 2406180,
+      "diameters_mm": [
+        32.0
+      ],
+      "classification_basis": "Tipo y conexiones revisados en Revit; geometría conservada.",
+      "native_system_classification": "Domestic Hot Water",
+      "native_type": "AC",
+      "physical_connected_ids": [
+        1455129,
+        1455985
+      ]
+    }
+  ],
+  "quantities": [
+    {
+      "system": "AC",
+      "type": "AmancoWavin AC",
+      "family": "AmancoWavin AC",
+      "size": "50 mm",
+      "quantity": 5.022014647586707,
+      "unit": "m",
+      "alerts": 0,
+      "codes": [
+        "AC-T01",
+        "AC-T02"
+      ]
+    },
+    {
+      "system": "AF",
+      "type": "AmancoWavin AF",
+      "family": "AmancoWavin AF",
+      "size": "50 mm",
+      "quantity": 5.0107086038448765,
+      "unit": "m",
+      "alerts": 0,
+      "codes": [
+        "AF-T01",
+        "AF-T02"
+      ]
+    },
+    {
+      "system": "AC",
+      "type": "AmancoWavin AC",
+      "family": "AmancoWavin AC",
+      "size": "32 mm",
+      "quantity": 9.565000401615185,
+      "unit": "m",
+      "alerts": 0,
+      "codes": [
+        "AC-T04",
+        "AC-T10",
+        "AC-T12",
+        "AC-T03",
+        "AC-T09",
+        "AC-T08",
+        "AC-T07",
+        "AC-T11",
+        "AC-T05",
+        "AC-T06",
+        "AC-V01",
+        "AC-V02",
+        "AC-V03"
+      ]
+    },
+    {
+      "system": "AF",
+      "type": "AmancoWavin AF",
+      "family": "AmancoWavin AF",
+      "size": "32 mm",
+      "quantity": 9.840232467771832,
+      "unit": "m",
+      "alerts": 0,
+      "codes": [
+        "AF-T13",
+        "AF-T14",
+        "AF-T05",
+        "AF-T15",
+        "AF-T08",
+        "AF-T07",
+        "AF-T10",
+        "AF-T11",
+        "AF-T06",
+        "AF-T09",
+        "AF-T03",
+        "AF-T04",
+        "AF-T12",
+        "AF-V01"
+      ]
+    },
+    {
+      "system": "CP",
+      "type": "AmancoWavin CL - Primario",
+      "family": "AmancoWavin CL - Primario",
+      "size": "40 mm",
+      "quantity": 0.8195158372207206,
+      "unit": "m",
+      "alerts": 0,
+      "codes": [
+        "CP-T03",
+        "CP-T04",
+        "CP-T01",
+        "CP-T05"
+      ]
+    },
+    {
+      "system": "CS",
+      "type": "AmancoWavin CL - Secundario",
+      "family": "AmancoWavin CL - Secundario",
+      "size": "40 mm",
+      "quantity": 0.8335688573013808,
+      "unit": "m",
+      "alerts": 0,
+      "codes": [
+        "CS-T05",
+        "CS-T04",
+        "CS-T02",
+        "CS-T01",
+        "CS-T06",
+        "CS-V01"
+      ]
+    },
+    {
+      "system": "CP",
+      "type": "AmancoWavin CL - Primario",
+      "family": "AmancoWavin CL - Primario",
+      "size": "50 mm",
+      "quantity": 0.025871276715367056,
+      "unit": "m",
+      "alerts": 0,
+      "codes": [
+        "CP-T02"
+      ]
+    },
+    {
+      "system": "CS",
+      "type": "AmancoWavin CL - Secundario",
+      "family": "AmancoWavin CL - Secundario",
+      "size": "50 mm",
+      "quantity": 0.033802061004752686,
+      "unit": "m",
+      "alerts": 0,
+      "codes": [
+        "CS-T03"
+      ]
+    },
+    {
+      "system": "CP",
+      "type": "AmancoWavin CL - Primario",
+      "family": "AmancoWavin CL - Primario",
+      "size": "63 mm",
+      "quantity": 3.0738554896594144,
+      "unit": "m",
+      "alerts": 0,
+      "codes": [
+        "CP-T06",
+        "CP-V01",
+        "CP-V02"
+      ]
+    },
+    {
+      "system": "AF",
+      "type": "Codo 90.00 grados",
+      "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
+      "size": "32 mm",
+      "quantity": 9,
+      "unit": "un.",
+      "alerts": 0,
+      "codes": [
+        "AF-A02",
+        "AF-A07",
+        "AF-A09",
+        "AF-A01",
+        "AF-A04",
+        "AF-A06",
+        "AF-A12",
+        "AF-V02",
+        "AF-V03"
+      ]
+    },
+    {
+      "system": "AF",
+      "type": "Valvula esferica union-fusion",
+      "family": "AmancoWavin_Unionesdetubería_FusiónPPRUniónFusión",
+      "size": "32 mm",
+      "quantity": 1,
+      "unit": "un.",
+      "alerts": 1,
+      "codes": [
+        "AF-A03"
+      ]
+    },
+    {
+      "system": "AC",
+      "type": "Valvula esferica union-fusion",
+      "family": "AmancoWavin_Unionesdetubería_FusiónPPRUniónFusión",
+      "size": "32 mm",
+      "quantity": 1,
+      "unit": "un.",
+      "alerts": 1,
+      "codes": [
+        "AC-A03"
+      ]
+    },
+    {
+      "system": "AF",
+      "type": "Tee 90.00 grados",
+      "family": "AmancoWavin_Unionesdetubería_FusiónPPRTee",
+      "size": "32 mm",
+      "quantity": 2,
+      "unit": "un.",
+      "alerts": 0,
+      "codes": [
+        "AF-A05",
+        "AF-A08"
+      ]
+    },
+    {
+      "system": "AC",
+      "type": "Codo 90.00 grados",
+      "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
+      "size": "32 mm",
+      "quantity": 10,
+      "unit": "un.",
+      "alerts": 1,
+      "codes": [
+        "AC-A04",
+        "AC-A05",
+        "AC-A09",
+        "AC-A01",
+        "AC-A02",
+        "AC-A10",
+        "AC-V04",
+        "AC-V05",
+        "AC-V06",
+        "AC-V07"
+      ]
+    },
+    {
+      "system": "AC",
+      "type": "Tee 90.00 grados",
+      "family": "AmancoWavin_Unionesdetubería_FusiónPPRTee",
+      "size": "32 mm",
+      "quantity": 1,
+      "unit": "un.",
+      "alerts": 0,
+      "codes": [
+        "AC-A06"
+      ]
+    },
+    {
+      "system": "AF",
+      "type": "Codo 90.00 grados",
+      "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
+      "size": "50 mm",
+      "quantity": 1,
+      "unit": "un.",
+      "alerts": 0,
+      "codes": [
+        "AF-A10"
+      ]
+    },
+    {
+      "system": "AF",
+      "type": "Codo 90.00 grados",
+      "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
+      "size": "50x32 mm",
+      "quantity": 1,
+      "unit": "un.",
+      "alerts": 0,
+      "codes": [
+        "AF-A11"
+      ]
+    },
+    {
+      "system": "AC",
+      "type": "Codo 90.00 grados",
+      "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
+      "size": "50 mm",
+      "quantity": 1,
+      "unit": "un.",
+      "alerts": 0,
+      "codes": [
+        "AC-A07"
+      ]
+    },
+    {
+      "system": "AC",
+      "type": "Codo 90.00 grados",
+      "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
+      "size": "50x32 mm",
+      "quantity": 1,
+      "unit": "un.",
+      "alerts": 0,
+      "codes": [
+        "AC-A08"
+      ]
+    },
+    {
+      "system": "CP",
+      "type": "Boca de acceso",
+      "family": "AmancoWavin_Unionesdetubería_PVCNivel1BocadeAcceso",
+      "size": "63x40 mm",
+      "quantity": 1,
+      "unit": "un.",
+      "alerts": 0,
+      "codes": [
+        "CP-A01"
+      ]
+    },
+    {
+      "system": "CS",
+      "type": "Codo 90.00 grados",
+      "family": "AmancoWavin_Unionesdetubería_PVCNivel1Codo",
+      "size": "40 mm",
+      "quantity": 3,
+      "unit": "un.",
+      "alerts": 0,
+      "codes": [
+        "CS-A01",
+        "CS-A02",
+        "CS-V02"
+      ]
+    },
+    {
+      "system": "CP",
+      "type": "Codo 90.00 grados",
+      "family": "AmancoWavin_Unionesdetubería_PVCNivel1Codo",
+      "size": "50 mm",
+      "quantity": 3,
+      "unit": "un.",
+      "alerts": 1,
+      "codes": [
+        "CP-A02",
+        "CP-A03",
+        "CP-A04"
+      ]
+    },
+    {
+      "system": "CP",
+      "type": "Codo 90.00 grados",
+      "family": "AmancoWavin_Unionesdetubería_PVCNivel1Codo",
+      "size": "40 mm",
+      "quantity": 2,
+      "unit": "un.",
+      "alerts": 0,
+      "codes": [
+        "CP-A05",
+        "CP-V03"
+      ]
+    },
+    {
+      "system": "CP",
+      "type": "Reduccion",
+      "family": "AmancoWavin_Unionesdetubería_PVCNivel1Reductor",
+      "size": "63x40 mm",
+      "quantity": 1,
+      "unit": "un.",
+      "alerts": 0,
+      "codes": [
+        "CP-A06"
+      ]
+    },
+    {
+      "system": "CP",
+      "type": "Reduccion",
+      "family": "AmancoWavin_Unionesdetubería_PVCNivel1Reductor",
+      "size": "50x40 mm",
+      "quantity": 1,
+      "unit": "un.",
+      "alerts": 0,
+      "codes": [
+        "CP-A07"
+      ]
+    },
+    {
+      "system": "CS",
+      "type": "Ramal 90.00 grados",
+      "family": "AmancoWavin_Unionesdetubería_PVCNivel1Ramal",
+      "size": "40 mm",
+      "quantity": 1,
+      "unit": "un.",
+      "alerts": 0,
+      "codes": [
+        "CS-A03"
+      ]
+    },
+    {
+      "system": "CP",
+      "type": "Codo 90.00 grados",
+      "family": "AmancoWavin_Unionesdetubería_PVCNivel1Codo",
+      "size": "63 mm",
+      "quantity": 2,
+      "unit": "un.",
+      "alerts": 0,
+      "codes": [
+        "CP-V04",
+        "CP-V05"
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 1454296
+    },
+    {
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 1454566
+    },
+    {
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 1455069
+    },
+    {
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 1455073
+    },
+    {
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 1457041
+    },
+    {
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 1457176
+    },
+    {
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 1457178
+    },
+    {
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 1457180
+    },
+    {
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 1457182
+    },
+    {
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 1457186
+    },
+    {
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 1488186
+    },
+    {
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 1488346
+    },
+    {
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 1488358
+    },
+    {
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 1488360
+    },
+    {
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 1488362
+    },
+    {
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 1488364
+    },
+    {
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 1488420
+    },
+    {
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 1488432
+    },
+    {
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 1488434
+    },
+    {
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 1488436
+    },
+    {
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 1488438
+    },
+    {
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 2012175
+    },
+    {
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 2016129
+    },
+    {
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 2016135
+    },
+    {
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 2016431
+    },
+    {
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 2016441
+    },
+    {
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 2016494
+    },
+    {
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 2017893
+    },
+    {
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 2018292
+    },
+    {
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 2018470
+    },
+    {
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 2018472
+    },
+    {
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 2019069
+    },
+    {
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 2019071
+    },
+    {
+      "reason": "Receptaculo de ducha fuera del ambiente cocina",
+      "id": 2069396
+    },
+    {
+      "reason": "Calefaccion / termostato",
+      "id": 2313711
+    },
+    {
+      "reason": "Calefaccion / termostato",
+      "id": 2313754
+    },
+    {
+      "reason": "Calefaccion / termostato",
+      "id": 2315455
+    },
+    {
+      "reason": "Calefaccion / termostato",
+      "id": 2315527
+    },
+    {
+      "reason": "Calefaccion / termostato",
+      "id": 2315983
+    },
+    {
+      "reason": "Calefaccion / termostato",
+      "id": 2316101
+    },
+    {
+      "reason": "Calefaccion / termostato",
+      "id": 2316570
+    },
+    {
+      "reason": "Calefaccion / termostato",
+      "id": 2316683
+    },
+    {
+      "reason": "Calefaccion / termostato",
+      "id": 2318292
+    },
+    {
+      "reason": "Calefaccion / termostato",
+      "id": 2318319
+    },
+    {
+      "reason": "Calefaccion / termostato",
+      "id": 2318588
+    },
+    {
+      "reason": "Calefaccion / termostato",
+      "id": 2318648
+    },
+    {
+      "reason": "Calefaccion / termostato",
+      "id": 2320941
+    },
+    {
+      "reason": "Calefaccion / termostato",
+      "id": 2320973
+    },
+    {
+      "reason": "Calefaccion / termostato",
+      "id": 2321218
+    },
+    {
+      "reason": "Calefaccion / termostato",
+      "id": 2321220
+    },
+    {
+      "reason": "Calefaccion / termostato",
+      "id": 2321259
+    },
+    {
+      "reason": "Calefaccion / termostato",
+      "id": 2321261
+    },
+    {
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 2321552
+    },
+    {
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 2321598
+    },
+    {
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 2321650
+    },
+    {
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 2321654
+    },
+    {
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 2366036
+    },
+    {
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 2366526
+    },
+    {
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 2366536
+    },
+    {
+      "reason": "Calefaccion / termostato",
+      "id": 2322733
+    },
+    {
+      "reason": "Calefaccion / termostato",
+      "id": 2342530
+    },
+    {
+      "reason": "Calefaccion / termostato",
+      "id": 2342544
+    }
+  ],
+  "summary": {
+    "excluded": 62,
+    "connection_alerts": [
+      "AF-A03",
+      "AC-A03",
+      "CP-A04",
+      "AC-V05"
+    ],
+    "pdf_exported": true,
+    "fittings": 42,
+    "pipes": 46,
+    "unique_elements": 88,
+    "added_elements": 17,
+    "geometry_unchanged": true
+  },
+  "classification_review": {
+    "hot_water_networks_corrected": 3,
+    "fitting_type_corrected": "CP-V05",
+    "previous_code": "OT-V01",
+    "pending_native_classification": [
+      "AC-A03"
+    ],
+    "note": "Inventario completo del alcance visible de Cocina. No certifica continuidad hidráulica ni cantidades de compra."
+  }
+}
