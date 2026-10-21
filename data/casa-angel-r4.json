@@ -3,3304 +3,3661 @@
   "font": "Bahnschrift SB Condensed ADER",
   "views": [
     {
-      "id": 2404690,
+      "mode": "pipes",
       "name": "ADER SAN - PILOTO COCINA - PLANTA",
       "source_id": 1445818,
       "key": "plan",
-      "mode": "pipes",
+      "id": 2404690,
       "page": 1,
-      "image": "/casa-angel/r4/plan-pipes.webp"
+      "image": "/casa-angel/r4/plan-pipes.svg"
     },
     {
-      "id": 2404710,
+      "mode": "pipes",
       "name": "ADER SAN - PILOTO COCINA - CORTE AA",
       "source_id": 1439889,
       "key": "front",
-      "mode": "pipes",
+      "id": 2404710,
       "page": 2,
-      "image": "/casa-angel/r4/front-pipes.webp"
+      "image": "/casa-angel/r4/front-pipes.svg"
     },
     {
-      "id": 2404721,
+      "mode": "pipes",
       "name": "ADER SAN - PILOTO COCINA - CORTE BB",
       "source_id": 1489196,
       "key": "side",
-      "mode": "pipes",
+      "id": 2404721,
       "page": 3,
-      "image": "/casa-angel/r4/side-pipes.webp"
+      "image": "/casa-angel/r4/side-pipes.svg"
     },
     {
-      "id": 2405419,
+      "mode": "overview",
       "name": "ADER SAN - COCINA - AXONOMETRICA CONTROL",
       "source_id": 1443740,
       "key": "axon",
-      "mode": "overview",
+      "id": 2405419,
       "page": 4,
       "image": "/casa-angel/r4/axon-overview.webp"
     },
     {
-      "id": 2405314,
+      "mode": "accessories",
       "name": "ADER SAN - COCINA - ACCESORIOS - PLAN",
       "source_id": 1445818,
       "key": "plan",
-      "mode": "accessories",
+      "id": 2405314,
       "page": 5,
-      "image": "/casa-angel/r4/plan-accessories.webp"
+      "image": "/casa-angel/r4/plan-accessories.svg"
     },
     {
-      "id": 2405334,
+      "mode": "accessories",
       "name": "ADER SAN - COCINA - ACCESORIOS - FRONT",
       "source_id": 1439889,
       "key": "front",
-      "mode": "accessories",
+      "id": 2405334,
       "page": 6,
-      "image": "/casa-angel/r4/front-accessories.webp"
+      "image": "/casa-angel/r4/front-accessories.svg"
     },
     {
-      "id": 2405345,
+      "mode": "accessories",
       "name": "ADER SAN - COCINA - ACCESORIOS - SIDE",
       "source_id": 1489196,
       "key": "side",
-      "mode": "accessories",
+      "id": 2405345,
       "page": 7,
-      "image": "/casa-angel/r4/side-accessories.webp"
+      "image": "/casa-angel/r4/side-accessories.svg"
     }
   ],
   "items": [
     {
-      "view_id": 2404690,
-      "code_note_id": 2405242,
-      "id": 1437779,
-      "view_key": "plan",
-      "status": "model",
-      "unique_id": "d9dd681d-281d-46bc-8ccf-4bcf7888718f-0015f053",
-      "code": "AC-T01",
-      "kind": "pipe",
-      "code_point": [
-        0.60912833799212,
-        23.114486049505814,
-        0.0
-      ],
-      "reference_line": false,
-      "diameter_mm": 50.0,
       "type": "AmancoWavin AC",
+      "mode": "pipes",
+      "reference_line": false,
+      "r6_code_offset": true,
       "visible_in": [
         1445818,
         1489196,
         1443740
       ],
-      "tag_id": 2404729,
       "system": "AC",
-      "mode": "pipes",
+      "unique_id": "d9dd681d-281d-46bc-8ccf-4bcf7888718f-0015f053",
       "length_m": 3.9569146475867103,
+      "view_id": 2404690,
+      "code_note_id": 2405242,
+      "status": "model",
       "anchor": [
         0.5089372450641252,
         22.84520651016479,
         0.0
       ],
-      "page": 1,
-      "box": [
-        0.2362812605674897,
-        0.4704435050725971,
-        0.010402275849398308,
-        0.0033862217318472447
-      ],
-      "size": "",
-      "interface": []
-    },
-    {
-      "view_id": 2404690,
-      "code_note_id": 2405243,
-      "id": 1438638,
-      "view_key": "plan",
-      "status": "model",
-      "unique_id": "d9dd681d-281d-46bc-8ccf-4bcf7888718f-0015f3ae",
-      "code": "AF-T01",
-      "kind": "pipe",
       "code_point": [
-        0.28288495643279,
-        22.834114252897585,
+        0.60912833799212,
+        23.114486049505814,
         0.0
       ],
-      "reference_line": false,
+      "view_key": "plan",
+      "id": 1437779,
+      "code": "AC-T01",
+      "kind": "pipe",
       "diameter_mm": 50.0,
+      "tag_id": 2404729,
+      "page": 1,
+      "box": [
+        0.21227248725961426,
+        0.45539374776253727,
+        0.019196373068562436,
+        0.05420089830548041
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "PPR.2 ø50 mm- 3.96 m",
+      "label_direction": [
+        0.0,
+        -1.0
+      ]
+    },
+    {
       "type": "AmancoWavin AF",
+      "mode": "pipes",
+      "reference_line": false,
+      "r6_code_offset": true,
       "visible_in": [
         1445818,
         1489196,
         1443740
       ],
-      "tag_id": 2404730,
       "system": "AF",
-      "mode": "pipes",
+      "unique_id": "d9dd681d-281d-46bc-8ccf-4bcf7888718f-0015f3ae",
       "length_m": 3.94600000037435,
+      "view_id": 2404690,
+      "code_note_id": 2405243,
+      "status": "model",
       "anchor": [
         0.1826938635047953,
         22.564834713556557,
         0.0
       ],
-      "page": 1,
-      "box": [
-        0.22504533715502234,
-        0.48415550391176265,
-        0.010048293747896743,
-        0.00334558559392283
-      ],
-      "size": "",
-      "interface": []
-    },
-    {
-      "view_id": 2404690,
-      "code_note_id": 2405244,
-      "id": 1455054,
-      "view_key": "plan",
-      "status": "model",
-      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001633ce",
-      "code": "AC-T04",
-      "kind": "pipe",
       "code_point": [
-        6.01140758116998,
-        15.121711353362409,
+        0.28288495643279,
+        22.834114252897585,
         0.0
       ],
-      "reference_line": false,
-      "diameter_mm": 32.0,
+      "view_key": "plan",
+      "id": 1438638,
+      "code": "AF-T01",
+      "kind": "pipe",
+      "diameter_mm": 50.0,
+      "tag_id": 2404730,
+      "page": 1,
+      "box": [
+        0.20103653824450685,
+        0.4708658975232294,
+        0.0191963986712025,
+        0.05049637054368839
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "PPR ø50 mm- 3.95 m",
+      "label_direction": [
+        0.0,
+        -1.0
+      ]
+    },
+    {
       "type": "AmancoWavin AC",
+      "mode": "pipes",
+      "reference_line": false,
       "visible_in": [
         1445818,
         1489196,
         1443740
       ],
-      "tag_id": 2404733,
       "system": "AC",
-      "mode": "pipes",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001633ce",
       "length_m": 1.5974659168901415,
+      "view_id": 2404690,
+      "code_note_id": 2405244,
+      "status": "model",
       "anchor": [
         6.8614075811699795,
         15.051711353362409,
         0.0
       ],
-      "page": 1,
-      "box": [
-        0.42233764290625603,
-        0.8601835745261944,
-        0.0108327714407261,
-        0.003386226262958434
-      ],
-      "size": "",
-      "interface": []
-    },
-    {
-      "view_id": 2404690,
-      "code_note_id": 2405245,
-      "id": 1457173,
-      "view_key": "plan",
-      "status": "model",
-      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00163c15",
-      "code": "AF-T13",
-      "kind": "pipe",
       "code_point": [
-        5.529980302734892,
-        14.441711353362415,
+        6.01140758116998,
+        15.121711353362409,
         0.0
       ],
-      "reference_line": false,
+      "view_key": "plan",
+      "id": 1455054,
+      "code": "AC-T04",
+      "kind": "pipe",
       "diameter_mm": 32.0,
+      "tag_id": 2404733,
+      "page": 1,
+      "box": [
+        0.42107922194191316,
+        0.8472927081878847,
+        0.040006710964013134,
+        0.01933660762302547
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "PPR.2 ø32 mm- 1.60 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
       "type": "AmancoWavin AF",
+      "mode": "pipes",
+      "reference_line": false,
       "visible_in": [
         1445818,
         1489196,
         1443740
       ],
-      "tag_id": 2404734,
       "system": "AF",
-      "mode": "pipes",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00163c15",
       "length_m": 1.5036486064136163,
+      "view_id": 2404690,
+      "code_note_id": 2405245,
+      "status": "model",
       "anchor": [
         6.379980302734892,
         15.051711353362416,
         0.0
       ],
+      "code_point": [
+        5.529980302734892,
+        14.441711353362415,
+        0.0
+      ],
+      "view_key": "plan",
+      "id": 1457173,
+      "code": "AF-T13",
+      "kind": "pipe",
+      "diameter_mm": 32.0,
+      "tag_id": 2404734,
       "page": 1,
       "box": [
-        0.4057571299768204,
-        0.8933820837398646,
-        0.01048836472660784,
-        0.0033501223690012255
+        0.40449872181379753,
+        0.8804505823964083,
+        0.03873474620307727,
+        0.01933660762302547
       ],
       "size": "",
-      "interface": []
+      "interface": [],
+      "label_text": "PPR ø32 mm- 1.50 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
     },
     {
-      "view_id": 2404690,
-      "code_note_id": 2405247,
-      "id": 1488423,
-      "view_key": "plan",
-      "status": "model",
-      "unique_id": "7355c4a4-c4a4-4cf0-92b3-b73244e08c3e-0016b627",
-      "code": "AF-T14",
-      "kind": "pipe",
-      "code_point": [
-        18.349999999999998,
-        17.369999999999887,
-        11.482939632547652
-      ],
-      "reference_line": true,
-      "diameter_mm": 32.0,
       "type": "AmancoWavin AF",
+      "mode": "pipes",
+      "reference_line": true,
       "visible_in": [
         1445818,
         1439889,
         1489196,
         1443740
       ],
-      "tag_id": 2404735,
       "system": "AF",
-      "mode": "pipes",
+      "unique_id": "7355c4a4-c4a4-4cf0-92b3-b73244e08c3e-0016b627",
       "length_m": 1.2843705451701244,
+      "view_id": 2404690,
+      "code_note_id": 2405247,
+      "status": "model",
       "anchor": [
         15.379232262208424,
         17.222594793602045,
         0.0
       ],
+      "code_point": [
+        18.349999999999998,
+        17.369999999999887,
+        11.482939632547652
+      ],
+      "view_key": "plan",
+      "id": 1488423,
+      "code": "AF-T14",
+      "kind": "pipe",
+      "diameter_mm": 32.0,
+      "tag_id": 2404735,
       "page": 1,
       "box": [
-        0.8472830939213393,
-        0.7505941917969343,
-        0.010478802140544566,
-        0.00329591215473114
+        0.8460246985596365,
+        0.7376627267023674,
+        0.0387169267655939,
+        0.019336535125246437
       ],
       "size": "",
-      "interface": []
+      "interface": [],
+      "label_text": "PPR ø32 mm- 1.28 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
     },
     {
-      "view_id": 2404690,
-      "code_note_id": 2405248,
-      "id": 1454758,
-      "view_key": "plan",
-      "status": "model",
-      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001632a6",
-      "code": "AC-T02",
-      "kind": "pipe",
-      "code_point": [
-        1.4947312083187119,
-        16.33562211451724,
-        0.0
-      ],
-      "reference_line": false,
-      "diameter_mm": 50.0,
       "type": "AmancoWavin AC",
+      "mode": "pipes",
+      "reference_line": false,
       "visible_in": [
         1445818,
         1489196,
         1443740
       ],
-      "tag_id": 2404736,
       "system": "AC",
-      "mode": "pipes",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001632a6",
       "length_m": 1.065099999999997,
+      "view_id": 2404690,
+      "code_note_id": 2405248,
+      "status": "model",
       "anchor": [
         2.344731208318712,
         16.26562211451724,
         0.0
       ],
-      "page": 1,
-      "box": [
-        0.2667817368790054,
-        0.8009914397522432,
-        0.010816833797287309,
-        0.0033862081385136766
-      ],
-      "size": "",
-      "interface": []
-    },
-    {
-      "view_id": 2404690,
-      "code_note_id": 2405249,
-      "id": 1454025,
-      "view_key": "plan",
-      "status": "model",
-      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00162fc9",
-      "code": "AF-T02",
-      "kind": "pipe",
       "code_point": [
-        1.167845772085054,
-        15.39315492291618,
+        1.4947312083187119,
+        16.33562211451724,
         0.0
       ],
-      "reference_line": false,
+      "view_key": "plan",
+      "id": 1454758,
+      "code": "AC-T02",
+      "kind": "pipe",
       "diameter_mm": 50.0,
+      "tag_id": 2404736,
+      "page": 1,
+      "box": [
+        0.2655233159146625,
+        0.7881005915383782,
+        0.04007320102025497,
+        0.019336535125246437
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "PPR.2 ø50 mm- 1.07 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
       "type": "AmancoWavin AF",
+      "mode": "pipes",
+      "reference_line": false,
       "visible_in": [
         1445818,
         1489196,
         1443740
       ],
-      "tag_id": 2404737,
       "system": "AF",
-      "mode": "pipes",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00162fc9",
       "length_m": 1.0647086034705266,
+      "view_id": 2404690,
+      "code_note_id": 2405249,
+      "status": "model",
       "anchor": [
         2.017845772085054,
         16.00315492291618,
         0.0
       ],
+      "code_point": [
+        1.167845772085054,
+        15.39315492291618,
+        0.0
+      ],
+      "view_key": "plan",
+      "id": 1454025,
+      "code": "AF-T02",
+      "kind": "pipe",
+      "diameter_mm": 50.0,
+      "tag_id": 2404737,
       "page": 1,
       "box": [
-        0.2555236927855242,
-        0.8469882175159564,
-        0.010462851695785744,
-        0.003345591257811817
+        0.2542652718211813,
+        0.8340567161725001,
+        0.03871997347976132,
+        0.019336535125246437
       ],
       "size": "",
-      "interface": []
+      "interface": [],
+      "label_text": "PPR ø50 mm- 1.06 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
     },
     {
-      "view_id": 2404690,
-      "code_note_id": 2405251,
-      "id": 1455301,
-      "view_key": "plan",
-      "status": "model",
-      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001634c5",
-      "code": "AC-T10",
-      "kind": "pipe",
-      "code_point": [
-        18.349999999999998,
-        16.900000000000002,
-        11.811023622048072
-      ],
-      "reference_line": true,
-      "diameter_mm": 32.0,
       "type": "AmancoWavin AC",
+      "mode": "pipes",
+      "reference_line": true,
       "visible_in": [
         1445818,
         1439889,
         1489196,
         1443740
       ],
-      "tag_id": 2404738,
       "system": "AC",
-      "mode": "pipes",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001634c5",
       "length_m": 1.036379619652849,
+      "view_id": 2404690,
+      "code_note_id": 2405251,
+      "status": "model",
       "anchor": [
         15.37923226593234,
         17.006074246493633,
         0.0
       ],
-      "page": 1,
-      "box": [
-        0.8472830939213393,
-        0.7734714822011428,
-        0.010832758639406068,
-        0.0033862081385136766
-      ],
-      "size": "",
-      "interface": []
-    },
-    {
-      "view_id": 2404690,
-      "code_note_id": 2405253,
-      "id": 1488349,
-      "view_key": "plan",
-      "status": "model",
-      "unique_id": "7355c4a4-c4a4-4cf0-92b3-b73244e08c3e-0016b5dd",
-      "code": "AC-T12",
-      "kind": "pipe",
       "code_point": [
         18.349999999999998,
-        21.1300000000001,
-        11.811023622048054
+        16.900000000000002,
+        11.811023622048072
       ],
-      "reference_line": true,
+      "view_key": "plan",
+      "id": 1455301,
+      "code": "AC-T10",
+      "kind": "pipe",
       "diameter_mm": 32.0,
+      "tag_id": 2404738,
+      "page": 1,
+      "box": [
+        0.8460246985596365,
+        0.7605805796139435,
+        0.040113704396833545,
+        0.01933660762302547
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "PPR.2 ø32 mm- 1.04 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
       "type": "AmancoWavin AC",
+      "mode": "pipes",
+      "reference_line": true,
       "visible_in": [
         1445818,
         1439889,
         1489196,
         1443740
       ],
-      "tag_id": 2404739,
       "system": "AC",
-      "mode": "pipes",
+      "unique_id": "7355c4a4-c4a4-4cf0-92b3-b73244e08c3e-0016b5dd",
       "length_m": 0.8962051125571141,
+      "view_id": 2404690,
+      "code_note_id": 2405253,
+      "status": "model",
       "anchor": [
         15.379232248525263,
         20.294435027677956,
         0.0
       ],
-      "page": 1,
-      "box": [
-        0.8472830939213393,
-        0.567210130861391,
-        0.010816833797287309,
-        0.0033862217318472447
-      ],
-      "size": "",
-      "interface": []
-    },
-    {
-      "view_id": 2404690,
-      "code_note_id": 2405255,
-      "id": 1454451,
-      "view_key": "plan",
-      "status": "model",
-      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00163173",
-      "code": "AF-T05",
-      "kind": "pipe",
       "code_point": [
         18.349999999999998,
-        20.660000000000228,
-        11.482939632547644
+        21.1300000000001,
+        11.811023622048054
       ],
-      "reference_line": true,
+      "view_key": "plan",
+      "id": 1488349,
+      "code": "AC-T12",
+      "kind": "pipe",
       "diameter_mm": 32.0,
+      "tag_id": 2404739,
+      "page": 1,
+      "box": [
+        0.8460246985596365,
+        0.5543192146808582,
+        0.040332146121845214,
+        0.01933657137413595
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "PPR.2 ø32 mm- 0.90 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
       "type": "AmancoWavin AF",
+      "mode": "pipes",
+      "reference_line": true,
       "visible_in": [
         1445818,
         1439889,
         1489196,
         1443740
       ],
-      "tag_id": 2404745,
       "system": "AF",
-      "mode": "pipes",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00163173",
       "length_m": 0.43556245395762727,
+      "view_id": 2404690,
+      "code_note_id": 2405255,
+      "status": "model",
       "anchor": [
         15.379232215906795,
         20.16211742996647,
         0.0
       ],
+      "code_point": [
+        18.349999999999998,
+        20.660000000000228,
+        11.482939632547644
+      ],
+      "view_key": "plan",
+      "id": 1454451,
+      "code": "AF-T05",
+      "kind": "pipe",
+      "diameter_mm": 32.0,
+      "tag_id": 2404745,
       "page": 1,
       "box": [
-        0.8472830939213393,
-        0.5901686867447816,
-        0.010504302370046632,
-        0.003345582195589438
+        0.8460246985596365,
+        0.5772371400902133,
+        0.03914336433847182,
+        0.01933657137413595
       ],
       "size": "",
-      "interface": []
+      "interface": [],
+      "label_text": "PPR ø32 mm- 0.44 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
     },
     {
-      "view_id": 2404690,
-      "code_note_id": 2405257,
-      "id": 1454828,
-      "view_key": "plan",
-      "status": "model",
-      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001632ec",
-      "code": "AC-T03",
-      "kind": "pipe",
-      "code_point": [
-        3.9499999999999997,
-        17.27,
-        18.536745406824146
-      ],
-      "reference_line": true,
-      "diameter_mm": 32.0,
       "type": "AmancoWavin AC",
+      "mode": "pipes",
+      "reference_line": true,
       "visible_in": [
         1445818,
         1489196,
         1443740
       ],
-      "tag_id": 2404748,
       "system": "AC",
-      "mode": "pipes",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001632ec",
       "length_m": 0.33499999999995794,
+      "view_id": 2404690,
+      "code_note_id": 2405257,
+      "status": "model",
       "anchor": [
         4.1834779274788065,
         15.658666733939775,
         0.0
       ],
-      "page": 1,
-      "box": [
-        0.3513420596688985,
-        0.7554297211604922,
-        0.010842334026789373,
-        0.0033907211252583278
-      ],
-      "size": "",
-      "interface": []
-    },
-    {
-      "view_id": 2404690,
-      "code_note_id": 2405259,
-      "id": 2321588,
-      "view_key": "plan",
-      "status": "model",
-      "unique_id": "7068d757-a3d9-4226-8ada-391d4af114e1-00236cb4",
-      "code": "AF-T15",
-      "kind": "pipe",
       "code_point": [
         3.9499999999999997,
-        16.769999999999996,
-        18.536745405950843
+        17.27,
+        18.536745406824146
       ],
-      "reference_line": true,
+      "view_key": "plan",
+      "id": 1454828,
+      "code": "AC-T03",
+      "kind": "pipe",
       "diameter_mm": 32.0,
+      "tag_id": 2404748,
+      "page": 1,
+      "box": [
+        0.35008363870455556,
+        0.7425388548221825,
+        0.04043217563656868,
+        0.019336535125246437
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "PPR.2 ø32 mm- 0.34 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
       "type": "AmancoWavin AF",
+      "mode": "pipes",
+      "reference_line": true,
       "visible_in": [
         1445818,
         1489196,
         1443740
       ],
-      "tag_id": 2404749,
       "system": "AF",
-      "mode": "pipes",
+      "unique_id": "7068d757-a3d9-4226-8ada-391d4af114e1-00236cb4",
       "length_m": 0.2724999999999873,
+      "view_id": 2404690,
+      "code_note_id": 2405259,
+      "status": "model",
       "anchor": [
         3.855950436570825,
         15.498725789057893,
         0.0
       ],
+      "code_point": [
+        3.9499999999999997,
+        16.769999999999996,
+        18.536745405950843
+      ],
+      "view_key": "plan",
+      "id": 2321588,
+      "code": "AF-T15",
+      "kind": "pipe",
+      "diameter_mm": 32.0,
+      "tag_id": 2404749,
       "page": 1,
       "box": [
-        0.3513420596688985,
-        0.7798511055113827,
-        0.010504315171366662,
-        0.003345591257811817
+        0.35008363870455556,
+        0.7669196404168158,
+        0.03897236430549562,
+        0.019336535125246437
       ],
       "size": "",
-      "interface": []
+      "interface": [],
+      "label_text": "PPR ø32 mm- 0.27 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
     },
     {
-      "view_id": 2404690,
-      "code_note_id": 2405261,
-      "id": 2016433,
-      "view_key": "plan",
-      "status": "model",
-      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ec4b1",
-      "code": "CP-T03",
-      "kind": "pipe",
-      "code_point": [
-        18.349999999999998,
-        19.25,
-        11.097334129706537
-      ],
-      "reference_line": true,
-      "diameter_mm": 40.0,
       "type": "AmancoWavin CL - Primario",
+      "mode": "pipes",
+      "reference_line": true,
       "visible_in": [
         1445818,
         1439889,
         1489196,
         1443740
       ],
-      "tag_id": 2404751,
       "system": "CP",
-      "mode": "pipes",
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ec4b1",
       "length_m": 0.21909988399103833,
+      "view_id": 2404690,
+      "code_note_id": 2405261,
+      "status": "model",
       "anchor": [
         14.961517850030702,
         19.07553571468997,
         0.0
       ],
-      "page": 1,
-      "box": [
-        0.8474425471636474,
-        0.6588818370299225,
-        0.010682880784481277,
-        0.0033907211252583278
-      ],
-      "size": "",
-      "interface": []
-    },
-    {
-      "view_id": 2404690,
-      "code_note_id": 2405263,
-      "id": 2019066,
-      "view_key": "plan",
-      "status": "model",
-      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ecefa",
-      "code": "CS-T05",
-      "kind": "pipe",
       "code_point": [
         18.349999999999998,
-        18.309999999999928,
-        11.646981627297457
+        19.25,
+        11.097334129706537
       ],
-      "reference_line": true,
+      "view_key": "plan",
+      "id": 2016433,
+      "code": "CP-T03",
+      "kind": "pipe",
       "diameter_mm": 40.0,
+      "tag_id": 2404751,
+      "page": 1,
+      "box": [
+        0.8452058749251635,
+        0.6459909525671681,
+        0.043904994542541244,
+        0.019336535125246437
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "Premium ø40 mm- 0.22 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
       "type": "AmancoWavin CL - Secundario",
+      "mode": "pipes",
+      "reference_line": true,
       "visible_in": [
         1445818,
         1439889,
         1489196,
         1443740
       ],
-      "tag_id": 2404752,
       "system": "CS",
-      "mode": "pipes",
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ecefa",
       "length_m": 0.17829721551144767,
+      "view_id": 2404690,
+      "code_note_id": 2405263,
+      "status": "model",
       "anchor": [
         14.131661069299485,
         18.837096421056387,
         0.0
       ],
+      "code_point": [
+        18.349999999999998,
+        18.309999999999928,
+        11.646981627297457
+      ],
+      "view_key": "plan",
+      "id": 2019066,
+      "code": "CS-T05",
+      "kind": "pipe",
+      "diameter_mm": 40.0,
+      "tag_id": 2404752,
       "page": 1,
       "box": [
-        0.8474425471636474,
-        0.7047177059730775,
-        0.0106988312292401,
-        0.0033862081385136766
+        0.8432284806225907,
+        0.6918268758836573,
+        0.04783464135514569,
+        0.019336535125246437
       ],
       "size": "",
-      "interface": []
+      "interface": [],
+      "label_text": "Alta Rigidez ø40 mm- 0.18 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
     },
     {
-      "view_id": 2404690,
-      "code_note_id": 2405265,
-      "id": 1455292,
-      "view_key": "plan",
-      "status": "model",
-      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001634bc",
-      "code": "AC-T09",
-      "kind": "pipe",
-      "code_point": [
-        18.350000000002016,
-        22.07,
-        11.811023622047387
-      ],
-      "reference_line": true,
-      "diameter_mm": 32.0,
       "type": "AmancoWavin AC",
+      "mode": "pipes",
+      "reference_line": true,
       "visible_in": [
         1445818,
         1439889,
         1489196,
         1443740
       ],
-      "tag_id": 2404753,
       "system": "AC",
-      "mode": "pipes",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001634bc",
       "length_m": 0.1425000516676148,
+      "view_id": 2404690,
+      "code_note_id": 2405265,
+      "status": "model",
       "anchor": [
         15.088057650274951,
         21.822002440702487,
         0.0
       ],
+      "code_point": [
+        18.350000000002016,
+        22.07,
+        11.811023622047387
+      ],
+      "view_key": "plan",
+      "id": 1455292,
+      "code": "AC-T09",
+      "kind": "pipe",
+      "diameter_mm": 32.0,
+      "tag_id": 2404753,
       "page": 1,
       "box": [
-        0.8472830939213393,
-        0.5213742664493474,
-        0.010845534356797163,
-        0.0033862217318472447
+        0.8460246985596365,
+        0.5084833638621481,
+        0.040113704396833545,
+        0.01933657137413595
       ],
       "size": "",
-      "interface": []
+      "interface": [],
+      "label_text": "PPR.2 ø32 mm- 0.14 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
     },
     {
-      "view_id": 2404690,
-      "code_note_id": 2405267,
-      "id": 1454590,
-      "view_key": "plan",
-      "status": "model",
-      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001631fe",
-      "code": "AF-T08",
-      "kind": "pipe",
-      "code_point": [
-        18.350000000000694,
-        21.6,
-        11.482939632547408
-      ],
-      "reference_line": true,
-      "diameter_mm": 32.0,
       "type": "AmancoWavin AF",
+      "mode": "pipes",
+      "reference_line": true,
       "visible_in": [
         1445818,
         1439889,
         1489196,
         1443740
       ],
-      "tag_id": 2404754,
       "system": "AF",
-      "mode": "pipes",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001631fe",
       "length_m": 0.14250000000000124,
+      "view_id": 2404690,
+      "code_note_id": 2405267,
+      "status": "model",
       "anchor": [
         15.08805767727591,
         20.934037432010594,
         0.0
       ],
+      "code_point": [
+        18.350000000000694,
+        21.6,
+        11.482939632547408
+      ],
+      "view_key": "plan",
+      "id": 1454590,
+      "code": "AF-T08",
+      "kind": "pipe",
+      "diameter_mm": 32.0,
+      "tag_id": 2404754,
       "page": 1,
       "box": [
-        0.8472830939213393,
-        0.5443328223327378,
-        0.010491552255295598,
-        0.0033455867267006274
+        0.8460246985596365,
+        0.5314012892715032,
+        0.038776120069417976,
+        0.01933657137413595
       ],
       "size": "",
-      "interface": []
+      "interface": [],
+      "label_text": "PPR ø32 mm- 0.14 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
     },
     {
-      "view_id": 2404690,
-      "code_note_id": 2405269,
-      "id": 1454570,
-      "view_key": "plan",
-      "status": "model",
-      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001631ea",
-      "code": "AF-T07",
-      "kind": "pipe",
-      "code_point": [
-        18.349999999999998,
-        19.720000000000002,
-        11.482939632547689
-      ],
-      "reference_line": true,
-      "diameter_mm": 32.0,
       "type": "AmancoWavin AF",
+      "mode": "pipes",
+      "reference_line": true,
       "visible_in": [
         1445818,
         1439889,
         1489196,
         1443740
       ],
-      "tag_id": 2404756,
       "system": "AF",
-      "mode": "pipes",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001631ea",
       "length_m": 0.08449999999997494,
+      "view_id": 2404690,
+      "code_note_id": 2405269,
+      "status": "model",
       "anchor": [
         15.181561644310028,
         19.38855700812862,
         0.0
       ],
+      "code_point": [
+        18.349999999999998,
+        19.720000000000002,
+        11.482939632547689
+      ],
+      "view_key": "plan",
+      "id": 1454570,
+      "code": "AF-T07",
+      "kind": "pipe",
+      "diameter_mm": 32.0,
+      "tag_id": 2404756,
       "page": 1,
       "box": [
-        0.8472830939213393,
-        0.6360045556879365,
-        0.010488377527927872,
-        0.003345582195589438
+        0.8460246985596365,
+        0.623073027157813,
+        0.03907454444198431,
+        0.01933660762302547
       ],
       "size": "",
-      "interface": []
+      "interface": [],
+      "label_text": "PPR ø32 mm- 0.08 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
     },
     {
-      "view_id": 2404690,
-      "code_note_id": 2405271,
-      "id": 1455271,
-      "view_key": "plan",
-      "status": "model",
-      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001634a7",
-      "code": "AC-T08",
-      "kind": "pipe",
-      "code_point": [
-        18.350000000001888,
-        17.84,
-        11.811023622047468
-      ],
-      "reference_line": true,
-      "diameter_mm": 32.0,
       "type": "AmancoWavin AC",
+      "mode": "pipes",
+      "reference_line": true,
       "visible_in": [
         1445818,
         1439889,
         1489196,
         1443740
       ],
-      "tag_id": 2404757,
       "system": "AC",
-      "mode": "pipes",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001634a7",
       "length_m": 0.08449997822995871,
+      "view_id": 2404690,
+      "code_note_id": 2405271,
+      "status": "model",
       "anchor": [
         15.181561687486557,
         18.76522720201967,
         0.0
       ],
+      "code_point": [
+        18.350000000001888,
+        17.84,
+        11.811023622047468
+      ],
+      "view_key": "plan",
+      "id": 1455271,
+      "code": "AC-T08",
+      "kind": "pipe",
+      "diameter_mm": 32.0,
+      "tag_id": 2404757,
       "page": 1,
       "box": [
-        0.8472830939213393,
-        0.7276356313824326,
-        0.010845534356797163,
-        0.0033862081385136766
+        0.8460246985596365,
+        0.7147447287952333,
+        0.040417863760773845,
+        0.01933660762302547
       ],
       "size": "",
-      "interface": []
+      "interface": [],
+      "label_text": "PPR.2 ø32 mm- 0.08 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
     },
     {
-      "view_id": 2404690,
-      "code_note_id": 2405273,
-      "id": 2019054,
-      "view_key": "plan",
-      "status": "model",
-      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001eceee",
-      "code": "CS-T04",
-      "kind": "pipe",
-      "code_point": [
-        18.349999999999998,
-        20.19000000000015,
-        11.646981627297446
-      ],
-      "reference_line": true,
-      "diameter_mm": 40.0,
       "type": "AmancoWavin CL - Secundario",
+      "mode": "pipes",
+      "reference_line": true,
       "visible_in": [
         1445818,
         1439889,
         1489196,
         1443740
       ],
-      "tag_id": 2404758,
       "system": "CS",
-      "mode": "pipes",
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001eceee",
       "length_m": 0.0838254295361353,
+      "view_id": 2404690,
+      "code_note_id": 2405273,
+      "status": "model",
       "anchor": [
         14.131659037212327,
         19.46610338471378,
         0.0
       ],
+      "code_point": [
+        18.349999999999998,
+        20.19000000000015,
+        11.646981627297446
+      ],
+      "view_key": "plan",
+      "id": 2019054,
+      "code": "CS-T04",
+      "kind": "pipe",
+      "diameter_mm": 40.0,
+      "tag_id": 2404758,
       "page": 1,
       "box": [
-        0.8474425471636474,
-        0.61304597714899,
-        0.010673305397097972,
-        0.0033862172007360553
+        0.8428556037727231,
+        0.6001550654995684,
+        0.04853297896548539,
+        0.01933657137413595
       ],
       "size": "",
-      "interface": []
+      "interface": [],
+      "label_text": "Alta Rigidez ø40 mm- 0.08 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
     },
     {
-      "view_id": 2404690,
-      "code_note_id": 2405275,
-      "id": 1456739,
-      "view_key": "plan",
-      "status": "model",
-      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00163a63",
-      "code": "AF-T10",
-      "kind": "pipe",
-      "code_point": [
-        8.6500010617389,
-        15.76999999999999,
-        11.482939645630056
-      ],
-      "reference_line": true,
-      "diameter_mm": 32.0,
       "type": "AmancoWavin AF",
+      "mode": "pipes",
+      "reference_line": true,
       "visible_in": [
         1445818,
         1489196,
         1443740
       ],
-      "tag_id": 2404759,
       "system": "AF",
-      "mode": "pipes",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00163a63",
       "length_m": 0.08120266413660394,
+      "view_id": 2404690,
+      "code_note_id": 2405275,
+      "status": "model",
       "anchor": [
         9.097912176997063,
         15.051711353362412,
         0.0
       ],
+      "code_point": [
+        8.6500010617389,
+        15.76999999999999,
+        11.482939645630056
+      ],
+      "view_key": "plan",
+      "id": 1456739,
+      "code": "AF-T10",
+      "kind": "pipe",
+      "diameter_mm": 32.0,
+      "tag_id": 2404759,
       "page": 1,
       "box": [
-        0.5132117295512738,
-        0.8286126404517598,
-        0.01047879974029706,
-        0.003345591257811817
+        0.5119533093870134,
+        0.8156812116060824,
+        0.03907464685254457,
+        0.019336462627467407
       ],
       "size": "",
-      "interface": []
+      "interface": [],
+      "label_text": "PPR ø32 mm- 0.08 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
     },
     {
-      "view_id": 2404690,
-      "code_note_id": 2405277,
-      "id": 1457151,
-      "view_key": "plan",
-      "status": "model",
-      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00163bff",
-      "code": "AF-T11",
-      "kind": "pipe",
-      "code_point": [
-        8.65,
-        16.269999999996887,
-        13.12335958005365
-      ],
-      "reference_line": true,
-      "diameter_mm": 32.0,
       "type": "AmancoWavin AF",
+      "mode": "pipes",
+      "reference_line": true,
       "visible_in": [
         1445818,
         1489196,
         1443740
       ],
-      "tag_id": 2404762,
       "system": "AF",
-      "mode": "pipes",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00163bff",
       "length_m": 0.05250000000000052,
+      "view_id": 2404690,
+      "code_note_id": 2405277,
+      "status": "model",
       "anchor": [
         8.905650588846472,
         15.201809778559188,
         0.0
       ],
+      "code_point": [
+        8.65,
+        16.269999999996887,
+        13.12335958005365
+      ],
+      "view_key": "plan",
+      "id": 1457151,
+      "code": "AF-T11",
+      "kind": "pipe",
+      "diameter_mm": 32.0,
+      "tag_id": 2404762,
       "page": 1,
       "box": [
-        0.5132116999482212,
-        0.804231891106016,
-        0.010048295348061747,
-        0.0032959302791758975
+        0.5119532581817333,
+        0.7913003535136701,
+        0.03906030937410967,
+        0.01933660762302547
       ],
       "size": "",
-      "interface": []
+      "interface": [],
+      "label_text": "PPR ø32 mm- 0.05 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
     },
     {
-      "view_id": 2404690,
-      "code_note_id": 2405279,
-      "id": 2016380,
-      "view_key": "plan",
-      "status": "model",
-      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ec47c",
-      "code": "CP-T02",
-      "kind": "pipe",
-      "code_point": [
-        18.35000000001063,
-        18.78,
-        10.810385110657256
-      ],
-      "reference_line": true,
-      "diameter_mm": 50.0,
       "type": "AmancoWavin CL - Primario",
+      "mode": "pipes",
+      "reference_line": true,
       "visible_in": [
         1445818,
         1439889,
         1489196,
         1443740
       ],
-      "tag_id": 2404764,
       "system": "CP",
-      "mode": "pipes",
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ec47c",
       "length_m": 0.025871276715367056,
+      "view_id": 2404690,
+      "code_note_id": 2405279,
+      "status": "model",
       "anchor": [
         14.262122901365338,
         19.075535714689966,
         0.0
       ],
+      "code_point": [
+        18.35000000001063,
+        18.78,
+        10.810385110657256
+      ],
+      "view_key": "plan",
+      "id": 2016380,
+      "code": "CP-T02",
+      "kind": "pipe",
+      "diameter_mm": 50.0,
+      "tag_id": 2404764,
       "page": 1,
       "box": [
-        0.8474425471636474,
-        0.6817997805637225,
-        0.010657380554979211,
-        0.0033862081385136766
+        0.8452849870829561,
+        0.6689088779765232,
+        0.043847593423521534,
+        0.01933660762302547
       ],
       "size": "",
-      "interface": []
+      "interface": [],
+      "label_text": "Premium ø50 mm- 0.03 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
     },
     {
-      "view_id": 2404710,
-      "code_note_id": 2405281,
-      "id": 1455261,
-      "view_key": "front",
-      "status": "model",
-      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-0016349d",
-      "code": "AC-T07",
-      "kind": "pipe",
-      "code_point": [
-        11.492600833522719,
-        10.849999999999982,
-        10.85
-      ],
-      "reference_line": true,
-      "diameter_mm": 32.0,
       "type": "AmancoWavin AC",
+      "mode": "pipes",
+      "reference_line": true,
       "visible_in": [
         1445818,
         1439889,
         1489196,
         1443740
       ],
-      "tag_id": 2404740,
       "system": "AC",
-      "mode": "pipes",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-0016349d",
       "length_m": 0.732499999999997,
+      "view_id": 2404710,
+      "code_note_id": 2405281,
+      "status": "model",
       "anchor": [
         11.492600833522726,
         15.248561747063146,
         10.552001312336794
       ],
-      "page": 2,
-      "box": [
-        0.8575139600955204,
-        0.7335055953060878,
-        0.012742510766934253,
-        0.003979656833212914
-      ],
-      "size": "",
-      "interface": []
-    },
-    {
-      "view_id": 2404710,
-      "code_note_id": 2405283,
-      "id": 1454558,
-      "view_key": "front",
-      "status": "model",
-      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001631de",
-      "code": "AF-T06",
-      "kind": "pipe",
       "code_point": [
         11.492600833522719,
         10.849999999999982,
-        10.28
+        10.85
       ],
-      "reference_line": true,
+      "view_key": "front",
+      "id": 1455261,
+      "code": "AC-T07",
+      "kind": "pipe",
       "diameter_mm": 32.0,
+      "tag_id": 2404740,
+      "page": 2,
+      "box": [
+        0.8562555135285375,
+        0.7186677286141339,
+        0.04696302507686424,
+        0.022100875439680905
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "PPR.2 ø32 mm- 0.73 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
       "type": "AmancoWavin AF",
+      "mode": "pipes",
+      "reference_line": true,
       "visible_in": [
         1445818,
         1439889,
         1489196,
         1443740
       ],
-      "tag_id": 2404743,
       "system": "AF",
-      "mode": "pipes",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001631de",
       "length_m": 0.6150000000002598,
+      "view_id": 2404710,
+      "code_note_id": 2405283,
+      "status": "model",
       "anchor": [
         11.492600833522726,
         15.058273033152373,
         10.416666666667934
       ],
-      "page": 2,
-      "box": [
-        0.8575139600955204,
-        0.7662185143958115,
-        0.012322755483112601,
-        0.003931898921276547
-      ],
-      "size": "",
-      "interface": []
-    },
-    {
-      "view_id": 2404710,
-      "code_note_id": 2405285,
-      "id": 2017883,
-      "view_key": "front",
-      "status": "model",
-      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001eca5b",
-      "code": "CP-T04",
-      "kind": "pipe",
       "code_point": [
         11.492600833522719,
         10.849999999999982,
-        9.71
+        10.28
       ],
-      "reference_line": true,
-      "diameter_mm": 40.0,
+      "view_key": "front",
+      "id": 1454558,
+      "code": "AF-T06",
+      "kind": "pipe",
+      "diameter_mm": 32.0,
+      "tag_id": 2404743,
+      "page": 2,
+      "box": [
+        0.8562555135285375,
+        0.751332907916366,
+        0.04534309483484147,
+        0.022100875439680905
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "PPR ø32 mm- 0.62 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
       "type": "AmancoWavin CL - Primario",
+      "mode": "pipes",
+      "reference_line": true,
       "visible_in": [
         1445818,
         1439889,
         1489196,
         1443740
       ],
-      "tag_id": 2404746,
       "system": "CP",
-      "mode": "pipes",
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001eca5b",
       "length_m": 0.40051218355996926,
+      "view_id": 2404710,
+      "code_note_id": 2405285,
+      "status": "model",
       "anchor": [
         11.492600833522731,
         19.075535714689977,
         10.365522804969054
       ],
-      "page": 2,
-      "box": [
-        0.8577013458181365,
-        0.7988359357861072,
-        0.012543885485330813,
-        0.003979656833212914
-      ],
-      "size": "",
-      "interface": []
-    },
-    {
-      "view_id": 2404710,
-      "code_note_id": 2405287,
-      "id": 1455360,
-      "view_key": "front",
-      "status": "model",
-      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00163500",
-      "code": "AF-T09",
-      "kind": "pipe",
       "code_point": [
         11.492600833522719,
         10.849999999999982,
-        13.7
+        9.71
       ],
-      "reference_line": true,
-      "diameter_mm": 32.0,
+      "view_key": "front",
+      "id": 2017883,
+      "code": "CP-T04",
+      "kind": "pipe",
+      "diameter_mm": 40.0,
+      "tag_id": 2404746,
+      "page": 2,
+      "box": [
+        0.8551670940942083,
+        0.783998014720819,
+        0.051422800154598984,
+        0.022100947937459935
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "Premium ø40 mm- 0.40 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
       "type": "AmancoWavin AF",
+      "mode": "pipes",
+      "reference_line": true,
       "visible_in": [
         1445818,
         1439889,
         1489196,
         1443740
       ],
-      "tag_id": 2404747,
       "system": "AF",
-      "mode": "pipes",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00163500",
       "length_m": 0.352499999999987,
+      "view_id": 2404710,
+      "code_note_id": 2405287,
+      "status": "model",
       "anchor": [
         11.492600833522733,
         19.38855700227309,
         12.118602362206461
       ],
-      "page": 2,
-      "box": [
-        0.8575139600955204,
-        0.5702275201424204,
-        0.01233025705665086,
-        0.003931917045721304
-      ],
-      "size": "",
-      "interface": []
-    },
-    {
-      "view_id": 2404710,
-      "code_note_id": 2405289,
-      "id": 1455332,
-      "view_key": "front",
-      "status": "model",
-      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001634e4",
-      "code": "AC-T11",
-      "kind": "pipe",
       "code_point": [
         11.492600833522719,
         10.849999999999982,
-        14.27
+        13.7
       ],
-      "reference_line": true,
+      "view_key": "front",
+      "id": 1455360,
+      "code": "AF-T09",
+      "kind": "pipe",
       "diameter_mm": 32.0,
+      "tag_id": 2404747,
+      "page": 2,
+      "box": [
+        0.8562555135285375,
+        0.5553419046007525,
+        0.04544980663862119,
+        0.02210091168857042
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "PPR ø32 mm- 0.35 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
       "type": "AmancoWavin AC",
+      "mode": "pipes",
+      "reference_line": true,
       "visible_in": [
         1445818,
         1439889,
         1489196,
         1443740
       ],
-      "tag_id": 2404750,
       "system": "AC",
-      "mode": "pipes",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001634e4",
       "length_m": 0.2524999389648363,
+      "view_id": 2404710,
+      "code_note_id": 2405289,
+      "status": "model",
       "anchor": [
         11.492600833522731,
         18.765227197579694,
         12.282644256832972
       ],
-      "page": 2,
-      "box": [
-        0.8575139600955204,
-        0.5375146033182523,
-        0.01222531183503543,
-        0.003979672692102077
-      ],
-      "size": "",
-      "interface": []
-    },
-    {
-      "view_id": 2404710,
-      "code_note_id": 2405291,
-      "id": 2015975,
-      "view_key": "front",
-      "status": "model",
-      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ec2e7",
-      "code": "CP-T01",
-      "kind": "pipe",
       "code_point": [
         11.492600833522719,
         10.849999999999982,
-        11.99
+        14.27
       ],
-      "reference_line": true,
-      "diameter_mm": 40.0,
+      "view_key": "front",
+      "id": 1455332,
+      "code": "AC-T11",
+      "kind": "pipe",
+      "diameter_mm": 32.0,
+      "tag_id": 2404750,
+      "page": 2,
+      "box": [
+        0.8562555135285375,
+        0.5226767615474099,
+        0.04699886877295149,
+        0.022100875439680905
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "PPR.2 ø32 mm- 0.25 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
       "type": "AmancoWavin CL - Primario",
+      "mode": "pipes",
+      "reference_line": true,
       "visible_in": [
         1445818,
         1439889,
         1489196,
         1443740
       ],
-      "tag_id": 2404755,
       "system": "CP",
-      "mode": "pipes",
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ec2e7",
       "length_m": 0.13067317617058985,
+      "view_id": 2404710,
+      "code_note_id": 2405291,
+      "status": "model",
       "anchor": [
         11.492600833522731,
         19.076892099926294,
         11.170290443174773
       ],
-      "page": 2,
-      "box": [
-        0.8577013458181365,
-        0.6681752729505132,
-        0.012037926112419349,
-        0.003979656833212914
-      ],
-      "size": "",
-      "interface": []
-    },
-    {
-      "view_id": 2404710,
-      "code_note_id": 2405293,
-      "id": 2014045,
-      "view_key": "front",
-      "status": "model",
-      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ebb5d",
-      "code": "CS-T02",
-      "kind": "pipe",
       "code_point": [
         11.492600833522719,
         10.849999999999982,
-        13.129999999999999
+        11.99
       ],
-      "reference_line": true,
+      "view_key": "front",
+      "id": 2015975,
+      "code": "CP-T01",
+      "kind": "pipe",
       "diameter_mm": 40.0,
+      "tag_id": 2404755,
+      "page": 2,
+      "box": [
+        0.8557314786917419,
+        0.653337949991902,
+        0.050405248827962344,
+        0.02210036795522769
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "Premium ø40 mm- 0.13 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
       "type": "AmancoWavin CL - Secundario",
+      "mode": "pipes",
+      "reference_line": true,
       "visible_in": [
         1445818,
         1439889,
         1489196,
         1443740
       ],
-      "tag_id": 2404760,
       "system": "CS",
-      "mode": "pipes",
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ebb5d",
       "length_m": 0.07673667490027171,
+      "view_id": 2404710,
+      "code_note_id": 2405293,
+      "status": "model",
       "anchor": [
         11.492600833522733,
         19.678415441038656,
         11.84766514910369
       ],
-      "page": 2,
-      "box": [
-        0.8577013458181365,
-        0.6028449234082713,
-        0.0125251443528052,
-        0.003979674957657672
-      ],
-      "size": "",
-      "interface": []
-    },
-    {
-      "view_id": 2404710,
-      "code_note_id": 2405295,
-      "id": 2014039,
-      "view_key": "front",
-      "status": "model",
-      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ebb57",
-      "code": "CS-T01",
-      "kind": "pipe",
       "code_point": [
         11.492600833522719,
         10.849999999999982,
-        12.559999999999999
+        13.129999999999999
       ],
-      "reference_line": true,
+      "view_key": "front",
+      "id": 2014045,
+      "code": "CS-T02",
+      "kind": "pipe",
       "diameter_mm": 40.0,
+      "tag_id": 2404760,
+      "page": 2,
+      "box": [
+        0.8525310462733924,
+        0.588009150089687,
+        0.056597605763994044,
+        0.022098809252978534
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "Alta Rigidez ø40 mm- 0.08 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
       "type": "AmancoWavin CL - Secundario",
+      "mode": "pipes",
+      "reference_line": true,
       "visible_in": [
         1445818,
         1439889,
         1489196,
         1443740
       ],
-      "tag_id": 2404761,
       "system": "CS",
-      "mode": "pipes",
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ebb57",
       "length_m": 0.07673667489304105,
+      "view_id": 2404710,
+      "code_note_id": 2405295,
+      "status": "model",
       "anchor": [
         11.492600833522731,
         18.46981096254248,
         11.847665149103626
       ],
-      "page": 2,
-      "box": [
-        0.8577013458181365,
-        0.6355101027105035,
-        0.012037926112419349,
-        0.003979674957657672
-      ],
-      "size": "",
-      "interface": []
-    },
-    {
-      "view_id": 2404710,
-      "code_note_id": 2405297,
-      "id": 2016410,
-      "view_key": "front",
-      "status": "model",
-      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ec49a",
-      "code": "CS-T03",
-      "kind": "pipe",
       "code_point": [
         11.492600833522719,
         10.849999999999982,
-        11.42
+        12.559999999999999
       ],
-      "reference_line": true,
-      "diameter_mm": 50.0,
+      "view_key": "front",
+      "id": 2014039,
+      "code": "CS-T01",
+      "kind": "pipe",
+      "diameter_mm": 40.0,
+      "tag_id": 2404761,
+      "page": 2,
+      "box": [
+        0.8525310462733924,
+        0.6206721907074377,
+        0.056597605763994044,
+        0.022100947937459935
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "Alta Rigidez ø40 mm- 0.08 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
       "type": "AmancoWavin CL - Secundario",
+      "mode": "pipes",
+      "reference_line": true,
       "visible_in": [
         1445818,
         1439889,
         1489196,
         1443740
       ],
-      "tag_id": 2404763,
       "system": "CS",
-      "mode": "pipes",
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ec49a",
       "length_m": 0.033802061004752686,
+      "view_id": 2404710,
+      "code_note_id": 2405297,
+      "status": "model",
       "anchor": [
         11.492600833522731,
         19.07553571468997,
         10.953859620184302
       ],
-      "page": 2,
-      "box": [
-        0.8577013458181365,
-        0.7008404341283004,
-        0.01255512504431817,
-        0.003984967295526901
-      ],
-      "size": "",
-      "interface": []
-    },
-    {
-      "view_id": 2404710,
-      "code_note_id": 2405299,
-      "id": 2019750,
-      "view_key": "front",
-      "status": "model",
-      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ed1a6",
-      "code": "CP-T06",
-      "kind": "pipe",
       "code_point": [
         11.492600833522719,
         10.849999999999982,
-        8.57
+        11.42
       ],
-      "reference_line": true,
-      "diameter_mm": 63.0,
+      "view_key": "front",
+      "id": 2016410,
+      "code": "CS-T03",
+      "kind": "pipe",
+      "diameter_mm": 50.0,
+      "tag_id": 2404763,
+      "page": 2,
+      "box": [
+        0.8526572160836194,
+        0.6860025493119019,
+        0.05638397733531409,
+        0.022100875439680905
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "Alta Rigidez ø50 mm- 0.03 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
       "type": "AmancoWavin CL - Primario",
+      "mode": "pipes",
+      "reference_line": true,
       "visible_in": [
         1439889,
         1489196,
         1443740
       ],
-      "tag_id": 2405239,
       "system": "CP",
-      "mode": "pipes",
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ed1a6",
       "length_m": 0.02539972663999481,
+      "view_id": 2404710,
+      "code_note_id": 2405299,
+      "status": "model",
       "anchor": [
         11.492600833522731,
         19.07553571468997,
         9.633711480231572
       ],
-      "page": 2,
-      "box": [
-        0.8577013458181365,
-        0.8641662762661266,
-        0.01255136145622901,
-        0.003979656833212914
-      ],
-      "size": "",
-      "interface": []
-    },
-    {
-      "view_id": 2404710,
-      "code_note_id": 2405301,
-      "id": 2019394,
-      "view_key": "front",
-      "status": "model",
-      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ed042",
-      "code": "CS-T06",
-      "kind": "pipe",
       "code_point": [
         11.492600833522719,
         10.849999999999982,
-        8.0
+        8.57
       ],
-      "reference_line": true,
-      "diameter_mm": 40.0,
+      "view_key": "front",
+      "id": 2019750,
+      "code": "CP-T06",
+      "kind": "pipe",
+      "diameter_mm": 63.0,
+      "tag_id": 2405239,
+      "page": 2,
+      "box": [
+        0.8555189767792247,
+        0.8493283733252832,
+        0.05086619875964426,
+        0.022100875439680905
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "Premium ø63 mm- 0.03 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
       "type": "AmancoWavin CL - Secundario",
+      "mode": "pipes",
+      "reference_line": true,
       "visible_in": [
         1439889,
         1489196,
         1443740
       ],
-      "tag_id": 2405240,
       "system": "CS",
-      "mode": "pipes",
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ed042",
       "length_m": 0.37677286246046193,
+      "view_id": 2404710,
+      "code_note_id": 2405301,
+      "status": "model",
       "anchor": [
         11.492600833522733,
         19.884874125079516,
         9.633128705995505
       ],
-      "page": 2,
-      "box": [
-        0.8577013458181365,
-        0.8968314193194692,
-        0.01255136145622901,
-        0.003979656833212914
-      ],
-      "size": "",
-      "interface": []
-    },
-    {
-      "view_id": 2404710,
-      "code_note_id": 2405303,
-      "id": 2017994,
-      "view_key": "front",
-      "status": "model",
-      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ecaca",
-      "code": "CP-T05",
-      "kind": "pipe",
       "code_point": [
         11.492600833522719,
         10.849999999999982,
-        9.14
+        8.0
       ],
-      "reference_line": true,
+      "view_key": "front",
+      "id": 2019394,
+      "code": "CS-T06",
+      "kind": "pipe",
       "diameter_mm": 40.0,
+      "tag_id": 2405240,
+      "page": 2,
+      "box": [
+        0.8526173783756825,
+        0.8819934801297362,
+        0.05649642413046778,
+        0.022100947937459935
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "Alta Rigidez ø40 mm- 0.38 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
       "type": "AmancoWavin CL - Primario",
+      "mode": "pipes",
+      "reference_line": true,
       "visible_in": [
         1439889,
         1489196,
         1443740
       ],
-      "tag_id": 2405241,
       "system": "CP",
-      "mode": "pipes",
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ecaca",
       "length_m": 0.0692305934991232,
+      "view_id": 2404710,
+      "code_note_id": 2405303,
+      "status": "model",
       "anchor": [
         11.492600833522731,
         19.075535714689977,
         9.633711480231574
       ],
+      "code_point": [
+        11.492600833522719,
+        10.849999999999982,
+        9.14
+      ],
+      "view_key": "front",
+      "id": 2017994,
+      "code": "CP-T05",
+      "kind": "pipe",
+      "diameter_mm": 40.0,
+      "tag_id": 2405241,
       "page": 2,
       "box": [
-        0.8577013458181365,
-        0.8315010969638945,
-        0.012573866176843784,
-        0.003979656833212914
+        0.8553397070935084,
+        0.8166631940230511,
+        0.05113610179118118,
+        0.022100875439680905
       ],
       "size": "",
-      "interface": []
+      "interface": [],
+      "label_text": "Premium ø40 mm- 0.07 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
     },
     {
-      "view_id": 2404721,
-      "code_note_id": 2405305,
-      "id": 1454292,
-      "view_key": "side",
-      "status": "model",
-      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001630d4",
-      "code": "AF-T03",
-      "kind": "pipe",
-      "code_point": [
-        -3.5499999999999514,
-        15.051711353362437,
-        15.62
-      ],
-      "reference_line": true,
-      "diameter_mm": 32.0,
       "type": "AmancoWavin AF",
+      "mode": "pipes",
+      "reference_line": true,
       "visible_in": [
         1445818,
         1489196,
         1443740
       ],
-      "tag_id": 2404731,
       "system": "AF",
-      "mode": "pipes",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001630d4",
       "length_m": 2.114999999999482,
+      "view_id": 2404721,
+      "code_note_id": 2405305,
+      "status": "model",
       "anchor": [
         3.8559504365708626,
         27.208840970824234,
         15.009842519685886
       ],
-      "page": 3,
-      "box": [
-        0.8870585874429496,
-        0.46470597420123033,
-        0.00927202170120736,
-        0.0029615886467318072
-      ],
-      "size": "",
-      "interface": []
-    },
-    {
-      "view_id": 2404721,
-      "code_note_id": 2405307,
-      "id": 1455065,
-      "view_key": "side",
-      "status": "model",
-      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001633d9",
-      "code": "AC-T05",
-      "kind": "pipe",
       "code_point": [
         -3.5499999999999514,
-        15.051711353362439,
-        16.27
+        15.051711353362437,
+        15.62
       ],
-      "reference_line": true,
+      "view_key": "side",
+      "id": 1454292,
+      "code": "AF-T03",
+      "kind": "pipe",
       "diameter_mm": 32.0,
+      "tag_id": 2404731,
+      "page": 3,
+      "box": [
+        0.8858001408759667,
+        0.45306747527789487,
+        0.03447231627494286,
+        0.0175073436625269
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "PPR ø32 mm- 2.12 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
       "type": "AmancoWavin AC",
+      "mode": "pipes",
+      "reference_line": true,
       "visible_in": [
         1445818,
         1489196,
         1443740
       ],
-      "tag_id": 2404732,
       "system": "AC",
-      "mode": "pipes",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001633d9",
       "length_m": 2.0149999999997306,
+      "view_id": 2404721,
+      "code_note_id": 2405307,
+      "status": "model",
       "anchor": [
         4.183477927478841,
         27.208840970824234,
         15.173884514436136
       ],
+      "code_point": [
+        -3.5499999999999514,
+        15.051711353362439,
+        16.27
+      ],
+      "view_key": "side",
+      "id": 1455065,
+      "code": "AC-T05",
+      "kind": "pipe",
+      "diameter_mm": 32.0,
+      "tag_id": 2404732,
       "page": 3,
       "box": [
-        0.8870585874429496,
-        0.4366507021119908,
-        0.009599044222723306,
-        0.0029935193872835707
+        0.8858001408759667,
+        0.42504813490038734,
+        0.03594252227788122,
+        0.0175073436625269
       ],
       "size": "",
-      "interface": []
+      "interface": [],
+      "label_text": "PPR.2 ø32 mm- 2.02 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
     },
     {
-      "view_id": 2404721,
-      "code_note_id": 2405309,
-      "id": 1455129,
-      "view_key": "side",
-      "status": "model",
-      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00163419",
-      "code": "AC-T06",
-      "kind": "pipe",
-      "code_point": [
-        7.850000000000086,
-        27.20884097082422,
-        7.62
-      ],
-      "reference_line": true,
-      "diameter_mm": 32.0,
       "type": "AmancoWavin AC",
+      "mode": "pipes",
+      "reference_line": true,
       "visible_in": [
         1445818,
         1489196,
         1443740
       ],
-      "tag_id": 2404741,
       "system": "AC",
-      "mode": "pipes",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00163419",
       "length_m": 0.6550032187674991,
+      "view_id": 2404721,
+      "code_note_id": 2405309,
+      "status": "model",
       "anchor": [
         9.539337234861216,
         27.208840970824216,
         10.679133858268573
       ],
-      "page": 3,
-      "box": [
-        0.5399706560461454,
-        0.8095235402463445,
-        0.00958212727830213,
-        0.002993505793950002
-      ],
-      "size": "",
-      "interface": []
-    },
-    {
-      "view_id": 2404721,
-      "code_note_id": 2405311,
-      "id": 1454439,
-      "view_key": "side",
-      "status": "model",
-      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00163167",
-      "code": "AF-T04",
-      "kind": "pipe",
       "code_point": [
         7.850000000000086,
         27.20884097082422,
-        7.07
+        7.62
       ],
-      "reference_line": true,
+      "view_key": "side",
+      "id": 1455129,
+      "code": "AC-T06",
+      "kind": "pipe",
       "diameter_mm": 32.0,
+      "tag_id": 2404741,
+      "page": 3,
+      "box": [
+        0.5387122158798224,
+        0.7979209956902971,
+        0.03588906396543111,
+        0.0175073436625269
+      ],
+      "size": "",
+      "interface": [],
+      "label_text": "PPR.2 ø32 mm- 0.66 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
       "type": "AmancoWavin AF",
+      "mode": "pipes",
+      "reference_line": true,
       "visible_in": [
         1445818,
         1489196,
         1443740
       ],
-      "tag_id": 2404742,
       "system": "AF",
-      "mode": "pipes",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00163167",
       "length_m": 0.615003172525784,
+      "view_id": 2404721,
+      "code_note_id": 2405311,
+      "status": "model",
       "anchor": [
         9.288533343211864,
         27.208840970824216,
         10.416666531766886
       ],
+      "code_point": [
+        7.850000000000086,
+        27.20884097082422,
+        7.07
+      ],
+      "view_key": "side",
+      "id": 1454439,
+      "code": "AF-T04",
+      "kind": "pipe",
+      "diameter_mm": 32.0,
+      "tag_id": 2404742,
       "page": 3,
       "box": [
-        0.5399706560461454,
-        0.8332681215810953,
-        0.009263569629656788,
-        0.00295758314444037
+        0.5387122158798224,
+        0.8216296543755383,
+        0.03473085173429211,
+        0.0175073436625269
       ],
       "size": "",
-      "interface": []
+      "interface": [],
+      "label_text": "PPR ø32 mm- 0.62 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
     },
     {
-      "view_id": 2404721,
-      "code_note_id": 2405313,
-      "id": 1457170,
-      "view_key": "side",
-      "status": "model",
-      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00163c12",
-      "code": "AF-T12",
-      "kind": "pipe",
-      "code_point": [
-        7.850000000000047,
-        15.058273033152327,
-        8.170000000000098
-      ],
-      "reference_line": true,
-      "diameter_mm": 32.0,
       "type": "AmancoWavin AF",
+      "mode": "pipes",
+      "reference_line": true,
       "visible_in": [
         1445818,
         1489196,
         1443740
       ],
-      "tag_id": 2404744,
       "system": "AF",
-      "mode": "pipes",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00163c12",
       "length_m": 0.46449999999973535,
+      "view_id": 2404721,
+      "code_note_id": 2405313,
+      "status": "model",
       "anchor": [
         8.90565060653077,
         27.20884097082422,
         12.303969816274227
       ],
+      "code_point": [
+        7.850000000000047,
+        15.058273033152327,
+        8.170000000000098
+      ],
+      "view_key": "side",
+      "id": 1457170,
+      "code": "AF-T12",
+      "kind": "pipe",
+      "diameter_mm": 32.0,
+      "tag_id": 2404744,
       "page": 3,
       "box": [
-        0.5399706560461454,
-        0.7858507860861682,
-        0.009249475376302482,
-        0.0029136857392373784
+        0.5387122158798224,
+        0.7742123370050559,
+        0.03480120778918336,
+        0.01750727116474787
       ],
       "size": "",
-      "interface": []
+      "interface": [],
+      "label_text": "PPR ø32 mm- 0.46 m",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
     },
     {
-      "view_id": 2405314,
-      "code_note_id": 2405377,
-      "id": 1454564,
-      "view_key": "plan",
-      "status": "model",
-      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001631e4",
+      "type": "Codo 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "32 mm",
       "interface": [
         "AF"
       ],
+      "visible_in": [
+        1445818,
+        1439889,
+        1489196,
+        1443740
+      ],
       "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
-      "code": "AF-A02",
-      "kind": "fitting",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001631e4",
       "connected_ids": [
         1454558,
         1488423
       ],
-      "reference_line": true,
-      "size": "32 mm",
-      "diameters_mm": [
-        32.0
+      "system": "AF",
+      "view_id": 2405314,
+      "code_note_id": 2405377,
+      "status": "model",
+      "anchor": [
+        15.379232247984522,
+        15.05827303315237,
+        0.0
       ],
       "code_point": [
         17.8,
         17.55,
         0.0
       ],
-      "type": "Codo 90.00 grados",
-      "visible_in": [
-        1445818,
-        1439889,
-        1489196,
-        1443740
-      ],
-      "system": "AF",
-      "mode": "accessories",
-      "anchor": [
-        15.379232247984522,
-        15.05827303315237,
-        0.0
+      "view_key": "plan",
+      "id": 1454564,
+      "code": "AF-A02",
+      "kind": "fitting",
+      "diameters_mm": [
+        32.0
       ],
       "page": 5,
       "box": [
-        0.8049583199260841,
-        0.6906092575603946,
-        0.014776154069723976,
-        0.004645512684718904
+        0.8036998989617412,
+        0.6863700405538077,
+        0.05522975911602482,
+        0.012440691379419591
       ],
       "diameter_mm": 0,
-      "length_m": 0
+      "length_m": 0,
+      "label_text": "AF-A02 | Codo 90.00 grados | 32 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
     },
     {
-      "view_id": 2405314,
-      "code_note_id": 2405395,
-      "id": 1456736,
-      "view_key": "plan",
-      "status": "check_connection",
-      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00163a60",
-      "interface": [],
-      "family": "AmancoWavin_Unionesdetubería_FusiónPPRUniónFusión",
-      "code": "AF-A03",
-      "kind": "fitting",
-      "connected_ids": [],
+      "type": "Valvula esferica union-fusion",
+      "mode": "accessories",
       "reference_line": true,
       "size": "32 mm",
-      "diameters_mm": [
-        32.0
+      "interface": [],
+      "visible_in": [
+        1445818,
+        1489196,
+        1443740
+      ],
+      "family": "AmancoWavin_Unionesdetubería_FusiónPPRUniónFusión",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00163a60",
+      "connected_ids": [],
+      "system": "AF",
+      "view_id": 2405314,
+      "code_note_id": 2405395,
+      "status": "check_connection",
+      "anchor": [
+        6.204479156140622,
+        15.051711353362347,
+        0.0
       ],
       "code_point": [
         8.0,
         13.5,
         0.0
       ],
-      "type": "Union",
+      "view_key": "plan",
+      "id": 1456736,
+      "code": "AF-A03",
+      "kind": "fitting",
+      "diameters_mm": [
+        32.0
+      ],
+      "page": 5,
+      "box": [
+        0.4912616653308916,
+        0.8691813101305641,
+        0.0987938801087764,
+        0.012440691379419591
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "AF-A03 | Valvula esferica union-fusion | 32 mm [revisar conexion]",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "type": "Valvula esferica union-fusion",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "32 mm",
+      "interface": [],
       "visible_in": [
         1445818,
         1489196,
         1443740
       ],
-      "system": "AF",
-      "mode": "accessories",
+      "family": "AmancoWavin_Unionesdetubería_FusiónPPRUniónFusión",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00163bd3",
+      "connected_ids": [],
+      "system": "AC",
+      "view_id": 2405314,
+      "code_note_id": 2405397,
+      "status": "check_connection",
       "anchor": [
         6.204479156140622,
         15.051711353362347,
         0.0
-      ],
-      "page": 5,
-      "box": [
-        0.49252008389498697,
-        0.873420545261596,
-        0.014811583323075209,
-        0.004651783742605046
-      ],
-      "diameter_mm": 0,
-      "length_m": 0
-    },
-    {
-      "view_id": 2405314,
-      "code_note_id": 2405397,
-      "id": 1457107,
-      "view_key": "plan",
-      "status": "check_connection",
-      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00163bd3",
-      "interface": [],
-      "family": "AmancoWavin_Unionesdetubería_FusiónPPRUniónFusión",
-      "code": "AC-A03",
-      "kind": "fitting",
-      "connected_ids": [],
-      "reference_line": true,
-      "size": "32 mm",
-      "diameters_mm": [
-        32.0
       ],
       "code_point": [
         8.0,
         12.7,
         0.0
       ],
-      "type": "Union",
+      "view_key": "plan",
+      "id": 1457107,
+      "code": "AC-A03",
+      "kind": "fitting",
+      "diameters_mm": [
+        32.0
+      ],
+      "page": 5,
+      "box": [
+        0.4912616653308916,
+        0.9052921638745597,
+        0.09901355076051106,
+        0.012440691379419591
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "AC-A03 | Valvula esferica union-fusion | 32 mm [revisar conexion]",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "type": "Tee 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "32 mm",
+      "interface": [
+        "AF"
+      ],
       "visible_in": [
         1445818,
         1489196,
         1443740
       ],
-      "system": "AC",
-      "mode": "accessories",
-      "anchor": [
-        6.204479156140622,
-        15.051711353362347,
-        0.0
-      ],
-      "page": 5,
-      "box": [
-        0.49252008389498697,
-        0.9094750319823952,
-        0.015303086805341488,
-        0.004708187014690805
-      ],
-      "diameter_mm": 0,
-      "length_m": 0
-    },
-    {
-      "view_id": 2405314,
-      "code_note_id": 2405379,
-      "id": 1457172,
-      "view_key": "plan",
-      "status": "model",
-      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00163c14",
-      "interface": [
-        "AF"
-      ],
       "family": "AmancoWavin_Unionesdetubería_FusiónPPRTee",
-      "code": "AF-A05",
-      "kind": "fitting",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00163c14",
       "connected_ids": [
         1457170,
         1456739,
         1457173
       ],
-      "reference_line": true,
-      "size": "32 mm",
-      "diameters_mm": [
-        32.0
+      "system": "AF",
+      "view_id": 2405314,
+      "code_note_id": 2405379,
+      "status": "model",
+      "anchor": [
+        8.905650588846472,
+        15.058273033152366,
+        0.0
       ],
       "code_point": [
         8.0,
         11.9,
         0.0
       ],
-      "type": "Tee 90.00 grados",
-      "visible_in": [
-        1445818,
-        1489196,
-        1443740
-      ],
-      "system": "AF",
-      "mode": "accessories",
-      "anchor": [
-        8.905650588846472,
-        15.058273033152366,
-        0.0
+      "view_key": "plan",
+      "id": 1457172,
+      "code": "AF-A05",
+      "kind": "fitting",
+      "diameters_mm": [
+        32.0
       ],
       "page": 5,
       "box": [
-        0.49252008389498697,
-        0.945642325247366,
-        0.014833721605904092,
-        0.004645476435829388
+        0.4912616653308916,
+        0.9414030176185553,
+        0.05327694334791182,
+        0.012440691379419591
       ],
       "diameter_mm": 0,
-      "length_m": 0
+      "length_m": 0,
+      "label_text": "AF-A05 | Tee 90.00 grados | 32 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
     },
     {
-      "view_id": 2405314,
-      "code_note_id": 2405355,
-      "id": 1488177,
-      "view_key": "plan",
-      "status": "model",
-      "unique_id": "7355c4a4-c4a4-4cf0-92b3-b73244e08c3e-0016b531",
+      "type": "Codo 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "32 mm",
       "interface": [
         "AC"
       ],
+      "visible_in": [
+        1445818,
+        1439889,
+        1489196,
+        1443740
+      ],
       "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
-      "code": "AC-A04",
-      "kind": "fitting",
+      "unique_id": "7355c4a4-c4a4-4cf0-92b3-b73244e08c3e-0016b531",
       "connected_ids": [
         1455292,
         1488349
       ],
-      "reference_line": true,
-      "size": "32 mm",
-      "diameters_mm": [
-        32.0
+      "system": "AC",
+      "view_id": 2405314,
+      "code_note_id": 2405355,
+      "status": "model",
+      "anchor": [
+        15.379232275713948,
+        21.822002469536777,
+        0.0
       ],
       "code_point": [
         17.8,
         22.8,
         0.0
       ],
+      "view_key": "plan",
+      "id": 1488177,
+      "code": "AC-A04",
+      "kind": "fitting",
+      "diameters_mm": [
+        32.0
+      ],
+      "page": 5,
+      "box": [
+        0.8036998989617412,
+        0.44939238161438927,
+        0.05558840089801772,
+        0.012440655130530076
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "AC-A04 | Codo 90.00 grados | 32 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
       "type": "Codo 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "32 mm",
+      "interface": [
+        "AC"
+      ],
       "visible_in": [
         1445818,
         1439889,
         1489196,
         1443740
       ],
-      "system": "AC",
-      "mode": "accessories",
-      "anchor": [
-        15.379232275713948,
-        21.822002469536777,
-        0.0
-      ],
-      "page": 5,
-      "box": [
-        0.8049583199260841,
-        0.4535752044111129,
-        0.015289794234654135,
-        0.004701934081249421
-      ],
-      "diameter_mm": 0,
-      "length_m": 0
-    },
-    {
-      "view_id": 2405314,
-      "code_note_id": 2405363,
-      "id": 1488344,
-      "view_key": "plan",
-      "status": "model",
-      "unique_id": "7355c4a4-c4a4-4cf0-92b3-b73244e08c3e-0016b5d8",
-      "interface": [
-        "AC"
-      ],
       "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
-      "code": "AC-A05",
-      "kind": "fitting",
+      "unique_id": "7355c4a4-c4a4-4cf0-92b3-b73244e08c3e-0016b5d8",
       "connected_ids": [
         1455332,
         1455271
       ],
-      "reference_line": true,
-      "size": "32 mm",
-      "diameters_mm": [
-        32.0
+      "system": "AC",
+      "view_id": 2405314,
+      "code_note_id": 2405363,
+      "status": "model",
+      "anchor": [
+        14.985531539471534,
+        18.765227197579687,
+        0.0
       ],
       "code_point": [
         17.8,
         19.8,
         0.0
       ],
-      "type": "Codo 90.00 grados",
+      "view_key": "plan",
+      "id": 1488344,
+      "code": "AC-A05",
+      "kind": "fitting",
+      "diameters_mm": [
+        32.0
+      ],
+      "page": 5,
+      "box": [
+        0.8036998989617412,
+        0.5848081556521516,
+        0.05548214994175912,
+        0.012440655130530076
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "AC-A05 | Codo 90.00 grados | 32 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "type": "Tee 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "32 mm",
+      "interface": [
+        "AC"
+      ],
       "visible_in": [
         1445818,
         1439889,
         1489196,
         1443740
       ],
-      "system": "AC",
-      "mode": "accessories",
-      "anchor": [
-        14.985531539471534,
-        18.765227197579687,
-        0.0
-      ],
-      "page": 5,
-      "box": [
-        0.8049583199260841,
-        0.5889909875110976,
-        0.01532522828850038,
-        0.004701934081249421
-      ],
-      "diameter_mm": 0,
-      "length_m": 0
-    },
-    {
-      "view_id": 2405314,
-      "code_note_id": 2405365,
-      "id": 1488348,
-      "view_key": "plan",
-      "status": "model",
-      "unique_id": "7355c4a4-c4a4-4cf0-92b3-b73244e08c3e-0016b5dc",
-      "interface": [
-        "AC"
-      ],
       "family": "AmancoWavin_Unionesdetubería_FusiónPPRTee",
-      "code": "AC-A06",
-      "kind": "fitting",
+      "unique_id": "7355c4a4-c4a4-4cf0-92b3-b73244e08c3e-0016b5dc",
       "connected_ids": [
         1488349,
         1455301,
         1455271
       ],
-      "reference_line": true,
-      "size": "32 mm",
-      "diameters_mm": [
-        32.0
+      "system": "AC",
+      "view_id": 2405314,
+      "code_note_id": 2405365,
+      "status": "model",
+      "anchor": [
+        15.379232255449084,
+        18.765227165871668,
+        0.0
       ],
       "code_point": [
         17.8,
         19.05,
         0.0
       ],
-      "type": "Tee 90.00 grados",
+      "view_key": "plan",
+      "id": 1488348,
+      "code": "AC-A06",
+      "kind": "fitting",
+      "diameters_mm": [
+        32.0
+      ],
+      "page": 5,
+      "box": [
+        0.8036998989617412,
+        0.6186621172860369,
+        0.05339655888228295,
+        0.012440691379419591
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "AC-A06 | Tee 90.00 grados | 32 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "type": "Codo 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "32 mm",
+      "interface": [
+        "AF"
+      ],
       "visible_in": [
         1445818,
         1439889,
         1489196,
         1443740
       ],
-      "system": "AC",
-      "mode": "accessories",
-      "anchor": [
-        15.379232255449084,
-        18.765227165871668,
-        0.0
-      ],
-      "page": 5,
-      "box": [
-        0.8049583199260841,
-        0.6228449491449829,
-        0.015298652748115697,
-        0.004701934081249421
-      ],
-      "diameter_mm": 0,
-      "length_m": 0
-    },
-    {
-      "view_id": 2405314,
-      "code_note_id": 2405359,
-      "id": 1488418,
-      "view_key": "plan",
-      "status": "model",
-      "unique_id": "7355c4a4-c4a4-4cf0-92b3-b73244e08c3e-0016b622",
-      "interface": [
-        "AF"
-      ],
       "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
-      "code": "AF-A07",
-      "kind": "fitting",
+      "unique_id": "7355c4a4-c4a4-4cf0-92b3-b73244e08c3e-0016b622",
       "connected_ids": [
         1455360,
         1454570
       ],
-      "reference_line": true,
-      "size": "32 mm",
-      "diameters_mm": [
-        32.0
+      "system": "AF",
+      "view_id": 2405314,
+      "code_note_id": 2405359,
+      "status": "model",
+      "anchor": [
+        14.985531460583037,
+        19.388557002273085,
+        0.0
       ],
       "code_point": [
         17.8,
         21.3,
         0.0
       ],
-      "type": "Codo 90.00 grados",
+      "view_key": "plan",
+      "id": 1488418,
+      "code": "AF-A07",
+      "kind": "fitting",
+      "diameters_mm": [
+        32.0
+      ],
+      "page": 5,
+      "box": [
+        0.8036998989617412,
+        0.5171002686332704,
+        0.05514562884078005,
+        0.012440655130530076
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "AF-A07 | Codo 90.00 grados | 32 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "type": "Tee 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "32 mm",
+      "interface": [
+        "AF"
+      ],
       "visible_in": [
         1445818,
         1439889,
         1489196,
         1443740
       ],
-      "system": "AF",
-      "mode": "accessories",
-      "anchor": [
-        14.985531460583037,
-        19.388557002273085,
-        0.0
-      ],
-      "page": 5,
-      "box": [
-        0.8049583199260841,
-        0.5213395196231914,
-        0.01481158812357022,
-        0.004645510419163309
-      ],
-      "diameter_mm": 0,
-      "length_m": 0
-    },
-    {
-      "view_id": 2405314,
-      "code_note_id": 2405361,
-      "id": 1488422,
-      "view_key": "plan",
-      "status": "model",
-      "unique_id": "7355c4a4-c4a4-4cf0-92b3-b73244e08c3e-0016b626",
-      "interface": [
-        "AF"
-      ],
       "family": "AmancoWavin_Unionesdetubería_FusiónPPRTee",
-      "code": "AF-A08",
-      "kind": "fitting",
+      "unique_id": "7355c4a4-c4a4-4cf0-92b3-b73244e08c3e-0016b626",
       "connected_ids": [
         1454570,
         1454451,
         1488423
       ],
-      "reference_line": true,
-      "size": "32 mm",
-      "diameters_mm": [
-        32.0
+      "system": "AF",
+      "view_id": 2405314,
+      "code_note_id": 2405361,
+      "status": "model",
+      "anchor": [
+        15.379232247984525,
+        19.388556973999236,
+        0.0
       ],
       "code_point": [
         17.8,
         20.55,
         0.0
       ],
-      "type": "Tee 90.00 grados",
+      "view_key": "plan",
+      "id": 1488422,
+      "code": "AF-A08",
+      "kind": "fitting",
+      "diameters_mm": [
+        32.0
+      ],
+      "page": 5,
+      "box": [
+        0.8036998989617412,
+        0.5509541940182663,
+        0.05329030792602435,
+        0.012440655130530076
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "AF-A08 | Tee 90.00 grados | 32 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "type": "Codo 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "32 mm",
+      "interface": [
+        "AF"
+      ],
       "visible_in": [
         1445818,
         1439889,
         1489196,
         1443740
       ],
-      "system": "AF",
-      "mode": "accessories",
-      "anchor": [
-        15.379232247984525,
-        19.388556973999236,
-        0.0
-      ],
-      "page": 5,
-      "box": [
-        0.8049583199260841,
-        0.5551934653981875,
-        0.014816017380301002,
-        0.004645512684718904
-      ],
-      "diameter_mm": 0,
-      "length_m": 0
-    },
-    {
-      "view_id": 2405314,
-      "code_note_id": 2405357,
-      "id": 2012166,
-      "view_key": "plan",
-      "status": "model",
-      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001eb406",
-      "interface": [
-        "AF"
-      ],
       "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
-      "code": "AF-A09",
-      "kind": "fitting",
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001eb406",
       "connected_ids": [
         1454451,
         1454590
       ],
-      "reference_line": true,
-      "size": "32 mm",
-      "diameters_mm": [
-        32.0
+      "system": "AF",
+      "view_id": 2405314,
+      "code_note_id": 2405357,
+      "status": "model",
+      "anchor": [
+        15.379232217958322,
+        20.93403746598624,
+        0.0
       ],
       "code_point": [
         17.8,
         22.05,
         0.0
       ],
-      "type": "Codo 90.00 grados",
-      "visible_in": [
-        1445818,
-        1439889,
-        1489196,
-        1443740
-      ],
-      "system": "AF",
-      "mode": "accessories",
-      "anchor": [
-        15.379232217958322,
-        20.93403746598624,
-        0.0
+      "view_key": "plan",
+      "id": 2012166,
+      "code": "AF-A09",
+      "kind": "fitting",
+      "diameters_mm": [
+        32.0
       ],
       "page": 5,
       "box": [
-        0.8049583199260841,
-        0.4874855670515284,
-        0.014816017380301002,
-        0.004645510985552208
+        0.8036998989617412,
+        0.4832463069993851,
+        0.055167800727074015,
+        0.012440655130530076
       ],
       "diameter_mm": 0,
-      "length_m": 0
+      "length_m": 0,
+      "label_text": "AF-A09 | Codo 90.00 grados | 32 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
     },
     {
-      "view_id": 2405314,
-      "code_note_id": 2405371,
-      "id": 2321550,
-      "view_key": "plan",
-      "status": "model",
-      "unique_id": "7068d757-a3d9-4226-8ada-391d4af114e1-00236c8e",
+      "type": "Codo 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "50 mm",
       "interface": [
         "AF"
       ],
+      "visible_in": [
+        1445818,
+        1489196,
+        1443740
+      ],
       "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
-      "code": "AF-A10",
-      "kind": "fitting",
+      "unique_id": "7068d757-a3d9-4226-8ada-391d4af114e1-00236c8e",
       "connected_ids": [
         1454025,
         1438638
       ],
-      "reference_line": true,
-      "size": "50 mm",
-      "diameters_mm": [
-        50.0
+      "system": "AF",
+      "view_id": 2405314,
+      "code_note_id": 2405371,
+      "status": "model",
+      "anchor": [
+        0.18269386350479672,
+        16.00315492291618,
+        0.0
       ],
       "code_point": [
         -2.0,
         17.1,
         0.0
       ],
+      "view_key": "plan",
+      "id": 2321550,
+      "code": "AF-A10",
+      "kind": "fitting",
+      "diameters_mm": [
+        50.0
+      ],
+      "page": 5,
+      "box": [
+        0.17244714539780256,
+        0.7066823232870261,
+        0.054764840775133244,
+        0.012440691379419591
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "AF-A10 | Codo 90.00 grados | 50 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
       "type": "Codo 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "50x32 mm",
+      "interface": [
+        "AF"
+      ],
       "visible_in": [
         1445818,
         1489196,
         1443740
       ],
-      "system": "AF",
-      "mode": "accessories",
-      "anchor": [
-        0.18269386350479672,
-        16.00315492291618,
-        0.0
-      ],
-      "page": 5,
-      "box": [
-        0.17370556636214546,
-        0.7109216127913921,
-        0.01479830035337788,
-        0.004645512684718904
-      ],
-      "diameter_mm": 0,
-      "length_m": 0
-    },
-    {
-      "view_id": 2405314,
-      "code_note_id": 2405373,
-      "id": 2321596,
-      "view_key": "plan",
-      "status": "model",
-      "unique_id": "7068d757-a3d9-4226-8ada-391d4af114e1-00236cbc",
-      "interface": [
-        "AF"
-      ],
       "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
-      "code": "AF-A11",
-      "kind": "fitting",
+      "unique_id": "7068d757-a3d9-4226-8ada-391d4af114e1-00236cbc",
       "connected_ids": [
         1454025,
         2321588
       ],
-      "reference_line": true,
-      "size": "50x32 mm",
-      "diameters_mm": [
-        32.0,
-        50.0
+      "system": "AF",
+      "view_id": 2405314,
+      "code_note_id": 2405373,
+      "status": "model",
+      "anchor": [
+        3.855950436570823,
+        16.00315492291618,
+        0.0
       ],
       "code_point": [
         -2.0,
         15.500000000000002,
         0.0
       ],
+      "view_key": "plan",
+      "id": 2321596,
+      "code": "AF-A11",
+      "kind": "fitting",
+      "diameters_mm": [
+        32.0,
+        50.0
+      ],
+      "page": 5,
+      "box": [
+        0.17244714539780256,
+        0.7789041032727962,
+        0.0593876534647848,
+        0.012440691379419591
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "AF-A11 | Codo 90.00 grados | 50x32 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
       "type": "Codo 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "50 mm",
+      "interface": [
+        "AC"
+      ],
       "visible_in": [
         1445818,
         1489196,
         1443740
       ],
-      "system": "AF",
-      "mode": "accessories",
-      "anchor": [
-        3.855950436570823,
-        16.00315492291618,
-        0.0
-      ],
-      "page": 5,
-      "box": [
-        0.17370556636214546,
-        0.7831433746527175,
-        0.014200529913202954,
-        0.004576549172416103
-      ],
-      "diameter_mm": 0,
-      "length_m": 0
-    },
-    {
-      "view_id": 2405314,
-      "code_note_id": 2405367,
-      "id": 2321648,
-      "view_key": "plan",
-      "status": "model",
-      "unique_id": "7068d757-a3d9-4226-8ada-391d4af114e1-00236cf0",
-      "interface": [
-        "AC"
-      ],
       "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
-      "code": "AC-A07",
-      "kind": "fitting",
+      "unique_id": "7068d757-a3d9-4226-8ada-391d4af114e1-00236cf0",
       "connected_ids": [
         1437779,
         1454758
       ],
-      "reference_line": true,
-      "size": "50 mm",
-      "diameters_mm": [
-        50.0
+      "system": "AC",
+      "view_id": 2405314,
+      "code_note_id": 2405367,
+      "status": "model",
+      "anchor": [
+        0.5089372450641266,
+        16.26562211451726,
+        0.0
       ],
       "code_point": [
         -2.0,
         16.3,
         0.0
       ],
+      "view_key": "plan",
+      "id": 2321648,
+      "code": "AC-A07",
+      "kind": "fitting",
+      "diameters_mm": [
+        50.0
+      ],
+      "page": 5,
+      "box": [
+        0.17244714539780256,
+        0.7427932495288007,
+        0.055477720685028334,
+        0.012440691379419591
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "AC-A07 | Codo 90.00 grados | 50 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
       "type": "Codo 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "50x32 mm",
+      "interface": [
+        "AC"
+      ],
       "visible_in": [
         1445818,
         1489196,
         1443740
       ],
-      "system": "AC",
-      "mode": "accessories",
-      "anchor": [
-        0.5089372450641266,
-        16.26562211451726,
-        0.0
-      ],
-      "page": 5,
-      "box": [
-        0.17370556636214546,
-        0.7469760813877467,
-        0.015303082004846476,
-        0.004701934081249421
-      ],
-      "diameter_mm": 0,
-      "length_m": 0
-    },
-    {
-      "view_id": 2405314,
-      "code_note_id": 2405369,
-      "id": 2321652,
-      "view_key": "plan",
-      "status": "model",
-      "unique_id": "7068d757-a3d9-4226-8ada-391d4af114e1-00236cf4",
-      "interface": [
-        "AC"
-      ],
       "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
-      "code": "AC-A08",
-      "kind": "fitting",
+      "unique_id": "7068d757-a3d9-4226-8ada-391d4af114e1-00236cf4",
       "connected_ids": [
         1454828,
         1454758
       ],
-      "reference_line": true,
-      "size": "50x32 mm",
-      "diameters_mm": [
-        32.0,
-        50.0
+      "system": "AC",
+      "view_id": 2405314,
+      "code_note_id": 2405369,
+      "status": "model",
+      "anchor": [
+        4.183477927478809,
+        16.265622114517175,
+        0.0
       ],
       "code_point": [
         -2.0,
         14.700000000000001,
         0.0
       ],
-      "type": "Codo 90.00 grados",
-      "visible_in": [
-        1445818,
-        1489196,
-        1443740
-      ],
-      "system": "AC",
-      "mode": "accessories",
-      "anchor": [
-        4.183477927478809,
-        16.265622114517175,
-        0.0
+      "view_key": "plan",
+      "id": 2321652,
+      "code": "AC-A08",
+      "kind": "fitting",
+      "diameters_mm": [
+        32.0,
+        50.0
       ],
       "page": 5,
       "box": [
-        0.17370556636214546,
-        0.8191978251246274,
-        0.015307511261577257,
-        0.004701915956804663
+        0.17244714539780256,
+        0.8150150295145708,
+        0.06087982653289663,
+        0.012440691379419591
       ],
       "diameter_mm": 0,
-      "length_m": 0
+      "length_m": 0,
+      "label_text": "AC-A08 | Codo 90.00 grados | 50x32 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
     },
     {
-      "view_id": 2405314,
-      "code_note_id": 2405375,
-      "id": 2366034,
-      "view_key": "plan",
-      "status": "model",
-      "unique_id": "5364294c-7216-4f8d-b4f6-1ad33687c1e9-00241a52",
+      "type": "Codo 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "32 mm",
       "interface": [
         "AC"
       ],
+      "visible_in": [
+        1445818,
+        1439889,
+        1489196,
+        1443740
+      ],
       "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
-      "code": "AC-A09",
-      "kind": "fitting",
+      "unique_id": "5364294c-7216-4f8d-b4f6-1ad33687c1e9-00241a52",
       "connected_ids": [
         1455301,
         1455261
       ],
-      "reference_line": true,
-      "size": "32 mm",
-      "diameters_mm": [
-        32.0
+      "system": "AC",
+      "view_id": 2405314,
+      "code_note_id": 2405375,
+      "status": "model",
+      "anchor": [
+        15.379232247984545,
+        15.248561747063102,
+        0.0
       ],
       "code_point": [
         17.8,
         18.3,
         0.0
       ],
-      "type": "Codo 90.00 grados",
+      "view_key": "plan",
+      "id": 2366034,
+      "code": "AC-A09",
+      "kind": "fitting",
+      "diameters_mm": [
+        32.0
+      ],
+      "page": 5,
+      "box": [
+        0.8036998989617412,
+        0.6525160426710328,
+        0.055384706293681946,
+        0.012440691379419591
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "AC-A09 | Codo 90.00 grados | 32 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "type": "Boca de acceso",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "63x40 mm",
+      "interface": [
+        "CP",
+        "CS"
+      ],
       "visible_in": [
         1445818,
         1439889,
         1489196,
         1443740
       ],
-      "system": "AC",
-      "mode": "accessories",
-      "anchor": [
-        15.379232247984545,
-        15.248561747063102,
-        0.0
-      ],
-      "page": 5,
-      "box": [
-        0.8049583199260841,
-        0.6566988745299788,
-        0.015307511261577257,
-        0.004701934081249421
-      ],
-      "diameter_mm": 0,
-      "length_m": 0
-    },
-    {
-      "view_id": 2405334,
-      "code_note_id": 2405413,
-      "id": 2013511,
-      "view_key": "front",
-      "status": "model",
-      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001eb947",
-      "interface": [
-        "CP",
-        "CS"
-      ],
       "family": "AmancoWavin_Unionesdetubería_PVCNivel1BocadeAcceso",
-      "code": "CP-A01",
-      "kind": "fitting",
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001eb947",
       "connected_ids": [
         2019394,
         2018290,
         2019750
       ],
-      "reference_line": true,
-      "size": "63x40 mm",
-      "diameters_mm": [
-        40.0,
-        63.0
+      "system": "CP",
+      "view_id": 2405334,
+      "code_note_id": 2405413,
+      "status": "model",
+      "anchor": [
+        11.492600833522731,
+        19.075535714689973,
+        9.843685233512412
       ],
       "code_point": [
         11.492600833522719,
         11.499999999999982,
         9.7
       ],
-      "type": "Boca de acceso",
+      "view_key": "front",
+      "id": 2013511,
+      "code": "CP-A01",
+      "kind": "fitting",
+      "diameters_mm": [
+        40.0,
+        63.0
+      ],
+      "page": 6,
+      "box": [
+        0.8316759037578326,
+        0.7952298781326834,
+        0.0703820159682642,
+        0.014833915562996727
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "CP-A01 | Boca de acceso | 63x40 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "type": "Codo 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "40 mm",
+      "interface": [
+        "CS"
+      ],
       "visible_in": [
         1445818,
         1439889,
         1489196,
         1443740
       ],
-      "system": "CP",
-      "mode": "accessories",
-      "anchor": [
-        11.492600833522731,
-        19.075535714689973,
-        9.843685233512412
-      ],
-      "page": 6,
-      "box": [
-        0.8332154161074197,
-        0.8000600064117036,
-        0.018371712032155277,
-        0.005969503374264129
-      ],
-      "diameter_mm": 0,
-      "length_m": 0
-    },
-    {
-      "view_id": 2405334,
-      "code_note_id": 2405403,
-      "id": 2016127,
-      "view_key": "front",
-      "status": "model",
-      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ec37f",
-      "interface": [
-        "CS"
-      ],
       "family": "AmancoWavin_Unionesdetubería_PVCNivel1Codo",
-      "code": "CS-A01",
-      "kind": "fitting",
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ec37f",
       "connected_ids": [
         2019066,
         2014039
       ],
-      "reference_line": true,
-      "size": "40 mm",
-      "diameters_mm": [
-        40.0
+      "system": "CS",
+      "view_id": 2405334,
+      "code_note_id": 2405403,
+      "status": "model",
+      "anchor": [
+        11.492600833522731,
+        18.469810962542518,
+        11.646981627297416
       ],
       "code_point": [
         11.492600833522719,
         11.499999999999982,
         13.2
       ],
+      "view_key": "front",
+      "id": 2016127,
+      "code": "CS-A01",
+      "kind": "fitting",
+      "diameters_mm": [
+        40.0
+      ],
+      "page": 6,
+      "box": [
+        0.8316759037578326,
+        0.5946542965156263,
+        0.069198661944584,
+        0.014833843065217697
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "CS-A01 | Codo 90.00 grados | 40 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
       "type": "Codo 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "40 mm",
+      "interface": [
+        "CS"
+      ],
       "visible_in": [
         1445818,
         1439889,
         1489196,
         1443740
       ],
-      "system": "CS",
-      "mode": "accessories",
-      "anchor": [
-        11.492600833522731,
-        18.469810962542518,
-        11.646981627297416
-      ],
-      "page": 6,
-      "box": [
-        0.8332154161074197,
-        0.5994844247946464,
-        0.018371712032155277,
-        0.005969512436486508
-      ],
-      "diameter_mm": 0,
-      "length_m": 0
-    },
-    {
-      "view_id": 2405334,
-      "code_note_id": 2405399,
-      "id": 2016133,
-      "view_key": "front",
-      "status": "model",
-      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ec385",
-      "interface": [
-        "CS"
-      ],
       "family": "AmancoWavin_Unionesdetubería_PVCNivel1Codo",
-      "code": "CS-A02",
-      "kind": "fitting",
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ec385",
       "connected_ids": [
         2014045,
         2019054
       ],
-      "reference_line": true,
-      "size": "40 mm",
-      "diameters_mm": [
-        40.0
+      "system": "CS",
+      "view_id": 2405334,
+      "code_note_id": 2405399,
+      "status": "model",
+      "anchor": [
+        11.492600833522733,
+        19.678415441038652,
+        11.646981627298834
       ],
       "code_point": [
         11.492600833522719,
         11.499999999999982,
         14.6
       ],
+      "view_key": "front",
+      "id": 2016133,
+      "code": "CS-A02",
+      "kind": "fitting",
+      "diameters_mm": [
+        40.0
+      ],
+      "page": 6,
+      "box": [
+        0.8316759037578326,
+        0.5144240493692476,
+        0.06993509628333643,
+        0.014833843065217697
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "CS-A02 | Codo 90.00 grados | 40 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
       "type": "Codo 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "50 mm",
+      "interface": [
+        "CP",
+        "CS"
+      ],
       "visible_in": [
         1445818,
         1439889,
         1489196,
         1443740
       ],
-      "system": "CS",
-      "mode": "accessories",
-      "anchor": [
-        11.492600833522733,
-        19.678415441038652,
-        11.646981627298834
-      ],
-      "page": 6,
-      "box": [
-        0.8332154161074197,
-        0.519254193507157,
-        0.019102513790093992,
-        0.0059695101709309134
-      ],
-      "diameter_mm": 0,
-      "length_m": 0
-    },
-    {
-      "view_id": 2405334,
-      "code_note_id": 2405411,
-      "id": 2016418,
-      "view_key": "front",
-      "status": "model",
-      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ec4a2",
-      "interface": [
-        "CP",
-        "CS"
-      ],
       "family": "AmancoWavin_Unionesdetubería_PVCNivel1Codo",
-      "code": "CP-A02",
-      "kind": "fitting",
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ec4a2",
       "connected_ids": [
         2016410,
         2016380
       ],
-      "reference_line": true,
-      "size": "50 mm",
-      "diameters_mm": [
-        50.0
+      "system": "CP",
+      "view_id": 2405334,
+      "code_note_id": 2405411,
+      "status": "model",
+      "anchor": [
+        11.492600833522731,
+        19.07553571468997,
+        10.810385110662073
       ],
       "code_point": [
         11.492600833522719,
         11.499999999999982,
         10.4
       ],
+      "view_key": "front",
+      "id": 2016418,
+      "code": "CP-A02",
+      "kind": "fitting",
+      "diameters_mm": [
+        50.0
+      ],
+      "page": 6,
+      "box": [
+        0.8316759037578326,
+        0.7551146820617151,
+        0.06983391464981016,
+        0.014833915562996727
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "CP-A02 | Codo 90.00 grados | 50 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
       "type": "Codo 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "50 mm",
+      "interface": [
+        "CS"
+      ],
       "visible_in": [
         1445818,
         1439889,
         1489196,
         1443740
       ],
-      "system": "CP",
-      "mode": "accessories",
-      "anchor": [
-        11.492600833522731,
-        19.07553571468997,
-        10.810385110662073
-      ],
-      "page": 6,
-      "box": [
-        0.8332154161074197,
-        0.7599448828385142,
-        0.019102513790093992,
-        0.005969521498708887
-      ],
-      "diameter_mm": 0,
-      "length_m": 0
-    },
-    {
-      "view_id": 2405334,
-      "code_note_id": 2405407,
-      "id": 2016439,
-      "view_key": "front",
-      "status": "model",
-      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ec4b7",
-      "interface": [
-        "CS"
-      ],
       "family": "AmancoWavin_Unionesdetubería_PVCNivel1Codo",
-      "code": "CP-A03",
-      "kind": "fitting",
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ec4b7",
       "connected_ids": [
         2016410,
         2018454
       ],
-      "reference_line": true,
-      "size": "50 mm",
-      "diameters_mm": [
-        50.0
+      "system": "CP",
+      "view_id": 2405334,
+      "code_note_id": 2405407,
+      "status": "model",
+      "anchor": [
+        11.492600833522731,
+        19.07553571468997,
+        11.097334129706576
       ],
       "code_point": [
         11.492600833522719,
         11.499999999999982,
         11.8
       ],
+      "view_key": "front",
+      "id": 2016439,
+      "code": "CP-A03",
+      "kind": "fitting",
+      "diameters_mm": [
+        50.0
+      ],
+      "page": 6,
+      "box": [
+        0.8316759037578326,
+        0.6748845074131155,
+        0.06981701690736904,
+        0.014833915562996727
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "CP-A03 | Codo 90.00 grados | 50 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
       "type": "Codo 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "40 mm",
+      "interface": [
+        "CP"
+      ],
       "visible_in": [
         1445818,
         1439889,
         1489196,
         1443740
       ],
-      "system": "CP",
-      "mode": "accessories",
-      "anchor": [
-        11.492600833522731,
-        19.07553571468997,
-        11.097334129706576
-      ],
-      "page": 6,
-      "box": [
-        0.8332154161074197,
-        0.6797146538165804,
-        0.019147497628683476,
-        0.005977478129957489
-      ],
-      "diameter_mm": 0,
-      "length_m": 0
-    },
-    {
-      "view_id": 2405334,
-      "code_note_id": 2405409,
-      "id": 2017891,
-      "view_key": "front",
-      "status": "model",
-      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001eca63",
-      "interface": [
-        "CP"
-      ],
       "family": "AmancoWavin_Unionesdetubería_PVCNivel1Codo",
-      "code": "CP-A05",
-      "kind": "fitting",
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001eca63",
       "connected_ids": [
         2016433,
         2017883
       ],
-      "reference_line": true,
-      "size": "40 mm",
-      "diameters_mm": [
-        40.0
+      "system": "CP",
+      "view_id": 2405334,
+      "code_note_id": 2405409,
+      "status": "model",
+      "anchor": [
+        11.492600833522731,
+        19.075535714689977,
+        11.097334129706534
       ],
       "code_point": [
         11.492600833522719,
         11.499999999999982,
         11.1
       ],
-      "type": "Codo 90.00 grados",
+      "view_key": "front",
+      "id": 2017891,
+      "code": "CP-A05",
+      "kind": "fitting",
+      "diameters_mm": [
+        40.0
+      ],
+      "page": 6,
+      "box": [
+        0.8316759037578326,
+        0.7149996309863047,
+        0.07001385000416811,
+        0.014833915562996727
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "CP-A05 | Codo 90.00 grados | 40 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "type": "Reduccion",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "63x40 mm",
+      "interface": [
+        "CP"
+      ],
       "visible_in": [
         1445818,
         1439889,
         1489196,
         1443740
       ],
-      "system": "CP",
-      "mode": "accessories",
-      "anchor": [
-        11.492600833522731,
-        19.075535714689977,
-        11.097334129706534
-      ],
-      "page": 6,
-      "box": [
-        0.8332154161074197,
-        0.7198297592653249,
-        0.0191756093274719,
-        0.005969521498708887
-      ],
-      "diameter_mm": 0,
-      "length_m": 0
-    },
-    {
-      "view_id": 2405334,
-      "code_note_id": 2405415,
-      "id": 2018290,
-      "view_key": "front",
-      "status": "model",
-      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ecbf2",
-      "interface": [
-        "CP"
-      ],
       "family": "AmancoWavin_Unionesdetubería_PVCNivel1Reductor",
-      "code": "CP-A06",
-      "kind": "fitting",
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ecbf2",
       "connected_ids": [
         2017994,
         2013511
       ],
-      "reference_line": true,
-      "size": "63x40 mm",
-      "diameters_mm": [
-        40.0,
-        63.0
+      "system": "CP",
+      "view_id": 2405334,
+      "code_note_id": 2405415,
+      "status": "model",
+      "anchor": [
+        11.492600833522731,
+        19.075535714689977,
+        9.633711480231577
       ],
       "code_point": [
         11.492600833522719,
         11.499999999999982,
         9.0
       ],
+      "view_key": "front",
+      "id": 2018290,
+      "code": "CP-A06",
+      "kind": "fitting",
+      "diameters_mm": [
+        40.0,
+        63.0
+      ],
+      "page": 6,
+      "box": [
+        0.8316759037578326,
+        0.8353449292080937,
+        0.06164301563051417,
+        0.014833915562996727
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "CP-A06 | Reduccion | 63x40 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
       "type": "Reduccion",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "50x40 mm",
+      "interface": [
+        "CP"
+      ],
       "visible_in": [
         1445818,
         1439889,
         1489196,
         1443740
       ],
-      "system": "CP",
-      "mode": "accessories",
-      "anchor": [
-        11.492600833522731,
-        19.075535714689977,
-        9.633711480231577
-      ],
-      "page": 6,
-      "box": [
-        0.8332154161074197,
-        0.840175129984893,
-        0.019141865047869768,
-        0.005969503374264129
-      ],
-      "diameter_mm": 0,
-      "length_m": 0
-    },
-    {
-      "view_id": 2405334,
-      "code_note_id": 2405405,
-      "id": 2018454,
-      "view_key": "front",
-      "status": "model",
-      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ecc96",
-      "interface": [
-        "CP"
-      ],
       "family": "AmancoWavin_Unionesdetubería_PVCNivel1Reductor",
-      "code": "CP-A07",
-      "kind": "fitting",
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ecc96",
       "connected_ids": [
         2016433,
         2016439
       ],
-      "reference_line": true,
-      "size": "50x40 mm",
-      "diameters_mm": [
-        40.0,
-        50.0
+      "system": "CP",
+      "view_id": 2405334,
+      "code_note_id": 2405405,
+      "status": "model",
+      "anchor": [
+        11.492600833522731,
+        19.07689209992636,
+        11.098499678178548
       ],
       "code_point": [
         11.492600833522719,
         11.499999999999982,
         12.5
       ],
-      "type": "Reduccion",
+      "view_key": "front",
+      "id": 2018454,
+      "code": "CP-A07",
+      "kind": "fitting",
+      "diameters_mm": [
+        40.0,
+        50.0
+      ],
+      "page": 6,
+      "box": [
+        0.8316759037578326,
+        0.6347693838399261,
+        0.061842613812439974,
+        0.014833915562996727
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "CP-A07 | Reduccion | 50x40 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "type": "Ramal 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "40 mm",
+      "interface": [
+        "CP",
+        "CS"
+      ],
       "visible_in": [
         1445818,
         1439889,
         1489196,
         1443740
       ],
-      "system": "CP",
-      "mode": "accessories",
-      "anchor": [
-        11.492600833522731,
-        19.07689209992636,
-        11.098499678178548
-      ],
-      "page": 6,
-      "box": [
-        0.8332154161074197,
-        0.6395995483678357,
-        0.019147497628683476,
-        0.005969512436486508
-      ],
-      "diameter_mm": 0,
-      "length_m": 0
-    },
-    {
-      "view_id": 2405334,
-      "code_note_id": 2405401,
-      "id": 2019065,
-      "view_key": "front",
-      "status": "model",
-      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ecef9",
-      "interface": [
-        "CP",
-        "CS"
-      ],
       "family": "AmancoWavin_Unionesdetubería_PVCNivel1Ramal",
-      "code": "CS-A03",
-      "kind": "fitting",
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ecef9",
       "connected_ids": [
         2019066,
         2019054,
         2015975
       ],
-      "reference_line": true,
-      "size": "40 mm",
-      "diameters_mm": [
-        40.0
+      "system": "CS",
+      "view_id": 2405334,
+      "code_note_id": 2405401,
+      "status": "model",
+      "anchor": [
+        11.492600833522731,
+        19.076892099926223,
+        11.646981627297457
       ],
       "code_point": [
         11.492600833522719,
         11.499999999999982,
         13.9
       ],
-      "type": "Ramal 90.00 grados",
-      "visible_in": [
-        1445818,
-        1439889,
-        1489196,
-        1443740
-      ],
-      "system": "CS",
-      "mode": "accessories",
-      "anchor": [
-        11.492600833522731,
-        19.076892099926223,
-        11.646981627297457
+      "view_key": "front",
+      "id": 2019065,
+      "code": "CS-A03",
+      "kind": "fitting",
+      "diameters_mm": [
+        40.0
       ],
       "page": 6,
       "box": [
-        0.8332154161074197,
-        0.5593693148147907,
-        0.019147497628683476,
-        0.00597746906773511
+        0.8316759037578326,
+        0.5545391729424369,
+        0.07299891301431352,
+        0.014833843065217697
       ],
       "diameter_mm": 0,
-      "length_m": 0
+      "length_m": 0,
+      "label_text": "CS-A03 | Ramal 90.00 grados | 40 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
     },
     {
-      "view_id": 2405345,
-      "code_note_id": 2406171,
-      "id": 1454294,
-      "view_key": "side",
-      "status": "model",
-      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001630d6",
+      "type": "Codo 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "32 mm",
       "interface": [
         "AF"
       ],
+      "visible_in": [
+        1445818,
+        1489196,
+        1443740
+      ],
       "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
-      "code": "AF-A01",
-      "kind": "fitting",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001630d6",
       "connected_ids": [
         1454292
       ],
-      "reference_line": true,
-      "size": "32 mm",
-      "diameters_mm": [
-        32.0
+      "system": "AF",
+      "view_id": 2405345,
+      "code_note_id": 2406171,
+      "status": "model",
+      "anchor": [
+        3.8559504365708626,
+        27.208840970824234,
+        18.536745406824142
       ],
       "code_point": [
         -1.499999999999913,
         27.20884097082425,
         13.8
       ],
+      "view_key": "side",
+      "id": 1454294,
+      "code": "AF-A01",
+      "kind": "fitting",
+      "diameters_mm": [
+        32.0
+      ],
+      "page": 7,
+      "box": [
+        0.8233852056475737,
+        0.5601473836349024,
+        0.052302814098820864,
+        0.012041047372513743
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "AF-A01 | Codo 90.00 grados | 32 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
       "type": "Codo 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "32 mm",
+      "interface": [
+        "AC"
+      ],
       "visible_in": [
         1445818,
         1489196,
         1443740
       ],
-      "system": "AF",
-      "mode": "accessories",
-      "anchor": [
-        3.8559504365708626,
-        27.208840970824234,
-        18.536745406824142
-      ],
-      "page": 7,
-      "box": [
-        0.8246436522145567,
-        0.5642759962173559,
-        0.01356130879876714,
-        0.004436397372216502
-      ],
-      "diameter_mm": 0,
-      "length_m": 0
-    },
-    {
-      "view_id": 2405345,
-      "code_note_id": 2406172,
-      "id": 1455067,
-      "view_key": "side",
-      "status": "model",
-      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001633db",
-      "interface": [
-        "AC"
-      ],
       "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
-      "code": "AC-A01",
-      "kind": "fitting",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001633db",
       "connected_ids": [
         1455065,
         1454828
       ],
-      "reference_line": true,
-      "size": "32 mm",
-      "diameters_mm": [
-        32.0
+      "system": "AC",
+      "view_id": 2405345,
+      "code_note_id": 2406172,
+      "status": "model",
+      "anchor": [
+        4.183477927478841,
+        27.208840970824234,
+        18.536745406824142
       ],
       "code_point": [
         -1.499999999999913,
         27.20884097082425,
         13.05
       ],
+      "view_key": "side",
+      "id": 1455067,
+      "code": "AC-A01",
+      "kind": "fitting",
+      "diameters_mm": [
+        32.0
+      ],
+      "page": 7,
+      "box": [
+        0.8233852056475737,
+        0.5924774057046762,
+        0.05250999066220512,
+        0.012041047372513743
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "AC-A01 | Codo 90.00 grados | 32 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
       "type": "Codo 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "32 mm",
+      "interface": [
+        "AC"
+      ],
       "visible_in": [
         1445818,
         1489196,
         1443740
       ],
-      "system": "AC",
-      "mode": "accessories",
-      "anchor": [
-        4.183477927478841,
-        27.208840970824234,
-        18.536745406824142
-      ],
-      "page": 7,
-      "box": [
-        0.8246436522145567,
-        0.5965521343128654,
-        0.014030681999029557,
-        0.004490276815369761
-      ],
-      "diameter_mm": 0,
-      "length_m": 0
-    },
-    {
-      "view_id": 2405345,
-      "code_note_id": 2406173,
-      "id": 1455071,
-      "view_key": "side",
-      "status": "model",
-      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001633df",
-      "interface": [
-        "AC"
-      ],
       "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
-      "code": "AC-A02",
-      "kind": "fitting",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-001633df",
       "connected_ids": [
         1455065,
         1455054
       ],
-      "reference_line": true,
-      "size": "32 mm",
-      "diameters_mm": [
-        32.0
+      "system": "AC",
+      "view_id": 2405345,
+      "code_note_id": 2406173,
+      "status": "model",
+      "anchor": [
+        4.183477927478844,
+        27.208840970824234,
+        11.811023622048083
       ],
       "code_point": [
         -1.499999999999913,
         27.20884097082425,
         10.8
       ],
+      "view_key": "side",
+      "id": 1455071,
+      "code": "AC-A02",
+      "kind": "fitting",
+      "diameters_mm": [
+        32.0
+      ],
+      "page": 7,
+      "box": [
+        0.8233852056475737,
+        0.6894674356651084,
+        0.05306403179315361,
+        0.012041011123624228
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "AC-A02 | Codo 90.00 grados | 32 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
       "type": "Codo 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "32 mm",
+      "interface": [
+        "AF"
+      ],
       "visible_in": [
         1445818,
         1489196,
         1443740
       ],
-      "system": "AC",
-      "mode": "accessories",
-      "anchor": [
-        4.183477927478844,
-        27.208840970824234,
-        11.811023622048083
-      ],
-      "page": 7,
-      "box": [
-        0.8246436522145567,
-        0.6935421552110751,
-        0.014580396283807518,
-        0.0044902949398145185
-      ],
-      "diameter_mm": 0,
-      "length_m": 0
-    },
-    {
-      "view_id": 2405345,
-      "code_note_id": 2406174,
-      "id": 1457039,
-      "view_key": "side",
-      "status": "model",
-      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00163b8f",
-      "interface": [
-        "AF"
-      ],
       "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
-      "code": "AF-A04",
-      "kind": "fitting",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00163b8f",
       "connected_ids": [
         1454292,
         1457173
       ],
-      "reference_line": true,
-      "size": "32 mm",
-      "diameters_mm": [
-        32.0
+      "system": "AF",
+      "view_id": 2405345,
+      "code_note_id": 2406174,
+      "status": "model",
+      "anchor": [
+        3.8559504365708652,
+        27.208840970824234,
+        11.482939632547588
       ],
       "code_point": [
         -1.499999999999913,
         27.20884097082425,
         9.3
       ],
+      "view_key": "side",
+      "id": 1457039,
+      "code": "AF-A04",
+      "kind": "fitting",
+      "diameters_mm": [
+        32.0
+      ],
+      "page": 7,
+      "box": [
+        0.8233852056475737,
+        0.7541274798046562,
+        0.05299213957985863,
+        0.012041011123624228
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "AF-A04 | Codo 90.00 grados | 32 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
       "type": "Codo 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "32 mm",
+      "interface": [
+        "AF"
+      ],
       "visible_in": [
         1445818,
         1489196,
         1443740
       ],
-      "system": "AF",
-      "mode": "accessories",
-      "anchor": [
-        3.8559504365708652,
-        27.208840970824234,
-        11.482939632547588
-      ],
-      "page": 7,
-      "box": [
-        0.8246436522145567,
-        0.7582560652004425,
-        0.014132170864236574,
-        0.0044364109655500705
-      ],
-      "diameter_mm": 0,
-      "length_m": 0
-    },
-    {
-      "view_id": 2405345,
-      "code_note_id": 2406175,
-      "id": 1457184,
-      "view_key": "side",
-      "status": "model",
-      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00163c20",
-      "interface": [
-        "AF"
-      ],
       "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
-      "code": "AF-A06",
-      "kind": "fitting",
+      "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00163c20",
       "connected_ids": [
         1457170,
         1457151
       ],
-      "reference_line": true,
-      "size": "32 mm",
-      "diameters_mm": [
-        32.0
+      "system": "AF",
+      "view_id": 2405345,
+      "code_note_id": 2406175,
+      "status": "model",
+      "anchor": [
+        8.90565058884651,
+        27.20884097082422,
+        13.123359580053362
       ],
       "code_point": [
         -1.499999999999913,
         27.20884097082425,
         12.3
       ],
-      "type": "Codo 90.00 grados",
-      "visible_in": [
-        1445818,
-        1489196,
-        1443740
-      ],
-      "system": "AF",
-      "mode": "accessories",
-      "anchor": [
-        8.90565058884651,
-        27.20884097082422,
-        13.123359580053362
+      "view_key": "side",
+      "id": 1457184,
+      "code": "AF-A06",
+      "kind": "fitting",
+      "diameters_mm": [
+        32.0
       ],
       "page": 7,
       "box": [
-        0.8246436522145567,
-        0.6289360222324589,
-        0.014140619735457138,
-        0.004436392841105313
+        0.8233852056475737,
+        0.6248073915255606,
+        0.052797559515385034,
+        0.012041011123624228
       ],
       "diameter_mm": 0,
-      "length_m": 0
+      "length_m": 0,
+      "label_text": "AF-A06 | Codo 90.00 grados | 32 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
     },
     {
-      "view_id": 2405345,
-      "code_note_id": 2405353,
-      "id": 2016492,
-      "view_key": "side",
-      "status": "check_connection",
-      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ec4ec",
-      "interface": [],
-      "family": "AmancoWavin_Unionesdetubería_PVCNivel1Codo",
-      "code": "CP-A04",
-      "kind": "fitting",
-      "connected_ids": [],
+      "type": "Codo 90.00 grados",
+      "mode": "accessories",
       "reference_line": true,
       "size": "50 mm",
-      "diameters_mm": [
-        50.0
-      ],
-      "code_point": [
-        22.000000000000085,
-        27.208840970824177,
-        12.2
-      ],
-      "type": "Codo 90.00 grados",
+      "interface": [],
       "visible_in": [
         1445818,
         1439889,
         1489196,
         1443740
       ],
+      "family": "AmancoWavin_Unionesdetubería_PVCNivel1Codo",
+      "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ec4ec",
+      "connected_ids": [],
       "system": "CP",
-      "mode": "accessories",
+      "view_id": 2405345,
+      "code_note_id": 2405353,
+      "status": "check_connection",
       "anchor": [
         14.13165787787272,
         27.2088409708242,
         10.81155065913428
       ],
+      "code_point": [
+        22.000000000000085,
+        27.208840970824177,
+        12.2
+      ],
+      "view_key": "side",
+      "id": 2016492,
+      "code": "CP-A04",
+      "kind": "fitting",
+      "diameters_mm": [
+        50.0
+      ],
       "page": 7,
       "box": [
-        0.10936679755419004,
-        0.6331928199504608,
-        0.014390117462864395,
-        0.004490276815369761
+        0.10789694998821255,
+        0.6291181094667165,
+        0.07923930050310211,
+        0.012041011123624228
       ],
       "diameter_mm": 0,
-      "length_m": 0
+      "length_m": 0,
+      "label_text": "CP-A04 | Codo 90.00 grados | 50 mm [revisar conexion]",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
     },
     {
-      "view_id": 2405345,
-      "code_note_id": 2406176,
-      "id": 2366517,
-      "view_key": "side",
-      "status": "model",
-      "unique_id": "5364294c-7216-4f8d-b4f6-1ad33687c1e9-00241c35",
+      "type": "Codo 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "32 mm",
       "interface": [
         "AF"
       ],
+      "visible_in": [
+        1445818,
+        1489196,
+        1443740
+      ],
       "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
-      "code": "AF-A12",
-      "kind": "fitting",
+      "unique_id": "5364294c-7216-4f8d-b4f6-1ad33687c1e9-00241c35",
       "connected_ids": [
         1456739,
         1454439
       ],
-      "reference_line": true,
-      "size": "32 mm",
-      "diameters_mm": [
-        32.0
+      "system": "AF",
+      "view_id": 2405345,
+      "code_note_id": 2406176,
+      "status": "model",
+      "anchor": [
+        9.288533345200236,
+        27.208840970824216,
+        11.48293966651479
       ],
       "code_point": [
         -1.499999999999913,
         27.20884097082425,
         10.05
       ],
+      "view_key": "side",
+      "id": 2366517,
+      "code": "AF-A12",
+      "kind": "fitting",
+      "diameters_mm": [
+        32.0
+      ],
+      "page": 7,
+      "box": [
+        0.8233852056475737,
+        0.7217974577348822,
+        0.05223942196202657,
+        0.012041011123624228
+      ],
+      "diameter_mm": 0,
+      "length_m": 0,
+      "label_text": "AF-A12 | Codo 90.00 grados | 32 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
+    },
+    {
       "type": "Codo 90.00 grados",
+      "mode": "accessories",
+      "reference_line": true,
+      "size": "32 mm",
+      "interface": [
+        "AC"
+      ],
       "visible_in": [
         1445818,
         1489196,
         1443740
       ],
-      "system": "AF",
-      "mode": "accessories",
-      "anchor": [
-        9.288533345200236,
-        27.208840970824216,
-        11.48293966651479
-      ],
-      "page": 7,
-      "box": [
-        0.8246436522145567,
-        0.7259260612551135,
-        0.014111023083545102,
-        0.004370546733300825
-      ],
-      "diameter_mm": 0,
-      "length_m": 0
-    },
-    {
-      "view_id": 2405345,
-      "code_note_id": 2406177,
-      "id": 2366534,
-      "view_key": "side",
-      "status": "model",
-      "unique_id": "5364294c-7216-4f8d-b4f6-1ad33687c1e9-00241c46",
-      "interface": [
-        "AC"
-      ],
       "family": "AmancoWavin_Unionesdetubería_FusiónPPRCodo",
-      "code": "AC-A10",
-      "kind": "fitting",
+      "unique_id": "5364294c-7216-4f8d-b4f6-1ad33687c1e9-00241c46",
       "connected_ids": [
         1455129,
         1455054
       ],
-      "reference_line": true,
-      "size": "32 mm",
-      "diameters_mm": [
-        32.0
+      "system": "AC",
+      "view_id": 2405345,
+      "code_note_id": 2406177,
+      "status": "model",
+      "anchor": [
+        9.539337234861238,
+        27.208840970824216,
+        11.811023622048117
       ],
       "code_point": [
         -1.499999999999913,
         27.20884097082425,
         11.55
       ],
-      "type": "Codo 90.00 grados",
-      "visible_in": [
-        1445818,
-        1489196,
-        1443740
-      ],
-      "system": "AC",
-      "mode": "accessories",
-      "anchor": [
-        9.539337234861238,
-        27.208840970824216,
-        11.811023622048117
+      "view_key": "side",
+      "id": 2366534,
+      "code": "AC-A10",
+      "kind": "fitting",
+      "diameters_mm": [
+        32.0
       ],
       "page": 7,
       "box": [
-        0.8246436522145567,
-        0.661212151265746,
-        0.01460154406449899,
-        0.0044902949398145185
+        0.8233852056475737,
+        0.6571374860931135,
+        0.05250999066220512,
+        0.012041011123624228
       ],
       "diameter_mm": 0,
-      "length_m": 0
+      "length_m": 0,
+      "label_text": "AC-A10 | Codo 90.00 grados | 32 mm",
+      "label_direction": [
+        1.0,
+        0.0
+      ]
     }
   ],
   "quantities": [
@@ -3396,7 +3753,7 @@
     },
     {
       "system": "AF",
-      "type": "Union",
+      "type": "Valvula esferica union-fusion",
       "family": "AmancoWavin_Unionesdetubería_FusiónPPRUniónFusión",
       "size": "32 mm",
       "quantity": 1,
@@ -3405,7 +3762,7 @@
     },
     {
       "system": "AC",
-      "type": "Union",
+      "type": "Valvula esferica union-fusion",
       "family": "AmancoWavin_Unionesdetubería_FusiónPPRUniónFusión",
       "size": "32 mm",
       "quantity": 1,
@@ -3541,263 +3898,263 @@
   ],
   "excluded": [
     {
-      "id": 1454296,
-      "reason": "Subcomponente auxiliar de familia"
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 1454296
     },
     {
-      "id": 1454566,
-      "reason": "Subcomponente auxiliar de familia"
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 1454566
     },
     {
-      "id": 1455069,
-      "reason": "Subcomponente auxiliar de familia"
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 1455069
     },
     {
-      "id": 1455073,
-      "reason": "Subcomponente auxiliar de familia"
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 1455073
     },
     {
-      "id": 1457041,
-      "reason": "Subcomponente auxiliar de familia"
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 1457041
     },
     {
-      "id": 1457176,
-      "reason": "Subcomponente auxiliar de familia"
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 1457176
     },
     {
-      "id": 1457178,
-      "reason": "Subcomponente auxiliar de familia"
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 1457178
     },
     {
-      "id": 1457180,
-      "reason": "Subcomponente auxiliar de familia"
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 1457180
     },
     {
-      "id": 1457182,
-      "reason": "Subcomponente auxiliar de familia"
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 1457182
     },
     {
-      "id": 1457186,
-      "reason": "Subcomponente auxiliar de familia"
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 1457186
     },
     {
-      "id": 1488186,
-      "reason": "Subcomponente auxiliar de familia"
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 1488186
     },
     {
-      "id": 1488346,
-      "reason": "Subcomponente auxiliar de familia"
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 1488346
     },
     {
-      "id": 1488358,
-      "reason": "Subcomponente auxiliar de familia"
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 1488358
     },
     {
-      "id": 1488360,
-      "reason": "Subcomponente auxiliar de familia"
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 1488360
     },
     {
-      "id": 1488362,
-      "reason": "Subcomponente auxiliar de familia"
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 1488362
     },
     {
-      "id": 1488364,
-      "reason": "Subcomponente auxiliar de familia"
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 1488364
     },
     {
-      "id": 1488420,
-      "reason": "Subcomponente auxiliar de familia"
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 1488420
     },
     {
-      "id": 1488432,
-      "reason": "Subcomponente auxiliar de familia"
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 1488432
     },
     {
-      "id": 1488434,
-      "reason": "Subcomponente auxiliar de familia"
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 1488434
     },
     {
-      "id": 1488436,
-      "reason": "Subcomponente auxiliar de familia"
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 1488436
     },
     {
-      "id": 1488438,
-      "reason": "Subcomponente auxiliar de familia"
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 1488438
     },
     {
-      "id": 2012175,
-      "reason": "Subcomponente auxiliar de familia"
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 2012175
     },
     {
-      "id": 2016129,
-      "reason": "Subcomponente auxiliar de familia"
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 2016129
     },
     {
-      "id": 2016135,
-      "reason": "Subcomponente auxiliar de familia"
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 2016135
     },
     {
-      "id": 2016431,
-      "reason": "Subcomponente auxiliar de familia"
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 2016431
     },
     {
-      "id": 2016441,
-      "reason": "Subcomponente auxiliar de familia"
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 2016441
     },
     {
-      "id": 2016494,
-      "reason": "Subcomponente auxiliar de familia"
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 2016494
     },
     {
-      "id": 2017893,
-      "reason": "Subcomponente auxiliar de familia"
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 2017893
     },
     {
-      "id": 2018292,
-      "reason": "Subcomponente auxiliar de familia"
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 2018292
     },
     {
-      "id": 2018470,
-      "reason": "Subcomponente auxiliar de familia"
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 2018470
     },
     {
-      "id": 2018472,
-      "reason": "Subcomponente auxiliar de familia"
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 2018472
     },
     {
-      "id": 2019069,
-      "reason": "Subcomponente auxiliar de familia"
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 2019069
     },
     {
-      "id": 2019071,
-      "reason": "Subcomponente auxiliar de familia"
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 2019071
     },
     {
-      "id": 2069396,
-      "reason": "Receptaculo de ducha fuera del ambiente cocina"
+      "reason": "Receptaculo de ducha fuera del ambiente cocina",
+      "id": 2069396
     },
     {
-      "id": 2313711,
-      "reason": "Calefaccion / termostato"
+      "reason": "Calefaccion / termostato",
+      "id": 2313711
     },
     {
-      "id": 2313754,
-      "reason": "Calefaccion / termostato"
+      "reason": "Calefaccion / termostato",
+      "id": 2313754
     },
     {
-      "id": 2315455,
-      "reason": "Calefaccion / termostato"
+      "reason": "Calefaccion / termostato",
+      "id": 2315455
     },
     {
-      "id": 2315527,
-      "reason": "Calefaccion / termostato"
+      "reason": "Calefaccion / termostato",
+      "id": 2315527
     },
     {
-      "id": 2315983,
-      "reason": "Calefaccion / termostato"
+      "reason": "Calefaccion / termostato",
+      "id": 2315983
     },
     {
-      "id": 2316101,
-      "reason": "Calefaccion / termostato"
+      "reason": "Calefaccion / termostato",
+      "id": 2316101
     },
     {
-      "id": 2316570,
-      "reason": "Calefaccion / termostato"
+      "reason": "Calefaccion / termostato",
+      "id": 2316570
     },
     {
-      "id": 2316683,
-      "reason": "Calefaccion / termostato"
+      "reason": "Calefaccion / termostato",
+      "id": 2316683
     },
     {
-      "id": 2318292,
-      "reason": "Calefaccion / termostato"
+      "reason": "Calefaccion / termostato",
+      "id": 2318292
     },
     {
-      "id": 2318319,
-      "reason": "Calefaccion / termostato"
+      "reason": "Calefaccion / termostato",
+      "id": 2318319
     },
     {
-      "id": 2318588,
-      "reason": "Calefaccion / termostato"
+      "reason": "Calefaccion / termostato",
+      "id": 2318588
     },
     {
-      "id": 2318648,
-      "reason": "Calefaccion / termostato"
+      "reason": "Calefaccion / termostato",
+      "id": 2318648
     },
     {
-      "id": 2320941,
-      "reason": "Calefaccion / termostato"
+      "reason": "Calefaccion / termostato",
+      "id": 2320941
     },
     {
-      "id": 2320973,
-      "reason": "Calefaccion / termostato"
+      "reason": "Calefaccion / termostato",
+      "id": 2320973
     },
     {
-      "id": 2321218,
-      "reason": "Calefaccion / termostato"
+      "reason": "Calefaccion / termostato",
+      "id": 2321218
     },
     {
-      "id": 2321220,
-      "reason": "Calefaccion / termostato"
+      "reason": "Calefaccion / termostato",
+      "id": 2321220
     },
     {
-      "id": 2321259,
-      "reason": "Calefaccion / termostato"
+      "reason": "Calefaccion / termostato",
+      "id": 2321259
     },
     {
-      "id": 2321261,
-      "reason": "Calefaccion / termostato"
+      "reason": "Calefaccion / termostato",
+      "id": 2321261
     },
     {
-      "id": 2321552,
-      "reason": "Subcomponente auxiliar de familia"
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 2321552
     },
     {
-      "id": 2321598,
-      "reason": "Subcomponente auxiliar de familia"
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 2321598
     },
     {
-      "id": 2321650,
-      "reason": "Subcomponente auxiliar de familia"
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 2321650
     },
     {
-      "id": 2321654,
-      "reason": "Subcomponente auxiliar de familia"
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 2321654
     },
     {
-      "id": 2366036,
-      "reason": "Subcomponente auxiliar de familia"
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 2366036
     },
     {
-      "id": 2366526,
-      "reason": "Subcomponente auxiliar de familia"
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 2366526
     },
     {
-      "id": 2366536,
-      "reason": "Subcomponente auxiliar de familia"
+      "reason": "Subcomponente auxiliar de familia",
+      "id": 2366536
     },
     {
-      "id": 2322733,
-      "reason": "Calefaccion / termostato"
+      "reason": "Calefaccion / termostato",
+      "id": 2322733
     },
     {
-      "id": 2342530,
-      "reason": "Calefaccion / termostato"
+      "reason": "Calefaccion / termostato",
+      "id": 2342530
     },
     {
-      "id": 2342544,
-      "reason": "Calefaccion / termostato"
+      "reason": "Calefaccion / termostato",
+      "id": 2342544
     }
   ],
   "summary": {
-    "pipes": 39,
-    "pdf_exported": true,
+    "excluded": 62,
     "connection_alerts": [
       "AF-A03",
       "AC-A03",
       "CP-A04"
     ],
+    "pdf_exported": true,
     "fittings": 32,
-    "excluded": 62
+    "pipes": 39
   }
 }
