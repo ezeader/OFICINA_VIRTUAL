@@ -9,7 +9,7 @@ export default function DrawingViewport({children,aspect,focus,identity,controls
  const drag=useRef<{id:number;x:number;y:number;moved:boolean}|null>(null),suppressClick=useRef(false);
  const focusRef=useRef(focus);focusRef.current=focus;
  const pointers=useRef(new Map<number,{x:number;y:number}>());
- function paint(c:Camera){camera.current=c;const f=fit.current;if(surface.current)surface.current.style.transform=`translate(${f.left+c.x}px,${f.top+c.y}px) scale(${c.scale})`;setZoom(c.scale)}
+ function paint(c:Camera){camera.current=c;const f=fit.current;if(surface.current){surface.current.style.width=`${f.w*c.scale}px`;surface.current.style.height=`${f.h*c.scale}px`;surface.current.style.transform=`translate(${f.left+c.x}px,${f.top+c.y}px)`;}setZoom(c.scale)}
  function focusOn(){const p=focusRef.current,el=root.current,f=fit.current;if(p&&el)paint({scale:2,x:el.clientWidth/2-f.left-p.x*f.w*2,y:el.clientHeight/2-f.top-p.y*f.h*2});else reset()}
  function reset(){paint({scale:1,x:0,y:0})}
  function zoomAt(factor:number,px?:number,py?:number){const el=root.current;if(!el)return;const c=camera.current,f=fit.current;const next=Math.max(.5,Math.min(12,c.scale*factor));const x=(px??el.clientWidth/2)-f.left,y=(py??el.clientHeight/2)-f.top;paint({scale:next,x:x-(x-c.x)*next/c.scale,y:y-(y-c.y)*next/c.scale})}
