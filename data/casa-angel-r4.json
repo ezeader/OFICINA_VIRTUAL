@@ -255,8 +255,8 @@
       "type": "AmancoWavin AC",
       "family": "AmancoWavin AC",
       "size": "50 mm",
-      "quantity": 5.022014647586707,
       "unit": "m",
+      "quantity": 5.022014647586707,
       "alerts": 0,
       "codes": [
         "AC-T01",
@@ -268,8 +268,8 @@
       "type": "AmancoWavin AF",
       "family": "AmancoWavin AF",
       "size": "50 mm",
-      "quantity": 5.0107086038448765,
       "unit": "m",
+      "quantity": 5.0107086038448765,
       "alerts": 0,
       "codes": [
         "AF-T01",
@@ -281,8 +281,8 @@
       "type": "AmancoWavin AC",
       "family": "AmancoWavin AC",
       "size": "32 mm",
-      "quantity": 9.469000401615187,
       "unit": "m",
+      "quantity": 9.469000401615185,
       "alerts": 0,
       "codes": [
         "AC-T04",
@@ -306,8 +306,8 @@
       "type": "AmancoWavin AF",
       "family": "AmancoWavin AF",
       "size": "32 mm",
-      "quantity": 9.840232467771834,
       "unit": "m",
+      "quantity": 9.769232467771834,
       "alerts": 0,
       "codes": [
         "AF-T13",
@@ -323,7 +323,8 @@
         "AF-T03",
         "AF-T04",
         "AF-T12",
-        "AF-V01"
+        "AF-V01",
+        "AF-T16"
       ]
     },
     {
@@ -331,8 +332,8 @@
       "type": "AmancoWavin CL - Primario",
       "family": "AmancoWavin CL - Primario",
       "size": "40 mm",
-      "quantity": 0.8195158372207206,
       "unit": "m",
+      "quantity": 0.7996631353121967,
       "alerts": 0,
       "codes": [
         "CP-T03",
@@ -346,8 +347,8 @@
       "type": "AmancoWavin CL - Secundario",
       "family": "AmancoWavin CL - Secundario",
       "size": "40 mm",
-      "quantity": 0.8335688573013808,
       "unit": "m",
+      "quantity": 0.8335688573013808,
       "alerts": 0,
       "codes": [
         "CS-T05",
@@ -363,8 +364,8 @@
       "type": "AmancoWavin CL - Primario",
       "family": "AmancoWavin CL - Primario",
       "size": "50 mm",
-      "quantity": 0.025871276715367056,
       "unit": "m",
+      "quantity": 0.025871276715367056,
       "alerts": 0,
       "codes": [
         "CP-T02"
@@ -375,8 +376,8 @@
       "type": "AmancoWavin CL - Secundario",
       "family": "AmancoWavin CL - Secundario",
       "size": "50 mm",
-      "quantity": 0.033802061004752686,
       "unit": "m",
+      "quantity": 0.033802061004752686,
       "alerts": 0,
       "codes": [
         "CS-T03"
@@ -387,8 +388,8 @@
       "type": "AmancoWavin CL - Primario",
       "family": "AmancoWavin CL - Primario",
       "size": "63 mm",
-      "quantity": 3.0738554896594144,
       "unit": "m",
+      "quantity": 3.0738554896594144,
       "alerts": 0,
       "codes": [
         "CP-T06",
@@ -401,8 +402,8 @@
       "type": "Codo 90.00 grados",
       "family": "AmancoWavin_UnionesdetuberÃƒÂ­a_FusiÃƒÂ³nPPRCodo",
       "size": "32 mm",
+      "unit": "un",
       "quantity": 9,
-      "unit": "un.",
       "alerts": 0,
       "codes": [
         "AF-A02",
@@ -421,9 +422,9 @@
       "type": "Valvula esferica union-fusion",
       "family": "AmancoWavin_UnionesdetuberÃƒÂ­a_FusiÃƒÂ³nPPRUniÃƒÂ³nFusiÃƒÂ³n",
       "size": "32 mm",
+      "unit": "un",
       "quantity": 1,
-      "unit": "un.",
-      "alerts": 1,
+      "alerts": 0,
       "codes": [
         "AF-A03"
       ]
@@ -433,8 +434,8 @@
       "type": "Valvula esferica union-fusion",
       "family": "AmancoWavin_UnionesdetuberÃƒÂ­a_FusiÃƒÂ³nPPRUniÃƒÂ³nFusiÃƒÂ³n",
       "size": "32 mm",
+      "unit": "un",
       "quantity": 1,
-      "unit": "un.",
       "alerts": 0,
       "codes": [
         "AC-A03"
@@ -445,8 +446,8 @@
       "type": "Tee 90.00 grados",
       "family": "AmancoWavin_UnionesdetuberÃƒÂ­a_FusiÃƒÂ³nPPRTee",
       "size": "32 mm",
+      "unit": "un",
       "quantity": 2,
-      "unit": "un.",
       "alerts": 0,
       "codes": [
         "AF-A05",
@@ -458,8 +459,8 @@
       "type": "Codo 90.00 grados",
       "family": "AmancoWavin_UnionesdetuberÃƒÂ­a_FusiÃƒÂ³nPPRCodo",
       "size": "32 mm",
+      "unit": "un",
       "quantity": 10,
-      "unit": "un.",
       "alerts": 0,
       "codes": [
         "AC-A04",
@@ -479,8 +480,8 @@
       "type": "Tee 90.00 grados",
       "family": "AmancoWavin_UnionesdetuberÃƒÂ­a_FusiÃƒÂ³nPPRTee",
       "size": "32 mm",
+      "unit": "un",
       "quantity": 1,
-      "unit": "un.",
       "alerts": 0,
       "codes": [
         "AC-A06"
@@ -491,8 +492,8 @@
       "type": "Codo 90.00 grados",
       "family": "AmancoWavin_UnionesdetuberÃƒÂ­a_FusiÃƒÂ³nPPRCodo",
       "size": "50 mm",
+      "unit": "un",
       "quantity": 1,
-      "unit": "un.",
       "alerts": 0,
       "codes": [
         "AF-A10"
@@ -503,8 +504,8 @@
       "type": "Codo 90.00 grados",
       "family": "AmancoWavin_UnionesdetuberÃƒÂ­a_FusiÃƒÂ³nPPRCodo",
       "size": "50x32 mm",
+      "unit": "un",
       "quantity": 1,
-      "unit": "un.",
       "alerts": 0,
       "codes": [
         "AF-A11"
@@ -515,8 +516,8 @@
       "type": "Codo 90.00 grados",
       "family": "AmancoWavin_UnionesdetuberÃƒÂ­a_FusiÃƒÂ³nPPRCodo",
       "size": "50 mm",
+      "unit": "un",
       "quantity": 1,
-      "unit": "un.",
       "alerts": 0,
       "codes": [
         "AC-A07"
@@ -527,8 +528,8 @@
       "type": "Codo 90.00 grados",
       "family": "AmancoWavin_UnionesdetuberÃƒÂ­a_FusiÃƒÂ³nPPRCodo",
       "size": "50x32 mm",
+      "unit": "un",
       "quantity": 1,
-      "unit": "un.",
       "alerts": 0,
       "codes": [
         "AC-A08"
@@ -539,8 +540,8 @@
       "type": "Boca de acceso",
       "family": "AmancoWavin_UnionesdetuberÃƒÂ­a_PVCNivel1BocadeAcceso",
       "size": "63x40 mm",
+      "unit": "un",
       "quantity": 1,
-      "unit": "un.",
       "alerts": 0,
       "codes": [
         "CP-A01"
@@ -551,8 +552,8 @@
       "type": "Codo 90.00 grados",
       "family": "AmancoWavin_UnionesdetuberÃƒÂ­a_PVCNivel1Codo",
       "size": "40 mm",
+      "unit": "un",
       "quantity": 3,
-      "unit": "un.",
       "alerts": 0,
       "codes": [
         "CS-A01",
@@ -565,9 +566,9 @@
       "type": "Codo 90.00 grados",
       "family": "AmancoWavin_UnionesdetuberÃƒÂ­a_PVCNivel1Codo",
       "size": "50 mm",
+      "unit": "un",
       "quantity": 3,
-      "unit": "un.",
-      "alerts": 1,
+      "alerts": 0,
       "codes": [
         "CP-A02",
         "CP-A03",
@@ -579,8 +580,8 @@
       "type": "Codo 90.00 grados",
       "family": "AmancoWavin_UnionesdetuberÃƒÂ­a_PVCNivel1Codo",
       "size": "40 mm",
+      "unit": "un",
       "quantity": 2,
-      "unit": "un.",
       "alerts": 0,
       "codes": [
         "CP-A05",
@@ -592,8 +593,8 @@
       "type": "Reduccion",
       "family": "AmancoWavin_UnionesdetuberÃƒÂ­a_PVCNivel1Reductor",
       "size": "63x40 mm",
+      "unit": "un",
       "quantity": 1,
-      "unit": "un.",
       "alerts": 0,
       "codes": [
         "CP-A06"
@@ -604,11 +605,12 @@
       "type": "Reduccion",
       "family": "AmancoWavin_UnionesdetuberÃƒÂ­a_PVCNivel1Reductor",
       "size": "50x40 mm",
-      "quantity": 1,
-      "unit": "un.",
+      "unit": "un",
+      "quantity": 2,
       "alerts": 0,
       "codes": [
-        "CP-A07"
+        "CP-A07",
+        "CP-A08"
       ]
     },
     {
@@ -616,8 +618,8 @@
       "type": "Ramal 90.00 grados",
       "family": "AmancoWavin_UnionesdetuberÃƒÂ­a_PVCNivel1Ramal",
       "size": "40 mm",
+      "unit": "un",
       "quantity": 1,
-      "unit": "un.",
       "alerts": 0,
       "codes": [
         "CS-A03"
@@ -628,8 +630,8 @@
       "type": "Codo 90.00 grados",
       "family": "AmancoWavin_UnionesdetuberÃƒÂ­a_PVCNivel1Codo",
       "size": "63 mm",
+      "unit": "un",
       "quantity": 2,
-      "unit": "un.",
       "alerts": 0,
       "codes": [
         "CP-V04",
@@ -637,6 +639,22 @@
       ]
     }
   ],
+  "af_valve_correction": {
+    "valve_length_m": 0.07099999999999983,
+    "other_geometry_unchanged": true,
+    "pipe_lengths_m": {
+      "1457173": 0.7698170526887224,
+      "2406615": 0.6628315537248941
+    },
+    "connected": true,
+    "committed": true,
+    "new_pipe_id": 2406615,
+    "valve_system": "Domestic Cold Water",
+    "connector_systems": [
+      "DomesticColdWater",
+      "DomesticColdWater"
+    ]
+  },
   "font": "Bahnschrift SB Condensed ADER",
   "items": [
     {
@@ -661,6 +679,7 @@
       "interface": [],
       "code_note_id": 2405242,
       "physical_connected_ids": [
+        1438293,
         2321648
       ],
       "label_text": "PPR.2 ø50 mm- 3.96 m",
@@ -714,6 +733,7 @@
       "interface": [],
       "code_note_id": 2405243,
       "physical_connected_ids": [
+        1438646,
         2321550
       ],
       "label_text": "PPR ø50 mm- 3.95 m",
@@ -820,16 +840,16 @@
       "interface": [],
       "code_note_id": 2405245,
       "physical_connected_ids": [
-        1457039,
+        1456736,
         1457172
       ],
-      "label_text": "PPR ø32 mm- 1.50 m",
+      "label_text": "PPR ø32 mm- 0.77 m",
       "view_key": "plan",
       "diameter_mm": 32.0,
       "box": [
-        0.40449872181379753,
+        0.4494383190412569,
         0.8804505823964083,
-        0.03873474620307727,
+        0.035474352401701735,
         0.01933660762302547
       ],
       "reference_line": false,
@@ -847,7 +867,7 @@
       "kind": "pipe",
       "size": "",
       "unique_id": "233d61c9-3f80-4a96-8243-e0991a972761-00163c15",
-      "length_m": 1.5036486064136163,
+      "length_m": 0.7698170526887224,
       "system": "AF",
       "page": 1
     },
@@ -1782,7 +1802,8 @@
       "interface": [],
       "code_note_id": 2405279,
       "physical_connected_ids": [
-        2016418
+        2016418,
+        2016492
       ],
       "label_text": "Premium ø50 mm- 0.03 m",
       "view_key": "plan",
@@ -2102,15 +2123,16 @@
       "interface": [],
       "code_note_id": 2405291,
       "physical_connected_ids": [
-        2019065
+        2019065,
+        2406695
       ],
-      "label_text": "Premium ø40 mm- 0.13 m",
+      "label_text": "Premium ø40 mm- 0.11 m",
       "view_key": "front",
       "diameter_mm": 40.0,
       "box": [
-        0.8557314786917419,
+        0.8560833613767584,
         0.653337949991902,
-        0.050405248827962344,
+        0.049685712231651046,
         0.02210036795522769
       ],
       "reference_line": true,
@@ -2128,7 +2150,7 @@
       "kind": "pipe",
       "size": "",
       "unique_id": "c01c3b8f-280a-421c-b96d-85b9a28b5465-001ec2e7",
-      "length_m": 0.13067317617058985,
+      "length_m": 0.11082047426206584,
       "system": "CP",
       "page": 2
     },
@@ -2800,18 +2822,22 @@
       ],
       "interface": [],
       "code_note_id": 2405395,
-      "physical_connected_ids": [],
-      "label_text": "AF-A03 | Valvula esferica union-fusion | 32 mm [revisar conexion]",
+      "physical_connected_ids": [
+        1457173,
+        2406615
+      ],
+      "label_text": "AF-A03 | Valvula esferica union-fusion | 32 mm",
       "view_key": "plan",
+      "classification_note": "Valvula AF conectada en su posicion original. Se descuentan 71 mm de cano ocupados por la valvula.",
       "diameter_mm": 0,
       "box": [
         0.4912616653308916,
         0.8691813101305641,
-        0.0987938801087764,
+        0.07162205423704235,
         0.012440691379419591
       ],
       "reference_line": true,
-      "status": "check_connection",
+      "status": "model",
       "native_system_classification": "Domestic Cold Water",
       "family": "AmancoWavin_UnionesdetuberÃƒÂ­a_FusiÃƒÂ³nPPRUniÃƒÂ³nFusiÃƒÂ³n",
       "anchor": [
@@ -4351,8 +4377,8 @@
       ],
       "code_note_id": 2406173,
       "physical_connected_ids": [
-        1455054,
-        1455065
+        1455065,
+        2406315
       ],
       "label_text": "AC-A02 | Codo 90.00 grados | 32 mm",
       "view_key": "side",
@@ -4413,7 +4439,7 @@
       "code_note_id": 2406174,
       "physical_connected_ids": [
         1454292,
-        1457173
+        2406615
       ],
       "label_text": "AF-A04 | Codo 90.00 grados | 32 mm",
       "view_key": "side",
@@ -4529,18 +4555,22 @@
       ],
       "interface": [],
       "code_note_id": 2405353,
-      "physical_connected_ids": [],
-      "label_text": "CP-A04 | Codo 90.00 grados | 50 mm [revisar conexion]",
+      "physical_connected_ids": [
+        2016380,
+        2406695
+      ],
+      "label_text": "CP-A04 | Codo 90.00 grados | 50 mm",
       "view_key": "side",
+      "classification_note": "Conectado a CP-T02 y a la reduccion CP-A08. Desalineacion original de 0.545 mm conservada en el encuentro horizontal; conexion fisica aceptada por Revit.",
       "diameter_mm": 0,
       "box": [
         0.10789694998821255,
         0.6291181094667165,
-        0.07923930050310211,
+        0.053288042092378834,
         0.012041011123624228
       ],
       "reference_line": true,
-      "status": "check_connection",
+      "status": "model",
       "native_system_classification": "Sanitary",
       "family": "AmancoWavin_UnionesdetuberÃƒÂ­a_PVCNivel1Codo",
       "anchor": [
@@ -4872,7 +4902,9 @@
       "id": 2097963,
       "mode": "pipes",
       "view_id": 2406180,
-      "physical_connected_ids": [],
+      "physical_connected_ids": [
+        2380033
+      ],
       "view_key": "axon",
       "diameter_mm": 63.0,
       "box": [
@@ -5151,7 +5183,7 @@
         0
       ],
       "status": "model",
-      "native_system_classification": "Domestic Cold Water",
+      "native_system_classification": "Domestic Hot Water",
       "family": "AmancoWavin_UnionesdetuberÃƒÂ­a_FusiÃƒÂ³nPPRCodo",
       "type": "Codo 90.00 grados",
       "code": "AC-V06",
@@ -5289,22 +5321,148 @@
       "source": "valve-insertion-r9",
       "system": "AC",
       "page": 1
+    },
+    {
+      "native_type": "AmancoWavin AF",
+      "id": 2406615,
+      "code_point": [
+        5.529980302734892,
+        14.441711353362415,
+        0.0
+      ],
+      "mode": "pipes",
+      "visible_in": [
+        1445818,
+        1489196,
+        1443740
+      ],
+      "view_id": 2404690,
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "interface": [],
+      "code_note_id": 2406714,
+      "physical_connected_ids": [
+        1456736,
+        1457039
+      ],
+      "label_text": "PPR ø32 mm- 0.66 m",
+      "view_key": "plan",
+      "diameter_mm": 32.0,
+      "box": [
+        0.3604025267552709,
+        0.8804505823964083,
+        0.03552215253069808,
+        0.01933660762302547
+      ],
+      "reference_line": false,
+      "status": "model",
+      "native_system_classification": "Domestic Cold Water",
+      "family": "AmancoWavin AF",
+      "anchor": [
+        6.379980302734892,
+        15.051711353362416,
+        0.0
+      ],
+      "type": "AmancoWavin AF",
+      "tag_id": 2406715,
+      "code": "AF-T16",
+      "split_from": "AF-T13",
+      "kind": "pipe",
+      "size": "",
+      "unique_id": "df97ced3-1adc-40d3-8fe2-7b9d9ecd4350-0024b8d7",
+      "length_m": 0.6628315537248941,
+      "source": "valve-insertion-r10",
+      "system": "AF",
+      "page": 1
+    },
+    {
+      "native_type": "Var.",
+      "connected_ids": [],
+      "id": 2406695,
+      "code_point": [
+        22.000000000000085,
+        27.208840970824177,
+        11.799999999999999
+      ],
+      "mode": "accessories",
+      "visible_in": [
+        1445818,
+        1439889,
+        1489196,
+        1443740
+      ],
+      "view_id": 2405345,
+      "label_direction": [
+        1.0,
+        0.0
+      ],
+      "interface": [],
+      "code_note_id": 2406716,
+      "physical_connected_ids": [
+        2015975,
+        2016492
+      ],
+      "label_text": "CP-A08 | Reduccion | 50/40 mm",
+      "view_key": "side",
+      "classification_note": "Reduccion incorporada entre CP-A04 y CP-T01. Ambos diametros existentes conservados.",
+      "diameter_mm": 0,
+      "box": [
+        0.10789694998821255,
+        0.6463607637380029,
+        0.0467442633188518,
+        0.012041011123624228
+      ],
+      "reference_line": true,
+      "status": "model",
+      "native_system_classification": "Sanitary",
+      "family": "AmancoWavin_UnionesdetuberÃƒÂ­a_PVCNivel1Reductor",
+      "anchor": [
+        14.131658750909528,
+        27.2088409708242,
+        10.960320344171086
+      ],
+      "type": "Reduccion",
+      "code": "CP-A08",
+      "kind": "fitting",
+      "size": "50x40 mm",
+      "diameters_mm": [
+        50.0,
+        40.0
+      ],
+      "unique_id": "b61d2e5e-f085-41a0-bbcc-edac9215c98d-0024b927",
+      "length_m": 0,
+      "source": "transition-r10",
+      "system": "CP",
+      "page": 7
     }
   ],
   "summary": {
+    "change": "AF-A03 conectada sin mover el eje: descuento de 71 mm de cano. CP-A04 conectado mediante reduccion 50/40: CP-T01 acortado 19.853 mm sobre su eje. Encuentro horizontal conserva desalineacion original de 0.545 mm aceptada por Revit.",
     "excluded": 62,
-    "connection_alerts": [
-      "AF-A03",
-      "CP-A04"
-    ],
+    "connection_alerts": [],
     "geometry_unchanged": false,
     "added_elements": 17,
     "pdf_exported": true,
-    "fittings": 42,
-    "unique_elements": 89,
-    "pipes": 47,
+    "fittings": 43,
     "routes_unchanged": true,
-    "change": "Válvula insertada sin mover su posición ni el eje: descuento de 0,071 m. Ajuste local autorizado de codo AC-V05 y extremo AC-V03: descuento de 0,025 m."
+    "unique_elements": 91,
+    "pipes": 48
+  },
+  "elbow_correction": {
+    "other_geometry_unchanged": true,
+    "new_pipe_length_m": 0.025000000000000272,
+    "system": "Domestic Hot Water",
+    "rotation_degrees": -0.6693056588950426,
+    "connected": true,
+    "committed": true,
+    "old_pipe_length_m": 0.05,
+    "translation_mm": 0.20521207114453546,
+    "changed_elements": [
+      1456134,
+      1456392
+    ]
   },
   "valve_correction": {
     "valve_length_m": 0.07099999999999983,
@@ -5387,26 +5545,83 @@
       "id": 2405345
     }
   ],
-  "revision": "R9",
+  "revision": "R10",
   "classification_review": {
     "fitting_type_corrected": "CP-V05",
     "pending_native_classification": [],
-    "note": "AC-A03 y AC-V05 conectados y clasificados como agua caliente; quedan alertas anteriores AF-A03 y CP-A04.",
+    "note": "AF-A03, AC-A03, AC-V05 y CP-A04 conectados y verificados en Revit. Revision limitada a las alertas del piloto.",
     "hot_water_networks_corrected": 3,
     "previous_code": "OT-V01"
   },
-  "elbow_correction": {
-    "other_geometry_unchanged": true,
-    "new_pipe_length_m": 0.025000000000000272,
-    "system": "Domestic Hot Water",
-    "rotation_degrees": -0.6693056588950426,
-    "connected": true,
+  "cp_transition_correction": {
+    "commit_status": "Committed",
+    "changed": {
+      "2015975": [
+        {
+          "port": 1,
+          "delta_mm": 19.85270190858884
+        }
+      ]
+    },
+    "system": "Sanitary",
+    "family": "AmancoWavin_Unionesdetuber\\xeda_PVCNivel1Reductor",
+    "new_length_m": 0.11082047426206584,
+    "connections": [
+      {
+        "gap_mm": 0.0,
+        "owner": 2016492,
+        "neighbor": 2406695
+      },
+      {
+        "gap_mm": 0.544994023084053,
+        "owner": 2016492,
+        "neighbor": 2016380
+      },
+      {
+        "gap_mm": 0.0,
+        "owner": 2406695,
+        "neighbor": 2015975
+      },
+      {
+        "gap_mm": 0.0,
+        "owner": 2406695,
+        "neighbor": 2016492
+      }
+    ],
+    "new_fitting": 2406695,
     "committed": true,
-    "old_pipe_length_m": 0.05,
-    "translation_mm": 0.20521207114453546,
-    "changed_elements": [
-      1456134,
-      1456392
-    ]
+    "added": {
+      "2406695": {
+        "type": "Var.",
+        "ports": [
+          {
+            "p": [
+              14.131659107382669,
+              19.07689209992637,
+              11.021065094826207
+            ],
+            "diameter": 40.0,
+            "id": 2
+          },
+          {
+            "p": [
+              14.131658394436336,
+              19.076892099926365,
+              10.899575593515964
+            ],
+            "diameter": 50.0,
+            "id": 1
+          }
+        ]
+      },
+      "2406710": {
+        "type": "Var.",
+        "ports": []
+      },
+      "2406708": {
+        "type": "Var.",
+        "ports": []
+      }
+    }
   }
 }
