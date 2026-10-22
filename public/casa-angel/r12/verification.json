@@ -1,0 +1,45 @@
+{
+  "revision": "R12",
+  "unique_elements": 1400,
+  "unique_codes": 1400,
+  "detail_panels": 20,
+  "replaced_views": 3,
+  "labels": 73,
+  "annotation_collisions": 0,
+  "native_font_verified": true,
+  "package_identity_partition": true,
+  "kitchen_approved_package": 91,
+  "review": {
+    "before": {
+      "observed": 796,
+      "classification": 708,
+      "connection": 173,
+      "product": 2,
+      "classification_and_connection": 87
+    },
+    "after": {
+      "observed": 757,
+      "classification": 669,
+      "connection": 173,
+      "product": 2,
+      "classification_and_connection": 87
+    },
+    "main_bathroom_before": {
+      "observed": 97,
+      "classification": 84,
+      "connection": 18,
+      "product": 2,
+      "classification_and_connection": 7
+    },
+    "main_bathroom_after": {
+      "observed": 58,
+      "classification": 45,
+      "connection": 18,
+      "product": 2,
+      "classification_and_connection": 7
+    }
+  },
+  "geometry_unchanged": true,
+  "connections_unchanged": true,
+  "physical_elements_verified": 4096
+}

@@ -1,0 +1,2797 @@
+{
+  "revision": "R12",
+  "before": {
+    "observed": 796,
+    "classification": 708,
+    "connection": 173,
+    "product": 2,
+    "classification_and_connection": 87
+  },
+  "after": {
+    "observed": 757,
+    "classification": 669,
+    "connection": 173,
+    "product": 2,
+    "classification_and_connection": 87
+  },
+  "main_bathroom_before": {
+    "observed": 97,
+    "classification": 84,
+    "connection": 18,
+    "product": 2,
+    "classification_and_connection": 7
+  },
+  "main_bathroom_after": {
+    "observed": 58,
+    "classification": 45,
+    "connection": 18,
+    "product": 2,
+    "classification_and_connection": 7
+  },
+  "correction": {
+    "connections_unchanged": true,
+    "networks": [
+      {
+        "type_id": 132475,
+        "system": "AF",
+        "system_id": 1384335,
+        "members": [
+          1251974,
+          1251978,
+          1364896,
+          1365497,
+          1471411,
+          1471419,
+          1471447,
+          1471451,
+          1471493,
+          1471564,
+          1471568,
+          1980060,
+          1980061,
+          1990183,
+          1990371,
+          1990375,
+          2357997
+        ]
+      },
+      {
+        "type_id": 132474,
+        "system": "AC",
+        "system_id": 1980524,
+        "members": [
+          1980497,
+          1980499,
+          1980501,
+          1980505,
+          1980507,
+          1981011,
+          1981014
+        ]
+      },
+      {
+        "type_id": 132475,
+        "system": "AF",
+        "system_id": 1981104,
+        "members": [
+          1980495,
+          1980511,
+          1980517,
+          1980519,
+          1980809,
+          1980812,
+          2067009
+        ]
+      },
+      {
+        "type_id": 132474,
+        "system": "AC",
+        "system_id": 1985735,
+        "members": [
+          1384376,
+          1384703,
+          1384704,
+          1384721,
+          1384722,
+          1471306,
+          1980208,
+          1980230,
+          1980324,
+          1980332,
+          1980967,
+          1980970
+        ]
+      },
+      {
+        "type_id": 132475,
+        "system": "AF",
+        "system_id": 1986424,
+        "members": [
+          1366506,
+          1387280,
+          1991963,
+          1991975
+        ]
+      },
+      {
+        "type_id": 132474,
+        "system": "AC",
+        "system_id": 1991450,
+        "members": [
+          1384876,
+          1384887,
+          1384903,
+          1387260,
+          1387263,
+          1423464,
+          1423574,
+          1991347,
+          1991401,
+          1991419,
+          1992217,
+          2350641,
+          2350654
+        ]
+      },
+      {
+        "type_id": 132475,
+        "system": "AF",
+        "system_id": 1994082,
+        "members": [
+          1251776,
+          1251781,
+          1251789,
+          1251791,
+          1251797,
+          1366483,
+          1367366,
+          1470979,
+          1470981,
+          1470991,
+          1980035
+        ]
+      },
+      {
+        "type_id": 132474,
+        "system": "AC",
+        "system_id": 1994559,
+        "members": [
+          1384634,
+          1991594,
+          1991622,
+          1994553
+        ]
+      }
+    ],
+    "changed_ids": [
+      1251776,
+      1251781,
+      1251789,
+      1251791,
+      1251797,
+      1251974,
+      1251978,
+      1364896,
+      1365497,
+      1366483,
+      1366506,
+      1367366,
+      1384376,
+      1384634,
+      1384703,
+      1384704,
+      1384721,
+      1384722,
+      1384876,
+      1384887,
+      1384903,
+      1387260,
+      1387263,
+      1387280,
+      1423464,
+      1423574,
+      1470979,
+      1470981,
+      1470991,
+      1471306,
+      1471411,
+      1471419,
+      1471447,
+      1471451,
+      1471493,
+      1471564,
+      1471568,
+      1980035,
+      1980060,
+      1980061,
+      1980208,
+      1980230,
+      1980324,
+      1980332,
+      1980495,
+      1980497,
+      1980499,
+      1980501,
+      1980505,
+      1980507,
+      1980511,
+      1980517,
+      1980519,
+      1980809,
+      1980812,
+      1980967,
+      1980970,
+      1981011,
+      1981014,
+      1990183,
+      1990371,
+      1990375,
+      1991347,
+      1991401,
+      1991419,
+      1991594,
+      1991622,
+      1991963,
+      1991975,
+      1992217,
+      1994553,
+      2067009,
+      2350641,
+      2350654,
+      2357997
+    ],
+    "geometry_unchanged": true,
+    "committed": true,
+    "status": "success"
+  },
+  "connections_main_bathroom": [
+    {
+      "code": "AC-A012",
+      "id": 1365996,
+      "ports": [
+        {
+          "connector": 3,
+          "diameter_mm": 32.0,
+          "nearest_open": [
+            {
+              "distance_mm": 18.00085823392079,
+              "element_id": 1365497,
+              "connector": 1,
+              "diameter_mm": 32.0
+            },
+            {
+              "distance_mm": 18.077433934846056,
+              "element_id": 1980812,
+              "connector": 1,
+              "diameter_mm": 32.0
+            },
+            {
+              "distance_mm": 248.12273582587625,
+              "element_id": 1384721,
+              "connector": 1,
+              "diameter_mm": 32.0
+            }
+          ]
+        },
+        {
+          "connector": 1,
+          "diameter_mm": 32.0,
+          "nearest_open": [
+            {
+              "distance_mm": 16.329310855535603,
+              "element_id": 1980812,
+              "connector": 1,
+              "diameter_mm": 32.0
+            },
+            {
+              "distance_mm": 17.82560560705576,
+              "element_id": 1365497,
+              "connector": 1,
+              "diameter_mm": 32.0
+            },
+            {
+              "distance_mm": 223.84649367907252,
+              "element_id": 1384721,
+              "connector": 1,
+              "diameter_mm": 32.0
+            }
+          ]
+        }
+      ],
+      "status": "Pendiente: no se mueve ni conecta por proximidad; revisar finalidad y encuentro"
+    },
+    {
+      "code": "AC-A027",
+      "id": 1384703,
+      "ports": [
+        {
+          "connector": 1,
+          "diameter_mm": 32.0,
+          "nearest_open": [
+            {
+              "distance_mm": 10.000000102179918,
+              "element_id": 1384634,
+              "connector": 0,
+              "diameter_mm": 32.0
+            },
+            {
+              "distance_mm": 141.4883754054878,
+              "element_id": 1980035,
+              "connector": 0,
+              "diameter_mm": 32.0
+            },
+            {
+              "distance_mm": 223.69101632306385,
+              "element_id": 1980060,
+              "connector": 1,
+              "diameter_mm": 32.0
+            }
+          ]
+        }
+      ],
+      "status": "Pendiente: no se mueve ni conecta por proximidad; revisar finalidad y encuentro"
+    },
+    {
+      "code": "AC-A028",
+      "id": 1384721,
+      "ports": [
+        {
+          "connector": 1,
+          "diameter_mm": 32.0,
+          "nearest_open": [
+            {
+              "distance_mm": 2.406491021152138,
+              "element_id": 1980497,
+              "connector": 1,
+              "diameter_mm": 32.0
+            },
+            {
+              "distance_mm": 223.84649367907252,
+              "element_id": 1365996,
+              "connector": 1,
+              "diameter_mm": 32.0
+            },
+            {
+              "distance_mm": 238.56727843765478,
+              "element_id": 1980812,
+              "connector": 1,
+              "diameter_mm": 32.0
+            }
+          ]
+        }
+      ],
+      "status": "Pendiente: no se mueve ni conecta por proximidad; revisar finalidad y encuentro"
+    },
+    {
+      "code": "AC-A029",
+      "id": 1386687,
+      "ports": [
+        {
+          "connector": 2,
+          "diameter_mm": 32.0,
+          "nearest_open": [
+            {
+              "distance_mm": 1.6409451971448992,
+              "element_id": 1386649,
+              "connector": 1,
+              "diameter_mm": 32.0
+            },
+            {
+              "distance_mm": 839.0166626430316,
+              "element_id": 2025787,
+              "connector": 2,
+              "diameter_mm": 40.0
+            },
+            {
+              "distance_mm": 860.6807564124205,
+              "element_id": 2097330,
+              "connector": 0,
+              "diameter_mm": 40.0
+            }
+          ]
+        }
+      ],
+      "status": "Pendiente: no se mueve ni conecta por proximidad; revisar finalidad y encuentro"
+    },
+    {
+      "code": "AF-A046",
+      "id": 1387280,
+      "ports": [
+        {
+          "connector": 2,
+          "diameter_mm": 32.0,
+          "nearest_open": [
+            {
+              "distance_mm": 17.773600023289024,
+              "element_id": 1367366,
+              "connector": 1,
+              "diameter_mm": 32.0
+            },
+            {
+              "distance_mm": 370.04975775609836,
+              "element_id": 1251739,
+              "connector": 1,
+              "diameter_mm": 40.0
+            },
+            {
+              "distance_mm": 371.0171020461955,
+              "element_id": 1991979,
+              "connector": 1,
+              "diameter_mm": 40.0
+            }
+          ]
+        }
+      ],
+      "status": "Pendiente: no se mueve ni conecta por proximidad; revisar finalidad y encuentro"
+    },
+    {
+      "code": "AF-A158",
+      "id": 1980060,
+      "ports": [
+        {
+          "connector": 1,
+          "diameter_mm": 32.0,
+          "nearest_open": [
+            {
+              "distance_mm": 100.00000000000131,
+              "element_id": 1980035,
+              "connector": 0,
+              "diameter_mm": 32.0
+            },
+            {
+              "distance_mm": 223.69101632306385,
+              "element_id": 1384703,
+              "connector": 1,
+              "diameter_mm": 32.0
+            },
+            {
+              "distance_mm": 232.6785421297143,
+              "element_id": 1384634,
+              "connector": 0,
+              "diameter_mm": 32.0
+            }
+          ]
+        }
+      ],
+      "status": "Pendiente: no se mueve ni conecta por proximidad; revisar finalidad y encuentro"
+    },
+    {
+      "code": "CS-A006",
+      "id": 1985994,
+      "ports": [
+        {
+          "connector": 3,
+          "diameter_mm": 40.0,
+          "nearest_open": [
+            {
+              "distance_mm": 3.790087347567928,
+              "element_id": 2099670,
+              "connector": 0,
+              "diameter_mm": 63.0
+            },
+            {
+              "distance_mm": 177.02432189107108,
+              "element_id": 2097532,
+              "connector": 1,
+              "diameter_mm": 40.0
+            },
+            {
+              "distance_mm": 284.7439974039624,
+              "element_id": 1993679,
+              "connector": 1,
+              "diameter_mm": 40.0
+            }
+          ]
+        },
+        {
+          "connector": 4,
+          "diameter_mm": 63.0,
+          "nearest_open": [
+            {
+              "distance_mm": 137.94061085119162,
+              "element_id": 2099670,
+              "connector": 0,
+              "diameter_mm": 63.0
+            },
+            {
+              "distance_mm": 159.89485114593592,
+              "element_id": 2097532,
+              "connector": 1,
+              "diameter_mm": 40.0
+            },
+            {
+              "distance_mm": 425.76897613165454,
+              "element_id": 1993679,
+              "connector": 1,
+              "diameter_mm": 40.0
+            }
+          ]
+        },
+        {
+          "connector": 1,
+          "diameter_mm": 40.0,
+          "nearest_open": [
+            {
+              "distance_mm": 32.02524480732353,
+              "element_id": 2097532,
+              "connector": 1,
+              "diameter_mm": 40.0
+            },
+            {
+              "distance_mm": 145.04952520467646,
+              "element_id": 2099670,
+              "connector": 0,
+              "diameter_mm": 63.0
+            },
+            {
+              "distance_mm": 377.71450995877683,
+              "element_id": 1993679,
+              "connector": 1,
+              "diameter_mm": 40.0
+            }
+          ]
+        }
+      ],
+      "status": "Pendiente: no se mueve ni conecta por proximidad; revisar finalidad y encuentro"
+    },
+    {
+      "code": "CS-A007",
+      "id": 1987095,
+      "ports": [
+        {
+          "connector": 2,
+          "diameter_mm": 40.0,
+          "nearest_open": [
+            {
+              "distance_mm": 50.515619345534716,
+              "element_id": 686411,
+              "connector": 1,
+              "diameter_mm": 46.0
+            },
+            {
+              "distance_mm": 419.44262664702404,
+              "element_id": 1367366,
+              "connector": 1,
+              "diameter_mm": 32.0
+            },
+            {
+              "distance_mm": 432.33339958041756,
+              "element_id": 1387280,
+              "connector": 2,
+              "diameter_mm": 32.0
+            }
+          ]
+        }
+      ],
+      "status": "Pendiente: no se mueve ni conecta por proximidad; revisar finalidad y encuentro"
+    },
+    {
+      "code": "AC-A138",
+      "id": 1991419,
+      "ports": [
+        {
+          "connector": 2,
+          "diameter_mm": 32.0,
+          "nearest_open": [
+            {
+              "distance_mm": 79.9999121986764,
+              "element_id": 1994553,
+              "connector": 2,
+              "diameter_mm": 32.0
+            },
+            {
+              "distance_mm": 727.075019395157,
+              "element_id": 2098779,
+              "connector": 0,
+              "diameter_mm": 110.0
+            },
+            {
+              "distance_mm": 767.0561690994641,
+              "element_id": 1985994,
+              "connector": 4,
+              "diameter_mm": 63.0
+            }
+          ]
+        }
+      ],
+      "status": "Pendiente: no se mueve ni conecta por proximidad; revisar finalidad y encuentro"
+    },
+    {
+      "code": "AF-A167",
+      "id": 1991979,
+      "ports": [
+        {
+          "connector": 1,
+          "diameter_mm": 40.0,
+          "nearest_open": [
+            {
+              "distance_mm": 2.8349254146347604,
+              "element_id": 1251739,
+              "connector": 1,
+              "diameter_mm": 40.0
+            },
+            {
+              "distance_mm": 371.0171020461955,
+              "element_id": 1387280,
+              "connector": 2,
+              "diameter_mm": 32.0
+            },
+            {
+              "distance_mm": 384.77952232612813,
+              "element_id": 1367366,
+              "connector": 1,
+              "diameter_mm": 32.0
+            }
+          ]
+        }
+      ],
+      "status": "Pendiente: no se mueve ni conecta por proximidad; revisar finalidad y encuentro"
+    },
+    {
+      "code": "CS-A008",
+      "id": 1993679,
+      "ports": [
+        {
+          "connector": 1,
+          "diameter_mm": 40.0,
+          "nearest_open": [
+            {
+              "distance_mm": 25.962061946090977,
+              "element_id": 2130903,
+              "connector": 1,
+              "diameter_mm": 40.0
+            },
+            {
+              "distance_mm": 284.7439974039624,
+              "element_id": 1985994,
+              "connector": 3,
+              "diameter_mm": 40.0
+            },
+            {
+              "distance_mm": 287.93313989505003,
+              "element_id": 2099670,
+              "connector": 0,
+              "diameter_mm": 63.0
+            }
+          ]
+        }
+      ],
+      "status": "Pendiente: no se mueve ni conecta por proximidad; revisar finalidad y encuentro"
+    },
+    {
+      "code": "AC-A141",
+      "id": 1994553,
+      "ports": [
+        {
+          "connector": 2,
+          "diameter_mm": 32.0,
+          "nearest_open": [
+            {
+              "distance_mm": 79.9999121986764,
+              "element_id": 1991419,
+              "connector": 2,
+              "diameter_mm": 32.0
+            },
+            {
+              "distance_mm": 787.9957929169483,
+              "element_id": 2098779,
+              "connector": 0,
+              "diameter_mm": 110.0
+            },
+            {
+              "distance_mm": 846.1564391772878,
+              "element_id": 1985994,
+              "connector": 4,
+              "diameter_mm": 63.0
+            }
+          ]
+        }
+      ],
+      "status": "Pendiente: no se mueve ni conecta por proximidad; revisar finalidad y encuentro"
+    },
+    {
+      "code": "CS-A014",
+      "id": 2025787,
+      "ports": [
+        {
+          "connector": 2,
+          "diameter_mm": 40.0,
+          "nearest_open": [
+            {
+              "distance_mm": 116.12985254508263,
+              "element_id": 2097330,
+              "connector": 0,
+              "diameter_mm": 40.0
+            },
+            {
+              "distance_mm": 159.61044341675893,
+              "element_id": 2033495,
+              "connector": 2,
+              "diameter_mm": 40.0
+            },
+            {
+              "distance_mm": 838.829109377869,
+              "element_id": 1386649,
+              "connector": 1,
+              "diameter_mm": 32.0
+            }
+          ]
+        }
+      ],
+      "status": "Pendiente: no se mueve ni conecta por proximidad; revisar finalidad y encuentro"
+    },
+    {
+      "code": "CS-A016",
+      "id": 2033495,
+      "ports": [
+        {
+          "connector": 2,
+          "diameter_mm": 40.0,
+          "nearest_open": [
+            {
+              "distance_mm": 47.63077742894763,
+              "element_id": 2097330,
+              "connector": 0,
+              "diameter_mm": 40.0
+            },
+            {
+              "distance_mm": 159.61044341675893,
+              "element_id": 2025787,
+              "connector": 2,
+              "diameter_mm": 40.0
+            },
+            {
+              "distance_mm": 883.3050251710898,
+              "element_id": 1386649,
+              "connector": 1,
+              "diameter_mm": 32.0
+            }
+          ]
+        }
+      ],
+      "status": "Pendiente: no se mueve ni conecta por proximidad; revisar finalidad y encuentro"
+    },
+    {
+      "code": "CP-A041",
+      "id": 2098020,
+      "ports": [
+        {
+          "connector": 2,
+          "diameter_mm": 110.0,
+          "nearest_open": [
+            {
+              "distance_mm": 2350.890080086358,
+              "element_id": 686410,
+              "connector": 1,
+              "diameter_mm": 102.00000000000001
+            },
+            {
+              "distance_mm": 2417.029064533023,
+              "element_id": 1367366,
+              "connector": 1,
+              "diameter_mm": 32.0
+            },
+            {
+              "distance_mm": 2424.1298383996527,
+              "element_id": 1387280,
+              "connector": 2,
+              "diameter_mm": 32.0
+            }
+          ]
+        }
+      ],
+      "status": "Pendiente: no se mueve ni conecta por proximidad; revisar finalidad y encuentro"
+    },
+    {
+      "code": "CP-A043",
+      "id": 2099934,
+      "ports": [
+        {
+          "connector": 2,
+          "diameter_mm": 110.0,
+          "nearest_open": [
+            {
+              "distance_mm": 5.902235664549958,
+              "element_id": 2377316,
+              "connector": 1,
+              "diameter_mm": 110.0
+            },
+            {
+              "distance_mm": 297.0621870569332,
+              "element_id": 2379678,
+              "connector": 3,
+              "diameter_mm": 110.0
+            },
+            {
+              "distance_mm": 318.4625299841677,
+              "element_id": 2097961,
+              "connector": 1,
+              "diameter_mm": 110.0
+            }
+          ]
+        }
+      ],
+      "status": "Pendiente: no se mueve ni conecta por proximidad; revisar finalidad y encuentro"
+    },
+    {
+      "code": "CP-A044",
+      "id": 2100700,
+      "ports": [
+        {
+          "connector": 2,
+          "diameter_mm": 110.0,
+          "nearest_open": [
+            {
+              "distance_mm": 4.4086510355968285,
+              "element_id": 2381269,
+              "connector": 1,
+              "diameter_mm": 110.0
+            },
+            {
+              "distance_mm": 106.83825370023946,
+              "element_id": 2100701,
+              "connector": 1,
+              "diameter_mm": 110.0
+            },
+            {
+              "distance_mm": 218.63803360060234,
+              "element_id": 2100210,
+              "connector": 1,
+              "diameter_mm": 40.0
+            }
+          ]
+        },
+        {
+          "connector": 3,
+          "diameter_mm": 40.0,
+          "nearest_open": [
+            {
+              "distance_mm": 2.3315047463542973,
+              "element_id": 2100210,
+              "connector": 1,
+              "diameter_mm": 40.0
+            },
+            {
+              "distance_mm": 219.5246353470942,
+              "element_id": 2381269,
+              "connector": 1,
+              "diameter_mm": 110.0
+            },
+            {
+              "distance_mm": 249.62596748763858,
+              "element_id": 2100701,
+              "connector": 1,
+              "diameter_mm": 110.0
+            }
+          ]
+        },
+        {
+          "connector": 1,
+          "diameter_mm": 110.0,
+          "nearest_open": [
+            {
+              "distance_mm": 4.341653339090558,
+              "element_id": 2100701,
+              "connector": 1,
+              "diameter_mm": 110.0
+            },
+            {
+              "distance_mm": 111.12186751093604,
+              "element_id": 2381269,
+              "connector": 1,
+              "diameter_mm": 110.0
+            },
+            {
+              "distance_mm": 251.64926457918338,
+              "element_id": 2100210,
+              "connector": 1,
+              "diameter_mm": 40.0
+            }
+          ]
+        }
+      ],
+      "status": "Pendiente: no se mueve ni conecta por proximidad; revisar finalidad y encuentro"
+    },
+    {
+      "code": "CP-A091",
+      "id": 2379678,
+      "ports": [
+        {
+          "connector": 3,
+          "diameter_mm": 110.0,
+          "nearest_open": [
+            {
+              "distance_mm": 24.91145749283939,
+              "element_id": 2097961,
+              "connector": 1,
+              "diameter_mm": 110.0
+            },
+            {
+              "distance_mm": 294.5793724429018,
+              "element_id": 2377316,
+              "connector": 1,
+              "diameter_mm": 110.0
+            },
+            {
+              "distance_mm": 297.0621870569332,
+              "element_id": 2099934,
+              "connector": 2,
+              "diameter_mm": 110.0
+            }
+          ]
+        }
+      ],
+      "status": "Pendiente: no se mueve ni conecta por proximidad; revisar finalidad y encuentro"
+    }
+  ],
+  "coverage": [
+    {
+      "system": "AC",
+      "total": 411,
+      "in_general": 409,
+      "missing_codes": [
+        "AC-T138",
+        "AC-A116"
+      ],
+      "length_m": 156.98059305871533,
+      "general_length_m": 155.14879301721234
+    },
+    {
+      "system": "AF",
+      "total": 490,
+      "in_general": 482,
+      "missing_codes": [
+        "AF-T074",
+        "AF-T109",
+        "AF-A079",
+        "AF-T110",
+        "AF-A080",
+        "AF-A081",
+        "AF-T175",
+        "AF-A146"
+      ],
+      "length_m": 222.3904386500225,
+      "general_length_m": 189.7596386085195
+    },
+    {
+      "system": "CP",
+      "total": 193,
+      "in_general": 187,
+      "missing_codes": [
+        "CP-A069",
+        "CP-A075",
+        "CP-T082",
+        "CP-T083",
+        "CP-A084",
+        "CP-A095"
+      ],
+      "length_m": 79.78940185396132,
+      "general_length_m": 71.13679692114117
+    },
+    {
+      "system": "CS",
+      "total": 233,
+      "in_general": 232,
+      "missing_codes": [
+        "CS-A031"
+      ],
+      "length_m": 50.568559756175496,
+      "general_length_m": 50.568559756175496
+    },
+    {
+      "system": "EQ",
+      "total": 32,
+      "in_general": 32,
+      "missing_codes": [],
+      "length_m": 0,
+      "general_length_m": 0
+    },
+    {
+      "system": "RV",
+      "total": 9,
+      "in_general": 9,
+      "missing_codes": [],
+      "length_m": 0,
+      "general_length_m": 0
+    },
+    {
+      "system": "VM",
+      "total": 32,
+      "in_general": 32,
+      "missing_codes": [],
+      "length_m": 12.264462368912405,
+      "general_length_m": 12.264462368912405
+    }
+  ],
+  "packages": [
+    {
+      "key": "shared",
+      "name": "Compartidos / ambiente por confirmar",
+      "count": 257,
+      "codes": [
+        "EQ-E001",
+        "EQ-E002",
+        "AF-A027",
+        "AF-A028",
+        "AF-T041",
+        "AF-T042",
+        "AF-A032",
+        "AF-T063",
+        "AF-A038",
+        "AF-A039",
+        "AF-A040",
+        "AF-A042",
+        "AF-T069",
+        "AF-T070",
+        "EQ-E016",
+        "AF-T081",
+        "AF-A052",
+        "AF-A053",
+        "AF-A054",
+        "AF-A055",
+        "AF-T095",
+        "AF-A060",
+        "AF-A061",
+        "AF-T098",
+        "AF-A062",
+        "AF-T099",
+        "AF-A063",
+        "AF-A064",
+        "AF-T104",
+        "AF-T105",
+        "AF-A070",
+        "AF-A071",
+        "AC-T049",
+        "AC-T050",
+        "AC-T051",
+        "AC-A033",
+        "AC-T052",
+        "AC-T053",
+        "AC-A034",
+        "AC-A035",
+        "AC-A036",
+        "AC-T055",
+        "AC-A037",
+        "AC-A038",
+        "AC-A039",
+        "AC-T056",
+        "AC-A040",
+        "AC-A041",
+        "AC-T059",
+        "AC-A042",
+        "AC-A043",
+        "AC-A044",
+        "AC-T060",
+        "AC-A046",
+        "AC-T061",
+        "AC-A051",
+        "EQ-E017",
+        "AC-A055",
+        "AC-T071",
+        "AF-T111",
+        "AF-A084",
+        "AF-T112",
+        "AF-A085",
+        "AF-T113",
+        "AF-A086",
+        "AC-A056",
+        "AC-T072",
+        "AF-T114",
+        "AC-A058",
+        "AC-T077",
+        "AC-T078",
+        "AC-A061",
+        "AC-A062",
+        "AC-T079",
+        "AC-A063",
+        "AC-T080",
+        "AC-A064",
+        "AC-T081",
+        "AC-A065",
+        "AF-T115",
+        "AC-T082",
+        "AC-A066",
+        "AC-A067",
+        "AC-T084",
+        "AC-A068",
+        "AC-T087",
+        "AC-A070",
+        "AF-T116",
+        "AC-T095",
+        "AC-A077",
+        "AC-A078",
+        "AC-T105",
+        "AC-A087",
+        "AC-T106",
+        "AC-A088",
+        "AF-A101",
+        "AC-T113",
+        "AC-A093",
+        "AC-A094",
+        "AC-T114",
+        "AF-A106",
+        "AF-T130",
+        "AF-A107",
+        "AF-A108",
+        "EQ-E018",
+        "AC-A100",
+        "AF-A120",
+        "AF-A126",
+        "AC-A102",
+        "AC-T123",
+        "AC-A119",
+        "AC-A120",
+        "AF-T182",
+        "AC-A121",
+        "AC-A124",
+        "AC-A126",
+        "AC-A127",
+        "CS-T015",
+        "CS-A011",
+        "CS-T016",
+        "CS-T017",
+        "CS-A012",
+        "RV-A004",
+        "CP-T018",
+        "CP-A024",
+        "CS-T043",
+        "CS-T044",
+        "CS-T045",
+        "CS-A033",
+        "CS-T046",
+        "CS-A034",
+        "RV-A005",
+        "CS-T047",
+        "CS-A035",
+        "CS-T048",
+        "CS-A036",
+        "CS-A041",
+        "CP-T023",
+        "CP-A029",
+        "CS-A054",
+        "CS-T062",
+        "CS-A056",
+        "CS-A057",
+        "RV-A006",
+        "CS-T064",
+        "CS-A060",
+        "CS-T066",
+        "CS-A061",
+        "CS-T068",
+        "CS-T069",
+        "CS-T070",
+        "CS-A063",
+        "CP-T025",
+        "CP-T026",
+        "CP-A030",
+        "CP-A032",
+        "CP-A033",
+        "CP-T047",
+        "CP-T048",
+        "EQ-E032",
+        "CS-A089",
+        "CS-T106",
+        "AF-A175",
+        "AF-T207",
+        "AF-A176",
+        "AF-T208",
+        "AF-T209",
+        "AF-A177",
+        "AF-A178",
+        "AF-A179",
+        "CS-T107",
+        "AF-A180",
+        "AC-A149",
+        "CS-T110",
+        "CS-T111",
+        "CS-A090",
+        "CS-A091",
+        "CS-A092",
+        "CS-T112",
+        "CS-A093",
+        "CS-A094",
+        "CS-A096",
+        "CS-T113",
+        "CP-A047",
+        "CP-A048",
+        "AC-T167",
+        "AC-A157",
+        "AC-T168",
+        "AF-A185",
+        "AC-A158",
+        "VM-A014",
+        "CP-A049",
+        "CP-T057",
+        "CP-A050",
+        "CP-A052",
+        "CS-A098",
+        "RV-A009",
+        "CS-T115",
+        "CP-A057",
+        "CS-T116",
+        "CS-T117",
+        "CS-A099",
+        "CS-A100",
+        "CS-T118",
+        "CS-T119",
+        "CS-A101",
+        "CS-T120",
+        "CS-A102",
+        "AC-T170",
+        "AC-T171",
+        "AC-A160",
+        "AF-T222",
+        "AF-T223",
+        "AF-A194",
+        "AC-A161",
+        "AC-A164",
+        "AF-A195",
+        "AF-A197",
+        "AF-T226",
+        "AF-A202",
+        "AC-A167",
+        "AF-T232",
+        "AF-A204",
+        "AF-A205",
+        "AF-T233",
+        "AF-A206",
+        "AF-T234",
+        "AC-A174",
+        "AC-A175",
+        "CP-T064",
+        "CP-A060",
+        "CP-A062",
+        "CP-T074",
+        "CP-A072",
+        "AF-A210",
+        "AF-A220",
+        "AC-A186",
+        "AC-T187",
+        "AF-T244",
+        "AF-A221",
+        "AF-A222",
+        "AC-T188",
+        "AC-A187",
+        "AC-A188",
+        "AC-T191",
+        "AF-T247",
+        "AF-T250",
+        "AC-T194",
+        "AF-A228",
+        "AF-A229",
+        "AC-A194",
+        "AC-A195",
+        "CP-T081",
+        "CP-A082",
+        "CP-T083",
+        "CP-A083",
+        "CP-A084"
+      ],
+      "systems": {
+        "AC": {
+          "elements": 88,
+          "length_m": 23.9100909192827,
+          "fittings": 54
+        },
+        "AF": {
+          "elements": 78,
+          "length_m": 29.622845445777674,
+          "fittings": 47
+        },
+        "CP": {
+          "elements": 28,
+          "length_m": 7.795531491222482,
+          "fittings": 17
+        },
+        "CS": {
+          "elements": 52,
+          "length_m": 12.67458986753098,
+          "fittings": 25
+        },
+        "EQ": {
+          "elements": 6,
+          "length_m": 0,
+          "fittings": 0
+        },
+        "RV": {
+          "elements": 4,
+          "length_m": 0,
+          "fittings": 4
+        },
+        "VM": {
+          "elements": 1,
+          "length_m": 0,
+          "fittings": 1
+        }
+      }
+    },
+    {
+      "key": "11",
+      "name": "Toilette PA",
+      "count": 47,
+      "codes": [
+        "EQ-E003",
+        "AF-T044",
+        "AF-T045",
+        "AF-A033",
+        "AF-T066",
+        "AF-T067",
+        "AF-T068",
+        "AF-A041",
+        "AF-T079",
+        "AF-A048",
+        "AC-T066",
+        "AC-T067",
+        "AC-A052",
+        "AC-T068",
+        "AC-A053",
+        "AF-T107",
+        "AF-A076",
+        "AC-T069",
+        "AC-A054",
+        "AC-T070",
+        "AF-T108",
+        "AF-A077",
+        "AF-A078",
+        "AF-T167",
+        "AF-A138",
+        "AF-T168",
+        "AF-A139",
+        "EQ-E028",
+        "EQ-E029",
+        "CS-T061",
+        "CS-A055",
+        "AC-T161",
+        "AC-A144",
+        "AC-A145",
+        "CS-T063",
+        "CS-A058",
+        "CS-A059",
+        "CS-T065",
+        "CS-T067",
+        "CS-A062",
+        "AF-A187",
+        "AC-A159",
+        "CP-T058",
+        "CP-T059",
+        "CP-A051",
+        "AF-A188",
+        "AC-A173"
+      ],
+      "systems": {
+        "AC": {
+          "elements": 13,
+          "length_m": 4.269275942797669,
+          "fittings": 7
+        },
+        "AF": {
+          "elements": 20,
+          "length_m": 4.98992806642953,
+          "fittings": 10
+        },
+        "CP": {
+          "elements": 3,
+          "length_m": 0.5438282936651322,
+          "fittings": 1
+        },
+        "CS": {
+          "elements": 8,
+          "length_m": 1.9562038346576565,
+          "fittings": 4
+        },
+        "EQ": {
+          "elements": 3,
+          "length_m": 0,
+          "fittings": 0
+        }
+      }
+    },
+    {
+      "key": "8",
+      "name": "Baño PA",
+      "count": 125,
+      "codes": [
+        "EQ-E004",
+        "EQ-E005",
+        "EQ-E009",
+        "EQ-E010",
+        "AF-T155",
+        "AF-A127",
+        "AF-T156",
+        "AF-A128",
+        "AF-T157",
+        "AF-T158",
+        "AF-A129",
+        "AF-T159",
+        "AF-A130",
+        "AF-T160",
+        "AF-A131",
+        "AC-T124",
+        "AC-T125",
+        "AC-A105",
+        "AC-T126",
+        "AC-A106",
+        "AC-T127",
+        "AC-A107",
+        "AC-T128",
+        "AC-A108",
+        "AC-T129",
+        "AF-T161",
+        "AF-T162",
+        "AF-A134",
+        "AF-T163",
+        "AC-T130",
+        "AC-T131",
+        "AF-T164",
+        "AF-T165",
+        "AF-T166",
+        "AF-A135",
+        "AF-A136",
+        "AF-A137",
+        "AF-A140",
+        "AC-A109",
+        "AC-A110",
+        "AF-T169",
+        "AF-T170",
+        "AF-A141",
+        "AF-T171",
+        "AF-A142",
+        "AF-T172",
+        "AF-T173",
+        "AF-A143",
+        "AF-T174",
+        "AF-A144",
+        "AC-T132",
+        "AC-T133",
+        "AC-A111",
+        "AC-T134",
+        "AC-A112",
+        "AC-T135",
+        "AC-T136",
+        "AC-A113",
+        "AC-T137",
+        "AC-A114",
+        "AC-T138",
+        "AC-T139",
+        "AC-A115",
+        "AC-T140",
+        "AC-A116",
+        "AF-T175",
+        "AF-T176",
+        "AF-A145",
+        "AF-T177",
+        "AF-A146",
+        "CP-A023",
+        "CP-T016",
+        "CP-T017",
+        "CP-A025",
+        "CP-T019",
+        "CP-T020",
+        "CP-A026",
+        "CP-A027",
+        "CP-T021",
+        "CP-A028",
+        "CP-T022",
+        "CS-T031",
+        "CS-T032",
+        "CS-T033",
+        "CS-A021",
+        "CS-T034",
+        "CS-A022",
+        "CS-T035",
+        "CS-A023",
+        "CS-T036",
+        "CS-T037",
+        "CS-T038",
+        "CS-A024",
+        "CS-A025",
+        "CS-T039",
+        "CS-A026",
+        "CS-A027",
+        "CS-T040",
+        "CS-A028",
+        "CS-T041",
+        "CS-A029",
+        "CS-T042",
+        "CS-A030",
+        "CS-A032",
+        "CS-T049",
+        "CS-A037",
+        "CS-T050",
+        "CS-A038",
+        "CS-A039",
+        "CS-T051",
+        "CS-A040",
+        "CS-T052",
+        "CS-T053",
+        "CS-A042",
+        "CS-T054",
+        "CS-T055",
+        "CS-A043",
+        "CS-A044",
+        "CP-A056",
+        "AF-A233",
+        "AC-A201",
+        "AC-A202",
+        "AC-T202",
+        "AF-A234",
+        "AF-T253"
+      ],
+      "systems": {
+        "AC": {
+          "elements": 32,
+          "length_m": 12.699471723886276,
+          "fittings": 14
+        },
+        "AF": {
+          "elements": 40,
+          "length_m": 14.176895646151664,
+          "fittings": 18
+        },
+        "CP": {
+          "elements": 12,
+          "length_m": 0.7413996311057821,
+          "fittings": 6
+        },
+        "CS": {
+          "elements": 37,
+          "length_m": 9.143193572262156,
+          "fittings": 18
+        },
+        "EQ": {
+          "elements": 4,
+          "length_m": 0,
+          "fittings": 0
+        }
+      }
+    },
+    {
+      "key": "5",
+      "name": "Baño principal",
+      "count": 169,
+      "codes": [
+        "EQ-E006",
+        "EQ-E007",
+        "EQ-E011",
+        "AF-T032",
+        "AF-T033",
+        "AF-T034",
+        "AF-A025",
+        "AF-T035",
+        "AF-A026",
+        "AF-T036",
+        "AF-T037",
+        "EQ-E015",
+        "AF-T057",
+        "AF-T058",
+        "AC-A012",
+        "AF-T059",
+        "AF-A037",
+        "AF-T060",
+        "AF-T061",
+        "AC-T031",
+        "AC-T032",
+        "AC-T033",
+        "AC-A027",
+        "AC-T034",
+        "AC-A028",
+        "AC-T035",
+        "AC-T036",
+        "AC-T037",
+        "AC-T038",
+        "AC-T039",
+        "AC-T040",
+        "AC-T041",
+        "AC-A029",
+        "AC-T042",
+        "AC-A030",
+        "AC-T043",
+        "AF-A046",
+        "AC-T085",
+        "AC-T086",
+        "AF-T131",
+        "AF-A109",
+        "AF-A110",
+        "AC-T115",
+        "AC-A095",
+        "AC-A096",
+        "AC-A097",
+        "AC-A098",
+        "AF-T132",
+        "AF-A111",
+        "AF-A112",
+        "AF-A113",
+        "AF-T133",
+        "AF-A114",
+        "AF-A115",
+        "AF-T185",
+        "AF-A158",
+        "AF-T186",
+        "AC-T149",
+        "AC-A128",
+        "AC-T150",
+        "AC-A129",
+        "AF-T187",
+        "AF-A159",
+        "AF-T188",
+        "AF-A160",
+        "AF-T189",
+        "AC-T151",
+        "AC-T152",
+        "AC-A130",
+        "AC-T153",
+        "AC-A131",
+        "AF-T190",
+        "AF-T191",
+        "AF-A161",
+        "AF-A162",
+        "AF-T192",
+        "AF-A163",
+        "AF-T193",
+        "AC-A132",
+        "AC-T154",
+        "AC-A133",
+        "AC-T155",
+        "CS-T009",
+        "CS-T010",
+        "CS-T011",
+        "CS-A006",
+        "CS-T012",
+        "CS-A007",
+        "AF-T194",
+        "AF-A164",
+        "AF-A165",
+        "AC-T156",
+        "AC-A134",
+        "AC-A135",
+        "AC-A136",
+        "AC-A137",
+        "AC-A138",
+        "AC-T157",
+        "AC-A139",
+        "AF-T195",
+        "AF-A166",
+        "AF-A167",
+        "AC-A140",
+        "CS-T013",
+        "CS-A008",
+        "CS-A009",
+        "CS-T014",
+        "AC-A141",
+        "CS-A014",
+        "CS-T020",
+        "CS-A016",
+        "EQ-E022",
+        "CS-T056",
+        "CS-T057",
+        "CS-A047",
+        "CS-A048",
+        "CS-A049",
+        "CS-T058",
+        "AF-A173",
+        "CS-T059",
+        "CS-A050",
+        "CS-T060",
+        "CS-A051",
+        "CS-A052",
+        "CS-A053",
+        "CS-T100",
+        "CS-T101",
+        "CS-A086",
+        "CS-A087",
+        "CS-T102",
+        "CS-T103",
+        "CS-T104",
+        "CS-A088",
+        "CS-T105",
+        "CP-A041",
+        "CP-T039",
+        "CP-T040",
+        "CP-T041",
+        "CP-A042",
+        "CP-A043",
+        "CP-A044",
+        "CS-T114",
+        "CS-A097",
+        "CS-A103",
+        "AC-T183",
+        "AC-A178",
+        "AC-T184",
+        "AC-A179",
+        "AC-A180",
+        "AC-A181",
+        "AF-T241",
+        "AF-A215",
+        "AF-A216",
+        "AF-T252",
+        "AF-A231",
+        "AC-A197",
+        "AC-T197",
+        "AC-T198",
+        "AC-A198",
+        "AC-T199",
+        "AC-T200",
+        "AC-A199",
+        "AC-T201",
+        "AC-A200",
+        "CP-T087",
+        "CP-A090",
+        "CP-A091",
+        "CP-A093",
+        "CP-A094"
+      ],
+      "systems": {
+        "AC": {
+          "elements": 63,
+          "length_m": 19.82088217455785,
+          "fittings": 31
+        },
+        "AF": {
+          "elements": 52,
+          "length_m": 17.16760844921359,
+          "fittings": 25
+        },
+        "CP": {
+          "elements": 12,
+          "length_m": 1.2710213095417644,
+          "fittings": 8
+        },
+        "CS": {
+          "elements": 37,
+          "length_m": 8.05754978286702,
+          "fittings": 18
+        },
+        "EQ": {
+          "elements": 5,
+          "length_m": 0,
+          "fittings": 0
+        }
+      }
+    },
+    {
+      "key": "4",
+      "name": "Baño invitados",
+      "count": 335,
+      "codes": [
+        "EQ-E008",
+        "AF-T017",
+        "AF-T018",
+        "AF-T019",
+        "AF-A013",
+        "AF-A014",
+        "AF-T020",
+        "AF-T021",
+        "AF-A015",
+        "AF-T022",
+        "AF-A016",
+        "AF-T023",
+        "AF-T024",
+        "AF-A017",
+        "AF-A018",
+        "AF-T025",
+        "AF-A019",
+        "AF-T026",
+        "AF-A020",
+        "AF-A021",
+        "EQ-E012",
+        "AF-T027",
+        "AF-T028",
+        "AF-A022",
+        "AF-T029",
+        "AF-T030",
+        "AF-A023",
+        "AF-A024",
+        "EQ-E013",
+        "EQ-E014",
+        "AF-T046",
+        "AF-A034",
+        "AF-A035",
+        "AF-T047",
+        "AF-T048",
+        "AF-A036",
+        "AF-T049",
+        "AC-A011",
+        "AF-T050",
+        "AF-T051",
+        "AF-T052",
+        "AF-T053",
+        "AF-T054",
+        "AF-T055",
+        "AF-T056",
+        "AC-T014",
+        "AC-T015",
+        "AC-T016",
+        "AF-T071",
+        "AC-T017",
+        "AC-T018",
+        "AF-A043",
+        "AC-A013",
+        "AF-A044",
+        "AC-A014",
+        "AC-A015",
+        "AC-T019",
+        "AC-T020",
+        "AC-T021",
+        "AC-T022",
+        "AC-T023",
+        "AC-A016",
+        "AC-A017",
+        "AC-A018",
+        "AC-A019",
+        "AC-T024",
+        "AC-T025",
+        "AC-T026",
+        "AC-T027",
+        "AC-T028",
+        "AC-A020",
+        "AC-A021",
+        "AF-A045",
+        "AF-T072",
+        "AC-A022",
+        "AC-A023",
+        "AC-T029",
+        "AC-A024",
+        "AC-T030",
+        "AC-A025",
+        "AC-A026",
+        "AC-A076",
+        "AF-A092",
+        "AF-A093",
+        "AC-T097",
+        "AC-A079",
+        "AC-T098",
+        "AC-T099",
+        "AC-A080",
+        "AC-T100",
+        "AF-T121",
+        "AF-T122",
+        "AF-A094",
+        "AC-A081",
+        "AF-A095",
+        "AF-A096",
+        "AC-T101",
+        "AC-A082",
+        "AC-T102",
+        "AC-A083",
+        "AF-T123",
+        "AF-T124",
+        "AF-A097",
+        "AC-A084",
+        "AF-A098",
+        "AF-A099",
+        "AC-T103",
+        "AC-A085",
+        "AC-T104",
+        "AC-A086",
+        "AF-A100",
+        "AF-A153",
+        "CS-T007",
+        "CS-A004",
+        "CS-T008",
+        "CS-A005",
+        "EQ-E020",
+        "AF-T196",
+        "AF-A168",
+        "CS-A010",
+        "CS-A015",
+        "EQ-E021",
+        "CS-A045",
+        "CS-A046",
+        "AC-T158",
+        "AC-A142",
+        "AC-A143",
+        "EQ-E024",
+        "AF-T197",
+        "AF-A169",
+        "AF-T198",
+        "AF-T199",
+        "EQ-E025",
+        "AF-T200",
+        "AF-A170",
+        "AC-T159",
+        "EQ-E026",
+        "AF-T201",
+        "AF-A171",
+        "AF-T202",
+        "AF-T203",
+        "EQ-E027",
+        "AF-T204",
+        "AF-A172",
+        "AC-T160",
+        "CP-T024",
+        "CS-T071",
+        "CS-T072",
+        "CS-A064",
+        "CS-T073",
+        "CS-T074",
+        "CS-T075",
+        "CS-A065",
+        "CS-T076",
+        "CS-A066",
+        "CS-A067",
+        "CS-A068",
+        "CS-A069",
+        "CS-T077",
+        "CS-T078",
+        "CS-T079",
+        "CS-A070",
+        "CS-T080",
+        "CS-A071",
+        "CS-T081",
+        "CS-T082",
+        "CS-T083",
+        "CS-A072",
+        "CS-T084",
+        "CS-A073",
+        "CS-T085",
+        "CS-A074",
+        "CS-A075",
+        "CS-A076",
+        "CS-A077",
+        "CS-T086",
+        "CS-T087",
+        "CS-T088",
+        "CS-A078",
+        "CS-T089",
+        "CS-A079",
+        "CP-A031",
+        "CS-T090",
+        "CS-T091",
+        "CS-T092",
+        "CS-A080",
+        "CP-A034",
+        "CP-A035",
+        "AC-A146",
+        "CP-T027",
+        "CS-T093",
+        "CS-T094",
+        "CS-T095",
+        "CS-A081",
+        "CS-A082",
+        "CS-T096",
+        "CS-T097",
+        "CS-A083",
+        "CS-A084",
+        "CS-T098",
+        "CS-T099",
+        "CS-A085",
+        "AF-T205",
+        "AC-A147",
+        "AC-T162",
+        "CP-A036",
+        "CP-T028",
+        "CP-T029",
+        "CP-A037",
+        "CP-T030",
+        "CP-T031",
+        "CP-T032",
+        "CP-A038",
+        "CP-T034",
+        "CP-A039",
+        "CP-T035",
+        "CP-T036",
+        "CP-A040",
+        "CP-T037",
+        "VM-A001",
+        "AF-T206",
+        "AC-T163",
+        "AF-A174",
+        "VM-T001",
+        "VM-T002",
+        "VM-A002",
+        "VM-T003",
+        "VM-A003",
+        "VM-T004",
+        "VM-A004",
+        "EQ-E030",
+        "VM-T005",
+        "VM-T006",
+        "VM-T007",
+        "VM-A005",
+        "VM-T008",
+        "VM-A006",
+        "EQ-E031",
+        "VM-T009",
+        "VM-A007",
+        "VM-T010",
+        "VM-A008",
+        "VM-T011",
+        "VM-A009",
+        "AC-A150",
+        "AC-A151",
+        "VM-A010",
+        "VM-T012",
+        "AF-T210",
+        "AC-T164",
+        "AC-A152",
+        "AF-T211",
+        "AC-T165",
+        "AF-T212",
+        "AC-T166",
+        "AF-A182",
+        "AC-A153",
+        "VM-T013",
+        "AC-A154",
+        "AF-A183",
+        "AF-A184",
+        "AF-T213",
+        "VM-A011",
+        "VM-A012",
+        "AF-T214",
+        "RV-A007",
+        "AC-A155",
+        "AC-A156",
+        "VM-A013",
+        "RV-A008",
+        "AF-A189",
+        "AF-T218",
+        "AF-T219",
+        "AF-A190",
+        "AF-T220",
+        "AF-A191",
+        "AF-T221",
+        "AF-A192",
+        "AF-A193",
+        "CS-T121",
+        "CS-A104",
+        "CS-T122",
+        "CS-A105",
+        "CS-A106",
+        "CP-T061",
+        "CP-T062",
+        "CP-A058",
+        "CP-A059",
+        "CP-T063",
+        "CS-A107",
+        "CS-A108",
+        "CS-A109",
+        "AC-A182",
+        "AC-A183",
+        "CP-T078",
+        "CP-A076",
+        "CP-A077",
+        "CP-T079",
+        "CP-A078",
+        "CP-A079",
+        "CP-T080",
+        "CP-A080",
+        "CP-A081",
+        "AF-A217",
+        "AC-T185",
+        "AC-T186",
+        "AC-A184",
+        "AF-T242",
+        "AF-T243",
+        "AF-A218",
+        "AF-A219",
+        "AC-A185",
+        "AF-T245",
+        "AF-A223",
+        "AC-T189",
+        "AC-A189",
+        "AF-T246",
+        "AF-A224",
+        "AC-T190",
+        "AC-A190",
+        "AC-A191",
+        "AF-A225",
+        "AF-T248",
+        "AF-A226",
+        "AC-T192",
+        "AC-A192",
+        "AC-T193",
+        "AC-A193",
+        "AF-T249",
+        "AF-A227",
+        "AF-T251",
+        "AC-T195",
+        "AC-T196",
+        "AC-A196",
+        "AF-A230"
+      ],
+      "systems": {
+        "AC": {
+          "elements": 86,
+          "length_m": 32.11572925810053,
+          "fittings": 45
+        },
+        "AF": {
+          "elements": 109,
+          "length_m": 37.358075837253864,
+          "fittings": 51
+        },
+        "CP": {
+          "elements": 33,
+          "length_m": 13.492069971733061,
+          "fittings": 16
+        },
+        "CS": {
+          "elements": 67,
+          "length_m": 15.975713886883373,
+          "fittings": 34
+        },
+        "EQ": {
+          "elements": 12,
+          "length_m": 0,
+          "fittings": 0
+        },
+        "RV": {
+          "elements": 2,
+          "length_m": 0,
+          "fittings": 2
+        },
+        "VM": {
+          "elements": 26,
+          "length_m": 9.844283546841233,
+          "fittings": 13
+        }
+      }
+    },
+    {
+      "key": "general",
+      "name": "Distribución general / sin detalle de ambiente",
+      "count": 85,
+      "codes": [
+        "AF-T031",
+        "AF-T074",
+        "AF-T077",
+        "AF-T083",
+        "AC-T045",
+        "AF-T117",
+        "AF-T118",
+        "AF-A088",
+        "AC-T090",
+        "AF-T119",
+        "AC-T091",
+        "AC-T092",
+        "AC-T093",
+        "AC-A071",
+        "AC-A072",
+        "AC-A073",
+        "AF-A089",
+        "AC-A074",
+        "AC-A075",
+        "AC-T094",
+        "AF-A090",
+        "AF-T120",
+        "AF-A091",
+        "AC-T096",
+        "AF-T138",
+        "AF-T154",
+        "EQ-E023",
+        "RV-A002",
+        "CS-T021",
+        "CS-T022",
+        "CP-T007",
+        "CS-A017",
+        "CS-A018",
+        "CP-T008",
+        "CS-T023",
+        "CP-A009",
+        "CP-T009",
+        "CP-A010",
+        "CP-A011",
+        "CP-T010",
+        "CP-A012",
+        "RV-A003",
+        "CP-A013",
+        "CS-T024",
+        "CP-A014",
+        "CS-T025",
+        "CP-T011",
+        "CP-A015",
+        "CP-T033",
+        "CP-T038",
+        "CP-T042",
+        "CP-T043",
+        "CP-T044",
+        "CP-T045",
+        "CP-T046",
+        "CP-T050",
+        "CP-T051",
+        "CP-A053",
+        "CP-T060",
+        "CP-A054",
+        "CP-A055",
+        "CP-T077",
+        "AF-A209",
+        "AC-A176",
+        "AC-T181",
+        "AC-A177",
+        "AC-T182",
+        "AF-A211",
+        "AF-T237",
+        "AF-T238",
+        "AF-A212",
+        "AF-A213",
+        "AF-T239",
+        "AF-T240",
+        "AF-A214",
+        "CP-A085",
+        "CP-A087",
+        "CP-A088",
+        "CP-T085",
+        "CP-A089",
+        "CP-T086",
+        "CP-A092",
+        "CP-T088",
+        "CP-T089",
+        "CP-T090"
+      ],
+      "systems": {
+        "AC": {
+          "elements": 16,
+          "length_m": 18.01468983862771,
+          "fittings": 7
+        },
+        "AF": {
+          "elements": 23,
+          "length_m": 59.23044038565561,
+          "fittings": 9
+        },
+        "CP": {
+          "elements": 36,
+          "length_m": 33.91526025902557,
+          "fittings": 15
+        },
+        "CS": {
+          "elements": 7,
+          "length_m": 0.35032470607531774,
+          "fittings": 2
+        },
+        "EQ": {
+          "elements": 1,
+          "length_m": 0,
+          "fittings": 0
+        },
+        "RV": {
+          "elements": 2,
+          "length_m": 0,
+          "fittings": 2
+        }
+      }
+    },
+    {
+      "key": "6",
+      "name": "Lavadero",
+      "count": 103,
+      "codes": [
+        "AF-T038",
+        "AF-A029",
+        "AF-T039",
+        "AF-T040",
+        "AF-A030",
+        "AF-A031",
+        "AF-T043",
+        "AF-A083",
+        "AC-T073",
+        "AC-T074",
+        "AC-A057",
+        "AC-T088",
+        "AC-A069",
+        "AC-T089",
+        "AC-T107",
+        "AF-T125",
+        "AF-A102",
+        "AF-T126",
+        "AC-T108",
+        "AC-A089",
+        "AC-T109",
+        "AC-A090",
+        "AF-A103",
+        "AF-T127",
+        "AF-T128",
+        "AF-A104",
+        "AF-T129",
+        "AF-A105",
+        "AC-T110",
+        "AC-T111",
+        "AC-A091",
+        "AC-T112",
+        "AC-A092",
+        "EQ-E019",
+        "AC-A099",
+        "AC-T116",
+        "AF-A116",
+        "AF-T134",
+        "AC-A101",
+        "CS-T018",
+        "CS-T019",
+        "CS-A013",
+        "CP-A016",
+        "CS-T026",
+        "CS-T027",
+        "CP-T012",
+        "CS-A019",
+        "CS-A020",
+        "CP-T013",
+        "CS-T028",
+        "CP-A017",
+        "CP-T014",
+        "CP-A018",
+        "CP-A019",
+        "CP-T015",
+        "CP-A020",
+        "CS-T029",
+        "CP-A021",
+        "CS-T030",
+        "CP-A022",
+        "CP-T049",
+        "AC-A148",
+        "CP-T052",
+        "CP-A045",
+        "CP-T053",
+        "CP-A046",
+        "CP-T054",
+        "CP-T055",
+        "CP-T056",
+        "AF-A181",
+        "AF-T235",
+        "CP-T065",
+        "CP-A061",
+        "CP-T066",
+        "CP-A063",
+        "CP-T067",
+        "CP-A064",
+        "CP-T068",
+        "CP-T069",
+        "CP-A065",
+        "CP-T070",
+        "CP-A066",
+        "CP-T071",
+        "CP-T072",
+        "CP-A067",
+        "CP-A068",
+        "CP-A069",
+        "CP-T073",
+        "CP-A070",
+        "CP-A071",
+        "CP-T075",
+        "CP-A073",
+        "CP-T076",
+        "CP-A074",
+        "CP-A075",
+        "AF-T236",
+        "CP-T082",
+        "CP-T084",
+        "CP-A086",
+        "CP-T091",
+        "CP-A095",
+        "CP-T092",
+        "CP-A096"
+      ],
+      "systems": {
+        "AC": {
+          "elements": 20,
+          "length_m": 11.658003743848274,
+          "fittings": 9
+        },
+        "AF": {
+          "elements": 22,
+          "length_m": 11.714720842727708,
+          "fittings": 10
+        },
+        "CP": {
+          "elements": 50,
+          "length_m": 18.130900995980554,
+          "fittings": 25
+        },
+        "CS": {
+          "elements": 10,
+          "length_m": 1.0464489159078652,
+          "fittings": 3
+        },
+        "EQ": {
+          "elements": 1,
+          "length_m": 0,
+          "fittings": 0
+        }
+      }
+    },
+    {
+      "key": "7",
+      "name": "Toilette PB",
+      "count": 37,
+      "codes": [
+        "AF-T062",
+        "AF-T064",
+        "AF-T065",
+        "AF-T073",
+        "AF-T075",
+        "AF-T076",
+        "AF-T078",
+        "AF-A047",
+        "AF-A049",
+        "AF-A050",
+        "AF-T109",
+        "AF-A079",
+        "AF-T110",
+        "AF-A080",
+        "AF-A081",
+        "AF-A082",
+        "AC-T075",
+        "AC-T076",
+        "AC-A059",
+        "AC-A060",
+        "AC-T083",
+        "AF-A087",
+        "RV-A001",
+        "CS-T108",
+        "CS-T109",
+        "CS-A095",
+        "AF-T215",
+        "AF-T216",
+        "AF-T217",
+        "AF-A186",
+        "AC-T169",
+        "VM-T014",
+        "VM-T015",
+        "VM-A015",
+        "VM-T016",
+        "VM-A016",
+        "AF-A232"
+      ],
+      "systems": {
+        "AC": {
+          "elements": 6,
+          "length_m": 4.903156113386056,
+          "fittings": 2
+        },
+        "AF": {
+          "elements": 22,
+          "length_m": 11.429888171821869,
+          "fittings": 10
+        },
+        "CS": {
+          "elements": 3,
+          "length_m": 0.49716427168499655,
+          "fittings": 1
+        },
+        "RV": {
+          "elements": 1,
+          "length_m": 0,
+          "fittings": 1
+        },
+        "VM": {
+          "elements": 5,
+          "length_m": 2.4201788220711733,
+          "fittings": 2
+        }
+      }
+    },
+    {
+      "key": "13",
+      "name": "Sala de máquinas PE",
+      "count": 53,
+      "codes": [
+        "AF-T080",
+        "AF-T082",
+        "AF-T084",
+        "AF-T085",
+        "AF-A051",
+        "AF-T086",
+        "AF-T087",
+        "AF-T088",
+        "AF-T089",
+        "AF-T090",
+        "AF-A057",
+        "AF-T093",
+        "AF-A058",
+        "AF-T094",
+        "AF-A059",
+        "AF-T096",
+        "AF-T097",
+        "AF-T100",
+        "AF-T101",
+        "AF-A065",
+        "AF-T102",
+        "AF-A066",
+        "AF-T103",
+        "AF-A067",
+        "AF-A068",
+        "AF-A069",
+        "AC-A031",
+        "AC-T044",
+        "AC-T048",
+        "AC-T054",
+        "AC-T057",
+        "AC-T058",
+        "AF-A072",
+        "AC-A045",
+        "AC-A047",
+        "AC-T062",
+        "AC-A048",
+        "AC-T063",
+        "AF-A073",
+        "AC-A049",
+        "AC-T064",
+        "AF-A075",
+        "AC-T172",
+        "AC-A162",
+        "AC-T173",
+        "AC-A163",
+        "AC-T174",
+        "AC-A165",
+        "AF-T224",
+        "AF-T225",
+        "AF-A196",
+        "AF-A207",
+        "AF-A208"
+      ],
+      "systems": {
+        "AC": {
+          "elements": 19,
+          "length_m": 4.006758588849263,
+          "fittings": 8
+        },
+        "AF": {
+          "elements": 34,
+          "length_m": 8.670824244169127,
+          "fittings": 15
+        }
+      }
+    },
+    {
+      "key": "12",
+      "name": "Atelier",
+      "count": 10,
+      "codes": [
+        "AF-T091",
+        "AF-T092",
+        "AF-A056",
+        "AC-T046",
+        "AC-T047",
+        "AC-A032",
+        "AF-A074",
+        "AF-T106",
+        "AC-A050",
+        "AC-T065"
+      ],
+      "systems": {
+        "AC": {
+          "elements": 5,
+          "length_m": 1.0829999776250019,
+          "fittings": 2
+        },
+        "AF": {
+          "elements": 5,
+          "length_m": 1.210452850676384,
+          "fittings": 2
+        }
+      }
+    },
+    {
+      "key": "9",
+      "name": "Cocina",
+      "count": 91,
+      "codes": [
+        "AC-T01",
+        "AF-T01",
+        "AF-T02",
+        "AF-T03",
+        "AF-A01",
+        "AF-V01",
+        "AF-T04",
+        "AF-T05",
+        "AF-T06",
+        "AF-A02",
+        "AF-T07",
+        "AF-T08",
+        "AC-T02",
+        "AC-T03",
+        "AC-T04",
+        "AC-T05",
+        "AC-A01",
+        "AC-A02",
+        "AC-T06",
+        "AC-V01",
+        "AC-T07",
+        "AC-V04",
+        "AC-T08",
+        "AC-T09",
+        "AC-T10",
+        "AC-T11",
+        "AF-T09",
+        "AC-V02",
+        "AC-V03",
+        "AC-V05",
+        "AF-A03",
+        "AF-T10",
+        "AF-A04",
+        "AC-A03",
+        "AF-T11",
+        "AF-T12",
+        "AF-A05",
+        "AF-T13",
+        "AF-A06",
+        "AC-A04",
+        "AC-A05",
+        "AC-A06",
+        "AC-T12",
+        "AF-A07",
+        "AF-A08",
+        "AF-T14",
+        "AF-A09",
+        "CP-A01",
+        "CS-T01",
+        "CS-T02",
+        "CP-T01",
+        "CS-A01",
+        "CS-A02",
+        "CP-T02",
+        "CS-T03",
+        "CP-A02",
+        "CP-T03",
+        "CP-A03",
+        "CP-A04",
+        "CP-T04",
+        "CP-A05",
+        "CP-T05",
+        "CP-V03",
+        "CP-A06",
+        "CP-A07",
+        "CS-T04",
+        "CS-A03",
+        "CS-T05",
+        "CS-T06",
+        "CS-V01",
+        "CS-V02",
+        "CP-V01",
+        "CP-T06",
+        "CP-V04",
+        "CP-V05",
+        "CP-V02",
+        "AF-A10",
+        "AF-T15",
+        "AF-A11",
+        "AC-A07",
+        "AC-A08",
+        "AC-A09",
+        "AF-V02",
+        "AC-V06",
+        "AF-A12",
+        "AF-V03",
+        "AC-A10",
+        "AC-V07",
+        "AC-T13",
+        "AF-T16",
+        "CP-A08"
+      ],
+      "systems": {
+        "AC": {
+          "elements": 30,
+          "length_m": 14.491015049201893,
+          "fittings": 14
+        },
+        "AF": {
+          "elements": 31,
+          "length_m": 14.779941071616712,
+          "fittings": 14
+        },
+        "CP": {
+          "elements": 19,
+          "length_m": 3.8993899016869777,
+          "fittings": 11
+        },
+        "CS": {
+          "elements": 11,
+          "length_m": 0.8673709183061334,
+          "fittings": 4
+        }
+      }
+    },
+    {
+      "key": "10",
+      "name": "Sala de máquinas PA",
+      "count": 88,
+      "codes": [
+        "AF-T135",
+        "AF-T136",
+        "AF-A117",
+        "AF-T137",
+        "AF-T139",
+        "AF-T140",
+        "AF-A118",
+        "AF-T141",
+        "AF-A119",
+        "AF-T142",
+        "AF-T143",
+        "AF-T144",
+        "AF-T145",
+        "AF-T146",
+        "AF-A121",
+        "AF-T147",
+        "AF-T148",
+        "AF-A122",
+        "AF-T149",
+        "AF-A123",
+        "AF-T150",
+        "AF-T151",
+        "AF-A124",
+        "AF-A125",
+        "AF-T152",
+        "AF-T153",
+        "AF-A132",
+        "AF-A133",
+        "AC-T117",
+        "AC-A103",
+        "AC-T118",
+        "AC-T119",
+        "AC-T120",
+        "AC-T121",
+        "AC-A104",
+        "AC-T122",
+        "AC-T141",
+        "AF-T178",
+        "AF-A147",
+        "AF-A148",
+        "AF-A149",
+        "AC-A117",
+        "AC-A118",
+        "AC-T142",
+        "AF-T179",
+        "AF-A150",
+        "AF-T180",
+        "AF-T181",
+        "AF-A151",
+        "AF-A152",
+        "AF-A154",
+        "AF-A155",
+        "AF-T183",
+        "AF-A156",
+        "AC-T143",
+        "AC-T144",
+        "AC-T145",
+        "AC-A122",
+        "AC-A123",
+        "AF-T184",
+        "AF-A157",
+        "AC-T146",
+        "AC-A125",
+        "AC-T147",
+        "AC-T148",
+        "CS-A031",
+        "AF-T227",
+        "AF-A198",
+        "AF-A199",
+        "AF-T228",
+        "AF-A200",
+        "AF-T229",
+        "AF-A201",
+        "AF-T230",
+        "AF-T231",
+        "AF-A203",
+        "AC-A166",
+        "AC-T175",
+        "AC-T176",
+        "AC-A168",
+        "AC-A169",
+        "AC-T177",
+        "AC-A170",
+        "AC-T178",
+        "AC-T179",
+        "AC-A171",
+        "AC-T180",
+        "AC-A172"
+      ],
+      "systems": {
+        "AC": {
+          "elements": 33,
+          "length_m": 10.008519728552104,
+          "fittings": 13
+        },
+        "AF": {
+          "elements": 54,
+          "length_m": 12.03881763852878,
+          "fittings": 25
+        },
+        "CS": {
+          "elements": 1,
+          "length_m": 0,
+          "fittings": 1
+        }
+      }
+    }
+  ],
+  "package_policy": "Cada identidad está en un solo paquete. Las asignaciones por vista única son provisionales; los compartidos se mantienen separados hasta confirmar el ambiente. La suma de paquetes coincide con el registro, no prueba por sí sola cobertura completa del modelo."
+}
