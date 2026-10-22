@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {parseSchedule,parseOffer,coverage,exportCsv} from '../lib/procurement.ts';
+import {parseSchedule,parseOffer,coverage,exportCsv,tradeOf,rowsForTrade,latestOffers} from '../lib/procurement.ts';
 const header='codigo;sistema;descripcion;unidad;cantidad\n';
 const rows=parseSchedule(header+'AF01;AF;Caño de línea A Ø20;m;17,69\nAC01;AC;Caño de línea B Ø20;m;3');
 const request={rows};
@@ -13,3 +13,6 @@ test('under-supply and substitutions are not full coverage',()=>{const c=coverag
 test('quote rejects unknown and duplicate codes',()=>{const h='codigo;cantidad;precio_unitario;coincidencia\n';assert.throws(()=>parseOffer(h+'OTHER;1;2;exacta',request));assert.throws(()=>parseOffer(h+'AF01;1;2;exacta\nAF01;1;2;exacta',request))});
 test('complete quote prices requested quantity, not oversupply',()=>{const c=coverage(request,{lines:rows.map(r=>({code:r.code,quantity:100,price:10,match:'exacta'})),freight:0,validUntil:'2030-01-01'});assert.equal(c.complete,true);assert.equal(c.total,206.9)});
 test('spreadsheet export neutralizes formula values',()=>assert.match(exportCsv([['=1+1']]),/'=1\+1/));
+test('trade filtering preserves unknown equipment instead of silently counting it as sanitary',()=>{const items=[...rows,{code:'EQ1',system:'EQ',description:'Equipo',unit:'u',quantity:1},{code:'E1',system:'E',trade:'electricas',description:'Tablero',unit:'u',quantity:1}];assert.equal(rowsForTrade(items,'sanitarias').length,2);assert.equal(tradeOf(items[2]),'otros');assert.equal(rowsForTrade(items,'electricas')[0].code,'E1');assert.equal(rowsForTrade(items,'todos').length,4);assert.equal(items.length,4)});
+test('comparison uses one latest response per supplier without deleting history',()=>{const offers=[{id:'a1',supplier:'a',date:'2026-01-01'},{id:'b1',supplier:'b',date:'2026-01-02'},{id:'a2',supplier:'a',date:'2026-01-03'},{id:'c1',supplier:'c',date:'2026-01-02'}];assert.deepEqual(latestOffers(offers).map(o=>o.id),['a2','b1','c1']);assert.equal(offers.length,4)});
+test('offered specification survives CSV parsing independently of requested product',()=>{const lines=parseOffer('codigo;cantidad;precio_unitario;coincidencia;descripcion_ofertada\nAF01;17.69;20;sustituto;Otra marca Ø20',request);assert.equal(lines[0].description,'Otra marca Ø20');assert.equal(lines[0].match,'sustituto');assert.notEqual(lines[0].description,rows[0].description);assert.equal(coverage(request,{lines,freight:0,validUntil:'2030-01-01'}).covered,0)});
