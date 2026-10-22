@@ -1,0 +1,27 @@
+{
+  "revision": "R13",
+  "physical_elements_compared": 4096,
+  "geometry_unchanged": true,
+  "connections_unchanged": true,
+  "unique_registry_elements": 1400,
+  "quantities_unchanged": true,
+  "family_documents_inspected": 11,
+  "native_pdf_label_colors": {
+    "AC": 425,
+    "AF": 510,
+    "CP": 225,
+    "CS": 237,
+    "EQ": 33,
+    "RV": 11,
+    "VM": 32
+  },
+  "wrong_label_colors": [],
+  "main_bathroom": {
+    "observed": 42,
+    "classification": 29,
+    "connection": 18,
+    "product": 2,
+    "classification_and_connection": 7
+  },
+  "note": "Los PDF nativos no tenían colores incorrectos: los detalles estaban agrupados por sistema. La interfaz ahora explicita los sistemas etiquetados y navega a sus detalles."
+}
