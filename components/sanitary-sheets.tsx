@@ -5,6 +5,7 @@ import sheets from '../data/sanitary-sheets.json';
 import pilot from '../data/casa-angel-r4.json';
 import geometry from '../data/casa-angel-axon.json';
 import DrawingViewport from './drawing-viewport';
+import ProjectSanitary from './project-sanitary';
 import './sanitary-sheets.css';
 const titles:Record<string,string>={plan:'Planta',front:'Corte AA',side:'Corte BB',axon:'Axonométrica'};
 const systems:Record<string,{name:string;color:string}>={AF:{name:'Agua fría',color:'#194bd2'},AC:{name:'Agua caliente',color:'#d22323'},CP:{name:'Cloacal primario',color:'#7a1938'},CS:{name:'Cloacal secundario',color:'#b78d00'}};
@@ -20,6 +21,7 @@ const path=(lines:number[][][])=>lines.map(points=>points.map((p,i)=>`${i?'L':'M
 
 const shapeByCode=new Map(geometry.elements.map(e=>[e.code,{...e,path:path(e.paths),centerPath:e.center.length>1?path([e.center]):''}]));
 export default function SanitarySheets(){
+ const [globalProject,setGlobalProject]=useState(false);
  const [sheet,setSheet]=useState<number|null>(null),[view,setView]=useState(''),[mode,setMode]=useState('pipes'),[section,setSection]=useState('drawings'),[system,setSystem]=useState('Todos'),[axonSystem,setAxonSystem]=useState('Todos'),[query,setQuery]=useState(''),[selected,setSelected]=useState('');
  const [hover,setHover]=useState<{code:string;x:number;y:number}|null>(null);
  const current=sheets.find(s=>s.page===sheet),kitchen=sheet===9,drawing=pilot.views.find(v=>v.key===view&&(view==='axon'||v.mode===mode));
@@ -33,9 +35,12 @@ export default function SanitarySheets(){
  const matches=(r:Item)=>`${r.code} ${r.type} ${itemSize(r)}`.toLowerCase().includes(query.toLowerCase());
  const controls=<div className="systemTabs"><button aria-pressed={axonSystem==='Todos'} onClick={()=>{setAxonSystem('Todos');setSelected('')}}>Todos</button>{Object.entries(systems).map(([g,s])=><button key={g} aria-pressed={axonSystem===g} style={{borderColor:s.color,color:s.color}} onClick={()=>{setAxonSystem(g);setSelected('')}}>{s.name}</button>)}</div>;
  const tooltip=hover&&hovered&&view==='axon'&&<div className="axonTooltip" role="tooltip" style={{left:Math.min(hover.x+15,typeof window==='undefined'?hover.x:window.innerWidth-300),top:Math.max(8,hover.y-72),borderColor:systems[hovered.system].color}}><strong>{hovered.code} · {systems[hovered.system].name}</strong><span>{hovered.type} · {itemSize(hovered)}{hovered.kind==='pipe'?` · ${fmt(hovered.length_m)} m`:''}</span>{hovered.status==='visible_unassigned'&&<small>Visible · fuera del cómputo piloto</small>}</div>;
+ if(globalProject)return <ProjectSanitary key="all" page={null} onBack={()=>setGlobalProject(false)}/>;
+ if(current&&sheet!==9)return <ProjectSanitary key={sheet} page={sheet} onBack={()=>setSheet(null)}/>;
  return <section className="sheetExplorer" aria-label="Láminas sanitarias">
  <div className="sheetHeading"><div><p className="eyebrow">CASA ÁNGEL / SANITARIAS</p><h3>{current?`${current.number} · ${current.name}`:'Láminas del proyecto'}</h3><p>{current?'Explorá el plano, identificá cada pieza y comprobá su cantidad.':'Elegí un ambiente para revisar su documentación.'}</p></div>{current&&<button className="sheetBack" onClick={goBack}><ArrowLeft size={15}/>{view?'Volver a la lámina':'Todas las láminas'}</button>}</div>
- {!current?<div className="sheetGrid">{sheets.map(s=><button key={s.page} className="sheetCard" onClick={()=>{setSheet(s.page);setView('');setSection('drawings');setSelected('')}}><img src={s.image} alt={`Lámina ${s.number} ${s.name}`} loading="lazy"/><span className="sheetHoverTitle" aria-hidden="true">{s.name}</span><span><small>{s.number}</small><strong>{s.name}</strong><em>{s.page===9?'Piloto Cocina · explorador interactivo':'Documento original'}</em></span></button>)}</div>:<>
+ {!current&&<div className="sheetTabs"><button onClick={()=>setGlobalProject(true)}>Cómputo general · todas las láminas ↗</button></div>}
+ {!current?<div className="sheetGrid">{sheets.map(s=><button key={s.page} className="sheetCard" onClick={()=>{setSheet(s.page);setView('');setSection('drawings');setSelected('')}}><img src={s.image} alt={`Lámina ${s.number} ${s.name}`} loading="lazy"/><span className="sheetHoverTitle" aria-hidden="true">{s.name}</span><span><small>{s.number}</small><strong>{s.name}</strong><em>{s.page===9?'Piloto Cocina · explorador interactivo':'Vistas y cómputo · R11'}</em></span></button>)}</div>:<>
  <div className="sheetTabs">{(kitchen?['drawings','quantities']:['drawings']).map(s=><button key={s} aria-pressed={section===s} onClick={()=>setSection(s)}>{s==='drawings'?'Lámina y vistas':'Cómputo y elementos'}</button>)}<a href={`${original}#page=${sheet}`} target="_blank" rel="noreferrer">Original PDF <ArrowUpRight size={13}/></a>{kitchen&&<a href={pdf} target="_blank" rel="noreferrer">Entrega R10 <Download size={13}/></a>}</div>
  {section==='drawings'&&(!view?<><p className="sheetHint">{kitchen?'Tocá planta, axonométrica o cortes para abrir el visor.':'Documento original. El detalle interactivo está disponible en el piloto de Cocina.'}</p><div className="sheetCanvas"><img src={current.image} alt={`Lámina original ${current.name}`}/>{kitchen&&regions.map(r=><button key={r.key} className="sheetHotspot" style={{left:`${r.x}%`,top:`${r.y}%`,width:`${r.w}%`,height:`${r.h}%`}} aria-label={`Abrir ${titles[r.key]}`} onClick={()=>openView(r.key)}><span>{titles[r.key]} ↗</span></button>)}</div></>:<>
 

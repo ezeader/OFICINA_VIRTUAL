@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "document": "Casa-Angel-piloto-documentacion.rvt",
+  "unique_elements": 1400,
+  "source_views": 56,
+  "source_sheets": 16,
+  "expected_detail_panels": 124,
+  "physical_elements_compared": 4096,
+  "physical_elements_changed": [],
+  "exact_geometric_coincidences": [],
+  "elements_with_observations": 796,
+  "errors": []
+}
