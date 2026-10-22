@@ -1,0 +1,15 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {parseSchedule,parseOffer,coverage,exportCsv} from '../lib/procurement.ts';
+const header='codigo;sistema;descripcion;unidad;cantidad\n';
+const rows=parseSchedule(header+'AF01;AF;Caño de línea A Ø20;m;17,69\nAC01;AC;Caño de línea B Ø20;m;3');
+const request={rows};
+test('preserves native quantities and separates systems',()=>{assert.equal(rows[0].quantity,17.69);assert.equal(rows[1].system,'AC');assert.equal(rows.length,2)});
+test('rejects repeated codes across representations',()=>assert.throws(()=>parseSchedule(header+'AF01;AF;Caño;m;2\nAF01;AF;Caño;m;2'),/repetido/));
+test('rejects ambiguous units and malformed quantities',()=>{for(const line of ['A;AF;Caño;cm;2','A;AF;Caño;m;1.000,5','A;AF;Caño;m;-1','A;AF;Pieza;u;1,5'])assert.throws(()=>parseSchedule(header+line))});
+test('handles quoted descriptions with separators and multiline text',()=>{assert.equal(parseSchedule(header+'A;AF;"Caño; clase A\nLínea B";m;2')[0].description,'Caño; clase A\nLínea B')});
+test('missing quote item does not masquerade as complete budget',()=>{const c=coverage(request,{lines:[{code:'AF01',quantity:17.69,price:10,match:'exacta'}],freight:5,validUntil:'2030-01-01'},'2026-10-22');assert.equal(c.complete,false);assert.equal(c.missing[0].code,'AC01');assert.equal(c.total,181.9)});
+test('under-supply and substitutions are not full coverage',()=>{const c=coverage(request,{lines:[{code:'AF01',quantity:10,price:1,match:'exacta'},{code:'AC01',quantity:3,price:1,match:'sustituto'}],freight:0,validUntil:'2020-01-01'});assert.equal(c.missing.length,2);assert.equal(c.expired,true);assert.equal(c.subtotal,0)});
+test('quote rejects unknown and duplicate codes',()=>{const h='codigo;cantidad;precio_unitario;coincidencia\n';assert.throws(()=>parseOffer(h+'OTHER;1;2;exacta',request));assert.throws(()=>parseOffer(h+'AF01;1;2;exacta\nAF01;1;2;exacta',request))});
+test('complete quote prices requested quantity, not oversupply',()=>{const c=coverage(request,{lines:rows.map(r=>({code:r.code,quantity:100,price:10,match:'exacta'})),freight:0,validUntil:'2030-01-01'});assert.equal(c.complete,true);assert.equal(c.total,206.9)});
+test('spreadsheet export neutralizes formula values',()=>assert.match(exportCsv([['=1+1']]),/'=1\+1/));
