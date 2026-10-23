@@ -1,0 +1,3927 @@
+{
+  "title": "Pisos y zócalos",
+  "summary": "13 tipos de piso (558,38 m²) en 29 piezas; los 30 locales tienen tipo de piso asignado. Zócalos: 25,61 ml modelados de 427,30 ml de perímetro. 17 láminas: plantas por nivel, fichas por tipo con corte de paquete.",
+  "model": "Casa-Angel-piloto-documentacion.rvt",
+  "readAt": "2026-10-23T22:29:18.350000Z",
+  "revision": "R18",
+  "kinds": {
+    "TP": "Tipos de piso (paquetes)",
+    "PI": "Piezas de piso por nivel",
+    "ZO": "Zócalos modelados"
+  },
+  "sheets": [
+    {
+      "number": "PIS-00",
+      "title": "Índice, tipos y cómputo",
+      "level": "Pisos",
+      "sector": "General",
+      "kind": "general",
+      "element": null,
+      "elementId": null,
+      "elementKind": null,
+      "note": null,
+      "sheetId": "2467663",
+      "pdf": "/casa-angel/rubros/pisos/PIS-00.pdf",
+      "image": "/casa-angel/rubros/pisos/PIS-00.svg.gz",
+      "preview": "/casa-angel/rubros/pisos/PIS-00-preview.png",
+      "thumbnail": "/casa-angel/rubros/pisos/PIS-00.png",
+      "views": []
+    },
+    {
+      "number": "PIS-PA-01",
+      "title": "Planta de pisos · 01. Planta Alta",
+      "level": "01. Planta Alta",
+      "sector": "01. Planta Alta",
+      "kind": "general",
+      "element": null,
+      "elementId": null,
+      "elementKind": null,
+      "note": null,
+      "sheetId": "2466648",
+      "pdf": "/casa-angel/rubros/pisos/PIS-PA-01.pdf",
+      "image": "/casa-angel/rubros/pisos/PIS-PA-01.svg.gz",
+      "preview": "/casa-angel/rubros/pisos/PIS-PA-01-preview.png",
+      "thumbnail": "/casa-angel/rubros/pisos/PIS-PA-01.png",
+      "views": [
+        {
+          "id": "2466618",
+          "name": "Planta de pisos · 01. Planta Alta",
+          "label": "Planta de pisos · 01. Planta Alta   1:60",
+          "scale": 60,
+          "kind": "plan",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "image": "/casa-angel/rubros/pisos/PIS-PA-01-view-2466618.svg.gz",
+          "region": [
+            0.2558,
+            0.2013,
+            0.6434,
+            0.786
+          ],
+          "tags": [
+            "TP-01",
+            "TP-02",
+            "TP-06"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "PI-PA-01",
+              "elementId": "467187",
+              "box": [
+                0.2348,
+                0.0457,
+                0.6489,
+                0.7358
+              ]
+            },
+            {
+              "code": "PI-PA-02",
+              "elementId": "1011940",
+              "box": [
+                0.6289,
+                0.0457,
+                0.8771,
+                0.168
+              ]
+            },
+            {
+              "code": "PI-PA-03",
+              "elementId": "2157154",
+              "box": [
+                0.5099,
+                0.168,
+                0.9048,
+                0.4607
+              ]
+            },
+            {
+              "code": "PI-PA-04",
+              "elementId": "2156060",
+              "box": [
+                0.0487,
+                0.6485,
+                0.2302,
+                0.9543
+              ]
+            },
+            {
+              "code": "PI-PA-05",
+              "elementId": "2156155",
+              "box": [
+                0.2302,
+                0.6485,
+                0.4163,
+                0.9543
+              ]
+            },
+            {
+              "code": "PI-PA-06",
+              "elementId": "2156409",
+              "box": [
+                0.4163,
+                0.6357,
+                0.6025,
+                0.9543
+              ]
+            },
+            {
+              "code": "PI-PA-07",
+              "elementId": "2156920",
+              "box": [
+                0.5421,
+                0.4607,
+                0.9513,
+                0.6922
+              ]
+            },
+            {
+              "code": "PI-PA-08",
+              "elementId": "2156600",
+              "box": [
+                0.6025,
+                0.6922,
+                0.6956,
+                0.7796
+              ]
+            },
+            {
+              "code": "PI-PA-09",
+              "elementId": "2157972",
+              "box": [
+                0.4163,
+                0.0457,
+                0.6245,
+                0.168
+              ]
+            },
+            {
+              "code": "TP-02",
+              "elementId": "864264",
+              "box": [
+                0.0534,
+                0.6747,
+                0.2255,
+                0.8516
+              ],
+              "label": "01 · Sala de TV · TP-02 · alfombra · 14,99 m²",
+              "room": true
+            },
+            {
+              "code": "TP-02",
+              "elementId": "892788",
+              "box": [
+                0.0534,
+                0.856,
+                0.1883,
+                0.9281
+              ],
+              "label": "02 · Sala de Maquinas · TP-02 · alfombra · 4,79 m²",
+              "room": true
+            },
+            {
+              "code": "TP-02",
+              "elementId": "870164",
+              "box": [
+                0.2348,
+                0.7394,
+                0.6025,
+                0.9281
+              ],
+              "label": "03 · Playroom · TP-02 · alfombra · 28,94 m²",
+              "room": true
+            },
+            {
+              "code": "TP-02",
+              "elementId": "870167",
+              "box": [
+                0.193,
+                0.8003,
+                0.3037,
+                0.9281
+              ],
+              "label": "04 · Baño PA · TP-02 · alfombra · 5,81 m²",
+              "room": true
+            },
+            {
+              "code": "TP-01",
+              "elementId": "863692",
+              "box": [
+                0.6336,
+                0.0457,
+                0.7233,
+                0.1636
+              ],
+              "label": "05 · Toilette · TP-01 · vinílico · 5,12 m²",
+              "room": true
+            },
+            {
+              "code": "TP-01",
+              "elementId": "863864",
+              "box": [
+                0.7279,
+                0.0457,
+                0.8771,
+                0.1636
+              ],
+              "label": "06 · Cava · TP-01 · vinílico · 8,44 m²",
+              "room": true
+            },
+            {
+              "code": "TP-01",
+              "elementId": "877992",
+              "box": [
+                0.6522,
+                0.1636,
+                0.8955,
+                0.3427
+              ],
+              "label": "07 · Cocina · TP-01 · vinílico · 20,87 m²",
+              "room": true
+            },
+            {
+              "code": "TP-01",
+              "elementId": "869397",
+              "box": [
+                0.6561,
+                0.3427,
+                0.8955,
+                0.5528
+              ],
+              "label": "08 · Comedor · TP-01 · vinílico · 23,26 m²",
+              "room": true
+            },
+            {
+              "code": "TP-02",
+              "elementId": "877995",
+              "box": [
+                0.6522,
+                0.5393,
+                0.8724,
+                0.6922
+              ],
+              "label": "09 · Living · TP-02 · alfombra · 16,14 m²",
+              "room": true
+            },
+            {
+              "code": "TP-06",
+              "elementId": "887814",
+              "box": [
+                0.6025,
+                0.6922,
+                0.6956,
+                0.7796
+              ],
+              "label": "10 · Puente · TP-06 · madera · 2,18 m²",
+              "room": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "PIS-PB-01",
+      "title": "Planta de pisos · 00. Planta Baja",
+      "level": "00. Planta Baja",
+      "sector": "00. Planta Baja",
+      "kind": "general",
+      "element": null,
+      "elementId": null,
+      "elementKind": null,
+      "note": null,
+      "sheetId": "2466598",
+      "pdf": "/casa-angel/rubros/pisos/PIS-PB-01.pdf",
+      "image": "/casa-angel/rubros/pisos/PIS-PB-01.svg.gz",
+      "preview": "/casa-angel/rubros/pisos/PIS-PB-01-preview.png",
+      "thumbnail": "/casa-angel/rubros/pisos/PIS-PB-01.png",
+      "views": [
+        {
+          "id": "2466549",
+          "name": "Planta de pisos · 00. Planta Baja",
+          "label": "Planta de pisos · 00. Planta Baja   1:75",
+          "scale": 75,
+          "kind": "plan",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/pisos/PIS-PB-01-view-2466549.svg.gz",
+          "region": [
+            0.2629,
+            0.226,
+            0.6364,
+            0.7612
+          ],
+          "tags": [
+            "TP-01",
+            "TP-04",
+            "TP-05",
+            "TP-07",
+            "TP-08",
+            "TP-13",
+            "ZO-01",
+            "ZO-02",
+            "ZO-03",
+            "ZO-04",
+            "ZO-05"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "PI-PB-01",
+              "elementId": "398391",
+              "box": [
+                0.6648,
+                0.6102,
+                0.8889,
+                0.8393
+              ]
+            },
+            {
+              "code": "PI-PB-02",
+              "elementId": "875664",
+              "box": [
+                0.0428,
+                0.1521,
+                0.6262,
+                0.2284
+              ]
+            },
+            {
+              "code": "PI-PB-03",
+              "elementId": "400022",
+              "box": [
+                0.6648,
+                0.6102,
+                0.7131,
+                0.658
+              ]
+            },
+            {
+              "code": "PI-PB-04",
+              "elementId": "400493",
+              "box": [
+                0.6648,
+                0.6102,
+                0.7228,
+                0.6675
+              ]
+            },
+            {
+              "code": "PI-PB-05",
+              "elementId": "400770",
+              "box": [
+                0.6648,
+                0.6102,
+                0.7324,
+                0.6771
+              ]
+            },
+            {
+              "code": "PI-PB-06",
+              "elementId": "400975",
+              "box": [
+                0.6648,
+                0.6102,
+                0.7421,
+                0.6866
+              ]
+            },
+            {
+              "code": "PI-PB-07",
+              "elementId": "628255",
+              "box": [
+                0.6687,
+                0.8432,
+                0.746,
+                0.8813
+              ]
+            },
+            {
+              "code": "PI-PB-08",
+              "elementId": "628637",
+              "box": [
+                0.7266,
+                0.8622,
+                0.7653,
+                0.9386
+              ]
+            },
+            {
+              "code": "PI-PB-09",
+              "elementId": "628772",
+              "box": [
+                0.688,
+                0.8909,
+                0.7653,
+                0.9291
+              ]
+            },
+            {
+              "code": "PI-PB-10",
+              "elementId": "628854",
+              "box": [
+                0.7073,
+                0.9195,
+                0.7846,
+                0.9577
+              ]
+            },
+            {
+              "code": "PI-PB-11",
+              "elementId": "629011",
+              "box": [
+                0.746,
+                0.8527,
+                0.8232,
+                0.8909
+              ]
+            },
+            {
+              "code": "PI-PB-12",
+              "elementId": "629059",
+              "box": [
+                0.8041,
+                0.8432,
+                0.8428,
+                0.9195
+              ]
+            },
+            {
+              "code": "PI-PB-13",
+              "elementId": "361258",
+              "box": [
+                0.518,
+                0.0452,
+                0.9469,
+                0.1444
+              ]
+            },
+            {
+              "code": "PI-PB-14",
+              "elementId": "2068259",
+              "box": [
+                0.2089,
+                0.5797,
+                0.3519,
+                0.8317
+              ]
+            },
+            {
+              "code": "PI-PB-15",
+              "elementId": "2144958",
+              "box": [
+                0.3596,
+                0.5797,
+                0.5064,
+                0.8317
+              ]
+            },
+            {
+              "code": "PI-PB-16",
+              "elementId": "2151436",
+              "box": [
+                0.5142,
+                0.5663,
+                0.6571,
+                0.8317
+              ]
+            },
+            {
+              "code": "PI-PB-17",
+              "elementId": "2153042",
+              "box": [
+                0.6203,
+                0.4079,
+                0.9546,
+                0.6026
+              ]
+            },
+            {
+              "code": "PI-PB-18",
+              "elementId": "2154191",
+              "box": [
+                0.6262,
+                0.1521,
+                0.8966,
+                0.4003
+              ]
+            },
+            {
+              "code": "TP-01",
+              "elementId": "780807",
+              "box": [
+                0.2089,
+                0.6521,
+                0.3519,
+                0.7744
+              ],
+              "label": "01 · Cuarto A Inv. · TP-01 · vinílico · 11,86 m²",
+              "room": true
+            },
+            {
+              "code": "TP-01",
+              "elementId": "780810",
+              "box": [
+                0.2089,
+                0.779,
+                0.3519,
+                0.8336
+              ],
+              "label": "02 · Baño A Inv. · TP-01 · vinílico · 5,29 m²",
+              "room": true
+            },
+            {
+              "code": "TP-04",
+              "elementId": "780816",
+              "box": [
+                0.3596,
+                0.6521,
+                0.5064,
+                0.7744
+              ],
+              "label": "03 · Cuarto B Inv. · TP-04 · vinílico · 12,18 m²",
+              "room": true
+            },
+            {
+              "code": "TP-04",
+              "elementId": "780813",
+              "box": [
+                0.3596,
+                0.779,
+                0.5064,
+                0.8336
+              ],
+              "label": "04 · Baño B Inv. · TP-04 · vinílico · 5,43 m²",
+              "room": true
+            },
+            {
+              "code": "TP-05",
+              "elementId": "780819",
+              "box": [
+                0.5142,
+                0.6521,
+                0.6571,
+                0.7744
+              ],
+              "label": "05 · Cuarto C Inv. · TP-05 · vinílico · 11,86 m²",
+              "room": true
+            },
+            {
+              "code": "TP-05",
+              "elementId": "780822",
+              "box": [
+                0.5142,
+                0.779,
+                0.6571,
+                0.8336
+              ],
+              "label": "06 · Baño C Inv. · TP-05 · vinílico · 5,29 m²",
+              "room": true
+            },
+            {
+              "code": "TP-01",
+              "elementId": "874173",
+              "box": [
+                0.518,
+                0.0452,
+                0.6098,
+                0.1473
+              ],
+              "label": "07 · Toilette Servicio · TP-01 · vinílico · 6,24 m²",
+              "room": true
+            },
+            {
+              "code": "TP-01",
+              "elementId": "1041091",
+              "box": [
+                0.6175,
+                0.0423,
+                0.7137,
+                0.1473
+              ],
+              "label": "08 · Lavadero · TP-01 · vinílico · 6,64 m²",
+              "room": true
+            },
+            {
+              "code": "TP-01",
+              "elementId": "785697",
+              "box": [
+                0.7174,
+                0.0452,
+                0.8156,
+                0.1444
+              ],
+              "label": "09 · Hab. servicio · TP-01 · vinílico · 6,61 m²",
+              "room": true
+            },
+            {
+              "code": "TP-01",
+              "elementId": "785700",
+              "box": [
+                0.8193,
+                0.0423,
+                0.8928,
+                0.1444
+              ],
+              "label": "10 · Acceso Servicio · TP-01 · vinílico · 5,03 m²",
+              "room": true
+            },
+            {
+              "code": "TP-01",
+              "elementId": "785703",
+              "box": [
+                0.8966,
+                0.0452,
+                0.9469,
+                0.1444
+              ],
+              "label": "11 · Ascensor · TP-01 · vinílico · 3,34 m²",
+              "room": true
+            },
+            {
+              "code": "TP-08",
+              "elementId": "783339",
+              "box": [
+                0.6268,
+                0.1492,
+                0.8947,
+                0.4031
+              ],
+              "label": "12 · Quincho · TP-08 · vinílico · 45,01 m²",
+              "room": true
+            },
+            {
+              "code": "TP-07",
+              "elementId": "780825",
+              "box": [
+                0.7071,
+                0.4079,
+                0.8789,
+                0.5366
+              ],
+              "label": "13 · Cuarto ppal · TP-07 · vinílico · 14,82 m²",
+              "room": true
+            },
+            {
+              "code": "TP-07",
+              "elementId": "1007176",
+              "box": [
+                0.7071,
+                0.5366,
+                0.8762,
+                0.6026
+              ],
+              "label": "14 · Vestidor ppal · TP-07 · vinílico · 7,57 m²",
+              "room": true
+            },
+            {
+              "code": "TP-07",
+              "elementId": "780828",
+              "box": [
+                0.8789,
+                0.4079,
+                0.9488,
+                0.6026
+              ],
+              "label": "15 · Baño ppal · TP-07 · vinílico · 9,03 m²",
+              "room": true
+            },
+            {
+              "code": "TP-04",
+              "elementId": "788673",
+              "box": [
+                0.3596,
+                0.405,
+                0.7035,
+                0.6484
+              ],
+              "label": "16 · Pasillo · TP-04 · vinílico · 26,08 m²",
+              "room": true
+            },
+            {
+              "code": "TP-13",
+              "elementId": "788665",
+              "box": [
+                0.6648,
+                0.6102,
+                0.8889,
+                0.8317
+              ],
+              "label": "17 · Hall · TP-13 · hormigón · 27,13 m²",
+              "room": true
+            },
+            {
+              "code": "ZO-01",
+              "elementId": "2392299",
+              "box": [
+                0.9476,
+                0.427,
+                0.9488,
+                0.5835
+              ]
+            },
+            {
+              "code": "ZO-02",
+              "elementId": "2392381",
+              "box": [
+                0.8808,
+                0.4079,
+                0.882,
+                0.6026
+              ]
+            },
+            {
+              "code": "ZO-03",
+              "elementId": "2392382",
+              "box": [
+                0.708,
+                0.6015,
+                0.9488,
+                0.6026
+              ]
+            },
+            {
+              "code": "ZO-04",
+              "elementId": "2392543",
+              "box": [
+                0.7071,
+                0.4079,
+                0.9486,
+                0.409
+              ]
+            },
+            {
+              "code": "ZO-05",
+              "elementId": "2392758",
+              "box": [
+                0.6872,
+                0.1521,
+                0.8371,
+                0.1532
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "PIS-PE-01",
+      "title": "Planta de pisos · 02. Planta Entrepiso",
+      "level": "02. Planta Entrepiso",
+      "sector": "02. Planta Entrepiso",
+      "kind": "general",
+      "element": null,
+      "elementId": null,
+      "elementKind": null,
+      "note": null,
+      "sheetId": "2466684",
+      "pdf": "/casa-angel/rubros/pisos/PIS-PE-01.pdf",
+      "image": "/casa-angel/rubros/pisos/PIS-PE-01.svg.gz",
+      "preview": "/casa-angel/rubros/pisos/PIS-PE-01-preview.png",
+      "thumbnail": "/casa-angel/rubros/pisos/PIS-PE-01.png",
+      "views": [
+        {
+          "id": "2466668",
+          "name": "Planta de pisos · 02. Planta Entrepiso",
+          "label": "Planta de pisos · 02. Planta Entrepiso   1:20",
+          "scale": 20,
+          "kind": "plan",
+          "sector": "02. Planta Entrepiso",
+          "roomLabel": "02. Planta Entrepiso",
+          "image": "/casa-angel/rubros/pisos/PIS-PE-01-view-2466668.svg.gz",
+          "region": [
+            0.2482,
+            0.1656,
+            0.6506,
+            0.8212
+          ],
+          "tags": [
+            "TP-01",
+            "TP-03"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "PI-PE-01",
+              "elementId": "2159130",
+              "box": [
+                0.1185,
+                0.103,
+                0.8351,
+                0.4299
+              ]
+            },
+            {
+              "code": "PI-PE-02",
+              "elementId": "875093",
+              "box": [
+                0.1971,
+                0.4299,
+                0.8815,
+                0.897
+              ]
+            },
+            {
+              "code": "TP-01",
+              "elementId": "876170",
+              "box": [
+                0.1253,
+                0.1147,
+                0.4644,
+                0.4183
+              ],
+              "label": "01 · SM · TP-01 · vinílico · 6,56 m²",
+              "room": true
+            },
+            {
+              "code": "TP-01",
+              "elementId": "876173",
+              "box": [
+                0.4644,
+                0.1147,
+                0.8284,
+                0.4416
+              ],
+              "label": "02 · Hall PE · TP-01 · vinílico · 7,26 m²",
+              "room": true
+            },
+            {
+              "code": "TP-03",
+              "elementId": "876161",
+              "box": [
+                0.1968,
+                0.4416,
+                0.8815,
+                0.8853
+              ],
+              "label": "03 · Atelier · TP-03 · madera · 19,36 m²",
+              "room": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "PIS-F-TP-01",
+      "title": "Ficha TP-01 · L01.00",
+      "level": "01. Planta Alta",
+      "sector": "01. Planta Alta",
+      "kind": "element",
+      "element": "TP-01",
+      "elementId": "1011940",
+      "elementKind": "TP",
+      "note": "Corte de paquete a 1:5 con capas y espesores del tipo del modelo.",
+      "sheetId": "2466760",
+      "pdf": "/casa-angel/rubros/pisos/PIS-F-TP-01.pdf",
+      "image": "/casa-angel/rubros/pisos/PIS-F-TP-01.svg.gz",
+      "preview": "/casa-angel/rubros/pisos/PIS-F-TP-01-preview.png",
+      "thumbnail": "/casa-angel/rubros/pisos/PIS-F-TP-01.png",
+      "views": [
+        {
+          "id": "2466704",
+          "name": "TP-01 · planta (01. Planta Alta)",
+          "label": "TP-01 · planta (01. Planta Alta)   1:40",
+          "scale": 40,
+          "kind": "plan",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "image": "/casa-angel/rubros/pisos/PIS-F-TP-01-view-2466704.svg.gz",
+          "region": [
+            0.1221,
+            0.2646,
+            0.4146,
+            0.7175
+          ],
+          "tags": [
+            "TP-01",
+            "PI-PA-02",
+            "PI-PA-03"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "PI-PA-02",
+              "elementId": "1011940",
+              "box": [
+                0.3442,
+                0.0984,
+                0.8373,
+                0.3351
+              ]
+            },
+            {
+              "code": "PI-PA-03",
+              "elementId": "2157154",
+              "box": [
+                0.1077,
+                0.3351,
+                0.8923,
+                0.9016
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2466721",
+          "name": "TP-01 · corte de paquete",
+          "label": "TP-01 · corte de paquete   1:5",
+          "scale": 5,
+          "kind": "section",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "image": "/casa-angel/rubros/pisos/PIS-F-TP-01-view-2466721.svg.gz",
+          "region": [
+            0.4373,
+            0.2159,
+            0.7699,
+            0.3971
+          ],
+          "tags": [
+            "TP-01"
+          ],
+          "dimensions": [
+            {
+              "label": "TP-01 capas",
+              "values_m": [
+                0.03,
+                0.1,
+                0.02,
+                0.025,
+                0.005,
+                0.02
+              ],
+              "associative": false
+            },
+            {
+              "label": "TP-01 espesor total",
+              "values_m": [
+                0.2
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "PI-PA-02",
+              "elementId": "1011940",
+              "box": [
+                0.0,
+                0.3731,
+                1.0,
+                0.7115
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2466749",
+          "name": "TP-01 · axonométrica",
+          "label": "TP-01 · axonométrica   1:25",
+          "scale": 25,
+          "kind": "axo",
+          "sector": "Sector: 01. Planta Alta",
+          "roomLabel": "Sector: 01. Planta Alta",
+          "image": "/casa-angel/rubros/pisos/PIS-F-TP-01-view-2466749.svg.gz",
+          "region": [
+            0.4367,
+            0.4928,
+            0.7705,
+            0.7663
+          ],
+          "tags": [
+            "TP-01"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "PI-PA-02",
+              "elementId": "1011940",
+              "box": [
+                0.1273,
+                0.1783,
+                0.8727,
+                0.8217
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "PIS-F-TP-02",
+      "title": "Ficha TP-02 · L01.01",
+      "level": "01. Planta Alta",
+      "sector": "01. Planta Alta",
+      "kind": "element",
+      "element": "TP-02",
+      "elementId": "2156060",
+      "elementKind": "TP",
+      "note": "Corte de paquete a 1:5 con capas y espesores del tipo del modelo.",
+      "sheetId": "2466844",
+      "pdf": "/casa-angel/rubros/pisos/PIS-F-TP-02.pdf",
+      "image": "/casa-angel/rubros/pisos/PIS-F-TP-02.svg.gz",
+      "preview": "/casa-angel/rubros/pisos/PIS-F-TP-02-preview.png",
+      "thumbnail": "/casa-angel/rubros/pisos/PIS-F-TP-02.png",
+      "views": [
+        {
+          "id": "2466785",
+          "name": "TP-02 · planta (01. Planta Alta)",
+          "label": "TP-02 · planta (01. Planta Alta)   1:75",
+          "scale": 75,
+          "kind": "plan",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "image": "/casa-angel/rubros/pisos/PIS-F-TP-02-view-2466785.svg.gz",
+          "region": [
+            0.1297,
+            0.3489,
+            0.4472,
+            0.6332
+          ],
+          "tags": [
+            "TP-02",
+            "PI-PA-04",
+            "PI-PA-05",
+            "PI-PA-06",
+            "PI-PA-07"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "PI-PA-04",
+              "elementId": "2156060",
+              "box": [
+                0.0594,
+                0.403,
+                0.2366,
+                0.906
+              ]
+            },
+            {
+              "code": "PI-PA-05",
+              "elementId": "2156155",
+              "box": [
+                0.2366,
+                0.403,
+                0.4183,
+                0.906
+              ]
+            },
+            {
+              "code": "PI-PA-06",
+              "elementId": "2156409",
+              "box": [
+                0.4183,
+                0.3819,
+                0.6001,
+                0.906
+              ]
+            },
+            {
+              "code": "PI-PA-07",
+              "elementId": "2156920",
+              "box": [
+                0.5411,
+                0.094,
+                0.9406,
+                0.4748
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2466805",
+          "name": "TP-02 · corte de paquete",
+          "label": "TP-02 · corte de paquete   1:5",
+          "scale": 5,
+          "kind": "section",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "image": "/casa-angel/rubros/pisos/PIS-F-TP-02-view-2466805.svg.gz",
+          "region": [
+            0.4574,
+            0.223,
+            0.79,
+            0.4349
+          ],
+          "tags": [
+            "TP-02"
+          ],
+          "dimensions": [
+            {
+              "label": "TP-02 capas",
+              "values_m": [
+                0.15,
+                0.03,
+                0.06,
+                0.02,
+                0.02,
+                0.02
+              ],
+              "associative": false
+            },
+            {
+              "label": "TP-02 espesor total",
+              "values_m": [
+                0.3
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "PI-PA-04",
+              "elementId": "2156060",
+              "box": [
+                0.0,
+                0.3191,
+                1.0,
+                0.7532
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2466833",
+          "name": "TP-02 · axonométrica",
+          "label": "TP-02 · axonométrica   1:40",
+          "scale": 40,
+          "kind": "axo",
+          "sector": "Sector: 01. Planta Alta",
+          "roomLabel": "Sector: 01. Planta Alta",
+          "image": "/casa-angel/rubros/pisos/PIS-F-TP-02-view-2466833.svg.gz",
+          "region": [
+            0.4912,
+            0.5449,
+            0.7561,
+            0.7591
+          ],
+          "tags": [
+            "TP-02"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "PI-PA-04",
+              "elementId": "2156060",
+              "box": [
+                0.1065,
+                0.1533,
+                0.8935,
+                0.8467
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "PIS-F-TP-03",
+      "title": "Ficha TP-03 · L01.02",
+      "level": "02. Planta Entrepiso",
+      "sector": "02. Planta Entrepiso",
+      "kind": "element",
+      "element": "TP-03",
+      "elementId": "875093",
+      "elementKind": "TP",
+      "note": "Corte de paquete a 1:5 con capas y espesores del tipo del modelo.",
+      "sheetId": "2466913",
+      "pdf": "/casa-angel/rubros/pisos/PIS-F-TP-03.pdf",
+      "image": "/casa-angel/rubros/pisos/PIS-F-TP-03.svg.gz",
+      "preview": "/casa-angel/rubros/pisos/PIS-F-TP-03-preview.png",
+      "thumbnail": "/casa-angel/rubros/pisos/PIS-F-TP-03.png",
+      "views": [
+        {
+          "id": "2466869",
+          "name": "TP-03 · planta (02. Planta Entrepiso)",
+          "label": "TP-03 · planta (02. Planta Entrepiso)   1:25",
+          "scale": 25,
+          "kind": "plan",
+          "sector": "02. Planta Entrepiso",
+          "roomLabel": "02. Planta Entrepiso",
+          "image": "/casa-angel/rubros/pisos/PIS-F-TP-03-view-2466869.svg.gz",
+          "region": [
+            0.1306,
+            0.301,
+            0.4463,
+            0.6812
+          ],
+          "tags": [
+            "TP-03",
+            "PI-PE-02"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "PI-PE-02",
+              "elementId": "875093",
+              "box": [
+                0.1511,
+                0.1777,
+                0.8489,
+                0.8223
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2466882",
+          "name": "TP-03 · corte de paquete",
+          "label": "TP-03 · corte de paquete   1:5",
+          "scale": 5,
+          "kind": "section",
+          "sector": "02. Planta Entrepiso",
+          "roomLabel": "02. Planta Entrepiso",
+          "image": "/casa-angel/rubros/pisos/PIS-F-TP-03-view-2466882.svg.gz",
+          "region": [
+            0.4459,
+            0.2227,
+            0.8015,
+            0.4039
+          ],
+          "tags": [
+            "TP-03"
+          ],
+          "dimensions": [
+            {
+              "label": "TP-03 capas",
+              "values_m": [
+                0.175,
+                0.025
+              ],
+              "associative": false
+            },
+            {
+              "label": "TP-03 espesor total",
+              "values_m": [
+                0.2
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "PI-PE-02",
+              "elementId": "875093",
+              "box": [
+                0.0,
+                0.3731,
+                1.0,
+                0.7115
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2466902",
+          "name": "TP-03 · axonométrica",
+          "label": "TP-03 · axonométrica   1:30",
+          "scale": 30,
+          "kind": "axo",
+          "sector": "Sector: 02. Planta Entrepiso",
+          "roomLabel": "Sector: 02. Planta Entrepiso",
+          "image": "/casa-angel/rubros/pisos/PIS-F-TP-03-view-2466902.svg.gz",
+          "region": [
+            0.4716,
+            0.5132,
+            0.7757,
+            0.7595
+          ],
+          "tags": [
+            "TP-03"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "PI-PE-02",
+              "elementId": "875093",
+              "box": [
+                0.1188,
+                0.1693,
+                0.8812,
+                0.8307
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "PIS-F-TP-04",
+      "title": "Ficha TP-04 · L02.00",
+      "level": "00. Planta Baja",
+      "sector": "00. Planta Baja",
+      "kind": "element",
+      "element": "TP-04",
+      "elementId": "2144958",
+      "elementKind": "TP",
+      "note": "Corte de paquete a 1:5 con capas y espesores del tipo del modelo.",
+      "sheetId": "2466992",
+      "pdf": "/casa-angel/rubros/pisos/PIS-F-TP-04.pdf",
+      "image": "/casa-angel/rubros/pisos/PIS-F-TP-04.svg.gz",
+      "preview": "/casa-angel/rubros/pisos/PIS-F-TP-04-preview.png",
+      "thumbnail": "/casa-angel/rubros/pisos/PIS-F-TP-04.png",
+      "views": [
+        {
+          "id": "2466938",
+          "name": "TP-04 · planta (00. Planta Baja)",
+          "label": "TP-04 · planta (00. Planta Baja)   1:25",
+          "scale": 25,
+          "kind": "plan",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/pisos/PIS-F-TP-04-view-2466938.svg.gz",
+          "region": [
+            0.1183,
+            0.2214,
+            0.3782,
+            0.7607
+          ],
+          "tags": [
+            "TP-04",
+            "PI-PB-15"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "PI-PB-15",
+              "elementId": "2144958",
+              "box": [
+                0.1836,
+                0.1252,
+                0.8164,
+                0.8748
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2466953",
+          "name": "TP-04 · corte de paquete",
+          "label": "TP-04 · corte de paquete   1:5",
+          "scale": 5,
+          "kind": "section",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/pisos/PIS-F-TP-04-view-2466953.svg.gz",
+          "region": [
+            0.4172,
+            0.2171,
+            0.7498,
+            0.3984
+          ],
+          "tags": [
+            "TP-04"
+          ],
+          "dimensions": [
+            {
+              "label": "TP-04 capas",
+              "values_m": [
+                0.03,
+                0.1,
+                0.02,
+                0.025,
+                0.005,
+                0.02
+              ],
+              "associative": false
+            },
+            {
+              "label": "TP-04 espesor total",
+              "values_m": [
+                0.2
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "PI-PB-15",
+              "elementId": "2144958",
+              "box": [
+                0.0,
+                0.3731,
+                1.0,
+                0.7115
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2466981",
+          "name": "TP-04 · axonométrica",
+          "label": "TP-04 · axonométrica   1:30",
+          "scale": 30,
+          "kind": "axo",
+          "sector": "Sector: 00. Planta Baja",
+          "roomLabel": "Sector: 00. Planta Baja",
+          "image": "/casa-angel/rubros/pisos/PIS-F-TP-04-view-2466981.svg.gz",
+          "region": [
+            0.4148,
+            0.4966,
+            0.7522,
+            0.765
+          ],
+          "tags": [
+            "TP-04"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "PI-PB-15",
+              "elementId": "2144958",
+              "box": [
+                0.1071,
+                0.1553,
+                0.8929,
+                0.8447
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "PIS-F-TP-05",
+      "title": "Ficha TP-05 · L03.00",
+      "level": "00. Planta Baja",
+      "sector": "00. Planta Baja",
+      "kind": "element",
+      "element": "TP-05",
+      "elementId": "2151436",
+      "elementKind": "TP",
+      "note": "Corte de paquete a 1:5 con capas y espesores del tipo del modelo.",
+      "sheetId": "2467070",
+      "pdf": "/casa-angel/rubros/pisos/PIS-F-TP-05.pdf",
+      "image": "/casa-angel/rubros/pisos/PIS-F-TP-05.svg.gz",
+      "preview": "/casa-angel/rubros/pisos/PIS-F-TP-05-preview.png",
+      "thumbnail": "/casa-angel/rubros/pisos/PIS-F-TP-05.png",
+      "views": [
+        {
+          "id": "2467017",
+          "name": "TP-05 · planta (00. Planta Baja)",
+          "label": "TP-05 · planta (00. Planta Baja)   1:25",
+          "scale": 25,
+          "kind": "plan",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/pisos/PIS-F-TP-05-view-2467017.svg.gz",
+          "region": [
+            0.1205,
+            0.2106,
+            0.376,
+            0.7715
+          ],
+          "tags": [
+            "TP-05",
+            "PI-PB-16"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "PI-PB-16",
+              "elementId": "2151436",
+              "box": [
+                0.1867,
+                0.1204,
+                0.8133,
+                0.8796
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2467031",
+          "name": "TP-05 · corte de paquete",
+          "label": "TP-05 · corte de paquete   1:5",
+          "scale": 5,
+          "kind": "section",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/pisos/PIS-F-TP-05-view-2467031.svg.gz",
+          "region": [
+            0.4172,
+            0.2161,
+            0.7498,
+            0.3973
+          ],
+          "tags": [
+            "TP-05"
+          ],
+          "dimensions": [
+            {
+              "label": "TP-05 capas",
+              "values_m": [
+                0.03,
+                0.1,
+                0.02,
+                0.025,
+                0.005,
+                0.02
+              ],
+              "associative": false
+            },
+            {
+              "label": "TP-05 espesor total",
+              "values_m": [
+                0.2
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "PI-PB-16",
+              "elementId": "2151436",
+              "box": [
+                0.0,
+                0.3731,
+                1.0,
+                0.7115
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2467059",
+          "name": "TP-05 · axonométrica",
+          "label": "TP-05 · axonométrica   1:30",
+          "scale": 30,
+          "kind": "axo",
+          "sector": "Sector: 00. Planta Baja",
+          "roomLabel": "Sector: 00. Planta Baja",
+          "image": "/casa-angel/rubros/pisos/PIS-F-TP-05-view-2467059.svg.gz",
+          "region": [
+            0.4116,
+            0.4934,
+            0.7554,
+            0.766
+          ],
+          "tags": [
+            "TP-05"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "PI-PB-16",
+              "elementId": "2151436",
+              "box": [
+                0.1051,
+                0.1529,
+                0.8949,
+                0.8471
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "PIS-F-TP-06",
+      "title": "Ficha TP-06 · L04.01",
+      "level": "01. Planta Alta",
+      "sector": "01. Planta Alta",
+      "kind": "element",
+      "element": "TP-06",
+      "elementId": "2156600",
+      "elementKind": "TP",
+      "note": "Corte de paquete a 1:5 con capas y espesores del tipo del modelo.",
+      "sheetId": "2467139",
+      "pdf": "/casa-angel/rubros/pisos/PIS-F-TP-06.pdf",
+      "image": "/casa-angel/rubros/pisos/PIS-F-TP-06.svg.gz",
+      "preview": "/casa-angel/rubros/pisos/PIS-F-TP-06-preview.png",
+      "thumbnail": "/casa-angel/rubros/pisos/PIS-F-TP-06.png",
+      "views": [
+        {
+          "id": "2467095",
+          "name": "TP-06 · planta (01. Planta Alta)",
+          "label": "TP-06 · planta (01. Planta Alta)   1:15",
+          "scale": 15,
+          "kind": "plan",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "image": "/casa-angel/rubros/pisos/PIS-F-TP-06-view-2467095.svg.gz",
+          "region": [
+            0.1197,
+            0.2806,
+            0.417,
+            0.7016
+          ],
+          "tags": [
+            "TP-06",
+            "PI-PA-08"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "PI-PA-08",
+              "elementId": "2156600",
+              "box": [
+                0.2575,
+                0.2575,
+                0.7425,
+                0.7425
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2467108",
+          "name": "TP-06 · corte de paquete",
+          "label": "TP-06 · corte de paquete   1:5",
+          "scale": 5,
+          "kind": "section",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "image": "/casa-angel/rubros/pisos/PIS-F-TP-06-view-2467108.svg.gz",
+          "region": [
+            0.4396,
+            0.2258,
+            0.7676,
+            0.407
+          ],
+          "tags": [
+            "TP-06"
+          ],
+          "dimensions": [
+            {
+              "label": "TP-06 capas",
+              "values_m": [
+                0.175,
+                0.025
+              ],
+              "associative": false
+            },
+            {
+              "label": "TP-06 espesor total",
+              "values_m": [
+                0.2
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "PI-PA-08",
+              "elementId": "2156600",
+              "box": [
+                0.0,
+                0.3731,
+                1.0,
+                0.7115
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2467128",
+          "name": "TP-06 · axonométrica",
+          "label": "TP-06 · axonométrica   1:20",
+          "scale": 20,
+          "kind": "axo",
+          "sector": "Sector: 01. Planta Alta",
+          "roomLabel": "Sector: 01. Planta Alta",
+          "image": "/casa-angel/rubros/pisos/PIS-F-TP-06-view-2467128.svg.gz",
+          "region": [
+            0.4751,
+            0.5225,
+            0.7321,
+            0.7564
+          ],
+          "tags": [
+            "TP-06"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "PI-PA-08",
+              "elementId": "2156600",
+              "box": [
+                0.2023,
+                0.254,
+                0.7977,
+                0.746
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "PIS-F-TP-07",
+      "title": "Ficha TP-07 · L05.00",
+      "level": "00. Planta Baja",
+      "sector": "00. Planta Baja",
+      "kind": "element",
+      "element": "TP-07",
+      "elementId": "2153042",
+      "elementKind": "TP",
+      "note": "Corte de paquete a 1:5 con capas y espesores del tipo del modelo.",
+      "sheetId": "2467218",
+      "pdf": "/casa-angel/rubros/pisos/PIS-F-TP-07.pdf",
+      "image": "/casa-angel/rubros/pisos/PIS-F-TP-07.svg.gz",
+      "preview": "/casa-angel/rubros/pisos/PIS-F-TP-07-preview.png",
+      "thumbnail": "/casa-angel/rubros/pisos/PIS-F-TP-07.png",
+      "views": [
+        {
+          "id": "2467164",
+          "name": "TP-07 · planta (00. Planta Baja)",
+          "label": "TP-07 · planta (00. Planta Baja)   1:40",
+          "scale": 40,
+          "kind": "plan",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/pisos/PIS-F-TP-07-view-2467164.svg.gz",
+          "region": [
+            0.1199,
+            0.3488,
+            0.4168,
+            0.6333
+          ],
+          "tags": [
+            "TP-07",
+            "PI-PB-17"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "PI-PB-17",
+              "elementId": "2153042",
+              "box": [
+                0.106,
+                0.1567,
+                0.894,
+                0.8433
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2467179",
+          "name": "TP-07 · corte de paquete",
+          "label": "TP-07 · corte de paquete   1:5",
+          "scale": 5,
+          "kind": "section",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/pisos/PIS-F-TP-07-view-2467179.svg.gz",
+          "region": [
+            0.4373,
+            0.2225,
+            0.7699,
+            0.4037
+          ],
+          "tags": [
+            "TP-07"
+          ],
+          "dimensions": [
+            {
+              "label": "TP-07 capas",
+              "values_m": [
+                0.03,
+                0.1,
+                0.02,
+                0.025,
+                0.005,
+                0.02
+              ],
+              "associative": false
+            },
+            {
+              "label": "TP-07 espesor total",
+              "values_m": [
+                0.2
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "PI-PB-17",
+              "elementId": "2153042",
+              "box": [
+                0.0,
+                0.3731,
+                1.0,
+                0.7115
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2467207",
+          "name": "TP-07 · axonométrica",
+          "label": "TP-07 · axonométrica   1:40",
+          "scale": 40,
+          "kind": "axo",
+          "sector": "Sector: 00. Planta Baja",
+          "roomLabel": "Sector: 00. Planta Baja",
+          "image": "/casa-angel/rubros/pisos/PIS-F-TP-07-view-2467207.svg.gz",
+          "region": [
+            0.4439,
+            0.5126,
+            0.7633,
+            0.7596
+          ],
+          "tags": [
+            "TP-07"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "PI-PB-17",
+              "elementId": "2153042",
+              "box": [
+                0.0883,
+                0.133,
+                0.9117,
+                0.867
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "PIS-F-TP-08",
+      "title": "Ficha TP-08 · L06.00",
+      "level": "00. Planta Baja",
+      "sector": "00. Planta Baja",
+      "kind": "element",
+      "element": "TP-08",
+      "elementId": "2154191",
+      "elementKind": "TP",
+      "note": "Corte de paquete a 1:5 con capas y espesores del tipo del modelo.",
+      "sheetId": "2467295",
+      "pdf": "/casa-angel/rubros/pisos/PIS-F-TP-08.pdf",
+      "image": "/casa-angel/rubros/pisos/PIS-F-TP-08.svg.gz",
+      "preview": "/casa-angel/rubros/pisos/PIS-F-TP-08-preview.png",
+      "thumbnail": "/casa-angel/rubros/pisos/PIS-F-TP-08.png",
+      "views": [
+        {
+          "id": "2467243",
+          "name": "TP-08 · planta (00. Planta Baja)",
+          "label": "TP-08 · planta (00. Planta Baja)   1:30",
+          "scale": 30,
+          "kind": "plan",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/pisos/PIS-F-TP-08-view-2467243.svg.gz",
+          "region": [
+            0.1218,
+            0.2678,
+            0.4552,
+            0.7143
+          ],
+          "tags": [
+            "TP-08",
+            "PI-PB-18"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "PI-PB-18",
+              "elementId": "2154191",
+              "box": [
+                0.1215,
+                0.1284,
+                0.8785,
+                0.8716
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2467256",
+          "name": "TP-08 · corte de paquete",
+          "label": "TP-08 · corte de paquete   1:5",
+          "scale": 5,
+          "kind": "section",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/pisos/PIS-F-TP-08-view-2467256.svg.gz",
+          "region": [
+            0.4574,
+            0.2348,
+            0.79,
+            0.4161
+          ],
+          "tags": [
+            "TP-08"
+          ],
+          "dimensions": [
+            {
+              "label": "TP-08 capas",
+              "values_m": [
+                0.03,
+                0.1,
+                0.02,
+                0.025,
+                0.005,
+                0.02
+              ],
+              "associative": false
+            },
+            {
+              "label": "TP-08 espesor total",
+              "values_m": [
+                0.2
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "PI-PB-18",
+              "elementId": "2154191",
+              "box": [
+                0.0,
+                0.3731,
+                1.0,
+                0.7115
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2467284",
+          "name": "TP-08 · axonométrica",
+          "label": "TP-08 · axonométrica   1:50",
+          "scale": 50,
+          "kind": "axo",
+          "sector": "Sector: 00. Planta Baja",
+          "roomLabel": "Sector: 00. Planta Baja",
+          "image": "/casa-angel/rubros/pisos/PIS-F-TP-08-view-2467284.svg.gz",
+          "region": [
+            0.497,
+            0.5497,
+            0.7504,
+            0.7473
+          ],
+          "tags": [
+            "TP-08"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "PI-PB-18",
+              "elementId": "2154191",
+              "box": [
+                0.0926,
+                0.1394,
+                0.9074,
+                0.8606
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "PIS-F-TP-09",
+      "title": "Ficha TP-09 · L07.01",
+      "level": "01. Planta Alta",
+      "sector": "01. Planta Alta",
+      "kind": "element",
+      "element": "TP-09",
+      "elementId": "2157972",
+      "elementKind": "TP",
+      "note": "Corte de paquete a 1:5 con capas y espesores del tipo del modelo.",
+      "sheetId": "2467363",
+      "pdf": "/casa-angel/rubros/pisos/PIS-F-TP-09.pdf",
+      "image": "/casa-angel/rubros/pisos/PIS-F-TP-09.svg.gz",
+      "preview": "/casa-angel/rubros/pisos/PIS-F-TP-09-preview.png",
+      "thumbnail": "/casa-angel/rubros/pisos/PIS-F-TP-09.png",
+      "views": [
+        {
+          "id": "2467320",
+          "name": "TP-09 · planta (01. Planta Alta)",
+          "label": "TP-09 · planta (01. Planta Alta)   1:20",
+          "scale": 20,
+          "kind": "plan",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "image": "/casa-angel/rubros/pisos/PIS-F-TP-09-view-2467320.svg.gz",
+          "region": [
+            0.1291,
+            0.301,
+            0.488,
+            0.6812
+          ],
+          "tags": [
+            "TP-09",
+            "PI-PA-09"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "PI-PA-09",
+              "elementId": "2157972",
+              "box": [
+                0.1631,
+                0.218,
+                0.8369,
+                0.782
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2467332",
+          "name": "TP-09 · corte de paquete",
+          "label": "TP-09 · corte de paquete   1:5",
+          "scale": 5,
+          "kind": "section",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "image": "/casa-angel/rubros/pisos/PIS-F-TP-09-view-2467332.svg.gz",
+          "region": [
+            0.466,
+            0.2304,
+            0.8216,
+            0.4116
+          ],
+          "tags": [
+            "TP-09"
+          ],
+          "dimensions": [
+            {
+              "label": "TP-09 capas",
+              "values_m": [
+                0.175,
+                0.025
+              ],
+              "associative": false
+            },
+            {
+              "label": "TP-09 espesor total",
+              "values_m": [
+                0.2
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "PI-PA-09",
+              "elementId": "2157972",
+              "box": [
+                0.0,
+                0.3731,
+                1.0,
+                0.7115
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2467352",
+          "name": "TP-09 · axonométrica",
+          "label": "TP-09 · axonométrica   1:30",
+          "scale": 30,
+          "kind": "axo",
+          "sector": "Sector: 01. Planta Alta",
+          "roomLabel": "Sector: 01. Planta Alta",
+          "image": "/casa-angel/rubros/pisos/PIS-F-TP-09-view-2467352.svg.gz",
+          "region": [
+            0.5149,
+            0.5362,
+            0.7727,
+            0.7518
+          ],
+          "tags": [
+            "TP-09"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "PI-PA-09",
+              "elementId": "2157972",
+              "box": [
+                0.1402,
+                0.1935,
+                0.8598,
+                0.8065
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "PIS-F-TP-10",
+      "title": "Ficha TP-10 · Deck Terraza PA 05cm",
+      "level": "01. Planta Alta",
+      "sector": "01. Planta Alta",
+      "kind": "element",
+      "element": "TP-10",
+      "elementId": "467187",
+      "elementKind": "TP",
+      "note": "Corte de paquete a 1:5 con capas y espesores del tipo del modelo.",
+      "sheetId": "2467429",
+      "pdf": "/casa-angel/rubros/pisos/PIS-F-TP-10.pdf",
+      "image": "/casa-angel/rubros/pisos/PIS-F-TP-10.svg.gz",
+      "preview": "/casa-angel/rubros/pisos/PIS-F-TP-10-preview.png",
+      "thumbnail": "/casa-angel/rubros/pisos/PIS-F-TP-10.png",
+      "views": [
+        {
+          "id": "2467388",
+          "name": "TP-10 · planta (01. Planta Alta)",
+          "label": "TP-10 · planta (01. Planta Alta)   1:50",
+          "scale": 50,
+          "kind": "plan",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "image": "/casa-angel/rubros/pisos/PIS-F-TP-10-view-2467388.svg.gz",
+          "region": [
+            0.1259,
+            0.2122,
+            0.3706,
+            0.7699
+          ],
+          "tags": [
+            "TP-10",
+            "PI-PA-01"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "PI-PA-01",
+              "elementId": "467187",
+              "box": [
+                0.1066,
+                0.0662,
+                0.8934,
+                0.9338
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2467400",
+          "name": "TP-10 · corte de paquete",
+          "label": "TP-10 · corte de paquete   1:5",
+          "scale": 5,
+          "kind": "section",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "image": "/casa-angel/rubros/pisos/PIS-F-TP-10-view-2467400.svg.gz",
+          "region": [
+            0.4172,
+            0.2312,
+            0.7497,
+            0.3665
+          ],
+          "tags": [
+            "TP-10"
+          ],
+          "dimensions": [
+            {
+              "label": "TP-10 capas",
+              "values_m": [
+                0.05
+              ],
+              "associative": false
+            },
+            {
+              "label": "TP-10 espesor total",
+              "values_m": [
+                0.05
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "PI-PA-01",
+              "elementId": "467187",
+              "box": [
+                0.0,
+                0.5,
+                1.0,
+                0.6134
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2467418",
+          "name": "TP-10 · axonométrica",
+          "label": "TP-10 · axonométrica   1:60",
+          "scale": 60,
+          "kind": "axo",
+          "sector": "Sector: 01. Planta Alta",
+          "roomLabel": "Sector: 01. Planta Alta",
+          "image": "/casa-angel/rubros/pisos/PIS-F-TP-10-view-2467418.svg.gz",
+          "region": [
+            0.4058,
+            0.4929,
+            0.7612,
+            0.7509
+          ],
+          "tags": [
+            "TP-10"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "PI-PA-01",
+              "elementId": "467187",
+              "box": [
+                0.0571,
+                0.093,
+                0.9429,
+                0.907
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "PIS-F-TP-11",
+      "title": "Ficha TP-11 · Escalones 20cm",
+      "level": "00. Planta Baja",
+      "sector": "00. Planta Baja",
+      "kind": "element",
+      "element": "TP-11",
+      "elementId": "400022",
+      "elementKind": "TP",
+      "note": "Corte de paquete a 1:5 con capas y espesores del tipo del modelo.",
+      "sheetId": "2467498",
+      "pdf": "/casa-angel/rubros/pisos/PIS-F-TP-11.pdf",
+      "image": "/casa-angel/rubros/pisos/PIS-F-TP-11.svg.gz",
+      "preview": "/casa-angel/rubros/pisos/PIS-F-TP-11-preview.png",
+      "thumbnail": "/casa-angel/rubros/pisos/PIS-F-TP-11.png",
+      "views": [
+        {
+          "id": "2467454",
+          "name": "TP-11 · planta (00. Planta Baja)",
+          "label": "TP-11 · planta (00. Planta Baja)   1:15",
+          "scale": 15,
+          "kind": "plan",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/pisos/PIS-F-TP-11-view-2467454.svg.gz",
+          "region": [
+            0.1197,
+            0.2806,
+            0.417,
+            0.7016
+          ],
+          "tags": [
+            "TP-11",
+            "PI-PB-03",
+            "PI-PB-04",
+            "PI-PB-05",
+            "PI-PB-06"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "PI-PB-03",
+              "elementId": "400022",
+              "box": [
+                0.2575,
+                0.2575,
+                0.5606,
+                0.5606
+              ]
+            },
+            {
+              "code": "PI-PB-04",
+              "elementId": "400493",
+              "box": [
+                0.2575,
+                0.2575,
+                0.6213,
+                0.6213
+              ]
+            },
+            {
+              "code": "PI-PB-05",
+              "elementId": "400770",
+              "box": [
+                0.2575,
+                0.2575,
+                0.6819,
+                0.6819
+              ]
+            },
+            {
+              "code": "PI-PB-06",
+              "elementId": "400975",
+              "box": [
+                0.2575,
+                0.2575,
+                0.7425,
+                0.7425
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2467469",
+          "name": "TP-11 · corte de paquete",
+          "label": "TP-11 · corte de paquete   1:5",
+          "scale": 5,
+          "kind": "section",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/pisos/PIS-F-TP-11-view-2467469.svg.gz",
+          "region": [
+            0.4373,
+            0.22,
+            0.7698,
+            0.4013
+          ],
+          "tags": [
+            "TP-11"
+          ],
+          "dimensions": [
+            {
+              "label": "TP-11 capas",
+              "values_m": [
+                0.2
+              ],
+              "associative": false
+            },
+            {
+              "label": "TP-11 espesor total",
+              "values_m": [
+                0.2
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "PI-PB-03",
+              "elementId": "400022",
+              "box": [
+                0.178,
+                0.3731,
+                0.9912,
+                0.7115
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2467487",
+          "name": "TP-11 · axonométrica",
+          "label": "TP-11 · axonométrica   1:15",
+          "scale": 15,
+          "kind": "axo",
+          "sector": "Sector: 00. Planta Baja",
+          "roomLabel": "Sector: 00. Planta Baja",
+          "image": "/casa-angel/rubros/pisos/PIS-F-TP-11-view-2467487.svg.gz",
+          "region": [
+            0.472,
+            0.5052,
+            0.7352,
+            0.7621
+          ],
+          "tags": [
+            "TP-11"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "PI-PB-03",
+              "elementId": "400022",
+              "box": [
+                0.2578,
+                0.3002,
+                0.7422,
+                0.6998
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "PIS-F-TP-12",
+      "title": "Ficha TP-12 · Escalones acceso 2m x 1m",
+      "level": "00. Planta Baja",
+      "sector": "00. Planta Baja",
+      "kind": "element",
+      "element": "TP-12",
+      "elementId": "628255",
+      "elementKind": "TP",
+      "note": "Corte de paquete a 1:5 con capas y espesores del tipo del modelo.",
+      "sheetId": "2467569",
+      "pdf": "/casa-angel/rubros/pisos/PIS-F-TP-12.pdf",
+      "image": "/casa-angel/rubros/pisos/PIS-F-TP-12.svg.gz",
+      "preview": "/casa-angel/rubros/pisos/PIS-F-TP-12-preview.png",
+      "thumbnail": "/casa-angel/rubros/pisos/PIS-F-TP-12.png",
+      "views": [
+        {
+          "id": "2467523",
+          "name": "TP-12 · planta (00. Planta Baja)",
+          "label": "TP-12 · planta (00. Planta Baja)   1:20",
+          "scale": 20,
+          "kind": "plan",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/pisos/PIS-F-TP-12-view-2467523.svg.gz",
+          "region": [
+            0.1282,
+            0.2933,
+            0.4889,
+            0.6888
+          ],
+          "tags": [
+            "TP-12",
+            "PI-PB-07",
+            "PI-PB-08",
+            "PI-PB-09",
+            "PI-PB-10",
+            "PI-PB-11",
+            "PI-PB-12"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "PI-PB-07",
+              "elementId": "628255",
+              "box": [
+                0.1622,
+                0.2095,
+                0.4621,
+                0.4032
+              ]
+            },
+            {
+              "code": "PI-PB-08",
+              "elementId": "628637",
+              "box": [
+                0.3871,
+                0.3064,
+                0.5371,
+                0.6936
+              ]
+            },
+            {
+              "code": "PI-PB-09",
+              "elementId": "628772",
+              "box": [
+                0.2372,
+                0.4516,
+                0.5371,
+                0.6452
+              ]
+            },
+            {
+              "code": "PI-PB-10",
+              "elementId": "628854",
+              "box": [
+                0.3122,
+                0.5968,
+                0.612,
+                0.7905
+              ]
+            },
+            {
+              "code": "PI-PB-11",
+              "elementId": "629011",
+              "box": [
+                0.4621,
+                0.258,
+                0.762,
+                0.4516
+              ]
+            },
+            {
+              "code": "PI-PB-12",
+              "elementId": "629059",
+              "box": [
+                0.6878,
+                0.2095,
+                0.8378,
+                0.5968
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2467540",
+          "name": "TP-12 · corte de paquete",
+          "label": "TP-12 · corte de paquete   1:5",
+          "scale": 5,
+          "kind": "section",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/pisos/PIS-F-TP-12-view-2467540.svg.gz",
+          "region": [
+            0.4714,
+            0.2371,
+            0.8162,
+            0.3964
+          ],
+          "tags": [
+            "TP-12"
+          ],
+          "dimensions": [
+            {
+              "label": "TP-12 capas",
+              "values_m": [
+                0.1
+              ],
+              "associative": false
+            },
+            {
+              "label": "TP-12 espesor total",
+              "values_m": [
+                0.1
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "PI-PB-07",
+              "elementId": "628255",
+              "box": [
+                0.0,
+                0.4793,
+                1.0,
+                0.6717
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2467558",
+          "name": "TP-12 · axonométrica",
+          "label": "TP-12 · axonométrica   1:20",
+          "scale": 20,
+          "kind": "axo",
+          "sector": "Sector: 00. Planta Baja",
+          "roomLabel": "Sector: 00. Planta Baja",
+          "image": "/casa-angel/rubros/pisos/PIS-F-TP-12-view-2467558.svg.gz",
+          "region": [
+            0.5344,
+            0.5389,
+            0.7532,
+            0.7407
+          ],
+          "tags": [
+            "TP-12"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "PI-PB-07",
+              "elementId": "628255",
+              "box": [
+                0.2377,
+                0.2945,
+                0.7623,
+                0.7055
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "PIS-F-TP-13",
+      "title": "Ficha TP-13 · Base Acceso",
+      "level": "00. Planta Baja",
+      "sector": "00. Planta Baja",
+      "kind": "element",
+      "element": "TP-13",
+      "elementId": "398391",
+      "elementKind": "TP",
+      "note": "Corte de paquete a 1:5 con capas y espesores del tipo del modelo.",
+      "sheetId": "2467638",
+      "pdf": "/casa-angel/rubros/pisos/PIS-F-TP-13.pdf",
+      "image": "/casa-angel/rubros/pisos/PIS-F-TP-13.svg.gz",
+      "preview": "/casa-angel/rubros/pisos/PIS-F-TP-13-preview.png",
+      "thumbnail": "/casa-angel/rubros/pisos/PIS-F-TP-13.png",
+      "views": [
+        {
+          "id": "2467594",
+          "name": "TP-13 · planta (00. Planta Baja)",
+          "label": "TP-13 · planta (00. Planta Baja)   1:25",
+          "scale": 25,
+          "kind": "plan",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/pisos/PIS-F-TP-13-view-2467594.svg.gz",
+          "region": [
+            0.1153,
+            0.2397,
+            0.4616,
+            0.7424
+          ],
+          "tags": [
+            "TP-13",
+            "PI-PB-01"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "PI-PB-01",
+              "elementId": "398391",
+              "box": [
+                0.1377,
+                0.1344,
+                0.8623,
+                0.8656
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2467607",
+          "name": "TP-13 · corte de paquete",
+          "label": "TP-13 · corte de paquete   1:10",
+          "scale": 10,
+          "kind": "section",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/pisos/PIS-F-TP-13-view-2467607.svg.gz",
+          "region": [
+            0.518,
+            0.2152,
+            0.7294,
+            0.4653
+          ],
+          "tags": [
+            "TP-13"
+          ],
+          "dimensions": [
+            {
+              "label": "TP-13 capas",
+              "values_m": [
+                1.0,
+                0.2
+              ],
+              "associative": false
+            },
+            {
+              "label": "TP-13 espesor total",
+              "values_m": [
+                1.2
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "PI-PB-01",
+              "elementId": "398391",
+              "box": [
+                0.0,
+                0.1477,
+                1.0,
+                0.8829
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2467627",
+          "name": "TP-13 · axonométrica",
+          "label": "TP-13 · axonométrica   1:50",
+          "scale": 50,
+          "kind": "axo",
+          "sector": "Sector: 00. Planta Baja",
+          "roomLabel": "Sector: 00. Planta Baja",
+          "image": "/casa-angel/rubros/pisos/PIS-F-TP-13-view-2467627.svg.gz",
+          "region": [
+            0.5099,
+            0.5595,
+            0.7374,
+            0.767
+          ],
+          "tags": [
+            "TP-13"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "PI-PB-01",
+              "elementId": "398391",
+              "box": [
+                0.1031,
+                0.1328,
+                0.8969,
+                0.8672
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "codes": [
+    {
+      "code": "TP-01",
+      "kind": "TP",
+      "label": "TP-01 · L01.00 · vinílico · 133,51 m²",
+      "status": "Paquete: vinílico 2 / Adhesivo 0,5 / Carpeta 2,5 / PLACA EPS . PR 2 / Contrapiso 10 / EPS 3 cm",
+      "area_m2": 133.51,
+      "thickness_m": 0.2,
+      "finish": "vinílico",
+      "type": "L01.00 / 20cm",
+      "layers": [
+        {
+          "material": "Piso Vinilico PB",
+          "function": "Finish1",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Adhesivo",
+          "function": "Substrate",
+          "thickness_m": 0.005
+        },
+        {
+          "material": "Carpeta",
+          "function": "Structure",
+          "thickness_m": 0.025
+        },
+        {
+          "material": "PLACA EPS . PR",
+          "function": "Insulation",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Film de Polietileno",
+          "function": "Membrane",
+          "thickness_m": 0.0
+        },
+        {
+          "material": "Contrapiso",
+          "function": "Structure",
+          "thickness_m": 0.1
+        },
+        {
+          "material": "EPS",
+          "function": "Insulation",
+          "thickness_m": 0.03
+        }
+      ]
+    },
+    {
+      "code": "TP-02",
+      "kind": "TP",
+      "label": "TP-02 · L01.01 · alfombra · 127,56 m²",
+      "status": "Paquete: alfombra 2 / Carpeta 2 / EPS 2 / Contrapiso 6 / PLACA EPS . PR 3 / hormigón 15 cm",
+      "area_m2": 127.56,
+      "thickness_m": 0.3,
+      "finish": "alfombra",
+      "type": "L01.01 / 30cm",
+      "layers": [
+        {
+          "material": "Carpet",
+          "function": "Structure",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Carpeta",
+          "function": "Substrate",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "EPS",
+          "function": "Structure",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Contrapiso",
+          "function": "Structure",
+          "thickness_m": 0.06
+        },
+        {
+          "material": "PLACA EPS . PR",
+          "function": "Insulation",
+          "thickness_m": 0.03
+        },
+        {
+          "material": "Hormigon",
+          "function": "Structure",
+          "thickness_m": 0.14999999999999997
+        }
+      ]
+    },
+    {
+      "code": "TP-03",
+      "kind": "TP",
+      "label": "TP-03 · L01.02 · madera · 20,37 m²",
+      "status": "Paquete: madera 2,5 / Concrete, Cast-in-Place, Gray 17,5 cm",
+      "area_m2": 20.37,
+      "thickness_m": 0.2,
+      "finish": "madera",
+      "type": "L01.02 / 20cm",
+      "layers": [
+        {
+          "material": "Piso de Madera PA",
+          "function": "Structure",
+          "thickness_m": 0.025
+        },
+        {
+          "material": "Concrete, Cast-in-Place, Gray",
+          "function": "Structure",
+          "thickness_m": 0.175
+        }
+      ]
+    },
+    {
+      "code": "TP-04",
+      "kind": "TP",
+      "label": "TP-04 · L02.00 · vinílico · 25,08 m²",
+      "status": "Paquete: vinílico 2 / Adhesivo 0,5 / Carpeta 2,5 / PLACA EPS . PR 2 / Contrapiso 10 / PLACA EPS . PR 3 cm",
+      "area_m2": 25.08,
+      "thickness_m": 0.2,
+      "finish": "vinílico",
+      "type": "L02.00 / 20cm",
+      "layers": [
+        {
+          "material": "Piso Vinilico PB",
+          "function": "Finish1",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Adhesivo",
+          "function": "Substrate",
+          "thickness_m": 0.005
+        },
+        {
+          "material": "Carpeta",
+          "function": "Structure",
+          "thickness_m": 0.025
+        },
+        {
+          "material": "PLACA EPS . PR",
+          "function": "Insulation",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Film de Polietileno",
+          "function": "Membrane",
+          "thickness_m": 0.0
+        },
+        {
+          "material": "Contrapiso",
+          "function": "Structure",
+          "thickness_m": 0.1
+        },
+        {
+          "material": "PLACA EPS . PR",
+          "function": "Insulation",
+          "thickness_m": 0.03
+        }
+      ]
+    },
+    {
+      "code": "TP-05",
+      "kind": "TP",
+      "label": "TP-05 · L03.00 · vinílico · 24,39 m²",
+      "status": "Paquete: vinílico 2 / Adhesivo 0,5 / Carpeta 2,5 / PLACA EPS . PR 2 / Contrapiso 10 / PLACA EPS . PR 3 cm",
+      "area_m2": 24.39,
+      "thickness_m": 0.2,
+      "finish": "vinílico",
+      "type": "L03.00 / 20cm",
+      "layers": [
+        {
+          "material": "Piso Vinilico PB",
+          "function": "Finish1",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Adhesivo",
+          "function": "Substrate",
+          "thickness_m": 0.005
+        },
+        {
+          "material": "Carpeta",
+          "function": "Structure",
+          "thickness_m": 0.025
+        },
+        {
+          "material": "PLACA EPS . PR",
+          "function": "Insulation",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Film de Polietileno",
+          "function": "Membrane",
+          "thickness_m": 0.0
+        },
+        {
+          "material": "Contrapiso",
+          "function": "Structure",
+          "thickness_m": 0.1
+        },
+        {
+          "material": "PLACA EPS . PR",
+          "function": "Insulation",
+          "thickness_m": 0.03
+        }
+      ]
+    },
+    {
+      "code": "TP-06",
+      "kind": "TP",
+      "label": "TP-06 · L04.01 · madera · 3,52 m²",
+      "status": "Paquete: madera 2,5 / Concrete, Cast-in-Place, Gray 17,5 cm",
+      "area_m2": 3.52,
+      "thickness_m": 0.2,
+      "finish": "madera",
+      "type": "L04.01 / 20cm",
+      "layers": [
+        {
+          "material": "Piso de Madera PA",
+          "function": "Structure",
+          "thickness_m": 0.025
+        },
+        {
+          "material": "Concrete, Cast-in-Place, Gray",
+          "function": "Structure",
+          "thickness_m": 0.175
+        }
+      ]
+    },
+    {
+      "code": "TP-07",
+      "kind": "TP",
+      "label": "TP-07 · L05.00 · vinílico · 42,30 m²",
+      "status": "Paquete: vinílico 2 / Adhesivo 0,5 / Carpeta 2,5 / PLACA EPS . PR 2 / Contrapiso 10 / EPS 3 cm",
+      "area_m2": 42.3,
+      "thickness_m": 0.2,
+      "finish": "vinílico",
+      "type": "L05.00 / 20cm",
+      "layers": [
+        {
+          "material": "Piso Vinilico PB",
+          "function": "Finish1",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Adhesivo",
+          "function": "Substrate",
+          "thickness_m": 0.005
+        },
+        {
+          "material": "Carpeta",
+          "function": "Structure",
+          "thickness_m": 0.025
+        },
+        {
+          "material": "PLACA EPS . PR",
+          "function": "Insulation",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Film de Polietileno",
+          "function": "Membrane",
+          "thickness_m": 0.0
+        },
+        {
+          "material": "Contrapiso",
+          "function": "Structure",
+          "thickness_m": 0.1
+        },
+        {
+          "material": "EPS",
+          "function": "Insulation",
+          "thickness_m": 0.03
+        }
+      ]
+    },
+    {
+      "code": "TP-08",
+      "kind": "TP",
+      "label": "TP-08 · L06.00 · vinílico · 45,50 m²",
+      "status": "Paquete: vinílico 2 / Adhesivo 0,5 / Carpeta 2,5 / PLACA EPS . PR 2 / Contrapiso 10 / EPS 3 cm",
+      "area_m2": 45.5,
+      "thickness_m": 0.2,
+      "finish": "vinílico",
+      "type": "L06.00 / 20cm",
+      "layers": [
+        {
+          "material": "Piso Vinilico PB",
+          "function": "Finish1",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Adhesivo",
+          "function": "Substrate",
+          "thickness_m": 0.005
+        },
+        {
+          "material": "Carpeta",
+          "function": "Structure",
+          "thickness_m": 0.025
+        },
+        {
+          "material": "PLACA EPS . PR",
+          "function": "Insulation",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Film de Polietileno",
+          "function": "Membrane",
+          "thickness_m": 0.0
+        },
+        {
+          "material": "Contrapiso",
+          "function": "Structure",
+          "thickness_m": 0.1
+        },
+        {
+          "material": "EPS",
+          "function": "Insulation",
+          "thickness_m": 0.03
+        }
+      ]
+    },
+    {
+      "code": "TP-09",
+      "kind": "TP",
+      "label": "TP-09 · L07.01 · madera · 11,20 m²",
+      "status": "Paquete: madera 2,5 / Concrete, Cast-in-Place, Gray 17,5 cm",
+      "area_m2": 11.2,
+      "thickness_m": 0.2,
+      "finish": "madera",
+      "type": "L07.01 / 20cm",
+      "layers": [
+        {
+          "material": "Piso de Madera PA",
+          "function": "Structure",
+          "thickness_m": 0.025
+        },
+        {
+          "material": "Concrete, Cast-in-Place, Gray",
+          "function": "Structure",
+          "thickness_m": 0.175
+        }
+      ]
+    },
+    {
+      "code": "TP-10",
+      "kind": "TP",
+      "label": "TP-10 · Deck Terraza PA 05cm · deck de madera · 81,54 m²",
+      "status": "Paquete: deck de madera 5 cm",
+      "area_m2": 81.54,
+      "thickness_m": 0.05,
+      "finish": "deck de madera",
+      "type": "Deck Terraza PA 05cm",
+      "layers": [
+        {
+          "material": "Wood Planks",
+          "function": "Structure",
+          "thickness_m": 0.05
+        }
+      ]
+    },
+    {
+      "code": "TP-11",
+      "kind": "TP",
+      "label": "TP-11 · Escalones 20cm · hormigón · 2,57 m²",
+      "status": "Paquete: hormigón 20 cm",
+      "area_m2": 2.57,
+      "thickness_m": 0.2,
+      "finish": "hormigón",
+      "type": "Escalones 20cm",
+      "layers": [
+        {
+          "material": "Hormigon",
+          "function": "Structure",
+          "thickness_m": 0.2
+        }
+      ]
+    },
+    {
+      "code": "TP-12",
+      "kind": "TP",
+      "label": "TP-12 · Escalones acceso 2m x 1m · hormigón negro · 12,00 m²",
+      "status": "Paquete: hormigón negro 10 cm",
+      "area_m2": 12.0,
+      "thickness_m": 0.1,
+      "finish": "hormigón negro",
+      "type": "Escalones acceso 2m x 1m",
+      "layers": [
+        {
+          "material": "Concrete - Black",
+          "function": "Structure",
+          "thickness_m": 0.1
+        }
+      ]
+    },
+    {
+      "code": "TP-13",
+      "kind": "TP",
+      "label": "TP-13 · Base Acceso · hormigón · 28,84 m²",
+      "status": "Paquete: hormigón 20 / césped 100 cm",
+      "area_m2": 28.84,
+      "thickness_m": 1.2,
+      "finish": "hormigón",
+      "type": "Base Acceso",
+      "layers": [
+        {
+          "material": "Hormigon",
+          "function": "Structure",
+          "thickness_m": 0.2
+        },
+        {
+          "material": "Grass",
+          "function": "Structure",
+          "thickness_m": 0.9999999999999999
+        }
+      ]
+    },
+    {
+      "code": "PI-PA-01",
+      "kind": "PI",
+      "label": "PI-PA-01 · TP-10 · 51,34 m²",
+      "status": "Deck Terraza PA 05cm · deck de madera",
+      "elementId": "467187",
+      "area_m2": 51.34,
+      "level": "01. Planta Alta",
+      "typeCode": "TP-10"
+    },
+    {
+      "code": "PI-PA-02",
+      "kind": "PI",
+      "label": "PI-PA-02 · TP-01 · 14,93 m²",
+      "status": "L01.00 / 20cm · vinílico",
+      "elementId": "1011940",
+      "area_m2": 14.93,
+      "level": "01. Planta Alta",
+      "typeCode": "TP-01"
+    },
+    {
+      "code": "PI-PA-03",
+      "kind": "PI",
+      "label": "PI-PA-03 · TP-01 · 50,42 m²",
+      "status": "L01.00 / 20cm · vinílico",
+      "elementId": "2157154",
+      "area_m2": 50.42,
+      "level": "01. Planta Alta",
+      "typeCode": "TP-01"
+    },
+    {
+      "code": "PI-PA-04",
+      "kind": "PI",
+      "label": "PI-PA-04 · TP-02 · 27,30 m²",
+      "status": "L01.01 / 30cm · alfombra",
+      "elementId": "2156060",
+      "area_m2": 27.3,
+      "level": "01. Planta Alta",
+      "typeCode": "TP-02"
+    },
+    {
+      "code": "PI-PA-05",
+      "kind": "PI",
+      "label": "PI-PA-05 · TP-02 · 28,00 m²",
+      "status": "L01.01 / 30cm · alfombra",
+      "elementId": "2156155",
+      "area_m2": 28.0,
+      "level": "01. Planta Alta",
+      "typeCode": "TP-02"
+    },
+    {
+      "code": "PI-PA-06",
+      "kind": "PI",
+      "label": "PI-PA-06 · TP-02 · 27,61 m²",
+      "status": "L01.01 / 30cm · alfombra",
+      "elementId": "2156409",
+      "area_m2": 27.61,
+      "level": "01. Planta Alta",
+      "typeCode": "TP-02"
+    },
+    {
+      "code": "PI-PA-07",
+      "kind": "PI",
+      "label": "PI-PA-07 · TP-02 · 44,66 m²",
+      "status": "L01.01 / 30cm · alfombra",
+      "elementId": "2156920",
+      "area_m2": 44.66,
+      "level": "01. Planta Alta",
+      "typeCode": "TP-02"
+    },
+    {
+      "code": "PI-PA-08",
+      "kind": "PI",
+      "label": "PI-PA-08 · TP-06 · 3,52 m²",
+      "status": "L04.01 / 20cm · madera",
+      "elementId": "2156600",
+      "area_m2": 3.52,
+      "level": "01. Planta Alta",
+      "typeCode": "TP-06"
+    },
+    {
+      "code": "PI-PA-09",
+      "kind": "PI",
+      "label": "PI-PA-09 · TP-09 · 11,20 m²",
+      "status": "L07.01 / 20cm · madera",
+      "elementId": "2157972",
+      "area_m2": 11.2,
+      "level": "01. Planta Alta",
+      "typeCode": "TP-09"
+    },
+    {
+      "code": "PI-PB-01",
+      "kind": "PI",
+      "label": "PI-PB-01 · TP-13 · 28,84 m²",
+      "status": "Base Acceso · hormigón",
+      "elementId": "398391",
+      "area_m2": 28.84,
+      "level": "005. Acceso ppal",
+      "typeCode": "TP-13"
+    },
+    {
+      "code": "PI-PB-02",
+      "kind": "PI",
+      "label": "PI-PB-02 · TP-10 · 30,20 m²",
+      "status": "Deck Terraza PA 05cm · deck de madera",
+      "elementId": "875664",
+      "area_m2": 30.2,
+      "level": "00. Planta Baja",
+      "typeCode": "TP-10"
+    },
+    {
+      "code": "PI-PB-03",
+      "kind": "PI",
+      "label": "PI-PB-03 · TP-11 · 0,50 m²",
+      "status": "Escalones 20cm · hormigón",
+      "elementId": "400022",
+      "area_m2": 0.5,
+      "level": "00. Planta Baja",
+      "typeCode": "TP-11"
+    },
+    {
+      "code": "PI-PB-04",
+      "kind": "PI",
+      "label": "PI-PB-04 · TP-11 · 0,59 m²",
+      "status": "Escalones 20cm · hormigón",
+      "elementId": "400493",
+      "area_m2": 0.59,
+      "level": "00. Planta Baja",
+      "typeCode": "TP-11"
+    },
+    {
+      "code": "PI-PB-05",
+      "kind": "PI",
+      "label": "PI-PB-05 · TP-11 · 0,69 m²",
+      "status": "Escalones 20cm · hormigón",
+      "elementId": "400770",
+      "area_m2": 0.69,
+      "level": "00. Planta Baja",
+      "typeCode": "TP-11"
+    },
+    {
+      "code": "PI-PB-06",
+      "kind": "PI",
+      "label": "PI-PB-06 · TP-11 · 0,79 m²",
+      "status": "Escalones 20cm · hormigón",
+      "elementId": "400975",
+      "area_m2": 0.79,
+      "level": "00. Planta Baja",
+      "typeCode": "TP-11"
+    },
+    {
+      "code": "PI-PB-07",
+      "kind": "PI",
+      "label": "PI-PB-07 · TP-12 · 2,00 m²",
+      "status": "Escalones acceso 2m x 1m · hormigón negro",
+      "elementId": "628255",
+      "area_m2": 2.0,
+      "level": "00. Planta Baja",
+      "typeCode": "TP-12"
+    },
+    {
+      "code": "PI-PB-08",
+      "kind": "PI",
+      "label": "PI-PB-08 · TP-12 · 2,00 m²",
+      "status": "Escalones acceso 2m x 1m · hormigón negro",
+      "elementId": "628637",
+      "area_m2": 2.0,
+      "level": "00. Planta Baja",
+      "typeCode": "TP-12"
+    },
+    {
+      "code": "PI-PB-09",
+      "kind": "PI",
+      "label": "PI-PB-09 · TP-12 · 2,00 m²",
+      "status": "Escalones acceso 2m x 1m · hormigón negro",
+      "elementId": "628772",
+      "area_m2": 2.0,
+      "level": "00. Planta Baja",
+      "typeCode": "TP-12"
+    },
+    {
+      "code": "PI-PB-10",
+      "kind": "PI",
+      "label": "PI-PB-10 · TP-12 · 2,00 m²",
+      "status": "Escalones acceso 2m x 1m · hormigón negro",
+      "elementId": "628854",
+      "area_m2": 2.0,
+      "level": "00. Planta Baja",
+      "typeCode": "TP-12"
+    },
+    {
+      "code": "PI-PB-11",
+      "kind": "PI",
+      "label": "PI-PB-11 · TP-12 · 2,00 m²",
+      "status": "Escalones acceso 2m x 1m · hormigón negro",
+      "elementId": "629011",
+      "area_m2": 2.0,
+      "level": "00. Planta Baja",
+      "typeCode": "TP-12"
+    },
+    {
+      "code": "PI-PB-12",
+      "kind": "PI",
+      "label": "PI-PB-12 · TP-12 · 2,00 m²",
+      "status": "Escalones acceso 2m x 1m · hormigón negro",
+      "elementId": "629059",
+      "area_m2": 2.0,
+      "level": "00. Planta Baja",
+      "typeCode": "TP-12"
+    },
+    {
+      "code": "PI-PB-13",
+      "kind": "PI",
+      "label": "PI-PB-13 · TP-01 · 28,80 m²",
+      "status": "L01.00 / 20cm · vinílico",
+      "elementId": "361258",
+      "area_m2": 28.8,
+      "level": "00. Planta Baja",
+      "typeCode": "TP-01"
+    },
+    {
+      "code": "PI-PB-14",
+      "kind": "PI",
+      "label": "PI-PB-14 · TP-01 · 24,42 m²",
+      "status": "L01.00 / 20cm · vinílico",
+      "elementId": "2068259",
+      "area_m2": 24.42,
+      "level": "00. Planta Baja",
+      "typeCode": "TP-01"
+    },
+    {
+      "code": "PI-PB-15",
+      "kind": "PI",
+      "label": "PI-PB-15 · TP-04 · 25,08 m²",
+      "status": "L02.00 / 20cm · vinílico",
+      "elementId": "2144958",
+      "area_m2": 25.08,
+      "level": "00. Planta Baja",
+      "typeCode": "TP-04"
+    },
+    {
+      "code": "PI-PB-16",
+      "kind": "PI",
+      "label": "PI-PB-16 · TP-05 · 24,39 m²",
+      "status": "L03.00 / 20cm · vinílico",
+      "elementId": "2151436",
+      "area_m2": 24.39,
+      "level": "00. Planta Baja",
+      "typeCode": "TP-05"
+    },
+    {
+      "code": "PI-PB-17",
+      "kind": "PI",
+      "label": "PI-PB-17 · TP-07 · 42,30 m²",
+      "status": "L05.00 / 20cm · vinílico",
+      "elementId": "2153042",
+      "area_m2": 42.3,
+      "level": "00. Planta Baja",
+      "typeCode": "TP-07"
+    },
+    {
+      "code": "PI-PB-18",
+      "kind": "PI",
+      "label": "PI-PB-18 · TP-08 · 45,50 m²",
+      "status": "L06.00 / 20cm · vinílico",
+      "elementId": "2154191",
+      "area_m2": 45.5,
+      "level": "00. Planta Baja",
+      "typeCode": "TP-08"
+    },
+    {
+      "code": "PI-PE-01",
+      "kind": "PI",
+      "label": "PI-PE-01 · TP-01 · 14,93 m²",
+      "status": "L01.00 / 20cm · vinílico",
+      "elementId": "2159130",
+      "area_m2": 14.93,
+      "level": "02. Planta Entrepiso",
+      "typeCode": "TP-01"
+    },
+    {
+      "code": "PI-PE-02",
+      "kind": "PI",
+      "label": "PI-PE-02 · TP-03 · 20,37 m²",
+      "status": "L01.02 / 20cm · madera",
+      "elementId": "875093",
+      "area_m2": 20.37,
+      "level": "02. Planta Entrepiso",
+      "typeCode": "TP-03"
+    },
+    {
+      "code": "ZO-01",
+      "kind": "ZO",
+      "label": "ZO-01 · 5,10 ml",
+      "status": "Zócalo modelado (Wall Sweep \"Zocalo\")",
+      "elementId": "2392299",
+      "length_m": 5.1
+    },
+    {
+      "code": "ZO-02",
+      "kind": "ZO",
+      "label": "ZO-02 · 4,00 ml",
+      "status": "Zócalo modelado (Wall Sweep \"Zocalo\")",
+      "elementId": "2392381",
+      "length_m": 4.0
+    },
+    {
+      "code": "ZO-03",
+      "kind": "ZO",
+      "label": "ZO-03 · 6,38 ml",
+      "status": "Zócalo modelado (Wall Sweep \"Zocalo\")",
+      "elementId": "2392382",
+      "length_m": 6.377
+    },
+    {
+      "code": "ZO-04",
+      "kind": "ZO",
+      "label": "ZO-04 · 6,25 ml",
+      "status": "Zócalo modelado (Wall Sweep \"Zocalo\")",
+      "elementId": "2392543",
+      "length_m": 6.25
+    },
+    {
+      "code": "ZO-05",
+      "kind": "ZO",
+      "label": "ZO-05 · 3,88 ml",
+      "status": "Zócalo modelado (Wall Sweep \"Zocalo\")",
+      "elementId": "2392758",
+      "length_m": 3.88
+    }
+  ],
+  "totals": [
+    {
+      "label": "Piso vinílico",
+      "value": 270.78,
+      "unit": "m²",
+      "detail": "por terminación"
+    },
+    {
+      "label": "Piso alfombra",
+      "value": 127.56,
+      "unit": "m²",
+      "detail": "por terminación"
+    },
+    {
+      "label": "Piso deck de madera",
+      "value": 81.54,
+      "unit": "m²",
+      "detail": "por terminación"
+    },
+    {
+      "label": "Piso madera",
+      "value": 35.09,
+      "unit": "m²",
+      "detail": "por terminación"
+    },
+    {
+      "label": "Piso hormigón",
+      "value": 31.41,
+      "unit": "m²",
+      "detail": "por terminación"
+    },
+    {
+      "label": "Piso hormigón negro",
+      "value": 12.0,
+      "unit": "m²",
+      "detail": "por terminación"
+    },
+    {
+      "label": "Zócalos modelados",
+      "value": 25.61,
+      "unit": "ml",
+      "detail": "5 tramos"
+    },
+    {
+      "label": "Zócalo a computar (perímetro de locales)",
+      "value": 427.3,
+      "unit": "ml",
+      "detail": "sin descontar vanos de puertas"
+    },
+    {
+      "label": "Pisos (todos los tipos)",
+      "value": 558.38,
+      "unit": "m²",
+      "detail": "13 tipos · 29 piezas"
+    }
+  ],
+  "quantities": [
+    {
+      "label": "TP-01 · L01.00",
+      "group": "Tipos de piso",
+      "count": 5,
+      "value": 133.51,
+      "unit": "m²",
+      "detail": "vinílico · 00. Planta Baja, 01. Planta Alta, 02. Planta Entrepiso"
+    },
+    {
+      "label": "TP-02 · L01.01",
+      "group": "Tipos de piso",
+      "count": 4,
+      "value": 127.56,
+      "unit": "m²",
+      "detail": "alfombra · 01. Planta Alta"
+    },
+    {
+      "label": "TP-03 · L01.02",
+      "group": "Tipos de piso",
+      "count": 1,
+      "value": 20.37,
+      "unit": "m²",
+      "detail": "madera · 02. Planta Entrepiso"
+    },
+    {
+      "label": "TP-04 · L02.00",
+      "group": "Tipos de piso",
+      "count": 1,
+      "value": 25.08,
+      "unit": "m²",
+      "detail": "vinílico · 00. Planta Baja"
+    },
+    {
+      "label": "TP-05 · L03.00",
+      "group": "Tipos de piso",
+      "count": 1,
+      "value": 24.39,
+      "unit": "m²",
+      "detail": "vinílico · 00. Planta Baja"
+    },
+    {
+      "label": "TP-06 · L04.01",
+      "group": "Tipos de piso",
+      "count": 1,
+      "value": 3.52,
+      "unit": "m²",
+      "detail": "madera · 01. Planta Alta"
+    },
+    {
+      "label": "TP-07 · L05.00",
+      "group": "Tipos de piso",
+      "count": 1,
+      "value": 42.3,
+      "unit": "m²",
+      "detail": "vinílico · 00. Planta Baja"
+    },
+    {
+      "label": "TP-08 · L06.00",
+      "group": "Tipos de piso",
+      "count": 1,
+      "value": 45.5,
+      "unit": "m²",
+      "detail": "vinílico · 00. Planta Baja"
+    },
+    {
+      "label": "TP-09 · L07.01",
+      "group": "Tipos de piso",
+      "count": 1,
+      "value": 11.2,
+      "unit": "m²",
+      "detail": "madera · 01. Planta Alta"
+    },
+    {
+      "label": "TP-10 · Deck Terraza PA 05cm",
+      "group": "Tipos de piso",
+      "count": 2,
+      "value": 81.54,
+      "unit": "m²",
+      "detail": "deck de madera · 00. Planta Baja, 01. Planta Alta"
+    },
+    {
+      "label": "TP-11 · Escalones 20cm",
+      "group": "Tipos de piso",
+      "count": 4,
+      "value": 2.57,
+      "unit": "m²",
+      "detail": "hormigón · 00. Planta Baja"
+    },
+    {
+      "label": "TP-12 · Escalones acceso 2m x 1m",
+      "group": "Tipos de piso",
+      "count": 6,
+      "value": 12.0,
+      "unit": "m²",
+      "detail": "hormigón negro · 00. Planta Baja"
+    },
+    {
+      "label": "TP-13 · Base Acceso",
+      "group": "Tipos de piso",
+      "count": 1,
+      "value": 28.84,
+      "unit": "m²",
+      "detail": "hormigón · 005. Acceso ppal"
+    },
+    {
+      "label": "01 · Cuarto A Inv.",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 11.86,
+      "unit": "m²",
+      "detail": "TP-01 vinílico · perímetro 13,81 ml"
+    },
+    {
+      "label": "02 · Baño A Inv.",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 5.29,
+      "unit": "m²",
+      "detail": "TP-01 vinílico · perímetro 10,26 ml"
+    },
+    {
+      "label": "03 · Cuarto B Inv.",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 12.18,
+      "unit": "m²",
+      "detail": "TP-04 vinílico · perímetro 14,01 ml"
+    },
+    {
+      "label": "04 · Baño B Inv.",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 5.43,
+      "unit": "m²",
+      "detail": "TP-04 vinílico · perímetro 10,46 ml"
+    },
+    {
+      "label": "05 · Cuarto C Inv.",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 11.86,
+      "unit": "m²",
+      "detail": "TP-05 vinílico · perímetro 13,81 ml"
+    },
+    {
+      "label": "06 · Baño C Inv.",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 5.29,
+      "unit": "m²",
+      "detail": "TP-05 vinílico · perímetro 10,26 ml"
+    },
+    {
+      "label": "07 · Toilette Servicio",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 6.24,
+      "unit": "m²",
+      "detail": "TP-01 vinílico · perímetro 9,97 ml"
+    },
+    {
+      "label": "08 · Lavadero",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 6.64,
+      "unit": "m²",
+      "detail": "TP-01 vinílico · perímetro 10,48 ml"
+    },
+    {
+      "label": "09 · Hab. servicio",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 6.61,
+      "unit": "m²",
+      "detail": "TP-01 vinílico · perímetro 10,29 ml"
+    },
+    {
+      "label": "10 · Acceso Servicio",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 5.03,
+      "unit": "m²",
+      "detail": "TP-01 vinílico · perímetro 9,15 ml"
+    },
+    {
+      "label": "11 · Ascensor",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 3.34,
+      "unit": "m²",
+      "detail": "TP-01 vinílico · perímetro 7,54 ml"
+    },
+    {
+      "label": "12 · Quincho",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 45.01,
+      "unit": "m²",
+      "detail": "TP-08 vinílico · perímetro 28,47 ml"
+    },
+    {
+      "label": "13 · Cuarto ppal",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 14.82,
+      "unit": "m²",
+      "detail": "TP-07 vinílico · perímetro 15,63 ml"
+    },
+    {
+      "label": "14 · Vestidor ppal",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 7.57,
+      "unit": "m²",
+      "detail": "TP-07 vinílico · perímetro 12,21 ml"
+    },
+    {
+      "label": "15 · Baño ppal",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 9.03,
+      "unit": "m²",
+      "detail": "TP-07 vinílico · perímetro 13,82 ml"
+    },
+    {
+      "label": "16 · Pasillo",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 26.08,
+      "unit": "m²",
+      "detail": "TP-04 vinílico · perímetro 32,11 ml"
+    },
+    {
+      "label": "17 · Hall",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 27.13,
+      "unit": "m²",
+      "detail": "TP-13 hormigón · perímetro 21,78 ml"
+    },
+    {
+      "label": "01 · Sala de TV",
+      "group": "Locales · 01. Planta Alta",
+      "count": 1,
+      "value": 14.99,
+      "unit": "m²",
+      "detail": "TP-02 alfombra · perímetro 15,50 ml"
+    },
+    {
+      "label": "02 · Sala de Maquinas",
+      "group": "Locales · 01. Planta Alta",
+      "count": 1,
+      "value": 4.79,
+      "unit": "m²",
+      "detail": "TP-02 alfombra · perímetro 9,10 ml"
+    },
+    {
+      "label": "03 · Playroom",
+      "group": "Locales · 01. Planta Alta",
+      "count": 1,
+      "value": 28.94,
+      "unit": "m²",
+      "detail": "TP-02 alfombra · perímetro 24,44 ml"
+    },
+    {
+      "label": "04 · Baño PA",
+      "group": "Locales · 01. Planta Alta",
+      "count": 1,
+      "value": 5.81,
+      "unit": "m²",
+      "detail": "TP-02 alfombra · perímetro 10,61 ml"
+    },
+    {
+      "label": "05 · Toilette",
+      "group": "Locales · 01. Planta Alta",
+      "count": 1,
+      "value": 5.12,
+      "unit": "m²",
+      "detail": "TP-01 vinílico · perímetro 9,25 ml"
+    },
+    {
+      "label": "06 · Cava",
+      "group": "Locales · 01. Planta Alta",
+      "count": 1,
+      "value": 8.44,
+      "unit": "m²",
+      "detail": "TP-01 vinílico · perímetro 11,81 ml"
+    },
+    {
+      "label": "07 · Cocina",
+      "group": "Locales · 01. Planta Alta",
+      "count": 1,
+      "value": 20.87,
+      "unit": "m²",
+      "detail": "TP-01 vinílico · perímetro 20,23 ml"
+    },
+    {
+      "label": "08 · Comedor",
+      "group": "Locales · 01. Planta Alta",
+      "count": 1,
+      "value": 23.26,
+      "unit": "m²",
+      "detail": "TP-01 vinílico · perímetro 19,72 ml"
+    },
+    {
+      "label": "09 · Living",
+      "group": "Locales · 01. Planta Alta",
+      "count": 1,
+      "value": 16.14,
+      "unit": "m²",
+      "detail": "TP-02 alfombra · perímetro 16,46 ml"
+    },
+    {
+      "label": "10 · Puente",
+      "group": "Locales · 01. Planta Alta",
+      "count": 1,
+      "value": 2.18,
+      "unit": "m²",
+      "detail": "TP-06 madera · perímetro 7,06 ml"
+    },
+    {
+      "label": "01 · SM",
+      "group": "Locales · 02. Planta Entrepiso",
+      "count": 1,
+      "value": 6.56,
+      "unit": "m²",
+      "detail": "TP-01 vinílico · perímetro 10,25 ml"
+    },
+    {
+      "label": "02 · Hall PE",
+      "group": "Locales · 02. Planta Entrepiso",
+      "count": 1,
+      "value": 7.26,
+      "unit": "m²",
+      "detail": "TP-01 vinílico · perímetro 11,02 ml"
+    },
+    {
+      "label": "03 · Atelier",
+      "group": "Locales · 02. Planta Entrepiso",
+      "count": 1,
+      "value": 19.36,
+      "unit": "m²",
+      "detail": "TP-03 madera · perímetro 17,79 ml"
+    },
+    {
+      "label": "ZO-01",
+      "group": "Zócalos modelados",
+      "count": 1,
+      "value": 5.1,
+      "unit": "ml",
+      "detail": "PB"
+    },
+    {
+      "label": "ZO-02",
+      "group": "Zócalos modelados",
+      "count": 1,
+      "value": 4.0,
+      "unit": "ml",
+      "detail": "PB"
+    },
+    {
+      "label": "ZO-03",
+      "group": "Zócalos modelados",
+      "count": 1,
+      "value": 6.38,
+      "unit": "ml",
+      "detail": "PB"
+    },
+    {
+      "label": "ZO-04",
+      "group": "Zócalos modelados",
+      "count": 1,
+      "value": 6.25,
+      "unit": "ml",
+      "detail": "PB"
+    },
+    {
+      "label": "ZO-05",
+      "group": "Zócalos modelados",
+      "count": 1,
+      "value": 3.88,
+      "unit": "ml",
+      "detail": "PB"
+    }
+  ],
+  "quantityNote": "m² de cada pieza según Revit (cara superior). Tipo de piso por local tomado en el centro del local. Zócalo a computar = perímetro de local (no descuenta puertas).",
+  "notModeled": [
+    "Terminación de piso y de zócalo no cargadas en los locales (parámetros vacíos)",
+    "Zócalos solo en 5 tramos de PB (25,6 ml)",
+    "Umbrales, solias y juntas",
+    "Pisos de baños específicos (cerámico/porcelanato): hoy los baños usan vinílico o alfombra"
+  ],
+  "decisions": [
+    "Códigos TP/PI/ZO solo como anotación (no escritos en Mark).",
+    "Cada tipo de piso del modelo es un TP con ficha y corte de paquete a 1:5."
+  ],
+  "questions": [
+    "¿Los baños de PB van con piso vinílico (TP-01, TP-04, TP-05)? ¿Y el Baño PA con alfombra (TP-02)? Parece un tipo de piso provisorio.",
+    "¿El Hall está bien sobre \"Base Acceso\" (hormigón 20 cm + 1 m de césped)? ¿Cuál es su piso terminado?",
+    "¿Qué zócalo lleva cada local (material y altura)? Solo hay 5 tramos modelados.",
+    "¿Escribimos los códigos TP/PI en el modelo (Mark)?"
+  ]
+}
