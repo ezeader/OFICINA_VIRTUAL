@@ -9,7 +9,7 @@ preserved without recompression, resampling, editing or conversion.
 Builds check it before packaging. If a document changes, regenerate the inventory.
 R2 objects are immutable and addressed by SHA-256. The upload endpoint accepts
 only the exact paths, lengths and hashes listed in the current source inventory,
-requires authenticated Site access and same-origin requests, and does not allow
+requires the private Sites access boundary and same-origin requests, and does not allow
 arbitrary new files. Site access remains owner-private.
 
 Publish the compact archive with the native Sites workflow, then run
@@ -18,6 +18,10 @@ hidden stdin only, using the short-lived authorization returned by `get_site`.
 Never put the bearer in arguments, files, logs or committed source. The fixed
 destination is the existing Ader office. Uploads can resume: already verified
 objects are skipped. Every document is downloaded again and SHA-256 checked.
+The service bearer is sent with the `Bearer ` prefix. Sites consumes it and
+does not inject visitor identity for this access. Shared document routes rely on
+the private Sites boundary; user-owned workspace records retain their separate
+visitor-identity requirements.
 
 Publication is not complete until the transfer report verifies every inventory
 entry. During first migration only, an untransferred document returns HTTP 503

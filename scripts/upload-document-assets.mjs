@@ -12,7 +12,7 @@ if(process.stdin.isTTY)process.stdin.setRawMode(false);
 const {origin,bearer,reportPath}=input;
 if(origin!=='https://ader-oficina.ezequielader.chatgpt.site'||!bearer)throw Error('Invalid Site destination');
 const manifest=JSON.parse(await readFile('lib/document-assets.json','utf8'));
-const auth={'OAI-Sites-Authorization':bearer,Origin:origin};
+const auth={'OAI-Sites-Authorization':'Bearer '+bearer,Origin:origin};
 const report={startedAt:new Date().toISOString(),verified:[],failed:[]};
 const path=resolve(reportPath);await mkdir(dirname(path),{recursive:true});
 const persist=()=>writeFile(path,JSON.stringify(report,null,2));
