@@ -6,7 +6,9 @@ export type R4Dim={label:string;values_m:number[];associative?:boolean;view?:'pl
 export type R4View={id:number;name:string;label?:string;scale:number;kind?:'plan'|'axo'|'elevation';elementId?:string|null;code?:string|null;image:string;region?:number[];roomLabel?:string;tags?:string[];dimensions?:{label:string;values_m:number[];associative?:boolean;code?:string}[];elements?:{code:string;box:number[]}[]};
 export type R4Sheet={sheetId:string;sheetNumber:string;page?:number;pages?:number;pdf?:string;image:string;thumbnail?:string;preview?:string;views:R4View[]};
 export type R4Group={key:string;roomId?:number|null;name:string;level?:string;codes?:string[];sheets:R4Sheet[]};
-export type R4Summary={revision?:string;totals?:{roomGroups?:number;sheets?:number;elevations?:number;dimensions?:number;nonAssociativeDimensions?:number;roomsWithoutOpenings?:string[]};sheets?:R4Group[]};
+// Planta general de un nivel con cada abertura ubicada (la exporta Revit cuando está disponible).
+export type LevelPlan={level:string;image?:string;preview?:string;aspect?:number;elements?:{code:string;elementId?:string;box:number[]}[];rooms?:{roomId:number;label:string;box:number[]}[]};
+export type R4Summary={levels?:LevelPlan[];revision?:string;totals?:{roomGroups?:number;sheets?:number;elevations?:number;dimensions?:number;nonAssociativeDimensions?:number;roomsWithoutOpenings?:string[]};sheets?:R4Group[]};
 export type ViewDimension={label:string;values_m:number[];associative?:boolean;code?:string};
 export type R4Drawing={id:number;name:string;label?:string;image:string;scale:number;code?:string;kind?:string;sheetNumber?:string;roomName?:string;dimensions?:ViewDimension[]};
 type R4Item={id:string;code:string;documentation?:{r4?:{views?:{viewId:string;roomKey:string;roomName?:string;image?:string}[];dimensions?:R4Dim[]}}};
@@ -45,7 +47,7 @@ export function r4ElementViews(item:R4Item,groups:R4Group[],items:R4Item[]):R4Dr
 
 export type ViewElement={code:string;elementId?:string;box:number[]};
 export type SheetView={id:number;name:string;scale:number;image:string;code?:string;dimensions?:ViewDimension[];elements?:ViewElement[];region?:number[];tags?:string[];kind?:string};
-export type SheetCard={key:string;tab:'locales'|'aberturas'|'revision';group:string;number:string;name:string;thumbnail?:string;preview?:string;image?:string;pdf?:string;sheetId?:string;views:SheetView[];itemIds:string[];roomId?:number;note?:string};
+export type SheetCard={key:string;tab:'locales'|'aberturas'|'revision';group:string;number:string;name:string;thumbnail?:string;preview?:string;image?:string;pdf?:string;sheetId?:string;views:SheetView[];itemIds:string[];roomId?:number;note?:string;room?:string;details?:boolean};
 type Doc={sheetId?:string;sheetNumber?:string;pdf?:string;image?:string;thumbnail?:string;views?:{id:number;name:string;scale:number;image:string;elements?:ViewElement[]}[]};
 type Manifest={
  items:{id:string;code:string;category:string;type:string;rooms:number[];documentation?:Doc}[];
@@ -62,7 +64,7 @@ export function buildSheets(m:Manifest):SheetCard[]{
  const cards:SheetCard[]=[];
  const r4Pages=(group:R4Group,roomName:string,level:string,itemIds:string[],roomId?:number)=>{
   const doc=r4GroupDocument(group,m.items as never);if(!doc)return;
-  group.sheets.forEach((sheet,page)=>cards.push({key:`r4-${group.key}-${page+1}`,tab:'locales',group:level,number:sheet.sheetNumber,name:roomName+(group.sheets.length>1?` · hoja ${page+1}`:''),thumbnail:sheet.thumbnail,preview:sheet.preview,image:sheet.image,pdf:sheet.pdf,sheetId:sheet.sheetId,
+  group.sheets.forEach((sheet,page)=>cards.push({key:`r4-${group.key}-${page+1}`,tab:'locales',group:level,number:sheet.sheetNumber,name:page===0?roomName:`Detalles · ${roomName}${group.sheets.length>2?` (${page}/${group.sheets.length-1})`:''}`,room:roomName,details:page>0,thumbnail:sheet.thumbnail,preview:sheet.preview,image:sheet.image,pdf:sheet.pdf,sheetId:sheet.sheetId,
    views:sheet.views.map(v=>({id:v.id,name:v.code?`${v.code} · alzado`:cleanName(v.name).replace(' · '+(v.roomLabel||'§'),''),scale:v.scale,image:v.image,kind:v.kind,...(v.code?{code:v.code}:{}),...(v.region?{region:v.region}:{}),...(v.tags?{tags:v.tags}:{}),...(v.elements?{elements:v.elements}:{}),
     dimensions:v.dimensions?v.dimensions.map(d=>({label:d.label,values_m:d.values_m,associative:d.associative,...(d.code||v.code?{code:d.code||v.code!}:{})})):viewDimensions(v,group.key,m.items as never)})),itemIds,...(roomId!=null?{roomId}:{})}));
  };
@@ -91,3 +93,12 @@ export function groupSheets(cards:SheetCard[],tab:SheetCard['tab']){
  for(const c of cards)if(c.tab===tab)groups.set(c.group,[...(groups.get(c.group)||[]),c]);
  return [...groups].map(([title,sheets])=>({title,sheets}));
 }
+
+// A qué lámina lleva cada código: la lámina general del local donde aparece (planta y axonométrica).
+export function codeTargets(cards:SheetCard[],items:{id:string;code:string}[]){
+ const out=new Map<string,string>();
+ for(const item of items){const own=cards.filter(c=>c.tab==='locales'&&c.itemIds.includes(item.id));const target=own.find(c=>!c.details)||own[0]||cards.find(c=>c.itemIds.includes(item.id));if(target)out.set(item.code,target.key)}
+ return out;
+}
+// Índice general: todas las láminas por número.
+export const sheetIndex=(cards:SheetCard[])=>[...cards].sort((a,b)=>a.number.localeCompare(b.number,'es',{numeric:true})||a.name.localeCompare(b.name,'es'));

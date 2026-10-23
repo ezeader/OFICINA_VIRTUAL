@@ -7,7 +7,7 @@ import RevitOpenButton from './revit-open-button';
 import {TrimmedDrawing,OpeningTooltip,type Crop} from './opening-drawings';
 import {openingsHref} from '../lib/documentation-route';
 import {NOTE_KEY,correctionFor,pendingForRevit,setCorrection,type OpeningsReview} from '../lib/openings-review';
-import {buildSheets,groupSheets,dimensionText,CATEGORY_GROUP,type SheetCard,type SheetView} from '../lib/openings-sheets';
+import {buildSheets,codeTargets,groupSheets,sheetIndex,dimensionText,CATEGORY_GROUP,type SheetCard,type SheetView} from '../lib/openings-sheets';
 import {budgetCsv,budgetTotals,sizeOf,surveySpecs} from '../lib/openings-budget';
 import './sanitary-sheets.css';
 import './project-sanitary.css';
@@ -15,9 +15,9 @@ import './openings-desk.css';
 
 type Item={id:string;uid:string;code:string;category:string;family:string;type:string;rooms:number[];width?:string;height?:string;sill?:string;head?:string;materials:string[];warnings:string[];panelCount?:number;parameters:{name:string;value:string;scope:string}[]};
 type Data={items:Item[];rooms:unknown[];counts:{windows:number;doors:number;curtainWalls:number;unassigned:number};reviewCases?:{code:string;elementId:string;title:string;observation:string;proposedCorrection:string}[]};
-type Tab=SheetCard['tab']|'computo';
+type Tab=SheetCard['tab']|'computo'|'indice';
 const SHEET_ASPECT=2383.94/1683.78;
-const TABS:[Tab,string][]=[['locales','Por local'],['aberturas','Por abertura'],['revision','Revisión pendiente'],['computo','Cómputo para presupuesto']];
+const TABS:[Tab,string][]=[['locales','Por local'],['aberturas','Por abertura'],['revision','Revisión pendiente'],['computo','Cómputo para presupuesto'],['indice','Índice de láminas']];
 const n2=(n:number)=>n.toLocaleString('es-AR',{minimumFractionDigits:2,maximumFractionDigits:2});
 const KIND:Record<string,string>={Windows:'Ventana',Doors:'Puerta','Curtain Walls':'Muro cortina'};
 const m=(v?:string)=>v?v.replace(' m','').replace('.',','):'—';
@@ -77,7 +77,11 @@ export default function OpeningsDesk({mode='documentation',caseCode,review,onSav
  if(mode==='quantities')return <section className="openingsDesk"><div className="sheetHeading"><div><p className="eyebrow">CASA ÁNGEL / ABERTURAS</p><h3>{data.items.length} aberturas únicas</h3><p>{data.counts.windows} ventanas · {data.counts.doors} puertas · {data.counts.curtainWalls} muros cortina</p></div></div>{Object.entries(CATEGORY_GROUP).map(([cat,title])=><section key={cat}><h4 className="openingGroupTitle">{title}</h4><div className="openingCards">{data.items.filter(i=>i.category===cat).map(i=>elementCard(i))}</div></section>)}{hover&&<OpeningTooltip item={hover.item} review={review} x={hover.x} y={hover.y}/>}</section>;
 
  if(!sheet){
-  const count=(t:Tab)=>t==='computo'?data.items.length:cards.filter(c=>c.tab===t).length;
+  const count=(t:Tab)=>t==='computo'?data.items.length:t==='indice'?cards.length:cards.filter(c=>c.tab===t).length;
+  const targets=codeTargets(cards,data.items),levels=(data as {documentationR4?:{levels?:{level:string;image?:string;preview?:string;aspect?:number;elements?:{code:string;box:number[]}[]}[]}}).documentationR4?.levels||[];
+  const codeChip=(code:string)=>{const it=byCode.get(code),key=targets.get(code);return <button key={code} className="openingCodeChip" disabled={!key} onClick={()=>key&&open(key)} {...hoverOn(it)}>{code}</button>};
+  // Arriba de cada nivel: su planta general con los códigos (si Revit la exporta) o el listado de códigos por local.
+  const levelOverview=(title:string,sheets:SheetCard[])=>{const plan=levels.find(l=>l.level===title),general=sheets.filter(s=>!s.details);return <div className="openingLevel">{plan?.preview||plan?.image?<div className="openingLevelPlan" style={{aspectRatio:String(plan.aspect||1.414)}}>{plan.preview?<img src={plan.preview} alt={'Planta general '+title}/>:<VectorImage src={plan.image} alt={'Planta general '+title}/>}{plan.elements?.map(e=>{const key=targets.get(e.code);return <button key={e.code} className="openingLevelCode" style={{left:`${e.box[0]*100}%`,top:`${e.box[1]*100}%`,width:`${(e.box[2]-e.box[0])*100}%`,height:`${(e.box[3]-e.box[1])*100}%`}} onClick={()=>key&&open(key)} {...hoverOn(byCode.get(e.code))}><b>{e.code}</b></button>})}</div>:null}<div className="openingLevelList"><p>{plan?'Tocá un código en la planta o en la lista para ir a su lámina.':'Aberturas de este nivel por local. Tocá un código para ir a su lámina.'}</p>{general.map(s=><div key={s.key}><span>{s.name}</span>{s.itemIds.map(id=>byId.get(id)?.code).filter((c):c is string=>!!c).map(codeChip)}</div>)}</div></div>};
   const budget=budgetTotals(data.items);
   const download=()=>{const url=URL.createObjectURL(new Blob(['\ufeff'+budgetCsv(budget.rows)],{type:'text/csv;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download='casa-angel-aberturas-computo.csv';a.click();URL.revokeObjectURL(url)};
   return <section className="openingsDesk sheetExplorer" aria-label="Láminas de aberturas">
@@ -92,7 +96,8 @@ export default function OpeningsDesk({mode='documentation',caseCode,review,onSav
     <table className="openingBudgetTable"><thead><tr><th>Tipo</th><th>Medida</th><th>Cant.</th><th>m² c/u</th><th>m² total</th><th>m marco</th></tr></thead><tbody>{budget.rows.map(r=><tr key={r.key}><td><b>{r.type}</b><small>{KIND[r.category]} · {r.codes.join(' · ')}</small></td><td>{r.size.replace(/\./g,',')}</td><td>{r.count}</td><td>{n2(r.unitArea)}</td><td><b>{n2(r.area)}</b></td><td>{n2(r.perimeter)}</td></tr>)}</tbody></table>
     {(data.reviewCases||[]).length>0&&<p className="openingAlert">⚠ En revisión, pueden cambiar el cómputo: {(data.reviewCases||[]).map(c=>`${c.code} (${c.title})`).join(' · ')}.</p>}
    </section>}
-   {tab!=='computo'&&groupSheets(cards,tab).map(g=><section key={g.title} className="openingGroup"><h4 className="openingGroupTitle">{g.title} <small>{g.sheets.length} {g.sheets.length===1?'lámina':'láminas'}</small></h4>
+   {tab==='indice'&&<table className="openingBudgetTable openingIndex"><thead><tr><th>Lámina</th><th>Contenido</th><th>Sector</th><th>Aberturas</th></tr></thead><tbody>{sheetIndex(cards).map(c=><tr key={c.key} onClick={()=>open(c.key)}><td><b>{c.number}</b></td><td><b>{c.name}</b><small>{c.views.map(v=>v.name).join(' · ')}</small></td><td>{c.group}</td><td>{c.itemIds.map(id=>byId.get(id)?.code).filter(Boolean).join(' · ')}</td></tr>)}</tbody></table>}
+   {tab!=='computo'&&tab!=='indice'&&groupSheets(cards,tab as SheetCard['tab']).map(g=><section key={g.title} className="openingGroup"><h4 className="openingGroupTitle">{g.title} <small>{g.sheets.length} {g.sheets.length===1?'lámina':'láminas'}</small></h4>{tab==='locales'&&levelOverview(g.title,g.sheets)}
     <div className="sheetGrid">{g.sheets.map(c=>{const codes=c.itemIds.map(id=>byId.get(id)?.code).filter((x):x is string=>!!x);return <button key={c.key} className="sheetCard" onClick={()=>open(c.key)}>{c.thumbnail?<img src={c.thumbnail} alt={'Lámina '+c.name} loading="lazy"/>:<div className="openingNoThumb">Sin vista previa</div>}<span className="sheetHoverTitle" aria-hidden="true">{c.name}</span><span><small>{c.number}</small><strong>{c.name}</strong>{c.tab!=='aberturas'&&<span className="openingCodes">{codes.map(code=><b key={code}>{code}</b>)}</span>}<em>{c.views.length} dibujos{c.tab==='locales'?` · ${codes.length} ${codes.length===1?'abertura':'aberturas'}`:''}</em></span></button>})}</div>
    </section>)}
   </section>;

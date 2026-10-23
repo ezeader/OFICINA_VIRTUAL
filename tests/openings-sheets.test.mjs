@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {buildSheets,groupSheets} from '../lib/openings-sheets.ts';
+import {buildSheets,groupSheets,codeTargets,sheetIndex} from '../lib/openings-sheets.ts';
 import {regionFromSvg} from '../scripts/openings-view-regions.mjs';
 
 const manifest=JSON.parse(fs.readFileSync(new URL('../public/casa-angel/openings/manifest.json',import.meta.url),'utf8'));
@@ -27,10 +27,17 @@ test('R4 room sheets replace the R2 room sheet when present, one card per page',
  const m=structuredClone(r2),room=m.rooms[0];
  room.r4={sheets:[1,2].map(n=>({sheetId:'9'+n,sheetNumber:'ABR-R4-PB-0'+n,image:`/p${n}.svg.gz`,views:[{id:n,name:'Planta del local',scale:20,kind:'plan',image:'/v'}]}))};
  const cards=buildSheets(m).filter(c=>c.roomId===room.id);
- assert.deepEqual(cards.map(c=>[c.number,c.name.endsWith('hoja '+c.number.slice(-1))]),[['ABR-R4-PB-01',true],['ABR-R4-PB-02',true]]);
+ assert.deepEqual(cards.map(c=>[c.number,c.name,!!c.details]),[['ABR-R4-PB-01',`${room.number} · ${room.name}`,false],['ABR-R4-PB-02',`Detalles · ${room.number} · ${room.name}`,true]]);
 });
 test('a drawing is located on its sheet from the exported SVG transform',()=>{
  const svg='<svg width="241.5" height="242.5"><path transform="matrix(1,0,0,-1,698.96,544.97)" d="M-698.9 302.4H-457.4V544.9Z"/><path d="M-1191.97-841.89H1191.97V841.89H-1191.97Z"/></svg>';
  assert.deepEqual(regionFromSvg(svg),[0.2068,0.1763,0.3081,0.3204]);
  assert.equal(regionFromSvg('<svg></svg>'),null);
+});
+test('each code leads to the general sheet of its room, and the index is sorted by sheet number',()=>{
+ const cards=buildSheets(r2),targets=codeTargets(cards,r2.items),v155=r2.items.find(i=>i.code==='V-155');
+ const target=cards.find(c=>c.key===targets.get('V-155'));
+ assert.equal(target.tab,'locales');assert.ok(target.itemIds.includes(v155.id));
+ assert.ok(r2.items.every(i=>targets.has(i.code)));
+ const numbers=sheetIndex(cards).map(c=>c.number);assert.deepEqual(numbers,[...numbers].sort((a,b)=>a.localeCompare(b,'es',{numeric:true})));
 });
