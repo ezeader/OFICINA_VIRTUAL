@@ -1,0 +1,5025 @@
+{
+  "title": "Albañilería",
+  "summary": "60 muros y tabiques no estructurales en 10 tipos (292,56 m²). 14 láminas: plantas por nivel y fichas por tipo con corte de capas.",
+  "model": "Casa-Angel-piloto-documentacion.rvt",
+  "readAt": "2026-10-23T17:58:22.349000Z",
+  "revision": "R20",
+  "kinds": {
+    "TM": "Tipos de muro / tabique",
+    "AB": "Muros y tabiques no estructurales"
+  },
+  "sheets": [
+    {
+      "number": "ALB-00",
+      "title": "Índice, tipos y cómputo",
+      "level": "Albañilería",
+      "sector": "General",
+      "kind": "general",
+      "element": null,
+      "elementId": null,
+      "elementKind": null,
+      "note": null,
+      "sheetId": "2471062",
+      "pdf": "/casa-angel/rubros/albanileria/ALB-00.pdf",
+      "image": "/casa-angel/rubros/albanileria/ALB-00.svg.gz",
+      "preview": "/casa-angel/rubros/albanileria/ALB-00-preview.png",
+      "thumbnail": "/casa-angel/rubros/albanileria/ALB-00.png",
+      "views": []
+    },
+    {
+      "number": "ALB-PA-01",
+      "title": "Muros y tabiques · 01. Planta Alta",
+      "level": "01. Planta Alta",
+      "sector": "01. Planta Alta",
+      "kind": "general",
+      "element": null,
+      "elementId": null,
+      "elementKind": null,
+      "note": null,
+      "sheetId": "2469848",
+      "pdf": "/casa-angel/rubros/albanileria/ALB-PA-01.pdf",
+      "image": "/casa-angel/rubros/albanileria/ALB-PA-01.svg.gz",
+      "preview": "/casa-angel/rubros/albanileria/ALB-PA-01-preview.png",
+      "thumbnail": "/casa-angel/rubros/albanileria/ALB-PA-01.png",
+      "views": [
+        {
+          "id": "2469736",
+          "name": "Muros y tabiques · 01. Planta Alta",
+          "label": "Muros y tabiques · 01. Planta Alta   1:60",
+          "scale": 60,
+          "kind": "plan",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "image": "/casa-angel/rubros/albanileria/ALB-PA-01-view-2469736.svg.gz",
+          "region": [
+            0.2657,
+            0.2064,
+            0.6335,
+            0.7809
+          ],
+          "tags": [
+            "AB-PA-01",
+            "AB-PA-02",
+            "AB-PA-03",
+            "AB-PA-04",
+            "AB-PA-05",
+            "AB-PA-06",
+            "AB-PA-07",
+            "AB-PA-08",
+            "AB-PA-09",
+            "AB-PA-10",
+            "AB-PA-11",
+            "AB-PA-12",
+            "AB-PA-13",
+            "AB-PA-14",
+            "AB-PA-15",
+            "AB-PA-16",
+            "AB-PA-17",
+            "AB-PA-18",
+            "AB-PA-19",
+            "AB-PA-20",
+            "AB-PA-21",
+            "AB-PA-22",
+            "AB-PA-23"
+          ],
+          "dimensions": [
+            {
+              "label": "AB-PA-01 largo",
+              "values_m": [
+                2.4
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PA-02 largo",
+              "values_m": [
+                1.4284
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PA-03 largo",
+              "values_m": [
+                2.7525
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PA-04 largo",
+              "values_m": [
+                5.2425
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PA-05 largo",
+              "values_m": [
+                4.09
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PA-06 largo",
+              "values_m": [
+                0.675
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PA-07 largo",
+              "values_m": [
+                1.35
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PA-08 largo",
+              "values_m": [
+                0.675
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PA-09 largo",
+              "values_m": [
+                4.0
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PA-10 largo",
+              "values_m": [
+                3.9
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PA-11 largo",
+              "values_m": [
+                3.9
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PA-12 largo",
+              "values_m": [
+                3.8957
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PA-13 largo",
+              "values_m": [
+                2.8
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PA-14 largo",
+              "values_m": [
+                2.6
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PA-15 largo",
+              "values_m": [
+                3.9
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PA-16 largo",
+              "values_m": [
+                1.75
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PA-17 largo",
+              "values_m": [
+                2.8
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PA-18 largo",
+              "values_m": [
+                2.1075
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PA-19 largo",
+              "values_m": [
+                0.6425
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PA-20 largo",
+              "values_m": [
+                0.7
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PA-21 largo",
+              "values_m": [
+                2.9525
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PA-22 largo",
+              "values_m": [
+                1.64
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PA-23 largo",
+              "values_m": [
+                3.035
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "AB-PA-01",
+              "elementId": "2144284",
+              "label": "AB-PA-01 · TM-10 · 2,40 × 3,00 · e 2",
+              "box": [
+                0.7636,
+                0.171,
+                0.7646,
+                0.2777
+              ]
+            },
+            {
+              "code": "AB-PA-02",
+              "elementId": "2144290",
+              "label": "AB-PA-02 · TM-10 · 1,59 × 3,00 · e 2",
+              "box": [
+                0.7636,
+                0.2777,
+                0.8137,
+                0.3231
+              ]
+            },
+            {
+              "code": "AB-PA-03",
+              "elementId": "2144297",
+              "label": "AB-PA-03 · TM-10 · 2,75 × 1,44 · e 2",
+              "box": [
+                0.8137,
+                0.3222,
+                0.9487,
+                0.3231
+              ]
+            },
+            {
+              "code": "AB-PA-04",
+              "elementId": "2144303",
+              "label": "AB-PA-04 · TM-10 · 5,24 × 0,24 · e 2",
+              "box": [
+                0.691,
+                0.3524,
+                0.9487,
+                0.3533
+              ]
+            },
+            {
+              "code": "AB-PA-05",
+              "elementId": "2144408",
+              "label": "AB-PA-05 · TM-10 · 4,09 × 0,29 · e 2",
+              "box": [
+                0.691,
+                0.171,
+                0.692,
+                0.3528
+              ]
+            },
+            {
+              "code": "AB-PA-06",
+              "elementId": "986634",
+              "label": "AB-PA-06 · TM-09 · 0,68 × 1,00 · e 5",
+              "box": [
+                0.9143,
+                0.4093,
+                0.9487,
+                0.4116
+              ]
+            },
+            {
+              "code": "AB-PA-07",
+              "elementId": "986707",
+              "label": "AB-PA-07 · TM-09 · 1,35 × 1,00 · e 5",
+              "box": [
+                0.9143,
+                0.4104,
+                0.9168,
+                0.4716
+              ]
+            },
+            {
+              "code": "AB-PA-08",
+              "elementId": "986754",
+              "label": "AB-PA-08 · TM-09 · 0,68 × 1,00 · e 5",
+              "box": [
+                0.9156,
+                0.4694,
+                0.9487,
+                0.4716
+              ]
+            },
+            {
+              "code": "AB-PA-09",
+              "elementId": "623954",
+              "label": "AB-PA-09 · TM-06 · 4,00 × 2,50 · e 10",
+              "box": [
+                0.2426,
+                0.949,
+                0.4388,
+                0.9535
+              ]
+            },
+            {
+              "code": "AB-PA-10",
+              "elementId": "679167",
+              "label": "AB-PA-10 · TM-06 · 3,90 × 2,80 · e 10",
+              "box": [
+                0.0513,
+                0.6867,
+                0.2426,
+                0.6912
+              ]
+            },
+            {
+              "code": "AB-PA-11",
+              "elementId": "891413",
+              "label": "AB-PA-11 · TM-06 · 3,90 × 2,50 · e 10",
+              "box": [
+                0.0513,
+                0.949,
+                0.2426,
+                0.9535
+              ]
+            },
+            {
+              "code": "AB-PA-12",
+              "elementId": "987320",
+              "label": "AB-PA-12 · TM-06 · 3,90 × 2,50 · e 10",
+              "box": [
+                0.4388,
+                0.949,
+                0.6299,
+                0.9535
+              ]
+            },
+            {
+              "code": "AB-PA-13",
+              "elementId": "393764",
+              "label": "AB-PA-13 · TM-01 · 2,80 × 2,56 · e 10",
+              "box": [
+                0.7623,
+                0.0465,
+                0.7672,
+                0.171
+              ]
+            },
+            {
+              "code": "AB-PA-14",
+              "elementId": "614243",
+              "label": "AB-PA-14 · TM-01 · 2,60 × 5,50 · e 10",
+              "box": [
+                0.6629,
+                0.051,
+                0.6678,
+                0.1666
+              ]
+            },
+            {
+              "code": "AB-PA-15",
+              "elementId": "874579",
+              "label": "AB-PA-15 · TM-01 · 3,90 × 3,30 · e 10",
+              "box": [
+                0.0513,
+                0.8712,
+                0.2426,
+                0.8757
+              ]
+            },
+            {
+              "code": "AB-PA-16",
+              "elementId": "891823",
+              "label": "AB-PA-16 · TM-01 · 1,75 × 2,70 · e 10",
+              "box": [
+                0.1985,
+                0.8735,
+                0.2034,
+                0.9513
+              ]
+            },
+            {
+              "code": "AB-PA-17",
+              "elementId": "1156693",
+              "label": "AB-PA-17 · TM-01 · 2,80 × 3,00 · e 10",
+              "box": [
+                0.9244,
+                0.0465,
+                0.9293,
+                0.171
+              ]
+            },
+            {
+              "code": "AB-PA-18",
+              "elementId": "986045",
+              "label": "AB-PA-18 · TM-07 · 2,11 × 2,80 · e 9,5",
+              "box": [
+                0.7573,
+                0.3491,
+                0.8653,
+                0.3533
+              ]
+            },
+            {
+              "code": "AB-PA-19",
+              "elementId": "986101",
+              "label": "AB-PA-19 · TM-07 · 0,64 × 2,80 · e 9,5",
+              "box": [
+                0.8606,
+                0.3226,
+                0.8653,
+                0.3512
+              ]
+            },
+            {
+              "code": "AB-PA-20",
+              "elementId": "1050648",
+              "label": "AB-PA-20 · TM-07 · 0,70 × 0,90 · e 9,5",
+              "box": [
+                0.9143,
+                0.3491,
+                0.9487,
+                0.3533
+              ]
+            },
+            {
+              "code": "AB-PA-21",
+              "elementId": "1441734",
+              "label": "AB-PA-21 · TM-07 · 2,95 × 0,90 · e 9,5",
+              "box": [
+                0.7573,
+                0.2199,
+                0.7619,
+                0.3512
+              ]
+            },
+            {
+              "code": "AB-PA-22",
+              "elementId": "459579",
+              "label": "AB-PA-22 · TM-08 · 1,64 × 3,30 · e 12",
+              "box": [
+                0.2426,
+                0.8137,
+                0.326,
+                0.819
+              ]
+            },
+            {
+              "code": "AB-PA-23",
+              "elementId": "890335",
+              "label": "AB-PA-23 · TM-08 · 3,04 × 2,80 · e 12",
+              "box": [
+                0.3201,
+                0.8163,
+                0.326,
+                0.9513
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "ALB-PB-01",
+      "title": "Muros y tabiques · 00. Planta Baja",
+      "level": "00. Planta Baja",
+      "sector": "00. Planta Baja",
+      "kind": "general",
+      "element": null,
+      "elementId": null,
+      "elementKind": null,
+      "note": null,
+      "sheetId": "2469716",
+      "pdf": "/casa-angel/rubros/albanileria/ALB-PB-01.pdf",
+      "image": "/casa-angel/rubros/albanileria/ALB-PB-01.svg.gz",
+      "preview": "/casa-angel/rubros/albanileria/ALB-PB-01-preview.png",
+      "thumbnail": "/casa-angel/rubros/albanileria/ALB-PB-01.png",
+      "views": [
+        {
+          "id": "2469549",
+          "name": "Muros y tabiques · 00. Planta Baja",
+          "label": "Muros y tabiques · 00. Planta Baja   1:60",
+          "scale": 60,
+          "kind": "plan",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/albanileria/ALB-PB-01-view-2469549.svg.gz",
+          "region": [
+            0.2258,
+            0.1793,
+            0.673,
+            0.8075
+          ],
+          "tags": [
+            "AB-PB-01",
+            "AB-PB-02",
+            "AB-PB-03",
+            "AB-PB-04",
+            "AB-PB-05",
+            "AB-PB-06",
+            "AB-PB-07",
+            "AB-PB-08",
+            "AB-PB-09",
+            "AB-PB-10",
+            "AB-PB-11",
+            "AB-PB-12",
+            "AB-PB-13",
+            "AB-PB-14",
+            "AB-PB-15",
+            "AB-PB-16",
+            "AB-PB-17",
+            "AB-PB-18",
+            "AB-PB-19",
+            "AB-PB-20",
+            "AB-PB-21",
+            "AB-PB-22",
+            "AB-PB-23",
+            "AB-PB-24",
+            "AB-PB-25",
+            "AB-PB-26",
+            "AB-PB-27",
+            "AB-PB-28",
+            "AB-PB-29",
+            "AB-PB-30",
+            "AB-PB-31",
+            "AB-PB-32",
+            "AB-PB-33",
+            "AB-PB-34",
+            "AB-PB-35"
+          ],
+          "dimensions": [
+            {
+              "label": "AB-PB-01 largo",
+              "values_m": [
+                1.7442
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-02 largo",
+              "values_m": [
+                2.45
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-03 largo",
+              "values_m": [
+                2.7442
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-04 largo",
+              "values_m": [
+                3.8505
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-05 largo",
+              "values_m": [
+                1.4284
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-06 largo",
+              "values_m": [
+                4.9
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-07 largo",
+              "values_m": [
+                0.55
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-08 largo",
+              "values_m": [
+                0.55
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-09 largo",
+              "values_m": [
+                0.55
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-10 largo",
+              "values_m": [
+                0.55
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-11 largo",
+              "values_m": [
+                0.55
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-12 largo",
+              "values_m": [
+                0.55
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-13 largo",
+              "values_m": [
+                0.55
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-14 largo",
+              "values_m": [
+                0.55
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-15 largo",
+              "values_m": [
+                5.3
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-16 largo",
+              "values_m": [
+                3.8949
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-17 largo",
+              "values_m": [
+                3.7989
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-18 largo",
+              "values_m": [
+                3.9
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-19 largo",
+              "values_m": [
+                2.8
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-20 largo",
+              "values_m": [
+                2.0489
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-21 largo",
+              "values_m": [
+                1.9
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-22 largo",
+              "values_m": [
+                0.7
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-23 largo",
+              "values_m": [
+                0.655
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-24 largo",
+              "values_m": [
+                2.8
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-25 largo",
+              "values_m": [
+                3.9
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-26 largo",
+              "values_m": [
+                2.8
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-27 largo",
+              "values_m": [
+                5.2
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-28 largo",
+              "values_m": [
+                4.0
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-29 largo",
+              "values_m": [
+                2.8
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-30 largo",
+              "values_m": [
+                3.9
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-31 largo",
+              "values_m": [
+                0.7
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-32 largo",
+              "values_m": [
+                3.9
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-33 largo",
+              "values_m": [
+                4.0
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-34 largo",
+              "values_m": [
+                3.9
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-35 largo",
+              "values_m": [
+                4.9824
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "AB-PB-01",
+              "elementId": "1030426",
+              "label": "AB-PB-01 · TM-04 · 1,74 × 2,22 · e 10",
+              "box": [
+                0.28,
+                0.0874,
+                0.284,
+                0.1603
+              ]
+            },
+            {
+              "code": "AB-PB-02",
+              "elementId": "1030557",
+              "label": "AB-PB-02 · TM-04 · 2,45 × 1,25 · e 10",
+              "box": [
+                0.282,
+                0.1563,
+                0.3807,
+                0.1603
+              ]
+            },
+            {
+              "code": "AB-PB-03",
+              "elementId": "1030740",
+              "label": "AB-PB-03 · TM-04 · 2,74 × 2,70 · e 10",
+              "box": [
+                0.3203,
+                0.0468,
+                0.3243,
+                0.1583
+              ]
+            },
+            {
+              "code": "AB-PB-04",
+              "elementId": "2141926",
+              "label": "AB-PB-04 · TM-10 · 3,85 × 0,30 · e 2",
+              "box": [
+                0.6054,
+                0.396,
+                0.7606,
+                0.3968
+              ]
+            },
+            {
+              "code": "AB-PB-05",
+              "elementId": "2142088",
+              "label": "AB-PB-05 · TM-10 · 1,59 × 0,30 · e 2",
+              "box": [
+                0.5643,
+                0.3553,
+                0.6054,
+                0.3968
+              ]
+            },
+            {
+              "code": "AB-PB-06",
+              "elementId": "2142231",
+              "label": "AB-PB-06 · TM-10 · 4,90 × 0,30 · e 2",
+              "box": [
+                0.5643,
+                0.1563,
+                0.5651,
+                0.3553
+              ]
+            },
+            {
+              "code": "AB-PB-07",
+              "elementId": "1973338",
+              "label": "AB-PB-07 · TM-03 · 0,55 × 1,10 · e 5",
+              "box": [
+                0.0941,
+                0.9331,
+                0.1183,
+                0.9351
+              ]
+            },
+            {
+              "code": "AB-PB-08",
+              "elementId": "1973393",
+              "label": "AB-PB-08 · TM-03 · 0,55 × 1,10 · e 5",
+              "box": [
+                0.1163,
+                0.9341,
+                0.1183,
+                0.9565
+              ]
+            },
+            {
+              "code": "AB-PB-09",
+              "elementId": "1973433",
+              "label": "AB-PB-09 · TM-03 · 0,55 × 1,10 · e 5",
+              "box": [
+                0.0941,
+                0.9555,
+                0.1183,
+                0.9575
+              ]
+            },
+            {
+              "code": "AB-PB-10",
+              "elementId": "1973544",
+              "label": "AB-PB-10 · TM-03 · 0,55 × 1,10 · e 5",
+              "box": [
+                0.0941,
+                0.9341,
+                0.0962,
+                0.9565
+              ]
+            },
+            {
+              "code": "AB-PB-11",
+              "elementId": "2010194",
+              "label": "AB-PB-11 · TM-03 · 0,55 × 0,30 · e 5",
+              "box": [
+                0.9336,
+                0.2519,
+                0.9578,
+                0.2539
+              ]
+            },
+            {
+              "code": "AB-PB-12",
+              "elementId": "2010195",
+              "label": "AB-PB-12 · TM-03 · 0,55 × 0,30 · e 5",
+              "box": [
+                0.9558,
+                0.2529,
+                0.9578,
+                0.2752
+              ]
+            },
+            {
+              "code": "AB-PB-13",
+              "elementId": "2010196",
+              "label": "AB-PB-13 · TM-03 · 0,55 × 0,30 · e 5",
+              "box": [
+                0.9336,
+                0.2742,
+                0.9578,
+                0.2762
+              ]
+            },
+            {
+              "code": "AB-PB-14",
+              "elementId": "2010197",
+              "label": "AB-PB-14 · TM-03 · 0,55 × 0,30 · e 5",
+              "box": [
+                0.9336,
+                0.2529,
+                0.9357,
+                0.2752
+              ]
+            },
+            {
+              "code": "AB-PB-15",
+              "elementId": "363614",
+              "label": "AB-PB-15 · TM-05 · 5,30 × 2,80 · e 15",
+              "box": [
+                0.818,
+                0.4285,
+                0.8241,
+                0.6438
+              ]
+            },
+            {
+              "code": "AB-PB-16",
+              "elementId": "635282",
+              "label": "AB-PB-16 · TM-05 · 3,89 × 3,00 · e 15",
+              "box": [
+                0.2036,
+                0.8855,
+                0.3606,
+                0.8916
+              ]
+            },
+            {
+              "code": "AB-PB-17",
+              "elementId": "757381",
+              "label": "AB-PB-17 · TM-05 · 3,80 × 3,00 · e 15",
+              "box": [
+                0.3606,
+                0.8855,
+                0.5137,
+                0.8916
+              ]
+            },
+            {
+              "code": "AB-PB-18",
+              "elementId": "925454",
+              "label": "AB-PB-18 · TM-05 · 3,90 × 3,00 · e 15",
+              "box": [
+                0.0422,
+                0.8855,
+                0.1994,
+                0.8916
+              ]
+            },
+            {
+              "code": "AB-PB-19",
+              "elementId": "368795",
+              "label": "AB-PB-19 · TM-01 · 2,80 × 3,00 · e 10",
+              "box": [
+                0.7596,
+                0.0425,
+                0.7636,
+                0.1563
+              ]
+            },
+            {
+              "code": "AB-PB-20",
+              "elementId": "369966",
+              "label": "AB-PB-20 · TM-01 · 2,05 × 5,00 · e 10",
+              "box": [
+                0.5218,
+                0.8083,
+                0.6044,
+                0.8124
+              ]
+            },
+            {
+              "code": "AB-PB-21",
+              "elementId": "370093",
+              "label": "AB-PB-21 · TM-01 · 1,90 × 5,00 · e 10",
+              "box": [
+                0.6024,
+                0.8083,
+                0.6064,
+                0.8875
+              ]
+            },
+            {
+              "code": "AB-PB-22",
+              "elementId": "667737",
+              "label": "AB-PB-22 · TM-01 · 0,70 × 2,80 · e 10",
+              "box": [
+                0.7596,
+                0.4,
+                0.7636,
+                0.4285
+              ]
+            },
+            {
+              "code": "AB-PB-23",
+              "elementId": "1252990",
+              "label": "AB-PB-23 · TM-01 · 0,65 × 2,80 · e 10",
+              "box": [
+                0.82,
+                0.4008,
+                0.8241,
+                0.4285
+              ]
+            },
+            {
+              "code": "AB-PB-24",
+              "elementId": "1026315",
+              "label": "AB-PB-24 · TM-02 · 2,80 × 2,80 · e 20",
+              "box": [
+                0.4644,
+                0.0425,
+                0.4724,
+                0.1563
+              ]
+            },
+            {
+              "code": "AB-PB-25",
+              "elementId": "363229",
+              "label": "AB-PB-25 · TM-07 · 3,90 × 2,80 · e 9,5",
+              "box": [
+                0.3606,
+                0.6885,
+                0.5178,
+                0.6923
+              ]
+            },
+            {
+              "code": "AB-PB-26",
+              "elementId": "368868",
+              "label": "AB-PB-26 · TM-07 · 2,80 × 3,00 · e 9,5",
+              "box": [
+                0.6791,
+                0.0425,
+                0.6829,
+                0.1563
+              ]
+            },
+            {
+              "code": "AB-PB-27",
+              "elementId": "607239",
+              "label": "AB-PB-27 · TM-07 · 5,20 × 2,80 · e 9,5",
+              "box": [
+                0.5621,
+                0.4285,
+                0.5659,
+                0.6397
+              ]
+            },
+            {
+              "code": "AB-PB-28",
+              "elementId": "645730",
+              "label": "AB-PB-28 · TM-07 · 4,00 × 2,80 · e 9,5",
+              "box": [
+                0.1994,
+                0.6885,
+                0.3606,
+                0.6923
+              ]
+            },
+            {
+              "code": "AB-PB-29",
+              "elementId": "1039708",
+              "label": "AB-PB-29 · TM-07 · 2,80 × 2,80 · e 9,5",
+              "box": [
+                0.5728,
+                0.0425,
+                0.5766,
+                0.1563
+              ]
+            },
+            {
+              "code": "AB-PB-30",
+              "elementId": "2274570",
+              "label": "AB-PB-30 · TM-07 · 3,90 × 2,80 · e 9,5",
+              "box": [
+                0.0422,
+                0.6885,
+                0.1994,
+                0.6923
+              ]
+            },
+            {
+              "code": "AB-PB-31",
+              "elementId": "2344129",
+              "label": "AB-PB-31 · TM-07 · 0,70 × 2,80 · e 9,5",
+              "box": [
+                0.5637,
+                0.4,
+                0.5675,
+                0.4285
+              ]
+            },
+            {
+              "code": "AB-PB-32",
+              "elementId": "366618",
+              "label": "AB-PB-32 · TM-08 · 3,90 × 2,80 · e 12",
+              "box": [
+                0.3606,
+                0.8225,
+                0.5178,
+                0.8274
+              ]
+            },
+            {
+              "code": "AB-PB-33",
+              "elementId": "645731",
+              "label": "AB-PB-33 · TM-08 · 4,00 × 2,80 · e 12",
+              "box": [
+                0.1994,
+                0.8225,
+                0.3606,
+                0.8274
+              ]
+            },
+            {
+              "code": "AB-PB-34",
+              "elementId": "762338",
+              "label": "AB-PB-34 · TM-08 · 3,90 × 2,80 · e 12",
+              "box": [
+                0.0422,
+                0.8225,
+                0.1994,
+                0.8274
+              ]
+            },
+            {
+              "code": "AB-PB-35",
+              "elementId": "1005195",
+              "label": "AB-PB-35 · TM-08 · 4,98 × 3,00 · e 12",
+              "box": [
+                0.7423,
+                0.4325,
+                0.7471,
+                0.6438
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "ALB-PE-01",
+      "title": "Muros y tabiques · 02. Planta Entrepiso",
+      "level": "02. Planta Entrepiso",
+      "sector": "02. Planta Entrepiso",
+      "kind": "general",
+      "element": null,
+      "elementId": null,
+      "elementKind": null,
+      "note": null,
+      "sheetId": "2469889",
+      "pdf": "/casa-angel/rubros/albanileria/ALB-PE-01.pdf",
+      "image": "/casa-angel/rubros/albanileria/ALB-PE-01.svg.gz",
+      "preview": "/casa-angel/rubros/albanileria/ALB-PE-01-preview.png",
+      "thumbnail": "/casa-angel/rubros/albanileria/ALB-PE-01.png",
+      "views": [
+        {
+          "id": "2469868",
+          "name": "Muros y tabiques · 02. Planta Entrepiso",
+          "label": "Muros y tabiques · 02. Planta Entrepiso   1:20",
+          "scale": 20,
+          "kind": "plan",
+          "sector": "02. Planta Entrepiso",
+          "roomLabel": "02. Planta Entrepiso",
+          "image": "/casa-angel/rubros/albanileria/ALB-PE-01-view-2469868.svg.gz",
+          "region": [
+            0.2468,
+            0.1694,
+            0.6519,
+            0.8174
+          ],
+          "tags": [
+            "AB-PE-01",
+            "AB-PE-02"
+          ],
+          "dimensions": [
+            {
+              "label": "AB-PE-01 largo",
+              "values_m": [
+                2.8
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PE-02 largo",
+              "values_m": [
+                2.8
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "AB-PE-01",
+              "elementId": "1156729",
+              "label": "AB-PE-01 · TM-01 · 2,80 × 3,00 · e 10",
+              "box": [
+                0.8295,
+                0.1042,
+                0.8429,
+                0.435
+              ]
+            },
+            {
+              "code": "AB-PE-02",
+              "elementId": "1402221",
+              "label": "AB-PE-02 · TM-01 · 2,80 × 2,30 · e 10",
+              "box": [
+                0.1177,
+                0.1042,
+                0.1311,
+                0.435
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "ALB-F-TM-01",
+      "title": "Ficha TM-01 · Muro Interior 10cm",
+      "level": "01. Planta Alta",
+      "sector": "01. Planta Alta",
+      "kind": "element",
+      "element": "TM-01",
+      "elementId": "874579",
+      "elementKind": "TM",
+      "note": "Corte de muro con capas del tipo del modelo.",
+      "sheetId": "2470000",
+      "pdf": "/casa-angel/rubros/albanileria/ALB-F-TM-01.pdf",
+      "image": "/casa-angel/rubros/albanileria/ALB-F-TM-01.svg.gz",
+      "preview": "/casa-angel/rubros/albanileria/ALB-F-TM-01-preview.png",
+      "thumbnail": "/casa-angel/rubros/albanileria/ALB-F-TM-01.png",
+      "views": [
+        {
+          "id": "2469909",
+          "name": "TM-01 · planta (01. Planta Alta)",
+          "label": "TM-01 · planta (01. Planta Alta)   1:75",
+          "scale": 75,
+          "kind": "plan",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "image": "/casa-angel/rubros/albanileria/ALB-F-TM-01-view-2469909.svg.gz",
+          "region": [
+            0.1204,
+            0.2566,
+            0.4163,
+            0.7255
+          ],
+          "tags": [
+            "AB-PA-15",
+            "AB-PA-13",
+            "AB-PA-17",
+            "AB-PA-14",
+            "AB-PA-16"
+          ],
+          "dimensions": [
+            {
+              "label": "AB-PA-15 largo",
+              "values_m": [
+                3.9
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PA-13 largo",
+              "values_m": [
+                2.8
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PA-17 largo",
+              "values_m": [
+                2.8
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PA-14 largo",
+              "values_m": [
+                2.6
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PA-16 largo",
+              "values_m": [
+                1.75
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "AB-PA-15",
+              "elementId": "874579",
+              "label": "AB-PA-15 · TM-01 · 3,90 × 3,30 · e 10",
+              "box": [
+                0.0638,
+                0.8647,
+                0.2539,
+                0.869
+              ]
+            },
+            {
+              "code": "AB-PA-13",
+              "elementId": "393764",
+              "label": "AB-PA-13 · TM-01 · 2,80 × 2,56 · e 10",
+              "box": [
+                0.7703,
+                0.057,
+                0.7752,
+                0.1789
+              ]
+            },
+            {
+              "code": "AB-PA-17",
+              "elementId": "1156693",
+              "label": "AB-PA-17 · TM-01 · 2,80 × 3,00 · e 10",
+              "box": [
+                0.9314,
+                0.057,
+                0.9362,
+                0.1789
+              ]
+            },
+            {
+              "code": "AB-PA-14",
+              "elementId": "614243",
+              "label": "AB-PA-14 · TM-01 · 2,60 × 5,50 · e 10",
+              "box": [
+                0.6715,
+                0.0613,
+                0.6763,
+                0.1745
+              ]
+            },
+            {
+              "code": "AB-PA-16",
+              "elementId": "891823",
+              "label": "AB-PA-16 · TM-01 · 1,75 × 2,70 · e 10",
+              "box": [
+                0.21,
+                0.8668,
+                0.2149,
+                0.943
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2469940",
+          "name": "TM-01 · corte de muro",
+          "label": "TM-01 · corte de muro   1:5",
+          "scale": 5,
+          "kind": "section",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "image": "/casa-angel/rubros/albanileria/ALB-F-TM-01-view-2469940.svg.gz",
+          "region": [
+            0.5135,
+            0.2123,
+            0.6936,
+            0.3966
+          ],
+          "tags": [
+            "TM-01"
+          ],
+          "dimensions": [
+            {
+              "label": "TM-01 capas",
+              "values_m": [
+                0.1
+              ],
+              "associative": false
+            },
+            {
+              "label": "TM-01 espesor",
+              "values_m": [
+                0.1
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "AB-PA-15",
+              "elementId": "874579",
+              "label": "AB-PA-15 · TM-01 · 3,90 × 3,30 · e 10",
+              "box": [
+                0.5655,
+                0.0,
+                0.6857,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2469966",
+          "name": "AB-PA-15 · vista",
+          "label": "AB-PA-15 · vista   1:40",
+          "scale": 40,
+          "kind": "elevation",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "image": "/casa-angel/rubros/albanileria/ALB-F-TM-01-view-2469966.svg.gz",
+          "region": [
+            0.4042,
+            0.5307,
+            0.6219,
+            0.7242
+          ],
+          "tags": [
+            "AB-PA-15"
+          ],
+          "dimensions": [
+            {
+              "label": "AB-PA-15 vanos",
+              "values_m": [
+                0.10999999999999666,
+                0.9000000000000055,
+                2.890000000000012
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PA-15 largo",
+              "values_m": [
+                3.9000000000000146
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PA-15 arranque + alto",
+              "values_m": [
+                3.300000000000067
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "AB-PA-15",
+              "elementId": "874579",
+              "label": "AB-PA-15 · TM-01 · 3,90 × 3,30 · e 10",
+              "box": [
+                0.2036,
+                0.0208,
+                0.6883,
+                0.8982
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2469989",
+          "name": "AB-PA-15 · axonométrica",
+          "label": "AB-PA-15 · axonométrica   1:40",
+          "scale": 40,
+          "kind": "axo",
+          "sector": "Sector: 01. Planta Alta",
+          "roomLabel": "Sector: 01. Planta Alta",
+          "image": "/casa-angel/rubros/albanileria/ALB-F-TM-01-view-2469989.svg.gz",
+          "region": [
+            0.6276,
+            0.4943,
+            0.7606,
+            0.7607
+          ],
+          "tags": [
+            "AB-PA-15"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "AB-PA-15",
+              "elementId": "874579",
+              "label": "AB-PA-15 · TM-01 · 3,90 × 3,30 · e 10",
+              "box": [
+                0.2123,
+                0.1233,
+                0.7877,
+                0.8767
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "ALB-F-TM-02",
+      "title": "Ficha TM-02 · Muro Interior 20cm",
+      "level": "00. Planta Baja",
+      "sector": "00. Planta Baja",
+      "kind": "element",
+      "element": "TM-02",
+      "elementId": "1026315",
+      "elementKind": "TM",
+      "note": "Corte de muro con capas del tipo del modelo.",
+      "sheetId": "2470102",
+      "pdf": "/casa-angel/rubros/albanileria/ALB-F-TM-02.pdf",
+      "image": "/casa-angel/rubros/albanileria/ALB-F-TM-02.svg.gz",
+      "preview": "/casa-angel/rubros/albanileria/ALB-F-TM-02-preview.png",
+      "thumbnail": "/casa-angel/rubros/albanileria/ALB-F-TM-02.png",
+      "views": [
+        {
+          "id": "2470027",
+          "name": "TM-02 · planta (00. Planta Baja)",
+          "label": "TM-02 · planta (00. Planta Baja)   1:15",
+          "scale": 15,
+          "kind": "plan",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/albanileria/ALB-F-TM-02-view-2470027.svg.gz",
+          "region": [
+            0.1242,
+            0.2397,
+            0.2918,
+            0.7424
+          ],
+          "tags": [
+            "AB-PB-24"
+          ],
+          "dimensions": [
+            {
+              "label": "AB-PB-24 largo",
+              "values_m": [
+                2.8
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "AB-PB-24",
+              "elementId": "1026315",
+              "label": "AB-PB-24 · TM-02 · 2,80 × 2,80 · e 20",
+              "box": [
+                0.457,
+                0.2156,
+                0.543,
+                0.7844
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2470042",
+          "name": "TM-02 · corte de muro",
+          "label": "TM-02 · corte de muro   1:10",
+          "scale": 10,
+          "kind": "section",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/albanileria/ALB-F-TM-02-view-2470042.svg.gz",
+          "region": [
+            0.4608,
+            0.2057,
+            0.6257,
+            0.3059
+          ],
+          "tags": [
+            "TM-02"
+          ],
+          "dimensions": [
+            {
+              "label": "TM-02 capas",
+              "values_m": [
+                0.2
+              ],
+              "associative": false
+            },
+            {
+              "label": "TM-02 espesor",
+              "values_m": [
+                0.2
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "AB-PB-24",
+              "elementId": "1026315",
+              "label": "AB-PB-24 · TM-02 · 2,80 × 2,80 · e 20",
+              "box": [
+                0.5426,
+                0.0,
+                0.6739,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2470068",
+          "name": "AB-PB-24 · vista",
+          "label": "AB-PB-24 · vista   1:20",
+          "scale": 20,
+          "kind": "elevation",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/albanileria/ALB-F-TM-02-view-2470068.svg.gz",
+          "region": [
+            0.2764,
+            0.4117,
+            0.5787,
+            0.746
+          ],
+          "tags": [
+            "AB-PB-24"
+          ],
+          "dimensions": [
+            {
+              "label": "AB-PB-24 vanos",
+              "values_m": [
+                0.0874999999999996,
+                1.7100000000000033,
+                1.0025000000000146
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-24 largo",
+              "values_m": [
+                2.8000000000000176
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-24 arranque + alto",
+              "values_m": [
+                2.8000000000002854
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "AB-PB-24",
+              "elementId": "1026315",
+              "label": "AB-PB-24 · TM-02 · 2,80 × 2,80 · e 20",
+              "box": [
+                0.1868,
+                0.2594,
+                0.6878,
+                0.901
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2470091",
+          "name": "AB-PB-24 · axonométrica",
+          "label": "AB-PB-24 · axonométrica   1:20",
+          "scale": 20,
+          "kind": "axo",
+          "sector": "Sector: 00. Planta Baja",
+          "roomLabel": "Sector: 00. Planta Baja",
+          "image": "/casa-angel/rubros/albanileria/ALB-F-TM-02-view-2470091.svg.gz",
+          "region": [
+            0.5595,
+            0.3867,
+            0.7783,
+            0.771
+          ],
+          "tags": [
+            "AB-PB-24"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "AB-PB-24",
+              "elementId": "1026315",
+              "label": "AB-PB-24 · TM-02 · 2,80 × 2,80 · e 20",
+              "box": [
+                0.2377,
+                0.1545,
+                0.7623,
+                0.8455
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "ALB-F-TM-03",
+      "title": "Ficha TM-03 · Interior - Blockwork 101",
+      "level": "00. Planta Baja",
+      "sector": "00. Planta Baja",
+      "kind": "element",
+      "element": "TM-03",
+      "elementId": "1973393",
+      "elementKind": "TM",
+      "note": "Corte de muro con capas del tipo del modelo.",
+      "sheetId": "2470228",
+      "pdf": "/casa-angel/rubros/albanileria/ALB-F-TM-03.pdf",
+      "image": "/casa-angel/rubros/albanileria/ALB-F-TM-03.svg.gz",
+      "preview": "/casa-angel/rubros/albanileria/ALB-F-TM-03-preview.png",
+      "thumbnail": "/casa-angel/rubros/albanileria/ALB-F-TM-03.png",
+      "views": [
+        {
+          "id": "2470129",
+          "name": "TM-03 · planta (00. Planta Baja)",
+          "label": "TM-03 · planta (00. Planta Baja)   1:100",
+          "scale": 100,
+          "kind": "plan",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/albanileria/ALB-F-TM-03-view-2470129.svg.gz",
+          "region": [
+            0.117,
+            0.3356,
+            0.3795,
+            0.6465
+          ],
+          "tags": [
+            "AB-PB-08",
+            "AB-PB-12",
+            "AB-PB-09",
+            "AB-PB-10",
+            "AB-PB-13",
+            "AB-PB-14",
+            "AB-PB-07",
+            "AB-PB-11"
+          ],
+          "dimensions": [
+            {
+              "label": "AB-PB-08 largo",
+              "values_m": [
+                0.55
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-12 largo",
+              "values_m": [
+                0.55
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-09 largo",
+              "values_m": [
+                0.55
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-10 largo",
+              "values_m": [
+                0.55
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-13 largo",
+              "values_m": [
+                0.55
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-14 largo",
+              "values_m": [
+                0.55
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-07 largo",
+              "values_m": [
+                0.55
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-11 largo",
+              "values_m": [
+                0.55
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "AB-PB-08",
+              "elementId": "1973393",
+              "label": "AB-PB-08 · TM-03 · 0,55 × 1,10 · e 5",
+              "box": [
+                0.0812,
+                0.8976,
+                0.0833,
+                0.9247
+              ]
+            },
+            {
+              "code": "AB-PB-12",
+              "elementId": "2010195",
+              "label": "AB-PB-12 · TM-03 · 0,55 × 0,30 · e 5",
+              "box": [
+                0.9398,
+                0.0712,
+                0.9419,
+                0.0983
+              ]
+            },
+            {
+              "code": "AB-PB-09",
+              "elementId": "1973433",
+              "label": "AB-PB-09 · TM-03 · 0,55 × 1,10 · e 5",
+              "box": [
+                0.0585,
+                0.9235,
+                0.0833,
+                0.9259
+              ]
+            },
+            {
+              "code": "AB-PB-10",
+              "elementId": "1973544",
+              "label": "AB-PB-10 · TM-03 · 0,55 × 1,10 · e 5",
+              "box": [
+                0.0585,
+                0.8976,
+                0.0606,
+                0.9247
+              ]
+            },
+            {
+              "code": "AB-PB-13",
+              "elementId": "2010196",
+              "label": "AB-PB-13 · TM-03 · 0,55 × 0,30 · e 5",
+              "box": [
+                0.9171,
+                0.0971,
+                0.9419,
+                0.0995
+              ]
+            },
+            {
+              "code": "AB-PB-14",
+              "elementId": "2010197",
+              "label": "AB-PB-14 · TM-03 · 0,55 × 0,30 · e 5",
+              "box": [
+                0.9171,
+                0.0712,
+                0.9192,
+                0.0983
+              ]
+            },
+            {
+              "code": "AB-PB-07",
+              "elementId": "1973338",
+              "label": "AB-PB-07 · TM-03 · 0,55 × 1,10 · e 5",
+              "box": [
+                0.0585,
+                0.8964,
+                0.0833,
+                0.8988
+              ]
+            },
+            {
+              "code": "AB-PB-11",
+              "elementId": "2010194",
+              "label": "AB-PB-11 · TM-03 · 0,55 × 0,30 · e 5",
+              "box": [
+                0.9171,
+                0.07,
+                0.9419,
+                0.0724
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2470172",
+          "name": "TM-03 · corte de muro",
+          "label": "TM-03 · corte de muro   1:5",
+          "scale": 5,
+          "kind": "section",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/albanileria/ALB-F-TM-03-view-2470172.svg.gz",
+          "region": [
+            0.4902,
+            0.2077,
+            0.6767,
+            0.3921
+          ],
+          "tags": [
+            "TM-03"
+          ],
+          "dimensions": [
+            {
+              "label": "TM-03 capas",
+              "values_m": [
+                0.05
+              ],
+              "associative": false
+            },
+            {
+              "label": "TM-03 espesor",
+              "values_m": [
+                0.05
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "AB-PB-08",
+              "elementId": "1973393",
+              "label": "AB-PB-08 · TM-03 · 0,55 × 1,10 · e 5",
+              "box": [
+                0.546,
+                0.0,
+                0.604,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2470198",
+          "name": "AB-PB-08 · vista",
+          "label": "AB-PB-08 · vista   1:20",
+          "scale": 20,
+          "kind": "elevation",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/albanileria/ALB-F-TM-03-view-2470198.svg.gz",
+          "region": [
+            0.3923,
+            0.4708,
+            0.5735,
+            0.7751
+          ],
+          "tags": [
+            "AB-PB-08"
+          ],
+          "dimensions": [
+            {
+              "label": "AB-PB-08 largo",
+              "values_m": [
+                0.5500000000000027
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-08 arranque + alto",
+              "values_m": [
+                1.0,
+                0.1
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "AB-PB-08",
+              "elementId": "1973393",
+              "label": "AB-PB-08 · TM-03 · 0,55 × 1,10 · e 5",
+              "box": [
+                0.3118,
+                0.801,
+                0.4761,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2470217",
+          "name": "AB-PB-08 · axonométrica",
+          "label": "AB-PB-08 · axonométrica   1:20",
+          "scale": 20,
+          "kind": "axo",
+          "sector": "Sector: 00. Planta Baja",
+          "roomLabel": "Sector: 00. Planta Baja",
+          "image": "/casa-angel/rubros/albanileria/ALB-F-TM-03-view-2470217.svg.gz",
+          "region": [
+            0.6205,
+            0.5187,
+            0.7476,
+            0.7272
+          ],
+          "tags": [
+            "AB-PB-08"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "AB-PB-08",
+              "elementId": "1973393",
+              "label": "AB-PB-08 · TM-03 · 0,55 × 1,10 · e 5",
+              "box": [
+                0.4096,
+                0.2849,
+                0.5904,
+                0.7151
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "ALB-F-TM-04",
+      "title": "Ficha TM-04 · Bajo Escalera",
+      "level": "00. Planta Baja",
+      "sector": "00. Planta Baja",
+      "kind": "element",
+      "element": "TM-04",
+      "elementId": "1030740",
+      "elementKind": "TM",
+      "note": "Corte de muro con capas del tipo del modelo.",
+      "sheetId": "2470333",
+      "pdf": "/casa-angel/rubros/albanileria/ALB-F-TM-04.pdf",
+      "image": "/casa-angel/rubros/albanileria/ALB-F-TM-04.svg.gz",
+      "preview": "/casa-angel/rubros/albanileria/ALB-F-TM-04-preview.png",
+      "thumbnail": "/casa-angel/rubros/albanileria/ALB-F-TM-04.png",
+      "views": [
+        {
+          "id": "2470255",
+          "name": "TM-04 · planta (00. Planta Baja)",
+          "label": "TM-04 · planta (00. Planta Baja)   1:20",
+          "scale": 20,
+          "kind": "plan",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/albanileria/ALB-F-TM-04-view-2470255.svg.gz",
+          "region": [
+            0.1221,
+            0.3012,
+            0.3744,
+            0.6809
+          ],
+          "tags": [
+            "AB-PB-03",
+            "AB-PB-02",
+            "AB-PB-01"
+          ],
+          "dimensions": [
+            {
+              "label": "AB-PB-03 largo",
+              "values_m": [
+                2.7442
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-02 largo",
+              "values_m": [
+                2.45
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-01 largo",
+              "values_m": [
+                1.7442
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "AB-PB-03",
+              "elementId": "1030740",
+              "label": "AB-PB-03 · TM-04 · 2,74 × 2,70 · e 10",
+              "box": [
+                0.4464,
+                0.2182,
+                0.4678,
+                0.7717
+              ]
+            },
+            {
+              "code": "AB-PB-02",
+              "elementId": "1030557",
+              "label": "AB-PB-02 · TM-04 · 2,45 × 1,25 · e 10",
+              "box": [
+                0.2427,
+                0.7616,
+                0.768,
+                0.7818
+              ]
+            },
+            {
+              "code": "AB-PB-01",
+              "elementId": "1030426",
+              "label": "AB-PB-01 · TM-04 · 1,74 × 2,22 · e 10",
+              "box": [
+                0.232,
+                0.4199,
+                0.2534,
+                0.7818
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2470278",
+          "name": "TM-04 · corte de muro",
+          "label": "TM-04 · corte de muro   1:5",
+          "scale": 5,
+          "kind": "section",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/albanileria/ALB-F-TM-04-view-2470278.svg.gz",
+          "region": [
+            0.4658,
+            0.2035,
+            0.7011,
+            0.3878
+          ],
+          "tags": [
+            "TM-04"
+          ],
+          "dimensions": [
+            {
+              "label": "TM-04 capas",
+              "values_m": [
+                0.1
+              ],
+              "associative": false
+            },
+            {
+              "label": "TM-04 espesor",
+              "values_m": [
+                0.1
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "AB-PB-03",
+              "elementId": "1030740",
+              "label": "AB-PB-03 · TM-04 · 2,74 × 2,70 · e 10",
+              "box": [
+                0.5874,
+                0.0,
+                0.6794,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2470304",
+          "name": "AB-PB-03 · vista",
+          "label": "AB-PB-03 · vista   1:25",
+          "scale": 25,
+          "kind": "elevation",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/albanileria/ALB-F-TM-04-view-2470304.svg.gz",
+          "region": [
+            0.3603,
+            0.4866,
+            0.6147,
+            0.7507
+          ],
+          "tags": [
+            "AB-PB-03"
+          ],
+          "dimensions": [
+            {
+              "label": "AB-PB-03 largo",
+              "values_m": [
+                2.7442461139049805
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-03 arranque + alto",
+              "values_m": [
+                2.7030551076034186
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "AB-PB-03",
+              "elementId": "1030740",
+              "label": "AB-PB-03 · TM-04 · 2,74 × 2,70 · e 10",
+              "box": [
+                0.2028,
+                0.2675,
+                0.6696,
+                0.8949
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2470322",
+          "name": "AB-PB-03 · axonométrica",
+          "label": "AB-PB-03 · axonométrica   1:25",
+          "scale": 25,
+          "kind": "axo",
+          "sector": "Sector: 00. Planta Baja",
+          "roomLabel": "Sector: 00. Planta Baja",
+          "image": "/casa-angel/rubros/albanileria/ALB-F-TM-04-view-2470322.svg.gz",
+          "region": [
+            0.6026,
+            0.4678,
+            0.7747,
+            0.7695
+          ],
+          "tags": [
+            "AB-PB-03"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "AB-PB-03",
+              "elementId": "1030740",
+              "label": "AB-PB-03 · TM-04 · 2,74 × 2,70 · e 10",
+              "box": [
+                0.247,
+                0.1617,
+                0.753,
+                0.8383
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "ALB-F-TM-05",
+      "title": "Ficha TM-05 · Muro Fachada eje",
+      "level": "00. Planta Baja",
+      "sector": "00. Planta Baja",
+      "kind": "element",
+      "element": "TM-05",
+      "elementId": "363614",
+      "elementKind": "TM",
+      "note": "Corte de muro con capas del tipo del modelo.",
+      "sheetId": "2470451",
+      "pdf": "/casa-angel/rubros/albanileria/ALB-F-TM-05.pdf",
+      "image": "/casa-angel/rubros/albanileria/ALB-F-TM-05.svg.gz",
+      "preview": "/casa-angel/rubros/albanileria/ALB-F-TM-05-preview.png",
+      "thumbnail": "/casa-angel/rubros/albanileria/ALB-F-TM-05.png",
+      "views": [
+        {
+          "id": "2470360",
+          "name": "TM-05 · planta (00. Planta Baja)",
+          "label": "TM-05 · planta (00. Planta Baja)   1:150",
+          "scale": 150,
+          "kind": "plan",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/albanileria/ALB-F-TM-05-view-2470360.svg.gz",
+          "region": [
+            0.1263,
+            0.4163,
+            0.2897,
+            0.5659
+          ],
+          "tags": [
+            "AB-PB-15",
+            "AB-PB-18",
+            "AB-PB-16",
+            "AB-PB-17"
+          ],
+          "dimensions": [
+            {
+              "label": "AB-PB-15 largo",
+              "values_m": [
+                5.3
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-18 largo",
+              "values_m": [
+                3.9
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-16 largo",
+              "values_m": [
+                3.8949
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-17 largo",
+              "values_m": [
+                3.7989
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "AB-PB-15",
+              "elementId": "363614",
+              "label": "AB-PB-15 · TM-05 · 5,30 × 2,80 · e 15",
+              "box": [
+                0.922,
+                0.1104,
+                0.9286,
+                0.4727
+              ]
+            },
+            {
+              "code": "AB-PB-18",
+              "elementId": "925454",
+              "label": "AB-PB-18 · TM-05 · 3,90 × 3,00 · e 15",
+              "box": [
+                0.0714,
+                0.8793,
+                0.2437,
+                0.8896
+              ]
+            },
+            {
+              "code": "AB-PB-16",
+              "elementId": "635282",
+              "label": "AB-PB-16 · TM-05 · 3,89 × 3,00 · e 15",
+              "box": [
+                0.2484,
+                0.8793,
+                0.4205,
+                0.8896
+              ]
+            },
+            {
+              "code": "AB-PB-17",
+              "elementId": "757381",
+              "label": "AB-PB-17 · TM-05 · 3,80 × 3,00 · e 15",
+              "box": [
+                0.4205,
+                0.8793,
+                0.5883,
+                0.8896
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2470387",
+          "name": "TM-05 · corte de muro",
+          "label": "TM-05 · corte de muro   1:5",
+          "scale": 5,
+          "kind": "section",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/albanileria/ALB-F-TM-05-view-2470387.svg.gz",
+          "region": [
+            0.4202,
+            0.2034,
+            0.6663,
+            0.3877
+          ],
+          "tags": [
+            "TM-05"
+          ],
+          "dimensions": [
+            {
+              "label": "TM-05 capas",
+              "values_m": [
+                0.14,
+                0.01
+              ],
+              "associative": false
+            },
+            {
+              "label": "TM-05 espesor",
+              "values_m": [
+                0.15
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "AB-PB-15",
+              "elementId": "363614",
+              "label": "AB-PB-15 · TM-05 · 5,30 × 2,80 · e 15",
+              "box": [
+                0.5616,
+                0.0,
+                0.6935,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2470415",
+          "name": "AB-PB-15 · vista",
+          "label": "AB-PB-15 · vista   1:30",
+          "scale": 30,
+          "kind": "elevation",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/albanileria/ALB-F-TM-05-view-2470415.svg.gz",
+          "region": [
+            0.2747,
+            0.505,
+            0.591,
+            0.7322
+          ],
+          "tags": [
+            "AB-PB-15"
+          ],
+          "dimensions": [
+            {
+              "label": "AB-PB-15 vanos",
+              "values_m": [
+                0.09000000000000039,
+                0.5200000000000017,
+                4.079999999999997,
+                0.5200000000000004,
+                0.09000000000003586
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-15 largo",
+              "values_m": [
+                5.300000000000036
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-15 arranque + alto",
+              "values_m": [
+                2.8000000000002854
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "AB-PB-15",
+              "elementId": "363614",
+              "label": "AB-PB-15 · TM-05 · 5,30 × 2,80 · e 15",
+              "box": [
+                0.1529,
+                0.264,
+                0.7571,
+                0.8936
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2470440",
+          "name": "AB-PB-15 · axonométrica",
+          "label": "AB-PB-15 · axonométrica   1:30",
+          "scale": 30,
+          "kind": "axo",
+          "sector": "Sector: 00. Planta Baja",
+          "roomLabel": "Sector: 00. Planta Baja",
+          "image": "/casa-angel/rubros/albanileria/ALB-F-TM-05-view-2470440.svg.gz",
+          "region": [
+            0.5685,
+            0.4676,
+            0.7798,
+            0.7695
+          ],
+          "tags": [
+            "AB-PB-15"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "AB-PB-15",
+              "elementId": "363614",
+              "label": "AB-PB-15 · TM-05 · 5,30 × 2,80 · e 15",
+              "box": [
+                0.1711,
+                0.1381,
+                0.8289,
+                0.8619
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "ALB-F-TM-06",
+      "title": "Ficha TM-06 · Muro Fachada ppal",
+      "level": "01. Planta Alta",
+      "sector": "01. Planta Alta",
+      "kind": "element",
+      "element": "TM-06",
+      "elementId": "623954",
+      "elementKind": "TM",
+      "note": "Corte de muro con capas del tipo del modelo.",
+      "sheetId": "2470567",
+      "pdf": "/casa-angel/rubros/albanileria/ALB-F-TM-06.pdf",
+      "image": "/casa-angel/rubros/albanileria/ALB-F-TM-06.svg.gz",
+      "preview": "/casa-angel/rubros/albanileria/ALB-F-TM-06-preview.png",
+      "thumbnail": "/casa-angel/rubros/albanileria/ALB-F-TM-06.png",
+      "views": [
+        {
+          "id": "2470478",
+          "name": "TM-06 · planta (01. Planta Alta)",
+          "label": "TM-06 · planta (01. Planta Alta)   1:50",
+          "scale": 50,
+          "kind": "plan",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "image": "/casa-angel/rubros/albanileria/ALB-F-TM-06-view-2470478.svg.gz",
+          "region": [
+            0.1147,
+            0.3622,
+            0.422,
+            0.6199
+          ],
+          "tags": [
+            "AB-PA-09",
+            "AB-PA-10",
+            "AB-PA-11",
+            "AB-PA-12"
+          ],
+          "dimensions": [
+            {
+              "label": "AB-PA-09 largo",
+              "values_m": [
+                4.0
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PA-10 largo",
+              "values_m": [
+                3.9
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PA-11 largo",
+              "values_m": [
+                3.9
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PA-12 largo",
+              "values_m": [
+                3.8957
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "AB-PA-09",
+              "elementId": "623954",
+              "label": "AB-PA-09 · TM-06 · 4,00 × 2,50 · e 10",
+              "box": [
+                0.3594,
+                0.8448,
+                0.6409,
+                0.8567
+              ]
+            },
+            {
+              "code": "AB-PA-10",
+              "elementId": "679167",
+              "label": "AB-PA-10 · TM-06 · 3,90 × 2,80 · e 10",
+              "box": [
+                0.0848,
+                0.1433,
+                0.3594,
+                0.1552
+              ]
+            },
+            {
+              "code": "AB-PA-11",
+              "elementId": "891413",
+              "label": "AB-PA-11 · TM-06 · 3,90 × 2,50 · e 10",
+              "box": [
+                0.0848,
+                0.8448,
+                0.3594,
+                0.8567
+              ]
+            },
+            {
+              "code": "AB-PA-12",
+              "elementId": "987320",
+              "label": "AB-PA-12 · TM-06 · 3,90 × 2,50 · e 10",
+              "box": [
+                0.6409,
+                0.8448,
+                0.9152,
+                0.8567
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2470505",
+          "name": "TM-06 · corte de muro",
+          "label": "TM-06 · corte de muro   1:5",
+          "scale": 5,
+          "kind": "section",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "image": "/casa-angel/rubros/albanileria/ALB-F-TM-06-view-2470505.svg.gz",
+          "region": [
+            0.5087,
+            0.2194,
+            0.6984,
+            0.4037
+          ],
+          "tags": [
+            "TM-06"
+          ],
+          "dimensions": [
+            {
+              "label": "TM-06 capas",
+              "values_m": [
+                0.02,
+                0.08
+              ],
+              "associative": false
+            },
+            {
+              "label": "TM-06 espesor",
+              "values_m": [
+                0.1
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "AB-PA-09",
+              "elementId": "623954",
+              "label": "AB-PA-09 · TM-06 · 4,00 × 2,50 · e 10",
+              "box": [
+                0.5369,
+                0.0,
+                0.651,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2470533",
+          "name": "AB-PA-09 · vista",
+          "label": "AB-PA-09 · vista   1:40",
+          "scale": 40,
+          "kind": "elevation",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "image": "/casa-angel/rubros/albanileria/ALB-F-TM-06-view-2470533.svg.gz",
+          "region": [
+            0.4029,
+            0.5531,
+            0.6233,
+            0.716
+          ],
+          "tags": [
+            "AB-PA-09"
+          ],
+          "dimensions": [
+            {
+              "label": "AB-PA-09 vanos",
+              "values_m": [
+                3.2999999999999883,
+                0.6000000000000131,
+                0.09999999999999784
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PA-09 largo",
+              "values_m": [
+                3.999999999999999
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PA-09 arranque + alto",
+              "values_m": [
+                2.499999999999743
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "AB-PA-09",
+              "elementId": "623954",
+              "label": "AB-PA-09 · TM-06 · 4,00 × 2,50 · e 10",
+              "box": [
+                0.2011,
+                0.0432,
+                0.6921,
+                0.879
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2470556",
+          "name": "AB-PA-09 · axonométrica",
+          "label": "AB-PA-09 · axonométrica   1:40",
+          "scale": 40,
+          "kind": "axo",
+          "sector": "Sector: 01. Planta Alta",
+          "roomLabel": "Sector: 01. Planta Alta",
+          "image": "/casa-angel/rubros/albanileria/ALB-F-TM-06-view-2470556.svg.gz",
+          "region": [
+            0.6266,
+            0.5156,
+            0.7616,
+            0.7535
+          ],
+          "tags": [
+            "AB-PA-09"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "AB-PA-09",
+              "elementId": "623954",
+              "label": "AB-PA-09 · TM-06 · 4,00 × 2,50 · e 10",
+              "box": [
+                0.2093,
+                0.138,
+                0.7907,
+                0.862
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "ALB-F-TM-07",
+      "title": "Ficha TM-07 · W111.ar 70.400 ST 12.5",
+      "level": "00. Planta Baja",
+      "sector": "00. Planta Baja",
+      "kind": "element",
+      "element": "TM-07",
+      "elementId": "607239",
+      "elementKind": "TM",
+      "note": "Corte de muro con capas del tipo del modelo.",
+      "sheetId": "2470699",
+      "pdf": "/casa-angel/rubros/albanileria/ALB-F-TM-07.pdf",
+      "image": "/casa-angel/rubros/albanileria/ALB-F-TM-07.svg.gz",
+      "preview": "/casa-angel/rubros/albanileria/ALB-F-TM-07-preview.png",
+      "thumbnail": "/casa-angel/rubros/albanileria/ALB-F-TM-07.png",
+      "views": [
+        {
+          "id": "2470594",
+          "name": "TM-07 · planta (00. Planta Baja)",
+          "label": "TM-07 · planta (00. Planta Baja)   1:75",
+          "scale": 75,
+          "kind": "plan",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/albanileria/ALB-F-TM-07-view-2470594.svg.gz",
+          "region": [
+            0.1147,
+            0.301,
+            0.3818,
+            0.6811
+          ],
+          "tags": [
+            "AB-PB-27",
+            "AB-PB-28",
+            "AB-PB-25",
+            "AB-PB-30",
+            "AB-PB-29",
+            "AB-PB-26",
+            "AB-PB-31"
+          ],
+          "dimensions": [
+            {
+              "label": "AB-PB-27 largo",
+              "values_m": [
+                5.2
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-28 largo",
+              "values_m": [
+                4.0
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-25 largo",
+              "values_m": [
+                3.9
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-30 largo",
+              "values_m": [
+                3.9
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-29 largo",
+              "values_m": [
+                2.8
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-26 largo",
+              "values_m": [
+                2.8
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-31 largo",
+              "values_m": [
+                0.7
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "AB-PB-27",
+              "elementId": "607239",
+              "label": "AB-PB-27 · TM-07 · 5,20 × 2,80 · e 9,5",
+              "box": [
+                0.7674,
+                0.5807,
+                0.7726,
+                0.8601
+              ]
+            },
+            {
+              "code": "AB-PB-28",
+              "elementId": "645730",
+              "label": "AB-PB-28 · TM-07 · 4,00 × 2,80 · e 9,5",
+              "box": [
+                0.2813,
+                0.9246,
+                0.4974,
+                0.9297
+              ]
+            },
+            {
+              "code": "AB-PB-25",
+              "elementId": "363229",
+              "label": "AB-PB-25 · TM-07 · 3,90 × 2,80 · e 9,5",
+              "box": [
+                0.4974,
+                0.9246,
+                0.708,
+                0.9297
+              ]
+            },
+            {
+              "code": "AB-PB-30",
+              "elementId": "2274570",
+              "label": "AB-PB-30 · TM-07 · 3,90 × 2,80 · e 9,5",
+              "box": [
+                0.0707,
+                0.9246,
+                0.2813,
+                0.9297
+              ]
+            },
+            {
+              "code": "AB-PB-29",
+              "elementId": "1039708",
+              "label": "AB-PB-29 · TM-07 · 2,80 × 2,80 · e 9,5",
+              "box": [
+                0.7818,
+                0.0703,
+                0.7869,
+                0.2207
+              ]
+            },
+            {
+              "code": "AB-PB-26",
+              "elementId": "368868",
+              "label": "AB-PB-26 · TM-07 · 2,80 × 3,00 · e 9,5",
+              "box": [
+                0.9242,
+                0.0703,
+                0.9293,
+                0.2207
+              ]
+            },
+            {
+              "code": "AB-PB-31",
+              "elementId": "2344129",
+              "label": "AB-PB-31 · TM-07 · 0,70 × 2,80 · e 9,5",
+              "box": [
+                0.7696,
+                0.5431,
+                0.7747,
+                0.5807
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2470633",
+          "name": "TM-07 · corte de muro",
+          "label": "TM-07 · corte de muro   1:5",
+          "scale": 5,
+          "kind": "section",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/albanileria/ALB-F-TM-07-view-2470633.svg.gz",
+          "region": [
+            0.4615,
+            0.2219,
+            0.7054,
+            0.4063
+          ],
+          "tags": [
+            "TM-07"
+          ],
+          "dimensions": [
+            {
+              "label": "TM-07 capas",
+              "values_m": [
+                0.0125,
+                0.07,
+                0.0125
+              ],
+              "associative": false
+            },
+            {
+              "label": "TM-07 espesor",
+              "values_m": [
+                0.095
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "AB-PB-27",
+              "elementId": "607239",
+              "label": "AB-PB-27 · TM-07 · 5,20 × 2,80 · e 9,5",
+              "box": [
+                0.5664,
+                0.0,
+                0.6507,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2470663",
+          "name": "AB-PB-27 · vista",
+          "label": "AB-PB-27 · vista   1:40",
+          "scale": 40,
+          "kind": "elevation",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/albanileria/ALB-F-TM-07-view-2470663.svg.gz",
+          "region": [
+            0.3635,
+            0.5499,
+            0.6163,
+            0.7243
+          ],
+          "tags": [
+            "AB-PB-27"
+          ],
+          "dimensions": [
+            {
+              "label": "AB-PB-27 vanos",
+              "values_m": [
+                0.08750000000002965,
+                0.6250000000000011,
+                2.7574999999999945,
+                1.2000000000000144,
+                0.5300000000000062
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-27 largo",
+              "values_m": [
+                5.2000000000000455
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-27 arranque + alto",
+              "values_m": [
+                2.8000000000002854
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "AB-PB-27",
+              "elementId": "607239",
+              "label": "AB-PB-27 · TM-07 · 5,20 × 2,80 · e 9,5",
+              "box": [
+                0.1753,
+                0.2716,
+                0.7316,
+                0.887
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2470688",
+          "name": "AB-PB-27 · axonométrica",
+          "label": "AB-PB-27 · axonométrica   1:40",
+          "scale": 40,
+          "kind": "axo",
+          "sector": "Sector: 00. Planta Baja",
+          "roomLabel": "Sector: 00. Planta Baja",
+          "image": "/casa-angel/rubros/albanileria/ALB-F-TM-07-view-2470688.svg.gz",
+          "region": [
+            0.6122,
+            0.5233,
+            0.77,
+            0.751
+          ],
+          "tags": [
+            "AB-PB-27"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "AB-PB-27",
+              "elementId": "607239",
+              "label": "AB-PB-27 · TM-07 · 5,20 × 2,80 · e 9,5",
+              "box": [
+                0.1789,
+                0.1443,
+                0.8211,
+                0.8557
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "ALB-F-TM-08",
+      "title": "Ficha TM-08 · W112.ar 70.400 ST.RH 12.5",
+      "level": "00. Planta Baja",
+      "sector": "00. Planta Baja",
+      "kind": "element",
+      "element": "TM-08",
+      "elementId": "1005195",
+      "elementKind": "TM",
+      "note": "Corte de muro con capas del tipo del modelo.",
+      "sheetId": "2470816",
+      "pdf": "/casa-angel/rubros/albanileria/ALB-F-TM-08.pdf",
+      "image": "/casa-angel/rubros/albanileria/ALB-F-TM-08.svg.gz",
+      "preview": "/casa-angel/rubros/albanileria/ALB-F-TM-08-preview.png",
+      "thumbnail": "/casa-angel/rubros/albanileria/ALB-F-TM-08.png",
+      "views": [
+        {
+          "id": "2470726",
+          "name": "TM-08 · planta (00. Planta Baja)",
+          "label": "TM-08 · planta (00. Planta Baja)   1:75",
+          "scale": 75,
+          "kind": "plan",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/albanileria/ALB-F-TM-08-view-2470726.svg.gz",
+          "region": [
+            0.1233,
+            0.365,
+            0.4133,
+            0.6171
+          ],
+          "tags": [
+            "AB-PB-35",
+            "AB-PB-33",
+            "AB-PB-32",
+            "AB-PB-34"
+          ],
+          "dimensions": [
+            {
+              "label": "AB-PB-35 largo",
+              "values_m": [
+                4.9824
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-33 largo",
+              "values_m": [
+                4.0
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-32 largo",
+              "values_m": [
+                3.9
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-34 largo",
+              "values_m": [
+                3.9
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "AB-PB-35",
+              "elementId": "1005195",
+              "label": "AB-PB-35 · TM-08 · 4,98 × 3,00 · e 12",
+              "box": [
+                0.929,
+                0.106,
+                0.9349,
+                0.5276
+              ]
+            },
+            {
+              "code": "AB-PB-33",
+              "elementId": "645731",
+              "label": "AB-PB-33 · TM-08 · 4,00 × 2,80 · e 12",
+              "box": [
+                0.259,
+                0.8842,
+                0.458,
+                0.894
+              ]
+            },
+            {
+              "code": "AB-PB-32",
+              "elementId": "366618",
+              "label": "AB-PB-32 · TM-08 · 3,90 × 2,80 · e 12",
+              "box": [
+                0.458,
+                0.8842,
+                0.6519,
+                0.894
+              ]
+            },
+            {
+              "code": "AB-PB-34",
+              "elementId": "762338",
+              "label": "AB-PB-34 · TM-08 · 3,90 × 2,80 · e 12",
+              "box": [
+                0.0651,
+                0.8842,
+                0.259,
+                0.894
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2470753",
+          "name": "TM-08 · corte de muro",
+          "label": "TM-08 · corte de muro   1:5",
+          "scale": 5,
+          "kind": "section",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/albanileria/ALB-F-TM-08-view-2470753.svg.gz",
+          "region": [
+            0.4786,
+            0.2202,
+            0.7286,
+            0.4045
+          ],
+          "tags": [
+            "TM-08"
+          ],
+          "dimensions": [
+            {
+              "label": "TM-08 capas",
+              "values_m": [
+                0.0125,
+                0.0125,
+                0.07,
+                0.0125,
+                0.0125
+              ],
+              "associative": false
+            },
+            {
+              "label": "TM-08 espesor",
+              "values_m": [
+                0.12
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "AB-PB-35",
+              "elementId": "1005195",
+              "label": "AB-PB-35 · TM-08 · 4,98 × 3,00 · e 12",
+              "box": [
+                0.5527,
+                0.0,
+                0.6566,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2470787",
+          "name": "AB-PB-35 · vista",
+          "label": "AB-PB-35 · vista   1:40",
+          "scale": 40,
+          "kind": "elevation",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/albanileria/ALB-F-TM-08-view-2470787.svg.gz",
+          "region": [
+            0.3952,
+            0.5443,
+            0.6421,
+            0.7264
+          ],
+          "tags": [
+            "AB-PB-35"
+          ],
+          "dimensions": [
+            {
+              "label": "AB-PB-35 largo",
+              "values_m": [
+                4.982366690563954
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PB-35 arranque + alto",
+              "values_m": [
+                3.0000000000002855
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "AB-PB-35",
+              "elementId": "1005195",
+              "label": "AB-PB-35 · TM-08 · 4,98 × 3,00 · e 12",
+              "box": [
+                0.1795,
+                0.2601,
+                0.7491,
+                0.8917
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2470805",
+          "name": "AB-PB-35 · axonométrica",
+          "label": "AB-PB-35 · axonométrica   1:40",
+          "scale": 40,
+          "kind": "axo",
+          "sector": "Sector: 00. Planta Baja",
+          "roomLabel": "Sector: 00. Planta Baja",
+          "image": "/casa-angel/rubros/albanileria/ALB-F-TM-08-view-2470805.svg.gz",
+          "region": [
+            0.6205,
+            0.518,
+            0.7788,
+            0.7527
+          ],
+          "tags": [
+            "AB-PB-35"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "AB-PB-35",
+              "elementId": "1005195",
+              "label": "AB-PB-35 · TM-08 · 4,98 × 3,00 · e 12",
+              "box": [
+                0.1784,
+                0.1399,
+                0.8216,
+                0.8601
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "ALB-F-TM-09",
+      "title": "Ficha TM-09 · Durlock Chimenea",
+      "level": "01. Planta Alta",
+      "sector": "01. Planta Alta",
+      "kind": "element",
+      "element": "TM-09",
+      "elementId": "986707",
+      "elementKind": "TM",
+      "note": "Corte de muro con capas del tipo del modelo.",
+      "sheetId": "2470921",
+      "pdf": "/casa-angel/rubros/albanileria/ALB-F-TM-09.pdf",
+      "image": "/casa-angel/rubros/albanileria/ALB-F-TM-09.svg.gz",
+      "preview": "/casa-angel/rubros/albanileria/ALB-F-TM-09-preview.png",
+      "thumbnail": "/casa-angel/rubros/albanileria/ALB-F-TM-09.png",
+      "views": [
+        {
+          "id": "2470843",
+          "name": "TM-09 · planta (01. Planta Alta)",
+          "label": "TM-09 · planta (01. Planta Alta)   1:10",
+          "scale": 10,
+          "kind": "plan",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "image": "/casa-angel/rubros/albanileria/ALB-F-TM-09-view-2470843.svg.gz",
+          "region": [
+            0.1179,
+            0.2244,
+            0.4188,
+            0.7577
+          ],
+          "tags": [
+            "AB-PA-07",
+            "AB-PA-08",
+            "AB-PA-06"
+          ],
+          "dimensions": [
+            {
+              "label": "AB-PA-07 largo",
+              "values_m": [
+                1.35
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PA-08 largo",
+              "values_m": [
+                0.675
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PA-06 largo",
+              "values_m": [
+                0.675
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "AB-PA-07",
+              "elementId": "986707",
+              "label": "AB-PA-07 · TM-09 · 1,35 × 1,00 · e 5",
+              "box": [
+                0.3742,
+                0.3062,
+                0.3922,
+                0.701
+              ]
+            },
+            {
+              "code": "AB-PA-08",
+              "elementId": "986754",
+              "label": "AB-PA-08 · TM-09 · 0,68 × 1,00 · e 5",
+              "box": [
+                0.3832,
+                0.6867,
+                0.6258,
+                0.701
+              ]
+            },
+            {
+              "code": "AB-PA-06",
+              "elementId": "986634",
+              "label": "AB-PA-06 · TM-09 · 0,68 × 1,00 · e 5",
+              "box": [
+                0.3742,
+                0.299,
+                0.6258,
+                0.3133
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2470866",
+          "name": "TM-09 · corte de muro",
+          "label": "TM-09 · corte de muro   1:5",
+          "scale": 5,
+          "kind": "section",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "image": "/casa-angel/rubros/albanileria/ALB-F-TM-09-view-2470866.svg.gz",
+          "region": [
+            0.5153,
+            0.2077,
+            0.6918,
+            0.3921
+          ],
+          "tags": [
+            "TM-09"
+          ],
+          "dimensions": [
+            {
+              "label": "TM-09 capas",
+              "values_m": [
+                0.05
+              ],
+              "associative": false
+            },
+            {
+              "label": "TM-09 espesor",
+              "values_m": [
+                0.05
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "AB-PA-07",
+              "elementId": "986707",
+              "label": "AB-PA-07 · TM-09 · 1,35 × 1,00 · e 5",
+              "box": [
+                0.577,
+                0.0,
+                0.6383,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2470892",
+          "name": "AB-PA-07 · vista",
+          "label": "AB-PA-07 · vista   1:20",
+          "scale": 20,
+          "kind": "elevation",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "image": "/casa-angel/rubros/albanileria/ALB-F-TM-09-view-2470892.svg.gz",
+          "region": [
+            0.4009,
+            0.4807,
+            0.6253,
+            0.7652
+          ],
+          "tags": [
+            "AB-PA-07"
+          ],
+          "dimensions": [
+            {
+              "label": "AB-PA-07 largo",
+              "values_m": [
+                1.3499999999999999
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PA-07 arranque + alto",
+              "values_m": [
+                1.0
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "AB-PA-07",
+              "elementId": "986707",
+              "label": "AB-PA-07 · TM-09 · 1,35 × 1,00 · e 5",
+              "box": [
+                0.2457,
+                0.6144,
+                0.5771,
+                0.8837
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2470910",
+          "name": "AB-PA-07 · axonométrica",
+          "label": "AB-PA-07 · axonométrica   1:20",
+          "scale": 20,
+          "kind": "axo",
+          "sector": "Sector: 01. Planta Alta",
+          "roomLabel": "Sector: 01. Planta Alta",
+          "image": "/casa-angel/rubros/albanileria/ALB-F-TM-09-view-2470910.svg.gz",
+          "region": [
+            0.6148,
+            0.5116,
+            0.7734,
+            0.7343
+          ],
+          "tags": [
+            "AB-PA-07"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "AB-PA-07",
+              "elementId": "986707",
+              "label": "AB-PA-07 · TM-09 · 1,35 × 1,00 · e 5",
+              "box": [
+                0.328,
+                0.2668,
+                0.672,
+                0.7332
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "ALB-F-TM-10",
+      "title": "Ficha TM-10 · Cierre Cielorraso",
+      "level": "01. Planta Alta",
+      "sector": "01. Planta Alta",
+      "kind": "element",
+      "element": "TM-10",
+      "elementId": "2144303",
+      "elementKind": "TM",
+      "note": "Corte de muro con capas del tipo del modelo.",
+      "sheetId": "2471035",
+      "pdf": "/casa-angel/rubros/albanileria/ALB-F-TM-10.pdf",
+      "image": "/casa-angel/rubros/albanileria/ALB-F-TM-10.svg.gz",
+      "preview": "/casa-angel/rubros/albanileria/ALB-F-TM-10-preview.png",
+      "thumbnail": "/casa-angel/rubros/albanileria/ALB-F-TM-10.png",
+      "views": [
+        {
+          "id": "2470948",
+          "name": "TM-10 · planta (01. Planta Alta)",
+          "label": "TM-10 · planta (01. Planta Alta)   1:50",
+          "scale": 50,
+          "kind": "plan",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "image": "/casa-angel/rubros/albanileria/ALB-F-TM-10-view-2470948.svg.gz",
+          "region": [
+            0.1251,
+            0.3913,
+            0.291,
+            0.5909
+          ],
+          "tags": [
+            "AB-PA-04",
+            "AB-PA-05",
+            "AB-PA-03",
+            "AB-PA-01",
+            "AB-PA-02"
+          ],
+          "dimensions": [
+            {
+              "label": "AB-PA-04 largo",
+              "values_m": [
+                5.2425
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PA-05 largo",
+              "values_m": [
+                4.09
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PA-03 largo",
+              "values_m": [
+                2.7525
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PA-01 largo",
+              "values_m": [
+                2.4
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PA-02 largo",
+              "values_m": [
+                1.4284
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "AB-PA-04",
+              "elementId": "2144303",
+              "label": "AB-PA-04 · TM-10 · 5,24 × 0,24 · e 2",
+              "box": [
+                0.1573,
+                0.8118,
+                0.8427,
+                0.8149
+              ]
+            },
+            {
+              "code": "AB-PA-05",
+              "elementId": "2144408",
+              "label": "AB-PA-05 · TM-10 · 4,09 × 0,29 · e 2",
+              "box": [
+                0.1573,
+                0.1851,
+                0.1599,
+                0.8133
+              ]
+            },
+            {
+              "code": "AB-PA-03",
+              "elementId": "2144297",
+              "label": "AB-PA-03 · TM-10 · 2,75 × 1,44 · e 2",
+              "box": [
+                0.4835,
+                0.7074,
+                0.8427,
+                0.7104
+              ]
+            },
+            {
+              "code": "AB-PA-01",
+              "elementId": "2144284",
+              "label": "AB-PA-01 · TM-10 · 2,40 × 3,00 · e 2",
+              "box": [
+                0.3504,
+                0.1851,
+                0.353,
+                0.5538
+              ]
+            },
+            {
+              "code": "AB-PA-02",
+              "elementId": "2144290",
+              "label": "AB-PA-02 · TM-10 · 1,59 × 3,00 · e 2",
+              "box": [
+                0.3504,
+                0.5538,
+                0.4835,
+                0.7104
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2470979",
+          "name": "TM-10 · corte de muro",
+          "label": "TM-10 · corte de muro   1:5",
+          "scale": 5,
+          "kind": "section",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "image": "/casa-angel/rubros/albanileria/ALB-F-TM-10-view-2470979.svg.gz",
+          "region": [
+            0.4657,
+            0.2221,
+            0.6208,
+            0.4064
+          ],
+          "tags": [
+            "TM-10"
+          ],
+          "dimensions": [
+            {
+              "label": "TM-10 capas",
+              "values_m": [
+                0.02
+              ],
+              "associative": false
+            },
+            {
+              "label": "TM-10 espesor",
+              "values_m": [
+                0.02
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "AB-PA-04",
+              "elementId": "2144303",
+              "label": "AB-PA-04 · TM-10 · 5,24 × 0,24 · e 2",
+              "box": [
+                0.6569,
+                0.3479,
+                0.6848,
+                0.7521
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2471005",
+          "name": "AB-PA-04 · vista",
+          "label": "AB-PA-04 · vista   1:30",
+          "scale": 30,
+          "kind": "elevation",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "image": "/casa-angel/rubros/albanileria/ALB-F-TM-10-view-2471005.svg.gz",
+          "region": [
+            0.2763,
+            0.5237,
+            0.5905,
+            0.7509
+          ],
+          "tags": [
+            "AB-PA-04"
+          ],
+          "dimensions": [
+            {
+              "label": "AB-PA-04 largo",
+              "values_m": [
+                5.2424965103893335
+              ],
+              "associative": false
+            },
+            {
+              "label": "AB-PA-04 arranque + alto",
+              "values_m": [
+                2.557000000000001,
+                0.24299999999974117
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "AB-PA-04",
+              "elementId": "2144303",
+              "label": "AB-PA-04 · TM-10 · 5,24 × 0,24 · e 2",
+              "box": [
+                0.1539,
+                0.264,
+                0.7566,
+                0.3187
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2471024",
+          "name": "AB-PA-04 · axonométrica",
+          "label": "AB-PA-04 · axonométrica   1:30",
+          "scale": 30,
+          "kind": "axo",
+          "sector": "Sector: 01. Planta Alta",
+          "roomLabel": "Sector: 01. Planta Alta",
+          "image": "/casa-angel/rubros/albanileria/ALB-F-TM-10-view-2471024.svg.gz",
+          "region": [
+            0.5714,
+            0.5454,
+            0.7782,
+            0.7291
+          ],
+          "tags": [
+            "AB-PA-04"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "AB-PA-04",
+              "elementId": "2144303",
+              "label": "AB-PA-04 · TM-10 · 5,24 × 0,24 · e 2",
+              "box": [
+                0.1748,
+                0.2271,
+                0.8252,
+                0.7729
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "codes": [
+    {
+      "code": "TM-01",
+      "kind": "TM",
+      "label": "TM-01 · mampostería interior 10 cm · 77,11 m²",
+      "status": "Composición genérica · Capas: pintura (genérico) 10 cm",
+      "area_m2": 77.11,
+      "length_m": 27.55,
+      "volume_m3": 7.668,
+      "thickness_m": 0.1,
+      "type": "Muro Interior 10cm",
+      "layers": [
+        {
+          "material": "White Paint",
+          "function": "Structure",
+          "thickness_m": 0.1
+        }
+      ]
+    },
+    {
+      "code": "TM-02",
+      "kind": "TM",
+      "label": "TM-02 · mampostería interior 20 cm · 5,16 m²",
+      "status": "Composición genérica · Capas: pintura (genérico) 20 cm",
+      "area_m2": 5.16,
+      "length_m": 2.8,
+      "volume_m3": 0.716,
+      "thickness_m": 0.2,
+      "type": "Muro Interior 20cm",
+      "layers": [
+        {
+          "material": "White Paint",
+          "function": "Structure",
+          "thickness_m": 0.2
+        }
+      ]
+    },
+    {
+      "code": "TM-03",
+      "kind": "TM",
+      "label": "TM-03 · bloque de hormigón 5 cm · 3,08 m²",
+      "status": "Capas: bloque de hormigón 5 cm",
+      "area_m2": 3.08,
+      "length_m": 4.4,
+      "volume_m3": 0.154,
+      "thickness_m": 0.05,
+      "type": "Interior - Blockwork 101",
+      "layers": [
+        {
+          "material": "Concrete Masonry Units",
+          "function": "Structure",
+          "thickness_m": 0.05
+        }
+      ]
+    },
+    {
+      "code": "TM-04",
+      "kind": "TM",
+      "label": "TM-04 · tabique bajo escalera (hormigón 10 cm) · 8,81 m²",
+      "status": "Capas: hormigón 10 cm",
+      "area_m2": 8.81,
+      "length_m": 6.94,
+      "volume_m3": 0.881,
+      "thickness_m": 0.1,
+      "type": "Bajo Escalera",
+      "layers": [
+        {
+          "material": "Concrete, Cast In Situ",
+          "function": "Structure",
+          "thickness_m": 0.1
+        }
+      ]
+    },
+    {
+      "code": "TM-05",
+      "kind": "TM",
+      "label": "TM-05 · muro de fachada (eje) · 34,59 m²",
+      "status": "Capas: pintura (genérico) 14 / hormigón 1 cm",
+      "area_m2": 34.59,
+      "length_m": 16.89,
+      "volume_m3": 5.114,
+      "thickness_m": 0.15,
+      "type": "Muro Fachada eje",
+      "layers": [
+        {
+          "material": "White Paint",
+          "function": "Structure",
+          "thickness_m": 0.14
+        },
+        {
+          "material": "Concrete, Cast In Situ",
+          "function": "Structure",
+          "thickness_m": 0.01
+        }
+      ]
+    },
+    {
+      "code": "TM-06",
+      "kind": "TM",
+      "label": "TM-06 · muro de fachada principal (hormigón visto 8 cm) · 47,37 m²",
+      "status": "Capas: pintura (genérico) 2 / hormigón de fachada 8 cm",
+      "area_m2": 47.37,
+      "length_m": 15.7,
+      "volume_m3": 4.701,
+      "thickness_m": 0.1,
+      "type": "Muro Fachada ppal",
+      "layers": [
+        {
+          "material": "White Paint",
+          "function": "Structure",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Hormigon fachada",
+          "function": "Structure",
+          "thickness_m": 0.08
+        }
+      ]
+    },
+    {
+      "code": "TM-07",
+      "kind": "TM",
+      "label": "TM-07 · Durlock W111: 1 placa ST por cara, montante 70 · 54,16 m²",
+      "status": "Capas: placa Knauf ST 12,5 1,2 / montantes y soleras 70 7 / placa Knauf ST 12,5 1,2 cm",
+      "area_m2": 54.16,
+      "length_m": 29.7,
+      "volume_m3": 5.145,
+      "thickness_m": 0.095,
+      "type": "W111.ar 70.400 ST 12.5",
+      "layers": [
+        {
+          "material": "Placa de Yeso ST 12,5mm Knauf",
+          "function": "Finish2",
+          "thickness_m": 0.0125
+        },
+        {
+          "material": "Montantes y Soleras Knauf",
+          "function": "Structure",
+          "thickness_m": 0.07
+        },
+        {
+          "material": "Placa de Yeso ST 12,5mm Knauf",
+          "function": "Finish2",
+          "thickness_m": 0.0125
+        }
+      ]
+    },
+    {
+      "code": "TM-08",
+      "kind": "TM",
+      "label": "TM-08 · Durlock W112: 2 placas por cara (ST / RH), montante 70 · 52,72 m²",
+      "status": "Capas: placa Knauf ST 12,5 1,2 / placa Knauf ST 12,5 1,2 / montantes y soleras 70 7 / placa Knauf RH 12,5 1,2 / placa Knauf RH 12,5 1,2 cm",
+      "area_m2": 52.72,
+      "length_m": 21.46,
+      "volume_m3": 5.818,
+      "thickness_m": 0.12,
+      "type": "W112.ar 70.400 ST.RH 12.5",
+      "layers": [
+        {
+          "material": "Placa de Yeso ST 12,5mm Knauf",
+          "function": "Finish2",
+          "thickness_m": 0.0125
+        },
+        {
+          "material": "Placa de Yeso ST 12,5mm Knauf",
+          "function": "Finish2",
+          "thickness_m": 0.0125
+        },
+        {
+          "material": "Montantes y Soleras Knauf",
+          "function": "Structure",
+          "thickness_m": 0.07
+        },
+        {
+          "material": "Placa de Yeso RH 12,5mm Knauf",
+          "function": "Structure",
+          "thickness_m": 0.0125
+        },
+        {
+          "material": "Placa de Yeso RH 12,5mm Knauf",
+          "function": "Structure",
+          "thickness_m": 0.0125
+        }
+      ]
+    },
+    {
+      "code": "TM-09",
+      "kind": "TM",
+      "label": "TM-09 · revestimiento de chimenea (piedra 5 cm) · 2,50 m²",
+      "status": "Capas: piedra 5 cm",
+      "area_m2": 2.5,
+      "length_m": 2.7,
+      "volume_m3": 0.125,
+      "thickness_m": 0.05,
+      "type": "Durlock Chimenea",
+      "layers": [
+        {
+          "material": "Piedra Chimenea",
+          "function": "Structure",
+          "thickness_m": 0.05
+        }
+      ]
+    },
+    {
+      "code": "TM-10",
+      "kind": "TM",
+      "label": "TM-10 · cierre de cielorraso (2 cm) · 7,06 m²",
+      "status": "Composición genérica · Capas: genérico blanco 2 cm",
+      "area_m2": 7.06,
+      "length_m": 26.41,
+      "volume_m3": 0.141,
+      "thickness_m": 0.02,
+      "type": "Cierre Cielorraso",
+      "layers": [
+        {
+          "material": "<White>",
+          "function": "Structure",
+          "thickness_m": 0.02
+        }
+      ]
+    },
+    {
+      "code": "AB-PA-01",
+      "kind": "AB",
+      "label": "AB-PA-01 · TM-10 · 2,40 × 3,00 · e 2",
+      "status": "cierre de cielorraso (2 cm) · composición genérica en el modelo",
+      "elementId": "2144284",
+      "typeCode": "TM-10",
+      "level": "01. Planta Alta",
+      "length_m": 2.4,
+      "height_m": 3.0,
+      "area_m2": 0.56,
+      "volume_m3": 0.011
+    },
+    {
+      "code": "AB-PA-02",
+      "kind": "AB",
+      "label": "AB-PA-02 · TM-10 · 1,59 × 3,00 · e 2",
+      "status": "cierre de cielorraso (2 cm) · composición genérica en el modelo",
+      "elementId": "2144290",
+      "typeCode": "TM-10",
+      "level": "01. Planta Alta",
+      "length_m": 1.587,
+      "height_m": 3.0,
+      "area_m2": 0.39,
+      "volume_m3": 0.008
+    },
+    {
+      "code": "AB-PA-03",
+      "kind": "AB",
+      "label": "AB-PA-03 · TM-10 · 2,75 × 1,44 · e 2",
+      "status": "cierre de cielorraso (2 cm) · composición genérica en el modelo",
+      "elementId": "2144297",
+      "typeCode": "TM-10",
+      "level": "01. Planta Alta",
+      "length_m": 2.752,
+      "height_m": 1.443,
+      "area_m2": 0.64,
+      "volume_m3": 0.013
+    },
+    {
+      "code": "AB-PA-04",
+      "kind": "AB",
+      "label": "AB-PA-04 · TM-10 · 5,24 × 0,24 · e 2",
+      "status": "cierre de cielorraso (2 cm) · composición genérica en el modelo",
+      "elementId": "2144303",
+      "typeCode": "TM-10",
+      "level": "01. Planta Alta",
+      "length_m": 5.242,
+      "height_m": 0.243,
+      "area_m2": 1.25,
+      "volume_m3": 0.025
+    },
+    {
+      "code": "AB-PA-05",
+      "kind": "AB",
+      "label": "AB-PA-05 · TM-10 · 4,09 × 0,29 · e 2",
+      "status": "cierre de cielorraso (2 cm) · composición genérica en el modelo",
+      "elementId": "2144408",
+      "typeCode": "TM-10",
+      "level": "01. Planta Alta",
+      "length_m": 4.09,
+      "height_m": 0.288,
+      "area_m2": 1.15,
+      "volume_m3": 0.023
+    },
+    {
+      "code": "AB-PA-06",
+      "kind": "AB",
+      "label": "AB-PA-06 · TM-09 · 0,68 × 1,00 · e 5",
+      "status": "revestimiento de chimenea (piedra 5 cm)",
+      "elementId": "986634",
+      "typeCode": "TM-09",
+      "level": "01. Planta Alta",
+      "length_m": 0.675,
+      "height_m": 1.0,
+      "area_m2": 0.6,
+      "volume_m3": 0.03
+    },
+    {
+      "code": "AB-PA-07",
+      "kind": "AB",
+      "label": "AB-PA-07 · TM-09 · 1,35 × 1,00 · e 5",
+      "status": "revestimiento de chimenea (piedra 5 cm)",
+      "elementId": "986707",
+      "typeCode": "TM-09",
+      "level": "01. Planta Alta",
+      "length_m": 1.35,
+      "height_m": 1.0,
+      "area_m2": 1.35,
+      "volume_m3": 0.068
+    },
+    {
+      "code": "AB-PA-08",
+      "kind": "AB",
+      "label": "AB-PA-08 · TM-09 · 0,68 × 1,00 · e 5",
+      "status": "revestimiento de chimenea (piedra 5 cm)",
+      "elementId": "986754",
+      "typeCode": "TM-09",
+      "level": "01. Planta Alta",
+      "length_m": 0.675,
+      "height_m": 1.0,
+      "area_m2": 0.55,
+      "volume_m3": 0.028
+    },
+    {
+      "code": "AB-PA-09",
+      "kind": "AB",
+      "label": "AB-PA-09 · TM-06 · 4,00 × 2,50 · e 10",
+      "status": "muro de fachada principal (hormigón visto 8 cm)",
+      "elementId": "623954",
+      "typeCode": "TM-06",
+      "level": "01. Planta Alta",
+      "length_m": 4.0,
+      "height_m": 2.5,
+      "area_m2": 12.06,
+      "volume_m3": 1.196
+    },
+    {
+      "code": "AB-PA-10",
+      "kind": "AB",
+      "label": "AB-PA-10 · TM-06 · 3,90 × 2,80 · e 10",
+      "status": "muro de fachada principal (hormigón visto 8 cm)",
+      "elementId": "679167",
+      "typeCode": "TM-06",
+      "level": "01. Planta Alta",
+      "length_m": 3.9,
+      "height_m": 2.8,
+      "area_m2": 11.94,
+      "volume_m3": 1.185
+    },
+    {
+      "code": "AB-PA-11",
+      "kind": "AB",
+      "label": "AB-PA-11 · TM-06 · 3,90 × 2,50 · e 10",
+      "status": "muro de fachada principal (hormigón visto 8 cm)",
+      "elementId": "891413",
+      "typeCode": "TM-06",
+      "level": "01. Planta Alta",
+      "length_m": 3.9,
+      "height_m": 2.5,
+      "area_m2": 11.68,
+      "volume_m3": 1.16
+    },
+    {
+      "code": "AB-PA-12",
+      "kind": "AB",
+      "label": "AB-PA-12 · TM-06 · 3,90 × 2,50 · e 10",
+      "status": "muro de fachada principal (hormigón visto 8 cm)",
+      "elementId": "987320",
+      "typeCode": "TM-06",
+      "level": "01. Planta Alta",
+      "length_m": 3.896,
+      "height_m": 2.5,
+      "area_m2": 11.69,
+      "volume_m3": 1.159
+    },
+    {
+      "code": "AB-PA-13",
+      "kind": "AB",
+      "label": "AB-PA-13 · TM-01 · 2,80 × 2,56 · e 10",
+      "status": "mampostería interior 10 cm · composición genérica en el modelo",
+      "elementId": "393764",
+      "typeCode": "TM-01",
+      "level": "01. Planta Alta",
+      "length_m": 2.8,
+      "height_m": 2.56,
+      "area_m2": 6.66,
+      "volume_m3": 0.666
+    },
+    {
+      "code": "AB-PA-14",
+      "kind": "AB",
+      "label": "AB-PA-14 · TM-01 · 2,60 × 5,50 · e 10",
+      "status": "mampostería interior 10 cm · composición genérica en el modelo",
+      "elementId": "614243",
+      "typeCode": "TM-01",
+      "level": "01. Planta Alta",
+      "length_m": 2.6,
+      "height_m": 5.5,
+      "area_m2": 13.23,
+      "volume_m3": 1.319
+    },
+    {
+      "code": "AB-PA-15",
+      "kind": "AB",
+      "label": "AB-PA-15 · TM-01 · 3,90 × 3,30 · e 10",
+      "status": "mampostería interior 10 cm · composición genérica en el modelo",
+      "elementId": "874579",
+      "typeCode": "TM-01",
+      "level": "01. Planta Alta",
+      "length_m": 3.9,
+      "height_m": 3.3,
+      "area_m2": 13.32,
+      "volume_m3": 1.327
+    },
+    {
+      "code": "AB-PA-16",
+      "kind": "AB",
+      "label": "AB-PA-16 · TM-01 · 1,75 × 2,70 · e 10",
+      "status": "mampostería interior 10 cm · composición genérica en el modelo",
+      "elementId": "891823",
+      "typeCode": "TM-01",
+      "level": "01. Planta Alta",
+      "length_m": 1.75,
+      "height_m": 2.7,
+      "area_m2": 6.38,
+      "volume_m3": 0.638
+    },
+    {
+      "code": "AB-PA-17",
+      "kind": "AB",
+      "label": "AB-PA-17 · TM-01 · 2,80 × 3,00 · e 10",
+      "status": "mampostería interior 10 cm · composición genérica en el modelo",
+      "elementId": "1156693",
+      "typeCode": "TM-01",
+      "level": "01. Planta Alta",
+      "length_m": 2.8,
+      "height_m": 3.0,
+      "area_m2": 3.83,
+      "volume_m3": 0.357
+    },
+    {
+      "code": "AB-PA-18",
+      "kind": "AB",
+      "label": "AB-PA-18 · TM-07 · 2,11 × 2,80 · e 9,5",
+      "status": "Durlock W111: 1 placa ST por cara, montante 70",
+      "elementId": "986045",
+      "typeCode": "TM-07",
+      "level": "01. Planta Alta",
+      "length_m": 2.107,
+      "height_m": 2.8,
+      "area_m2": 5.51,
+      "volume_m3": 0.523
+    },
+    {
+      "code": "AB-PA-19",
+      "kind": "AB",
+      "label": "AB-PA-19 · TM-07 · 0,64 × 2,80 · e 9,5",
+      "status": "Durlock W111: 1 placa ST por cara, montante 70",
+      "elementId": "986101",
+      "typeCode": "TM-07",
+      "level": "01. Planta Alta",
+      "length_m": 0.643,
+      "height_m": 2.8,
+      "area_m2": 1.46,
+      "volume_m3": 0.139
+    },
+    {
+      "code": "AB-PA-20",
+      "kind": "AB",
+      "label": "AB-PA-20 · TM-07 · 0,70 × 0,90 · e 9,5",
+      "status": "Durlock W111: 1 placa ST por cara, montante 70",
+      "elementId": "1050648",
+      "typeCode": "TM-07",
+      "level": "01. Planta Alta",
+      "length_m": 0.7,
+      "height_m": 0.9,
+      "area_m2": 0.54,
+      "volume_m3": 0.051
+    },
+    {
+      "code": "AB-PA-21",
+      "kind": "AB",
+      "label": "AB-PA-21 · TM-07 · 2,95 × 0,90 · e 9,5",
+      "status": "Durlock W111: 1 placa ST por cara, montante 70",
+      "elementId": "1441734",
+      "typeCode": "TM-07",
+      "level": "01. Planta Alta",
+      "length_m": 2.952,
+      "height_m": 0.901,
+      "area_m2": 2.62,
+      "volume_m3": 0.249
+    },
+    {
+      "code": "AB-PA-22",
+      "kind": "AB",
+      "label": "AB-PA-22 · TM-08 · 1,64 × 3,30 · e 12",
+      "status": "Durlock W112: 2 placas por cara (ST / RH), montante 70",
+      "elementId": "459579",
+      "typeCode": "TM-08",
+      "level": "01. Planta Alta",
+      "length_m": 1.64,
+      "height_m": 3.3,
+      "area_m2": 4.23,
+      "volume_m3": 0.501
+    },
+    {
+      "code": "AB-PA-23",
+      "kind": "AB",
+      "label": "AB-PA-23 · TM-08 · 3,04 × 2,80 · e 12",
+      "status": "Durlock W112: 2 placas por cara (ST / RH), montante 70",
+      "elementId": "890335",
+      "typeCode": "TM-08",
+      "level": "01. Planta Alta",
+      "length_m": 3.035,
+      "height_m": 2.8,
+      "area_m2": 11.97,
+      "volume_m3": 1.436
+    },
+    {
+      "code": "AB-PB-01",
+      "kind": "AB",
+      "label": "AB-PB-01 · TM-04 · 1,74 × 2,22 · e 10",
+      "status": "tabique bajo escalera (hormigón 10 cm)",
+      "elementId": "1030426",
+      "typeCode": "TM-04",
+      "level": "00. Planta Baja",
+      "length_m": 1.744,
+      "height_m": 2.217,
+      "area_m2": 1.37,
+      "volume_m3": 0.137
+    },
+    {
+      "code": "AB-PB-02",
+      "kind": "AB",
+      "label": "AB-PB-02 · TM-04 · 2,45 × 1,25 · e 10",
+      "status": "tabique bajo escalera (hormigón 10 cm)",
+      "elementId": "1030557",
+      "typeCode": "TM-04",
+      "level": "00. Planta Baja",
+      "length_m": 2.45,
+      "height_m": 1.25,
+      "area_m2": 3.0,
+      "volume_m3": 0.3
+    },
+    {
+      "code": "AB-PB-03",
+      "kind": "AB",
+      "label": "AB-PB-03 · TM-04 · 2,74 × 2,70 · e 10",
+      "status": "tabique bajo escalera (hormigón 10 cm)",
+      "elementId": "1030740",
+      "typeCode": "TM-04",
+      "level": "00. Planta Baja",
+      "length_m": 2.744,
+      "height_m": 2.703,
+      "area_m2": 4.44,
+      "volume_m3": 0.444
+    },
+    {
+      "code": "AB-PB-04",
+      "kind": "AB",
+      "label": "AB-PB-04 · TM-10 · 3,85 × 0,30 · e 2",
+      "status": "cierre de cielorraso (2 cm) · composición genérica en el modelo",
+      "elementId": "2141926",
+      "typeCode": "TM-10",
+      "level": "00. Planta Baja",
+      "length_m": 3.85,
+      "height_m": 0.3,
+      "area_m2": 1.15,
+      "volume_m3": 0.023
+    },
+    {
+      "code": "AB-PB-05",
+      "kind": "AB",
+      "label": "AB-PB-05 · TM-10 · 1,59 × 0,30 · e 2",
+      "status": "cierre de cielorraso (2 cm) · composición genérica en el modelo",
+      "elementId": "2142088",
+      "typeCode": "TM-10",
+      "level": "00. Planta Baja",
+      "length_m": 1.587,
+      "height_m": 0.3,
+      "area_m2": 0.48,
+      "volume_m3": 0.01
+    },
+    {
+      "code": "AB-PB-06",
+      "kind": "AB",
+      "label": "AB-PB-06 · TM-10 · 4,90 × 0,30 · e 2",
+      "status": "cierre de cielorraso (2 cm) · composición genérica en el modelo",
+      "elementId": "2142231",
+      "typeCode": "TM-10",
+      "level": "00. Planta Baja",
+      "length_m": 4.9,
+      "height_m": 0.3,
+      "area_m2": 1.44,
+      "volume_m3": 0.029
+    },
+    {
+      "code": "AB-PB-07",
+      "kind": "AB",
+      "label": "AB-PB-07 · TM-03 · 0,55 × 1,10 · e 5",
+      "status": "bloque de hormigón 5 cm",
+      "elementId": "1973338",
+      "typeCode": "TM-03",
+      "level": "00. Planta Baja",
+      "length_m": 0.55,
+      "height_m": 1.1,
+      "area_m2": 0.66,
+      "volume_m3": 0.033
+    },
+    {
+      "code": "AB-PB-08",
+      "kind": "AB",
+      "label": "AB-PB-08 · TM-03 · 0,55 × 1,10 · e 5",
+      "status": "bloque de hormigón 5 cm",
+      "elementId": "1973393",
+      "typeCode": "TM-03",
+      "level": "00. Planta Baja",
+      "length_m": 0.55,
+      "height_m": 1.1,
+      "area_m2": 0.55,
+      "volume_m3": 0.028
+    },
+    {
+      "code": "AB-PB-09",
+      "kind": "AB",
+      "label": "AB-PB-09 · TM-03 · 0,55 × 1,10 · e 5",
+      "status": "bloque de hormigón 5 cm",
+      "elementId": "1973433",
+      "typeCode": "TM-03",
+      "level": "00. Planta Baja",
+      "length_m": 0.55,
+      "height_m": 1.1,
+      "area_m2": 0.66,
+      "volume_m3": 0.033
+    },
+    {
+      "code": "AB-PB-10",
+      "kind": "AB",
+      "label": "AB-PB-10 · TM-03 · 0,55 × 1,10 · e 5",
+      "status": "bloque de hormigón 5 cm",
+      "elementId": "1973544",
+      "typeCode": "TM-03",
+      "level": "00. Planta Baja",
+      "length_m": 0.55,
+      "height_m": 1.1,
+      "area_m2": 0.55,
+      "volume_m3": 0.027
+    },
+    {
+      "code": "AB-PB-11",
+      "kind": "AB",
+      "label": "AB-PB-11 · TM-03 · 0,55 × 0,30 · e 5",
+      "status": "bloque de hormigón 5 cm",
+      "elementId": "2010194",
+      "typeCode": "TM-03",
+      "level": "00. Planta Baja",
+      "length_m": 0.55,
+      "height_m": 0.3,
+      "area_m2": 0.18,
+      "volume_m3": 0.009
+    },
+    {
+      "code": "AB-PB-12",
+      "kind": "AB",
+      "label": "AB-PB-12 · TM-03 · 0,55 × 0,30 · e 5",
+      "status": "bloque de hormigón 5 cm",
+      "elementId": "2010195",
+      "typeCode": "TM-03",
+      "level": "00. Planta Baja",
+      "length_m": 0.55,
+      "height_m": 0.3,
+      "area_m2": 0.15,
+      "volume_m3": 0.007
+    },
+    {
+      "code": "AB-PB-13",
+      "kind": "AB",
+      "label": "AB-PB-13 · TM-03 · 0,55 × 0,30 · e 5",
+      "status": "bloque de hormigón 5 cm",
+      "elementId": "2010196",
+      "typeCode": "TM-03",
+      "level": "00. Planta Baja",
+      "length_m": 0.55,
+      "height_m": 0.3,
+      "area_m2": 0.18,
+      "volume_m3": 0.009
+    },
+    {
+      "code": "AB-PB-14",
+      "kind": "AB",
+      "label": "AB-PB-14 · TM-03 · 0,55 × 0,30 · e 5",
+      "status": "bloque de hormigón 5 cm",
+      "elementId": "2010197",
+      "typeCode": "TM-03",
+      "level": "00. Planta Baja",
+      "length_m": 0.55,
+      "height_m": 0.3,
+      "area_m2": 0.15,
+      "volume_m3": 0.007
+    },
+    {
+      "code": "AB-PB-15",
+      "kind": "AB",
+      "label": "AB-PB-15 · TM-05 · 5,30 × 2,80 · e 15",
+      "status": "muro de fachada (eje)",
+      "elementId": "363614",
+      "typeCode": "TM-05",
+      "level": "00. Planta Baja",
+      "length_m": 5.3,
+      "height_m": 2.8,
+      "area_m2": 11.88,
+      "volume_m3": 1.708
+    },
+    {
+      "code": "AB-PB-16",
+      "kind": "AB",
+      "label": "AB-PB-16 · TM-05 · 3,89 × 3,00 · e 15",
+      "status": "muro de fachada (eje)",
+      "elementId": "635282",
+      "typeCode": "TM-05",
+      "level": "00. Planta Baja",
+      "length_m": 3.895,
+      "height_m": 3.0,
+      "area_m2": 7.75,
+      "volume_m3": 1.162
+    },
+    {
+      "code": "AB-PB-17",
+      "kind": "AB",
+      "label": "AB-PB-17 · TM-05 · 3,80 × 3,00 · e 15",
+      "status": "muro de fachada (eje)",
+      "elementId": "757381",
+      "typeCode": "TM-05",
+      "level": "00. Planta Baja",
+      "length_m": 3.799,
+      "height_m": 3.0,
+      "area_m2": 7.48,
+      "volume_m3": 1.122
+    },
+    {
+      "code": "AB-PB-18",
+      "kind": "AB",
+      "label": "AB-PB-18 · TM-05 · 3,90 × 3,00 · e 15",
+      "status": "muro de fachada (eje)",
+      "elementId": "925454",
+      "typeCode": "TM-05",
+      "level": "00. Planta Baja",
+      "length_m": 3.9,
+      "height_m": 3.0,
+      "area_m2": 7.48,
+      "volume_m3": 1.122
+    },
+    {
+      "code": "AB-PB-19",
+      "kind": "AB",
+      "label": "AB-PB-19 · TM-01 · 2,80 × 3,00 · e 10",
+      "status": "mampostería interior 10 cm · composición genérica en el modelo",
+      "elementId": "368795",
+      "typeCode": "TM-01",
+      "level": "00. Planta Baja",
+      "length_m": 2.8,
+      "height_m": 3.0,
+      "area_m2": 3.83,
+      "volume_m3": 0.383
+    },
+    {
+      "code": "AB-PB-20",
+      "kind": "AB",
+      "label": "AB-PB-20 · TM-01 · 2,05 × 5,00 · e 10",
+      "status": "mampostería interior 10 cm · composición genérica en el modelo",
+      "elementId": "369966",
+      "typeCode": "TM-01",
+      "level": "005. Acceso ppal",
+      "length_m": 2.049,
+      "height_m": 5.0,
+      "area_m2": 11.13,
+      "volume_m3": 1.108
+    },
+    {
+      "code": "AB-PB-21",
+      "kind": "AB",
+      "label": "AB-PB-21 · TM-01 · 1,90 × 5,00 · e 10",
+      "status": "mampostería interior 10 cm · composición genérica en el modelo",
+      "elementId": "370093",
+      "typeCode": "TM-01",
+      "level": "005. Acceso ppal",
+      "length_m": 1.9,
+      "height_m": 5.0,
+      "area_m2": 8.0,
+      "volume_m3": 0.8
+    },
+    {
+      "code": "AB-PB-22",
+      "kind": "AB",
+      "label": "AB-PB-22 · TM-01 · 0,70 × 2,80 · e 10",
+      "status": "mampostería interior 10 cm · composición genérica en el modelo",
+      "elementId": "667737",
+      "typeCode": "TM-01",
+      "level": "00. Planta Baja",
+      "length_m": 0.7,
+      "height_m": 2.8,
+      "area_m2": 1.68,
+      "volume_m3": 0.168
+    },
+    {
+      "code": "AB-PB-23",
+      "kind": "AB",
+      "label": "AB-PB-23 · TM-01 · 0,65 × 2,80 · e 10",
+      "status": "mampostería interior 10 cm · composición genérica en el modelo",
+      "elementId": "1252990",
+      "typeCode": "TM-01",
+      "level": "00. Planta Baja",
+      "length_m": 0.655,
+      "height_m": 2.8,
+      "area_m2": 1.62,
+      "volume_m3": 0.162
+    },
+    {
+      "code": "AB-PB-24",
+      "kind": "AB",
+      "label": "AB-PB-24 · TM-02 · 2,80 × 2,80 · e 20",
+      "status": "mampostería interior 20 cm · composición genérica en el modelo",
+      "elementId": "1026315",
+      "typeCode": "TM-02",
+      "level": "00. Planta Baja",
+      "length_m": 2.8,
+      "height_m": 2.8,
+      "area_m2": 5.16,
+      "volume_m3": 0.716
+    },
+    {
+      "code": "AB-PB-25",
+      "kind": "AB",
+      "label": "AB-PB-25 · TM-07 · 3,90 × 2,80 · e 9,5",
+      "status": "Durlock W111: 1 placa ST por cara, montante 70",
+      "elementId": "363229",
+      "typeCode": "TM-07",
+      "level": "00. Planta Baja",
+      "length_m": 3.9,
+      "height_m": 2.8,
+      "area_m2": 6.76,
+      "volume_m3": 0.642
+    },
+    {
+      "code": "AB-PB-26",
+      "kind": "AB",
+      "label": "AB-PB-26 · TM-07 · 2,80 × 3,00 · e 9,5",
+      "status": "Durlock W111: 1 placa ST por cara, montante 70",
+      "elementId": "368868",
+      "typeCode": "TM-07",
+      "level": "00. Planta Baja",
+      "length_m": 2.8,
+      "height_m": 3.0,
+      "area_m2": 7.28,
+      "volume_m3": 0.692
+    },
+    {
+      "code": "AB-PB-27",
+      "kind": "AB",
+      "label": "AB-PB-27 · TM-07 · 5,20 × 2,80 · e 9,5",
+      "status": "Durlock W111: 1 placa ST por cara, montante 70",
+      "elementId": "607239",
+      "typeCode": "TM-07",
+      "level": "00. Planta Baja",
+      "length_m": 5.2,
+      "height_m": 2.8,
+      "area_m2": 9.57,
+      "volume_m3": 0.909
+    },
+    {
+      "code": "AB-PB-28",
+      "kind": "AB",
+      "label": "AB-PB-28 · TM-07 · 4,00 × 2,80 · e 9,5",
+      "status": "Durlock W111: 1 placa ST por cara, montante 70",
+      "elementId": "645730",
+      "typeCode": "TM-07",
+      "level": "00. Planta Baja",
+      "length_m": 4.0,
+      "height_m": 2.8,
+      "area_m2": 7.04,
+      "volume_m3": 0.669
+    },
+    {
+      "code": "AB-PB-29",
+      "kind": "AB",
+      "label": "AB-PB-29 · TM-07 · 2,80 × 2,80 · e 9,5",
+      "status": "Durlock W111: 1 placa ST por cara, montante 70",
+      "elementId": "1039708",
+      "typeCode": "TM-07",
+      "level": "00. Planta Baja",
+      "length_m": 2.8,
+      "height_m": 2.8,
+      "area_m2": 5.12,
+      "volume_m3": 0.486
+    },
+    {
+      "code": "AB-PB-30",
+      "kind": "AB",
+      "label": "AB-PB-30 · TM-07 · 3,90 × 2,80 · e 9,5",
+      "status": "Durlock W111: 1 placa ST por cara, montante 70",
+      "elementId": "2274570",
+      "typeCode": "TM-07",
+      "level": "00. Planta Baja",
+      "length_m": 3.9,
+      "height_m": 2.8,
+      "area_m2": 6.76,
+      "volume_m3": 0.642
+    },
+    {
+      "code": "AB-PB-31",
+      "kind": "AB",
+      "label": "AB-PB-31 · TM-07 · 0,70 × 2,80 · e 9,5",
+      "status": "Durlock W111: 1 placa ST por cara, montante 70",
+      "elementId": "2344129",
+      "typeCode": "TM-07",
+      "level": "00. Planta Baja",
+      "length_m": 0.7,
+      "height_m": 2.8,
+      "area_m2": 1.5,
+      "volume_m3": 0.142
+    },
+    {
+      "code": "AB-PB-32",
+      "kind": "AB",
+      "label": "AB-PB-32 · TM-08 · 3,90 × 2,80 · e 12",
+      "status": "Durlock W112: 2 placas por cara (ST / RH), montante 70",
+      "elementId": "366618",
+      "typeCode": "TM-08",
+      "level": "00. Planta Baja",
+      "length_m": 3.9,
+      "height_m": 2.8,
+      "area_m2": 8.24,
+      "volume_m3": 0.821
+    },
+    {
+      "code": "AB-PB-33",
+      "kind": "AB",
+      "label": "AB-PB-33 · TM-08 · 4,00 × 2,80 · e 12",
+      "status": "Durlock W112: 2 placas por cara (ST / RH), montante 70",
+      "elementId": "645731",
+      "typeCode": "TM-08",
+      "level": "00. Planta Baja",
+      "length_m": 4.0,
+      "height_m": 2.8,
+      "area_m2": 8.52,
+      "volume_m3": 0.854
+    },
+    {
+      "code": "AB-PB-34",
+      "kind": "AB",
+      "label": "AB-PB-34 · TM-08 · 3,90 × 2,80 · e 12",
+      "status": "Durlock W112: 2 placas por cara (ST / RH), montante 70",
+      "elementId": "762338",
+      "typeCode": "TM-08",
+      "level": "00. Planta Baja",
+      "length_m": 3.9,
+      "height_m": 2.8,
+      "area_m2": 8.24,
+      "volume_m3": 0.821
+    },
+    {
+      "code": "AB-PB-35",
+      "kind": "AB",
+      "label": "AB-PB-35 · TM-08 · 4,98 × 3,00 · e 12",
+      "status": "Durlock W112: 2 placas por cara (ST / RH), montante 70",
+      "elementId": "1005195",
+      "typeCode": "TM-08",
+      "level": "00. Planta Baja",
+      "length_m": 4.982,
+      "height_m": 3.0,
+      "area_m2": 11.53,
+      "volume_m3": 1.384
+    },
+    {
+      "code": "AB-PE-01",
+      "kind": "AB",
+      "label": "AB-PE-01 · TM-01 · 2,80 × 3,00 · e 10",
+      "status": "mampostería interior 10 cm · composición genérica en el modelo",
+      "elementId": "1156729",
+      "typeCode": "TM-01",
+      "level": "02. Planta Entrepiso",
+      "length_m": 2.8,
+      "height_m": 3.0,
+      "area_m2": 2.0,
+      "volume_m3": 0.2
+    },
+    {
+      "code": "AB-PE-02",
+      "kind": "AB",
+      "label": "AB-PE-02 · TM-01 · 2,80 × 2,30 · e 10",
+      "status": "mampostería interior 10 cm · composición genérica en el modelo",
+      "elementId": "1402221",
+      "typeCode": "TM-01",
+      "level": "02. Planta Entrepiso",
+      "length_m": 2.8,
+      "height_m": 2.3,
+      "area_m2": 5.43,
+      "volume_m3": 0.539
+    }
+  ],
+  "totals": [
+    {
+      "label": "Mampostería y tabiques interiores",
+      "value": 94.16,
+      "unit": "m²",
+      "detail": "TM-01 a TM-04"
+    },
+    {
+      "label": "Durlock (W111 + W112)",
+      "value": 106.88,
+      "unit": "m²",
+      "detail": "placas Knauf ST/RH + montantes 70"
+    },
+    {
+      "label": "Muros de fachada",
+      "value": 81.96,
+      "unit": "m²",
+      "detail": "TM-05, TM-06"
+    },
+    {
+      "label": "Muros y tabiques (todos)",
+      "value": 292.56,
+      "unit": "m²",
+      "detail": "60 muros · 10 tipos"
+    }
+  ],
+  "quantities": [
+    {
+      "label": "TM-01 · Muro Interior 10cm",
+      "group": "Tipos de muro",
+      "count": 12,
+      "value": 77.11,
+      "unit": "m²",
+      "detail": "27,55 ml · 7,67 m³ · mampostería interior 10 cm"
+    },
+    {
+      "label": "TM-02 · Muro Interior 20cm",
+      "group": "Tipos de muro",
+      "count": 1,
+      "value": 5.16,
+      "unit": "m²",
+      "detail": "2,80 ml · 0,72 m³ · mampostería interior 20 cm"
+    },
+    {
+      "label": "TM-03 · Interior - Blockwork 101",
+      "group": "Tipos de muro",
+      "count": 8,
+      "value": 3.08,
+      "unit": "m²",
+      "detail": "4,40 ml · 0,15 m³ · bloque de hormigón 5 cm"
+    },
+    {
+      "label": "TM-04 · Bajo Escalera",
+      "group": "Tipos de muro",
+      "count": 3,
+      "value": 8.81,
+      "unit": "m²",
+      "detail": "6,94 ml · 0,88 m³ · tabique bajo escalera (hormigón 10 cm)"
+    },
+    {
+      "label": "TM-05 · Muro Fachada eje",
+      "group": "Tipos de muro",
+      "count": 4,
+      "value": 34.59,
+      "unit": "m²",
+      "detail": "16,89 ml · 5,11 m³ · muro de fachada (eje)"
+    },
+    {
+      "label": "TM-06 · Muro Fachada ppal",
+      "group": "Tipos de muro",
+      "count": 4,
+      "value": 47.37,
+      "unit": "m²",
+      "detail": "15,70 ml · 4,70 m³ · muro de fachada principal (hormigón visto 8 cm)"
+    },
+    {
+      "label": "TM-07 · W111.ar 70.400 ST 12.5",
+      "group": "Tipos de muro",
+      "count": 11,
+      "value": 54.16,
+      "unit": "m²",
+      "detail": "29,70 ml · 5,14 m³ · Durlock W111: 1 placa ST por cara, montante 70"
+    },
+    {
+      "label": "TM-08 · W112.ar 70.400 ST.RH 12.5",
+      "group": "Tipos de muro",
+      "count": 6,
+      "value": 52.72,
+      "unit": "m²",
+      "detail": "21,46 ml · 5,82 m³ · Durlock W112: 2 placas por cara (ST / RH), montante 70"
+    },
+    {
+      "label": "TM-09 · Durlock Chimenea",
+      "group": "Tipos de muro",
+      "count": 3,
+      "value": 2.5,
+      "unit": "m²",
+      "detail": "2,70 ml · 0,12 m³ · revestimiento de chimenea (piedra 5 cm)"
+    },
+    {
+      "label": "TM-10 · Cierre Cielorraso",
+      "group": "Tipos de muro",
+      "count": 8,
+      "value": 7.06,
+      "unit": "m²",
+      "detail": "26,41 ml · 0,14 m³ · cierre de cielorraso (2 cm)"
+    },
+    {
+      "label": "Muros PB",
+      "group": "Por nivel",
+      "count": 35,
+      "value": 161.53,
+      "unit": "m²",
+      "detail": "89,56 ml"
+    },
+    {
+      "label": "Muros PA",
+      "group": "Por nivel",
+      "count": 23,
+      "value": 123.6,
+      "unit": "m²",
+      "detail": "59,39 ml"
+    },
+    {
+      "label": "Muros PE",
+      "group": "Por nivel",
+      "count": 2,
+      "value": 7.43,
+      "unit": "m²",
+      "detail": "5,60 ml"
+    }
+  ],
+  "quantityNote": "Superficie de muro según Revit (una cara); para revoques/pintura multiplicar por caras a terminar. Durlock: placas = superficie × placas por cara × 2.",
+  "notModeled": [
+    "Composición real de la mampostería (los tipos tienen una sola capa \"pintura\")",
+    "Revoques, dinteles, refuerzos y encuentros con la estructura",
+    "Aislaciones de muros de fachada"
+  ],
+  "decisions": [
+    "Muros de hormigón y encadenados se documentan en Estructura; muros cortina, portón y \"Puerta Arco\" en Aberturas.",
+    "Códigos TM/AB solo como anotación (no escritos en Mark)."
+  ],
+  "questions": [
+    "¿De qué son los muros interiores de 10 y 20 cm (ladrillo hueco, común, bloque)? Hoy son una capa genérica de \"pintura\".",
+    "¿Qué revoques y terminaciones llevan (grueso + fino, yeso, enduido)?",
+    "¿Los muros de fachada llevan aislación térmica?",
+    "¿Escribimos los códigos TM/AB en el modelo (Mark)?"
+  ]
+}

@@ -871,6 +871,7 @@ def run(doc, uidoc, job):
     if action == 'r4_crop': return crop_job(doc, job['pairs'])
     if action == 'r4_arcs': return arc_probe(doc)
     if action == 'r4_reset': return reset_job(doc, job['key'])
+    if action == 'r20_alb': return imp.load_source('ader_alb_r20', os.path.join(ROOT, 'revit_alb_r20.py')).run(doc, uidoc, job)
     if action == 'r19_clima': return imp.load_source('ader_clima_r19', os.path.join(ROOT, 'revit_clima_r19.py')).run(doc, uidoc, job)
     if action == 'r18_pisos': return imp.load_source('ader_pisos_r18', os.path.join(ROOT, 'revit_pisos_r18.py')).run(doc, uidoc, job)
     if action == 'r17_floors_inv': return imp.load_source('ader_floors_r17', os.path.join(ROOT, 'revit_floors_r17.py')).run(doc, uidoc, job)
