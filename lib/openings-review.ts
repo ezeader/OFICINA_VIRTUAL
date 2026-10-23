@@ -41,6 +41,8 @@ export function warningKey(text:string){
  return 'w:'+text.normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,60);
 }
 export const measureKey=(field:string)=>'m:'+field;
+// Nota simple por elemento: lo que el arquitecto anota para corregir en Revit.
+export const NOTE_KEY='nota';
 
 export function correctionFor(review:OpeningsReview|undefined,itemId:string,key:string){return review?.items[itemId]?.[key]}
 
@@ -126,7 +128,7 @@ export function pendingForRevit(items:ReviewItem[],review?:OpeningsReview){
   for(const [key,c] of Object.entries(entries)){
    if(c.status!=='proposed')continue;
    const warning=item.warnings.find(w=>warningKey(w)===key),measure=key.startsWith('m:')?measures.find(m=>measureKey(m.key)===key):undefined;
-   rows.push({code:item.code,id:item.id,subject:warning||measure?.label||key,original:measure?(measure.value||'Sin dato en Revit'):'Advertencia de la lectura',value:c.value,note:c.note,status:c.status});
+   rows.push({code:item.code,id:item.id,subject:warning||measure?.label||(key===NOTE_KEY?'Nota de revisión':key),original:measure?(measure.value||'Sin dato en Revit'):'Advertencia de la lectura',value:c.value,note:c.note,status:c.status});
   }
  }
  return rows.sort((a,b)=>a.code.localeCompare(b.code,'es',{numeric:true}));

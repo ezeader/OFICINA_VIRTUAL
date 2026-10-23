@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {dimensionText,viewDimensions,r4GroupDocument,r4ElementViews} from '../lib/openings-r4.ts';
+import {dimensionText,viewDimensions,r4GroupDocument,r4ElementViews} from '../lib/openings-sheets.ts';
 
 const items=[
  {id:'1',code:'V-1',documentation:{r4:{views:[{viewId:'20',roomKey:'A',roomName:'Cocina'},{viewId:'30',roomKey:'B',roomName:'Living'}],dimensions:[{label:'Ancho',values_m:[0.6],view:'elevation',roomKey:'A'},{label:'Antepecho + alto',values_m:[0.9,1.2],view:'elevation',roomKey:'A'},{label:'Ancho en planta',values_m:[0.6],view:'plan',roomKey:'A'},{label:'Ancho',values_m:[0.6],view:'elevation',roomKey:'B'}]}}},
