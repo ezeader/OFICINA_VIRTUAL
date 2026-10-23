@@ -23,3 +23,9 @@ test('review cases are grouped and Revit warnings read in plain Spanish',()=>{
  assert.equal(plainWarning('Highlighted walls overlap. One of them may be ignored'),'Muros superpuestos');
  assert.equal(plainWarning('algo nuevo'),'algo nuevo');
 });
+import {groupStructureSheets} from '../lib/structure.ts';
+test('structure sheets are grouped: plans first, then elevations by level, review last',()=>{
+ const g=groupStructureSheets(m.sheets||[]);
+ assert.equal(g.reduce((n,x)=>n+x.sheets.length,0),(m.sheets||[]).length);
+ if(g.length){assert.equal(g[0].title,'Índice, plantas y fundación');assert.equal(g.at(-1).title,'Casos de revisión')}
+});
