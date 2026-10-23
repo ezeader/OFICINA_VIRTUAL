@@ -3,6 +3,14 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {mergeCandidates} from '../lib/supplier-search.ts';
 import {usefulColumns} from '../lib/native-table.ts';
+import {GET as tile} from '../app/api/suppliers/tile/route.ts';
+
+test('map tile endpoint rejects anonymous or invalid coordinates before network access',async()=>{
+ assert.equal((await tile(new Request('https://office.test/api/suppliers/tile?z=11&x=699&y=1251'))).status,401);
+ for(const query of ['z=19&x=0&y=0','z=11&x=2048&y=0','z=11&x=-1&y=0','z=11&x=1','z=11&x=http://localhost&y=0']){
+  assert.equal((await tile(new Request('https://office.test/api/suppliers/tile?'+query,{headers:{'oai-authenticated-user-id':'test'}}))).status,400);
+ }
+});
 test('supplier trust comes from a saved source identity, not name or public rating',()=>{
  const candidate={id:'osm-node-1',name:'Casa Materiales',address:'Calle 1, Pinamar',source:'https://www.openstreetmap.org/node/1',contact:''};
  const saved=[{id:'my-supplier',sourceId:'osm-node-1',name:'Alias guardado',zone:'Pinamar',trusted:true}];
