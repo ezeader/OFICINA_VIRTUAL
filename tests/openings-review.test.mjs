@@ -42,7 +42,8 @@ test('warning keys are stable and readable',()=>{
  assert.equal(measureKey('sill'),'m:sill');
 });
 test('fabrication measures only report values read from Revit',()=>{
- const window=Object.fromEntries(fabricationMeasures(byCode('V-15')).map(m=>[m.key,m]));
+ const r2=structuredClone(byCode('V-15'));delete r2.dimensions; // solo cotas R2, con o sin lectura R4 en el manifest
+ const window=Object.fromEntries(fabricationMeasures(r2).map(m=>[m.key,m]));
  assert.equal(window.width.value,'0.500 m');assert.equal(window.sill.value,'1.000 m');assert.equal(window.head.value,'3.850 m');
  assert.equal(window.width.dimensioned,true);assert.equal(window.sill.dimensioned,false);
  assert.deepEqual(missingMeasures(byCode('V-15')).map(m=>m.key),['roughWidth','roughHeight','thickness']);
@@ -67,4 +68,11 @@ test('sheet totals separate room, element and review-context sheets',()=>{
  assert.equal(t.room,manifest.rooms.length);assert.equal(t.element,manifest.items.length);assert.equal(t.context,manifest.reviewCases.length);
  assert.equal(t.total,t.room+t.element+t.context);
  assert.equal(t.windows+t.doors+t.curtainWalls,t.elements);
+});
+test('R4 dimension chains mark sill and head as dimensioned',()=>{
+ const base=structuredClone(byCode('V-15'));delete base.dimensions;
+ assert.equal(Object.fromEntries(fabricationMeasures(base).map(m=>[m.key,m.dimensioned])).sill,false);
+ base.dimensions=[{label:'Antepecho + alto',values_m:[1,2.85]},{label:'Altura de dintel',values_m:[3.85]}];
+ const m=Object.fromEntries(fabricationMeasures(base).map(x=>[x.key,x.dimensioned]));
+ assert.equal(m.sill,true);assert.equal(m.head,true);assert.equal(m.height,true);assert.equal(m.roughWidth,false);
 });

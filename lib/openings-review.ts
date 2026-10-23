@@ -13,7 +13,7 @@ export type OpeningCorrection={value?:string;note?:string;status:CorrectionStatu
 export type OpeningsReview={version:1;items:Record<string,Record<string,OpeningCorrection>>};
 
 type Param={name:string;value:string;scope?:string};
-export type ReviewItem={id:string;code:string;category:string;type?:string;rooms?:number[];warnings:string[];width?:string|null;height?:string|null;sill?:string|null;head?:string|null;roughWidth?:string|null;roughHeight?:string|null;thickness?:string|null;profileThickness?:string|null;glazingThickness?:string|null;hostThickness?:number|null;panelCount?:number;parameters?:Param[];documentation?:{sheetId?:string;dimensions?:{label:string;value_m:number}[]}};
+export type ReviewItem={id:string;code:string;category:string;type?:string;rooms?:number[];warnings:string[];width?:string|null;height?:string|null;sill?:string|null;head?:string|null;roughWidth?:string|null;roughHeight?:string|null;thickness?:string|null;profileThickness?:string|null;glazingThickness?:string|null;hostThickness?:number|null;panelCount?:number;parameters?:Param[];documentation?:{sheetId?:string;dimensions?:{label:string;value_m:number}[]};dimensions?:{label:string}[]};
 
 const STATUSES=Object.keys(CORRECTION_STATUS) as CorrectionStatus[];
 const MAX_VALUE=200,MAX_NOTE=2000;
@@ -73,11 +73,12 @@ export function metersOf(value?:string|null){if(!value)return null;const n=parse
 export const param=(item:ReviewItem,name:string)=>item.parameters?.find(p=>p.name===name)?.value;
 
 export type Measure={key:string;label:string;value?:string;origin:string;required:boolean;dimensioned:boolean;note?:string};
-const DIMENSION_FIELD:Record<string,string>={'Ancho':'width','Alto':'height','Ancho de vano':'roughWidth','Alto de vano':'roughHeight'};
+// Qué medidas cubre cada cota de las láminas: R2 (Ancho/Alto) y R4 (cadenas de alzado y planta).
+const DIMENSION_FIELDS:Record<string,string[]>={'Ancho':['width'],'Alto':['height'],'Ancho de vano':['roughWidth'],'Alto de vano':['roughHeight'],'Ancho en planta':['width'],'Alto (piso a dintel)':['height','head'],'Antepecho + alto':['sill','height'],'Altura de dintel':['head'],'Largo total':['length'],'Modulos (ejes de grilla)':['length'],'Alto total':['wallHeight'],'Altura total desde nivel':['wallHeight'],'Arranque + modulos verticales':['baseOffset','wallHeight']};
 
 // Medidas necesarias para fabricar. Solo se listan valores leídos de Revit; lo que falta queda vacío.
 export function fabricationMeasures(item:ReviewItem):Measure[]{
- const dimensioned=new Set((item.documentation?.dimensions||[]).map(d=>DIMENSION_FIELD[d.label]).filter(Boolean));
+ const dimensioned=new Set([...(item.documentation?.dimensions||[]),...(item.dimensions||[])].flatMap(d=>DIMENSION_FIELDS[d.label]||[]));
  const row=(key:string,label:string,value:string|null|undefined,origin:string,required=true,note?:string):Measure=>({key,label,value:value||undefined,origin,required,dimensioned:dimensioned.has(key),...(note?{note}:{})});
  if(item.category==='Curtain Walls'){
   const top=param(item,'Top Constraint'),attached=param(item,'Top is Attached')==='Yes';
