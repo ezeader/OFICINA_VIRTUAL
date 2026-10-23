@@ -5,7 +5,7 @@ export type Wall={id:string;code:string;type:string;level:string;length_m:number
 export type Slab={id:string;type:string;level:string;role:string;area_m2:number;thickness_m?:number;concreteLayer_m?:number;concreteVolume_m3:number|null};
 export type Group={key:string;count:number;area_m2:number;volume_m3:number;length_m:number};
 export type StructureCase={id:string;title:string;elementIds:string[];codes:string[];observation:string;proposedCorrection:string;status?:string};
-export type StructureSheet={number:string;title:string;level?:string|null;sector?:string|null;image?:string;preview?:string;thumbnail?:string;pdf?:string;sheetId?:string;views?:StructureView[];element?:string;kind?:string};
+export type StructureSheet={number:string;title:string;level?:string|null;sector?:string|null;image?:string;preview?:string;thumbnail?:string;pdf?:string;sheetId?:string;views?:StructureView[];element?:string;kind?:string;rebar?:string};
 export type StructureManifest={model:string;readAt:string;revision:string;status:string;levels:{name:string}[];concreteWalls:{type:string;count:number;elements:Wall[];totals:{length_m:number;area_m2:number;volume_m3:number}};otherStructuralWalls:Group[];slabsAndFoundations:Slab[];framing:{note?:string;byType:Group[]};roofs:Group[];notModeled:string[];warnings:{total:number;byText:{text:string;count:number}[]};reviewCases:StructureCase[];proposal:{sheets:{number:string;title:string}[]};openQuestions?:string[];sheets?:StructureSheet[];codes?:StructureCode[];decisions?:string[];codesWrittenToModel?:boolean;documentationRevision?:string};
 
 const byLevel=(a:string,b:string)=>a.localeCompare(b,'es',{numeric:true});
