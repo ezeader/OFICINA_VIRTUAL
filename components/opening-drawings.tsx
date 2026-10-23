@@ -2,6 +2,7 @@
 import {useEffect,useState} from 'react';
 import {useVector} from './compressed-drawing';
 import {fabricationMeasures,correctionFor,NOTE_KEY,type OpeningsReview,type ReviewItem} from '../lib/openings-review';
+import {sizeOf,surveySpecs,type BudgetItem} from '../lib/openings-budget';
 
 // Recorte automático: se rasteriza la vista exportada de Revit y se busca el área con dibujo,
 // así cada vista ocupa su recuadro en lugar de flotar dentro del marco de la ventana gráfica.
@@ -37,11 +38,12 @@ export function useCrop(url?:string,key?:string){
  return url&&state?.url===url?state.crop:undefined;
 }
 // Ocupa todo su contenedor y muestra solo la zona recortada del dibujo.
-export function TrimmedDrawing({src,alt,onCrop}:{src?:string;alt:string;onCrop?:(c:Crop)=>void}){
+// boxes: elementos ubicados en la imagen completa (fracciones 0–1); se reubican sobre el recorte.
+export function TrimmedDrawing({src,alt,onCrop,boxes,onBox}:{src?:string;alt:string;onCrop?:(c:Crop)=>void;boxes?:{code:string;box:number[]}[];onBox?:(code:string|null,x:number,y:number)=>void}){
  const url=useVector(src),crop=useCrop(url,src);
  useEffect(()=>{if(crop)onCrop?.(crop)},[crop,onCrop]);
  if(!url||!crop)return <div className="vectorLoading" role="status">Cargando dibujo vectorial…</div>;
- return <div className="openingTrim" style={{aspectRatio:String(crop.aspect),['--a' as string]:crop.aspect}}><img src={url} alt={alt} draggable={false} style={{width:`${100/crop.w}%`,height:`${100/crop.h}%`,left:`${-crop.x/crop.w*100}%`,top:`${-crop.y/crop.h*100}%`}}/></div>;
+ return <div className="openingTrim" style={{aspectRatio:String(crop.aspect),['--a' as string]:crop.aspect}}><img src={url} alt={alt} draggable={false} style={{width:`${100/crop.w}%`,height:`${100/crop.h}%`,left:`${-crop.x/crop.w*100}%`,top:`${-crop.y/crop.h*100}%`}}/>{boxes?.map((b,i)=><span key={b.code+i} className="openingBox" style={{left:`${(b.box[0]-crop.x)/crop.w*100}%`,top:`${(b.box[1]-crop.y)/crop.h*100}%`,width:`${(b.box[2]-b.box[0])/crop.w*100}%`,height:`${(b.box[3]-b.box[1])/crop.h*100}%`}} onPointerMove={e=>{if(!e.buttons)onBox?.(b.code,e.clientX,e.clientY)}} onPointerLeave={()=>onBox?.(null,0,0)}><b>{b.code}</b></span>)}</div>;
 }
 
 // Datos del elemento al pasar el cursor, con el mismo criterio que Sanitarias: medidas con valor y lo que falta.
@@ -51,6 +53,7 @@ export function OpeningTooltip({item,review,x=0,y=0}:{item:ReviewItem;review?:Op
  return <div role="tooltip" className="openingTooltip" style={{left,top}}>
   <strong><span className="openingTag">{item.code}</span>{item.type}</strong>
   <dl>{known.map(m=><div key={m.key}><dt>{m.label}</dt><dd>{m.value!.replace(' m','').replace('.',',')}{/^d/.test(m.value!)&&m.value!.endsWith(' m')?' m':''}</dd></div>)}</dl>
+  {(()=>{const b=item as unknown as BudgetItem,s=sizeOf(b);return <>{s&&<small>{s.area.toLocaleString('es-AR',{maximumFractionDigits:2})} m² · {s.perimeter.toLocaleString('es-AR',{maximumFractionDigits:2})} m de marco</small>}{surveySpecs(b).filter(x=>x.value).slice(0,3).map(x=><small key={x.label}><b>{x.label}:</b> {x.value!.replace(/(\d)\.(\d)/g,'$1,$2')}</small>)}</>})()}
   {missing.length>0&&<small className="openingWarning">Sin dato en Revit: {missing.map(m=>m.label.toLowerCase()).join(', ')}</small>}
   {note&&<small>✎ {note}</small>}
  </div>;

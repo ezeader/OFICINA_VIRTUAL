@@ -8,15 +8,17 @@ import {TrimmedDrawing,OpeningTooltip,type Crop} from './opening-drawings';
 import {openingsHref} from '../lib/documentation-route';
 import {NOTE_KEY,correctionFor,pendingForRevit,setCorrection,type OpeningsReview} from '../lib/openings-review';
 import {buildSheets,groupSheets,dimensionText,CATEGORY_GROUP,type SheetCard,type SheetView} from '../lib/openings-sheets';
+import {budgetCsv,budgetTotals,sizeOf,surveySpecs} from '../lib/openings-budget';
 import './sanitary-sheets.css';
 import './project-sanitary.css';
 import './openings-desk.css';
 
 type Item={id:string;uid:string;code:string;category:string;family:string;type:string;rooms:number[];width?:string;height?:string;sill?:string;head?:string;materials:string[];warnings:string[];panelCount?:number;parameters:{name:string;value:string;scope:string}[]};
 type Data={items:Item[];rooms:unknown[];counts:{windows:number;doors:number;curtainWalls:number;unassigned:number};reviewCases?:{code:string;elementId:string;title:string;observation:string;proposedCorrection:string}[]};
-type Tab=SheetCard['tab'];
+type Tab=SheetCard['tab']|'computo';
 const SHEET_ASPECT=2383.94/1683.78;
-const TABS:[Tab,string][]=[['locales','Por local'],['aberturas','Por abertura'],['revision','Revisión pendiente']];
+const TABS:[Tab,string][]=[['locales','Por local'],['aberturas','Por abertura'],['revision','Revisión pendiente'],['computo','Cómputo para presupuesto']];
+const n2=(n:number)=>n.toLocaleString('es-AR',{minimumFractionDigits:2,maximumFractionDigits:2});
 const KIND:Record<string,string>={Windows:'Ventana',Doors:'Puerta','Curtain Walls':'Muro cortina'};
 const m=(v?:string)=>v?v.replace(' m','').replace('.',','):'—';
 const param=(i:Item,name:string)=>i.parameters.find(p=>p.name===name)?.value;
@@ -66,6 +68,7 @@ export default function OpeningsDesk({mode='documentation',caseCode,review,onSav
   <header><span className="openingTag">{item.code}</span><small>{KIND[item.category]}</small></header>
   <strong>{item.type}</strong>
   <p className="openingSize">{sizeLine(item)}</p>{heightLine(item)&&<p className="openingSub">{heightLine(item)}</p>}
+  {(()=>{const s=sizeOf(item),specs=surveySpecs(item),known=specs.filter(x=>x.value),gaps=specs.filter(x=>!x.value);return <><p className="openingSub">{s?`${n2(s.area)} m² · ${n2(s.perimeter)} m de marco`:'Sin superficie calculable'}</p><dl className="openingSpecs">{known.map(x=><div key={x.label}><dt>{x.label}</dt><dd>{x.value!.replace(/(\d)\.(\d)/g,'$1,$2')}</dd></div>)}</dl>{gaps.length>0&&<p className="openingGaps">Sin dato en Revit: {gaps.map(x=>x.label.toLowerCase()).join(', ')}</p>}</>})()}
   {item.warnings.length>0&&<p className="openingAlert">⚠ Revisar: {item.warnings.map(plainWarning).join(' · ')}</p>}
   <NoteBox key={item.id+(correctionFor(review,item.id,NOTE_KEY)?.updatedAt||'')} item={item} review={review} disabled={disabled} onSaveReview={onSaveReview}/>
   {other.length>0&&<div className="openingLinks">{other.map(c=><button key={c.key} onClick={()=>open(c.key)}>{c.tab==='locales'?'Ver lámina de '+c.name.split(' · ').slice(1).join(' · '):'Ver lámina de la abertura'} ↗</button>)}</div>}
@@ -74,12 +77,21 @@ export default function OpeningsDesk({mode='documentation',caseCode,review,onSav
  if(mode==='quantities')return <section className="openingsDesk"><div className="sheetHeading"><div><p className="eyebrow">CASA ÁNGEL / ABERTURAS</p><h3>{data.items.length} aberturas únicas</h3><p>{data.counts.windows} ventanas · {data.counts.doors} puertas · {data.counts.curtainWalls} muros cortina</p></div></div>{Object.entries(CATEGORY_GROUP).map(([cat,title])=><section key={cat}><h4 className="openingGroupTitle">{title}</h4><div className="openingCards">{data.items.filter(i=>i.category===cat).map(i=>elementCard(i))}</div></section>)}{hover&&<OpeningTooltip item={hover.item} review={review} x={hover.x} y={hover.y}/>}</section>;
 
  if(!sheet){
-  const count=(t:Tab)=>cards.filter(c=>c.tab===t).length;
+  const count=(t:Tab)=>t==='computo'?data.items.length:cards.filter(c=>c.tab===t).length;
+  const budget=budgetTotals(data.items);
+  const download=()=>{const url=URL.createObjectURL(new Blob(['\ufeff'+budgetCsv(budget.rows)],{type:'text/csv;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download='casa-angel-aberturas-computo.csv';a.click();URL.revokeObjectURL(url)};
   return <section className="openingsDesk sheetExplorer" aria-label="Láminas de aberturas">
    <div className="sheetHeading"><div><p className="eyebrow">CASA ÁNGEL / ABERTURAS</p><h3>Láminas de aberturas</h3><p>{cards.length} láminas · {data.counts.windows} ventanas · {data.counts.doors} puertas · {data.counts.curtainWalls} muros cortina. Elegí una lámina para ver sus dibujos.</p></div></div>
    {pending.length>0&&<p className="openingPendingLine">✎ {pending.length} {pending.length===1?'nota':'notas'} para corregir en Revit <button onClick={copyPending}>Copiar lista</button>{copied&&<small> {copied}</small>}</p>}
    <div className="sheetTabs">{TABS.filter(([t])=>count(t)).map(([t,label])=><button key={t} aria-pressed={tab===t} onClick={()=>setTab(t)}>{label} · {count(t)}</button>)}</div>
-   {groupSheets(cards,tab).map(g=><section key={g.title} className="openingGroup"><h4 className="openingGroupTitle">{g.title} <small>{g.sheets.length} {g.sheets.length===1?'lámina':'láminas'}</small></h4>
+   {tab==='computo'&&<section className="openingBudget">
+    <div className="openingTotals">{([['Ventanas',budget.windows],['Puertas',budget.doors],['Muros cortina',budget.curtainWalls],['Total',budget.total]] as const).map(([label,t])=><div key={label} className={label==='Total'?'total':''}><small>{label} · {t.count}</small><strong>{n2(t.area)} m²</strong><span>{n2(t.perimeter)} m lineales de marco</span></div>)}</div>
+    <p className="openingSub">Superficie = ancho × alto de cada abertura (muros cortina: largo × alto del conjunto). Metros lineales = contorno exterior del marco, sin montantes intermedios. Valores de Revit, sin desperdicio.</p>
+    <button className="openingDownload" onClick={download}>Descargar planilla para proveedores (CSV)</button>
+    <table className="openingBudgetTable"><thead><tr><th>Tipo</th><th>Medida</th><th>Cant.</th><th>m² c/u</th><th>m² total</th><th>m marco</th></tr></thead><tbody>{budget.rows.map(r=><tr key={r.key}><td><b>{r.type}</b><small>{KIND[r.category]} · {r.codes.join(' · ')}</small></td><td>{r.size.replace(/\./g,',')}</td><td>{r.count}</td><td>{n2(r.unitArea)}</td><td><b>{n2(r.area)}</b></td><td>{n2(r.perimeter)}</td></tr>)}</tbody></table>
+    {(data.reviewCases||[]).length>0&&<p className="openingAlert">⚠ En revisión, pueden cambiar el cómputo: {(data.reviewCases||[]).map(c=>`${c.code} (${c.title})`).join(' · ')}.</p>}
+   </section>}
+   {tab!=='computo'&&groupSheets(cards,tab).map(g=><section key={g.title} className="openingGroup"><h4 className="openingGroupTitle">{g.title} <small>{g.sheets.length} {g.sheets.length===1?'lámina':'láminas'}</small></h4>
     <div className="sheetGrid">{g.sheets.map(c=>{const codes=c.itemIds.map(id=>byId.get(id)?.code).filter((x):x is string=>!!x);return <button key={c.key} className="sheetCard" onClick={()=>open(c.key)}>{c.thumbnail?<img src={c.thumbnail} alt={'Lámina '+c.name} loading="lazy"/>:<div className="openingNoThumb">Sin vista previa</div>}<span className="sheetHoverTitle" aria-hidden="true">{c.name}</span><span><small>{c.number}</small><strong>{c.name}</strong>{c.tab!=='aberturas'&&<span className="openingCodes">{codes.map(code=><b key={code}>{code}</b>)}</span>}<em>{c.views.length} dibujos{c.tab==='locales'?` · ${codes.length} ${codes.length===1?'abertura':'aberturas'}`:''}</em></span></button>})}</div>
    </section>)}
   </section>;
@@ -99,12 +111,12 @@ export default function OpeningsDesk({mode='documentation',caseCode,review,onSav
   <h4 className="openingGroupTitle">{sheetItems.length===1?'La abertura':'Aberturas de esta lámina'} <small>{sheetItems.length}</small></h4>
   <div className="openingCards">{sheetItems.map(i=>elementCard(i,sheet))}</div>
   {light&&<div className="openingLightbox" role="dialog" aria-modal="true" aria-label={'Dibujo ampliado · '+light.name}>
-   <div className="openingLightboxMain"><DrawingViewport aspect={lightCrop?.aspect||1.4} identity={String(light.id)} controls={<div className="openingLightboxBar"><strong>{light.name}</strong><span>1:{light.scale} · {sheet.name}</span><button onClick={()=>zoom((lightbox!-1+views.length)%views.length)} aria-label="Dibujo anterior">←</button><button onClick={()=>zoom((lightbox!+1)%views.length)} aria-label="Dibujo siguiente">→</button></div>}><TrimmedDrawing key={light.id} src={light.image} alt={light.name} onCrop={onLightCrop}/></DrawingViewport></div>
+   <div className="openingLightboxMain"><DrawingViewport aspect={lightCrop?.aspect||1.4} identity={String(light.id)} controls={<div className="openingLightboxBar"><strong>{light.name}</strong><span>1:{light.scale} · {sheet.name}</span><button onClick={()=>zoom((lightbox!-1+views.length)%views.length)} aria-label="Dibujo anterior">←</button><button onClick={()=>zoom((lightbox!+1)%views.length)} aria-label="Dibujo siguiente">→</button></div>}><div className="openingHoverArea" {...hoverOn(lightItem)}><TrimmedDrawing key={light.id} src={light.image} alt={light.name} onCrop={onLightCrop} boxes={light.elements} onBox={(code,x,y)=>{const it=code?byCode.get(code):undefined;setHover(it?{item:it,x,y}:null)}}/></div></DrawingViewport></div>
    <aside className="openingLightboxSide"><button className="openingLightboxClose" onClick={()=>setLightbox(null)}>Cerrar · Esc</button>
     {light.dimensions?.length?<section className="openingViewDims"><h5>Cotas de este dibujo</h5>{light.dimensions.map((d,i)=><p key={i}>{d.code&&!lightItem?<span className="openingTag">{d.code}</span>:null}{d.label}: <b>{dimensionText(d.values_m)}</b></p>)}</section>:null}
     {lightItems.map(i=>elementCard(i,sheet))}
    </aside>
   </div>}
-  {hover&&lightbox===null&&<OpeningTooltip item={hover.item} review={review} x={hover.x} y={hover.y}/>}
+  {hover&&<OpeningTooltip item={hover.item} review={review} x={hover.x} y={hover.y}/>}
  </section>;
 }

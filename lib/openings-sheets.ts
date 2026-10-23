@@ -42,9 +42,10 @@ export function r4ElementViews(item:R4Item,groups:R4Group[],items:R4Item[]):R4Dr
 
 // Ordena la documentación de Aberturas como en Sanitarias: láminas agrupadas, cada una con sus dibujos.
 
-export type SheetView={id:number;name:string;scale:number;image:string;code?:string;dimensions?:ViewDimension[]};
+export type ViewElement={code:string;elementId?:string;box:number[]};
+export type SheetView={id:number;name:string;scale:number;image:string;code?:string;dimensions?:ViewDimension[];elements?:ViewElement[]};
 export type SheetCard={key:string;tab:'locales'|'aberturas'|'revision';group:string;number:string;name:string;thumbnail?:string;image?:string;pdf?:string;sheetId?:string;views:SheetView[];itemIds:string[];roomId?:number;note?:string};
-type Doc={sheetId?:string;sheetNumber?:string;pdf?:string;image?:string;thumbnail?:string;views?:{id:number;name:string;scale:number;image:string}[]};
+type Doc={sheetId?:string;sheetNumber?:string;pdf?:string;image?:string;thumbnail?:string;views?:{id:number;name:string;scale:number;image:string;elements?:ViewElement[]}[]};
 type Manifest={
  items:{id:string;code:string;category:string;type:string;rooms:number[];documentation?:Doc}[];
  rooms:({id:number;number:string;name:string;level_name:string;items:string[];r4?:{sheets:R4Sheet[]}}&Doc)[];
@@ -54,7 +55,7 @@ type Manifest={
 export const CATEGORY_GROUP:Record<string,string>={Windows:'Ventanas',Doors:'Puertas','Curtain Walls':'Muros cortina'};
 const byNumber=(a:string,b:string)=>a.localeCompare(b,'es',{numeric:true});
 const cleanName=(name:string)=>name.split(' / ')[0].replace('Axonometrica','Axonométrica').replace('Corte del detalle modelado','Corte').replace('ubicacion','ubicación');
-const plainViews=(doc:Doc,code?:string):SheetView[]=>(doc.views||[]).map(v=>({id:v.id,name:cleanName(v.name),scale:v.scale,image:v.image,...(code?{code}:{})}));
+const plainViews=(doc:Doc,code?:string):SheetView[]=>(doc.views||[]).map(v=>({id:v.id,name:cleanName(v.name),scale:v.scale,image:v.image,...(code?{code}:{}),...(v.elements?{elements:v.elements}:{})}));
 
 export function buildSheets(m:Manifest):SheetCard[]{
  const cards:SheetCard[]=[];

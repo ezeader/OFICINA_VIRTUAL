@@ -51,3 +51,16 @@
 .openingViewDims h5{font-size:19px;margin:0 0 6px}.openingViewDims p{margin:4px 0;font-size:15px}.openingViewDims b{color:#2f5d8a}
 
 @media(max-width:700px){.openingsDesk .sheetHeading h3{font-size:27px}.openingLightbox{grid-template-columns:1fr;grid-template-rows:minmax(0,60%) minmax(0,40%);padding:8px}.openingViewPreview{height:200px}.openingsDesk .sheetHotspot span{font-size:12px;padding:4px 7px}}
+
+/* Datos de relevamiento */
+.openingSpecs{display:grid;gap:4px;margin:2px 0}.openingSpecs div{display:grid;grid-template-columns:120px 1fr;gap:8px}.openingSpecs dt{font-size:13px;color:var(--muted)}.openingSpecs dd{margin:0;font-size:14px}
+.openingGaps{margin:0;font-size:13px;color:var(--muted)}
+/* Cómputo para presupuesto */
+.openingTotals{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:10px 0 14px}.openingTotals div{border:1px solid var(--line);background:#fff;padding:16px;display:grid;gap:4px}.openingTotals div.total{background:var(--ader-green);color:#fff;border-color:var(--ader-green)}.openingTotals small{font-size:13px;opacity:.8}.openingTotals strong{font-family:var(--ader-title);font-stretch:75%;font-weight:600;font-size:34px;line-height:1.05}.openingTotals span{font-size:14px}
+.openingDownload{padding:10px 14px;border:1px solid var(--ader-green);background:#fff;color:var(--ader-green);cursor:pointer;font-size:14px;margin:4px 0 14px}
+.openingBudgetTable{width:100%;border-collapse:collapse;background:#fff;font-size:15px}.openingBudgetTable th{text-align:left;font-size:13px;font-weight:500;color:var(--muted);padding:10px;border-bottom:2px solid var(--line)}.openingBudgetTable td{padding:10px;border-bottom:1px solid var(--line);vertical-align:top}.openingBudgetTable td small{display:block;font-size:13px;color:var(--muted);margin-top:3px}.openingBudgetTable td b{font-weight:600}
+/* Elementos dentro del dibujo ampliado */
+.openingHoverArea{width:100%;height:100%}.openingBox{position:absolute;border:1.5px solid transparent;border-radius:3px;cursor:help;pointer-events:auto}.openingBox:hover{border-color:#2f5d8a;background:#2f5d8a14}.openingBox b{position:absolute;left:0;top:-1.6em;font-family:var(--ader-title);font-stretch:75%;font-size:13px;background:var(--ader-green);color:#fff;padding:1px 6px;border-radius:999px;white-space:nowrap}
+.openingTooltip b{font-weight:600}
+@media(max-width:900px){.openingTotals{grid-template-columns:repeat(2,minmax(0,1fr))}.openingBudgetTable{font-size:13px}.openingBudgetTable th,.openingBudgetTable td{padding:6px}}
+.openingBudgetTable td:nth-child(2){white-space:nowrap}
