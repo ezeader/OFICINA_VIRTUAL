@@ -1,0 +1,1739 @@
+{
+  "title": "Cielorrasos",
+  "summary": "14 cielorrasos (108,70 m²) en 3 tipos; 11 locales con cielorraso, 4 parciales y 15 sin cielorraso modelado. 7 láminas.",
+  "model": "Casa-Angel-piloto-documentacion.rvt",
+  "readAt": "2026-10-23T23:13:43.184000Z",
+  "revision": "R21",
+  "kinds": {
+    "TC": "Tipos de cielorraso",
+    "CE": "Cielorrasos (piezas por nivel)"
+  },
+  "sheets": [
+    {
+      "number": "CIE-00",
+      "title": "Índice, tipos y cómputo",
+      "level": "Cielorrasos",
+      "sector": "General",
+      "kind": "general",
+      "element": null,
+      "elementId": null,
+      "elementKind": null,
+      "note": null,
+      "sheetId": "2472099",
+      "pdf": "/casa-angel/rubros/cielorrasos/CIE-00.pdf",
+      "image": "/casa-angel/rubros/cielorrasos/CIE-00.svg.gz",
+      "preview": "/casa-angel/rubros/cielorrasos/CIE-00-preview.png",
+      "thumbnail": "/casa-angel/rubros/cielorrasos/CIE-00.png",
+      "views": []
+    },
+    {
+      "number": "CIE-PA-01",
+      "title": "Planta de cielorrasos · 01. Planta Alta",
+      "level": "01. Planta Alta",
+      "sector": "01. Planta Alta",
+      "kind": "general",
+      "element": null,
+      "elementId": null,
+      "elementKind": null,
+      "note": null,
+      "sheetId": "2472047",
+      "pdf": "/casa-angel/rubros/cielorrasos/CIE-PA-01.pdf",
+      "image": "/casa-angel/rubros/cielorrasos/CIE-PA-01.svg.gz",
+      "preview": "/casa-angel/rubros/cielorrasos/CIE-PA-01-preview.png",
+      "thumbnail": "/casa-angel/rubros/cielorrasos/CIE-PA-01.png",
+      "views": [
+        {
+          "id": "2472022",
+          "name": "Planta de cielorrasos · 01. Planta Alta",
+          "label": "Planta de cielorrasos · 01. Planta Alta   1:60",
+          "scale": 60,
+          "kind": "plan",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "image": "/casa-angel/rubros/cielorrasos/CIE-PA-01-view-2472022.svg.gz",
+          "region": [
+            0.2665,
+            0.2089,
+            0.6327,
+            0.7783
+          ],
+          "tags": [
+            "CE-PA-01",
+            "CE-PA-02",
+            "CE-PA-03",
+            "CE-PA-04",
+            "CE-PA-05",
+            "CE-PA-06"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "CE-PA-01",
+              "elementId": "1478681",
+              "label": "CE-PA-01 · TC-03 · 5,81 m² · h 2,70",
+              "box": [
+                0.1993,
+                0.8219,
+                0.3166,
+                0.9531
+              ]
+            },
+            {
+              "code": "CE-PA-02",
+              "elementId": "2138425",
+              "label": "CE-PA-02 · TC-03 · 4,79 m² · h 2,70",
+              "box": [
+                0.0515,
+                0.879,
+                0.1944,
+                0.9531
+              ]
+            },
+            {
+              "code": "CE-PA-03",
+              "elementId": "2138433",
+              "label": "CE-PA-03 · TC-03 · 14,99 m² · h 2,70",
+              "box": [
+                0.0515,
+                0.6929,
+                0.2338,
+                0.8746
+              ]
+            },
+            {
+              "code": "CE-PA-04",
+              "elementId": "2143224",
+              "label": "CE-PA-04 · TC-03 · 5,01 m² · h 2,50",
+              "box": [
+                0.6658,
+                0.0469,
+                0.7607,
+                0.1636
+              ]
+            },
+            {
+              "code": "CE-PA-05",
+              "elementId": "2143232",
+              "label": "CE-PA-05 · TC-03 · 8,33 m² · h 2,50",
+              "box": [
+                0.7656,
+                0.0469,
+                0.9235,
+                0.1636
+              ]
+            },
+            {
+              "code": "CE-PA-06",
+              "elementId": "2143244",
+              "label": "CE-PA-06 · TC-03 · 8,77 m² · h 2,50",
+              "box": [
+                0.6891,
+                0.1725,
+                0.943,
+                0.352
+              ]
+            },
+            {
+              "code": "CE-PA-04",
+              "elementId": "863692",
+              "room": true,
+              "label": "05 · Toilette · con cielorraso",
+              "box": [
+                0.6658,
+                0.0469,
+                0.7607,
+                0.1681
+              ]
+            },
+            {
+              "code": "CE-PA-05",
+              "elementId": "863864",
+              "room": true,
+              "label": "06 · Cava · con cielorraso",
+              "box": [
+                0.7656,
+                0.0469,
+                0.9235,
+                0.1681
+              ]
+            },
+            {
+              "code": "CE-PA-03",
+              "elementId": "864264",
+              "room": true,
+              "label": "01 · Sala de TV · con cielorraso",
+              "box": [
+                0.0515,
+                0.6929,
+                0.2338,
+                0.8746
+              ]
+            },
+            {
+              "code": null,
+              "elementId": "869397",
+              "room": true,
+              "label": "08 · Comedor · sin cielorraso modelado",
+              "box": [
+                0.6896,
+                0.352,
+                0.943,
+                0.5676
+              ]
+            },
+            {
+              "code": "CE-PA-01",
+              "elementId": "870164",
+              "room": true,
+              "label": "03 · Playroom · parcial",
+              "box": [
+                0.2437,
+                0.7593,
+                0.6329,
+                0.9531
+              ]
+            },
+            {
+              "code": "CE-PA-01",
+              "elementId": "870167",
+              "room": true,
+              "label": "04 · Baño PA · con cielorraso",
+              "box": [
+                0.1993,
+                0.8219,
+                0.3166,
+                0.9531
+              ]
+            },
+            {
+              "code": "CE-PA-06",
+              "elementId": "877992",
+              "room": true,
+              "label": "07 · Cocina · parcial",
+              "box": [
+                0.6855,
+                0.1681,
+                0.943,
+                0.352
+              ]
+            },
+            {
+              "code": null,
+              "elementId": "877995",
+              "room": true,
+              "label": "09 · Living · sin cielorraso modelado",
+              "box": [
+                0.6855,
+                0.5538,
+                0.9186,
+                0.7108
+              ]
+            },
+            {
+              "code": null,
+              "elementId": "887814",
+              "room": true,
+              "label": "10 · Puente · sin cielorraso modelado",
+              "box": [
+                0.6329,
+                0.7108,
+                0.7314,
+                0.8005
+              ]
+            },
+            {
+              "code": "CE-PA-02",
+              "elementId": "892788",
+              "room": true,
+              "label": "02 · Sala de Maquinas · con cielorraso",
+              "box": [
+                0.0515,
+                0.879,
+                0.1944,
+                0.9531
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "CIE-PB-01",
+      "title": "Planta de cielorrasos · 00. Planta Baja",
+      "level": "00. Planta Baja",
+      "sector": "00. Planta Baja",
+      "kind": "general",
+      "element": null,
+      "elementId": null,
+      "elementKind": null,
+      "note": null,
+      "sheetId": "2472002",
+      "pdf": "/casa-angel/rubros/cielorrasos/CIE-PB-01.pdf",
+      "image": "/casa-angel/rubros/cielorrasos/CIE-PB-01.svg.gz",
+      "preview": "/casa-angel/rubros/cielorrasos/CIE-PB-01-preview.png",
+      "thumbnail": "/casa-angel/rubros/cielorrasos/CIE-PB-01.png",
+      "views": [
+        {
+          "id": "2471968",
+          "name": "Planta de cielorrasos · 00. Planta Baja",
+          "label": "Planta de cielorrasos · 00. Planta Baja   1:60",
+          "scale": 60,
+          "kind": "plan",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/cielorrasos/CIE-PB-01-view-2471968.svg.gz",
+          "region": [
+            0.258,
+            0.2022,
+            0.6412,
+            0.785
+          ],
+          "tags": [
+            "CE-PB-01",
+            "CE-PB-02",
+            "CE-PB-03",
+            "CE-PB-04",
+            "CE-PB-05",
+            "CE-PB-06",
+            "CE-PB-07",
+            "CE-PB-08"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "CE-PB-01",
+              "elementId": "1249889",
+              "label": "CE-PB-01 · TC-01 · 8,98 m² · h 2,60",
+              "box": [
+                0.8679,
+                0.4655,
+                0.9507,
+                0.689
+              ]
+            },
+            {
+              "code": "CE-PB-02",
+              "elementId": "1360830",
+              "label": "CE-PB-02 · TC-01 · 5,29 m² · h 2,40",
+              "box": [
+                0.0493,
+                0.8915,
+                0.2234,
+                0.9541
+              ]
+            },
+            {
+              "code": "CE-PB-03",
+              "elementId": "1376081",
+              "label": "CE-PB-03 · TC-01 · 5,43 m² · h 2,40",
+              "box": [
+                0.2329,
+                0.8915,
+                0.4117,
+                0.9541
+              ]
+            },
+            {
+              "code": "CE-PB-04",
+              "elementId": "1376089",
+              "label": "CE-PB-04 · TC-01 · 5,29 m² · h 2,40",
+              "box": [
+                0.4211,
+                0.8915,
+                0.5953,
+                0.9541
+              ]
+            },
+            {
+              "code": "CE-PB-05",
+              "elementId": "1423106",
+              "label": "CE-PB-05 · TC-01 · 6,24 m² · h 2,50",
+              "box": [
+                0.4259,
+                0.0491,
+                0.5377,
+                0.1664
+              ]
+            },
+            {
+              "code": "CE-PB-06",
+              "elementId": "2138470",
+              "label": "CE-PB-06 · TC-02 · 16,60 m² · h 2,50",
+              "box": [
+                0.5607,
+                0.1719,
+                0.8825,
+                0.4567
+              ]
+            },
+            {
+              "code": "CE-PB-07",
+              "elementId": "2140022",
+              "label": "CE-PB-07 · TC-02 · 6,56 m² · h 2,50",
+              "box": [
+                0.5471,
+                0.0459,
+                0.6643,
+                0.1631
+              ]
+            },
+            {
+              "code": "CE-PB-08",
+              "elementId": "2140034",
+              "label": "CE-PB-08 · TC-02 · 6,61 m² · h 2,40",
+              "box": [
+                0.6688,
+                0.0491,
+                0.7885,
+                0.1631
+              ]
+            },
+            {
+              "code": null,
+              "elementId": "780807",
+              "room": true,
+              "label": "01 · Cuarto A Inv. · sin cielorraso modelado",
+              "box": [
+                0.0493,
+                0.7458,
+                0.2234,
+                0.8862
+              ]
+            },
+            {
+              "code": "CE-PB-02",
+              "elementId": "780810",
+              "room": true,
+              "label": "02 · Baño A Inv. · con cielorraso",
+              "box": [
+                0.0493,
+                0.8915,
+                0.2234,
+                0.9541
+              ]
+            },
+            {
+              "code": "CE-PB-03",
+              "elementId": "780813",
+              "room": true,
+              "label": "04 · Baño B Inv. · con cielorraso",
+              "box": [
+                0.2329,
+                0.8915,
+                0.4117,
+                0.9541
+              ]
+            },
+            {
+              "code": null,
+              "elementId": "780816",
+              "room": true,
+              "label": "03 · Cuarto B Inv. · sin cielorraso modelado",
+              "box": [
+                0.2329,
+                0.7458,
+                0.4117,
+                0.8862
+              ]
+            },
+            {
+              "code": null,
+              "elementId": "780819",
+              "room": true,
+              "label": "05 · Cuarto C Inv. · sin cielorraso modelado",
+              "box": [
+                0.4211,
+                0.7458,
+                0.5953,
+                0.8862
+              ]
+            },
+            {
+              "code": "CE-PB-04",
+              "elementId": "780822",
+              "room": true,
+              "label": "06 · Baño C Inv. · con cielorraso",
+              "box": [
+                0.4211,
+                0.8915,
+                0.5953,
+                0.9541
+              ]
+            },
+            {
+              "code": null,
+              "elementId": "780825",
+              "room": true,
+              "label": "13 · Cuarto ppal · sin cielorraso modelado",
+              "box": [
+                0.6563,
+                0.4655,
+                0.8655,
+                0.6132
+              ]
+            },
+            {
+              "code": "CE-PB-01",
+              "elementId": "780828",
+              "room": true,
+              "label": "15 · Baño ppal · con cielorraso",
+              "box": [
+                0.8655,
+                0.4655,
+                0.9507,
+                0.689
+              ]
+            },
+            {
+              "code": "CE-PB-06",
+              "elementId": "783339",
+              "room": true,
+              "label": "12 · Quincho · parcial",
+              "box": [
+                0.5584,
+                0.1686,
+                0.8848,
+                0.46
+              ]
+            },
+            {
+              "code": "CE-PB-08",
+              "elementId": "785697",
+              "room": true,
+              "label": "09 · Hab. servicio · con cielorraso",
+              "box": [
+                0.6688,
+                0.0491,
+                0.7885,
+                0.1631
+              ]
+            },
+            {
+              "code": null,
+              "elementId": "785700",
+              "room": true,
+              "label": "10 · Acceso Servicio · sin cielorraso modelado",
+              "box": [
+                0.7929,
+                0.0459,
+                0.8825,
+                0.1631
+              ]
+            },
+            {
+              "code": null,
+              "elementId": "785703",
+              "room": true,
+              "label": "11 · Ascensor · sin cielorraso modelado",
+              "box": [
+                0.8872,
+                0.0491,
+                0.9484,
+                0.1631
+              ]
+            },
+            {
+              "code": null,
+              "elementId": "788665",
+              "room": true,
+              "label": "17 · Hall · sin cielorraso modelado",
+              "box": [
+                0.6047,
+                0.6978,
+                0.8778,
+                0.952
+              ]
+            },
+            {
+              "code": null,
+              "elementId": "788673",
+              "room": true,
+              "label": "16 · Pasillo · sin cielorraso modelado",
+              "box": [
+                0.2329,
+                0.4622,
+                0.6518,
+                0.7416
+              ]
+            },
+            {
+              "code": "CE-PB-05",
+              "elementId": "874173",
+              "room": true,
+              "label": "07 · Toilette Servicio · con cielorraso",
+              "box": [
+                0.4259,
+                0.0491,
+                0.5377,
+                0.1664
+              ]
+            },
+            {
+              "code": null,
+              "elementId": "1007176",
+              "room": true,
+              "label": "14 · Vestidor ppal · sin cielorraso modelado",
+              "box": [
+                0.6563,
+                0.6132,
+                0.8622,
+                0.689
+              ]
+            },
+            {
+              "code": "CE-PB-07",
+              "elementId": "1041091",
+              "room": true,
+              "label": "08 · Lavadero · parcial",
+              "box": [
+                0.5471,
+                0.0459,
+                0.6643,
+                0.1664
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "CIE-PE-01",
+      "title": "Planta de cielorrasos · 02. Planta Entrepiso",
+      "level": "02. Planta Entrepiso",
+      "sector": "02. Planta Entrepiso",
+      "kind": "general",
+      "element": null,
+      "elementId": null,
+      "elementKind": null,
+      "note": null,
+      "sheetId": "2472079",
+      "pdf": "/casa-angel/rubros/cielorrasos/CIE-PE-01.pdf",
+      "image": "/casa-angel/rubros/cielorrasos/CIE-PE-01.svg.gz",
+      "preview": "/casa-angel/rubros/cielorrasos/CIE-PE-01-preview.png",
+      "thumbnail": "/casa-angel/rubros/cielorrasos/CIE-PE-01.png",
+      "views": [
+        {
+          "id": "2472067",
+          "name": "Planta de cielorrasos · 02. Planta Entrepiso",
+          "label": "Planta de cielorrasos · 02. Planta Entrepiso   1:20",
+          "scale": 20,
+          "kind": "plan",
+          "sector": "02. Planta Entrepiso",
+          "roomLabel": "02. Planta Entrepiso",
+          "image": "/casa-angel/rubros/cielorrasos/CIE-PE-01-view-2472067.svg.gz",
+          "region": [
+            0.2495,
+            0.1732,
+            0.6492,
+            0.8136
+          ],
+          "tags": [],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": null,
+              "elementId": "876161",
+              "room": true,
+              "label": "03 · Atelier · sin cielorraso modelado",
+              "box": [
+                0.1914,
+                0.4402,
+                0.8807,
+                0.8945
+              ]
+            },
+            {
+              "code": null,
+              "elementId": "876170",
+              "room": true,
+              "label": "01 · SM · sin cielorraso modelado",
+              "box": [
+                0.1193,
+                0.1055,
+                0.4607,
+                0.4163
+              ]
+            },
+            {
+              "code": null,
+              "elementId": "876173",
+              "room": true,
+              "label": "02 · Hall PE · sin cielorraso modelado",
+              "box": [
+                0.4607,
+                0.1055,
+                0.8272,
+                0.4402
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "CIE-F-TC-01",
+      "title": "Ficha TC-01 · Placa de Yeso RH 12,5mm Knauf",
+      "level": "00. Planta Baja",
+      "sector": "00. Planta Baja",
+      "kind": "element",
+      "element": "TC-01",
+      "elementId": "1249889",
+      "elementKind": "TC",
+      "note": null,
+      "sheetId": "2471677",
+      "pdf": "/casa-angel/rubros/cielorrasos/CIE-F-TC-01.pdf",
+      "image": "/casa-angel/rubros/cielorrasos/CIE-F-TC-01.svg.gz",
+      "preview": "/casa-angel/rubros/cielorrasos/CIE-F-TC-01-preview.png",
+      "thumbnail": "/casa-angel/rubros/cielorrasos/CIE-F-TC-01.png",
+      "views": [
+        {
+          "id": "2471634",
+          "name": "TC-01 · planta (00. Planta Baja)",
+          "label": "TC-01 · planta (00. Planta Baja)   1:60",
+          "scale": 60,
+          "kind": "plan",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/cielorrasos/CIE-F-TC-01-view-2471634.svg.gz",
+          "region": [
+            0.1336,
+            0.1957,
+            0.5238,
+            0.7864
+          ],
+          "tags": [
+            "CE-PB-01",
+            "CE-PB-02",
+            "CE-PB-03",
+            "CE-PB-04",
+            "CE-PB-05"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "CE-PB-01",
+              "elementId": "1249889",
+              "label": "CE-PB-01 · TC-01 · 8,98 m² · h 2,60",
+              "box": [
+                0.8611,
+                0.4644,
+                0.9424,
+                0.6847
+              ]
+            },
+            {
+              "code": "CE-PB-02",
+              "elementId": "1360830",
+              "label": "CE-PB-02 · TC-01 · 5,29 m² · h 2,40",
+              "box": [
+                0.0576,
+                0.8844,
+                0.2285,
+                0.9461
+              ]
+            },
+            {
+              "code": "CE-PB-03",
+              "elementId": "1376081",
+              "label": "CE-PB-03 · TC-01 · 5,43 m² · h 2,40",
+              "box": [
+                0.2378,
+                0.8844,
+                0.4134,
+                0.9461
+              ]
+            },
+            {
+              "code": "CE-PB-04",
+              "elementId": "1376089",
+              "label": "CE-PB-04 · TC-01 · 5,29 m² · h 2,40",
+              "box": [
+                0.4226,
+                0.8844,
+                0.5936,
+                0.9461
+              ]
+            },
+            {
+              "code": "CE-PB-05",
+              "elementId": "1423106",
+              "label": "CE-PB-05 · TC-01 · 6,24 m² · h 2,50",
+              "box": [
+                0.4272,
+                0.0539,
+                0.537,
+                0.1694
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2471649",
+          "name": "TC-01 · corte",
+          "label": "TC-01 · corte   1:20",
+          "scale": 20,
+          "kind": "section",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/cielorrasos/CIE-F-TC-01-view-2471649.svg.gz",
+          "region": [
+            0.5485,
+            0.2227,
+            0.7794,
+            0.4968
+          ],
+          "tags": [
+            "TC-01"
+          ],
+          "dimensions": [
+            {
+              "label": "TC-01 altura libre",
+              "values_m": [
+                2.6
+              ],
+              "associative": false
+            },
+            {
+              "label": "TC-01 ancho",
+              "values_m": [
+                1.76
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "CE-PB-01",
+              "elementId": "1249889",
+              "label": "CE-PB-01 · TC-01 · 8,98 m² · h 2,60",
+              "box": [
+                0.2938,
+                0.1631,
+                0.7062,
+                0.1666
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2471666",
+          "name": "CE-PB-01 · axonométrica",
+          "label": "CE-PB-01 · axonométrica   1:40",
+          "scale": 40,
+          "kind": "axo",
+          "sector": "Sector: 00. Planta Baja",
+          "roomLabel": "Sector: 00. Planta Baja",
+          "image": "/casa-angel/rubros/cielorrasos/CIE-F-TC-01-view-2471666.svg.gz",
+          "region": [
+            0.5701,
+            0.6061,
+            0.7578,
+            0.7594
+          ],
+          "tags": [
+            "CE-PB-01"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "CE-PB-01",
+              "elementId": "1249889",
+              "label": "CE-PB-01 · TC-01 · 8,98 m² · h 2,60",
+              "box": [
+                0.1504,
+                0.2144,
+                0.8496,
+                0.7856
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "CIE-F-TC-02",
+      "title": "Ficha TC-02 · Placa de Yeso ST 12,5mm Knauf",
+      "level": "00. Planta Baja",
+      "sector": "00. Planta Baja",
+      "kind": "element",
+      "element": "TC-02",
+      "elementId": "2138470",
+      "elementKind": "TC",
+      "note": null,
+      "sheetId": "2471743",
+      "pdf": "/casa-angel/rubros/cielorrasos/CIE-F-TC-02.pdf",
+      "image": "/casa-angel/rubros/cielorrasos/CIE-F-TC-02.svg.gz",
+      "preview": "/casa-angel/rubros/cielorrasos/CIE-F-TC-02-preview.png",
+      "thumbnail": "/casa-angel/rubros/cielorrasos/CIE-F-TC-02.png",
+      "views": [
+        {
+          "id": "2471702",
+          "name": "TC-02 · planta (00. Planta Baja)",
+          "label": "TC-02 · planta (00. Planta Baja)   1:30",
+          "scale": 30,
+          "kind": "plan",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/cielorrasos/CIE-F-TC-02-view-2471702.svg.gz",
+          "region": [
+            0.1195,
+            0.1945,
+            0.4574,
+            0.7876
+          ],
+          "tags": [
+            "CE-PB-06",
+            "CE-PB-07",
+            "CE-PB-08"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "CE-PB-06",
+              "elementId": "2138470",
+              "label": "CE-PB-06 · TC-02 · 16,60 m² · h 2,50",
+              "box": [
+                0.1507,
+                0.344,
+                0.8801,
+                0.9034
+              ]
+            },
+            {
+              "code": "CE-PB-07",
+              "elementId": "2140022",
+              "label": "CE-PB-07 · TC-02 · 6,56 m² · h 2,50",
+              "box": [
+                0.1199,
+                0.0966,
+                0.3856,
+                0.3268
+              ]
+            },
+            {
+              "code": "CE-PB-08",
+              "elementId": "2140034",
+              "label": "CE-PB-08 · TC-02 · 6,61 m² · h 2,40",
+              "box": [
+                0.3957,
+                0.1031,
+                0.667,
+                0.3268
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2471715",
+          "name": "TC-02 · corte",
+          "label": "TC-02 · corte   1:30",
+          "scale": 30,
+          "kind": "section",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/cielorrasos/CIE-F-TC-02-view-2471715.svg.gz",
+          "region": [
+            0.4417,
+            0.2212,
+            0.8057,
+            0.4111
+          ],
+          "tags": [
+            "TC-02"
+          ],
+          "dimensions": [
+            {
+              "label": "TC-02 altura libre",
+              "values_m": [
+                2.5
+              ],
+              "associative": false
+            },
+            {
+              "label": "TC-02 ancho",
+              "values_m": [
+                6.8355
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "CE-PB-06",
+              "elementId": "2138470",
+              "label": "CE-PB-06 · TC-02 · 16,60 m² · h 2,50",
+              "box": [
+                0.1615,
+                0.2102,
+                0.8385,
+                0.2136
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2471732",
+          "name": "CE-PB-06 · axonométrica",
+          "label": "CE-PB-06 · axonométrica   1:40",
+          "scale": 40,
+          "kind": "axo",
+          "sector": "Sector: 00. Planta Baja",
+          "roomLabel": "Sector: 00. Planta Baja",
+          "image": "/casa-angel/rubros/cielorrasos/CIE-F-TC-02-view-2471732.svg.gz",
+          "region": [
+            0.468,
+            0.5215,
+            0.7794,
+            0.7569
+          ],
+          "tags": [
+            "CE-PB-06"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "CE-PB-06",
+              "elementId": "2138470",
+              "label": "CE-PB-06 · TC-02 · 16,60 m² · h 2,50",
+              "box": [
+                0.0906,
+                0.1395,
+                0.9094,
+                0.8605
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "CIE-F-TC-03",
+      "title": "Ficha TC-03 · Plain",
+      "level": "01. Planta Alta",
+      "sector": "01. Planta Alta",
+      "kind": "element",
+      "element": "TC-03",
+      "elementId": "2138433",
+      "elementKind": "TC",
+      "note": null,
+      "sheetId": "2471812",
+      "pdf": "/casa-angel/rubros/cielorrasos/CIE-F-TC-03.pdf",
+      "image": "/casa-angel/rubros/cielorrasos/CIE-F-TC-03.svg.gz",
+      "preview": "/casa-angel/rubros/cielorrasos/CIE-F-TC-03-preview.png",
+      "thumbnail": "/casa-angel/rubros/cielorrasos/CIE-F-TC-03.png",
+      "views": [
+        {
+          "id": "2471768",
+          "name": "TC-03 · planta (01. Planta Alta)",
+          "label": "TC-03 · planta (01. Planta Alta)   1:60",
+          "scale": 60,
+          "kind": "plan",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "image": "/casa-angel/rubros/cielorrasos/CIE-F-TC-03-view-2471768.svg.gz",
+          "region": [
+            0.123,
+            0.2015,
+            0.4941,
+            0.7806
+          ],
+          "tags": [
+            "CE-PA-01",
+            "CE-PA-02",
+            "CE-PA-03",
+            "CE-PA-04",
+            "CE-PA-05",
+            "CE-PA-06"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "CE-PA-01",
+              "elementId": "1478681",
+              "label": "CE-PA-01 · TC-03 · 5,81 m² · h 2,70",
+              "box": [
+                0.2063,
+                0.8162,
+                0.3219,
+                0.9451
+              ]
+            },
+            {
+              "code": "CE-PA-02",
+              "elementId": "2138425",
+              "label": "CE-PA-02 · TC-03 · 4,79 m² · h 2,70",
+              "box": [
+                0.0605,
+                0.8724,
+                0.2014,
+                0.9451
+              ]
+            },
+            {
+              "code": "CE-PA-03",
+              "elementId": "2138433",
+              "label": "CE-PA-03 · TC-03 · 14,99 m² · h 2,70",
+              "box": [
+                0.0605,
+                0.6895,
+                0.2403,
+                0.868
+              ]
+            },
+            {
+              "code": "CE-PA-04",
+              "elementId": "2143224",
+              "label": "CE-PA-04 · TC-03 · 5,01 m² · h 2,50",
+              "box": [
+                0.6661,
+                0.0549,
+                0.7597,
+                0.1695
+              ]
+            },
+            {
+              "code": "CE-PA-05",
+              "elementId": "2143232",
+              "label": "CE-PA-05 · TC-03 · 8,33 m² · h 2,50",
+              "box": [
+                0.7646,
+                0.0549,
+                0.9203,
+                0.1695
+              ]
+            },
+            {
+              "code": "CE-PA-06",
+              "elementId": "2143244",
+              "label": "CE-PA-06 · TC-03 · 8,77 m² · h 2,50",
+              "box": [
+                0.6892,
+                0.1783,
+                0.9395,
+                0.3546
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2471784",
+          "name": "TC-03 · corte",
+          "label": "TC-03 · corte   1:25",
+          "scale": 25,
+          "kind": "section",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "image": "/casa-angel/rubros/cielorrasos/CIE-F-TC-03-view-2471784.svg.gz",
+          "region": [
+            0.5057,
+            0.2176,
+            0.782,
+            0.4483
+          ],
+          "tags": [
+            "TC-03"
+          ],
+          "dimensions": [
+            {
+              "label": "TC-03 altura libre",
+              "values_m": [
+                2.7
+              ],
+              "associative": false
+            },
+            {
+              "label": "TC-03 ancho",
+              "values_m": [
+                3.7
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "CE-PA-03",
+              "elementId": "2138433",
+              "label": "CE-PA-03 · TC-03 · 14,99 m² · h 2,70",
+              "box": [
+                0.1946,
+                0.1604,
+                0.7741,
+                0.1755
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2471801",
+          "name": "CE-PA-03 · axonométrica",
+          "label": "CE-PA-03 · axonométrica   1:30",
+          "scale": 30,
+          "kind": "axo",
+          "sector": "Sector: 01. Planta Alta",
+          "roomLabel": "Sector: 01. Planta Alta",
+          "image": "/casa-angel/rubros/cielorrasos/CIE-F-TC-03-view-2471801.svg.gz",
+          "region": [
+            0.5089,
+            0.5474,
+            0.7788,
+            0.7645
+          ],
+          "tags": [
+            "CE-PA-03"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "CE-PA-03",
+              "elementId": "2138433",
+              "label": "CE-PA-03 · TC-03 · 14,99 m² · h 2,70",
+              "box": [
+                0.1339,
+                0.192,
+                0.8661,
+                0.808
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "codes": [
+    {
+      "code": "TC-01",
+      "kind": "TC",
+      "label": "TC-01 · placa Knauf RH 12,5 (resistente a humedad) · 31,23 m²",
+      "status": "Capas: Placa de Yeso RH 12,5mm Knauf 1,2 cm",
+      "area_m2": 31.23,
+      "type": "Placa de Yeso RH 12,5mm Knauf",
+      "layers": [
+        {
+          "material": "Placa de Yeso RH 12,5mm Knauf",
+          "thickness_m": 0.0125
+        }
+      ]
+    },
+    {
+      "code": "TC-02",
+      "kind": "TC",
+      "label": "TC-02 · placa Knauf ST 12,5 · 29,77 m²",
+      "status": "Capas: Placa de Yeso ST 12,5mm Knauf 1,2 cm",
+      "area_m2": 29.77,
+      "type": "Placa de Yeso ST 12,5mm Knauf",
+      "layers": [
+        {
+          "material": "Placa de Yeso ST 12,5mm Knauf",
+          "thickness_m": 0.0125
+        }
+      ]
+    },
+    {
+      "code": "TC-03",
+      "kind": "TC",
+      "label": "TC-03 · genérico: perfilería 45 + placa 12 mm · 47,70 m²",
+      "status": "Tipo genérico · Capas: Metal Stud Layer 4,5 / Gypsum Wall Board 1,2 cm",
+      "area_m2": 47.7,
+      "type": "Plain",
+      "layers": [
+        {
+          "material": "Metal Stud Layer",
+          "thickness_m": 0.045
+        },
+        {
+          "material": "Gypsum Wall Board",
+          "thickness_m": 0.011999999999999999
+        }
+      ]
+    },
+    {
+      "code": "CE-PA-01",
+      "kind": "CE",
+      "label": "CE-PA-01 · TC-03 · 5,81 m² · h 2,70",
+      "status": "Plain",
+      "elementId": "1478681",
+      "typeCode": "TC-03",
+      "level": "01. Planta Alta",
+      "area_m2": 5.81,
+      "height_m": 2.7,
+      "perimeter_m": 10.61
+    },
+    {
+      "code": "CE-PA-02",
+      "kind": "CE",
+      "label": "CE-PA-02 · TC-03 · 4,79 m² · h 2,70",
+      "status": "Plain",
+      "elementId": "2138425",
+      "typeCode": "TC-03",
+      "level": "01. Planta Alta",
+      "area_m2": 4.79,
+      "height_m": 2.7,
+      "perimeter_m": 9.1
+    },
+    {
+      "code": "CE-PA-03",
+      "kind": "CE",
+      "label": "CE-PA-03 · TC-03 · 14,99 m² · h 2,70",
+      "status": "Plain",
+      "elementId": "2138433",
+      "typeCode": "TC-03",
+      "level": "01. Planta Alta",
+      "area_m2": 14.99,
+      "height_m": 2.7,
+      "perimeter_m": 15.5
+    },
+    {
+      "code": "CE-PA-04",
+      "kind": "CE",
+      "label": "CE-PA-04 · TC-03 · 5,01 m² · h 2,50",
+      "status": "Plain",
+      "elementId": "2143224",
+      "typeCode": "TC-03",
+      "level": "01. Planta Alta",
+      "area_m2": 5.01,
+      "height_m": 2.5,
+      "perimeter_m": 9.05
+    },
+    {
+      "code": "CE-PA-05",
+      "kind": "CE",
+      "label": "CE-PA-05 · TC-03 · 8,33 m² · h 2,50",
+      "status": "Plain",
+      "elementId": "2143232",
+      "typeCode": "TC-03",
+      "level": "01. Planta Alta",
+      "area_m2": 8.33,
+      "height_m": 2.5,
+      "perimeter_m": 11.61
+    },
+    {
+      "code": "CE-PA-06",
+      "kind": "CE",
+      "label": "CE-PA-06 · TC-03 · 8,77 m² · h 2,50",
+      "status": "Plain",
+      "elementId": "2143244",
+      "typeCode": "TC-03",
+      "level": "01. Planta Alta",
+      "area_m2": 8.77,
+      "height_m": 2.5,
+      "perimeter_m": 17.88
+    },
+    {
+      "code": "CE-PB-01",
+      "kind": "CE",
+      "label": "CE-PB-01 · TC-01 · 8,98 m² · h 2,60",
+      "status": "Placa de Yeso RH 12,5mm Knauf",
+      "elementId": "1249889",
+      "typeCode": "TC-01",
+      "level": "00. Planta Baja",
+      "area_m2": 8.98,
+      "height_m": 2.6,
+      "perimeter_m": 13.72
+    },
+    {
+      "code": "CE-PB-02",
+      "kind": "CE",
+      "label": "CE-PB-02 · TC-01 · 5,29 m² · h 2,40",
+      "status": "Placa de Yeso RH 12,5mm Knauf",
+      "elementId": "1360830",
+      "typeCode": "TC-01",
+      "level": "00. Planta Baja",
+      "area_m2": 5.29,
+      "height_m": 2.4,
+      "perimeter_m": 10.26
+    },
+    {
+      "code": "CE-PB-03",
+      "kind": "CE",
+      "label": "CE-PB-03 · TC-01 · 5,43 m² · h 2,40",
+      "status": "Placa de Yeso RH 12,5mm Knauf",
+      "elementId": "1376081",
+      "typeCode": "TC-01",
+      "level": "00. Planta Baja",
+      "area_m2": 5.43,
+      "height_m": 2.4,
+      "perimeter_m": 10.46
+    },
+    {
+      "code": "CE-PB-04",
+      "kind": "CE",
+      "label": "CE-PB-04 · TC-01 · 5,29 m² · h 2,40",
+      "status": "Placa de Yeso RH 12,5mm Knauf",
+      "elementId": "1376089",
+      "typeCode": "TC-01",
+      "level": "00. Planta Baja",
+      "area_m2": 5.29,
+      "height_m": 2.4,
+      "perimeter_m": 10.26
+    },
+    {
+      "code": "CE-PB-05",
+      "kind": "CE",
+      "label": "CE-PB-05 · TC-01 · 6,24 m² · h 2,50",
+      "status": "Placa de Yeso RH 12,5mm Knauf",
+      "elementId": "1423106",
+      "typeCode": "TC-01",
+      "level": "00. Planta Baja",
+      "area_m2": 6.24,
+      "height_m": 2.5,
+      "perimeter_m": 9.97
+    },
+    {
+      "code": "CE-PB-06",
+      "kind": "CE",
+      "label": "CE-PB-06 · TC-02 · 16,60 m² · h 2,50",
+      "status": "Placa de Yeso ST 12,5mm Knauf",
+      "elementId": "2138470",
+      "typeCode": "TC-02",
+      "level": "00. Planta Baja",
+      "area_m2": 16.6,
+      "height_m": 2.5,
+      "perimeter_m": 26.24
+    },
+    {
+      "code": "CE-PB-07",
+      "kind": "CE",
+      "label": "CE-PB-07 · TC-02 · 6,56 m² · h 2,50",
+      "status": "Placa de Yeso ST 12,5mm Knauf",
+      "elementId": "2140022",
+      "typeCode": "TC-02",
+      "level": "00. Planta Baja",
+      "area_m2": 6.56,
+      "height_m": 2.5,
+      "perimeter_m": 10.33
+    },
+    {
+      "code": "CE-PB-08",
+      "kind": "CE",
+      "label": "CE-PB-08 · TC-02 · 6,61 m² · h 2,40",
+      "status": "Placa de Yeso ST 12,5mm Knauf",
+      "elementId": "2140034",
+      "typeCode": "TC-02",
+      "level": "00. Planta Baja",
+      "area_m2": 6.61,
+      "height_m": 2.4,
+      "perimeter_m": 10.29
+    }
+  ],
+  "totals": [
+    {
+      "label": "placa Knauf RH 12,5 (resistente a humedad)",
+      "value": 31.23,
+      "unit": "m²",
+      "detail": "TC-01"
+    },
+    {
+      "label": "placa Knauf ST 12,5",
+      "value": 29.77,
+      "unit": "m²",
+      "detail": "TC-02"
+    },
+    {
+      "label": "genérico: perfilería 45 + placa 12 mm",
+      "value": 47.7,
+      "unit": "m²",
+      "detail": "TC-03"
+    },
+    {
+      "label": "Locales sin cielorraso modelado",
+      "value": 194.63,
+      "unit": "m²",
+      "detail": "15 locales"
+    },
+    {
+      "label": "Locales con cielorraso parcial",
+      "value": 101.46,
+      "unit": "m²",
+      "detail": "4 locales"
+    },
+    {
+      "label": "Cielorrasos modelados",
+      "value": 108.7,
+      "unit": "m²",
+      "detail": "14 piezas · 3 tipos"
+    }
+  ],
+  "quantities": [
+    {
+      "label": "TC-01 · placa Knauf RH 12,5 (resistente a humedad)",
+      "group": "Tipos de cielorraso",
+      "count": 5,
+      "value": 31.23,
+      "unit": "m²",
+      "detail": "Placa de Yeso RH 12,5mm Knauf 1,2 cm"
+    },
+    {
+      "label": "TC-02 · placa Knauf ST 12,5",
+      "group": "Tipos de cielorraso",
+      "count": 3,
+      "value": 29.77,
+      "unit": "m²",
+      "detail": "Placa de Yeso ST 12,5mm Knauf 1,2 cm"
+    },
+    {
+      "label": "TC-03 · genérico: perfilería 45 + placa 12 mm",
+      "group": "Tipos de cielorraso",
+      "count": 6,
+      "value": 47.7,
+      "unit": "m²",
+      "detail": "Metal Stud Layer 4,5 / Gypsum Wall Board 1,2 cm"
+    },
+    {
+      "label": "01 · Cuarto A Inv.",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 11.86,
+      "unit": "m²",
+      "detail": "sin cielorraso modelado"
+    },
+    {
+      "label": "02 · Baño A Inv.",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 5.29,
+      "unit": "m²",
+      "detail": "con cielorraso (CE-PB-02)"
+    },
+    {
+      "label": "04 · Baño B Inv.",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 5.43,
+      "unit": "m²",
+      "detail": "con cielorraso (CE-PB-03)"
+    },
+    {
+      "label": "03 · Cuarto B Inv.",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 12.18,
+      "unit": "m²",
+      "detail": "sin cielorraso modelado"
+    },
+    {
+      "label": "05 · Cuarto C Inv.",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 11.86,
+      "unit": "m²",
+      "detail": "sin cielorraso modelado"
+    },
+    {
+      "label": "06 · Baño C Inv.",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 5.29,
+      "unit": "m²",
+      "detail": "con cielorraso (CE-PB-04)"
+    },
+    {
+      "label": "13 · Cuarto ppal",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 14.82,
+      "unit": "m²",
+      "detail": "sin cielorraso modelado"
+    },
+    {
+      "label": "15 · Baño ppal",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 9.03,
+      "unit": "m²",
+      "detail": "con cielorraso (CE-PB-01)"
+    },
+    {
+      "label": "12 · Quincho",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 45.01,
+      "unit": "m²",
+      "detail": "parcial (CE-PB-06)"
+    },
+    {
+      "label": "09 · Hab. servicio",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 6.61,
+      "unit": "m²",
+      "detail": "con cielorraso (CE-PB-08)"
+    },
+    {
+      "label": "10 · Acceso Servicio",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 5.03,
+      "unit": "m²",
+      "detail": "sin cielorraso modelado"
+    },
+    {
+      "label": "11 · Ascensor",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 3.34,
+      "unit": "m²",
+      "detail": "sin cielorraso modelado"
+    },
+    {
+      "label": "17 · Hall",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 27.13,
+      "unit": "m²",
+      "detail": "sin cielorraso modelado"
+    },
+    {
+      "label": "16 · Pasillo",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 26.08,
+      "unit": "m²",
+      "detail": "sin cielorraso modelado"
+    },
+    {
+      "label": "05 · Toilette",
+      "group": "Locales · 01. Planta Alta",
+      "count": 1,
+      "value": 5.12,
+      "unit": "m²",
+      "detail": "con cielorraso (CE-PA-04)"
+    },
+    {
+      "label": "06 · Cava",
+      "group": "Locales · 01. Planta Alta",
+      "count": 1,
+      "value": 8.44,
+      "unit": "m²",
+      "detail": "con cielorraso (CE-PA-05)"
+    },
+    {
+      "label": "01 · Sala de TV",
+      "group": "Locales · 01. Planta Alta",
+      "count": 1,
+      "value": 14.99,
+      "unit": "m²",
+      "detail": "con cielorraso (CE-PA-03)"
+    },
+    {
+      "label": "08 · Comedor",
+      "group": "Locales · 01. Planta Alta",
+      "count": 1,
+      "value": 23.26,
+      "unit": "m²",
+      "detail": "sin cielorraso modelado"
+    },
+    {
+      "label": "03 · Playroom",
+      "group": "Locales · 01. Planta Alta",
+      "count": 1,
+      "value": 28.94,
+      "unit": "m²",
+      "detail": "parcial (CE-PA-01)"
+    },
+    {
+      "label": "04 · Baño PA",
+      "group": "Locales · 01. Planta Alta",
+      "count": 1,
+      "value": 5.81,
+      "unit": "m²",
+      "detail": "con cielorraso (CE-PA-01)"
+    },
+    {
+      "label": "07 · Toilette Servicio",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 6.24,
+      "unit": "m²",
+      "detail": "con cielorraso (CE-PB-05)"
+    },
+    {
+      "label": "03 · Atelier",
+      "group": "Locales · 02. Planta Entrepiso",
+      "count": 1,
+      "value": 19.36,
+      "unit": "m²",
+      "detail": "sin cielorraso modelado"
+    },
+    {
+      "label": "01 · SM",
+      "group": "Locales · 02. Planta Entrepiso",
+      "count": 1,
+      "value": 6.56,
+      "unit": "m²",
+      "detail": "sin cielorraso modelado"
+    },
+    {
+      "label": "02 · Hall PE",
+      "group": "Locales · 02. Planta Entrepiso",
+      "count": 1,
+      "value": 7.26,
+      "unit": "m²",
+      "detail": "sin cielorraso modelado"
+    },
+    {
+      "label": "07 · Cocina",
+      "group": "Locales · 01. Planta Alta",
+      "count": 1,
+      "value": 20.87,
+      "unit": "m²",
+      "detail": "parcial (CE-PA-06)"
+    },
+    {
+      "label": "09 · Living",
+      "group": "Locales · 01. Planta Alta",
+      "count": 1,
+      "value": 16.14,
+      "unit": "m²",
+      "detail": "sin cielorraso modelado"
+    },
+    {
+      "label": "10 · Puente",
+      "group": "Locales · 01. Planta Alta",
+      "count": 1,
+      "value": 2.18,
+      "unit": "m²",
+      "detail": "sin cielorraso modelado"
+    },
+    {
+      "label": "02 · Sala de Maquinas",
+      "group": "Locales · 01. Planta Alta",
+      "count": 1,
+      "value": 4.79,
+      "unit": "m²",
+      "detail": "con cielorraso (CE-PA-02)"
+    },
+    {
+      "label": "14 · Vestidor ppal",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 7.57,
+      "unit": "m²",
+      "detail": "sin cielorraso modelado"
+    },
+    {
+      "label": "08 · Lavadero",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 6.64,
+      "unit": "m²",
+      "detail": "parcial (CE-PB-07)"
+    }
+  ],
+  "quantityNote": "m² según Revit (cara inferior). La cobertura por local se toma en el centro del local; \"parcial\" = hay cielorraso que cubre más del 10 % del local sin llegar al centro.",
+  "notModeled": [
+    "15 locales sin cielorraso modelado (incluye toda la planta Entrepiso)",
+    "TC-03 \"Plain\" es un tipo genérico (perfilería 45 + placa 12 mm)",
+    "Buñas, tapas de inspección, cajones y gargantas",
+    "Pintura de cielorrasos"
+  ],
+  "decisions": [
+    "Cielorrasos documentados en planta de cielorrasos (vista desde abajo) por nivel.",
+    "Códigos TC/CE solo como anotación (no escritos en Mark)."
+  ],
+  "questions": [
+    "¿Qué cielorraso llevan los locales sin cielorraso modelado (suspendido de placa, aplicado bajo losa, losa vista)?",
+    "¿TC-03 (\"Plain\", planta alta) es Durlock ST como en PB? Hoy es un tipo genérico.",
+    "¿Hay cajones, gargantas o buñas perimetrales a documentar?",
+    "¿Escribimos los códigos TC/CE en el modelo (Mark)?"
+  ]
+}
