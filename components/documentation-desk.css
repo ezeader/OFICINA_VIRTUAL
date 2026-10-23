@@ -1,0 +1,13 @@
+.psActions{flex-wrap:wrap;gap:12px}
+.psOpeningsShortcut{display:flex;align-items:center;gap:12px;padding:13px 18px;background:#e9eddf;border:1px solid #b7c2a4;color:#33432a;text-decoration:none;min-width:0;max-width:100%}
+.psOpeningsShortcut>span{font-size:17px;font-weight:500}
+.psOpeningsShortcut small{display:block;font-size:11px;font-weight:400;line-height:1.5;margin-top:3px}
+.psOpeningsShortcut:hover{background:#dce5cd;border-color:#748661}
+.psOpeningsShortcut:focus-visible,.docDesk .docRubrics button:focus-visible{outline:2px solid #4e653a;outline-offset:3px}
+.docDesk .docRubrics{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin:0 0 24px;overflow:visible}
+.docDesk .docRubrics button{display:flex;align-items:flex-start;flex-direction:column;gap:7px;white-space:normal;text-align:left;padding:15px 13px;min-width:0;border:1px solid #d8ddd0;background:#f9faf6;color:#46523b}
+.docDesk .docRubrics button strong{font-size:15px;font-weight:500}
+.docDesk .docRubrics button small{font-size:10px;line-height:1.45;letter-spacing:0;text-transform:none}
+.docDesk .docRubrics button.active{background:#37462f;color:#fff;border-color:#37462f}
+@media(max-width:1100px){.docDesk .docRubrics{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:600px){.docDesk .docRubrics{grid-template-columns:repeat(2,minmax(0,1fr))}.psOpeningsShortcut{width:100%}.docDesk .docRubrics button{padding:12px 10px}.docDesk .docRubrics button strong{font-size:14px}}
