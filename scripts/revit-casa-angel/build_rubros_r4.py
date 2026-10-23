@@ -95,7 +95,7 @@ def structure(s):
             'Fundaciones (categoría Structural Foundations vacía): solo la platea PB modelada como piso "Platea PB 15CM".',
             'Armaduras (Rebar = 0): cuantías y despiece de hierro no están en el modelo.',
             'Columnas estructurales (0) y vigas de hormigón (0 como Structural Framing): los encadenados están modelados como muros ("Viga de encadenado invertida", "VIGA encuentro...").',
-            'Losas de PA/PE: los tipos L01.00 / L01.02 / L04.01 / L07.01 son paquetes de piso sin capa de hormigón; solo L01.01 / 30cm incluye 15 cm de hormigón. Falta modelar o confirmar la losa estructural de esos sectores.',
+            'Losas de PA/PE: el tipo L01.00 (LO-PA-01, LO-PA-02, LO-PE-01) es un paquete de piso sin capa de hormigón: losa a confirmar. L01.01 tiene 15 cm de hormigón y L01.02 / L04.01 / L07.01 tienen 17,5 cm.',
             'Niveles no marcados como estructurales (Structural = No en los 5 niveles); no hay niveles de fundación ni de losa (cota de hormigón vs. piso terminado).',
             'Parámetro "Structural" de los 43 muros de hormigón desactivado: Revit no los trata como estructura (no aparecen en vistas/planillas estructurales).',
         ],
@@ -116,7 +116,7 @@ def structure(s):
             'webData': 'structure/manifest.json: concreteWalls.elements (con code propuesto), slabsAndFoundations, reviewCases y proposal.sheets; las láminas se agregarán con image/pdf como en openings/manifest.json.',
         },
         'openQuestions': [
-            '¿Las losas de PA y PE son de hormigón armado? Hoy figuran solo como paquetes de piso (salvo L01.01 / 30cm).',
+            'Losas L01.00 de PA/PE (LO-PA-01, LO-PA-02, LO-PE-01): documentadas como losa a confirmar (respuesta: no asumir hormigón).',
             '¿Hay fundaciones además de la platea (vigas de fundación, pilotes, zapatas)?',
             '¿Activamos el parámetro Structural en los 43 muros de hormigón y marcamos niveles estructurales? Es un cambio de parámetros del modelo (no documentación): requiere su OK.',
             '¿Confirmamos la numeración MH-/LO-/PL-/VE- y que se escriba en Mark?',

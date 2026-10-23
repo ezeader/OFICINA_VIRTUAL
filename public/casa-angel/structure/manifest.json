@@ -1869,7 +1869,7 @@
     "Fundaciones (categoría Structural Foundations vacía): solo la platea PB modelada como piso \"Platea PB 15CM\".",
     "Armaduras (Rebar = 0): cuantías y despiece de hierro no están en el modelo.",
     "Columnas estructurales (0) y vigas de hormigón (0 como Structural Framing): los encadenados están modelados como muros (\"Viga de encadenado invertida\", \"VIGA encuentro...\").",
-    "Losas de PA/PE: los tipos L01.00 / L01.02 / L04.01 / L07.01 son paquetes de piso sin capa de hormigón; solo L01.01 / 30cm incluye 15 cm de hormigón. Falta modelar o confirmar la losa estructural de esos sectores.",
+    "Losas de PA/PE: el tipo L01.00 (LO-PA-01, LO-PA-02, LO-PE-01) es un paquete de piso sin capa de hormigón: losa a confirmar. L01.01 tiene 15 cm de hormigón y L01.02 / L04.01 / L07.01 tienen 17,5 cm.",
     "Niveles no marcados como estructurales (Structural = No en los 5 niveles); no hay niveles de fundación ni de losa (cota de hormigón vs. piso terminado).",
     "Parámetro \"Structural\" de los 43 muros de hormigón desactivado: Revit no los trata como estructura (no aparecen en vistas/planillas estructurales)."
   ],
@@ -2345,9 +2345,6758 @@
     "webData": "structure/manifest.json: concreteWalls.elements (con code propuesto), slabsAndFoundations, reviewCases y proposal.sheets; las láminas se agregarán con image/pdf como en openings/manifest.json."
   },
   "openQuestions": [
-    "¿Las losas de PA y PE son de hormigón armado? Hoy figuran solo como paquetes de piso (salvo L01.01 / 30cm).",
+    "Losas L01.00 de PA/PE (LO-PA-01, LO-PA-02, LO-PE-01): documentadas como losa a confirmar (respuesta: no asumir hormigón).",
     "¿Hay fundaciones además de la platea (vigas de fundación, pilotes, zapatas)?",
     "¿Activamos el parámetro Structural en los 43 muros de hormigón y marcamos niveles estructurales? Es un cambio de parámetros del modelo (no documentación): requiere su OK.",
     "¿Confirmamos la numeración MH-/LO-/PL-/VE- y que se escriba en Mark?"
+  ],
+  "sheets": [
+    {
+      "number": "EST-00",
+      "title": "Índice, criterios y cómputo",
+      "level": null,
+      "sector": "General",
+      "sheetId": "2453179",
+      "pdf": "/casa-angel/structure/EST-00.pdf",
+      "image": "/casa-angel/structure/EST-00.svg.gz",
+      "preview": "/casa-angel/structure/EST-00-preview.png",
+      "thumbnail": "/casa-angel/structure/EST-00.png",
+      "outsideCrop": [],
+      "views": []
+    },
+    {
+      "number": "EST-FU-01",
+      "title": "Fundación · platea PB",
+      "level": "00. Planta Baja",
+      "sector": "Fundación",
+      "sheetId": "2453587",
+      "pdf": "/casa-angel/structure/EST-FU-01.pdf",
+      "image": "/casa-angel/structure/EST-FU-01.svg.gz",
+      "preview": "/casa-angel/structure/EST-FU-01-preview.png",
+      "thumbnail": "/casa-angel/structure/EST-FU-01.png",
+      "outsideCrop": [],
+      "views": [
+        {
+          "id": "2453553",
+          "name": "Platea de fundación PL-01",
+          "label": "Platea de fundación PL-01   1:60",
+          "scale": 60,
+          "kind": "plan",
+          "sector": "Fundación · 00. Planta Baja",
+          "roomLabel": "Fundación · 00. Planta Baja",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-FU-01-view-2453553.svg.gz",
+          "region": [
+            0.2512,
+            0.224,
+            0.648,
+            0.824
+          ],
+          "tags": [
+            "PL-01"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                19.5
+              ],
+              "associative": false,
+              "label": "PL-01 extensión X"
+            },
+            {
+              "values_m": [
+                21.0
+              ],
+              "associative": false,
+              "label": "PL-01 extensión Y"
+            }
+          ],
+          "elements": [
+            {
+              "code": "PL-01",
+              "elementId": "2287528",
+              "box": [
+                0.0567,
+                0.0531,
+                0.9433,
+                0.9469
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EST-PA-01",
+      "title": "Planta de estructura · 01. Planta Alta",
+      "level": "01. Planta Alta",
+      "sector": "01. Planta Alta",
+      "sheetId": "2453454",
+      "pdf": "/casa-angel/structure/EST-PA-01.pdf",
+      "image": "/casa-angel/structure/EST-PA-01.svg.gz",
+      "preview": "/casa-angel/structure/EST-PA-01-preview.png",
+      "thumbnail": "/casa-angel/structure/EST-PA-01.png",
+      "outsideCrop": [],
+      "views": [
+        {
+          "id": "2453354",
+          "name": "Planta de estructura · 01. Planta Alta",
+          "label": "Planta de estructura · 01. Planta Alta   1:75",
+          "scale": 75,
+          "kind": "plan",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-PA-01-view-2453354.svg.gz",
+          "region": [
+            0.2871,
+            0.2786,
+            0.6121,
+            0.7693
+          ],
+          "tags": [
+            "MH-PA-01",
+            "MH-PA-02",
+            "MH-PA-03",
+            "MH-PA-04",
+            "MH-PA-05",
+            "MH-PA-06",
+            "MH-PA-07",
+            "MH-PA-08",
+            "MH-PA-09",
+            "MH-PA-10",
+            "MH-PA-11",
+            "MH-PA-12",
+            "MH-PA-13",
+            "MH-PA-14",
+            "MH-PA-15",
+            "MH-PA-16",
+            "MH-PA-17",
+            "VE-PA-01",
+            "LO-PA-01",
+            "LO-PA-02",
+            "LO-PA-03",
+            "LO-PA-04",
+            "LO-PA-05",
+            "LO-PA-06",
+            "LO-PA-07",
+            "LO-PA-08"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                0.95
+              ],
+              "associative": false,
+              "label": "MH-PA-01 largo"
+            },
+            {
+              "values_m": [
+                6.925
+              ],
+              "associative": false,
+              "label": "MH-PA-02 largo"
+            },
+            {
+              "values_m": [
+                0.55
+              ],
+              "associative": false,
+              "label": "MH-PA-03 largo"
+            },
+            {
+              "values_m": [
+                2.05
+              ],
+              "associative": false,
+              "label": "MH-PA-04 largo"
+            },
+            {
+              "values_m": [
+                0.6
+              ],
+              "associative": false,
+              "label": "MH-PA-05 largo"
+            },
+            {
+              "values_m": [
+                4.75
+              ],
+              "associative": false,
+              "label": "MH-PA-06 largo"
+            },
+            {
+              "values_m": [
+                0.7
+              ],
+              "associative": false,
+              "label": "MH-PA-07 largo"
+            },
+            {
+              "values_m": [
+                0.8485
+              ],
+              "associative": false,
+              "label": "MH-PA-08 largo"
+            },
+            {
+              "values_m": [
+                3.6017
+              ],
+              "associative": false,
+              "label": "MH-PA-09 largo"
+            },
+            {
+              "values_m": [
+                3.0
+              ],
+              "associative": false,
+              "label": "MH-PA-10 largo"
+            },
+            {
+              "values_m": [
+                0.5671
+              ],
+              "associative": false,
+              "label": "MH-PA-11 largo"
+            },
+            {
+              "values_m": [
+                6.5
+              ],
+              "associative": false,
+              "label": "MH-PA-12 largo"
+            },
+            {
+              "values_m": [
+                0.5657
+              ],
+              "associative": false,
+              "label": "MH-PA-13 largo"
+            },
+            {
+              "values_m": [
+                2.0
+              ],
+              "associative": false,
+              "label": "MH-PA-14 largo"
+            },
+            {
+              "values_m": [
+                0.5671
+              ],
+              "associative": false,
+              "label": "MH-PA-15 largo"
+            },
+            {
+              "values_m": [
+                0.5657
+              ],
+              "associative": false,
+              "label": "MH-PA-16 largo"
+            },
+            {
+              "values_m": [
+                13.0
+              ],
+              "associative": false,
+              "label": "MH-PA-17 largo"
+            },
+            {
+              "values_m": [
+                8.5093
+              ],
+              "associative": false,
+              "label": "VE-PA-01 largo"
+            }
+          ],
+          "elements": [
+            {
+              "code": "MH-PA-01",
+              "elementId": "1182197",
+              "box": [
+                0.6888,
+                0.9289,
+                0.7332,
+                0.9372
+              ]
+            },
+            {
+              "code": "MH-PA-02",
+              "elementId": "372705",
+              "box": [
+                0.067,
+                0.6457,
+                0.0759,
+                0.9372
+              ]
+            },
+            {
+              "code": "MH-PA-03",
+              "elementId": "771084",
+              "box": [
+                0.4178,
+                0.9122,
+                0.4267,
+                0.9372
+              ]
+            },
+            {
+              "code": "MH-PA-04",
+              "elementId": "660351",
+              "box": [
+                0.5909,
+                0.8519,
+                0.5997,
+                0.9372
+              ]
+            },
+            {
+              "code": "MH-PA-05",
+              "elementId": "891064",
+              "box": [
+                0.2402,
+                0.9122,
+                0.2491,
+                0.9372
+              ]
+            },
+            {
+              "code": "MH-PA-06",
+              "elementId": "373019",
+              "box": [
+                0.2402,
+                0.6457,
+                0.2491,
+                0.8435
+              ]
+            },
+            {
+              "code": "MH-PA-07",
+              "elementId": "867060",
+              "box": [
+                0.591,
+                0.729,
+                0.6221,
+                0.7373
+              ]
+            },
+            {
+              "code": "MH-PA-08",
+              "elementId": "867136",
+              "box": [
+                0.6221,
+                0.7082,
+                0.6532,
+                0.7373
+              ]
+            },
+            {
+              "code": "MH-PA-09",
+              "elementId": "665788",
+              "box": [
+                0.6443,
+                0.5582,
+                0.6532,
+                0.7082
+              ]
+            },
+            {
+              "code": "MH-PA-10",
+              "elementId": "775530",
+              "box": [
+                0.8575,
+                0.5625,
+                0.8664,
+                0.6874
+              ]
+            },
+            {
+              "code": "MH-PA-11",
+              "elementId": "1002400",
+              "box": [
+                0.5998,
+                0.1669,
+                0.622,
+                0.1878
+              ]
+            },
+            {
+              "code": "MH-PA-12",
+              "elementId": "1000205",
+              "box": [
+                0.6221,
+                0.1794,
+                0.9108,
+                0.1877
+              ]
+            },
+            {
+              "code": "MH-PA-13",
+              "elementId": "1147627",
+              "box": [
+                0.9108,
+                0.1669,
+                0.933,
+                0.1877
+              ]
+            },
+            {
+              "code": "MH-PA-14",
+              "elementId": "1000720",
+              "box": [
+                0.5997,
+                0.0836,
+                0.6086,
+                0.1669
+              ]
+            },
+            {
+              "code": "MH-PA-15",
+              "elementId": "1009669",
+              "box": [
+                0.5998,
+                0.0628,
+                0.622,
+                0.0837
+              ]
+            },
+            {
+              "code": "MH-PA-16",
+              "elementId": "1152689",
+              "box": [
+                0.9108,
+                0.0628,
+                0.933,
+                0.0836
+              ]
+            },
+            {
+              "code": "MH-PA-17",
+              "elementId": "1001377",
+              "box": [
+                0.3335,
+                0.0628,
+                0.9108,
+                0.0711
+              ]
+            },
+            {
+              "code": "VE-PA-01",
+              "elementId": "667007",
+              "box": [
+                0.8795,
+                0.1873,
+                0.8884,
+                0.5417
+              ]
+            },
+            {
+              "code": "LO-PA-01",
+              "elementId": "1011940",
+              "box": [
+                0.6251,
+                0.0711,
+                0.862,
+                0.1877
+              ]
+            },
+            {
+              "code": "LO-PA-02",
+              "elementId": "2157154",
+              "box": [
+                0.5115,
+                0.1877,
+                0.8884,
+                0.4667
+              ]
+            },
+            {
+              "code": "LO-PA-03",
+              "elementId": "2156060",
+              "box": [
+                0.0714,
+                0.6457,
+                0.2446,
+                0.9372
+              ]
+            },
+            {
+              "code": "LO-PA-04",
+              "elementId": "2156155",
+              "box": [
+                0.2446,
+                0.6457,
+                0.4223,
+                0.9372
+              ]
+            },
+            {
+              "code": "LO-PA-05",
+              "elementId": "2156409",
+              "box": [
+                0.4223,
+                0.6336,
+                0.5999,
+                0.9372
+              ]
+            },
+            {
+              "code": "LO-PA-06",
+              "elementId": "2156920",
+              "box": [
+                0.5423,
+                0.4667,
+                0.9328,
+                0.6874
+              ]
+            },
+            {
+              "code": "LO-PA-07",
+              "elementId": "2156600",
+              "box": [
+                0.5999,
+                0.6874,
+                0.6888,
+                0.7707
+              ]
+            },
+            {
+              "code": "LO-PA-08",
+              "elementId": "2157972",
+              "box": [
+                0.4223,
+                0.0711,
+                0.6209,
+                0.1877
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EST-PB-01",
+      "title": "Planta de estructura · 00. Planta Baja",
+      "level": "00. Planta Baja",
+      "sector": "00. Planta Baja",
+      "sheetId": "2453334",
+      "pdf": "/casa-angel/structure/EST-PB-01.pdf",
+      "image": "/casa-angel/structure/EST-PB-01.svg.gz",
+      "preview": "/casa-angel/structure/EST-PB-01-preview.png",
+      "thumbnail": "/casa-angel/structure/EST-PB-01.png",
+      "outsideCrop": [
+        "LO-PB-01"
+      ],
+      "views": [
+        {
+          "id": "2453204",
+          "name": "Planta de estructura · 00. Planta Baja",
+          "label": "Planta de estructura · 00. Planta Baja   1:75",
+          "scale": 75,
+          "kind": "plan",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-PB-01-view-2453204.svg.gz",
+          "region": [
+            0.2862,
+            0.2786,
+            0.613,
+            0.7693
+          ],
+          "tags": [
+            "MH-PB-01",
+            "MH-PB-02",
+            "MH-PB-03",
+            "MH-PB-04",
+            "MH-PB-05",
+            "MH-PB-06",
+            "MH-PB-07",
+            "MH-PB-08",
+            "MH-PB-09",
+            "MH-PB-10",
+            "MH-PB-11",
+            "MH-PB-12",
+            "MH-PB-13",
+            "MH-PB-14",
+            "MH-PB-15",
+            "MH-PB-16",
+            "VE-PB-01",
+            "VE-PB-02",
+            "VE-PB-03",
+            "VE-PB-04",
+            "VE-PB-05",
+            "VE-PB-06",
+            "VE-PB-07",
+            "VE-PB-08",
+            "LO-PB-02",
+            "LO-PB-03",
+            "LO-PB-04",
+            "LO-PB-05",
+            "LO-PB-06",
+            "LO-PB-07",
+            "LO-AC-01"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                7.0
+              ],
+              "associative": false,
+              "label": "MH-PB-01 largo"
+            },
+            {
+              "values_m": [
+                4.1012
+              ],
+              "associative": false,
+              "label": "MH-PB-02 largo"
+            },
+            {
+              "values_m": [
+                0.95
+              ],
+              "associative": false,
+              "label": "MH-PB-03 largo"
+            },
+            {
+              "values_m": [
+                6.925
+              ],
+              "associative": false,
+              "label": "MH-PB-04 largo"
+            },
+            {
+              "values_m": [
+                7.0
+              ],
+              "associative": false,
+              "label": "MH-PB-05 largo"
+            },
+            {
+              "values_m": [
+                4.9525
+              ],
+              "associative": false,
+              "label": "MH-PB-06 largo"
+            },
+            {
+              "values_m": [
+                3.1
+              ],
+              "associative": false,
+              "label": "MH-PB-07 largo"
+            },
+            {
+              "values_m": [
+                6.33
+              ],
+              "associative": false,
+              "label": "MH-PB-08 largo"
+            },
+            {
+              "values_m": [
+                8.4
+              ],
+              "associative": false,
+              "label": "MH-PB-09 largo"
+            },
+            {
+              "values_m": [
+                10.5
+              ],
+              "associative": false,
+              "label": "MH-PB-10 largo"
+            },
+            {
+              "values_m": [
+                0.5657
+              ],
+              "associative": false,
+              "label": "MH-PB-11 largo"
+            },
+            {
+              "values_m": [
+                0.5657
+              ],
+              "associative": false,
+              "label": "MH-PB-12 largo"
+            },
+            {
+              "values_m": [
+                2.0
+              ],
+              "associative": false,
+              "label": "MH-PB-13 largo"
+            },
+            {
+              "values_m": [
+                2.4
+              ],
+              "associative": false,
+              "label": "MH-PB-14 largo"
+            },
+            {
+              "values_m": [
+                0.5657
+              ],
+              "associative": false,
+              "label": "MH-PB-15 largo"
+            },
+            {
+              "values_m": [
+                13.0
+              ],
+              "associative": false,
+              "label": "MH-PB-16 largo"
+            },
+            {
+              "values_m": [
+                3.9
+              ],
+              "associative": false,
+              "label": "VE-PB-01 largo"
+            },
+            {
+              "values_m": [
+                6.0
+              ],
+              "associative": false,
+              "label": "VE-PB-02 largo"
+            },
+            {
+              "values_m": [
+                3.4
+              ],
+              "associative": false,
+              "label": "VE-PB-03 largo"
+            },
+            {
+              "values_m": [
+                1.5556
+              ],
+              "associative": false,
+              "label": "VE-PB-04 largo"
+            },
+            {
+              "values_m": [
+                3.7989
+              ],
+              "associative": false,
+              "label": "VE-PB-05 largo"
+            },
+            {
+              "values_m": [
+                4.0
+              ],
+              "associative": false,
+              "label": "VE-PB-06 largo"
+            },
+            {
+              "values_m": [
+                3.9
+              ],
+              "associative": false,
+              "label": "VE-PB-07 largo"
+            },
+            {
+              "values_m": [
+                5.2
+              ],
+              "associative": false,
+              "label": "VE-PB-08 largo"
+            }
+          ],
+          "elements": [
+            {
+              "code": "MH-PB-01",
+              "elementId": "634993",
+              "box": [
+                0.4155,
+                0.6457,
+                0.4244,
+                0.9372
+              ]
+            },
+            {
+              "code": "MH-PB-02",
+              "elementId": "369789",
+              "box": [
+                0.7291,
+                0.8123,
+                0.8616,
+                0.9372
+              ]
+            },
+            {
+              "code": "MH-PB-03",
+              "elementId": "369719",
+              "box": [
+                0.685,
+                0.9289,
+                0.7291,
+                0.9372
+              ]
+            },
+            {
+              "code": "MH-PB-04",
+              "elementId": "363297",
+              "box": [
+                0.0666,
+                0.6457,
+                0.0754,
+                0.9372
+              ]
+            },
+            {
+              "code": "MH-PB-05",
+              "elementId": "988670",
+              "box": [
+                0.2389,
+                0.6457,
+                0.2477,
+                0.9372
+              ]
+            },
+            {
+              "code": "MH-PB-06",
+              "elementId": "363146",
+              "box": [
+                0.5878,
+                0.729,
+                0.5966,
+                0.9372
+              ]
+            },
+            {
+              "code": "MH-PB-07",
+              "elementId": "369425",
+              "box": [
+                0.8528,
+                0.6832,
+                0.8616,
+                0.8123
+              ]
+            },
+            {
+              "code": "MH-PB-08",
+              "elementId": "756675",
+              "box": [
+                0.6408,
+                0.679,
+                0.9277,
+                0.6874
+              ]
+            },
+            {
+              "code": "MH-PB-09",
+              "elementId": "363800",
+              "box": [
+                0.5525,
+                0.4584,
+                0.9279,
+                0.4667
+              ]
+            },
+            {
+              "code": "MH-PB-10",
+              "elementId": "364525",
+              "box": [
+                0.442,
+                0.1794,
+                0.9058,
+                0.1877
+              ]
+            },
+            {
+              "code": "MH-PB-11",
+              "elementId": "1130447",
+              "box": [
+                0.9058,
+                0.1669,
+                0.9279,
+                0.1877
+              ]
+            },
+            {
+              "code": "MH-PB-12",
+              "elementId": "1127861",
+              "box": [
+                0.4199,
+                0.1669,
+                0.442,
+                0.1877
+              ]
+            },
+            {
+              "code": "MH-PB-13",
+              "elementId": "364138",
+              "box": [
+                0.919,
+                0.0836,
+                0.9279,
+                0.1669
+              ]
+            },
+            {
+              "code": "MH-PB-14",
+              "elementId": "384945",
+              "box": [
+                0.4199,
+                0.067,
+                0.4288,
+                0.1669
+              ]
+            },
+            {
+              "code": "MH-PB-15",
+              "elementId": "991161",
+              "box": [
+                0.9058,
+                0.0628,
+                0.9279,
+                0.0836
+              ]
+            },
+            {
+              "code": "MH-PB-16",
+              "elementId": "364265",
+              "box": [
+                0.3316,
+                0.0628,
+                0.9058,
+                0.0711
+              ]
+            },
+            {
+              "code": "VE-PB-01",
+              "elementId": "2393305",
+              "box": [
+                0.071,
+                0.6457,
+                0.2433,
+                0.6541
+              ]
+            },
+            {
+              "code": "VE-PB-02",
+              "elementId": "2393450",
+              "box": [
+                0.2433,
+                0.6457,
+                0.5083,
+                0.6541
+              ]
+            },
+            {
+              "code": "VE-PB-03",
+              "elementId": "2393756",
+              "box": [
+                0.5525,
+                0.4625,
+                0.5613,
+                0.6041
+              ]
+            },
+            {
+              "code": "VE-PB-04",
+              "elementId": "2393935",
+              "box": [
+                0.5083,
+                0.6041,
+                0.5613,
+                0.6541
+              ]
+            },
+            {
+              "code": "VE-PB-05",
+              "elementId": "2394231",
+              "box": [
+                0.0755,
+                0.9289,
+                0.2433,
+                0.9372
+              ]
+            },
+            {
+              "code": "VE-PB-06",
+              "elementId": "2394394",
+              "box": [
+                0.2433,
+                0.9289,
+                0.4199,
+                0.9372
+              ]
+            },
+            {
+              "code": "VE-PB-07",
+              "elementId": "2394557",
+              "box": [
+                0.4199,
+                0.9289,
+                0.5922,
+                0.9372
+              ]
+            },
+            {
+              "code": "VE-PB-08",
+              "elementId": "2396125",
+              "box": [
+                0.919,
+                0.4667,
+                0.9279,
+                0.6832
+              ]
+            },
+            {
+              "code": "LO-PB-02",
+              "elementId": "2068259",
+              "box": [
+                0.0754,
+                0.6541,
+                0.2389,
+                0.9289
+              ]
+            },
+            {
+              "code": "LO-PB-03",
+              "elementId": "361258",
+              "box": [
+                0.4288,
+                0.0711,
+                0.919,
+                0.1794
+              ]
+            },
+            {
+              "code": "LO-PB-04",
+              "elementId": "2144958",
+              "box": [
+                0.2477,
+                0.6541,
+                0.4155,
+                0.9289
+              ]
+            },
+            {
+              "code": "LO-PB-05",
+              "elementId": "2151436",
+              "box": [
+                0.4244,
+                0.6394,
+                0.5878,
+                0.9289
+              ]
+            },
+            {
+              "code": "LO-PB-06",
+              "elementId": "2153042",
+              "box": [
+                0.5458,
+                0.4667,
+                0.9279,
+                0.679
+              ]
+            },
+            {
+              "code": "LO-PB-07",
+              "elementId": "2154191",
+              "box": [
+                0.5525,
+                0.1877,
+                0.8616,
+                0.4584
+              ]
+            },
+            {
+              "code": "LO-AC-01",
+              "elementId": "398391",
+              "box": [
+                0.5966,
+                0.6874,
+                0.8528,
+                0.9372
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EST-PE-01",
+      "title": "Planta de estructura · 02. Planta Entrepiso",
+      "level": "02. Planta Entrepiso",
+      "sector": "02. Planta Entrepiso",
+      "sheetId": "2453533",
+      "pdf": "/casa-angel/structure/EST-PE-01.pdf",
+      "image": "/casa-angel/structure/EST-PE-01.svg.gz",
+      "preview": "/casa-angel/structure/EST-PE-01-preview.png",
+      "thumbnail": "/casa-angel/structure/EST-PE-01.png",
+      "outsideCrop": [],
+      "views": [
+        {
+          "id": "2453474",
+          "name": "Planta de estructura · 02. Planta Entrepiso",
+          "label": "Planta de estructura · 02. Planta Entrepiso   1:40",
+          "scale": 40,
+          "kind": "plan",
+          "sector": "02. Planta Entrepiso",
+          "roomLabel": "02. Planta Entrepiso",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-PE-01-view-2453474.svg.gz",
+          "region": [
+            0.3111,
+            0.2418,
+            0.5881,
+            0.8061
+          ],
+          "tags": [
+            "MH-PE-01",
+            "MH-PE-02",
+            "MH-PE-03",
+            "MH-PE-04",
+            "MH-PE-05",
+            "MH-PE-06",
+            "MH-PE-07",
+            "MH-PE-08",
+            "MH-PE-09",
+            "MH-PE-10",
+            "VE-PE-01",
+            "LO-PE-01",
+            "LO-PE-02"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                9.0
+              ],
+              "associative": false,
+              "label": "MH-PE-01 largo"
+            },
+            {
+              "values_m": [
+                9.0
+              ],
+              "associative": false,
+              "label": "MH-PE-02 largo"
+            },
+            {
+              "values_m": [
+                5.2925
+              ],
+              "associative": false,
+              "label": "MH-PE-03 largo"
+            },
+            {
+              "values_m": [
+                0.5671
+              ],
+              "associative": false,
+              "label": "MH-PE-04 largo"
+            },
+            {
+              "values_m": [
+                0.5657
+              ],
+              "associative": false,
+              "label": "MH-PE-05 largo"
+            },
+            {
+              "values_m": [
+                6.5023
+              ],
+              "associative": false,
+              "label": "MH-PE-06 largo"
+            },
+            {
+              "values_m": [
+                2.0
+              ],
+              "associative": false,
+              "label": "MH-PE-07 largo"
+            },
+            {
+              "values_m": [
+                0.5671
+              ],
+              "associative": false,
+              "label": "MH-PE-08 largo"
+            },
+            {
+              "values_m": [
+                0.5657
+              ],
+              "associative": false,
+              "label": "MH-PE-09 largo"
+            },
+            {
+              "values_m": [
+                6.5023
+              ],
+              "associative": false,
+              "label": "MH-PE-10 largo"
+            },
+            {
+              "values_m": [
+                5.0
+              ],
+              "associative": false,
+              "label": "VE-PE-01 largo"
+            }
+          ],
+          "elements": [
+            {
+              "code": "MH-PE-01",
+              "elementId": "621584",
+              "box": [
+                0.2318,
+                0.2896,
+                0.2513,
+                0.9006
+              ]
+            },
+            {
+              "code": "MH-PE-02",
+              "elementId": "613259",
+              "box": [
+                0.2315,
+                0.2896,
+                0.2511,
+                0.9006
+              ]
+            },
+            {
+              "code": "MH-PE-03",
+              "elementId": "1171301",
+              "box": [
+                0.2415,
+                0.5543,
+                0.7587,
+                0.5679
+              ]
+            },
+            {
+              "code": "MH-PE-04",
+              "elementId": "1174892",
+              "box": [
+                0.1335,
+                0.2624,
+                0.1824,
+                0.2964
+              ]
+            },
+            {
+              "code": "MH-PE-05",
+              "elementId": "1175055",
+              "box": [
+                0.8178,
+                0.2624,
+                0.8667,
+                0.2963
+              ]
+            },
+            {
+              "code": "MH-PE-06",
+              "elementId": "1000492",
+              "box": [
+                0.1824,
+                0.2828,
+                0.8178,
+                0.2963
+              ]
+            },
+            {
+              "code": "MH-PE-07",
+              "elementId": "1174683",
+              "box": [
+                0.1333,
+                0.1266,
+                0.1529,
+                0.2624
+              ]
+            },
+            {
+              "code": "MH-PE-08",
+              "elementId": "1174893",
+              "box": [
+                0.1335,
+                0.0926,
+                0.1824,
+                0.1266
+              ]
+            },
+            {
+              "code": "MH-PE-09",
+              "elementId": "1154858",
+              "box": [
+                0.8178,
+                0.0927,
+                0.8667,
+                0.1266
+              ]
+            },
+            {
+              "code": "MH-PE-10",
+              "elementId": "1001381",
+              "box": [
+                0.1824,
+                0.0927,
+                0.8178,
+                0.1062
+              ]
+            },
+            {
+              "code": "VE-PE-01",
+              "elementId": "614629",
+              "box": [
+                0.2315,
+                0.8938,
+                0.7201,
+                0.9074
+              ]
+            },
+            {
+              "code": "LO-PE-01",
+              "elementId": "2159130",
+              "box": [
+                0.1942,
+                0.0995,
+                0.7152,
+                0.2896
+              ]
+            },
+            {
+              "code": "LO-PE-02",
+              "elementId": "875093",
+              "box": [
+                0.2513,
+                0.2896,
+                0.7489,
+                0.5611
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EST-REV-01",
+      "title": "Casos de revisión · 1/7",
+      "level": null,
+      "sector": "Revisión",
+      "sheetId": "2454265",
+      "pdf": "/casa-angel/structure/EST-REV-01.pdf",
+      "image": "/casa-angel/structure/EST-REV-01.svg.gz",
+      "preview": "/casa-angel/structure/EST-REV-01-preview.png",
+      "thumbnail": "/casa-angel/structure/EST-REV-01.png",
+      "outsideCrop": [],
+      "views": [
+        {
+          "id": "2453607",
+          "name": "Caso 01 · Ascensor · cerramiento vidriado sobre muro de ho",
+          "label": "Caso 01 · Ascensor · cerramiento vidriado sobre muro de ho   1:30",
+          "scale": 30,
+          "kind": "review",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "caseId": "estructura-ascensor-364138",
+          "image": "/casa-angel/structure/EST-REV-01-view-2453607.svg.gz",
+          "region": [
+            0.1391,
+            0.2115,
+            0.293,
+            0.4795
+          ],
+          "tags": [
+            "MH-PB-13",
+            "MC-1020586",
+            "MC-1020050"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "MH-PB-13",
+              "elementId": "364138",
+              "box": [
+                0.4789,
+                0.3094,
+                0.5258,
+                0.6906
+              ]
+            },
+            {
+              "code": "MC-1020586",
+              "elementId": "1020586",
+              "box": [
+                0.3851,
+                0.4047,
+                0.6195,
+                0.5953
+              ]
+            },
+            {
+              "code": "MC-1020050",
+              "elementId": "1020050",
+              "box": [
+                0.3805,
+                0.4047,
+                0.6149,
+                0.5953
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2453637",
+          "name": "Caso 02 · Solape / unión inconsistente en elementos estruc",
+          "label": "Caso 02 · Solape / unión inconsistente en elementos estruc   1:30",
+          "scale": 30,
+          "kind": "review",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "caseId": "estructura-solape-01",
+          "image": "/casa-angel/structure/EST-REV-01-view-2453637.svg.gz",
+          "region": [
+            0.3396,
+            0.2574,
+            0.763,
+            0.4336
+          ],
+          "tags": [
+            "MH-PB-09",
+            "Elem. 1002830"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "MH-PB-09",
+              "elementId": "363800",
+              "box": [
+                0.1382,
+                0.471,
+                0.8618,
+                0.529
+              ]
+            },
+            {
+              "code": null,
+              "elementId": "1002830",
+              "box": [
+                0.1849,
+                0.5,
+                0.2786,
+                0.5
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2453666",
+          "name": "Caso 03 · Solape / unión inconsistente en elementos estruc",
+          "label": "Caso 03 · Solape / unión inconsistente en elementos estruc   1:40",
+          "scale": 40,
+          "kind": "review",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "caseId": "estructura-solape-02",
+          "image": "/casa-angel/structure/EST-REV-01-view-2453666.svg.gz",
+          "region": [
+            0.1616,
+            0.6009,
+            0.4815,
+            0.7362
+          ],
+          "tags": [
+            "MH-PB-09",
+            "Elem. 1043270"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "MH-PB-09",
+              "elementId": "363800",
+              "box": [
+                0.1407,
+                0.4717,
+                0.8593,
+                0.5283
+              ]
+            },
+            {
+              "code": null,
+              "elementId": "1043270",
+              "box": [
+                0.1871,
+                0.4929,
+                0.2801,
+                0.5071
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2453695",
+          "name": "Caso 04 · Solape / unión inconsistente en elementos estruc",
+          "label": "Caso 04 · Solape / unión inconsistente en elementos estruc   1:40",
+          "scale": 40,
+          "kind": "review",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "caseId": "estructura-solape-03",
+          "image": "/casa-angel/structure/EST-REV-01-view-2453695.svg.gz",
+          "region": [
+            0.5982,
+            0.5664,
+            0.7154,
+            0.7706
+          ],
+          "tags": [
+            "MH-PB-13",
+            "MC-1020586"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "MH-PB-13",
+              "elementId": "364138",
+              "box": [
+                0.4769,
+                0.3123,
+                0.5231,
+                0.6877
+              ]
+            },
+            {
+              "code": "MC-1020586",
+              "elementId": "1020586",
+              "box": [
+                0.3845,
+                0.4062,
+                0.6155,
+                0.5938
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EST-REV-02",
+      "title": "Casos de revisión · 2/7",
+      "level": null,
+      "sector": "Revisión",
+      "sheetId": "2454295",
+      "pdf": "/casa-angel/structure/EST-REV-02.pdf",
+      "image": "/casa-angel/structure/EST-REV-02.svg.gz",
+      "preview": "/casa-angel/structure/EST-REV-02-preview.png",
+      "thumbnail": "/casa-angel/structure/EST-REV-02.png",
+      "outsideCrop": [],
+      "views": [
+        {
+          "id": "2453724",
+          "name": "Caso 05 · Solape / unión inconsistente en elementos estruc",
+          "label": "Caso 05 · Solape / unión inconsistente en elementos estruc   1:40",
+          "scale": 40,
+          "kind": "review",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "caseId": "estructura-solape-04",
+          "image": "/casa-angel/structure/EST-REV-02-view-2453724.svg.gz",
+          "region": [
+            0.2286,
+            0.2121,
+            0.6701,
+            0.3475
+          ],
+          "tags": [
+            "MH-PB-16",
+            "Elem. 1043721"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "MH-PB-16",
+              "elementId": "364265",
+              "box": [
+                0.1019,
+                0.4713,
+                0.8981,
+                0.528
+              ]
+            },
+            {
+              "code": null,
+              "elementId": "1043721",
+              "box": [
+                0.7419,
+                0.4926,
+                0.8093,
+                0.5067
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2453753",
+          "name": "Caso 06 · Solape / unión inconsistente en elementos estruc",
+          "label": "Caso 06 · Solape / unión inconsistente en elementos estruc   1:40",
+          "scale": 40,
+          "kind": "review",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "caseId": "estructura-solape-05",
+          "image": "/casa-angel/structure/EST-REV-02-view-2453753.svg.gz",
+          "region": [
+            0.2286,
+            0.4356,
+            0.6701,
+            0.571
+          ],
+          "tags": [
+            "MH-PB-16",
+            "Elem. 1150307"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "MH-PB-16",
+              "elementId": "364265",
+              "box": [
+                0.1019,
+                0.4713,
+                0.8981,
+                0.528
+              ]
+            },
+            {
+              "code": null,
+              "elementId": "1150307",
+              "box": [
+                0.4357,
+                0.4926,
+                0.5031,
+                0.5067
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2453782",
+          "name": "Caso 07 · Solape / unión inconsistente en elementos estruc",
+          "label": "Caso 07 · Solape / unión inconsistente en elementos estruc   1:50",
+          "scale": 50,
+          "kind": "review",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "caseId": "estructura-solape-06",
+          "image": "/casa-angel/structure/EST-REV-02-view-2453782.svg.gz",
+          "region": [
+            0.1313,
+            0.6583,
+            0.4322,
+            0.7708
+          ],
+          "tags": [
+            "MH-PB-10",
+            "Elem. 874093"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "MH-PB-10",
+              "elementId": "364525",
+              "box": [
+                0.1226,
+                0.48,
+                0.8774,
+                0.5346
+              ]
+            },
+            {
+              "code": null,
+              "elementId": "874093",
+              "box": [
+                0.3368,
+                0.5073,
+                0.4159,
+                0.5073
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2453811",
+          "name": "Caso 08 · Solape / unión inconsistente en elementos estruc",
+          "label": "Caso 08 · Solape / unión inconsistente en elementos estruc   1:50",
+          "scale": 50,
+          "kind": "review",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "caseId": "estructura-solape-07",
+          "image": "/casa-angel/structure/EST-REV-02-view-2453811.svg.gz",
+          "region": [
+            0.4665,
+            0.6583,
+            0.7675,
+            0.7708
+          ],
+          "tags": [
+            "MH-PB-10",
+            "Elem. 995818"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "MH-PB-10",
+              "elementId": "364525",
+              "box": [
+                0.1226,
+                0.48,
+                0.8774,
+                0.5346
+              ]
+            },
+            {
+              "code": null,
+              "elementId": "995818",
+              "box": [
+                0.6582,
+                0.5073,
+                0.8019,
+                0.5073
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EST-REV-03",
+      "title": "Casos de revisión · 3/7",
+      "level": null,
+      "sector": "Revisión",
+      "sheetId": "2454325",
+      "pdf": "/casa-angel/structure/EST-REV-03.pdf",
+      "image": "/casa-angel/structure/EST-REV-03.svg.gz",
+      "preview": "/casa-angel/structure/EST-REV-03-preview.png",
+      "thumbnail": "/casa-angel/structure/EST-REV-03.png",
+      "outsideCrop": [],
+      "views": [
+        {
+          "id": "2453840",
+          "name": "Caso 09 · Solape / unión inconsistente en elementos estruc",
+          "label": "Caso 09 · Solape / unión inconsistente en elementos estruc   1:50",
+          "scale": 50,
+          "kind": "review",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "caseId": "estructura-solape-08",
+          "image": "/casa-angel/structure/EST-REV-03-view-2453840.svg.gz",
+          "region": [
+            0.1313,
+            0.22,
+            0.4322,
+            0.3325
+          ],
+          "tags": [
+            "MH-PB-10",
+            "Elem. 1043023"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "MH-PB-10",
+              "elementId": "364525",
+              "box": [
+                0.1226,
+                0.48,
+                0.8774,
+                0.5346
+              ]
+            },
+            {
+              "code": null,
+              "elementId": "1043023",
+              "box": [
+                0.3357,
+                0.5004,
+                0.4148,
+                0.5141
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2453869",
+          "name": "Caso 10 · Solape / unión inconsistente en elementos estruc",
+          "label": "Caso 10 · Solape / unión inconsistente en elementos estruc   1:50",
+          "scale": 50,
+          "kind": "review",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "caseId": "estructura-solape-09",
+          "image": "/casa-angel/structure/EST-REV-03-view-2453869.svg.gz",
+          "region": [
+            0.4665,
+            0.22,
+            0.7675,
+            0.3325
+          ],
+          "tags": [
+            "MH-PB-10",
+            "Elem. 1146397"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "MH-PB-10",
+              "elementId": "364525",
+              "box": [
+                0.1226,
+                0.48,
+                0.8774,
+                0.5346
+              ]
+            },
+            {
+              "code": null,
+              "elementId": "1146397",
+              "box": [
+                0.1557,
+                0.5004,
+                0.2347,
+                0.5141
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2453898",
+          "name": "Caso 11 · Solape / unión inconsistente en elementos estruc",
+          "label": "Caso 11 · Solape / unión inconsistente en elementos estruc   1:30",
+          "scale": 30,
+          "kind": "review",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "caseId": "estructura-solape-10",
+          "image": "/casa-angel/structure/EST-REV-03-view-2453898.svg.gz",
+          "region": [
+            0.2007,
+            0.4372,
+            0.3251,
+            0.7613
+          ],
+          "tags": [
+            "MH-PB-07",
+            "Elem. 788230"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "MH-PB-07",
+              "elementId": "369425",
+              "box": [
+                0.471,
+                0.2558,
+                0.529,
+                0.7442
+              ]
+            },
+            {
+              "code": null,
+              "elementId": "788230",
+              "box": [
+                0.529,
+                0.2715,
+                0.529,
+                0.7442
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2453927",
+          "name": "Caso 12 · Solape / unión inconsistente en elementos estruc",
+          "label": "Caso 12 · Solape / unión inconsistente en elementos estruc   1:30",
+          "scale": 30,
+          "kind": "review",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "caseId": "estructura-solape-11",
+          "image": "/casa-angel/structure/EST-REV-03-view-2453927.svg.gz",
+          "region": [
+            0.4801,
+            0.5112,
+            0.7162,
+            0.6873
+          ],
+          "tags": [
+            "MH-PB-03",
+            "Elem. 788043"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "MH-PB-03",
+              "elementId": "369719",
+              "box": [
+                0.5687,
+                0.471,
+                0.7215,
+                0.529
+              ]
+            },
+            {
+              "code": null,
+              "elementId": "788043",
+              "box": [
+                0.248,
+                0.529,
+                0.752,
+                0.529
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EST-REV-04",
+      "title": "Casos de revisión · 4/7",
+      "level": null,
+      "sector": "Revisión",
+      "sheetId": "2454355",
+      "pdf": "/casa-angel/structure/EST-REV-04.pdf",
+      "image": "/casa-angel/structure/EST-REV-04.svg.gz",
+      "preview": "/casa-angel/structure/EST-REV-04-preview.png",
+      "thumbnail": "/casa-angel/structure/EST-REV-04.png",
+      "outsideCrop": [],
+      "views": [
+        {
+          "id": "2453956",
+          "name": "Caso 13 · Solape / unión inconsistente en elementos estruc",
+          "label": "Caso 13 · Solape / unión inconsistente en elementos estruc   1:60",
+          "scale": 60,
+          "kind": "review",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "caseId": "estructura-solape-12",
+          "image": "/casa-angel/structure/EST-REV-04-view-2453956.svg.gz",
+          "region": [
+            0.3908,
+            0.212,
+            0.508,
+            0.3779
+          ],
+          "tags": [
+            "MH-PB-02",
+            "Elem. 786605"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "MH-PB-02",
+              "elementId": "369789",
+              "box": [
+                0.269,
+                0.269,
+                0.731,
+                0.731
+              ]
+            },
+            {
+              "code": null,
+              "elementId": "786605",
+              "box": [
+                0.269,
+                0.269,
+                0.7002,
+                0.7002
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2453985",
+          "name": "Caso 14 · Solape / unión inconsistente en elementos estruc",
+          "label": "Caso 14 · Solape / unión inconsistente en elementos estruc   1:125",
+          "scale": 125,
+          "kind": "review",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "caseId": "estructura-solape-13",
+          "image": "/casa-angel/structure/EST-REV-04-view-2453985.svg.gz",
+          "region": [
+            0.1695,
+            0.4658,
+            0.2823,
+            0.7701
+          ],
+          "tags": [
+            "Elem. 467187",
+            "LO-PA-04"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": null,
+              "elementId": "467187",
+              "box": [
+                0.1623,
+                0.0811,
+                0.8454,
+                0.7175
+              ]
+            },
+            {
+              "code": "LO-PA-04",
+              "elementId": "2156155",
+              "box": [
+                0.1546,
+                0.6369,
+                0.4617,
+                0.9189
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2454007",
+          "name": "Caso 15 · Solape / unión inconsistente en elementos estruc",
+          "label": "Caso 15 · Solape / unión inconsistente en elementos estruc   1:125",
+          "scale": 125,
+          "kind": "review",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "caseId": "estructura-solape-14",
+          "image": "/casa-angel/structure/EST-REV-04-view-2454007.svg.gz",
+          "region": [
+            0.3934,
+            0.4658,
+            0.5054,
+            0.7701
+          ],
+          "tags": [
+            "Elem. 467187",
+            "LO-PA-05"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": null,
+              "elementId": "467187",
+              "box": [
+                0.1558,
+                0.0811,
+                0.8442,
+                0.7175
+              ]
+            },
+            {
+              "code": "LO-PA-05",
+              "elementId": "2156409",
+              "box": [
+                0.4575,
+                0.6252,
+                0.767,
+                0.9189
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2454029",
+          "name": "Caso 16 · Solape / unión inconsistente en elementos estruc",
+          "label": "Caso 16 · Solape / unión inconsistente en elementos estruc   1:125",
+          "scale": 125,
+          "kind": "review",
+          "sector": "02. Planta Entrepiso",
+          "roomLabel": "02. Planta Entrepiso",
+          "caseId": "estructura-solape-15",
+          "image": "/casa-angel/structure/EST-REV-04-view-2454029.svg.gz",
+          "region": [
+            0.6545,
+            0.5381,
+            0.6912,
+            0.6979
+          ],
+          "tags": [
+            "MH-PE-01",
+            "Elem. 876092"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "MH-PE-01",
+              "elementId": "621584",
+              "box": [
+                0.4763,
+                0.1546,
+                0.5237,
+                0.8454
+              ]
+            },
+            {
+              "code": null,
+              "elementId": "876092",
+              "box": [
+                0.5231,
+                0.1622,
+                0.5231,
+                0.4693
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EST-REV-05",
+      "title": "Casos de revisión · 5/7",
+      "level": null,
+      "sector": "Revisión",
+      "sheetId": "2454385",
+      "pdf": "/casa-angel/structure/EST-REV-05.pdf",
+      "image": "/casa-angel/structure/EST-REV-05.svg.gz",
+      "preview": "/casa-angel/structure/EST-REV-05-preview.png",
+      "thumbnail": "/casa-angel/structure/EST-REV-05.png",
+      "outsideCrop": [],
+      "views": [
+        {
+          "id": "2454044",
+          "name": "Caso 17 · Solape / unión inconsistente en elementos estruc",
+          "label": "Caso 17 · Solape / unión inconsistente en elementos estruc   1:150",
+          "scale": 150,
+          "kind": "review",
+          "sector": "02. Planta Entrepiso",
+          "roomLabel": "02. Planta Entrepiso",
+          "caseId": "estructura-solape-16",
+          "image": "/casa-angel/structure/EST-REV-05-view-2454044.svg.gz",
+          "region": [
+            0.2657,
+            0.2115,
+            0.2978,
+            0.3468
+          ],
+          "tags": [
+            "MH-PE-01",
+            "Elem. 876128"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "MH-PE-01",
+              "elementId": "621584",
+              "box": [
+                0.4774,
+                0.1599,
+                0.5226,
+                0.8401
+              ]
+            },
+            {
+              "code": null,
+              "elementId": "876128",
+              "box": [
+                0.522,
+                0.1675,
+                0.522,
+                0.4698
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2454059",
+          "name": "Caso 18 · Solape / unión inconsistente en elementos estruc",
+          "label": "Caso 18 · Solape / unión inconsistente en elementos estruc   1:150",
+          "scale": 150,
+          "kind": "review",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "caseId": "estructura-solape-17",
+          "image": "/casa-angel/structure/EST-REV-05-view-2454059.svg.gz",
+          "region": [
+            0.5477,
+            0.2221,
+            0.6863,
+            0.3362
+          ],
+          "tags": [
+            "Elem. 713845",
+            "LO-PA-02"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": null,
+              "elementId": "713845",
+              "box": [
+                0.5517,
+                0.2094,
+                0.8899,
+                0.7475
+              ]
+            },
+            {
+              "code": "LO-PA-02",
+              "elementId": "2157154",
+              "box": [
+                0.1101,
+                0.2094,
+                0.5518,
+                0.8102
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2454081",
+          "name": "Caso 19 · Solape / unión inconsistente en elementos estruc",
+          "label": "Caso 19 · Solape / unión inconsistente en elementos estruc   1:1000",
+          "scale": 1000,
+          "kind": "review",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "caseId": "estructura-solape-18",
+          "image": "/casa-angel/structure/EST-REV-05-view-2454081.svg.gz",
+          "region": [
+            0.3945,
+            0.4338,
+            0.5042,
+            0.5728
+          ],
+          "tags": [
+            "LO-PB-01",
+            "Elem. 734491"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "LO-PB-01",
+              "elementId": "714161",
+              "box": [
+                0.453,
+                0.3291,
+                0.6545,
+                0.5806
+              ]
+            },
+            {
+              "code": null,
+              "elementId": "734491",
+              "box": [
+                0.0553,
+                0.0619,
+                0.9447,
+                0.9381
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2454110",
+          "name": "Caso 20 · Solape / unión inconsistente en elementos estruc",
+          "label": "Caso 20 · Solape / unión inconsistente en elementos estruc   1:50",
+          "scale": 50,
+          "kind": "review",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "caseId": "estructura-solape-19",
+          "image": "/casa-angel/structure/EST-REV-05-view-2454110.svg.gz",
+          "region": [
+            0.3422,
+            0.6598,
+            0.5566,
+            0.7706
+          ],
+          "tags": [
+            "MH-PB-08",
+            "Elem. 786581"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "MH-PB-08",
+              "elementId": "756675",
+              "box": [
+                0.1722,
+                0.4723,
+                0.8278,
+                0.5277
+              ]
+            },
+            {
+              "code": null,
+              "elementId": "786581",
+              "box": [
+                0.1792,
+                0.5277,
+                0.8208,
+                0.5277
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EST-REV-06",
+      "title": "Casos de revisión · 6/7",
+      "level": null,
+      "sector": "Revisión",
+      "sheetId": "2454415",
+      "pdf": "/casa-angel/structure/EST-REV-06.pdf",
+      "image": "/casa-angel/structure/EST-REV-06.svg.gz",
+      "preview": "/casa-angel/structure/EST-REV-06-preview.png",
+      "thumbnail": "/casa-angel/structure/EST-REV-06.png",
+      "outsideCrop": [],
+      "views": [
+        {
+          "id": "2454139",
+          "name": "Caso 21 · Solape / unión inconsistente en elementos estruc",
+          "label": "Caso 21 · Solape / unión inconsistente en elementos estruc   1:15",
+          "scale": 15,
+          "kind": "review",
+          "sector": "02. Planta Entrepiso",
+          "roomLabel": "02. Planta Entrepiso",
+          "caseId": "estructura-solape-20",
+          "image": "/casa-angel/structure/EST-REV-06-view-2454139.svg.gz",
+          "region": [
+            0.1459,
+            0.217,
+            0.7529,
+            0.5564
+          ],
+          "tags": [
+            "Elem. 876089",
+            "MH-PE-03"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": null,
+              "elementId": "876089",
+              "box": [
+                0.197,
+                0.5301,
+                0.8146,
+                0.5301
+              ]
+            },
+            {
+              "code": "MH-PE-03",
+              "elementId": "1171301",
+              "box": [
+                0.1854,
+                0.4699,
+                0.814,
+                0.5301
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2454154",
+          "name": "Caso 22 · Solape / unión inconsistente en elementos estruc",
+          "label": "Caso 22 · Solape / unión inconsistente en elementos estruc   1:50",
+          "scale": 50,
+          "kind": "review",
+          "sector": "02. Planta Entrepiso",
+          "roomLabel": "02. Planta Entrepiso",
+          "caseId": "estructura-solape-21",
+          "image": "/casa-angel/structure/EST-REV-06-view-2454154.svg.gz",
+          "region": [
+            0.123,
+            0.6543,
+            0.3375,
+            0.7651
+          ],
+          "tags": [
+            "Elem. 876091",
+            "MH-PA-12"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": null,
+              "elementId": "876091",
+              "box": [
+                0.2329,
+                0.5277,
+                0.7674,
+                0.5277
+              ]
+            },
+            {
+              "code": "MH-PA-12",
+              "elementId": "1000205",
+              "box": [
+                0.1721,
+                0.4723,
+                0.8279,
+                0.5277
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2454169",
+          "name": "Caso 23 · Solape / unión inconsistente en elementos estruc",
+          "label": "Caso 23 · Solape / unión inconsistente en elementos estruc   1:50",
+          "scale": 50,
+          "kind": "review",
+          "sector": "02. Planta Entrepiso",
+          "roomLabel": "02. Planta Entrepiso",
+          "caseId": "estructura-solape-22",
+          "image": "/casa-angel/structure/EST-REV-06-view-2454169.svg.gz",
+          "region": [
+            0.3551,
+            0.6543,
+            0.5436,
+            0.7651
+          ],
+          "tags": [
+            "Elem. 876125",
+            "MH-PE-03"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": null,
+              "elementId": "876125",
+              "box": [
+                0.207,
+                0.5277,
+                0.8042,
+                0.5277
+              ]
+            },
+            {
+              "code": "MH-PE-03",
+              "elementId": "1171301",
+              "box": [
+                0.1958,
+                0.4723,
+                0.8036,
+                0.5277
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2454184",
+          "name": "Caso 24 · Solape / unión inconsistente en elementos estruc",
+          "label": "Caso 24 · Solape / unión inconsistente en elementos estruc   1:50",
+          "scale": 50,
+          "kind": "review",
+          "sector": "02. Planta Entrepiso",
+          "roomLabel": "02. Planta Entrepiso",
+          "caseId": "estructura-solape-23",
+          "image": "/casa-angel/structure/EST-REV-06-view-2454184.svg.gz",
+          "region": [
+            0.5613,
+            0.6543,
+            0.7758,
+            0.7651
+          ],
+          "tags": [
+            "Elem. 876127",
+            "MH-PA-12"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": null,
+              "elementId": "876127",
+              "box": [
+                0.2329,
+                0.5277,
+                0.7674,
+                0.5277
+              ]
+            },
+            {
+              "code": "MH-PA-12",
+              "elementId": "1000205",
+              "box": [
+                0.1721,
+                0.4723,
+                0.8279,
+                0.5277
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EST-REV-07",
+      "title": "Casos de revisión · 7/7",
+      "level": null,
+      "sector": "Revisión",
+      "sheetId": "2454445",
+      "pdf": "/casa-angel/structure/EST-REV-07.pdf",
+      "image": "/casa-angel/structure/EST-REV-07.svg.gz",
+      "preview": "/casa-angel/structure/EST-REV-07-preview.png",
+      "thumbnail": "/casa-angel/structure/EST-REV-07.png",
+      "outsideCrop": [],
+      "views": [
+        {
+          "id": "2454199",
+          "name": "Caso 25 · Solape / unión inconsistente en elementos estruc",
+          "label": "Caso 25 · Solape / unión inconsistente en elementos estruc   1:75",
+          "scale": 75,
+          "kind": "review",
+          "sector": "02. Planta Entrepiso",
+          "roomLabel": "02. Planta Entrepiso",
+          "caseId": "estructura-solape-24",
+          "image": "/casa-angel/structure/EST-REV-07-view-2454199.svg.gz",
+          "region": [
+            0.1434,
+            0.452,
+            0.272,
+            0.5302
+          ],
+          "tags": [
+            "MH-PE-03",
+            "Elem. 2144303"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "MH-PE-03",
+              "elementId": "1171301",
+              "box": [
+                0.203,
+                0.4738,
+                0.797,
+                0.5262
+              ]
+            },
+            {
+              "code": null,
+              "elementId": "2144303",
+              "box": [
+                0.2074,
+                0.521,
+                0.797,
+                0.5262
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2454214",
+          "name": "Caso 26 · Solape / unión inconsistente en elementos estruc",
+          "label": "Caso 26 · Solape / unión inconsistente en elementos estruc   1:75",
+          "scale": 75,
+          "kind": "review",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "caseId": "estructura-solape-25",
+          "image": "/casa-angel/structure/EST-REV-07-view-2454214.svg.gz",
+          "region": [
+            0.3145,
+            0.3387,
+            0.5325,
+            0.6434
+          ],
+          "tags": [
+            "LO-PA-05",
+            "LO-PA-06"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "LO-PA-05",
+              "elementId": "2156409",
+              "box": [
+                0.1196,
+                0.3899,
+                0.3844,
+                0.8788
+              ]
+            },
+            {
+              "code": "LO-PA-06",
+              "elementId": "2156920",
+              "box": [
+                0.2985,
+                0.1212,
+                0.8804,
+                0.4765
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2454236",
+          "name": "Caso 27 · Solape / unión inconsistente en elementos estruc",
+          "label": "Caso 27 · Solape / unión inconsistente en elementos estruc   1:75",
+          "scale": 75,
+          "kind": "review",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "caseId": "estructura-solape-26",
+          "image": "/casa-angel/structure/EST-REV-07-view-2454236.svg.gz",
+          "region": [
+            0.5589,
+            0.2418,
+            0.7715,
+            0.7403
+          ],
+          "tags": [
+            "LO-PB-03",
+            "MH-PB-02"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "LO-PB-03",
+              "elementId": "361258",
+              "box": [
+                0.1227,
+                0.074,
+                0.8757,
+                0.1805
+              ]
+            },
+            {
+              "code": "MH-PB-02",
+              "elementId": "369789",
+              "box": [
+                0.584,
+                0.8031,
+                0.7875,
+                0.926
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EST-SEC-PA-01",
+      "title": "Alzados · 01. Planta Alta · 1/6",
+      "level": "01. Planta Alta",
+      "sector": "01. Planta Alta",
+      "sheetId": "2449404",
+      "pdf": "/casa-angel/structure/EST-SEC-PA-01.pdf",
+      "image": "/casa-angel/structure/EST-SEC-PA-01.svg.gz",
+      "preview": "/casa-angel/structure/EST-SEC-PA-01-preview.png",
+      "thumbnail": "/casa-angel/structure/EST-SEC-PA-01.png",
+      "outsideCrop": [],
+      "views": [
+        {
+          "id": "2448906",
+          "name": "MH-PA-01 · alzado",
+          "label": "MH-PA-01 · alzado   1:30",
+          "scale": 30,
+          "kind": "elevation",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PA-01-view-2448906.svg.gz",
+          "region": [
+            0.1211,
+            0.3086,
+            0.2806,
+            0.6735
+          ],
+          "tags": [
+            "MH-PA-01"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                0.95
+              ],
+              "associative": false,
+              "label": "MH-PA-01 largo"
+            },
+            {
+              "values_m": [
+                5.5
+              ],
+              "associative": false,
+              "label": "MH-PA-01 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "MH-PA-01",
+              "elementId": "1182197",
+              "box": [
+                0.3033,
+                0.1643,
+                0.5294,
+                0.9338
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2448932",
+          "name": "MH-PA-02 · alzado",
+          "label": "MH-PA-02 · alzado   1:30",
+          "scale": 30,
+          "kind": "elevation",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PA-01-view-2448932.svg.gz",
+          "region": [
+            0.2619,
+            0.3902,
+            0.6368,
+            0.5919
+          ],
+          "tags": [
+            "MH-PA-02"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                6.925
+              ],
+              "associative": false,
+              "label": "MH-PA-02 largo"
+            },
+            {
+              "values_m": [
+                0.2,
+                2.3
+              ],
+              "associative": false,
+              "label": "MH-PA-02 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "MH-PA-02",
+              "elementId": "372705",
+              "box": [
+                0.1218,
+                0.0177,
+                0.795,
+                0.9308
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2448959",
+          "name": "MH-PA-03 · alzado",
+          "label": "MH-PA-03 · alzado   1:30",
+          "scale": 30,
+          "kind": "elevation",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PA-01-view-2448959.svg.gz",
+          "region": [
+            0.6253,
+            0.3775,
+            0.7705,
+            0.6047
+          ],
+          "tags": [
+            "MH-PA-03"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                0.55
+              ],
+              "associative": false,
+              "label": "MH-PA-03 largo"
+            },
+            {
+              "values_m": [
+                2.8
+              ],
+              "associative": false,
+              "label": "MH-PA-03 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "MH-PA-03",
+              "elementId": "771084",
+              "box": [
+                0.321,
+                0.0949,
+                0.4702,
+                0.8936
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EST-SEC-PA-02",
+      "title": "Alzados · 01. Planta Alta · 2/6",
+      "level": "01. Planta Alta",
+      "sector": "01. Planta Alta",
+      "sheetId": "2449431",
+      "pdf": "/casa-angel/structure/EST-SEC-PA-02.pdf",
+      "image": "/casa-angel/structure/EST-SEC-PA-02.svg.gz",
+      "preview": "/casa-angel/structure/EST-SEC-PA-02-preview.png",
+      "thumbnail": "/casa-angel/structure/EST-SEC-PA-02.png",
+      "outsideCrop": [],
+      "views": [
+        {
+          "id": "2448985",
+          "name": "MH-PA-04 · alzado",
+          "label": "MH-PA-04 · alzado   1:25",
+          "scale": 25,
+          "kind": "elevation",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PA-02-view-2448985.svg.gz",
+          "region": [
+            0.0943,
+            0.3408,
+            0.3187,
+            0.6414
+          ],
+          "tags": [
+            "MH-PA-04"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                2.05
+              ],
+              "associative": false,
+              "label": "MH-PA-04 largo"
+            },
+            {
+              "values_m": [
+                3.3
+              ],
+              "associative": false,
+              "label": "MH-PA-04 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "MH-PA-04",
+              "elementId": "660351",
+              "box": [
+                0.23,
+                0.0352,
+                0.6254,
+                0.9077
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2449011",
+          "name": "MH-PA-05 · alzado",
+          "label": "MH-PA-05 · alzado   1:25",
+          "scale": 25,
+          "kind": "elevation",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PA-02-view-2449011.svg.gz",
+          "region": [
+            0.3103,
+            0.3561,
+            0.472,
+            0.6261
+          ],
+          "tags": [
+            "MH-PA-05",
+            "V-101"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                0.2541,
+                0.3459
+              ],
+              "associative": false,
+              "label": "MH-PA-05 vanos"
+            },
+            {
+              "values_m": [
+                0.6
+              ],
+              "associative": false,
+              "label": "MH-PA-05 largo"
+            },
+            {
+              "values_m": [
+                2.8
+              ],
+              "associative": false,
+              "label": "MH-PA-05 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "MH-PA-05",
+              "elementId": "891064",
+              "box": [
+                0.3193,
+                0.0909,
+                0.4799,
+                0.8972
+              ]
+            },
+            {
+              "code": "V-101",
+              "elementId": "694828",
+              "box": [
+                0.3193,
+                0.3525,
+                0.4553,
+                0.8972
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2449042",
+          "name": "MH-PA-06 · alzado",
+          "label": "MH-PA-06 · alzado   1:25",
+          "scale": 25,
+          "kind": "elevation",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PA-02-view-2449042.svg.gz",
+          "region": [
+            0.4634,
+            0.3499,
+            0.8046,
+            0.6322
+          ],
+          "tags": [
+            "MH-PA-06",
+            "P-22"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                2.185,
+                0.9,
+                1.665
+              ],
+              "associative": false,
+              "label": "MH-PA-06 vanos"
+            },
+            {
+              "values_m": [
+                4.75
+              ],
+              "associative": false,
+              "label": "MH-PA-06 largo"
+            },
+            {
+              "values_m": [
+                3.0
+              ],
+              "associative": false,
+              "label": "MH-PA-06 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "MH-PA-06",
+              "elementId": "373019",
+              "box": [
+                0.1512,
+                0.0,
+                0.7536,
+                0.9017
+              ]
+            },
+            {
+              "code": "P-22",
+              "elementId": "460032",
+              "box": [
+                0.4283,
+                0.3806,
+                0.5425,
+                0.9017
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EST-SEC-PA-03",
+      "title": "Alzados · 01. Planta Alta · 3/6",
+      "level": "01. Planta Alta",
+      "sector": "01. Planta Alta",
+      "sheetId": "2449458",
+      "pdf": "/casa-angel/structure/EST-SEC-PA-03.pdf",
+      "image": "/casa-angel/structure/EST-SEC-PA-03.svg.gz",
+      "preview": "/casa-angel/structure/EST-SEC-PA-03-preview.png",
+      "thumbnail": "/casa-angel/structure/EST-SEC-PA-03.png",
+      "outsideCrop": [],
+      "views": [
+        {
+          "id": "2449074",
+          "name": "MH-PA-07 · alzado",
+          "label": "MH-PA-07 · alzado   1:20",
+          "scale": 20,
+          "kind": "elevation",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PA-03-view-2449074.svg.gz",
+          "region": [
+            0.111,
+            0.3163,
+            0.3003,
+            0.6658
+          ],
+          "tags": [
+            "MH-PA-07"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                0.7
+              ],
+              "associative": false,
+              "label": "MH-PA-07 largo"
+            },
+            {
+              "values_m": [
+                3.0
+              ],
+              "associative": false,
+              "label": "MH-PA-07 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "MH-PA-07",
+              "elementId": "867060",
+              "box": [
+                0.2985,
+                0.1711,
+                0.4986,
+                0.9053
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2449100",
+          "name": "MH-PA-08 · alzado",
+          "label": "MH-PA-08 · alzado   1:20",
+          "scale": 20,
+          "kind": "elevation",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PA-03-view-2449100.svg.gz",
+          "region": [
+            0.2967,
+            0.3163,
+            0.4806,
+            0.6658
+          ],
+          "tags": [
+            "MH-PA-08"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                0.6
+              ],
+              "associative": false,
+              "label": "MH-PA-08 largo"
+            },
+            {
+              "values_m": [
+                3.0
+              ],
+              "associative": false,
+              "label": "MH-PA-08 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "MH-PA-08",
+              "elementId": "867136",
+              "box": [
+                0.2778,
+                0.1711,
+                0.4838,
+                0.9053
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2449126",
+          "name": "MH-PA-09 · alzado",
+          "label": "MH-PA-09 · alzado   1:20",
+          "scale": 20,
+          "kind": "elevation",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PA-03-view-2449126.svg.gz",
+          "region": [
+            0.4593,
+            0.3163,
+            0.8054,
+            0.6658
+          ],
+          "tags": [
+            "MH-PA-09"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                3.6017
+              ],
+              "associative": false,
+              "label": "MH-PA-09 largo"
+            },
+            {
+              "values_m": [
+                3.0
+              ],
+              "associative": false,
+              "label": "MH-PA-09 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "MH-PA-09",
+              "elementId": "665788",
+              "box": [
+                0.1631,
+                0.1711,
+                0.7259,
+                0.9053
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EST-SEC-PA-04",
+      "title": "Alzados · 01. Planta Alta · 4/6",
+      "level": "01. Planta Alta",
+      "sector": "01. Planta Alta",
+      "sheetId": "2449485",
+      "pdf": "/casa-angel/structure/EST-SEC-PA-04.pdf",
+      "image": "/casa-angel/structure/EST-SEC-PA-04.svg.gz",
+      "preview": "/casa-angel/structure/EST-SEC-PA-04-preview.png",
+      "thumbnail": "/casa-angel/structure/EST-SEC-PA-04.png",
+      "outsideCrop": [],
+      "views": [
+        {
+          "id": "2449152",
+          "name": "MH-PA-10 · alzado",
+          "label": "MH-PA-10 · alzado   1:40",
+          "scale": 40,
+          "kind": "elevation",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PA-04-view-2449152.svg.gz",
+          "region": [
+            0.3527,
+            0.2133,
+            0.546,
+            0.3953
+          ],
+          "tags": [
+            "MH-PA-10"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                3.0
+              ],
+              "associative": false,
+              "label": "MH-PA-10 largo"
+            },
+            {
+              "values_m": [
+                3.0
+              ],
+              "associative": false,
+              "label": "MH-PA-10 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "MH-PA-10",
+              "elementId": "775530",
+              "box": [
+                0.2292,
+                0.1862,
+                0.649,
+                0.8917
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2449178",
+          "name": "MH-PA-11 · alzado",
+          "label": "MH-PA-11 · alzado   1:25",
+          "scale": 25,
+          "kind": "elevation",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PA-04-view-2449178.svg.gz",
+          "region": [
+            0.1571,
+            0.4862,
+            0.3103,
+            0.7684
+          ],
+          "tags": [
+            "MH-PA-11"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                0.401
+              ],
+              "associative": false,
+              "label": "MH-PA-11 largo"
+            },
+            {
+              "values_m": [
+                3.0
+              ],
+              "associative": false,
+              "label": "MH-PA-11 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "MH-PA-11",
+              "elementId": "1002400",
+              "box": [
+                0.309,
+                0.2503,
+                0.4507,
+                0.9017
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2449204",
+          "name": "MH-PA-12 · alzado",
+          "label": "MH-PA-12 · alzado   1:25",
+          "scale": 25,
+          "kind": "elevation",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PA-04-view-2449204.svg.gz",
+          "region": [
+            0.3605,
+            0.4862,
+            0.7774,
+            0.7684
+          ],
+          "tags": [
+            "MH-PA-12"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                4.965,
+                0.4325,
+                1.1025
+              ],
+              "associative": false,
+              "label": "MH-PA-12 vanos"
+            },
+            {
+              "values_m": [
+                6.5
+              ],
+              "associative": false,
+              "label": "MH-PA-12 largo"
+            },
+            {
+              "values_m": [
+                3.0
+              ],
+              "associative": false,
+              "label": "MH-PA-12 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "MH-PA-12",
+              "elementId": "1000205",
+              "box": [
+                0.1238,
+                0.2503,
+                0.7984,
+                0.9017
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EST-SEC-PA-05",
+      "title": "Alzados · 01. Planta Alta · 5/6",
+      "level": "01. Planta Alta",
+      "sector": "01. Planta Alta",
+      "sheetId": "2449512",
+      "pdf": "/casa-angel/structure/EST-SEC-PA-05.pdf",
+      "image": "/casa-angel/structure/EST-SEC-PA-05.svg.gz",
+      "preview": "/casa-angel/structure/EST-SEC-PA-05-preview.png",
+      "thumbnail": "/casa-angel/structure/EST-SEC-PA-05.png",
+      "outsideCrop": [],
+      "views": [
+        {
+          "id": "2449235",
+          "name": "MH-PA-13 · alzado",
+          "label": "MH-PA-13 · alzado   1:15",
+          "scale": 15,
+          "kind": "elevation",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PA-05-view-2449235.svg.gz",
+          "region": [
+            0.1065,
+            0.2602,
+            0.3129,
+            0.722
+          ],
+          "tags": [
+            "MH-PA-13"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                0.4
+              ],
+              "associative": false,
+              "label": "MH-PA-13 largo"
+            },
+            {
+              "values_m": [
+                3.0
+              ],
+              "associative": false,
+              "label": "MH-PA-13 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "MH-PA-13",
+              "elementId": "1147627",
+              "box": [
+                0.2781,
+                0.2458,
+                0.4528,
+                0.909
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2449261",
+          "name": "MH-PA-14 · alzado",
+          "label": "MH-PA-14 · alzado   1:15",
+          "scale": 15,
+          "kind": "elevation",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PA-05-view-2449261.svg.gz",
+          "region": [
+            0.2885,
+            0.2602,
+            0.6102,
+            0.722
+          ],
+          "tags": [
+            "MH-PA-14"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                2.0
+              ],
+              "associative": false,
+              "label": "MH-PA-14 largo"
+            },
+            {
+              "values_m": [
+                3.0
+              ],
+              "associative": false,
+              "label": "MH-PA-14 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "MH-PA-14",
+              "elementId": "1000720",
+              "box": [
+                0.2007,
+                0.2458,
+                0.6491,
+                0.909
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2449287",
+          "name": "MH-PA-15 · alzado",
+          "label": "MH-PA-15 · alzado   1:15",
+          "scale": 15,
+          "kind": "elevation",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PA-05-view-2449287.svg.gz",
+          "region": [
+            0.5858,
+            0.2602,
+            0.7923,
+            0.722
+          ],
+          "tags": [
+            "MH-PA-15"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                0.401
+              ],
+              "associative": false,
+              "label": "MH-PA-15 largo"
+            },
+            {
+              "values_m": [
+                3.0
+              ],
+              "associative": false,
+              "label": "MH-PA-15 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "MH-PA-15",
+              "elementId": "1009669",
+              "box": [
+                0.3129,
+                0.2458,
+                0.488,
+                0.909
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EST-SEC-PA-06",
+      "title": "Alzados · 01. Planta Alta · 6/6",
+      "level": "01. Planta Alta",
+      "sector": "01. Planta Alta",
+      "sheetId": "2449539",
+      "pdf": "/casa-angel/structure/EST-SEC-PA-06.pdf",
+      "image": "/casa-angel/structure/EST-SEC-PA-06.svg.gz",
+      "preview": "/casa-angel/structure/EST-SEC-PA-06-preview.png",
+      "thumbnail": "/casa-angel/structure/EST-SEC-PA-06.png",
+      "outsideCrop": [],
+      "views": [
+        {
+          "id": "2449313",
+          "name": "MH-PA-16 · alzado",
+          "label": "MH-PA-16 · alzado   1:40",
+          "scale": 40,
+          "kind": "elevation",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PA-06-view-2449313.svg.gz",
+          "region": [
+            0.1605,
+            0.2237,
+            0.2836,
+            0.4057
+          ],
+          "tags": [
+            "MH-PA-16"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                0.4
+              ],
+              "associative": false,
+              "label": "MH-PA-16 largo"
+            },
+            {
+              "values_m": [
+                3.0
+              ],
+              "associative": false,
+              "label": "MH-PA-16 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "MH-PA-16",
+              "elementId": "1152689",
+              "box": [
+                0.3383,
+                0.2601,
+                0.4483,
+                0.8917
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2449339",
+          "name": "MH-PA-17 · alzado",
+          "label": "MH-PA-17 · alzado   1:40",
+          "scale": 40,
+          "kind": "elevation",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PA-06-view-2449339.svg.gz",
+          "region": [
+            0.3255,
+            0.2237,
+            0.789,
+            0.4057
+          ],
+          "tags": [
+            "MH-PA-17",
+            "V-151",
+            "V-145"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                8.04,
+                0.5,
+                0.96,
+                0.5,
+                3.0
+              ],
+              "associative": false,
+              "label": "MH-PA-17 vanos"
+            },
+            {
+              "values_m": [
+                13.0
+              ],
+              "associative": false,
+              "label": "MH-PA-17 largo"
+            },
+            {
+              "values_m": [
+                3.0
+              ],
+              "associative": false,
+              "label": "MH-PA-17 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "MH-PA-17",
+              "elementId": "1001377",
+              "box": [
+                0.0955,
+                0.2601,
+                0.8537,
+                0.8917
+              ]
+            },
+            {
+              "code": "V-151",
+              "elementId": "1155955",
+              "box": [
+                0.5644,
+                0.2601,
+                0.5936,
+                0.8917
+              ]
+            },
+            {
+              "code": "V-145",
+              "elementId": "1099181",
+              "box": [
+                0.6496,
+                0.0,
+                0.6788,
+                0.2601
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2449374",
+          "name": "VE-PA-01 · alzado",
+          "label": "VE-PA-01 · alzado   1:40",
+          "scale": 40,
+          "kind": "elevation",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PA-06-view-2449374.svg.gz",
+          "region": [
+            0.2783,
+            0.517,
+            0.6205,
+            0.7584
+          ],
+          "tags": [
+            "VE-PA-01",
+            "V-135",
+            "V-157",
+            "V-158",
+            "V-77"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                0.4356,
+                2.0,
+                0.1474,
+                1.8526,
+                0.1474,
+                1.8526,
+                0.1474,
+                1.9263
+              ],
+              "associative": false,
+              "label": "VE-PA-01 vanos"
+            },
+            {
+              "values_m": [
+                8.5093
+              ],
+              "associative": false,
+              "label": "VE-PA-01 largo"
+            },
+            {
+              "values_m": [
+                4.551
+              ],
+              "associative": false,
+              "label": "VE-PA-01 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "VE-PA-01",
+              "elementId": "667007",
+              "box": [
+                0.1294,
+                0.1961,
+                0.8018,
+                0.9184
+              ]
+            },
+            {
+              "code": "V-135",
+              "elementId": "1091492",
+              "box": [
+                0.638,
+                0.5575,
+                0.8076,
+                0.7396
+              ]
+            },
+            {
+              "code": "V-157",
+              "elementId": "2376227",
+              "box": [
+                0.1639,
+                0.5575,
+                0.3335,
+                0.7396
+              ]
+            },
+            {
+              "code": "V-158",
+              "elementId": "2376255",
+              "box": [
+                0.3219,
+                0.5575,
+                0.4916,
+                0.7396
+              ]
+            },
+            {
+              "code": "V-77",
+              "elementId": "671785",
+              "box": [
+                0.4799,
+                0.5575,
+                0.6496,
+                0.7396
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EST-SEC-PB-01",
+      "title": "Alzados · 00. Planta Baja · 1/5",
+      "level": "00. Planta Baja",
+      "sector": "00. Planta Baja",
+      "sheetId": "2448734",
+      "pdf": "/casa-angel/structure/EST-SEC-PB-01.pdf",
+      "image": "/casa-angel/structure/EST-SEC-PB-01.svg.gz",
+      "preview": "/casa-angel/structure/EST-SEC-PB-01-preview.png",
+      "thumbnail": "/casa-angel/structure/EST-SEC-PB-01.png",
+      "outsideCrop": [],
+      "views": [
+        {
+          "id": "2448029",
+          "name": "MH-PB-01 · alzado",
+          "label": "MH-PB-01 · alzado   1:40",
+          "scale": 40,
+          "kind": "elevation",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PB-01-view-2448029.svg.gz",
+          "region": [
+            0.1008,
+            0.273,
+            0.4022,
+            0.4474
+          ],
+          "tags": [
+            "MH-PB-01",
+            "V-123"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                1.08,
+                0.53,
+                3.1372,
+                2.2528
+              ],
+              "associative": false,
+              "label": "MH-PB-01 vanos"
+            },
+            {
+              "values_m": [
+                7.0
+              ],
+              "associative": false,
+              "label": "MH-PB-01 largo"
+            },
+            {
+              "values_m": [
+                0.2,
+                2.8
+              ],
+              "associative": false,
+              "label": "MH-PB-01 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "MH-PB-01",
+              "elementId": "634993",
+              "box": [
+                0.147,
+                0.2716,
+                0.775,
+                0.9309
+              ]
+            },
+            {
+              "code": "V-123",
+              "elementId": "922798",
+              "box": [
+                0.5502,
+                0.3595,
+                0.5955,
+                0.887
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2448063",
+          "name": "MH-PB-02 · alzado",
+          "label": "MH-PB-02 · alzado   1:40",
+          "scale": 40,
+          "kind": "elevation",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PB-01-view-2448063.svg.gz",
+          "region": [
+            0.3924,
+            0.2117,
+            0.5831,
+            0.5086
+          ],
+          "tags": [
+            "MH-PB-02"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                2.9
+              ],
+              "associative": false,
+              "label": "MH-PB-02 largo"
+            },
+            {
+              "values_m": [
+                0.2,
+                6.0
+              ],
+              "associative": false,
+              "label": "MH-PB-02 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "MH-PB-02",
+              "elementId": "369789",
+              "box": [
+                0.2183,
+                0.1141,
+                0.644,
+                0.9595
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2448090",
+          "name": "MH-PB-03 · alzado",
+          "label": "MH-PB-03 · alzado   1:40",
+          "scale": 40,
+          "kind": "elevation",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PB-01-view-2448090.svg.gz",
+          "region": [
+            0.6167,
+            0.2691,
+            0.7546,
+            0.4512
+          ],
+          "tags": [
+            "MH-PB-03"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                0.95
+              ],
+              "associative": false,
+              "label": "MH-PB-03 largo"
+            },
+            {
+              "values_m": [
+                0.2,
+                3.0
+              ],
+              "associative": false,
+              "label": "MH-PB-03 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "MH-PB-03",
+              "elementId": "369719",
+              "box": [
+                0.3214,
+                0.2601,
+                0.5177,
+                0.9338
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2448117",
+          "name": "MH-PB-04 · alzado",
+          "label": "MH-PB-04 · alzado   1:40",
+          "scale": 40,
+          "kind": "elevation",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PB-01-view-2448117.svg.gz",
+          "region": [
+            0.1315,
+            0.596,
+            0.431,
+            0.7704
+          ],
+          "tags": [
+            "MH-PB-04"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                6.925
+              ],
+              "associative": false,
+              "label": "MH-PB-04 largo"
+            },
+            {
+              "values_m": [
+                0.2,
+                2.8
+              ],
+              "associative": false,
+              "label": "MH-PB-04 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "MH-PB-04",
+              "elementId": "363297",
+              "box": [
+                0.1412,
+                0.2716,
+                0.7735,
+                0.9309
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2448144",
+          "name": "MH-PB-05 · alzado",
+          "label": "MH-PB-05 · alzado   1:40",
+          "scale": 40,
+          "kind": "elevation",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PB-01-view-2448144.svg.gz",
+          "region": [
+            0.4658,
+            0.596,
+            0.7672,
+            0.7704
+          ],
+          "tags": [
+            "MH-PB-05",
+            "V-155"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                1.02,
+                0.56,
+                3.1672,
+                2.2528
+              ],
+              "associative": false,
+              "label": "MH-PB-05 vanos"
+            },
+            {
+              "values_m": [
+                7.0
+              ],
+              "associative": false,
+              "label": "MH-PB-05 largo"
+            },
+            {
+              "values_m": [
+                0.2,
+                2.8
+              ],
+              "associative": false,
+              "label": "MH-PB-05 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "MH-PB-05",
+              "elementId": "988670",
+              "box": [
+                0.147,
+                0.2716,
+                0.775,
+                0.9309
+              ]
+            },
+            {
+              "code": "V-155",
+              "elementId": "2274582",
+              "box": [
+                0.5502,
+                0.3595,
+                0.5955,
+                0.887
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EST-SEC-PB-02",
+      "title": "Alzados · 00. Planta Baja · 2/5",
+      "level": "00. Planta Baja",
+      "sector": "00. Planta Baja",
+      "sheetId": "2448767",
+      "pdf": "/casa-angel/structure/EST-SEC-PB-02.pdf",
+      "image": "/casa-angel/structure/EST-SEC-PB-02.svg.gz",
+      "preview": "/casa-angel/structure/EST-SEC-PB-02-preview.png",
+      "thumbnail": "/casa-angel/structure/EST-SEC-PB-02.png",
+      "outsideCrop": [],
+      "views": [
+        {
+          "id": "2448178",
+          "name": "MH-PB-06 · alzado",
+          "label": "MH-PB-06 · alzado   1:40",
+          "scale": 40,
+          "kind": "elevation",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PB-02-view-2448178.svg.gz",
+          "region": [
+            0.1002,
+            0.2795,
+            0.3463,
+            0.4539
+          ],
+          "tags": [
+            "MH-PB-06",
+            "V-15",
+            "V-154"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                0.2053,
+                2.9512,
+                1.7959
+              ],
+              "associative": false,
+              "label": "MH-PB-06 vanos"
+            },
+            {
+              "values_m": [
+                4.9525
+              ],
+              "associative": false,
+              "label": "MH-PB-06 largo"
+            },
+            {
+              "values_m": [
+                0.2,
+                2.8
+              ],
+              "associative": false,
+              "label": "MH-PB-06 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "MH-PB-06",
+              "elementId": "363146",
+              "box": [
+                0.1748,
+                0.2716,
+                0.7243,
+                0.9309
+              ]
+            },
+            {
+              "code": "V-15",
+              "elementId": "459044",
+              "box": [
+                0.499,
+                0.0408,
+                0.5549,
+                0.6672
+              ]
+            },
+            {
+              "code": "V-154",
+              "elementId": "1243477",
+              "box": [
+                0.1748,
+                0.3595,
+                0.2304,
+                0.887
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2448212",
+          "name": "MH-PB-07 · alzado",
+          "label": "MH-PB-07 · alzado   1:40",
+          "scale": 40,
+          "kind": "elevation",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PB-02-view-2448212.svg.gz",
+          "region": [
+            0.3327,
+            0.2182,
+            0.5288,
+            0.5151
+          ],
+          "tags": [
+            "MH-PB-07"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                3.1
+              ],
+              "associative": false,
+              "label": "MH-PB-07 largo"
+            },
+            {
+              "values_m": [
+                0.2,
+                6.0
+              ],
+              "associative": false,
+              "label": "MH-PB-07 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "MH-PB-07",
+              "elementId": "369425",
+              "box": [
+                0.2261,
+                0.1141,
+                0.6539,
+                0.9595
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2448239",
+          "name": "MH-PB-08 · alzado",
+          "label": "MH-PB-08 · alzado   1:40",
+          "scale": 40,
+          "kind": "elevation",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PB-02-view-2448239.svg.gz",
+          "region": [
+            0.5152,
+            0.2795,
+            0.7985,
+            0.4539
+          ],
+          "tags": [
+            "MH-PB-08",
+            "V-69"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                0.1666,
+                6.1634
+              ],
+              "associative": false,
+              "label": "MH-PB-08 vanos"
+            },
+            {
+              "values_m": [
+                6.33
+              ],
+              "associative": false,
+              "label": "MH-PB-08 largo"
+            },
+            {
+              "values_m": [
+                0.2,
+                2.8
+              ],
+              "associative": false,
+              "label": "MH-PB-08 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "MH-PB-08",
+              "elementId": "756675",
+              "box": [
+                0.1473,
+                0.2716,
+                0.7673,
+                0.9309
+              ]
+            },
+            {
+              "code": "V-69",
+              "elementId": "656057",
+              "box": [
+                0.1468,
+                0.3595,
+                0.1977,
+                0.887
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2448271",
+          "name": "MH-PB-09 · alzado",
+          "label": "MH-PB-09 · alzado   1:50",
+          "scale": 50,
+          "kind": "elevation",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PB-02-view-2448271.svg.gz",
+          "region": [
+            0.1274,
+            0.6153,
+            0.4134,
+            0.7641
+          ],
+          "tags": [
+            "MH-PB-09",
+            "V-35",
+            "V-92"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                2.1528,
+                4.3372,
+                0.2944,
+                1.349,
+                0.2666
+              ],
+              "associative": false,
+              "label": "MH-PB-09 vanos"
+            },
+            {
+              "values_m": [
+                8.4
+              ],
+              "associative": false,
+              "label": "MH-PB-09 largo"
+            },
+            {
+              "values_m": [
+                0.2,
+                3.0
+              ],
+              "associative": false,
+              "label": "MH-PB-09 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "MH-PB-09",
+              "elementId": "363800",
+              "box": [
+                0.1388,
+                0.2673,
+                0.7818,
+                0.9268
+              ]
+            },
+            {
+              "code": "V-35",
+              "elementId": "600044",
+              "box": [
+                0.7414,
+                0.3909,
+                0.7818,
+                0.8856
+              ]
+            },
+            {
+              "code": "V-92",
+              "elementId": "691194",
+              "box": [
+                0.2901,
+                0.3909,
+                0.3283,
+                0.8856
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2448307",
+          "name": "MH-PB-10 · alzado",
+          "label": "MH-PB-10 · alzado   1:50",
+          "scale": 50,
+          "kind": "elevation",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PB-02-view-2448307.svg.gz",
+          "region": [
+            0.4399,
+            0.6183,
+            0.7714,
+            0.761
+          ],
+          "tags": [
+            "MH-PB-10",
+            "P-93",
+            "P-90"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                5.6714,
+                0.7636,
+                1.1,
+                0.6925,
+                2.2725
+              ],
+              "associative": false,
+              "label": "MH-PB-10 vanos"
+            },
+            {
+              "values_m": [
+                10.5
+              ],
+              "associative": false,
+              "label": "MH-PB-10 largo"
+            },
+            {
+              "values_m": [
+                2.8
+              ],
+              "associative": false,
+              "label": "MH-PB-10 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "MH-PB-10",
+              "elementId": "364525",
+              "box": [
+                0.1263,
+                0.2788,
+                0.8117,
+                0.9236
+              ]
+            },
+            {
+              "code": "P-93",
+              "elementId": "1150552",
+              "box": [
+                0.6501,
+                0.3744,
+                0.6766,
+                0.8806
+              ]
+            },
+            {
+              "code": "P-90",
+              "elementId": "1040025",
+              "box": [
+                0.4354,
+                0.3648,
+                0.5576,
+                0.8806
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EST-SEC-PB-03",
+      "title": "Alzados · 00. Planta Baja · 3/5",
+      "level": "00. Planta Baja",
+      "sector": "00. Planta Baja",
+      "sheetId": "2448800",
+      "pdf": "/casa-angel/structure/EST-SEC-PB-03.pdf",
+      "image": "/casa-angel/structure/EST-SEC-PB-03.svg.gz",
+      "preview": "/casa-angel/structure/EST-SEC-PB-03-preview.png",
+      "thumbnail": "/casa-angel/structure/EST-SEC-PB-03.png",
+      "outsideCrop": [],
+      "views": [
+        {
+          "id": "2448342",
+          "name": "MH-PB-11 · alzado",
+          "label": "MH-PB-11 · alzado   1:50",
+          "scale": 50,
+          "kind": "elevation",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PB-03-view-2448342.svg.gz",
+          "region": [
+            0.2252,
+            0.213,
+            0.3383,
+            0.3619
+          ],
+          "tags": [
+            "MH-PB-11"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                0.4
+              ],
+              "associative": false,
+              "label": "MH-PB-11 largo"
+            },
+            {
+              "values_m": [
+                0.2,
+                3.0
+              ],
+              "associative": false,
+              "label": "MH-PB-11 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "MH-PB-11",
+              "elementId": "1130447",
+              "box": [
+                0.3515,
+                0.2673,
+                0.4473,
+                0.9268
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2448369",
+          "name": "MH-PB-12 · alzado",
+          "label": "MH-PB-12 · alzado   1:50",
+          "scale": 50,
+          "kind": "elevation",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PB-03-view-2448369.svg.gz",
+          "region": [
+            0.5604,
+            0.2161,
+            0.6735,
+            0.3588
+          ],
+          "tags": [
+            "MH-PB-12"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                0.4
+              ],
+              "associative": false,
+              "label": "MH-PB-12 largo"
+            },
+            {
+              "values_m": [
+                0.2,
+                2.8
+              ],
+              "associative": false,
+              "label": "MH-PB-12 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "MH-PB-12",
+              "elementId": "1127861",
+              "box": [
+                0.3515,
+                0.2788,
+                0.4473,
+                0.9236
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2448396",
+          "name": "MH-PB-13 · alzado",
+          "label": "MH-PB-13 · alzado   1:50",
+          "scale": 50,
+          "kind": "elevation",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PB-03-view-2448396.svg.gz",
+          "region": [
+            0.152,
+            0.4519,
+            0.2997,
+            0.7691
+          ],
+          "tags": [
+            "MH-PB-13",
+            "MC-1020050"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                0.5,
+                1.0,
+                0.5
+              ],
+              "associative": false,
+              "label": "MH-PB-13 vanos"
+            },
+            {
+              "values_m": [
+                2.0
+              ],
+              "associative": false,
+              "label": "MH-PB-13 largo"
+            },
+            {
+              "values_m": [
+                0.2,
+                8.5
+              ],
+              "associative": false,
+              "label": "MH-PB-13 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "MH-PB-13",
+              "elementId": "364138",
+              "box": [
+                0.2837,
+                0.1253,
+                0.577,
+                0.9657
+              ]
+            },
+            {
+              "code": "MC-1020050",
+              "elementId": "1020050",
+              "box": [
+                0.357,
+                0.3185,
+                0.5037,
+                0.8663
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2448429",
+          "name": "MH-PB-14 · alzado",
+          "label": "MH-PB-14 · alzado   1:50",
+          "scale": 50,
+          "kind": "elevation",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PB-03-view-2448429.svg.gz",
+          "region": [
+            0.3796,
+            0.5361,
+            0.5191,
+            0.6849
+          ],
+          "tags": [
+            "MH-PB-14"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                2.4
+              ],
+              "associative": false,
+              "label": "MH-PB-14 largo"
+            },
+            {
+              "values_m": [
+                0.2,
+                3.0
+              ],
+              "associative": false,
+              "label": "MH-PB-14 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "MH-PB-14",
+              "elementId": "384945",
+              "box": [
+                0.3004,
+                0.2673,
+                0.6728,
+                0.9268
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2448456",
+          "name": "MH-PB-15 · alzado",
+          "label": "MH-PB-15 · alzado   1:50",
+          "scale": 50,
+          "kind": "elevation",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PB-03-view-2448456.svg.gz",
+          "region": [
+            0.6163,
+            0.5361,
+            0.7294,
+            0.6849
+          ],
+          "tags": [
+            "MH-PB-15"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                0.4
+              ],
+              "associative": false,
+              "label": "MH-PB-15 largo"
+            },
+            {
+              "values_m": [
+                0.2,
+                3.0
+              ],
+              "associative": false,
+              "label": "MH-PB-15 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "MH-PB-15",
+              "elementId": "991161",
+              "box": [
+                0.3515,
+                0.2673,
+                0.4473,
+                0.9268
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EST-SEC-PB-04",
+      "title": "Alzados · 00. Planta Baja · 4/5",
+      "level": "00. Planta Baja",
+      "sector": "00. Planta Baja",
+      "sheetId": "2448833",
+      "pdf": "/casa-angel/structure/EST-SEC-PB-04.pdf",
+      "image": "/casa-angel/structure/EST-SEC-PB-04.svg.gz",
+      "preview": "/casa-angel/structure/EST-SEC-PB-04-preview.png",
+      "thumbnail": "/casa-angel/structure/EST-SEC-PB-04.png",
+      "outsideCrop": [],
+      "views": [
+        {
+          "id": "2448483",
+          "name": "MH-PB-16 · alzado",
+          "label": "MH-PB-16 · alzado   1:40",
+          "scale": 40,
+          "kind": "elevation",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PB-04-view-2448483.svg.gz",
+          "region": [
+            0.1097,
+            0.2353,
+            0.5733,
+            0.4174
+          ],
+          "tags": [
+            "MH-PB-16",
+            "V-147",
+            "V-150"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                3.0,
+                0.5,
+                5.0,
+                0.5,
+                4.0
+              ],
+              "associative": false,
+              "label": "MH-PB-16 vanos"
+            },
+            {
+              "values_m": [
+                13.0
+              ],
+              "associative": false,
+              "label": "MH-PB-16 largo"
+            },
+            {
+              "values_m": [
+                0.2,
+                3.0
+              ],
+              "associative": false,
+              "label": "MH-PB-16 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "MH-PB-16",
+              "elementId": "364265",
+              "box": [
+                0.0955,
+                0.2601,
+                0.8537,
+                0.9338
+              ]
+            },
+            {
+              "code": "V-147",
+              "elementId": "1153486",
+              "box": [
+                0.5913,
+                0.2601,
+                0.6204,
+                0.8917
+              ]
+            },
+            {
+              "code": "V-150",
+              "elementId": "1153988",
+              "box": [
+                0.2705,
+                0.2601,
+                0.2997,
+                0.8917
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2448519",
+          "name": "VE-PB-01 · alzado",
+          "label": "VE-PB-01 · alzado   1:40",
+          "scale": 40,
+          "kind": "elevation",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PB-04-view-2448519.svg.gz",
+          "region": [
+            0.5679,
+            0.2503,
+            0.7856,
+            0.4024
+          ],
+          "tags": [
+            "VE-PB-01"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                3.9
+              ],
+              "associative": false,
+              "label": "VE-PB-01 largo"
+            },
+            {
+              "values_m": [
+                0.2
+              ],
+              "associative": false,
+              "label": "VE-PB-01 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "VE-PB-01",
+              "elementId": "2393305",
+              "box": [
+                0.2036,
+                0.8535,
+                0.6883,
+                0.9039
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2448545",
+          "name": "VE-PB-02 · alzado",
+          "label": "VE-PB-02 · alzado   1:30",
+          "scale": 30,
+          "kind": "elevation",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PB-04-view-2448545.svg.gz",
+          "region": [
+            0.0902,
+            0.5524,
+            0.4317,
+            0.7464
+          ],
+          "tags": [
+            "VE-PB-02"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                6.0
+              ],
+              "associative": false,
+              "label": "VE-PB-02 largo"
+            },
+            {
+              "values_m": [
+                0.2
+              ],
+              "associative": false,
+              "label": "VE-PB-02 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "VE-PB-02",
+              "elementId": "2393450",
+              "box": [
+                0.1416,
+                0.8754,
+                0.775,
+                0.9281
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2448571",
+          "name": "VE-PB-03 · alzado",
+          "label": "VE-PB-03 · alzado   1:30",
+          "scale": 30,
+          "kind": "elevation",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PB-04-view-2448571.svg.gz",
+          "region": [
+            0.3839,
+            0.5524,
+            0.6317,
+            0.7464
+          ],
+          "tags": [
+            "VE-PB-03"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                3.4
+              ],
+              "associative": false,
+              "label": "VE-PB-03 largo"
+            },
+            {
+              "values_m": [
+                0.2
+              ],
+              "associative": false,
+              "label": "VE-PB-03 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "VE-PB-03",
+              "elementId": "2393756",
+              "box": [
+                0.1952,
+                0.8754,
+                0.6899,
+                0.9281
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2448597",
+          "name": "VE-PB-04 · alzado",
+          "label": "VE-PB-04 · alzado   1:30",
+          "scale": 30,
+          "kind": "elevation",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PB-04-view-2448597.svg.gz",
+          "region": [
+            0.6137,
+            0.5524,
+            0.7787,
+            0.7464
+          ],
+          "tags": [
+            "VE-PB-04"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                1.1
+              ],
+              "associative": false,
+              "label": "VE-PB-04 largo"
+            },
+            {
+              "values_m": [
+                0.2
+              ],
+              "associative": false,
+              "label": "VE-PB-04 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "VE-PB-04",
+              "elementId": "2393935",
+              "box": [
+                0.2933,
+                0.8754,
+                0.5558,
+                0.9281
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EST-SEC-PB-05",
+      "title": "Alzados · 00. Planta Baja · 5/5",
+      "level": "00. Planta Baja",
+      "sector": "00. Planta Baja",
+      "sheetId": "2448866",
+      "pdf": "/casa-angel/structure/EST-SEC-PB-05.pdf",
+      "image": "/casa-angel/structure/EST-SEC-PB-05.svg.gz",
+      "preview": "/casa-angel/structure/EST-SEC-PB-05-preview.png",
+      "thumbnail": "/casa-angel/structure/EST-SEC-PB-05.png",
+      "outsideCrop": [],
+      "views": [
+        {
+          "id": "2448623",
+          "name": "VE-PB-05 · alzado",
+          "label": "VE-PB-05 · alzado   1:25",
+          "scale": 25,
+          "kind": "elevation",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PB-05-view-2448623.svg.gz",
+          "region": [
+            0.1296,
+            0.2144,
+            0.4296,
+            0.4446
+          ],
+          "tags": [
+            "VE-PB-05"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                3.7989
+              ],
+              "associative": false,
+              "label": "VE-PB-05 largo"
+            },
+            {
+              "values_m": [
+                0.2
+              ],
+              "associative": false,
+              "label": "VE-PB-05 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "VE-PB-05",
+              "elementId": "2394231",
+              "box": [
+                0.172,
+                0.8795,
+                0.7198,
+                0.9327
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2448649",
+          "name": "VE-PB-06 · alzado",
+          "label": "VE-PB-06 · alzado   1:25",
+          "scale": 25,
+          "kind": "elevation",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PB-05-view-2448649.svg.gz",
+          "region": [
+            0.4604,
+            0.2144,
+            0.7692,
+            0.4446
+          ],
+          "tags": [
+            "VE-PB-06",
+            "V-57",
+            "V-131"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                0.0951,
+                0.62,
+                2.5749,
+                0.62,
+                0.09
+              ],
+              "associative": false,
+              "label": "VE-PB-06 vanos"
+            },
+            {
+              "values_m": [
+                4.0
+              ],
+              "associative": false,
+              "label": "VE-PB-06 largo"
+            },
+            {
+              "values_m": [
+                0.2
+              ],
+              "associative": false,
+              "label": "VE-PB-06 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "VE-PB-06",
+              "elementId": "2394394",
+              "box": [
+                0.1671,
+                0.8795,
+                0.7277,
+                0.9327
+              ]
+            },
+            {
+              "code": "V-57",
+              "elementId": "637763",
+              "box": [
+                0.1805,
+                0.2404,
+                0.2674,
+                0.8795
+              ]
+            },
+            {
+              "code": "V-131",
+              "elementId": "988037",
+              "box": [
+                0.6282,
+                0.2404,
+                0.7151,
+                0.8795
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2448684",
+          "name": "VE-PB-07 · alzado",
+          "label": "VE-PB-07 · alzado   1:25",
+          "scale": 25,
+          "kind": "elevation",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PB-05-view-2448684.svg.gz",
+          "region": [
+            0.1155,
+            0.5375,
+            0.4199,
+            0.7677
+          ],
+          "tags": [
+            "VE-PB-07"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                3.9
+              ],
+              "associative": false,
+              "label": "VE-PB-07 largo"
+            },
+            {
+              "values_m": [
+                0.2
+              ],
+              "associative": false,
+              "label": "VE-PB-07 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "VE-PB-07",
+              "elementId": "2394557",
+              "box": [
+                0.1695,
+                0.8795,
+                0.7239,
+                0.9327
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2448710",
+          "name": "VE-PB-08 · alzado",
+          "label": "VE-PB-08 · alzado   1:25",
+          "scale": 25,
+          "kind": "elevation",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PB-05-view-2448710.svg.gz",
+          "region": [
+            0.4226,
+            0.5375,
+            0.7832,
+            0.7677
+          ],
+          "tags": [
+            "VE-PB-08",
+            "V-69",
+            "V-35"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                0.09,
+                0.52,
+                4.08,
+                0.51
+              ],
+              "associative": false,
+              "label": "VE-PB-08 vanos"
+            },
+            {
+              "values_m": [
+                5.2
+              ],
+              "associative": false,
+              "label": "VE-PB-08 largo"
+            },
+            {
+              "values_m": [
+                0.2
+              ],
+              "associative": false,
+              "label": "VE-PB-08 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "VE-PB-08",
+              "elementId": "2396125",
+              "box": [
+                0.1431,
+                0.8795,
+                0.7669,
+                0.9327
+              ]
+            },
+            {
+              "code": "V-69",
+              "elementId": "656057",
+              "box": [
+                0.1539,
+                0.2404,
+                0.2163,
+                0.8795
+              ]
+            },
+            {
+              "code": "V-35",
+              "elementId": "600044",
+              "box": [
+                0.7058,
+                0.2404,
+                0.7681,
+                0.8795
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EST-SEC-PE-01",
+      "title": "Alzados · 02. Planta Entrepiso · 1/2",
+      "level": "02. Planta Entrepiso",
+      "sector": "02. Planta Entrepiso",
+      "sheetId": "2449865",
+      "pdf": "/casa-angel/structure/EST-SEC-PE-01.pdf",
+      "image": "/casa-angel/structure/EST-SEC-PE-01.svg.gz",
+      "preview": "/casa-angel/structure/EST-SEC-PE-01-preview.png",
+      "thumbnail": "/casa-angel/structure/EST-SEC-PE-01.png",
+      "outsideCrop": [],
+      "views": [
+        {
+          "id": "2449576",
+          "name": "MH-PE-01 · alzado",
+          "label": "MH-PE-01 · alzado   1:50",
+          "scale": 50,
+          "kind": "elevation",
+          "sector": "02. Planta Entrepiso",
+          "roomLabel": "02. Planta Entrepiso",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PE-01-view-2449576.svg.gz",
+          "region": [
+            0.0888,
+            0.2394,
+            0.3878,
+            0.3622
+          ],
+          "tags": [
+            "MH-PE-01"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                9.0
+              ],
+              "associative": false,
+              "label": "MH-PE-01 largo"
+            },
+            {
+              "values_m": [
+                0.2,
+                0.4
+              ],
+              "associative": false,
+              "label": "MH-PE-01 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "MH-PE-01",
+              "elementId": "621584",
+              "box": [
+                0.14,
+                0.7613,
+                0.7912,
+                0.9112
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2449603",
+          "name": "MH-PE-02 · alzado",
+          "label": "MH-PE-02 · alzado   1:50",
+          "scale": 50,
+          "kind": "elevation",
+          "sector": "02. Planta Entrepiso",
+          "roomLabel": "02. Planta Entrepiso",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PE-01-view-2449603.svg.gz",
+          "region": [
+            0.337,
+            0.239,
+            0.6361,
+            0.3627
+          ],
+          "tags": [
+            "MH-PE-02"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                9.0
+              ],
+              "associative": false,
+              "label": "MH-PE-02 largo"
+            },
+            {
+              "values_m": [
+                1.4,
+                0.78
+              ],
+              "associative": false,
+              "label": "MH-PE-02 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "MH-PE-02",
+              "elementId": "613259",
+              "box": [
+                0.14,
+                0.3216,
+                0.7912,
+                0.5151
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2449630",
+          "name": "MH-PE-03 · alzado",
+          "label": "MH-PE-03 · alzado   1:50",
+          "scale": 50,
+          "kind": "elevation",
+          "sector": "02. Planta Entrepiso",
+          "roomLabel": "02. Planta Entrepiso",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PE-01-view-2449630.svg.gz",
+          "region": [
+            0.5882,
+            0.2394,
+            0.8071,
+            0.3622
+          ],
+          "tags": [
+            "MH-PE-03"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                5.2925
+              ],
+              "associative": false,
+              "label": "MH-PE-03 largo"
+            },
+            {
+              "values_m": [
+                0.2028,
+                0.4
+              ],
+              "associative": false,
+              "label": "MH-PE-03 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "MH-PE-03",
+              "elementId": "1171301",
+              "box": [
+                0.1914,
+                0.7613,
+                0.7147,
+                0.9119
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2449657",
+          "name": "MH-PE-04 · alzado",
+          "label": "MH-PE-04 · alzado   1:30",
+          "scale": 30,
+          "kind": "elevation",
+          "sector": "02. Planta Entrepiso",
+          "roomLabel": "02. Planta Entrepiso",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PE-01-view-2449657.svg.gz",
+          "region": [
+            0.1335,
+            0.5052,
+            0.2733,
+            0.7426
+          ],
+          "tags": [
+            "MH-PE-04"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                0.401
+              ],
+              "associative": false,
+              "label": "MH-PE-04 largo"
+            },
+            {
+              "values_m": [
+                3.0
+              ],
+              "associative": false,
+              "label": "MH-PE-04 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "MH-PE-04",
+              "elementId": "1174892",
+              "box": [
+                0.3204,
+                0.2526,
+                0.4498,
+                0.8982
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2449683",
+          "name": "MH-PE-05 · alzado",
+          "label": "MH-PE-05 · alzado   1:30",
+          "scale": 30,
+          "kind": "elevation",
+          "sector": "02. Planta Entrepiso",
+          "roomLabel": "02. Planta Entrepiso",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PE-01-view-2449683.svg.gz",
+          "region": [
+            0.312,
+            0.5052,
+            0.4518,
+            0.7426
+          ],
+          "tags": [
+            "MH-PE-05"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                0.4
+              ],
+              "associative": false,
+              "label": "MH-PE-05 largo"
+            },
+            {
+              "values_m": [
+                3.0
+              ],
+              "associative": false,
+              "label": "MH-PE-05 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "MH-PE-05",
+              "elementId": "1175055",
+              "box": [
+                0.3205,
+                0.2526,
+                0.4496,
+                0.8982
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2449709",
+          "name": "MH-PE-06 · alzado",
+          "label": "MH-PE-06 · alzado   1:30",
+          "scale": 30,
+          "kind": "elevation",
+          "sector": "02. Planta Entrepiso",
+          "roomLabel": "02. Planta Entrepiso",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PE-01-view-2449709.svg.gz",
+          "region": [
+            0.4481,
+            0.5179,
+            0.8077,
+            0.7298
+          ],
+          "tags": [
+            "MH-PE-06"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                6.5023
+              ],
+              "associative": false,
+              "label": "MH-PE-06 largo"
+            },
+            {
+              "values_m": [
+                2.5
+              ],
+              "associative": false,
+              "label": "MH-PE-06 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "MH-PE-06",
+              "elementId": "1000492",
+              "box": [
+                0.1345,
+                0.2831,
+                0.7863,
+                0.8859
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EST-SEC-PE-02",
+      "title": "Alzados · 02. Planta Entrepiso · 2/2",
+      "level": "02. Planta Entrepiso",
+      "sector": "02. Planta Entrepiso",
+      "sheetId": "2449901",
+      "pdf": "/casa-angel/structure/EST-SEC-PE-02.pdf",
+      "image": "/casa-angel/structure/EST-SEC-PE-02.svg.gz",
+      "preview": "/casa-angel/structure/EST-SEC-PE-02-preview.png",
+      "thumbnail": "/casa-angel/structure/EST-SEC-PE-02.png",
+      "outsideCrop": [],
+      "views": [
+        {
+          "id": "2449735",
+          "name": "MH-PE-07 · alzado",
+          "label": "MH-PE-07 · alzado   1:30",
+          "scale": 30,
+          "kind": "elevation",
+          "sector": "02. Planta Entrepiso",
+          "roomLabel": "02. Planta Entrepiso",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PE-02-view-2449735.svg.gz",
+          "region": [
+            0.1272,
+            0.2172,
+            0.3246,
+            0.4546
+          ],
+          "tags": [
+            "MH-PE-07"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                2.0
+              ],
+              "associative": false,
+              "label": "MH-PE-07 largo"
+            },
+            {
+              "values_m": [
+                3.0
+              ],
+              "associative": false,
+              "label": "MH-PE-07 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "MH-PE-07",
+              "elementId": "1174683",
+              "box": [
+                0.2451,
+                0.2526,
+                0.6106,
+                0.8982
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2449761",
+          "name": "MH-PE-08 · alzado",
+          "label": "MH-PE-08 · alzado   1:30",
+          "scale": 30,
+          "kind": "elevation",
+          "sector": "02. Planta Entrepiso",
+          "roomLabel": "02. Planta Entrepiso",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PE-02-view-2449761.svg.gz",
+          "region": [
+            0.3795,
+            0.2172,
+            0.5193,
+            0.4546
+          ],
+          "tags": [
+            "MH-PE-08"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                0.401
+              ],
+              "associative": false,
+              "label": "MH-PE-08 largo"
+            },
+            {
+              "values_m": [
+                3.0
+              ],
+              "associative": false,
+              "label": "MH-PE-08 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "MH-PE-08",
+              "elementId": "1174893",
+              "box": [
+                0.3463,
+                0.2526,
+                0.4756,
+                0.8982
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2449787",
+          "name": "MH-PE-09 · alzado",
+          "label": "MH-PE-09 · alzado   1:30",
+          "scale": 30,
+          "kind": "elevation",
+          "sector": "02. Planta Entrepiso",
+          "roomLabel": "02. Planta Entrepiso",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PE-02-view-2449787.svg.gz",
+          "region": [
+            0.603,
+            0.23,
+            0.7427,
+            0.4419
+          ],
+          "tags": [
+            "MH-PE-09"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                0.4
+              ],
+              "associative": false,
+              "label": "MH-PE-09 largo"
+            },
+            {
+              "values_m": [
+                2.5
+              ],
+              "associative": false,
+              "label": "MH-PE-09 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "MH-PE-09",
+              "elementId": "1154858",
+              "box": [
+                0.3205,
+                0.2831,
+                0.4496,
+                0.8859
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2449813",
+          "name": "MH-PE-10 · alzado",
+          "label": "MH-PE-10 · alzado   1:30",
+          "scale": 30,
+          "kind": "elevation",
+          "sector": "02. Planta Entrepiso",
+          "roomLabel": "02. Planta Entrepiso",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PE-02-view-2449813.svg.gz",
+          "region": [
+            0.1155,
+            0.5176,
+            0.4751,
+            0.8003
+          ],
+          "tags": [
+            "MH-PE-10",
+            "V-145",
+            "V-151"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                1.5423,
+                0.5,
+                0.96,
+                0.5,
+                3.0
+              ],
+              "associative": false,
+              "label": "MH-PE-10 vanos"
+            },
+            {
+              "values_m": [
+                6.5023
+              ],
+              "associative": false,
+              "label": "MH-PE-10 largo"
+            },
+            {
+              "values_m": [
+                2.5
+              ],
+              "associative": false,
+              "label": "MH-PE-10 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "MH-PE-10",
+              "elementId": "1001381",
+              "box": [
+                0.1345,
+                0.2121,
+                0.7863,
+                0.6638
+              ]
+            },
+            {
+              "code": "V-145",
+              "elementId": "1099181",
+              "box": [
+                0.4355,
+                0.3928,
+                0.4856,
+                0.6638
+              ]
+            },
+            {
+              "code": "V-151",
+              "elementId": "1155955",
+              "box": [
+                0.2891,
+                0.6638,
+                0.3392,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2449848",
+          "name": "VE-PE-01 · alzado",
+          "label": "VE-PE-01 · alzado   1:30",
+          "scale": 30,
+          "kind": "elevation",
+          "sector": "02. Planta Entrepiso",
+          "roomLabel": "02. Planta Entrepiso",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-SEC-PE-02-view-2449848.svg.gz",
+          "region": [
+            0.4778,
+            0.553,
+            0.7833,
+            0.7649
+          ],
+          "tags": [
+            "VE-PE-01"
+          ],
+          "dimensions": [
+            {
+              "values_m": [
+                5.0
+              ],
+              "associative": false,
+              "label": "VE-PE-01 largo"
+            },
+            {
+              "values_m": [
+                0.2,
+                2.5
+              ],
+              "associative": false,
+              "label": "VE-PE-01 arranque + alto"
+            }
+          ],
+          "elements": [
+            {
+              "code": "VE-PE-01",
+              "elementId": "614629",
+              "box": [
+                0.1583,
+                0.2831,
+                0.7485,
+                0.9341
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "codes": [
+    {
+      "id": "634993",
+      "code": "MH-PB-01",
+      "kind": "MH",
+      "level": "00. Planta Baja",
+      "label": "MH-PB-01 · 7,00 × 3,00 · e 20",
+      "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
+      "length_m": 7.0,
+      "height_m": 3.0,
+      "thickness_m": 0.2,
+      "area_m2": 18.239,
+      "volume_m3": 3.648
+    },
+    {
+      "id": "369789",
+      "code": "MH-PB-02",
+      "kind": "MH",
+      "level": "00. Planta Baja",
+      "label": "MH-PB-02 · 4,55 × 6,20 · e 20",
+      "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
+      "length_m": 4.555,
+      "height_m": 6.2,
+      "thickness_m": 0.2,
+      "area_m2": 30.399,
+      "volume_m3": 5.922
+    },
+    {
+      "id": "369719",
+      "code": "MH-PB-03",
+      "kind": "MH",
+      "level": "00. Planta Baja",
+      "label": "MH-PB-03 · 0,95 × 3,20 · e 20",
+      "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
+      "length_m": 0.95,
+      "height_m": 3.2,
+      "thickness_m": 0.2,
+      "area_m2": 3.2,
+      "volume_m3": 0.64
+    },
+    {
+      "id": "363297",
+      "code": "MH-PB-04",
+      "kind": "MH",
+      "level": "00. Planta Baja",
+      "label": "MH-PB-04 · 6,92 × 3,00 · e 20",
+      "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
+      "length_m": 6.925,
+      "height_m": 3.0,
+      "thickness_m": 0.2,
+      "area_m2": 20.304,
+      "volume_m3": 4.019
+    },
+    {
+      "id": "988670",
+      "code": "MH-PB-05",
+      "kind": "MH",
+      "level": "00. Planta Baja",
+      "label": "MH-PB-05 · 7,00 × 3,00 · e 20",
+      "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
+      "length_m": 7.0,
+      "height_m": 3.0,
+      "thickness_m": 0.2,
+      "area_m2": 18.432,
+      "volume_m3": 3.645
+    },
+    {
+      "id": "363146",
+      "code": "MH-PB-06",
+      "kind": "MH",
+      "level": "00. Planta Baja",
+      "label": "MH-PB-06 · 4,95 × 3,00 · e 20",
+      "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
+      "length_m": 4.952,
+      "height_m": 3.0,
+      "thickness_m": 0.2,
+      "area_m2": 15.0,
+      "volume_m3": 3.0
+    },
+    {
+      "id": "369425",
+      "code": "MH-PB-07",
+      "kind": "MH",
+      "level": "00. Planta Baja",
+      "label": "MH-PB-07 · 3,10 × 6,20 · e 20",
+      "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
+      "length_m": 3.1,
+      "height_m": 6.2,
+      "thickness_m": 0.2,
+      "area_m2": 19.654,
+      "volume_m3": 3.901
+    },
+    {
+      "id": "756675",
+      "code": "MH-PB-08",
+      "kind": "MH",
+      "level": "00. Planta Baja",
+      "label": "MH-PB-08 · 6,33 × 3,00 · e 20",
+      "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
+      "length_m": 6.33,
+      "height_m": 3.0,
+      "thickness_m": 0.2,
+      "area_m2": 18.836,
+      "volume_m3": 3.728
+    },
+    {
+      "id": "363800",
+      "code": "MH-PB-09",
+      "kind": "MH",
+      "level": "00. Planta Baja",
+      "label": "MH-PB-09 · 8,40 × 3,20 · e 20",
+      "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
+      "length_m": 8.4,
+      "height_m": 3.2,
+      "thickness_m": 0.2,
+      "area_m2": 22.999,
+      "volume_m3": 4.499
+    },
+    {
+      "id": "364525",
+      "code": "MH-PB-10",
+      "kind": "MH",
+      "level": "00. Planta Baja",
+      "label": "MH-PB-10 · 10,50 × 2,80 · e 20",
+      "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
+      "length_m": 10.5,
+      "height_m": 2.8,
+      "thickness_m": 0.2,
+      "area_m2": 23.913,
+      "volume_m3": 4.782
+    },
+    {
+      "id": "1130447",
+      "code": "MH-PB-11",
+      "kind": "MH",
+      "level": "00. Planta Baja",
+      "label": "MH-PB-11 · 0,63 × 3,20 · e 20",
+      "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
+      "length_m": 0.628,
+      "height_m": 3.2,
+      "thickness_m": 0.2,
+      "area_m2": 2.513,
+      "volume_m3": 0.402
+    },
+    {
+      "id": "1127861",
+      "code": "MH-PB-12",
+      "kind": "MH",
+      "level": "00. Planta Baja",
+      "label": "MH-PB-12 · 0,63 × 3,00 · e 20",
+      "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
+      "length_m": 0.628,
+      "height_m": 3.0,
+      "thickness_m": 0.2,
+      "area_m2": 2.356,
+      "volume_m3": 0.377
+    },
+    {
+      "id": "364138",
+      "code": "MH-PB-13",
+      "kind": "MH",
+      "level": "00. Planta Baja",
+      "label": "MH-PB-13 · 2,00 × 8,70 · e 20",
+      "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
+      "length_m": 2.0,
+      "height_m": 8.7,
+      "thickness_m": 0.2,
+      "area_m2": 10.697,
+      "volume_m3": 2.116
+    },
+    {
+      "id": "384945",
+      "code": "MH-PB-14",
+      "kind": "MH",
+      "level": "00. Planta Baja",
+      "label": "MH-PB-14 · 2,40 × 3,20 · e 20",
+      "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
+      "length_m": 2.4,
+      "height_m": 3.2,
+      "thickness_m": 0.2,
+      "area_m2": 6.44,
+      "volume_m3": 1.288
+    },
+    {
+      "id": "991161",
+      "code": "MH-PB-15",
+      "kind": "MH",
+      "level": "00. Planta Baja",
+      "label": "MH-PB-15 · 0,63 × 3,20 · e 20",
+      "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
+      "length_m": 0.628,
+      "height_m": 3.2,
+      "thickness_m": 0.2,
+      "area_m2": 2.513,
+      "volume_m3": 0.402
+    },
+    {
+      "id": "364265",
+      "code": "MH-PB-16",
+      "kind": "MH",
+      "level": "00. Planta Baja",
+      "label": "MH-PB-16 · 13,00 × 3,20 · e 20",
+      "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
+      "length_m": 13.0,
+      "height_m": 3.2,
+      "thickness_m": 0.2,
+      "area_m2": 33.689,
+      "volume_m3": 6.738
+    },
+    {
+      "id": "1182197",
+      "code": "MH-PA-01",
+      "kind": "MH",
+      "level": "01. Planta Alta",
+      "label": "MH-PA-01 · 0,95 × 5,50 · e 20",
+      "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
+      "length_m": 0.95,
+      "height_m": 5.5,
+      "thickness_m": 0.2,
+      "area_m2": 3.351,
+      "volume_m3": 0.66
+    },
+    {
+      "id": "372705",
+      "code": "MH-PA-02",
+      "kind": "MH",
+      "level": "01. Planta Alta",
+      "label": "MH-PA-02 · 6,92 × 2,50 · e 20",
+      "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
+      "length_m": 6.925,
+      "height_m": 2.5,
+      "thickness_m": 0.2,
+      "area_m2": 25.191,
+      "volume_m3": 4.962
+    },
+    {
+      "id": "771084",
+      "code": "MH-PA-03",
+      "kind": "MH",
+      "level": "01. Planta Alta",
+      "label": "MH-PA-03 · 0,55 × 2,80 · e 20",
+      "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
+      "length_m": 0.55,
+      "height_m": 2.8,
+      "thickness_m": 0.2,
+      "area_m2": 2.041,
+      "volume_m3": 0.408
+    },
+    {
+      "id": "660351",
+      "code": "MH-PA-04",
+      "kind": "MH",
+      "level": "01. Planta Alta",
+      "label": "MH-PA-04 · 2,05 × 3,30 · e 20",
+      "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
+      "length_m": 2.05,
+      "height_m": 3.3,
+      "thickness_m": 0.2,
+      "area_m2": 7.719,
+      "volume_m3": 1.544
+    },
+    {
+      "id": "891064",
+      "code": "MH-PA-05",
+      "kind": "MH",
+      "level": "01. Planta Alta",
+      "label": "MH-PA-05 · 0,60 × 2,80 · e 20",
+      "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
+      "length_m": 0.6,
+      "height_m": 2.8,
+      "thickness_m": 0.2,
+      "area_m2": 2.041,
+      "volume_m3": 0.408
+    },
+    {
+      "id": "373019",
+      "code": "MH-PA-06",
+      "kind": "MH",
+      "level": "01. Planta Alta",
+      "label": "MH-PA-06 · 4,75 × 3,00 · e 20",
+      "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
+      "length_m": 4.75,
+      "height_m": 3.0,
+      "thickness_m": 0.2,
+      "area_m2": 15.577,
+      "volume_m3": 3.091
+    },
+    {
+      "id": "867060",
+      "code": "MH-PA-07",
+      "kind": "MH",
+      "level": "01. Planta Alta",
+      "label": "MH-PA-07 · 0,70 × 3,00 · e 20",
+      "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
+      "length_m": 0.7,
+      "height_m": 3.0,
+      "thickness_m": 0.2,
+      "area_m2": 2.346,
+      "volume_m3": 0.462
+    },
+    {
+      "id": "867136",
+      "code": "MH-PA-08",
+      "kind": "MH",
+      "level": "01. Planta Alta",
+      "label": "MH-PA-08 · 0,94 × 3,00 · e 20",
+      "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
+      "length_m": 0.942,
+      "height_m": 3.0,
+      "thickness_m": 0.2,
+      "area_m2": 3.646,
+      "volume_m3": 0.617
+    },
+    {
+      "id": "665788",
+      "code": "MH-PA-09",
+      "kind": "MH",
+      "level": "01. Planta Alta",
+      "label": "MH-PA-09 · 3,60 × 3,00 · e 20",
+      "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
+      "length_m": 3.602,
+      "height_m": 3.0,
+      "thickness_m": 0.2,
+      "area_m2": 12.035,
+      "volume_m3": 2.372
+    },
+    {
+      "id": "775530",
+      "code": "MH-PA-10",
+      "kind": "MH",
+      "level": "01. Planta Alta",
+      "label": "MH-PA-10 · 3,00 × 3,00 · e 20",
+      "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
+      "length_m": 3.0,
+      "height_m": 3.0,
+      "thickness_m": 0.2,
+      "area_m2": 7.599,
+      "volume_m3": 1.49
+    },
+    {
+      "id": "1002400",
+      "code": "MH-PA-11",
+      "kind": "MH",
+      "level": "01. Planta Alta",
+      "label": "MH-PA-11 · 0,63 × 3,00 · e 20",
+      "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
+      "length_m": 0.63,
+      "height_m": 3.0,
+      "thickness_m": 0.2,
+      "area_m2": 2.361,
+      "volume_m3": 0.378
+    },
+    {
+      "id": "1000205",
+      "code": "MH-PA-12",
+      "kind": "MH",
+      "level": "01. Planta Alta",
+      "label": "MH-PA-12 · 6,50 × 3,00 · e 20",
+      "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
+      "length_m": 6.5,
+      "height_m": 3.0,
+      "thickness_m": 0.2,
+      "area_m2": 14.502,
+      "volume_m3": 2.901
+    },
+    {
+      "id": "1147627",
+      "code": "MH-PA-13",
+      "kind": "MH",
+      "level": "01. Planta Alta",
+      "label": "MH-PA-13 · 0,63 × 3,00 · e 20",
+      "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
+      "length_m": 0.628,
+      "height_m": 3.0,
+      "thickness_m": 0.2,
+      "area_m2": 2.356,
+      "volume_m3": 0.377
+    },
+    {
+      "id": "1000720",
+      "code": "MH-PA-14",
+      "kind": "MH",
+      "level": "01. Planta Alta",
+      "label": "MH-PA-14 · 2,00 × 3,00 · e 20",
+      "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
+      "length_m": 2.0,
+      "height_m": 3.0,
+      "thickness_m": 0.2,
+      "area_m2": 6.0,
+      "volume_m3": 1.2
+    },
+    {
+      "id": "1009669",
+      "code": "MH-PA-15",
+      "kind": "MH",
+      "level": "01. Planta Alta",
+      "label": "MH-PA-15 · 0,63 × 3,00 · e 20",
+      "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
+      "length_m": 0.63,
+      "height_m": 3.0,
+      "thickness_m": 0.2,
+      "area_m2": 2.361,
+      "volume_m3": 0.378
+    },
+    {
+      "id": "1152689",
+      "code": "MH-PA-16",
+      "kind": "MH",
+      "level": "01. Planta Alta",
+      "label": "MH-PA-16 · 0,63 × 3,00 · e 20",
+      "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
+      "length_m": 0.628,
+      "height_m": 3.0,
+      "thickness_m": 0.2,
+      "area_m2": 2.356,
+      "volume_m3": 0.377
+    },
+    {
+      "id": "1001377",
+      "code": "MH-PA-17",
+      "kind": "MH",
+      "level": "01. Planta Alta",
+      "label": "MH-PA-17 · 13,00 × 3,00 · e 20",
+      "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
+      "length_m": 13.0,
+      "height_m": 3.0,
+      "thickness_m": 0.2,
+      "area_m2": 24.505,
+      "volume_m3": 4.901
+    },
+    {
+      "id": "621584",
+      "code": "MH-PE-01",
+      "kind": "MH",
+      "level": "02. Planta Entrepiso",
+      "label": "MH-PE-01 · 9,00 × 0,60 · e 20",
+      "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
+      "length_m": 9.0,
+      "height_m": 0.6,
+      "thickness_m": 0.2,
+      "area_m2": 5.34,
+      "volume_m3": 1.068
+    },
+    {
+      "id": "613259",
+      "code": "MH-PE-02",
+      "kind": "MH",
+      "level": "02. Planta Entrepiso",
+      "label": "MH-PE-02 · 9,00 × 0,78 · e 20",
+      "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
+      "length_m": 9.0,
+      "height_m": 0.78,
+      "thickness_m": 0.2,
+      "area_m2": 2.756,
+      "volume_m3": 0.499
+    },
+    {
+      "id": "1171301",
+      "code": "MH-PE-03",
+      "kind": "MH",
+      "level": "02. Planta Entrepiso",
+      "label": "MH-PE-03 · 5,29 × 0,60 · e 20",
+      "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
+      "length_m": 5.292,
+      "height_m": 0.603,
+      "thickness_m": 0.2,
+      "area_m2": 3.07,
+      "volume_m3": 0.512
+    },
+    {
+      "id": "1174892",
+      "code": "MH-PE-04",
+      "kind": "MH",
+      "level": "02. Planta Entrepiso",
+      "label": "MH-PE-04 · 0,63 × 3,00 · e 20",
+      "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
+      "length_m": 0.63,
+      "height_m": 3.0,
+      "thickness_m": 0.2,
+      "area_m2": 1.408,
+      "volume_m3": 0.231
+    },
+    {
+      "id": "1175055",
+      "code": "MH-PE-05",
+      "kind": "MH",
+      "level": "02. Planta Entrepiso",
+      "label": "MH-PE-05 · 0,63 × 3,00 · e 20",
+      "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
+      "length_m": 0.628,
+      "height_m": 3.0,
+      "thickness_m": 0.2,
+      "area_m2": 1.403,
+      "volume_m3": 0.23
+    },
+    {
+      "id": "1000492",
+      "code": "MH-PE-06",
+      "kind": "MH",
+      "level": "02. Planta Entrepiso",
+      "label": "MH-PE-06 · 6,50 × 2,50 · e 20",
+      "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
+      "length_m": 6.502,
+      "height_m": 2.5,
+      "thickness_m": 0.2,
+      "area_m2": 11.255,
+      "volume_m3": 2.231
+    },
+    {
+      "id": "1174683",
+      "code": "MH-PE-07",
+      "kind": "MH",
+      "level": "02. Planta Entrepiso",
+      "label": "MH-PE-07 · 2,00 × 3,00 · e 20",
+      "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
+      "length_m": 2.0,
+      "height_m": 3.0,
+      "thickness_m": 0.2,
+      "area_m2": 3.804,
+      "volume_m3": 0.738
+    },
+    {
+      "id": "1174893",
+      "code": "MH-PE-08",
+      "kind": "MH",
+      "level": "02. Planta Entrepiso",
+      "label": "MH-PE-08 · 0,63 × 3,00 · e 20",
+      "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
+      "length_m": 0.63,
+      "height_m": 3.0,
+      "thickness_m": 0.2,
+      "area_m2": 1.408,
+      "volume_m3": 0.231
+    },
+    {
+      "id": "1154858",
+      "code": "MH-PE-09",
+      "kind": "MH",
+      "level": "02. Planta Entrepiso",
+      "label": "MH-PE-09 · 0,63 × 2,50 · e 20",
+      "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
+      "length_m": 0.628,
+      "height_m": 2.5,
+      "thickness_m": 0.2,
+      "area_m2": 1.403,
+      "volume_m3": 0.23
+    },
+    {
+      "id": "1001381",
+      "code": "MH-PE-10",
+      "kind": "MH",
+      "level": "02. Planta Entrepiso",
+      "label": "MH-PE-10 · 6,50 × 2,50 · e 20",
+      "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
+      "length_m": 6.502,
+      "height_m": 2.5,
+      "thickness_m": 0.2,
+      "area_m2": 11.229,
+      "volume_m3": 2.182
+    },
+    {
+      "id": "2393305",
+      "code": "VE-PB-01",
+      "kind": "VE",
+      "level": "00. Planta Baja",
+      "label": "VE-PB-01 · 3,90 · 20×20",
+      "status": "Viga de encadenado invertida (modelado como muro)",
+      "length_m": 3.899999999999998,
+      "height_m": 0.2,
+      "thickness_m": 0.2,
+      "area_m2": 0.739999999999999,
+      "volume_m3": 0.14799999999999983
+    },
+    {
+      "id": "2393450",
+      "code": "VE-PB-02",
+      "kind": "VE",
+      "level": "00. Planta Baja",
+      "label": "VE-PB-02 · 6,00 · 20×20",
+      "status": "Viga de encadenado invertida (modelado como muro)",
+      "length_m": 5.999999999999966,
+      "height_m": 0.2,
+      "thickness_m": 0.2,
+      "area_m2": 1.1799999999999935,
+      "volume_m3": 0.2359999999999987
+    },
+    {
+      "id": "2393756",
+      "code": "VE-PB-03",
+      "kind": "VE",
+      "level": "00. Planta Baja",
+      "label": "VE-PB-03 · 3,40 · 20×20",
+      "status": "Viga de encadenado invertida (modelado como muro)",
+      "length_m": 3.3999999999999986,
+      "height_m": 0.2,
+      "thickness_m": 0.2,
+      "area_m2": 0.6600000000000001,
+      "volume_m3": 0.13199999999999998
+    },
+    {
+      "id": "2393935",
+      "code": "VE-PB-04",
+      "kind": "VE",
+      "level": "00. Planta Baja",
+      "label": "VE-PB-04 · 1,73 · 20×20",
+      "status": "Viga de encadenado invertida (modelado como muro)",
+      "length_m": 1.7278759594744866,
+      "height_m": 0.2,
+      "thickness_m": 0.2,
+      "area_m2": 0.3769911184307969,
+      "volume_m3": 0.06911570261835863
+    },
+    {
+      "id": "2394231",
+      "code": "VE-PB-05",
+      "kind": "VE",
+      "level": "00. Planta Baja",
+      "label": "VE-PB-05 · 3,80 · 20×20",
+      "status": "Viga de encadenado invertida (modelado como muro)",
+      "length_m": 3.798878211408791,
+      "height_m": 0.2,
+      "thickness_m": 0.2,
+      "area_m2": 0.7397756422817585,
+      "volume_m3": 0.14795512845635164
+    },
+    {
+      "id": "2394394",
+      "code": "VE-PB-06",
+      "kind": "VE",
+      "level": "00. Planta Baja",
+      "label": "VE-PB-06 · 4,00 · 20×20",
+      "status": "Viga de encadenado invertida (modelado como muro)",
+      "length_m": 4.000000000000002,
+      "height_m": 0.2,
+      "thickness_m": 0.2,
+      "area_m2": 0.7600000000000003,
+      "volume_m3": 0.1520000000000001
+    },
+    {
+      "id": "2394557",
+      "code": "VE-PB-07",
+      "kind": "VE",
+      "level": "00. Planta Baja",
+      "label": "VE-PB-07 · 3,90 · 20×20",
+      "status": "Viga de encadenado invertida (modelado como muro)",
+      "length_m": 3.900000000000007,
+      "height_m": 0.2,
+      "thickness_m": 0.2,
+      "area_m2": 0.7400000000000014,
+      "volume_m3": 0.14800000000000024
+    },
+    {
+      "id": "2396125",
+      "code": "VE-PB-08",
+      "kind": "VE",
+      "level": "00. Planta Baja",
+      "label": "VE-PB-08 · 5,20 · 20×20",
+      "status": "Viga de encadenado invertida (modelado como muro)",
+      "length_m": 5.200000000000033,
+      "height_m": 0.2,
+      "thickness_m": 0.2,
+      "area_m2": 1.0200000000000071,
+      "volume_m3": 0.20400000000000135
+    },
+    {
+      "id": "667007",
+      "code": "VE-PA-01",
+      "kind": "VE",
+      "level": "01. Planta Alta",
+      "label": "VE-PA-01 · 8,51 · 20×455",
+      "status": "VIGA encuentro 2 techos, revestimiento fachada (modelado como muro)",
+      "length_m": 8.509334360306141,
+      "height_m": 4.550953693897076,
+      "thickness_m": 0.19999999999999996,
+      "area_m2": 30.72558663964148,
+      "volume_m3": 6.678450661261629
+    },
+    {
+      "id": "614629",
+      "code": "VE-PE-01",
+      "kind": "VE",
+      "level": "02. Planta Entrepiso",
+      "label": "VE-PE-01 · 5,00 · 20×270",
+      "status": "VIGA encuentro 2 techos, revestimiento fachada (modelado como muro)",
+      "length_m": 4.999999999999999,
+      "height_m": 2.7,
+      "thickness_m": 0.19999999999999996,
+      "area_m2": 11.089083028884117,
+      "volume_m3": 2.217816605776824
+    },
+    {
+      "id": "714161",
+      "code": "LO-PB-01",
+      "kind": "LO",
+      "level": "00. Planta Baja",
+      "label": "LO-PB-01 · 124,13 m² · H° e 22,5",
+      "status": "Losa con capa de hormigón 22.5 cm",
+      "type": "Insitu Concrete 225mm",
+      "thickness_m": 0.225,
+      "area_m2": 124.13,
+      "concreteLayer_m": 0.225
+    },
+    {
+      "id": "2068259",
+      "code": "LO-PB-02",
+      "kind": "LO",
+      "level": "00. Planta Baja",
+      "label": "LO-PB-02 · 24,42 m² · paquete s/ platea",
+      "status": "Paquete de piso sobre platea (sin hormigón propio)",
+      "type": "L01.00 / 20cm",
+      "thickness_m": 0.2,
+      "area_m2": 24.42,
+      "concreteLayer_m": 0
+    },
+    {
+      "id": "361258",
+      "code": "LO-PB-03",
+      "kind": "LO",
+      "level": "00. Planta Baja",
+      "label": "LO-PB-03 · 28,80 m² · paquete s/ platea",
+      "status": "Paquete de piso sobre platea (sin hormigón propio)",
+      "type": "L01.00 / 20cm",
+      "thickness_m": 0.2,
+      "area_m2": 28.802,
+      "concreteLayer_m": 0
+    },
+    {
+      "id": "2144958",
+      "code": "LO-PB-04",
+      "kind": "LO",
+      "level": "00. Planta Baja",
+      "label": "LO-PB-04 · 25,08 m² · paquete s/ platea",
+      "status": "Paquete de piso sobre platea (sin hormigón propio)",
+      "type": "L02.00 / 20cm",
+      "thickness_m": 0.2,
+      "area_m2": 25.08,
+      "concreteLayer_m": 0
+    },
+    {
+      "id": "2151436",
+      "code": "LO-PB-05",
+      "kind": "LO",
+      "level": "00. Planta Baja",
+      "label": "LO-PB-05 · 24,39 m² · paquete s/ platea",
+      "status": "Paquete de piso sobre platea (sin hormigón propio)",
+      "type": "L03.00 / 20cm",
+      "thickness_m": 0.2,
+      "area_m2": 24.395,
+      "concreteLayer_m": 0
+    },
+    {
+      "id": "2153042",
+      "code": "LO-PB-06",
+      "kind": "LO",
+      "level": "00. Planta Baja",
+      "label": "LO-PB-06 · 42,30 m² · paquete s/ platea",
+      "status": "Paquete de piso sobre platea (sin hormigón propio)",
+      "type": "L05.00 / 20cm",
+      "thickness_m": 0.2,
+      "area_m2": 42.305,
+      "concreteLayer_m": 0
+    },
+    {
+      "id": "2154191",
+      "code": "LO-PB-07",
+      "kind": "LO",
+      "level": "00. Planta Baja",
+      "label": "LO-PB-07 · 45,50 m² · paquete s/ platea",
+      "status": "Paquete de piso sobre platea (sin hormigón propio)",
+      "type": "L06.00 / 20cm",
+      "thickness_m": 0.2,
+      "area_m2": 45.5,
+      "concreteLayer_m": 0
+    },
+    {
+      "id": "2287528",
+      "code": "PL-01",
+      "kind": "PL",
+      "level": "00. Planta Baja",
+      "label": "PL-01 · 249,92 m² · H° e 15 · 37,49 m³",
+      "status": "Platea de fundación (capa de hormigón 15 cm)",
+      "type": "Platea PB 15CM",
+      "thickness_m": 0.25,
+      "area_m2": 249.917,
+      "concreteLayer_m": 0.15
+    },
+    {
+      "id": "398391",
+      "code": "LO-AC-01",
+      "kind": "LO",
+      "level": "005. Acceso ppal",
+      "label": "LO-AC-01 · 28,84 m² · base acceso · e 120 (verificar)",
+      "status": "Base de acceso (e 1,20 m a verificar)",
+      "type": "Base Acceso",
+      "thickness_m": 1.2,
+      "area_m2": 28.841,
+      "concreteLayer_m": 0.2
+    },
+    {
+      "id": "1011940",
+      "code": "LO-PA-01",
+      "kind": "LO",
+      "level": "01. Planta Alta",
+      "label": "LO-PA-01 · 14,93 m² · losa a confirmar",
+      "status": "Losa a confirmar (tipo sin capa de hormigón)",
+      "type": "L01.00 / 20cm",
+      "thickness_m": 0.2,
+      "area_m2": 14.93,
+      "concreteLayer_m": 0
+    },
+    {
+      "id": "2157154",
+      "code": "LO-PA-02",
+      "kind": "LO",
+      "level": "01. Planta Alta",
+      "label": "LO-PA-02 · 50,42 m² · losa a confirmar",
+      "status": "Losa a confirmar (tipo sin capa de hormigón)",
+      "type": "L01.00 / 20cm",
+      "thickness_m": 0.2,
+      "area_m2": 50.422,
+      "concreteLayer_m": 0
+    },
+    {
+      "id": "2156060",
+      "code": "LO-PA-03",
+      "kind": "LO",
+      "level": "01. Planta Alta",
+      "label": "LO-PA-03 · 27,30 m² · H° e 15",
+      "status": "Losa con capa de hormigón 15 cm",
+      "type": "L01.01 / 30cm",
+      "thickness_m": 0.3,
+      "area_m2": 27.3,
+      "concreteLayer_m": 0.15
+    },
+    {
+      "id": "2156155",
+      "code": "LO-PA-04",
+      "kind": "LO",
+      "level": "01. Planta Alta",
+      "label": "LO-PA-04 · 28,00 m² · H° e 15",
+      "status": "Losa con capa de hormigón 15 cm",
+      "type": "L01.01 / 30cm",
+      "thickness_m": 0.3,
+      "area_m2": 28.0,
+      "concreteLayer_m": 0.15
+    },
+    {
+      "id": "2156409",
+      "code": "LO-PA-05",
+      "kind": "LO",
+      "level": "01. Planta Alta",
+      "label": "LO-PA-05 · 27,61 m² · H° e 15",
+      "status": "Losa con capa de hormigón 15 cm",
+      "type": "L01.01 / 30cm",
+      "thickness_m": 0.3,
+      "area_m2": 27.607,
+      "concreteLayer_m": 0.15
+    },
+    {
+      "id": "2156920",
+      "code": "LO-PA-06",
+      "kind": "LO",
+      "level": "01. Planta Alta",
+      "label": "LO-PA-06 · 44,66 m² · H° e 15",
+      "status": "Losa con capa de hormigón 15 cm",
+      "type": "L01.01 / 30cm",
+      "thickness_m": 0.3,
+      "area_m2": 44.657,
+      "concreteLayer_m": 0.15
+    },
+    {
+      "id": "2156600",
+      "code": "LO-PA-07",
+      "kind": "LO",
+      "level": "01. Planta Alta",
+      "label": "LO-PA-07 · 3,52 m² · H° e 17,5",
+      "status": "Losa con capa de hormigón 17.5 cm",
+      "type": "L04.01 / 20cm",
+      "thickness_m": 0.2,
+      "area_m2": 3.517,
+      "concreteLayer_m": 0.175
+    },
+    {
+      "id": "2157972",
+      "code": "LO-PA-08",
+      "kind": "LO",
+      "level": "01. Planta Alta",
+      "label": "LO-PA-08 · 11,20 m² · H° e 17,5",
+      "status": "Losa con capa de hormigón 17.5 cm",
+      "type": "L07.01 / 20cm",
+      "thickness_m": 0.2,
+      "area_m2": 11.2,
+      "concreteLayer_m": 0.175
+    },
+    {
+      "id": "2159130",
+      "code": "LO-PE-01",
+      "kind": "LO",
+      "level": "02. Planta Entrepiso",
+      "label": "LO-PE-01 · 14,93 m² · losa a confirmar",
+      "status": "Losa a confirmar (tipo sin capa de hormigón)",
+      "type": "L01.00 / 20cm",
+      "thickness_m": 0.2,
+      "area_m2": 14.93,
+      "concreteLayer_m": 0
+    },
+    {
+      "id": "875093",
+      "code": "LO-PE-02",
+      "kind": "LO",
+      "level": "02. Planta Entrepiso",
+      "label": "LO-PE-02 · 20,37 m² · H° e 17,5",
+      "status": "Losa con capa de hormigón 17.5 cm",
+      "type": "L01.02 / 20cm",
+      "thickness_m": 0.2,
+      "area_m2": 20.37,
+      "concreteLayer_m": 0.175
+    }
+  ],
+  "documentationRevision": "R11",
+  "codesWrittenToModel": false,
+  "decisions": [
+    "Losas L01.00 de PA/PE: losa a confirmar (no se asume hormigón).",
+    "Fundaciones: solo platea PB; resto no modelado / a definir.",
+    "Parámetro Structural de los muros: sin cambios; se filtra por tipo \"Muro Hormigón 20cm\".",
+    "Códigos MH/VE/LO/PL: usados en láminas y manifest; no escritos en Mark (requiere OK explícito del usuario: es cambio de parámetros del modelo)."
   ]
 }
