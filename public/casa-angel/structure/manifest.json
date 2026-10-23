@@ -1,0 +1,2353 @@
+{
+  "model": "Casa-Angel-piloto-documentacion.rvt",
+  "readAt": "2026-10-23T17:58:22.349000Z",
+  "revision": "R4-inventario",
+  "status": "Inventario de solo lectura + propuesta (sin láminas generadas)",
+  "levels": [
+    {
+      "name": "00. Planta Baja",
+      "building": 1,
+      "elevation_m": -0.0,
+      "id": 311,
+      "structural": 0
+    },
+    {
+      "name": "01. Planta Alta",
+      "building": 1,
+      "elevation_m": 3.0,
+      "id": 694,
+      "structural": 0
+    },
+    {
+      "name": "02. Planta Entrepiso",
+      "building": 1,
+      "elevation_m": 6.0,
+      "id": 353988,
+      "structural": 0
+    },
+    {
+      "name": "03. Planta de Techos",
+      "building": 1,
+      "elevation_m": 8.5,
+      "id": 354178,
+      "structural": 0
+    },
+    {
+      "name": "005. Acceso ppal",
+      "building": 1,
+      "elevation_m": 1.0,
+      "id": 398244,
+      "structural": 0
+    }
+  ],
+  "grids": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10"
+  ],
+  "nativeSchedule": {
+    "id": "1168184",
+    "name": "Muros Estructura de Hormigón",
+    "rows": 43,
+    "matchesInventory": true
+  },
+  "concreteWalls": {
+    "type": "Muro Hormigón 20cm",
+    "count": 43,
+    "byLevel": [
+      {
+        "key": "00. Planta Baja",
+        "count": 16,
+        "area_m2": 249.184,
+        "volume_m3": 49.107,
+        "length_m": 78.996
+      },
+      {
+        "key": "01. Planta Alta",
+        "count": 17,
+        "area_m2": 135.987,
+        "volume_m3": 26.526,
+        "length_m": 48.085
+      },
+      {
+        "key": "02. Planta Entrepiso",
+        "count": 10,
+        "area_m2": 43.076,
+        "volume_m3": 8.152,
+        "length_m": 40.812
+      }
+    ],
+    "totals": {
+      "length_m": 167.893,
+      "area_m2": 428.247,
+      "volume_m3": 83.785
+    },
+    "elements": [
+      {
+        "id": "634993",
+        "code": "MH-PB-01",
+        "category": "Walls",
+        "type": "Muro Hormigón 20cm",
+        "level": "00. Planta Baja",
+        "length_m": 7.0,
+        "height_m": 3.0,
+        "thickness_m": 0.2,
+        "area_m2": 18.239,
+        "volume_m3": 3.648,
+        "topConstraint": "01. Planta Alta",
+        "baseOffset_m": -0.2,
+        "structuralFlag": false,
+        "mark": null,
+        "materials": [
+          "Hormigón"
+        ]
+      },
+      {
+        "id": "369789",
+        "code": "MH-PB-02",
+        "category": "Walls",
+        "type": "Muro Hormigón 20cm",
+        "level": "00. Planta Baja",
+        "length_m": 4.555,
+        "height_m": 6.2,
+        "thickness_m": 0.2,
+        "area_m2": 30.399,
+        "volume_m3": 5.922,
+        "topConstraint": "02. Planta Entrepiso",
+        "baseOffset_m": -0.2,
+        "structuralFlag": false,
+        "mark": null,
+        "materials": [
+          "Hormigón"
+        ]
+      },
+      {
+        "id": "369719",
+        "code": "MH-PB-03",
+        "category": "Walls",
+        "type": "Muro Hormigón 20cm",
+        "level": "00. Planta Baja",
+        "length_m": 0.95,
+        "height_m": 3.2,
+        "thickness_m": 0.2,
+        "area_m2": 3.2,
+        "volume_m3": 0.64,
+        "topConstraint": "01. Planta Alta",
+        "baseOffset_m": -0.2,
+        "structuralFlag": false,
+        "mark": null,
+        "materials": [
+          "Hormigón"
+        ]
+      },
+      {
+        "id": "363297",
+        "code": "MH-PB-04",
+        "category": "Walls",
+        "type": "Muro Hormigón 20cm",
+        "level": "00. Planta Baja",
+        "length_m": 6.925,
+        "height_m": 3.0,
+        "thickness_m": 0.2,
+        "area_m2": 20.304,
+        "volume_m3": 4.019,
+        "topConstraint": "01. Planta Alta",
+        "baseOffset_m": -0.2,
+        "structuralFlag": false,
+        "mark": null,
+        "materials": [
+          "Hormigón"
+        ]
+      },
+      {
+        "id": "988670",
+        "code": "MH-PB-05",
+        "category": "Walls",
+        "type": "Muro Hormigón 20cm",
+        "level": "00. Planta Baja",
+        "length_m": 7.0,
+        "height_m": 3.0,
+        "thickness_m": 0.2,
+        "area_m2": 18.432,
+        "volume_m3": 3.645,
+        "topConstraint": "01. Planta Alta",
+        "baseOffset_m": -0.2,
+        "structuralFlag": false,
+        "mark": null,
+        "materials": [
+          "Hormigón"
+        ]
+      },
+      {
+        "id": "363146",
+        "code": "MH-PB-06",
+        "category": "Walls",
+        "type": "Muro Hormigón 20cm",
+        "level": "00. Planta Baja",
+        "length_m": 4.952,
+        "height_m": 3.0,
+        "thickness_m": 0.2,
+        "area_m2": 15.0,
+        "volume_m3": 3.0,
+        "topConstraint": "01. Planta Alta",
+        "baseOffset_m": -0.2,
+        "structuralFlag": false,
+        "mark": null,
+        "materials": [
+          "Hormigón"
+        ]
+      },
+      {
+        "id": "369425",
+        "code": "MH-PB-07",
+        "category": "Walls",
+        "type": "Muro Hormigón 20cm",
+        "level": "00. Planta Baja",
+        "length_m": 3.1,
+        "height_m": 6.2,
+        "thickness_m": 0.2,
+        "area_m2": 19.654,
+        "volume_m3": 3.901,
+        "topConstraint": "02. Planta Entrepiso",
+        "baseOffset_m": -0.2,
+        "structuralFlag": false,
+        "mark": null,
+        "materials": [
+          "Hormigón"
+        ]
+      },
+      {
+        "id": "756675",
+        "code": "MH-PB-08",
+        "category": "Walls",
+        "type": "Muro Hormigón 20cm",
+        "level": "00. Planta Baja",
+        "length_m": 6.33,
+        "height_m": 3.0,
+        "thickness_m": 0.2,
+        "area_m2": 18.836,
+        "volume_m3": 3.728,
+        "topConstraint": "01. Planta Alta",
+        "baseOffset_m": -0.2,
+        "structuralFlag": false,
+        "mark": null,
+        "materials": [
+          "Hormigón"
+        ]
+      },
+      {
+        "id": "363800",
+        "code": "MH-PB-09",
+        "category": "Walls",
+        "type": "Muro Hormigón 20cm",
+        "level": "00. Planta Baja",
+        "length_m": 8.4,
+        "height_m": 3.2,
+        "thickness_m": 0.2,
+        "area_m2": 22.999,
+        "volume_m3": 4.499,
+        "topConstraint": "01. Planta Alta",
+        "baseOffset_m": -0.2,
+        "structuralFlag": false,
+        "mark": null,
+        "materials": [
+          "Hormigón"
+        ]
+      },
+      {
+        "id": "364525",
+        "code": "MH-PB-10",
+        "category": "Walls",
+        "type": "Muro Hormigón 20cm",
+        "level": "00. Planta Baja",
+        "length_m": 10.5,
+        "height_m": 2.8,
+        "thickness_m": 0.2,
+        "area_m2": 23.913,
+        "volume_m3": 4.782,
+        "topConstraint": "01. Planta Alta",
+        "baseOffset_m": 0.0,
+        "structuralFlag": false,
+        "mark": null,
+        "materials": [
+          "Hormigón"
+        ]
+      },
+      {
+        "id": "1130447",
+        "code": "MH-PB-11",
+        "category": "Walls",
+        "type": "Muro Hormigón 20cm",
+        "level": "00. Planta Baja",
+        "length_m": 0.628,
+        "height_m": 3.2,
+        "thickness_m": 0.2,
+        "area_m2": 2.513,
+        "volume_m3": 0.402,
+        "topConstraint": "01. Planta Alta",
+        "baseOffset_m": -0.2,
+        "structuralFlag": false,
+        "mark": null,
+        "materials": [
+          "Hormigón"
+        ]
+      },
+      {
+        "id": "1127861",
+        "code": "MH-PB-12",
+        "category": "Walls",
+        "type": "Muro Hormigón 20cm",
+        "level": "00. Planta Baja",
+        "length_m": 0.628,
+        "height_m": 3.0,
+        "thickness_m": 0.2,
+        "area_m2": 2.356,
+        "volume_m3": 0.377,
+        "topConstraint": "01. Planta Alta",
+        "baseOffset_m": -0.2,
+        "structuralFlag": false,
+        "mark": null,
+        "materials": [
+          "Hormigón"
+        ]
+      },
+      {
+        "id": "364138",
+        "code": "MH-PB-13",
+        "category": "Walls",
+        "type": "Muro Hormigón 20cm",
+        "level": "00. Planta Baja",
+        "length_m": 2.0,
+        "height_m": 8.7,
+        "thickness_m": 0.2,
+        "area_m2": 10.697,
+        "volume_m3": 2.116,
+        "topConstraint": "03. Planta de Techos",
+        "baseOffset_m": -0.2,
+        "structuralFlag": false,
+        "mark": null,
+        "materials": [
+          "Hormigón"
+        ]
+      },
+      {
+        "id": "384945",
+        "code": "MH-PB-14",
+        "category": "Walls",
+        "type": "Muro Hormigón 20cm",
+        "level": "00. Planta Baja",
+        "length_m": 2.4,
+        "height_m": 3.2,
+        "thickness_m": 0.2,
+        "area_m2": 6.44,
+        "volume_m3": 1.288,
+        "topConstraint": "01. Planta Alta",
+        "baseOffset_m": -0.2,
+        "structuralFlag": false,
+        "mark": null,
+        "materials": [
+          "Hormigón"
+        ]
+      },
+      {
+        "id": "991161",
+        "code": "MH-PB-15",
+        "category": "Walls",
+        "type": "Muro Hormigón 20cm",
+        "level": "00. Planta Baja",
+        "length_m": 0.628,
+        "height_m": 3.2,
+        "thickness_m": 0.2,
+        "area_m2": 2.513,
+        "volume_m3": 0.402,
+        "topConstraint": "01. Planta Alta",
+        "baseOffset_m": -0.2,
+        "structuralFlag": false,
+        "mark": null,
+        "materials": [
+          "Hormigón"
+        ]
+      },
+      {
+        "id": "364265",
+        "code": "MH-PB-16",
+        "category": "Walls",
+        "type": "Muro Hormigón 20cm",
+        "level": "00. Planta Baja",
+        "length_m": 13.0,
+        "height_m": 3.2,
+        "thickness_m": 0.2,
+        "area_m2": 33.689,
+        "volume_m3": 6.738,
+        "topConstraint": "01. Planta Alta",
+        "baseOffset_m": -0.2,
+        "structuralFlag": false,
+        "mark": null,
+        "materials": [
+          "Hormigón"
+        ]
+      },
+      {
+        "id": "1182197",
+        "code": "MH-PA-01",
+        "category": "Walls",
+        "type": "Muro Hormigón 20cm",
+        "level": "01. Planta Alta",
+        "length_m": 0.95,
+        "height_m": 5.5,
+        "thickness_m": 0.2,
+        "area_m2": 3.351,
+        "volume_m3": 0.66,
+        "topConstraint": "03. Planta de Techos",
+        "baseOffset_m": 0.0,
+        "structuralFlag": false,
+        "mark": null,
+        "materials": [
+          "Hormigón"
+        ]
+      },
+      {
+        "id": "372705",
+        "code": "MH-PA-02",
+        "category": "Walls",
+        "type": "Muro Hormigón 20cm",
+        "level": "01. Planta Alta",
+        "length_m": 6.925,
+        "height_m": 2.5,
+        "thickness_m": 0.2,
+        "area_m2": 25.191,
+        "volume_m3": 4.962,
+        "topConstraint": "(sin nivel)",
+        "baseOffset_m": -0.2,
+        "structuralFlag": false,
+        "mark": null,
+        "materials": [
+          "Hormigón"
+        ]
+      },
+      {
+        "id": "771084",
+        "code": "MH-PA-03",
+        "category": "Walls",
+        "type": "Muro Hormigón 20cm",
+        "level": "01. Planta Alta",
+        "length_m": 0.55,
+        "height_m": 2.8,
+        "thickness_m": 0.2,
+        "area_m2": 2.041,
+        "volume_m3": 0.408,
+        "topConstraint": "02. Planta Entrepiso",
+        "baseOffset_m": 0.0,
+        "structuralFlag": false,
+        "mark": null,
+        "materials": [
+          "Hormigón"
+        ]
+      },
+      {
+        "id": "660351",
+        "code": "MH-PA-04",
+        "category": "Walls",
+        "type": "Muro Hormigón 20cm",
+        "level": "01. Planta Alta",
+        "length_m": 2.05,
+        "height_m": 3.3,
+        "thickness_m": 0.2,
+        "area_m2": 7.719,
+        "volume_m3": 1.544,
+        "topConstraint": "02. Planta Entrepiso",
+        "baseOffset_m": 0.0,
+        "structuralFlag": false,
+        "mark": null,
+        "materials": [
+          "Hormigón"
+        ]
+      },
+      {
+        "id": "891064",
+        "code": "MH-PA-05",
+        "category": "Walls",
+        "type": "Muro Hormigón 20cm",
+        "level": "01. Planta Alta",
+        "length_m": 0.6,
+        "height_m": 2.8,
+        "thickness_m": 0.2,
+        "area_m2": 2.041,
+        "volume_m3": 0.408,
+        "topConstraint": "02. Planta Entrepiso",
+        "baseOffset_m": 0.0,
+        "structuralFlag": false,
+        "mark": null,
+        "materials": [
+          "Hormigón"
+        ]
+      },
+      {
+        "id": "373019",
+        "code": "MH-PA-06",
+        "category": "Walls",
+        "type": "Muro Hormigón 20cm",
+        "level": "01. Planta Alta",
+        "length_m": 4.75,
+        "height_m": 3.0,
+        "thickness_m": 0.2,
+        "area_m2": 15.577,
+        "volume_m3": 3.091,
+        "topConstraint": "02. Planta Entrepiso",
+        "baseOffset_m": 0.0,
+        "structuralFlag": false,
+        "mark": null,
+        "materials": [
+          "Hormigón"
+        ]
+      },
+      {
+        "id": "867060",
+        "code": "MH-PA-07",
+        "category": "Walls",
+        "type": "Muro Hormigón 20cm",
+        "level": "01. Planta Alta",
+        "length_m": 0.7,
+        "height_m": 3.0,
+        "thickness_m": 0.2,
+        "area_m2": 2.346,
+        "volume_m3": 0.462,
+        "topConstraint": "02. Planta Entrepiso",
+        "baseOffset_m": 0.0,
+        "structuralFlag": false,
+        "mark": null,
+        "materials": [
+          "Hormigón"
+        ]
+      },
+      {
+        "id": "867136",
+        "code": "MH-PA-08",
+        "category": "Walls",
+        "type": "Muro Hormigón 20cm",
+        "level": "01. Planta Alta",
+        "length_m": 0.942,
+        "height_m": 3.0,
+        "thickness_m": 0.2,
+        "area_m2": 3.646,
+        "volume_m3": 0.617,
+        "topConstraint": "02. Planta Entrepiso",
+        "baseOffset_m": 0.0,
+        "structuralFlag": false,
+        "mark": null,
+        "materials": [
+          "Hormigón"
+        ]
+      },
+      {
+        "id": "665788",
+        "code": "MH-PA-09",
+        "category": "Walls",
+        "type": "Muro Hormigón 20cm",
+        "level": "01. Planta Alta",
+        "length_m": 3.602,
+        "height_m": 3.0,
+        "thickness_m": 0.2,
+        "area_m2": 12.035,
+        "volume_m3": 2.372,
+        "topConstraint": "02. Planta Entrepiso",
+        "baseOffset_m": 0.0,
+        "structuralFlag": false,
+        "mark": null,
+        "materials": [
+          "Hormigón"
+        ]
+      },
+      {
+        "id": "775530",
+        "code": "MH-PA-10",
+        "category": "Walls",
+        "type": "Muro Hormigón 20cm",
+        "level": "01. Planta Alta",
+        "length_m": 3.0,
+        "height_m": 3.0,
+        "thickness_m": 0.2,
+        "area_m2": 7.599,
+        "volume_m3": 1.49,
+        "topConstraint": "02. Planta Entrepiso",
+        "baseOffset_m": 0.0,
+        "structuralFlag": false,
+        "mark": null,
+        "materials": [
+          "Hormigón"
+        ]
+      },
+      {
+        "id": "1002400",
+        "code": "MH-PA-11",
+        "category": "Walls",
+        "type": "Muro Hormigón 20cm",
+        "level": "01. Planta Alta",
+        "length_m": 0.63,
+        "height_m": 3.0,
+        "thickness_m": 0.2,
+        "area_m2": 2.361,
+        "volume_m3": 0.378,
+        "topConstraint": "02. Planta Entrepiso",
+        "baseOffset_m": 0.0,
+        "structuralFlag": false,
+        "mark": null,
+        "materials": [
+          "Hormigón"
+        ]
+      },
+      {
+        "id": "1000205",
+        "code": "MH-PA-12",
+        "category": "Walls",
+        "type": "Muro Hormigón 20cm",
+        "level": "01. Planta Alta",
+        "length_m": 6.5,
+        "height_m": 3.0,
+        "thickness_m": 0.2,
+        "area_m2": 14.502,
+        "volume_m3": 2.901,
+        "topConstraint": "02. Planta Entrepiso",
+        "baseOffset_m": 0.0,
+        "structuralFlag": false,
+        "mark": null,
+        "materials": [
+          "Hormigón"
+        ]
+      },
+      {
+        "id": "1147627",
+        "code": "MH-PA-13",
+        "category": "Walls",
+        "type": "Muro Hormigón 20cm",
+        "level": "01. Planta Alta",
+        "length_m": 0.628,
+        "height_m": 3.0,
+        "thickness_m": 0.2,
+        "area_m2": 2.356,
+        "volume_m3": 0.377,
+        "topConstraint": "02. Planta Entrepiso",
+        "baseOffset_m": 0.0,
+        "structuralFlag": false,
+        "mark": null,
+        "materials": [
+          "Hormigón"
+        ]
+      },
+      {
+        "id": "1000720",
+        "code": "MH-PA-14",
+        "category": "Walls",
+        "type": "Muro Hormigón 20cm",
+        "level": "01. Planta Alta",
+        "length_m": 2.0,
+        "height_m": 3.0,
+        "thickness_m": 0.2,
+        "area_m2": 6.0,
+        "volume_m3": 1.2,
+        "topConstraint": "02. Planta Entrepiso",
+        "baseOffset_m": 0.0,
+        "structuralFlag": false,
+        "mark": null,
+        "materials": [
+          "Hormigón"
+        ]
+      },
+      {
+        "id": "1009669",
+        "code": "MH-PA-15",
+        "category": "Walls",
+        "type": "Muro Hormigón 20cm",
+        "level": "01. Planta Alta",
+        "length_m": 0.63,
+        "height_m": 3.0,
+        "thickness_m": 0.2,
+        "area_m2": 2.361,
+        "volume_m3": 0.378,
+        "topConstraint": "02. Planta Entrepiso",
+        "baseOffset_m": 0.0,
+        "structuralFlag": false,
+        "mark": null,
+        "materials": [
+          "Hormigón"
+        ]
+      },
+      {
+        "id": "1152689",
+        "code": "MH-PA-16",
+        "category": "Walls",
+        "type": "Muro Hormigón 20cm",
+        "level": "01. Planta Alta",
+        "length_m": 0.628,
+        "height_m": 3.0,
+        "thickness_m": 0.2,
+        "area_m2": 2.356,
+        "volume_m3": 0.377,
+        "topConstraint": "02. Planta Entrepiso",
+        "baseOffset_m": 0.0,
+        "structuralFlag": false,
+        "mark": null,
+        "materials": [
+          "Hormigón"
+        ]
+      },
+      {
+        "id": "1001377",
+        "code": "MH-PA-17",
+        "category": "Walls",
+        "type": "Muro Hormigón 20cm",
+        "level": "01. Planta Alta",
+        "length_m": 13.0,
+        "height_m": 3.0,
+        "thickness_m": 0.2,
+        "area_m2": 24.505,
+        "volume_m3": 4.901,
+        "topConstraint": "02. Planta Entrepiso",
+        "baseOffset_m": 0.0,
+        "structuralFlag": false,
+        "mark": null,
+        "materials": [
+          "Hormigón"
+        ]
+      },
+      {
+        "id": "621584",
+        "code": "MH-PE-01",
+        "category": "Walls",
+        "type": "Muro Hormigón 20cm",
+        "level": "02. Planta Entrepiso",
+        "length_m": 9.0,
+        "height_m": 0.6,
+        "thickness_m": 0.2,
+        "area_m2": 5.34,
+        "volume_m3": 1.068,
+        "topConstraint": "02. Planta Entrepiso",
+        "baseOffset_m": -0.2,
+        "structuralFlag": false,
+        "mark": null,
+        "materials": [
+          "Hormigón"
+        ]
+      },
+      {
+        "id": "613259",
+        "code": "MH-PE-02",
+        "category": "Walls",
+        "type": "Muro Hormigón 20cm",
+        "level": "02. Planta Entrepiso",
+        "length_m": 9.0,
+        "height_m": 0.78,
+        "thickness_m": 0.2,
+        "area_m2": 2.756,
+        "volume_m3": 0.499,
+        "topConstraint": "(sin nivel)",
+        "baseOffset_m": 1.4,
+        "structuralFlag": false,
+        "mark": null,
+        "materials": [
+          "Hormigón"
+        ]
+      },
+      {
+        "id": "1171301",
+        "code": "MH-PE-03",
+        "category": "Walls",
+        "type": "Muro Hormigón 20cm",
+        "level": "02. Planta Entrepiso",
+        "length_m": 5.292,
+        "height_m": 0.603,
+        "thickness_m": 0.2,
+        "area_m2": 3.07,
+        "volume_m3": 0.512,
+        "topConstraint": "03. Planta de Techos",
+        "baseOffset_m": -0.203,
+        "structuralFlag": false,
+        "mark": null,
+        "materials": [
+          "Hormigón"
+        ]
+      },
+      {
+        "id": "1174892",
+        "code": "MH-PE-04",
+        "category": "Walls",
+        "type": "Muro Hormigón 20cm",
+        "level": "02. Planta Entrepiso",
+        "length_m": 0.63,
+        "height_m": 3.0,
+        "thickness_m": 0.2,
+        "area_m2": 1.408,
+        "volume_m3": 0.231,
+        "topConstraint": "03. Planta de Techos",
+        "baseOffset_m": 0.0,
+        "structuralFlag": false,
+        "mark": null,
+        "materials": [
+          "Hormigón"
+        ]
+      },
+      {
+        "id": "1175055",
+        "code": "MH-PE-05",
+        "category": "Walls",
+        "type": "Muro Hormigón 20cm",
+        "level": "02. Planta Entrepiso",
+        "length_m": 0.628,
+        "height_m": 3.0,
+        "thickness_m": 0.2,
+        "area_m2": 1.403,
+        "volume_m3": 0.23,
+        "topConstraint": "03. Planta de Techos",
+        "baseOffset_m": 0.0,
+        "structuralFlag": false,
+        "mark": null,
+        "materials": [
+          "Hormigón"
+        ]
+      },
+      {
+        "id": "1000492",
+        "code": "MH-PE-06",
+        "category": "Walls",
+        "type": "Muro Hormigón 20cm",
+        "level": "02. Planta Entrepiso",
+        "length_m": 6.502,
+        "height_m": 2.5,
+        "thickness_m": 0.2,
+        "area_m2": 11.255,
+        "volume_m3": 2.231,
+        "topConstraint": "03. Planta de Techos",
+        "baseOffset_m": 0.0,
+        "structuralFlag": false,
+        "mark": null,
+        "materials": [
+          "Hormigón"
+        ]
+      },
+      {
+        "id": "1174683",
+        "code": "MH-PE-07",
+        "category": "Walls",
+        "type": "Muro Hormigón 20cm",
+        "level": "02. Planta Entrepiso",
+        "length_m": 2.0,
+        "height_m": 3.0,
+        "thickness_m": 0.2,
+        "area_m2": 3.804,
+        "volume_m3": 0.738,
+        "topConstraint": "03. Planta de Techos",
+        "baseOffset_m": 0.0,
+        "structuralFlag": false,
+        "mark": null,
+        "materials": [
+          "Hormigón"
+        ]
+      },
+      {
+        "id": "1174893",
+        "code": "MH-PE-08",
+        "category": "Walls",
+        "type": "Muro Hormigón 20cm",
+        "level": "02. Planta Entrepiso",
+        "length_m": 0.63,
+        "height_m": 3.0,
+        "thickness_m": 0.2,
+        "area_m2": 1.408,
+        "volume_m3": 0.231,
+        "topConstraint": "03. Planta de Techos",
+        "baseOffset_m": 0.0,
+        "structuralFlag": false,
+        "mark": null,
+        "materials": [
+          "Hormigón"
+        ]
+      },
+      {
+        "id": "1154858",
+        "code": "MH-PE-09",
+        "category": "Walls",
+        "type": "Muro Hormigón 20cm",
+        "level": "02. Planta Entrepiso",
+        "length_m": 0.628,
+        "height_m": 2.5,
+        "thickness_m": 0.2,
+        "area_m2": 1.403,
+        "volume_m3": 0.23,
+        "topConstraint": "03. Planta de Techos",
+        "baseOffset_m": 0.0,
+        "structuralFlag": false,
+        "mark": null,
+        "materials": [
+          "Hormigón"
+        ]
+      },
+      {
+        "id": "1001381",
+        "code": "MH-PE-10",
+        "category": "Walls",
+        "type": "Muro Hormigón 20cm",
+        "level": "02. Planta Entrepiso",
+        "length_m": 6.502,
+        "height_m": 2.5,
+        "thickness_m": 0.2,
+        "area_m2": 11.229,
+        "volume_m3": 2.182,
+        "topConstraint": "03. Planta de Techos",
+        "baseOffset_m": 0.0,
+        "structuralFlag": false,
+        "mark": null,
+        "materials": [
+          "Hormigón"
+        ]
+      }
+    ]
+  },
+  "otherStructuralWalls": [
+    {
+      "key": "Muro Fachada eje | 00. Planta Baja",
+      "count": 4,
+      "area_m2": 34.585,
+      "volume_m3": 5.114,
+      "length_m": 16.894
+    },
+    {
+      "key": "Muro Pileta | 00. Planta Baja",
+      "count": 4,
+      "area_m2": 39.548,
+      "volume_m3": 7.91,
+      "length_m": 19.774
+    },
+    {
+      "key": "VIGA encuentro 2 techos, revestimiento fachada | 02. Planta Entrepiso",
+      "count": 1,
+      "area_m2": 11.089,
+      "volume_m3": 2.218,
+      "length_m": 5.0
+    },
+    {
+      "key": "Muro Fachada ppal | 01. Planta Alta",
+      "count": 4,
+      "area_m2": 47.37,
+      "volume_m3": 4.701,
+      "length_m": 15.696
+    },
+    {
+      "key": "VIGA encuentro 2 techos, revestimiento fachada | 01. Planta Alta",
+      "count": 1,
+      "area_m2": 30.726,
+      "volume_m3": 6.678,
+      "length_m": 8.509
+    },
+    {
+      "key": "Muro Interior 20cm | 00. Planta Baja",
+      "count": 1,
+      "area_m2": 5.164,
+      "volume_m3": 0.716,
+      "length_m": 2.8
+    },
+    {
+      "key": "Bajo Escalera | 00. Planta Baja",
+      "count": 3,
+      "area_m2": 8.807,
+      "volume_m3": 0.881,
+      "length_m": 6.938
+    },
+    {
+      "key": "Viga de encadenado invertida | 00. Planta Baja",
+      "count": 8,
+      "area_m2": 6.217,
+      "volume_m3": 1.237,
+      "length_m": 31.927
+    }
+  ],
+  "slabsAndFoundations": [
+    {
+      "id": "361258",
+      "type": "L01.00 / 20cm",
+      "level": "00. Planta Baja",
+      "role": "Paquete de piso (sin capa de hormigón)",
+      "area_m2": 28.802,
+      "volume_m3": 5.76,
+      "thickness_m": 0.2,
+      "concreteLayer_m": 0,
+      "concreteVolume_m3": null,
+      "structuralFlag": false,
+      "layers": [
+        {
+          "material": "Piso Vinilico PB",
+          "function": "Finish1",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Adhesivo",
+          "function": "Substrate",
+          "thickness_m": 0.005
+        },
+        {
+          "material": "Carpeta",
+          "function": "Structure",
+          "thickness_m": 0.025
+        },
+        {
+          "material": "PLACA EPS . PR",
+          "function": "Insulation",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Film de Polietileno",
+          "function": "Membrane",
+          "thickness_m": 0.0
+        },
+        {
+          "material": "Contrapiso",
+          "function": "Structure",
+          "thickness_m": 0.1
+        },
+        {
+          "material": "EPS",
+          "function": "Insulation",
+          "thickness_m": 0.03
+        }
+      ]
+    },
+    {
+      "id": "398391",
+      "type": "Base Acceso",
+      "level": "005. Acceso ppal",
+      "role": "Losa / estructura",
+      "area_m2": 28.841,
+      "volume_m3": 34.609,
+      "thickness_m": 1.2,
+      "concreteLayer_m": 0.2,
+      "concreteVolume_m3": 5.768,
+      "structuralFlag": false,
+      "layers": [
+        {
+          "material": "Hormigon",
+          "function": "Structure",
+          "thickness_m": 0.2
+        },
+        {
+          "material": "Grass",
+          "function": "Structure",
+          "thickness_m": 1.0
+        }
+      ]
+    },
+    {
+      "id": "714161",
+      "type": "Insitu Concrete 225mm",
+      "level": "00. Planta Baja",
+      "role": "Losa / estructura",
+      "area_m2": 124.13,
+      "volume_m3": 27.931,
+      "thickness_m": 0.225,
+      "concreteLayer_m": 0.225,
+      "concreteVolume_m3": 27.929,
+      "structuralFlag": false,
+      "layers": [
+        {
+          "material": "Concrete, Sand/Cement Screed",
+          "function": "Structure",
+          "thickness_m": 0.05
+        },
+        {
+          "material": "Damp-proofing",
+          "function": "Membrane",
+          "thickness_m": 0.0
+        },
+        {
+          "material": "Concrete, Cast In Situ",
+          "function": "Structure",
+          "thickness_m": 0.175
+        }
+      ]
+    },
+    {
+      "id": "875093",
+      "type": "L01.02 / 20cm",
+      "level": "02. Planta Entrepiso",
+      "role": "Losa / estructura",
+      "area_m2": 20.37,
+      "volume_m3": 4.074,
+      "thickness_m": 0.2,
+      "concreteLayer_m": 0.175,
+      "concreteVolume_m3": 3.565,
+      "structuralFlag": false,
+      "layers": [
+        {
+          "material": "Piso de Madera PA",
+          "function": "Structure",
+          "thickness_m": 0.025
+        },
+        {
+          "material": "Concrete, Cast-in-Place, Gray",
+          "function": "Structure",
+          "thickness_m": 0.175
+        }
+      ]
+    },
+    {
+      "id": "1011940",
+      "type": "L01.00 / 20cm",
+      "level": "01. Planta Alta",
+      "role": "Paquete de piso (sin capa de hormigón)",
+      "area_m2": 14.93,
+      "volume_m3": 2.986,
+      "thickness_m": 0.2,
+      "concreteLayer_m": 0,
+      "concreteVolume_m3": null,
+      "structuralFlag": false,
+      "layers": [
+        {
+          "material": "Piso Vinilico PB",
+          "function": "Finish1",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Adhesivo",
+          "function": "Substrate",
+          "thickness_m": 0.005
+        },
+        {
+          "material": "Carpeta",
+          "function": "Structure",
+          "thickness_m": 0.025
+        },
+        {
+          "material": "PLACA EPS . PR",
+          "function": "Insulation",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Film de Polietileno",
+          "function": "Membrane",
+          "thickness_m": 0.0
+        },
+        {
+          "material": "Contrapiso",
+          "function": "Structure",
+          "thickness_m": 0.1
+        },
+        {
+          "material": "EPS",
+          "function": "Insulation",
+          "thickness_m": 0.03
+        }
+      ]
+    },
+    {
+      "id": "2068259",
+      "type": "L01.00 / 20cm",
+      "level": "00. Planta Baja",
+      "role": "Paquete de piso (sin capa de hormigón)",
+      "area_m2": 24.42,
+      "volume_m3": 4.884,
+      "thickness_m": 0.2,
+      "concreteLayer_m": 0,
+      "concreteVolume_m3": null,
+      "structuralFlag": true,
+      "layers": [
+        {
+          "material": "Piso Vinilico PB",
+          "function": "Finish1",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Adhesivo",
+          "function": "Substrate",
+          "thickness_m": 0.005
+        },
+        {
+          "material": "Carpeta",
+          "function": "Structure",
+          "thickness_m": 0.025
+        },
+        {
+          "material": "PLACA EPS . PR",
+          "function": "Insulation",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Film de Polietileno",
+          "function": "Membrane",
+          "thickness_m": 0.0
+        },
+        {
+          "material": "Contrapiso",
+          "function": "Structure",
+          "thickness_m": 0.1
+        },
+        {
+          "material": "EPS",
+          "function": "Insulation",
+          "thickness_m": 0.03
+        }
+      ]
+    },
+    {
+      "id": "2144958",
+      "type": "L02.00 / 20cm",
+      "level": "00. Planta Baja",
+      "role": "Paquete de piso (sin capa de hormigón)",
+      "area_m2": 25.08,
+      "volume_m3": 5.016,
+      "thickness_m": 0.2,
+      "concreteLayer_m": 0,
+      "concreteVolume_m3": null,
+      "structuralFlag": true,
+      "layers": [
+        {
+          "material": "Piso Vinilico PB",
+          "function": "Finish1",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Adhesivo",
+          "function": "Substrate",
+          "thickness_m": 0.005
+        },
+        {
+          "material": "Carpeta",
+          "function": "Structure",
+          "thickness_m": 0.025
+        },
+        {
+          "material": "PLACA EPS . PR",
+          "function": "Insulation",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Film de Polietileno",
+          "function": "Membrane",
+          "thickness_m": 0.0
+        },
+        {
+          "material": "Contrapiso",
+          "function": "Structure",
+          "thickness_m": 0.1
+        },
+        {
+          "material": "PLACA EPS . PR",
+          "function": "Insulation",
+          "thickness_m": 0.03
+        }
+      ]
+    },
+    {
+      "id": "2151436",
+      "type": "L03.00 / 20cm",
+      "level": "00. Planta Baja",
+      "role": "Paquete de piso (sin capa de hormigón)",
+      "area_m2": 24.395,
+      "volume_m3": 4.879,
+      "thickness_m": 0.2,
+      "concreteLayer_m": 0,
+      "concreteVolume_m3": null,
+      "structuralFlag": false,
+      "layers": [
+        {
+          "material": "Piso Vinilico PB",
+          "function": "Finish1",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Adhesivo",
+          "function": "Substrate",
+          "thickness_m": 0.005
+        },
+        {
+          "material": "Carpeta",
+          "function": "Structure",
+          "thickness_m": 0.025
+        },
+        {
+          "material": "PLACA EPS . PR",
+          "function": "Insulation",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Film de Polietileno",
+          "function": "Membrane",
+          "thickness_m": 0.0
+        },
+        {
+          "material": "Contrapiso",
+          "function": "Structure",
+          "thickness_m": 0.1
+        },
+        {
+          "material": "PLACA EPS . PR",
+          "function": "Insulation",
+          "thickness_m": 0.03
+        }
+      ]
+    },
+    {
+      "id": "2153042",
+      "type": "L05.00 / 20cm",
+      "level": "00. Planta Baja",
+      "role": "Paquete de piso (sin capa de hormigón)",
+      "area_m2": 42.305,
+      "volume_m3": 8.461,
+      "thickness_m": 0.2,
+      "concreteLayer_m": 0,
+      "concreteVolume_m3": null,
+      "structuralFlag": true,
+      "layers": [
+        {
+          "material": "Piso Vinilico PB",
+          "function": "Finish1",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Adhesivo",
+          "function": "Substrate",
+          "thickness_m": 0.005
+        },
+        {
+          "material": "Carpeta",
+          "function": "Structure",
+          "thickness_m": 0.025
+        },
+        {
+          "material": "PLACA EPS . PR",
+          "function": "Insulation",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Film de Polietileno",
+          "function": "Membrane",
+          "thickness_m": 0.0
+        },
+        {
+          "material": "Contrapiso",
+          "function": "Structure",
+          "thickness_m": 0.1
+        },
+        {
+          "material": "EPS",
+          "function": "Insulation",
+          "thickness_m": 0.03
+        }
+      ]
+    },
+    {
+      "id": "2154191",
+      "type": "L06.00 / 20cm",
+      "level": "00. Planta Baja",
+      "role": "Paquete de piso (sin capa de hormigón)",
+      "area_m2": 45.5,
+      "volume_m3": 9.1,
+      "thickness_m": 0.2,
+      "concreteLayer_m": 0,
+      "concreteVolume_m3": null,
+      "structuralFlag": false,
+      "layers": [
+        {
+          "material": "Piso Vinilico PB",
+          "function": "Finish1",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Adhesivo",
+          "function": "Substrate",
+          "thickness_m": 0.005
+        },
+        {
+          "material": "Carpeta",
+          "function": "Structure",
+          "thickness_m": 0.025
+        },
+        {
+          "material": "PLACA EPS . PR",
+          "function": "Insulation",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Film de Polietileno",
+          "function": "Membrane",
+          "thickness_m": 0.0
+        },
+        {
+          "material": "Contrapiso",
+          "function": "Structure",
+          "thickness_m": 0.1
+        },
+        {
+          "material": "EPS",
+          "function": "Insulation",
+          "thickness_m": 0.03
+        }
+      ]
+    },
+    {
+      "id": "2156060",
+      "type": "L01.01 / 30cm",
+      "level": "01. Planta Alta",
+      "role": "Losa / estructura",
+      "area_m2": 27.3,
+      "volume_m3": 8.19,
+      "thickness_m": 0.3,
+      "concreteLayer_m": 0.15,
+      "concreteVolume_m3": 4.095,
+      "structuralFlag": false,
+      "layers": [
+        {
+          "material": "Carpet",
+          "function": "Structure",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Carpeta",
+          "function": "Substrate",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "EPS",
+          "function": "Structure",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Contrapiso",
+          "function": "Structure",
+          "thickness_m": 0.06
+        },
+        {
+          "material": "PLACA EPS . PR",
+          "function": "Insulation",
+          "thickness_m": 0.03
+        },
+        {
+          "material": "Hormigon",
+          "function": "Structure",
+          "thickness_m": 0.15
+        }
+      ]
+    },
+    {
+      "id": "2156155",
+      "type": "L01.01 / 30cm",
+      "level": "01. Planta Alta",
+      "role": "Losa / estructura",
+      "area_m2": 28.0,
+      "volume_m3": 8.4,
+      "thickness_m": 0.3,
+      "concreteLayer_m": 0.15,
+      "concreteVolume_m3": 4.2,
+      "structuralFlag": false,
+      "layers": [
+        {
+          "material": "Carpet",
+          "function": "Structure",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Carpeta",
+          "function": "Substrate",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "EPS",
+          "function": "Structure",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Contrapiso",
+          "function": "Structure",
+          "thickness_m": 0.06
+        },
+        {
+          "material": "PLACA EPS . PR",
+          "function": "Insulation",
+          "thickness_m": 0.03
+        },
+        {
+          "material": "Hormigon",
+          "function": "Structure",
+          "thickness_m": 0.15
+        }
+      ]
+    },
+    {
+      "id": "2156409",
+      "type": "L01.01 / 30cm",
+      "level": "01. Planta Alta",
+      "role": "Losa / estructura",
+      "area_m2": 27.607,
+      "volume_m3": 8.282,
+      "thickness_m": 0.3,
+      "concreteLayer_m": 0.15,
+      "concreteVolume_m3": 4.141,
+      "structuralFlag": false,
+      "layers": [
+        {
+          "material": "Carpet",
+          "function": "Structure",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Carpeta",
+          "function": "Substrate",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "EPS",
+          "function": "Structure",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Contrapiso",
+          "function": "Structure",
+          "thickness_m": 0.06
+        },
+        {
+          "material": "PLACA EPS . PR",
+          "function": "Insulation",
+          "thickness_m": 0.03
+        },
+        {
+          "material": "Hormigon",
+          "function": "Structure",
+          "thickness_m": 0.15
+        }
+      ]
+    },
+    {
+      "id": "2156600",
+      "type": "L04.01 / 20cm",
+      "level": "01. Planta Alta",
+      "role": "Losa / estructura",
+      "area_m2": 3.517,
+      "volume_m3": 0.703,
+      "thickness_m": 0.2,
+      "concreteLayer_m": 0.175,
+      "concreteVolume_m3": 0.616,
+      "structuralFlag": false,
+      "layers": [
+        {
+          "material": "Piso de Madera PA",
+          "function": "Structure",
+          "thickness_m": 0.025
+        },
+        {
+          "material": "Concrete, Cast-in-Place, Gray",
+          "function": "Structure",
+          "thickness_m": 0.175
+        }
+      ]
+    },
+    {
+      "id": "2156920",
+      "type": "L01.01 / 30cm",
+      "level": "01. Planta Alta",
+      "role": "Losa / estructura",
+      "area_m2": 44.657,
+      "volume_m3": 13.397,
+      "thickness_m": 0.3,
+      "concreteLayer_m": 0.15,
+      "concreteVolume_m3": 6.699,
+      "structuralFlag": true,
+      "layers": [
+        {
+          "material": "Carpet",
+          "function": "Structure",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Carpeta",
+          "function": "Substrate",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "EPS",
+          "function": "Structure",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Contrapiso",
+          "function": "Structure",
+          "thickness_m": 0.06
+        },
+        {
+          "material": "PLACA EPS . PR",
+          "function": "Insulation",
+          "thickness_m": 0.03
+        },
+        {
+          "material": "Hormigon",
+          "function": "Structure",
+          "thickness_m": 0.15
+        }
+      ]
+    },
+    {
+      "id": "2157154",
+      "type": "L01.00 / 20cm",
+      "level": "01. Planta Alta",
+      "role": "Paquete de piso (sin capa de hormigón)",
+      "area_m2": 50.422,
+      "volume_m3": 10.084,
+      "thickness_m": 0.2,
+      "concreteLayer_m": 0,
+      "concreteVolume_m3": null,
+      "structuralFlag": false,
+      "layers": [
+        {
+          "material": "Piso Vinilico PB",
+          "function": "Finish1",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Adhesivo",
+          "function": "Substrate",
+          "thickness_m": 0.005
+        },
+        {
+          "material": "Carpeta",
+          "function": "Structure",
+          "thickness_m": 0.025
+        },
+        {
+          "material": "PLACA EPS . PR",
+          "function": "Insulation",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Film de Polietileno",
+          "function": "Membrane",
+          "thickness_m": 0.0
+        },
+        {
+          "material": "Contrapiso",
+          "function": "Structure",
+          "thickness_m": 0.1
+        },
+        {
+          "material": "EPS",
+          "function": "Insulation",
+          "thickness_m": 0.03
+        }
+      ]
+    },
+    {
+      "id": "2157972",
+      "type": "L07.01 / 20cm",
+      "level": "01. Planta Alta",
+      "role": "Losa / estructura",
+      "area_m2": 11.2,
+      "volume_m3": 2.24,
+      "thickness_m": 0.2,
+      "concreteLayer_m": 0.175,
+      "concreteVolume_m3": 1.96,
+      "structuralFlag": false,
+      "layers": [
+        {
+          "material": "Piso de Madera PA",
+          "function": "Structure",
+          "thickness_m": 0.025
+        },
+        {
+          "material": "Concrete, Cast-in-Place, Gray",
+          "function": "Structure",
+          "thickness_m": 0.175
+        }
+      ]
+    },
+    {
+      "id": "2159130",
+      "type": "L01.00 / 20cm",
+      "level": "02. Planta Entrepiso",
+      "role": "Paquete de piso (sin capa de hormigón)",
+      "area_m2": 14.93,
+      "volume_m3": 2.986,
+      "thickness_m": 0.2,
+      "concreteLayer_m": 0,
+      "concreteVolume_m3": null,
+      "structuralFlag": false,
+      "layers": [
+        {
+          "material": "Piso Vinilico PB",
+          "function": "Finish1",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Adhesivo",
+          "function": "Substrate",
+          "thickness_m": 0.005
+        },
+        {
+          "material": "Carpeta",
+          "function": "Structure",
+          "thickness_m": 0.025
+        },
+        {
+          "material": "PLACA EPS . PR",
+          "function": "Insulation",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Film de Polietileno",
+          "function": "Membrane",
+          "thickness_m": 0.0
+        },
+        {
+          "material": "Contrapiso",
+          "function": "Structure",
+          "thickness_m": 0.1
+        },
+        {
+          "material": "EPS",
+          "function": "Insulation",
+          "thickness_m": 0.03
+        }
+      ]
+    },
+    {
+      "id": "2287528",
+      "type": "Platea PB 15CM",
+      "level": "00. Planta Baja",
+      "role": "Fundación (platea)",
+      "area_m2": 249.917,
+      "volume_m3": 62.479,
+      "thickness_m": 0.25,
+      "concreteLayer_m": 0.15,
+      "concreteVolume_m3": 37.487,
+      "structuralFlag": true,
+      "layers": [
+        {
+          "material": "Hormigón",
+          "function": "Structure",
+          "thickness_m": 0.15
+        },
+        {
+          "material": "Film de Polietileno",
+          "function": "Membrane",
+          "thickness_m": 0.0
+        },
+        {
+          "material": "Tosca Compactada",
+          "function": "Substrate",
+          "thickness_m": 0.1
+        }
+      ]
+    }
+  ],
+  "slabSummary": [
+    {
+      "key": "00. Planta Baja | Paquete de piso (sin capa de hormigón)",
+      "count": 6,
+      "area_m2": 190.502,
+      "volume_m3": 38.1,
+      "length_m": 0.0
+    },
+    {
+      "key": "005. Acceso ppal | Losa / estructura",
+      "count": 1,
+      "area_m2": 28.841,
+      "volume_m3": 34.609,
+      "length_m": 0.0
+    },
+    {
+      "key": "00. Planta Baja | Losa / estructura",
+      "count": 1,
+      "area_m2": 124.13,
+      "volume_m3": 27.931,
+      "length_m": 0.0
+    },
+    {
+      "key": "02. Planta Entrepiso | Losa / estructura",
+      "count": 1,
+      "area_m2": 20.37,
+      "volume_m3": 4.074,
+      "length_m": 0.0
+    },
+    {
+      "key": "01. Planta Alta | Paquete de piso (sin capa de hormigón)",
+      "count": 2,
+      "area_m2": 65.352,
+      "volume_m3": 13.07,
+      "length_m": 0.0
+    },
+    {
+      "key": "01. Planta Alta | Losa / estructura",
+      "count": 6,
+      "area_m2": 142.281,
+      "volume_m3": 41.212,
+      "length_m": 0.0
+    },
+    {
+      "key": "02. Planta Entrepiso | Paquete de piso (sin capa de hormigón)",
+      "count": 1,
+      "area_m2": 14.93,
+      "volume_m3": 2.986,
+      "length_m": 0.0
+    },
+    {
+      "key": "00. Planta Baja | Fundación (platea)",
+      "count": 1,
+      "area_m2": 249.917,
+      "volume_m3": 62.479,
+      "length_m": 0.0
+    }
+  ],
+  "framing": {
+    "note": "Solo vigas y correas de madera de cubierta (familia Kerto LVL). No hay vigas de hormigón modeladas como Structural Framing.",
+    "byType": [
+      {
+        "area_m2": 0.0,
+        "length_m": 376.798,
+        "key": "Correas 15mm x 50mm",
+        "count": 60,
+        "volume_m3": 0.278
+      },
+      {
+        "area_m2": 0.0,
+        "length_m": 182.43,
+        "key": "Viga Cubierta 200mm x 60mm",
+        "count": 34,
+        "volume_m3": 2.177
+      },
+      {
+        "area_m2": 0.0,
+        "length_m": 254.762,
+        "key": "Viga Principal 3cm x 10cm",
+        "count": 101,
+        "volume_m3": 0.731
+      }
+    ]
+  },
+  "columns": {
+    "structural": 0,
+    "architectural": [
+      {
+        "id": "714124",
+        "family": "Columna Estacionamiento",
+        "type": "Columna Estacionamiento",
+        "volume_m3": 0.179
+      },
+      {
+        "id": "1469562",
+        "family": "PA CURV",
+        "type": "PA CURV",
+        "volume_m3": 0.772
+      }
+    ]
+  },
+  "roofs": [
+    {
+      "key": "Tejas 20mm | 02. Planta Entrepiso",
+      "count": 2,
+      "area_m2": 160.222,
+      "volume_m3": 3.185,
+      "length_m": 0.0
+    },
+    {
+      "key": "Tejas 20mm | 03. Planta de Techos",
+      "count": 1,
+      "area_m2": 98.797,
+      "volume_m3": 1.976,
+      "length_m": 0.0
+    }
+  ],
+  "notModeled": [
+    "Fundaciones (categoría Structural Foundations vacía): solo la platea PB modelada como piso \"Platea PB 15CM\".",
+    "Armaduras (Rebar = 0): cuantías y despiece de hierro no están en el modelo.",
+    "Columnas estructurales (0) y vigas de hormigón (0 como Structural Framing): los encadenados están modelados como muros (\"Viga de encadenado invertida\", \"VIGA encuentro...\").",
+    "Losas de PA/PE: los tipos L01.00 / L01.02 / L04.01 / L07.01 son paquetes de piso sin capa de hormigón; solo L01.01 / 30cm incluye 15 cm de hormigón. Falta modelar o confirmar la losa estructural de esos sectores.",
+    "Niveles no marcados como estructurales (Structural = No en los 5 niveles); no hay niveles de fundación ni de losa (cota de hormigón vs. piso terminado).",
+    "Parámetro \"Structural\" de los 43 muros de hormigón desactivado: Revit no los trata como estructura (no aparecen en vistas/planillas estructurales)."
+  ],
+  "warnings": {
+    "total": 90,
+    "byText": [
+      {
+        "text": "Highlighted walls are attached to, but miss, the highlighted targets.",
+        "count": 64
+      },
+      {
+        "text": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+        "count": 13
+      },
+      {
+        "text": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+        "count": 7
+      },
+      {
+        "text": "Highlighted floors overlap.",
+        "count": 5
+      },
+      {
+        "text": "Highlighted elements are joined but do not intersect.",
+        "count": 1
+      }
+    ],
+    "attachedButMiss": 64
+  },
+  "reviewCases": [
+    {
+      "id": "estructura-ascensor-364138",
+      "title": "Ascensor · cerramiento vidriado sobre muro de hormigón",
+      "elementIds": [
+        "364138",
+        "1020586",
+        "1020050"
+      ],
+      "codes": [
+        "MH-PB-13",
+        "MC-1020586",
+        "MC-1020050"
+      ],
+      "observation": "Caso ya documentado en Aberturas R3: el muro cortina MC-1020586 se solapa con el muro de hormigón 364138 y hay un segundo conjunto (MC-1020050) a 2 cm. No se tocó (pedido del usuario).",
+      "proposedCorrection": "Definir con estructura si el vano del ascensor es un hueco en el tabique de hormigón (recorte del muro) o un cerramiento exterior al hormigón; recién entonces ajustar el modelo.",
+      "status": "pending",
+      "blockedBy": "Usuario: no modificar el caso ascensor por ahora."
+    },
+    {
+      "id": "estructura-solape-01",
+      "title": "Solape / unión inconsistente en elementos estructurales",
+      "elementIds": [
+        "363800",
+        "1002830"
+      ],
+      "codes": [
+        "MH-PB-09",
+        "1002830"
+      ],
+      "observation": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+      "proposedCorrection": "Revisar en planta y corte: unir o recortar (Cut/Join Geometry) solo después de validar cuál elemento manda; no se corrigió automáticamente.",
+      "status": "pending"
+    },
+    {
+      "id": "estructura-solape-02",
+      "title": "Solape / unión inconsistente en elementos estructurales",
+      "elementIds": [
+        "363800",
+        "1043270"
+      ],
+      "codes": [
+        "MH-PB-09",
+        "1043270"
+      ],
+      "observation": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+      "proposedCorrection": "Revisar en planta y corte: unir o recortar (Cut/Join Geometry) solo después de validar cuál elemento manda; no se corrigió automáticamente.",
+      "status": "pending"
+    },
+    {
+      "id": "estructura-solape-03",
+      "title": "Solape / unión inconsistente en elementos estructurales",
+      "elementIds": [
+        "364138",
+        "1020586"
+      ],
+      "codes": [
+        "MH-PB-13",
+        "1020586"
+      ],
+      "observation": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+      "proposedCorrection": "Revisar en planta y corte: unir o recortar (Cut/Join Geometry) solo después de validar cuál elemento manda; no se corrigió automáticamente.",
+      "status": "pending"
+    },
+    {
+      "id": "estructura-solape-04",
+      "title": "Solape / unión inconsistente en elementos estructurales",
+      "elementIds": [
+        "364265",
+        "1043721"
+      ],
+      "codes": [
+        "MH-PB-16",
+        "1043721"
+      ],
+      "observation": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+      "proposedCorrection": "Revisar en planta y corte: unir o recortar (Cut/Join Geometry) solo después de validar cuál elemento manda; no se corrigió automáticamente.",
+      "status": "pending"
+    },
+    {
+      "id": "estructura-solape-05",
+      "title": "Solape / unión inconsistente en elementos estructurales",
+      "elementIds": [
+        "364265",
+        "1150307"
+      ],
+      "codes": [
+        "MH-PB-16",
+        "1150307"
+      ],
+      "observation": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+      "proposedCorrection": "Revisar en planta y corte: unir o recortar (Cut/Join Geometry) solo después de validar cuál elemento manda; no se corrigió automáticamente.",
+      "status": "pending"
+    },
+    {
+      "id": "estructura-solape-06",
+      "title": "Solape / unión inconsistente en elementos estructurales",
+      "elementIds": [
+        "364525",
+        "874093"
+      ],
+      "codes": [
+        "MH-PB-10",
+        "874093"
+      ],
+      "observation": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+      "proposedCorrection": "Revisar en planta y corte: unir o recortar (Cut/Join Geometry) solo después de validar cuál elemento manda; no se corrigió automáticamente.",
+      "status": "pending"
+    },
+    {
+      "id": "estructura-solape-07",
+      "title": "Solape / unión inconsistente en elementos estructurales",
+      "elementIds": [
+        "364525",
+        "995818"
+      ],
+      "codes": [
+        "MH-PB-10",
+        "995818"
+      ],
+      "observation": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+      "proposedCorrection": "Revisar en planta y corte: unir o recortar (Cut/Join Geometry) solo después de validar cuál elemento manda; no se corrigió automáticamente.",
+      "status": "pending"
+    },
+    {
+      "id": "estructura-solape-08",
+      "title": "Solape / unión inconsistente en elementos estructurales",
+      "elementIds": [
+        "364525",
+        "1043023"
+      ],
+      "codes": [
+        "MH-PB-10",
+        "1043023"
+      ],
+      "observation": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+      "proposedCorrection": "Revisar en planta y corte: unir o recortar (Cut/Join Geometry) solo después de validar cuál elemento manda; no se corrigió automáticamente.",
+      "status": "pending"
+    },
+    {
+      "id": "estructura-solape-09",
+      "title": "Solape / unión inconsistente en elementos estructurales",
+      "elementIds": [
+        "364525",
+        "1146397"
+      ],
+      "codes": [
+        "MH-PB-10",
+        "1146397"
+      ],
+      "observation": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+      "proposedCorrection": "Revisar en planta y corte: unir o recortar (Cut/Join Geometry) solo después de validar cuál elemento manda; no se corrigió automáticamente.",
+      "status": "pending"
+    },
+    {
+      "id": "estructura-solape-10",
+      "title": "Solape / unión inconsistente en elementos estructurales",
+      "elementIds": [
+        "369425",
+        "788230"
+      ],
+      "codes": [
+        "MH-PB-07",
+        "788230"
+      ],
+      "observation": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+      "proposedCorrection": "Revisar en planta y corte: unir o recortar (Cut/Join Geometry) solo después de validar cuál elemento manda; no se corrigió automáticamente.",
+      "status": "pending"
+    },
+    {
+      "id": "estructura-solape-11",
+      "title": "Solape / unión inconsistente en elementos estructurales",
+      "elementIds": [
+        "369719",
+        "788043"
+      ],
+      "codes": [
+        "MH-PB-03",
+        "788043"
+      ],
+      "observation": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+      "proposedCorrection": "Revisar en planta y corte: unir o recortar (Cut/Join Geometry) solo después de validar cuál elemento manda; no se corrigió automáticamente.",
+      "status": "pending"
+    },
+    {
+      "id": "estructura-solape-12",
+      "title": "Solape / unión inconsistente en elementos estructurales",
+      "elementIds": [
+        "369789",
+        "786605"
+      ],
+      "codes": [
+        "MH-PB-02",
+        "786605"
+      ],
+      "observation": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+      "proposedCorrection": "Revisar en planta y corte: unir o recortar (Cut/Join Geometry) solo después de validar cuál elemento manda; no se corrigió automáticamente.",
+      "status": "pending"
+    },
+    {
+      "id": "estructura-solape-13",
+      "title": "Solape / unión inconsistente en elementos estructurales",
+      "elementIds": [
+        "467187",
+        "2156155"
+      ],
+      "codes": [
+        "467187",
+        "2156155"
+      ],
+      "observation": "Highlighted floors overlap.",
+      "proposedCorrection": "Revisar en planta y corte: unir o recortar (Cut/Join Geometry) solo después de validar cuál elemento manda; no se corrigió automáticamente.",
+      "status": "pending"
+    },
+    {
+      "id": "estructura-solape-14",
+      "title": "Solape / unión inconsistente en elementos estructurales",
+      "elementIds": [
+        "467187",
+        "2156409"
+      ],
+      "codes": [
+        "467187",
+        "2156409"
+      ],
+      "observation": "Highlighted floors overlap.",
+      "proposedCorrection": "Revisar en planta y corte: unir o recortar (Cut/Join Geometry) solo después de validar cuál elemento manda; no se corrigió automáticamente.",
+      "status": "pending"
+    },
+    {
+      "id": "estructura-solape-15",
+      "title": "Solape / unión inconsistente en elementos estructurales",
+      "elementIds": [
+        "621584",
+        "876092"
+      ],
+      "codes": [
+        "MH-PE-01",
+        "876092"
+      ],
+      "observation": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+      "proposedCorrection": "Revisar en planta y corte: unir o recortar (Cut/Join Geometry) solo después de validar cuál elemento manda; no se corrigió automáticamente.",
+      "status": "pending"
+    },
+    {
+      "id": "estructura-solape-16",
+      "title": "Solape / unión inconsistente en elementos estructurales",
+      "elementIds": [
+        "621584",
+        "876128"
+      ],
+      "codes": [
+        "MH-PE-01",
+        "876128"
+      ],
+      "observation": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+      "proposedCorrection": "Revisar en planta y corte: unir o recortar (Cut/Join Geometry) solo después de validar cuál elemento manda; no se corrigió automáticamente.",
+      "status": "pending"
+    },
+    {
+      "id": "estructura-solape-17",
+      "title": "Solape / unión inconsistente en elementos estructurales",
+      "elementIds": [
+        "713845",
+        "2157154"
+      ],
+      "codes": [
+        "713845",
+        "2157154"
+      ],
+      "observation": "Highlighted floors overlap.",
+      "proposedCorrection": "Revisar en planta y corte: unir o recortar (Cut/Join Geometry) solo después de validar cuál elemento manda; no se corrigió automáticamente.",
+      "status": "pending"
+    },
+    {
+      "id": "estructura-solape-18",
+      "title": "Solape / unión inconsistente en elementos estructurales",
+      "elementIds": [
+        "714161",
+        "734491"
+      ],
+      "codes": [
+        "714161",
+        "734491"
+      ],
+      "observation": "Highlighted floors overlap.",
+      "proposedCorrection": "Revisar en planta y corte: unir o recortar (Cut/Join Geometry) solo después de validar cuál elemento manda; no se corrigió automáticamente.",
+      "status": "pending"
+    },
+    {
+      "id": "estructura-solape-19",
+      "title": "Solape / unión inconsistente en elementos estructurales",
+      "elementIds": [
+        "756675",
+        "786581"
+      ],
+      "codes": [
+        "MH-PB-08",
+        "786581"
+      ],
+      "observation": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+      "proposedCorrection": "Revisar en planta y corte: unir o recortar (Cut/Join Geometry) solo después de validar cuál elemento manda; no se corrigió automáticamente.",
+      "status": "pending"
+    },
+    {
+      "id": "estructura-solape-20",
+      "title": "Solape / unión inconsistente en elementos estructurales",
+      "elementIds": [
+        "876089",
+        "1171301"
+      ],
+      "codes": [
+        "876089",
+        "MH-PE-03"
+      ],
+      "observation": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+      "proposedCorrection": "Revisar en planta y corte: unir o recortar (Cut/Join Geometry) solo después de validar cuál elemento manda; no se corrigió automáticamente.",
+      "status": "pending"
+    },
+    {
+      "id": "estructura-solape-21",
+      "title": "Solape / unión inconsistente en elementos estructurales",
+      "elementIds": [
+        "876091",
+        "1000205"
+      ],
+      "codes": [
+        "876091",
+        "MH-PA-12"
+      ],
+      "observation": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+      "proposedCorrection": "Revisar en planta y corte: unir o recortar (Cut/Join Geometry) solo después de validar cuál elemento manda; no se corrigió automáticamente.",
+      "status": "pending"
+    },
+    {
+      "id": "estructura-solape-22",
+      "title": "Solape / unión inconsistente en elementos estructurales",
+      "elementIds": [
+        "876125",
+        "1171301"
+      ],
+      "codes": [
+        "876125",
+        "MH-PE-03"
+      ],
+      "observation": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+      "proposedCorrection": "Revisar en planta y corte: unir o recortar (Cut/Join Geometry) solo después de validar cuál elemento manda; no se corrigió automáticamente.",
+      "status": "pending"
+    },
+    {
+      "id": "estructura-solape-23",
+      "title": "Solape / unión inconsistente en elementos estructurales",
+      "elementIds": [
+        "876127",
+        "1000205"
+      ],
+      "codes": [
+        "876127",
+        "MH-PA-12"
+      ],
+      "observation": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+      "proposedCorrection": "Revisar en planta y corte: unir o recortar (Cut/Join Geometry) solo después de validar cuál elemento manda; no se corrigió automáticamente.",
+      "status": "pending"
+    },
+    {
+      "id": "estructura-solape-24",
+      "title": "Solape / unión inconsistente en elementos estructurales",
+      "elementIds": [
+        "1171301",
+        "2144303"
+      ],
+      "codes": [
+        "MH-PE-03",
+        "2144303"
+      ],
+      "observation": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+      "proposedCorrection": "Revisar en planta y corte: unir o recortar (Cut/Join Geometry) solo después de validar cuál elemento manda; no se corrigió automáticamente.",
+      "status": "pending"
+    },
+    {
+      "id": "estructura-solape-25",
+      "title": "Solape / unión inconsistente en elementos estructurales",
+      "elementIds": [
+        "2156409",
+        "2156920"
+      ],
+      "codes": [
+        "2156409",
+        "2156920"
+      ],
+      "observation": "Highlighted floors overlap.",
+      "proposedCorrection": "Revisar en planta y corte: unir o recortar (Cut/Join Geometry) solo después de validar cuál elemento manda; no se corrigió automáticamente.",
+      "status": "pending"
+    },
+    {
+      "id": "estructura-solape-26",
+      "title": "Solape / unión inconsistente en elementos estructurales",
+      "elementIds": [
+        "361258",
+        "369789"
+      ],
+      "codes": [
+        "361258",
+        "MH-PB-02"
+      ],
+      "observation": "Highlighted elements are joined but do not intersect.",
+      "proposedCorrection": "Revisar en planta y corte: unir o recortar (Cut/Join Geometry) solo después de validar cuál elemento manda; no se corrigió automáticamente.",
+      "status": "pending"
+    }
+  ],
+  "proposal": {
+    "numbering": "MH-<nivel>-<nn> para muros de hormigón (MH-PB-01…), LO-<nivel>-<nn> losas, PL-01 platea, VE-<nivel>-<nn> vigas/encadenados, CO-<nn> columnas. Código guardado en Mark (parámetro de identidad), igual que V-/P-/MC- en Aberturas.",
+    "sheets": [
+      {
+        "number": "EST-00",
+        "title": "Índice, criterios y planilla general de hormigón (muros, losas, platea) con volúmenes"
+      },
+      {
+        "number": "EST-PB-01",
+        "title": "Planta de estructura PB · muros MH-PB con códigos, ejes A–H / 1–10 y cotas a ejes"
+      },
+      {
+        "number": "EST-PA-01",
+        "title": "Planta de estructura PA · muros MH-PA y losas LO-PA"
+      },
+      {
+        "number": "EST-PE-01",
+        "title": "Planta de estructura PE · muros MH-PE y losas LO-PE"
+      },
+      {
+        "number": "EST-FU-01",
+        "title": "Platea PB 15 cm · contorno, espesor, niveles (cuando se defina fundación)"
+      },
+      {
+        "number": "EST-SEC-nn",
+        "title": "Sectores (Cuartos inv., Hall/Acceso, Quincho, Núcleo ascensor/escalera): alzados de muros con aberturas y pases, cotas de vanos (vinculadas con Aberturas R4)"
+      },
+      {
+        "number": "EST-REV-nn",
+        "title": "Casos de revisión: solapes y uniones (como el del ascensor) con contexto planta + axonometría"
+      }
+    ],
+    "quantities": "Planilla nativa por código: longitud, alto, espesor, área y volumen de hormigón; losas por capa de hormigón (área × espesor de capa); platea por volumen. Totales por nivel y por sector.",
+    "webData": "structure/manifest.json: concreteWalls.elements (con code propuesto), slabsAndFoundations, reviewCases y proposal.sheets; las láminas se agregarán con image/pdf como en openings/manifest.json."
+  },
+  "openQuestions": [
+    "¿Las losas de PA y PE son de hormigón armado? Hoy figuran solo como paquetes de piso (salvo L01.01 / 30cm).",
+    "¿Hay fundaciones además de la platea (vigas de fundación, pilotes, zapatas)?",
+    "¿Activamos el parámetro Structural en los 43 muros de hormigón y marcamos niveles estructurales? Es un cambio de parámetros del modelo (no documentación): requiere su OK.",
+    "¿Confirmamos la numeración MH-/LO-/PL-/VE- y que se escriba en Mark?"
+  ]
+}

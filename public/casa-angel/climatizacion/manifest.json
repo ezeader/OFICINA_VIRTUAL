@@ -1,0 +1,1038 @@
+{
+  "model": "Casa-Angel-piloto-documentacion.rvt",
+  "readAt": "2026-10-23T18:07:05.751000Z",
+  "revision": "R4-inventario",
+  "status": "Inventario de solo lectura + propuesta (sin láminas nuevas)",
+  "system": {
+    "description": "Piso radiante (losa radiante) con serpentines PEX embebidos en la carpeta, alimentado por bomba de calor inverter aire-agua (frío/calor).",
+    "modeledAs": "Tuberías Hidroflex PEX Ø20 (tipos \"CAL - Mando - Rollo 400\" y \"CAL - Retorno - Rollo 200\"), colectores Hidroflex LUXUS con gabinete, cronotermostatos inalámbricos y \"Reticulado\" (piezas de soporte/malla)."
+  },
+  "pipes": {
+    "pex": {
+      "segments": 863,
+      "supply_m": 802.383,
+      "return_m": 597.113,
+      "total_m": 1399.496,
+      "horizontal_m": 1290.642,
+      "vertical_m": 108.854,
+      "diameters_mm": [
+        20.0
+      ],
+      "pipingSystems": [
+        {
+          "name": "Hydronic Supply 1",
+          "segments": 488
+        },
+        {
+          "name": "Hydronic Supply 13",
+          "segments": 289
+        },
+        {
+          "name": "Hydronic Supply 3",
+          "segments": 47
+        },
+        {
+          "name": "Hydronic Supply 19",
+          "segments": 39
+        }
+      ],
+      "byLevel": [
+        {
+          "key": "02. Planta Entrepiso | Mando",
+          "count": 55,
+          "length_m": 105.365
+        },
+        {
+          "key": "02. Planta Entrepiso | Retorno",
+          "count": 65,
+          "length_m": 67.204
+        },
+        {
+          "key": "01. Planta Alta | Mando",
+          "count": 179,
+          "length_m": 369.127
+        },
+        {
+          "key": "00. Planta Baja | Mando",
+          "count": 248,
+          "length_m": 327.022
+        },
+        {
+          "key": "00. Planta Baja | Retorno",
+          "count": 182,
+          "length_m": 272.012
+        },
+        {
+          "key": "01. Planta Alta | Retorno",
+          "count": 132,
+          "length_m": 257.208
+        },
+        {
+          "key": "005. Acceso ppal | Retorno",
+          "count": 1,
+          "length_m": 0.689
+        },
+        {
+          "key": "005. Acceso ppal | Mando",
+          "count": 1,
+          "length_m": 0.869
+        }
+      ]
+    },
+    "hydronicPpr": [
+      {
+        "key": "AmancoWavin AC | Hydronic Supply",
+        "count": 5,
+        "length_m": 3.862
+      },
+      {
+        "key": "AmancoWavin AF | Hydronic Supply",
+        "count": 8,
+        "length_m": 7.382
+      }
+    ]
+  },
+  "manifolds": [
+    {
+      "id": "2243525",
+      "family": "Hidroflex - Colector Modelo LUXUS Poliamida AR",
+      "type": "Industrias - Saladillo",
+      "level": "02. Planta Entrepiso",
+      "room": "SM",
+      "name": "Colector Norte"
+    },
+    {
+      "id": "2263387",
+      "family": "Hidroflex - Colector Modelo LUXUS Poliamida AR",
+      "type": "Industrias - Saladillo",
+      "level": "01. Planta Alta",
+      "room": "Sala de Maquinas",
+      "name": "Colector Sur"
+    }
+  ],
+  "cabinets": [
+    {
+      "id": "2243527",
+      "type": "Hidroflex - Gabinete para colectores - 2 y 3 Salidas",
+      "room": "SM"
+    },
+    {
+      "id": "2263389",
+      "type": "Hidroflex - Gabinete para colectores - 2 y 3 Salidas",
+      "room": "Sala de Maquinas"
+    }
+  ],
+  "thermostats": [
+    {
+      "id": "2322733",
+      "room": "Cava",
+      "level": "01. Planta Alta"
+    },
+    {
+      "id": "2325608",
+      "room": "Lavadero",
+      "level": "00. Planta Baja"
+    },
+    {
+      "id": "2337577",
+      "room": "Quincho",
+      "level": "00. Planta Baja"
+    },
+    {
+      "id": "2338050",
+      "room": "Cuarto ppal",
+      "level": "(sin nivel)"
+    },
+    {
+      "id": "2341076",
+      "room": null,
+      "level": "(sin nivel)"
+    },
+    {
+      "id": "2341090",
+      "room": "Baño A Inv.",
+      "level": "00. Planta Baja"
+    },
+    {
+      "id": "2341100",
+      "room": "Baño B Inv.",
+      "level": "00. Planta Baja"
+    },
+    {
+      "id": "2341342",
+      "room": "Baño C Inv.",
+      "level": "00. Planta Baja"
+    },
+    {
+      "id": "2342530",
+      "room": "Cocina",
+      "level": "(sin nivel)"
+    },
+    {
+      "id": "2342544",
+      "room": "Comedor",
+      "level": "01. Planta Alta"
+    },
+    {
+      "id": "2342583",
+      "room": "Playroom",
+      "level": "01. Planta Alta"
+    }
+  ],
+  "mechanicalEquipment": [
+    {
+      "id": "1399869",
+      "family": "Pump-End_Suction-Grundfos_NKBASIS-SEEK",
+      "type": "PLEASE USE TYPE CATALOG",
+      "level": "00. Planta Baja",
+      "note": "Bomba centrífuga genérica (tipo sin catálogo); no es la bomba de calor."
+    }
+  ],
+  "circuitsByRoom": [
+    {
+      "level": "00. Planta Baja",
+      "room": "Baño A Inv.",
+      "roomId": "780810",
+      "roomArea_m2": 5.291,
+      "supply_m": 4.234,
+      "return_m": 2.87,
+      "segments": 13,
+      "systems": [
+        "Hydronic Supply 13"
+      ],
+      "total_m": 7.104,
+      "density_m_per_m2": 1.343,
+      "thermostat": true
+    },
+    {
+      "level": "00. Planta Baja",
+      "room": "Baño B Inv.",
+      "roomId": "780813",
+      "roomArea_m2": 5.434,
+      "supply_m": 4.026,
+      "return_m": 2.875,
+      "segments": 12,
+      "systems": [
+        "Hydronic Supply 19"
+      ],
+      "total_m": 6.901,
+      "density_m_per_m2": 1.27,
+      "thermostat": true
+    },
+    {
+      "level": "00. Planta Baja",
+      "room": "Baño C Inv.",
+      "roomId": "780822",
+      "roomArea_m2": 5.291,
+      "supply_m": 4.233,
+      "return_m": 2.883,
+      "segments": 14,
+      "systems": [
+        "Hydronic Supply 13"
+      ],
+      "total_m": 7.116,
+      "density_m_per_m2": 1.345,
+      "thermostat": true
+    },
+    {
+      "level": "00. Planta Baja",
+      "room": "Baño ppal",
+      "roomId": "780828",
+      "roomArea_m2": 9.031,
+      "supply_m": 9.54,
+      "return_m": 4.79,
+      "segments": 15,
+      "systems": [
+        "Hydronic Supply 1"
+      ],
+      "total_m": 14.33,
+      "density_m_per_m2": 1.587,
+      "thermostat": false
+    },
+    {
+      "level": "00. Planta Baja",
+      "room": "Cuarto A Inv.",
+      "roomId": "780807",
+      "roomArea_m2": 11.858,
+      "supply_m": 14.834,
+      "return_m": 12.58,
+      "segments": 21,
+      "systems": [
+        "Hydronic Supply 13"
+      ],
+      "total_m": 27.414,
+      "density_m_per_m2": 2.312,
+      "thermostat": false
+    },
+    {
+      "level": "00. Planta Baja",
+      "room": "Cuarto B Inv.",
+      "roomId": "780816",
+      "roomArea_m2": 12.179,
+      "supply_m": 14.776,
+      "return_m": 12.58,
+      "segments": 20,
+      "systems": [
+        "Hydronic Supply 19"
+      ],
+      "total_m": 27.356,
+      "density_m_per_m2": 2.246,
+      "thermostat": false
+    },
+    {
+      "level": "00. Planta Baja",
+      "room": "Cuarto C Inv.",
+      "roomId": "780819",
+      "roomArea_m2": 11.859,
+      "supply_m": 14.834,
+      "return_m": 12.58,
+      "segments": 21,
+      "systems": [
+        "Hydronic Supply 13"
+      ],
+      "total_m": 27.414,
+      "density_m_per_m2": 2.312,
+      "thermostat": false
+    },
+    {
+      "level": "00. Planta Baja",
+      "room": "Cuarto ppal",
+      "roomId": "780825",
+      "roomArea_m2": 14.821,
+      "supply_m": 28.852,
+      "return_m": 14.519,
+      "segments": 73,
+      "systems": [
+        "Hydronic Supply 1"
+      ],
+      "total_m": 43.371,
+      "density_m_per_m2": 2.926,
+      "thermostat": true
+    },
+    {
+      "level": "00. Planta Baja",
+      "room": "Hab. servicio",
+      "roomId": "785697",
+      "roomArea_m2": 6.611,
+      "supply_m": 10.898,
+      "return_m": 8.288,
+      "segments": 17,
+      "systems": [
+        "Hydronic Supply 3"
+      ],
+      "total_m": 19.186,
+      "density_m_per_m2": 2.902,
+      "thermostat": false
+    },
+    {
+      "level": "00. Planta Baja",
+      "room": "Lavadero",
+      "roomId": "1041091",
+      "roomArea_m2": 6.639,
+      "supply_m": 9.341,
+      "return_m": 13.922,
+      "segments": 15,
+      "systems": [
+        "Hydronic Supply 3"
+      ],
+      "total_m": 23.263,
+      "density_m_per_m2": 3.504,
+      "thermostat": true
+    },
+    {
+      "level": "00. Planta Baja",
+      "room": "Pasillo",
+      "roomId": "788673",
+      "roomArea_m2": 26.084,
+      "supply_m": 63.56,
+      "return_m": 70.018,
+      "segments": 41,
+      "systems": [
+        "Hydronic Supply 13"
+      ],
+      "total_m": 133.578,
+      "density_m_per_m2": 5.121,
+      "thermostat": false
+    },
+    {
+      "level": "00. Planta Baja",
+      "room": "Quincho",
+      "roomId": "783339",
+      "roomArea_m2": 45.008,
+      "supply_m": 111.108,
+      "return_m": 76.241,
+      "segments": 94,
+      "systems": [
+        "Hydronic Supply 1"
+      ],
+      "total_m": 187.349,
+      "density_m_per_m2": 4.163,
+      "thermostat": true
+    },
+    {
+      "level": "00. Planta Baja",
+      "room": "Toilette Servicio",
+      "roomId": "874173",
+      "roomArea_m2": 6.238,
+      "supply_m": 5.09,
+      "return_m": 9.37,
+      "segments": 15,
+      "systems": [
+        "Hydronic Supply 3"
+      ],
+      "total_m": 14.46,
+      "density_m_per_m2": 2.318,
+      "thermostat": false
+    },
+    {
+      "level": "00. Planta Baja",
+      "room": "Vestidor ppal",
+      "roomId": "1007176",
+      "roomArea_m2": 7.569,
+      "supply_m": 11.085,
+      "return_m": 4.909,
+      "segments": 31,
+      "systems": [
+        "Hydronic Supply 1"
+      ],
+      "total_m": 15.994,
+      "density_m_per_m2": 2.113,
+      "thermostat": false
+    },
+    {
+      "level": "00. Planta Baja",
+      "room": null,
+      "roomId": null,
+      "roomArea_m2": null,
+      "supply_m": 12.93,
+      "return_m": 15.23,
+      "segments": 20,
+      "systems": [
+        "Hydronic Supply 13",
+        "Hydronic Supply 19"
+      ],
+      "total_m": 28.16,
+      "density_m_per_m2": null,
+      "thermostat": false
+    },
+    {
+      "level": "005. Acceso ppal",
+      "room": null,
+      "roomId": null,
+      "roomArea_m2": null,
+      "supply_m": 0.869,
+      "return_m": 0.689,
+      "segments": 2,
+      "systems": [
+        "Hydronic Supply 13"
+      ],
+      "total_m": 1.558,
+      "density_m_per_m2": null,
+      "thermostat": false
+    },
+    {
+      "level": "01. Planta Alta",
+      "room": "Baño PA",
+      "roomId": "870167",
+      "roomArea_m2": 5.814,
+      "supply_m": 22.216,
+      "return_m": 11.13,
+      "segments": 14,
+      "systems": [
+        "Hydronic Supply 13",
+        "Hydronic Supply 19"
+      ],
+      "total_m": 33.346,
+      "density_m_per_m2": 5.735,
+      "thermostat": false
+    },
+    {
+      "level": "01. Planta Alta",
+      "room": "Cava",
+      "roomId": "863864",
+      "roomArea_m2": 8.443,
+      "supply_m": 10.026,
+      "return_m": 12.022,
+      "segments": 20,
+      "systems": [
+        "Hydronic Supply 1"
+      ],
+      "total_m": 22.048,
+      "density_m_per_m2": 2.611,
+      "thermostat": true
+    },
+    {
+      "level": "01. Planta Alta",
+      "room": "Cocina",
+      "roomId": "877992",
+      "roomArea_m2": 20.869,
+      "supply_m": 45.396,
+      "return_m": 27.8,
+      "segments": 56,
+      "systems": [
+        "Hydronic Supply 1"
+      ],
+      "total_m": 73.196,
+      "density_m_per_m2": 3.507,
+      "thermostat": true
+    },
+    {
+      "level": "01. Planta Alta",
+      "room": "Comedor",
+      "roomId": "869397",
+      "roomArea_m2": 23.262,
+      "supply_m": 89.257,
+      "return_m": 68.69,
+      "segments": 37,
+      "systems": [
+        "Hydronic Supply 1"
+      ],
+      "total_m": 157.947,
+      "density_m_per_m2": 6.79,
+      "thermostat": true
+    },
+    {
+      "level": "01. Planta Alta",
+      "room": "Living",
+      "roomId": "877995",
+      "roomArea_m2": 16.144,
+      "supply_m": 6.632,
+      "return_m": 8.29,
+      "segments": 9,
+      "systems": [
+        "Hydronic Supply 1"
+      ],
+      "total_m": 14.922,
+      "density_m_per_m2": 0.924,
+      "thermostat": false
+    },
+    {
+      "level": "01. Planta Alta",
+      "room": "Playroom",
+      "roomId": "870164",
+      "roomArea_m2": 28.936,
+      "supply_m": 100.34,
+      "return_m": 37.531,
+      "segments": 55,
+      "systems": [
+        "Hydronic Supply 13"
+      ],
+      "total_m": 137.871,
+      "density_m_per_m2": 4.765,
+      "thermostat": true
+    },
+    {
+      "level": "01. Planta Alta",
+      "room": "Puente",
+      "roomId": "887814",
+      "roomArea_m2": 2.182,
+      "supply_m": 0.232,
+      "return_m": 0.0,
+      "segments": 4,
+      "systems": [
+        "Hydronic Supply 1",
+        "Hydronic Supply 13"
+      ],
+      "total_m": 0.232,
+      "density_m_per_m2": 0.106,
+      "thermostat": false
+    },
+    {
+      "level": "01. Planta Alta",
+      "room": "Sala de Maquinas",
+      "roomId": "892788",
+      "roomArea_m2": 4.785,
+      "supply_m": 8.055,
+      "return_m": 8.513,
+      "segments": 12,
+      "systems": [
+        "Hydronic Supply 13"
+      ],
+      "total_m": 16.567,
+      "density_m_per_m2": 3.462,
+      "thermostat": false
+    },
+    {
+      "level": "01. Planta Alta",
+      "room": "Sala de TV",
+      "roomId": "864264",
+      "roomArea_m2": 14.985,
+      "supply_m": 39.956,
+      "return_m": 33.742,
+      "segments": 41,
+      "systems": [
+        "Hydronic Supply 13"
+      ],
+      "total_m": 73.698,
+      "density_m_per_m2": 4.918,
+      "thermostat": false
+    },
+    {
+      "level": "01. Planta Alta",
+      "room": "Toilette",
+      "roomId": "863692",
+      "roomArea_m2": 5.121,
+      "supply_m": 3.718,
+      "return_m": 5.118,
+      "segments": 12,
+      "systems": [
+        "Hydronic Supply 1"
+      ],
+      "total_m": 8.836,
+      "density_m_per_m2": 1.725,
+      "thermostat": false
+    },
+    {
+      "level": "01. Planta Alta",
+      "room": null,
+      "roomId": null,
+      "roomArea_m2": null,
+      "supply_m": 16.878,
+      "return_m": 16.167,
+      "segments": 14,
+      "systems": [
+        "Hydronic Supply 1",
+        "Hydronic Supply 13"
+      ],
+      "total_m": 33.046,
+      "density_m_per_m2": null,
+      "thermostat": false
+    },
+    {
+      "level": "02. Planta Entrepiso",
+      "room": "Atelier",
+      "roomId": "876161",
+      "roomArea_m2": 19.361,
+      "supply_m": 65.785,
+      "return_m": 28.836,
+      "segments": 64,
+      "systems": [
+        "Hydronic Supply 1"
+      ],
+      "total_m": 94.621,
+      "density_m_per_m2": 4.887,
+      "thermostat": false
+    },
+    {
+      "level": "02. Planta Entrepiso",
+      "room": "SM",
+      "roomId": "876170",
+      "roomArea_m2": 6.561,
+      "supply_m": 0.0,
+      "return_m": 1.818,
+      "segments": 1,
+      "systems": [
+        "Hydronic Supply 1"
+      ],
+      "total_m": 1.818,
+      "density_m_per_m2": 0.277,
+      "thermostat": false
+    },
+    {
+      "level": "02. Planta Entrepiso",
+      "room": null,
+      "roomId": null,
+      "roomArea_m2": null,
+      "supply_m": 19.001,
+      "return_m": 18.939,
+      "segments": 26,
+      "systems": [
+        "Hydronic Supply 1"
+      ],
+      "total_m": 37.94,
+      "density_m_per_m2": null,
+      "thermostat": false
+    }
+  ],
+  "floorBuildUp": [
+    {
+      "type": "L01.00 / 20cm",
+      "layers": [
+        {
+          "material": "Piso Vinilico PB",
+          "function": "Finish1",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Adhesivo",
+          "function": "Substrate",
+          "thickness_m": 0.005
+        },
+        {
+          "material": "Carpeta",
+          "function": "Structure",
+          "thickness_m": 0.025
+        },
+        {
+          "material": "PLACA EPS . PR",
+          "function": "Insulation",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Film de Polietileno",
+          "function": "Membrane",
+          "thickness_m": 0.0
+        },
+        {
+          "material": "Contrapiso",
+          "function": "Structure",
+          "thickness_m": 0.1
+        },
+        {
+          "material": "EPS",
+          "function": "Insulation",
+          "thickness_m": 0.03
+        }
+      ]
+    },
+    {
+      "type": "L01.01 / 30cm",
+      "layers": [
+        {
+          "material": "Carpet",
+          "function": "Structure",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Carpeta",
+          "function": "Substrate",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "EPS",
+          "function": "Structure",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Contrapiso",
+          "function": "Structure",
+          "thickness_m": 0.06
+        },
+        {
+          "material": "PLACA EPS . PR",
+          "function": "Insulation",
+          "thickness_m": 0.03
+        },
+        {
+          "material": "Hormigon",
+          "function": "Structure",
+          "thickness_m": 0.15
+        }
+      ]
+    },
+    {
+      "type": "L02.00 / 20cm",
+      "layers": [
+        {
+          "material": "Piso Vinilico PB",
+          "function": "Finish1",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Adhesivo",
+          "function": "Substrate",
+          "thickness_m": 0.005
+        },
+        {
+          "material": "Carpeta",
+          "function": "Structure",
+          "thickness_m": 0.025
+        },
+        {
+          "material": "PLACA EPS . PR",
+          "function": "Insulation",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Film de Polietileno",
+          "function": "Membrane",
+          "thickness_m": 0.0
+        },
+        {
+          "material": "Contrapiso",
+          "function": "Structure",
+          "thickness_m": 0.1
+        },
+        {
+          "material": "PLACA EPS . PR",
+          "function": "Insulation",
+          "thickness_m": 0.03
+        }
+      ]
+    },
+    {
+      "type": "L03.00 / 20cm",
+      "layers": [
+        {
+          "material": "Piso Vinilico PB",
+          "function": "Finish1",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Adhesivo",
+          "function": "Substrate",
+          "thickness_m": 0.005
+        },
+        {
+          "material": "Carpeta",
+          "function": "Structure",
+          "thickness_m": 0.025
+        },
+        {
+          "material": "PLACA EPS . PR",
+          "function": "Insulation",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Film de Polietileno",
+          "function": "Membrane",
+          "thickness_m": 0.0
+        },
+        {
+          "material": "Contrapiso",
+          "function": "Structure",
+          "thickness_m": 0.1
+        },
+        {
+          "material": "PLACA EPS . PR",
+          "function": "Insulation",
+          "thickness_m": 0.03
+        }
+      ]
+    },
+    {
+      "type": "L05.00 / 20cm",
+      "layers": [
+        {
+          "material": "Piso Vinilico PB",
+          "function": "Finish1",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Adhesivo",
+          "function": "Substrate",
+          "thickness_m": 0.005
+        },
+        {
+          "material": "Carpeta",
+          "function": "Structure",
+          "thickness_m": 0.025
+        },
+        {
+          "material": "PLACA EPS . PR",
+          "function": "Insulation",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Film de Polietileno",
+          "function": "Membrane",
+          "thickness_m": 0.0
+        },
+        {
+          "material": "Contrapiso",
+          "function": "Structure",
+          "thickness_m": 0.1
+        },
+        {
+          "material": "EPS",
+          "function": "Insulation",
+          "thickness_m": 0.03
+        }
+      ]
+    },
+    {
+      "type": "L06.00 / 20cm",
+      "layers": [
+        {
+          "material": "Piso Vinilico PB",
+          "function": "Finish1",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Adhesivo",
+          "function": "Substrate",
+          "thickness_m": 0.005
+        },
+        {
+          "material": "Carpeta",
+          "function": "Structure",
+          "thickness_m": 0.025
+        },
+        {
+          "material": "PLACA EPS . PR",
+          "function": "Insulation",
+          "thickness_m": 0.02
+        },
+        {
+          "material": "Film de Polietileno",
+          "function": "Membrane",
+          "thickness_m": 0.0
+        },
+        {
+          "material": "Contrapiso",
+          "function": "Structure",
+          "thickness_m": 0.1
+        },
+        {
+          "material": "EPS",
+          "function": "Insulation",
+          "thickness_m": 0.03
+        }
+      ]
+    }
+  ],
+  "existingDocumentation": {
+    "sheets": [
+      {
+        "name": "Planta Baja",
+        "number": "CAL. 00",
+        "id": 2398872
+      },
+      {
+        "name": "Baño invitados",
+        "number": "CAL.0002",
+        "id": 2399008
+      },
+      {
+        "name": "Atelier",
+        "number": "CAL.0201",
+        "id": 2399238
+      },
+      {
+        "name": "Colector Norte",
+        "number": "CAL.0202",
+        "id": 2399471
+      },
+      {
+        "name": "Colector Sur",
+        "number": "CAL.0101",
+        "id": 2399522
+      },
+      {
+        "name": "Salas de Máquinas",
+        "number": "CAL.0103",
+        "id": 2399563
+      },
+      {
+        "name": "Planta Alta",
+        "number": "CAL. 01",
+        "id": 2399709
+      },
+      {
+        "name": "Planta Entrepiso",
+        "number": "CAL. 02",
+        "id": 2399778
+      },
+      {
+        "name": "Cuartos invitados",
+        "number": "CAL.0001",
+        "id": 2399794
+      },
+      {
+        "name": "Servicio",
+        "number": "CAL.0007",
+        "id": 2400087
+      }
+    ],
+    "views": [
+      {
+        "type": "Section",
+        "id": 2244331,
+        "name": "P.DET - COLECTOR NORTE",
+        "onSheet": null
+      },
+      {
+        "type": "Section",
+        "id": 2244654,
+        "name": "CALEFACCIÓN",
+        "onSheet": null
+      },
+      {
+        "type": "Section",
+        "id": 2265877,
+        "name": "P.DET - COLECTOR SUR",
+        "onSheet": null
+      },
+      {
+        "type": "DrawingSheet",
+        "id": 2399471,
+        "name": "Colector Norte",
+        "onSheet": null
+      },
+      {
+        "type": "DrawingSheet",
+        "id": 2399522,
+        "name": "Colector Sur",
+        "onSheet": null
+      },
+      {
+        "type": "ThreeD",
+        "id": 2406180,
+        "name": "ADER SAN - COCINA - AXO SIN CALEFACCION",
+        "onSheet": null
+      }
+    ]
+  },
+  "notModeled": [
+    "Bomba de calor inverter aire-agua (unidad exterior / hidrokit): no hay equipo en el modelo. Solo existe una bomba centrífuga Grundfos genérica en PB sin tipo de catálogo.",
+    "Separación de circuitos: los serpentines están en solo 4 sistemas de tubería (Hydronic Supply 1/3/13/19); no hay un sistema ni un código por circuito/local, ni vínculo con la salida del colector.",
+    "Retorno clasificado como \"Hydronic Supply\": las tuberías \"CAL - Retorno\" usan el sistema de impulsión; falta el sistema Hydronic Return.",
+    "Espacios MEP y zonas HVAC: 0 espacios y solo la zona Default; no hay cargas térmicas ni caudales por local.",
+    "Capa de piso radiante: los tipos de piso tienen carpeta 2,5 cm + EPS pero no una capa específica de serpentín / panel radiante; el espesor de carpeta sobre tubo no está verificado.",
+    "Tanque de inercia, vaso de expansión, válvula mezcladora, aislación de montantes y control (cabezales electrotérmicos instanciados = 0; la familia está cargada).",
+    "Refrescamiento: no hay datos de punto de rocío / control de condensación para el modo frío."
+  ],
+  "quantityTakeoff": {
+    "structure": "Por colector → circuito (salida) → local: longitud de mando + retorno, área servida, densidad m/m² (≈6,7 m/m² para paso 15 cm), largo máximo por circuito (≤100–120 m con Ø20), cabezal y termostato asociados.",
+    "perRoomCurrent": "circuitsByRoom (longitud horizontal por local según IsPointInRoom en el nivel de cada tramo). Densidades bajas (<4 m/m²) indican circuitos incompletos o solo distribución.",
+    "totals": [
+      "Tubo PEX Ø20 en rollos (mando 400 m / retorno 200 m según tipos)",
+      "Colectores por cantidad de salidas",
+      "Gabinetes",
+      "Cabezales electrotérmicos",
+      "Termostatos",
+      "Placa EPS / film / zócalo perimetral (m² y ml por local)",
+      "Carpeta (m³ por local)"
+    ]
+  },
+  "proposal": {
+    "numbering": "CR-<colector>-<nn> por circuito (CR-N-01… Colector Norte; CR-S-01… Colector Sur), escrito en Mark o Comments de cada tramo y en un sistema de tubería por circuito.",
+    "sheets": [
+      {
+        "number": "CLI-00",
+        "title": "Esquema de principio: bomba de calor inverter, inercia, colectores Norte/Sur, circuitos y control"
+      },
+      {
+        "number": "CLI-PB-01",
+        "title": "Planta PB · serpentines por local con código de circuito, longitud y paso"
+      },
+      {
+        "number": "CLI-PA-01",
+        "title": "Planta PA · ídem"
+      },
+      {
+        "number": "CLI-PE-01",
+        "title": "Planta PE · ídem"
+      },
+      {
+        "number": "CLI-COL-N / CLI-COL-S",
+        "title": "Colectores: vista frontal, salidas numeradas, planilla de circuitos (local, m, caudal) (hoy existen CAL.0202 y CAL.0101)"
+      },
+      {
+        "number": "CLI-DET-01",
+        "title": "Detalle de paquete de piso: platea/losa, EPS, film, tubo, carpeta, terminación; zócalo perimetral y juntas"
+      },
+      {
+        "number": "CLI-REV-nn",
+        "title": "Casos de revisión (retorno mal clasificado, circuitos sin local, densidades bajas, falta bomba de calor)"
+      }
+    ],
+    "reuse": "Partir de las láminas CAL existentes (CAL. 00/01/02, CAL.0001/0002/0007/0101/0103/0201/0202) en vez de duplicarlas."
+  },
+  "openQuestions": [
+    "¿Marca/modelo y potencia de la bomba de calor inverter? ¿Ubicación de la unidad exterior y del hidrokit/tanque?",
+    "¿Paso de serpentín y temperatura de diseño (calefacción / refrescamiento)? ¿Hay control de punto de rocío?",
+    "¿Corrijo el sistema de los tramos de retorno a \"Hydronic Return\" y creo un sistema por circuito? Son cambios de parámetros MEP del modelo (no solo documentación): requiere su OK.",
+    "¿Los cuartos de invitados tienen circuitos completos? Las densidades modeladas (~2,3 m/m²) sugieren que solo está el trazado parcial."
+  ]
+}
