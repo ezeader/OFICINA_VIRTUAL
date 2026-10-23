@@ -128,9 +128,9 @@ def wall_elevation(doc, e, row, open_codes, vname=None):
 
 # ---------------------------------------------------------------- sheet layout
 
-def lay_sheet(doc, number, title, sub, items, foot, plan_region=False):
-    sheet = DB.ViewSheet.Create(doc, DB.ElementId(Int64(L.TITLEBLOCK))); sheet.SheetNumber = number; sheet.Name = u'Estructura · ' + number[4:]
-    head = u'CASA ÁNGEL · ESTRUCTURA · ' + u(title).upper()
+def lay_sheet(doc, number, title, sub, items, foot, plan_region=False, rubro=u'ESTRUCTURA', sheet_name=None):
+    sheet = DB.ViewSheet.Create(doc, DB.ElementId(Int64(L.TITLEBLOCK))); sheet.SheetNumber = number; sheet.Name = sheet_name or (u'Estructura · ' + number[4:])
+    head = u'CASA ÁNGEL · ' + rubro + u' · ' + u(title).upper()
     notes = [{'text': head, 'anchor': [L.X0 + .01, L.Y1 - .012]}]
     L.tn(doc, sheet.Id, DB.XYZ(L.X0 + .01, L.Y1 - .012, 0), head, 'title')
     single = len(items) == 1

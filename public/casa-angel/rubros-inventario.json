@@ -1,0 +1,1040 @@
+{
+  "model": "Casa-Angel-piloto-documentacion.rvt",
+  "readAt": "2026-10-23T22:12:07.312000Z",
+  "method": "Inventario de solo lectura por categoría, tipo y material (job R14).",
+  "scale": "computability 0–4: 4 = geometría y tipos suficientes para láminas y cómputo; 0 = no modelado.",
+  "done": [
+    "estructura",
+    "aberturas",
+    "sanitarias"
+  ],
+  "rubros": [
+    {
+      "key": "cubierta",
+      "name": "Cubierta",
+      "modeled": "parcial",
+      "computability": 4,
+      "elements": 206,
+      "types": [
+        {
+          "type": "Basic Roof | Tejas 20mm",
+          "count": 3,
+          "area_m2": 259.02,
+          "volume_m3": 5.16,
+          "length_m": 0.0
+        },
+        {
+          "type": "Construction_Beams-&-Lintels_Metsa-Wood_Kerto-LVL-S-beam-175'' | Correas 15mm x 50mm",
+          "count": 60,
+          "area_m2": 24.17,
+          "volume_m3": 0.28,
+          "length_m": 376.8
+        },
+        {
+          "type": "Construction_Beams-&-Lintels_Metsa-Wood_Kerto-LVL-S-beam-175'' | Viga Cubierta 200mm x 60mm",
+          "count": 34,
+          "area_m2": 47.75,
+          "volume_m3": 2.18,
+          "length_m": 182.43
+        },
+        {
+          "type": "Construction_Beams-&-Lintels_Metsa-Wood_Kerto-LVL-S-beam-175'' | Viga Principal 3cm x 10cm",
+          "count": 101,
+          "area_m2": 31.96,
+          "volume_m3": 0.73,
+          "length_m": 254.76
+        },
+        {
+          "type": "Fascia | Fascia",
+          "count": 4,
+          "area_m2": 0.0,
+          "volume_m3": 0.26,
+          "length_m": 75.77
+        },
+        {
+          "type": "Gutter | Gutter",
+          "count": 2,
+          "area_m2": 0.0,
+          "volume_m3": 0.02,
+          "length_m": 14.22
+        },
+        {
+          "type": "Floor | Alero Metalico",
+          "count": 2,
+          "area_m2": 43.34,
+          "volume_m3": 6.5,
+          "length_m": 0.0
+        }
+      ],
+      "quantities": {
+        "tejas_m2": 259.02,
+        "faldones": 3,
+        "vigas_cubierta_ml": 182.43,
+        "vigas_principales_ml": 254.76,
+        "correas_ml": 376.8,
+        "madera_m3": 3.19,
+        "fascia_ml": 75.77,
+        "canaletas_ml": 14.22,
+        "alero_metalico_m2": 43.34
+      },
+      "missing": [
+        "Membrana / aislación térmica e hidrófuga (el tipo \"Tejas 20mm\" solo tiene madera 15 mm + 5 mm)",
+        "Bajadas pluviales y zinguería completa (solo 2 canaletas, 14 ml)",
+        "Cumbreras, limatesas y babetas",
+        "Pendiente como parámetro de cada faldón (verificar)",
+        "Vigas de madera sin nivel asignado (195 con \"(sin nivel)\")"
+      ],
+      "notes": "Rubro con mejor capacidad de cómputo después de estructura y aberturas: faldones, vigas y correas medibles. Láminas siguientes recomendadas."
+    },
+    {
+      "key": "pisos",
+      "name": "Pisos y zócalos",
+      "modeled": "parcial",
+      "computability": 4,
+      "elements": 33,
+      "types": [
+        {
+          "type": "Floor | Deck Terraza PA 05cm",
+          "count": 2,
+          "area_m2": 81.54,
+          "volume_m3": 4.08,
+          "length_m": 0.0
+        },
+        {
+          "type": "Floor | Escalones 20cm",
+          "count": 4,
+          "area_m2": 2.57,
+          "volume_m3": 0.51,
+          "length_m": 0.0
+        },
+        {
+          "type": "Floor | Escalones acceso 2m x 1m",
+          "count": 6,
+          "area_m2": 12.0,
+          "volume_m3": 1.2,
+          "length_m": 0.0
+        },
+        {
+          "type": "Floor | L01.00 / 20cm",
+          "count": 5,
+          "area_m2": 133.51,
+          "volume_m3": 26.7,
+          "length_m": 0.0
+        },
+        {
+          "type": "Floor | L01.01 / 30cm",
+          "count": 4,
+          "area_m2": 127.56,
+          "volume_m3": 38.27,
+          "length_m": 0.0
+        },
+        {
+          "type": "Floor | L01.02 / 20cm",
+          "count": 1,
+          "area_m2": 20.37,
+          "volume_m3": 4.07,
+          "length_m": 0.0
+        },
+        {
+          "type": "Floor | L02.00 / 20cm",
+          "count": 1,
+          "area_m2": 25.08,
+          "volume_m3": 5.02,
+          "length_m": 0.0
+        },
+        {
+          "type": "Floor | L03.00 / 20cm",
+          "count": 1,
+          "area_m2": 24.39,
+          "volume_m3": 4.88,
+          "length_m": 0.0
+        },
+        {
+          "type": "Floor | L04.01 / 20cm",
+          "count": 1,
+          "area_m2": 3.52,
+          "volume_m3": 0.7,
+          "length_m": 0.0
+        },
+        {
+          "type": "Floor | L05.00 / 20cm",
+          "count": 1,
+          "area_m2": 42.3,
+          "volume_m3": 8.46,
+          "length_m": 0.0
+        },
+        {
+          "type": "Floor | L06.00 / 20cm",
+          "count": 1,
+          "area_m2": 45.5,
+          "volume_m3": 9.1,
+          "length_m": 0.0
+        },
+        {
+          "type": "Floor | L07.01 / 20cm",
+          "count": 1,
+          "area_m2": 11.2,
+          "volume_m3": 2.24,
+          "length_m": 0.0
+        },
+        {
+          "type": "Wall Sweep | Zocalo",
+          "count": 5,
+          "area_m2": 0.0,
+          "volume_m3": 0.15,
+          "length_m": 25.61
+        }
+      ],
+      "quantities": {
+        "vinilico_PB_m2": 270.78,
+        "alfombra_L01_01_m2": 127.56,
+        "madera_PA_m2": 35.09,
+        "deck_m2": 81.54,
+        "escalones_m2": 14.57,
+        "zocalos_ml": 25.61,
+        "zocalos_tramos": 5
+      },
+      "missing": [
+        "Zócalos solo en 5 tramos de PB (25,6 ml): faltan el resto de los locales",
+        "Pisos de baños / cerámicos específicos (los paquetes usan \"Piso Vinilico PB\")",
+        "Umbrales y solias"
+      ],
+      "notes": "Paquetes de piso por tipo con capa de terminación: m² por local derivables cruzando con los locales."
+    },
+    {
+      "key": "climatizacion",
+      "name": "Climatización (piso radiante)",
+      "modeled": "parcial",
+      "computability": 3,
+      "elements": 878,
+      "types": [
+        {
+          "type": "Pipe Types | CAL - Mando - Tubo Hidroflex PEX  -  Rollo 400 | Hydronic Supply",
+          "count": 483,
+          "area_m2": 0.0,
+          "volume_m3": 0.25,
+          "length_m": 802.38
+        },
+        {
+          "type": "Pipe Types | CAL - Retorno - Tubo Hidroflex PEX  -  Rollo 200 | Hydronic Supply",
+          "count": 380,
+          "area_m2": 0.0,
+          "volume_m3": 0.19,
+          "length_m": 597.11
+        },
+        {
+          "type": "Hidroflex - Colector Modelo LUXUS Poliamida AR | Industrias - Saladillo",
+          "count": 2,
+          "area_m2": 0.64,
+          "volume_m3": 0.01,
+          "length_m": 0.0
+        },
+        {
+          "type": "Hidroflex - Crono termostato inálambrico | Awaduct - Saladillo",
+          "count": 11,
+          "area_m2": 0.16,
+          "volume_m3": 0.0,
+          "length_m": 0.0
+        },
+        {
+          "type": "Hidroflex - Gabinete para colectores ajustable | Hidroflex - Gabinete para colectores - 2 y 3 Salidas",
+          "count": 2,
+          "area_m2": 2.05,
+          "volume_m3": 0.0,
+          "length_m": 0.0
+        }
+      ],
+      "quantities": {
+        "pex_ml": 1399.5,
+        "colectores": 2,
+        "termostatos": 11
+      },
+      "missing": [
+        "Bomba de calor inverter",
+        "Sistemas por circuito / retorno como Hydronic Return",
+        "Espacios MEP y cargas"
+      ],
+      "notes": "Ver public/casa-angel/climatizacion/manifest.json."
+    },
+    {
+      "key": "albanileria",
+      "name": "Albañilería (muros y tabiques no estructurales)",
+      "modeled": "parcial",
+      "computability": 3,
+      "elements": 60,
+      "types": [
+        {
+          "type": "Basic Wall | Bajo Escalera",
+          "count": 3,
+          "area_m2": 8.81,
+          "volume_m3": 0.88,
+          "length_m": 6.94
+        },
+        {
+          "type": "Basic Wall | Cierre Cielorraso",
+          "count": 8,
+          "area_m2": 7.06,
+          "volume_m3": 0.14,
+          "length_m": 26.41
+        },
+        {
+          "type": "Basic Wall | Durlock Chimenea",
+          "count": 3,
+          "area_m2": 2.5,
+          "volume_m3": 0.13,
+          "length_m": 2.7
+        },
+        {
+          "type": "Basic Wall | Interior - Blockwork 101",
+          "count": 8,
+          "area_m2": 3.08,
+          "volume_m3": 0.15,
+          "length_m": 4.4
+        },
+        {
+          "type": "Basic Wall | Muro Fachada eje",
+          "count": 4,
+          "area_m2": 34.59,
+          "volume_m3": 5.11,
+          "length_m": 16.89
+        },
+        {
+          "type": "Basic Wall | Muro Fachada ppal",
+          "count": 4,
+          "area_m2": 47.37,
+          "volume_m3": 4.7,
+          "length_m": 15.7
+        },
+        {
+          "type": "Basic Wall | Muro Interior 10cm",
+          "count": 12,
+          "area_m2": 77.11,
+          "volume_m3": 7.67,
+          "length_m": 27.55
+        },
+        {
+          "type": "Basic Wall | Muro Interior 20cm",
+          "count": 1,
+          "area_m2": 5.16,
+          "volume_m3": 0.72,
+          "length_m": 2.8
+        },
+        {
+          "type": "Basic Wall | W111.ar 70.400 ST 12.5",
+          "count": 11,
+          "area_m2": 54.16,
+          "volume_m3": 5.14,
+          "length_m": 29.7
+        },
+        {
+          "type": "Basic Wall | W112.ar 70.400 ST.RH 12.5",
+          "count": 6,
+          "area_m2": 52.72,
+          "volume_m3": 5.82,
+          "length_m": 21.46
+        }
+      ],
+      "quantities": {
+        "count": 60,
+        "area_m2": 292.56,
+        "volume_m3": 30.46,
+        "length_m": 154.55,
+        "durlock_m2": 106.88,
+        "muros_interiores_m2": 94.17,
+        "fachadas_m2": 81.96
+      },
+      "missing": [
+        "Composición real de muros de mampostería (los tipos tienen una sola capa \"White Paint\")",
+        "Revoques, dinteles y refuerzos",
+        "Encuentros con estructura"
+      ],
+      "notes": "Durlock W111/W112 con capas reales (placas + montantes). Mampostería: área y largo confiables, materiales no."
+    },
+    {
+      "key": "cielorrasos",
+      "name": "Cielorrasos",
+      "modeled": "parcial",
+      "computability": 3,
+      "elements": 14,
+      "types": [
+        {
+          "type": "Compound Ceiling | Placa de Yeso RH 12,5mm Knauf",
+          "count": 5,
+          "area_m2": 31.23,
+          "volume_m3": 0.39,
+          "length_m": 0.0
+        },
+        {
+          "type": "Compound Ceiling | Placa de Yeso ST 12,5mm Knauf",
+          "count": 3,
+          "area_m2": 29.77,
+          "volume_m3": 0.37,
+          "length_m": 0.0
+        },
+        {
+          "type": "Compound Ceiling | Plain",
+          "count": 6,
+          "area_m2": 47.7,
+          "volume_m3": 2.72,
+          "length_m": 0.0
+        }
+      ],
+      "quantities": {
+        "count": 14,
+        "area_m2": 108.7,
+        "volume_m3": 3.48,
+        "length_m": 0.0,
+        "yeso_RH_m2": 31.23,
+        "yeso_ST_m2": 29.77,
+        "plain_PA_m2": 47.7
+      },
+      "missing": [
+        "Cielorrasos de PE y de varios locales de PB/PA (108,7 m² modelados vs ~480 m² de locales)",
+        "Buñas, tapas de inspección, cajones"
+      ],
+      "notes": "Placas Knauf ST/RH en PB, \"Plain\" genérico en PA."
+    },
+    {
+      "key": "pileta",
+      "name": "Pileta",
+      "modeled": "parcial",
+      "computability": 3,
+      "elements": 7,
+      "types": [
+        {
+          "type": "Basic Wall | Muro Pileta",
+          "count": 4,
+          "area_m2": 39.55,
+          "volume_m3": 7.91,
+          "length_m": 19.77
+        },
+        {
+          "type": "Floor | Borde pileta",
+          "count": 1,
+          "area_m2": 38.15,
+          "volume_m3": 5.72,
+          "length_m": 0.0
+        },
+        {
+          "type": "Floor | Piso Pileta",
+          "count": 1,
+          "area_m2": 21.86,
+          "volume_m3": 3.28,
+          "length_m": 0.0
+        },
+        {
+          "type": "Agua pileta | Agua pileta",
+          "count": 1,
+          "area_m2": 17.91,
+          "volume_m3": 35.81,
+          "length_m": 0.0
+        }
+      ],
+      "quantities": {
+        "muros_m2": 39.55,
+        "piso_m2": 21.86,
+        "borde_m2": 38.15,
+        "agua_m3": 35.81
+      },
+      "missing": [
+        "Equipo de filtrado, bomba, cañerías y skimmers",
+        "Iluminación",
+        "Estructura de la pileta (muros como \"Venecitas\" 20 cm)"
+      ],
+      "notes": "Geometría del vaso y revestimiento venecitas modelados."
+    },
+    {
+      "key": "exteriores",
+      "name": "Exteriores y paisajismo",
+      "modeled": "parcial",
+      "computability": 2,
+      "elements": 20,
+      "types": [
+        {
+          "type": "Toposolid | Grassland - 1200mm",
+          "count": 4,
+          "area_m2": 5290.79,
+          "volume_m3": 5378.7,
+          "length_m": 0.0
+        },
+        {
+          "type": "Floor | Base Acceso",
+          "count": 1,
+          "area_m2": 28.84,
+          "volume_m3": 34.61,
+          "length_m": 0.0
+        },
+        {
+          "type": "Floor | Calle",
+          "count": 1,
+          "area_m2": 1576.66,
+          "volume_m3": 1576.66,
+          "length_m": 0.0
+        },
+        {
+          "type": "Railing | BARANDA ESC. INT",
+          "count": 9,
+          "area_m2": 0.0,
+          "volume_m3": 0.0,
+          "length_m": 73.92
+        },
+        {
+          "type": "Basic Wall | Hojas Portón 5cm",
+          "count": 5,
+          "area_m2": 20.55,
+          "volume_m3": 1.03,
+          "length_m": 7.54
+        }
+      ],
+      "quantities": {
+        "terreno_m2": 5290.79,
+        "calle_m2": 1576.66,
+        "barandas_ml": 73.92,
+        "porton_m2": 20.55,
+        "vegetacion_colocada": 0
+      },
+      "missing": [
+        "Vegetación (familias de árboles cargadas, 0 colocadas)",
+        "Solados exteriores, cercos, riego, iluminación exterior"
+      ],
+      "notes": "Terreno (toposólido) y \"Calle\" como piso de 1 m de tierra."
+    },
+    {
+      "key": "equipamiento",
+      "name": "Equipamiento y mobiliario fijo",
+      "modeled": "parcial",
+      "computability": 2,
+      "elements": 106,
+      "types": [
+        {
+          "type": "Cajonera | Base - (On) Countertop - (Gra betong 600) Handle - (Trad rostfri c/c 128mm)",
+          "count": 3,
+          "area_m2": 5.32,
+          "volume_m3": 1.34,
+          "length_m": 0.0
+        },
+        {
+          "type": "Armario/ tele1 | Armario/ tele",
+          "count": 1,
+          "area_m2": 3.2,
+          "volume_m3": 0.8,
+          "length_m": 0.0
+        },
+        {
+          "type": "Armario/ tele3 | Armario/ tele",
+          "count": 1,
+          "area_m2": 3.2,
+          "volume_m3": 0.8,
+          "length_m": 0.0
+        },
+        {
+          "type": "Armario/ tele4 | Armario/ tele",
+          "count": 1,
+          "area_m2": 3.2,
+          "volume_m3": 0.8,
+          "length_m": 0.0
+        },
+        {
+          "type": "Armario1 | Armario",
+          "count": 1,
+          "area_m2": 1.89,
+          "volume_m3": 5.3,
+          "length_m": 0.0
+        },
+        {
+          "type": "Armario3 | Armario",
+          "count": 1,
+          "area_m2": 1.92,
+          "volume_m3": 5.38,
+          "length_m": 0.0
+        },
+        {
+          "type": "Armario4 | Armario",
+          "count": 1,
+          "area_m2": 2.21,
+          "volume_m3": 5.97,
+          "length_m": 0.0
+        },
+        {
+          "type": "Armario5 | Armario",
+          "count": 1,
+          "area_m2": 1.3,
+          "volume_m3": 3.63,
+          "length_m": 0.0
+        },
+        {
+          "type": "Armario6 | Armario",
+          "count": 1,
+          "area_m2": 1.22,
+          "volume_m3": 2.35,
+          "length_m": 0.0
+        },
+        {
+          "type": "Bacha Baño Ppal | Bacha Baño Ppal",
+          "count": 1,
+          "area_m2": 1.63,
+          "volume_m3": 1.05,
+          "length_m": 0.0
+        },
+        {
+          "type": "Bacha Baño Ppal1 | Bacha Baño Ppal",
+          "count": 1,
+          "area_m2": 1.16,
+          "volume_m3": 0.35,
+          "length_m": 0.0
+        },
+        {
+          "type": "Bacha Baño Ppal2 | Bacha Baño Ppal",
+          "count": 1,
+          "area_m2": 0.87,
+          "volume_m3": 0.52,
+          "length_m": 0.0
+        },
+        {
+          "type": "Bacha Baño Ppal4 | Bacha Baño Ppal",
+          "count": 1,
+          "area_m2": 0.97,
+          "volume_m3": 0.53,
+          "length_m": 0.0
+        },
+        {
+          "type": "Bacha Baño Ppal5 | Bacha Baño Ppal",
+          "count": 1,
+          "area_m2": 0.85,
+          "volume_m3": 0.51,
+          "length_m": 0.0
+        },
+        {
+          "type": "Bacha Baño Ppal6 | Bacha Baño Ppal",
+          "count": 1,
+          "area_m2": 0.87,
+          "volume_m3": 0.52,
+          "length_m": 0.0
+        },
+        {
+          "type": "Bacha doble | 260 - White Matt",
+          "count": 1,
+          "area_m2": 0.8,
+          "volume_m3": 0.04,
+          "length_m": 0.0
+        },
+        {
+          "type": "Cama doble | XANDAI SAND",
+          "count": 1,
+          "area_m2": 0.0,
+          "volume_m3": 1.63,
+          "length_m": 0.0
+        },
+        {
+          "type": "Escritorio | Pos. 1.4  (2250x1000/700-1150 mm = 89x39/28-45 min)",
+          "count": 2,
+          "area_m2": 0.0,
+          "volume_m3": 0.17,
+          "length_m": 0.0
+        },
+        {
+          "type": "Furniture_Chairs-Stools-Benches_Enea_Coma-Wood-medium-stool | Coma Wood Medium Stool",
+          "count": 3,
+          "area_m2": 2.12,
+          "volume_m3": 0.33,
+          "length_m": 0.0
+        },
+        {
+          "type": "Furniture_Sofas-Armchairs_Icons-of-Denmark_ EC1-Sofa_Configuration2 | Default",
+          "count": 1,
+          "area_m2": 7.18,
+          "volume_m3": 2.42,
+          "length_m": 0.0
+        },
+        {
+          "type": "Furniture_Sofas-Armchairs_Icons-of-Denmark_ EC1-Sofa_Configuration4 | Default",
+          "count": 2,
+          "area_m2": 6.86,
+          "volume_m3": 2.28,
+          "length_m": 0.0
+        },
+        {
+          "type": "Hans_J_Wenger_Wishbone_chair_14325 | Hans_J_Wenger_Wishbone_chair_14325",
+          "count": 16,
+          "area_m2": 12.35,
+          "volume_m3": 0.08,
+          "length_m": 0.0
+        },
+        {
+          "type": "Lavadero | Lavadero",
+          "count": 1,
+          "area_m2": 0.96,
+          "volume_m3": 0.96,
+          "length_m": 0.0
+        },
+        {
+          "type": "Lavadero1 | Lavadero",
+          "count": 1,
+          "area_m2": 0.96,
+          "volume_m3": 0.96,
+          "length_m": 0.0
+        },
+        {
+          "type": "Mesa de luz1 | Mesa de luz",
+          "count": 1,
+          "area_m2": 0.24,
+          "volume_m3": 0.05,
+          "length_m": 0.0
+        },
+        {
+          "type": "Mesa de luz4 | Mesa de luz",
+          "count": 1,
+          "area_m2": 0.24,
+          "volume_m3": 0.05,
+          "length_m": 0.0
+        },
+        {
+          "type": "Mesa de luz5 | Mesa de luz",
+          "count": 1,
+          "area_m2": 0.24,
+          "volume_m3": 0.05,
+          "length_m": 0.0
+        },
+        {
+          "type": "Mesa de luz6 | Mesa de luz",
+          "count": 1,
+          "area_m2": 0.24,
+          "volume_m3": 0.05,
+          "length_m": 0.0
+        },
+        {
+          "type": "Mesa de luz7 | Mesa de luz",
+          "count": 1,
+          "area_m2": 0.24,
+          "volume_m3": 0.05,
+          "length_m": 0.0
+        },
+        {
+          "type": "Mesa de luz8 | Mesa de luz",
+          "count": 1,
+          "area_m2": 0.24,
+          "volume_m3": 0.05,
+          "length_m": 0.0
+        },
+        {
+          "type": "Mesa de luz9 | Mesa de luz",
+          "count": 1,
+          "area_m2": 0.24,
+          "volume_m3": 0.05,
+          "length_m": 0.0
+        },
+        {
+          "type": "Mesa de pool | Mesa de pool",
+          "count": 1,
+          "area_m2": 8.12,
+          "volume_m3": 1.14,
+          "length_m": 0.0
+        },
+        {
+          "type": "Mesa redonda | Default",
+          "count": 1,
+          "area_m2": 3.26,
+          "volume_m3": 1.09,
+          "length_m": 0.0
+        },
+        {
+          "type": "Mesada Quincho | Mesada Quincho",
+          "count": 1,
+          "area_m2": 2.86,
+          "volume_m3": 2.86,
+          "length_m": 0.0
+        },
+        {
+          "type": "Mesada | Mesada",
+          "count": 1,
+          "area_m2": 1.55,
+          "volume_m3": 1.4,
+          "length_m": 0.0
+        },
+        {
+          "type": "Mueble Pared PA | Mueble Pared PA",
+          "count": 1,
+          "area_m2": 0.96,
+          "volume_m3": 0.96,
+          "length_m": 0.0
+        },
+        {
+          "type": "Mueble Pared2 PA | Mueble Pared2 PA",
+          "count": 1,
+          "area_m2": 0.76,
+          "volume_m3": 0.68,
+          "length_m": 0.0
+        },
+        {
+          "type": "Mueble Vinoteca1 | Mueble Vinoteca",
+          "count": 1,
+          "area_m2": 0.65,
+          "volume_m3": 0.65,
+          "length_m": 0.0
+        },
+        {
+          "type": "Mueble Vinoteca2 | Mueble Vinoteca",
+          "count": 1,
+          "area_m2": 2.1,
+          "volume_m3": 2.1,
+          "length_m": 0.0
+        },
+        {
+          "type": "Silla Oficina | TUXEDO-H/SIN/NLB",
+          "count": 1,
+          "area_m2": 3.32,
+          "volume_m3": 0.49,
+          "length_m": 0.0
+        },
+        {
+          "type": "Sofa Playroom | Default",
+          "count": 1,
+          "area_m2": 8.82,
+          "volume_m3": 3.11,
+          "length_m": 0.0
+        },
+        {
+          "type": "Bacha sobre mesada | 00 - White",
+          "count": 7,
+          "area_m2": 1.6,
+          "volume_m3": 0.13,
+          "length_m": 0.0
+        },
+        {
+          "type": "Bacha sobre mesada | 62 - Matt white",
+          "count": 2,
+          "area_m2": 0.46,
+          "volume_m3": 0.04,
+          "length_m": 0.0
+        },
+        {
+          "type": "Bidet | 00 - White",
+          "count": 7,
+          "area_m2": 5.0,
+          "volume_m3": 0.59,
+          "length_m": 0.0
+        },
+        {
+          "type": "Inodoro | 62 - Matt White",
+          "count": 7,
+          "area_m2": 5.66,
+          "volume_m3": 0.68,
+          "length_m": 0.0
+        },
+        {
+          "type": "Modern_Sink_18457 | Modern_Sink_18457",
+          "count": 3,
+          "area_m2": 3.61,
+          "volume_m3": 0.09,
+          "length_m": 0.0
+        },
+        {
+          "type": "SHOWER COLUMN- 10A7A04 | SHOWER COLUMN- 10A7A04",
+          "count": 1,
+          "area_m2": 0.05,
+          "volume_m3": 0.0,
+          "length_m": 0.0
+        },
+        {
+          "type": "Sanitary_Showers_Roca_5B2250XX0-Rainsense-Shower-head-for-ceiling-or-wall-installation | B0 - Matt white",
+          "count": 4,
+          "area_m2": 0.3,
+          "volume_m3": 0.0,
+          "length_m": 0.0
+        },
+        {
+          "type": "Construction_Lifts_TK-Elevator-Elevators_Escalators_Synergy Building-Supported Standard_Entrance | Center Opening",
+          "count": 3,
+          "area_m2": 14.92,
+          "volume_m3": 0.48,
+          "length_m": 0.0
+        },
+        {
+          "type": "FP-Revit-RDV2-304-L-N-DualFuelRange-inches-CA-US-90001541A | FP-Revit-RDV2-304-L-N-DualFuelRange-inches-CA-US-90001541A",
+          "count": 1,
+          "area_m2": 3.96,
+          "volume_m3": 0.29,
+          "length_m": 0.0
+        },
+        {
+          "type": "FP-Revit18-HC60DCEXB3-WallRangehood-0-NZ-AU-UK-IE-EU-SG-CN-ASIA-90001845Arfa | FP-Revit18-HC60DCEXB3-WallRangehood-0-NZ-AU-UK-IE-EU-SG-CN-ASIA-90001845Arfa",
+          "count": 1,
+          "area_m2": 1.69,
+          "volume_m3": 0.03,
+          "length_m": 0.0
+        },
+        {
+          "type": "Heladera | Heladera",
+          "count": 1,
+          "area_m2": 15.16,
+          "volume_m3": 0.93,
+          "length_m": 0.0
+        },
+        {
+          "type": "Mampara en esquina | VICTORIA MR 900 - Quadrant shower enclosure with 2 sliding doors + 2 fixed panels (R550)",
+          "count": 1,
+          "area_m2": 3.31,
+          "volume_m3": 0.06,
+          "length_m": 0.0
+        },
+        {
+          "type": "Mamparas | Ura M163170XXX L4-E - Front shower enclosure with 2 sliding doors + 2 fixed panels",
+          "count": 4,
+          "area_m2": 13.98,
+          "volume_m3": 0.92,
+          "length_m": 0.0
+        },
+        {
+          "type": "Sanitary_Shower-screens_Roca_M1973847D00XXNMN-Victoria-DF-Fixed-panel-for-shower | 12 - CLEAR GLASS / POLISHED SILVER PROFILE",
+          "count": 2,
+          "area_m2": 3.7,
+          "volume_m3": 0.06,
+          "length_m": 0.0
+        }
+      ],
+      "quantities": {
+        "muebles": 59,
+        "bajomesadas": 3,
+        "artefactos_sanitarios": 31,
+        "equipos_especiales": 13
+      },
+      "missing": [
+        "Muebles de cocina completos (solo 3 cajoneras)",
+        "Placares interiores como mobiliario fijo con medidas de fabricación"
+      ],
+      "notes": "Muchos muebles sin nivel (familias in-place)."
+    },
+    {
+      "key": "revestimientos",
+      "name": "Revestimientos",
+      "modeled": "no",
+      "computability": 1,
+      "elements": 0,
+      "types": [],
+      "quantities": {
+        "materiales_en_muros_m2": {
+          "Venecitas": 39.55,
+          "White Paint": 206.01,
+          "Placa de Yeso RH 12,5mm Knauf": 105.29,
+          "Placa de Yeso ST 12,5mm Knauf": 213.75,
+          "Piedra Chimenea": 2.5,
+          "Hormigon fachada": 89.04
+        }
+      },
+      "missing": [
+        "Cerámicos y porcelanatos de baños y cocina",
+        "Capas de terminación de muros (no hay capas Finish en mampostería)",
+        "Revestimiento de fachada (solo \"Hormigon fachada\" 8 cm en 2 tipos)"
+      ],
+      "notes": "Solo venecitas (pileta), piedra (chimenea) y pintura como material genérico."
+    },
+    {
+      "key": "parrilla",
+      "name": "Parrilla",
+      "modeled": "parcial",
+      "computability": 1,
+      "elements": 3,
+      "types": [
+        {
+          "type": "Parrilla | K42DB",
+          "count": 1,
+          "area_m2": 12.75,
+          "volume_m3": 1.4,
+          "length_m": 0.0
+        },
+        {
+          "type": "Round Duct | Parrilla | Mechanical Exhaust Air 1",
+          "count": 1,
+          "area_m2": 0.0,
+          "volume_m3": 0.33,
+          "length_m": 6.81
+        },
+        {
+          "type": "Round Duct | Parrilla | Mechanical Exhaust Air 2",
+          "count": 1,
+          "area_m2": 0.0,
+          "volume_m3": 0.3,
+          "length_m": 6.06
+        }
+      ],
+      "quantities": {
+        "parrilla": 1,
+        "conductos_ml": 12.87
+      },
+      "missing": [
+        "Fogonero, campana, revestimiento refractario y conducto completo hasta cubierta"
+      ],
+      "notes": "Familia \"Parrilla K42DB\" + 2 conductos."
+    },
+    {
+      "key": "electrica",
+      "name": "Eléctrica",
+      "modeled": "no",
+      "computability": 0,
+      "elements": 4,
+      "types": [
+        {
+          "type": "Electrical_Distribution_ABB_Distribution-Panel-Protecta-Compact | EPB25-304C",
+          "count": 1,
+          "area_m2": 1.17,
+          "volume_m3": 0.17,
+          "length_m": 0.0
+        },
+        {
+          "type": "Kitchen_Freestanding-Dishwasher_HAFELE_Raven | Smart Mate _495.06.528",
+          "count": 3,
+          "area_m2": 7.0,
+          "volume_m3": 0.93,
+          "length_m": 0.0
+        }
+      ],
+      "quantities": {
+        "tableros": 1
+      },
+      "missing": [
+        "Bocas, tomas, llaves, luminarias, cañerías y circuitos (0 modelados)",
+        "Las 3 \"Electrical Fixtures\" son lavavajillas mal categorizados"
+      ],
+      "notes": "Solo un tablero ABB en PE."
+    },
+    {
+      "key": "gas",
+      "name": "Gas",
+      "modeled": "no",
+      "computability": 0,
+      "elements": 0,
+      "types": [],
+      "quantities": {},
+      "missing": [
+        "Cañerías, medidor, regulador y artefactos a gas (la cocina dual fuel es equipamiento)"
+      ],
+      "notes": "Sin red de gas modelada."
+    },
+    {
+      "key": "domotica",
+      "name": "Domótica",
+      "modeled": "no",
+      "computability": 0,
+      "elements": 0,
+      "types": [],
+      "quantities": {},
+      "missing": [
+        "Sensores, actuadores, cableado y centrales"
+      ],
+      "notes": "Sin elementos."
+    },
+    {
+      "key": "solar",
+      "name": "Paneles solares",
+      "modeled": "no",
+      "computability": 0,
+      "elements": 0,
+      "types": [],
+      "quantities": {},
+      "missing": [
+        "Paneles, estructura, inversor y cableado"
+      ],
+      "notes": "Sin elementos ni familias."
+    }
+  ]
+}
