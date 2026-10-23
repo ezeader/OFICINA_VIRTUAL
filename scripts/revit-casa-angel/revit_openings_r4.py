@@ -22,7 +22,7 @@ PLAN_VFT, SECTION_VFT, TITLEBLOCK = 49552, 49554, 4428
 SCALES = [10, 15, 20, 25, 30, 40, 50, 60, 75, 100, 125, 150, 200, 250]
 # Inner frame of the A1 title block in sheet feet (measured on exported PDF).
 X0, X1, Y0, Y1 = .215, 2.25, .165, 1.785
-TOP = Y1 - .105; BOTTOM = Y0 + .085
+TOP = Y1 - .15; BOTTOM = Y0 + .085
 LEVEL_CODE = {311: 'PB', 694: 'PA', 353988: 'PE'}
 
 if not os.path.isdir(OUT): os.makedirs(OUT)
@@ -90,10 +90,11 @@ def ptype(e, n):
 # ---------------------------------------------------------------- annotation types
 
 TEXT_TYPES = {
-    'title': ('ADER ABR R4 - Titulo 5mm', 5.0, False),
-    'sub': ('ADER ABR R4 - Subtitulo 3.5mm', 3.5, False),
-    'text': ('ADER ABR R4 - Texto 2.5mm', 2.5, False),
-    'tag': ('ADER ABR R4 - Codigo 3mm', 3.0, True),
+    'title': ('ADER ABR R6 - Titulo 7mm', 7.0, False),
+    'sub': ('ADER ABR R6 - Subtitulo 4.5mm', 4.5, False),
+    'text': ('ADER ABR R6 - Texto 3mm', 3.0, False),
+    'tag': ('ADER ABR R6 - Etiqueta 3.5mm', 3.5, True),
+    'room': ('ADER ABR R6 - Local 4mm', 4.0, False),
 }
 
 def text_type(doc, key):
@@ -118,13 +119,13 @@ def setup(doc):
             set_font(t)
             t.get_Parameter(DB.BuiltInParameter.TEXT_SIZE).Set(size / 304.8)
             t.get_Parameter(DB.BuiltInParameter.TEXT_BOX_VISIBILITY).Set(1 if box else 0)
-            t.get_Parameter(DB.BuiltInParameter.TEXT_BACKGROUND).Set(0 if box else 1)
+            t.get_Parameter(DB.BuiltInParameter.TEXT_BACKGROUND).Set(0 if (box or key == 'room') else 1)
             try: t.get_Parameter(DB.BuiltInParameter.TEXT_WIDTH_SCALE).Set(1.0)
             except: pass
         d2 = next(t for t in DB.FilteredElementCollector(doc).OfClass(DB.DimensionType) if name(t) == 'ADER ABR R2 - Cotas')
         d4 = next((t for t in DB.FilteredElementCollector(doc).OfClass(DB.DimensionType) if name(t) == 'ADER ABR R4 - Cotas'), None)
         if d4 is None: d4 = d2.Duplicate('ADER ABR R4 - Cotas'); made.append('ADER ABR R4 - Cotas')
-        set_font(d4); d4.get_Parameter(DB.BuiltInParameter.TEXT_SIZE).Set(2.2 / 304.8)
+        set_font(d4); d4.get_Parameter(DB.BuiltInParameter.TEXT_SIZE).Set(3.0 / 304.8)
         fo = d4.GetUnitsFormatOptions(); fo.UseDefault = False; fo.SetUnitTypeId(DB.UnitTypeId.Meters); fo.Accuracy = .001; d4.SetUnitsFormatOptions(fo)
         # Studio font on the earlier openings annotation types too (R2 sheets).
         set_font(base); set_font(d2)
@@ -185,7 +186,7 @@ def elevation_box(doc, e, room):
     curtain = isinstance(e, DB.Wall)
     hw = host_width(e) / 2.
     bx = DB.BoundingBoxXYZ(); bx.Transform = t
-    top = max(z1 - lev.Elevation + 1.0 / M * (.75 if curtain else .55), 2.95 / M)
+    top = max(z1 - lev.Elevation + 1.0 / M * (1.05 if curtain else .85), 3.2 / M)
     bx.Min = DB.XYZ(lo - .45 / M, -.35 / M, -(hw + 1.0 / M))
     bx.Max = DB.XYZ(hi + (1.0 if curtain else .9) / M, top, hw + .45 / M)
     return bx, vd
@@ -372,8 +373,9 @@ def capsule_arcs(doc, v):
 def radial_type(doc, d):
     t = next((x for x in DB.FilteredElementCollector(doc).OfClass(DB.DimensionType) if name(x) == 'ADER ABR R4 - Radio'), None)
     if t is None:
-        t = doc.GetElement(d.GetTypeId()).Duplicate('ADER ABR R4 - Radio'); set_font(t); t.get_Parameter(DB.BuiltInParameter.TEXT_SIZE).Set(2.2 / 304.8)
+        t = doc.GetElement(d.GetTypeId()).Duplicate('ADER ABR R4 - Radio'); set_font(t)
         fo = t.GetUnitsFormatOptions(); fo.UseDefault = False; fo.SetUnitTypeId(DB.UnitTypeId.Meters); fo.Accuracy = .001; t.SetUnitsFormatOptions(fo)
+    t.get_Parameter(DB.BuiltInParameter.TEXT_SIZE).Set(3.0 / 304.8)
     return t
 
 def capsule_dims(doc, f, e):
@@ -420,6 +422,57 @@ def capsule_dims(doc, f, e):
         xoff += .55
     return out, notes
 
+# ---------------------------------------------------------------- labels
+
+def cm(v): return (u'%.2f' % v).replace(u'.', u',')
+
+def element_label(doc, e, code):
+    if isinstance(e, DB.Wall):
+        a, b, z0, z1, _ = extents(doc, e)
+        return code + u' · ' + cm(a.DistanceTo(b) * M) + u' × ' + cm((z1 - z0) * M)
+    W = ptype(e, 'Width'); H = ptype(e, 'Height')
+    if W is None or H is None: return code
+    return code + u' · ' + cm(W * M) + u' × ' + cm(H * M)
+
+def room_label(rr):
+    return u'Sin local asignado' if rr['number'] == 'SL' else rr['number'] + u' · ' + u(rr['name'])
+
+def crop_corner(v, dx, dy):
+    """Model point near the top-left corner of a section's crop, on its cut plane."""
+    cb = v.CropBox
+    return cb.Transform.OfPoint(DB.XYZ(cb.Min.X + dx, cb.Max.Y - dy, cb.Max.Z))
+
+def make_axo(doc, room, elements, level, prefix):
+    pts = []
+    if room is not None:
+        rb = room.get_BoundingBox(None); pts += [rb.Min, rb.Max]
+    for e in elements:
+        b = e.get_BoundingBox(None); pts += [b.Min, b.Max]
+    pad = .4 / M
+    bx = DB.BoundingBoxXYZ()
+    bx.Min = DB.XYZ(min(p.X for p in pts) - pad, min(p.Y for p in pts) - pad, level.Elevation - .1 / M)
+    bx.Max = DB.XYZ(max(p.X for p in pts) + pad, max(p.Y for p in pts) + pad, max([level.Elevation + 2.55 / M] + [e.get_BoundingBox(None).Max.Z + .05 / M for e in elements]))
+    ax = DB.View3D.CreateIsometric(doc, DB.ElementId(Int64(49559))); setup_view(doc, ax)
+    ax.Name = prefix + ' - AXO'; ax.SetSectionBox(bx); ax.IsSectionBoxActive = True
+    d = DB.XYZ(-1, -1, -.75).Normalize(); right = d.CrossProduct(DB.XYZ.BasisZ).Normalize()
+    ax.SetOrientation(DB.ViewOrientation3D(DB.XYZ.Zero, right.CrossProduct(d).Normalize(), d))
+    D.fit3d(doc, ax)
+    try: ax.SaveOrientationAndLock()
+    except Exception: pass
+    for e in elements: highlight(doc, ax, e)
+    return ax
+
+def axo_note(doc, ax, p, text, key):
+    """Text in a locked 3D view, placed on the view plane through p; skipped if Revit refuses."""
+    sub = DB.SubTransaction(doc); sub.Start()
+    try:
+        o = ax.Origin; vd = ax.ViewDirection
+        q = p - vd * (p - o).DotProduct(vd)
+        tn(doc, ax.Id, q, text, key); doc.Regenerate(); sub.Commit(); return True
+    except Exception:
+        if sub.GetStatus() == DB.TransactionStatus.Started: sub.RollBack()
+        return False
+
 # ---------------------------------------------------------------- text
 
 def tn(doc, view_id, p, text, key):
@@ -454,7 +507,7 @@ def data_lines(doc, e, item, room_names):
 def sheet_size(bx, scale):
     return ((bx.Max.X - bx.Min.X) / scale, (bx.Max.Y - bx.Min.Y) / scale)
 
-TITLE_H, DATA_H, MIN_W, GAP = .045, .10, .40, .05
+TITLE_H, DATA_H, MIN_W, GAP = .06, .15, .46, .05
 
 def row_options(sz, W):
     """(scale, width, height) per allowed scale for one row of item sizes."""
@@ -491,6 +544,30 @@ def pack_rows(sizes, W, H):
             if len(picks) == len(rows) and (best is None or cost < best[0] - 1e-9): best = (cost, picks)
     return best
 
+LIMITS = {'family': 20, 'curtain': 50, 'axo': 50}
+
+def layout_ok(L, kinds):
+    if L is None or (kinds and not L.get('rows')): return False
+    if L.get('plan') and L['plan'][1] > 50: return False
+    for r, sc, h in (L['rows'][1] if L.get('rows') else []):
+        for j in r:
+            if sc > LIMITS[kinds[j]]: return False
+    return True
+
+def paginate(psize, axo_size, elevs, kind_of):
+    """One sheet when everything stays at full scale; otherwise sheet 1 = plan + axo, then balanced elevation sheets."""
+    sz = lambda xs: [sheet_size(x[3], 1) for x in xs]
+    L = choose_layout(psize, sz([axo_size] + elevs))
+    if layout_ok(L, ['axo'] + [kind_of(x) for x in elevs]): return [([axo_size] + elevs, L)]
+    pages = [([axo_size], choose_layout(psize, sz([axo_size])))]
+    n = len(elevs); npages = int(math.ceil(n / 4.))
+    while True:
+        size = int(math.ceil(float(n) / npages)); chunks = [elevs[i:i + size] for i in range(0, n, size)]
+        layouts = [choose_layout(None, sz(c)) for c in chunks]
+        if all(layout_ok(l, [kind_of(x) for x in c]) for l, c in zip(layouts, chunks)) or size == 1: break
+        npages += 1
+    return pages + list(zip(chunks, layouts))
+
 def choose_layout(plan_size, elev_sizes):
     W = X1 - X0; H = TOP - BOTTOM
     if plan_size is None:
@@ -520,7 +597,7 @@ def place(doc, sheet, v, scale, cell, title, vptype):
     vp.SetBoxCenter(DB.XYZ(cx, cy, 0)); doc.Regenerate()
     o = vp.GetBoxOutline()
     label = u(title) + u'   1:' + str(scale)
-    anchor = [o.MinimumPoint.X, o.MaximumPoint.Y + .032]
+    anchor = [o.MinimumPoint.X, o.MaximumPoint.Y + .045]
     tn(doc, sheet.Id, DB.XYZ(anchor[0], anchor[1], 0), label, 'sub')
     return vp, {'id': eid(v), 'name': u(title), 'label': label, 'scale': scale, 'anchor': anchor,
                 'box': [xyz(o.MinimumPoint), xyz(o.MaximumPoint)]}
@@ -545,7 +622,7 @@ def room_job(doc, key):
     codes = [items[i]['code'] for i in rr['items']]
     # pagination: first page carries the plan
     n = len(elements)
-    chunks = [elements] if n <= 5 else [elements[:4]] + [elements[i:i + 6] for i in range(4, n, 6)]
+    chunks = [elements] if n <= 4 else [elements[:3]] + [elements[i:i + 6] for i in range(3, n, 6)]
     def body():
         record = {'key': rr['key'], 'room_id': rr['id'], 'name': u(rr['name']), 'level': u(rr['level_name']), 'number': rr['number'],
                   'codes': codes, 'pages': [], 'elements': {}, 'readAt': now()}
@@ -586,7 +663,8 @@ def room_job(doc, key):
             dims = dims_curtain(doc, f, e, lev) if isinstance(e, DB.Wall) else dims_family(doc, f, e, lev)
             a, b, z0, z1, _ = extents(doc, e)
             xc = (f.x(a) + f.x(b)) / 2; yc = (z0 + z1) / 2 - f.o.Z
-            tn(doc, v.Id, f.p(xc - .15 / M, min(yc + .1 / M, z1 - f.o.Z - .1 / M)), item['code'], 'tag')
+            tn(doc, v.Id, f.p(xc - .15 / M, min(yc + .1 / M, z1 - f.o.Z - .1 / M)), element_label(doc, e, item['code']), 'tag')
+            tn(doc, v.Id, crop_corner(v, .06 / M, .06 / M), room_label(rr), 'room')
             pd = plan_dim(doc, plan, e, room)
             cap_notes = []
             if eid(e) in (1020586, 1020050):
@@ -594,31 +672,42 @@ def room_job(doc, key):
             # plan tag: offset into the room from the element mid point
             vd = view_dir_for(doc, e, room); mid = (a + b) * .5
             tp = DB.XYZ(mid.X, mid.Y, level.Elevation) + vd * (.95 / M)
-            tn(doc, plan.Id, tp, item['code'], 'tag')
+            tn(doc, plan.Id, tp, element_label(doc, e, item['code']), 'tag')
             names = [u(rr['name'])] + [u(rooms_by_id[r]['name']) for r in item['rooms'] if r != rr['id'] and r in rooms_by_id]
             record['elements'][str(eid(e))] = {'code': item['code'], 'viewId': eid(v), 'viewDirection': xyz(v.ViewDirection),
                                               'dimensions': dims + (pd or []), 'data': data_lines(doc, e, item, names) + [u'C\u00e1psula ' + x for x in cap_notes]}
+        if room is not None and isinstance(room.Location, DB.LocationPoint):
+            rp = room.Location.Point; tn(doc, plan.Id, DB.XYZ(rp.X, rp.Y, level.Elevation), room_label(rr), 'room')
+        else:
+            pc = plan.CropBox; tn(doc, plan.Id, DB.XYZ(pc.Min.X + .3 / M, pc.Max.Y - .3 / M, level.Elevation), room_label(rr), 'room')
+        ax = make_axo(doc, room, elements, level, prefix); axo_tags = 0
+        doc.Regenerate()
+        for e in elements:
+            b = e.get_BoundingBox(None); c = (b.Min + b.Max) * .5
+            axo_tags += axo_note(doc, ax, c, element_label(doc, e, items[eid(e)]['code']), 'tag')
+        if room is not None and isinstance(room.Location, DB.LocationPoint):
+            rp = room.Location.Point; axo_tags += axo_note(doc, ax, DB.XYZ(rp.X, rp.Y, level.Elevation + .05 / M), room_label(rr), 'room')
+        record['axoId'] = eid(ax); record['axoTags'] = axo_tags
         doc.Regenerate()
         # layout pages
         psize = sheet_size(plan.CropBox, 1)
-        for pi, chunk in enumerate(chunks):
-            ev = [x for x in elevs if x[0] in chunk] if chunk else []
-            sizes = [sheet_size(x[3], 1) for x in ev]
-            L = choose_layout(psize if pi == 0 else None, sizes)
-            number = rr['sheet'] + ('' if pi == 0 else '-' + str(pi + 1))
+        axo_item = (None, {'code': None}, ax, ax.CropBox)
+        pages_plan = paginate(psize, axo_item, elevs, lambda x: 'curtain' if isinstance(x[0], DB.Wall) else 'family')
+        for pi, (ev, L) in enumerate(pages_plan):
+            number = rr['sheet'] + ('' if pi == 0 else '-' + str(pi + 1)); npages = len(pages_plan)
             sheet = DB.ViewSheet.Create(doc, DB.ElementId(Int64(TITLEBLOCK))); sheet.SheetNumber = number
-            sheet.Name = u(rr['name']) + u' · ABR' + (u'' if len(chunks) == 1 else u' ' + str(pi + 1) + u'/' + str(len(chunks)))
+            sheet.Name = u(rr['name']) + u' · ABR' + (u'' if npages == 1 else u' ' + str(pi + 1) + u'/' + str(npages))
             title = u'CASA ÁNGEL · ABERTURAS · ' + u(rr['level_name']).upper() + u' · ' + (rr['number'] + u' ' if rr['number'] != 'SL' else u'') + u(rr['name']).upper()
             notes = [{'text': title, 'anchor': [X0 + .01, Y1 - .012]}]
             tn(doc, sheet.Id, DB.XYZ(X0 + .01, Y1 - .012, 0), title, 'title')
-            sub = u'Hoja ' + str(pi + 1) + u' de ' + str(len(chunks)) + u' · ' + str(len(codes)) + u' elementos: ' + u', '.join(codes)
-            tn(doc, sheet.Id, DB.XYZ(X0 + .01, Y1 - .062, 0), sub, 'sub'); notes.append({'text': sub, 'anchor': [X0 + .01, Y1 - .062]})
+            sub = u'Hoja ' + str(pi + 1) + u' de ' + str(npages) + u' · ' + str(len(codes)) + u' elementos: ' + u', '.join(codes)
+            tn(doc, sheet.Id, DB.XYZ(X0 + .01, Y1 - .075, 0), sub, 'sub'); notes.append({'text': sub, 'anchor': [X0 + .01, Y1 - .075]})
             foot = u'Cotas en metros (0.001 m) sobre geometría nativa. Cotas de muros cortina y cápsula del ascensor: referidas a ejes de grilla, extremos y centros de arcos (no asociativas, salvo radios). Alzados vistos desde el interior del local. Elementos compartidos entre locales: un solo cómputo por código.'
             tn(doc, sheet.Id, DB.XYZ(X0 + .01, Y0 + .05, 0), foot, 'text'); notes.append({'text': foot, 'anchor': [X0 + .01, Y0 + .05]})
             views = []
             if L['plan']:
                 cell, s = L['plan']
-                vp, meta = place(doc, sheet, plan, s, cell, u'Planta del local · códigos y anchos', vptype); meta['kind'] = 'plan'; views.append(meta)
+                vp, meta = place(doc, sheet, plan, s, cell, u'Planta del local \u00b7 ' + room_label(rr), vptype); meta['kind'] = 'plan'; views.append(meta)
             if ev:
                 cost, picks = L['rows']; rx0, ry0, rx1, ry1 = L['region']
                 slack_y = ((ry1 - ry0) - sum(h for r, sc, h in picks)) / len(picks); ytop = ry1
@@ -629,6 +718,9 @@ def room_job(doc, key):
                     for j, w in zip(r, widths):
                         e, item, v, bx = ev[j]
                         cell = (x, ytop - hh, x + w + slack_x, ytop); x += w + slack_x
+                        if e is None:
+                            vp, meta = place(doc, sheet, v, sc, cell, u'Axonom\u00e9trica del local \u00b7 ' + room_label(rr), vptype)
+                            meta['kind'] = 'axo'; views.append(meta); continue
                         vp, meta = place(doc, sheet, v, sc, cell, item['code'] + u' · alzado interior', vptype)
                         meta.update(kind='elevation', elementId=eid(e), code=item['code'])
                         o = vp.GetBoxOutline(); y = o.MinimumPoint.Y - .012
@@ -645,7 +737,7 @@ def room_job(doc, key):
     R1.write(path, record); doc.Save()
     errs = [d for x in record['elements'].values() for d in x['dimensions'] if d.get('error')]
     return {'status': 'success', 'key': rr['key'], 'pages': [p['sheet_number'] for p in record['pages']],
-            'scales': [[v['scale'] for v in p['views']] for p in record['pages']],
+            'scales': [[v['scale'] for v in p['views']] for p in record['pages']], 'axoTags': record.get('axoTags'),
             'dims': sum(len(x['dimensions']) for x in record['elements'].values()), 'dimErrors': len(errs),
             'nonAssociative': len([d for x in record['elements'].values() for d in x['dimensions'] if d.get('associative') is False])}
 
@@ -673,7 +765,7 @@ def verify(doc):
 
 def reset_job(doc, key):
     path = os.path.join(OUT, 'room-' + str(key) + '.json'); r = R1.read(path)
-    ids = [p['sheet_id'] for p in r['pages']] + [r['planId']] + [x['viewId'] for x in r['elements'].values()]
+    ids = [p['sheet_id'] for p in r['pages']] + [r['planId']] + ([r['axoId']] if r.get('axoId') else []) + [x['viewId'] for x in r['elements'].values()]
     def body():
         for i in ids:
             e = el(doc, i)

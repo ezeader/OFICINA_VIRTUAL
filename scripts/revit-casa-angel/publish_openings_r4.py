@@ -23,7 +23,10 @@ def decode(value):
 
 def read(path): return decode(json.loads(Path(path).read_text(encoding='utf-8-sig')))
 def save(path, value): Path(path).write_text(json.dumps(value, ensure_ascii=False, indent=2), encoding='utf8')
-def svg(page, path): path.write_bytes(gzip.compress(page.get_svg_image(text_as_path=True).encode(), mtime=0))
+def svg(page, path):
+    # 0.01 pt precision is far below print resolution and roughly halves the payload.
+    data = re.sub(r"(\d+\.\d{2})\d+", lambda m: m.group(1), page.get_svg_image(text_as_path=True))
+    path.write_bytes(gzip.compress(data.encode(), mtime=0))
 norm = lambda s: ' '.join(s.split())
 
 
@@ -65,26 +68,28 @@ def publish_room(rec, public):
         stem = f'r4-room-{key}-p{i + 1}'
         svg(page, public / f'{stem}.svg.gz')
         page.get_pixmap(matrix=fitz.Matrix(.35, .35)).save(public / f'{stem}.png')
+        page.get_pixmap(matrix=fitz.Matrix(.6, .6)).save(public / f'{stem}-preview.png')
         anchors = [(n['text'], n['anchor']) for n in page_rec['notes']] + [(v['label'], v['anchor']) for v in page_rec['views']]
         scale, ox, oy, used, res = calibrate(page, anchors)
         views = []
         for v in page_rec['views']:
             lo, hi = v['box']
-            rect = fitz.Rect(ox + lo[0] * scale - 8, oy - hi[1] * scale - 8, ox + hi[0] * scale + 8, oy - lo[1] * scale + 8) & page.rect
+            rect = fitz.Rect(ox + lo[0] * scale - 3, oy - hi[1] * scale - 3, ox + hi[0] * scale + 3, oy - lo[1] * scale + 3) & page.rect
             assert not rect.is_empty
             file = f'r4-view-{v["id"]}.svg.gz'; crop_view(pdf, i, rect, public / file)
             # Per-drawing data for the sheet viewer: the cotas and tags drawn in this view.
             def dimrow(d): return {'label': d['label'], 'values_m': [round(x, 4) for x in d.get('values_m', [])], 'associative': d.get('associative'), **({'radius_m': round(d['radius_m'], 4)} if d.get('radius_m') else {})}
-            if v.get('kind') == 'plan':
+            if v.get('kind') in ('plan', 'axo'):
                 tags = rec['codes']
-                vdims = [dict(dimrow(d), code=e['code']) for e in rec['elements'].values() for d in e['dimensions'] if 'planta' in d['label'] and not d.get('error')]
+                vdims = [dict(dimrow(d), code=e['code']) for e in rec['elements'].values() for d in e['dimensions'] if v.get('kind') == 'plan' and 'planta' in d['label'] and not d.get('error')]
             else:
                 e = rec['elements'][str(v['elementId'])]; tags = [e['code']]
                 vdims = [dict(dimrow(d), code=e['code']) for d in e['dimensions'] if 'planta' not in d['label'] and not d.get('error')]
-            views.append({k: v[k] for k in ('id', 'name', 'label', 'scale', 'kind') if k in v} | {'elementId': str(v['elementId']) if v.get('elementId') else None, 'code': v.get('code'), 'image': BASE + file, 'tags': tags, 'dimensions': vdims})
+            views.append({k: v[k] for k in ('id', 'name', 'label', 'scale', 'kind') if k in v} | {'elementId': str(v['elementId']) if v.get('elementId') else None, 'code': v.get('code'), 'image': BASE + file, 'tags': tags, 'dimensions': vdims,
+                          'roomLabel': rec.get('roomLabel'), 'region': [round(rect.x0 / page.rect.width, 4), round(rect.y0 / page.rect.height, 4), round(rect.x1 / page.rect.width, 4), round(rect.y1 / page.rect.height, 4)]})
         assert page_rec['sheet_number'] in page.get_text(), f'Sheet number missing on {stem}'
         sheets.append({'sheetId': str(page_rec['sheet_id']), 'sheetNumber': page_rec['sheet_number'], 'page': i + 1, 'pages': len(rec['pages']),
-                       'pdf': BASE + f'r4-room-{key}.pdf', 'image': BASE + f'{stem}.svg.gz', 'thumbnail': BASE + f'{stem}.png', 'views': views,
+                       'pdf': BASE + f'r4-room-{key}.pdf', 'image': BASE + f'{stem}.svg.gz', 'thumbnail': BASE + f'{stem}.png', 'preview': BASE + f'{stem}-preview.png', 'views': views,
                        'calibration': {'anchors': used, 'residual_pt': round(res, 2)}})
     pdf.close()
     return sheets, fonts
@@ -103,6 +108,7 @@ def main():
     for r in plan['rooms']:
         if not r['items']: continue
         rec = read(OUT / f'room-{r["key"]}.json')
+        rec['roomLabel'] = 'Sin local asignado' if r['number'] == 'SL' else f"{r['number']} · {r['name']}"
         sheets, f = publish_room(rec, public); fonts |= set(f)
         entry = {'key': r['key'], 'roomId': str(r['id']) if r['id'] else None, 'name': rec['name'], 'level': rec['level'], 'codes': rec['codes'], 'sheets': sheets}
         all_sheets.append(entry)
