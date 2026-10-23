@@ -11,10 +11,10 @@ export async function GET(req:Request){
  try{
   const upstream=await fetch(`https://tile.openstreetmap.org/${z}/${x}/${y}.png`,{
    headers:{'User-Agent':'AderOffice/1.0 (+https://ader-oficina.ezequielader.chatgpt.site)','Referer':'https://ader-oficina.ezequielader.chatgpt.site/'},
-   cf:{cacheEverything:true,cacheTtl:604800},signal:AbortSignal.timeout(15000)
+   signal:AbortSignal.timeout(15000)
   });
   if(!upstream.ok||!upstream.headers.get('Content-Type')?.startsWith('image/png'))return new Response(null,{status:502});
   const bytes=await upstream.arrayBuffer();if(bytes.byteLength>1024*1024)return new Response(null,{status:502});
   return new Response(bytes,{headers:{'Content-Type':'image/png','Cache-Control':upstream.headers.get('Cache-Control')||'public, max-age=604800','X-Content-Type-Options':'nosniff'}});
- }catch{return new Response(null,{status:503})}
+ }catch(error){console.warn('Map tile upstream failed:',error instanceof Error?error.message:'Unknown network error');return new Response(null,{status:503})}
 }
