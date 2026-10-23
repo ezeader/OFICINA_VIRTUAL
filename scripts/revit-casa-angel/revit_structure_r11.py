@@ -62,10 +62,13 @@ def wall_axis(e):
     d = DB.XYZ(b.X - a.X, b.Y - a.Y, 0).Normalize(); n = DB.XYZ(-d.Y, d.X, 0)
     return a, b, d, n
 
-def tag_plan(doc, v, e, row, z):
+def tag_plan(doc, v, e, row, z, centre=None):
     if isinstance(e, DB.Wall):
         a, b, d, n = wall_axis(e); mid = (a + b) * .5
-        L.tn(doc, v.Id, DB.XYZ(mid.X, mid.Y, z) + n * (.35 / M) - d * (.6 / M), row['label'], 'tag')
+        if centre is not None and n.DotProduct(DB.XYZ(centre.X - mid.X, centre.Y - mid.Y, 0)) < 0: n = -n   # tag towards the building
+        p = DB.XYZ(mid.X, mid.Y, z) + n * (.35 / M) - d * (.6 / M)
+        if n.X < -.5: p = p - DB.XYZ.BasisX * (len(row['label']) * .13 / M)   # text grows to +X: keep it inside
+        L.tn(doc, v.Id, p, row['label'], 'tag')
         f = L.AxisFrame(v, DB.XYZ(a.X, a.Y, v.Origin.Z), d, -n)
         return [L.tick_dim(doc, f, row['code'] + u' largo', [0, a.DistanceTo(b)], True, .35 / M, tick=.08 / M)]
     bb = e.get_BoundingBox(None); c = (bb.Min + bb.Max) * .5
@@ -130,18 +133,21 @@ def lay_sheet(doc, number, title, sub, items, foot):
     head = u'CASA ÁNGEL · ESTRUCTURA · ' + u(title).upper()
     notes = [{'text': head, 'anchor': [L.X0 + .01, L.Y1 - .012]}]
     L.tn(doc, sheet.Id, DB.XYZ(L.X0 + .01, L.Y1 - .012, 0), head, 'title')
-    if sub:
-        L.tn(doc, sheet.Id, DB.XYZ(L.X0 + .01, L.Y1 - .075, 0), sub, 'sub'); notes.append({'text': sub, 'anchor': [L.X0 + .01, L.Y1 - .075]})
+    single = len(items) == 1
+    if sub:   # single-drawing sheets: subtitle goes to the footer so the drawing can use the full height
+        sy = L.Y0 + .095 if single else L.Y1 - .075
+        L.tn(doc, sheet.Id, DB.XYZ(L.X0 + .01, sy, 0), sub, 'sub'); notes.append({'text': sub, 'anchor': [L.X0 + .01, sy]})
     L.tn(doc, sheet.Id, DB.XYZ(L.X0 + .01, L.Y0 + .05, 0), foot, 'text'); notes.append({'text': foot, 'anchor': [L.X0 + .01, L.Y0 + .05]})
     vpt = vptype(doc); views = []
     if len(items) == 1:
         it = items[0]; v = it['view']
-        aw = L.X1 - L.X0 - .02; ah = (L.TOP - L.TITLE_H - .01) - (L.BOTTOM + .02)
+        top = L.Y1 - .095; bot = L.Y0 + .11
+        aw = L.X1 - L.X0 - .02; ah = top - bot
         vp = DB.Viewport.Create(doc, sheet.Id, v.Id, DB.XYZ((L.X0 + L.X1) / 2, (L.TOP + L.BOTTOM) / 2, 0)); vp.ChangeTypeId(vpt.Id)
         for s in L.SCALES:          # measure the real viewport (grid heads included) instead of the crop
             v.Scale = s; doc.Regenerate(); o = vp.GetBoxOutline(); d = o.MaximumPoint - o.MinimumPoint
             if d.X <= aw and d.Y <= ah: break
-        vp.SetBoxCenter(DB.XYZ((L.X0 + L.X1) / 2, (L.BOTTOM + .02 + L.TOP - L.TITLE_H - .01) / 2, 0)); doc.Regenerate(); o = vp.GetBoxOutline()
+        vp.SetBoxCenter(DB.XYZ((L.X0 + L.X1) / 2, (bot + top) / 2, 0)); doc.Regenerate(); o = vp.GetBoxOutline()
         label = u(it['title']) + u'   1:' + str(v.Scale); anchor = [o.MinimumPoint.X, o.MaximumPoint.Y + .045]
         L.tn(doc, sheet.Id, DB.XYZ(anchor[0], anchor[1], 0), label, 'sub')
         meta = {'id': eid(v), 'name': u(it['title']), 'label': label, 'scale': v.Scale, 'anchor': anchor, 'box': [xyz(o.MinimumPoint), xyz(o.MaximumPoint)]}
@@ -182,7 +188,7 @@ def plans_part(doc):
         rows = [r for r in data['elements'] if r['sheetLevel'] == lid and r['kind'] != 'PL']
         elements = [(el(doc, r['id']), r) for r in rows]; elements = [(e, r) for e, r in elements if e is not None]
         level = el(doc, lid); z = level.Elevation
-        bx = bounds([e for e, r in elements if r['kind'] in ('MH', 'VE')], z, 1.2 / M)
+        bx = bounds([e for e, r in elements if r['kind'] in ('MH', 'VE')], z, .6 / M)
         def inside(e):
             b = e.get_BoundingBox(None); c = (b.Min + b.Max) * .5
             return bx.Min.X < c.X < bx.Max.X and bx.Min.Y < c.Y < bx.Max.Y
@@ -190,8 +196,9 @@ def plans_part(doc):
         elements = [(e, r) for e, r in elements if inside(e)]
         v = new_plan(doc, level, bx, 'ADER EST R11 - ' + LEVEL_CODE[lid] + ' - PLANTA')
         dims = []
+        centre = (bx.Min + bx.Max) * .5
         for e, r in elements:
-            colorize(doc, v, e, COLORS[r['kind']]); dims += tag_plan(doc, v, e, r, z)
+            colorize(doc, v, e, COLORS[r['kind']]); dims += tag_plan(doc, v, e, r, z, centre)
         room_labels(doc, v, lid, z)
         item = {'view': v, 'box': v.CropBox, 'title': u'Planta de estructura · ' + LEVEL_NAMES[lid], 'kind': 'plan', 'sector': LEVEL_NAMES[lid],
                 'tags': [r['code'] for e, r in elements], 'dims': dims_out(dims), 'elements': [eid(e) for e, r in elements]}
@@ -201,7 +208,7 @@ def plans_part(doc):
         sheets.append(dict(lay_sheet(doc, 'EST-' + LEVEL_CODE[lid] + '-01', u'Planta de estructura · ' + LEVEL_NAMES[lid], sub.replace('.', ','), [item], FOOT), level=LEVEL_NAMES[lid], sector=LEVEL_NAMES[lid], outside=outside))
     # foundation
     row = next(r for r in data['elements'] if r['kind'] == 'PL'); e = el(doc, row['id']); level = el(doc, 311)
-    v = new_plan(doc, level, bounds([e], level.Elevation, 1.0 / M), 'ADER EST R11 - FU - PLATEA', depth=-1.0)
+    v = new_plan(doc, level, bounds([e], level.Elevation, .5 / M), 'ADER EST R11 - FU - PLATEA', depth=-1.0)
     colorize(doc, v, e, COLORS['PL'])
     others = [f.Id for f in DB.FilteredElementCollector(doc, v.Id).OfCategory(DB.BuiltInCategory.OST_Floors).WhereElementIsNotElementType() if f.Id != e.Id]
     if others: v.HideElements(List[DB.ElementId](others))
