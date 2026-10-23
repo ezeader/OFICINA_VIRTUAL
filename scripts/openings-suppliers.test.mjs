@@ -24,7 +24,10 @@ test('simple table hides commercial metadata without losing source columns or em
 test('openings count physical identities once across rooms, with curtain walls separate',()=>{
  const a=JSON.parse(fs.readFileSync(new URL('../public/casa-angel/openings/manifest.json',import.meta.url)));
  assert.equal(new Set(a.items.map(i=>i.uid)).size,a.items.length);assert.equal(a.items.filter(i=>i.category==='Windows').length,25);assert.equal(a.items.filter(i=>i.category==='Doors').length,13);
- assert.equal(a.rooms.filter(r=>r.sheetId).length,29);assert.equal(a.items.filter(i=>!i.rooms.length).length,6);
+ assert.equal(a.rooms.filter(r=>r.sheetId).length,30);assert.deepEqual(a.items.filter(i=>!i.rooms.length).map(i=>i.id).sort(),['2275029','2295997']);
+ assert.equal(a.items.find(i=>i.id==='671785').fromRoom,869397);assert.ok(a.items.find(i=>i.id==='891414').rooms.includes(892788));assert.ok(a.items.find(i=>i.id==='874580').rooms.includes(892788));
+ assert.equal(new Set(a.items.map(i=>i.documentation.sheetId)).size,49);
+ for(const i of a.items){assert.equal(i.documentation.views.length,4);assert.ok(i.documentation.scheduleId);for(const path of [i.documentation.pdf,i.documentation.image,...i.documentation.views.map(v=>v.image)])assert.ok(fs.existsSync(new URL('../public'+path,import.meta.url)),path);}
  for(const r of a.rooms){assert.equal(new Set(r.items).size,r.items.length);for(const id of r.items)assert.ok(a.items.find(i=>i.id===id)?.rooms.includes(r.id));}
  const sheets=a.rooms.filter(r=>r.sheetId);for(const r of sheets){for(const path of [r.image,r.pdf,...r.views.map(v=>v.image)])assert.ok(fs.existsSync(new URL('../public'+path,import.meta.url)),path)}
 });
