@@ -39,11 +39,11 @@ export function useCrop(url?:string,key?:string){
 }
 // Ocupa todo su contenedor y muestra solo la zona recortada del dibujo.
 // boxes: elementos ubicados en la imagen completa (fracciones 0–1); se reubican sobre el recorte.
-export function TrimmedDrawing({src,alt,onCrop,boxes,onBox}:{src?:string;alt:string;onCrop?:(c:Crop)=>void;boxes?:{code:string;box:number[]}[];onBox?:(code:string|null,x:number,y:number)=>void}){
+export function TrimmedDrawing({src,alt,onCrop,boxes,onBox}:{src?:string;alt:string;onCrop?:(c:Crop)=>void;boxes?:{code:string;box:number[];label?:string;room?:boolean}[];onBox?:(code:string|null,x:number,y:number,label?:string)=>void}){
  const url=useVector(src),crop=useCrop(url,src);
  useEffect(()=>{if(crop)onCrop?.(crop)},[crop,onCrop]);
  if(!url||!crop)return <div className="vectorLoading" role="status">Cargando dibujo vectorial…</div>;
- return <div className="openingTrim" style={{aspectRatio:String(crop.aspect),['--a' as string]:crop.aspect}}><img src={url} alt={alt} draggable={false} style={{width:`${100/crop.w}%`,height:`${100/crop.h}%`,left:`${-crop.x/crop.w*100}%`,top:`${-crop.y/crop.h*100}%`}}/>{boxes?.map((b,i)=><span key={b.code+i} className="openingBox" style={{left:`${(b.box[0]-crop.x)/crop.w*100}%`,top:`${(b.box[1]-crop.y)/crop.h*100}%`,width:`${(b.box[2]-b.box[0])/crop.w*100}%`,height:`${(b.box[3]-b.box[1])/crop.h*100}%`}} onPointerMove={e=>{if(!e.buttons)onBox?.(b.code,e.clientX,e.clientY)}} onPointerLeave={()=>onBox?.(null,0,0)}><b>{b.code}</b></span>)}</div>;
+ return <div className="openingTrim" style={{aspectRatio:String(crop.aspect),['--a' as string]:crop.aspect}}><img src={url} alt={alt} draggable={false} style={{width:`${100/crop.w}%`,height:`${100/crop.h}%`,left:`${-crop.x/crop.w*100}%`,top:`${-crop.y/crop.h*100}%`}}/>{boxes?.map((b,i)=><span key={b.code+i} className={'openingBox'+(b.room?' room':'')} style={{left:`${(b.box[0]-crop.x)/crop.w*100}%`,top:`${(b.box[1]-crop.y)/crop.h*100}%`,width:`${(b.box[2]-b.box[0])/crop.w*100}%`,height:`${(b.box[3]-b.box[1])/crop.h*100}%`}} onPointerMove={e=>{if(!e.buttons)onBox?.(b.code,e.clientX,e.clientY,b.label)}} onPointerLeave={()=>onBox?.(null,0,0)}><b>{b.room?(b.label||b.code).split(' · ').slice(0,2).join(' · '):b.code}</b></span>)}</div>;
 }
 
 // Datos del elemento al pasar el cursor, con el mismo criterio que Sanitarias: medidas con valor y lo que falta.

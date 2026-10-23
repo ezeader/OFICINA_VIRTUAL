@@ -78,3 +78,4 @@
 .openingLevelRoom{position:absolute;border:1.5px dashed transparent;background:transparent;cursor:pointer;padding:0}.openingLevelRoom:hover{border-color:#94815c;background:#b39b6512}.openingLevelCode{z-index:2}
 @media(max-width:900px){.openingLevel.withPlan{grid-template-columns:1fr}}
 .openingLevelCode b{font-size:12px;padding:0 6px;opacity:.92}.openingLevelCode:hover{z-index:3}.openingLevelCode:hover b{opacity:1;font-size:14px}
+.openingBox.room{z-index:0;border-style:dashed}.openingBox.room b{top:4px;left:4px;background:#ffffffe6;color:var(--ader-green);border:1px solid #c9d1bb;font-size:12px}.openingBox:not(.room){z-index:1}
