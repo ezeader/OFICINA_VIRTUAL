@@ -74,3 +74,7 @@
 .openingCodeChip{font-family:var(--ader-title);font-stretch:75%;font-weight:600;font-size:15px;padding:2px 10px;border:1px solid #c9d1bb;border-radius:999px;background:#fff;color:var(--ader-green);cursor:pointer}.openingCodeChip:hover{background:var(--ader-green);color:#fff}
 .openingIndex tbody tr{cursor:pointer}.openingIndex tbody tr:hover{background:#f6f4ee}
 .structureList{margin:0 0 10px;padding-left:20px;display:grid;gap:6px;font-size:15px;line-height:1.5}
+.openingLevel.withPlan{grid-template-columns:minmax(0,1.5fr) minmax(260px,1fr);align-items:start}.openingLevel.withPlan .openingLevelList span{min-width:0;width:100%}
+.openingLevelRoom{position:absolute;border:1.5px dashed transparent;background:transparent;cursor:pointer;padding:0}.openingLevelRoom:hover{border-color:#94815c;background:#b39b6512}.openingLevelCode{z-index:2}
+@media(max-width:900px){.openingLevel.withPlan{grid-template-columns:1fr}}
+.openingLevelCode b{font-size:12px;padding:0 6px;opacity:.92}.openingLevelCode:hover{z-index:3}.openingLevelCode:hover b{opacity:1;font-size:14px}
