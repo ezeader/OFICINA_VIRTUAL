@@ -56,9 +56,12 @@ export default defineConfig(async ({ command }) => {
       ...(managedLinux
         ? { host: "0.0.0.0", allowedHosts: ["terminal.local"] }
         : {}),
-      ...(isCodexSeatbeltSandbox
-        ? { watch: { useFsEvents: false, usePolling: true } }
-        : {}),
+      // Las láminas exportadas de Revit (miles de archivos) se sirven igual; sin vigilarlas,
+      // una publicación grande no satura la recarga en caliente del servidor de desarrollo.
+      watch: {
+        ignored: ["**/public/casa-angel/**"],
+        ...(isCodexSeatbeltSandbox ? { useFsEvents: false, usePolling: true } : {}),
+      },
     },
     plugins: [
       vinext(),
