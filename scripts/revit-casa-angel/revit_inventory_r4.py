@@ -193,4 +193,52 @@ def hvac(doc):
 
 def run(doc, uidoc, job):
     assert os.path.basename(doc.PathName).lower() == 'casa-angel-piloto-documentacion.rvt'
+    if job.get('part') == 'hvac_detail': return {'status': 'success', 'detail': hvac_detail(doc)}
     return {'status': 'success', 'structure': structure(doc), 'hvac': hvac(doc)}
+
+def hvac_detail(doc):
+    rooms = [r for r in collect(doc, DB.BuiltInCategory.OST_Rooms) if r.Area > 0]
+    def room_at(p, lid):
+        for r in rooms:
+            if r.LevelId == lid and r.IsPointInRoom(p): return eid(r)
+        for r in rooms:
+            if r.IsPointInRoom(p): return eid(r)
+        return None
+    pipes = []
+    for e in collect(doc, DB.BuiltInCategory.OST_PipeCurves):
+        t = doc.GetElement(e.GetTypeId()); tn = u(name(t))
+        if 'Hidroflex' not in tn and 'PEX' not in tn and pval(e, B('RBS_PIPING_SYSTEM_TYPE_PARAM')) not in (u'Hydronic Supply', u'Hydronic Return'): continue
+        c = e.Location.Curve; a = c.GetEndPoint(0); b = c.GetEndPoint(1); mid = c.Evaluate(.5, True)
+        lev = doc.GetElement(e.ReferenceLevel.Id) if e.ReferenceLevel else None
+        rid = room_at(DB.XYZ(mid.X, mid.Y, (lev.Elevation if lev else mid.Z) + 1.0), lev.Id if lev else e.LevelId)
+        conns = []
+        for cn in e.ConnectorManager.Connectors:
+            for o in cn.AllRefs:
+                if o.Owner and o.Owner.Id != e.Id: conns.append(eid(o.Owner))
+        pipes.append({'id': eid(e), 'type': tn, 'system': pval(e, B('RBS_PIPING_SYSTEM_TYPE_PARAM')), 'systemName': pval(e, B('RBS_SYSTEM_NAME_PARAM')),
+                      'level': u(name(lev)) if lev else u'', 'length_m': c.Length * M, 'diameter_mm': pval(e, B('RBS_PIPE_DIAMETER_PARAM'), 304.8),
+                      'a': xyz(a), 'b': xyz(b), 'z_m': mid.Z * M, 'room': rid, 'connected': conns, 'comments': pval(e, B('ALL_MODEL_INSTANCE_COMMENTS')), 'mark': pval(e, B('ALL_MODEL_MARK'))})
+    acc = []
+    for bic in [DB.BuiltInCategory.OST_PipeAccessory, DB.BuiltInCategory.OST_MechanicalEquipment]:
+        for e in collect(doc, bic):
+            t = doc.GetElement(e.GetTypeId()); p = e.Location.Point if isinstance(e.Location, DB.LocationPoint) else None
+            lev = doc.GetElement(e.LevelId) if e.LevelId != DB.ElementId.InvalidElementId else None
+            acc.append({'id': eid(e), 'category': u(e.Category.Name), 'family': u(t.FamilyName) if t else u'', 'type': u(name(t)) if t else u'', 'level': u(name(lev)) if lev else base_level(doc, e),
+                        'point': xyz(p) if p else None, 'room': room_at(DB.XYZ(p.X, p.Y, (lev.Elevation if lev else p.Z) + 1.0), e.LevelId) if p else None,
+                        'mark': pval(e, B('ALL_MODEL_MARK')), 'comments': pval(e, B('ALL_MODEL_INSTANCE_COMMENTS')),
+                        'params': [{'name': u(q.Definition.Name), 'value': u(q.AsValueString() or q.AsString() or u'')} for q in e.Parameters if q.HasValue and q.Definition.Name in ('Salidas', 'Number of Outlets', 'Cantidad de salidas', 'Vias', 'Modelo', 'Description', 'Descripcion')]})
+    systems = []
+    for s in DB.FilteredElementCollector(doc).OfClass(DB.Plumbing.PipingSystem):
+        try:
+            st = doc.GetElement(s.GetTypeId())
+            systems.append({'id': eid(s), 'name': u(s.Name), 'type': u(name(st)), 'classification': str(s.SystemType), 'elements': s.PipingNetwork.Size if s.PipingNetwork else None})
+        except: pass
+    views = []
+    for v in DB.FilteredElementCollector(doc).OfClass(DB.View):
+        n = u(name(v))
+        if KEYS.search(n) or n.upper().startswith(u'CALEF'): views.append({'id': eid(v), 'name': n, 'type': str(v.ViewType), 'onSheet': None})
+    sheets = [{'id': eid(s), 'number': u(s.SheetNumber), 'name': u(s.Name)} for s in DB.FilteredElementCollector(doc).OfClass(DB.ViewSheet) if KEYS.search(u(s.Name)) or u'CAL' in u(s.SheetNumber).upper()]
+    data = {'readAt': datetime.datetime.utcnow().isoformat() + 'Z', 'pipes': pipes, 'accessories': acc, 'systems': systems, 'views': views, 'sheets': sheets,
+            'rooms': [{'id': eid(r), 'name': u(pval(r, B('ROOM_NAME'))), 'level': lname(doc, r.LevelId), 'area_m2': r.Area * M2} for r in rooms]}
+    R1.write(os.path.join(OUT, 'inventory-hvac-detail.json'), data)
+    return {'pipes': len(pipes), 'accessories': len(acc), 'systems': len(systems), 'views': len(views), 'sheets': len(sheets)}
