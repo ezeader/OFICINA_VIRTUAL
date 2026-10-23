@@ -24397,11 +24397,17 @@
     }
   ],
   "documentationRevision": "R11",
-  "codesWrittenToModel": false,
+  "codesWrittenToModel": true,
   "decisions": [
     "Losas L01.00 de PA/PE: losa a confirmar (no se asume hormigón).",
     "Fundaciones: solo platea PB; resto no modelado / a definir.",
     "Parámetro Structural de los muros: sin cambios; se filtra por tipo \"Muro Hormigón 20cm\".",
-    "Códigos MH/VE/LO/PL: usados en láminas y manifest; no escritos en Mark (requiere OK explícito del usuario: es cambio de parámetros del modelo)."
-  ]
+    "Códigos MH/VE/LO/PL: en láminas, manifest y en el parámetro Mark de los 72 elementos (aprobado por el usuario; respaldo previo del .rvt)."
+  ],
+  "marksWritten": {
+    "parameter": "Mark",
+    "elements": 72,
+    "approvedBy": "usuario (respuesta directa en la sesión Revit)",
+    "backup": "outputs/casa-angel/backups/*-antes-mark.rvt"
+  }
 }
