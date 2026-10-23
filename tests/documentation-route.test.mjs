@@ -14,3 +14,8 @@ test('the structure desk has its own direct link',()=>{
  assert.deepEqual(parseDocumentationRoute('#documentacion/angel/estructura'),{projectId:'angel',rubric:'Estructura'});
  assert.equal(parseDocumentationRoute('#documentacion/angel/estructura/x'),null);
 });
+import {rubricHref} from '../lib/documentation-route.ts';
+test('every documentation rubric has a direct link that round-trips',()=>{
+ for(const name of ['Cubierta','Albañilería','Paneles solares','Sanitaria','Estructura'])assert.equal(parseDocumentationRoute(rubricHref(name)).rubric,name);
+ assert.equal(parseDocumentationRoute('#documentacion/angel/inventado'),null);
+});
