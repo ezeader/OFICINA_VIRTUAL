@@ -2,14 +2,32 @@
 // Solo usa valores de Revit; lo que no está se informa como faltante.
 
 type Param={name:string;value:string};
-export type BudgetItem={id:string;code:string;category:string;type:string;family?:string;width?:string|null;height?:string|null;panelCount?:number;materials?:string[];parameters:Param[];panels?:{width_m:number;height_m:number;type?:string}[]};
+export type BudgetItem={id:string;code:string;category:string;type:string;family?:string;width?:string|null;height?:string|null;panelCount?:number;materials?:string[];parameters:Param[];panels?:{width_m:number;height_m:number;type?:string}[];survey?:Survey};
+// Ficha de relevamiento que arma la sesión de Revit (R9): tiene prioridad sobre la lectura de parámetros.
+export type Survey={openingType?:string|null;notes?:string[];description?:string|null;glazing?:{material?:string|null;spec?:string|null;thickness_m?:string|null;area_m2?:number|null;panes?:number}|null;frame?:{material?:string|null;width_m?:string|null;depth_m?:string|null;subframe?:string|null;leaf?:string|null;handle?:string|null;profiles?:{type:string;material?:string;count:number;length_m:number}[]}|null;thermal?:{U?:string|null}|null};
 const p=(i:BudgetItem,name:string)=>{const v=i.parameters.find(x=>x.name===name)?.value?.trim();return v&&v!=='<None>'&&v!=='None'?v:undefined};
 const num=(v?:string|null)=>{if(!v)return null;const n=parseFloat(v.replace(',','.'));return Number.isFinite(n)?n:null};
 const mm2ToM2=(v?:string)=>{const n=num(v);return n==null?undefined:`${(n/1e6).toLocaleString('es-AR',{maximumFractionDigits:2})} m²`};
 const yes=(v?:string)=>v==='Yes'?'sí':v==='No'?'no':v;
 
+const clean=(v?:string|null)=>v&&v!=='<None>'?v:undefined;
+const m2=(n:number)=>n.toLocaleString('es-AR',{maximumFractionDigits:2})+' m²';
+function fromSurvey(s:Survey){
+ const g=s.glazing,f=s.frame;
+ return [
+  {label:'Apertura',value:clean(s.openingType)},
+  {label:'Vidrio',value:g&&(g.area_m2||g.material)?[clean(g.material),clean(g.spec),g.thickness_m&&'espesor '+g.thickness_m,g.panes?`${g.panes} paños`:undefined,g.area_m2?'≈ '+m2(g.area_m2):undefined].filter(Boolean).join(' · '):undefined},
+  {label:'Marco / perfiles',value:f?.profiles?.length?f.profiles.map(x=>`${x.type} ${x.material||''} · ${x.count} u. · ${x.length_m.toFixed(2)} m`).join(' / '):[clean(f?.material),f?.width_m&&'ancho '+f.width_m,f?.depth_m&&'prof. '+f.depth_m].filter(Boolean).join(' · ')||undefined},
+  {label:'Hoja',value:clean(f?.leaf)},
+  {label:'Premarco',value:clean(f?.subframe)},
+  {label:'Herraje',value:clean(f?.handle)},
+  {label:'Aislación térmica',value:s.thermal?.U?'U = '+s.thermal.U:undefined},
+ ].filter(x=>x.value||['Apertura','Vidrio','Marco / perfiles'].includes(x.label));
+}
+
 // Datos de relevamiento agrupados como los pide un proveedor de aberturas.
 export function surveySpecs(i:BudgetItem):{label:string;value?:string}[]{
+ if(i.survey)return fromSurvey(i.survey);
  if(i.category==='Curtain Walls'){
   const mullion=[p(i,'Interior Type'),p(i,'Border 1 Type')].filter(Boolean);
   return [
@@ -56,9 +74,10 @@ export function budgetTotals(items:BudgetItem[]){
   const row=rows.get(key)||{key,category:i.category,type:i.type,size,count:0,codes:[],unitArea:s.area,area:0,perimeter:0};
   row.count++;row.codes.push(i.code);row.area+=s.area;row.perimeter+=s.perimeter;rows.set(key,row);
  }
+ const glass=items.reduce((n,i)=>n+(i.survey?.glazing?.area_m2||0),0),profiles=items.reduce((n,i)=>n+(i.survey?.frame?.profiles||[]).reduce((a,x)=>a+x.length_m,0),0);
  const list=[...rows.values()].sort((a,b)=>a.category.localeCompare(b.category)||b.area-a.area);
  const by=(cat?:string)=>{const r=list.filter(x=>!cat||x.category===cat);return {count:r.reduce((n,x)=>n+x.count,0),area:r.reduce((n,x)=>n+x.area,0),perimeter:r.reduce((n,x)=>n+x.perimeter,0)}};
- return {rows:list,windows:by('Windows'),doors:by('Doors'),curtainWalls:by('Curtain Walls'),total:by(),missing};
+ return {rows:list,windows:by('Windows'),doors:by('Doors'),curtainWalls:by('Curtain Walls'),total:by(),missing,glass,profiles};
 }
 
 export function budgetCsv(rows:BudgetRow[]){

@@ -69,7 +69,7 @@ export default function OpeningsDesk({mode='documentation',caseCode,review,onSav
   <strong>{item.type}</strong>
   <p className="openingSize">{sizeLine(item)}</p>{heightLine(item)&&<p className="openingSub">{heightLine(item)}</p>}
   {(()=>{const s=sizeOf(item),specs=surveySpecs(item),known=specs.filter(x=>x.value),gaps=specs.filter(x=>!x.value);return <><p className="openingSub">{s?`${n2(s.area)} m² · ${n2(s.perimeter)} m de marco`:'Sin superficie calculable'}</p><dl className="openingSpecs">{known.map(x=><div key={x.label}><dt>{x.label}</dt><dd>{x.value!.replace(/(\d)\.(\d)/g,'$1,$2')}</dd></div>)}</dl>{gaps.length>0&&<p className="openingGaps">Sin dato en Revit: {gaps.map(x=>x.label.toLowerCase()).join(', ')}</p>}</>})()}
-  {item.warnings.length>0&&<p className="openingAlert">⚠ Revisar: {item.warnings.map(plainWarning).join(' · ')}</p>}
+  {item.warnings.length>0&&<p className="openingAlert">⚠ Revisar: {item.warnings.map(plainWarning).join(' · ')}</p>}{(item as {survey?:{notes?:string[]}}).survey?.notes?.map(n=><p key={n} className="openingSub">{n}</p>)}
   <NoteBox key={item.id+(correctionFor(review,item.id,NOTE_KEY)?.updatedAt||'')} item={item} review={review} disabled={disabled} onSaveReview={onSaveReview}/>
   {other.length>0&&<div className="openingLinks">{other.map(c=><button key={c.key} onClick={()=>open(c.key)}>{c.tab==='locales'?'Ver lámina de '+c.name.split(' · ').slice(1).join(' · '):'Ver lámina de la abertura'} ↗</button>)}</div>}
  </article>};
@@ -86,6 +86,7 @@ export default function OpeningsDesk({mode='documentation',caseCode,review,onSav
    <div className="sheetTabs">{TABS.filter(([t])=>count(t)).map(([t,label])=><button key={t} aria-pressed={tab===t} onClick={()=>setTab(t)}>{label} · {count(t)}</button>)}</div>
    {tab==='computo'&&<section className="openingBudget">
     <div className="openingTotals">{([['Ventanas',budget.windows],['Puertas',budget.doors],['Muros cortina',budget.curtainWalls],['Total',budget.total]] as const).map(([label,t])=><div key={label} className={label==='Total'?'total':''}><small>{label} · {t.count}</small><strong>{n2(t.area)} m²</strong><span>{n2(t.perimeter)} m lineales de marco</span></div>)}</div>
+    {budget.glass>0&&<p className="openingGlass">Vidrio según Revit: <b>{n2(budget.glass)} m²</b>{budget.profiles>0?<> · montantes de muros cortina: <b>{n2(budget.profiles)} m</b></>:null}</p>}
     <p className="openingSub">Superficie = ancho × alto de cada abertura (muros cortina: largo × alto del conjunto). Metros lineales = contorno exterior del marco, sin montantes intermedios. Valores de Revit, sin desperdicio.</p>
     <button className="openingDownload" onClick={download}>Descargar planilla para proveedores (CSV)</button>
     <table className="openingBudgetTable"><thead><tr><th>Tipo</th><th>Medida</th><th>Cant.</th><th>m² c/u</th><th>m² total</th><th>m marco</th></tr></thead><tbody>{budget.rows.map(r=><tr key={r.key}><td><b>{r.type}</b><small>{KIND[r.category]} · {r.codes.join(' · ')}</small></td><td>{r.size.replace(/\./g,',')}</td><td>{r.count}</td><td>{n2(r.unitArea)}</td><td><b>{n2(r.area)}</b></td><td>{n2(r.perimeter)}</td></tr>)}</tbody></table>
