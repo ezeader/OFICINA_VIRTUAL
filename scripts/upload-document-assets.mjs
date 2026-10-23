@@ -13,25 +13,26 @@ const {origin,bearer,reportPath}=input;
 if(origin!=='https://ader-oficina.ezequielader.chatgpt.site'||!bearer)throw Error('Invalid Site destination');
 const manifest=JSON.parse(await readFile('lib/document-assets.json','utf8'));
 const auth={'OAI-Sites-Authorization':'Bearer '+bearer,Origin:origin};
-const report={startedAt:new Date().toISOString(),verified:[],failed:[]};
 const path=resolve(reportPath);await mkdir(dirname(path),{recursive:true});
-const persist=()=>writeFile(path,JSON.stringify(report,null,2));
-let transferred=0;
+let previous;try{previous=JSON.parse(await readFile(path,'utf8'))}catch{}
+const verified=(previous?.verified??[]).filter(x=>manifest[x.path]?.sha256===x.sha256&&manifest[x.path]?.size===x.size);
+const report={startedAt:previous?.startedAt??new Date().toISOString(),verified,failed:[]};
+let persistQueue=Promise.resolve();
+const persist=()=>{const snapshot=JSON.stringify(report,null,2);persistQueue=persistQueue.then(()=>writeFile(path,snapshot));return persistQueue};
+let transferred=verified.reduce((n,x)=>n+x.size,0);
 // Upload index data first so the updated interface becomes navigable early.
 const entries=Object.entries(manifest).sort(([a,av],[b,bv])=>Number(!/project\.json|native-schedules/.test(a))-Number(!/project\.json|native-schedules/.test(b))||av.size-bv.size);
-for(const [pathname,entry] of entries){
+let stopped=false;
+async function transferOne([pathname,entry]){
  let error;
  for(let attempt=1;attempt<=3;attempt++){
   try{
    const bytes=await readFile(resolve('public','.'+pathname));
    if(createHash('sha256').update(bytes).digest('hex')!==entry.sha256)throw Error('Local original changed');
-   let present=await fetch(origin+pathname,{method:'HEAD',headers:auth,redirect:'error',signal:AbortSignal.timeout(45000)});
-   if(present.status===401||present.status===403)throw Error('Site authorization rejected');
-   if(!present.ok||present.headers.get('etag')!=='"'+entry.sha256+'"'){
     const uploaded=await fetch(origin+'/api/document-assets?path='+encodeURIComponent(pathname),{method:'PUT',headers:{...auth,'Content-Type':'application/octet-stream'},body:bytes,redirect:'error',signal:AbortSignal.timeout(600000)});
+    if(uploaded.status===401||uploaded.status===403)throw Error('Site authorization rejected');
     if(!uploaded.ok)throw Error(`Upload HTTP ${uploaded.status}: ${(await uploaded.text()).slice(0,160)}`);
     const confirmation=await uploaded.json();if(confirmation.sha256!==entry.sha256)throw Error('Upload verification mismatch');
-   }
    const downloaded=await fetch(origin+pathname,{headers:auth,redirect:'error',signal:AbortSignal.timeout(180000)});
    if(!downloaded.ok)throw Error(`Readback HTTP ${downloaded.status}`);
    const check=Buffer.from(await downloaded.arrayBuffer());
@@ -41,8 +42,16 @@ for(const [pathname,entry] of entries){
    error=undefined;break;
   }catch(e){error=e;console.log(`Retry ${attempt}/3 · ${pathname} · ${e.message}`);if(/authorization/.test(e.message))break;}
  }
- if(error){report.failed.push({path:pathname,error:error.message});await persist();throw Error(`Document transfer paused: ${pathname}`)}
+ if(error){report.failed.push({path:pathname,error:error.message});stopped=true;await persist();return}
  await persist();
 }
+const done=new Set(verified.map(x=>x.path));const pending=entries.filter(([p])=>!done.has(p));let cursor=0;
+// Concurrent small files avoid hundreds of serial network round trips. Large
+// originals transfer one at a time to bound both Worker and desktop memory.
+let largeTail=Promise.resolve();
+async function worker(){while(!stopped&&cursor<pending.length){const item=pending[cursor++];if(item[1].size>1024*1024){const before=largeTail;let release;largeTail=new Promise(r=>{release=r});await before;try{if(!stopped)await transferOne(item)}finally{release()}}else await transferOne(item)}}
+console.log(`Resuming ${verified.length}/${entries.length}; ${pending.length} pending.`);
+await Promise.all(Array.from({length:6},worker));
+if(report.failed.length)throw Error(`Transfer paused; ${report.verified.length} documents verified. Resume with the same report.`);
 report.completedAt=new Date().toISOString();await persist();
 console.log(`Complete: ${report.verified.length} documents read back and SHA-256 verified, ${transferred} original bytes.`);
