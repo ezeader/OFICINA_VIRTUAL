@@ -32135,5 +32135,123 @@
       "Vano Ascensor: revisar el solape existente con el muro, sin corregir geometría.",
       "Confirmar especificaciones comerciales y despiece de los muros cortina antes de comprar."
     ]
+  },
+  "reviewCases": [
+    {
+      "id": "opening-2275029",
+      "elementId": "2275029",
+      "code": "MC-2275029",
+      "title": "Corrediza PB · local pendiente",
+      "location": "Planta baja, sector junto a Cuarto A de invitados y al extremo del Pasillo; ubicación azul en la planta de contexto.",
+      "observation": "Ninguna de las 54 comprobaciones espaciales encontró un local. Su eje central está a 2,05 m del límite de Pasillo y a 2,08 m del de Cuarto A. El cerramiento no integra el contorno de esos locales.",
+      "proposedCorrection": "Definir qué ambiente o sector debe recibir esta abertura. El hormigón 988670 cierra Pasillo y el tabique 2274570 cierra Cuarto A; el cerramiento queda fuera de ambos recintos. Si es interior, revisar sus límites y colocar la habitación correspondiente; si es exterior, registrarlo como tal. No asignarlo por cercanía.",
+      "constraints": "Sin cambios geométricos ni asignaciones por proximidad. Cada conjunto sigue computado una sola vez.",
+      "status": "pending",
+      "relatedElementIds": [
+        "988670",
+        "2274570"
+      ],
+      "context": {
+        "sheetId": "2431497",
+        "sheetNumber": "ABR-R3-2275029",
+        "pdf": "/casa-angel/openings/r3-context-2275029.pdf",
+        "image": "/casa-angel/openings/r3-context-2275029.svg.gz",
+        "thumbnail": "/casa-angel/openings/r3-context-2275029.png",
+        "views": [
+          {
+            "id": 2431503,
+            "name": "Planta / ubicacion real",
+            "image": "/casa-angel/openings/r3-view-2431503.svg.gz",
+            "scale": 60
+          },
+          {
+            "id": 2431515,
+            "name": "Axonometrica / contexto",
+            "image": "/casa-angel/openings/r3-view-2431515.svg.gz",
+            "scale": 75
+          }
+        ]
+      }
+    },
+    {
+      "id": "opening-2295997",
+      "elementId": "2295997",
+      "code": "MC-2295997",
+      "title": "Vano Pasillo · local pendiente",
+      "location": "Planta baja, junto al sector de Cuarto A de invitados, fuera del contorno actual de la habitación Pasillo.",
+      "observation": "El nombre del tipo dice Vano Pasillo, pero Revit no encuentra local en ninguna de las 54 comprobaciones. El centro queda a 1,10 m del límite de Cuarto A y a 4,00 m del de Pasillo; no es un límite de esos recintos.",
+      "proposedCorrection": "Confirmar el destino arquitectónico del sector antes de asignarlo. Revisar el recinto ausente o sus elementos delimitadores; el nombre del tipo no es prueba de pertenencia a Pasillo.",
+      "constraints": "Sin cambios geométricos ni asignaciones por proximidad. Cada conjunto sigue computado una sola vez.",
+      "status": "pending",
+      "relatedElementIds": [
+        "2274570",
+        "988670"
+      ],
+      "context": {
+        "sheetId": "2431543",
+        "sheetNumber": "ABR-R3-2295997",
+        "pdf": "/casa-angel/openings/r3-context-2295997.pdf",
+        "image": "/casa-angel/openings/r3-context-2295997.svg.gz",
+        "thumbnail": "/casa-angel/openings/r3-context-2295997.png",
+        "views": [
+          {
+            "id": 2431549,
+            "name": "Planta / ubicacion real",
+            "image": "/casa-angel/openings/r3-view-2431549.svg.gz",
+            "scale": 60
+          },
+          {
+            "id": 2431561,
+            "name": "Axonometrica / contexto",
+            "image": "/casa-angel/openings/r3-view-2431561.svg.gz",
+            "scale": 75
+          }
+        ]
+      }
+    },
+    {
+      "id": "opening-1020586",
+      "elementId": "1020586",
+      "code": "MC-1020586",
+      "title": "Ascensor · encuentro con hormigón",
+      "location": "Planta baja, Ascensor, junto a Acceso Servicio. Azul: cerramiento de 1,00 × 6,74 m. Naranja: muro de hormigón de 20 cm.",
+      "observation": "Revit confirma solape con el hormigón 364138 y una intersección sólida positiva en 19 paneles o montantes. Además existe otro cerramiento, MC-1020050 (Ventanales Patio), con el mismo tramo de 1,00 m y el eje a solo 2 cm. Ese inserto va de +0,83 a +6,44 m y está embebido automáticamente; MC-1020586 va de 0 a +6,74 m y tiene el empotramiento automático desactivado.",
+      "proposedCorrection": "Primero definir si los dos conjuntos representan piezas diferentes o si uno es un recurso auxiliar para generar el vano. Si uno es auxiliar, ajustar su representación y criterio de cómputo solo después de confirmarlo. Luego resolver el corte o empotramiento previsto en el hormigón y verificar los límites de Ascensor. No cortar ni eliminar ninguno automáticamente.",
+      "constraints": "Ambos conjuntos siguen separados en el inventario hasta validar su función; no se descuenta un posible duplicado por proximidad. No se ejecutó corte, unión ni desplazamiento. El booleano del padre falló; los choques de componentes sí se comprobaron, sin sumar un volumen total.",
+      "status": "pending",
+      "relatedElementIds": [
+        "364138",
+        "1020050"
+      ],
+      "context": {
+        "sheetId": "2431589",
+        "sheetNumber": "ABR-R3-1020586",
+        "pdf": "/casa-angel/openings/r3-context-1020586.pdf",
+        "image": "/casa-angel/openings/r3-context-1020586.svg.gz",
+        "thumbnail": "/casa-angel/openings/r3-context-1020586.png",
+        "views": [
+          {
+            "id": 2431595,
+            "name": "Planta / ubicacion real",
+            "image": "/casa-angel/openings/r3-view-2431595.svg.gz",
+            "scale": 25
+          },
+          {
+            "id": 2431607,
+            "name": "Axonometrica / contexto",
+            "image": "/casa-angel/openings/r3-view-2431607.svg.gz",
+            "scale": 40
+          }
+        ]
+      }
+    }
+  ],
+  "reviewRevision": "R3",
+  "reviewReadAt": "2026-10-23T04:50:48.592000Z",
+  "reviewVerification": {
+    "solidHashesChecked": 108,
+    "physicalUnchanged": true,
+    "physicalElementsChecked": 464,
+    "method": "Native room boundaries, spatial samples, warnings and component solid intersections; no geometry repair."
   }
 }
