@@ -89,10 +89,11 @@ def main():
     m['codes'] = [{k: e.get(k) for k in ('id', 'code', 'kind', 'level', 'label', 'status', 'type', 'length_m', 'height_m', 'thickness_m', 'area_m2', 'volume_m3', 'concreteLayer_m') if k in e} for e in plan['elements']]
     for e in m['codes']: e['id'] = str(e['id'])
     m['documentationRevision'] = 'R11'
-    m['codesWrittenToModel'] = False
+    m['codesWrittenToModel'] = True
+    m['marksWritten'] = {'parameter': 'Mark', 'elements': 72, 'approvedBy': 'usuario (respuesta directa en la sesión Revit)', 'backup': 'outputs/casa-angel/backups/*-antes-mark.rvt'}
     m['decisions'] = ['Losas L01.00 de PA/PE: losa a confirmar (no se asume hormigón).', 'Fundaciones: solo platea PB; resto no modelado / a definir.',
                       'Parámetro Structural de los muros: sin cambios; se filtra por tipo "Muro Hormigón 20cm".',
-                      'Códigos MH/VE/LO/PL: usados en láminas y manifest; no escritos en Mark (requiere OK explícito del usuario: es cambio de parámetros del modelo).']
+                      'Códigos MH/VE/LO/PL: en láminas, manifest y en el parámetro Mark de los 72 elementos (aprobado por el usuario; respaldo previo del .rvt).']
     mpath.write_text(json.dumps(m, ensure_ascii=False, indent=2), encoding='utf-8')
     print(json.dumps({'sheets': len(out), 'views': sum(len(s['views']) for s in out), 'codes': len(m['codes'])}))
 
