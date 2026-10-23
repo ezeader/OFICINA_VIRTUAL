@@ -1,0 +1,15 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+import {readDocument,uploadDocument,parseRange} from '../lib/document-storage.mjs';
+const data=Buffer.from('%PDF-1.7\nexact original data\n');
+const sha256=createHash('sha256').update(data).digest('hex');
+const manifest={'/casa-angel/test.pdf':{size:data.length,sha256,type:'application/pdf'}};
+const headers={'oai-authenticated-user-id':'owner','origin':'https://test.example'};
+function bucket(){let saved;return {async head(){return saved?{size:data.length,customMetadata:saved.customMetadata}:null},async put(k,b,meta){saved={bytes:Uint8Array.from(b),...meta}},async get(k,opt){if(!saved)return null;const r=opt?.range;return {size:saved.bytes.length,customMetadata:saved.customMetadata,body:r?saved.bytes.slice(r.offset,r.offset+r.length):saved.bytes}}}}
+const upload=(b,body=data,extra={})=>uploadDocument(new Request('https://test.example/api/document-assets?path=/casa-angel/test.pdf',{method:'PUT',headers:{...headers,...extra},body}),b,manifest);
+const read=(b,extra={},method='GET')=>readDocument(new Request('https://test.example/casa-angel/test.pdf',{method,headers:{...headers,...extra}}),b,manifest);
+test('immutable original bytes survive upload, download and PDF range requests',async()=>{const b=bucket();assert.equal((await upload(b)).status,200);assert.deepEqual(Buffer.from(await(await read(b)).arrayBuffer()),data);const partial=await read(b,{range:'bytes=5-9'});assert.equal(partial.status,206);assert.equal(partial.headers.get('content-range'),`bytes 5-9/${data.length}`);assert.deepEqual(Buffer.from(await partial.arrayBuffer()),data.subarray(5,10));assert.equal((await read(b,{},'HEAD')).headers.get('content-length'),String(data.length));assert.equal((await read(b,{'if-none-match':'"'+sha256+'"'})).status,304)});
+test('bad size, altered bytes and unauthenticated writes are rejected',async()=>{assert.equal((await upload(bucket(),data.subarray(1))).status,400);assert.equal((await upload(bucket(),Buffer.alloc(data.length))).status,422);assert.equal((await upload(bucket(),Buffer.concat([data,data]))).status,413);assert.equal((await upload(bucket(),data,{'oai-authenticated-user-id':''})).status,401);assert.equal((await upload(bucket(),data,{origin:'https://other.example'})).status,403)});
+test('only manifest files can be uploaded and missing files report synchronization',async()=>{assert.equal((await read(bucket())).status,503);const r=new Request('https://test.example/api/document-assets?path=/other',{method:'PUT',headers,body:data});assert.equal((await uploadDocument(r,bucket(),manifest)).status,404)});
+test('range parsing handles suffixes, clipping, invalid and multiple ranges',()=>{assert.deepEqual(parseRange('bytes=-5',20),{offset:15,length:5});assert.deepEqual(parseRange('bytes=10-99',20),{offset:10,length:10});for(const bad of ['bytes=-0','bytes=20-','bytes=7-2','bytes=0-1,4-5','bytes=-','bytes=9007199254740992-'])assert.throws(()=>parseRange(bad,20))});

@@ -1,0 +1,1507 @@
+{
+  "/casa-angel/Casa-Angel-cocina-R10-datos.json": {
+    "size": 137650,
+    "sha256": "e9cf4cf1996561d99648f4019aafc537e35ded98062683658258cb3221bda4f8",
+    "type": "application/json"
+  },
+  "/casa-angel/Casa-Angel-cocina-R10.pdf": {
+    "size": 1675892,
+    "sha256": "c50fffb1cf4bd0816c649451918f9a0d1c5098dc3f739d546b71f2322ab4d343",
+    "type": "application/pdf"
+  },
+  "/casa-angel/Casa-Angel-cocina-R4-datos.json": {
+    "size": 97125,
+    "sha256": "de5260399221f4cd1ed8798ed0d24545815a61b3b2e3c562d704076cb88ac176",
+    "type": "application/json"
+  },
+  "/casa-angel/Casa-Angel-cocina-R4.pdf": {
+    "size": 1659734,
+    "sha256": "b773bff075660010f0c136d28dd97488ff66bab3378536a55c0e2592d1e81bda",
+    "type": "application/pdf"
+  },
+  "/casa-angel/Casa-Angel-cocina-R8-datos.json": {
+    "size": 129118,
+    "sha256": "6c3b292fb06d9dec813c25912aee99a85d8dee394ae0df68451f0c5194405337",
+    "type": "application/json"
+  },
+  "/casa-angel/Casa-Angel-cocina-R8.pdf": {
+    "size": 1659978,
+    "sha256": "4b296ede41af4f5709b38b474a9134aa806b14c932243d4b1b53bd6644902176",
+    "type": "application/pdf"
+  },
+  "/casa-angel/Casa-Angel-cocina-R9-datos.json": {
+    "size": 132232,
+    "sha256": "3ff1b1fd2338e33391d4eb78e516f67712673a5ca89dea7ee2e8940829c9a2ab",
+    "type": "application/json"
+  },
+  "/casa-angel/Casa-Angel-cocina-R9.pdf": {
+    "size": 1659278,
+    "sha256": "15b5e21523826f1e612e0f646e6e91d66be6a5423e75aa3eb15fbfd88347c8dc",
+    "type": "application/pdf"
+  },
+  "/casa-angel/Casa-Angel-cruce-sanitario-R01.json": {
+    "size": 53279,
+    "sha256": "580687c6d6248371d3da75800450210a7db0334dc552fc635b68fe6739bf2d1c",
+    "type": "application/json"
+  },
+  "/casa-angel/Casa-Angel-cruce-sanitario-R01.pdf": {
+    "size": 2984190,
+    "sha256": "de643e41d2c27d26e5788c6ebd83a74bb30b8581c2093a7835b68f992d678291",
+    "type": "application/pdf"
+  },
+  "/casa-angel/Casa-Angel-sanitarias-cotas-R02.pdf": {
+    "size": 6617415,
+    "sha256": "40a27d36eda108f3bcb2ec24785cc539f21cf91240fe731b0c86db3ed56432c1",
+    "type": "application/pdf"
+  },
+  "/casa-angel/Casa-Angel-sanitarias-R02-datos.json": {
+    "size": 8830541,
+    "sha256": "a4f9f694bb61171f1f8f0295cb9d3995dd816f24baee8cb29bca3db1203f664f",
+    "type": "application/json"
+  },
+  "/casa-angel/Documentacion-Sanitarias-original.pdf": {
+    "size": 5151661,
+    "sha256": "3cb35f83575fb11d159b8f193ecfd6821d95bc6db954b8fcca154a6612fe96a1",
+    "type": "application/pdf"
+  },
+  "/casa-angel/IS-0002-control-R01.png": {
+    "size": 235307,
+    "sha256": "dc64410c36581a25b0dae7fae3274c69d2c63775d380e08bc9c88f14e917c8c8",
+    "type": "image/png"
+  },
+  "/casa-angel/IS-0002-original.png": {
+    "size": 31270,
+    "sha256": "f8b42d714e5cf30c26a50795718e947620251c40f676fe704bb6662c6a606507",
+    "type": "image/png"
+  },
+  "/casa-angel/native-schedules.json": {
+    "size": 37116,
+    "sha256": "ca694f3542cb11fc87dc7da52550e3dcd1a969bb6e16a9a3b9938fa809ba7163",
+    "type": "application/json"
+  },
+  "/casa-angel/r11/1182269-01.svg.gz": {
+    "size": 457460,
+    "sha256": "c4efc04f478ed9d4bb5bfa3a941d96d48f109ec894b95d715fc8b8b1892df0c9",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1182269-02.svg.gz": {
+    "size": 456731,
+    "sha256": "d6c07749ba723b5573acc81f02ae8b7f81ad7a7be168b769af4fb53041b32917",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1182269-03.svg.gz": {
+    "size": 456827,
+    "sha256": "0fe8d44c649b5e7d0185f744865f61a15a71e7eef2c88de12e9b8a9da07f29a6",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1182269-04.svg.gz": {
+    "size": 457555,
+    "sha256": "6534af3e76bcd0975f3d762248b90b301a77a2713195702c5250c5295d1213fd",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1182269-05.svg.gz": {
+    "size": 454383,
+    "sha256": "f46ba08f935333e0908e6bda454af7d2a60a7b7fd756c43ca5bd4fdcabbdccd9",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1182792-01.svg.gz": {
+    "size": 370152,
+    "sha256": "eede72609c9a435f7e5dbfa3ba830148182b748cb20a0abe578f1dbb005942ac",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1221022-01.svg.gz": {
+    "size": 269951,
+    "sha256": "442b48470bd7da258dcac1ff72a741db39ad478ac0db16fdc66ea0e60b6ae7ad",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1240333-01.svg.gz": {
+    "size": 315183,
+    "sha256": "01b3a31d7db15171782be6782a562402d1c9058c1f7cc7fb8a4f526443cdfc4f",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1241452-01.svg.gz": {
+    "size": 82844,
+    "sha256": "f603aa5409fb926c2d8ec9ec1a1bd93515c0683849a2e24b1f1491a8dc10fb8c",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1241686-01.svg.gz": {
+    "size": 82385,
+    "sha256": "b35566cde52215347df7988d58eaddb979da934938ae780dbb27308ef0437b2c",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1249092-01.svg.gz": {
+    "size": 200434,
+    "sha256": "f1a0b818fb7d8b2353814e5f6cd3a55b8e7dc95649e412a455df83242bb3361c",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1251014-01.svg.gz": {
+    "size": 422956,
+    "sha256": "656ecd8a276c6d14f185f6d437bdf974472a30add99af2c047dcb314c5cdfc6f",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1254221-01.svg.gz": {
+    "size": 287889,
+    "sha256": "c70d83243fb162f20ce578c8751ebd9c04eaf1e1d9ba7897c4698009835eb4df",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1264035-01.svg.gz": {
+    "size": 226801,
+    "sha256": "c22609d113c96a2785d99e8166563e90a2f3df776eee54aeafcb469530b06fb6",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1264694-01.svg.gz": {
+    "size": 98933,
+    "sha256": "7a02eb5897cf95538b7870f6f47806ef239bb424aedb99a42b07c55d2de8213b",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1266974-01.svg.gz": {
+    "size": 93837,
+    "sha256": "6831ba86eaaf8df03199d7b943e010989cd14df29c36eb019ce135e265d1d0e0",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1388859-01.svg.gz": {
+    "size": 89910,
+    "sha256": "8c22ccb052d2d29449bdbe20a3489dda2c78347a5b36b9a255321fde708f2076",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1389357-01.svg.gz": {
+    "size": 191146,
+    "sha256": "cc43959378f0a1855b9d7a5701d952a1aefe23936bb030533ba5b52c6c98408c",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1389357-02.svg.gz": {
+    "size": 190735,
+    "sha256": "1d6fde5c462f16b1a6d226353d1c3c1241c15b53765ae518205b530120c47b80",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1389357-03.svg.gz": {
+    "size": 190647,
+    "sha256": "5f0df35144ea641def8903e2936395069511587cfa877ddf60cffd2835b7b255",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1389357-04.svg.gz": {
+    "size": 190800,
+    "sha256": "6e1d6080d9f8325876f308b4dcee36fad98651610a9f8ae3ebc42c3c45716d09",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1389357-05.svg.gz": {
+    "size": 192035,
+    "sha256": "b8f728da3f0c96a15ff4be9fadc633d27d23ebd372f42f16a05285c22c576a23",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1389357-06.svg.gz": {
+    "size": 191574,
+    "sha256": "2b5d15a77409d7ab764fac9961aaffe71a7d4360fc59200279548bb3ad4715af",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1389357-07.svg.gz": {
+    "size": 190495,
+    "sha256": "c670501845591ffe570e492ecc21554a02fdbbe4e8524e9ce9db7b9aabb374d1",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1389357-08.svg.gz": {
+    "size": 190901,
+    "sha256": "b62c4a45b3b7dc2df29c0cd9d2d1cb092d0d7b43c25afc78fe529093fa1a11df",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1389357-09.svg.gz": {
+    "size": 190716,
+    "sha256": "d513e4de19fcf195395e3ce1d383bec174a2980d64decdd578e67de1d33c7be7",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1389357-10.svg.gz": {
+    "size": 191003,
+    "sha256": "1513587540897d6df3f71fa60159d72c800cdccfce5bbe1f542b1a6941e143d0",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1389357-11.svg.gz": {
+    "size": 191543,
+    "sha256": "a0624d31e5aff17ccaf967aa9cf243bfe600275ba479344f7a90d2305ece3fd8",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1389357-12.svg.gz": {
+    "size": 192618,
+    "sha256": "5af1b2a78c8614d3109c2b6e386a64b99b0b99a4faddd8b328a56293c2c91282",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1389357-13.svg.gz": {
+    "size": 191100,
+    "sha256": "3fdcc94e142489fa3b8a45c2cc16e8517155da0562e5ce029807e369b2bf769d",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1389357-14.svg.gz": {
+    "size": 192181,
+    "sha256": "db6acdf05fdfd4caa11149ea46dab9faededd79a2c8d7ad80920f9a413840a95",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1389357-15.svg.gz": {
+    "size": 192466,
+    "sha256": "c83a999c98fa73b39f53a912c32808f33df78fab383fef95fb8298721401164b",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1389357-16.svg.gz": {
+    "size": 192281,
+    "sha256": "5f709b539e2cc7990add4359ecc2b0875ed86e214f3048bcb7d42460051fa954",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1389357-17.svg.gz": {
+    "size": 184726,
+    "sha256": "02b3bb9c002e934fa7cbf1b3973d00dbe5eb60a81c83469bdf1fd94e2b958169",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1389704-01.svg.gz": {
+    "size": 315715,
+    "sha256": "70dbe4621cc162934ae367498a2b7ac64632750d2f184b6080c77dc4114214ad",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1389704-02.svg.gz": {
+    "size": 316777,
+    "sha256": "daa04d035a63bc2d95cd57df8a42b3a9905dc92b8113ada2a34aed9d1a2b233f",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1389704-03.svg.gz": {
+    "size": 316558,
+    "sha256": "1fd59b73598a843a711b609ac076457d96cacd54ccfb67259f9c03017297c091",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1389704-04.svg.gz": {
+    "size": 309468,
+    "sha256": "3f9a172bdacb12cc40e8d4d8ecad45ab9f994a7fc01d61b57cadc8a83d4e24d9",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1390431-01.svg.gz": {
+    "size": 111220,
+    "sha256": "2d5be3d0c2f18de1208d4cbc73ae60ae9c582c1388bef204c40f0729c6a92b08",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1390431-02.svg.gz": {
+    "size": 111623,
+    "sha256": "c227c864788d1327224acdb564ac25a028f5d78877f447cd927b62275a0ab83b",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1390431-03.svg.gz": {
+    "size": 110794,
+    "sha256": "bd38a66a2814f1410558b8aa2e8b98c27ac1ddf81d3f21aac328dbbab611d028",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1390431-04.svg.gz": {
+    "size": 110917,
+    "sha256": "5b12f16840424761e955c97acdad7a672f8981f9f5c99796ce3ee373dc3f5d57",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1390431-05.svg.gz": {
+    "size": 111387,
+    "sha256": "3219dbeed589419d427e0741b9672210ce0ac51515b219546fab3689a97ac476",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1390431-06.svg.gz": {
+    "size": 112633,
+    "sha256": "e386da988e588165ba801dfd39fd39a597dc1b8aa23641ad44be886e179eee31",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1400839-01.svg.gz": {
+    "size": 135315,
+    "sha256": "8f9f8eb9a2ad049941926cdb90f999888e6145620e46f1375515f6f8b6e29073",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1404738-01.svg.gz": {
+    "size": 89933,
+    "sha256": "e63ed9abebdffeecf27f6d27fe318608ee8f7be7db6974f654e02d828af2d0f7",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1405109-01.svg.gz": {
+    "size": 111861,
+    "sha256": "30a99c297aa6c37044c9303aac2f06cd4d01c16f760fc8fdff5b3369248d39d9",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1405910-01.svg.gz": {
+    "size": 106974,
+    "sha256": "449585b396d7fd35a63fa153d007740d20e9bf43827ed7c16ff974f150adb72e",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1406841-01.svg.gz": {
+    "size": 134675,
+    "sha256": "2d39a37d35052bb6806e14b1f036a61defd3d623e5b6821624152dd8cfc9c3c3",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1407481-01.svg.gz": {
+    "size": 485369,
+    "sha256": "5f8d2942fa35151bf4dfeb10f4aa8c0ceb0aa8773b1627dd661a9710ced6fb2b",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1412004-01.svg.gz": {
+    "size": 55442,
+    "sha256": "5c09426e0b63f34ef4b65a832935759f2c1c22771a669188d443285d5998aed3",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1412400-01.svg.gz": {
+    "size": 509181,
+    "sha256": "34fb8074c6ff4f964af96084383399e530551f0d4793fb8005d6cfd5e1025215",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1435512-01.svg.gz": {
+    "size": 157982,
+    "sha256": "18cbf009292699a31ad97f515bfdeaa1d33ee3fd3f4d2cc58f47eda40dad336b",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1435512-02.svg.gz": {
+    "size": 157598,
+    "sha256": "4fabee401910b42b132cf9e37594b2c680c9a44ea1c7e223e69c7f5ead130192",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1435512-03.svg.gz": {
+    "size": 158359,
+    "sha256": "51b7f00fcde3e00eba6430dbf7e4aa56dd9704a7ca2feb046a316aefd4f5e1f1",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1435512-04.svg.gz": {
+    "size": 158205,
+    "sha256": "8b0adc19fa999c04a6fcf37f240d0f3b90ebca097c87589755a6a781f1c5bc7b",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1435512-05.svg.gz": {
+    "size": 157624,
+    "sha256": "c5c343066666ed7cda107aa14d3ab36bb00ab9dd668db72522cce876a65d3521",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1435512-06.svg.gz": {
+    "size": 158730,
+    "sha256": "27131dc67c58897d14e91a864d8f704dcfadc3971130cd3e38f6547b5d47a3ae",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1435512-07.svg.gz": {
+    "size": 156968,
+    "sha256": "bcdeaa8ccc85144464cd3df06c9008f2ec0df74df00a018beacdaba995de7646",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1439889-01.svg.gz": {
+    "size": 102733,
+    "sha256": "0c2dc628826c6040af97f9f0538fe39762637cbd5b49ba72ed6d9a8b2f49fd2d",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1439889-02.svg.gz": {
+    "size": 102797,
+    "sha256": "698371ae61b5893606728f17a3b4f68058ea175e221d90d9f2c727ab39378a4e",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1443740-01.svg.gz": {
+    "size": 217306,
+    "sha256": "a24f2bc5ca5e406705a8bbc460937e413ccd7b3033eecd7b0e902a565cdb11ec",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1445818-01.svg.gz": {
+    "size": 75622,
+    "sha256": "a274b545d265b132427fe098c0bcfb5b60998168dbbd58d07733df332ff3769e",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1445818-02.svg.gz": {
+    "size": 75609,
+    "sha256": "82021b2211b1d803c27a0e393a92e318c56b5b0c2e6efd41077b284cb3f3d0fd",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1445818-03.svg.gz": {
+    "size": 75842,
+    "sha256": "ca6f0d94f366eb9ec912719c6b463874b0a7780b16fe2438e3ac2bc1279865a0",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1445818-04.svg.gz": {
+    "size": 74205,
+    "sha256": "587751f3b9b88a45aec7031b329c7952d8d8c7124668cb66fa10a8ebfe0f765b",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1468213-01.svg.gz": {
+    "size": 136446,
+    "sha256": "9276e60e22fd54c8be6b2f88006031eafa4bbf17124d30075796eb052e02a75a",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1468233-01.svg.gz": {
+    "size": 83777,
+    "sha256": "aaf674af568d477fb7ba8cba942cfedfc2d38b55e36b88e55dcc9c2684f76cd2",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1468233-02.svg.gz": {
+    "size": 83995,
+    "sha256": "7e5354264d11b91b142b492bcb56f85d82c847c502dbfc92fc62b8c14904e4d9",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1468233-03.svg.gz": {
+    "size": 83517,
+    "sha256": "37b44010873b59d36e8ffe0fea7bd428f4e6aff0bbd95b15cb5d566f03079d1d",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1468233-04.svg.gz": {
+    "size": 83261,
+    "sha256": "9e611883439d2bec0bc89a6d72e470cb8ce45aaa8d6f5fd893cc0c220f7cd6f9",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1468233-05.svg.gz": {
+    "size": 80988,
+    "sha256": "266dd5a6bffa1a2997eef34377858eeeb754297a6ccece995ad8d06d530421e3",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1468373-01.svg.gz": {
+    "size": 494584,
+    "sha256": "7c12930e411444f41feb5afee4a8a7e8d1e8be175b6452a5d96493b9f1fbd4c3",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1468482-01.svg.gz": {
+    "size": 54244,
+    "sha256": "7ad52b19cd481ce6342bd0e5682faeaa3bcc4be951104b4f2df4fd03eefa66c7",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1468512-01.svg.gz": {
+    "size": 97471,
+    "sha256": "3c60fc55fc5ebf4da2c957c5bbf7a3311ca101af5c0f3dc5cdddf44ea2acae5f",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1468512-02.svg.gz": {
+    "size": 98042,
+    "sha256": "0ed0692c1bedd5ec2a37b76783d3fed0e6a724ac17ca5e8e80b9da1c1e505a9b",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1468512-03.svg.gz": {
+    "size": 97665,
+    "sha256": "570d6386249e09a57dff967db1920798aa285203382ba514329d9d07c232d3c9",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1468512-04.svg.gz": {
+    "size": 98163,
+    "sha256": "1c5c01b3694481026bbdf9f1428b3a165500cff36001e4b03b14139566fa1f4b",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1468512-05.svg.gz": {
+    "size": 97236,
+    "sha256": "641b01d763f0d420a873761f69867a57807c84001f81917af089b11b969d6501",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1468512-06.svg.gz": {
+    "size": 97474,
+    "sha256": "3a8e54fce778fcb7abe3f4a25c3753929494d4b2ca56e422211f5e3f4d9ca1d2",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1468553-01.svg.gz": {
+    "size": 198216,
+    "sha256": "04aa45527c1f126951eab86403cdde34f5935bd145f2e830939abe3f654b488c",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1468648-01.svg.gz": {
+    "size": 126591,
+    "sha256": "8952c64c97f7392eaa39b5923c86f31aee82e8d074ba7ae9da891b7ec25605ee",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1468870-01.svg.gz": {
+    "size": 63943,
+    "sha256": "aff991e1022259b17590bd6ace74742d8ae9f103f88f01a5729d55d71fca5641",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1469031-01.svg.gz": {
+    "size": 106792,
+    "sha256": "d6d21e79877adf08701e0ca07be4d00fcb00637699526c593117de3b2ce617c3",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1469031-02.svg.gz": {
+    "size": 106621,
+    "sha256": "773c842a090f26099b34d986b969ad6263d6a76bfcceb54af7717a63e02dd8dd",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1469031-03.svg.gz": {
+    "size": 106739,
+    "sha256": "b9d69d9f51bda1ba0e3e6b913feff04740bf974397d6f586c5f8b5edda628725",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1469031-04.svg.gz": {
+    "size": 106888,
+    "sha256": "1a7865c3c7795797e3ad115474827552f7f27ecbc5d866170602967f16cb713e",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1469031-05.svg.gz": {
+    "size": 107656,
+    "sha256": "640faea738ddc957a5b29d40eb581c99f669b3cf240549ca1af4d77ac78023a7",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1469031-06.svg.gz": {
+    "size": 106978,
+    "sha256": "48cecd9d3530ea5a4fc02beeae98c3da230ba69e1439a4c42520b1e2b5ca765e",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1469031-07.svg.gz": {
+    "size": 108129,
+    "sha256": "ba5282a53a469f1aaad5efb86c248a4547d54abf82b3252d395d56717bcb622b",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1469031-08.svg.gz": {
+    "size": 107346,
+    "sha256": "466d6e8b44bec5a78f1b0d65256829b7a7aab86d77d9a6cc1f3d2a2f093f2cae",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1469031-09.svg.gz": {
+    "size": 106178,
+    "sha256": "ddee2e6aac7e8b973d763883e8f75710c3eaf87b8d767f72e8284225291eb2f3",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1472076-01.svg.gz": {
+    "size": 95826,
+    "sha256": "291e77b7f53a1a71034ddcc94341ab6af90c080fdd648695c9059497160b3d62",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1472260-01.svg.gz": {
+    "size": 158974,
+    "sha256": "41d4acaa5eca5f7b483829d0185ecb1ddb5e90d83ed6e53f778fa669335c2c92",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1473228-01.svg.gz": {
+    "size": 219143,
+    "sha256": "3a3060f6348edf7f356cf786d4effc806f11567b7062a1ad928c9d8f7f94cb8f",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1473717-01.svg.gz": {
+    "size": 135005,
+    "sha256": "32ef859de350fc0c844f59e71c10837e0d57b4be808f3a49f252b5d65c892d17",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1474446-01.svg.gz": {
+    "size": 333265,
+    "sha256": "f3aeeba1632b2ff420e374d95b04365afc356c04e336dcdea5885a82892a0f89",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1474446-02.svg.gz": {
+    "size": 333369,
+    "sha256": "818abdd3b963a89c7c212a42ae14ee3213ee59c291a179ec102ed7048249fa78",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1474446-03.svg.gz": {
+    "size": 333466,
+    "sha256": "c6476fa03db849b8de67dae0ac7e6a20f2f51544a847fa0dd6f13c1e9a588207",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1474446-04.svg.gz": {
+    "size": 333454,
+    "sha256": "bdfa64bec65c57b3475de4dfc3d30dc01459d3b0d2125b132e8f7b0d24004b7a",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1474446-05.svg.gz": {
+    "size": 332836,
+    "sha256": "5e07ba2a16a7fe1279f1b7993aaf4c22a980ed06bc58f2256a64b844d73f4108",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1474446-06.svg.gz": {
+    "size": 332472,
+    "sha256": "14af352428a3c7af3f78269f515e6ce496c71a461401273b9c48e6ce6439a793",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1478090-01.svg.gz": {
+    "size": 101383,
+    "sha256": "1142db6aea93f4dc6d7c04310a6ea5f05a6ca1c65e4d95ca2939af6236aaacf8",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1479552-01.svg.gz": {
+    "size": 49282,
+    "sha256": "0230bf5c92b85d3c5a2a9b22bc4a28b8024b1f1ff86e86633e28f10e3586e6cd",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1482625-01.svg.gz": {
+    "size": 69125,
+    "sha256": "26f12e697270f383bc08034ab00ea8a4f830b05758142b19e1ec97bdfdf6669a",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1483025-01.svg.gz": {
+    "size": 85645,
+    "sha256": "b2efe52aa8b92af0f08ff4161307e90a8974b1ffee14f7680c82690e0780b8c5",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1483629-01.svg.gz": {
+    "size": 278190,
+    "sha256": "7704b40bba68c4f6e021c6eeac62317bf59d54779519e8ffdd0e571068f72782",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1483822-01.svg.gz": {
+    "size": 103885,
+    "sha256": "9adc89c4d3bed5db07bd996a6987e0c60971389adf3b9b529ebfce235d9b822c",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1486239-01.svg.gz": {
+    "size": 224259,
+    "sha256": "86d2ae6095250ced7b2af4df2631578bff8c961345954bb8829e39f722180540",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1486239-02.svg.gz": {
+    "size": 224244,
+    "sha256": "078f31a0eeabc930c694fc3ce979beeebf47e8519a3cdb92899d0971a9f95012",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1486239-03.svg.gz": {
+    "size": 224050,
+    "sha256": "d07edd5a73073165e54454fe2909116bdc4d944e3914e68ecb7a8fba12d19c6b",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1486239-04.svg.gz": {
+    "size": 225190,
+    "sha256": "b57abf8bac2f08115a6582582878d62fb25e2351a6851d48aa71ed16c667bff4",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1486239-05.svg.gz": {
+    "size": 224399,
+    "sha256": "b97de34065e8b3a3d5fc0236b96577fd0b22ecc562c2803c936b1e66aae3b50a",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1486239-06.svg.gz": {
+    "size": 224339,
+    "sha256": "6d90c92130ea5839e1239e658c2afffee2ab3bce63157e413feea9aa4020b3cc",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1486239-07.svg.gz": {
+    "size": 224873,
+    "sha256": "63ac5b37f5cb009891c0aa7d4a0a9ad129d2f95718e2941e05b536491b60d95f",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1486239-08.svg.gz": {
+    "size": 225846,
+    "sha256": "57cebf68e83fccad4ac55078328e279bc9c6c0e4ad8ea4e5977d7513f65236a7",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1486239-09.svg.gz": {
+    "size": 221047,
+    "sha256": "bb1e3ba4bc84dce5205f87727fd15166f658468d66182f0e39798aaa7719536a",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1487374-01.svg.gz": {
+    "size": 65401,
+    "sha256": "a1a83e72c219f11ae7bbd82055e21fb7cce34ee056f5865a338424cc2f4524a1",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1489196-01.svg.gz": {
+    "size": 137571,
+    "sha256": "5ff9b060732427a41dbd0fafba4dac43f6d3747b0fd16844d121accc5aa04263",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/1489631-01.svg.gz": {
+    "size": 142663,
+    "sha256": "9fadb7044f231dcb588edbb4a6c40a32053e3c61b1166a4ee94c298900e03466",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/2124939-01.svg.gz": {
+    "size": 103029,
+    "sha256": "50074cf6f7991f9c8bec14b6b35539a7bac2eecd6c7a6953257b6f7dbffa9a97",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/2135531-01.svg.gz": {
+    "size": 251763,
+    "sha256": "8802fd4e22a4cbcb5604d2cf84803ffadf0fa45a47842014a4e35e2db52d1551",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/425520-01.svg.gz": {
+    "size": 94489,
+    "sha256": "5a0aba7503d5ada843a4d0e01a1e97151c8cc2623275554d7b3ce6536b98b66b",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/669056-01.svg.gz": {
+    "size": 221415,
+    "sha256": "f0e176e1a47ae1ff0db057331f450ec20e1d53a82b7fddfb80af1285109ba5ad",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/Casa-Angel-sanitarias-R11-01.pdf": {
+    "size": 20149316,
+    "sha256": "2e2ef3b0f5435a18865721b07e13c444e989d509d71d277334193e42db1d4495",
+    "type": "application/pdf"
+  },
+  "/casa-angel/r11/Casa-Angel-sanitarias-R11-02.pdf": {
+    "size": 9484604,
+    "sha256": "661a582d352689413d4c8685c12bd6cf4c067f5f915a2846d5e8b0791e6c013f",
+    "type": "application/pdf"
+  },
+  "/casa-angel/r11/Computo-sanitarias-R11.pdf": {
+    "size": 136931,
+    "sha256": "777e3ed508f2fc09a021a5ca0acb0449c28253bd64c77cc0af614a28af13545c",
+    "type": "application/pdf"
+  },
+  "/casa-angel/r11/original-01.svg.gz": {
+    "size": 319008,
+    "sha256": "c45e834870746567217a49f038194dff17be598392463ba604ac94d6381c1d02",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/original-02.svg.gz": {
+    "size": 384702,
+    "sha256": "af93ed2861f445a3c0a5a4db4bf897dc8b414d404fe8a8c33547dd14238a887c",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/original-03.svg.gz": {
+    "size": 328670,
+    "sha256": "e7c8eb86a111ffa93bc817c8eacb87fbce033be6d337c681ea479db952602b84",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/original-04.svg.gz": {
+    "size": 454073,
+    "sha256": "926078def7deb56d7b5a634f662120c5284fd23e668944d9a4e32ab655cdab6f",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/original-05.svg.gz": {
+    "size": 280405,
+    "sha256": "75ca095a28ee2f4d94875c46d7dfc9635267a3036f6c6f1814be00eea34590f1",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/original-06.svg.gz": {
+    "size": 247824,
+    "sha256": "721c5a1833f4d7300dab0326a6a377225f5d16ffde1a8ea3789de36823ff7425",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/original-07.svg.gz": {
+    "size": 281470,
+    "sha256": "1ed656c4fbc433aedc8e2a05430b70d9b74989350241d942020324a6ae811114",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/original-08.svg.gz": {
+    "size": 241172,
+    "sha256": "55a5d1b6b4ddc4d0d1d6f45492344dc398d959b60f65941da20175ed9d0fca53",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/original-09.svg.gz": {
+    "size": 249541,
+    "sha256": "3ddd967d77906ca768f9379695c605c99f9a122f603a909cb710ea1b48ad7422",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/original-10.svg.gz": {
+    "size": 171994,
+    "sha256": "0c2cf58159ac6af452955b090d0b4615cbf534da9e64c778c2b2ab81fa5295cb",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/original-11.svg.gz": {
+    "size": 249640,
+    "sha256": "fd43b7867b399e7b136701f9eb2ee2605c80e07d93a452455527188f34969bba",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/original-12.svg.gz": {
+    "size": 260059,
+    "sha256": "74925a8771644ab1433cce0ffcb505546ef94069044d9c10df6912fb8f74a5c2",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/original-13.svg.gz": {
+    "size": 209877,
+    "sha256": "105a3750efaa8a55e98bf77415f7508b9c2ca49753313f2cb580fecae5469a41",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/original-14.svg.gz": {
+    "size": 310158,
+    "sha256": "577f0fd7705df171c80570b794034342f7fecbbb7dfe45bda1678f16c8c42aff",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/original-15.svg.gz": {
+    "size": 220009,
+    "sha256": "b7603bb88d3545bac83000832ebf417b4eb14dd838b668a82b0cf0aca87af3fb",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/original-16.svg.gz": {
+    "size": 178383,
+    "sha256": "273e5301bf01621afabf6ceec48a8fb8791020338fdfef51129e246fd6128599",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/project.json.gz": {
+    "size": 281425,
+    "sha256": "f36c718753108fcd91fba84b21124378813e5268a662eb4882199526f7ec0200",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/verification.json": {
+    "size": 354,
+    "sha256": "4905b4aecdfb08fce110671df2665b7db0a7e89a0810b6e1ae4c8effad8e280c",
+    "type": "application/json"
+  },
+  "/casa-angel/r11/view-1182269.json.gz": {
+    "size": 753178,
+    "sha256": "4a650d7ae8f31d6b84f114103ef8dcd3e7442f1b6a41112c2ed172bba2750862",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1182792.json.gz": {
+    "size": 518860,
+    "sha256": "78fcdba39a2177d52d7a54ee35107aa2a296816bef4f33a667d80dfb9d09fc3f",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1221022.json.gz": {
+    "size": 433818,
+    "sha256": "4ab498086e9860bb3624d83bb492a0619d3d173616b2451b156dd383dbf39008",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1240333.json.gz": {
+    "size": 313802,
+    "sha256": "aeba132a0cd8082697e0ee896f04aca459ba8831ab799ae72cfadb81d9ff2405",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1241452.json.gz": {
+    "size": 78153,
+    "sha256": "bbcd45c5c726254c49949d630cf4a7accc0879f5068cd25039bb9353256bf07c",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1241686.json.gz": {
+    "size": 46825,
+    "sha256": "9de001256e81a04423313a5b542a05f3ca0d222ae53d3ef55d89c551862af990",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1249092.json.gz": {
+    "size": 115476,
+    "sha256": "e5290513f6d26f51ee41c271971e1b3b438000f5ceb8b8a90270b457327ef5cd",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1251014.json.gz": {
+    "size": 202154,
+    "sha256": "6e5549cb75e249b4e4b775b1b814a698258da87dc87f9be031e3e993465610d7",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1254221.json.gz": {
+    "size": 1158155,
+    "sha256": "7c5a40b97ffe9bba587e3bf877745f6cd33a0da4b26f80c6d8003f865984b0b8",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1264035.json.gz": {
+    "size": 529401,
+    "sha256": "cd11cac7fe242ff3bc7c961cce7adb9a6dafc8187fdc9b3d0c9c97bb4e683b06",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1264694.json.gz": {
+    "size": 48193,
+    "sha256": "5cbf9b99825b6166834a64868cd4b83ddf75fe8a8645c0ea6b077f981fca20ee",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1266974.json.gz": {
+    "size": 61859,
+    "sha256": "2ce3e27c7b0d677c5388c76d778e8280f9786cba0ef93af2b0134bae65d0dc1c",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1388859.json.gz": {
+    "size": 54051,
+    "sha256": "fe115d61b19c4768866f22d5a645c53e0e225d42a653edfd560e59d07fccd436",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1389357.json.gz": {
+    "size": 271952,
+    "sha256": "9b9fef5adb09e3ced96199d3be16c15b79e4e0a56323108adf3c94db444110b1",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1389704.json.gz": {
+    "size": 304754,
+    "sha256": "fa30b7d4bde4dfb91e7ce0467ebc597cf9b2853967ef12873218e56844fb38e6",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1390431.json.gz": {
+    "size": 110238,
+    "sha256": "c8ab47220f7fe33425964a34ac83b010b7d775d43b2ee1d90b1bb91762951441",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1400839.json.gz": {
+    "size": 200228,
+    "sha256": "d734a48e49a6955180d634d6dd42186a11e9f05c86f140d7733b2af982574e4a",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1404738.json.gz": {
+    "size": 106173,
+    "sha256": "72d40d55f800f1805fa353615eec386fa580567feffff36715e42781dc0aca07",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1405109.json.gz": {
+    "size": 105110,
+    "sha256": "ccbe8c123dc05704a157cc6b3a8f95ef64a1c6abcdc24de27ebf0a7ebb240558",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1405910.json.gz": {
+    "size": 98565,
+    "sha256": "f40cebfbf4abad6a72ba3ffadbd58cbf830867518804095fbf4513f5a0ea251a",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1406841.json.gz": {
+    "size": 125348,
+    "sha256": "9b7616ef857b406110e63f94be3228d180c0582f0fbc9af2a20e55a66b7111f9",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1407481.json.gz": {
+    "size": 814796,
+    "sha256": "aebf874ac4b1dfa404540d0d4100841724e9187480e46a95fbaf98c3adad07f9",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1412004.json.gz": {
+    "size": 11767,
+    "sha256": "1d505f5fc8998f970c403dbe83d3169be5e80bbbcee5c2a4d9cde9537370caca",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1412400.json.gz": {
+    "size": 1166545,
+    "sha256": "7aa5ab73cdf258af5102c8911af6c9118bbe906be67a5fd9fc3f2ea5b7fd812c",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1435512.json.gz": {
+    "size": 195896,
+    "sha256": "3482ad7f97069f2803dfddf4c2333700eaac2ef873de100fd9e19c1a627263e2",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1439889.json.gz": {
+    "size": 41125,
+    "sha256": "9009e2a01ea78dfa78bd0d4233a5b5b701887d0e75096e928d5e5ab588329583",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1443740.json.gz": {
+    "size": 108461,
+    "sha256": "9c4aa6bd6096edc036e9cfc0e86894f26fd0e8e590a9acd0b07c2b40e2f80dd1",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1445818.json.gz": {
+    "size": 50780,
+    "sha256": "875a1a23361d897609a6b9d4ae0c9cd5add4c26d7e48c97c6ecb74ef84fe56fc",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1468213.json.gz": {
+    "size": 165144,
+    "sha256": "94933cdb76a504f84e5685a94900c0191a3d98c61d2bd1e175835c146563ac0c",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1468233.json.gz": {
+    "size": 79082,
+    "sha256": "3ff2876f4ece9f32fd6ce7f7347a288f251868e0fdba5c4951898ee9c6e1973f",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1468373.json.gz": {
+    "size": 585820,
+    "sha256": "52bd82a0aac03647772423b7a90d3ace12cb88dbb2f677fff10788cdc3d448e7",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1468482.json.gz": {
+    "size": 14796,
+    "sha256": "a54964a8886cac89a21b71bde48ec8fed02635ce9a902f439771fd59900d3699",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1468512.json.gz": {
+    "size": 101658,
+    "sha256": "92758ffd0d6252f15deb514d79bfff810ac3f5def050a7de434c03e7893d3cc2",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1468553.json.gz": {
+    "size": 20875,
+    "sha256": "9175fd5540431eb1569ac3622985ce3b5a048f63e727fc9f03d0d4b379bc36d4",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1468648.json.gz": {
+    "size": 170834,
+    "sha256": "f0386c5c576e7190eab6124059a2085fc3492fab766d01221a35637a9ecfa6eb",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1468870.json.gz": {
+    "size": 140023,
+    "sha256": "4611d956859bb567182d62ec4ab7710bf6c97c04cb3ee1476a93bd9a61e0a766",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1469031.json.gz": {
+    "size": 136167,
+    "sha256": "ccd9e30c6cd995c01c113a36ebcde3a05e0a658bbc3e8f8014f96b074c8c48ea",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1472076.json.gz": {
+    "size": 200403,
+    "sha256": "7555f73b1ecda763802d5bd886cacbb20a61903b2dbac022ec437612cb4a3375",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1472260.json.gz": {
+    "size": 168510,
+    "sha256": "d9f5735ca6d1577ef3417e5b3b6afdbe15d94d4c6dd1f057517877687056e0fb",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1473228.json.gz": {
+    "size": 195372,
+    "sha256": "8c458a30e5990dd5033f572f5887c5ac91d5fd37e95e9033afa0e1ca6f34ffa3",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1473717.json.gz": {
+    "size": 68117,
+    "sha256": "1d544074faf1808c9d28d0ca80810bc866df1c856b6ec66d3db3ed3409ba298a",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1474446.json.gz": {
+    "size": 87066,
+    "sha256": "db53244d6d0fa09f71ed4049293e27b41a0dc4a3b858e931e73266f7867d289d",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1478090.json.gz": {
+    "size": 97993,
+    "sha256": "57306b1d63a9e9765000f18d91338e68150c5342f41508d6f5bb9f60e9c716a2",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1479552.json.gz": {
+    "size": 47613,
+    "sha256": "58f708a2b9ab9fba290bae31df826325d7acb06f7f1cd01670fb30b1231695ac",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1482625.json.gz": {
+    "size": 100047,
+    "sha256": "f3bb62229a3a27206f68041466f9cc8c3c690ea6bf275df966f2ecd1ce3716b6",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1483025.json.gz": {
+    "size": 85718,
+    "sha256": "bde6d40559c77c6a66e3dbab84d9022bb523b80cf13c78bae146f2286e73fe70",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1483629.json.gz": {
+    "size": 206758,
+    "sha256": "cd4c3b89bef66ede351cce633e280dc7f9d4316e87fd0ac898f70c11a0cf4425",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1483822.json.gz": {
+    "size": 116091,
+    "sha256": "d660c9dbdef82acfe2768264eb407c979b43cc21c50ee739687bfac6c6ac9795",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1486239.json.gz": {
+    "size": 133629,
+    "sha256": "4ac79157090293a629bfc53da10ad878910442a04ddabd5fd9a1b5d59e163c6c",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1487374.json.gz": {
+    "size": 46127,
+    "sha256": "ddcbbd0d10e158f3cd63417ecb20873ead5d877aaa3ac499f753d35bb1f05d93",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1489196.json.gz": {
+    "size": 66610,
+    "sha256": "7b1165be548bbf6cee08864d51f9648658cd9ac66781e56c9c36b72a863e0c74",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-1489631.json.gz": {
+    "size": 174727,
+    "sha256": "09cfc9adf64d076ab9b8e1191badf544c9c73dd38829e13eaeb210470cccf810",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-2124939.json.gz": {
+    "size": 129500,
+    "sha256": "68fc269563d38e1e0f8d16b5aef317a9c8749457c4cad1e1e817bcc0a54ad1e0",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-2135531.json.gz": {
+    "size": 444056,
+    "sha256": "f92c5d71692de1d49fc3538bdf6080ee073e45eb980077fc17c3959c03df1141",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-425520.json.gz": {
+    "size": 13227,
+    "sha256": "00faa1f8704c9e98bece5727fdce4a09fa5b53ef11aafe799b4c30f5086b6907",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r11/view-669056.json.gz": {
+    "size": 84102,
+    "sha256": "2776c07c880726e842a15a89fec4f30998195db67705a6cc8d94e88ea89495a3",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r12/1182269-01.svg.gz": {
+    "size": 442762,
+    "sha256": "d9c40fbe55b70926943db294d337912bfc057bb5dfe55edca04c5cec43f9aa13",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r12/1182269-02.svg.gz": {
+    "size": 21371,
+    "sha256": "58df1da355d8e7ef3c22245971068ef7dc62cb0deda4b99872f8732aa1b50934",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r12/1182269-03.svg.gz": {
+    "size": 45153,
+    "sha256": "0928ca1744b4fe06a809537949fa4486d9dbe6a7d9816c048b0b45c6e4b8cd7f",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r12/1182269-04.svg.gz": {
+    "size": 47284,
+    "sha256": "7c5ee236e710381c7782876623fac53ea1447306b822291c024fd58c87997416",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r12/1182269-05.svg.gz": {
+    "size": 34024,
+    "sha256": "68669e6755f4c0cef1d85a065a08b743c8c7e8e3a68b72b270f0be527bd21b31",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r12/1182269-06.svg.gz": {
+    "size": 30493,
+    "sha256": "1bb48ac7ab80f8c6e5eabb4ca3fc0952a71efae0431ba15ceb55621191b29110",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r12/1182269-07.svg.gz": {
+    "size": 44486,
+    "sha256": "e3ffddf46d690c682785e79379d8d3ab3c9ba29c03996e46f9ba57d26439dd26",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r12/1182269-08.svg.gz": {
+    "size": 42568,
+    "sha256": "9e99f7f4a09707235214f94368a0e322b99dde496ac1ef19ca640e6c4ea45b2c",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r12/1182269-09.svg.gz": {
+    "size": 108576,
+    "sha256": "9eff648482214492f827e9898f486d1b3d3d6825bfc5b98672961e7c355e8f5a",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r12/1182269-10.svg.gz": {
+    "size": 40727,
+    "sha256": "54ed193ca6f44826c5aac79c081bb8e9b4c3c906d4f2d4ea66dea9d3dc66d8ff",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r12/1182269-11.svg.gz": {
+    "size": 87291,
+    "sha256": "39b977caac222a16d0b634533a2fa5649d5293cb6dc9f30533e015337918d556",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r12/1182269-12.svg.gz": {
+    "size": 59989,
+    "sha256": "ae740b99179b532e9520085e4a5b895181c8b8dddec9ef00e579b19deaa54418",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r12/1182269-13.svg.gz": {
+    "size": 37578,
+    "sha256": "cdbc7107bc0d75bcb9bc64da5e4c3c9033aaff002bf12e1ea710c7b3e668afb7",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r12/1182269-14.svg.gz": {
+    "size": 48291,
+    "sha256": "1f2832b9bdfef877794b08ecbd77b53af9d009cab92463840456e4a9d98bf466",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r12/1182269-15.svg.gz": {
+    "size": 25467,
+    "sha256": "cfdb41e09b76a196a8ed7434f6bced7212e7bef0c3a19d31bf980f56b487f62f",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r12/1240333-01.svg.gz": {
+    "size": 311672,
+    "sha256": "d19ef01f915080eaa3a1237974468887386a3d5333264a77b6dc8630031ead89",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r12/1240333-02.svg.gz": {
+    "size": 81311,
+    "sha256": "7b0d70b2b2cd44e7ec5bf70c8e747a58e48ba9a200943c4a05bbf3b87e95ddfe",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r12/1240333-03.svg.gz": {
+    "size": 22195,
+    "sha256": "653a686e43b2916c5dd70d83305459dab12c988cc474ddc4a110c5bd414aa622",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r12/1404738-01.svg.gz": {
+    "size": 87673,
+    "sha256": "049aa5be20d9d56681ca2cd001de5b3a10f43481d58def78d2c6c5f7edfd9368",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r12/1404738-02.svg.gz": {
+    "size": 64472,
+    "sha256": "a4d2c285190f5212239805ecf04ed57624da719e422f717d0aee35ba61330c58",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r12/Casa-Angel-plantas-generales-R12.pdf": {
+    "size": 2901515,
+    "sha256": "9799442ddbcdca4524c32f95c63d7d31c5e0da5bbf741d0eb9c92da98bf9a504",
+    "type": "application/pdf"
+  },
+  "/casa-angel/r12/Computo-sanitarias-R12.pdf": {
+    "size": 137092,
+    "sha256": "a8d566ad2fbb4b95ccf9bce91e77c43fd54b8077a4d3d18d192c35fc8edc219f",
+    "type": "application/pdf"
+  },
+  "/casa-angel/r12/project.json.gz": {
+    "size": 303284,
+    "sha256": "3553b75ee85f063b00fce7ad7ea65e814f058d386919e08e8cee629843fcfbf8",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r12/review.json": {
+    "size": 62054,
+    "sha256": "1a53c9f37f59cac6fb4d42f529000f7bf3ab53c986d2b067b2aa27a8dcd6b521",
+    "type": "application/json"
+  },
+  "/casa-angel/r12/verification.json": {
+    "size": 1099,
+    "sha256": "237fd715e73cfa6ae1f6a94a17f346bead63fdb70493cc66c36b44639b0efa47",
+    "type": "application/json"
+  },
+  "/casa-angel/r12/view-1182269-01.json.gz": {
+    "size": 861415,
+    "sha256": "edb7ff7e22c49438e45f507ab7f12066abd54b1c396102be796aaa2566e83b5d",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r12/view-1182269-02.json.gz": {
+    "size": 896150,
+    "sha256": "5d1099f3ce858883f41aef0932d290eb7932868313112e256d8dee44ee4e736a",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r12/view-1182269-03.json.gz": {
+    "size": 935349,
+    "sha256": "d24dcc68fed00639c401d079be774a2261692c41cdc358ff26dc85286bb30919",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r12/view-1182269-04.json.gz": {
+    "size": 935276,
+    "sha256": "030066979bf5d69fac0616ba20363caaa82d48c7ad673be98da03fd76e310b09",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r12/view-1182269-05.json.gz": {
+    "size": 936235,
+    "sha256": "acfc15ed4d4a287bdc2a2079192528072ed605969277109e238cc2b5c777f3d0",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r12/view-1182269-06.json.gz": {
+    "size": 929731,
+    "sha256": "2fd19a55ba10d7a56059e5d6fec0e789d81e8ae9654a6f32bdf2d01ae392a6ee",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r12/view-1182269-07.json.gz": {
+    "size": 939684,
+    "sha256": "c4d50d8f5fd865075b30a3f36c67cbceefb72628aaebb51b3938ac92e3d27e58",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r12/view-1182269-08.json.gz": {
+    "size": 938792,
+    "sha256": "bd84d0c0b9395234461a134733d86ef00e6da0254731e83357dbceb6073d5ea8",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r12/view-1182269-09.json.gz": {
+    "size": 944548,
+    "sha256": "ea1dcf0f1a4a276f31f09e1ff12b6944cdf839fb2b389114ba29c8fbde5eeaab",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r12/view-1182269-10.json.gz": {
+    "size": 941134,
+    "sha256": "1e8a6a74350c0883130710dcaaf9c797cae6a2f286edd743854873c17c2fd754",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r12/view-1182269-11.json.gz": {
+    "size": 946407,
+    "sha256": "3fbbbeb352df8d6d2b9c3826b1a4909a5ad686c9f241333b652e649d5a8748a4",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r12/view-1182269-12.json.gz": {
+    "size": 941926,
+    "sha256": "d33c5ca26f818f9adc07337487b3a23cd337f559369c20ddb3374e25eddd085d",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r12/view-1182269-13.json.gz": {
+    "size": 951716,
+    "sha256": "3f725998c127c9d21b6639421d5be1ead4d77c6bbee61916c7a12e6f3dffe968",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r12/view-1182269-14.json.gz": {
+    "size": 932448,
+    "sha256": "43948f1a3e0e24772476a5fd92191e73e90c3cadea4bf59ecf32266b7362263e",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r12/view-1182269-15.json.gz": {
+    "size": 933791,
+    "sha256": "8f0546413f49cea614da75cb1711840d02688f150bd2350e65b818b88fcf50c1",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r12/view-1240333-01.json.gz": {
+    "size": 363176,
+    "sha256": "d770a3c6ccde5372122dde971289a394255df9048707378a5026095c077e4540",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r12/view-1240333-02.json.gz": {
+    "size": 379762,
+    "sha256": "a075f11a0ef9e8bb0c111ded74ca5aa1e4a138bd9cc793448f9955adddc295c9",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r12/view-1240333-03.json.gz": {
+    "size": 388861,
+    "sha256": "b901fee78787fccb990fd7e10cb24dd14d95ce8b67b075308f90b50541f1cbb8",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r12/view-1404738-01.json.gz": {
+    "size": 120962,
+    "sha256": "24c33e678680ebb8aa47b3a10dddeaf841c45ec6a562fcf8ddff0a0fd156f044",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r12/view-1404738-02.json.gz": {
+    "size": 127255,
+    "sha256": "e3d8f809760242b10f13ad255a1a161b77bdbd5c3ed8aa35d59af332b82ae450",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r13/Bano-principal-revision-R13.pdf": {
+    "size": 7008,
+    "sha256": "1a8214392c9b39ce7db9047cde2dc171b6d847e393dfd1985fff2304d794da94",
+    "type": "application/pdf"
+  },
+  "/casa-angel/r13/Computo-sanitarias-R13.pdf": {
+    "size": 137078,
+    "sha256": "3228f92f24dde713087570fef44f9baf5eb71aff3b5928af3d6e4795d6f918cc",
+    "type": "application/pdf"
+  },
+  "/casa-angel/r13/project.json.gz": {
+    "size": 312602,
+    "sha256": "66acac223989b29239f21d49cb92f1a573a3a09bce448d425af8f70adbf63648",
+    "type": "application/gzip"
+  },
+  "/casa-angel/r13/review.json": {
+    "size": 104930,
+    "sha256": "7047d9f43a644ce1283af579a104125b1c8f521b6615d8536559d86fc989ac20",
+    "type": "application/json"
+  },
+  "/casa-angel/r13/verification.json": {
+    "size": 753,
+    "sha256": "fd943060445c4cbc72fbcdd2cdf86f5a079d6264c34ea565a8211e4b41e399dc",
+    "type": "application/json"
+  },
+  "/casa-angel/r4/axon-original.png": {
+    "size": 1525193,
+    "sha256": "4c4bb495abe02fe90f1fe48a767d72dc46a987276cf7ea2bd7e3b0651945deb0",
+    "type": "image/png"
+  },
+  "/casa-angel/r4/axon-overview.webp": {
+    "size": 77996,
+    "sha256": "15b41e4d5f3a60d71d53ae0374bf42b0a8ee2458a328b87d85916643900fbd5a",
+    "type": "image/webp"
+  },
+  "/casa-angel/r4/axon-sanitary-r10.png": {
+    "size": 1567221,
+    "sha256": "ef10d4a706e1a7edefc8e7d5f3352640876ed4dc045135aff9ed6ef514a26355",
+    "type": "image/png"
+  },
+  "/casa-angel/r4/axon-sanitary-r9.png": {
+    "size": 1564932,
+    "sha256": "e4f558664272cc86ebfe39df61d8d75bf0f4b774d1e7be4740ba241642dad561",
+    "type": "image/png"
+  },
+  "/casa-angel/r4/axon-sanitary.png": {
+    "size": 1564852,
+    "sha256": "0d30a007d058ccd77dbb53fab0b95f4d1bfa3d285bdbcf9816412d7bed205f9c",
+    "type": "image/png"
+  },
+  "/casa-angel/r4/front-accessories.svg": {
+    "size": 2294229,
+    "sha256": "a05716b1eec01ad364df20140aca1f65dac038277f384f0db2a659659f76d6fc",
+    "type": "image/svg+xml"
+  },
+  "/casa-angel/r4/front-accessories.webp": {
+    "size": 151838,
+    "sha256": "efe341da6c9347866ee4e93575e5012a555df60dbfd548047f8a264f97864aa0",
+    "type": "image/webp"
+  },
+  "/casa-angel/r4/front-pipes.svg": {
+    "size": 2303894,
+    "sha256": "4290166920db86ff733e405cc38f88bc3c70113a9672cda694923853b0d3dd09",
+    "type": "image/svg+xml"
+  },
+  "/casa-angel/r4/front-pipes.webp": {
+    "size": 163088,
+    "sha256": "94a31734e967fb011eb71a2631a3f1bd46595ea79715cb436008154219dc9ee3",
+    "type": "image/webp"
+  },
+  "/casa-angel/r4/plan-accessories.svg": {
+    "size": 1258727,
+    "sha256": "2f1f70f0a7915e3bd930798d1b6239ce6f23fb9fb7eb7a7cc2ecab791d5ce591",
+    "type": "image/svg+xml"
+  },
+  "/casa-angel/r4/plan-accessories.webp": {
+    "size": 106050,
+    "sha256": "ffadda951701aec58358ac0359eec566522df5e42cf51c6aaa62c4757304f6fd",
+    "type": "image/webp"
+  },
+  "/casa-angel/r4/plan-pipes.svg": {
+    "size": 1269415,
+    "sha256": "63468d5485030084198208c686cf3443fe758f6d36d1efe3a805963a4551942e",
+    "type": "image/svg+xml"
+  },
+  "/casa-angel/r4/plan-pipes.webp": {
+    "size": 107962,
+    "sha256": "eb8055cef1af4a4683f24439a750a6d64a1047470afea6a4f4e61e73ce34f8a5",
+    "type": "image/webp"
+  },
+  "/casa-angel/r4/side-accessories.svg": {
+    "size": 2776918,
+    "sha256": "178401e03840aa5467a20d780f1c196ccc8a1a62e87ba3847e6ea75cb26eba93",
+    "type": "image/svg+xml"
+  },
+  "/casa-angel/r4/side-accessories.webp": {
+    "size": 135150,
+    "sha256": "074c16cf9edd1a0a4eb3208dfab5599584b32a1dee98edfc1053d9879d20fb1f",
+    "type": "image/webp"
+  },
+  "/casa-angel/r4/side-pipes.svg": {
+    "size": 2748108,
+    "sha256": "8f948b3bf6f7c52cb81bf270ec032d6661b5c7767717b3bf6bda143569461133",
+    "type": "image/svg+xml"
+  },
+  "/casa-angel/r4/side-pipes.webp": {
+    "size": 115432,
+    "sha256": "5c799e3e7e6da0e5225dd65738367cbc3ffc5dfd0020f0e83ca4686c188d5d9b",
+    "type": "image/webp"
+  },
+  "/casa-angel/revit-piloto.png": {
+    "size": 182587,
+    "sha256": "d071434760792b6a5e45cd01b1c1e98f0aac9acd8e9e35b4cd8b22e2db3be58b",
+    "type": "image/png"
+  },
+  "/casa-angel/sheets/sheet-01.webp": {
+    "size": 134714,
+    "sha256": "2191772791e2f37d792dae7087b0150bfa322e17378a897f81564ab4f61d5e80",
+    "type": "image/webp"
+  },
+  "/casa-angel/sheets/sheet-02.webp": {
+    "size": 102076,
+    "sha256": "391420b2792db499261d0cb16f5452f59c15e9043b40413d0fe47dd8ff070b8a",
+    "type": "image/webp"
+  },
+  "/casa-angel/sheets/sheet-03.webp": {
+    "size": 91848,
+    "sha256": "11b248e57470c2c924ae0794c27200667dd44340ecb5cbd3ac533b7d96b09983",
+    "type": "image/webp"
+  },
+  "/casa-angel/sheets/sheet-04.webp": {
+    "size": 144394,
+    "sha256": "7ca4ca4a66f21e798b7b0c4d7c5a0084cc190587beca6686adf8352a63e8b037",
+    "type": "image/webp"
+  },
+  "/casa-angel/sheets/sheet-05.webp": {
+    "size": 122192,
+    "sha256": "bd4c971424be08c05d9fc78f6399cc47de8df33c1cc416b9c4c496598ec9eb86",
+    "type": "image/webp"
+  },
+  "/casa-angel/sheets/sheet-06.webp": {
+    "size": 114548,
+    "sha256": "94dd260e3bd352e4d22f8784250d2061ec1f81fb50296d77282595ac2bd63360",
+    "type": "image/webp"
+  },
+  "/casa-angel/sheets/sheet-07.webp": {
+    "size": 125142,
+    "sha256": "b65bf6309d5d597bc354f7baabaa62a897bab8e6f109f22bfc10343a01846164",
+    "type": "image/webp"
+  },
+  "/casa-angel/sheets/sheet-08.webp": {
+    "size": 95120,
+    "sha256": "8dd6107b49adb727561d06ad1d8e8e42b2aacbab641881756643aa1fb8dbdd6e",
+    "type": "image/webp"
+  },
+  "/casa-angel/sheets/sheet-09.webp": {
+    "size": 107022,
+    "sha256": "e68e6eefdfc07bf1580dc264090819ec82f8afba487f2bbd3ef340837fa1773f",
+    "type": "image/webp"
+  },
+  "/casa-angel/sheets/sheet-10.webp": {
+    "size": 91524,
+    "sha256": "c3c7aecf7719abcd7a56ffd643a3996d3375927bd5ffd44310911f1031446c58",
+    "type": "image/webp"
+  },
+  "/casa-angel/sheets/sheet-11.webp": {
+    "size": 103162,
+    "sha256": "5828eada28dd7908f3585feecbf7c9d08f74d780f92ed85ace333dae03e889af",
+    "type": "image/webp"
+  },
+  "/casa-angel/sheets/sheet-12.webp": {
+    "size": 94798,
+    "sha256": "e1af3328d97506a25e8fc7edb9da843912f7f8ba48d8e1e8dfbd2e9c37ea9ec9",
+    "type": "image/webp"
+  },
+  "/casa-angel/sheets/sheet-13.webp": {
+    "size": 120488,
+    "sha256": "6f97f0f3c2d668f6cce536c05f422f77e3d5989241ee6e6bd4dab0882ece1da0",
+    "type": "image/webp"
+  },
+  "/casa-angel/sheets/sheet-14.webp": {
+    "size": 131032,
+    "sha256": "2f5f9852bd1c0c5f36f19465add442960838a12e714f4fc69d79161899f3a7f2",
+    "type": "image/webp"
+  },
+  "/casa-angel/sheets/sheet-15.webp": {
+    "size": 97672,
+    "sha256": "8f0e73ad7848f720493a6c47a62bb4cac1343794bac72eb182a35dcff91ab823",
+    "type": "image/webp"
+  },
+  "/casa-angel/sheets/sheet-16.webp": {
+    "size": 75802,
+    "sha256": "025ea4b6e3c15861582e895fda472f9f7e0eda017dc4a81a3e44edad42ac5dac",
+    "type": "image/webp"
+  }
+}
