@@ -39,7 +39,7 @@ PT_PER_FT = 2383.94 / 2.7592
 
 def records():
     out = []
-    for f in PARTS:
+    for f in PARTS + sorted(x.name for x in OUT.glob('est-f-g*.json')):
         p = OUT / f
         if p.exists(): out += read(p)['sheets']
     return out
@@ -80,7 +80,9 @@ def main():
                               'elements': [{'code': code.get(r['elementId']) or opening.get(r['elementId']), 'elementId': r['elementId'], 'box': [round(x, 4) for x in r['box']]} for r in rows]})
         assert n in page.get_text(), f'sheet number missing in {n}'
         pdf.close()
-        out.append({'number': n, 'title': s['title'], 'level': s.get('level'), 'sector': s.get('sector'), 'sheetId': str(s['sheetId']),
+        extra = {'kind': 'element', 'element': s['element'], 'elementId': s.get('elementId'), 'elementKind': s.get('elementKind'),
+                 'rebar': 'Armadura: a definir por el calculista.'} if s.get('kind') == 'element' else {'kind': 'general'}
+        out.append({**extra, 'number': n, 'title': s['title'], 'level': s.get('level'), 'sector': s.get('sector'), 'sheetId': str(s['sheetId']),
                     'pdf': BASE + f'{n}.pdf', 'image': BASE + f'{n}.svg.gz', 'preview': BASE + f'{n}-preview.png', 'thumbnail': BASE + f'{n}.png',
                     'outsideCrop': s.get('outside') or [], 'views': views})
     m['sheets'] = out

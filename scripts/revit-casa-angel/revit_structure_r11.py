@@ -97,8 +97,8 @@ def make_section(doc, e, vname):
     if others: v.HideElements(List[DB.ElementId](others))
     return v, bx
 
-def wall_elevation(doc, e, row, open_codes):
-    v, bx = make_section(doc, e, 'ADER EST R11 - ' + row['code'] + ' - ALZADO')
+def wall_elevation(doc, e, row, open_codes, vname=None):
+    v, bx = make_section(doc, e, vname or ('ADER EST R11 - ' + row['code'] + ' - ALZADO'))
     colorize(doc, v, e, COLORS[row['kind']])
     doc.Regenerate()
     f = L.Frame(v); lev = L.level_of(doc, e)
@@ -128,7 +128,7 @@ def wall_elevation(doc, e, row, open_codes):
 
 # ---------------------------------------------------------------- sheet layout
 
-def lay_sheet(doc, number, title, sub, items, foot):
+def lay_sheet(doc, number, title, sub, items, foot, plan_region=False):
     sheet = DB.ViewSheet.Create(doc, DB.ElementId(Int64(L.TITLEBLOCK))); sheet.SheetNumber = number; sheet.Name = u'Estructura · ' + number[4:]
     head = u'CASA ÁNGEL · ESTRUCTURA · ' + u(title).upper()
     notes = [{'text': head, 'anchor': [L.X0 + .01, L.Y1 - .012]}]
@@ -154,7 +154,16 @@ def lay_sheet(doc, number, title, sub, items, foot):
         meta.update(kind=it['kind'], sector=it['sector'], tags=it['tags'], dims=it['dims'], elements=it['elements']); views.append(meta)
     else:
         sizes = [L.sheet_size(it['box'], 1) for it in items]
-        lay = L.choose_layout(None, sizes)
+        if plan_region:   # first item (plan) gets its own column/band; the others are packed in the rest
+            lay = L.choose_layout(sizes[0], sizes[1:])
+            cell, ps = lay['plan']; it0 = items[0]
+            vp, meta = L.place(doc, sheet, it0['view'], ps, cell, it0['title'], vpt)
+            meta.update(kind=it0['kind'], sector=it0['sector'], tags=it0['tags'], dims=it0['dims'], elements=it0['elements'])
+            if it0.get('data'):
+                o = vp.GetBoxOutline(); L.tn(doc, sheet.Id, DB.XYZ(o.MinimumPoint.X, o.MinimumPoint.Y - .012, 0), u'\n'.join(it0['data']), 'text')
+            views.append(meta); items = items[1:]; sizes = sizes[1:]
+        else:
+            lay = L.choose_layout(None, sizes)
         if not lay['rows']:   # very large context crops: allow coarser scales instead of failing
             for extra in [300, 400, 500, 750, 1000]:
                 if extra not in L.SCALES: L.SCALES.append(extra)
