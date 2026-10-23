@@ -3,7 +3,7 @@
  */
 export type Quantity = {code:string;system:string;description:string;unit:string;quantity:number;trade?:string};
 export type Publication = {id:string;project:string;revision:string;model:string;schedule:string;date:string;rows:Quantity[]};
-export type Supplier = {id:string;name:string;trades:string;zone:string;contact:string;trusted:boolean;notes:string};
+export type Supplier = {id:string;name:string;trades:string;zone:string;contact:string;trusted:boolean;notes:string;sourceId?:string;source?:string;lat?:number;lon?:number};
 export type Request = {id:string;project:string;publication:string;revision:string;title:string;date:string;rows:Quantity[];suppliers:string[];conditions:string};
 export type OfferLine = {code:string;quantity:number;price:number;match:'exacta'|'sustituto';description?:string};
 export type Offer = {id:string;request:string;supplier:string;reference:string;currency:'ARS'|'USD';validUntil:string;delivery:string;freight:number;taxesIncluded:boolean;lines:OfferLine[];date:string};

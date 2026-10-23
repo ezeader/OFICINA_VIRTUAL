@@ -1,1 +1,4534 @@
-{"project":"angel","model":"Casa-Angel-piloto-documentacion.rvt","readAt":"2026-10-22T23:25:33.559Z","tables":[{"id":"1357162","name":"Amanco Wavin Fusión PPR Accesorios","category":"Pipe Fittings","columns":["Cantidad","Descripción del producto","Código","Empaque","Assembly Code","Keynote","UniClass Number"],"rows":[["7","BUJE REDUC 50X32 PP-RAND","65283","2","D2020200","15410","65.52.63.66"],["2","BUJE REDUCCION 40X32 FUS PP-RAND","976699","5","D2020200","15410","65.52.63.66"],["2","BUJE REDUCCION MH 32X25 FUS PP-RAND","976694","10","D2020200","15410","65.52.63.66"],["1","Canilla Con manija mariposa - 3/4\"","973133","6","D2020200","15410","65.52.63.66"],["14","Canilla Con manija Palanca - 3/4\"","973079","6","D2020200","15410","65.52.63.66"],["4","CODO 45° 50 FUS PP-RAND","976652","2","D2020200","15410","65.52.63.66"],["2","CODO 90° 20 FUS PP-RAND","938944","50","D2020200","15410","65.52.63.66"],["9","CODO 90° 25 FUS PP-RAND","939945","50","D2020200","15410","65.52.63.66"],["196","CODO 90° 32 FUS PP-RAND","976674","10","D2020200","15410","65.52.63.66"],["3","CODO 90° 40 FUS PP-RAND","976632","5","D2020200","15410","65.52.63.66"],["74","CODO 90° 50 FUS PP-RAND","976560","2","D2020200","15410","65.52.63.66"],["2","CODO 90° 63 FUS PP-RAND","976633","1","D2020200","15410","65.52.63.66"],["13","CODO 90° 90 FUS PP-RAND AP","999507","1","D2020200","15410","65.52.63.66"],["5","CODO 90° INS MET H 32X3/4\" FUS PP-RAN","983401","5","D2020200","15410","65.52.63.66"],["4","TAPA H 32 FUS PP-RAND","976692","10","D2020200","15410","65.52.63.66"],["9","TAPA H 50 FUS PP-RAND","976640","10","D2020200","15410","65.52.63.66"],["2","TAPA H 90 FUS PP-RAND AP","999519","1","D2020200","15410","65.52.63.66"],["30","TEE NORMAL 32 FUS PP-RAND","976634","10","D2020200","15410","65.52.63.66"],["1","TEE NORMAL 40 FUS PP-RAND","976653","5","D2020200","15410","65.52.63.66"],["26","TEE NORMAL 50 FUS PP-RAND","976661","2","D2020200","15410","65.52.63.66"],["1","TEE RED EXTR HHH 32X25 FUS PP-RAND","63347","5","D2020200","15410","65.52.63.66"],["16","TEE REDUC CENTRAL 50X32 FUS PP-RAND","976664","5","D2020200","15410","65.52.63.66"],["1","TEE REDUC EXT Y CTRAL 32X20X25 PP-RAND","65278","5","D2020200","15410","65.52.63.66"],["2","TEE REDUCCION 32X25 FUS PP-RAND","976635","5","D2020200","15410","65.52.63.66"],["15","TUBO INSERTO H TF H 32X3/4\" FUS PP-RAND","993672","10","D2020200","15410","65.52.63.66"],["6","TUBO INSERTO M TF H 25X3/4\" FUS PP-RAND","944790","10","D2020200","15410","65.52.63.66"],["4","TUBO INSERTO M TF H 32X1\" FUS PP-RAND","993671","5","D2020200","15410","65.52.63.66"],["1","TUBO MACHO 90MMX3\" PP-RANDOM AP","999528","1","D2020200","15410","65.52.63.66"],["18","Válvula esférica unión-fusión 32 x 32 mm","973173","6","D2020200","15410","65.52.63.66"],["23","Válvula esférica unión-fusión 50 x 50 mm","978853","2","D2020200","15410","65.52.63.66"],["3","Válvula Metálica Premium 3/4\"","973136","12","D2020200","15410","65.52.63.66"]],"truncated":false,"trade":"sanitarias"},{"id":"1357169","name":"Amanco Wavin Fusión PPR Tuberías","category":"Pipes","columns":["Cantidad","Descripción del Producto","Código","Empaque","Longitud","Assembly Code","Keynote"],"rows":[["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","1.43 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.71 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.64 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.13 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.62 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.17 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.73 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.64 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.13 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.62 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.79 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.61 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.13 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.62 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.62 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.59 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.14 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.63 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.14 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","2.61 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.56 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.19 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.55 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.11 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","1.19 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.04 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.68 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.11 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.58 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.84 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.69 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.71 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.86 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","1.43 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","1.67 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.28 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.15 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.20 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","1.40 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","2.50 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","2.07 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.83 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.09 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.14 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.35 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.09 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.13 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.35 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.11 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","2.16 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.67 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.74 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.04 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.68 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.04 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.68 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.10 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.15 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.45 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","2.12 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","1.82 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.62 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.44 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.62 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.08 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.14 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.35 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.08 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.05 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.46 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.77 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.62 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.62 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.62 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","2.24 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","1.65 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.90 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","1.26 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.07 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.58 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.84 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.47 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.22 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.05 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.68 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.38 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.18 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.66 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.40 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.18 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.66 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.62 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","1.83 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","2.26 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.15 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","1.28 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","1.91 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","1.97 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.36 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.20 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.43 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.36 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.20 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.15 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.36 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.58 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.19 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.11 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.11 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.57 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.69 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.11 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.11 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.47 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.71 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.11 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.94 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.05 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","2.06 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.12 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.14 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.17 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.17 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.05 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.06 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.05 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.22 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.24 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.06 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.61 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.81 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","1.41 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.06 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.30 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.87 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","1.73 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.79 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.08 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","1.17 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","2.25 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.21 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.27 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.07 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.10 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.23 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","2.19 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.07 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.24 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.24 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","2.19 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","2.19 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.08 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.07 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","3.94 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.46 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.27 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ","900464","10","0.66 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 40mm x 4mts.  ","900465","5","2.16 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 40mm x 4mts.  ","900465","5","0.16 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","1.37 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.21 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.25 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","2.18 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","1.18 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","2.15 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","1.07 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.14 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.12 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.23 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","2.65 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.28 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.26 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.08 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.55 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.15 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.30 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.08 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.46 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.35 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.11 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.15 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.15 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.55 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.17 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.61 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.26 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.27 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","1.55 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.17 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.76 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.12 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.40 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.51 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","2.90 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.40 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.98 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.31 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","1.34 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","3.95 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","1.06 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","2.15 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.18 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.08 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.14 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.09 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.45 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.14 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.21 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.13 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.13 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.54 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.61 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.10 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","1.45 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.22 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.08 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.10 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.13 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.21 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.29 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.27 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.75 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.23 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.31 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.02 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.97 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.11 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.50 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.75 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.61 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.60 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","3.50 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ","900466","3","0.52 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 63mm x 4mts.  ","900467","3","3.17 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 90mm x 4mts  ","900496","1","0.83 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 90mm x 4mts  ","900496","1","0.27 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 90mm x 4mts  ","900496","1","0.20 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 90mm x 4mts  ","900496","1","0.97 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 90mm x 4mts  ","900496","1","3.70 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 90mm x 4mts  ","900496","1","0.38 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 90mm x 4mts  ","900496","1","0.15 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 90mm x 4mts  ","900496","1","0.65 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 90mm x 4mts  ","900496","1","0.18 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 90mm x 4mts  ","900496","1","0.19 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 90mm x 4mts  ","900496","1","0.28 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 90mm x 4mts  ","900496","1","1.36 m","D2020200","15100"],["1","TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 90mm x 4mts  ","900496","1","2.90 m","D2020200","15100"],["1","Longitud no disponible","Longitud no disponible","Longitud no disponible","4.11 m","D2020200","15100"],["1","Longitud no disponible","Longitud no disponible","Longitud no disponible","29.96 m","D2020200","15100"],["1","Longitud no disponible","Longitud no disponible","Longitud no disponible","0.07 m","D2020200","15100"],["1","Longitud no disponible","Longitud no disponible","Longitud no disponible","4.61 m","D2020200","15100"],["1","Longitud no disponible","Longitud no disponible","Longitud no disponible","6.65 m","D2020200","15100"],["1","Longitud no disponible","Longitud no disponible","Longitud no disponible","5.67 m","D2020200","15100"],["1","Longitud no disponible","Longitud no disponible","Longitud no disponible","4.59 m","D2020200","15100"]],"truncated":false,"trade":"sanitarias"},{"id":"1168184","name":"Muros Estructura de Hormigón","category":"Walls","columns":["Nombre","Ancho","Largo","Altura","Área","Volumen"],"rows":[["C-01-01","0.20 m","0.60 m","2.80 m","2 m²","0.41 m³"],["C-01-02","0.20 m","0.55 m","2.80 m","2 m²","0.41 m³"],["C-01-03","0.20 m","0.70 m","3.00 m","2 m²","0.46 m³"],["C-01-04","0.20 m","0.94 m","3.00 m","4 m²","0.62 m³"],["M-00-01","0.20 m","6.93 m","3.00 m","20 m²","4.02 m³"],["M-00-02","0.20 m","7.00 m","3.00 m","18 m²","3.64 m³"],["M-00-03","0.20 m","2.40 m","3.20 m","6 m²","1.29 m³"],["M-00-03","0.20 m","0.63 m","3.00 m","2 m²","0.38 m³"],["M-00-04","0.20 m","7.00 m","3.00 m","18 m²","3.65 m³"],["M-00-05","0.20 m","4.95 m","3.00 m","15 m²","3.00 m³"],["M-00-06","0.20 m","3.10 m","6.20 m","20 m²","3.90 m³"],["M-00-07","0.20 m","2.00 m","8.70 m","11 m²","2.12 m³"],["M-00-07","0.20 m","9.00 m","0.78 m","3 m²","0.50 m³"],["M-00-07","0.20 m","0.63 m","3.20 m","3 m²","0.40 m³"],["M-00-07","0.20 m","0.63 m","3.20 m","3 m²","0.40 m³"],["M-00-08","0.20 m","0.95 m","3.20 m","3 m²","0.64 m³"],["M-00-08","0.20 m","0.95 m","5.50 m","3 m²","0.66 m³"],["M-00-09","0.20 m","6.33 m","3.00 m","19 m²","3.73 m³"],["M-00-10","0.20 m","8.40 m","3.20 m","23 m²","4.50 m³"],["M-00-11","0.20 m","10.50 m","2.80 m","24 m²","4.78 m³"],["M-00-12","0.20 m","13.00 m","3.20 m","34 m²","6.74 m³"],["M-01-01","0.20 m","6.93 m","2.50 m","25 m²","4.96 m³"],["M-01-02","0.20 m","4.75 m","3.00 m","16 m²","3.09 m³"],["M-01-03","0.20 m","2.00 m","3.00 m","6 m²","1.20 m³"],["M-01-03","0.20 m","0.63 m","3.00 m","2 m²","0.38 m³"],["M-01-03","0.20 m","0.63 m","3.00 m","2 m²","0.38 m³"],["M-01-04","0.20 m","2.05 m","3.30 m","8 m²","1.54 m³"],["M-01-05","0.20 m","3.60 m","3.00 m","12 m²","2.37 m³"],["M-01-06","0.20 m","3.00 m","3.00 m","8 m²","1.49 m³"],["M-01-07","0.20 m","0.63 m","3.00 m","2 m²","0.38 m³"],["M-01-07","0.20 m","0.63 m","3.00 m","2 m²","0.38 m³"],["M-01-09","0.20 m","6.50 m","3.00 m","15 m²","2.90 m³"],["M-01-10","0.20 m","13.00 m","3.00 m","25 m²","4.90 m³"],["M-01-11","0.20 m","4.56 m","6.20 m","30 m²","5.92 m³"],["M-02-01","0.20 m","2.00 m","3.00 m","4 m²","0.74 m³"],["M-02-01","0.20 m","0.63 m","3.00 m","1 m²","0.23 m³"],["M-02-01","0.20 m","0.63 m","3.00 m","1 m²","0.23 m³"],["M-02-02","0.20 m","0.63 m","2.50 m","1 m²","0.23 m³"],["M-02-02","0.20 m","0.63 m","3.00 m","1 m²","0.23 m³"],["M-02-03","0.20 m","6.50 m","2.50 m","11 m²","2.23 m³"],["M-02-04","0.20 m","6.50 m","2.50 m","11 m²","2.18 m³"],["V-02-01","0.20 m","5.29 m","0.60 m","3 m²","0.51 m³"],["V-02-03","0.20 m","9.00 m","0.60 m","5 m²","1.07 m³"]],"truncated":false,"trade":"estructura"},{"id":"786516","name":"Superficies","category":"Rooms","columns":["Name","Number","Level","Area"],"rows":[["Cuarto A Inv.","01","00. Planta Baja","12 m²"],["Baño A Inv.","02","00. Planta Baja","5 m²"],["Cuarto B Inv.","03","00. Planta Baja","12 m²"],["Baño B Inv.","04","00. Planta Baja","5 m²"],["Cuarto C Inv.","05","00. Planta Baja","12 m²"],["Baño C Inv.","06","00. Planta Baja","5 m²"],["Toilette Servicio","07","00. Planta Baja","6 m²"],["Lavadero","08","00. Planta Baja","7 m²"],["Hab. servicio","09","00. Planta Baja","7 m²"],["Acceso Servicio","10","00. Planta Baja","5 m²"],["Ascensor","11","00. Planta Baja","3 m²"],["Quincho","12","00. Planta Baja","45 m²"],["Cuarto ppal","13","00. Planta Baja","15 m²"],["Vestidor ppal","14","00. Planta Baja","8 m²"],["Baño ppal","15","00. Planta Baja","9 m²"],["Pasillo","16","00. Planta Baja","26 m²"],["Hall","17","00. Planta Baja","27 m²"],["Sala de TV","01","01. Planta Alta","15 m²"],["Sala de Maquinas","02","01. Planta Alta","0 m²"],["Playroom","03","01. Planta Alta","29 m²"],["Baño PA","04","01. Planta Alta","11 m²"],["Toilette","05","01. Planta Alta","5 m²"],["Cava","06","01. Planta Alta","8 m²"],["Cocina","07","01. Planta Alta","21 m²"],["Comedor","08","01. Planta Alta","22 m²"],["Living","09","01. Planta Alta","16 m²"],["Puente","10","01. Planta Alta","2 m²"],["SM","01","02. Planta Entrepiso","7 m²"],["Hall PE","02","02. Planta Entrepiso","7 m²"],["Atelier","03","02. Planta Entrepiso","19 m²"],["Metros Cubiertos ","","","372 m²"]],"truncated":false,"trade":"superficies"},{"id":"1357176","name":"Tabla de Cantidades Pases de Tubería","category":"Generic Models","columns":["Descripción","Diámetro","Largo","Ancho","Cantidad"],"rows":[["Pase Rectangular","","<varies>","<varies>","5"]],"truncated":false,"trade":"sanitarias"}]}
+{
+  "project": "angel",
+  "model": "Casa-Angel-piloto-documentacion.rvt",
+  "readAt": "2026-10-23T01:46:37.226060+00:00",
+  "tables": [
+    {
+      "id": "2415714",
+      "name": "ADER ABR - Cerramientos - Vano Ascensor",
+      "category": "Walls",
+      "trade": "aberturas",
+      "columns": [
+        "Tipo de cerramiento",
+        "Nivel base",
+        "Longitud del muro",
+        "Altura del muro",
+        "Espesor del muro",
+        "Superficie del muro",
+        "Cantidad"
+      ],
+      "rows": [
+        [
+          "Curtain Wall: Vano Ascensor",
+          "00. Planta Baja",
+          "1.00 m",
+          "6.74 m",
+          "",
+          "7 m²",
+          "1"
+        ]
+      ],
+      "truncated": false
+    },
+    {
+      "id": "2415718",
+      "name": "ADER ABR - Cerramientos - Vano Pasillo",
+      "category": "Walls",
+      "trade": "aberturas",
+      "columns": [
+        "Tipo de cerramiento",
+        "Nivel base",
+        "Longitud del muro",
+        "Altura del muro",
+        "Espesor del muro",
+        "Superficie del muro",
+        "Cantidad"
+      ],
+      "rows": [
+        [
+          "Curtain Wall: Vano Pasillo",
+          "00. Planta Baja",
+          "0.50 m",
+          "2.80 m",
+          "",
+          "1 m²",
+          "1"
+        ]
+      ],
+      "truncated": false
+    },
+    {
+      "id": "2415722",
+      "name": "ADER ABR - Cerramientos - Vent. Corrediza PB",
+      "category": "Walls",
+      "trade": "aberturas",
+      "columns": [
+        "Tipo de cerramiento",
+        "Nivel base",
+        "Longitud del muro",
+        "Altura del muro",
+        "Espesor del muro",
+        "Superficie del muro",
+        "Cantidad"
+      ],
+      "rows": [
+        [
+          "Curtain Wall: Vent. Corrediza PB",
+          "00. Planta Baja",
+          "4.00 m",
+          "2.80 m",
+          "",
+          "11 m²",
+          "1"
+        ],
+        [
+          "Curtain Wall: Vent. Corrediza PB",
+          "00. Planta Baja",
+          "3.02 m",
+          "2.80 m",
+          "",
+          "8 m²",
+          "1"
+        ],
+        [
+          "Curtain Wall: Vent. Corrediza PB",
+          "00. Planta Baja",
+          "4.42 m",
+          "2.80 m",
+          "",
+          "12 m²",
+          "1"
+        ],
+        [
+          "Curtain Wall: Vent. Corrediza PB",
+          "00. Planta Baja",
+          "6.60 m",
+          "2.80 m",
+          "",
+          "18 m²",
+          "1"
+        ],
+        [
+          "Curtain Wall: Vent. Corrediza PB",
+          "00. Planta Baja",
+          "3.90 m",
+          "2.80 m",
+          "",
+          "10 m²",
+          "1"
+        ]
+      ],
+      "truncated": false
+    },
+    {
+      "id": "2415726",
+      "name": "ADER ABR - Cerramientos - Ventanales Patio",
+      "category": "Walls",
+      "trade": "aberturas",
+      "columns": [
+        "Tipo de cerramiento",
+        "Nivel base",
+        "Longitud del muro",
+        "Altura del muro",
+        "Espesor del muro",
+        "Superficie del muro",
+        "Cantidad"
+      ],
+      "rows": [
+        [
+          "Curtain Wall: Ventanales Patio",
+          "01. Planta Alta",
+          "7.80 m",
+          "2.84 m",
+          "",
+          "25 m²",
+          "1"
+        ],
+        [
+          "Curtain Wall: Ventanales Patio",
+          "01. Planta Alta",
+          "9.00 m",
+          "2.80 m",
+          "",
+          "25 m²",
+          "1"
+        ],
+        [
+          "Curtain Wall: Ventanales Patio",
+          "02. Planta Entrepiso",
+          "9.00 m",
+          "1.00 m",
+          "",
+          "9 m²",
+          "1"
+        ],
+        [
+          "Curtain Wall: Ventanales Patio",
+          "00. Planta Baja",
+          "1.00 m",
+          "5.61 m",
+          "",
+          "5 m²",
+          "1"
+        ]
+      ],
+      "truncated": false
+    },
+    {
+      "id": "2415575",
+      "name": "ADER ABR - Materiales de puertas",
+      "category": "Doors",
+      "trade": "aberturas",
+      "columns": [
+        "Marca",
+        "Familia y tipo",
+        "Material modelado",
+        "Superficie de material",
+        "Volumen de material"
+      ],
+      "rows": [
+        [
+          "1",
+          "JALO_PUERTA ABATIBLE: Puerta Acceso 1.20m",
+          "Wood Sheathing, Chipboard",
+          "6 m²",
+          "0.14 m³"
+        ],
+        [
+          "22",
+          "JALO_PUERTA ABATIBLE: 0.90 M",
+          "Puertas",
+          "5 m²",
+          "0.11 m³"
+        ],
+        [
+          "59",
+          "Puerta interior corredera: 820 x 2000 mm",
+          "Premarco de pino",
+          "1 m²",
+          "0.01 m³"
+        ],
+        [
+          "59",
+          "Puerta interior corredera: 820 x 2000 mm",
+          "Madera (roble)",
+          "7 m²",
+          "0.10 m³"
+        ],
+        [
+          "59",
+          "Puerta interior corredera: 820 x 2000 mm",
+          "Acero inoxidable bruñido",
+          "0 m²",
+          "0.00 m³"
+        ],
+        [
+          "59",
+          "Puerta interior corredera: 820 x 2000 mm",
+          "Acero galvanizado",
+          "9 m²",
+          "0.01 m³"
+        ],
+        [
+          "60",
+          "Puerta interior corredera: 820 x 2000 mm",
+          "Premarco de pino",
+          "1 m²",
+          "0.01 m³"
+        ],
+        [
+          "60",
+          "Puerta interior corredera: 820 x 2000 mm",
+          "Madera (roble)",
+          "7 m²",
+          "0.10 m³"
+        ],
+        [
+          "60",
+          "Puerta interior corredera: 820 x 2000 mm",
+          "Acero inoxidable bruñido",
+          "0 m²",
+          "0.00 m³"
+        ],
+        [
+          "60",
+          "Puerta interior corredera: 820 x 2000 mm",
+          "Acero galvanizado",
+          "9 m²",
+          "0.01 m³"
+        ],
+        [
+          "63",
+          "JALO_PUERTA ABATIBLE: 0.90 M",
+          "Puertas",
+          "5 m²",
+          "0.11 m³"
+        ],
+        [
+          "72",
+          "JALO_PUERTA ABATIBLE: 0.90 M",
+          "Puertas",
+          "5 m²",
+          "0.11 m³"
+        ],
+        [
+          "75",
+          "JALO_PUERTA ABATIBLE: 0.90 M",
+          "Puertas",
+          "5 m²",
+          "0.11 m³"
+        ],
+        [
+          "90",
+          "JALO_PUERTA ABATIBLE: 0.90 M",
+          "Puertas",
+          "5 m²",
+          "0.11 m³"
+        ],
+        [
+          "93",
+          "Puerta interior corredera: 820 x 2000 mm",
+          "Premarco de pino",
+          "1 m²",
+          "0.01 m³"
+        ],
+        [
+          "93",
+          "Puerta interior corredera: 820 x 2000 mm",
+          "Madera (roble)",
+          "8 m²",
+          "0.10 m³"
+        ],
+        [
+          "93",
+          "Puerta interior corredera: 820 x 2000 mm",
+          "Acero inoxidable bruñido",
+          "0 m²",
+          "0.00 m³"
+        ],
+        [
+          "93",
+          "Puerta interior corredera: 820 x 2000 mm",
+          "Acero galvanizado",
+          "10 m²",
+          "0.01 m³"
+        ],
+        [
+          "94",
+          "JALO_PUERTA ABATIBLE: 0.90 M",
+          "Puertas",
+          "5 m²",
+          "0.11 m³"
+        ],
+        [
+          "95",
+          "Puerta interior corredera: 820 x 2000 mm",
+          "Premarco de pino",
+          "1 m²",
+          "0.01 m³"
+        ],
+        [
+          "95",
+          "Puerta interior corredera: 820 x 2000 mm",
+          "Madera (roble)",
+          "7 m²",
+          "0.10 m³"
+        ],
+        [
+          "95",
+          "Puerta interior corredera: 820 x 2000 mm",
+          "Acero inoxidable bruñido",
+          "0 m²",
+          "0.00 m³"
+        ],
+        [
+          "95",
+          "Puerta interior corredera: 820 x 2000 mm",
+          "Acero galvanizado",
+          "9 m²",
+          "0.01 m³"
+        ],
+        [
+          "96",
+          "JALO_PUERTA ABATIBLE: 0.90 M",
+          "Puertas",
+          "5 m²",
+          "0.11 m³"
+        ]
+      ],
+      "truncated": false
+    },
+    {
+      "id": "2415567",
+      "name": "ADER ABR - Materiales de ventanas",
+      "category": "Windows",
+      "trade": "aberturas",
+      "columns": [
+        "Marca",
+        "Familia y tipo",
+        "Material modelado",
+        "Superficie de material",
+        "Volumen de material"
+      ],
+      "rows": [
+        [
+          "15",
+          "M_Fixed: Ventanal acceso 0.5m",
+          "Glass",
+          "2 m²",
+          "0.01 m³"
+        ],
+        [
+          "15",
+          "M_Fixed: Ventanal acceso 0.5m",
+          "Sash",
+          "3 m²",
+          "0.03 m³"
+        ],
+        [
+          "35",
+          "M_Fixed: Ventana Baños (Muro a techo)",
+          "Glass",
+          "2 m²",
+          "0.01 m³"
+        ],
+        [
+          "35",
+          "M_Fixed: Ventana Baños (Muro a techo)",
+          "Sash",
+          "3 m²",
+          "0.03 m³"
+        ],
+        [
+          "57",
+          "M_Fixed: Ventana Cuartos (Muro a techo)",
+          "Glass",
+          "2 m²",
+          "0.01 m³"
+        ],
+        [
+          "57",
+          "M_Fixed: Ventana Cuartos (Muro a techo)",
+          "Sash",
+          "3 m²",
+          "0.03 m³"
+        ],
+        [
+          "69",
+          "M_Fixed: Ventana Baños (Muro a techo)",
+          "Glass",
+          "2 m²",
+          "0.01 m³"
+        ],
+        [
+          "69",
+          "M_Fixed: Ventana Baños (Muro a techo)",
+          "Sash",
+          "3 m²",
+          "0.03 m³"
+        ],
+        [
+          "77",
+          "Ventanas: Aluprom 44 - 2 Hojas - Practicable",
+          "Aluminio",
+          "3 m²",
+          "0.04 m³"
+        ],
+        [
+          "77",
+          "Ventanas: Aluprom 44 - 2 Hojas - Practicable",
+          "Cristal - Vidrio claro templado",
+          "3 m²",
+          "0.05 m³"
+        ],
+        [
+          "77",
+          "Ventanas: Aluprom 44 - 2 Hojas - Practicable",
+          "Poliamida",
+          "0 m²",
+          "0.00 m³"
+        ],
+        [
+          "92",
+          "M_Fixed: Ventana Cuartos (Muro a techo)",
+          "Glass",
+          "2 m²",
+          "0.01 m³"
+        ],
+        [
+          "92",
+          "M_Fixed: Ventana Cuartos (Muro a techo)",
+          "Sash",
+          "3 m²",
+          "0.02 m³"
+        ],
+        [
+          "101",
+          "M_Fixed: Ventana Cuartos (Muro a techo)",
+          "Glass",
+          "2 m²",
+          "0.01 m³"
+        ],
+        [
+          "101",
+          "M_Fixed: Ventana Cuartos (Muro a techo)",
+          "Sash",
+          "3 m²",
+          "0.02 m³"
+        ],
+        [
+          "108",
+          "M_Fixed: Ventana Cuartos (Muro a techo)",
+          "Glass",
+          "2 m²",
+          "0.01 m³"
+        ],
+        [
+          "108",
+          "M_Fixed: Ventana Cuartos (Muro a techo)",
+          "Sash",
+          "3 m²",
+          "0.03 m³"
+        ],
+        [
+          "117",
+          "M_Fixed: Ventana Cuartos (Muro a techo)",
+          "Glass",
+          "2 m²",
+          "0.01 m³"
+        ],
+        [
+          "117",
+          "M_Fixed: Ventana Cuartos (Muro a techo)",
+          "Sash",
+          "3 m²",
+          "0.03 m³"
+        ],
+        [
+          "121",
+          "M_Fixed: Ventana Cuartos (Muro a techo)",
+          "Glass",
+          "2 m²",
+          "0.01 m³"
+        ],
+        [
+          "121",
+          "M_Fixed: Ventana Cuartos (Muro a techo)",
+          "Sash",
+          "3 m²",
+          "0.02 m³"
+        ],
+        [
+          "123",
+          "M_Fixed: Ventana Cuartos (Muro a techo)",
+          "Glass",
+          "2 m²",
+          "0.01 m³"
+        ],
+        [
+          "123",
+          "M_Fixed: Ventana Cuartos (Muro a techo)",
+          "Sash",
+          "3 m²",
+          "0.02 m³"
+        ],
+        [
+          "126",
+          "M_Fixed: Ventana Cuartos (Muro a techo)",
+          "Glass",
+          "2 m²",
+          "0.01 m³"
+        ],
+        [
+          "126",
+          "M_Fixed: Ventana Cuartos (Muro a techo)",
+          "Sash",
+          "3 m²",
+          "0.02 m³"
+        ],
+        [
+          "127",
+          "M_Fixed: Ventana Cuartos (Muro a techo)",
+          "Glass",
+          "2 m²",
+          "0.01 m³"
+        ],
+        [
+          "127",
+          "M_Fixed: Ventana Cuartos (Muro a techo)",
+          "Sash",
+          "3 m²",
+          "0.03 m³"
+        ],
+        [
+          "130",
+          "M_Fixed: Ventana Cuartos (Muro a techo)",
+          "Glass",
+          "2 m²",
+          "0.01 m³"
+        ],
+        [
+          "130",
+          "M_Fixed: Ventana Cuartos (Muro a techo)",
+          "Sash",
+          "3 m²",
+          "0.02 m³"
+        ],
+        [
+          "131",
+          "M_Fixed: Ventana Cuartos (Muro a techo)",
+          "Glass",
+          "2 m²",
+          "0.01 m³"
+        ],
+        [
+          "131",
+          "M_Fixed: Ventana Cuartos (Muro a techo)",
+          "Sash",
+          "3 m²",
+          "0.03 m³"
+        ],
+        [
+          "132",
+          "M_Fixed: Ventana Cuartos (Muro a techo)",
+          "Glass",
+          "2 m²",
+          "0.01 m³"
+        ],
+        [
+          "132",
+          "M_Fixed: Ventana Cuartos (Muro a techo)",
+          "Sash",
+          "3 m²",
+          "0.03 m³"
+        ],
+        [
+          "135",
+          "Ventanas: Aluprom 44 - 2 Hojas - Practicable",
+          "Aluminio",
+          "3 m²",
+          "0.04 m³"
+        ],
+        [
+          "135",
+          "Ventanas: Aluprom 44 - 2 Hojas - Practicable",
+          "Cristal - Vidrio claro templado",
+          "3 m²",
+          "0.05 m³"
+        ],
+        [
+          "135",
+          "Ventanas: Aluprom 44 - 2 Hojas - Practicable",
+          "Poliamida",
+          "0 m²",
+          "0.00 m³"
+        ],
+        [
+          "145",
+          "M_Fixed: Ventanas Servicios PE",
+          "Glass",
+          "1 m²",
+          "0.01 m³"
+        ],
+        [
+          "145",
+          "M_Fixed: Ventanas Servicios PE",
+          "Sash",
+          "3 m²",
+          "0.02 m³"
+        ],
+        [
+          "147",
+          "M_Fixed: Ventanas Servicios",
+          "Glass",
+          "2 m²",
+          "0.01 m³"
+        ],
+        [
+          "147",
+          "M_Fixed: Ventanas Servicios",
+          "Sash",
+          "5 m²",
+          "0.04 m³"
+        ],
+        [
+          "150",
+          "M_Fixed: Ventanas Servicios",
+          "Glass",
+          "2 m²",
+          "0.01 m³"
+        ],
+        [
+          "150",
+          "M_Fixed: Ventanas Servicios",
+          "Sash",
+          "5 m²",
+          "0.04 m³"
+        ],
+        [
+          "151",
+          "M_Fixed: Ventanas Servicios",
+          "Glass",
+          "2 m²",
+          "0.01 m³"
+        ],
+        [
+          "151",
+          "M_Fixed: Ventanas Servicios",
+          "Sash",
+          "5 m²",
+          "0.04 m³"
+        ],
+        [
+          "154",
+          "M_Fixed: Ventana Cuartos (Muro a techo)",
+          "Glass",
+          "2 m²",
+          "0.01 m³"
+        ],
+        [
+          "154",
+          "M_Fixed: Ventana Cuartos (Muro a techo)",
+          "Sash",
+          "3 m²",
+          "0.02 m³"
+        ],
+        [
+          "155",
+          "M_Fixed: Ventana Cuartos (Muro a techo)",
+          "Glass",
+          "2 m²",
+          "0.01 m³"
+        ],
+        [
+          "155",
+          "M_Fixed: Ventana Cuartos (Muro a techo)",
+          "Sash",
+          "3 m²",
+          "0.02 m³"
+        ],
+        [
+          "157",
+          "Ventanas: Aluprom 44 - 2 Hojas - Practicable",
+          "Aluminio",
+          "3 m²",
+          "0.04 m³"
+        ],
+        [
+          "157",
+          "Ventanas: Aluprom 44 - 2 Hojas - Practicable",
+          "Cristal - Vidrio claro templado",
+          "3 m²",
+          "0.05 m³"
+        ],
+        [
+          "157",
+          "Ventanas: Aluprom 44 - 2 Hojas - Practicable",
+          "Poliamida",
+          "0 m²",
+          "0.00 m³"
+        ],
+        [
+          "158",
+          "Ventanas: Aluprom 44 - 2 Hojas - Practicable",
+          "Aluminio",
+          "3 m²",
+          "0.04 m³"
+        ],
+        [
+          "158",
+          "Ventanas: Aluprom 44 - 2 Hojas - Practicable",
+          "Cristal - Vidrio claro templado",
+          "3 m²",
+          "0.05 m³"
+        ],
+        [
+          "158",
+          "Ventanas: Aluprom 44 - 2 Hojas - Practicable",
+          "Poliamida",
+          "0 m²",
+          "0.00 m³"
+        ]
+      ],
+      "truncated": false
+    },
+    {
+      "id": "2415571",
+      "name": "ADER ABR - Puertas por local",
+      "category": "Doors",
+      "trade": "aberturas",
+      "columns": [
+        "Nivel",
+        "Local origen",
+        "Ambiente origen",
+        "Local destino",
+        "Ambiente destino",
+        "Marca",
+        "Familia y tipo",
+        "Ancho",
+        "Alto",
+        "Antepecho / arranque",
+        "Altura superior",
+        "Espesor de hoja",
+        "Cantidad"
+      ],
+      "rows": [
+        [
+          "00. Planta Baja",
+          "",
+          "",
+          "01",
+          "Cuarto A Inv.",
+          "96",
+          "JALO_PUERTA ABATIBLE: 0.90 M",
+          "0.90 m",
+          "3.00 m",
+          "0.00 m",
+          "3.00 m",
+          "",
+          "1"
+        ],
+        [
+          "00. Planta Baja",
+          "02",
+          "Baño A Inv.",
+          "01",
+          "Cuarto A Inv.",
+          "60",
+          "Puerta interior corredera: 820 x 2000 mm",
+          "0.82 m",
+          "2.30 m",
+          "0.00 m",
+          "2.30 m",
+          "0.05 m",
+          "1"
+        ],
+        [
+          "00. Planta Baja",
+          "03",
+          "Cuarto B Inv.",
+          "04",
+          "Baño B Inv.",
+          "59",
+          "Puerta interior corredera: 820 x 2000 mm",
+          "0.82 m",
+          "2.30 m",
+          "0.00 m",
+          "2.30 m",
+          "0.05 m",
+          "1"
+        ],
+        [
+          "00. Planta Baja",
+          "05",
+          "Cuarto C Inv.",
+          "06",
+          "Baño C Inv.",
+          "95",
+          "Puerta interior corredera: 820 x 2000 mm",
+          "0.82 m",
+          "2.30 m",
+          "0.00 m",
+          "2.30 m",
+          "0.05 m",
+          "1"
+        ],
+        [
+          "00. Planta Baja",
+          "07",
+          "Toilette Servicio",
+          "08",
+          "Lavadero",
+          "93",
+          "Puerta interior corredera: 820 x 2000 mm",
+          "0.82 m",
+          "2.30 m",
+          "0.00 m",
+          "2.30 m",
+          "0.05 m",
+          "1"
+        ],
+        [
+          "00. Planta Baja",
+          "09",
+          "Hab. servicio",
+          "08",
+          "Lavadero",
+          "90",
+          "JALO_PUERTA ABATIBLE: 0.90 M",
+          "0.90 m",
+          "3.00 m",
+          "0.00 m",
+          "3.00 m",
+          "",
+          "1"
+        ],
+        [
+          "00. Planta Baja",
+          "14",
+          "Vestidor ppal",
+          "16",
+          "Pasillo",
+          "31",
+          "JALO_PUERTA ABATIBLE: 1.20 M",
+          "0.90 m",
+          "2.00 m",
+          "0.00 m",
+          "2.00 m",
+          "",
+          "1"
+        ],
+        [
+          "00. Planta Baja",
+          "16",
+          "Pasillo",
+          "03",
+          "Cuarto B Inv.",
+          "63",
+          "JALO_PUERTA ABATIBLE: 0.90 M",
+          "0.90 m",
+          "3.00 m",
+          "0.00 m",
+          "3.00 m",
+          "",
+          "1"
+        ],
+        [
+          "00. Planta Baja",
+          "16",
+          "Pasillo",
+          "05",
+          "Cuarto C Inv.",
+          "94",
+          "JALO_PUERTA ABATIBLE: 0.90 M",
+          "0.90 m",
+          "3.00 m",
+          "0.00 m",
+          "3.00 m",
+          "",
+          "1"
+        ],
+        [
+          "005. Acceso ppal",
+          "",
+          "",
+          "17",
+          "Hall",
+          "1",
+          "JALO_PUERTA ABATIBLE: Puerta Acceso 1.20m",
+          "0.90 m",
+          "4.00 m",
+          "0.00 m",
+          "4.00 m",
+          "",
+          "1"
+        ],
+        [
+          "01. Planta Alta",
+          "01",
+          "Sala de TV",
+          "03",
+          "Playroom",
+          "22",
+          "JALO_PUERTA ABATIBLE: 0.90 M",
+          "0.90 m",
+          "3.00 m",
+          "0.00 m",
+          "3.00 m",
+          "",
+          "1"
+        ],
+        [
+          "01. Planta Alta",
+          "03",
+          "Playroom",
+          "04",
+          "Baño PA",
+          "75",
+          "JALO_PUERTA ABATIBLE: 0.90 M",
+          "0.90 m",
+          "3.00 m",
+          "0.00 m",
+          "3.00 m",
+          "",
+          "1"
+        ],
+        [
+          "01. Planta Alta",
+          "04",
+          "Baño PA",
+          "01",
+          "Sala de TV",
+          "72",
+          "JALO_PUERTA ABATIBLE: 0.90 M",
+          "0.90 m",
+          "3.00 m",
+          "0.00 m",
+          "3.00 m",
+          "",
+          "1"
+        ]
+      ],
+      "truncated": false
+    },
+    {
+      "id": "2415563",
+      "name": "ADER ABR - Ventanas por local",
+      "category": "Windows",
+      "trade": "aberturas",
+      "columns": [
+        "Nivel",
+        "Local origen",
+        "Ambiente origen",
+        "Local destino",
+        "Ambiente destino",
+        "Marca",
+        "Familia y tipo",
+        "Ancho",
+        "Alto",
+        "Antepecho / arranque",
+        "Altura superior",
+        "Cantidad"
+      ],
+      "rows": [
+        [
+          "00. Planta Baja",
+          "",
+          "",
+          "06",
+          "Baño C Inv.",
+          "108",
+          "M_Fixed: Ventana Cuartos (Muro a techo)",
+          "0.60 m",
+          "2.40 m",
+          "0.00 m",
+          "2.40 m",
+          "1"
+        ],
+        [
+          "00. Planta Baja",
+          "",
+          "",
+          "06",
+          "Baño C Inv.",
+          "117",
+          "M_Fixed: Ventana Cuartos (Muro a techo)",
+          "0.60 m",
+          "2.40 m",
+          "0.00 m",
+          "2.40 m",
+          "1"
+        ],
+        [
+          "00. Planta Baja",
+          "",
+          "",
+          "02",
+          "Baño A Inv.",
+          "132",
+          "M_Fixed: Ventana Cuartos (Muro a techo)",
+          "0.60 m",
+          "2.40 m",
+          "0.00 m",
+          "2.40 m",
+          "1"
+        ],
+        [
+          "00. Planta Baja",
+          "",
+          "",
+          "09",
+          "Hab. servicio",
+          "147",
+          "M_Fixed: Ventanas Servicios",
+          "0.50 m",
+          "3.00 m",
+          "0.00 m",
+          "3.00 m",
+          "1"
+        ],
+        [
+          "00. Planta Baja",
+          "",
+          "",
+          "01",
+          "Cuarto A Inv.",
+          "155",
+          "M_Fixed: Ventana Cuartos (Muro a techo)",
+          "0.60 m",
+          "2.40 m",
+          "0.00 m",
+          "2.40 m",
+          "1"
+        ],
+        [
+          "00. Planta Baja",
+          "02",
+          "Baño A Inv.",
+          "",
+          "",
+          "127",
+          "M_Fixed: Ventana Cuartos (Muro a techo)",
+          "0.60 m",
+          "2.40 m",
+          "0.00 m",
+          "2.40 m",
+          "1"
+        ],
+        [
+          "00. Planta Baja",
+          "04",
+          "Baño B Inv.",
+          "",
+          "",
+          "57",
+          "M_Fixed: Ventana Cuartos (Muro a techo)",
+          "0.60 m",
+          "2.40 m",
+          "0.00 m",
+          "2.40 m",
+          "1"
+        ],
+        [
+          "00. Planta Baja",
+          "04",
+          "Baño B Inv.",
+          "",
+          "",
+          "131",
+          "M_Fixed: Ventana Cuartos (Muro a techo)",
+          "0.60 m",
+          "2.40 m",
+          "0.00 m",
+          "2.40 m",
+          "1"
+        ],
+        [
+          "00. Planta Baja",
+          "07",
+          "Toilette Servicio",
+          "",
+          "",
+          "150",
+          "M_Fixed: Ventanas Servicios",
+          "0.50 m",
+          "3.00 m",
+          "0.00 m",
+          "3.00 m",
+          "1"
+        ],
+        [
+          "00. Planta Baja",
+          "13",
+          "Cuarto ppal",
+          "16",
+          "Pasillo",
+          "92",
+          "M_Fixed: Ventana Cuartos (Muro a techo)",
+          "0.60 m",
+          "2.40 m",
+          "0.00 m",
+          "2.40 m",
+          "1"
+        ],
+        [
+          "00. Planta Baja",
+          "15",
+          "Baño ppal",
+          "",
+          "",
+          "35",
+          "M_Fixed: Ventana Baños (Muro a techo)",
+          "0.50 m",
+          "2.40 m",
+          "0.00 m",
+          "2.40 m",
+          "1"
+        ],
+        [
+          "00. Planta Baja",
+          "15",
+          "Baño ppal",
+          "",
+          "",
+          "69",
+          "M_Fixed: Ventana Baños (Muro a techo)",
+          "0.50 m",
+          "2.40 m",
+          "0.00 m",
+          "2.40 m",
+          "1"
+        ],
+        [
+          "00. Planta Baja",
+          "16",
+          "Pasillo",
+          "03",
+          "Cuarto B Inv.",
+          "123",
+          "M_Fixed: Ventana Cuartos (Muro a techo)",
+          "0.60 m",
+          "2.40 m",
+          "0.00 m",
+          "2.40 m",
+          "1"
+        ],
+        [
+          "00. Planta Baja",
+          "16",
+          "Pasillo",
+          "05",
+          "Cuarto C Inv.",
+          "154",
+          "M_Fixed: Ventana Cuartos (Muro a techo)",
+          "0.60 m",
+          "2.40 m",
+          "0.00 m",
+          "2.40 m",
+          "1"
+        ],
+        [
+          "00. Planta Baja",
+          "17",
+          "Hall",
+          "",
+          "",
+          "15",
+          "M_Fixed: Ventanal acceso 0.5m",
+          "0.50 m",
+          "2.85 m",
+          "1.00 m",
+          "3.85 m",
+          "1"
+        ],
+        [
+          "01. Planta Alta",
+          "",
+          "",
+          "",
+          "",
+          "77",
+          "Ventanas: Aluprom 44 - 2 Hojas - Practicable",
+          "2.00 m",
+          "1.00 m",
+          "1.20 m",
+          "2.20 m",
+          "1"
+        ],
+        [
+          "01. Planta Alta",
+          "",
+          "",
+          "04",
+          "Baño PA",
+          "101",
+          "M_Fixed: Ventana Cuartos (Muro a techo)",
+          "0.60 m",
+          "2.40 m",
+          "0.00 m",
+          "2.40 m",
+          "1"
+        ],
+        [
+          "01. Planta Alta",
+          "",
+          "",
+          "01",
+          "Sala de TV",
+          "126",
+          "M_Fixed: Ventana Cuartos (Muro a techo)",
+          "0.60 m",
+          "2.40 m",
+          "0.00 m",
+          "2.40 m",
+          "1"
+        ],
+        [
+          "01. Planta Alta",
+          "",
+          "",
+          "03",
+          "Playroom",
+          "130",
+          "M_Fixed: Ventana Cuartos (Muro a techo)",
+          "0.60 m",
+          "2.40 m",
+          "0.00 m",
+          "2.40 m",
+          "1"
+        ],
+        [
+          "01. Planta Alta",
+          "",
+          "",
+          "08",
+          "Comedor",
+          "135",
+          "Ventanas: Aluprom 44 - 2 Hojas - Practicable",
+          "2.00 m",
+          "1.00 m",
+          "1.20 m",
+          "2.20 m",
+          "1"
+        ],
+        [
+          "01. Planta Alta",
+          "",
+          "",
+          "05",
+          "Toilette",
+          "151",
+          "M_Fixed: Ventanas Servicios",
+          "0.50 m",
+          "3.00 m",
+          "0.00 m",
+          "3.00 m",
+          "1"
+        ],
+        [
+          "01. Planta Alta",
+          "",
+          "",
+          "07",
+          "Cocina",
+          "158",
+          "Ventanas: Aluprom 44 - 2 Hojas - Practicable",
+          "2.00 m",
+          "1.00 m",
+          "1.20 m",
+          "2.20 m",
+          "1"
+        ],
+        [
+          "01. Planta Alta",
+          "04",
+          "Baño PA",
+          "",
+          "",
+          "121",
+          "M_Fixed: Ventana Cuartos (Muro a techo)",
+          "0.60 m",
+          "2.40 m",
+          "0.00 m",
+          "2.40 m",
+          "1"
+        ],
+        [
+          "01. Planta Alta",
+          "07",
+          "Cocina",
+          "",
+          "",
+          "157",
+          "Ventanas: Aluprom 44 - 2 Hojas - Practicable",
+          "2.00 m",
+          "1.00 m",
+          "1.20 m",
+          "2.20 m",
+          "1"
+        ],
+        [
+          "02. Planta Entrepiso",
+          "06",
+          "Cava",
+          "",
+          "",
+          "145",
+          "M_Fixed: Ventanas Servicios PE",
+          "0.50 m",
+          "1.50 m",
+          "0.00 m",
+          "1.50 m",
+          "1"
+        ]
+      ],
+      "truncated": false
+    },
+    {
+      "id": "1357162",
+      "name": "Amanco Wavin Fusión PPR Accesorios",
+      "category": "Pipe Fittings",
+      "trade": "sanitarias",
+      "columns": [
+        "Cantidad",
+        "Descripción del producto",
+        "Código",
+        "Empaque",
+        "Assembly Code",
+        "Keynote",
+        "UniClass Number"
+      ],
+      "rows": [
+        [
+          "7",
+          "BUJE REDUC 50X32 PP-RAND",
+          "65283",
+          "2",
+          "D2020200",
+          "15410",
+          "65.52.63.66"
+        ],
+        [
+          "2",
+          "BUJE REDUCCION 40X32 FUS PP-RAND",
+          "976699",
+          "5",
+          "D2020200",
+          "15410",
+          "65.52.63.66"
+        ],
+        [
+          "2",
+          "BUJE REDUCCION MH 32X25 FUS PP-RAND",
+          "976694",
+          "10",
+          "D2020200",
+          "15410",
+          "65.52.63.66"
+        ],
+        [
+          "1",
+          "Canilla Con manija mariposa - 3/4\"",
+          "973133",
+          "6",
+          "D2020200",
+          "15410",
+          "65.52.63.66"
+        ],
+        [
+          "14",
+          "Canilla Con manija Palanca - 3/4\"",
+          "973079",
+          "6",
+          "D2020200",
+          "15410",
+          "65.52.63.66"
+        ],
+        [
+          "4",
+          "CODO 45° 50 FUS PP-RAND",
+          "976652",
+          "2",
+          "D2020200",
+          "15410",
+          "65.52.63.66"
+        ],
+        [
+          "2",
+          "CODO 90° 20 FUS PP-RAND",
+          "938944",
+          "50",
+          "D2020200",
+          "15410",
+          "65.52.63.66"
+        ],
+        [
+          "9",
+          "CODO 90° 25 FUS PP-RAND",
+          "939945",
+          "50",
+          "D2020200",
+          "15410",
+          "65.52.63.66"
+        ],
+        [
+          "196",
+          "CODO 90° 32 FUS PP-RAND",
+          "976674",
+          "10",
+          "D2020200",
+          "15410",
+          "65.52.63.66"
+        ],
+        [
+          "3",
+          "CODO 90° 40 FUS PP-RAND",
+          "976632",
+          "5",
+          "D2020200",
+          "15410",
+          "65.52.63.66"
+        ],
+        [
+          "74",
+          "CODO 90° 50 FUS PP-RAND",
+          "976560",
+          "2",
+          "D2020200",
+          "15410",
+          "65.52.63.66"
+        ],
+        [
+          "2",
+          "CODO 90° 63 FUS PP-RAND",
+          "976633",
+          "1",
+          "D2020200",
+          "15410",
+          "65.52.63.66"
+        ],
+        [
+          "13",
+          "CODO 90° 90 FUS PP-RAND AP",
+          "999507",
+          "1",
+          "D2020200",
+          "15410",
+          "65.52.63.66"
+        ],
+        [
+          "5",
+          "CODO 90° INS MET H 32X3/4\" FUS PP-RAN",
+          "983401",
+          "5",
+          "D2020200",
+          "15410",
+          "65.52.63.66"
+        ],
+        [
+          "4",
+          "TAPA H 32 FUS PP-RAND",
+          "976692",
+          "10",
+          "D2020200",
+          "15410",
+          "65.52.63.66"
+        ],
+        [
+          "9",
+          "TAPA H 50 FUS PP-RAND",
+          "976640",
+          "10",
+          "D2020200",
+          "15410",
+          "65.52.63.66"
+        ],
+        [
+          "2",
+          "TAPA H 90 FUS PP-RAND AP",
+          "999519",
+          "1",
+          "D2020200",
+          "15410",
+          "65.52.63.66"
+        ],
+        [
+          "30",
+          "TEE NORMAL 32 FUS PP-RAND",
+          "976634",
+          "10",
+          "D2020200",
+          "15410",
+          "65.52.63.66"
+        ],
+        [
+          "1",
+          "TEE NORMAL 40 FUS PP-RAND",
+          "976653",
+          "5",
+          "D2020200",
+          "15410",
+          "65.52.63.66"
+        ],
+        [
+          "26",
+          "TEE NORMAL 50 FUS PP-RAND",
+          "976661",
+          "2",
+          "D2020200",
+          "15410",
+          "65.52.63.66"
+        ],
+        [
+          "1",
+          "TEE RED EXTR HHH 32X25 FUS PP-RAND",
+          "63347",
+          "5",
+          "D2020200",
+          "15410",
+          "65.52.63.66"
+        ],
+        [
+          "16",
+          "TEE REDUC CENTRAL 50X32 FUS PP-RAND",
+          "976664",
+          "5",
+          "D2020200",
+          "15410",
+          "65.52.63.66"
+        ],
+        [
+          "1",
+          "TEE REDUC EXT Y CTRAL 32X20X25 PP-RAND",
+          "65278",
+          "5",
+          "D2020200",
+          "15410",
+          "65.52.63.66"
+        ],
+        [
+          "2",
+          "TEE REDUCCION 32X25 FUS PP-RAND",
+          "976635",
+          "5",
+          "D2020200",
+          "15410",
+          "65.52.63.66"
+        ],
+        [
+          "15",
+          "TUBO INSERTO H TF H 32X3/4\" FUS PP-RAND",
+          "993672",
+          "10",
+          "D2020200",
+          "15410",
+          "65.52.63.66"
+        ],
+        [
+          "6",
+          "TUBO INSERTO M TF H 25X3/4\" FUS PP-RAND",
+          "944790",
+          "10",
+          "D2020200",
+          "15410",
+          "65.52.63.66"
+        ],
+        [
+          "4",
+          "TUBO INSERTO M TF H 32X1\" FUS PP-RAND",
+          "993671",
+          "5",
+          "D2020200",
+          "15410",
+          "65.52.63.66"
+        ],
+        [
+          "1",
+          "TUBO MACHO 90MMX3\" PP-RANDOM AP",
+          "999528",
+          "1",
+          "D2020200",
+          "15410",
+          "65.52.63.66"
+        ],
+        [
+          "18",
+          "Válvula esférica unión-fusión 32 x 32 mm",
+          "973173",
+          "6",
+          "D2020200",
+          "15410",
+          "65.52.63.66"
+        ],
+        [
+          "23",
+          "Válvula esférica unión-fusión 50 x 50 mm",
+          "978853",
+          "2",
+          "D2020200",
+          "15410",
+          "65.52.63.66"
+        ],
+        [
+          "3",
+          "Válvula Metálica Premium 3/4\"",
+          "973136",
+          "12",
+          "D2020200",
+          "15410",
+          "65.52.63.66"
+        ]
+      ],
+      "truncated": false
+    },
+    {
+      "id": "1357169",
+      "name": "Amanco Wavin Fusión PPR Tuberías",
+      "category": "Pipes",
+      "trade": "sanitarias",
+      "columns": [
+        "Cantidad",
+        "Descripción del Producto",
+        "Código",
+        "Empaque",
+        "Longitud",
+        "Assembly Code",
+        "Keynote"
+      ],
+      "rows": [
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "1.43 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.71 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.64 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.13 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.62 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.17 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.73 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.64 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.13 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.62 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.79 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.61 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.13 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.62 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.62 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.59 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.14 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.63 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.14 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "2.61 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.56 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.19 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.55 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.11 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "1.19 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.04 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.68 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.11 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.58 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.84 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.69 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.71 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.86 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "1.43 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "1.67 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.28 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.15 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.20 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "1.40 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "2.50 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "2.07 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.83 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.09 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.14 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.35 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.09 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.13 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.35 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.11 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "2.16 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.67 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.74 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.04 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.68 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.04 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.68 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.10 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.15 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.45 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "2.12 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "1.82 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.62 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.44 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.62 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.08 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.14 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.35 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.08 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.05 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.46 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.77 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.62 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.62 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.62 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "2.24 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "1.65 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.90 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "1.26 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.07 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.58 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.84 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.47 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.22 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.05 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.68 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.38 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.18 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.66 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.40 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.18 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.66 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.62 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "1.83 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "2.26 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.15 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "1.28 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "1.91 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "1.97 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.36 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.20 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.43 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.36 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.20 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.15 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.36 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.58 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.19 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.11 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.11 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.57 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.69 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.11 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.11 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.47 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.71 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.11 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.94 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.05 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "2.06 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.12 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.14 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.17 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.17 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.05 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.06 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.05 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.22 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.24 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.06 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.61 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.81 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "1.41 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.06 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.30 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.87 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "1.73 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.79 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.08 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "1.17 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "2.25 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.21 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.27 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.07 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.10 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.23 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "2.19 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.07 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.24 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.24 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "2.19 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "2.19 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.08 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.07 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "3.94 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.46 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.27 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 32mm x 4mts.  ",
+          "900464",
+          "10",
+          "0.66 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 40mm x 4mts.  ",
+          "900465",
+          "5",
+          "2.16 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 40mm x 4mts.  ",
+          "900465",
+          "5",
+          "0.16 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "1.37 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.21 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.25 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "2.18 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "1.18 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "2.15 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "1.07 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.14 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.12 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.23 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "2.65 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.28 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.26 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.08 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.55 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.15 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.30 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.08 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.46 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.35 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.11 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.15 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.15 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.55 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.17 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.61 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.26 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.27 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "1.55 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.17 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.76 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.12 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.40 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.51 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "2.90 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.40 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.98 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.31 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "1.34 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "3.95 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "1.06 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "2.15 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.18 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.08 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.14 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.09 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.45 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.14 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.21 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.13 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.13 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.54 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.61 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.10 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "1.45 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.22 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.08 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.10 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.13 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.21 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.29 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.27 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.75 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.23 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.31 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.02 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.97 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.11 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.50 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.75 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.61 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.60 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "3.50 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 50mm x 4mts.  ",
+          "900466",
+          "3",
+          "0.52 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 63mm x 4mts.  ",
+          "900467",
+          "3",
+          "3.17 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 90mm x 4mts  ",
+          "900496",
+          "1",
+          "0.83 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 90mm x 4mts  ",
+          "900496",
+          "1",
+          "0.27 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 90mm x 4mts  ",
+          "900496",
+          "1",
+          "0.20 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 90mm x 4mts  ",
+          "900496",
+          "1",
+          "0.97 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 90mm x 4mts  ",
+          "900496",
+          "1",
+          "3.70 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 90mm x 4mts  ",
+          "900496",
+          "1",
+          "0.38 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 90mm x 4mts  ",
+          "900496",
+          "1",
+          "0.15 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 90mm x 4mts  ",
+          "900496",
+          "1",
+          "0.65 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 90mm x 4mts  ",
+          "900496",
+          "1",
+          "0.18 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 90mm x 4mts  ",
+          "900496",
+          "1",
+          "0.19 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 90mm x 4mts  ",
+          "900496",
+          "1",
+          "0.28 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 90mm x 4mts  ",
+          "900496",
+          "1",
+          "1.36 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "TUBO AMANCO FUSIÓN - PN12,5 - (Norma IRAM 13.471) 90mm x 4mts  ",
+          "900496",
+          "1",
+          "2.90 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "Longitud no disponible",
+          "Longitud no disponible",
+          "Longitud no disponible",
+          "4.11 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "Longitud no disponible",
+          "Longitud no disponible",
+          "Longitud no disponible",
+          "29.96 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "Longitud no disponible",
+          "Longitud no disponible",
+          "Longitud no disponible",
+          "0.07 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "Longitud no disponible",
+          "Longitud no disponible",
+          "Longitud no disponible",
+          "4.61 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "Longitud no disponible",
+          "Longitud no disponible",
+          "Longitud no disponible",
+          "6.65 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "Longitud no disponible",
+          "Longitud no disponible",
+          "Longitud no disponible",
+          "5.67 m",
+          "D2020200",
+          "15100"
+        ],
+        [
+          "1",
+          "Longitud no disponible",
+          "Longitud no disponible",
+          "Longitud no disponible",
+          "4.59 m",
+          "D2020200",
+          "15100"
+        ]
+      ],
+      "truncated": false
+    },
+    {
+      "id": "1168184",
+      "name": "Muros Estructura de Hormigón",
+      "category": "Walls",
+      "trade": "estructura",
+      "columns": [
+        "Nombre",
+        "Ancho",
+        "Largo",
+        "Altura",
+        "Área",
+        "Volumen"
+      ],
+      "rows": [
+        [
+          "C-01-01",
+          "0.20 m",
+          "0.60 m",
+          "2.80 m",
+          "2 m²",
+          "0.41 m³"
+        ],
+        [
+          "C-01-02",
+          "0.20 m",
+          "0.55 m",
+          "2.80 m",
+          "2 m²",
+          "0.41 m³"
+        ],
+        [
+          "C-01-03",
+          "0.20 m",
+          "0.70 m",
+          "3.00 m",
+          "2 m²",
+          "0.46 m³"
+        ],
+        [
+          "C-01-04",
+          "0.20 m",
+          "0.94 m",
+          "3.00 m",
+          "4 m²",
+          "0.62 m³"
+        ],
+        [
+          "M-00-01",
+          "0.20 m",
+          "6.93 m",
+          "3.00 m",
+          "20 m²",
+          "4.02 m³"
+        ],
+        [
+          "M-00-02",
+          "0.20 m",
+          "7.00 m",
+          "3.00 m",
+          "18 m²",
+          "3.64 m³"
+        ],
+        [
+          "M-00-03",
+          "0.20 m",
+          "2.40 m",
+          "3.20 m",
+          "6 m²",
+          "1.29 m³"
+        ],
+        [
+          "M-00-03",
+          "0.20 m",
+          "0.63 m",
+          "3.00 m",
+          "2 m²",
+          "0.38 m³"
+        ],
+        [
+          "M-00-04",
+          "0.20 m",
+          "7.00 m",
+          "3.00 m",
+          "18 m²",
+          "3.65 m³"
+        ],
+        [
+          "M-00-05",
+          "0.20 m",
+          "4.95 m",
+          "3.00 m",
+          "15 m²",
+          "3.00 m³"
+        ],
+        [
+          "M-00-06",
+          "0.20 m",
+          "3.10 m",
+          "6.20 m",
+          "20 m²",
+          "3.90 m³"
+        ],
+        [
+          "M-00-07",
+          "0.20 m",
+          "2.00 m",
+          "8.70 m",
+          "11 m²",
+          "2.12 m³"
+        ],
+        [
+          "M-00-07",
+          "0.20 m",
+          "9.00 m",
+          "0.78 m",
+          "3 m²",
+          "0.50 m³"
+        ],
+        [
+          "M-00-07",
+          "0.20 m",
+          "0.63 m",
+          "3.20 m",
+          "3 m²",
+          "0.40 m³"
+        ],
+        [
+          "M-00-07",
+          "0.20 m",
+          "0.63 m",
+          "3.20 m",
+          "3 m²",
+          "0.40 m³"
+        ],
+        [
+          "M-00-08",
+          "0.20 m",
+          "0.95 m",
+          "3.20 m",
+          "3 m²",
+          "0.64 m³"
+        ],
+        [
+          "M-00-08",
+          "0.20 m",
+          "0.95 m",
+          "5.50 m",
+          "3 m²",
+          "0.66 m³"
+        ],
+        [
+          "M-00-09",
+          "0.20 m",
+          "6.33 m",
+          "3.00 m",
+          "19 m²",
+          "3.73 m³"
+        ],
+        [
+          "M-00-10",
+          "0.20 m",
+          "8.40 m",
+          "3.20 m",
+          "23 m²",
+          "4.50 m³"
+        ],
+        [
+          "M-00-11",
+          "0.20 m",
+          "10.50 m",
+          "2.80 m",
+          "24 m²",
+          "4.78 m³"
+        ],
+        [
+          "M-00-12",
+          "0.20 m",
+          "13.00 m",
+          "3.20 m",
+          "34 m²",
+          "6.74 m³"
+        ],
+        [
+          "M-01-01",
+          "0.20 m",
+          "6.93 m",
+          "2.50 m",
+          "25 m²",
+          "4.96 m³"
+        ],
+        [
+          "M-01-02",
+          "0.20 m",
+          "4.75 m",
+          "3.00 m",
+          "16 m²",
+          "3.09 m³"
+        ],
+        [
+          "M-01-03",
+          "0.20 m",
+          "2.00 m",
+          "3.00 m",
+          "6 m²",
+          "1.20 m³"
+        ],
+        [
+          "M-01-03",
+          "0.20 m",
+          "0.63 m",
+          "3.00 m",
+          "2 m²",
+          "0.38 m³"
+        ],
+        [
+          "M-01-03",
+          "0.20 m",
+          "0.63 m",
+          "3.00 m",
+          "2 m²",
+          "0.38 m³"
+        ],
+        [
+          "M-01-04",
+          "0.20 m",
+          "2.05 m",
+          "3.30 m",
+          "8 m²",
+          "1.54 m³"
+        ],
+        [
+          "M-01-05",
+          "0.20 m",
+          "3.60 m",
+          "3.00 m",
+          "12 m²",
+          "2.37 m³"
+        ],
+        [
+          "M-01-06",
+          "0.20 m",
+          "3.00 m",
+          "3.00 m",
+          "8 m²",
+          "1.49 m³"
+        ],
+        [
+          "M-01-07",
+          "0.20 m",
+          "0.63 m",
+          "3.00 m",
+          "2 m²",
+          "0.38 m³"
+        ],
+        [
+          "M-01-07",
+          "0.20 m",
+          "0.63 m",
+          "3.00 m",
+          "2 m²",
+          "0.38 m³"
+        ],
+        [
+          "M-01-09",
+          "0.20 m",
+          "6.50 m",
+          "3.00 m",
+          "15 m²",
+          "2.90 m³"
+        ],
+        [
+          "M-01-10",
+          "0.20 m",
+          "13.00 m",
+          "3.00 m",
+          "25 m²",
+          "4.90 m³"
+        ],
+        [
+          "M-01-11",
+          "0.20 m",
+          "4.56 m",
+          "6.20 m",
+          "30 m²",
+          "5.92 m³"
+        ],
+        [
+          "M-02-01",
+          "0.20 m",
+          "2.00 m",
+          "3.00 m",
+          "4 m²",
+          "0.74 m³"
+        ],
+        [
+          "M-02-01",
+          "0.20 m",
+          "0.63 m",
+          "3.00 m",
+          "1 m²",
+          "0.23 m³"
+        ],
+        [
+          "M-02-01",
+          "0.20 m",
+          "0.63 m",
+          "3.00 m",
+          "1 m²",
+          "0.23 m³"
+        ],
+        [
+          "M-02-02",
+          "0.20 m",
+          "0.63 m",
+          "2.50 m",
+          "1 m²",
+          "0.23 m³"
+        ],
+        [
+          "M-02-02",
+          "0.20 m",
+          "0.63 m",
+          "3.00 m",
+          "1 m²",
+          "0.23 m³"
+        ],
+        [
+          "M-02-03",
+          "0.20 m",
+          "6.50 m",
+          "2.50 m",
+          "11 m²",
+          "2.23 m³"
+        ],
+        [
+          "M-02-04",
+          "0.20 m",
+          "6.50 m",
+          "2.50 m",
+          "11 m²",
+          "2.18 m³"
+        ],
+        [
+          "V-02-01",
+          "0.20 m",
+          "5.29 m",
+          "0.60 m",
+          "3 m²",
+          "0.51 m³"
+        ],
+        [
+          "V-02-03",
+          "0.20 m",
+          "9.00 m",
+          "0.60 m",
+          "5 m²",
+          "1.07 m³"
+        ]
+      ],
+      "truncated": false
+    },
+    {
+      "id": "786516",
+      "name": "Superficies",
+      "category": "Rooms",
+      "trade": "superficies",
+      "columns": [
+        "Name",
+        "Number",
+        "Level",
+        "Area"
+      ],
+      "rows": [
+        [
+          "Cuarto A Inv.",
+          "01",
+          "00. Planta Baja",
+          "12 m²"
+        ],
+        [
+          "Baño A Inv.",
+          "02",
+          "00. Planta Baja",
+          "5 m²"
+        ],
+        [
+          "Cuarto B Inv.",
+          "03",
+          "00. Planta Baja",
+          "12 m²"
+        ],
+        [
+          "Baño B Inv.",
+          "04",
+          "00. Planta Baja",
+          "5 m²"
+        ],
+        [
+          "Cuarto C Inv.",
+          "05",
+          "00. Planta Baja",
+          "12 m²"
+        ],
+        [
+          "Baño C Inv.",
+          "06",
+          "00. Planta Baja",
+          "5 m²"
+        ],
+        [
+          "Toilette Servicio",
+          "07",
+          "00. Planta Baja",
+          "6 m²"
+        ],
+        [
+          "Lavadero",
+          "08",
+          "00. Planta Baja",
+          "7 m²"
+        ],
+        [
+          "Hab. servicio",
+          "09",
+          "00. Planta Baja",
+          "7 m²"
+        ],
+        [
+          "Acceso Servicio",
+          "10",
+          "00. Planta Baja",
+          "5 m²"
+        ],
+        [
+          "Ascensor",
+          "11",
+          "00. Planta Baja",
+          "3 m²"
+        ],
+        [
+          "Quincho",
+          "12",
+          "00. Planta Baja",
+          "45 m²"
+        ],
+        [
+          "Cuarto ppal",
+          "13",
+          "00. Planta Baja",
+          "15 m²"
+        ],
+        [
+          "Vestidor ppal",
+          "14",
+          "00. Planta Baja",
+          "8 m²"
+        ],
+        [
+          "Baño ppal",
+          "15",
+          "00. Planta Baja",
+          "9 m²"
+        ],
+        [
+          "Pasillo",
+          "16",
+          "00. Planta Baja",
+          "26 m²"
+        ],
+        [
+          "Hall",
+          "17",
+          "00. Planta Baja",
+          "27 m²"
+        ],
+        [
+          "Sala de TV",
+          "01",
+          "01. Planta Alta",
+          "15 m²"
+        ],
+        [
+          "Sala de Maquinas",
+          "02",
+          "01. Planta Alta",
+          "0 m²"
+        ],
+        [
+          "Playroom",
+          "03",
+          "01. Planta Alta",
+          "29 m²"
+        ],
+        [
+          "Baño PA",
+          "04",
+          "01. Planta Alta",
+          "11 m²"
+        ],
+        [
+          "Toilette",
+          "05",
+          "01. Planta Alta",
+          "5 m²"
+        ],
+        [
+          "Cava",
+          "06",
+          "01. Planta Alta",
+          "8 m²"
+        ],
+        [
+          "Cocina",
+          "07",
+          "01. Planta Alta",
+          "21 m²"
+        ],
+        [
+          "Comedor",
+          "08",
+          "01. Planta Alta",
+          "22 m²"
+        ],
+        [
+          "Living",
+          "09",
+          "01. Planta Alta",
+          "16 m²"
+        ],
+        [
+          "Puente",
+          "10",
+          "01. Planta Alta",
+          "2 m²"
+        ],
+        [
+          "SM",
+          "01",
+          "02. Planta Entrepiso",
+          "7 m²"
+        ],
+        [
+          "Hall PE",
+          "02",
+          "02. Planta Entrepiso",
+          "7 m²"
+        ],
+        [
+          "Atelier",
+          "03",
+          "02. Planta Entrepiso",
+          "19 m²"
+        ],
+        [
+          "Metros Cubiertos ",
+          "",
+          "",
+          "372 m²"
+        ]
+      ],
+      "truncated": false
+    },
+    {
+      "id": "1357176",
+      "name": "Tabla de Cantidades Pases de Tubería",
+      "category": "Generic Models",
+      "trade": "sanitarias",
+      "columns": [
+        "Descripción",
+        "Diámetro",
+        "Largo",
+        "Ancho",
+        "Cantidad"
+      ],
+      "rows": [
+        [
+          "Pase Rectangular",
+          "",
+          "<varies>",
+          "<varies>",
+          "5"
+        ]
+      ],
+      "truncated": false
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+import type {NativeTable} from './procurement';
+const normalize=(s:string)=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();
+export function usefulColumns(table:NativeTable,technical=false){return table.columns.map((name,index)=>({name,index})).filter(c=>technical||!['codigo','code','assembly code','keynote','uniclass number','empaque'].includes(normalize(c.name)));}
+export function scheduleScope(table:NativeTable){if(table.trade==='sanitarias')return 'Sanitarias · '+(table.category==='Pipe Fittings'?'Accesorios':table.category==='Pipes'?'Tuberías':table.category)+' · Sistema: consultar campo nativo; la línea comercial no define AF / AC.';if(table.trade==='aberturas')return 'Aberturas · '+(table.name.includes('Materiales')?'Materiales por elemento: sus filas no son cantidades de aberturas.':'Cada elemento conserva los locales de origen y destino de Revit.');return 'Tabla nativa · sin reclasificación de sus valores.';}

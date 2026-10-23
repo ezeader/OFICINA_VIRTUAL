@@ -1,0 +1,22 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {mergeCandidates} from '../lib/supplier-search.ts';
+import {usefulColumns} from '../lib/native-table.ts';
+test('supplier trust comes from a saved source identity, not name or public rating',()=>{
+ const candidate={id:'osm-node-1',name:'Casa Materiales',address:'Calle 1, Pinamar',source:'https://www.openstreetmap.org/node/1',contact:''};
+ const saved=[{id:'my-supplier',sourceId:'osm-node-1',name:'Alias guardado',zone:'Pinamar',trusted:true}];
+ assert.equal(mergeCandidates([candidate,candidate],saved).length,1);assert.equal(mergeCandidates([candidate],saved)[0].trusted,true);
+ assert.equal(mergeCandidates([{...candidate,id:'osm-node-2',address:'Otra sucursal'}],saved)[0].trusted,false);
+});
+test('simple table hides commercial metadata without losing source columns or empaque conversion',()=>{
+ const table={columns:['Cantidad','Descripción del producto','Código','Empaque','Assembly Code','Keynote'],rows:[['2','Caño','A','40','code','key']]};
+ assert.deepEqual(usefulColumns(table).map(c=>c.index),[0,1]);assert.equal(usefulColumns(table,true).length,6);assert.equal(table.rows[0][3],'40');
+});
+test('openings count physical identities once across rooms, with curtain walls separate',()=>{
+ const a=JSON.parse(fs.readFileSync(new URL('../public/casa-angel/openings/manifest.json',import.meta.url)));
+ assert.equal(new Set(a.items.map(i=>i.uid)).size,a.items.length);assert.equal(a.items.filter(i=>i.category==='Windows').length,25);assert.equal(a.items.filter(i=>i.category==='Doors').length,13);
+ assert.equal(a.rooms.filter(r=>r.sheetId).length,29);assert.equal(a.items.filter(i=>!i.rooms.length).length,6);
+ for(const r of a.rooms){assert.equal(new Set(r.items).size,r.items.length);for(const id of r.items)assert.ok(a.items.find(i=>i.id===id)?.rooms.includes(r.id));}
+ const sheets=a.rooms.filter(r=>r.sheetId);for(const r of sheets){for(const path of [r.image,r.pdf,...r.views.map(v=>v.image)])assert.ok(fs.existsSync(new URL('../public'+path,import.meta.url)),path)}
+});
