@@ -871,5 +871,6 @@ def run(doc, uidoc, job):
     if action == 'r4_crop': return crop_job(doc, job['pairs'])
     if action == 'r4_arcs': return arc_probe(doc)
     if action == 'r4_reset': return reset_job(doc, job['key'])
+    if action == 'r9_survey': return imp.load_source('ader_survey_r9', os.path.join(ROOT, 'revit_survey_r9.py')).run(doc, uidoc, job)
     if action == 'r4_inventory': return imp.load_source('ader_inventory_r4', os.path.join(ROOT, 'revit_inventory_r4.py')).run(doc, uidoc, job)
     raise Exception('Unsupported R4 job: ' + action)
