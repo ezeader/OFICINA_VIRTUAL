@@ -9,7 +9,7 @@ const r2=structuredClone(manifest);delete r2.documentationR4;for(const r of r2.r
 
 test('sheets are organised like Sanitarias: by level, by opening type and review cases',()=>{
  const cards=buildSheets(r2);
- assert.equal(cards.filter(c=>c.tab==='locales').length,r2.rooms.filter(r=>r.image).length);
+ assert.equal(cards.filter(c=>c.tab==='locales').length,r2.rooms.filter(r=>r.image&&r.items.length).length);
  assert.equal(cards.filter(c=>c.tab==='aberturas').length,r2.items.filter(i=>i.documentation?.image).length);
  assert.equal(cards.filter(c=>c.tab==='revision').length,(r2.reviewCases||[]).length);
  const levels=groupSheets(cards,'locales').map(g=>g.title);

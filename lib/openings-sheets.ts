@@ -2,8 +2,9 @@
 // Todo es opcional: si el manifest no trae R4, la mesa sigue con R2/R3 y el esquema web.
 
 export type R4Dim={label:string;values_m:number[];associative?:boolean;view?:'plan'|'elevation';roomKey?:string};
-export type R4View={id:number;name:string;label?:string;scale:number;kind?:'plan'|'elevation';elementId?:string|null;code?:string|null;image:string};
-export type R4Sheet={sheetId:string;sheetNumber:string;page?:number;pages?:number;pdf?:string;image:string;thumbnail?:string;views:R4View[]};
+// R8 suma por vista: región en la lámina, etiqueta del local, códigos etiquetados y sus cotas.
+export type R4View={id:number;name:string;label?:string;scale:number;kind?:'plan'|'axo'|'elevation';elementId?:string|null;code?:string|null;image:string;region?:number[];roomLabel?:string;tags?:string[];dimensions?:{label:string;values_m:number[];associative?:boolean;code?:string}[];elements?:{code:string;box:number[]}[]};
+export type R4Sheet={sheetId:string;sheetNumber:string;page?:number;pages?:number;pdf?:string;image:string;thumbnail?:string;preview?:string;views:R4View[]};
 export type R4Group={key:string;roomId?:number|null;name:string;level?:string;codes?:string[];sheets:R4Sheet[]};
 export type R4Summary={revision?:string;totals?:{roomGroups?:number;sheets?:number;elevations?:number;dimensions?:number;nonAssociativeDimensions?:number;roomsWithoutOpenings?:string[]};sheets?:R4Group[]};
 export type ViewDimension={label:string;values_m:number[];associative?:boolean;code?:string};
@@ -43,8 +44,8 @@ export function r4ElementViews(item:R4Item,groups:R4Group[],items:R4Item[]):R4Dr
 // Ordena la documentación de Aberturas como en Sanitarias: láminas agrupadas, cada una con sus dibujos.
 
 export type ViewElement={code:string;elementId?:string;box:number[]};
-export type SheetView={id:number;name:string;scale:number;image:string;code?:string;dimensions?:ViewDimension[];elements?:ViewElement[]};
-export type SheetCard={key:string;tab:'locales'|'aberturas'|'revision';group:string;number:string;name:string;thumbnail?:string;image?:string;pdf?:string;sheetId?:string;views:SheetView[];itemIds:string[];roomId?:number;note?:string};
+export type SheetView={id:number;name:string;scale:number;image:string;code?:string;dimensions?:ViewDimension[];elements?:ViewElement[];region?:number[];tags?:string[];kind?:string};
+export type SheetCard={key:string;tab:'locales'|'aberturas'|'revision';group:string;number:string;name:string;thumbnail?:string;preview?:string;image?:string;pdf?:string;sheetId?:string;views:SheetView[];itemIds:string[];roomId?:number;note?:string};
 type Doc={sheetId?:string;sheetNumber?:string;pdf?:string;image?:string;thumbnail?:string;views?:{id:number;name:string;scale:number;image:string;elements?:ViewElement[]}[]};
 type Manifest={
  items:{id:string;code:string;category:string;type:string;rooms:number[];documentation?:Doc}[];
@@ -61,13 +62,14 @@ export function buildSheets(m:Manifest):SheetCard[]{
  const cards:SheetCard[]=[];
  const r4Pages=(group:R4Group,roomName:string,level:string,itemIds:string[],roomId?:number)=>{
   const doc=r4GroupDocument(group,m.items as never);if(!doc)return;
-  group.sheets.forEach((sheet,page)=>cards.push({key:`r4-${group.key}-${page+1}`,tab:'locales',group:level,number:sheet.sheetNumber,name:roomName+(group.sheets.length>1?` · hoja ${page+1}`:''),thumbnail:sheet.thumbnail,image:sheet.image,pdf:sheet.pdf,sheetId:sheet.sheetId,
-   views:sheet.views.map(v=>({id:v.id,name:v.code?`${v.code} · alzado`:cleanName(v.name),scale:v.scale,image:v.image,...(v.code?{code:v.code}:{}),dimensions:viewDimensions(v,group.key,m.items as never)})),itemIds,...(roomId!=null?{roomId}:{})}));
+  group.sheets.forEach((sheet,page)=>cards.push({key:`r4-${group.key}-${page+1}`,tab:'locales',group:level,number:sheet.sheetNumber,name:roomName+(group.sheets.length>1?` · hoja ${page+1}`:''),thumbnail:sheet.thumbnail,preview:sheet.preview,image:sheet.image,pdf:sheet.pdf,sheetId:sheet.sheetId,
+   views:sheet.views.map(v=>({id:v.id,name:v.code?`${v.code} · alzado`:cleanName(v.name).replace(' · '+(v.roomLabel||'§'),''),scale:v.scale,image:v.image,kind:v.kind,...(v.code?{code:v.code}:{}),...(v.region?{region:v.region}:{}),...(v.tags?{tags:v.tags}:{}),...(v.elements?{elements:v.elements}:{}),
+    dimensions:v.dimensions?v.dimensions.map(d=>({label:d.label,values_m:d.values_m,associative:d.associative,...(d.code||v.code?{code:d.code||v.code!}:{})})):viewDimensions(v,group.key,m.items as never)})),itemIds,...(roomId!=null?{roomId}:{})}));
  };
  for(const room of [...m.rooms].sort((a,b)=>byNumber(a.level_name,b.level_name)||byNumber(a.number,b.number))){
   const name=`${room.number} · ${room.name}`;
   if(room.r4?.sheets?.length){r4Pages({key:String(room.id),name:room.name,sheets:room.r4.sheets},name,room.level_name,room.items,room.id);continue}
-  if(!room.image)continue;
+  if(!room.image||!room.items.length)continue; // un local sin aberturas no tiene nada que revisar en este rubro
   cards.push({key:`room-${room.id}`,tab:'locales',group:room.level_name,number:room.sheetNumber||'',name,thumbnail:room.thumbnail,image:room.image,pdf:room.pdf,sheetId:room.sheetId,views:plainViews(room),itemIds:room.items,roomId:room.id});
  }
  const unassigned=m.items.filter(i=>!i.rooms.length).map(i=>i.id),sl=m.documentationR4?.sheets?.find(g=>g.key==='SL');

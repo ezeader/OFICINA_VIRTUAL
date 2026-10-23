@@ -64,3 +64,4 @@
 .openingTooltip b{font-weight:600}
 @media(max-width:900px){.openingTotals{grid-template-columns:repeat(2,minmax(0,1fr))}.openingBudgetTable{font-size:13px}.openingBudgetTable th,.openingBudgetTable td{padding:6px}}
 .openingBudgetTable td:nth-child(2){white-space:nowrap}
+.openingSheet>.openingPreview{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}.openingSheet>.vectorLoading{background:transparent;color:transparent}
