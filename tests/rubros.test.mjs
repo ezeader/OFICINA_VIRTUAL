@@ -10,3 +10,6 @@ test('general sheets come first by sector, then element sheets by kind',()=>{
  const g=groupRubroSheets([{number:'CUB-F-CU-01',title:'Ficha',kind:'element',element:'CU-01'},{number:'CUB-01',title:'Planta de techos',sector:'Techos'},{number:'CUB-F-VC-01',title:'Ficha',kind:'element',element:'VC-01'}],{CU:'Faldones',VC:'Vigas'});
  assert.deepEqual(g.map(x=>x.title),['Techos','Fichas · Faldones','Fichas · Vigas']);
 });
+test('the general index sheet group always comes first',()=>{
+ assert.equal(groupRubroSheets([{number:'CUB-01',title:'Planta',sector:'Cubierta'},{number:'CUB-00',title:'Índice',sector:'General'}])[0].title,'General');
+});

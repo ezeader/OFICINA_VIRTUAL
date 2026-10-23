@@ -1,7 +1,7 @@
 // Links directos a cada rubro de Documentación de Casa Ángel: #documentacion/angel/<rubro>.
 export type DocumentationRoute={projectId:'angel';rubric:string;caseCode?:string};
 
-const SLUGS:Record<string,string>={aberturas:'Aberturas',estructura:'Estructura',cubierta:'Cubierta',albanileria:'Albañilería',pisos:'Pisos',revestimientos:'Revestimientos',climatizacion:'Climatización',pileta:'Pileta',parrilla:'Parrilla',solar:'Paneles solares',gas:'Gas',domotica:'Domótica',sanitaria:'Sanitaria',electrica:'Eléctrica'};
+const SLUGS:Record<string,string>={aberturas:'Aberturas',estructura:'Estructura',cubierta:'Cubierta',albanileria:'Albañilería',pisos:'Pisos',revestimientos:'Revestimientos',climatizacion:'Climatización',pileta:'Pileta',parrilla:'Parrilla',solar:'Paneles solares',gas:'Gas',domotica:'Domótica',sanitaria:'Sanitaria',electrica:'Eléctrica',cielorrasos:'Cielorrasos',exteriores:'Exteriores',equipamiento:'Equipamiento'};
 
 export function parseDocumentationRoute(hash:string):DocumentationRoute|null {
  const opening=/^#documentacion\/angel\/aberturas(?:\/(MC-\d+))?\/?$/.exec(hash);

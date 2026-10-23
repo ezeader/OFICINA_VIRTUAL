@@ -4,16 +4,20 @@
 export type RubroInfo={key:string;name:string;subtitle:string;pending:string};
 // Orden por capacidad de cómputo: primero lo que ya está modelado en 3D.
 export const RUBROS:RubroInfo[]=[
- {key:'cubierta',name:'Cubierta',subtitle:'Tejas · madera · zinguería',pending:'Modelada en Revit (tejas y estructura de madera). Las láminas se están preparando.'},
- {key:'albanileria',name:'Albañilería',subtitle:'Tabiques y muros',pending:'Muros no estructurales modelados. Se documenta después de Cubierta.'},
- {key:'pisos',name:'Pisos',subtitle:'Contrapisos y terminaciones',pending:'Capas de piso modeladas en las losas. Se documenta después de Albañilería.'},
- {key:'revestimientos',name:'Revestimientos',subtitle:'Terminaciones de muros',pending:'A confirmar qué terminaciones están modeladas.'},
- {key:'climatizacion',name:'Climatización',subtitle:'Equipos y conductos',pending:'Hay un relevamiento de datos; faltan láminas.'},
- {key:'pileta',name:'Pileta',subtitle:'Vaso y equipamiento',pending:'Modelada en parte (muros del vaso).'},
- {key:'parrilla',name:'Parrilla',subtitle:'Diseño y construcción',pending:'No está modelada: hay que diseñarla antes de documentarla.'},
- {key:'solar',name:'Paneles solares',subtitle:'Captación y equipos',pending:'No está modelado todavía.'},
+ {key:'cubierta',name:'Cubierta',subtitle:'Tejas · madera · zinguería',pending:'Modelada en Revit (tejas y estructura de madera).'},
+ {key:'pisos',name:'Pisos',subtitle:'Pisos y zócalos',pending:'Modelado en parte (33 elementos). Sigue en el plan.'},
+ {key:'climatizacion',name:'Climatización',subtitle:'Piso radiante',pending:'Modelada en parte (piso radiante, 878 elementos). Sigue en el plan.'},
+ {key:'albanileria',name:'Albañilería',subtitle:'Muros y tabiques',pending:'Muros y tabiques no estructurales modelados en parte (60). Sigue en el plan.'},
+ {key:'cielorrasos',name:'Cielorrasos',subtitle:'Suspendidos y aplicados',pending:'Modelados en parte (14). Sigue en el plan.'},
+ {key:'pileta',name:'Pileta',subtitle:'Vaso y equipamiento',pending:'Modelada en parte (7 elementos).'},
+ {key:'exteriores',name:'Exteriores',subtitle:'Paisajismo y solados',pending:'Modelados en parte (20 elementos).'},
+ {key:'equipamiento',name:'Equipamiento',subtitle:'Mobiliario fijo',pending:'Modelado en parte (106 elementos).'},
+ {key:'revestimientos',name:'Revestimientos',subtitle:'Terminaciones de muros',pending:'No están modelados: hay que definirlos antes de documentar.'},
+ {key:'parrilla',name:'Parrilla',subtitle:'Diseño y construcción',pending:'Apenas modelada (3 elementos): hay que diseñarla.'},
+ {key:'electrica',name:'Eléctrica',subtitle:'Instalación',pending:'Primero hay que diseñar la instalación: casi no está modelada.'},
  {key:'gas',name:'Gas',subtitle:'Instalación',pending:'No está modelado todavía.'},
  {key:'domotica',name:'Domótica',subtitle:'Automatización',pending:'No está modelado todavía.'},
+ {key:'solar',name:'Paneles solares',subtitle:'Captación y equipos',pending:'No está modelado todavía.'},
 ];
 export const rubroByKey=(key:string)=>RUBROS.find(r=>r.key===key);
 
@@ -32,5 +36,5 @@ export function groupRubroSheets<T extends {number:string;title:string;sector?:s
  const groupOf=(s:T)=>s.kind==='element'||s.element?`Fichas · ${(kinds?.[(s.element||'').split('-')[0]])||'elementos'}`:(s.sector||s.level||'Láminas generales');
  const groups=new Map<string,T[]>();
  for(const s of [...sheets].sort((a,b)=>a.number.localeCompare(b.number,'es',{numeric:true})))groups.set(groupOf(s),[...(groups.get(groupOf(s))||[]),s]);
- return [...groups].map(([title,rows])=>({title,sheets:rows})).sort((a,b)=>Number(a.title.startsWith('Fichas'))-Number(b.title.startsWith('Fichas'))||a.title.localeCompare(b.title,'es',{numeric:true}));
+ return [...groups].map(([title,rows])=>({title,sheets:rows})).sort((a,b)=>Number(a.title!=='General')-Number(b.title!=='General')||Number(a.title.startsWith('Fichas'))-Number(b.title.startsWith('Fichas'))||a.title.localeCompare(b.title,'es',{numeric:true}));
 }
