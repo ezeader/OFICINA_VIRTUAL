@@ -5,7 +5,7 @@ export type Wall={id:string;code:string;type:string;level:string;length_m:number
 export type Slab={id:string;type:string;level:string;role:string;area_m2:number;thickness_m?:number;concreteLayer_m?:number;concreteVolume_m3:number|null};
 export type Group={key:string;count:number;area_m2:number;volume_m3:number;length_m:number};
 export type StructureCase={id:string;title:string;elementIds:string[];codes:string[];observation:string;proposedCorrection:string;status?:string};
-export type StructureSheet={number:string;title:string;level?:string|null;sector?:string|null;image?:string;preview?:string;thumbnail?:string;pdf?:string;sheetId?:string;views?:StructureView[]};
+export type StructureSheet={number:string;title:string;level?:string|null;sector?:string|null;image?:string;preview?:string;thumbnail?:string;pdf?:string;sheetId?:string;views?:StructureView[];element?:string;kind?:string};
 export type StructureManifest={model:string;readAt:string;revision:string;status:string;levels:{name:string}[];concreteWalls:{type:string;count:number;elements:Wall[];totals:{length_m:number;area_m2:number;volume_m3:number}};otherStructuralWalls:Group[];slabsAndFoundations:Slab[];framing:{note?:string;byType:Group[]};roofs:Group[];notModeled:string[];warnings:{total:number;byText:{text:string;count:number}[]};reviewCases:StructureCase[];proposal:{sheets:{number:string;title:string}[]};openQuestions?:string[];sheets?:StructureSheet[];codes?:StructureCode[];decisions?:string[];codesWrittenToModel?:boolean;documentationRevision?:string};
 
 const byLevel=(a:string,b:string)=>a.localeCompare(b,'es',{numeric:true});
@@ -43,13 +43,15 @@ export function groupCases(cases:StructureCase[]){
 // Láminas: plantas y fundación primero, después alzados por nivel y al final los casos de revisión.
 export type StructureView={id:string;name:string;scale:number;kind?:string;sector?:string;roomLabel?:string;caseId?:string|null;image:string;region?:number[];tags?:string[];dimensions?:{label:string;values_m:number[];associative?:boolean}[];elements?:{code:string;elementId?:string;box:number[]}[]};
 export type StructureCode={id:string;code:string;kind:string;level?:string;label:string;status?:string;length_m?:number;height_m?:number;thickness_m?:number;area_m2?:number;volume_m3?:number};
-export function sheetGroup(s:{number:string;level?:string|null}){
+const ELEMENT_GROUP:Record<string,string>={MH:'Fichas de muros',LO:'Fichas de losas',VE:'Fichas de vigas y encadenados',PL:'Ficha de platea',CO:'Fichas de columnas'};
+export function sheetGroup(s:{number:string;level?:string|null;element?:string;kind?:string}){
+ if(s.element||s.kind==='element')return ELEMENT_GROUP[(s.element||'').split('-')[0]]||'Fichas de elementos';
  if(s.number.startsWith('EST-SEC'))return `Alzados de muros · ${s.level||'sin nivel'}`;
  if(s.number.startsWith('EST-REV'))return 'Casos de revisión';
  return 'Índice, plantas y fundación';
 }
-export function groupStructureSheets<T extends {number:string;level?:string|null}>(sheets:T[]){
- const order=(g:string)=>g.startsWith('Índice')?0:g.startsWith('Alzados')?1:2;
+export function groupStructureSheets<T extends {number:string;level?:string|null;element?:string;kind?:string}>(sheets:T[]){
+ const order=(g:string)=>g.startsWith('Índice')?0:g.startsWith('Alzados')?1:g.startsWith('Ficha')?2:3;
  const groups=new Map<string,T[]>();
  for(const s of [...sheets].sort((a,b)=>a.number.localeCompare(b.number,'es',{numeric:true})))groups.set(sheetGroup(s),[...(groups.get(sheetGroup(s))||[]),s]);
  return [...groups].map(([title,rows])=>({title,sheets:rows})).sort((a,b)=>order(a.title)-order(b.title)||a.title.localeCompare(b.title,'es',{numeric:true}));

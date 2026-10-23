@@ -29,3 +29,7 @@ test('structure sheets are grouped: plans first, then elevations by level, revie
  assert.equal(g.reduce((n,x)=>n+x.sheets.length,0),(m.sheets||[]).length);
  if(g.length){assert.equal(g[0].title,'Índice, plantas y fundación');assert.equal(g.at(-1).title,'Casos de revisión')}
 });
+test('element sheets are grouped by element type after the plans and elevations',()=>{
+ const g=groupStructureSheets([{number:'EST-PB-01'},{number:'EST-EL-MH-PB-01',element:'MH-PB-01',kind:'element'},{number:'EST-EL-LO-PA-01',element:'LO-PA-01',kind:'element'},{number:'EST-REV-01'},{number:'EST-SEC-PB-01',level:'00. Planta Baja'}]);
+ assert.deepEqual(g.map(x=>x.title),['Índice, plantas y fundación','Alzados de muros · 00. Planta Baja','Fichas de losas','Fichas de muros','Casos de revisión']);
+});
