@@ -99,7 +99,7 @@ def to_sheet_fn(doc, v, vp):
 
 def project_job(doc, job):
     """job['views'] = [{id, box:[[x,y,z],[x,y,z]], margin_ft, elements:[ids]}] -> sheet boxes of each element."""
-    req = R1.read(os.path.join(OUT, 'project-request.json')); out = []
+    req = R1.read(os.path.join(OUT, job.get('request', 'project-request.json'))); out = []
     for r in req['views']:
         v = el(doc, r['id'])
         if v is None: out.append({'id': r['id'], 'error': 'missing view'}); continue
@@ -119,7 +119,7 @@ def project_job(doc, job):
             rows.append({'elementId': str(i), 'box': [max(0., min(1., x)) for x in f], 'clipped': clipped})
         drift = max(abs(o.MinimumPoint.X - bx0), abs(o.MinimumPoint.Y - by0), abs(o.MaximumPoint.X - bx1), abs(o.MaximumPoint.Y - by1))
         out.append({'id': r['id'], 'method': method, 'boxDrift_ft': drift, 'elements': rows})
-    R1.write(os.path.join(OUT, 'view-elements.json'), out)
+    R1.write(os.path.join(OUT, job.get('output', 'view-elements.json')), out)
     return {'status': 'success', 'views': len(out), 'errors': len([x for x in out if x.get('error')]),
             'methods': sorted(set(x.get('method') for x in out if x.get('method'))), 'maxDrift_ft': max([x.get('boxDrift_ft', 0) for x in out] or [0]),
             'clipped': sum(1 for x in out for y in x.get('elements', []) if y['clipped'])}
