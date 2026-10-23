@@ -73,7 +73,15 @@ def publish_room(rec, public):
             rect = fitz.Rect(ox + lo[0] * scale - 8, oy - hi[1] * scale - 8, ox + hi[0] * scale + 8, oy - lo[1] * scale + 8) & page.rect
             assert not rect.is_empty
             file = f'r4-view-{v["id"]}.svg.gz'; crop_view(pdf, i, rect, public / file)
-            views.append({k: v[k] for k in ('id', 'name', 'label', 'scale', 'kind') if k in v} | {'elementId': str(v['elementId']) if v.get('elementId') else None, 'code': v.get('code'), 'image': BASE + file})
+            # Per-drawing data for the sheet viewer: the cotas and tags drawn in this view.
+            def dimrow(d): return {'label': d['label'], 'values_m': [round(x, 4) for x in d.get('values_m', [])], 'associative': d.get('associative'), **({'radius_m': round(d['radius_m'], 4)} if d.get('radius_m') else {})}
+            if v.get('kind') == 'plan':
+                tags = rec['codes']
+                vdims = [dict(dimrow(d), code=e['code']) for e in rec['elements'].values() for d in e['dimensions'] if 'planta' in d['label'] and not d.get('error')]
+            else:
+                e = rec['elements'][str(v['elementId'])]; tags = [e['code']]
+                vdims = [dict(dimrow(d), code=e['code']) for d in e['dimensions'] if 'planta' not in d['label'] and not d.get('error')]
+            views.append({k: v[k] for k in ('id', 'name', 'label', 'scale', 'kind') if k in v} | {'elementId': str(v['elementId']) if v.get('elementId') else None, 'code': v.get('code'), 'image': BASE + file, 'tags': tags, 'dimensions': vdims})
         assert page_rec['sheet_number'] in page.get_text(), f'Sheet number missing on {stem}'
         sheets.append({'sheetId': str(page_rec['sheet_id']), 'sheetNumber': page_rec['sheet_number'], 'page': i + 1, 'pages': len(rec['pages']),
                        'pdf': BASE + f'r4-room-{key}.pdf', 'image': BASE + f'{stem}.svg.gz', 'thumbnail': BASE + f'{stem}.png', 'views': views,
@@ -105,7 +113,7 @@ def main():
             view_img = next((v['image'] for s in sheets for v in s['views'] if v['id'] == e['viewId']), None)
             doc['sheets'].append(e['sheet']); doc['views'].append({'viewId': str(e['viewId']), 'roomKey': r['key'], 'roomName': rec['name'], 'image': view_img})
             dims = [{'label': d['label'], 'values_m': [round(x, 4) for x in d.get('values_m', [])], 'associative': d.get('associative'),
-                     'view': 'plan' if d['label'] == 'Ancho en planta' else 'elevation', 'roomKey': r['key']} for d in e['dimensions'] if not d.get('error')]
+                     'view': 'plan' if 'planta' in d['label'] else 'elevation', 'roomKey': r['key']} for d in e['dimensions'] if not d.get('error')]
             doc['dimensions'] += dims; doc['data'] = e['data']; dims_total += len(dims); non_assoc += len([d for d in dims if d['associative'] is False])
     for item in manifest['items']:
         r4 = item['documentation'].get('r4')

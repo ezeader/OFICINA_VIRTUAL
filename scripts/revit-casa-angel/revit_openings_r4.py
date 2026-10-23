@@ -323,13 +323,102 @@ def dims_curtain(doc, f, e, lev):
     if len(ys) > 2: out.append(tick_dim(doc, f, 'Altura total desde nivel', [ylev, ytop], False, xr + .3 / M))
     return out
 
+class AxisFrame(Frame):
+    def __init__(self, v, o, rx, uy):
+        self.v = v; self.o = o; self.rx = rx; self.uy = uy
+
 def plan_dim(doc, plan, e, room):
-    if not isinstance(e, DB.FamilyInstance): return None
     a, b, z0, z1, n = extents(doc, e)
     vd = view_dir_for(doc, e, room)
+    lev = doc.GetElement(plan.GenLevel.Id)
+    if isinstance(e, DB.Wall):
+        z = plan.Origin.Z; rx = (b - a); rx = DB.XYZ(rx.X, rx.Y, 0).Normalize()
+        f = AxisFrame(plan, DB.XYZ(a.X, a.Y, z), rx, vd)
+        L = a.DistanceTo(b); xs = [0, L]
+        vx = [f.x(DB.XYZ(q.X, q.Y, z)) for q in [doc.GetElement(i).FullCurve.GetEndPoint(0) for i in e.CurtainGrid.GetVGridLineIds()]]
+        vx = [x for x in vx if .01 < x < L - .01]
+        out = []
+        if vx: out.append(tick_dim(doc, f, 'Modulos en planta', uniq(xs + vx), True, .45 / M, tick=.08 / M))
+        out.append(tick_dim(doc, f, 'Largo en planta', xs, True, (.70 if vx else .45) / M, tick=.08 / M))
+        return out
     off = vd * (.45 / M); p0 = DB.XYZ(a.X, a.Y, 0) + off; p1 = DB.XYZ(b.X, b.Y, 0) + off
-    lev = doc.GetElement(plan.GenLevel.Id); p0 = DB.XYZ(p0.X, p0.Y, lev.Elevation); p1 = DB.XYZ(p1.X, p1.Y, lev.Elevation)
-    return try_dim(doc, plan, DB.Line.CreateBound(p0, p1), [refs(e, 'Left'), refs(e, 'Right')], 'Ancho en planta')
+    p0 = DB.XYZ(p0.X, p0.Y, lev.Elevation); p1 = DB.XYZ(p1.X, p1.Y, lev.Elevation)
+    return [try_dim(doc, plan, DB.Line.CreateBound(p0, p1), [refs(e, 'Left'), refs(e, 'Right')], 'Ancho en planta')]
+
+CAPSULE_SOURCES = [364138, 1020050, 1020586]
+
+def capsule_arcs(doc, v):
+    """Arcs seen true-size in the view (normal parallel to view direction), from the elevator assembly; read only."""
+    opt = DB.Options(); opt.View = v; opt.ComputeReferences = True
+    found = []
+    def walk(g, owner, tr):
+        for o in g:
+            if isinstance(o, DB.GeometryInstance): walk(o.GetSymbolGeometry(), owner, tr.Multiply(o.Transform) if tr else o.Transform)
+            elif isinstance(o, DB.Solid):
+                for ed in o.Edges:
+                    c = ed.AsCurve()
+                    if not isinstance(c, DB.Arc) or c.Radius * M < .1: continue
+                    nrm = tr.OfVector(c.Normal) if tr else c.Normal
+                    if abs(nrm.DotProduct(v.ViewDirection)) < .99: continue
+                    found.append({'owner': owner, 'center': tr.OfPoint(c.Center) if tr else c.Center, 'r': c.Radius, 'ref': ed.Reference})
+    for t in CAPSULE_SOURCES:
+        e = el(doc, t); comps = [e]
+        if isinstance(e, DB.Wall) and e.CurtainGrid: comps += [doc.GetElement(i) for i in list(e.CurtainGrid.GetMullionIds())]
+        for c in comps:
+            g = c.get_Geometry(opt)
+            if g: walk(g, t, None)
+    return found
+
+def radial_type(doc, d):
+    t = next((x for x in DB.FilteredElementCollector(doc).OfClass(DB.DimensionType) if name(x) == 'ADER ABR R4 - Radio'), None)
+    if t is None:
+        t = doc.GetElement(d.GetTypeId()).Duplicate('ADER ABR R4 - Radio'); set_font(t); t.get_Parameter(DB.BuiltInParameter.TEXT_SIZE).Set(2.2 / 304.8)
+        fo = t.GetUnitsFormatOptions(); fo.UseDefault = False; fo.SetUnitTypeId(DB.UnitTypeId.Meters); fo.Accuracy = .001; t.SetUnitsFormatOptions(fo)
+    return t
+
+def capsule_dims(doc, f, e):
+    arcs = capsule_arcs(doc, f.v); out = []; notes = []
+    uniq_arcs = {}
+    for a in arcs:
+        k = (a['owner'], round(f.x(a['center']) * M, 2), round(f.y(a['center']) * M, 2), round(a['r'] * M, 3))
+        uniq_arcs.setdefault(k, a)
+    if not uniq_arcs: return out, notes
+    lev = level_of(doc, e); ylev = lev.Elevation - f.o.Z
+    by_owner = {}
+    for k, a in uniq_arcs.items(): by_owner.setdefault(k[0], []).append(a)
+    xoff = 0
+    for owner in sorted(by_owner):
+        rows = by_owner[owner]; R = max(a['r'] for a in rows)
+        outer = [a for a in rows if abs(a['r'] - R) < 1e-6]
+        cx = sum(f.x(a['center']) for a in outer) / len(outer)
+        cys = uniq([f.y(a['center']) for a in outer], tol=.002 / M)
+        label = u'muro 364138' if owner == 364138 else u'MC-' + str(owner)
+        for cy in cys:
+            for dx, dy in [(.08 / M, 0), (0, .08 / M)]:
+                doc.Create.NewDetailCurve(f.v, DB.Line.CreateBound(f.p(cx - dx, cy - dy), f.p(cx + dx, cy + dy)))
+        done = set()
+        for a in rows:
+            k = (round(f.y(a['center']) * M, 2), round(a['r'] * M, 3))
+            if k in done or a['ref'] is None: continue
+            done.add(k)
+            sub = DB.SubTransaction(doc); sub.Start()
+            try:
+                c = a['center']; up = 1 if f.y(c) > (min(cys) + max(cys)) / 2 else -1
+                origin = f.p(f.x(c) + a['r'] * .45, f.y(c) + up * a['r'] * .55)
+                d = DB.RadialDimension.Create(doc, f.v, a['ref'], origin); d.ChangeTypeId(radial_type(doc, d).Id); doc.Regenerate()
+                sub.Commit(); out.append({'id': eid(d), 'label': u'Arco ' + label + u' (diámetro; R ' + m3(a['r'] * M) + u')', 'values_m': [d.Value * M], 'radius_m': a['r'] * M, 'associative': True})
+            except Exception as ex:
+                if sub.GetStatus() == DB.TransactionStatus.Started: sub.RollBack()
+                out.append({'label': u'Radio ' + label, 'values_m': [a['r'] * M], 'associative': False, 'note': 'RadialDimension no disponible: ' + str(ex)[:80]})
+        ys = uniq([ylev] + [y for cy in cys for y in (cy - R, cy, cy + R)], tol=.002 / M)
+        ys = [y for y in ys if y >= ylev - 1e-6]
+        xl = cx - R - (.35 + xoff) / M
+        out.append(tick_dim(doc, f, u'Cápsula ' + label + u': extremos y centros desde nivel', ys, False, xl))
+        out.append(tick_dim(doc, f, u'Cápsula ' + label + u': tramo recto entre centros', [min(cys), max(cys)], False, xl - .25 / M))
+        out.append(tick_dim(doc, f, u'Cápsula ' + label + u': radio / ancho', [cx - R, cx, cx + R], True, max(cys) + R + (.25 + xoff) / M))
+        notes.append(label + u': R ' + m3(R * M) + u' · centros +' + u' / +'.join(m3((y - ylev) * M) for y in cys) + u' · tramo recto ' + m3((max(cys) - min(cys)) * M) + u' · alto total ' + m3((max(cys) - min(cys) + 2 * R) * M) + u' m')
+        xoff += .55
+    return out, notes
 
 # ---------------------------------------------------------------- text
 
@@ -365,34 +454,59 @@ def data_lines(doc, e, item, room_names):
 def sheet_size(bx, scale):
     return ((bx.Max.X - bx.Min.X) / scale, (bx.Max.Y - bx.Min.Y) / scale)
 
-def grid_cost(sizes, w, h):
-    best = None
-    n = len(sizes)
-    for cols in range(1, n + 1):
-        rows = int(math.ceil(float(n) / cols)); cw = w / cols; ch = h / rows
-        if cw < .2 or ch < .2: continue
-        scales = [snap(max(sw / (cw - .06), sh / (ch - .14))) for sw, sh in sizes]
-        cost = sum(math.log(s) for s in scales) + .08 * (rows * cols - n)
-        if best is None or cost < best[0] - 1e-9: best = (cost, cols, rows, scales)
+TITLE_H, DATA_H, MIN_W, GAP = .045, .10, .40, .05
+
+def row_options(sz, W):
+    """(scale, width, height) per allowed scale for one row of item sizes."""
+    out = []
+    for s in SCALES:
+        w = sum(max(a / s, MIN_W) + GAP for a, b in sz)
+        if w <= W + 1e-9: out.append((s, w, max(b / s for a, b in sz) + TITLE_H + DATA_H))
+    return out
+
+def pack_rows(sizes, W, H):
+    """Ordered items into rows; minimise sum(log scale) under the region height (DP on height)."""
+    n = len(sizes); best = None
+    def comps(k):
+        if k == 0:
+            yield []
+            return
+        for first in range(1, k + 1):
+            for rest in comps(k - first): yield [first] + rest
+    for comp in comps(n):
+        rows = []; i = 0
+        for c in comp: rows.append(list(range(i, i + c))); i += c
+        states = {0: (0., [])}
+        for r in rows:
+            opts = row_options([sizes[j] for j in r], W); nxt = {}
+            for used, (cost, picks) in states.items():
+                for sc, w, h in opts:
+                    hu = used + int(math.ceil(h / .005))
+                    if hu * .005 > H + 1e-9: continue
+                    c2 = cost + len(r) * math.log(sc)
+                    if hu not in nxt or c2 < nxt[hu][0]: nxt[hu] = (c2, picks + [(r, sc, h)])
+            states = nxt
+            if not states: break
+        for used, (cost, picks) in states.items():
+            if len(picks) == len(rows) and (best is None or cost < best[0] - 1e-9): best = (cost, picks)
     return best
 
 def choose_layout(plan_size, elev_sizes):
     W = X1 - X0; H = TOP - BOTTOM
-    options = []
     if plan_size is None:
-        c = grid_cost(elev_sizes, W, H)
-        return {'plan': None, 'region': (X0, BOTTOM, X1, TOP), 'grid': c}
+        return {'plan': None, 'region': (X0, BOTTOM, X1, TOP), 'rows': pack_rows(elev_sizes, W, H)}
     if not elev_sizes:
         s = snap(max(plan_size[0] / (W - .04), plan_size[1] / (H - .07)))
-        return {'plan': ((X0, BOTTOM, X1, TOP), s), 'region': None, 'grid': None}
-    for fw in [.30, .38, .46, .55, .64]:
-        pw = W * fw; ps = snap(max(plan_size[0] / (pw - .04), plan_size[1] / (H - .07)))
-        g = grid_cost(elev_sizes, W - pw, H)
-        if g: options.append((1.3 * math.log(ps) + g[0], {'plan': ((X0, BOTTOM, X0 + pw, TOP), ps), 'region': (X0 + pw, BOTTOM, X1, TOP), 'grid': g}))
-    for fh in [.38, .48, .58]:
-        ph = H * fh; ps = snap(max(plan_size[0] / (W - .04), plan_size[1] / (ph - .07)))
-        g = grid_cost(elev_sizes, W, H - ph)
-        if g: options.append((1.3 * math.log(ps) + g[0], {'plan': ((X0, TOP - ph, X1, TOP), ps), 'region': (X0, BOTTOM, X1, TOP - ph), 'grid': g}))
+        return {'plan': ((X0, BOTTOM, X1, TOP), s), 'region': None, 'rows': None}
+    options = []
+    for fw in [.22, .28, .34, .40, .46, .52, .58, .64, .70]:
+        pw = W * fw; ps = snap(max(plan_size[0] / (pw - .03), plan_size[1] / (H - TITLE_H - .03)))
+        g = pack_rows(elev_sizes, W - pw, H)
+        if g: options.append((1.3 * math.log(ps) + g[0], {'plan': ((X0, BOTTOM, X0 + pw, TOP), ps), 'region': (X0 + pw, BOTTOM, X1, TOP), 'rows': g}))
+    for fh in [.30, .38, .46, .54, .62]:
+        ph = H * fh; ps = snap(max(plan_size[0] / (W - .04), plan_size[1] / (ph - TITLE_H - .03)))
+        g = pack_rows(elev_sizes, W, H - ph)
+        if g: options.append((1.3 * math.log(ps) + g[0], {'plan': ((X0, TOP - ph, X1, TOP), ps), 'region': (X0, BOTTOM, X1, TOP - ph), 'rows': g}))
     options.sort(key=lambda o: o[0])
     return options[0][1]
 
@@ -402,7 +516,7 @@ def place(doc, sheet, v, scale, cell, title, vptype):
     v.Scale = scale
     vp = DB.Viewport.Create(doc, sheet.Id, v.Id, DB.XYZ((x0 + x1) / 2, (y0 + y1) / 2, 0)); vp.ChangeTypeId(vptype.Id)
     doc.Regenerate()
-    cx = (x0 + x1) / 2; cy = (y0 + .10 + y1 - .045) / 2
+    cx = (x0 + x1) / 2; cy = (y0 + DATA_H + y1 - TITLE_H) / 2
     vp.SetBoxCenter(DB.XYZ(cx, cy, 0)); doc.Regenerate()
     o = vp.GetBoxOutline()
     label = u(title) + u'   1:' + str(scale)
@@ -474,13 +588,16 @@ def room_job(doc, key):
             xc = (f.x(a) + f.x(b)) / 2; yc = (z0 + z1) / 2 - f.o.Z
             tn(doc, v.Id, f.p(xc - .15 / M, min(yc + .1 / M, z1 - f.o.Z - .1 / M)), item['code'], 'tag')
             pd = plan_dim(doc, plan, e, room)
+            cap_notes = []
+            if eid(e) in (1020586, 1020050):
+                cd, cap_notes = capsule_dims(doc, f, e); dims = dims + cd
             # plan tag: offset into the room from the element mid point
             vd = view_dir_for(doc, e, room); mid = (a + b) * .5
             tp = DB.XYZ(mid.X, mid.Y, level.Elevation) + vd * (.95 / M)
             tn(doc, plan.Id, tp, item['code'], 'tag')
             names = [u(rr['name'])] + [u(rooms_by_id[r]['name']) for r in item['rooms'] if r != rr['id'] and r in rooms_by_id]
             record['elements'][str(eid(e))] = {'code': item['code'], 'viewId': eid(v), 'viewDirection': xyz(v.ViewDirection),
-                                              'dimensions': dims + ([pd] if pd else []), 'data': data_lines(doc, e, item, names)}
+                                              'dimensions': dims + (pd or []), 'data': data_lines(doc, e, item, names) + [u'C\u00e1psula ' + x for x in cap_notes]}
         doc.Regenerate()
         # layout pages
         psize = sheet_size(plan.CropBox, 1)
@@ -496,27 +613,30 @@ def room_job(doc, key):
             tn(doc, sheet.Id, DB.XYZ(X0 + .01, Y1 - .012, 0), title, 'title')
             sub = u'Hoja ' + str(pi + 1) + u' de ' + str(len(chunks)) + u' · ' + str(len(codes)) + u' elementos: ' + u', '.join(codes)
             tn(doc, sheet.Id, DB.XYZ(X0 + .01, Y1 - .062, 0), sub, 'sub'); notes.append({'text': sub, 'anchor': [X0 + .01, Y1 - .062]})
-            foot = u'Cotas en metros (0.001 m) sobre geometría nativa. Cotas de muros cortina: referidas a ejes de grilla y extremos del conjunto (no asociativas). Alzados vistos desde el interior del local. Elementos compartidos entre locales: un solo cómputo por código.'
+            foot = u'Cotas en metros (0.001 m) sobre geometría nativa. Cotas de muros cortina y cápsula del ascensor: referidas a ejes de grilla, extremos y centros de arcos (no asociativas, salvo radios). Alzados vistos desde el interior del local. Elementos compartidos entre locales: un solo cómputo por código.'
             tn(doc, sheet.Id, DB.XYZ(X0 + .01, Y0 + .05, 0), foot, 'text'); notes.append({'text': foot, 'anchor': [X0 + .01, Y0 + .05]})
             views = []
             if L['plan']:
                 cell, s = L['plan']
                 vp, meta = place(doc, sheet, plan, s, cell, u'Planta del local · códigos y anchos', vptype); meta['kind'] = 'plan'; views.append(meta)
             if ev:
-                cost, cols, rows, scales = L['grid']; rx0, ry0, rx1, ry1 = L['region']
-                cw = (rx1 - rx0) / cols; ch = (ry1 - ry0) / rows
-                for k, (e, item, v, bx) in enumerate(ev):
-                    r_, c_ = k // cols, k % cols
-                    inrow = min(cols, len(ev) - r_ * cols); cwr = (rx1 - rx0) / inrow   # last row spreads over the full width
-                    cell = (rx0 + c_ * cwr, ry1 - (r_ + 1) * ch, rx0 + (c_ + 1) * cwr, ry1 - r_ * ch)
-                    sw, sh = sheet_size(bx, 1); sc = snap(max(sw / (cwr - .06), sh / (ch - .14)))
-                    vp, meta = place(doc, sheet, v, sc, cell, item['code'] + u' · alzado interior', vptype)
-                    meta.update(kind='elevation', elementId=eid(e), code=item['code'])
-                    o = vp.GetBoxOutline(); y = o.MinimumPoint.Y - .012
-                    data = record['elements'][str(eid(e))]['data']
-                    tn(doc, sheet.Id, DB.XYZ(o.MinimumPoint.X, y, 0), u'\n'.join(data), 'text')
-                    record['elements'][str(eid(e))]['sheet'] = number
-                    views.append(meta)
+                cost, picks = L['rows']; rx0, ry0, rx1, ry1 = L['region']
+                slack_y = ((ry1 - ry0) - sum(h for r, sc, h in picks)) / len(picks); ytop = ry1
+                for r, sc, h in picks:
+                    hh = h + slack_y
+                    widths = [max(sheet_size(ev[j][3], 1)[0] / sc, MIN_W) + GAP for j in r]
+                    slack_x = ((rx1 - rx0) - sum(widths)) / len(r); x = rx0
+                    for j, w in zip(r, widths):
+                        e, item, v, bx = ev[j]
+                        cell = (x, ytop - hh, x + w + slack_x, ytop); x += w + slack_x
+                        vp, meta = place(doc, sheet, v, sc, cell, item['code'] + u' · alzado interior', vptype)
+                        meta.update(kind='elevation', elementId=eid(e), code=item['code'])
+                        o = vp.GetBoxOutline(); y = o.MinimumPoint.Y - .012
+                        data = record['elements'][str(eid(e))]['data']
+                        tn(doc, sheet.Id, DB.XYZ(o.MinimumPoint.X, y, 0), u'\n'.join(data), 'text')
+                        record['elements'][str(eid(e))]['sheet'] = number
+                        views.append(meta)
+                    ytop -= hh
             record['pages'].append({'sheet_id': eid(sheet), 'sheet_number': number, 'page': pi + 1, 'views': views, 'notes': notes})
         record['planId'] = eid(plan)
         return record
@@ -597,6 +717,55 @@ def crop_job(doc, pairs):
                     'far': far.AsDouble() if far else None, 'farClip': v.get_Parameter(DB.BuiltInParameter.VIEWER_BOUND_FAR_CLIPPING).AsInteger()})
     write('crop-check', out); return {'status': 'success', 'rows': out}
 
+def arc_probe(doc):
+    r = read('room-785703'); out = {'views': [], 'openings': []}
+    targets = [364138, 1020586, 1020050]
+    def walk(g, owner, tr, rows, view_key):
+        for o in g:
+            if isinstance(o, DB.GeometryInstance):
+                walk(o.GetSymbolGeometry(), owner, tr.Multiply(o.Transform) if tr else o.Transform, rows, view_key)
+            elif isinstance(o, DB.Solid):
+                for ed in o.Edges:
+                    c = ed.AsCurve()
+                    if isinstance(c, DB.Arc):
+                        cc = tr.OfPoint(c.Center) if tr else c.Center
+                        rows.append({'owner': owner, 'center': xyz(cc), 'radius_m': c.Radius * M, 'ref': ed.Reference is not None, 'instance': tr is not None,
+                                     'stable': ed.Reference.ConvertToStableRepresentation(doc) if ed.Reference else None,
+                                     'normal': xyz(tr.OfVector(c.Normal) if tr else c.Normal), 'p0': xyz(tr.OfPoint(c.GetEndPoint(0)) if tr else c.GetEndPoint(0)), 'p1': xyz(tr.OfPoint(c.GetEndPoint(1)) if tr else c.GetEndPoint(1))})
+            elif isinstance(o, DB.Arc):
+                rows.append({'owner': owner, 'curveArc': True, 'center': xyz(o.Center), 'radius_m': o.Radius * M, 'ref': o.Reference is not None})
+    views = [r['planId']] + [x['viewId'] for x in r['elements'].values()]
+    for vid in views:
+        v = el(doc, vid); rows = []
+        opt = DB.Options(); opt.View = v; opt.ComputeReferences = True; opt.IncludeNonVisibleObjects = False
+        for t in targets:
+            e = el(doc, t); comps = [e]
+            if isinstance(e, DB.Wall) and e.CurtainGrid: comps += [doc.GetElement(i) for i in list(e.CurtainGrid.GetPanelIds()) + list(e.CurtainGrid.GetMullionIds())]
+            for c in comps:
+                try:
+                    g = c.get_Geometry(opt)
+                    if g: walk(g, (t, eid(c), c.Category.Name), None, rows, vid)
+                except Exception as ex: rows.append({'owner': (t, eid(c)), 'error': str(ex)})
+        uniq = {}
+        for x in rows:
+            k = (round(x.get('center', [0])[0], 3), round(x.get('center', [0, 0])[1], 3), round(x.get('center', [0, 0, 0])[2], 3), round(x.get('radius_m', 0), 4), x['owner'][0])
+            uniq.setdefault(k, x)
+        out['views'].append({'id': vid, 'name': u(name(v)), 'viewDir': xyz(v.ViewDirection), 'arcs': list(uniq.values())[:60], 'arcCount': len(rows)})
+    w = el(doc, 364138)
+    for o in DB.FilteredElementCollector(doc).OfClass(DB.Opening):
+        try:
+            if o.Host and eid(o.Host) in targets: out['openings'].append({'id': eid(o), 'host': eid(o.Host), 'rect': o.IsRectBoundary, 'curves': [str(type(c).__name__) for c in o.BoundaryCurves] if not o.IsRectBoundary else None})
+        except: pass
+    try: out['wallProfileSketch'] = bool(w.SketchId and w.SketchId != DB.ElementId.InvalidElementId)
+    except Exception as ex: out['wallProfileSketch'] = str(ex)
+    for t in [1020586, 1020050]:
+        e = el(doc, t)
+        try: out['sketch_' + str(t)] = bool(e.SketchId and e.SketchId != DB.ElementId.InvalidElementId)
+        except Exception as ex: out['sketch_' + str(t)] = str(ex)
+    write('arc-probe', out)
+    return {'status': 'success', 'views': [(x['name'], x['arcCount'], len(x['arcs'])) for x in out['views']], 'openings': out['openings'],
+            'sketch': [out.get('wallProfileSketch'), out.get('sketch_1020586'), out.get('sketch_1020050')]}
+
 def run(doc, uidoc, job):
     assert_pilot(doc)
     action = job['action']
@@ -608,6 +777,7 @@ def run(doc, uidoc, job):
     if action == 'r4_verify': return verify(doc)
     if action == 'r4_check': return check_job(doc)
     if action == 'r4_crop': return crop_job(doc, job['pairs'])
+    if action == 'r4_arcs': return arc_probe(doc)
     if action == 'r4_reset': return reset_job(doc, job['key'])
     if action == 'r4_inventory': return imp.load_source('ader_inventory_r4', os.path.join(ROOT, 'revit_inventory_r4.py')).run(doc, uidoc, job)
     raise Exception('Unsupported R4 job: ' + action)
