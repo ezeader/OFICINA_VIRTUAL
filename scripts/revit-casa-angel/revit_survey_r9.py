@@ -125,6 +125,15 @@ def project_job(doc, job):
             'clipped': sum(1 for x in out for y in x.get('elements', []) if y['clipped'])}
 
 def run(doc, uidoc, job):
-    assert os.path.basename(doc.PathName).lower() == 'casa-angel-piloto-documentacion.rvt'
+    bn = os.path.basename(doc.PathName)
+    if bn.startswith('Casa-Angel-DOC-'):     # R30: DOC file with the pilot linked
+        global el
+        import sys
+        X = imp.load_source('ader_docctx_r30', os.path.join(ROOT, 'docctx_r30.py'))
+        L4 = imp.load_source('ader_openings_r4_for_survey', os.path.join(ROOT, 'revit_openings_r4.py'))
+        X.activate(doc, L4, [L4, sys.modules[__name__]] if __name__ in sys.modules else [L4]); el = L4.el
+        assert job.get('part') == 'project'
+        return project_job(doc, job)
+    assert bn.lower() == 'casa-angel-piloto-documentacion.rvt'
     if job.get('part') == 'project': return project_job(doc, job)
     return survey(doc)

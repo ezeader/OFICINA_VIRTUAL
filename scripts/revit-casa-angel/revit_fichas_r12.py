@@ -30,7 +30,7 @@ def hide_other_levels(doc, v, level_id):
 def axo(doc, e, code, label, sector):
     b = e.get_BoundingBox(None); pad = .6 / M
     bx = DB.BoundingBoxXYZ(); bx.Min = DB.XYZ(b.Min.X - pad, b.Min.Y - pad, b.Min.Z - .3 / M); bx.Max = DB.XYZ(b.Max.X + pad, b.Max.Y + pad, b.Max.Z + .3 / M)
-    ax = DB.View3D.CreateIsometric(doc, DB.ElementId(Int64(49559))); L.setup_view(doc, ax)
+    ax = DB.View3D.CreateIsometric(doc, DB.ElementId(Int64(getattr(L, 'VIEW3D_VFT', 49559)))); L.setup_view(doc, ax)
     ax.Name = 'ADER EST R12 - ' + code + ' - AXO'; ax.SetSectionBox(bx); ax.IsSectionBoxActive = True
     d = DB.XYZ(-1, -1, -.75).Normalize(); right = d.CrossProduct(DB.XYZ.BasisZ).Normalize()
     ax.SetOrientation(DB.ViewOrientation3D(DB.XYZ.Zero, right.CrossProduct(d).Normalize(), d))
