@@ -9,7 +9,7 @@ export type OfferLine = {code:string;quantity:number;price:number;match:'exacta'
 export type Offer = {id:string;request:string;supplier:string;reference:string;currency:'ARS'|'USD';validUntil:string;delivery:string;freight:number;taxesIncluded:boolean;lines:OfferLine[];date:string};
 export type NativeTable={id:string;name:string;category:string;trade:string;columns:string[];rows:string[][];truncated:boolean};
 export type NativeSnapshot={project:string;model:string;readAt:string;tables:NativeTable[]};
-export type ProcurementData = {suppliers:Supplier[];publications:Publication[];requests:Request[];offers:Offer[];prices:Record<string,Record<string,number>>;nativeSnapshots?:Record<string,NativeSnapshot>};
+export type ProcurementData = {suppliers:Supplier[];publications:Publication[];requests:Request[];offers:Offer[];prices:Record<string,Record<string,number>>;nativeSnapshots?:Record<string,NativeSnapshot>;rubroBudget?:Record<string,import('./rubro-budget').RubroBudgetState>};
 export const trades=[['sanitarias','Sanitarias'],['electricas','Eléctricas'],['aberturas','Aberturas'],['albanileria','Albañilería'],['estructura','Estructura'],['gas','Gas'],['climatizacion','Climatización'],['cubiertas','Cubiertas e impermeabilización'],['revestimientos','Pisos y revestimientos'],['pintura','Pintura'],['carpinteria','Carpintería y equipamiento'],['exteriores','Exteriores'],['superficies','Superficies'],['otros','Sin clasificar']] as const;
 export function tradeOf(row:Quantity){return row.trade||( ['AF','AC','CP','CS','PL'].includes(row.system)?'sanitarias':'otros');}
 export function rowsForTrade(rows:Quantity[],trade:string){return rows.filter(r=>trade==='todos'||tradeOf(r)===trade);}

@@ -29,6 +29,7 @@ export type RubroManifest={
  totals?:{label:string;value:number;unit:string;detail?:string}[];
  quantities?:{label:string;group?:string;count?:number;value:number;unit:string;detail?:string}[];
  quantityNote?:string;notModeled?:string[];decisions?:string[];questions?:string[];
+ budget?:import('./rubro-budget').ManifestBudget; // partidas a cotizar; sin esto se usan los totales
 };
 
 // Grupos de láminas: generales primero (por sector), luego fichas por tipo de elemento.
