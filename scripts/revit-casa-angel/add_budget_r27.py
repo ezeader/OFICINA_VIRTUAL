@@ -89,6 +89,8 @@ def main():
     ap = argparse.ArgumentParser(); ap.add_argument('--public-dir', type=Path, required=True); a = ap.parse_args()
     for p in sorted((a.public_dir / 'rubros').glob('*/manifest.json')):
         k = p.parent.name; m = json.loads(p.read_text(encoding='utf-8'))
+        if m.get('budget', {}).get('revision') not in (None, 'R27'):   # a newer publisher wrote its own budget (e.g. Cielorrasos R28)
+            print(k, 'keeps budget', m['budget']['revision']); continue
         lines = build(k, m)
         ids = [x['id'] for x in lines]; assert len(ids) == len(set(ids)), k
         m['budget'] = {'revision': 'R27', 'note': 'Partidas a cotizar sin solapes; informative = referencia (no se suma).', 'lines': lines}

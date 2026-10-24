@@ -1,30 +1,857 @@
 {
   "title": "Cielorrasos",
-  "summary": "14 cielorrasos (108,70 m²) en 3 tipos; 11 locales con cielorraso, 4 parciales y 15 sin cielorraso modelado. 7 láminas.",
+  "summary": "PROPUESTA A CONFIRMAR: 377,79 m² de cielorrasos suspendidos (69,48 m² RH en zonas húmedas, 308,31 m² ST), de los que 108,38 m² ya están modelados y 269,41 m² se proponen; buña 419,76 ml, 8 tapas de inspección. 11 láminas.",
   "model": "Casa-Angel-piloto-documentacion.rvt",
-  "readAt": "2026-10-23T23:13:43.184000Z",
-  "revision": "R21",
+  "readAt": "2026-10-24T13:26:16.733000Z",
+  "revision": "R28",
   "kinds": {
     "TC": "Tipos de cielorraso",
-    "CE": "Cielorrasos (piezas por nivel)"
+    "CE": "Cielorrasos existentes (modelo)",
+    "CP": "Cielorrasos propuestos (por local)"
   },
   "sheets": [
     {
       "number": "CIE-00",
-      "title": "Índice, tipos y cómputo",
+      "title": "Índice y cómputo (propuesta)",
       "level": "Cielorrasos",
       "sector": "General",
       "kind": "general",
       "element": null,
       "elementId": null,
       "elementKind": null,
-      "note": null,
-      "sheetId": "2472099",
+      "note": "Propuesta a confirmar",
+      "sheetId": "2487200",
       "pdf": "/casa-angel/rubros/cielorrasos/CIE-00.pdf",
       "image": "/casa-angel/rubros/cielorrasos/CIE-00.svg.gz",
       "preview": "/casa-angel/rubros/cielorrasos/CIE-00-preview.png",
       "thumbnail": "/casa-angel/rubros/cielorrasos/CIE-00.png",
       "views": []
+    },
+    {
+      "number": "CIE-D-01",
+      "title": "Detalles de cielorrasos (propuesta)",
+      "level": "Detalles",
+      "sector": "Detalles",
+      "kind": "general",
+      "element": null,
+      "elementId": null,
+      "elementKind": null,
+      "note": "Propuesta a confirmar",
+      "sheetId": "2485530",
+      "pdf": "/casa-angel/rubros/cielorrasos/CIE-D-01.pdf",
+      "image": "/casa-angel/rubros/cielorrasos/CIE-D-01.svg.gz",
+      "preview": "/casa-angel/rubros/cielorrasos/CIE-D-01-preview.png",
+      "thumbnail": "/casa-angel/rubros/cielorrasos/CIE-D-01.png",
+      "views": [
+        {
+          "id": "2485393",
+          "name": "Detalle TC-02 · corte",
+          "label": "Detalle TC-02 · corte   1:10",
+          "scale": 10,
+          "kind": "detail",
+          "sector": "Detalles",
+          "roomLabel": "Detalles",
+          "image": "/casa-angel/rubros/cielorrasos/CIE-D-01-view-2485393.svg.gz",
+          "region": [
+            0.3617,
+            0.2315,
+            0.5371,
+            0.4147
+          ],
+          "tags": [
+            "TC-02"
+          ],
+          "dimensions": [
+            {
+              "label": "Plenum",
+              "values_m": [
+                0.405
+              ],
+              "associative": false
+            },
+            {
+              "label": "Buña",
+              "values_m": [
+                0.015
+              ],
+              "associative": false
+            },
+            {
+              "label": "Velas c/1,00 (esquema)",
+              "values_m": [
+                0.4,
+                0.4
+              ],
+              "associative": false
+            }
+          ],
+          "elements": []
+        },
+        {
+          "id": "2485434",
+          "name": "Detalle TC-01 · corte",
+          "label": "Detalle TC-01 · corte   1:10",
+          "scale": 10,
+          "kind": "detail",
+          "sector": "Detalles",
+          "roomLabel": "Detalles",
+          "image": "/casa-angel/rubros/cielorrasos/CIE-D-01-view-2485434.svg.gz",
+          "region": [
+            0.1455,
+            0.5546,
+            0.3209,
+            0.7377
+          ],
+          "tags": [
+            "TC-01"
+          ],
+          "dimensions": [
+            {
+              "label": "Plenum",
+              "values_m": [
+                0.405
+              ],
+              "associative": false
+            },
+            {
+              "label": "Buña",
+              "values_m": [
+                0.015
+              ],
+              "associative": false
+            },
+            {
+              "label": "Velas c/1,00 (esquema)",
+              "values_m": [
+                0.4,
+                0.4
+              ],
+              "associative": false
+            }
+          ],
+          "elements": []
+        },
+        {
+          "id": "2485475",
+          "name": "Detalle buña perimetral",
+          "label": "Detalle buña perimetral   1:10",
+          "scale": 10,
+          "kind": "detail",
+          "sector": "Detalles",
+          "roomLabel": "Detalles",
+          "image": "/casa-angel/rubros/cielorrasos/CIE-D-01-view-2485475.svg.gz",
+          "region": [
+            0.4165,
+            0.6074,
+            0.5041,
+            0.6849
+          ],
+          "tags": [
+            "BUÑA"
+          ],
+          "dimensions": [
+            {
+              "label": "Buña",
+              "values_m": [
+                0.015
+              ],
+              "associative": false
+            },
+            {
+              "label": "Placa",
+              "values_m": [
+                0.0125
+              ],
+              "associative": false
+            }
+          ],
+          "elements": []
+        },
+        {
+          "id": "2485504",
+          "name": "Detalle tapa de inspección 60×60",
+          "label": "Detalle tapa de inspección 60×60   1:10",
+          "scale": 10,
+          "kind": "detail",
+          "sector": "Detalles",
+          "roomLabel": "Detalles",
+          "image": "/casa-angel/rubros/cielorrasos/CIE-D-01-view-2485504.svg.gz",
+          "region": [
+            0.6168,
+            0.5462,
+            0.7362,
+            0.7461
+          ],
+          "tags": [
+            "TAPA"
+          ],
+          "dimensions": [
+            {
+              "label": "Tapa ancho",
+              "values_m": [
+                0.6
+              ],
+              "associative": false
+            },
+            {
+              "label": "Tapa largo",
+              "values_m": [
+                0.6
+              ],
+              "associative": false
+            }
+          ],
+          "elements": []
+        }
+      ]
+    },
+    {
+      "number": "CIE-P-PA",
+      "title": "Propuesta de cielorrasos · 01. Planta Alta",
+      "level": "01. Planta Alta",
+      "sector": "01. Planta Alta",
+      "kind": "general",
+      "element": null,
+      "elementId": null,
+      "elementKind": null,
+      "note": "Propuesta a confirmar",
+      "sheetId": "2487032",
+      "pdf": "/casa-angel/rubros/cielorrasos/CIE-P-PA.pdf",
+      "image": "/casa-angel/rubros/cielorrasos/CIE-P-PA.svg.gz",
+      "preview": "/casa-angel/rubros/cielorrasos/CIE-P-PA-preview.png",
+      "thumbnail": "/casa-angel/rubros/cielorrasos/CIE-P-PA.png",
+      "views": [
+        {
+          "id": "2486933",
+          "name": "Cielorrasos propuestos · 01. Planta Alta",
+          "label": "Cielorrasos propuestos · 01. Planta Alta   1:60",
+          "scale": 60,
+          "kind": "plan",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "image": "/casa-angel/rubros/cielorrasos/CIE-P-PA-view-2486933.svg.gz",
+          "region": [
+            0.2675,
+            0.2089,
+            0.6317,
+            0.7783
+          ],
+          "tags": [
+            "CP-PA-01",
+            "CP-PA-02",
+            "CP-PA-03",
+            "CP-PA-04",
+            "CP-PA-05"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": null,
+              "elementId": "864264",
+              "room": true,
+              "label": "01 · Sala de TV · TC-02 · total 14,99 m² (existente) · propuesta",
+              "box": [
+                0.0518,
+                0.6929,
+                0.2351,
+                0.8746
+              ]
+            },
+            {
+              "code": null,
+              "elementId": "892788",
+              "room": true,
+              "label": "02 · Sala de Maquinas · TC-02 · total 4,79 m² (existente) · propuesta",
+              "box": [
+                0.0518,
+                0.879,
+                0.1955,
+                0.9531
+              ]
+            },
+            {
+              "code": "CP-PA-01",
+              "elementId": "870164",
+              "room": true,
+              "label": "CP-PA-01 · Playroom · TC-02 · total 32,39 m² (propuesto 32,39) · propuesta",
+              "box": [
+                0.245,
+                0.7593,
+                0.6363,
+                0.9531
+              ]
+            },
+            {
+              "code": null,
+              "elementId": "870167",
+              "room": true,
+              "label": "04 · Baño PA · TC-01 · total 5,81 m² (existente) · propuesta",
+              "box": [
+                0.2004,
+                0.8219,
+                0.3183,
+                0.9531
+              ]
+            },
+            {
+              "code": null,
+              "elementId": "863692",
+              "room": true,
+              "label": "05 · Toilette · TC-01 · total 5,01 m² (existente) · propuesta",
+              "box": [
+                0.6694,
+                0.0469,
+                0.7649,
+                0.1681
+              ]
+            },
+            {
+              "code": null,
+              "elementId": "863864",
+              "room": true,
+              "label": "06 · Cava · TC-02 · total 8,33 m² (existente) · propuesta",
+              "box": [
+                0.7698,
+                0.0469,
+                0.9286,
+                0.1681
+              ]
+            },
+            {
+              "code": "CP-PA-02",
+              "elementId": "877992",
+              "room": true,
+              "label": "CP-PA-02 · Cocina · TC-01 · total 20,87 m² (propuesto 12,36) · propuesta",
+              "box": [
+                0.6892,
+                0.1681,
+                0.9482,
+                0.352
+              ]
+            },
+            {
+              "code": "CP-PA-03",
+              "elementId": "869397",
+              "room": true,
+              "label": "CP-PA-03 · Comedor · TC-02 · total 24,30 m² (propuesto 24,30) · propuesta",
+              "box": [
+                0.6934,
+                0.352,
+                0.9482,
+                0.5676
+              ]
+            },
+            {
+              "code": "CP-PA-04",
+              "elementId": "877995",
+              "room": true,
+              "label": "CP-PA-04 · Living · TC-02 · total 18,07 m² (propuesto 18,07) · propuesta",
+              "box": [
+                0.6892,
+                0.5538,
+                0.9236,
+                0.7108
+              ]
+            },
+            {
+              "code": "CP-PA-05",
+              "elementId": "887814",
+              "room": true,
+              "label": "CP-PA-05 · Puente · TC-02 · total 2,18 m² (propuesto 2,18) · propuesta",
+              "box": [
+                0.6363,
+                0.7108,
+                0.7354,
+                0.8005
+              ]
+            },
+            {
+              "code": "CE-PA-04",
+              "elementId": "2143224",
+              "label": "CE-PA-04 · existente · TC-01 (modelo TC-03) · 5,01 m²",
+              "box": [
+                0.6694,
+                0.0469,
+                0.7649,
+                0.1636
+              ]
+            },
+            {
+              "code": "CE-PA-05",
+              "elementId": "2143232",
+              "label": "CE-PA-05 · existente · TC-02 (modelo TC-03) · 8,33 m²",
+              "box": [
+                0.7698,
+                0.0469,
+                0.9286,
+                0.1636
+              ]
+            },
+            {
+              "code": "CE-PA-03",
+              "elementId": "2138433",
+              "label": "CE-PA-03 · existente · TC-02 (modelo TC-03) · 14,99 m²",
+              "box": [
+                0.0518,
+                0.6929,
+                0.2351,
+                0.8746
+              ]
+            },
+            {
+              "code": "CE-PA-01",
+              "elementId": "1478681",
+              "label": "CE-PA-01 · existente · TC-01 (modelo TC-03) · 5,81 m²",
+              "box": [
+                0.2004,
+                0.8219,
+                0.3183,
+                0.9531
+              ]
+            },
+            {
+              "code": "CE-PA-06",
+              "elementId": "2143244",
+              "label": "CE-PA-06 · existente · TC-01 (modelo TC-03) · 8,77 m²",
+              "box": [
+                0.6929,
+                0.1725,
+                0.9482,
+                0.352
+              ]
+            },
+            {
+              "code": "CE-PA-02",
+              "elementId": "2138425",
+              "label": "CE-PA-02 · existente · TC-02 (modelo TC-03) · 4,79 m²",
+              "box": [
+                0.0518,
+                0.879,
+                0.1955,
+                0.9531
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "CIE-P-PB",
+      "title": "Propuesta de cielorrasos · 00. Planta Baja",
+      "level": "00. Planta Baja",
+      "sector": "00. Planta Baja",
+      "kind": "general",
+      "element": null,
+      "elementId": null,
+      "elementKind": null,
+      "note": "Propuesta a confirmar",
+      "sheetId": "2486814",
+      "pdf": "/casa-angel/rubros/cielorrasos/CIE-P-PB.pdf",
+      "image": "/casa-angel/rubros/cielorrasos/CIE-P-PB.svg.gz",
+      "preview": "/casa-angel/rubros/cielorrasos/CIE-P-PB-preview.png",
+      "thumbnail": "/casa-angel/rubros/cielorrasos/CIE-P-PB.png",
+      "views": [
+        {
+          "id": "2486652",
+          "name": "Cielorrasos propuestos · 00. Planta Baja",
+          "label": "Cielorrasos propuestos · 00. Planta Baja   1:60",
+          "scale": 60,
+          "kind": "plan",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/cielorrasos/CIE-P-PB-view-2486652.svg.gz",
+          "region": [
+            0.258,
+            0.2022,
+            0.6412,
+            0.785
+          ],
+          "tags": [
+            "CP-PB-01",
+            "CP-PB-02",
+            "CP-PB-03",
+            "CP-PB-04",
+            "CP-PB-05",
+            "CP-PB-06",
+            "CP-PB-07",
+            "CP-PB-08",
+            "CP-PB-09"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "CP-PB-01",
+              "elementId": "780807",
+              "room": true,
+              "label": "CP-PB-01 · Cuarto A Inv. · TC-02 · total 11,86 m² (propuesto 11,86) · propuesta",
+              "box": [
+                0.0493,
+                0.7458,
+                0.2234,
+                0.8862
+              ]
+            },
+            {
+              "code": null,
+              "elementId": "780810",
+              "room": true,
+              "label": "02 · Baño A Inv. · TC-01 · total 5,29 m² (existente) · propuesta",
+              "box": [
+                0.0493,
+                0.8915,
+                0.2234,
+                0.9541
+              ]
+            },
+            {
+              "code": "CP-PB-02",
+              "elementId": "780816",
+              "room": true,
+              "label": "CP-PB-02 · Cuarto B Inv. · TC-02 · total 12,18 m² (propuesto 12,18) · propuesta",
+              "box": [
+                0.2329,
+                0.7458,
+                0.4117,
+                0.8862
+              ]
+            },
+            {
+              "code": null,
+              "elementId": "780813",
+              "room": true,
+              "label": "04 · Baño B Inv. · TC-01 · total 5,43 m² (existente) · propuesta",
+              "box": [
+                0.2329,
+                0.8915,
+                0.4117,
+                0.9541
+              ]
+            },
+            {
+              "code": "CP-PB-03",
+              "elementId": "780819",
+              "room": true,
+              "label": "CP-PB-03 · Cuarto C Inv. · TC-02 · total 11,86 m² (propuesto 11,86) · propuesta",
+              "box": [
+                0.4211,
+                0.7458,
+                0.5953,
+                0.8862
+              ]
+            },
+            {
+              "code": null,
+              "elementId": "780822",
+              "room": true,
+              "label": "06 · Baño C Inv. · TC-01 · total 5,29 m² (existente) · propuesta",
+              "box": [
+                0.4211,
+                0.8915,
+                0.5953,
+                0.9541
+              ]
+            },
+            {
+              "code": null,
+              "elementId": "874173",
+              "room": true,
+              "label": "07 · Toilette Servicio · TC-01 · total 6,24 m² (existente) · propuesta",
+              "box": [
+                0.4259,
+                0.0491,
+                0.5377,
+                0.1664
+              ]
+            },
+            {
+              "code": null,
+              "elementId": "1041091",
+              "room": true,
+              "label": "08 · Lavadero · TC-01 · total 6,56 m² (existente) · propuesta",
+              "box": [
+                0.5471,
+                0.0459,
+                0.6643,
+                0.1664
+              ]
+            },
+            {
+              "code": null,
+              "elementId": "785697",
+              "room": true,
+              "label": "09 · Hab. servicio · TC-02 · total 6,61 m² (existente) · propuesta",
+              "box": [
+                0.6688,
+                0.0491,
+                0.7885,
+                0.1631
+              ]
+            },
+            {
+              "code": "CP-PB-04",
+              "elementId": "785700",
+              "room": true,
+              "label": "CP-PB-04 · Acceso Servicio · TC-02 · total 5,03 m² (propuesto 5,03) · propuesta",
+              "box": [
+                0.7929,
+                0.0459,
+                0.8825,
+                0.1631
+              ]
+            },
+            {
+              "code": null,
+              "elementId": "785703",
+              "room": true,
+              "label": "11 · Ascensor · sin cielorraso (pasadizo)",
+              "box": [
+                0.8872,
+                0.0491,
+                0.9484,
+                0.1631
+              ]
+            },
+            {
+              "code": "CP-PB-05",
+              "elementId": "783339",
+              "room": true,
+              "label": "CP-PB-05 · Quincho · TC-02 · total 45,01 m² (propuesto 28,47) · propuesta",
+              "box": [
+                0.5584,
+                0.1686,
+                0.8848,
+                0.46
+              ]
+            },
+            {
+              "code": "CP-PB-06",
+              "elementId": "780825",
+              "room": true,
+              "label": "CP-PB-06 · Cuarto ppal · TC-02 · total 14,82 m² (propuesto 14,82) · propuesta",
+              "box": [
+                0.6563,
+                0.4655,
+                0.8655,
+                0.6132
+              ]
+            },
+            {
+              "code": "CP-PB-07",
+              "elementId": "1007176",
+              "room": true,
+              "label": "CP-PB-07 · Vestidor ppal · TC-02 · total 7,57 m² (propuesto 7,57) · propuesta",
+              "box": [
+                0.6563,
+                0.6132,
+                0.8622,
+                0.689
+              ]
+            },
+            {
+              "code": null,
+              "elementId": "780828",
+              "room": true,
+              "label": "15 · Baño ppal · TC-01 · total 8,98 m² (existente) · propuesta",
+              "box": [
+                0.8655,
+                0.4655,
+                0.9507,
+                0.689
+              ]
+            },
+            {
+              "code": "CP-PB-08",
+              "elementId": "788673",
+              "room": true,
+              "label": "CP-PB-08 · Pasillo · TC-02 · total 26,08 m² (propuesto 26,08) · propuesta",
+              "box": [
+                0.2329,
+                0.4622,
+                0.6518,
+                0.7416
+              ]
+            },
+            {
+              "code": "CP-PB-09",
+              "elementId": "788665",
+              "room": true,
+              "label": "CP-PB-09 · Hall · TC-02 · total 27,13 m² (propuesto 27,13) · propuesta",
+              "box": [
+                0.6047,
+                0.6978,
+                0.8778,
+                0.952
+              ]
+            },
+            {
+              "code": "CE-PB-02",
+              "elementId": "1360830",
+              "label": "CE-PB-02 · existente · TC-01 · 5,29 m²",
+              "box": [
+                0.0493,
+                0.8915,
+                0.2234,
+                0.9541
+              ]
+            },
+            {
+              "code": "CE-PB-03",
+              "elementId": "1376081",
+              "label": "CE-PB-03 · existente · TC-01 · 5,43 m²",
+              "box": [
+                0.2329,
+                0.8915,
+                0.4117,
+                0.9541
+              ]
+            },
+            {
+              "code": "CE-PB-04",
+              "elementId": "1376089",
+              "label": "CE-PB-04 · existente · TC-01 · 5,29 m²",
+              "box": [
+                0.4211,
+                0.8915,
+                0.5953,
+                0.9541
+              ]
+            },
+            {
+              "code": "CE-PB-01",
+              "elementId": "1249889",
+              "label": "CE-PB-01 · existente · TC-01 · 8,98 m²",
+              "box": [
+                0.8679,
+                0.4655,
+                0.9507,
+                0.689
+              ]
+            },
+            {
+              "code": "CE-PB-06",
+              "elementId": "2138470",
+              "label": "CE-PB-06 · existente · TC-02 · 16,60 m²",
+              "box": [
+                0.5607,
+                0.1719,
+                0.8825,
+                0.4567
+              ]
+            },
+            {
+              "code": "CE-PB-08",
+              "elementId": "2140034",
+              "label": "CE-PB-08 · existente · TC-02 · 6,61 m²",
+              "box": [
+                0.6688,
+                0.0491,
+                0.7885,
+                0.1631
+              ]
+            },
+            {
+              "code": "CE-PB-05",
+              "elementId": "1423106",
+              "label": "CE-PB-05 · existente · TC-01 · 6,24 m²",
+              "box": [
+                0.4259,
+                0.0491,
+                0.5377,
+                0.1664
+              ]
+            },
+            {
+              "code": "CE-PB-07",
+              "elementId": "2140022",
+              "label": "CE-PB-07 · existente · TC-01 (modelo TC-02) · 6,56 m²",
+              "box": [
+                0.5471,
+                0.0459,
+                0.6643,
+                0.1631
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "CIE-P-PE",
+      "title": "Propuesta de cielorrasos · 02. Planta Entrepiso",
+      "level": "02. Planta Entrepiso",
+      "sector": "02. Planta Entrepiso",
+      "kind": "general",
+      "element": null,
+      "elementId": null,
+      "elementKind": null,
+      "note": "Propuesta a confirmar",
+      "sheetId": "2487163",
+      "pdf": "/casa-angel/rubros/cielorrasos/CIE-P-PE.pdf",
+      "image": "/casa-angel/rubros/cielorrasos/CIE-P-PE.svg.gz",
+      "preview": "/casa-angel/rubros/cielorrasos/CIE-P-PE-preview.png",
+      "thumbnail": "/casa-angel/rubros/cielorrasos/CIE-P-PE.png",
+      "views": [
+        {
+          "id": "2487121",
+          "name": "Cielorrasos propuestos · 02. Planta Entrepiso",
+          "label": "Cielorrasos propuestos · 02. Planta Entrepiso   1:20",
+          "scale": 20,
+          "kind": "plan",
+          "sector": "02. Planta Entrepiso",
+          "roomLabel": "02. Planta Entrepiso",
+          "image": "/casa-angel/rubros/cielorrasos/CIE-P-PE-view-2487121.svg.gz",
+          "region": [
+            0.2495,
+            0.1732,
+            0.6492,
+            0.8136
+          ],
+          "tags": [
+            "CP-PE-01",
+            "CP-PE-02",
+            "CP-PE-03"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "CP-PE-01",
+              "elementId": "876170",
+              "room": true,
+              "label": "CP-PE-01 · SM · TC-02 · total 7,31 m² (propuesto 7,31) · propuesta",
+              "box": [
+                0.1193,
+                0.1055,
+                0.4607,
+                0.4163
+              ]
+            },
+            {
+              "code": "CP-PE-02",
+              "elementId": "876173",
+              "room": true,
+              "label": "CP-PE-02 · Hall PE · TC-02 · total 7,59 m² (propuesto 7,59) · propuesta",
+              "box": [
+                0.4607,
+                0.1055,
+                0.8272,
+                0.4402
+              ]
+            },
+            {
+              "code": "CP-PE-03",
+              "elementId": "876161",
+              "room": true,
+              "label": "CP-PE-03 · Atelier · TC-02 · total 20,22 m² (propuesto 20,22) · propuesta",
+              "box": [
+                0.1914,
+                0.4402,
+                0.8807,
+                0.8945
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "number": "CIE-PA-01",
@@ -35,7 +862,7 @@
       "element": null,
       "elementId": null,
       "elementKind": null,
-      "note": null,
+      "note": "Existente en el modelo (R21)",
       "sheetId": "2472047",
       "pdf": "/casa-angel/rubros/cielorrasos/CIE-PA-01.pdf",
       "image": "/casa-angel/rubros/cielorrasos/CIE-PA-01.svg.gz",
@@ -266,7 +1093,7 @@
       "element": null,
       "elementId": null,
       "elementKind": null,
-      "note": null,
+      "note": "Existente en el modelo (R21)",
       "sheetId": "2472002",
       "pdf": "/casa-angel/rubros/cielorrasos/CIE-PB-01.pdf",
       "image": "/casa-angel/rubros/cielorrasos/CIE-PB-01.svg.gz",
@@ -605,7 +1432,7 @@
       "element": null,
       "elementId": null,
       "elementKind": null,
-      "note": null,
+      "note": "Existente en el modelo (R21)",
       "sheetId": "2472079",
       "pdf": "/casa-angel/rubros/cielorrasos/CIE-PE-01.pdf",
       "image": "/casa-angel/rubros/cielorrasos/CIE-PE-01.svg.gz",
@@ -679,7 +1506,7 @@
       "element": "TC-01",
       "elementId": "1249889",
       "elementKind": "TC",
-      "note": null,
+      "note": "Existente en el modelo (R21)",
       "sheetId": "2471677",
       "pdf": "/casa-angel/rubros/cielorrasos/CIE-F-TC-01.pdf",
       "image": "/casa-angel/rubros/cielorrasos/CIE-F-TC-01.svg.gz",
@@ -859,7 +1686,7 @@
       "element": "TC-02",
       "elementId": "2138470",
       "elementKind": "TC",
-      "note": null,
+      "note": "Existente en el modelo (R21)",
       "sheetId": "2471743",
       "pdf": "/casa-angel/rubros/cielorrasos/CIE-F-TC-02.pdf",
       "image": "/casa-angel/rubros/cielorrasos/CIE-F-TC-02.svg.gz",
@@ -1015,7 +1842,7 @@
       "element": "TC-03",
       "elementId": "2138433",
       "elementKind": "TC",
-      "note": null,
+      "note": "Existente en el modelo (R21)",
       "sheetId": "2471812",
       "pdf": "/casa-angel/rubros/cielorrasos/CIE-F-TC-03.pdf",
       "image": "/casa-angel/rubros/cielorrasos/CIE-F-TC-03.svg.gz",
@@ -1203,591 +2030,833 @@
     {
       "code": "TC-01",
       "kind": "TC",
-      "label": "TC-01 · placa Knauf RH 12,5 (resistente a humedad) · 31,23 m²",
-      "status": "Capas: Placa de Yeso RH 12,5mm Knauf 1,2 cm",
-      "area_m2": 31.23,
-      "type": "Placa de Yeso RH 12,5mm Knauf",
-      "layers": [
-        {
-          "material": "Placa de Yeso RH 12,5mm Knauf",
-          "thickness_m": 0.0125
-        }
-      ]
+      "label": "TC-01 · Suspendido placa Knauf RH 12,5 (zonas húmedas)",
+      "status": "Propuesta · perfilería galvanizada 35, velas c/1,00, buña Z 15",
+      "area_m2": 69.48
     },
     {
       "code": "TC-02",
       "kind": "TC",
-      "label": "TC-02 · placa Knauf ST 12,5 · 29,77 m²",
-      "status": "Capas: Placa de Yeso ST 12,5mm Knauf 1,2 cm",
-      "area_m2": 29.77,
-      "type": "Placa de Yeso ST 12,5mm Knauf",
-      "layers": [
-        {
-          "material": "Placa de Yeso ST 12,5mm Knauf",
-          "thickness_m": 0.0125
-        }
-      ]
+      "label": "TC-02 · Suspendido placa Knauf ST 12,5",
+      "status": "Propuesta · perfilería galvanizada 35, velas c/1,00, buña Z 15",
+      "area_m2": 308.31
     },
     {
       "code": "TC-03",
       "kind": "TC",
-      "label": "TC-03 · genérico: perfilería 45 + placa 12 mm · 47,70 m²",
-      "status": "Tipo genérico · Capas: Metal Stud Layer 4,5 / Gypsum Wall Board 1,2 cm",
-      "area_m2": 47.7,
-      "type": "Plain",
-      "layers": [
-        {
-          "material": "Metal Stud Layer",
-          "thickness_m": 0.045
-        },
-        {
-          "material": "Gypsum Wall Board",
-          "thickness_m": 0.011999999999999999
-        }
-      ]
-    },
-    {
-      "code": "CE-PA-01",
-      "kind": "CE",
-      "label": "CE-PA-01 · TC-03 · 5,81 m² · h 2,70",
-      "status": "Plain",
-      "elementId": "1478681",
-      "typeCode": "TC-03",
-      "level": "01. Planta Alta",
-      "area_m2": 5.81,
-      "height_m": 2.7,
-      "perimeter_m": 10.61
-    },
-    {
-      "code": "CE-PA-02",
-      "kind": "CE",
-      "label": "CE-PA-02 · TC-03 · 4,79 m² · h 2,70",
-      "status": "Plain",
-      "elementId": "2138425",
-      "typeCode": "TC-03",
-      "level": "01. Planta Alta",
-      "area_m2": 4.79,
-      "height_m": 2.7,
-      "perimeter_m": 9.1
-    },
-    {
-      "code": "CE-PA-03",
-      "kind": "CE",
-      "label": "CE-PA-03 · TC-03 · 14,99 m² · h 2,70",
-      "status": "Plain",
-      "elementId": "2138433",
-      "typeCode": "TC-03",
-      "level": "01. Planta Alta",
-      "area_m2": 14.99,
-      "height_m": 2.7,
-      "perimeter_m": 15.5
-    },
-    {
-      "code": "CE-PA-04",
-      "kind": "CE",
-      "label": "CE-PA-04 · TC-03 · 5,01 m² · h 2,50",
-      "status": "Plain",
-      "elementId": "2143224",
-      "typeCode": "TC-03",
-      "level": "01. Planta Alta",
-      "area_m2": 5.01,
-      "height_m": 2.5,
-      "perimeter_m": 9.05
-    },
-    {
-      "code": "CE-PA-05",
-      "kind": "CE",
-      "label": "CE-PA-05 · TC-03 · 8,33 m² · h 2,50",
-      "status": "Plain",
-      "elementId": "2143232",
-      "typeCode": "TC-03",
-      "level": "01. Planta Alta",
-      "area_m2": 8.33,
-      "height_m": 2.5,
-      "perimeter_m": 11.61
-    },
-    {
-      "code": "CE-PA-06",
-      "kind": "CE",
-      "label": "CE-PA-06 · TC-03 · 8,77 m² · h 2,50",
-      "status": "Plain",
-      "elementId": "2143244",
-      "typeCode": "TC-03",
-      "level": "01. Planta Alta",
-      "area_m2": 8.77,
-      "height_m": 2.5,
-      "perimeter_m": 17.88
-    },
-    {
-      "code": "CE-PB-01",
-      "kind": "CE",
-      "label": "CE-PB-01 · TC-01 · 8,98 m² · h 2,60",
-      "status": "Placa de Yeso RH 12,5mm Knauf",
-      "elementId": "1249889",
-      "typeCode": "TC-01",
-      "level": "00. Planta Baja",
-      "area_m2": 8.98,
-      "height_m": 2.6,
-      "perimeter_m": 13.72
+      "label": "TC-03 · \"Plain\" (genérico del modelo)",
+      "status": "Disuelto en TC-01 / TC-02 (solo documentación)",
+      "area_m2": 0
     },
     {
       "code": "CE-PB-02",
       "kind": "CE",
-      "label": "CE-PB-02 · TC-01 · 5,29 m² · h 2,40",
-      "status": "Placa de Yeso RH 12,5mm Knauf",
+      "label": "CE-PB-02 · 02 · Baño A Inv. · 5,29 m²",
+      "status": "Existente · TC-01",
       "elementId": "1360830",
       "typeCode": "TC-01",
-      "level": "00. Planta Baja",
+      "modelTypeCode": "TC-01",
       "area_m2": 5.29,
-      "height_m": 2.4,
-      "perimeter_m": 10.26
+      "height_m": 2.4
     },
     {
       "code": "CE-PB-03",
       "kind": "CE",
-      "label": "CE-PB-03 · TC-01 · 5,43 m² · h 2,40",
-      "status": "Placa de Yeso RH 12,5mm Knauf",
+      "label": "CE-PB-03 · 04 · Baño B Inv. · 5,43 m²",
+      "status": "Existente · TC-01",
       "elementId": "1376081",
       "typeCode": "TC-01",
-      "level": "00. Planta Baja",
+      "modelTypeCode": "TC-01",
       "area_m2": 5.43,
-      "height_m": 2.4,
-      "perimeter_m": 10.46
+      "height_m": 2.4
     },
     {
       "code": "CE-PB-04",
       "kind": "CE",
-      "label": "CE-PB-04 · TC-01 · 5,29 m² · h 2,40",
-      "status": "Placa de Yeso RH 12,5mm Knauf",
+      "label": "CE-PB-04 · 06 · Baño C Inv. · 5,29 m²",
+      "status": "Existente · TC-01",
       "elementId": "1376089",
       "typeCode": "TC-01",
-      "level": "00. Planta Baja",
+      "modelTypeCode": "TC-01",
       "area_m2": 5.29,
-      "height_m": 2.4,
-      "perimeter_m": 10.26
+      "height_m": 2.4
     },
     {
-      "code": "CE-PB-05",
+      "code": "CE-PB-01",
       "kind": "CE",
-      "label": "CE-PB-05 · TC-01 · 6,24 m² · h 2,50",
-      "status": "Placa de Yeso RH 12,5mm Knauf",
-      "elementId": "1423106",
+      "label": "CE-PB-01 · 15 · Baño ppal · 8,98 m²",
+      "status": "Existente · TC-01",
+      "elementId": "1249889",
       "typeCode": "TC-01",
-      "level": "00. Planta Baja",
-      "area_m2": 6.24,
-      "height_m": 2.5,
-      "perimeter_m": 9.97
+      "modelTypeCode": "TC-01",
+      "area_m2": 8.98,
+      "height_m": 2.6
     },
     {
       "code": "CE-PB-06",
       "kind": "CE",
-      "label": "CE-PB-06 · TC-02 · 16,60 m² · h 2,50",
-      "status": "Placa de Yeso ST 12,5mm Knauf",
+      "label": "CE-PB-06 · 12 · Quincho · 16,60 m²",
+      "status": "Existente · TC-02",
       "elementId": "2138470",
       "typeCode": "TC-02",
-      "level": "00. Planta Baja",
+      "modelTypeCode": "TC-02",
       "area_m2": 16.6,
-      "height_m": 2.5,
-      "perimeter_m": 26.24
-    },
-    {
-      "code": "CE-PB-07",
-      "kind": "CE",
-      "label": "CE-PB-07 · TC-02 · 6,56 m² · h 2,50",
-      "status": "Placa de Yeso ST 12,5mm Knauf",
-      "elementId": "2140022",
-      "typeCode": "TC-02",
-      "level": "00. Planta Baja",
-      "area_m2": 6.56,
-      "height_m": 2.5,
-      "perimeter_m": 10.33
+      "height_m": 2.5
     },
     {
       "code": "CE-PB-08",
       "kind": "CE",
-      "label": "CE-PB-08 · TC-02 · 6,61 m² · h 2,40",
-      "status": "Placa de Yeso ST 12,5mm Knauf",
+      "label": "CE-PB-08 · 09 · Hab. servicio · 6,61 m²",
+      "status": "Existente · TC-02",
       "elementId": "2140034",
       "typeCode": "TC-02",
-      "level": "00. Planta Baja",
+      "modelTypeCode": "TC-02",
       "area_m2": 6.61,
-      "height_m": 2.4,
-      "perimeter_m": 10.29
+      "height_m": 2.4
+    },
+    {
+      "code": "CE-PA-04",
+      "kind": "CE",
+      "label": "CE-PA-04 · 05 · Toilette · 5,01 m²",
+      "status": "Existente · TC-01 (modelo TC-03, reasignado en la documentación)",
+      "elementId": "2143224",
+      "typeCode": "TC-01",
+      "modelTypeCode": "TC-03",
+      "area_m2": 5.01,
+      "height_m": 2.5
+    },
+    {
+      "code": "CE-PA-05",
+      "kind": "CE",
+      "label": "CE-PA-05 · 06 · Cava · 8,33 m²",
+      "status": "Existente · TC-02 (modelo TC-03, reasignado en la documentación)",
+      "elementId": "2143232",
+      "typeCode": "TC-02",
+      "modelTypeCode": "TC-03",
+      "area_m2": 8.33,
+      "height_m": 2.5
+    },
+    {
+      "code": "CE-PA-03",
+      "kind": "CE",
+      "label": "CE-PA-03 · 01 · Sala de TV · 14,99 m²",
+      "status": "Existente · TC-02 (modelo TC-03, reasignado en la documentación)",
+      "elementId": "2138433",
+      "typeCode": "TC-02",
+      "modelTypeCode": "TC-03",
+      "area_m2": 14.99,
+      "height_m": 2.7
+    },
+    {
+      "code": "CE-PA-01",
+      "kind": "CE",
+      "label": "CE-PA-01 · 04 · Baño PA · 5,81 m²",
+      "status": "Existente · TC-01 (modelo TC-03, reasignado en la documentación)",
+      "elementId": "1478681",
+      "typeCode": "TC-01",
+      "modelTypeCode": "TC-03",
+      "area_m2": 5.81,
+      "height_m": 2.7
+    },
+    {
+      "code": "CE-PB-05",
+      "kind": "CE",
+      "label": "CE-PB-05 · 07 · Toilette Servicio · 6,24 m²",
+      "status": "Existente · TC-01",
+      "elementId": "1423106",
+      "typeCode": "TC-01",
+      "modelTypeCode": "TC-01",
+      "area_m2": 6.24,
+      "height_m": 2.5
+    },
+    {
+      "code": "CE-PA-06",
+      "kind": "CE",
+      "label": "CE-PA-06 · 07 · Cocina · 8,77 m²",
+      "status": "Existente · TC-01 (modelo TC-03, reasignado en la documentación)",
+      "elementId": "2143244",
+      "typeCode": "TC-01",
+      "modelTypeCode": "TC-03",
+      "area_m2": 8.77,
+      "height_m": 2.5
+    },
+    {
+      "code": "CE-PA-02",
+      "kind": "CE",
+      "label": "CE-PA-02 · 02 · Sala de Maquinas · 4,79 m²",
+      "status": "Existente · TC-02 (modelo TC-03, reasignado en la documentación)",
+      "elementId": "2138425",
+      "typeCode": "TC-02",
+      "modelTypeCode": "TC-03",
+      "area_m2": 4.79,
+      "height_m": 2.7
+    },
+    {
+      "code": "CE-PB-07",
+      "kind": "CE",
+      "label": "CE-PB-07 · 08 · Lavadero · 6,56 m²",
+      "status": "Existente · TC-01 (modelo TC-02, reasignado en la documentación)",
+      "elementId": "2140022",
+      "typeCode": "TC-01",
+      "modelTypeCode": "TC-02",
+      "area_m2": 6.56,
+      "height_m": 2.5
+    },
+    {
+      "code": "CP-PB-01",
+      "kind": "CP",
+      "label": "CP-PB-01 · 01 · Cuarto A Inv. · PB · TC-02 · 11,86 m²",
+      "status": "Propuesta a confirmar · h 2,60",
+      "elementId": "780807",
+      "room": "01 · Cuarto A Inv. · PB",
+      "typeCode": "TC-02",
+      "area_m2": 11.86,
+      "planArea_m2": 11.86,
+      "height_m": 2.6,
+      "slope_deg": null,
+      "trueMagnitude": false,
+      "doubleHeight": false,
+      "perimeter_m": 13.81
+    },
+    {
+      "code": "CP-PB-02",
+      "kind": "CP",
+      "label": "CP-PB-02 · 03 · Cuarto B Inv. · PB · TC-02 · 12,18 m²",
+      "status": "Propuesta a confirmar · h 2,60",
+      "elementId": "780816",
+      "room": "03 · Cuarto B Inv. · PB",
+      "typeCode": "TC-02",
+      "area_m2": 12.18,
+      "planArea_m2": 12.18,
+      "height_m": 2.6,
+      "slope_deg": null,
+      "trueMagnitude": false,
+      "doubleHeight": false,
+      "perimeter_m": 14.01
+    },
+    {
+      "code": "CP-PB-03",
+      "kind": "CP",
+      "label": "CP-PB-03 · 05 · Cuarto C Inv. · PB · TC-02 · 11,86 m²",
+      "status": "Propuesta a confirmar · h 2,60",
+      "elementId": "780819",
+      "room": "05 · Cuarto C Inv. · PB",
+      "typeCode": "TC-02",
+      "area_m2": 11.86,
+      "planArea_m2": 11.86,
+      "height_m": 2.6,
+      "slope_deg": null,
+      "trueMagnitude": false,
+      "doubleHeight": false,
+      "perimeter_m": 13.81
+    },
+    {
+      "code": "CP-PB-04",
+      "kind": "CP",
+      "label": "CP-PB-04 · 10 · Acceso Servicio · PB · TC-02 · 5,03 m²",
+      "status": "Propuesta a confirmar · h 2,50",
+      "elementId": "785700",
+      "room": "10 · Acceso Servicio · PB",
+      "typeCode": "TC-02",
+      "area_m2": 5.03,
+      "planArea_m2": 5.03,
+      "height_m": 2.5,
+      "slope_deg": null,
+      "trueMagnitude": false,
+      "doubleHeight": false,
+      "perimeter_m": 9.15
+    },
+    {
+      "code": "CP-PB-05",
+      "kind": "CP",
+      "label": "CP-PB-05 · 12 · Quincho · PB · TC-02 · 28,47 m²",
+      "status": "Propuesta a confirmar · h 2,50",
+      "elementId": "783339",
+      "room": "12 · Quincho · PB",
+      "typeCode": "TC-02",
+      "area_m2": 28.47,
+      "planArea_m2": 28.47,
+      "height_m": 2.5,
+      "slope_deg": null,
+      "trueMagnitude": false,
+      "doubleHeight": false,
+      "perimeter_m": 28.47
+    },
+    {
+      "code": "CP-PB-06",
+      "kind": "CP",
+      "label": "CP-PB-06 · 13 · Cuarto ppal · PB · TC-02 · 14,82 m²",
+      "status": "Propuesta a confirmar · h 2,60",
+      "elementId": "780825",
+      "room": "13 · Cuarto ppal · PB",
+      "typeCode": "TC-02",
+      "area_m2": 14.82,
+      "planArea_m2": 14.82,
+      "height_m": 2.6,
+      "slope_deg": null,
+      "trueMagnitude": false,
+      "doubleHeight": false,
+      "perimeter_m": 15.63
+    },
+    {
+      "code": "CP-PB-07",
+      "kind": "CP",
+      "label": "CP-PB-07 · 14 · Vestidor ppal · PB · TC-02 · 7,57 m²",
+      "status": "Propuesta a confirmar · h 2,60",
+      "elementId": "1007176",
+      "room": "14 · Vestidor ppal · PB",
+      "typeCode": "TC-02",
+      "area_m2": 7.57,
+      "planArea_m2": 7.57,
+      "height_m": 2.6,
+      "slope_deg": null,
+      "trueMagnitude": false,
+      "doubleHeight": false,
+      "perimeter_m": 12.21
+    },
+    {
+      "code": "CP-PB-08",
+      "kind": "CP",
+      "label": "CP-PB-08 · 16 · Pasillo · PB · TC-02 · 26,08 m²",
+      "status": "Propuesta a confirmar · h 2,60",
+      "elementId": "788673",
+      "room": "16 · Pasillo · PB",
+      "typeCode": "TC-02",
+      "area_m2": 26.08,
+      "planArea_m2": 26.08,
+      "height_m": 2.6,
+      "slope_deg": null,
+      "trueMagnitude": false,
+      "doubleHeight": false,
+      "perimeter_m": 32.11
+    },
+    {
+      "code": "CP-PB-09",
+      "kind": "CP",
+      "label": "CP-PB-09 · 17 · Hall · PB · TC-02 · 27,13 m²",
+      "status": "Propuesta a confirmar · posible doble altura: a confirmar",
+      "elementId": "788665",
+      "room": "17 · Hall · PB",
+      "typeCode": "TC-02",
+      "area_m2": 27.13,
+      "planArea_m2": 27.13,
+      "height_m": 2.6,
+      "slope_deg": null,
+      "trueMagnitude": false,
+      "doubleHeight": true,
+      "perimeter_m": 21.78
+    },
+    {
+      "code": "CP-PA-01",
+      "kind": "CP",
+      "label": "CP-PA-01 · 03 · Playroom · PA · TC-02 · 32,39 m²",
+      "status": "Propuesta a confirmar · bajo cubierta, sigue la pendiente (26,7°)",
+      "elementId": "870164",
+      "room": "03 · Playroom · PA",
+      "typeCode": "TC-02",
+      "area_m2": 32.39,
+      "planArea_m2": 28.94,
+      "height_m": null,
+      "slope_deg": 26.7,
+      "trueMagnitude": true,
+      "doubleHeight": false,
+      "perimeter_m": 24.44
+    },
+    {
+      "code": "CP-PA-02",
+      "kind": "CP",
+      "label": "CP-PA-02 · 07 · Cocina · PA · TC-01 · 12,36 m²",
+      "status": "Propuesta a confirmar · h 2,50",
+      "elementId": "877992",
+      "room": "07 · Cocina · PA",
+      "typeCode": "TC-01",
+      "area_m2": 12.36,
+      "planArea_m2": 12.36,
+      "height_m": 2.5,
+      "slope_deg": null,
+      "trueMagnitude": false,
+      "doubleHeight": false,
+      "perimeter_m": 20.23
+    },
+    {
+      "code": "CP-PA-03",
+      "kind": "CP",
+      "label": "CP-PA-03 · 08 · Comedor · PA · TC-02 · 24,30 m²",
+      "status": "Propuesta a confirmar · bajo cubierta, sigue la pendiente (16,8°)",
+      "elementId": "869397",
+      "room": "08 · Comedor · PA",
+      "typeCode": "TC-02",
+      "area_m2": 24.3,
+      "planArea_m2": 23.26,
+      "height_m": null,
+      "slope_deg": 16.8,
+      "trueMagnitude": true,
+      "doubleHeight": false,
+      "perimeter_m": 19.72
+    },
+    {
+      "code": "CP-PA-04",
+      "kind": "CP",
+      "label": "CP-PA-04 · 09 · Living · PA · TC-02 · 18,07 m²",
+      "status": "Propuesta a confirmar · bajo cubierta, sigue la pendiente (26,7°)",
+      "elementId": "877995",
+      "room": "09 · Living · PA",
+      "typeCode": "TC-02",
+      "area_m2": 18.07,
+      "planArea_m2": 16.14,
+      "height_m": null,
+      "slope_deg": 26.7,
+      "trueMagnitude": true,
+      "doubleHeight": false,
+      "perimeter_m": 16.46
+    },
+    {
+      "code": "CP-PA-05",
+      "kind": "CP",
+      "label": "CP-PA-05 · 10 · Puente · PA · TC-02 · 2,18 m²",
+      "status": "Propuesta a confirmar · posible doble altura: a confirmar",
+      "elementId": "887814",
+      "room": "10 · Puente · PA",
+      "typeCode": "TC-02",
+      "area_m2": 2.18,
+      "planArea_m2": 2.18,
+      "height_m": 2.7,
+      "slope_deg": null,
+      "trueMagnitude": false,
+      "doubleHeight": true,
+      "perimeter_m": 7.06
+    },
+    {
+      "code": "CP-PE-01",
+      "kind": "CP",
+      "label": "CP-PE-01 · 01 · SM · PE · TC-02 · 7,31 m²",
+      "status": "Propuesta a confirmar · bajo cubierta, sigue la pendiente (26,1°)",
+      "elementId": "876170",
+      "room": "01 · SM · PE",
+      "typeCode": "TC-02",
+      "area_m2": 7.31,
+      "planArea_m2": 6.56,
+      "height_m": null,
+      "slope_deg": 26.1,
+      "trueMagnitude": true,
+      "doubleHeight": false,
+      "perimeter_m": 10.25
+    },
+    {
+      "code": "CP-PE-02",
+      "kind": "CP",
+      "label": "CP-PE-02 · 02 · Hall PE · PE · TC-02 · 7,59 m²",
+      "status": "Propuesta a confirmar · bajo cubierta, sigue la pendiente (16,8°)",
+      "elementId": "876173",
+      "room": "02 · Hall PE · PE",
+      "typeCode": "TC-02",
+      "area_m2": 7.59,
+      "planArea_m2": 7.26,
+      "height_m": null,
+      "slope_deg": 16.8,
+      "trueMagnitude": true,
+      "doubleHeight": false,
+      "perimeter_m": 11.02
+    },
+    {
+      "code": "CP-PE-03",
+      "kind": "CP",
+      "label": "CP-PE-03 · 03 · Atelier · PE · TC-02 · 20,22 m²",
+      "status": "Propuesta a confirmar · bajo cubierta, sigue la pendiente (16,8°)",
+      "elementId": "876161",
+      "room": "03 · Atelier · PE",
+      "typeCode": "TC-02",
+      "area_m2": 20.22,
+      "planArea_m2": 19.36,
+      "height_m": null,
+      "slope_deg": 16.8,
+      "trueMagnitude": true,
+      "doubleHeight": false,
+      "perimeter_m": 17.79
     }
   ],
   "totals": [
     {
-      "label": "placa Knauf RH 12,5 (resistente a humedad)",
-      "value": 31.23,
+      "label": "Placa RH (TC-01)",
+      "value": 69.48,
       "unit": "m²",
-      "detail": "TC-01"
+      "detail": "existente + propuesto"
     },
     {
-      "label": "placa Knauf ST 12,5",
-      "value": 29.77,
+      "label": "Placa ST (TC-02)",
+      "value": 308.31,
       "unit": "m²",
-      "detail": "TC-02"
+      "detail": "existente + propuesto"
     },
     {
-      "label": "genérico: perfilería 45 + placa 12 mm",
-      "value": 47.7,
-      "unit": "m²",
-      "detail": "TC-03"
+      "label": "Buña perimetral Z 15",
+      "value": 419.76,
+      "unit": "ml",
+      "detail": "perímetro de los locales"
     },
     {
-      "label": "Locales sin cielorraso modelado",
-      "value": 194.63,
-      "unit": "m²",
-      "detail": "15 locales"
+      "label": "Tapas de inspección 60×60",
+      "value": 8,
+      "unit": "u",
+      "detail": "baños, toilettes y sala de máquinas"
     },
     {
-      "label": "Locales con cielorraso parcial",
-      "value": 101.46,
+      "label": "Existente modelado",
+      "value": 108.38,
       "unit": "m²",
-      "detail": "4 locales"
+      "detail": "14 cielorrasos"
     },
     {
-      "label": "Cielorrasos modelados",
-      "value": 108.7,
+      "label": "Propuesto (nuevo)",
+      "value": 269.41,
       "unit": "m²",
-      "detail": "14 piezas · 3 tipos"
+      "detail": "17 locales"
+    },
+    {
+      "label": "Cielorrasos (total propuesta)",
+      "value": 377.79,
+      "unit": "m²",
+      "detail": "RH + ST"
     }
   ],
   "quantities": [
     {
-      "label": "TC-01 · placa Knauf RH 12,5 (resistente a humedad)",
-      "group": "Tipos de cielorraso",
-      "count": 5,
-      "value": 31.23,
-      "unit": "m²",
-      "detail": "Placa de Yeso RH 12,5mm Knauf 1,2 cm"
-    },
-    {
-      "label": "TC-02 · placa Knauf ST 12,5",
-      "group": "Tipos de cielorraso",
-      "count": 3,
-      "value": 29.77,
-      "unit": "m²",
-      "detail": "Placa de Yeso ST 12,5mm Knauf 1,2 cm"
-    },
-    {
-      "label": "TC-03 · genérico: perfilería 45 + placa 12 mm",
-      "group": "Tipos de cielorraso",
-      "count": 6,
-      "value": 47.7,
-      "unit": "m²",
-      "detail": "Metal Stud Layer 4,5 / Gypsum Wall Board 1,2 cm"
-    },
-    {
-      "label": "01 · Cuarto A Inv.",
-      "group": "Locales · 00. Planta Baja",
+      "label": "01 · Cuarto A Inv. · PB",
+      "group": "Locales · TC-02",
       "count": 1,
       "value": 11.86,
       "unit": "m²",
-      "detail": "sin cielorraso modelado"
+      "detail": "propuesto 11,86 (CP-PB-01) · buña 13,81 ml · h 2,60"
     },
     {
-      "label": "02 · Baño A Inv.",
-      "group": "Locales · 00. Planta Baja",
+      "label": "02 · Baño A Inv. · PB",
+      "group": "Locales · TC-01",
       "count": 1,
       "value": 5.29,
       "unit": "m²",
-      "detail": "con cielorraso (CE-PB-02)"
+      "detail": "existente 5,29 + sin propuesta · buña 10,26 ml · 1 tapa · h 2,40"
     },
     {
-      "label": "04 · Baño B Inv.",
-      "group": "Locales · 00. Planta Baja",
-      "count": 1,
-      "value": 5.43,
-      "unit": "m²",
-      "detail": "con cielorraso (CE-PB-03)"
-    },
-    {
-      "label": "03 · Cuarto B Inv.",
-      "group": "Locales · 00. Planta Baja",
+      "label": "03 · Cuarto B Inv. · PB",
+      "group": "Locales · TC-02",
       "count": 1,
       "value": 12.18,
       "unit": "m²",
-      "detail": "sin cielorraso modelado"
+      "detail": "propuesto 12,18 (CP-PB-02) · buña 14,01 ml · h 2,60"
     },
     {
-      "label": "05 · Cuarto C Inv.",
-      "group": "Locales · 00. Planta Baja",
+      "label": "04 · Baño B Inv. · PB",
+      "group": "Locales · TC-01",
+      "count": 1,
+      "value": 5.43,
+      "unit": "m²",
+      "detail": "existente 5,43 + sin propuesta · buña 10,46 ml · 1 tapa · h 2,40"
+    },
+    {
+      "label": "05 · Cuarto C Inv. · PB",
+      "group": "Locales · TC-02",
       "count": 1,
       "value": 11.86,
       "unit": "m²",
-      "detail": "sin cielorraso modelado"
+      "detail": "propuesto 11,86 (CP-PB-03) · buña 13,81 ml · h 2,60"
     },
     {
-      "label": "06 · Baño C Inv.",
-      "group": "Locales · 00. Planta Baja",
+      "label": "06 · Baño C Inv. · PB",
+      "group": "Locales · TC-01",
       "count": 1,
       "value": 5.29,
       "unit": "m²",
-      "detail": "con cielorraso (CE-PB-04)"
+      "detail": "existente 5,29 + sin propuesta · buña 10,26 ml · 1 tapa · h 2,40"
     },
     {
-      "label": "13 · Cuarto ppal",
-      "group": "Locales · 00. Planta Baja",
-      "count": 1,
-      "value": 14.82,
-      "unit": "m²",
-      "detail": "sin cielorraso modelado"
-    },
-    {
-      "label": "15 · Baño ppal",
-      "group": "Locales · 00. Planta Baja",
-      "count": 1,
-      "value": 9.03,
-      "unit": "m²",
-      "detail": "con cielorraso (CE-PB-01)"
-    },
-    {
-      "label": "12 · Quincho",
-      "group": "Locales · 00. Planta Baja",
-      "count": 1,
-      "value": 45.01,
-      "unit": "m²",
-      "detail": "parcial (CE-PB-06)"
-    },
-    {
-      "label": "09 · Hab. servicio",
-      "group": "Locales · 00. Planta Baja",
-      "count": 1,
-      "value": 6.61,
-      "unit": "m²",
-      "detail": "con cielorraso (CE-PB-08)"
-    },
-    {
-      "label": "10 · Acceso Servicio",
-      "group": "Locales · 00. Planta Baja",
-      "count": 1,
-      "value": 5.03,
-      "unit": "m²",
-      "detail": "sin cielorraso modelado"
-    },
-    {
-      "label": "11 · Ascensor",
-      "group": "Locales · 00. Planta Baja",
-      "count": 1,
-      "value": 3.34,
-      "unit": "m²",
-      "detail": "sin cielorraso modelado"
-    },
-    {
-      "label": "17 · Hall",
-      "group": "Locales · 00. Planta Baja",
-      "count": 1,
-      "value": 27.13,
-      "unit": "m²",
-      "detail": "sin cielorraso modelado"
-    },
-    {
-      "label": "16 · Pasillo",
-      "group": "Locales · 00. Planta Baja",
-      "count": 1,
-      "value": 26.08,
-      "unit": "m²",
-      "detail": "sin cielorraso modelado"
-    },
-    {
-      "label": "05 · Toilette",
-      "group": "Locales · 01. Planta Alta",
-      "count": 1,
-      "value": 5.12,
-      "unit": "m²",
-      "detail": "con cielorraso (CE-PA-04)"
-    },
-    {
-      "label": "06 · Cava",
-      "group": "Locales · 01. Planta Alta",
-      "count": 1,
-      "value": 8.44,
-      "unit": "m²",
-      "detail": "con cielorraso (CE-PA-05)"
-    },
-    {
-      "label": "01 · Sala de TV",
-      "group": "Locales · 01. Planta Alta",
-      "count": 1,
-      "value": 14.99,
-      "unit": "m²",
-      "detail": "con cielorraso (CE-PA-03)"
-    },
-    {
-      "label": "08 · Comedor",
-      "group": "Locales · 01. Planta Alta",
-      "count": 1,
-      "value": 23.26,
-      "unit": "m²",
-      "detail": "sin cielorraso modelado"
-    },
-    {
-      "label": "03 · Playroom",
-      "group": "Locales · 01. Planta Alta",
-      "count": 1,
-      "value": 28.94,
-      "unit": "m²",
-      "detail": "parcial (CE-PA-01)"
-    },
-    {
-      "label": "04 · Baño PA",
-      "group": "Locales · 01. Planta Alta",
-      "count": 1,
-      "value": 5.81,
-      "unit": "m²",
-      "detail": "con cielorraso (CE-PA-01)"
-    },
-    {
-      "label": "07 · Toilette Servicio",
-      "group": "Locales · 00. Planta Baja",
+      "label": "07 · Toilette Servicio · PB",
+      "group": "Locales · TC-01",
       "count": 1,
       "value": 6.24,
       "unit": "m²",
-      "detail": "con cielorraso (CE-PB-05)"
+      "detail": "existente 6,24 + sin propuesta · buña 9,97 ml · 1 tapa · h 2,50"
     },
     {
-      "label": "03 · Atelier",
-      "group": "Locales · 02. Planta Entrepiso",
-      "count": 1,
-      "value": 19.36,
-      "unit": "m²",
-      "detail": "sin cielorraso modelado"
-    },
-    {
-      "label": "01 · SM",
-      "group": "Locales · 02. Planta Entrepiso",
+      "label": "08 · Lavadero · PB",
+      "group": "Locales · TC-01",
       "count": 1,
       "value": 6.56,
       "unit": "m²",
-      "detail": "sin cielorraso modelado"
+      "detail": "existente 6,56 + sin propuesta · buña 10,48 ml · h 2,50"
     },
     {
-      "label": "02 · Hall PE",
-      "group": "Locales · 02. Planta Entrepiso",
+      "label": "09 · Hab. servicio · PB",
+      "group": "Locales · TC-02",
       "count": 1,
-      "value": 7.26,
+      "value": 6.61,
       "unit": "m²",
-      "detail": "sin cielorraso modelado"
+      "detail": "existente 6,61 + sin propuesta · buña 10,29 ml · h 2,40"
     },
     {
-      "label": "07 · Cocina",
-      "group": "Locales · 01. Planta Alta",
+      "label": "10 · Acceso Servicio · PB",
+      "group": "Locales · TC-02",
       "count": 1,
-      "value": 20.87,
+      "value": 5.03,
       "unit": "m²",
-      "detail": "parcial (CE-PA-06)"
+      "detail": "propuesto 5,03 (CP-PB-04) · buña 9,15 ml · h 2,50"
     },
     {
-      "label": "09 · Living",
-      "group": "Locales · 01. Planta Alta",
+      "label": "12 · Quincho · PB",
+      "group": "Locales · TC-02",
       "count": 1,
-      "value": 16.14,
+      "value": 45.01,
       "unit": "m²",
-      "detail": "sin cielorraso modelado"
+      "detail": "existente 16,54 + propuesto 28,47 (CP-PB-05) · buña 28,47 ml · h 2,50"
     },
     {
-      "label": "10 · Puente",
-      "group": "Locales · 01. Planta Alta",
+      "label": "13 · Cuarto ppal · PB",
+      "group": "Locales · TC-02",
       "count": 1,
-      "value": 2.18,
+      "value": 14.82,
       "unit": "m²",
-      "detail": "sin cielorraso modelado"
+      "detail": "propuesto 14,82 (CP-PB-06) · buña 15,63 ml · h 2,60"
     },
     {
-      "label": "02 · Sala de Maquinas",
-      "group": "Locales · 01. Planta Alta",
-      "count": 1,
-      "value": 4.79,
-      "unit": "m²",
-      "detail": "con cielorraso (CE-PA-02)"
-    },
-    {
-      "label": "14 · Vestidor ppal",
-      "group": "Locales · 00. Planta Baja",
+      "label": "14 · Vestidor ppal · PB",
+      "group": "Locales · TC-02",
       "count": 1,
       "value": 7.57,
       "unit": "m²",
-      "detail": "sin cielorraso modelado"
+      "detail": "propuesto 7,57 (CP-PB-07) · buña 12,21 ml · h 2,60"
     },
     {
-      "label": "08 · Lavadero",
-      "group": "Locales · 00. Planta Baja",
+      "label": "15 · Baño ppal · PB",
+      "group": "Locales · TC-01",
       "count": 1,
-      "value": 6.64,
+      "value": 8.98,
       "unit": "m²",
-      "detail": "parcial (CE-PB-07)"
+      "detail": "existente 8,98 + sin propuesta · buña 13,82 ml · 1 tapa · h 2,60"
+    },
+    {
+      "label": "16 · Pasillo · PB",
+      "group": "Locales · TC-02",
+      "count": 1,
+      "value": 26.08,
+      "unit": "m²",
+      "detail": "propuesto 26,08 (CP-PB-08) · buña 32,11 ml · h 2,60"
+    },
+    {
+      "label": "17 · Hall · PB",
+      "group": "Locales · TC-02",
+      "count": 1,
+      "value": 27.13,
+      "unit": "m²",
+      "detail": "propuesto 27,13 (CP-PB-09) · buña 21,78 ml · posible doble altura: a confirmar"
+    },
+    {
+      "label": "01 · Sala de TV · PA",
+      "group": "Locales · TC-02",
+      "count": 1,
+      "value": 14.99,
+      "unit": "m²",
+      "detail": "existente 14,99 + sin propuesta · buña 15,50 ml · h 2,70"
+    },
+    {
+      "label": "02 · Sala de Maquinas · PA",
+      "group": "Locales · TC-02",
+      "count": 1,
+      "value": 4.79,
+      "unit": "m²",
+      "detail": "existente 4,79 + sin propuesta · buña 9,10 ml · 1 tapa · h 2,70"
+    },
+    {
+      "label": "03 · Playroom · PA",
+      "group": "Locales · TC-02",
+      "count": 1,
+      "value": 32.39,
+      "unit": "m²",
+      "detail": "propuesto 32,39 (CP-PA-01) · buña 24,44 ml · bajo cubierta, sigue la pendiente (26,7°)"
+    },
+    {
+      "label": "04 · Baño PA · PA",
+      "group": "Locales · TC-01",
+      "count": 1,
+      "value": 5.81,
+      "unit": "m²",
+      "detail": "existente 5,81 + sin propuesta · buña 10,61 ml · 1 tapa · h 2,70"
+    },
+    {
+      "label": "05 · Toilette · PA",
+      "group": "Locales · TC-01",
+      "count": 1,
+      "value": 5.01,
+      "unit": "m²",
+      "detail": "existente 5,01 + sin propuesta · buña 9,25 ml · 1 tapa · h 2,50"
+    },
+    {
+      "label": "06 · Cava · PA",
+      "group": "Locales · TC-02",
+      "count": 1,
+      "value": 8.33,
+      "unit": "m²",
+      "detail": "existente 8,33 + sin propuesta · buña 11,81 ml · h 2,50"
+    },
+    {
+      "label": "07 · Cocina · PA",
+      "group": "Locales · TC-01",
+      "count": 1,
+      "value": 20.87,
+      "unit": "m²",
+      "detail": "existente 8,51 + propuesto 12,36 (CP-PA-02) · buña 20,23 ml · h 2,50"
+    },
+    {
+      "label": "08 · Comedor · PA",
+      "group": "Locales · TC-02",
+      "count": 1,
+      "value": 24.3,
+      "unit": "m²",
+      "detail": "propuesto 24,30 (CP-PA-03) · buña 19,72 ml · bajo cubierta, sigue la pendiente (16,8°)"
+    },
+    {
+      "label": "09 · Living · PA",
+      "group": "Locales · TC-02",
+      "count": 1,
+      "value": 18.07,
+      "unit": "m²",
+      "detail": "propuesto 18,07 (CP-PA-04) · buña 16,46 ml · bajo cubierta, sigue la pendiente (26,7°)"
+    },
+    {
+      "label": "10 · Puente · PA",
+      "group": "Locales · TC-02",
+      "count": 1,
+      "value": 2.18,
+      "unit": "m²",
+      "detail": "propuesto 2,18 (CP-PA-05) · buña 7,06 ml · posible doble altura: a confirmar"
+    },
+    {
+      "label": "01 · SM · PE",
+      "group": "Locales · TC-02",
+      "count": 1,
+      "value": 7.31,
+      "unit": "m²",
+      "detail": "propuesto 7,31 (CP-PE-01) · buña 10,25 ml · bajo cubierta, sigue la pendiente (26,1°)"
+    },
+    {
+      "label": "02 · Hall PE · PE",
+      "group": "Locales · TC-02",
+      "count": 1,
+      "value": 7.59,
+      "unit": "m²",
+      "detail": "propuesto 7,59 (CP-PE-02) · buña 11,02 ml · bajo cubierta, sigue la pendiente (16,8°)"
+    },
+    {
+      "label": "03 · Atelier · PE",
+      "group": "Locales · TC-02",
+      "count": 1,
+      "value": 20.22,
+      "unit": "m²",
+      "detail": "propuesto 20,22 (CP-PE-03) · buña 17,79 ml · bajo cubierta, sigue la pendiente (16,8°)"
+    },
+    {
+      "label": "11 · Ascensor · PB",
+      "group": "Sin cielorraso (decisión)",
+      "count": 1,
+      "value": 3.34,
+      "unit": "m²",
+      "detail": "pasadizo del ascensor"
     }
   ],
-  "quantityNote": "m² según Revit (cara inferior). La cobertura por local se toma en el centro del local; \"parcial\" = hay cielorraso que cubre más del 10 % del local sin llegar al centro.",
+  "quantityNote": "Propuesta a confirmar. Área propuesta = local − cielorrasos existentes (geometría del modelo, límite Finish). Bajo cubierta inclinada se computa en verdadera magnitud: Playroom (26,7°), Comedor (16,8°), Living (26,7°), SM (26,1°), Hall PE (16,8°), Atelier (16,8°). Posible doble altura (escalera / puente), computado en planta: Hall, Puente. Ascensor excluido.",
   "notModeled": [
-    "15 locales sin cielorraso modelado (incluye toda la planta Entrepiso)",
-    "TC-03 \"Plain\" es un tipo genérico (perfilería 45 + placa 12 mm)",
-    "Buñas, tapas de inspección, cajones y gargantas",
+    "Cielorrasos propuestos (CP): solo dibujados en 2D, no modelados",
+    "Buñas, tapas de inspección y perfilería",
     "Pintura de cielorrasos"
   ],
   "decisions": [
-    "Cielorrasos documentados en planta de cielorrasos (vista desde abajo) por nivel.",
-    "Códigos TC/CE solo como anotación (no escritos en Mark)."
+    "Hipótesis: zonas húmedas TC-01 RH, resto TC-02 ST; TC-03 se reparte; parciales se completan; altura del local o del vecino.",
+    "Documentado con regiones y detalles 2D sobre plantas de cielorraso: no se tocaron geometría ni tipos.",
+    "Códigos TC/CE/CP solo como anotación (no Mark).",
+    "Ascensor sin cielorraso (pasadizo).",
+    "Bajo cubierta en verdadera magnitud: Playroom (26,7°), Comedor (16,8°), Living (26,7°), SM (26,1°), Hall PE (16,8°), Atelier (16,8°)."
   ],
   "questions": [
-    "¿Qué cielorraso llevan los locales sin cielorraso modelado (suspendido de placa, aplicado bajo losa, losa vista)?",
-    "¿TC-03 (\"Plain\", planta alta) es Durlock ST como en PB? Hoy es un tipo genérico.",
-    "¿Hay cajones, gargantas o buñas perimetrales a documentar?",
-    "¿Escribimos los códigos TC/CE en el modelo (Mark)?"
+    "¿Confirmás la propuesta (húmedos placa RH, resto ST, buña perimetral Z 15, tapas 60×60)?",
+    "Comedor, Living, Playroom y la Planta Entrepiso quedan bajo la cubierta inclinada (Playroom (26,7°), Comedor (16,8°), Living (26,7°), SM (26,1°), Hall PE (16,8°), Atelier (16,8°)): ¿cielorraso siguiendo la pendiente (como se computó) o plano?",
+    "¿Hall, Puente son doble altura (escalera)? Hoy se computan en planta como cielorraso común.",
+    "¿Modelamos los cielorrasos propuestos en Revit? (cambia el modelo: requiere tu OK)"
   ],
   "budget": {
-    "revision": "R27",
-    "note": "Partidas a cotizar sin solapes; informative = referencia (no se suma).",
+    "revision": "R28",
+    "note": "Partidas sin solapes: la placa no incluye estructura ni pintura; informative = referencia.",
     "lines": [
       {
-        "id": "cielorraso-tc-01",
-        "label": "Cielorraso placa Knauf RH 12,5 (resistente a humedad)",
-        "value": 31.23,
+        "id": "cielorraso-placa-rh",
+        "label": "Placa RH 12,5 colocada con masillado (TC-01)",
+        "value": 69.48,
         "unit": "m²",
-        "detail": "TC-01",
+        "detail": "existente + propuesto; sin estructura ni pintura",
         "informative": false
       },
       {
-        "id": "cielorraso-tc-02",
-        "label": "Cielorraso placa Knauf ST 12,5",
-        "value": 29.77,
+        "id": "cielorraso-placa-st",
+        "label": "Placa ST 12,5 colocada con masillado (TC-02)",
+        "value": 308.31,
         "unit": "m²",
-        "detail": "TC-02",
+        "detail": "existente + propuesto; sin estructura ni pintura",
         "informative": false
       },
       {
-        "id": "cielorraso-tc-03",
-        "label": "Cielorraso genérico: perfilería 45 + placa 12 mm",
-        "value": 47.7,
+        "id": "cielorraso-perfileria",
+        "label": "Estructura suspendida de perfiles galvanizados",
+        "value": 377.79,
         "unit": "m²",
-        "detail": "TC-03",
+        "detail": "soleras + montantes 35 c/0,40, velas c/1,00",
         "informative": false
       },
       {
-        "id": "faltante-sin-cielorraso",
-        "label": "Locales sin cielorraso modelado (faltante, no es partida)",
-        "value": 194.63,
+        "id": "cielorraso-bunas",
+        "label": "Buña perimetral Z 15 mm",
+        "value": 419.76,
+        "unit": "ml",
+        "detail": "perímetro de los locales",
+        "informative": false
+      },
+      {
+        "id": "cielorraso-tapas-inspeccion",
+        "label": "Tapas de inspección 60×60",
+        "value": 8,
+        "unit": "u",
+        "detail": "baños, toilettes y sala de máquinas",
+        "informative": false
+      },
+      {
+        "id": "cielorraso-pintura",
+        "label": "Pintura de cielorrasos (látex; antihongos en RH)",
+        "value": 377.79,
         "unit": "m²",
-        "detail": "15 locales",
+        "detail": "RH + ST",
+        "informative": false
+      },
+      {
+        "id": "cielorraso-total",
+        "label": "Cielorrasos (total propuesta)",
+        "value": 377.79,
+        "unit": "m²",
+        "detail": "referencia",
         "informative": true
       },
       {
-        "id": "faltante-parcial",
-        "label": "Locales con cielorraso parcial",
-        "value": 101.46,
+        "id": "cielorraso-existente",
+        "label": "Existente modelado",
+        "value": 108.38,
         "unit": "m²",
-        "detail": "4 locales",
+        "detail": "referencia",
         "informative": true
       },
       {
-        "id": "cielorrasos-modelados",
-        "label": "Cielorrasos modelados",
-        "value": 108.7,
+        "id": "cielorraso-propuesto",
+        "label": "Propuesto (nuevo)",
+        "value": 269.41,
         "unit": "m²",
-        "detail": "14 piezas · 3 tipos",
+        "detail": "referencia",
         "informative": true
       }
     ]
-  }
+  },
+  "status": "propuesta"
 }
