@@ -23,6 +23,42 @@ export function concreteTotals(m:StructureManifest){
  return {wallsByLevel,losasByLevel,platea:{area:sum(platea,s=>s.area_m2),volume:parts.platea},parts,total:parts.walls+parts.losas+parts.platea,withoutConcrete:{count:withoutConcrete.length,area:sum(withoutConcrete,s=>s.area_m2)}};
 }
 
+// Cuantías de acero (kg por m³ de hormigón) mientras no haya cálculo ni armaduras en el modelo: valores usuales
+// para vivienda, a reemplazar por los del calculista.
+export const STEEL_KG_M3={platea:80,muros:60,losas:90,vigas:110,base:50};
+export type StructureLine={id:string;label:string;quantity:number;unit:string;detail?:string;informative?:boolean};
+const list=(codes:string[])=>codes.length>4?`${codes[0]} a ${codes.at(-1)}`:codes.join(', ');
+// Partidas para el presupuesto, sin solapes con otros rubros: cada elemento suma en una sola partida de hormigón,
+// el acero sale de la cuantía de su partida y el encofrado de las caras a moldear.
+// Muros de fachada y bajo escalera van en Albañilería, los del vaso en Pileta, la base de acceso en Exteriores
+// y la madera del techo en Cubierta.
+export function structureBudget(m:StructureManifest):StructureLine[]{
+ const code=new Map((m.codes||[]).map(c=>[c.id,c.code])),slabs=m.slabsAndFoundations.map(s=>({...s,code:code.get(s.id)||s.id}));
+ const concrete=slabs.filter(s=>(s.concreteVolume_m3||0)>0),vol=(rows:{concreteVolume_m3:number|null}[])=>sum(rows,s=>s.concreteVolume_m3||0);
+ const platea=concrete.filter(s=>/platea/i.test(s.role)),onGround=concrete.filter(s=>!/platea/i.test(s.role)&&/^LO-(PB|AC)/.test(s.code));
+ const losas=concrete.filter(s=>!platea.includes(s)&&!onGround.includes(s)),pending=slabs.filter(s=>!s.concreteVolume_m3&&!/^LO-PB/.test(s.code));
+ const walls=m.concreteWalls.elements,beams=(m.codes||[]).filter(c=>c.kind==='VE');
+ const tie=beams.filter(b=>b.level?.startsWith('00')),meet=beams.filter(b=>!tie.includes(b));
+ const concreteLines=[
+  {id:'platea',label:'Hormigón de platea',quantity:vol(platea),steel:STEEL_KG_M3.platea,detail:`${list(platea.map(s=>s.code))} · ${n(sum(platea,s=>s.area_m2))} m² · e ${n((platea[0]?.concreteLayer_m||0)*100)} cm`},
+  {id:'muros',label:'Hormigón de muros (20 cm)',quantity:sum(walls,w=>w.volume_m3),steel:STEEL_KG_M3.muros,detail:`${walls.length} muros MH · ${n(sum(walls,w=>w.area_m2))} m²`},
+  ...onGround.map(s=>({id:s.code==='LO-PB-01'?'losa-pb':'base-acceso',label:s.code==='LO-PB-01'?'Hormigón de losa sobre terreno (PB)':'Hormigón de base de acceso (se cotiza en Exteriores)',informative:s.code!=='LO-PB-01',quantity:s.concreteVolume_m3||0,steel:s.code==='LO-PB-01'?STEEL_KG_M3.losas:STEEL_KG_M3.base,detail:`${s.code} · ${n(s.area_m2)} m² · e ${n((s.concreteLayer_m||0)*100)} cm`} as {id:string;label:string;quantity:number;steel:number;detail:string;informative?:boolean})),
+  {id:'losas',label:'Hormigón de losas elevadas',quantity:vol(losas),steel:STEEL_KG_M3.losas,detail:`${losas.length} losas PA/PE · ${n(sum(losas,s=>s.area_m2))} m²`},
+  {id:'vigas',label:'Hormigón de vigas de encadenado',quantity:sum(tie,b=>b.volume_m3||0),steel:STEEL_KG_M3.vigas,detail:`${list(tie.map(b=>b.code))} · ${n(sum(tie,b=>b.length_m||0))} m`},
+  {id:'vigas-encuentro',label:'Hormigón de vigas de encuentro de techos',quantity:sum(meet,b=>b.volume_m3||0),steel:STEEL_KG_M3.muros,detail:`${list(meet.map(b=>b.code))} · ${n(sum(meet,b=>b.area_m2||0))} m²`},
+ ].filter(l=>l.quantity>0);
+ const priced=concreteLines.filter(l=>!l.informative),steel=sum(priced,l=>l.quantity*l.steel);
+ const formWalls=2*(sum(walls,w=>w.area_m2)+sum(beams,b=>b.area_m2||0)),formSlabs=sum(losas,s=>s.area_m2);
+ return [
+  ...concreteLines.map(({steel:_,...l})=>({...l,unit:'m³'})),
+  {id:'acero',label:'Acero en barras (estimado por cuantía)',quantity:steel,unit:'kg',detail:priced.map(l=>`${l.id} ${l.steel}`).join(' · ')+' kg/m³'},
+  {id:'encofrado-muros',label:'Encofrado de muros y vigas (2 caras)',quantity:formWalls,unit:'m²'},
+  {id:'encofrado-losas',label:'Encofrado de fondo de losas',quantity:formSlabs,unit:'m²',detail:'platea y losas sobre terreno sin fondo'},
+  {id:'losas-a-confirmar',label:'Losas a confirmar (sin capa de hormigón)',quantity:sum(pending,s=>s.area_m2),unit:'m²',detail:list(pending.map(s=>s.code)),informative:true},
+ ].filter(l=>l.quantity>0);
+}
+const n=(v:number)=>v.toLocaleString('es-AR',{maximumFractionDigits:2});
+
 // Avisos de Revit en castellano llano.
 const WARNINGS:[RegExp,string][]=[
  [/attached to, but miss/i,'Muros enlazados a un techo o losa que no alcanzan'],

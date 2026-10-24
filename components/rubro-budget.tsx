@@ -5,7 +5,7 @@ import {useEffect,useMemo,useState} from 'react';
 import {Download,Upload} from 'lucide-react';
 import {RUBROS,type RubroManifest} from '../lib/rubros';
 import {budgetTotals,type BudgetItem} from '../lib/openings-budget';
-import {concreteTotals,type StructureManifest} from '../lib/structure';
+import {structureBudget,type StructureManifest} from '../lib/structure';
 import {csv,exportCsv,systems} from '../lib/procurement';
 import {computeBudget,budgetSheet,globalId,linesFromManifest,manifestStatus,pricesFromRows,sanitaryLines,type RubroBudgetState,type RubroSource} from '../lib/rubro-budget';
 
@@ -29,11 +29,8 @@ async function loadSources({base,sanitary}:{base:string;sanitary?:string}):Promi
  sources.push({key:'sanitaria',name:'Sanitarias',status:sanLines.length?'modelado':'sin-computo',lines:sanLines,note:'Cañerías: metros reales del modelo. Artefactos y accesorios se cotizan aparte o en el global.'});
  const ob=open?budgetTotals(open.items):null;
  sources.push({key:'aberturas',name:'Aberturas',status:ob?'modelado':'sin-computo',lines:(ob?.rows||[]).map(r=>({id:`aberturas:${r.key}`,label:`${KIND[r.category]||r.category} ${r.type} · ${r.size.replace(/\./g,',')}`,quantity:r.count,unit:'u',detail:`${n2(r.area)} m² · ${r.codes.join(' ')}`}))});
- const ct=str?concreteTotals(str):null;
- sources.push({key:'estructura',name:'Estructura',status:ct?'modelado':'sin-computo',note:'Hormigón del modelo. Armaduras y encofrados: precio por m³ que los incluya, o global.',lines:ct?[
-  {id:'estructura:muros',label:'Hormigón de muros',quantity:ct.parts.walls,unit:'m³'},
-  {id:'estructura:losas',label:'Hormigón de losas',quantity:ct.parts.losas,unit:'m³'},
-  {id:'estructura:platea',label:'Hormigón de platea',quantity:ct.parts.platea,unit:'m³'}].filter(l=>l.quantity>0):[]});
+ const sl=str?structureBudget(str):[];
+ sources.push({key:'estructura',name:'Estructura',status:sl.length?'modelado':'sin-computo',note:'Hormigón del modelo por elemento. Acero estimado por cuantía (el modelo no tiene armaduras) y encofrado por caras a moldear.',lines:sl.map(l=>({...l,id:`estructura:${l.id}`}))});
  RUBROS.forEach((r,i)=>{const m=rubros[i];sources.push({key:r.key,name:r.name,status:manifestStatus(m),lines:m?linesFromManifest(r.key,m):[],note:m?.quantityNote})});
  return sources;
 }

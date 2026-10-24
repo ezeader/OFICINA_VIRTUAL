@@ -33,3 +33,14 @@ test('element sheets are grouped by element type after the plans and elevations'
  const g=groupStructureSheets([{number:'EST-PB-01'},{number:'EST-EL-MH-PB-01',element:'MH-PB-01',kind:'element'},{number:'EST-EL-LO-PA-01',element:'LO-PA-01',kind:'element'},{number:'EST-REV-01'},{number:'EST-SEC-PB-01',level:'00. Planta Baja'}]);
  assert.deepEqual(g.map(x=>x.title),['Índice, plantas y fundación','Alzados de muros · 00. Planta Baja','Fichas de losas','Fichas de muros','Casos de revisión']);
 });
+import {structureBudget} from '../lib/structure.ts';
+test('budget lines have stable unique ids and every concrete element counts once',()=>{
+ const lines=structureBudget(m),ids=lines.map(l=>l.id);
+ assert.equal(new Set(ids).size,ids.length);
+ for(const id of ['platea','muros','losas','vigas','acero','encofrado-muros','encofrado-losas'])assert.ok(ids.includes(id),id);
+ const concrete=lines.filter(l=>l.unit==='m³').reduce((n,l)=>n+l.quantity,0);
+ const slabs=m.slabsAndFoundations.reduce((n,s)=>n+(s.concreteVolume_m3||0),0),beams=m.codes.filter(c=>c.kind==='VE').reduce((n,c)=>n+c.volume_m3,0);
+ assert.ok(Math.abs(concrete-(m.concreteWalls.totals.volume_m3+slabs+beams))<0.01);
+ assert.ok(lines.find(l=>l.id==='losas-a-confirmar')?.informative);
+ assert.ok(lines.find(l=>l.id==='base-acceso')?.informative,'la base de acceso se cotiza en Exteriores');
+});
