@@ -6,7 +6,7 @@ export type Slab={id:string;type:string;level:string;role:string;area_m2:number;
 export type Group={key:string;count:number;area_m2:number;volume_m3:number;length_m:number};
 export type StructureCase={id:string;title:string;elementIds:string[];codes:string[];observation:string;proposedCorrection:string;status?:string};
 export type StructureSheet={number:string;title:string;level?:string|null;sector?:string|null;image?:string;preview?:string;thumbnail?:string;pdf?:string;sheetId?:string;views?:StructureView[];element?:string;kind?:string;rebar?:string};
-export type StructureManifest={model:string;readAt:string;revision:string;status:string;levels:{name:string}[];concreteWalls:{type:string;count:number;elements:Wall[];totals:{length_m:number;area_m2:number;volume_m3:number}};otherStructuralWalls:Group[];slabsAndFoundations:Slab[];framing:{note?:string;byType:Group[]};roofs:Group[];notModeled:string[];warnings:{total:number;byText:{text:string;count:number}[]};reviewCases:StructureCase[];proposal:{sheets:{number:string;title:string}[]};openQuestions?:string[];sheets?:StructureSheet[];codes?:StructureCode[];decisions?:string[];codesWrittenToModel?:boolean;documentationRevision?:string};
+export type StructureManifest={model:string;readAt:string;revision:string;status:string;levels:{name:string}[];concreteWalls:{type:string;count:number;elements:Wall[];totals:{length_m:number;area_m2:number;volume_m3:number}};otherStructuralWalls:Group[];slabsAndFoundations:Slab[];framing:{note?:string;byType:Group[]};roofs:Group[];notModeled:string[];warnings:{total:number;byText:{text:string;count:number}[]};reviewCases:StructureCase[];proposal:{sheets:{number:string;title:string}[]};openQuestions?:string[];sheets?:StructureSheet[];codes?:StructureCode[];decisions?:string[];codesWrittenToModel?:boolean;checks?:{loPb01VsPlatea?:{loPb01OutsidePlatea_m2:number};perimeters_m?:Record<string,number>};documentationRevision?:string};
 
 const byLevel=(a:string,b:string)=>a.localeCompare(b,'es',{numeric:true});
 const sum=<T,>(rows:T[],f:(r:T)=>number)=>rows.reduce((n,r)=>n+(f(r)||0),0);
@@ -28,7 +28,8 @@ export function concreteTotals(m:StructureManifest){
 export const STEEL_KG_M3={platea:80,muros:60,losas:90,vigas:110,base:50};
 export type StructureLine={id:string;label:string;quantity:number;unit:string;detail?:string;informative?:boolean};
 const list=(codes:string[])=>codes.length>4?`${codes[0]} a ${codes.at(-1)}`:codes.join(', ');
-// Toda la Planta Baja apoya sobre la platea (decisión del usuario 2026-10-24): LO-PB-01 queda como referencia.
+// Toda la Planta Baja apoya sobre la platea (decisión del usuario 2026-10-24): la huella de LO-PB-01 que queda fuera
+// de la platea (checks de Revit) se suma a la platea con su espesor; LO-PB-01 queda como referencia.
 // Partidas para el presupuesto, sin solapes con otros rubros: cada elemento suma en una sola partida de hormigón,
 // el acero sale de la cuantía de su partida y el encofrado de las caras a moldear.
 // Muros de fachada y bajo escalera van en Albañilería, los del vaso en Pileta, la base de acceso en Exteriores
@@ -40,21 +41,25 @@ export function structureBudget(m:StructureManifest):StructureLine[]{
  const losas=concrete.filter(s=>!platea.includes(s)&&!onGround.includes(s)),pending=slabs.filter(s=>!s.concreteVolume_m3&&!/^LO-PB/.test(s.code));
  const walls=m.concreteWalls.elements,beams=(m.codes||[]).filter(c=>c.kind==='VE');
  const tie=beams.filter(b=>b.level?.startsWith('00')),meet=beams.filter(b=>!tie.includes(b));
+ const grow=m.checks?.loPb01VsPlatea?.loPb01OutsidePlatea_m2||0,plateaE=platea[0]?.concreteLayer_m||0,perim=m.checks?.perimeters_m||{};
  const concreteLines=[
-  {id:'platea',label:'Hormigón de platea',quantity:vol(platea),steel:STEEL_KG_M3.platea,detail:`${list(platea.map(s=>s.code))} · ${n(sum(platea,s=>s.area_m2))} m² · e ${n((platea[0]?.concreteLayer_m||0)*100)} cm`},
+  {id:'platea',label:'Hormigón de platea',quantity:vol(platea)+grow*plateaE,steel:STEEL_KG_M3.platea,detail:`${list(platea.map(s=>s.code))} · ${n(sum(platea,s=>s.area_m2)+grow)} m²${grow?` (incluye ${n(grow)} m² de LO-PB-01, a extender en el modelo)`:''} · e ${n(plateaE*100)} cm`},
   {id:'muros',label:'Hormigón de muros (20 cm)',quantity:sum(walls,w=>w.volume_m3),steel:STEEL_KG_M3.muros,detail:`${walls.length} muros MH · ${n(sum(walls,w=>w.area_m2))} m²`},
-  ...onGround.map(s=>({id:s.code==='LO-PB-01'?'losa-pb':'base-acceso',label:s.code==='LO-PB-01'?'Losa PB (va sobre la platea, no se cotiza aparte)':'Hormigón de base de acceso (se cotiza en Exteriores)',informative:true,quantity:s.concreteVolume_m3||0,steel:s.code==='LO-PB-01'?STEEL_KG_M3.losas:STEEL_KG_M3.base,detail:`${s.code} · ${n(s.area_m2)} m² · e ${n((s.concreteLayer_m||0)*100)} cm`} as {id:string;label:string;quantity:number;steel:number;detail:string;informative?:boolean})),
+  ...onGround.map(s=>({id:s.code==='LO-PB-01'?'losa-pb':'base-acceso',label:s.code==='LO-PB-01'?'Losa PB (pasa a ser platea, no se cotiza aparte)':'Hormigón de base de acceso (se cotiza en Exteriores)',informative:true,quantity:s.concreteVolume_m3||0,steel:s.code==='LO-PB-01'?STEEL_KG_M3.losas:STEEL_KG_M3.base,detail:`${s.code} · ${n(s.area_m2)} m² · e ${n((s.concreteLayer_m||0)*100)} cm`} as {id:string;label:string;quantity:number;steel:number;detail:string;informative?:boolean})),
   {id:'losas',label:'Hormigón de losas elevadas',quantity:vol(losas),steel:STEEL_KG_M3.losas,detail:`${losas.length} losas PA/PE · ${n(sum(losas,s=>s.area_m2))} m²`},
   {id:'vigas',label:'Hormigón de vigas de encadenado',quantity:sum(tie,b=>b.volume_m3||0),steel:STEEL_KG_M3.vigas,detail:`${list(tie.map(b=>b.code))} · ${n(sum(tie,b=>b.length_m||0))} m`},
   {id:'vigas-encuentro',label:'Hormigón de vigas de encuentro de techos',quantity:sum(meet,b=>b.volume_m3||0),steel:STEEL_KG_M3.muros,detail:`${list(meet.map(b=>b.code))} · ${n(sum(meet,b=>b.area_m2||0))} m²`},
  ].filter(l=>l.quantity>0);
  const priced=concreteLines.filter(l=>!l.informative),steel=sum(priced,l=>l.quantity*l.steel);
  const formWalls=2*(sum(walls,w=>w.area_m2)+sum(beams,b=>b.area_m2||0)),formSlabs=sum(losas,s=>s.area_m2);
+ // Bordes: perímetro de Revit × espesor de hormigón (platea y losas elevadas).
+ const edges=sum(platea,s=>(perim[s.code]||0)*(s.concreteLayer_m||0))+sum(losas,s=>(perim[s.code]||0)*(s.concreteLayer_m||0));
  return [
   ...concreteLines.map(({steel:_,...l})=>({...l,unit:'m³'})),
   {id:'acero',label:'Acero en barras (estimado por cuantía)',quantity:steel,unit:'kg',detail:priced.map(l=>`${l.id} ${l.steel}`).join(' · ')+' kg/m³'},
   {id:'encofrado-muros',label:'Encofrado de muros y vigas (2 caras)',quantity:formWalls,unit:'m²'},
-  {id:'encofrado-losas',label:'Encofrado de fondo de losas',quantity:formSlabs,unit:'m²',detail:'platea y losas sobre terreno sin fondo'},
+  {id:'encofrado-losas',label:'Encofrado de fondo de losas',quantity:formSlabs,unit:'m²',detail:`${losas.length} losas PA/PE; la platea no lleva fondo`},
+  {id:'encofrado-bordes',label:'Encofrado de bordes de platea y losas',quantity:edges,unit:'m²',detail:'perímetro × espesor de hormigón'},
   {id:'losas-a-confirmar',label:'Losas a confirmar (sin capa de hormigón)',quantity:sum(pending,s=>s.area_m2),unit:'m²',detail:list(pending.map(s=>s.code)),informative:true},
  ].filter(l=>l.quantity>0);
 }

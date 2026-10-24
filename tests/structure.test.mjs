@@ -40,7 +40,8 @@ test('budget lines have stable unique ids and every concrete element counts once
  for(const id of ['platea','muros','losas','vigas','acero','encofrado-muros','encofrado-losas'])assert.ok(ids.includes(id),id);
  const concrete=lines.filter(l=>l.unit==='m³').reduce((n,l)=>n+l.quantity,0);
  const slabs=m.slabsAndFoundations.reduce((n,s)=>n+(s.concreteVolume_m3||0),0),beams=m.codes.filter(c=>c.kind==='VE').reduce((n,c)=>n+c.volume_m3,0);
- assert.ok(Math.abs(concrete-(m.concreteWalls.totals.volume_m3+slabs+beams))<0.01);
+ const grow=(m.checks?.loPb01VsPlatea?.loPb01OutsidePlatea_m2||0)*0.15;
+ assert.ok(Math.abs(concrete-(m.concreteWalls.totals.volume_m3+slabs+beams+grow))<0.01,'cada elemento una vez, más la platea extendida bajo LO-PB-01');
  assert.ok(lines.find(l=>l.id==='losas-a-confirmar')?.informative);
  assert.ok(lines.find(l=>l.id==='base-acceso')?.informative,'la base de acceso se cotiza en Exteriores');
  assert.ok(lines.find(l=>l.id==='losa-pb')?.informative,'la PB va sobre la platea');
