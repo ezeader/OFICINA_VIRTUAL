@@ -4,7 +4,7 @@
 type Param={name:string;value:string};
 export type BudgetItem={id:string;code:string;category:string;type:string;family?:string;width?:string|null;height?:string|null;panelCount?:number;materials?:string[];parameters:Param[];panels?:{width_m:number;height_m:number;type?:string}[];survey?:Survey};
 // Ficha de relevamiento que arma la sesión de Revit (R9): tiene prioridad sobre la lectura de parámetros.
-export type Survey={openingType?:string|null;notes?:string[];description?:string|null;glazing?:{material?:string|null;spec?:string|null;thickness_m?:string|null;area_m2?:number|null;panes?:number}|null;frame?:{material?:string|null;width_m?:string|null;depth_m?:string|null;subframe?:string|null;leaf?:string|null;handle?:string|null;profiles?:{type:string;material?:string;count:number;length_m:number}[]}|null;thermal?:{U?:string|null}|null};
+export type Survey={openingType?:string|null;notes?:string[];description?:string|null;glazing?:{material?:string|null;spec?:string|null;thickness_m?:string|null;area_m2?:number|null;panes?:number}|null;frame?:{material?:string|null;exterior?:string|null;width_m?:string|null;depth_m?:string|null;subframe?:string|null;leaf?:string|null;handle?:string|null;profiles?:{type:string;material?:string;count:number;length_m:number}[]}|null;thermal?:{U?:string|null}|null};
 const p=(i:BudgetItem,name:string)=>{const v=i.parameters.find(x=>x.name===name)?.value?.trim();return v&&v!=='<None>'&&v!=='None'?v:undefined};
 const num=(v?:string|null)=>{if(!v)return null;const n=parseFloat(v.replace(',','.'));return Number.isFinite(n)?n:null};
 const mm2ToM2=(v?:string)=>{const n=num(v);return n==null?undefined:`${(n/1e6).toLocaleString('es-AR',{maximumFractionDigits:2})} m²`};
@@ -56,6 +56,18 @@ export function surveySpecs(i:BudgetItem):{label:string;value?:string}[]{
   {label:'Aislación térmica',value:p(i,'TransmitanciaTermica')?'U = '+p(i,'TransmitanciaTermica'):undefined},
   {label:'Oscilobatiente / manija',value:p(i,'Oscilobatiente')||p(i,'Manija')?[p(i,'Oscilobatiente')&&'oscilobatiente '+yes(p(i,'Oscilobatiente')),p(i,'Manija')&&'manija '+yes(p(i,'Manija'))].filter(Boolean).join(' · '):undefined},
  ];
+}
+
+// Nombres de material o familia que pone Revit por defecto: no le dicen nada al cliente ni al proveedor.
+const GENERIC=/^(glass|sash|default|wood|wood sheathing|chipboard|metal|generic|frame|panel|puertas?|ventanas?|<by category>)$/i;
+const real=(v?:string|null)=>(v||'').split(',').map(x=>x.trim()).filter(x=>x&&!GENERIC.test(x)&&!/gen[eé]rico/i.test(x)).join(', ')||undefined;
+// Línea corta para la planilla de carpinterías: apertura, y vidrio y marco solo si son datos reales del relevamiento.
+export function scheduleSpecs(i:BudgetItem):{label:string;value:string}[]{
+ const s=i.survey,specs=surveySpecs(i),of=(label:string)=>specs.find(x=>x.label===label)?.value;
+ const opening=(clean(s?.openingType)||of('Apertura')||of('Tipo de cerramiento'))?.replace(/\s*\(.*\)$/,'');
+ const glass=s?(s.glazing?.area_m2!==0?real(s.glazing?.material)?.replace(/^Cristal\s*-\s*/i,''):undefined):real(of('Vidrio'));
+ const frame=s?real(s.frame?.exterior)||real(s.frame?.material):real(of('Marco'));
+ return [{label:'Apertura',value:opening},{label:'Vidrio',value:glass},{label:'Marco',value:frame}].filter((x):x is {label:string;value:string}=>!!x.value);
 }
 
 // Ancho y alto de cálculo: ventanas y puertas por su abertura; muros cortina por largo y altura del conjunto.

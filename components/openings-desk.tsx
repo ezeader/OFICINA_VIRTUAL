@@ -1,14 +1,14 @@
 'use client';
-import {useCallback,useEffect,useMemo,useState,type PointerEvent} from 'react';
+import {useCallback,useEffect,useMemo,useState} from 'react';
 import {ArrowLeft,Download} from 'lucide-react';
 import VectorImage from './compressed-drawing';
 import DrawingViewport from './drawing-viewport';
 import RevitOpenButton from './revit-open-button';
-import {TrimmedDrawing,OpeningTooltip,type Crop} from './opening-drawings';
+import {TrimmedDrawing,DimensionedDrawing,type Crop} from './opening-drawings';
 import {openingsHref} from '../lib/documentation-route';
 import {NOTE_KEY,correctionFor,pendingForRevit,setCorrection,type OpeningsReview} from '../lib/openings-review';
-import {buildSheets,codeTargets,groupSheets,sheetIndex,dimensionText,CATEGORY_GROUP,type SheetCard,type SheetView} from '../lib/openings-sheets';
-import {budgetCsv,budgetTotals,sizeOf,surveySpecs} from '../lib/openings-budget';
+import {buildSheets,codeTargets,groupSheets,sheetIndex,sheetSchedule,dimensionText,CATEGORY_GROUP,type SheetCard,type SheetView} from '../lib/openings-sheets';
+import {budgetCsv,budgetTotals,sizeOf,scheduleSpecs} from '../lib/openings-budget';
 import './sanitary-sheets.css';
 import './project-sanitary.css';
 import './openings-desk.css';
@@ -28,6 +28,10 @@ function sizeLine(i:Item){
  return i.width&&i.height?`${m(i.width)} × ${m(i.height)} m`:'Medidas sin dato en Revit';
 }
 const heightLine=(i:Item)=>i.category==='Curtain Walls'||!i.sill?'':`Antepecho ${m(i.sill)} · Dintel ${m(i.head)} m`;
+const c2=(n:number)=>n.toLocaleString('es-AR',{minimumFractionDigits:2,maximumFractionDigits:2});
+const sill=(i:Item)=>{const v=parseFloat(i.sill||'');return i.category!=='Curtain Walls'&&v>0?`antepecho ${c2(v)} m`:''};
+// Datos reales en una línea: apertura, vidrio y marco (sin los materiales genéricos de Revit).
+const dataLine=(i:Item)=>scheduleSpecs(i as never).map(x=>x.label==='Apertura'?x.value.replace(/^Muro cortina · /,''):x.label==='Marco'?'marco '+x.value.toLowerCase():x.value.toLowerCase()).join(' · ');
 // Las advertencias de Revit, dichas en simple.
 const plainWarning=(w:string)=>w.replace(/\.$/,'').replace('Espesor de hoja/perfil sin parámetro utilizable','falta el espesor del perfil').replace('Material genérico o sin especificación comercial','material sin especificar').replace('Medidas del conjunto: los paneles y montantes requieren su propio despiece para compra','falta el despiece de paneles').replace(/^Sin recinto contiguo.*/,'no tiene local asignado').replace(/^Verificar solape.*/,'se superpone con un muro');
 
@@ -46,8 +50,8 @@ function NoteBox({item,review,disabled,onSaveReview}:{item:Item;review?:Openings
 
 export default function OpeningsDesk({mode='documentation',caseCode,review,onSaveReview,disabled}:{mode?:'documentation'|'quantities';caseCode?:string;review?:OpeningsReview;onSaveReview?:(next:OpeningsReview)=>Promise<boolean>;disabled?:boolean}){
  const [data,setData]=useState<Data>(),[regions,setRegions]=useState<Record<string,number[]>>({}),[error,setError]=useState('');
- const [tab,setTab]=useState<Tab>('locales'),[sheetKey,setSheetKey]=useState<string|null>(null),[lightbox,setLightbox]=useState<number|null>(null),[lightCrop,setLightCrop]=useState<Crop>();
- const [hover,setHover]=useState<{item:Item;x:number;y:number}|null>(null),[copied,setCopied]=useState('');
+ const [tab,setTab]=useState<Tab>('locales'),[sheetKey,setSheetKey]=useState<string|null>(null),[lightbox,setLightbox]=useState<{list:SheetView[];index:number}|null>(null),[lightCrop,setLightCrop]=useState<Crop>();
+ const [copied,setCopied]=useState(''),lightList=lightbox?.list||[];
  useEffect(()=>{const abort=new AbortController();
   fetch('/casa-angel/openings/manifest.json',{signal:abort.signal}).then(r=>{if(!r.ok)throw Error('No se pudo cargar la documentación de aberturas.');return r.json() as Promise<Data>}).then(setData).catch(e=>{if(!abort.signal.aborted)setError(e.message)});
   fetch('/casa-angel/openings/view-regions.json',{signal:abort.signal}).then(r=>r.ok?r.json():{}).then(setRegions).catch(()=>{});
@@ -55,33 +59,33 @@ export default function OpeningsDesk({mode='documentation',caseCode,review,onSav
  const cards=useMemo(()=>data?buildSheets(data as unknown as Parameters<typeof buildSheets>[0]):[],[data]);
  const sheet=cards.find(c=>c.key===(caseCode?`case-${caseCode}`:sheetKey));
  const views=sheet?.views||[];
- useEffect(()=>{if(lightbox===null)return;const key=(e:KeyboardEvent)=>{if(e.key==='Escape')setLightbox(null);else if(e.key==='ArrowRight')setLightbox(i=>i===null?i:(i+1)%views.length);else if(e.key==='ArrowLeft')setLightbox(i=>i===null?i:(i-1+views.length)%views.length)};window.addEventListener('keydown',key);document.body.style.overflow='hidden';return()=>{window.removeEventListener('keydown',key);document.body.style.overflow=''}},[lightbox,views.length]);
+ useEffect(()=>{if(lightbox===null)return;const step=(d:number)=>setLightbox(b=>b&&{...b,index:(b.index+d+b.list.length)%b.list.length});const key=(e:KeyboardEvent)=>{if(e.key==='Escape')setLightbox(null);else if(e.key==='ArrowRight')step(1);else if(e.key==='ArrowLeft')step(-1)};window.addEventListener('keydown',key);document.body.style.overflow='hidden';return()=>{window.removeEventListener('keydown',key);document.body.style.overflow=''}},[lightbox]);
  const onLightCrop=useCallback((c:Crop)=>setLightCrop(c),[]);
  if(!data)return <p className="sheetHint">{error||'Cargando las láminas de aberturas…'}</p>;
  const byId=new Map(data.items.map(i=>[i.id,i])),byCode=new Map(data.items.map(i=>[i.code,i]));
  const pending=pendingForRevit(data.items,review);
- const hoverOn=(i?:Item)=>i?{onPointerMove:(e:PointerEvent)=>{if(!e.buttons&&e.pointerType==='mouse')setHover({item:i,x:e.clientX,y:e.clientY})},onPointerLeave:()=>setHover(null)}:{};
- function open(key:string|null){if(caseCode){window.history.replaceState(null,'',openingsHref());window.dispatchEvent(new HashChangeEvent('hashchange'))}setSheetKey(key);setLightbox(null);setHover(null);window.scrollTo({top:0})}
- const zoom=(index:number)=>{setLightCrop(undefined);setLightbox(index);setHover(null)};
+ function open(key:string|null){if(caseCode){window.history.replaceState(null,'',openingsHref());window.dispatchEvent(new HashChangeEvent('hashchange'))}setSheetKey(key);setLightbox(null);window.scrollTo({top:0})}
+ const zoom=(index:number,list:SheetView[]=views)=>{setLightCrop(undefined);setLightbox({list,index})};
  async function copyPending(){const text=['Casa Ángel · Aberturas · Correcciones para Revit','',...pending.map(r=>`${r.code} (Id ${r.id}): ${r.note||r.value||r.subject}`)].join('\n');try{await navigator.clipboard.writeText(text);setCopied('Copiado')}catch{setCopied('No se pudo copiar')}setTimeout(()=>setCopied(''),2500)}
- const elementCard=(item:Item,current?:SheetCard)=>{const other=cards.filter(c=>c.itemIds.includes(item.id)&&c.key!==current?.key&&c.tab!=='revision');return <article key={item.id} className="openingCard" {...hoverOn(item)}>
+ const elementCard=(item:Item,current?:SheetCard)=>{const other=cards.filter(c=>c.itemIds.includes(item.id)&&c.key!==current?.key&&c.tab!=='revision');return <article key={item.id} className="openingCard">
   <header><span className="openingTag">{item.code}</span><small>{KIND[item.category]}</small></header>
-  <strong>{item.type}</strong>
+  {mode==='quantities'&&<strong>{item.type}</strong>}
   <p className="openingSize">{sizeLine(item)}</p>{heightLine(item)&&<p className="openingSub">{heightLine(item)}</p>}
-  {(()=>{const s=sizeOf(item),specs=surveySpecs(item),known=specs.filter(x=>x.value),gaps=specs.filter(x=>!x.value);return <><p className="openingSub">{s?`${n2(s.area)} m² · ${n2(s.perimeter)} m de marco`:'Sin superficie calculable'}</p><dl className="openingSpecs">{known.map(x=><div key={x.label}><dt>{x.label}</dt><dd>{x.value!.replace(/(\d)\.(\d)/g,'$1,$2')}</dd></div>)}</dl>{gaps.length>0&&<p className="openingGaps">Sin dato en Revit: {gaps.map(x=>x.label.toLowerCase()).join(', ')}</p>}</>})()}
-  {item.warnings.length>0&&<p className="openingAlert">⚠ Revisar: {item.warnings.map(plainWarning).join(' · ')}</p>}{(item as {survey?:{notes?:string[]}}).survey?.notes?.map(n=><p key={n} className="openingSub">{n}</p>)}
+  {dataLine(item)&&<p className="openingData">{dataLine(item)}</p>}
+  {mode==='quantities'&&(()=>{const s=sizeOf(item);return s?<p className="openingSub">{n2(s.area)} m² · {n2(s.perimeter)} m de marco</p>:null})()}
+  {item.warnings.length>0&&<p className="openingAlert">⚠ Revisar: {item.warnings.map(plainWarning).join(' · ')}</p>}
   <NoteBox key={item.id+(correctionFor(review,item.id,NOTE_KEY)?.updatedAt||'')} item={item} review={review} disabled={disabled} onSaveReview={onSaveReview}/>
   {other.length>0&&<div className="openingLinks">{other.map(c=><button key={c.key} onClick={()=>open(c.key)}>{c.tab==='locales'?'Ver lámina de '+c.name.split(' · ').slice(1).join(' · '):'Ver lámina de la abertura'} ↗</button>)}</div>}
  </article>};
 
- if(mode==='quantities')return <section className="openingsDesk"><div className="sheetHeading"><div><p className="eyebrow">CASA ÁNGEL / ABERTURAS</p><h3>{data.items.length} aberturas únicas</h3><p>{data.counts.windows} ventanas · {data.counts.doors} puertas · {data.counts.curtainWalls} muros cortina</p></div></div>{Object.entries(CATEGORY_GROUP).map(([cat,title])=><section key={cat}><h4 className="openingGroupTitle">{title}</h4><div className="openingCards">{data.items.filter(i=>i.category===cat).map(i=>elementCard(i))}</div></section>)}{hover&&<OpeningTooltip item={hover.item} review={review} x={hover.x} y={hover.y}/>}</section>;
+ if(mode==='quantities')return <section className="openingsDesk"><div className="sheetHeading"><div><p className="eyebrow">CASA ÁNGEL / ABERTURAS</p><h3>{data.items.length} aberturas únicas</h3><p>{data.counts.windows} ventanas · {data.counts.doors} puertas · {data.counts.curtainWalls} muros cortina</p></div></div>{Object.entries(CATEGORY_GROUP).map(([cat,title])=><section key={cat}><h4 className="openingGroupTitle">{title}</h4><div className="openingCards">{data.items.filter(i=>i.category===cat).map(i=>elementCard(i))}</div></section>)}</section>;
 
  if(!sheet){
   const count=(t:Tab)=>t==='computo'?data.items.length:t==='indice'?cards.length:cards.filter(c=>c.tab===t).length;
   const targets=codeTargets(cards,data.items),levels=(data as {documentationR4?:{levels?:{level:string;image?:string;preview?:string;aspect?:number;elements?:{code:string;box:number[]}[];rooms?:{roomId:number;label:string;box:number[]}[]}[]}}).documentationR4?.levels||[];
-  const codeChip=(code:string)=>{const it=byCode.get(code),key=targets.get(code);return <button key={code} className="openingCodeChip" disabled={!key} onClick={()=>key&&open(key)} {...hoverOn(it)}>{code}</button>};
+  const codeChip=(code:string)=>{const key=targets.get(code);return <button key={code} className="openingCodeChip" disabled={!key} onClick={()=>key&&open(key)}>{code}</button>};
   // Arriba de cada nivel: su planta general con los códigos (si Revit la exporta) o el listado de códigos por local.
-  const levelOverview=(title:string,sheets:SheetCard[])=>{const plan=levels.find(l=>l.level===title),general=sheets.filter(s=>!s.details);return <div className={'openingLevel'+(plan?.preview||plan?.image?' withPlan':'')}>{plan?.preview||plan?.image?<div className="openingLevelPlan" style={{aspectRatio:String(plan.aspect||1.414)}}>{plan.preview?<img src={plan.preview} alt={'Planta general '+title}/>:<VectorImage src={plan.image} alt={'Planta general '+title}/>}{plan.rooms?.map(room=>{const card=general.find(c=>c.roomId===room.roomId);return card?<button key={room.roomId} className="openingLevelRoom" title={'Ir a '+room.label} aria-label={'Ir a la lámina de '+room.label} style={{left:`${room.box[0]*100}%`,top:`${room.box[1]*100}%`,width:`${(room.box[2]-room.box[0])*100}%`,height:`${(room.box[3]-room.box[1])*100}%`}} onClick={()=>open(card.key)}/>:null})}{plan.elements?.map(e=>{const key=targets.get(e.code);return <button key={e.code} className="openingLevelCode" style={{left:`${e.box[0]*100}%`,top:`${e.box[1]*100}%`,width:`${(e.box[2]-e.box[0])*100}%`,height:`${(e.box[3]-e.box[1])*100}%`}} onClick={()=>key&&open(key)} {...hoverOn(byCode.get(e.code))}><b>{e.code}</b></button>})}</div>:null}<div className="openingLevelList"><p>{plan?'Tocá un código en la planta o en la lista para ir a su lámina.':'Aberturas de este nivel por local. Tocá un código para ir a su lámina.'}</p>{general.map(s=><div key={s.key}><span>{s.name}</span>{s.itemIds.map(id=>byId.get(id)?.code).filter((c):c is string=>!!c).map(codeChip)}</div>)}</div></div>};
+  const levelOverview=(title:string,sheets:SheetCard[])=>{const plan=levels.find(l=>l.level===title),general=sheets.filter(s=>!s.details);return <div className={'openingLevel'+(plan?.preview||plan?.image?' withPlan':'')}>{plan?.preview||plan?.image?<div className="openingLevelPlan" style={{aspectRatio:String(plan.aspect||1.414)}}>{plan.preview?<img src={plan.preview} alt={'Planta general '+title}/>:<VectorImage src={plan.image} alt={'Planta general '+title}/>}{plan.rooms?.map(room=>{const card=general.find(c=>c.roomId===room.roomId);return card?<button key={room.roomId} className="openingLevelRoom" title={'Ir a '+room.label} aria-label={'Ir a la lámina de '+room.label} style={{left:`${room.box[0]*100}%`,top:`${room.box[1]*100}%`,width:`${(room.box[2]-room.box[0])*100}%`,height:`${(room.box[3]-room.box[1])*100}%`}} onClick={()=>open(card.key)}/>:null})}{plan.elements?.map(e=>{const key=targets.get(e.code);return <button key={e.code} className="openingLevelCode" style={{left:`${e.box[0]*100}%`,top:`${e.box[1]*100}%`,width:`${(e.box[2]-e.box[0])*100}%`,height:`${(e.box[3]-e.box[1])*100}%`}} onClick={()=>key&&open(key)}><b>{e.code}</b></button>})}</div>:null}<div className="openingLevelList"><p>{plan?'Tocá un código en la planta o en la lista para ir a su lámina.':'Aberturas de este nivel por local. Tocá un código para ir a su lámina.'}</p>{general.map(s=><div key={s.key}><span>{s.name}</span>{s.itemIds.map(id=>byId.get(id)?.code).filter((c):c is string=>!!c).map(codeChip)}</div>)}</div></div>};
   const budget=budgetTotals(data.items);
   const download=()=>{const url=URL.createObjectURL(new Blob(['\ufeff'+budgetCsv(budget.rows)],{type:'text/csv;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download='casa-angel-aberturas-computo.csv';a.click();URL.revokeObjectURL(url)};
   return <section className="openingsDesk sheetExplorer" aria-label="Láminas de aberturas">
@@ -106,23 +110,31 @@ export default function OpeningsDesk({mode='documentation',caseCode,review,onSav
  const sheetItems=sheet.itemIds.map(id=>byId.get(id)).filter((i):i is Item=>!!i);
  const itemOf=(v:SheetView)=>v.code?byCode.get(v.code):sheetItems.length===1?sheetItems[0]:undefined;
  const reviewCase=sheet.tab==='revision'?data.reviewCases?.find(c=>`case-${c.code}`===sheet.key):undefined;
- const light=lightbox===null?undefined:views[lightbox],lightItem=light&&itemOf(light),lightItems=lightItem?[lightItem]:light?.tags?.length?light.tags.map(c=>byCode.get(c)).filter((i):i is Item=>!!i):sheetItems;
+ const schedule=sheetSchedule(sheet,cards,data.items,i=>{const s=sizeOf(i as never);return s?`${s.w}×${s.h}`:''}),scheduleViews=schedule.map(c=>c.view).filter((v):v is SheetView=>!!v);
+ const light=lightbox?lightList[lightbox.index]:undefined,lightItem=light&&itemOf(light),lightItems=lightItem?[lightItem]:light?.tags?.length?light.tags.map(c=>byCode.get(c)).filter((i):i is Item=>!!i):sheetItems;
  return <section className="openingsDesk sheetExplorer">
   <div className="sheetHeading"><div><p className="eyebrow">CASA ÁNGEL / ABERTURAS / {sheet.group.toUpperCase()}</p><h3>{sheet.name}</h3><p>{sheet.number}</p></div><button className="sheetBack" onClick={()=>open(null)}><ArrowLeft size={15}/>Todas las láminas</button></div>
   <div className="sheetTabs"><span className="openingTabHint">Tocá un dibujo para ampliarlo</span>{sheet.pdf&&<a href={sheet.pdf} target="_blank" rel="noreferrer">PDF de la lámina <Download size={14}/></a>}{sheet.sheetId&&<RevitOpenButton id={sheet.sheetId} label="Abrir en Revit"/>}</div>
   {reviewCase&&<div className="openingCase"><p><b>Qué pasa:</b> {reviewCase.observation}</p><p><b>Qué habría que hacer:</b> {reviewCase.proposedCorrection}</p></div>}
-  <div className="sheetCanvas openingSheet" style={{aspectRatio:String(SHEET_ASPECT)}}>{sheet.preview&&<img className="openingPreview" src={sheet.preview} alt="" aria-hidden="true"/>}<VectorImage src={sheet.image} alt={'Lámina '+sheet.name}/>{views.map((v,index)=>{const r=v.region||regions[v.id];return r?<button key={v.id} className="sheetHotspot" aria-label={'Ampliar '+v.name} style={{left:`${r[0]*100}%`,top:`${r[1]*100}%`,width:`${(r[2]-r[0])*100}%`,height:`${(r[3]-r[1])*100}%`}} onClick={()=>zoom(index)} {...hoverOn(itemOf(v))}><span>{v.name} ↗</span></button>:null})}</div>
+  <div className="sheetCanvas openingSheet" style={{aspectRatio:String(SHEET_ASPECT)}}>{sheet.preview&&<img className="openingPreview" src={sheet.preview} alt="" aria-hidden="true"/>}<VectorImage src={sheet.image} alt={'Lámina '+sheet.name}/>{views.map((v,index)=>{const r=v.region||regions[v.id];return r?<button key={v.id} className="sheetHotspot" aria-label={'Ampliar '+v.name} style={{left:`${r[0]*100}%`,top:`${r[1]*100}%`,width:`${(r[2]-r[0])*100}%`,height:`${(r[3]-r[1])*100}%`}} onClick={()=>zoom(index)}><span>{v.name} ↗</span></button>:null})}</div>
   <h4 className="openingGroupTitle">Dibujos de esta lámina</h4>
-  <div className="projectViewCards openingViewCards">{views.map((v,index)=>{const item=itemOf(v);return <button key={v.id} onClick={()=>zoom(index)} {...hoverOn(item)}><span className="openingViewPreview"><TrimmedDrawing src={v.image} alt={v.name}/></span><span className="psViewCardCopy"><strong>{item&&<span className="openingTag">{item.code}</span>}{v.name}</strong><small>Escala 1:{v.scale}{v.dimensions?.length?` · ${v.dimensions.length} cotas`:''}</small><span>Ampliar ↗</span></span></button>})}</div>
-  <h4 className="openingGroupTitle">{sheetItems.length===1?'La abertura':'Aberturas de esta lámina'} <small>{sheetItems.length}</small></h4>
-  <div className="openingCards">{sheetItems.map(i=>elementCard(i,sheet))}</div>
+  <div className="projectViewCards openingViewCards">{views.map((v,index)=>{const item=itemOf(v);return <button key={v.id} onClick={()=>zoom(index)}><span className="openingViewPreview"><TrimmedDrawing src={v.image} alt={v.name}/></span><span className="psViewCardCopy"><strong>{item&&<span className="openingTag">{item.code}</span>}{v.name}</strong><small>Escala 1:{v.scale}{v.dimensions?.length?` · ${v.dimensions.length} cotas`:''}</small><span>Ampliar ↗</span></span></button>})}</div>
+  {sheet.tab==='revision'?<><h4 className="openingGroupTitle">{sheetItems.length===1?'La abertura':'Aberturas de esta lámina'}</h4><div className="openingCards">{sheetItems.map(i=>elementCard(i,sheet))}</div></>:<section className="carpSchedule" aria-label="Planilla de carpinterías">
+   <div className="carpTitle"><h4>Planilla de carpinterías</h4><span>{sheet.name} · {sheetItems.length} {sheetItems.length===1?'abertura':'aberturas'} · tocá un dibujo para ampliarlo</span></div>
+   <div className="carpGrid">{schedule.map(cell=>{const item=byId.get(cell.itemIds[0])!,s=sizeOf(item as never),line=dataLine(item),v=cell.view;return <article key={cell.key} className="carpCell">
+    <div className="carpHead"><b className="carpCode">{cell.codes[0]}</b>{cell.codes.length>1&&<small>y {cell.codes.slice(1).join(', ')}</small>}<span className="carpQty">Cant. <b>{cell.codes.length}</b></span></div>
+    <p className="carpKind">{KIND[item.category]}</p>
+    {v?<button className="carpDrawing" aria-label={'Ampliar alzado de '+cell.codes[0]} onClick={()=>zoom(scheduleViews.indexOf(v),scheduleViews)}><DimensionedDrawing src={v.image} alt={'Alzado '+cell.codes[0]} box={cell.box} width={s?c2(s.w):undefined} height={s?c2(s.h):undefined}/></button>:<div className="carpDrawing carpNoDrawing">Sin alzado exportado</div>}
+    <p className="carpSize">{s?`${c2(s.w)} × ${c2(s.h)} m`:'Sin medidas en Revit'}{sill(item)&&<small> · {sill(item)}</small>}</p>
+    {line&&<p className="carpData">{line}</p>}
+   </article>})}</div>
+  </section>}
   {light&&<div className="openingLightbox" role="dialog" aria-modal="true" aria-label={'Dibujo ampliado · '+light.name}>
-   <div className="openingLightboxMain"><DrawingViewport aspect={lightCrop?.aspect||1.4} identity={String(light.id)} controls={<div className="openingLightboxBar"><strong>{light.name}</strong><span>1:{light.scale} · {sheet.name}</span><button onClick={()=>zoom((lightbox!-1+views.length)%views.length)} aria-label="Dibujo anterior">←</button><button onClick={()=>zoom((lightbox!+1)%views.length)} aria-label="Dibujo siguiente">→</button></div>}><div className="openingHoverArea" {...hoverOn(lightItem)}><TrimmedDrawing key={light.id} src={light.image} alt={light.name} onCrop={onLightCrop} boxes={light.elements} onBox={(code,x,y)=>{const it=code?byCode.get(code):undefined;setHover(it?{item:it,x,y}:null)}}/></div></DrawingViewport></div>
+   <div className="openingLightboxMain"><DrawingViewport aspect={lightCrop?.aspect||1.4} identity={String(light.id)} controls={<div className="openingLightboxBar"><strong>{light.name}</strong><span>1:{light.scale} · {sheet.name}</span><button onClick={()=>zoom((lightbox!.index-1+lightList.length)%lightList.length,lightList)} aria-label="Dibujo anterior">←</button><button onClick={()=>zoom((lightbox!.index+1)%lightList.length,lightList)} aria-label="Dibujo siguiente">→</button></div>}><div className="openingHoverArea"><TrimmedDrawing key={light.id} src={light.image} alt={light.name} onCrop={onLightCrop} boxes={light.elements}/></div></DrawingViewport></div>
    <aside className="openingLightboxSide"><button className="openingLightboxClose" onClick={()=>setLightbox(null)}>Cerrar · Esc</button>
     {light.dimensions?.length?<section className="openingViewDims"><h5>Cotas de este dibujo</h5>{light.dimensions.map((d,i)=><p key={i}>{d.code&&!lightItem?<span className="openingTag">{d.code}</span>:null}{d.label}: <b>{dimensionText(d.values_m)}</b></p>)}</section>:null}
     {lightItems.map(i=>elementCard(i,sheet))}
    </aside>
   </div>}
-  {hover&&<OpeningTooltip item={hover.item} review={review} x={hover.x} y={hover.y}/>}
  </section>;
 }

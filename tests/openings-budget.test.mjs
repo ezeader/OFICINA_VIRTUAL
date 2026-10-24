@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {surveySpecs,sizeOf,budgetTotals,budgetCsv} from '../lib/openings-budget.ts';
+import {surveySpecs,scheduleSpecs,sizeOf,budgetTotals,budgetCsv} from '../lib/openings-budget.ts';
 
 const manifest=JSON.parse(fs.readFileSync(new URL('../public/casa-angel/openings/manifest.json',import.meta.url),'utf8'));
 const byCode=c=>manifest.items.find(i=>i.code===c);
@@ -38,4 +38,11 @@ test('the Revit survey sheet takes priority when present',()=>{
  const wall=structuredClone(byCode('MC-612302'));wall.survey={glazing:{panes:5,area_m2:23.215},frame:{profiles:[{type:'50 x 150mm',material:'Aluminium',count:16,length_m:33.997}]}};
  assert.match(Object.fromEntries(surveySpecs(wall).map(x=>[x.label,x.value]))['Marco / perfiles'],/16 u. · 34.00 m/);
  const t=budgetTotals([i,wall]);assert.ok(Math.abs(t.glass-24.787)<1e-9);assert.ok(Math.abs(t.profiles-33.997)<1e-9);
+});
+test('the carpentry schedule line keeps real data and drops generic Revit materials',()=>{
+ const line=c=>scheduleSpecs(byCode(c)).map(x=>x.value).join(' · ');
+ assert.equal(line('V-15'),'Paño fijo');
+ assert.equal(line('V-77'),'Ventana practicable 2 hojas · Vidrio claro templado · Aluminio, Poliamida');
+ assert.equal(line('P-60'),'Puerta corrediza embutida · Madera (roble)');
+ for(const i of manifest.items)assert.doesNotMatch(scheduleSpecs(i).map(x=>x.value).join(' '),/\b(Glass|Sash|Default|Wood|Chipboard|By Category)\b|gen[eé]rico/,i.code);
 });

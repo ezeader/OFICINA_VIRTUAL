@@ -102,3 +102,21 @@ export function codeTargets(cards:SheetCard[],items:{id:string;code:string}[]){
 }
 // Índice general: todas las láminas por número.
 export const sheetIndex=(cards:SheetCard[])=>[...cards].sort((a,b)=>a.number.localeCompare(b.number,'es',{numeric:true})||a.name.localeCompare(b.name,'es'));
+
+// Planilla de carpinterías de una lámina: una celda por abertura (o por aberturas iguales) con su alzado.
+// El alzado sale de las láminas del mismo local; si no hay, de cualquier lámina; si no, la vista frontal R2.
+export type ScheduleCell={key:string;itemIds:string[];codes:string[];view?:SheetView;box?:number[]};
+type ScheduleItem={id:string;code:string;category:string;type:string;width?:string|null;height?:string|null;sill?:string|null};
+// size: medida de cálculo de cada abertura (los muros cortina no traen ancho y alto propios), para no juntar distintos.
+export function sheetSchedule<T extends ScheduleItem>(sheet:SheetCard,cards:SheetCard[],items:T[],size:(i:T)=>string=i=>[i.width,i.height].join('×')):ScheduleCell[]{
+ const byId=new Map(items.map(i=>[i.id,i])),own=cards.filter(c=>c.tab===sheet.tab&&c.group===sheet.group&&(c.room??c.name)===(sheet.room??sheet.name));
+ const pick=(code:string)=>{for(const list of [own,cards]){const v=list.flatMap(c=>c.views).find(v=>v.kind==='elevation'&&v.code===code);if(v)return v}
+  const coded=cards.flatMap(c=>c.views).filter(v=>v.code===code);return coded.find(v=>/frontal|alzado/i.test(v.name))||coded[0]};
+ const cells=new Map<string,ScheduleCell>();
+ for(const id of sheet.itemIds){const i=byId.get(id);if(!i)continue;
+  const key=[i.category,i.type,size(i),i.sill].join('|'),cell=cells.get(key);
+  if(cell){cell.itemIds.push(i.id);cell.codes.push(i.code);continue}
+  const view=pick(i.code);cells.set(key,{key,itemIds:[i.id],codes:[i.code],view,box:view?.elements?.find(e=>e.code===i.code)?.box});
+ }
+ return [...cells.values()];
+}

@@ -46,6 +46,23 @@ export function TrimmedDrawing({src,alt,onCrop,boxes,onBox}:{src?:string;alt:str
  return <div className="openingTrim" style={{aspectRatio:String(crop.aspect),['--a' as string]:crop.aspect}}><img src={url} alt={alt} draggable={false} style={{width:`${100/crop.w}%`,height:`${100/crop.h}%`,left:`${-crop.x/crop.w*100}%`,top:`${-crop.y/crop.h*100}%`}}/>{boxes?.map((b,i)=><span key={b.code+i} className={'openingBox'+(b.room?' room':'')} style={{left:`${(b.box[0]-crop.x)/crop.w*100}%`,top:`${(b.box[1]-crop.y)/crop.h*100}%`,width:`${(b.box[2]-b.box[0])/crop.w*100}%`,height:`${(b.box[3]-b.box[1])/crop.h*100}%`}} onPointerMove={e=>{if(!e.buttons)onBox?.(b.code,e.clientX,e.clientY,b.label)}} onPointerLeave={()=>onBox?.(null,0,0)}><b>{b.room?(b.label||b.code).split(' · ').slice(0,2).join(' · '):b.code}</b></span>)}</div>;
 }
 
+// Alzado de planilla: recorta el dibujo a la abertura (box, en fracciones de la vista) y le pone cotas legibles de ancho y alto.
+export function DimensionedDrawing({src,alt,box,width,height}:{src?:string;alt:string;box?:number[];width?:string;height?:string}){
+ const url=useVector(src),full=useCrop(url,src);
+ if(!url||!full)return <div className="vectorLoading" role="status">Cargando dibujo…</div>;
+ const ratio=full.aspect*full.h/full.w; // ancho/alto de la imagen completa
+ let crop=full,el=[0,0,1,1];
+ if(box){const bw=(box[2]-box[0])*ratio,bh=box[3]-box[1],pad=Math.max(bw,bh)*.1,px=pad/ratio;
+  const x=Math.max(0,box[0]-px),y=Math.max(0,box[1]-pad),w=Math.min(1,box[2]+px)-x,h=Math.min(1,box[3]+pad)-y;
+  crop={x,y,w,h,aspect:w*ratio/h};el=[(box[0]-x)/w,(box[1]-y)/h,(box[2]-x)/w,(box[3]-y)/h]}
+ const pct=(n:number)=>`${n*100}%`;
+ return <div className="carpFigure" style={{['--a' as string]:crop.aspect}}>
+  <div className="carpCotaH">{height&&<span style={{top:pct(el[1]),height:pct(el[3]-el[1])}}><b>{height}</b></span>}</div>
+  <div className="openingTrim carpTrim"><img src={url} alt={alt} draggable={false} style={{width:`${100/crop.w}%`,height:`${100/crop.h}%`,left:`${-crop.x/crop.w*100}%`,top:`${-crop.y/crop.h*100}%`}}/></div>
+  <div className="carpCotaW">{width&&<span style={{left:pct(el[0]),width:pct(el[2]-el[0])}}><b>{width}</b></span>}</div>
+ </div>;
+}
+
 // Datos del elemento al pasar el cursor, con el mismo criterio que Sanitarias: medidas con valor y lo que falta.
 export function OpeningTooltip({item,review,x=0,y=0}:{item:ReviewItem;review?:OpeningsReview;x?:number;y?:number}){
  const rows=fabricationMeasures(item),known=rows.filter(m=>m.value),missing=rows.filter(m=>m.required&&!m.value),note=correctionFor(review,item.id,NOTE_KEY)?.note;

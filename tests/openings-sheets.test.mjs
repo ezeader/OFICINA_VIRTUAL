@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {buildSheets,groupSheets,codeTargets,sheetIndex} from '../lib/openings-sheets.ts';
+import {buildSheets,groupSheets,codeTargets,sheetIndex,sheetSchedule} from '../lib/openings-sheets.ts';
 import {regionFromSvg} from '../scripts/openings-view-regions.mjs';
 
 const manifest=JSON.parse(fs.readFileSync(new URL('../public/casa-angel/openings/manifest.json',import.meta.url),'utf8'));
@@ -40,4 +40,14 @@ test('each code leads to the general sheet of its room, and the index is sorted 
  assert.equal(target.tab,'locales');assert.ok(target.itemIds.includes(v155.id));
  assert.ok(r2.items.every(i=>targets.has(i.code)));
  const numbers=sheetIndex(cards).map(c=>c.number);assert.deepEqual(numbers,[...numbers].sort((a,b)=>a.localeCompare(b,'es',{numeric:true})));
+});
+test('every sector sheet has a carpentry schedule cell with an elevation for each opening',()=>{
+ const m=manifest,cards=buildSheets(m),size=i=>i.category==='Curtain Walls'?i.parameters.find(p=>p.name==='Length')?.value:i.width;
+ for(const sheet of cards.filter(c=>c.tab==='locales')){
+  const cells=sheetSchedule(sheet,cards,m.items,size);
+  assert.equal(cells.reduce((n,c)=>n+c.codes.length,0),sheet.itemIds.length,sheet.name);
+  for(const c of cells){assert.equal(c.view?.kind,'elevation',c.codes[0]);assert.ok(c.box,c.codes[0])}
+ }
+ const hall=cards.find(c=>c.name==='16 · Pasillo'),mc=sheetSchedule(hall,cards,m.items,size).filter(c=>c.codes[0].startsWith('MC-'));
+ assert.equal(mc.length,3,'curtain walls of the same type but different length stay apart');
 });
