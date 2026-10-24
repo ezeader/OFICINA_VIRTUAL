@@ -33,7 +33,7 @@ export type RubroManifest={
 
 // Grupos de láminas: generales primero (por sector), luego fichas por tipo de elemento.
 export function groupRubroSheets<T extends {number:string;title:string;sector?:string|null;level?:string|null;kind?:string;element?:string}>(sheets:T[],kinds?:Record<string,string>){
- const groupOf=(s:T)=>s.kind==='element'||s.element?`Fichas · ${(kinds?.[(s.element||'').split('-')[0]])||'elementos'}`:(s.sector||s.level||'Láminas generales');
+ const groupOf=(s:T)=>s.kind==='element'||s.element?(kinds?.[(s.element||'').split('-')[0]]?`Fichas · ${kinds[(s.element||'').split('-')[0]]}`:'Fichas'):(s.sector||s.level||'Láminas generales');
  const groups=new Map<string,T[]>();
  for(const s of [...sheets].sort((a,b)=>a.number.localeCompare(b.number,'es',{numeric:true})))groups.set(groupOf(s),[...(groups.get(groupOf(s))||[]),s]);
  return [...groups].map(([title,rows])=>({title,sheets:rows})).sort((a,b)=>Number(a.title!=='General')-Number(b.title!=='General')||Number(a.title.startsWith('Fichas'))-Number(b.title.startsWith('Fichas'))||a.title.localeCompare(b.title,'es',{numeric:true}));
