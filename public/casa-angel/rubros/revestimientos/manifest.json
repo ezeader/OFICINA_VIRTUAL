@@ -1,355 +1,5315 @@
 {
   "title": "Revestimientos",
-  "summary": "No hay revestimientos modelados. Estimación preliminar: 179,11 m² en 7 baños/toilettes, 5,10 m² en cocina y lavadero, 893,43 m² de pintura de muros.",
+  "summary": "PROPUESTA A CONFIRMAR: 136,72 m² de revestimiento en 7 baños y toilettes (h 2,40), 2,71 m² de franjas en cocina y lavadero, 506,90 m² de pintura de muros; vanos descontados. 13 láminas.",
   "model": "Casa-Angel-piloto-documentacion.rvt",
-  "readAt": "2026-10-24T02:32:37.999000Z",
-  "revision": "R25",
+  "readAt": "2026-10-24T05:12:48.485000Z",
+  "revision": "R26",
+  "status": "propuesta",
   "kinds": {
-    "RV": "Revestimiento cerámico / porcelanato",
-    "PI": "Pintura"
+    "RV": "Revestimiento de baños y toilettes (0,00–2,40)",
+    "RF": "Franja sobre mesada (0,90–1,50)",
+    "PI": "Pintura de muros (0,00–2,60)"
   },
-  "sheets": [],
-  "codes": [],
+  "sheets": [
+    {
+      "number": "RV-00",
+      "title": "Índice y cómputo",
+      "level": "Revestimientos",
+      "sector": "General",
+      "kind": "general",
+      "element": null,
+      "elementId": null,
+      "elementKind": null,
+      "note": "Propuesta a confirmar",
+      "sheetId": "2484109",
+      "pdf": "/casa-angel/rubros/revestimientos/RV-00.pdf",
+      "image": "/casa-angel/rubros/revestimientos/RV-00.svg.gz",
+      "preview": "/casa-angel/rubros/revestimientos/RV-00-preview.png",
+      "thumbnail": "/casa-angel/rubros/revestimientos/RV-00.png",
+      "views": []
+    },
+    {
+      "number": "RV-01",
+      "title": "Planta · 00. Planta Baja",
+      "level": "00. Planta Baja",
+      "sector": "Revestimientos · 00. Planta Baja",
+      "kind": "general",
+      "element": null,
+      "elementId": null,
+      "elementKind": null,
+      "note": "Propuesta a confirmar",
+      "sheetId": "2482298",
+      "pdf": "/casa-angel/rubros/revestimientos/RV-01.pdf",
+      "image": "/casa-angel/rubros/revestimientos/RV-01.svg.gz",
+      "preview": "/casa-angel/rubros/revestimientos/RV-01-preview.png",
+      "thumbnail": "/casa-angel/rubros/revestimientos/RV-01.png",
+      "views": [
+        {
+          "id": "2482242",
+          "name": "Revestimientos · 00. Planta Baja",
+          "label": "Revestimientos · 00. Planta Baja   1:60",
+          "scale": 60,
+          "kind": "plan",
+          "sector": "Revestimientos · 00. Planta Baja",
+          "roomLabel": "Revestimientos · 00. Planta Baja",
+          "image": "/casa-angel/rubros/revestimientos/RV-01-view-2482242.svg.gz",
+          "region": [
+            0.2508,
+            0.192,
+            0.6484,
+            0.7952
+          ],
+          "tags": [
+            "PI-PB-01",
+            "RV-PB-01",
+            "PI-PB-02",
+            "RV-PB-02",
+            "PI-PB-03",
+            "RV-PB-03",
+            "RV-PB-04",
+            "PI-PB-04",
+            "PI-PB-05",
+            "PI-PB-06",
+            "PI-PB-07",
+            "PI-PB-08",
+            "PI-PB-09",
+            "RV-PB-05",
+            "PI-PB-10",
+            "PI-PB-11"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "PI-PB-01",
+              "elementId": "780807",
+              "room": true,
+              "label": "PI-PB-01 · 01 · Cuarto A Inv. 01 · pintura 28,19 m²",
+              "box": [
+                0.0656,
+                0.7374,
+                0.2335,
+                0.8731
+              ]
+            },
+            {
+              "code": "RV-PB-01",
+              "elementId": "780810",
+              "room": true,
+              "label": "RV-PB-01 · 02 · Baño A Inv. 02 · revestimiento 17,67 m²",
+              "box": [
+                0.0656,
+                0.8782,
+                0.2335,
+                0.9388
+              ]
+            },
+            {
+              "code": "PI-PB-02",
+              "elementId": "780816",
+              "room": true,
+              "label": "PI-PB-02 · 03 · Cuarto B Inv. 03 · pintura 28,71 m²",
+              "box": [
+                0.2425,
+                0.7374,
+                0.4149,
+                0.8731
+              ]
+            },
+            {
+              "code": "RV-PB-02",
+              "elementId": "780813",
+              "room": true,
+              "label": "RV-PB-02 · 04 · Baño B Inv. 04 · revestimiento 18,14 m²",
+              "box": [
+                0.2425,
+                0.8782,
+                0.4149,
+                0.9388
+              ]
+            },
+            {
+              "code": "PI-PB-03",
+              "elementId": "780819",
+              "room": true,
+              "label": "PI-PB-03 · 05 · Cuarto C Inv. 05 · pintura 28,19 m²",
+              "box": [
+                0.424,
+                0.7374,
+                0.5919,
+                0.8731
+              ]
+            },
+            {
+              "code": "RV-PB-03",
+              "elementId": "780822",
+              "room": true,
+              "label": "RV-PB-03 · 06 · Baño C Inv. 06 · revestimiento 17,67 m²",
+              "box": [
+                0.424,
+                0.8782,
+                0.5919,
+                0.9388
+              ]
+            },
+            {
+              "code": "RV-PB-04",
+              "elementId": "874173",
+              "room": true,
+              "label": "RV-PB-04 · 07 · Toilette Servicio 07 · revestimiento 15,73 m²",
+              "box": [
+                0.4285,
+                0.0644,
+                0.5363,
+                0.1777
+              ]
+            },
+            {
+              "code": "PI-PB-04",
+              "elementId": "1041091",
+              "room": true,
+              "label": "PI-PB-04 · 08 · Lavadero 08 · pintura 13,06 m² · franja 1,50 m²",
+              "box": [
+                0.5454,
+                0.0612,
+                0.6583,
+                0.1777
+              ]
+            },
+            {
+              "code": "PI-PB-05",
+              "elementId": "785697",
+              "room": true,
+              "label": "PI-PB-05 · 09 · Hab. servicio 09 · pintura 23,25 m²",
+              "box": [
+                0.6626,
+                0.0644,
+                0.778,
+                0.1745
+              ]
+            },
+            {
+              "code": "PI-PB-06",
+              "elementId": "785700",
+              "room": true,
+              "label": "PI-PB-06 · 10 · Acceso Servicio 10 · pintura 16,58 m²",
+              "box": [
+                0.7823,
+                0.0612,
+                0.8686,
+                0.1745
+              ]
+            },
+            {
+              "code": "PI-PB-07",
+              "elementId": "783339",
+              "room": true,
+              "label": "PI-PB-07 · 12 · Quincho 12 · pintura 49,98 m²",
+              "box": [
+                0.5563,
+                0.1798,
+                0.8709,
+                0.4614
+              ]
+            },
+            {
+              "code": "PI-PB-08",
+              "elementId": "780825",
+              "room": true,
+              "label": "PI-PB-08 · 13 · Cuarto ppal 13 · pintura 24,57 m²",
+              "box": [
+                0.6506,
+                0.4667,
+                0.8523,
+                0.6093
+              ]
+            },
+            {
+              "code": "PI-PB-09",
+              "elementId": "1007176",
+              "room": true,
+              "label": "PI-PB-09 · 14 · Vestidor ppal 14 · pintura 17,61 m²",
+              "box": [
+                0.6506,
+                0.6093,
+                0.8491,
+                0.6826
+              ]
+            },
+            {
+              "code": "RV-PB-05",
+              "elementId": "780828",
+              "room": true,
+              "label": "RV-PB-05 · 15 · Baño ppal 15 · revestimiento 27,84 m²",
+              "box": [
+                0.8523,
+                0.4667,
+                0.9344,
+                0.6826
+              ]
+            },
+            {
+              "code": "PI-PB-10",
+              "elementId": "788673",
+              "room": true,
+              "label": "PI-PB-10 · 16 · Pasillo 16 · pintura 33,39 m²",
+              "box": [
+                0.2425,
+                0.4635,
+                0.6463,
+                0.7334
+              ]
+            },
+            {
+              "code": "PI-PB-11",
+              "elementId": "788665",
+              "room": true,
+              "label": "PI-PB-11 · 17 · Hall 17 · pintura 19,15 m²",
+              "box": [
+                0.6009,
+                0.6911,
+                0.8641,
+                0.9366
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "RV-02",
+      "title": "Planta · 01. Planta Alta",
+      "level": "01. Planta Alta",
+      "sector": "Revestimientos · 01. Planta Alta",
+      "kind": "general",
+      "element": null,
+      "elementId": null,
+      "elementKind": null,
+      "note": "Propuesta a confirmar",
+      "sheetId": "2482356",
+      "pdf": "/casa-angel/rubros/revestimientos/RV-02.pdf",
+      "image": "/casa-angel/rubros/revestimientos/RV-02.svg.gz",
+      "preview": "/casa-angel/rubros/revestimientos/RV-02-preview.png",
+      "thumbnail": "/casa-angel/rubros/revestimientos/RV-02.png",
+      "views": [
+        {
+          "id": "2482318",
+          "name": "Revestimientos · 01. Planta Alta",
+          "label": "Revestimientos · 01. Planta Alta   1:60",
+          "scale": 60,
+          "kind": "plan",
+          "sector": "Revestimientos · 01. Planta Alta",
+          "roomLabel": "Revestimientos · 01. Planta Alta",
+          "image": "/casa-angel/rubros/revestimientos/RV-02-view-2482318.svg.gz",
+          "region": [
+            0.2603,
+            0.1987,
+            0.6389,
+            0.7885
+          ],
+          "tags": [
+            "PI-PA-01",
+            "PI-PA-02",
+            "PI-PA-03",
+            "RV-PA-01",
+            "RV-PA-02",
+            "PI-PA-04",
+            "PI-PA-05",
+            "PI-PA-06",
+            "PI-PA-07",
+            "PI-PA-08"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "PI-PA-01",
+              "elementId": "864264",
+              "room": true,
+              "label": "PI-PA-01 · 01 · Sala de TV 01 · pintura 34,54 m²",
+              "box": [
+                0.0689,
+                0.6862,
+                0.2452,
+                0.8616
+              ]
+            },
+            {
+              "code": "PI-PA-02",
+              "elementId": "892788",
+              "room": true,
+              "label": "PI-PA-02 · 02 · Sala de Maquinas 02 · pintura 20,06 m²",
+              "box": [
+                0.0689,
+                0.8659,
+                0.2071,
+                0.9374
+              ]
+            },
+            {
+              "code": "PI-PA-03",
+              "elementId": "870164",
+              "room": true,
+              "label": "PI-PA-03 · 03 · Playroom 03 · pintura 29,69 m²",
+              "box": [
+                0.2547,
+                0.7503,
+                0.6311,
+                0.9374
+              ]
+            },
+            {
+              "code": "RV-PA-01",
+              "elementId": "870167",
+              "room": true,
+              "label": "RV-PA-01 · 04 · Baño PA 04 · revestimiento 21,78 m²",
+              "box": [
+                0.2119,
+                0.8107,
+                0.3253,
+                0.9374
+              ]
+            },
+            {
+              "code": "RV-PA-02",
+              "elementId": "863692",
+              "room": true,
+              "label": "RV-PA-02 · 05 · Toilette 05 · revestimiento 17,89 m²",
+              "box": [
+                0.663,
+                0.0626,
+                0.7548,
+                0.1796
+              ]
+            },
+            {
+              "code": "PI-PA-04",
+              "elementId": "863864",
+              "room": true,
+              "label": "PI-PA-04 · 06 · Cava 06 · pintura 23,36 m²",
+              "box": [
+                0.7596,
+                0.0626,
+                0.9123,
+                0.1796
+              ]
+            },
+            {
+              "code": "PI-PA-05",
+              "elementId": "877992",
+              "room": true,
+              "label": "PI-PA-05 · 07 · Cocina 07 · pintura 21,49 m² · franja 1,21 m²",
+              "box": [
+                0.682,
+                0.1796,
+                0.9311,
+                0.3571
+              ]
+            },
+            {
+              "code": "PI-PA-06",
+              "elementId": "869397",
+              "room": true,
+              "label": "PI-PA-06 · 08 · Comedor 08 · pintura 6,35 m²",
+              "box": [
+                0.6861,
+                0.3571,
+                0.9311,
+                0.5653
+              ]
+            },
+            {
+              "code": "PI-PA-07",
+              "elementId": "877995",
+              "room": true,
+              "label": "PI-PA-07 · 09 · Living 09 · pintura 12,05 m²",
+              "box": [
+                0.682,
+                0.552,
+                0.9075,
+                0.7035
+              ]
+            },
+            {
+              "code": "PI-PA-08",
+              "elementId": "887814",
+              "room": true,
+              "label": "PI-PA-08 · 10 · Puente 10 · pintura 6,07 m²",
+              "box": [
+                0.6311,
+                0.7035,
+                0.7264,
+                0.7901
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "RV-03",
+      "title": "Planta · 02. Planta Entrepiso",
+      "level": "02. Planta Entrepiso",
+      "sector": "Revestimientos · 02. Planta Entrepiso",
+      "kind": "general",
+      "element": null,
+      "elementId": null,
+      "elementKind": null,
+      "note": "Propuesta a confirmar",
+      "sheetId": "2482389",
+      "pdf": "/casa-angel/rubros/revestimientos/RV-03.pdf",
+      "image": "/casa-angel/rubros/revestimientos/RV-03.svg.gz",
+      "preview": "/casa-angel/rubros/revestimientos/RV-03-preview.png",
+      "thumbnail": "/casa-angel/rubros/revestimientos/RV-03.png",
+      "views": [
+        {
+          "id": "2482376",
+          "name": "Revestimientos · 02. Planta Entrepiso",
+          "label": "Revestimientos · 02. Planta Entrepiso   1:25",
+          "scale": 25,
+          "kind": "plan",
+          "sector": "Revestimientos · 02. Planta Entrepiso",
+          "roomLabel": "Revestimientos · 02. Planta Entrepiso",
+          "image": "/casa-angel/rubros/revestimientos/RV-03-view-2482376.svg.gz",
+          "region": [
+            0.2714,
+            0.2115,
+            0.6278,
+            0.7757
+          ],
+          "tags": [
+            "PI-PE-01",
+            "PI-PE-02",
+            "PI-PE-03"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "PI-PE-01",
+              "elementId": "876170",
+              "room": true,
+              "label": "PI-PE-01 · 01 · SM 01 · pintura 19,88 m²",
+              "box": [
+                0.1582,
+                0.1415,
+                0.4648,
+                0.424
+              ]
+            },
+            {
+              "code": "PI-PE-02",
+              "elementId": "876173",
+              "room": true,
+              "label": "PI-PE-02 · 02 · Hall PE 02 · pintura 13,62 m²",
+              "box": [
+                0.4648,
+                0.1415,
+                0.7938,
+                0.4457
+              ]
+            },
+            {
+              "code": "PI-PE-03",
+              "elementId": "876161",
+              "room": true,
+              "label": "PI-PE-03 · 03 · Atelier 03 · pintura 23,13 m²",
+              "box": [
+                0.2229,
+                0.4457,
+                0.8418,
+                0.8585
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "RV-F-COCINA",
+      "title": "Ficha · PI-PA-05 Cocina 07",
+      "level": "01. Planta Alta",
+      "sector": "07 · Cocina 07 · PA",
+      "kind": "element",
+      "element": "PI-PA-05",
+      "elementId": "877992",
+      "elementKind": "RF",
+      "note": "Propuesta a confirmar",
+      "sheetId": "2482674",
+      "pdf": "/casa-angel/rubros/revestimientos/RV-F-COCINA.pdf",
+      "image": "/casa-angel/rubros/revestimientos/RV-F-COCINA.svg.gz",
+      "preview": "/casa-angel/rubros/revestimientos/RV-F-COCINA-preview.png",
+      "thumbnail": "/casa-angel/rubros/revestimientos/RV-F-COCINA.png",
+      "views": [
+        {
+          "id": "2482527",
+          "name": "PI-PA-05 · planta de caras",
+          "label": "PI-PA-05 · planta de caras   1:30",
+          "scale": 30,
+          "kind": "plan",
+          "sector": "07 · Cocina 07 · PA",
+          "roomLabel": "07 · Cocina 07 · PA",
+          "image": "/casa-angel/rubros/revestimientos/RV-F-COCINA-view-2482527.svg.gz",
+          "region": [
+            0.3218,
+            0.1906,
+            0.5769,
+            0.4943
+          ],
+          "tags": [
+            "PI-PA-05"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "PI-PA-05",
+              "elementId": "877992",
+              "room": true,
+              "label": "PI-PA-05 · 07 · Cocina 07 · pintura 21,49 m² · franja 1,21 m²",
+              "box": [
+                0.1305,
+                0.1553,
+                0.8695,
+                0.8447
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2482563",
+          "name": "PI-PA-05 · cara C8",
+          "label": "PI-PA-05 · cara C8   1:20",
+          "scale": 20,
+          "kind": "elevation",
+          "sector": "07 · Cocina 07 · PA",
+          "roomLabel": "07 · Cocina 07 · PA",
+          "image": "/casa-angel/rubros/revestimientos/RV-F-COCINA-view-2482563.svg.gz",
+          "region": [
+            0.1421,
+            0.573,
+            0.2755,
+            0.758
+          ],
+          "tags": [
+            "PI-PA-05",
+            "RF-03"
+          ],
+          "dimensions": [
+            {
+              "label": "PI-PA-05 C8 largo y vanos",
+              "values_m": [
+                0.62,
+                0.98
+              ],
+              "associative": false
+            },
+            {
+              "label": "RF-03 franja alto",
+              "values_m": [
+                0.6
+              ],
+              "associative": false
+            },
+            {
+              "label": "RF-03 franja largo",
+              "values_m": [
+                0.62
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "PI-PA-05",
+              "elementId": "877992",
+              "room": true,
+              "label": "PI-PA-05 · 07 · Cocina 07 · pintura 21,49 m² · franja 1,21 m²",
+              "box": [
+                0.1754,
+                0.0,
+                1.0,
+                0.8624
+              ]
+            },
+            {
+              "code": null,
+              "elementId": "877743",
+              "label": "Vano 877743 (descontado)",
+              "box": [
+                0.1348,
+                0.8624,
+                1.0,
+                0.8624
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2482598",
+          "name": "PI-PA-05 · cara C9",
+          "label": "PI-PA-05 · cara C9   1:20",
+          "scale": 20,
+          "kind": "elevation",
+          "sector": "07 · Cocina 07 · PA",
+          "roomLabel": "07 · Cocina 07 · PA",
+          "image": "/casa-angel/rubros/revestimientos/RV-F-COCINA-view-2482598.svg.gz",
+          "region": [
+            0.3178,
+            0.573,
+            0.5809,
+            0.758
+          ],
+          "tags": [
+            "PI-PA-05",
+            "RF-04",
+            "RF-05"
+          ],
+          "dimensions": [
+            {
+              "label": "PI-PA-05 C9 largo y vanos",
+              "values_m": [
+                0.1392,
+                0.2871,
+                1.2725,
+                0.6052,
+                0.1223,
+                0.1474,
+                1.3263,
+                0.1
+              ],
+              "associative": false
+            },
+            {
+              "label": "RF-04 franja alto",
+              "values_m": [
+                0.6
+              ],
+              "associative": false
+            },
+            {
+              "label": "RF-04 franja largo",
+              "values_m": [
+                1.596
+              ],
+              "associative": false
+            },
+            {
+              "label": "RF-05 franja alto",
+              "values_m": [
+                0.6
+              ],
+              "associative": false
+            },
+            {
+              "label": "RF-05 franja largo",
+              "values_m": [
+                1.5596
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "PI-PA-05",
+              "elementId": "877992",
+              "room": true,
+              "label": "PI-PA-05 · 07 · Cocina 07 · pintura 21,49 m² · franja 1,21 m²",
+              "box": [
+                0.0683,
+                0.0,
+                0.9112,
+                0.8624
+              ]
+            },
+            {
+              "code": "V-157",
+              "elementId": "2376227",
+              "label": "Vano V-157 (descontado)",
+              "box": [
+                0.1765,
+                0.0,
+                0.6179,
+                0.3959
+              ]
+            },
+            {
+              "code": "V-158",
+              "elementId": "2376255",
+              "label": "Vano V-158 (descontado)",
+              "box": [
+                0.5876,
+                0.0,
+                1.0,
+                0.3959
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2482649",
+          "name": "PI-PA-05 · cara C10",
+          "label": "PI-PA-05 · cara C10   1:20",
+          "scale": 20,
+          "kind": "elevation",
+          "sector": "07 · Cocina 07 · PA",
+          "roomLabel": "07 · Cocina 07 · PA",
+          "image": "/casa-angel/rubros/revestimientos/RV-F-COCINA-view-2482649.svg.gz",
+          "region": [
+            0.6124,
+            0.573,
+            0.7675,
+            0.758
+          ],
+          "tags": [
+            "PI-PA-05",
+            "RF-06"
+          ],
+          "dimensions": [
+            {
+              "label": "PI-PA-05 C10 largo y vanos",
+              "values_m": [
+                1.2602,
+                0.7398
+              ],
+              "associative": false
+            },
+            {
+              "label": "RF-06 franja alto",
+              "values_m": [
+                0.6
+              ],
+              "associative": false
+            },
+            {
+              "label": "RF-06 franja largo",
+              "values_m": [
+                0.7398
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "PI-PA-05",
+              "elementId": "877992",
+              "room": true,
+              "label": "PI-PA-05 · 07 · Cocina 07 · pintura 21,49 m² · franja 1,21 m²",
+              "box": [
+                0.0,
+                0.0,
+                0.8491,
+                0.8624
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "RV-F-LAVADERO",
+      "title": "Ficha · PI-PB-04 Lavadero 08",
+      "level": "00. Planta Baja",
+      "sector": "08 · Lavadero 08 · PB",
+      "kind": "element",
+      "element": "PI-PB-04",
+      "elementId": "1041091",
+      "elementKind": "RF",
+      "note": "Propuesta a confirmar",
+      "sheetId": "2482502",
+      "pdf": "/casa-angel/rubros/revestimientos/RV-F-LAVADERO.pdf",
+      "image": "/casa-angel/rubros/revestimientos/RV-F-LAVADERO.svg.gz",
+      "preview": "/casa-angel/rubros/revestimientos/RV-F-LAVADERO-preview.png",
+      "thumbnail": "/casa-angel/rubros/revestimientos/RV-F-LAVADERO.png",
+      "views": [
+        {
+          "id": "2482409",
+          "name": "PI-PB-04 · planta de caras",
+          "label": "PI-PB-04 · planta de caras   1:15",
+          "scale": 15,
+          "kind": "plan",
+          "sector": "08 · Lavadero 08 · PB",
+          "roomLabel": "08 · Lavadero 08 · PB",
+          "image": "/casa-angel/rubros/revestimientos/RV-F-LAVADERO-view-2482409.svg.gz",
+          "region": [
+            0.1164,
+            0.2627,
+            0.4203,
+            0.7194
+          ],
+          "tags": [
+            "PI-PB-04"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "PI-PB-04",
+              "elementId": "1041091",
+              "room": true,
+              "label": "PI-PB-04 · 08 · Lavadero 08 · pintura 13,06 m² · franja 1,50 m²",
+              "box": [
+                0.2045,
+                0.1926,
+                0.7955,
+                0.8074
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2482440",
+          "name": "PI-PB-04 · cara C3",
+          "label": "PI-PB-04 · cara C3   1:15",
+          "scale": 15,
+          "kind": "elevation",
+          "sector": "08 · Lavadero 08 · PB",
+          "roomLabel": "08 · Lavadero 08 · PB",
+          "image": "/casa-angel/rubros/revestimientos/RV-F-LAVADERO-view-2482440.svg.gz",
+          "region": [
+            0.4801,
+            0.2227,
+            0.727,
+            0.4651
+          ],
+          "tags": [
+            "PI-PB-04",
+            "RF-01"
+          ],
+          "dimensions": [
+            {
+              "label": "PI-PB-04 C3 largo y vanos",
+              "values_m": [
+                1.0016,
+                0.6959,
+                0.9025
+              ],
+              "associative": false
+            },
+            {
+              "label": "RF-01 franja alto",
+              "values_m": [
+                0.6
+              ],
+              "associative": false
+            },
+            {
+              "label": "RF-01 franja largo",
+              "values_m": [
+                1.5984
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "PI-PB-04",
+              "elementId": "1041091",
+              "room": true,
+              "label": "PI-PB-04 · 08 · Lavadero 08 · pintura 13,06 m² · franja 1,50 m²",
+              "box": [
+                0.0983,
+                0.0,
+                0.9017,
+                0.8687
+              ]
+            },
+            {
+              "code": "P-93",
+              "elementId": "1150552",
+              "label": "Vano P-93 (descontado)",
+              "box": [
+                0.1166,
+                0.0,
+                0.6161,
+                0.8687
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2482476",
+          "name": "PI-PB-04 · cara C9",
+          "label": "PI-PB-04 · cara C9   1:20",
+          "scale": 20,
+          "kind": "elevation",
+          "sector": "08 · Lavadero 08 · PB",
+          "roomLabel": "08 · Lavadero 08 · PB",
+          "image": "/casa-angel/rubros/revestimientos/RV-F-LAVADERO-view-2482476.svg.gz",
+          "region": [
+            0.5098,
+            0.5744,
+            0.6973,
+            0.7595
+          ],
+          "tags": [
+            "PI-PB-04",
+            "RF-02"
+          ],
+          "dimensions": [
+            {
+              "label": "PI-PB-04 C9 largo y vanos",
+              "values_m": [
+                1.5984,
+                0.0891,
+                0.9125
+              ],
+              "associative": false
+            },
+            {
+              "label": "RF-02 franja alto",
+              "values_m": [
+                0.6
+              ],
+              "associative": false
+            },
+            {
+              "label": "RF-02 franja largo",
+              "values_m": [
+                1.5984
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "PI-PB-04",
+              "elementId": "1041091",
+              "room": true,
+              "label": "PI-PB-04 · 08 · Lavadero 08 · pintura 13,06 m² · franja 1,50 m²",
+              "box": [
+                0.1031,
+                0.0,
+                0.8969,
+                0.8624
+              ]
+            },
+            {
+              "code": "P-90",
+              "elementId": "1040025",
+              "label": "Vano P-90 (descontado)",
+              "box": [
+                0.6119,
+                0.0,
+                0.8789,
+                0.8624
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "RV-F-PA-01",
+      "title": "Ficha · RV-PA-01 Baño PA 04",
+      "level": "01. Planta Alta",
+      "sector": "04 · Baño PA 04 · PA",
+      "kind": "element",
+      "element": "RV-PA-01",
+      "elementId": "870167",
+      "elementKind": "RV",
+      "note": "Propuesta a confirmar",
+      "sheetId": "2483889",
+      "pdf": "/casa-angel/rubros/revestimientos/RV-F-PA-01.pdf",
+      "image": "/casa-angel/rubros/revestimientos/RV-F-PA-01.svg.gz",
+      "preview": "/casa-angel/rubros/revestimientos/RV-F-PA-01-preview.png",
+      "thumbnail": "/casa-angel/rubros/revestimientos/RV-F-PA-01.png",
+      "views": [
+        {
+          "id": "2483665",
+          "name": "RV-PA-01 · planta de caras",
+          "label": "RV-PA-01 · planta de caras   1:40",
+          "scale": 40,
+          "kind": "plan",
+          "sector": "04 · Baño PA 04 · PA",
+          "roomLabel": "04 · Baño PA 04 · PA",
+          "image": "/casa-angel/rubros/revestimientos/RV-F-PA-01-view-2483665.svg.gz",
+          "region": [
+            0.1296,
+            0.398,
+            0.2462,
+            0.5841
+          ],
+          "tags": [
+            "RV-PA-01"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "RV-PA-01",
+              "elementId": "870167",
+              "room": true,
+              "label": "RV-PA-01 · 04 · Baño PA 04 · revestimiento 21,78 m²",
+              "box": [
+                0.2238,
+                0.1987,
+                0.7762,
+                0.8013
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2483698",
+          "name": "RV-PA-01 · cara C1",
+          "label": "RV-PA-01 · cara C1   1:20",
+          "scale": 20,
+          "kind": "elevation",
+          "sector": "04 · Baño PA 04 · PA",
+          "roomLabel": "04 · Baño PA 04 · PA",
+          "image": "/casa-angel/rubros/revestimientos/RV-F-PA-01-view-2483698.svg.gz",
+          "region": [
+            0.2878,
+            0.2146,
+            0.4098,
+            0.4686
+          ],
+          "tags": [
+            "RV-PA-01"
+          ],
+          "dimensions": [
+            {
+              "label": "RV-PA-01 C1 largo y vanos",
+              "values_m": [
+                1.275
+              ],
+              "associative": false
+            },
+            {
+              "label": "RV-PA-01 C1 revestimiento h",
+              "values_m": [
+                2.4
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "RV-PA-01",
+              "elementId": "870167",
+              "room": true,
+              "label": "RV-PA-01 · 04 · Baño PA 04 · revestimiento 21,78 m²",
+              "box": [
+                0.0,
+                0.0,
+                0.758,
+                0.8998
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2483731",
+          "name": "RV-PA-01 · cara C2",
+          "label": "RV-PA-01 · cara C2   1:20",
+          "scale": 20,
+          "kind": "elevation",
+          "sector": "04 · Baño PA 04 · PA",
+          "roomLabel": "04 · Baño PA 04 · PA",
+          "image": "/casa-angel/rubros/revestimientos/RV-F-PA-01-view-2483731.svg.gz",
+          "region": [
+            0.4626,
+            0.2146,
+            0.5837,
+            0.4686
+          ],
+          "tags": [
+            "RV-PA-01"
+          ],
+          "dimensions": [
+            {
+              "label": "RV-PA-01 C2 largo y vanos",
+              "values_m": [
+                0.9
+              ],
+              "associative": false
+            },
+            {
+              "label": "RV-PA-01 C2 revestimiento h",
+              "values_m": [
+                2.4
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "RV-PA-01",
+              "elementId": "870167",
+              "room": true,
+              "label": "RV-PA-01 · 04 · Baño PA 04 · revestimiento 21,78 m²",
+              "box": [
+                0.1932,
+                0.0,
+                1.0,
+                0.8998
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2483764",
+          "name": "RV-PA-01 · cara C3",
+          "label": "RV-PA-01 · cara C3   1:20",
+          "scale": 20,
+          "kind": "elevation",
+          "sector": "04 · Baño PA 04 · PA",
+          "roomLabel": "04 · Baño PA 04 · PA",
+          "image": "/casa-angel/rubros/revestimientos/RV-F-PA-01-view-2483764.svg.gz",
+          "region": [
+            0.6294,
+            0.2146,
+            0.7655,
+            0.4686
+          ],
+          "tags": [
+            "RV-PA-01"
+          ],
+          "dimensions": [
+            {
+              "label": "RV-PA-01 C3 largo y vanos",
+              "values_m": [
+                1.65
+              ],
+              "associative": false
+            },
+            {
+              "label": "RV-PA-01 C3 revestimiento h",
+              "values_m": [
+                2.4
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "RV-PA-01",
+              "elementId": "870167",
+              "room": true,
+              "label": "RV-PA-01 · 04 · Baño PA 04 · revestimiento 21,78 m²",
+              "box": [
+                0.1719,
+                0.0,
+                1.0,
+                0.8998
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2483797",
+          "name": "RV-PA-01 · cara C4",
+          "label": "RV-PA-01 · cara C4   1:25",
+          "scale": 25,
+          "kind": "elevation",
+          "sector": "04 · Baño PA 04 · PA",
+          "roomLabel": "04 · Baño PA 04 · PA",
+          "image": "/casa-angel/rubros/revestimientos/RV-F-PA-01-view-2483797.svg.gz",
+          "region": [
+            0.2768,
+            0.5618,
+            0.4191,
+            0.7675
+          ],
+          "tags": [
+            "RV-PA-01"
+          ],
+          "dimensions": [
+            {
+              "label": "RV-PA-01 C4 largo y vanos",
+              "values_m": [
+                0.88,
+                0.6,
+                0.9
+              ],
+              "associative": false
+            },
+            {
+              "label": "RV-PA-01 C4 revestimiento h",
+              "values_m": [
+                2.4
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "RV-PA-01",
+              "elementId": "870167",
+              "room": true,
+              "label": "RV-PA-01 · 04 · Baño PA 04 · revestimiento 21,78 m²",
+              "box": [
+                0.1378,
+                0.0,
+                0.8622,
+                0.8949
+              ]
+            },
+            {
+              "code": "V-101",
+              "elementId": "694828",
+              "label": "Vano V-101 (descontado)",
+              "box": [
+                0.4056,
+                0.1796,
+                0.5883,
+                0.8949
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2483832",
+          "name": "RV-PA-01 · cara C5",
+          "label": "RV-PA-01 · cara C5   1:25",
+          "scale": 25,
+          "kind": "elevation",
+          "sector": "04 · Baño PA 04 · PA",
+          "roomLabel": "04 · Baño PA 04 · PA",
+          "image": "/casa-angel/rubros/revestimientos/RV-F-PA-01-view-2483832.svg.gz",
+          "region": [
+            0.4402,
+            0.5618,
+            0.606,
+            0.7675
+          ],
+          "tags": [
+            "RV-PA-01"
+          ],
+          "dimensions": [
+            {
+              "label": "RV-PA-01 C5 largo y vanos",
+              "values_m": [
+                2.925
+              ],
+              "associative": false
+            },
+            {
+              "label": "RV-PA-01 C5 revestimiento h",
+              "values_m": [
+                2.4
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "RV-PA-01",
+              "elementId": "870167",
+              "room": true,
+              "label": "RV-PA-01 · 04 · Baño PA 04 · revestimiento 21,78 m²",
+              "box": [
+                0.1182,
+                0.0,
+                0.8818,
+                0.8949
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2483865",
+          "name": "RV-PA-01 · cara C6",
+          "label": "RV-PA-01 · cara C6   1:25",
+          "scale": 25,
+          "kind": "elevation",
+          "sector": "04 · Baño PA 04 · PA",
+          "roomLabel": "04 · Baño PA 04 · PA",
+          "image": "/casa-angel/rubros/revestimientos/RV-F-PA-01-view-2483865.svg.gz",
+          "region": [
+            0.6396,
+            0.5618,
+            0.757,
+            0.7675
+          ],
+          "tags": [
+            "RV-PA-01"
+          ],
+          "dimensions": [
+            {
+              "label": "RV-PA-01 C6 largo y vanos",
+              "values_m": [
+                0.935,
+                0.545
+              ],
+              "associative": false
+            },
+            {
+              "label": "RV-PA-01 C6 revestimiento h",
+              "values_m": [
+                2.4
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "RV-PA-01",
+              "elementId": "870167",
+              "room": true,
+              "label": "RV-PA-01 · 04 · Baño PA 04 · revestimiento 21,78 m²",
+              "box": [
+                0.0,
+                0.0,
+                0.7128,
+                0.8949
+              ]
+            },
+            {
+              "code": "P-75",
+              "elementId": "892487",
+              "label": "Vano P-75 (descontado)",
+              "box": [
+                0.1614,
+                0.1796,
+                0.5118,
+                0.8949
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "RV-F-PA-02",
+      "title": "Ficha · RV-PA-02 Toilette 05",
+      "level": "01. Planta Alta",
+      "sector": "05 · Toilette 05 · PA",
+      "kind": "element",
+      "element": "RV-PA-02",
+      "elementId": "863692",
+      "elementKind": "RV",
+      "note": "Propuesta a confirmar",
+      "sheetId": "2484080",
+      "pdf": "/casa-angel/rubros/revestimientos/RV-F-PA-02.pdf",
+      "image": "/casa-angel/rubros/revestimientos/RV-F-PA-02.svg.gz",
+      "preview": "/casa-angel/rubros/revestimientos/RV-F-PA-02-preview.png",
+      "thumbnail": "/casa-angel/rubros/revestimientos/RV-F-PA-02.png",
+      "views": [
+        {
+          "id": "2483922",
+          "name": "RV-PA-02 · planta de caras",
+          "label": "RV-PA-02 · planta de caras   1:15",
+          "scale": 15,
+          "kind": "plan",
+          "sector": "05 · Toilette 05 · PA",
+          "roomLabel": "05 · Toilette 05 · PA",
+          "image": "/casa-angel/rubros/revestimientos/RV-F-PA-02-view-2483922.svg.gz",
+          "region": [
+            0.1166,
+            0.2653,
+            0.3799,
+            0.7169
+          ],
+          "tags": [
+            "RV-PA-02"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "RV-PA-02",
+              "elementId": "863692",
+              "room": true,
+              "label": "RV-PA-02 · 05 · Toilette 05 · revestimiento 17,89 m²",
+              "box": [
+                0.236,
+                0.1948,
+                0.764,
+                0.8052
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2483956",
+          "name": "RV-PA-02 · cara C1",
+          "label": "RV-PA-02 · cara C1   1:25",
+          "scale": 25,
+          "kind": "elevation",
+          "sector": "05 · Toilette 05 · PA",
+          "roomLabel": "05 · Toilette 05 · PA",
+          "image": "/casa-angel/rubros/revestimientos/RV-F-PA-02-view-2483956.svg.gz",
+          "region": [
+            0.407,
+            0.2146,
+            0.5588,
+            0.4204
+          ],
+          "tags": [
+            "RV-PA-02"
+          ],
+          "dimensions": [
+            {
+              "label": "RV-PA-02 C1 largo y vanos",
+              "values_m": [
+                2.6
+              ],
+              "associative": false
+            },
+            {
+              "label": "RV-PA-02 C1 revestimiento h",
+              "values_m": [
+                2.4
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "RV-PA-02",
+              "elementId": "863692",
+              "room": true,
+              "label": "RV-PA-02 · 05 · Toilette 05 · revestimiento 17,89 m²",
+              "box": [
+                0.1291,
+                0.0,
+                0.8994,
+                0.8949
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2483989",
+          "name": "RV-PA-02 · cara C2",
+          "label": "RV-PA-02 · cara C2   1:25",
+          "scale": 25,
+          "kind": "elevation",
+          "sector": "05 · Toilette 05 · PA",
+          "roomLabel": "05 · Toilette 05 · PA",
+          "image": "/casa-angel/rubros/revestimientos/RV-F-PA-02-view-2483989.svg.gz",
+          "region": [
+            0.6227,
+            0.2146,
+            0.7454,
+            0.4204
+          ],
+          "tags": [
+            "RV-PA-02"
+          ],
+          "dimensions": [
+            {
+              "label": "RV-PA-02 C2 largo y vanos",
+              "values_m": [
+                1.3723,
+                0.5,
+                0.055
+              ],
+              "associative": false
+            },
+            {
+              "label": "RV-PA-02 C2 revestimiento h",
+              "values_m": [
+                2.4
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "RV-PA-02",
+              "elementId": "863692",
+              "room": true,
+              "label": "RV-PA-02 · 05 · Toilette 05 · revestimiento 17,89 m²",
+              "box": [
+                0.1598,
+                0.0,
+                0.8402,
+                0.8949
+              ]
+            },
+            {
+              "code": "V-151",
+              "elementId": "1155955",
+              "label": "Vano V-151 (descontado)",
+              "box": [
+                0.6443,
+                0.0008,
+                0.8208,
+                0.8949
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2484024",
+          "name": "RV-PA-02 · cara C3",
+          "label": "RV-PA-02 · cara C3   1:20",
+          "scale": 20,
+          "kind": "elevation",
+          "sector": "05 · Toilette 05 · PA",
+          "roomLabel": "05 · Toilette 05 · PA",
+          "image": "/casa-angel/rubros/revestimientos/RV-F-PA-02-view-2484024.svg.gz",
+          "region": [
+            0.3959,
+            0.5136,
+            0.5833,
+            0.7675
+          ],
+          "tags": [
+            "RV-PA-02"
+          ],
+          "dimensions": [
+            {
+              "label": "RV-PA-02 C3 largo y vanos",
+              "values_m": [
+                2.6
+              ],
+              "associative": false
+            },
+            {
+              "label": "RV-PA-02 C3 revestimiento h",
+              "values_m": [
+                2.4
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "RV-PA-02",
+              "elementId": "863692",
+              "room": true,
+              "label": "RV-PA-02 · 05 · Toilette 05 · revestimiento 17,89 m²",
+              "box": [
+                0.0959,
+                0.0,
+                0.8753,
+                0.8998
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2484057",
+          "name": "RV-PA-02 · cara C4",
+          "label": "RV-PA-02 · cara C4   1:20",
+          "scale": 20,
+          "kind": "elevation",
+          "sector": "05 · Toilette 05 · PA",
+          "roomLabel": "05 · Toilette 05 · PA",
+          "image": "/casa-angel/rubros/revestimientos/RV-F-PA-02-view-2484057.svg.gz",
+          "region": [
+            0.6298,
+            0.5136,
+            0.7517,
+            0.7675
+          ],
+          "tags": [
+            "RV-PA-02"
+          ],
+          "dimensions": [
+            {
+              "label": "RV-PA-02 C4 largo y vanos",
+              "values_m": [
+                0.5998
+              ],
+              "associative": false
+            },
+            {
+              "label": "RV-PA-02 C4 revestimiento h",
+              "values_m": [
+                2.4
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "RV-PA-02",
+              "elementId": "863692",
+              "room": true,
+              "label": "RV-PA-02 · 05 · Toilette 05 · revestimiento 17,89 m²",
+              "box": [
+                0.0,
+                0.0,
+                0.4582,
+                0.8998
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "RV-F-PB-01",
+      "title": "Ficha · RV-PB-01 Baño A Inv. 02",
+      "level": "00. Planta Baja",
+      "sector": "02 · Baño A Inv. 02 · PB",
+      "kind": "element",
+      "element": "RV-PB-01",
+      "elementId": "780810",
+      "elementKind": "RV",
+      "note": "Propuesta a confirmar",
+      "sheetId": "2482856",
+      "pdf": "/casa-angel/rubros/revestimientos/RV-F-PB-01.pdf",
+      "image": "/casa-angel/rubros/revestimientos/RV-F-PB-01.svg.gz",
+      "preview": "/casa-angel/rubros/revestimientos/RV-F-PB-01-preview.png",
+      "thumbnail": "/casa-angel/rubros/revestimientos/RV-F-PB-01.png",
+      "views": [
+        {
+          "id": "2482701",
+          "name": "RV-PB-01 · planta de caras",
+          "label": "RV-PB-01 · planta de caras   1:30",
+          "scale": 30,
+          "kind": "plan",
+          "sector": "02 · Baño A Inv. 02 · PB",
+          "roomLabel": "02 · Baño A Inv. 02 · PB",
+          "image": "/casa-angel/rubros/revestimientos/RV-F-PB-01-view-2482701.svg.gz",
+          "region": [
+            0.1281,
+            0.4073,
+            0.3282,
+            0.5748
+          ],
+          "tags": [
+            "RV-PB-01"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "RV-PB-01",
+              "elementId": "780810",
+              "room": true,
+              "label": "RV-PB-01 · 02 · Baño A Inv. 02 · revestimiento 17,67 m²",
+              "box": [
+                0.1664,
+                0.2818,
+                0.8336,
+                0.7182
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2482730",
+          "name": "RV-PB-01 · cara C1",
+          "label": "RV-PB-01 · cara C1   1:25",
+          "scale": 25,
+          "kind": "elevation",
+          "sector": "02 · Baño A Inv. 02 · PB",
+          "roomLabel": "02 · Baño A Inv. 02 · PB",
+          "image": "/casa-angel/rubros/revestimientos/RV-F-PB-01-view-2482730.svg.gz",
+          "region": [
+            0.3838,
+            0.2146,
+            0.5023,
+            0.4204
+          ],
+          "tags": [
+            "RV-PB-01"
+          ],
+          "dimensions": [
+            {
+              "label": "RV-PB-01 C1 largo y vanos",
+              "values_m": [
+                1.43
+              ],
+              "associative": false
+            },
+            {
+              "label": "RV-PB-01 C1 revestimiento h",
+              "values_m": [
+                2.4
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "RV-PB-01",
+              "elementId": "780810",
+              "room": true,
+              "label": "RV-PB-01 · 02 · Baño A Inv. 02 · revestimiento 17,67 m²",
+              "box": [
+                0.1655,
+                0.0,
+                0.6885,
+                0.8949
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2482763",
+          "name": "RV-PB-01 · cara C2",
+          "label": "RV-PB-01 · cara C2   1:25",
+          "scale": 25,
+          "kind": "elevation",
+          "sector": "02 · Baño A Inv. 02 · PB",
+          "roomLabel": "02 · Baño A Inv. 02 · PB",
+          "image": "/casa-angel/rubros/revestimientos/RV-F-PB-01-view-2482763.svg.gz",
+          "region": [
+            0.5646,
+            0.2146,
+            0.764,
+            0.4204
+          ],
+          "tags": [
+            "RV-PB-01"
+          ],
+          "dimensions": [
+            {
+              "label": "RV-PB-01 C2 largo y vanos",
+              "values_m": [
+                0.61,
+                2.48,
+                0.61
+              ],
+              "associative": false
+            },
+            {
+              "label": "RV-PB-01 C2 revestimiento h",
+              "values_m": [
+                2.4
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "RV-PB-01",
+              "elementId": "780810",
+              "room": true,
+              "label": "RV-PB-01 · 02 · Baño A Inv. 02 · revestimiento 17,67 m²",
+              "box": [
+                0.0983,
+                0.0,
+                0.9017,
+                0.8949
+              ]
+            },
+            {
+              "code": "V-127",
+              "elementId": "925455",
+              "label": "Vano V-127 (descontado)",
+              "box": [
+                0.7693,
+                0.1796,
+                0.9039,
+                0.8949
+              ]
+            },
+            {
+              "code": "V-132",
+              "elementId": "988293",
+              "label": "Vano V-132 (descontado)",
+              "box": [
+                0.0961,
+                0.1796,
+                0.2307,
+                0.8949
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2482798",
+          "name": "RV-PB-01 · cara C3",
+          "label": "RV-PB-01 · cara C3   1:20",
+          "scale": 20,
+          "kind": "elevation",
+          "sector": "02 · Baño A Inv. 02 · PB",
+          "roomLabel": "02 · Baño A Inv. 02 · PB",
+          "image": "/casa-angel/rubros/revestimientos/RV-F-PB-01-view-2482798.svg.gz",
+          "region": [
+            0.3691,
+            0.5136,
+            0.4933,
+            0.7675
+          ],
+          "tags": [
+            "RV-PB-01"
+          ],
+          "dimensions": [
+            {
+              "label": "RV-PB-01 C3 largo y vanos",
+              "values_m": [
+                1.43
+              ],
+              "associative": false
+            },
+            {
+              "label": "RV-PB-01 C3 revestimiento h",
+              "values_m": [
+                2.4
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "RV-PB-01",
+              "elementId": "780810",
+              "room": true,
+              "label": "RV-PB-01 · 02 · Baño A Inv. 02 · revestimiento 17,67 m²",
+              "box": [
+                0.1884,
+                0.0,
+                0.8116,
+                0.8998
+              ]
+            },
+            {
+              "code": null,
+              "elementId": "1375344",
+              "label": "Vano 1375344 (descontado)",
+              "box": [
+                0.1884,
+                0.0552,
+                0.4324,
+                0.1156
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2482831",
+          "name": "RV-PB-01 · cara C4",
+          "label": "RV-PB-01 · cara C4   1:20",
+          "scale": 20,
+          "kind": "elevation",
+          "sector": "02 · Baño A Inv. 02 · PB",
+          "roomLabel": "02 · Baño A Inv. 02 · PB",
+          "image": "/casa-angel/rubros/revestimientos/RV-F-PB-01-view-2482831.svg.gz",
+          "region": [
+            0.529,
+            0.5136,
+            0.7759,
+            0.7675
+          ],
+          "tags": [
+            "RV-PB-01"
+          ],
+          "dimensions": [
+            {
+              "label": "RV-PB-01 C4 largo y vanos",
+              "values_m": [
+                0.59,
+                1.71,
+                1.4
+              ],
+              "associative": false
+            },
+            {
+              "label": "RV-PB-01 C4 revestimiento h",
+              "values_m": [
+                2.4
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "RV-PB-01",
+              "elementId": "780810",
+              "room": true,
+              "label": "RV-PB-01 · 02 · Baño A Inv. 02 · revestimiento 17,67 m²",
+              "box": [
+                0.0947,
+                0.0,
+                0.9053,
+                0.8998
+              ]
+            },
+            {
+              "code": "P-60",
+              "elementId": "762354",
+              "label": "Vano P-60 (descontado)",
+              "box": [
+                0.2239,
+                0.1892,
+                0.5986,
+                0.8998
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "RV-F-PB-02",
+      "title": "Ficha · RV-PB-02 Baño B Inv. 04",
+      "level": "00. Planta Baja",
+      "sector": "04 · Baño B Inv. 04 · PB",
+      "kind": "element",
+      "element": "RV-PB-02",
+      "elementId": "780813",
+      "elementKind": "RV",
+      "note": "Propuesta a confirmar",
+      "sheetId": "2483040",
+      "pdf": "/casa-angel/rubros/revestimientos/RV-F-PB-02.pdf",
+      "image": "/casa-angel/rubros/revestimientos/RV-F-PB-02.svg.gz",
+      "preview": "/casa-angel/rubros/revestimientos/RV-F-PB-02-preview.png",
+      "thumbnail": "/casa-angel/rubros/revestimientos/RV-F-PB-02.png",
+      "views": [
+        {
+          "id": "2482885",
+          "name": "RV-PB-02 · planta de caras",
+          "label": "RV-PB-02 · planta de caras   1:30",
+          "scale": 30,
+          "kind": "plan",
+          "sector": "04 · Baño B Inv. 04 · PB",
+          "roomLabel": "04 · Baño B Inv. 04 · PB",
+          "image": "/casa-angel/rubros/revestimientos/RV-F-PB-02-view-2482885.svg.gz",
+          "region": [
+            0.1263,
+            0.4073,
+            0.33,
+            0.5748
+          ],
+          "tags": [
+            "RV-PB-02"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "RV-PB-02",
+              "elementId": "780813",
+              "room": true,
+              "label": "RV-PB-02 · 04 · Baño B Inv. 04 · revestimiento 18,14 m²",
+              "box": [
+                0.1635,
+                0.2818,
+                0.8365,
+                0.7182
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2482914",
+          "name": "RV-PB-02 · cara C1",
+          "label": "RV-PB-02 · cara C1   1:25",
+          "scale": 25,
+          "kind": "elevation",
+          "sector": "04 · Baño B Inv. 04 · PB",
+          "roomLabel": "04 · Baño B Inv. 04 · PB",
+          "image": "/casa-angel/rubros/revestimientos/RV-F-PB-02-view-2482914.svg.gz",
+          "region": [
+            0.3827,
+            0.2146,
+            0.5012,
+            0.4204
+          ],
+          "tags": [
+            "RV-PB-02"
+          ],
+          "dimensions": [
+            {
+              "label": "RV-PB-02 C1 largo y vanos",
+              "values_m": [
+                1.43
+              ],
+              "associative": false
+            },
+            {
+              "label": "RV-PB-02 C1 revestimiento h",
+              "values_m": [
+                2.4
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "RV-PB-02",
+              "elementId": "780813",
+              "room": true,
+              "label": "RV-PB-02 · 04 · Baño B Inv. 04 · revestimiento 18,14 m²",
+              "box": [
+                0.1655,
+                0.0,
+                0.6885,
+                0.8949
+              ]
+            },
+            {
+              "code": null,
+              "elementId": "1383145",
+              "label": "Vano 1383145 (descontado)",
+              "box": [
+                0.1546,
+                0.0608,
+                0.3484,
+                0.1088
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2482947",
+          "name": "RV-PB-02 · cara C2",
+          "label": "RV-PB-02 · cara C2   1:25",
+          "scale": 25,
+          "kind": "elevation",
+          "sector": "04 · Baño B Inv. 04 · PB",
+          "roomLabel": "04 · Baño B Inv. 04 · PB",
+          "image": "/casa-angel/rubros/revestimientos/RV-F-PB-02-view-2482947.svg.gz",
+          "region": [
+            0.5614,
+            0.2146,
+            0.7651,
+            0.4204
+          ],
+          "tags": [
+            "RV-PB-02"
+          ],
+          "dimensions": [
+            {
+              "label": "RV-PB-02 C2 largo y vanos",
+              "values_m": [
+                0.59,
+                1.71,
+                1.5
+              ],
+              "associative": false
+            },
+            {
+              "label": "RV-PB-02 C2 revestimiento h",
+              "values_m": [
+                2.4
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "RV-PB-02",
+              "elementId": "780813",
+              "room": true,
+              "label": "RV-PB-02 · 04 · Baño B Inv. 04 · revestimiento 18,14 m²",
+              "box": [
+                0.0962,
+                0.0,
+                0.9038,
+                0.8949
+              ]
+            },
+            {
+              "code": "P-59",
+              "elementId": "761336",
+              "label": "Vano P-59 (descontado)",
+              "box": [
+                0.2216,
+                0.193,
+                0.585,
+                0.8949
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2482982",
+          "name": "RV-PB-02 · cara C3",
+          "label": "RV-PB-02 · cara C3   1:20",
+          "scale": 20,
+          "kind": "elevation",
+          "sector": "04 · Baño B Inv. 04 · PB",
+          "roomLabel": "04 · Baño B Inv. 04 · PB",
+          "image": "/casa-angel/rubros/revestimientos/RV-F-PB-02-view-2482982.svg.gz",
+          "region": [
+            0.3677,
+            0.5136,
+            0.4919,
+            0.7675
+          ],
+          "tags": [
+            "RV-PB-02"
+          ],
+          "dimensions": [
+            {
+              "label": "RV-PB-02 C3 largo y vanos",
+              "values_m": [
+                1.43
+              ],
+              "associative": false
+            },
+            {
+              "label": "RV-PB-02 C3 revestimiento h",
+              "values_m": [
+                2.4
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "RV-PB-02",
+              "elementId": "780813",
+              "room": true,
+              "label": "RV-PB-02 · 04 · Baño B Inv. 04 · revestimiento 18,14 m²",
+              "box": [
+                0.1884,
+                0.0,
+                0.8116,
+                0.8998
+              ]
+            },
+            {
+              "code": null,
+              "elementId": "1375344",
+              "label": "Vano 1375344 (descontado)",
+              "box": [
+                0.5676,
+                0.0552,
+                0.8116,
+                0.1156
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2483015",
+          "name": "RV-PB-02 · cara C4",
+          "label": "RV-PB-02 · cara C4   1:20",
+          "scale": 20,
+          "kind": "elevation",
+          "sector": "04 · Baño B Inv. 04 · PB",
+          "roomLabel": "04 · Baño B Inv. 04 · PB",
+          "image": "/casa-angel/rubros/revestimientos/RV-F-PB-02-view-2483015.svg.gz",
+          "region": [
+            0.5249,
+            0.5136,
+            0.7772,
+            0.7675
+          ],
+          "tags": [
+            "RV-PB-02"
+          ],
+          "dimensions": [
+            {
+              "label": "RV-PB-02 C4 largo y vanos",
+              "values_m": [
+                0.61,
+                2.5749,
+                0.6151
+              ],
+              "associative": false
+            },
+            {
+              "label": "RV-PB-02 C4 revestimiento h",
+              "values_m": [
+                2.4
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "RV-PB-02",
+              "elementId": "780813",
+              "room": true,
+              "label": "RV-PB-02 · 04 · Baño B Inv. 04 · revestimiento 18,14 m²",
+              "box": [
+                0.0926,
+                0.0,
+                0.9074,
+                0.8998
+              ]
+            },
+            {
+              "code": "V-57",
+              "elementId": "637763",
+              "label": "Vano V-57 (descontado)",
+              "box": [
+                0.7755,
+                0.1756,
+                0.9084,
+                0.8998
+              ]
+            },
+            {
+              "code": "V-131",
+              "elementId": "988037",
+              "label": "Vano V-131 (descontado)",
+              "box": [
+                0.0905,
+                0.1756,
+                0.2234,
+                0.8998
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "RV-F-PB-03",
+      "title": "Ficha · RV-PB-03 Baño C Inv. 06",
+      "level": "00. Planta Baja",
+      "sector": "06 · Baño C Inv. 06 · PB",
+      "kind": "element",
+      "element": "RV-PB-03",
+      "elementId": "780822",
+      "elementKind": "RV",
+      "note": "Propuesta a confirmar",
+      "sheetId": "2483224",
+      "pdf": "/casa-angel/rubros/revestimientos/RV-F-PB-03.pdf",
+      "image": "/casa-angel/rubros/revestimientos/RV-F-PB-03.svg.gz",
+      "preview": "/casa-angel/rubros/revestimientos/RV-F-PB-03-preview.png",
+      "thumbnail": "/casa-angel/rubros/revestimientos/RV-F-PB-03.png",
+      "views": [
+        {
+          "id": "2483069",
+          "name": "RV-PB-03 · planta de caras",
+          "label": "RV-PB-03 · planta de caras   1:30",
+          "scale": 30,
+          "kind": "plan",
+          "sector": "06 · Baño C Inv. 06 · PB",
+          "roomLabel": "06 · Baño C Inv. 06 · PB",
+          "image": "/casa-angel/rubros/revestimientos/RV-F-PB-03-view-2483069.svg.gz",
+          "region": [
+            0.1281,
+            0.4073,
+            0.3282,
+            0.5748
+          ],
+          "tags": [
+            "RV-PB-03"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "RV-PB-03",
+              "elementId": "780822",
+              "room": true,
+              "label": "RV-PB-03 · 06 · Baño C Inv. 06 · revestimiento 17,67 m²",
+              "box": [
+                0.1664,
+                0.2818,
+                0.8336,
+                0.7182
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2483098",
+          "name": "RV-PB-03 · cara C1",
+          "label": "RV-PB-03 · cara C1   1:25",
+          "scale": 25,
+          "kind": "elevation",
+          "sector": "06 · Baño C Inv. 06 · PB",
+          "roomLabel": "06 · Baño C Inv. 06 · PB",
+          "image": "/casa-angel/rubros/revestimientos/RV-F-PB-03-view-2483098.svg.gz",
+          "region": [
+            0.3838,
+            0.2146,
+            0.5023,
+            0.4204
+          ],
+          "tags": [
+            "RV-PB-03"
+          ],
+          "dimensions": [
+            {
+              "label": "RV-PB-03 C1 largo y vanos",
+              "values_m": [
+                1.43
+              ],
+              "associative": false
+            },
+            {
+              "label": "RV-PB-03 C1 revestimiento h",
+              "values_m": [
+                2.4
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "RV-PB-03",
+              "elementId": "780822",
+              "room": true,
+              "label": "RV-PB-03 · 06 · Baño C Inv. 06 · revestimiento 17,67 m²",
+              "box": [
+                0.1655,
+                0.0,
+                0.6885,
+                0.8949
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2483131",
+          "name": "RV-PB-03 · cara C2",
+          "label": "RV-PB-03 · cara C2   1:25",
+          "scale": 25,
+          "kind": "elevation",
+          "sector": "06 · Baño C Inv. 06 · PB",
+          "roomLabel": "06 · Baño C Inv. 06 · PB",
+          "image": "/casa-angel/rubros/revestimientos/RV-F-PB-03-view-2483131.svg.gz",
+          "region": [
+            0.5646,
+            0.2146,
+            0.764,
+            0.4204
+          ],
+          "tags": [
+            "RV-PB-03"
+          ],
+          "dimensions": [
+            {
+              "label": "RV-PB-03 C2 largo y vanos",
+              "values_m": [
+                0.59,
+                1.71,
+                1.4
+              ],
+              "associative": false
+            },
+            {
+              "label": "RV-PB-03 C2 revestimiento h",
+              "values_m": [
+                2.4
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "RV-PB-03",
+              "elementId": "780822",
+              "room": true,
+              "label": "RV-PB-03 · 06 · Baño C Inv. 06 · revestimiento 17,67 m²",
+              "box": [
+                0.0983,
+                0.0,
+                0.9017,
+                0.8949
+              ]
+            },
+            {
+              "code": "P-95",
+              "elementId": "1243605",
+              "label": "Vano P-95 (descontado)",
+              "box": [
+                0.2264,
+                0.193,
+                0.5977,
+                0.8949
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2483166",
+          "name": "RV-PB-03 · cara C3",
+          "label": "RV-PB-03 · cara C3   1:20",
+          "scale": 20,
+          "kind": "elevation",
+          "sector": "06 · Baño C Inv. 06 · PB",
+          "roomLabel": "06 · Baño C Inv. 06 · PB",
+          "image": "/casa-angel/rubros/revestimientos/RV-F-PB-03-view-2483166.svg.gz",
+          "region": [
+            0.3691,
+            0.5136,
+            0.4933,
+            0.7675
+          ],
+          "tags": [
+            "RV-PB-03"
+          ],
+          "dimensions": [
+            {
+              "label": "RV-PB-03 C3 largo y vanos",
+              "values_m": [
+                1.43
+              ],
+              "associative": false
+            },
+            {
+              "label": "RV-PB-03 C3 revestimiento h",
+              "values_m": [
+                2.4
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "RV-PB-03",
+              "elementId": "780822",
+              "room": true,
+              "label": "RV-PB-03 · 06 · Baño C Inv. 06 · revestimiento 17,67 m²",
+              "box": [
+                0.1884,
+                0.0,
+                0.8116,
+                0.8998
+              ]
+            },
+            {
+              "code": null,
+              "elementId": "1383145",
+              "label": "Vano 1383145 (descontado)",
+              "box": [
+                0.5937,
+                0.0554,
+                0.8247,
+                0.1039
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2483199",
+          "name": "RV-PB-03 · cara C4",
+          "label": "RV-PB-03 · cara C4   1:20",
+          "scale": 20,
+          "kind": "elevation",
+          "sector": "06 · Baño C Inv. 06 · PB",
+          "roomLabel": "06 · Baño C Inv. 06 · PB",
+          "image": "/casa-angel/rubros/revestimientos/RV-F-PB-03-view-2483199.svg.gz",
+          "region": [
+            0.529,
+            0.5136,
+            0.7759,
+            0.7675
+          ],
+          "tags": [
+            "RV-PB-03"
+          ],
+          "dimensions": [
+            {
+              "label": "RV-PB-03 C4 largo y vanos",
+              "values_m": [
+                0.61,
+                2.48,
+                0.61
+              ],
+              "associative": false
+            },
+            {
+              "label": "RV-PB-03 C4 revestimiento h",
+              "values_m": [
+                2.4
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "RV-PB-03",
+              "elementId": "780822",
+              "room": true,
+              "label": "RV-PB-03 · 06 · Baño C Inv. 06 · revestimiento 17,67 m²",
+              "box": [
+                0.0947,
+                0.0,
+                0.9053,
+                0.8998
+              ]
+            },
+            {
+              "code": "V-108",
+              "elementId": "759029",
+              "label": "Vano V-108 (descontado)",
+              "box": [
+                0.0925,
+                0.1756,
+                0.2283,
+                0.8998
+              ]
+            },
+            {
+              "code": "V-117",
+              "elementId": "777057",
+              "label": "Vano V-117 (descontado)",
+              "box": [
+                0.7717,
+                0.1756,
+                0.9075,
+                0.8998
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "RV-F-PB-04",
+      "title": "Ficha · RV-PB-04 Toilette Servicio 07",
+      "level": "00. Planta Baja",
+      "sector": "07 · Toilette Servicio 07 · PB",
+      "kind": "element",
+      "element": "RV-PB-04",
+      "elementId": "874173",
+      "elementKind": "RV",
+      "note": "Propuesta a confirmar",
+      "sheetId": "2483413",
+      "pdf": "/casa-angel/rubros/revestimientos/RV-F-PB-04.pdf",
+      "image": "/casa-angel/rubros/revestimientos/RV-F-PB-04.svg.gz",
+      "preview": "/casa-angel/rubros/revestimientos/RV-F-PB-04-preview.png",
+      "thumbnail": "/casa-angel/rubros/revestimientos/RV-F-PB-04.png",
+      "views": [
+        {
+          "id": "2483253",
+          "name": "RV-PB-04 · planta de caras",
+          "label": "RV-PB-04 · planta de caras   1:15",
+          "scale": 15,
+          "kind": "plan",
+          "sector": "07 · Toilette Servicio 07 · PB",
+          "roomLabel": "07 · Toilette Servicio 07 · PB",
+          "image": "/casa-angel/rubros/revestimientos/RV-F-PB-04-view-2483253.svg.gz",
+          "region": [
+            0.1206,
+            0.2665,
+            0.4161,
+            0.7156
+          ],
+          "tags": [
+            "RV-PB-04"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "RV-PB-04",
+              "elementId": "874173",
+              "room": true,
+              "label": "RV-PB-04 · 07 · Toilette Servicio 07 · revestimiento 15,73 m²",
+              "box": [
+                0.2102,
+                0.1959,
+                0.7898,
+                0.8041
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2483288",
+          "name": "RV-PB-04 · cara C1",
+          "label": "RV-PB-04 · cara C1   1:20",
+          "scale": 20,
+          "kind": "elevation",
+          "sector": "07 · Toilette Servicio 07 · PB",
+          "roomLabel": "07 · Toilette Servicio 07 · PB",
+          "image": "/casa-angel/rubros/revestimientos/RV-F-PB-04-view-2483288.svg.gz",
+          "region": [
+            0.4264,
+            0.2146,
+            0.6017,
+            0.4686
+          ],
+          "tags": [
+            "RV-PB-04"
+          ],
+          "dimensions": [
+            {
+              "label": "RV-PB-04 C1 largo y vanos",
+              "values_m": [
+                0.8,
+                0.5,
+                1.075
+              ],
+              "associative": false
+            },
+            {
+              "label": "RV-PB-04 C1 revestimiento h",
+              "values_m": [
+                2.4
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "RV-PB-04",
+              "elementId": "874173",
+              "room": true,
+              "label": "RV-PB-04 · 07 · Toilette Servicio 07 · revestimiento 15,73 m²",
+              "box": [
+                0.1334,
+                0.0,
+                0.8666,
+                0.8998
+              ]
+            },
+            {
+              "code": "V-150",
+              "elementId": "1153988",
+              "label": "Vano V-150 (descontado)",
+              "box": [
+                0.3804,
+                0.0,
+                0.5347,
+                0.8998
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2483323",
+          "name": "RV-PB-04 · cara C2",
+          "label": "RV-PB-04 · cara C2   1:20",
+          "scale": 20,
+          "kind": "elevation",
+          "sector": "07 · Toilette Servicio 07 · PB",
+          "roomLabel": "07 · Toilette Servicio 07 · PB",
+          "image": "/casa-angel/rubros/revestimientos/RV-F-PB-04-view-2483323.svg.gz",
+          "region": [
+            0.6095,
+            0.2146,
+            0.7807,
+            0.4686
+          ],
+          "tags": [
+            "RV-PB-04"
+          ],
+          "dimensions": [
+            {
+              "label": "RV-PB-04 C2 largo y vanos",
+              "values_m": [
+                2.3
+              ],
+              "associative": false
+            },
+            {
+              "label": "RV-PB-04 C2 revestimiento h",
+              "values_m": [
+                2.4
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "RV-PB-04",
+              "elementId": "874173",
+              "room": true,
+              "label": "RV-PB-04 · 07 · Toilette Servicio 07 · revestimiento 15,73 m²",
+              "box": [
+                0.0181,
+                0.0,
+                0.8634,
+                0.8998
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2483356",
+          "name": "RV-PB-04 · cara C9",
+          "label": "RV-PB-04 · cara C9   1:25",
+          "scale": 25,
+          "kind": "elevation",
+          "sector": "07 · Toilette Servicio 07 · PB",
+          "roomLabel": "07 · Toilette Servicio 07 · PB",
+          "image": "/casa-angel/rubros/revestimientos/RV-F-PB-04-view-2483356.svg.gz",
+          "region": [
+            0.4542,
+            0.5618,
+            0.5719,
+            0.7675
+          ],
+          "tags": [
+            "RV-PB-04"
+          ],
+          "dimensions": [
+            {
+              "label": "RV-PB-04 C9 largo y vanos",
+              "values_m": [
+                0.515
+              ],
+              "associative": false
+            },
+            {
+              "label": "RV-PB-04 C9 revestimiento h",
+              "values_m": [
+                2.4
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "RV-PB-04",
+              "elementId": "874173",
+              "room": true,
+              "label": "RV-PB-04 · 07 · Toilette Servicio 07 · revestimiento 15,73 m²",
+              "box": [
+                0.1667,
+                0.0,
+                1.0,
+                0.8949
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2483389",
+          "name": "RV-PB-04 · cara C10",
+          "label": "RV-PB-04 · cara C10   1:25",
+          "scale": 25,
+          "kind": "elevation",
+          "sector": "07 · Toilette Servicio 07 · PB",
+          "roomLabel": "07 · Toilette Servicio 07 · PB",
+          "image": "/casa-angel/rubros/revestimientos/RV-F-PB-04-view-2483389.svg.gz",
+          "region": [
+            0.6182,
+            0.5618,
+            0.77,
+            0.7675
+          ],
+          "tags": [
+            "RV-PB-04"
+          ],
+          "dimensions": [
+            {
+              "label": "RV-PB-04 C10 largo y vanos",
+              "values_m": [
+                0.9025,
+                1.6975
+              ],
+              "associative": false
+            },
+            {
+              "label": "RV-PB-04 C10 revestimiento h",
+              "values_m": [
+                2.4
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "RV-PB-04",
+              "elementId": "874173",
+              "room": true,
+              "label": "RV-PB-04 · 07 · Toilette Servicio 07 · revestimiento 15,73 m²",
+              "box": [
+                0.1291,
+                0.0,
+                0.8923,
+                0.8949
+              ]
+            },
+            {
+              "code": "P-93",
+              "elementId": "1150552",
+              "label": "Vano P-93 (descontado)",
+              "box": [
+                0.3866,
+                0.193,
+                0.8744,
+                0.8949
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "RV-F-PB-05",
+      "title": "Ficha · RV-PB-05 Baño ppal 15",
+      "level": "00. Planta Baja",
+      "sector": "15 · Baño ppal 15 · PB",
+      "kind": "element",
+      "element": "RV-PB-05",
+      "elementId": "780828",
+      "elementKind": "RV",
+      "note": "Propuesta a confirmar",
+      "sheetId": "2483634",
+      "pdf": "/casa-angel/rubros/revestimientos/RV-F-PB-05.pdf",
+      "image": "/casa-angel/rubros/revestimientos/RV-F-PB-05.svg.gz",
+      "preview": "/casa-angel/rubros/revestimientos/RV-F-PB-05-preview.png",
+      "thumbnail": "/casa-angel/rubros/revestimientos/RV-F-PB-05.png",
+      "views": [
+        {
+          "id": "2483442",
+          "name": "RV-PB-05 · planta de caras",
+          "label": "RV-PB-05 · planta de caras   1:30",
+          "scale": 30,
+          "kind": "plan",
+          "sector": "15 · Baño ppal 15 · PB",
+          "roomLabel": "15 · Baño ppal 15 · PB",
+          "image": "/casa-angel/rubros/revestimientos/RV-F-PB-05-view-2483442.svg.gz",
+          "region": [
+            0.1219,
+            0.3137,
+            0.2539,
+            0.6684
+          ],
+          "tags": [
+            "RV-PB-05"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "RV-PB-05",
+              "elementId": "780828",
+              "room": true,
+              "label": "RV-PB-05 · 15 · Baño ppal 15 · revestimiento 27,84 m²",
+              "box": [
+                0.2525,
+                0.1329,
+                0.7475,
+                0.8671
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2483477",
+          "name": "RV-PB-05 · cara C1",
+          "label": "RV-PB-05 · cara C1   1:25",
+          "scale": 25,
+          "kind": "elevation",
+          "sector": "15 · Baño ppal 15 · PB",
+          "roomLabel": "15 · Baño ppal 15 · PB",
+          "image": "/casa-angel/rubros/revestimientos/RV-F-PB-05-view-2483477.svg.gz",
+          "region": [
+            0.2872,
+            0.2146,
+            0.5471,
+            0.4204
+          ],
+          "tags": [
+            "RV-PB-05"
+          ],
+          "dimensions": [
+            {
+              "label": "RV-PB-05 C1 largo y vanos",
+              "values_m": [
+                0.51,
+                4.08,
+                0.51
+              ],
+              "associative": false
+            },
+            {
+              "label": "RV-PB-05 C1 revestimiento h",
+              "values_m": [
+                2.4
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "RV-PB-05",
+              "elementId": "780828",
+              "room": true,
+              "label": "RV-PB-05 · 15 · Baño ppal 15 · revestimiento 27,84 m²",
+              "box": [
+                0.0754,
+                0.0,
+                0.9246,
+                0.8949
+              ]
+            },
+            {
+              "code": "V-35",
+              "elementId": "600044",
+              "label": "Vano V-35 (descontado)",
+              "box": [
+                0.0737,
+                0.1796,
+                0.1603,
+                0.8949
+              ]
+            },
+            {
+              "code": "V-69",
+              "elementId": "656057",
+              "label": "Vano V-69 (descontado)",
+              "box": [
+                0.8397,
+                0.1796,
+                0.9263,
+                0.8949
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2483512",
+          "name": "RV-PB-05 · cara C2",
+          "label": "RV-PB-05 · cara C2   1:25",
+          "scale": 25,
+          "kind": "elevation",
+          "sector": "15 · Baño ppal 15 · PB",
+          "roomLabel": "15 · Baño ppal 15 · PB",
+          "image": "/casa-angel/rubros/revestimientos/RV-F-PB-05-view-2483512.svg.gz",
+          "region": [
+            0.6191,
+            0.2146,
+            0.7383,
+            0.4204
+          ],
+          "tags": [
+            "RV-PB-05"
+          ],
+          "dimensions": [
+            {
+              "label": "RV-PB-05 C2 largo y vanos",
+              "values_m": [
+                1.76
+              ],
+              "associative": false
+            },
+            {
+              "label": "RV-PB-05 C2 revestimiento h",
+              "values_m": [
+                2.4
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "RV-PB-05",
+              "elementId": "780828",
+              "room": true,
+              "label": "RV-PB-05 · 15 · Baño ppal 15 · revestimiento 27,84 m²",
+              "box": [
+                0.1464,
+                0.0,
+                0.8043,
+                0.8949
+              ]
+            },
+            {
+              "code": null,
+              "elementId": "2349814",
+              "label": "Vano 2349814 (descontado)",
+              "box": [
+                0.1646,
+                0.0604,
+                0.2716,
+                0.103
+              ]
+            },
+            {
+              "code": "V-35",
+              "elementId": "600044",
+              "label": "Vano V-35 (descontado)",
+              "box": [
+                0.6651,
+                0.1796,
+                0.8589,
+                0.8949
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2483545",
+          "name": "RV-PB-05 · cara C3",
+          "label": "RV-PB-05 · cara C3   1:20",
+          "scale": 20,
+          "kind": "elevation",
+          "sector": "15 · Baño ppal 15 · PB",
+          "roomLabel": "15 · Baño ppal 15 · PB",
+          "image": "/casa-angel/rubros/revestimientos/RV-F-PB-05-view-2483545.svg.gz",
+          "region": [
+            0.2713,
+            0.5136,
+            0.4263,
+            0.7675
+          ],
+          "tags": [
+            "RV-PB-05"
+          ],
+          "dimensions": [
+            {
+              "label": "RV-PB-05 C3 largo y vanos",
+              "values_m": [
+                2.0
+              ],
+              "associative": false
+            },
+            {
+              "label": "RV-PB-05 C3 revestimiento h",
+              "values_m": [
+                2.4
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "RV-PB-05",
+              "elementId": "780828",
+              "room": true,
+              "label": "RV-PB-05 · 15 · Baño ppal 15 · revestimiento 27,84 m²",
+              "box": [
+                0.0,
+                0.0,
+                0.8491,
+                0.8998
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2483578",
+          "name": "RV-PB-05 · cara C7",
+          "label": "RV-PB-05 · cara C7   1:20",
+          "scale": 20,
+          "kind": "elevation",
+          "sector": "15 · Baño ppal 15 · PB",
+          "roomLabel": "15 · Baño ppal 15 · PB",
+          "image": "/casa-angel/rubros/revestimientos/RV-F-PB-05-view-2483578.svg.gz",
+          "region": [
+            0.4456,
+            0.5136,
+            0.6006,
+            0.7675
+          ],
+          "tags": [
+            "RV-PB-05"
+          ],
+          "dimensions": [
+            {
+              "label": "RV-PB-05 C7 largo y vanos",
+              "values_m": [
+                2.0
+              ],
+              "associative": false
+            },
+            {
+              "label": "RV-PB-05 C7 revestimiento h",
+              "values_m": [
+                2.4
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "RV-PB-05",
+              "elementId": "780828",
+              "room": true,
+              "label": "RV-PB-05 · 15 · Baño ppal 15 · revestimiento 27,84 m²",
+              "box": [
+                0.1509,
+                0.0,
+                1.0,
+                0.8998
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2483611",
+          "name": "RV-PB-05 · cara C8",
+          "label": "RV-PB-05 · cara C8   1:20",
+          "scale": 20,
+          "kind": "elevation",
+          "sector": "15 · Baño ppal 15 · PB",
+          "roomLabel": "15 · Baño ppal 15 · PB",
+          "image": "/casa-angel/rubros/revestimientos/RV-F-PB-05-view-2483611.svg.gz",
+          "region": [
+            0.6264,
+            0.5136,
+            0.7685,
+            0.7675
+          ],
+          "tags": [
+            "RV-PB-05"
+          ],
+          "dimensions": [
+            {
+              "label": "RV-PB-05 C8 largo y vanos",
+              "values_m": [
+                1.76
+              ],
+              "associative": false
+            },
+            {
+              "label": "RV-PB-05 C8 revestimiento h",
+              "values_m": [
+                2.4
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "RV-PB-05",
+              "elementId": "780828",
+              "room": true,
+              "label": "RV-PB-05 · 15 · Baño ppal 15 · revestimiento 27,84 m²",
+              "box": [
+                0.1647,
+                0.0,
+                0.8544,
+                0.8998
+              ]
+            },
+            {
+              "code": "V-69",
+              "elementId": "656057",
+              "label": "Vano V-69 (descontado)",
+              "box": [
+                0.1075,
+                0.1756,
+                0.3107,
+                0.8998
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "codes": [
+    {
+      "code": "PI-PB-01",
+      "kind": "PI",
+      "label": "PI-PB-01 · 01 · Cuarto A Inv. 01 · PB · 28,19 m²",
+      "status": "Propuesta a confirmar · pintura 0,00–2,60",
+      "elementId": "780807",
+      "room": "01 · Cuarto A Inv. 01 · PB",
+      "level": "00. Planta Baja",
+      "area_m2": 28.189,
+      "faces": [
+        {
+          "face": "C1",
+          "length_m": 3.205,
+          "net_m2": 8.333,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C2",
+          "length_m": 3.7,
+          "net_m2": 5.593,
+          "openings_m2": 4.027
+        },
+        {
+          "face": "C3",
+          "length_m": 3.205,
+          "net_m2": 8.333,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C4",
+          "length_m": 3.7,
+          "net_m2": 5.93,
+          "openings_m2": 3.69
+        }
+      ]
+    },
+    {
+      "code": "RV-PB-01",
+      "kind": "RV",
+      "label": "RV-PB-01 · 02 · Baño A Inv. 02 · PB · 17,67 m²",
+      "status": "Propuesta a confirmar · revestimiento 0,00–2,40 · material a definir",
+      "elementId": "780810",
+      "room": "02 · Baño A Inv. 02 · PB",
+      "level": "00. Planta Baja",
+      "area_m2": 17.669,
+      "gross_m2": 24.624,
+      "paintAbove_m2": 2.051,
+      "faces": [
+        {
+          "face": "C1",
+          "length_m": 1.43,
+          "net_m2": 3.432,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C2",
+          "length_m": 3.7,
+          "net_m2": 5.952,
+          "openings_m2": 2.928
+        },
+        {
+          "face": "C3",
+          "length_m": 1.43,
+          "net_m2": 3.432,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C4",
+          "length_m": 3.7,
+          "net_m2": 4.853,
+          "openings_m2": 4.027
+        }
+      ]
+    },
+    {
+      "code": "PI-PB-02",
+      "kind": "PI",
+      "label": "PI-PB-02 · 03 · Cuarto B Inv. 03 · PB · 28,71 m²",
+      "status": "Propuesta a confirmar · pintura 0,00–2,60",
+      "elementId": "780816",
+      "room": "03 · Cuarto B Inv. 03 · PB",
+      "level": "00. Planta Baja",
+      "area_m2": 28.709,
+      "faces": [
+        {
+          "face": "C1",
+          "length_m": 3.205,
+          "net_m2": 8.333,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C2",
+          "length_m": 3.8,
+          "net_m2": 6.19,
+          "openings_m2": 3.69
+        },
+        {
+          "face": "C3",
+          "length_m": 3.205,
+          "net_m2": 8.333,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C4",
+          "length_m": 3.8,
+          "net_m2": 5.853,
+          "openings_m2": 4.027
+        }
+      ]
+    },
+    {
+      "code": "RV-PB-02",
+      "kind": "RV",
+      "label": "RV-PB-02 · 04 · Baño B Inv. 04 · PB · 18,14 m²",
+      "status": "Propuesta a confirmar · revestimiento 0,00–2,40 · material a definir",
+      "elementId": "780813",
+      "room": "04 · Baño B Inv. 04 · PB",
+      "level": "00. Planta Baja",
+      "area_m2": 18.137,
+      "gross_m2": 25.104,
+      "paintAbove_m2": 2.091,
+      "faces": [
+        {
+          "face": "C1",
+          "length_m": 1.43,
+          "net_m2": 3.432,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C2",
+          "length_m": 3.8,
+          "net_m2": 5.093,
+          "openings_m2": 4.027
+        },
+        {
+          "face": "C3",
+          "length_m": 1.43,
+          "net_m2": 3.432,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C4",
+          "length_m": 3.8,
+          "net_m2": 6.18,
+          "openings_m2": 2.94
+        }
+      ]
+    },
+    {
+      "code": "PI-PB-03",
+      "kind": "PI",
+      "label": "PI-PB-03 · 05 · Cuarto C Inv. 05 · PB · 28,19 m²",
+      "status": "Propuesta a confirmar · pintura 0,00–2,60",
+      "elementId": "780819",
+      "room": "05 · Cuarto C Inv. 05 · PB",
+      "level": "00. Planta Baja",
+      "area_m2": 28.189,
+      "faces": [
+        {
+          "face": "C1",
+          "length_m": 3.205,
+          "net_m2": 8.333,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C2",
+          "length_m": 3.7,
+          "net_m2": 5.93,
+          "openings_m2": 3.69
+        },
+        {
+          "face": "C3",
+          "length_m": 3.205,
+          "net_m2": 8.333,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C4",
+          "length_m": 3.7,
+          "net_m2": 5.593,
+          "openings_m2": 4.027
+        }
+      ]
+    },
+    {
+      "code": "RV-PB-03",
+      "kind": "RV",
+      "label": "RV-PB-03 · 06 · Baño C Inv. 06 · PB · 17,67 m²",
+      "status": "Propuesta a confirmar · revestimiento 0,00–2,40 · material a definir",
+      "elementId": "780822",
+      "room": "06 · Baño C Inv. 06 · PB",
+      "level": "00. Planta Baja",
+      "area_m2": 17.669,
+      "gross_m2": 24.624,
+      "paintAbove_m2": 2.052,
+      "faces": [
+        {
+          "face": "C1",
+          "length_m": 1.43,
+          "net_m2": 3.432,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C2",
+          "length_m": 3.7,
+          "net_m2": 4.853,
+          "openings_m2": 4.027
+        },
+        {
+          "face": "C3",
+          "length_m": 1.43,
+          "net_m2": 3.432,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C4",
+          "length_m": 3.7,
+          "net_m2": 5.952,
+          "openings_m2": 2.928
+        }
+      ]
+    },
+    {
+      "code": "RV-PB-04",
+      "kind": "RV",
+      "label": "RV-PB-04 · 07 · Toilette Servicio 07 · PB · 15,73 m²",
+      "status": "Propuesta a confirmar · revestimiento 0,00–2,40 · material a definir",
+      "elementId": "874173",
+      "room": "07 · Toilette Servicio 07 · PB",
+      "level": "00. Planta Baja",
+      "area_m2": 15.733,
+      "gross_m2": 23.931,
+      "paintAbove_m2": 1.644,
+      "faces": [
+        {
+          "face": "C1",
+          "length_m": 2.375,
+          "net_m2": 4.5,
+          "openings_m2": 1.2
+        },
+        {
+          "face": "C2",
+          "length_m": 2.3,
+          "net_m2": 5.52,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C3",
+          "length_m": 0.275,
+          "net_m2": 0.661,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C4",
+          "length_m": 0.196,
+          "net_m2": 0.47,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C5",
+          "length_m": 0.46,
+          "net_m2": 1.104,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C6",
+          "length_m": 0.075,
+          "net_m2": 0.0,
+          "openings_m2": 0.18
+        },
+        {
+          "face": "C7",
+          "length_m": 1.1,
+          "net_m2": 0.0,
+          "openings_m2": 2.64
+        },
+        {
+          "face": "C8",
+          "length_m": 0.075,
+          "net_m2": 0.0,
+          "openings_m2": 0.18
+        },
+        {
+          "face": "C9",
+          "length_m": 0.515,
+          "net_m2": 1.236,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C10",
+          "length_m": 2.6,
+          "net_m2": 2.242,
+          "openings_m2": 3.998
+        }
+      ]
+    },
+    {
+      "code": "PI-PB-04",
+      "kind": "PI",
+      "label": "PI-PB-04 · 08 · Lavadero 08 · PB · 13,06 m²",
+      "status": "Propuesta a confirmar · pintura 0,00–2,60",
+      "elementId": "1041091",
+      "room": "08 · Lavadero 08 · PB",
+      "level": "00. Planta Baja",
+      "area_m2": 13.06,
+      "faces": [
+        {
+          "face": "C1",
+          "length_m": 0.075,
+          "net_m2": 0.0,
+          "openings_m2": 0.195
+        },
+        {
+          "face": "C2",
+          "length_m": 0.675,
+          "net_m2": 1.755,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C3",
+          "length_m": 2.6,
+          "net_m2": 2.221,
+          "openings_m2": 3.998
+        },
+        {
+          "face": "C4",
+          "length_m": 0.69,
+          "net_m2": 1.794,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C5",
+          "length_m": 0.075,
+          "net_m2": 0.0,
+          "openings_m2": 0.195
+        },
+        {
+          "face": "C6",
+          "length_m": 1.1,
+          "net_m2": 0.0,
+          "openings_m2": 2.86
+        },
+        {
+          "face": "C7",
+          "length_m": 0.075,
+          "net_m2": 0.0,
+          "openings_m2": 0.195
+        },
+        {
+          "face": "C8",
+          "length_m": 0.7,
+          "net_m2": 1.82,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C9",
+          "length_m": 2.6,
+          "net_m2": 3.611,
+          "openings_m2": 2.19
+        },
+        {
+          "face": "C10",
+          "length_m": 0.715,
+          "net_m2": 1.859,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C11",
+          "length_m": 0.075,
+          "net_m2": 0.0,
+          "openings_m2": 0.195
+        },
+        {
+          "face": "C12",
+          "length_m": 1.1,
+          "net_m2": 0.0,
+          "openings_m2": 2.86
+        }
+      ]
+    },
+    {
+      "code": "PI-PB-05",
+      "kind": "PI",
+      "label": "PI-PB-05 · 09 · Hab. servicio 09 · PB · 23,25 m²",
+      "status": "Propuesta a confirmar · pintura 0,00–2,60",
+      "elementId": "785697",
+      "room": "09 · Hab. servicio 09 · PB",
+      "level": "00. Planta Baja",
+      "area_m2": 23.251,
+      "faces": [
+        {
+          "face": "C1",
+          "length_m": 2.543,
+          "net_m2": 5.311,
+          "openings_m2": 1.3
+        },
+        {
+          "face": "C2",
+          "length_m": 2.6,
+          "net_m2": 4.57,
+          "openings_m2": 2.19
+        },
+        {
+          "face": "C3",
+          "length_m": 2.543,
+          "net_m2": 6.611,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C4",
+          "length_m": 2.6,
+          "net_m2": 6.76,
+          "openings_m2": 0.0
+        }
+      ]
+    },
+    {
+      "code": "PI-PB-06",
+      "kind": "PI",
+      "label": "PI-PB-06 · 10 · Acceso Servicio 10 · PB · 16,58 m²",
+      "status": "Propuesta a confirmar · pintura 0,00–2,60",
+      "elementId": "785700",
+      "room": "10 · Acceso Servicio 10 · PB",
+      "level": "00. Planta Baja",
+      "area_m2": 16.585,
+      "faces": [
+        {
+          "face": "C1",
+          "length_m": 0.075,
+          "net_m2": 0.0,
+          "openings_m2": 0.195
+        },
+        {
+          "face": "C2",
+          "length_m": 0.452,
+          "net_m2": 1.176,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C3",
+          "length_m": 2.6,
+          "net_m2": 6.76,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C4",
+          "length_m": 1.902,
+          "net_m2": 4.946,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C5",
+          "length_m": 2.6,
+          "net_m2": 2.792,
+          "openings_m2": 3.968
+        },
+        {
+          "face": "C6",
+          "length_m": 0.35,
+          "net_m2": 0.91,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C7",
+          "length_m": 0.075,
+          "net_m2": 0.0,
+          "openings_m2": 0.195
+        },
+        {
+          "face": "C8",
+          "length_m": 1.1,
+          "net_m2": 0.0,
+          "openings_m2": 2.86
+        }
+      ]
+    },
+    {
+      "code": "PI-PB-07",
+      "kind": "PI",
+      "label": "PI-PB-07 · 12 · Quincho 12 · PB · 49,98 m²",
+      "status": "Propuesta a confirmar · pintura 0,00–2,60",
+      "elementId": "783339",
+      "room": "12 · Quincho 12 · PB",
+      "level": "00. Planta Baja",
+      "area_m2": 49.985,
+      "faces": [
+        {
+          "face": "C1",
+          "length_m": 0.534,
+          "net_m2": 1.388,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C2",
+          "length_m": 0.075,
+          "net_m2": 0.0,
+          "openings_m2": 0.195
+        },
+        {
+          "face": "C3",
+          "length_m": 1.1,
+          "net_m2": 0.0,
+          "openings_m2": 2.86
+        },
+        {
+          "face": "C4",
+          "length_m": 0.075,
+          "net_m2": 0.0,
+          "openings_m2": 0.195
+        },
+        {
+          "face": "C5",
+          "length_m": 0.391,
+          "net_m2": 1.017,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C6",
+          "length_m": 0.6,
+          "net_m2": 1.56,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C7",
+          "length_m": 0.095,
+          "net_m2": 0.0,
+          "openings_m2": 0.247
+        },
+        {
+          "face": "C8",
+          "length_m": 0.6,
+          "net_m2": 1.56,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C9",
+          "length_m": 4.765,
+          "net_m2": 12.389,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C10",
+          "length_m": 2.04,
+          "net_m2": 5.304,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C11",
+          "length_m": 0.05,
+          "net_m2": 0.0,
+          "openings_m2": 0.13
+        },
+        {
+          "face": "C12",
+          "length_m": 1.46,
+          "net_m2": 3.796,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C13",
+          "length_m": 0.05,
+          "net_m2": 0.0,
+          "openings_m2": 0.13
+        },
+        {
+          "face": "C14",
+          "length_m": 1.5,
+          "net_m2": 3.9,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C15",
+          "length_m": 0.05,
+          "net_m2": 0.0,
+          "openings_m2": 0.13
+        },
+        {
+          "face": "C16",
+          "length_m": 1.5,
+          "net_m2": 3.9,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C17",
+          "length_m": 5.385,
+          "net_m2": 14.001,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C18",
+          "length_m": 0.075,
+          "net_m2": 0.0,
+          "openings_m2": 0.195
+        },
+        {
+          "face": "C19",
+          "length_m": 1.1,
+          "net_m2": 0.0,
+          "openings_m2": 2.86
+        },
+        {
+          "face": "C20",
+          "length_m": 0.075,
+          "net_m2": 0.0,
+          "openings_m2": 0.195
+        },
+        {
+          "face": "C21",
+          "length_m": 0.45,
+          "net_m2": 1.17,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C22",
+          "length_m": 6.5,
+          "net_m2": 0.0,
+          "openings_m2": 16.9
+        }
+      ]
+    },
+    {
+      "code": "PI-PB-08",
+      "kind": "PI",
+      "label": "PI-PB-08 · 13 · Cuarto ppal 13 · PB · 24,57 m²",
+      "status": "Propuesta a confirmar · pintura 0,00–2,60",
+      "elementId": "780825",
+      "room": "13 · Cuarto ppal 13 · PB",
+      "level": "00. Planta Baja",
+      "area_m2": 24.569,
+      "faces": [
+        {
+          "face": "C1",
+          "length_m": 4.375,
+          "net_m2": 11.375,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C2",
+          "length_m": 3.37,
+          "net_m2": 7.292,
+          "openings_m2": 1.47
+        },
+        {
+          "face": "C3",
+          "length_m": 4.375,
+          "net_m2": 0.0,
+          "openings_m2": 11.375
+        },
+        {
+          "face": "C4",
+          "length_m": 0.27,
+          "net_m2": 0.702,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C5",
+          "length_m": 0.07,
+          "net_m2": 0.0,
+          "openings_m2": 0.182
+        },
+        {
+          "face": "C6",
+          "length_m": 1.1,
+          "net_m2": 0.0,
+          "openings_m2": 2.86
+        },
+        {
+          "face": "C7",
+          "length_m": 0.07,
+          "net_m2": 0.0,
+          "openings_m2": 0.182
+        },
+        {
+          "face": "C8",
+          "length_m": 2.0,
+          "net_m2": 5.2,
+          "openings_m2": 0.0
+        }
+      ]
+    },
+    {
+      "code": "PI-PB-09",
+      "kind": "PI",
+      "label": "PI-PB-09 · 14 · Vestidor ppal 14 · PB · 17,61 m²",
+      "status": "Propuesta a confirmar · pintura 0,00–2,60",
+      "elementId": "1007176",
+      "room": "14 · Vestidor ppal 14 · PB",
+      "level": "00. Planta Baja",
+      "area_m2": 17.611,
+      "faces": [
+        {
+          "face": "C1",
+          "length_m": 1.73,
+          "net_m2": 1.738,
+          "openings_m2": 2.76
+        },
+        {
+          "face": "C2",
+          "length_m": 4.375,
+          "net_m2": 11.375,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C3",
+          "length_m": 1.73,
+          "net_m2": 4.498,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C4",
+          "length_m": 4.375,
+          "net_m2": 0.0,
+          "openings_m2": 11.375
+        }
+      ]
+    },
+    {
+      "code": "RV-PB-05",
+      "kind": "RV",
+      "label": "RV-PB-05 · 15 · Baño ppal 15 · PB · 27,84 m²",
+      "status": "Propuesta a confirmar · revestimiento 0,00–2,40 · material a definir",
+      "elementId": "780828",
+      "room": "15 · Baño ppal 15 · PB",
+      "level": "00. Planta Baja",
+      "area_m2": 27.84,
+      "gross_m2": 33.168,
+      "paintAbove_m2": 2.524,
+      "faces": [
+        {
+          "face": "C1",
+          "length_m": 5.1,
+          "net_m2": 9.792,
+          "openings_m2": 2.448
+        },
+        {
+          "face": "C2",
+          "length_m": 1.76,
+          "net_m2": 4.224,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C3",
+          "length_m": 2.0,
+          "net_m2": 4.8,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C4",
+          "length_m": 0.05,
+          "net_m2": 0.0,
+          "openings_m2": 0.12
+        },
+        {
+          "face": "C5",
+          "length_m": 1.1,
+          "net_m2": 0.0,
+          "openings_m2": 2.64
+        },
+        {
+          "face": "C6",
+          "length_m": 0.05,
+          "net_m2": 0.0,
+          "openings_m2": 0.12
+        },
+        {
+          "face": "C7",
+          "length_m": 2.0,
+          "net_m2": 4.8,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C8",
+          "length_m": 1.76,
+          "net_m2": 4.224,
+          "openings_m2": 0.0
+        }
+      ]
+    },
+    {
+      "code": "PI-PB-10",
+      "kind": "PI",
+      "label": "PI-PB-10 · 16 · Pasillo 16 · PB · 33,39 m²",
+      "status": "Propuesta a confirmar · pintura 0,00–2,60",
+      "elementId": "788673",
+      "room": "16 · Pasillo 16 · PB",
+      "level": "00. Planta Baja",
+      "area_m2": 33.388,
+      "faces": [
+        {
+          "face": "C1",
+          "length_m": 4.4,
+          "net_m2": 5.9,
+          "openings_m2": 5.54
+        },
+        {
+          "face": "C2",
+          "length_m": 0.785,
+          "net_m2": 0.204,
+          "openings_m2": 1.838
+        },
+        {
+          "face": "C3",
+          "length_m": 5.8,
+          "net_m2": 9.03,
+          "openings_m2": 6.05
+        },
+        {
+          "face": "C4",
+          "length_m": 0.351,
+          "net_m2": 0.913,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C5",
+          "length_m": 0.075,
+          "net_m2": 0.0,
+          "openings_m2": 0.195
+        },
+        {
+          "face": "C6",
+          "length_m": 1.1,
+          "net_m2": 0.0,
+          "openings_m2": 2.86
+        },
+        {
+          "face": "C7",
+          "length_m": 0.075,
+          "net_m2": 0.0,
+          "openings_m2": 0.195
+        },
+        {
+          "face": "C8",
+          "length_m": 0.534,
+          "net_m2": 1.388,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C9",
+          "length_m": 4.315,
+          "net_m2": 0.0,
+          "openings_m2": 11.219
+        },
+        {
+          "face": "C10",
+          "length_m": 2.915,
+          "net_m2": 0.0,
+          "openings_m2": 7.579
+        },
+        {
+          "face": "C11",
+          "length_m": 0.435,
+          "net_m2": 1.131,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C12",
+          "length_m": 0.2,
+          "net_m2": 0.0,
+          "openings_m2": 0.52
+        },
+        {
+          "face": "C13",
+          "length_m": 0.435,
+          "net_m2": 1.131,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C14",
+          "length_m": 3.8,
+          "net_m2": 0.0,
+          "openings_m2": 9.88
+        },
+        {
+          "face": "C15",
+          "length_m": 1.985,
+          "net_m2": 5.161,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C16",
+          "length_m": 3.8,
+          "net_m2": 6.19,
+          "openings_m2": 3.69
+        },
+        {
+          "face": "C17",
+          "length_m": 0.45,
+          "net_m2": 1.17,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C18",
+          "length_m": 0.2,
+          "net_m2": 0.0,
+          "openings_m2": 0.52
+        },
+        {
+          "face": "C19",
+          "length_m": 0.45,
+          "net_m2": 1.17,
+          "openings_m2": 0.0
+        }
+      ]
+    },
+    {
+      "code": "PI-PB-11",
+      "kind": "PI",
+      "label": "PI-PB-11 · 17 · Hall 17 · PB · 19,15 m²",
+      "status": "Propuesta a confirmar · pintura 0,00–2,60",
+      "elementId": "788665",
+      "room": "17 · Hall 17 · PB",
+      "level": "00. Planta Baja",
+      "area_m2": 19.153,
+      "faces": [
+        {
+          "face": "C1",
+          "length_m": 2.95,
+          "net_m2": 7.67,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C2",
+          "length_m": 2.1,
+          "net_m2": 0.0,
+          "openings_m2": 5.46
+        },
+        {
+          "face": "C3",
+          "length_m": 1.85,
+          "net_m2": 0.0,
+          "openings_m2": 4.81
+        },
+        {
+          "face": "C4",
+          "length_m": 0.9,
+          "net_m2": 2.34,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C5",
+          "length_m": 4.398,
+          "net_m2": 1.14,
+          "openings_m2": 10.295
+        },
+        {
+          "face": "C6",
+          "length_m": 3.0,
+          "net_m2": 7.8,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C7",
+          "length_m": 4.8,
+          "net_m2": 0.0,
+          "openings_m2": 12.48
+        },
+        {
+          "face": "C8",
+          "length_m": 0.5,
+          "net_m2": 0.0,
+          "openings_m2": 1.3
+        },
+        {
+          "face": "C9",
+          "length_m": 0.785,
+          "net_m2": 0.204,
+          "openings_m2": 1.838
+        },
+        {
+          "face": "C10",
+          "length_m": 0.5,
+          "net_m2": 0.0,
+          "openings_m2": 1.3
+        }
+      ]
+    },
+    {
+      "code": "PI-PA-01",
+      "kind": "PI",
+      "label": "PI-PA-01 · 01 · Sala de TV 01 · PA · 34,54 m²",
+      "status": "Propuesta a confirmar · pintura 0,00–2,60",
+      "elementId": "864264",
+      "room": "01 · Sala de TV 01 · PA",
+      "level": "01. Planta Alta",
+      "area_m2": 34.54,
+      "faces": [
+        {
+          "face": "C1",
+          "length_m": 4.05,
+          "net_m2": 10.53,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C2",
+          "length_m": 3.7,
+          "net_m2": 7.46,
+          "openings_m2": 2.16
+        },
+        {
+          "face": "C3",
+          "length_m": 4.05,
+          "net_m2": 8.37,
+          "openings_m2": 2.16
+        },
+        {
+          "face": "C4",
+          "length_m": 3.7,
+          "net_m2": 8.18,
+          "openings_m2": 1.44
+        }
+      ]
+    },
+    {
+      "code": "PI-PA-02",
+      "kind": "PI",
+      "label": "PI-PA-02 · 02 · Sala de Maquinas 02 · PA · 20,06 m²",
+      "status": "Propuesta a confirmar · pintura 0,00–2,60",
+      "elementId": "892788",
+      "room": "02 · Sala de Maquinas 02 · PA",
+      "level": "01. Planta Alta",
+      "area_m2": 20.06,
+      "faces": [
+        {
+          "face": "C1",
+          "length_m": 1.65,
+          "net_m2": 4.29,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C2",
+          "length_m": 2.9,
+          "net_m2": 6.1,
+          "openings_m2": 1.44
+        },
+        {
+          "face": "C3",
+          "length_m": 1.65,
+          "net_m2": 4.29,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C4",
+          "length_m": 2.9,
+          "net_m2": 5.38,
+          "openings_m2": 2.16
+        }
+      ]
+    },
+    {
+      "code": "PI-PA-03",
+      "kind": "PI",
+      "label": "PI-PA-03 · 03 · Playroom 03 · PA · 29,69 m²",
+      "status": "Propuesta a confirmar · pintura 0,00–2,60",
+      "elementId": "870164",
+      "room": "03 · Playroom 03 · PA",
+      "level": "01. Planta Alta",
+      "area_m2": 29.687,
+      "faces": [
+        {
+          "face": "C1",
+          "length_m": 1.275,
+          "net_m2": 1.155,
+          "openings_m2": 2.16
+        },
+        {
+          "face": "C2",
+          "length_m": 1.6,
+          "net_m2": 1.916,
+          "openings_m2": 2.244
+        },
+        {
+          "face": "C3",
+          "length_m": 3.045,
+          "net_m2": 7.917,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C4",
+          "length_m": 6.096,
+          "net_m2": 14.409,
+          "openings_m2": 1.44
+        },
+        {
+          "face": "C5",
+          "length_m": 1.45,
+          "net_m2": 3.77,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C6",
+          "length_m": 0.204,
+          "net_m2": 0.0,
+          "openings_m2": 0.531
+        },
+        {
+          "face": "C7",
+          "length_m": 2.75,
+          "net_m2": 0.0,
+          "openings_m2": 7.15
+        },
+        {
+          "face": "C8",
+          "length_m": 0.2,
+          "net_m2": 0.52,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C9",
+          "length_m": 0.12,
+          "net_m2": 0.0,
+          "openings_m2": 0.312
+        },
+        {
+          "face": "C10",
+          "length_m": 7.7,
+          "net_m2": 0.0,
+          "openings_m2": 20.02
+        }
+      ]
+    },
+    {
+      "code": "RV-PA-01",
+      "kind": "RV",
+      "label": "RV-PA-01 · 04 · Baño PA 04 · PA · 21,78 m²",
+      "status": "Propuesta a confirmar · revestimiento 0,00–2,40 · material a definir",
+      "elementId": "870167",
+      "room": "04 · Baño PA 04 · PA",
+      "level": "01. Planta Alta",
+      "area_m2": 21.78,
+      "gross_m2": 25.464,
+      "paintAbove_m2": 2.122,
+      "faces": [
+        {
+          "face": "C1",
+          "length_m": 1.275,
+          "net_m2": 3.06,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C2",
+          "length_m": 0.9,
+          "net_m2": 2.16,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C3",
+          "length_m": 1.65,
+          "net_m2": 3.96,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C4",
+          "length_m": 2.38,
+          "net_m2": 4.272,
+          "openings_m2": 1.44
+        },
+        {
+          "face": "C5",
+          "length_m": 2.925,
+          "net_m2": 7.02,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C6",
+          "length_m": 1.48,
+          "net_m2": 1.308,
+          "openings_m2": 2.244
+        }
+      ]
+    },
+    {
+      "code": "RV-PA-02",
+      "kind": "RV",
+      "label": "RV-PA-02 · 05 · Toilette 05 · PA · 17,89 m²",
+      "status": "Propuesta a confirmar · revestimiento 0,00–2,40 · material a definir",
+      "elementId": "863692",
+      "room": "05 · Toilette 05 · PA",
+      "level": "01. Planta Alta",
+      "area_m2": 17.891,
+      "gross_m2": 22.211,
+      "paintAbove_m2": 1.491,
+      "faces": [
+        {
+          "face": "C1",
+          "length_m": 2.6,
+          "net_m2": 6.24,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C2",
+          "length_m": 1.927,
+          "net_m2": 3.426,
+          "openings_m2": 1.2
+        },
+        {
+          "face": "C3",
+          "length_m": 2.6,
+          "net_m2": 6.24,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C4",
+          "length_m": 0.6,
+          "net_m2": 1.44,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C5",
+          "length_m": 0.1,
+          "net_m2": 0.0,
+          "openings_m2": 0.24
+        },
+        {
+          "face": "C6",
+          "length_m": 1.1,
+          "net_m2": 0.0,
+          "openings_m2": 2.64
+        },
+        {
+          "face": "C7",
+          "length_m": 0.1,
+          "net_m2": 0.0,
+          "openings_m2": 0.24
+        },
+        {
+          "face": "C8",
+          "length_m": 0.227,
+          "net_m2": 0.546,
+          "openings_m2": 0.0
+        }
+      ]
+    },
+    {
+      "code": "PI-PA-04",
+      "kind": "PI",
+      "label": "PI-PA-04 · 06 · Cava 06 · PA · 23,36 m²",
+      "status": "Propuesta a confirmar · pintura 0,00–2,60",
+      "elementId": "863864",
+      "room": "06 · Cava 06 · PA",
+      "level": "01. Planta Alta",
+      "area_m2": 23.358,
+      "faces": [
+        {
+          "face": "C1",
+          "length_m": 2.6,
+          "net_m2": 6.76,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C2",
+          "length_m": 0.5,
+          "net_m2": 1.3,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C3",
+          "length_m": 0.1,
+          "net_m2": 0.0,
+          "openings_m2": 0.26
+        },
+        {
+          "face": "C4",
+          "length_m": 1.1,
+          "net_m2": 0.0,
+          "openings_m2": 2.86
+        },
+        {
+          "face": "C5",
+          "length_m": 0.1,
+          "net_m2": 0.0,
+          "openings_m2": 0.26
+        },
+        {
+          "face": "C6",
+          "length_m": 1.605,
+          "net_m2": 4.173,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C7",
+          "length_m": 2.6,
+          "net_m2": 2.792,
+          "openings_m2": 3.968
+        },
+        {
+          "face": "C8",
+          "length_m": 3.205,
+          "net_m2": 8.333,
+          "openings_m2": 0.0
+        }
+      ]
+    },
+    {
+      "code": "PI-PA-05",
+      "kind": "PI",
+      "label": "PI-PA-05 · 07 · Cocina 07 · PA · 21,49 m²",
+      "status": "Propuesta a confirmar · pintura 0,00–2,60",
+      "elementId": "877992",
+      "room": "07 · Cocina 07 · PA",
+      "level": "01. Planta Alta",
+      "area_m2": 21.489,
+      "faces": [
+        {
+          "face": "C1",
+          "length_m": 4.0,
+          "net_m2": 0.0,
+          "openings_m2": 10.4
+        },
+        {
+          "face": "C2",
+          "length_m": 1.472,
+          "net_m2": 0.0,
+          "openings_m2": 3.828
+        },
+        {
+          "face": "C3",
+          "length_m": 0.095,
+          "net_m2": 0.0,
+          "openings_m2": 0.247
+        },
+        {
+          "face": "C4",
+          "length_m": 2.06,
+          "net_m2": 5.356,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C5",
+          "length_m": 0.595,
+          "net_m2": 1.547,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C6",
+          "length_m": 0.095,
+          "net_m2": 0.0,
+          "openings_m2": 0.247
+        },
+        {
+          "face": "C7",
+          "length_m": 0.69,
+          "net_m2": 1.794,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C8",
+          "length_m": 1.6,
+          "net_m2": 0.0,
+          "openings_m2": 4.16
+        },
+        {
+          "face": "C9",
+          "length_m": 4.0,
+          "net_m2": 5.364,
+          "openings_m2": 4.27
+        },
+        {
+          "face": "C10",
+          "length_m": 2.0,
+          "net_m2": 4.756,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C11",
+          "length_m": 0.1,
+          "net_m2": 0.0,
+          "openings_m2": 0.26
+        },
+        {
+          "face": "C12",
+          "length_m": 1.1,
+          "net_m2": 0.0,
+          "openings_m2": 2.86
+        },
+        {
+          "face": "C13",
+          "length_m": 0.1,
+          "net_m2": 0.0,
+          "openings_m2": 0.26
+        },
+        {
+          "face": "C14",
+          "length_m": 0.827,
+          "net_m2": 2.151,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C15",
+          "length_m": 0.1,
+          "net_m2": 0.0,
+          "openings_m2": 0.26
+        },
+        {
+          "face": "C16",
+          "length_m": 1.1,
+          "net_m2": 0.0,
+          "openings_m2": 2.86
+        },
+        {
+          "face": "C17",
+          "length_m": 0.1,
+          "net_m2": 0.0,
+          "openings_m2": 0.26
+        },
+        {
+          "face": "C18",
+          "length_m": 0.2,
+          "net_m2": 0.52,
+          "openings_m2": 0.0
+        }
+      ]
+    },
+    {
+      "code": "PI-PA-06",
+      "kind": "PI",
+      "label": "PI-PA-06 · 08 · Comedor 08 · PA · 6,35 m²",
+      "status": "Propuesta a confirmar · pintura 0,00–2,60",
+      "elementId": "869397",
+      "room": "08 · Comedor 08 · PA",
+      "level": "01. Planta Alta",
+      "area_m2": 6.351,
+      "faces": [
+        {
+          "face": "C1",
+          "length_m": 4.5,
+          "net_m2": 6.199,
+          "openings_m2": 5.501
+        },
+        {
+          "face": "C2",
+          "length_m": 5.142,
+          "net_m2": 0.0,
+          "openings_m2": 13.37
+        },
+        {
+          "face": "C3",
+          "length_m": 4.5,
+          "net_m2": 0.0,
+          "openings_m2": 11.7
+        },
+        {
+          "face": "C4",
+          "length_m": 4.64,
+          "net_m2": 0.0,
+          "openings_m2": 12.064
+        },
+        {
+          "face": "C5",
+          "length_m": 0.299,
+          "net_m2": 0.0,
+          "openings_m2": 0.776
+        },
+        {
+          "face": "C6",
+          "length_m": 0.642,
+          "net_m2": 0.152,
+          "openings_m2": 1.518
+        }
+      ]
+    },
+    {
+      "code": "PI-PA-07",
+      "kind": "PI",
+      "label": "PI-PA-07 · 09 · Living 09 · PA · 12,05 m²",
+      "status": "Propuesta a confirmar · pintura 0,00–2,60",
+      "elementId": "877995",
+      "room": "09 · Living 09 · PA",
+      "level": "01. Planta Alta",
+      "area_m2": 12.049,
+      "faces": [
+        {
+          "face": "C1",
+          "length_m": 0.398,
+          "net_m2": 0.0,
+          "openings_m2": 1.036
+        },
+        {
+          "face": "C2",
+          "length_m": 0.132,
+          "net_m2": 0.0,
+          "openings_m2": 0.344
+        },
+        {
+          "face": "C3",
+          "length_m": 3.102,
+          "net_m2": 8.064,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C4",
+          "length_m": 4.6,
+          "net_m2": 0.0,
+          "openings_m2": 11.96
+        },
+        {
+          "face": "C5",
+          "length_m": 1.533,
+          "net_m2": 3.985,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C7",
+          "length_m": 1.967,
+          "net_m2": 0.0,
+          "openings_m2": 5.115
+        },
+        {
+          "face": "C8",
+          "length_m": 4.725,
+          "net_m2": 0.0,
+          "openings_m2": 12.285
+        }
+      ]
+    },
+    {
+      "code": "PI-PA-08",
+      "kind": "PI",
+      "label": "PI-PA-08 · 10 · Puente 10 · PA · 6,07 m²",
+      "status": "Propuesta a confirmar · pintura 0,00–2,60",
+      "elementId": "887814",
+      "room": "10 · Puente 10 · PA",
+      "level": "01. Planta Alta",
+      "area_m2": 6.07,
+      "faces": [
+        {
+          "face": "C1",
+          "length_m": 0.5,
+          "net_m2": 1.3,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C2",
+          "length_m": 1.1,
+          "net_m2": 2.859,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C3",
+          "length_m": 0.5,
+          "net_m2": 1.3,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C4",
+          "length_m": 0.8,
+          "net_m2": 0.0,
+          "openings_m2": 2.08
+        },
+        {
+          "face": "C5",
+          "length_m": 0.5,
+          "net_m2": 0.0,
+          "openings_m2": 1.3
+        },
+        {
+          "face": "C6",
+          "length_m": 2.356,
+          "net_m2": 0.611,
+          "openings_m2": 5.515
+        },
+        {
+          "face": "C7",
+          "length_m": 0.5,
+          "net_m2": 0.0,
+          "openings_m2": 1.3
+        },
+        {
+          "face": "C8",
+          "length_m": 0.8,
+          "net_m2": 0.0,
+          "openings_m2": 2.08
+        }
+      ]
+    },
+    {
+      "code": "PI-PE-01",
+      "kind": "PI",
+      "label": "PI-PE-01 · 01 · SM 01 · PE · 19,88 m²",
+      "status": "Propuesta a confirmar · pintura 0,00–2,60",
+      "elementId": "876170",
+      "room": "01 · SM 01 · PE",
+      "level": "02. Planta Entrepiso",
+      "area_m2": 19.882,
+      "faces": [
+        {
+          "face": "C1",
+          "length_m": 0.055,
+          "net_m2": 0.142,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C2",
+          "length_m": 2.523,
+          "net_m2": 6.561,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C3",
+          "length_m": 2.6,
+          "net_m2": 0.0,
+          "openings_m2": 6.76
+        },
+        {
+          "face": "C4",
+          "length_m": 2.523,
+          "net_m2": 6.561,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C5",
+          "length_m": 2.545,
+          "net_m2": 6.618,
+          "openings_m2": 0.0
+        }
+      ]
+    },
+    {
+      "code": "PI-PE-02",
+      "kind": "PI",
+      "label": "PI-PE-02 · 02 · Hall PE 02 · PE · 13,62 m²",
+      "status": "Propuesta a confirmar · pintura 0,00–2,60",
+      "elementId": "876173",
+      "room": "02 · Hall PE 02 · PE",
+      "level": "02. Planta Entrepiso",
+      "area_m2": 13.62,
+      "faces": [
+        {
+          "face": "C1",
+          "length_m": 1.1,
+          "net_m2": 0.0,
+          "openings_m2": 2.86
+        },
+        {
+          "face": "C2",
+          "length_m": 0.2,
+          "net_m2": 0.0,
+          "openings_m2": 0.52
+        },
+        {
+          "face": "C3",
+          "length_m": 1.609,
+          "net_m2": 4.183,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C4",
+          "length_m": 2.6,
+          "net_m2": 3.145,
+          "openings_m2": 3.615
+        },
+        {
+          "face": "C5",
+          "length_m": 2.709,
+          "net_m2": 6.293,
+          "openings_m2": 0.75
+        },
+        {
+          "face": "C6",
+          "length_m": 2.8,
+          "net_m2": 0.0,
+          "openings_m2": 7.28
+        }
+      ]
+    },
+    {
+      "code": "PI-PE-03",
+      "kind": "PI",
+      "label": "PI-PE-03 · 03 · Atelier 03 · PE · 23,13 m²",
+      "status": "Propuesta a confirmar · pintura 0,00–2,60",
+      "elementId": "876161",
+      "room": "03 · Atelier 03 · PE",
+      "level": "02. Planta Entrepiso",
+      "area_m2": 23.127,
+      "faces": [
+        {
+          "face": "C1",
+          "length_m": 3.8,
+          "net_m2": 9.88,
+          "openings_m2": 0.0
+        },
+        {
+          "face": "C2",
+          "length_m": 5.095,
+          "net_m2": 0.0,
+          "openings_m2": 13.247
+        },
+        {
+          "face": "C3",
+          "length_m": 3.8,
+          "net_m2": 0.0,
+          "openings_m2": 9.88
+        },
+        {
+          "face": "C4",
+          "length_m": 5.095,
+          "net_m2": 13.247,
+          "openings_m2": 0.0
+        }
+      ]
+    },
+    {
+      "code": "RF-01",
+      "kind": "RF",
+      "label": "RF-01 · Lavadero 08 · 1,60 × 0,60 = 0,54 m²",
+      "status": "Propuesta a confirmar · franja 0,90–1,50 sobre LV-01",
+      "elementId": "1041091",
+      "room": "08 · Lavadero 08 · PB",
+      "level": "00. Planta Baja",
+      "length_m": 1.598,
+      "area_m2": 0.542,
+      "face": "C3"
+    },
+    {
+      "code": "RF-02",
+      "kind": "RF",
+      "label": "RF-02 · Lavadero 08 · 1,60 × 0,60 = 0,96 m²",
+      "status": "Propuesta a confirmar · franja 0,90–1,50 sobre LV-02",
+      "elementId": "1041091",
+      "room": "08 · Lavadero 08 · PB",
+      "level": "00. Planta Baja",
+      "length_m": 1.598,
+      "area_m2": 0.959,
+      "face": "C9"
+    },
+    {
+      "code": "RF-03",
+      "kind": "RF",
+      "label": "RF-03 · Cocina 07 · 0,62 × 0,60 = 0,00 m²",
+      "status": "Propuesta a confirmar · franja 0,90–1,50 sobre ME-04",
+      "elementId": "877992",
+      "room": "07 · Cocina 07 · PA",
+      "level": "01. Planta Alta",
+      "length_m": 0.62,
+      "area_m2": 0.0,
+      "face": "C8"
+    },
+    {
+      "code": "RF-04",
+      "kind": "RF",
+      "label": "RF-04 · Cocina 07 · 1,60 × 0,60 = 0,31 m²",
+      "status": "Propuesta a confirmar · franja 0,90–1,50 sobre ME-04, ME-03",
+      "elementId": "877992",
+      "room": "07 · Cocina 07 · PA",
+      "level": "01. Planta Alta",
+      "length_m": 1.596,
+      "area_m2": 0.306,
+      "face": "C9"
+    },
+    {
+      "code": "RF-05",
+      "kind": "RF",
+      "label": "RF-05 · Cocina 07 · 1,56 × 0,60 = 0,46 m²",
+      "status": "Propuesta a confirmar · franja 0,90–1,50 sobre ME-01, EQ-02",
+      "elementId": "877992",
+      "room": "07 · Cocina 07 · PA",
+      "level": "01. Planta Alta",
+      "length_m": 1.56,
+      "area_m2": 0.46,
+      "face": "C9"
+    },
+    {
+      "code": "RF-06",
+      "kind": "RF",
+      "label": "RF-06 · Cocina 07 · 0,74 × 0,60 = 0,44 m²",
+      "status": "Propuesta a confirmar · franja 0,90–1,50 sobre EQ-02",
+      "elementId": "877992",
+      "room": "07 · Cocina 07 · PA",
+      "level": "01. Planta Alta",
+      "length_m": 0.74,
+      "area_m2": 0.444,
+      "face": "C10"
+    }
+  ],
   "totals": [
     {
-      "label": "Baños y toilettes (h 2,40)",
-      "value": 179.11,
+      "label": "Revestimiento baños y toilettes",
+      "value": 136.72,
       "unit": "m²",
-      "detail": "7 locales · sin descontar vanos"
+      "detail": "7 locales · bruto 179,13 m² − vanos"
     },
     {
-      "label": "Cocina y lavadero (franja 0,60)",
-      "value": 5.1,
+      "label": "Franjas cocina y lavadero",
+      "value": 2.71,
       "unit": "m²",
-      "detail": "sobre mesadas y lavaderos (Equipamiento)"
+      "detail": "6 franjas · 7,71 ml"
     },
     {
-      "label": "Venecitas pileta (modelado)",
-      "value": 39.55,
+      "label": "Pintura de muros",
+      "value": 506.9,
       "unit": "m²",
-      "detail": "ver Pileta"
+      "detail": "29 locales · hasta 2,60"
     },
     {
-      "label": "Pintura de muros (estimado)",
-      "value": 893.43,
+      "label": "Revestimiento total (propuesta)",
+      "value": 139.43,
       "unit": "m²",
-      "detail": "22 locales · h 2,60"
+      "detail": "sin desperdicio; material a definir"
     }
   ],
   "quantities": [
     {
       "label": "02 · Baño A Inv. 02 · PB",
-      "group": "Baños y toilettes (estimado h 2,40)",
+      "group": "Revestimiento · baños y toilettes",
       "count": 1,
-      "value": 24.62,
+      "value": 17.67,
       "unit": "m²",
-      "detail": "perímetro 10,26 × 2,40 · sin descontar vanos"
+      "detail": "RV-PB-01 · bruto 24,62 − vanos"
     },
     {
       "label": "04 · Baño B Inv. 04 · PB",
-      "group": "Baños y toilettes (estimado h 2,40)",
+      "group": "Revestimiento · baños y toilettes",
       "count": 1,
-      "value": 25.1,
+      "value": 18.14,
       "unit": "m²",
-      "detail": "perímetro 10,46 × 2,40 · sin descontar vanos"
+      "detail": "RV-PB-02 · bruto 25,10 − vanos"
     },
     {
       "label": "06 · Baño C Inv. 06 · PB",
-      "group": "Baños y toilettes (estimado h 2,40)",
+      "group": "Revestimiento · baños y toilettes",
       "count": 1,
-      "value": 24.62,
+      "value": 17.67,
       "unit": "m²",
-      "detail": "perímetro 10,26 × 2,40 · sin descontar vanos"
-    },
-    {
-      "label": "15 · Baño ppal 15 · PB",
-      "group": "Baños y toilettes (estimado h 2,40)",
-      "count": 1,
-      "value": 33.17,
-      "unit": "m²",
-      "detail": "perímetro 13,82 × 2,40 · sin descontar vanos"
-    },
-    {
-      "label": "05 · Toilette 05 · PA",
-      "group": "Baños y toilettes (estimado h 2,40)",
-      "count": 1,
-      "value": 22.21,
-      "unit": "m²",
-      "detail": "perímetro 9,25 × 2,40 · sin descontar vanos"
-    },
-    {
-      "label": "04 · Baño PA 04 · PA",
-      "group": "Baños y toilettes (estimado h 2,40)",
-      "count": 1,
-      "value": 25.46,
-      "unit": "m²",
-      "detail": "perímetro 10,61 × 2,40 · sin descontar vanos"
+      "detail": "RV-PB-03 · bruto 24,62 − vanos"
     },
     {
       "label": "07 · Toilette Servicio 07 · PB",
-      "group": "Baños y toilettes (estimado h 2,40)",
+      "group": "Revestimiento · baños y toilettes",
       "count": 1,
-      "value": 23.93,
+      "value": 15.73,
       "unit": "m²",
-      "detail": "perímetro 9,97 × 2,40 · sin descontar vanos"
+      "detail": "RV-PB-04 · bruto 23,93 − vanos"
     },
     {
-      "label": "07 · Cocina 07 · PA",
-      "group": "Cocina y lavadero (franja sobre mesada h 0,60)",
+      "label": "15 · Baño ppal 15 · PB",
+      "group": "Revestimiento · baños y toilettes",
       "count": 1,
-      "value": 3.18,
+      "value": 27.84,
       "unit": "m²",
-      "detail": "5,30 ml de mesada/lavadero × 0,60"
+      "detail": "RV-PB-05 · bruto 33,17 − vanos"
     },
     {
-      "label": "08 · Lavadero 08 · PB",
-      "group": "Cocina y lavadero (franja sobre mesada h 0,60)",
+      "label": "04 · Baño PA 04 · PA",
+      "group": "Revestimiento · baños y toilettes",
       "count": 1,
-      "value": 1.92,
+      "value": 21.78,
       "unit": "m²",
-      "detail": "3,20 ml de mesada/lavadero × 0,60"
+      "detail": "RV-PA-01 · bruto 25,46 − vanos"
+    },
+    {
+      "label": "05 · Toilette 05 · PA",
+      "group": "Revestimiento · baños y toilettes",
+      "count": 1,
+      "value": 17.89,
+      "unit": "m²",
+      "detail": "RV-PA-02 · bruto 22,21 − vanos"
+    },
+    {
+      "label": "RF-01 · Lavadero 08",
+      "group": "Revestimiento · franjas sobre mesada",
+      "count": 1,
+      "value": 0.54,
+      "unit": "m²",
+      "detail": "1,60 ml × 0,60 − vanos · LV-01"
+    },
+    {
+      "label": "RF-02 · Lavadero 08",
+      "group": "Revestimiento · franjas sobre mesada",
+      "count": 1,
+      "value": 0.96,
+      "unit": "m²",
+      "detail": "1,60 ml × 0,60 − vanos · LV-02"
+    },
+    {
+      "label": "RF-03 · Cocina 07",
+      "group": "Revestimiento · franjas sobre mesada",
+      "count": 1,
+      "value": 0.0,
+      "unit": "m²",
+      "detail": "0,62 ml × 0,60 − vanos · ME-04"
+    },
+    {
+      "label": "RF-04 · Cocina 07",
+      "group": "Revestimiento · franjas sobre mesada",
+      "count": 1,
+      "value": 0.31,
+      "unit": "m²",
+      "detail": "1,60 ml × 0,60 − vanos · ME-04, ME-03"
+    },
+    {
+      "label": "RF-05 · Cocina 07",
+      "group": "Revestimiento · franjas sobre mesada",
+      "count": 1,
+      "value": 0.46,
+      "unit": "m²",
+      "detail": "1,56 ml × 0,60 − vanos · ME-01, EQ-02"
+    },
+    {
+      "label": "RF-06 · Cocina 07",
+      "group": "Revestimiento · franjas sobre mesada",
+      "count": 1,
+      "value": 0.44,
+      "unit": "m²",
+      "detail": "0,74 ml × 0,60 − vanos · EQ-02"
     },
     {
       "label": "01 · Cuarto A Inv. 01 · PB",
-      "group": "Pintura de muros (estimado h 2,60)",
+      "group": "Pintura · 00. Planta Baja",
       "count": 1,
-      "value": 35.91,
+      "value": 28.19,
       "unit": "m²",
-      "detail": "perímetro 13,81 × 2,60 · sin descontar vanos"
+      "detail": "PI-PB-01 · 0,00–2,60 − vanos"
+    },
+    {
+      "label": "02 · Baño A Inv. 02 · PB",
+      "group": "Pintura · 00. Planta Baja",
+      "count": 1,
+      "value": 2.05,
+      "unit": "m²",
+      "detail": "RV-PB-01 · 2,40–2,60 sobre revestimiento"
     },
     {
       "label": "03 · Cuarto B Inv. 03 · PB",
-      "group": "Pintura de muros (estimado h 2,60)",
+      "group": "Pintura · 00. Planta Baja",
       "count": 1,
-      "value": 36.43,
+      "value": 28.71,
       "unit": "m²",
-      "detail": "perímetro 14,01 × 2,60 · sin descontar vanos"
+      "detail": "PI-PB-02 · 0,00–2,60 − vanos"
+    },
+    {
+      "label": "04 · Baño B Inv. 04 · PB",
+      "group": "Pintura · 00. Planta Baja",
+      "count": 1,
+      "value": 2.09,
+      "unit": "m²",
+      "detail": "RV-PB-02 · 2,40–2,60 sobre revestimiento"
     },
     {
       "label": "05 · Cuarto C Inv. 05 · PB",
-      "group": "Pintura de muros (estimado h 2,60)",
+      "group": "Pintura · 00. Planta Baja",
       "count": 1,
-      "value": 35.91,
+      "value": 28.19,
       "unit": "m²",
-      "detail": "perímetro 13,81 × 2,60 · sin descontar vanos"
+      "detail": "PI-PB-03 · 0,00–2,60 − vanos"
     },
     {
-      "label": "13 · Cuarto ppal 13 · PB",
-      "group": "Pintura de muros (estimado h 2,60)",
+      "label": "06 · Baño C Inv. 06 · PB",
+      "group": "Pintura · 00. Planta Baja",
       "count": 1,
-      "value": 40.64,
+      "value": 2.05,
       "unit": "m²",
-      "detail": "perímetro 15,63 × 2,60 · sin descontar vanos"
+      "detail": "RV-PB-03 · 2,40–2,60 sobre revestimiento"
     },
     {
-      "label": "12 · Quincho 12 · PB",
-      "group": "Pintura de muros (estimado h 2,60)",
+      "label": "07 · Toilette Servicio 07 · PB",
+      "group": "Pintura · 00. Planta Baja",
       "count": 1,
-      "value": 74.02,
+      "value": 1.64,
       "unit": "m²",
-      "detail": "perímetro 28,47 × 2,60 · sin descontar vanos"
-    },
-    {
-      "label": "09 · Hab. servicio 09 · PB",
-      "group": "Pintura de muros (estimado h 2,60)",
-      "count": 1,
-      "value": 26.74,
-      "unit": "m²",
-      "detail": "perímetro 10,29 × 2,60 · sin descontar vanos"
-    },
-    {
-      "label": "10 · Acceso Servicio 10 · PB",
-      "group": "Pintura de muros (estimado h 2,60)",
-      "count": 1,
-      "value": 23.8,
-      "unit": "m²",
-      "detail": "perímetro 9,15 × 2,60 · sin descontar vanos"
-    },
-    {
-      "label": "17 · Hall 17 · PB",
-      "group": "Pintura de muros (estimado h 2,60)",
-      "count": 1,
-      "value": 56.64,
-      "unit": "m²",
-      "detail": "perímetro 21,78 × 2,60 · sin descontar vanos"
-    },
-    {
-      "label": "16 · Pasillo 16 · PB",
-      "group": "Pintura de muros (estimado h 2,60)",
-      "count": 1,
-      "value": 83.47,
-      "unit": "m²",
-      "detail": "perímetro 32,11 × 2,60 · sin descontar vanos"
-    },
-    {
-      "label": "06 · Cava 06 · PA",
-      "group": "Pintura de muros (estimado h 2,60)",
-      "count": 1,
-      "value": 30.71,
-      "unit": "m²",
-      "detail": "perímetro 11,81 × 2,60 · sin descontar vanos"
-    },
-    {
-      "label": "01 · Sala de TV 01 · PA",
-      "group": "Pintura de muros (estimado h 2,60)",
-      "count": 1,
-      "value": 40.3,
-      "unit": "m²",
-      "detail": "perímetro 15,50 × 2,60 · sin descontar vanos"
-    },
-    {
-      "label": "08 · Comedor 08 · PA",
-      "group": "Pintura de muros (estimado h 2,60)",
-      "count": 1,
-      "value": 51.28,
-      "unit": "m²",
-      "detail": "perímetro 19,72 × 2,60 · sin descontar vanos"
-    },
-    {
-      "label": "03 · Playroom 03 · PA",
-      "group": "Pintura de muros (estimado h 2,60)",
-      "count": 1,
-      "value": 63.54,
-      "unit": "m²",
-      "detail": "perímetro 24,44 × 2,60 · sin descontar vanos"
-    },
-    {
-      "label": "03 · Atelier 03 · PE",
-      "group": "Pintura de muros (estimado h 2,60)",
-      "count": 1,
-      "value": 44.48,
-      "unit": "m²",
-      "detail": "perímetro 17,79 × 2,50 · sin descontar vanos"
-    },
-    {
-      "label": "01 · SM 01 · PE",
-      "group": "Pintura de muros (estimado h 2,60)",
-      "count": 1,
-      "value": 25.62,
-      "unit": "m²",
-      "detail": "perímetro 10,25 × 2,50 · sin descontar vanos"
-    },
-    {
-      "label": "02 · Hall PE 02 · PE",
-      "group": "Pintura de muros (estimado h 2,60)",
-      "count": 1,
-      "value": 27.54,
-      "unit": "m²",
-      "detail": "perímetro 11,02 × 2,50 · sin descontar vanos"
-    },
-    {
-      "label": "07 · Cocina 07 · PA",
-      "group": "Pintura de muros (estimado h 2,60)",
-      "count": 1,
-      "value": 52.61,
-      "unit": "m²",
-      "detail": "perímetro 20,23 × 2,60 · sin descontar vanos"
-    },
-    {
-      "label": "09 · Living 09 · PA",
-      "group": "Pintura de muros (estimado h 2,60)",
-      "count": 1,
-      "value": 42.79,
-      "unit": "m²",
-      "detail": "perímetro 16,46 × 2,60 · sin descontar vanos"
-    },
-    {
-      "label": "10 · Puente 10 · PA",
-      "group": "Pintura de muros (estimado h 2,60)",
-      "count": 1,
-      "value": 18.34,
-      "unit": "m²",
-      "detail": "perímetro 7,06 × 2,60 · sin descontar vanos"
-    },
-    {
-      "label": "02 · Sala de Maquinas 02 · PA",
-      "group": "Pintura de muros (estimado h 2,60)",
-      "count": 1,
-      "value": 23.66,
-      "unit": "m²",
-      "detail": "perímetro 9,10 × 2,60 · sin descontar vanos"
-    },
-    {
-      "label": "14 · Vestidor ppal 14 · PB",
-      "group": "Pintura de muros (estimado h 2,60)",
-      "count": 1,
-      "value": 31.75,
-      "unit": "m²",
-      "detail": "perímetro 12,21 × 2,60 · sin descontar vanos"
+      "detail": "RV-PB-04 · 2,40–2,60 sobre revestimiento"
     },
     {
       "label": "08 · Lavadero 08 · PB",
-      "group": "Pintura de muros (estimado h 2,60)",
+      "group": "Pintura · 00. Planta Baja",
       "count": 1,
-      "value": 27.25,
+      "value": 13.06,
       "unit": "m²",
-      "detail": "perímetro 10,48 × 2,60 · sin descontar vanos"
+      "detail": "PI-PB-04 · 0,00–2,60 − vanos − franja"
     },
     {
-      "label": "Venecitas",
-      "group": "Materiales ya cargados en muros (Revit)",
+      "label": "09 · Hab. servicio 09 · PB",
+      "group": "Pintura · 00. Planta Baja",
       "count": 1,
-      "value": 39.55,
+      "value": 23.25,
       "unit": "m²",
-      "detail": "área de capa en el modelo"
+      "detail": "PI-PB-05 · 0,00–2,60 − vanos"
     },
     {
-      "label": "White Paint",
-      "group": "Materiales ya cargados en muros (Revit)",
+      "label": "10 · Acceso Servicio 10 · PB",
+      "group": "Pintura · 00. Planta Baja",
       "count": 1,
-      "value": 206.01,
+      "value": 16.58,
       "unit": "m²",
-      "detail": "área de capa en el modelo"
+      "detail": "PI-PB-06 · 0,00–2,60 − vanos"
     },
     {
-      "label": "Placa de Yeso RH 12,5mm Knauf",
-      "group": "Materiales ya cargados en muros (Revit)",
+      "label": "12 · Quincho 12 · PB",
+      "group": "Pintura · 00. Planta Baja",
       "count": 1,
-      "value": 105.29,
+      "value": 49.98,
       "unit": "m²",
-      "detail": "área de capa en el modelo"
+      "detail": "PI-PB-07 · 0,00–2,60 − vanos"
     },
     {
-      "label": "Placa de Yeso ST 12,5mm Knauf",
-      "group": "Materiales ya cargados en muros (Revit)",
+      "label": "13 · Cuarto ppal 13 · PB",
+      "group": "Pintura · 00. Planta Baja",
       "count": 1,
-      "value": 213.75,
+      "value": 24.57,
       "unit": "m²",
-      "detail": "área de capa en el modelo"
+      "detail": "PI-PB-08 · 0,00–2,60 − vanos"
     },
     {
-      "label": "Piedra Chimenea",
-      "group": "Materiales ya cargados en muros (Revit)",
+      "label": "14 · Vestidor ppal 14 · PB",
+      "group": "Pintura · 00. Planta Baja",
       "count": 1,
-      "value": 2.5,
+      "value": 17.61,
       "unit": "m²",
-      "detail": "área de capa en el modelo"
+      "detail": "PI-PB-09 · 0,00–2,60 − vanos"
     },
     {
-      "label": "Hormigon fachada",
-      "group": "Materiales ya cargados en muros (Revit)",
+      "label": "15 · Baño ppal 15 · PB",
+      "group": "Pintura · 00. Planta Baja",
       "count": 1,
-      "value": 89.04,
+      "value": 2.52,
       "unit": "m²",
-      "detail": "área de capa en el modelo"
+      "detail": "RV-PB-05 · 2,40–2,60 sobre revestimiento"
+    },
+    {
+      "label": "16 · Pasillo 16 · PB",
+      "group": "Pintura · 00. Planta Baja",
+      "count": 1,
+      "value": 33.39,
+      "unit": "m²",
+      "detail": "PI-PB-10 · 0,00–2,60 − vanos"
+    },
+    {
+      "label": "17 · Hall 17 · PB",
+      "group": "Pintura · 00. Planta Baja",
+      "count": 1,
+      "value": 19.15,
+      "unit": "m²",
+      "detail": "PI-PB-11 · 0,00–2,60 − vanos"
+    },
+    {
+      "label": "01 · Sala de TV 01 · PA",
+      "group": "Pintura · 01. Planta Alta",
+      "count": 1,
+      "value": 34.54,
+      "unit": "m²",
+      "detail": "PI-PA-01 · 0,00–2,60 − vanos"
+    },
+    {
+      "label": "02 · Sala de Maquinas 02 · PA",
+      "group": "Pintura · 01. Planta Alta",
+      "count": 1,
+      "value": 20.06,
+      "unit": "m²",
+      "detail": "PI-PA-02 · 0,00–2,60 − vanos"
+    },
+    {
+      "label": "03 · Playroom 03 · PA",
+      "group": "Pintura · 01. Planta Alta",
+      "count": 1,
+      "value": 29.69,
+      "unit": "m²",
+      "detail": "PI-PA-03 · 0,00–2,60 − vanos"
+    },
+    {
+      "label": "04 · Baño PA 04 · PA",
+      "group": "Pintura · 01. Planta Alta",
+      "count": 1,
+      "value": 2.12,
+      "unit": "m²",
+      "detail": "RV-PA-01 · 2,40–2,60 sobre revestimiento"
+    },
+    {
+      "label": "05 · Toilette 05 · PA",
+      "group": "Pintura · 01. Planta Alta",
+      "count": 1,
+      "value": 1.49,
+      "unit": "m²",
+      "detail": "RV-PA-02 · 2,40–2,60 sobre revestimiento"
+    },
+    {
+      "label": "06 · Cava 06 · PA",
+      "group": "Pintura · 01. Planta Alta",
+      "count": 1,
+      "value": 23.36,
+      "unit": "m²",
+      "detail": "PI-PA-04 · 0,00–2,60 − vanos"
+    },
+    {
+      "label": "07 · Cocina 07 · PA",
+      "group": "Pintura · 01. Planta Alta",
+      "count": 1,
+      "value": 21.49,
+      "unit": "m²",
+      "detail": "PI-PA-05 · 0,00–2,60 − vanos − franja"
+    },
+    {
+      "label": "08 · Comedor 08 · PA",
+      "group": "Pintura · 01. Planta Alta",
+      "count": 1,
+      "value": 6.35,
+      "unit": "m²",
+      "detail": "PI-PA-06 · 0,00–2,60 − vanos"
+    },
+    {
+      "label": "09 · Living 09 · PA",
+      "group": "Pintura · 01. Planta Alta",
+      "count": 1,
+      "value": 12.05,
+      "unit": "m²",
+      "detail": "PI-PA-07 · 0,00–2,60 − vanos"
+    },
+    {
+      "label": "10 · Puente 10 · PA",
+      "group": "Pintura · 01. Planta Alta",
+      "count": 1,
+      "value": 6.07,
+      "unit": "m²",
+      "detail": "PI-PA-08 · 0,00–2,60 − vanos"
+    },
+    {
+      "label": "01 · SM 01 · PE",
+      "group": "Pintura · 02. Planta Entrepiso",
+      "count": 1,
+      "value": 19.88,
+      "unit": "m²",
+      "detail": "PI-PE-01 · 0,00–2,60 − vanos"
+    },
+    {
+      "label": "02 · Hall PE 02 · PE",
+      "group": "Pintura · 02. Planta Entrepiso",
+      "count": 1,
+      "value": 13.62,
+      "unit": "m²",
+      "detail": "PI-PE-02 · 0,00–2,60 − vanos"
+    },
+    {
+      "label": "03 · Atelier 03 · PE",
+      "group": "Pintura · 02. Planta Entrepiso",
+      "count": 1,
+      "value": 23.13,
+      "unit": "m²",
+      "detail": "PI-PE-03 · 0,00–2,60 − vanos"
     }
   ],
-  "quantityNote": "Estimación preliminar con perímetro de local × altura supuesta, sin descontar vanos. Se reemplaza por cómputo real cuando se modelen las capas de terminación.",
+  "quantityNote": "Propuesta a confirmar. Superficies por cara terminada del local (límite Finish de Revit) por altura de la hipótesis, descontando puertas, ventanas, pases, muros cortina, arcos y separaciones de local. Sin desperdicio ni cortes.",
   "notModeled": [
-    "Cerámicos y porcelanatos de baños, toilettes, cocina y lavadero",
-    "Capas de terminación (Finish) en muros de mampostería",
-    "Revestimiento de fachada (hoy solo \"Hormigón fachada\" 8 cm)",
-    "Guardas, cantoneras, buñas y zócalos sanitarios"
+    "Capas de terminación en los muros (el cómputo sale de los locales, no de capas)",
+    "Material, formato y despiece",
+    "Guardas, cantoneras, buñas y zócalos sanitarios",
+    "Revestimiento de fachada (hipótesis: hormigón visto)",
+    "Franja sobre la mesada del Quincho"
   ],
   "decisions": [
-    "Rubro sin láminas hasta definir materiales y alturas.",
-    "Hipótesis recomendadas: baños revestidos hasta 2,40 m; cocina y lavadero solo franja de 0,60 m sobre mesada; resto pintado."
+    "Propuesta con hipótesis recomendadas: baños 0,00–2,40; cocina y lavadero franja 0,90–1,50; resto pintado hasta 2,60; fachada hormigón visto.",
+    "Documentado con detalles 2D sobre el modelo existente: no se tocaron geometría ni capas de muros.",
+    "Códigos RV/RF/PI solo como anotación."
   ],
   "questions": [
-    "¿Altura de revestimiento en baños: hasta 2,40 m (recomendado), hasta cielorraso o solo zona húmeda?",
-    "¿Material y formato para baños (porcelanato 60×120, cerámico, microcemento)?",
-    "¿Cocina y lavadero: franja de 0,60 m sobre mesada (recomendado) o pared completa?",
-    "¿La fachada lleva revestimiento además del hormigón visto?",
-    "¿Modelamos las capas de terminación en los muros (cambia el modelo, requiere tu OK)?"
+    "¿Material y formato del revestimiento de baños (porcelanato 60×120, cerámico 30×60, microcemento)?",
+    "¿Baños revestidos hasta 2,40 m (propuesta) o hasta el cielorraso?",
+    "¿La franja de cocina va solo bajo las ventanas (0,90–1,13 m, como da hoy) o se cambia la altura de las ventanas / mesada?",
+    "¿El Quincho lleva franja sobre la mesada y la parrilla?",
+    "¿Pintura: látex interior en todos los locales y esmalte / epoxi en lavadero y sala de máquinas?",
+    "¿Modelamos las capas de terminación en los muros para que el cómputo salga del modelo? (cambia el modelo: requiere tu OK)"
   ]
 }
