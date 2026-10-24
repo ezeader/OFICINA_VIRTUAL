@@ -57,10 +57,10 @@ export default function RubroBudget({project,projectName,value,disabled,onSave,o
  function download(){const url=URL.createObjectURL(new Blob([exportCsv(budgetSheet(result!))],{type:'text/csv;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download=`${project}-presupuesto-por-rubro.csv`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)}
  async function upload(file?:File){if(!file)return;try{const known=new Set(result!.rubros.flatMap(r=>[globalId(r.key),...r.lines.map(l=>l.id)]));const prices=pricesFromRows(csv(await file.text()),known);if(!Object.keys(prices).length)throw Error('La planilla no tiene precios cargados.');setError('');await save({...state,prices:{...state.prices,...prices}},`${Object.keys(prices).length} precios importados.`)}catch(e){setError((e as Error).message)}}
  const row=(r:typeof result.rubros[number])=><tr key={r.key}>
-  <td><button className="pcLink" onClick={()=>setOpen(open===r.key?'':r.key)} aria-expanded={open===r.key}><b>{r.name}</b></button><small>{STATUS[r.status]}{r.lines.length?` · ${r.lines.filter(l=>!l.skipped).length} ${r.lines.filter(l=>!l.skipped).length===1?'partida':'partidas'}`:''}</small></td>
+  <td><button className="pcLink" onClick={()=>setOpen(open===r.key?'':r.key)} aria-expanded={open===r.key}><b>{r.name}</b></button><small>{STATUS[r.status]}{r.lines.some(l=>!l.skipped)?` · ${r.lines.filter(l=>!l.skipped).length} ${r.lines.filter(l=>!l.skipped).length===1?'partida':'partidas'}`:''}</small></td>
   <td>{r.subtotal>0?<b>{money(r.subtotal)}</b>:'—'}{r.global!=null&&<small>cotización global</small>}</td>
   <td>{r.optional?(r.share!=null?`+${pct(r.share)}`:'—'):pct(r.share)}</td>
-  <td>{r.complete?<span className="pcBadge">Con precio</span>:<small>{r.status==='sin-computo'&&!r.lines.length?'Falta cómputo o global':r.missing===1?'Falta 1 precio':`Faltan ${r.missing} precios`}</small>}</td>
+  <td>{r.complete?<span className="pcBadge">Con precio</span>:<small>{!r.lines.some(l=>!l.skipped)?'Falta precio global':r.missing===1?'Falta 1 precio':`Faltan ${r.missing} precios`}</small>}</td>
   <td><button disabled={disabled} onClick={()=>save({...state,optional:{...state.optional,[r.key]:!r.optional}},r.optional?`${r.name} pasa a la base.`:`${r.name} pasa a opcionales.`)}>{r.optional?'Pasar a base':'Hacer opcional'}</button></td>
  </tr>;
  const detail=open?result.rubros.find(r=>r.key===open):undefined;
