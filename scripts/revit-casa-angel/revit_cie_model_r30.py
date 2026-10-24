@@ -71,6 +71,19 @@ def model(doc):
 def run(doc, uidoc, job):
     L.assert_pilot(doc)
     assert os.path.basename(doc.PathName).lower() == L.PILOT, 'Modelar solo en el modelo principal'
+    if job['part'] == 'fix-tv-sm':
+        # user (direct OK): Sala de TV keeps a ceiling (ST, current height 2,70); Sala de Máquinas has none (deleted)
+        tv, sm = el(doc, 2138433), el(doc, 2138425)
+        tx = DB.Transaction(doc, 'ADER CIE R30 - Sala de TV ST, borrar cielorraso Sala de Maquinas (OK usuario)'); tx.Start()
+        try:
+            tv.ChangeTypeId(ctype(doc, TYPES['TC-02']).Id); h = tv.get_Parameter(DB.BuiltInParameter.CEILING_HEIGHTABOVELEVEL_PARAM).AsDouble() * M
+            doc.Delete(sm.Id); tx.Commit()
+        except Exception:
+            tx.RollBack(); raise
+        doc.Save()
+        rec = L.read('cie30-model'); rec['tvSm'] = {'tv': 2138433, 'tvType': 'TC-02', 'tvHeight_m': round(h, 2), 'deleted': 2138425, 'at': L.now()}
+        R1.write(os.path.join(OUT, 'cie30-model.json'), rec)
+        return {'status': 'success', 'tvHeight_m': round(h, 2), 'deleted': 2138425}
     if job['part'] == 'model':
         rec = model(doc)
         return {'status': 'success', 'created': [(c['code'], c['type'], c['height_m']) for c in rec['created']], 'retyped': [(x['code'], x['from'], x['to']) for x in rec['retyped']]}
