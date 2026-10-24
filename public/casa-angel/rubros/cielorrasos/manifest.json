@@ -1735,5 +1735,59 @@
     "¿TC-03 (\"Plain\", planta alta) es Durlock ST como en PB? Hoy es un tipo genérico.",
     "¿Hay cajones, gargantas o buñas perimetrales a documentar?",
     "¿Escribimos los códigos TC/CE en el modelo (Mark)?"
-  ]
+  ],
+  "budget": {
+    "revision": "R27",
+    "note": "Partidas a cotizar sin solapes; informative = referencia (no se suma).",
+    "lines": [
+      {
+        "id": "cielorraso-tc-01",
+        "label": "Cielorraso placa Knauf RH 12,5 (resistente a humedad)",
+        "value": 31.23,
+        "unit": "m²",
+        "detail": "TC-01",
+        "informative": false
+      },
+      {
+        "id": "cielorraso-tc-02",
+        "label": "Cielorraso placa Knauf ST 12,5",
+        "value": 29.77,
+        "unit": "m²",
+        "detail": "TC-02",
+        "informative": false
+      },
+      {
+        "id": "cielorraso-tc-03",
+        "label": "Cielorraso genérico: perfilería 45 + placa 12 mm",
+        "value": 47.7,
+        "unit": "m²",
+        "detail": "TC-03",
+        "informative": false
+      },
+      {
+        "id": "faltante-sin-cielorraso",
+        "label": "Locales sin cielorraso modelado (faltante, no es partida)",
+        "value": 194.63,
+        "unit": "m²",
+        "detail": "15 locales",
+        "informative": true
+      },
+      {
+        "id": "faltante-parcial",
+        "label": "Locales con cielorraso parcial",
+        "value": 101.46,
+        "unit": "m²",
+        "detail": "4 locales",
+        "informative": true
+      },
+      {
+        "id": "cielorrasos-modelados",
+        "label": "Cielorrasos modelados",
+        "value": 108.7,
+        "unit": "m²",
+        "detail": "14 piezas · 3 tipos",
+        "informative": true
+      }
+    ]
+  }
 }

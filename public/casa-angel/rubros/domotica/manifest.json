@@ -277,5 +277,19 @@
     "¿Sistema cableado (KNX) o inalámbrico (Zigbee / Wi-Fi)? Recomendado: cableado si se define antes de la obra gruesa.",
     "¿Integramos los 11 termostatos del piso radiante a la domótica?",
     "¿Dónde va el rack / central (Sala de máquinas PA)?"
-  ]
+  ],
+  "budget": {
+    "revision": "R27",
+    "note": "Partidas a cotizar sin solapes; informative = referencia (no se suma).",
+    "lines": [
+      {
+        "id": "locales",
+        "label": "Locales a cubrir",
+        "value": 30,
+        "unit": "u",
+        "detail": "sin alcance definido",
+        "informative": true
+      }
+    ]
+  }
 }

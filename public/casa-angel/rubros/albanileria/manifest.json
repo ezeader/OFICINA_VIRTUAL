@@ -5021,5 +5021,43 @@
     "¿Qué revoques y terminaciones llevan (grueso + fino, yeso, enduido)?",
     "¿Los muros de fachada llevan aislación térmica?",
     "¿Escribimos los códigos TM/AB en el modelo (Mark)?"
-  ]
+  ],
+  "budget": {
+    "revision": "R27",
+    "note": "Partidas a cotizar sin solapes; informative = referencia (no se suma).",
+    "lines": [
+      {
+        "id": "mamposteria-interior",
+        "label": "Mampostería y tabiques interiores",
+        "value": 94.16,
+        "unit": "m²",
+        "detail": "TM-01 a TM-04",
+        "informative": false
+      },
+      {
+        "id": "durlock",
+        "label": "Durlock (W111 + W112)",
+        "value": 106.88,
+        "unit": "m²",
+        "detail": "placas Knauf ST/RH + montantes 70",
+        "informative": false
+      },
+      {
+        "id": "muros-fachada",
+        "label": "Muros de fachada",
+        "value": 81.96,
+        "unit": "m²",
+        "detail": "TM-05, TM-06",
+        "informative": false
+      },
+      {
+        "id": "muros-todos",
+        "label": "Muros y tabiques (todos)",
+        "value": 292.56,
+        "unit": "m²",
+        "detail": "60 muros · 10 tipos",
+        "informative": true
+      }
+    ]
+  }
 }
