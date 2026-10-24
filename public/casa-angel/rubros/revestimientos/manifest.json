@@ -5311,5 +5311,43 @@
     "¿El Quincho lleva franja sobre la mesada y la parrilla?",
     "¿Pintura: látex interior en todos los locales y esmalte / epoxi en lavadero y sala de máquinas?",
     "¿Modelamos las capas de terminación en los muros para que el cómputo salga del modelo? (cambia el modelo: requiere tu OK)"
-  ]
+  ],
+  "budget": {
+    "revision": "R27",
+    "note": "Partidas a cotizar sin solapes; informative = referencia (no se suma).",
+    "lines": [
+      {
+        "id": "revestimiento-banos",
+        "label": "Revestimiento baños y toilettes",
+        "value": 136.72,
+        "unit": "m²",
+        "detail": "7 locales · bruto 179,13 m² − vanos",
+        "informative": false
+      },
+      {
+        "id": "revestimiento-franjas",
+        "label": "Franjas cocina y lavadero",
+        "value": 2.71,
+        "unit": "m²",
+        "detail": "6 franjas · 7,71 ml",
+        "informative": false
+      },
+      {
+        "id": "pintura-muros",
+        "label": "Pintura de muros",
+        "value": 506.9,
+        "unit": "m²",
+        "detail": "29 locales · hasta 2,60",
+        "informative": false
+      },
+      {
+        "id": "revestimiento-total",
+        "label": "Revestimiento total (propuesta)",
+        "value": 139.43,
+        "unit": "m²",
+        "detail": "sin desperdicio; material a definir",
+        "informative": true
+      }
+    ]
+  }
 }

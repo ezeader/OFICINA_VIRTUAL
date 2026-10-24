@@ -839,5 +839,51 @@
     "¿Qué equipo de filtrado y climatización de pileta lleva (si lleva)?",
     "¿Profundidad constante de 2,00 m o con pendiente / escalón?",
     "¿Escribimos los códigos de pileta en el modelo (Mark)?"
-  ]
+  ],
+  "budget": {
+    "revision": "R27",
+    "note": "Partidas a cotizar sin solapes; informative = referencia (no se suma).",
+    "lines": [
+      {
+        "id": "vaso-muros",
+        "label": "Muros del vaso (hormigón)",
+        "value": 7.91,
+        "unit": "m³",
+        "detail": "39,55 m² · 4 muros",
+        "informative": false
+      },
+      {
+        "id": "vaso-fondo",
+        "label": "Fondo",
+        "value": 21.86,
+        "unit": "m²",
+        "detail": "venecitas 5 cm + base 10 cm",
+        "informative": false
+      },
+      {
+        "id": "borde-solarium",
+        "label": "Borde / solárium",
+        "value": 38.15,
+        "unit": "m²",
+        "detail": "\"Piso Pileta\" 15 cm",
+        "informative": false
+      },
+      {
+        "id": "venecitas",
+        "label": "Revestimiento venecitas (muros + fondo)",
+        "value": 61.41,
+        "unit": "m²",
+        "detail": "cara interior estimada con área de Revit",
+        "informative": false
+      },
+      {
+        "id": "agua-llenado",
+        "label": "Llenado de agua",
+        "value": 35.81,
+        "unit": "m³",
+        "detail": "volumen modelado",
+        "informative": false
+      }
+    ]
+  }
 }

@@ -4527,5 +4527,83 @@
     "¿Los locales con densidad baja (cuartos de invitados, baños, Living, Cava…) llevan serpentín completo? Hoy el trazado es parcial.",
     "¿Qué salida del colector alimenta cada local? Así armamos un circuito por salida.",
     "¿Corregimos el sistema de los retornos a \"Hydronic Return\" en el modelo? (cambio de parámetros MEP, requiere OK)"
-  ]
+  ],
+  "budget": {
+    "revision": "R27",
+    "note": "Partidas a cotizar sin solapes; informative = referencia (no se suma).",
+    "lines": [
+      {
+        "id": "serpentin-pb",
+        "label": "Serpentín PB",
+        "value": 554.83,
+        "unit": "ml",
+        "detail": "14 locales",
+        "informative": false
+      },
+      {
+        "id": "serpentin-pa",
+        "label": "Serpentín PA",
+        "value": 538.68,
+        "unit": "ml",
+        "detail": "10 locales",
+        "informative": false
+      },
+      {
+        "id": "serpentin-pe",
+        "label": "Serpentín PE",
+        "value": 96.44,
+        "unit": "ml",
+        "detail": "2 locales",
+        "informative": false
+      },
+      {
+        "id": "distribucion-montantes",
+        "label": "Distribución y montantes",
+        "value": 209.56,
+        "unit": "ml",
+        "detail": "fuera de locales",
+        "informative": false
+      },
+      {
+        "id": "colectores",
+        "label": "Colectores de piso radiante",
+        "value": 2,
+        "unit": "u",
+        "detail": "CO-N, CO-S",
+        "informative": false
+      },
+      {
+        "id": "gabinetes-colector",
+        "label": "Gabinetes de colector",
+        "value": 2,
+        "unit": "u",
+        "detail": "GA-N, GA-S",
+        "informative": false
+      },
+      {
+        "id": "cronotermostatos",
+        "label": "Cronotermostatos",
+        "value": 11,
+        "unit": "u",
+        "detail": "TE-01 a TE-11",
+        "informative": false
+      },
+      {
+        "id": "bomba-circulacion",
+        "label": "Bomba de circulación",
+        "value": 1,
+        "unit": "u",
+        "detail": "genérica; la bomba de calor no está modelada",
+        "informative": false
+      },
+      {
+        "id": "pex-total",
+        "label": "Tubo PEX Ø20 total (= serpentines + distribución)",
+        "value": 1399.51,
+        "unit": "ml",
+        "detail": "mando + retorno",
+        "informative": true
+      }
+    ]
+  }
 }

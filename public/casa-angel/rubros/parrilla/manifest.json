@@ -89,5 +89,27 @@
     "¿Ancho de boca y alto de campana? Propuesta: boca 1,50 m, campana hasta cielorraso.",
     "¿Revestimiento exterior: ladrillo refractario visto, acero o revoque?",
     "¿El conducto sale por cubierta (atraviesa CU) o por muro? ¿Con sombrerete giratorio?"
-  ]
+  ],
+  "budget": {
+    "revision": "R27",
+    "note": "Partidas a cotizar sin solapes; informative = referencia (no se suma).",
+    "lines": [
+      {
+        "id": "parrilla",
+        "label": "Parrilla (equipo o de obra)",
+        "value": 1,
+        "unit": "u",
+        "detail": "K42DB · 2,06 × 0,77",
+        "informative": false
+      },
+      {
+        "id": "conducto-humos",
+        "label": "Conductos de humo",
+        "value": 12.87,
+        "unit": "ml",
+        "detail": "Ø 25 cm · 2 tramos",
+        "informative": false
+      }
+    ]
+  }
 }

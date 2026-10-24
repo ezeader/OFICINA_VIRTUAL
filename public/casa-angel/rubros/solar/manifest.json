@@ -148,5 +148,19 @@
     "¿Potencia o consumo objetivo? Propuesta: 5 kWp on-grid (≈ 25 m² de paneles).",
     "¿Qué aguas miran al norte? El modelo no tiene orientación verdadera cargada.",
     "¿Paneles sobre tejas con estructura o integrados?"
-  ]
+  ],
+  "budget": {
+    "revision": "R27",
+    "note": "Partidas a cotizar sin solapes; informative = referencia (no se suma).",
+    "lines": [
+      {
+        "id": "aguas-candidatas",
+        "label": "Aguas de techo candidatas",
+        "value": 200.7,
+        "unit": "m²",
+        "detail": "orientación a confirmar; sistema sin definir",
+        "informative": true
+      }
+    ]
+  }
 }

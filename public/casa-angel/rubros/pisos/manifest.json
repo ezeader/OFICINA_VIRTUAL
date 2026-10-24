@@ -3923,5 +3923,83 @@
     "¿El Hall está bien sobre \"Base Acceso\" (hormigón 20 cm + 1 m de césped)? ¿Cuál es su piso terminado?",
     "¿Qué zócalo lleva cada local (material y altura)? Solo hay 5 tramos modelados.",
     "¿Escribimos los códigos TP/PI en el modelo (Mark)?"
-  ]
+  ],
+  "budget": {
+    "revision": "R27",
+    "note": "Partidas a cotizar sin solapes; informative = referencia (no se suma).",
+    "lines": [
+      {
+        "id": "piso-vinilico",
+        "label": "Piso vinílico",
+        "value": 270.78,
+        "unit": "m²",
+        "detail": "por terminación",
+        "informative": false
+      },
+      {
+        "id": "piso-alfombra",
+        "label": "Piso alfombra",
+        "value": 127.56,
+        "unit": "m²",
+        "detail": "por terminación",
+        "informative": false
+      },
+      {
+        "id": "piso-deck-de-madera",
+        "label": "Piso deck de madera",
+        "value": 81.54,
+        "unit": "m²",
+        "detail": "por terminación",
+        "informative": false
+      },
+      {
+        "id": "piso-madera",
+        "label": "Piso madera",
+        "value": 35.09,
+        "unit": "m²",
+        "detail": "por terminación",
+        "informative": false
+      },
+      {
+        "id": "piso-hormigon",
+        "label": "Piso hormigón",
+        "value": 31.41,
+        "unit": "m²",
+        "detail": "por terminación",
+        "informative": false
+      },
+      {
+        "id": "piso-hormigon-negro",
+        "label": "Piso hormigón negro",
+        "value": 12.0,
+        "unit": "m²",
+        "detail": "por terminación",
+        "informative": false
+      },
+      {
+        "id": "zocalos",
+        "label": "Zócalos",
+        "value": 427.3,
+        "unit": "ml",
+        "detail": "sin descontar vanos de puertas",
+        "informative": false
+      },
+      {
+        "id": "zocalos-modelados",
+        "label": "Zócalos modelados",
+        "value": 25.61,
+        "unit": "ml",
+        "detail": "5 tramos",
+        "informative": true
+      },
+      {
+        "id": "pisos-todos",
+        "label": "Pisos (todos los tipos)",
+        "value": 558.38,
+        "unit": "m²",
+        "detail": "13 tipos · 29 piezas",
+        "informative": true
+      }
+    ]
+  }
 }

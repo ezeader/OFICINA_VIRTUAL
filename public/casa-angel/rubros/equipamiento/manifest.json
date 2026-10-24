@@ -6835,5 +6835,99 @@
     "¿Qué muebles de cocina faltan (alacenas, columnas) y en qué material?",
     "¿Material y terminación de placares y vanitorios (melamina, laqueado, madera)?",
     "¿Escribimos los códigos de equipamiento en el modelo (Mark)?"
-  ]
+  ],
+  "budget": {
+    "revision": "R27",
+    "note": "Partidas a cotizar sin solapes; informative = referencia (no se suma).",
+    "lines": [
+      {
+        "id": "placares",
+        "label": "Placares",
+        "value": 43.51,
+        "unit": "m²",
+        "detail": "5 placares · frente ancho × alto · 16,47 ml",
+        "informative": false
+      },
+      {
+        "id": "muebles-mesa-de-luz",
+        "label": "Muebles fijos · mesa de luz",
+        "value": 7,
+        "unit": "u",
+        "detail": "MU-05, MU-06, MU-07, MU-08, MU-12, MU-13, MU-14",
+        "informative": false
+      },
+      {
+        "id": "muebles-mueble-tv",
+        "label": "Muebles fijos · mueble TV",
+        "value": 3,
+        "unit": "u",
+        "detail": "MU-09, MU-10, MU-11",
+        "informative": false
+      },
+      {
+        "id": "muebles-mueble-de-pared",
+        "label": "Muebles fijos · mueble de pared",
+        "value": 2,
+        "unit": "u",
+        "detail": "MU-03, MU-04",
+        "informative": false
+      },
+      {
+        "id": "muebles-vinoteca",
+        "label": "Muebles fijos · vinoteca",
+        "value": 2,
+        "unit": "u",
+        "detail": "MU-01, MU-02",
+        "informative": false
+      },
+      {
+        "id": "vanitorios",
+        "label": "Vanitorios",
+        "value": 12.33,
+        "unit": "ml",
+        "detail": "7 vanitorios",
+        "informative": false
+      },
+      {
+        "id": "mesadas",
+        "label": "Mesadas y bajomesadas",
+        "value": 10.07,
+        "unit": "ml",
+        "detail": "5 piezas",
+        "informative": false
+      },
+      {
+        "id": "lavaderos",
+        "label": "Lavaderos",
+        "value": 2,
+        "unit": "u",
+        "detail": "3,20 ml",
+        "informative": false
+      },
+      {
+        "id": "mamparas",
+        "label": "Mamparas",
+        "value": 7,
+        "unit": "u",
+        "detail": "productos de catálogo",
+        "informative": false
+      },
+      {
+        "id": "equipos-cocina",
+        "label": "Equipos de cocina",
+        "value": 3,
+        "unit": "u",
+        "detail": "campana, cocina (horno + anafe), heladera",
+        "informative": false
+      },
+      {
+        "id": "equipamiento-total",
+        "label": "Equipamiento fijo (resumen de las anteriores)",
+        "value": 43,
+        "unit": "u",
+        "detail": "33 fichas",
+        "informative": true
+      }
+    ]
+  }
 }

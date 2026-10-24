@@ -282,5 +282,27 @@
     "¿Iluminación: embutidos LED en cielorrasos, apliques, o ambos? ¿Exterior y pileta?",
     "¿Tablero general en PE (donde está el ABB) o en PB junto al acceso? ¿Seccionales por planta?",
     "¿Corregimos la categoría de los 3 lavavajillas en el modelo (cambio de modelo, requiere tu OK)?"
-  ]
+  ],
+  "budget": {
+    "revision": "R27",
+    "note": "Partidas a cotizar sin solapes; informative = referencia (no se suma).",
+    "lines": [
+      {
+        "id": "tablero-general",
+        "label": "Tablero general",
+        "value": 1,
+        "unit": "u",
+        "detail": "ABB EPB25-304C (PE)",
+        "informative": false
+      },
+      {
+        "id": "bocas",
+        "label": "Bocas (propuesta preliminar)",
+        "value": 128,
+        "unit": "u",
+        "detail": "1 iluminación cada 12 m² + 1 toma cada 6 m de perímetro",
+        "informative": false
+      }
+    ]
+  }
 }

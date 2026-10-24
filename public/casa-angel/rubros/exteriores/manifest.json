@@ -2081,5 +2081,67 @@
     "¿Qué solado llevan veredas, acceso y patio de pileta?",
     "¿Hay cerco perimetral o portón de calle a documentar?",
     "¿Escribimos los códigos de exteriores en el modelo (Mark)?"
-  ]
+  ],
+  "budget": {
+    "revision": "R27",
+    "note": "Partidas a cotizar sin solapes; informative = referencia (no se suma).",
+    "lines": [
+      {
+        "id": "base-acceso",
+        "label": "Base de acceso",
+        "value": 28.84,
+        "unit": "m²",
+        "detail": "+1,00",
+        "informative": false
+      },
+      {
+        "id": "escalones-acceso",
+        "label": "Escalones de acceso",
+        "value": 6,
+        "unit": "u",
+        "detail": "12,00 m² · alzada 0,20",
+        "informative": false
+      },
+      {
+        "id": "escalera-exterior",
+        "label": "Escalera exterior",
+        "value": 1,
+        "unit": "gl",
+        "detail": "alzada 0,25 · huella 0,28 · sube 4,00 m · 10 alzadas",
+        "informative": false
+      },
+      {
+        "id": "barandas-exteriores",
+        "label": "Barandas exteriores",
+        "value": 51.91,
+        "unit": "ml",
+        "detail": "5 barandas · h 0,90",
+        "informative": false
+      },
+      {
+        "id": "porton",
+        "label": "Portón",
+        "value": 20.55,
+        "unit": "m²",
+        "detail": "5 hojas · e 5 cm",
+        "informative": false
+      },
+      {
+        "id": "calle",
+        "label": "Calle (piso del modelo, referencia)",
+        "value": 1576.66,
+        "unit": "m²",
+        "detail": "piso \"Calle\"",
+        "informative": true
+      },
+      {
+        "id": "terreno",
+        "label": "Terreno (toposólidos, referencia)",
+        "value": 5290.79,
+        "unit": "m²",
+        "detail": "4 toposólidos",
+        "informative": true
+      }
+    ]
+  }
 }

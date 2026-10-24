@@ -39,5 +39,19 @@
     "¿Hay gas natural en la calle o se usa GLP con zeppelin? ¿O la casa es todo eléctrica (recomendado si el piso radiante va con bomba de calor)?",
     "¿Qué artefactos van a gas: cocina, caldera del piso radiante, termotanque, parrilla con encendido?",
     "¿Dónde iría el medidor / zeppelin (retiro sobre la calle CA-01)?"
-  ]
+  ],
+  "budget": {
+    "revision": "R27",
+    "note": "Partidas a cotizar sin solapes; informative = referencia (no se suma).",
+    "lines": [
+      {
+        "id": "artefactos-gas",
+        "label": "Artefactos posibles a gas",
+        "value": 1,
+        "unit": "u",
+        "detail": "cocina dual fuel; red de gas sin definir",
+        "informative": true
+      }
+    ]
+  }
 }

@@ -12302,5 +12302,75 @@
     "¿La estructura de madera de CU-02 existe o ese techo apoya sobre otra estructura?",
     "¿Escribimos los códigos de cubierta en el parámetro Mark del modelo (como en Estructura)?",
     "¿Sección real de las piezas \"3×10\" y \"correas 1,5×5\"? Parecen listones/clavaderas más que vigas."
-  ]
+  ],
+  "budget": {
+    "revision": "R27",
+    "note": "Partidas a cotizar sin solapes; informative = referencia (no se suma).",
+    "lines": [
+      {
+        "id": "tejas",
+        "label": "Tejas (3 techos)",
+        "value": 259.02,
+        "unit": "m²",
+        "detail": "superficie inclinada; pendientes 16,8° a 30°",
+        "informative": false
+      },
+      {
+        "id": "vigas-vc",
+        "label": "Vigas 6×20 (VC)",
+        "value": 182.43,
+        "unit": "ml",
+        "detail": "34 piezas",
+        "informative": false
+      },
+      {
+        "id": "piezas-vp",
+        "label": "Piezas 3×10 (VP)",
+        "value": 254.76,
+        "unit": "ml",
+        "detail": "101 piezas",
+        "informative": false
+      },
+      {
+        "id": "correas-cr",
+        "label": "Correas 1,5×5 (CR)",
+        "value": 376.8,
+        "unit": "ml",
+        "detail": "60 piezas",
+        "informative": false
+      },
+      {
+        "id": "fascias",
+        "label": "Fascias / zinguería de borde",
+        "value": 75.78,
+        "unit": "ml",
+        "detail": "FA-01 a FA-04",
+        "informative": false
+      },
+      {
+        "id": "canaletas",
+        "label": "Canaletas",
+        "value": 14.22,
+        "unit": "ml",
+        "detail": "CA-01, CA-02; bajadas no modeladas",
+        "informative": false
+      },
+      {
+        "id": "alero-metalico",
+        "label": "Alero metálico",
+        "value": 43.34,
+        "unit": "m²",
+        "detail": "AL-01, AL-02",
+        "informative": false
+      },
+      {
+        "id": "madera-total",
+        "label": "Madera total (= VC + VP + CR)",
+        "value": 3.19,
+        "unit": "m³",
+        "detail": "Kerto LVL (familia del modelo)",
+        "informative": true
+      }
+    ]
+  }
 }
