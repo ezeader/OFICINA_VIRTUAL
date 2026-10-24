@@ -1,0 +1,93 @@
+{
+  "title": "Parrilla",
+  "summary": "Modelada solo como equipo: parrilla K42DB en el Quincho y 2 conductos Ø 25 cm (12,87 ml). Falta diseñar fogonero, campana y remate.",
+  "model": "Casa-Angel-piloto-documentacion.rvt",
+  "readAt": "2026-10-24T02:32:37.999000Z",
+  "revision": "R25",
+  "kinds": {
+    "PR": "Parrilla",
+    "CH": "Conducto de humos"
+  },
+  "sheets": [],
+  "codes": [
+    {
+      "code": "PR-01",
+      "kind": "PR",
+      "label": "PR-01 · parrilla K42DB",
+      "status": "Familia \"Parrilla\" (Quincho, PB)",
+      "elementId": "743956",
+      "type": "Parrilla K42DB"
+    },
+    {
+      "code": "CH-01",
+      "kind": "CH",
+      "label": "CH-01 · conducto Ø 25 cm · 6,81 ml",
+      "status": "Conducto redondo \"Parrilla\"",
+      "elementId": "738025",
+      "length_m": 6.81
+    },
+    {
+      "code": "CH-02",
+      "kind": "CH",
+      "label": "CH-02 · conducto Ø 25 cm · 6,06 ml",
+      "status": "Conducto redondo \"Parrilla\"",
+      "elementId": "745388",
+      "length_m": 6.06
+    }
+  ],
+  "totals": [
+    {
+      "label": "Conductos de humo",
+      "value": 12.87,
+      "unit": "ml",
+      "detail": "Ø 25 cm · 2 tramos"
+    },
+    {
+      "label": "Parrilla",
+      "value": 1,
+      "unit": "u",
+      "detail": "K42DB · 2,06 × 0,77"
+    }
+  ],
+  "quantities": [
+    {
+      "label": "PR-01 · parrilla K42DB",
+      "group": "Parrilla",
+      "count": 1,
+      "value": 1,
+      "unit": "u",
+      "detail": "Familia \"Parrilla\" (Quincho, PB)"
+    },
+    {
+      "label": "CH-01 · conducto Ø 25 cm · 6,81 ml",
+      "group": "Parrilla",
+      "count": 1,
+      "value": 6.81,
+      "unit": "ml",
+      "detail": "Conducto redondo \"Parrilla\""
+    },
+    {
+      "label": "CH-02 · conducto Ø 25 cm · 6,06 ml",
+      "group": "Parrilla",
+      "count": 1,
+      "value": 6.06,
+      "unit": "ml",
+      "detail": "Conducto redondo \"Parrilla\""
+    }
+  ],
+  "notModeled": [
+    "Fogonero / brasero y parrilla regulable",
+    "Campana y revestimiento refractario",
+    "Conducto completo hasta cubierta y sombrerete",
+    "Mesada de apoyo y leñero"
+  ],
+  "decisions": [
+    "Rubro sin láminas: hay que diseñar la parrilla antes de documentarla."
+  ],
+  "questions": [
+    "¿Parrilla de obra a medida (recomendado) o equipo prefabricado como el K42DB?",
+    "¿Ancho de boca y alto de campana? Propuesta: boca 1,50 m, campana hasta cielorraso.",
+    "¿Revestimiento exterior: ladrillo refractario visto, acero o revoque?",
+    "¿El conducto sale por cubierta (atraviesa CU) o por muro? ¿Con sombrerete giratorio?"
+  ]
+}

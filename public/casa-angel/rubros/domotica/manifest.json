@@ -1,0 +1,281 @@
+{
+  "title": "Domótica",
+  "summary": "Sin elementos de domótica en el modelo. Base existente: 11 termostatos del piso radiante (Climatización) y 30 locales.",
+  "model": "Casa-Angel-piloto-documentacion.rvt",
+  "readAt": "2026-10-24T02:32:37.999000Z",
+  "revision": "R25",
+  "kinds": {},
+  "sheets": [],
+  "codes": [],
+  "totals": [
+    {
+      "label": "Locales a cubrir",
+      "value": 30,
+      "unit": "locales",
+      "detail": "PB, PA y PE"
+    },
+    {
+      "label": "Zonas de clima existentes",
+      "value": 11,
+      "unit": "termostatos",
+      "detail": "ver Climatización"
+    }
+  ],
+  "quantities": [
+    {
+      "label": "01 · Cuarto A Inv. 01 · PB",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 11.86,
+      "unit": "m²",
+      "detail": "sin dispositivos"
+    },
+    {
+      "label": "02 · Baño A Inv. 02 · PB",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 5.29,
+      "unit": "m²",
+      "detail": "sin dispositivos"
+    },
+    {
+      "label": "03 · Cuarto B Inv. 03 · PB",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 12.18,
+      "unit": "m²",
+      "detail": "sin dispositivos"
+    },
+    {
+      "label": "04 · Baño B Inv. 04 · PB",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 5.43,
+      "unit": "m²",
+      "detail": "sin dispositivos"
+    },
+    {
+      "label": "05 · Cuarto C Inv. 05 · PB",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 11.86,
+      "unit": "m²",
+      "detail": "sin dispositivos"
+    },
+    {
+      "label": "06 · Baño C Inv. 06 · PB",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 5.29,
+      "unit": "m²",
+      "detail": "sin dispositivos"
+    },
+    {
+      "label": "07 · Toilette Servicio 07 · PB",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 6.24,
+      "unit": "m²",
+      "detail": "sin dispositivos"
+    },
+    {
+      "label": "08 · Lavadero 08 · PB",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 6.64,
+      "unit": "m²",
+      "detail": "sin dispositivos"
+    },
+    {
+      "label": "09 · Hab. servicio 09 · PB",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 6.61,
+      "unit": "m²",
+      "detail": "sin dispositivos"
+    },
+    {
+      "label": "10 · Acceso Servicio 10 · PB",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 5.03,
+      "unit": "m²",
+      "detail": "sin dispositivos"
+    },
+    {
+      "label": "11 · Ascensor 11 · PB",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 3.34,
+      "unit": "m²",
+      "detail": "sin dispositivos"
+    },
+    {
+      "label": "12 · Quincho 12 · PB",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 45.01,
+      "unit": "m²",
+      "detail": "sin dispositivos"
+    },
+    {
+      "label": "13 · Cuarto ppal 13 · PB",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 14.82,
+      "unit": "m²",
+      "detail": "sin dispositivos"
+    },
+    {
+      "label": "14 · Vestidor ppal 14 · PB",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 7.57,
+      "unit": "m²",
+      "detail": "sin dispositivos"
+    },
+    {
+      "label": "15 · Baño ppal 15 · PB",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 9.03,
+      "unit": "m²",
+      "detail": "sin dispositivos"
+    },
+    {
+      "label": "16 · Pasillo 16 · PB",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 26.08,
+      "unit": "m²",
+      "detail": "sin dispositivos"
+    },
+    {
+      "label": "17 · Hall 17 · PB",
+      "group": "Locales · 00. Planta Baja",
+      "count": 1,
+      "value": 27.13,
+      "unit": "m²",
+      "detail": "sin dispositivos"
+    },
+    {
+      "label": "01 · Sala de TV 01 · PA",
+      "group": "Locales · 01. Planta Alta",
+      "count": 1,
+      "value": 14.99,
+      "unit": "m²",
+      "detail": "sin dispositivos"
+    },
+    {
+      "label": "02 · Sala de Maquinas 02 · PA",
+      "group": "Locales · 01. Planta Alta",
+      "count": 1,
+      "value": 4.79,
+      "unit": "m²",
+      "detail": "sin dispositivos"
+    },
+    {
+      "label": "03 · Playroom 03 · PA",
+      "group": "Locales · 01. Planta Alta",
+      "count": 1,
+      "value": 28.94,
+      "unit": "m²",
+      "detail": "sin dispositivos"
+    },
+    {
+      "label": "04 · Baño PA 04 · PA",
+      "group": "Locales · 01. Planta Alta",
+      "count": 1,
+      "value": 5.81,
+      "unit": "m²",
+      "detail": "sin dispositivos"
+    },
+    {
+      "label": "05 · Toilette 05 · PA",
+      "group": "Locales · 01. Planta Alta",
+      "count": 1,
+      "value": 5.12,
+      "unit": "m²",
+      "detail": "sin dispositivos"
+    },
+    {
+      "label": "06 · Cava 06 · PA",
+      "group": "Locales · 01. Planta Alta",
+      "count": 1,
+      "value": 8.44,
+      "unit": "m²",
+      "detail": "sin dispositivos"
+    },
+    {
+      "label": "07 · Cocina 07 · PA",
+      "group": "Locales · 01. Planta Alta",
+      "count": 1,
+      "value": 20.87,
+      "unit": "m²",
+      "detail": "sin dispositivos"
+    },
+    {
+      "label": "08 · Comedor 08 · PA",
+      "group": "Locales · 01. Planta Alta",
+      "count": 1,
+      "value": 23.26,
+      "unit": "m²",
+      "detail": "sin dispositivos"
+    },
+    {
+      "label": "09 · Living 09 · PA",
+      "group": "Locales · 01. Planta Alta",
+      "count": 1,
+      "value": 16.14,
+      "unit": "m²",
+      "detail": "sin dispositivos"
+    },
+    {
+      "label": "10 · Puente 10 · PA",
+      "group": "Locales · 01. Planta Alta",
+      "count": 1,
+      "value": 2.18,
+      "unit": "m²",
+      "detail": "sin dispositivos"
+    },
+    {
+      "label": "01 · SM 01 · PE",
+      "group": "Locales · 02. Planta Entrepiso",
+      "count": 1,
+      "value": 6.56,
+      "unit": "m²",
+      "detail": "sin dispositivos"
+    },
+    {
+      "label": "02 · Hall PE 02 · PE",
+      "group": "Locales · 02. Planta Entrepiso",
+      "count": 1,
+      "value": 7.26,
+      "unit": "m²",
+      "detail": "sin dispositivos"
+    },
+    {
+      "label": "03 · Atelier 03 · PE",
+      "group": "Locales · 02. Planta Entrepiso",
+      "count": 1,
+      "value": 19.36,
+      "unit": "m²",
+      "detail": "sin dispositivos"
+    }
+  ],
+  "notModeled": [
+    "Central / controlador",
+    "Sensores, actuadores y teclados",
+    "Cableado de datos y Wi-Fi",
+    "Seguridad: alarma, cámaras, portero"
+  ],
+  "decisions": [
+    "Rubro sin láminas hasta definir el alcance."
+  ],
+  "questions": [
+    "¿Qué se automatiza: iluminación, cortinas, clima por zona, riego, pileta, seguridad?",
+    "¿Sistema cableado (KNX) o inalámbrico (Zigbee / Wi-Fi)? Recomendado: cableado si se define antes de la obra gruesa.",
+    "¿Integramos los 11 termostatos del piso radiante a la domótica?",
+    "¿Dónde va el rack / central (Sala de máquinas PA)?"
+  ]
+}

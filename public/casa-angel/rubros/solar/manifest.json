@@ -1,0 +1,152 @@
+{
+  "title": "Paneles solares",
+  "summary": "Sin paneles ni familias en el modelo. Superficie de techo candidata: 7 aguas de más de 15 m² (200,70 m²); falta conocer su orientación.",
+  "model": "Casa-Angel-piloto-documentacion.rvt",
+  "readAt": "2026-10-24T02:32:37.999000Z",
+  "revision": "R25",
+  "kinds": {},
+  "sheets": [],
+  "codes": [],
+  "totals": [
+    {
+      "label": "Aguas candidatas (≥ 15 m²)",
+      "value": 200.7,
+      "unit": "m²",
+      "detail": "7 aguas · orientación a confirmar"
+    },
+    {
+      "label": "Techo de tejas total",
+      "value": 246.6,
+      "unit": "m²",
+      "detail": "ver Cubierta"
+    }
+  ],
+  "quantities": [
+    {
+      "label": "CU-01 · agua 26,70°",
+      "group": "Aguas de cubierta",
+      "count": 1,
+      "value": 46.84,
+      "unit": "m²",
+      "detail": "candidata"
+    },
+    {
+      "label": "CU-01 · agua 26,70°",
+      "group": "Aguas de cubierta",
+      "count": 1,
+      "value": 34.7,
+      "unit": "m²",
+      "detail": "candidata"
+    },
+    {
+      "label": "CU-01 · agua 26,70°",
+      "group": "Aguas de cubierta",
+      "count": 1,
+      "value": 19.76,
+      "unit": "m²",
+      "detail": "candidata"
+    },
+    {
+      "label": "CU-01 · agua 26,70°",
+      "group": "Aguas de cubierta",
+      "count": 1,
+      "value": 16.38,
+      "unit": "m²",
+      "detail": "candidata"
+    },
+    {
+      "label": "CU-01 · agua 30,00°",
+      "group": "Aguas de cubierta",
+      "count": 1,
+      "value": 9.03,
+      "unit": "m²",
+      "detail": "chica"
+    },
+    {
+      "label": "CU-02 · agua 30,00°",
+      "group": "Aguas de cubierta",
+      "count": 1,
+      "value": 7.86,
+      "unit": "m²",
+      "detail": "chica"
+    },
+    {
+      "label": "CU-02 · agua 30,00°",
+      "group": "Aguas de cubierta",
+      "count": 1,
+      "value": 6.62,
+      "unit": "m²",
+      "detail": "chica"
+    },
+    {
+      "label": "CU-02 · agua 30,00°",
+      "group": "Aguas de cubierta",
+      "count": 1,
+      "value": 6.61,
+      "unit": "m²",
+      "detail": "chica"
+    },
+    {
+      "label": "CU-03 · agua 16,80°",
+      "group": "Aguas de cubierta",
+      "count": 1,
+      "value": 33.94,
+      "unit": "m²",
+      "detail": "candidata"
+    },
+    {
+      "label": "CU-03 · agua 16,80°",
+      "group": "Aguas de cubierta",
+      "count": 1,
+      "value": 33.94,
+      "unit": "m²",
+      "detail": "candidata"
+    },
+    {
+      "label": "CU-03 · agua 26,10°",
+      "group": "Aguas de cubierta",
+      "count": 1,
+      "value": 15.14,
+      "unit": "m²",
+      "detail": "candidata"
+    },
+    {
+      "label": "CU-03 · agua 26,10°",
+      "group": "Aguas de cubierta",
+      "count": 1,
+      "value": 7.92,
+      "unit": "m²",
+      "detail": "chica"
+    },
+    {
+      "label": "CU-03 · agua 30,00°",
+      "group": "Aguas de cubierta",
+      "count": 1,
+      "value": 3.93,
+      "unit": "m²",
+      "detail": "chica"
+    },
+    {
+      "label": "CU-03 · agua 30,00°",
+      "group": "Aguas de cubierta",
+      "count": 1,
+      "value": 3.93,
+      "unit": "m²",
+      "detail": "chica"
+    }
+  ],
+  "notModeled": [
+    "Paneles, estructura de montaje e inversor",
+    "Cableado y tablero de continua",
+    "Colectores solares térmicos (agua caliente / pileta)"
+  ],
+  "decisions": [
+    "Rubro sin láminas hasta definir sistema y potencia."
+  ],
+  "questions": [
+    "¿Fotovoltaico (electricidad), térmico (agua caliente / pileta) o ambos?",
+    "¿Potencia o consumo objetivo? Propuesta: 5 kWp on-grid (≈ 25 m² de paneles).",
+    "¿Qué aguas miran al norte? El modelo no tiene orientación verdadera cargada.",
+    "¿Paneles sobre tejas con estructura o integrados?"
+  ]
+}

@@ -1,0 +1,355 @@
+{
+  "title": "Revestimientos",
+  "summary": "No hay revestimientos modelados. Estimación preliminar: 179,11 m² en 7 baños/toilettes, 5,10 m² en cocina y lavadero, 893,43 m² de pintura de muros.",
+  "model": "Casa-Angel-piloto-documentacion.rvt",
+  "readAt": "2026-10-24T02:32:37.999000Z",
+  "revision": "R25",
+  "kinds": {
+    "RV": "Revestimiento cerámico / porcelanato",
+    "PI": "Pintura"
+  },
+  "sheets": [],
+  "codes": [],
+  "totals": [
+    {
+      "label": "Baños y toilettes (h 2,40)",
+      "value": 179.11,
+      "unit": "m²",
+      "detail": "7 locales · sin descontar vanos"
+    },
+    {
+      "label": "Cocina y lavadero (franja 0,60)",
+      "value": 5.1,
+      "unit": "m²",
+      "detail": "sobre mesadas y lavaderos (Equipamiento)"
+    },
+    {
+      "label": "Venecitas pileta (modelado)",
+      "value": 39.55,
+      "unit": "m²",
+      "detail": "ver Pileta"
+    },
+    {
+      "label": "Pintura de muros (estimado)",
+      "value": 893.43,
+      "unit": "m²",
+      "detail": "22 locales · h 2,60"
+    }
+  ],
+  "quantities": [
+    {
+      "label": "02 · Baño A Inv. 02 · PB",
+      "group": "Baños y toilettes (estimado h 2,40)",
+      "count": 1,
+      "value": 24.62,
+      "unit": "m²",
+      "detail": "perímetro 10,26 × 2,40 · sin descontar vanos"
+    },
+    {
+      "label": "04 · Baño B Inv. 04 · PB",
+      "group": "Baños y toilettes (estimado h 2,40)",
+      "count": 1,
+      "value": 25.1,
+      "unit": "m²",
+      "detail": "perímetro 10,46 × 2,40 · sin descontar vanos"
+    },
+    {
+      "label": "06 · Baño C Inv. 06 · PB",
+      "group": "Baños y toilettes (estimado h 2,40)",
+      "count": 1,
+      "value": 24.62,
+      "unit": "m²",
+      "detail": "perímetro 10,26 × 2,40 · sin descontar vanos"
+    },
+    {
+      "label": "15 · Baño ppal 15 · PB",
+      "group": "Baños y toilettes (estimado h 2,40)",
+      "count": 1,
+      "value": 33.17,
+      "unit": "m²",
+      "detail": "perímetro 13,82 × 2,40 · sin descontar vanos"
+    },
+    {
+      "label": "05 · Toilette 05 · PA",
+      "group": "Baños y toilettes (estimado h 2,40)",
+      "count": 1,
+      "value": 22.21,
+      "unit": "m²",
+      "detail": "perímetro 9,25 × 2,40 · sin descontar vanos"
+    },
+    {
+      "label": "04 · Baño PA 04 · PA",
+      "group": "Baños y toilettes (estimado h 2,40)",
+      "count": 1,
+      "value": 25.46,
+      "unit": "m²",
+      "detail": "perímetro 10,61 × 2,40 · sin descontar vanos"
+    },
+    {
+      "label": "07 · Toilette Servicio 07 · PB",
+      "group": "Baños y toilettes (estimado h 2,40)",
+      "count": 1,
+      "value": 23.93,
+      "unit": "m²",
+      "detail": "perímetro 9,97 × 2,40 · sin descontar vanos"
+    },
+    {
+      "label": "07 · Cocina 07 · PA",
+      "group": "Cocina y lavadero (franja sobre mesada h 0,60)",
+      "count": 1,
+      "value": 3.18,
+      "unit": "m²",
+      "detail": "5,30 ml de mesada/lavadero × 0,60"
+    },
+    {
+      "label": "08 · Lavadero 08 · PB",
+      "group": "Cocina y lavadero (franja sobre mesada h 0,60)",
+      "count": 1,
+      "value": 1.92,
+      "unit": "m²",
+      "detail": "3,20 ml de mesada/lavadero × 0,60"
+    },
+    {
+      "label": "01 · Cuarto A Inv. 01 · PB",
+      "group": "Pintura de muros (estimado h 2,60)",
+      "count": 1,
+      "value": 35.91,
+      "unit": "m²",
+      "detail": "perímetro 13,81 × 2,60 · sin descontar vanos"
+    },
+    {
+      "label": "03 · Cuarto B Inv. 03 · PB",
+      "group": "Pintura de muros (estimado h 2,60)",
+      "count": 1,
+      "value": 36.43,
+      "unit": "m²",
+      "detail": "perímetro 14,01 × 2,60 · sin descontar vanos"
+    },
+    {
+      "label": "05 · Cuarto C Inv. 05 · PB",
+      "group": "Pintura de muros (estimado h 2,60)",
+      "count": 1,
+      "value": 35.91,
+      "unit": "m²",
+      "detail": "perímetro 13,81 × 2,60 · sin descontar vanos"
+    },
+    {
+      "label": "13 · Cuarto ppal 13 · PB",
+      "group": "Pintura de muros (estimado h 2,60)",
+      "count": 1,
+      "value": 40.64,
+      "unit": "m²",
+      "detail": "perímetro 15,63 × 2,60 · sin descontar vanos"
+    },
+    {
+      "label": "12 · Quincho 12 · PB",
+      "group": "Pintura de muros (estimado h 2,60)",
+      "count": 1,
+      "value": 74.02,
+      "unit": "m²",
+      "detail": "perímetro 28,47 × 2,60 · sin descontar vanos"
+    },
+    {
+      "label": "09 · Hab. servicio 09 · PB",
+      "group": "Pintura de muros (estimado h 2,60)",
+      "count": 1,
+      "value": 26.74,
+      "unit": "m²",
+      "detail": "perímetro 10,29 × 2,60 · sin descontar vanos"
+    },
+    {
+      "label": "10 · Acceso Servicio 10 · PB",
+      "group": "Pintura de muros (estimado h 2,60)",
+      "count": 1,
+      "value": 23.8,
+      "unit": "m²",
+      "detail": "perímetro 9,15 × 2,60 · sin descontar vanos"
+    },
+    {
+      "label": "17 · Hall 17 · PB",
+      "group": "Pintura de muros (estimado h 2,60)",
+      "count": 1,
+      "value": 56.64,
+      "unit": "m²",
+      "detail": "perímetro 21,78 × 2,60 · sin descontar vanos"
+    },
+    {
+      "label": "16 · Pasillo 16 · PB",
+      "group": "Pintura de muros (estimado h 2,60)",
+      "count": 1,
+      "value": 83.47,
+      "unit": "m²",
+      "detail": "perímetro 32,11 × 2,60 · sin descontar vanos"
+    },
+    {
+      "label": "06 · Cava 06 · PA",
+      "group": "Pintura de muros (estimado h 2,60)",
+      "count": 1,
+      "value": 30.71,
+      "unit": "m²",
+      "detail": "perímetro 11,81 × 2,60 · sin descontar vanos"
+    },
+    {
+      "label": "01 · Sala de TV 01 · PA",
+      "group": "Pintura de muros (estimado h 2,60)",
+      "count": 1,
+      "value": 40.3,
+      "unit": "m²",
+      "detail": "perímetro 15,50 × 2,60 · sin descontar vanos"
+    },
+    {
+      "label": "08 · Comedor 08 · PA",
+      "group": "Pintura de muros (estimado h 2,60)",
+      "count": 1,
+      "value": 51.28,
+      "unit": "m²",
+      "detail": "perímetro 19,72 × 2,60 · sin descontar vanos"
+    },
+    {
+      "label": "03 · Playroom 03 · PA",
+      "group": "Pintura de muros (estimado h 2,60)",
+      "count": 1,
+      "value": 63.54,
+      "unit": "m²",
+      "detail": "perímetro 24,44 × 2,60 · sin descontar vanos"
+    },
+    {
+      "label": "03 · Atelier 03 · PE",
+      "group": "Pintura de muros (estimado h 2,60)",
+      "count": 1,
+      "value": 44.48,
+      "unit": "m²",
+      "detail": "perímetro 17,79 × 2,50 · sin descontar vanos"
+    },
+    {
+      "label": "01 · SM 01 · PE",
+      "group": "Pintura de muros (estimado h 2,60)",
+      "count": 1,
+      "value": 25.62,
+      "unit": "m²",
+      "detail": "perímetro 10,25 × 2,50 · sin descontar vanos"
+    },
+    {
+      "label": "02 · Hall PE 02 · PE",
+      "group": "Pintura de muros (estimado h 2,60)",
+      "count": 1,
+      "value": 27.54,
+      "unit": "m²",
+      "detail": "perímetro 11,02 × 2,50 · sin descontar vanos"
+    },
+    {
+      "label": "07 · Cocina 07 · PA",
+      "group": "Pintura de muros (estimado h 2,60)",
+      "count": 1,
+      "value": 52.61,
+      "unit": "m²",
+      "detail": "perímetro 20,23 × 2,60 · sin descontar vanos"
+    },
+    {
+      "label": "09 · Living 09 · PA",
+      "group": "Pintura de muros (estimado h 2,60)",
+      "count": 1,
+      "value": 42.79,
+      "unit": "m²",
+      "detail": "perímetro 16,46 × 2,60 · sin descontar vanos"
+    },
+    {
+      "label": "10 · Puente 10 · PA",
+      "group": "Pintura de muros (estimado h 2,60)",
+      "count": 1,
+      "value": 18.34,
+      "unit": "m²",
+      "detail": "perímetro 7,06 × 2,60 · sin descontar vanos"
+    },
+    {
+      "label": "02 · Sala de Maquinas 02 · PA",
+      "group": "Pintura de muros (estimado h 2,60)",
+      "count": 1,
+      "value": 23.66,
+      "unit": "m²",
+      "detail": "perímetro 9,10 × 2,60 · sin descontar vanos"
+    },
+    {
+      "label": "14 · Vestidor ppal 14 · PB",
+      "group": "Pintura de muros (estimado h 2,60)",
+      "count": 1,
+      "value": 31.75,
+      "unit": "m²",
+      "detail": "perímetro 12,21 × 2,60 · sin descontar vanos"
+    },
+    {
+      "label": "08 · Lavadero 08 · PB",
+      "group": "Pintura de muros (estimado h 2,60)",
+      "count": 1,
+      "value": 27.25,
+      "unit": "m²",
+      "detail": "perímetro 10,48 × 2,60 · sin descontar vanos"
+    },
+    {
+      "label": "Venecitas",
+      "group": "Materiales ya cargados en muros (Revit)",
+      "count": 1,
+      "value": 39.55,
+      "unit": "m²",
+      "detail": "área de capa en el modelo"
+    },
+    {
+      "label": "White Paint",
+      "group": "Materiales ya cargados en muros (Revit)",
+      "count": 1,
+      "value": 206.01,
+      "unit": "m²",
+      "detail": "área de capa en el modelo"
+    },
+    {
+      "label": "Placa de Yeso RH 12,5mm Knauf",
+      "group": "Materiales ya cargados en muros (Revit)",
+      "count": 1,
+      "value": 105.29,
+      "unit": "m²",
+      "detail": "área de capa en el modelo"
+    },
+    {
+      "label": "Placa de Yeso ST 12,5mm Knauf",
+      "group": "Materiales ya cargados en muros (Revit)",
+      "count": 1,
+      "value": 213.75,
+      "unit": "m²",
+      "detail": "área de capa en el modelo"
+    },
+    {
+      "label": "Piedra Chimenea",
+      "group": "Materiales ya cargados en muros (Revit)",
+      "count": 1,
+      "value": 2.5,
+      "unit": "m²",
+      "detail": "área de capa en el modelo"
+    },
+    {
+      "label": "Hormigon fachada",
+      "group": "Materiales ya cargados en muros (Revit)",
+      "count": 1,
+      "value": 89.04,
+      "unit": "m²",
+      "detail": "área de capa en el modelo"
+    }
+  ],
+  "quantityNote": "Estimación preliminar con perímetro de local × altura supuesta, sin descontar vanos. Se reemplaza por cómputo real cuando se modelen las capas de terminación.",
+  "notModeled": [
+    "Cerámicos y porcelanatos de baños, toilettes, cocina y lavadero",
+    "Capas de terminación (Finish) en muros de mampostería",
+    "Revestimiento de fachada (hoy solo \"Hormigón fachada\" 8 cm)",
+    "Guardas, cantoneras, buñas y zócalos sanitarios"
+  ],
+  "decisions": [
+    "Rubro sin láminas hasta definir materiales y alturas.",
+    "Hipótesis recomendadas: baños revestidos hasta 2,40 m; cocina y lavadero solo franja de 0,60 m sobre mesada; resto pintado."
+  ],
+  "questions": [
+    "¿Altura de revestimiento en baños: hasta 2,40 m (recomendado), hasta cielorraso o solo zona húmeda?",
+    "¿Material y formato para baños (porcelanato 60×120, cerámico, microcemento)?",
+    "¿Cocina y lavadero: franja de 0,60 m sobre mesada (recomendado) o pared completa?",
+    "¿La fachada lleva revestimiento además del hormigón visto?",
+    "¿Modelamos las capas de terminación en los muros (cambia el modelo, requiere tu OK)?"
+  ]
+}
