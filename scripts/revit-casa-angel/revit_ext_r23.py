@@ -157,7 +157,7 @@ def axo(doc, es, code, label, sector, rgb):
     pts = [p for e in es for p in [e.get_BoundingBox(None).Min, e.get_BoundingBox(None).Max]]; pad = .6 / M
     bx = DB.BoundingBoxXYZ(); bx.Min = DB.XYZ(min(p.X for p in pts) - pad, min(p.Y for p in pts) - pad, min(p.Z for p in pts) - .3 / M)
     bx.Max = DB.XYZ(max(p.X for p in pts) + pad, max(p.Y for p in pts) + pad, max(p.Z for p in pts) + .3 / M)
-    ax = DB.View3D.CreateIsometric(doc, DB.ElementId(Int64(49559))); L.setup_view(doc, ax)
+    ax = DB.View3D.CreateIsometric(doc, DB.ElementId(Int64(getattr(L, 'VIEW3D_VFT', 49559)))); L.setup_view(doc, ax)
     ax.Name = PRE + code + ' - AXO'; ax.SetSectionBox(bx); ax.IsSectionBoxActive = True
     d = DB.XYZ(-1, -1, -.75).Normalize(); right = d.CrossProduct(DB.XYZ.BasisZ).Normalize()
     ax.SetOrientation(DB.ViewOrientation3D(DB.XYZ.Zero, right.CrossProduct(d).Normalize(), d))
