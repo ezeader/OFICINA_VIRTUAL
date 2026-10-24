@@ -42,7 +42,8 @@ def snap(req):
     return int(math.ceil(req / 50.) * 50)
 
 def assert_pilot(doc):
-    assert os.path.basename(doc.PathName).lower() == PILOT, 'Only the Casa Angel pilot is authorized'
+    bn = os.path.basename(doc.PathName).lower()
+    assert bn == PILOT or (bn.startswith('casa-angel-doc-') and os.path.basename(os.path.dirname(doc.PathName)).lower() == 'documentacion'), 'Only the Casa Angel pilot or its DOC files are authorized'
     assert not doc.IsFamilyDocument and not doc.IsReadOnly
 
 def guarded(doc, label, body):
@@ -871,6 +872,7 @@ def run(doc, uidoc, job):
     if action == 'r4_crop': return crop_job(doc, job['pairs'])
     if action == 'r4_arcs': return arc_probe(doc)
     if action == 'r4_reset': return reset_job(doc, job['key'])
+    if action == 'r30_cie_model': return imp.load_source('ader_cie_model_r30', os.path.join(ROOT, 'revit_cie_model_r30.py')).run(doc, uidoc, job)
     if action == 'r30_docfile': return imp.load_source('ader_docfile_r30', os.path.join(ROOT, 'revit_docfile_r30.py')).run(doc, uidoc, job)
     if action == 'r29_cub': return imp.load_source('ader_cub_r29', os.path.join(ROOT, 'revit_cub_r29.py')).run(doc, uidoc, job)
     if action == 'r30_audit': return imp.load_source('ader_audit_r30', os.path.join(ROOT, 'revit_audit_r30.py')).run(doc, uidoc, job)
