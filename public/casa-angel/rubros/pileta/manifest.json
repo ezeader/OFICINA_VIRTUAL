@@ -1,0 +1,843 @@
+{
+  "title": "Pileta",
+  "summary": "Vaso de 7,09 × 2,80 m, 2,00 m de alto de muro; 35,81 m³ de agua; 61,41 m² de venecitas. 4 láminas.",
+  "model": "Casa-Angel-piloto-documentacion.rvt",
+  "readAt": "2026-10-24T00:06:09.418000Z",
+  "revision": "R22",
+  "kinds": {
+    "VA": "Muros del vaso",
+    "FO": "Fondo",
+    "BO": "Borde / solárium",
+    "AG": "Agua"
+  },
+  "sheets": [
+    {
+      "number": "PIL-00",
+      "title": "Índice y cómputo",
+      "level": "Pileta",
+      "sector": "General",
+      "kind": "general",
+      "element": null,
+      "elementId": null,
+      "elementKind": null,
+      "note": null,
+      "sheetId": "2472474",
+      "pdf": "/casa-angel/rubros/pileta/PIL-00.pdf",
+      "image": "/casa-angel/rubros/pileta/PIL-00.svg.gz",
+      "preview": "/casa-angel/rubros/pileta/PIL-00-preview.png",
+      "thumbnail": "/casa-angel/rubros/pileta/PIL-00.png",
+      "views": []
+    },
+    {
+      "number": "PIL-01",
+      "title": "Planta de pileta",
+      "level": "00. Planta Baja",
+      "sector": "Pileta · 00. Planta Baja",
+      "kind": "general",
+      "element": null,
+      "elementId": null,
+      "elementKind": null,
+      "note": null,
+      "sheetId": "2472368",
+      "pdf": "/casa-angel/rubros/pileta/PIL-01.pdf",
+      "image": "/casa-angel/rubros/pileta/PIL-01.svg.gz",
+      "preview": "/casa-angel/rubros/pileta/PIL-01-preview.png",
+      "thumbnail": "/casa-angel/rubros/pileta/PIL-01.png",
+      "views": [
+        {
+          "id": "2472299",
+          "name": "Planta de pileta",
+          "label": "Planta de pileta   1:20",
+          "scale": 20,
+          "kind": "plan",
+          "sector": "Pileta · 00. Planta Baja",
+          "roomLabel": "Pileta · 00. Planta Baja",
+          "image": "/casa-angel/rubros/pileta/PIL-01-view-2472299.svg.gz",
+          "region": [
+            0.1615,
+            0.2497,
+            0.7378,
+            0.7375
+          ],
+          "tags": [
+            "VA-01",
+            "VA-02",
+            "VA-03",
+            "VA-04",
+            "BO-01",
+            "FO-01",
+            "AG-01"
+          ],
+          "dimensions": [
+            {
+              "label": "VA-01 largo",
+              "values_m": [
+                7.087
+              ],
+              "associative": false
+            },
+            {
+              "label": "VA-02 largo",
+              "values_m": [
+                2.8
+              ],
+              "associative": false
+            },
+            {
+              "label": "VA-03 largo",
+              "values_m": [
+                2.8
+              ],
+              "associative": false
+            },
+            {
+              "label": "VA-04 largo",
+              "values_m": [
+                7.087
+              ],
+              "associative": false
+            },
+            {
+              "label": "Vaso largo X",
+              "values_m": [
+                7.287
+              ],
+              "associative": false
+            },
+            {
+              "label": "Vaso ancho Y",
+              "values_m": [
+                3.0
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "VA-01",
+              "elementId": "404894",
+              "label": "VA-01 · 7,09 × 2,00 · e 20",
+              "box": [
+                0.1579,
+                0.7043,
+                0.8421,
+                0.7357
+              ]
+            },
+            {
+              "code": "VA-02",
+              "elementId": "404954",
+              "label": "VA-02 · 2,80 × 2,00 · e 20",
+              "box": [
+                0.1579,
+                0.2643,
+                0.1767,
+                0.72
+              ]
+            },
+            {
+              "code": "VA-03",
+              "elementId": "405122",
+              "label": "VA-03 · 2,80 × 2,00 · e 20",
+              "box": [
+                0.8233,
+                0.28,
+                0.8421,
+                0.72
+              ]
+            },
+            {
+              "code": "VA-04",
+              "elementId": "405036",
+              "label": "VA-04 · 7,09 × 2,00 · e 20",
+              "box": [
+                0.1673,
+                0.2643,
+                0.8421,
+                0.2957
+              ]
+            },
+            {
+              "code": "BO-01",
+              "elementId": "370633",
+              "label": "BO-01 · borde / solárium · 38,15 m²",
+              "box": [
+                0.064,
+                0.17,
+                1.0,
+                0.7985
+              ]
+            },
+            {
+              "code": "FO-01",
+              "elementId": "405334",
+              "label": "FO-01 · fondo · 21,86 m²",
+              "box": [
+                0.1579,
+                0.2643,
+                0.8421,
+                0.7357
+              ]
+            },
+            {
+              "code": "AG-01",
+              "elementId": "628150",
+              "label": "AG-01 · agua · 35,81 m³",
+              "box": [
+                0.1767,
+                0.2957,
+                0.8233,
+                0.7043
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "PIL-02",
+      "title": "Cortes de pileta",
+      "level": "00. Planta Baja",
+      "sector": "Pileta · 00. Planta Baja",
+      "kind": "general",
+      "element": null,
+      "elementId": null,
+      "elementKind": null,
+      "note": null,
+      "sheetId": "2472388",
+      "pdf": "/casa-angel/rubros/pileta/PIL-02.pdf",
+      "image": "/casa-angel/rubros/pileta/PIL-02.svg.gz",
+      "preview": "/casa-angel/rubros/pileta/PIL-02-preview.png",
+      "thumbnail": "/casa-angel/rubros/pileta/PIL-02.png",
+      "views": [
+        {
+          "id": "2472335",
+          "name": "Corte longitudinal",
+          "label": "Corte longitudinal   1:20",
+          "scale": 20,
+          "kind": "section",
+          "sector": "Pileta · 00. Planta Baja",
+          "roomLabel": "Pileta · 00. Planta Baja",
+          "image": "/casa-angel/rubros/pileta/PIL-02-view-2472335.svg.gz",
+          "region": [
+            0.1908,
+            0.2131,
+            0.7079,
+            0.49
+          ],
+          "tags": [
+            "VA-01",
+            "VA-02",
+            "VA-03",
+            "VA-04",
+            "FO-01"
+          ],
+          "dimensions": [
+            {
+              "label": "Vaso longitudinal",
+              "values_m": [
+                7.287
+              ],
+              "associative": false
+            },
+            {
+              "label": "Profundidad total",
+              "values_m": [
+                2.15
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "VA-01",
+              "elementId": "404894",
+              "label": "VA-01 · 7,09 × 2,00 · e 20",
+              "box": [
+                0.1458,
+                0.2441,
+                0.9078,
+                0.7974
+              ]
+            },
+            {
+              "code": "VA-02",
+              "elementId": "404954",
+              "label": "VA-02 · 2,80 × 2,00 · e 20",
+              "box": [
+                0.8868,
+                0.2441,
+                0.9078,
+                0.7974
+              ]
+            },
+            {
+              "code": "VA-03",
+              "elementId": "405122",
+              "label": "VA-03 · 2,80 × 2,00 · e 20",
+              "box": [
+                0.1458,
+                0.2441,
+                0.1667,
+                0.7974
+              ]
+            },
+            {
+              "code": "VA-04",
+              "elementId": "405036",
+              "label": "VA-04 · 7,09 × 2,00 · e 20",
+              "box": [
+                0.1458,
+                0.2441,
+                0.8973,
+                0.7974
+              ]
+            },
+            {
+              "code": "FO-01",
+              "elementId": "405334",
+              "label": "FO-01 · fondo · 21,86 m²",
+              "box": [
+                0.1458,
+                0.7974,
+                0.9078,
+                0.8389
+              ]
+            },
+            {
+              "code": "AG-01",
+              "elementId": "628150",
+              "label": "AG-01 · agua · 35,81 m³",
+              "box": [
+                0.1667,
+                0.2441,
+                0.8868,
+                0.7974
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2472352",
+          "name": "Corte transversal",
+          "label": "Corte transversal   1:30",
+          "scale": 30,
+          "kind": "section",
+          "sector": "Pileta · 00. Planta Baja",
+          "roomLabel": "Pileta · 00. Planta Baja",
+          "image": "/casa-angel/rubros/pileta/PIL-02-view-2472352.svg.gz",
+          "region": [
+            0.3401,
+            0.5801,
+            0.5586,
+            0.769
+          ],
+          "tags": [
+            "VA-01",
+            "VA-02",
+            "VA-03",
+            "VA-04",
+            "FO-01"
+          ],
+          "dimensions": [
+            {
+              "label": "Vaso transversal",
+              "values_m": [
+                3.0
+              ],
+              "associative": false
+            },
+            {
+              "label": "Profundidad total",
+              "values_m": [
+                2.15
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "VA-01",
+              "elementId": "404894",
+              "label": "VA-01 · 7,09 × 2,00 · e 20",
+              "box": [
+                0.6482,
+                0.2499,
+                0.6812,
+                0.7909
+              ]
+            },
+            {
+              "code": "VA-02",
+              "elementId": "404954",
+              "label": "VA-02 · 2,80 × 2,00 · e 20",
+              "box": [
+                0.1859,
+                0.2499,
+                0.6647,
+                0.7909
+              ]
+            },
+            {
+              "code": "VA-03",
+              "elementId": "405122",
+              "label": "VA-03 · 2,80 × 2,00 · e 20",
+              "box": [
+                0.2024,
+                0.2499,
+                0.6647,
+                0.7909
+              ]
+            },
+            {
+              "code": "VA-04",
+              "elementId": "405036",
+              "label": "VA-04 · 7,09 × 2,00 · e 20",
+              "box": [
+                0.1859,
+                0.2499,
+                0.2189,
+                0.7909
+              ]
+            },
+            {
+              "code": "FO-01",
+              "elementId": "405334",
+              "label": "FO-01 · fondo · 21,86 m²",
+              "box": [
+                0.1859,
+                0.7909,
+                0.6812,
+                0.8314
+              ]
+            },
+            {
+              "code": "AG-01",
+              "elementId": "628150",
+              "label": "AG-01 · agua · 35,81 m³",
+              "box": [
+                0.2189,
+                0.2499,
+                0.6482,
+                0.7909
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "PIL-F-VASO",
+      "title": "Ficha del vaso",
+      "level": "00. Planta Baja",
+      "sector": "Pileta · 00. Planta Baja",
+      "kind": "element",
+      "element": "VASO",
+      "elementId": "405334",
+      "elementKind": "VA",
+      "note": null,
+      "sheetId": "2472449",
+      "pdf": "/casa-angel/rubros/pileta/PIL-F-VASO.pdf",
+      "image": "/casa-angel/rubros/pileta/PIL-F-VASO.svg.gz",
+      "preview": "/casa-angel/rubros/pileta/PIL-F-VASO-preview.png",
+      "thumbnail": "/casa-angel/rubros/pileta/PIL-F-VASO.png",
+      "views": [
+        {
+          "id": "2472410",
+          "name": "Vaso · planta",
+          "label": "Vaso · planta   1:40",
+          "scale": 40,
+          "kind": "plan",
+          "sector": "Pileta · 00. Planta Baja",
+          "roomLabel": "Pileta · 00. Planta Baja",
+          "image": "/casa-angel/rubros/pileta/PIL-F-VASO-view-2472410.svg.gz",
+          "region": [
+            0.128,
+            0.4043,
+            0.3685,
+            0.5779
+          ],
+          "tags": [
+            "VA-01",
+            "VA-02",
+            "VA-03",
+            "VA-04",
+            "FO-01",
+            "AG-01"
+          ],
+          "dimensions": [
+            {
+              "label": "Vaso largo X",
+              "values_m": [
+                7.287
+              ],
+              "associative": false
+            },
+            {
+              "label": "Vaso ancho Y",
+              "values_m": [
+                3.0
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "VA-01",
+              "elementId": "404894",
+              "label": "VA-01 · 7,09 × 2,00 · e 20",
+              "box": [
+                0.0943,
+                0.7871,
+                0.914,
+                0.8312
+              ]
+            },
+            {
+              "code": "VA-02",
+              "elementId": "404954",
+              "label": "VA-02 · 2,80 × 2,00 · e 20",
+              "box": [
+                0.0943,
+                0.1688,
+                0.1168,
+                0.8092
+              ]
+            },
+            {
+              "code": "VA-03",
+              "elementId": "405122",
+              "label": "VA-03 · 2,80 × 2,00 · e 20",
+              "box": [
+                0.8915,
+                0.1908,
+                0.914,
+                0.8092
+              ]
+            },
+            {
+              "code": "VA-04",
+              "elementId": "405036",
+              "label": "VA-04 · 7,09 × 2,00 · e 20",
+              "box": [
+                0.1055,
+                0.1688,
+                0.914,
+                0.2129
+              ]
+            },
+            {
+              "code": "FO-01",
+              "elementId": "405334",
+              "label": "FO-01 · fondo · 21,86 m²",
+              "box": [
+                0.0943,
+                0.1688,
+                0.914,
+                0.8312
+              ]
+            },
+            {
+              "code": "AG-01",
+              "elementId": "628150",
+              "label": "AG-01 · agua · 35,81 m³",
+              "box": [
+                0.1168,
+                0.2129,
+                0.8915,
+                0.7871
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2472441",
+          "name": "Vaso · corte",
+          "label": "Vaso · corte   1:25",
+          "scale": 25,
+          "kind": "section",
+          "sector": "Pileta · 00. Planta Baja",
+          "roomLabel": "Pileta · 00. Planta Baja",
+          "image": "/casa-angel/rubros/pileta/PIL-F-VASO-view-2472441.svg.gz",
+          "region": [
+            0.3827,
+            0.2121,
+            0.7842,
+            0.4178
+          ],
+          "tags": [],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "VA-01",
+              "elementId": "404894",
+              "label": "VA-01 · 7,09 × 2,00 · e 20",
+              "box": [
+                0.1339,
+                0.2094,
+                0.919,
+                0.8055
+              ]
+            },
+            {
+              "code": "VA-02",
+              "elementId": "404954",
+              "label": "VA-02 · 2,80 × 2,00 · e 20",
+              "box": [
+                0.8975,
+                0.2094,
+                0.919,
+                0.8055
+              ]
+            },
+            {
+              "code": "VA-03",
+              "elementId": "405122",
+              "label": "VA-03 · 2,80 × 2,00 · e 20",
+              "box": [
+                0.1339,
+                0.2094,
+                0.1554,
+                0.8055
+              ]
+            },
+            {
+              "code": "VA-04",
+              "elementId": "405036",
+              "label": "VA-04 · 7,09 × 2,00 · e 20",
+              "box": [
+                0.1339,
+                0.2094,
+                0.9082,
+                0.8055
+              ]
+            },
+            {
+              "code": "FO-01",
+              "elementId": "405334",
+              "label": "FO-01 · fondo · 21,86 m²",
+              "box": [
+                0.1339,
+                0.8055,
+                0.919,
+                0.8502
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2472429",
+          "name": "Vaso · axonométrica",
+          "label": "Vaso · axonométrica   1:30",
+          "scale": 30,
+          "kind": "axo",
+          "sector": "Pileta · 00. Planta Baja",
+          "roomLabel": "Pileta · 00. Planta Baja",
+          "image": "/casa-angel/rubros/pileta/PIL-F-VASO-view-2472429.svg.gz",
+          "region": [
+            0.4162,
+            0.5058,
+            0.7507,
+            0.7701
+          ],
+          "tags": [
+            "VASO"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "FO-01",
+              "elementId": "405334",
+              "label": "FO-01 · fondo · 21,86 m²",
+              "box": [
+                0.108,
+                0.1578,
+                0.892,
+                0.8422
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "codes": [
+    {
+      "code": "VA-01",
+      "kind": "VA",
+      "label": "VA-01 · 7,09 × 2,00 · e 20",
+      "status": "Muro del vaso (venecitas 20 cm en el modelo)",
+      "elementId": "404894",
+      "length_m": 7.087005026773448,
+      "area_m2": 14.574010053546894,
+      "volume_m3": 2.9148020107093786
+    },
+    {
+      "code": "VA-02",
+      "kind": "VA",
+      "label": "VA-02 · 2,80 × 2,00 · e 20",
+      "status": "Muro del vaso (venecitas 20 cm en el modelo)",
+      "elementId": "404954",
+      "length_m": 2.7999999999999807,
+      "area_m2": 5.599999999999962,
+      "volume_m3": 1.1199999999999923
+    },
+    {
+      "code": "VA-03",
+      "kind": "VA",
+      "label": "VA-03 · 2,80 × 2,00 · e 20",
+      "status": "Muro del vaso (venecitas 20 cm en el modelo)",
+      "elementId": "405122",
+      "length_m": 2.8000000000000034,
+      "area_m2": 5.20000000000001,
+      "volume_m3": 1.0400000000000018
+    },
+    {
+      "code": "VA-04",
+      "kind": "VA",
+      "label": "VA-04 · 7,09 × 2,00 · e 20",
+      "status": "Muro del vaso (venecitas 20 cm en el modelo)",
+      "elementId": "405036",
+      "length_m": 7.087005026773448,
+      "area_m2": 14.174010053546894,
+      "volume_m3": 2.8348020107093785
+    },
+    {
+      "code": "BO-01",
+      "kind": "BO",
+      "label": "BO-01 · borde / solárium · 38,15 m²",
+      "status": "Borde: material \"Piso Pileta\" 15 cm",
+      "elementId": "370633",
+      "length_m": null,
+      "area_m2": 38.146317872539655,
+      "volume_m3": 5.721943706555216
+    },
+    {
+      "code": "FO-01",
+      "kind": "FO",
+      "label": "FO-01 · fondo · 21,86 m²",
+      "status": "Fondo: venecitas 5 cm + base 10 cm",
+      "elementId": "405334",
+      "length_m": null,
+      "area_m2": 21.861015080320556,
+      "volume_m3": 3.279152262048084
+    },
+    {
+      "code": "AG-01",
+      "kind": "AG",
+      "label": "AG-01 · agua · 35,81 m³",
+      "status": "Volumen de agua (modelo genérico)",
+      "elementId": "628150",
+      "length_m": null,
+      "area_m2": null,
+      "volume_m3": 35.812426139222595
+    }
+  ],
+  "totals": [
+    {
+      "label": "Muros del vaso",
+      "value": 39.55,
+      "unit": "m²",
+      "detail": "4 muros · 7,91 m³"
+    },
+    {
+      "label": "Fondo",
+      "value": 21.86,
+      "unit": "m²",
+      "detail": "venecitas 5 cm + base 10 cm"
+    },
+    {
+      "label": "Borde / solárium",
+      "value": 38.15,
+      "unit": "m²",
+      "detail": "\"Piso Pileta\" 15 cm"
+    },
+    {
+      "label": "Agua",
+      "value": 35.81,
+      "unit": "m³",
+      "detail": "volumen modelado"
+    },
+    {
+      "label": "Revestimiento venecitas (muros + fondo)",
+      "value": 61.41,
+      "unit": "m²",
+      "detail": "cara interior estimada con área de Revit"
+    }
+  ],
+  "quantities": [
+    {
+      "label": "VA-01",
+      "group": "Muros del vaso",
+      "count": 1,
+      "value": 14.57,
+      "unit": "m²",
+      "detail": "VA-01 · 7,09 × 2,00 · e 20"
+    },
+    {
+      "label": "VA-02",
+      "group": "Muros del vaso",
+      "count": 1,
+      "value": 5.6,
+      "unit": "m²",
+      "detail": "VA-02 · 2,80 × 2,00 · e 20"
+    },
+    {
+      "label": "VA-03",
+      "group": "Muros del vaso",
+      "count": 1,
+      "value": 5.2,
+      "unit": "m²",
+      "detail": "VA-03 · 2,80 × 2,00 · e 20"
+    },
+    {
+      "label": "VA-04",
+      "group": "Muros del vaso",
+      "count": 1,
+      "value": 14.17,
+      "unit": "m²",
+      "detail": "VA-04 · 7,09 × 2,00 · e 20"
+    },
+    {
+      "label": "BO-01",
+      "group": "Borde / solárium",
+      "count": 1,
+      "value": 38.15,
+      "unit": "m²",
+      "detail": "BO-01 · borde / solárium · 38,15 m²"
+    },
+    {
+      "label": "FO-01",
+      "group": "Fondo",
+      "count": 1,
+      "value": 21.86,
+      "unit": "m²",
+      "detail": "FO-01 · fondo · 21,86 m²"
+    },
+    {
+      "label": "AG-01",
+      "group": "Agua",
+      "count": 1,
+      "value": 35.81,
+      "unit": "m³",
+      "detail": "AG-01 · agua · 35,81 m³"
+    }
+  ],
+  "quantityNote": "Áreas según Revit (una cara por muro). Volumen de agua del modelo genérico \"Agua pileta\".",
+  "notModeled": [
+    "Equipo de filtrado, bomba, skimmers y retornos",
+    "Cañerías e iluminación subacuática",
+    "Estructura real del vaso (muros modelados como \"venecitas\" 20 cm)",
+    "Escalera / acceso al agua"
+  ],
+  "decisions": [
+    "Pileta documentada como un vaso: planta, cortes y ficha.",
+    "Códigos VA/FO/BO/AG solo como anotación (no escritos en Mark)."
+  ],
+  "questions": [
+    "¿De qué es la estructura del vaso (hormigón armado, bloque)? Hoy es un muro de \"venecitas\" de 20 cm.",
+    "¿Qué equipo de filtrado y climatización de pileta lleva (si lleva)?",
+    "¿Profundidad constante de 2,00 m o con pendiente / escalón?",
+    "¿Escribimos los códigos de pileta en el modelo (Mark)?"
+  ]
+}
