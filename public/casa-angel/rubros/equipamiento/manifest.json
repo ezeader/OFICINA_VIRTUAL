@@ -1,0 +1,6839 @@
+{
+  "title": "Equipamiento fijo",
+  "summary": "43 elementos fijos: 5 placares, 14 muebles fijos, 7 vanitorios, 5 mesadas, 2 lavaderos, 7 mamparas y 3 equipos de cocina. 36 láminas.",
+  "model": "Casa-Angel-piloto-documentacion.rvt",
+  "readAt": "2026-10-24T02:07:49.360000Z",
+  "revision": "R24",
+  "kinds": {
+    "PL": "Placares",
+    "MU": "Muebles fijos (TV, pared, vinoteca, mesas de luz)",
+    "VA": "Vanitorios",
+    "ME": "Mesadas y bajomesadas",
+    "LV": "Lavaderos",
+    "MA": "Mamparas",
+    "EQ": "Equipos de cocina"
+  },
+  "sheets": [
+    {
+      "number": "EQ-00",
+      "title": "Índice y cómputo",
+      "level": "Equipamiento",
+      "sector": "General",
+      "kind": "general",
+      "element": null,
+      "elementId": null,
+      "elementKind": null,
+      "note": null,
+      "sheetId": "2477544",
+      "pdf": "/casa-angel/rubros/equipamiento/EQ-00.pdf",
+      "image": "/casa-angel/rubros/equipamiento/EQ-00.svg.gz",
+      "preview": "/casa-angel/rubros/equipamiento/EQ-00-preview.png",
+      "thumbnail": "/casa-angel/rubros/equipamiento/EQ-00.png",
+      "views": []
+    },
+    {
+      "number": "EQ-01",
+      "title": "Planta · 00. Planta Baja",
+      "level": "00. Planta Baja",
+      "sector": "Equipamiento · 00. Planta Baja",
+      "kind": "general",
+      "element": null,
+      "elementId": null,
+      "elementKind": null,
+      "note": null,
+      "sheetId": "2477470",
+      "pdf": "/casa-angel/rubros/equipamiento/EQ-01.pdf",
+      "image": "/casa-angel/rubros/equipamiento/EQ-01.svg.gz",
+      "preview": "/casa-angel/rubros/equipamiento/EQ-01-preview.png",
+      "thumbnail": "/casa-angel/rubros/equipamiento/EQ-01.png",
+      "views": [
+        {
+          "id": "2477414",
+          "name": "Equipamiento fijo · 00. Planta Baja",
+          "label": "Equipamiento fijo · 00. Planta Baja   1:60",
+          "scale": 60,
+          "kind": "plan",
+          "sector": "Equipamiento · 00. Planta Baja",
+          "roomLabel": "Equipamiento · 00. Planta Baja",
+          "image": "/casa-angel/rubros/equipamiento/EQ-01-view-2477414.svg.gz",
+          "region": [
+            0.2453,
+            0.1835,
+            0.6534,
+            0.8033
+          ],
+          "tags": [
+            "PL-01",
+            "PL-02",
+            "PL-03",
+            "PL-04",
+            "PL-05",
+            "MU-05",
+            "MU-06",
+            "MU-07",
+            "MU-08",
+            "MU-09",
+            "MU-10",
+            "MU-11",
+            "MU-12",
+            "MU-13",
+            "MU-14",
+            "VA-03",
+            "VA-04",
+            "VA-05",
+            "VA-06",
+            "VA-07",
+            "ME-05",
+            "LV-01",
+            "LV-02",
+            "MA-02",
+            "MA-03",
+            "MA-04",
+            "MA-05",
+            "MA-06",
+            "MA-07"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "PL-01",
+              "elementId": "778835",
+              "label": "PL-01 · placard · 2,49 × 0,50 × 1,93",
+              "box": [
+                0.6897,
+                0.5869,
+                0.7997,
+                0.6075
+              ]
+            },
+            {
+              "code": "PL-02",
+              "elementId": "786205",
+              "label": "PL-02 · placard · 4,38 × 0,51 × 2,70",
+              "box": [
+                0.6466,
+                0.6526,
+                0.8398,
+                0.6736
+              ]
+            },
+            {
+              "code": "PL-03",
+              "elementId": "781452",
+              "label": "PL-03 · placard · 3,20 × 0,60 × 2,80",
+              "box": [
+                0.0771,
+                0.7272,
+                0.1036,
+                0.8589
+              ]
+            },
+            {
+              "code": "PL-04",
+              "elementId": "2143061",
+              "label": "PL-04 · placard · 3,20 × 0,59 × 2,80",
+              "box": [
+                0.2496,
+                0.7271,
+                0.2757,
+                0.8588
+              ]
+            },
+            {
+              "code": "PL-05",
+              "elementId": "1243563",
+              "label": "PL-05 · placard · 3,20 × 0,41 × 2,80",
+              "box": [
+                0.4263,
+                0.7271,
+                0.4441,
+                0.8588
+              ]
+            },
+            {
+              "code": "MU-05",
+              "elementId": "871087",
+              "label": "MU-05 · mesa de luz · 0,60 × 0,43 × 0,20",
+              "box": [
+                0.701,
+                0.0719,
+                0.7275,
+                0.0895
+              ]
+            },
+            {
+              "code": "MU-06",
+              "elementId": "781437",
+              "label": "MU-06 · mesa de luz · 0,60 × 0,43 × 0,20",
+              "box": [
+                0.2217,
+                0.7356,
+                0.2405,
+                0.7603
+              ]
+            },
+            {
+              "code": "MU-07",
+              "elementId": "780985",
+              "label": "MU-07 · mesa de luz · 0,60 × 0,43 × 0,20",
+              "box": [
+                0.3984,
+                0.7356,
+                0.4172,
+                0.7603
+              ]
+            },
+            {
+              "code": "MU-08",
+              "elementId": "1243451",
+              "label": "MU-08 · mesa de luz · 0,60 × 0,43 × 0,20",
+              "box": [
+                0.575,
+                0.7356,
+                0.5938,
+                0.7603
+              ]
+            },
+            {
+              "code": "MU-09",
+              "elementId": "781412",
+              "label": "MU-09 · mueble TV · 2,00 × 1,60 × 0,25",
+              "box": [
+                0.1522,
+                0.7603,
+                0.2405,
+                0.8262
+              ]
+            },
+            {
+              "code": "MU-10",
+              "elementId": "780960",
+              "label": "MU-10 · mueble TV · 2,00 × 1,60 × 0,25",
+              "box": [
+                0.3289,
+                0.7603,
+                0.4172,
+                0.8262
+              ]
+            },
+            {
+              "code": "MU-11",
+              "elementId": "1243426",
+              "label": "MU-11 · mueble TV · 2,00 × 1,60 × 0,25",
+              "box": [
+                0.5055,
+                0.7603,
+                0.5938,
+                0.8262
+              ]
+            },
+            {
+              "code": "MU-12",
+              "elementId": "781424",
+              "label": "MU-12 · mesa de luz · 0,60 × 0,43 × 0,20",
+              "box": [
+                0.2217,
+                0.8262,
+                0.2405,
+                0.8509
+              ]
+            },
+            {
+              "code": "MU-13",
+              "elementId": "780972",
+              "label": "MU-13 · mesa de luz · 0,60 × 0,43 × 0,20",
+              "box": [
+                0.3984,
+                0.8262,
+                0.4172,
+                0.8509
+              ]
+            },
+            {
+              "code": "MU-14",
+              "elementId": "1243438",
+              "label": "MU-14 · mesa de luz · 0,60 × 0,43 × 0,20",
+              "box": [
+                0.575,
+                0.8262,
+                0.5938,
+                0.8509
+              ]
+            },
+            {
+              "code": "VA-03",
+              "elementId": "1421669",
+              "label": "VA-03 · vanitorio · 1,67 × 0,60 × 0,55",
+              "box": [
+                0.4304,
+                0.1106,
+                0.4569,
+                0.1795
+              ]
+            },
+            {
+              "code": "VA-04",
+              "elementId": "1250078",
+              "label": "VA-04 · vanitorio · 3,04 × 0,54 × 0,65",
+              "box": [
+                0.8991,
+                0.5069,
+                0.9229,
+                0.6319
+              ]
+            },
+            {
+              "code": "VA-05",
+              "elementId": "1250920",
+              "label": "VA-05 · vanitorio · 1,45 × 0,60 × 0,60",
+              "box": [
+                0.0771,
+                0.863,
+                0.1036,
+                0.9227
+              ]
+            },
+            {
+              "code": "VA-06",
+              "elementId": "1250902",
+              "label": "VA-06 · vanitorio · 1,42 × 0,60 × 0,60",
+              "box": [
+                0.2494,
+                0.863,
+                0.2759,
+                0.9217
+              ]
+            },
+            {
+              "code": "VA-07",
+              "elementId": "1250533",
+              "label": "VA-07 · vanitorio · 1,45 × 0,60 × 0,60",
+              "box": [
+                0.426,
+                0.863,
+                0.4525,
+                0.9227
+              ]
+            },
+            {
+              "code": "ME-05",
+              "elementId": "1048718",
+              "label": "ME-05 · mesada · 4,76 × 0,60 × 1,00",
+              "box": [
+                0.6484,
+                0.4307,
+                0.8588,
+                0.4554
+              ]
+            },
+            {
+              "code": "LV-01",
+              "elementId": "1040912",
+              "label": "LV-01 · lavadero · 1,60 × 0,60 × 1,00",
+              "box": [
+                0.5442,
+                0.0725,
+                0.5707,
+                0.1383
+              ]
+            },
+            {
+              "code": "LV-02",
+              "elementId": "1150845",
+              "label": "LV-02 · lavadero · 1,60 × 0,60 × 1,00",
+              "box": [
+                0.6292,
+                0.0725,
+                0.6557,
+                0.1383
+              ]
+            },
+            {
+              "code": "MA-02",
+              "elementId": "1038623",
+              "label": "MA-02 · mampara · 0,87 × 0,87 × 1,95",
+              "box": [
+                0.4311,
+                0.0728,
+                0.4693,
+                0.1084
+              ]
+            },
+            {
+              "code": "MA-03",
+              "elementId": "2032440",
+              "label": "MA-03 · mampara · 0,90 × 0,81 × 2,00",
+              "box": [
+                0.8827,
+                0.4737,
+                0.9224,
+                0.5072
+              ]
+            },
+            {
+              "code": "MA-04",
+              "elementId": "2031916",
+              "label": "MA-04 · mampara · 0,90 × 0,81 × 2,00",
+              "box": [
+                0.8827,
+                0.6315,
+                0.9224,
+                0.6651
+              ]
+            },
+            {
+              "code": "MA-05",
+              "elementId": "1231883",
+              "label": "MA-05 · mampara · 1,66 × 0,07 × 1,95",
+              "box": [
+                0.1948,
+                0.8597,
+                0.1979,
+                0.9281
+              ]
+            },
+            {
+              "code": "MA-06",
+              "elementId": "2086385",
+              "label": "MA-06 · mampara · 1,66 × 0,07 × 1,95",
+              "box": [
+                0.3715,
+                0.8597,
+                0.3746,
+                0.9281
+              ]
+            },
+            {
+              "code": "MA-07",
+              "elementId": "2086418",
+              "label": "MA-07 · mampara · 1,66 × 0,07 × 1,95",
+              "box": [
+                0.5437,
+                0.8597,
+                0.5468,
+                0.9281
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EQ-02",
+      "title": "Planta · 01. Planta Alta",
+      "level": "01. Planta Alta",
+      "sector": "Equipamiento · 01. Planta Alta",
+      "kind": "general",
+      "element": null,
+      "elementId": null,
+      "elementKind": null,
+      "note": null,
+      "sheetId": "2477524",
+      "pdf": "/casa-angel/rubros/equipamiento/EQ-02.pdf",
+      "image": "/casa-angel/rubros/equipamiento/EQ-02.svg.gz",
+      "preview": "/casa-angel/rubros/equipamiento/EQ-02-preview.png",
+      "thumbnail": "/casa-angel/rubros/equipamiento/EQ-02.png",
+      "views": [
+        {
+          "id": "2477490",
+          "name": "Equipamiento fijo · 01. Planta Alta",
+          "label": "Equipamiento fijo · 01. Planta Alta   1:60",
+          "scale": 60,
+          "kind": "plan",
+          "sector": "Equipamiento · 01. Planta Alta",
+          "roomLabel": "Equipamiento · 01. Planta Alta",
+          "image": "/casa-angel/rubros/equipamiento/EQ-02-view-2477490.svg.gz",
+          "region": [
+            0.2892,
+            0.1911,
+            0.61,
+            0.7962
+          ],
+          "tags": [
+            "MU-01",
+            "MU-02",
+            "MU-03",
+            "MU-04",
+            "VA-01",
+            "VA-02",
+            "ME-01",
+            "ME-02",
+            "ME-03",
+            "ME-04",
+            "MA-01",
+            "EQ-01",
+            "EQ-02",
+            "EQ-03"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "MU-01",
+              "elementId": "870143",
+              "label": "MU-01 · vinoteca · 3,20 × 2,59 × 1,00",
+              "box": [
+                0.6981,
+                0.0737,
+                0.8784,
+                0.183
+              ]
+            },
+            {
+              "code": "MU-02",
+              "elementId": "1452870",
+              "label": "MU-02 · vinoteca · 1,60 × 0,41 × 1,00",
+              "box": [
+                0.7881,
+                0.166,
+                0.8784,
+                0.1831
+              ]
+            },
+            {
+              "code": "MU-03",
+              "elementId": "1050925",
+              "label": "MU-03 · mueble de pared · 1,26 × 0,60 × 0,90",
+              "box": [
+                0.8669,
+                0.3603,
+                0.9006,
+                0.4135
+              ]
+            },
+            {
+              "code": "MU-04",
+              "elementId": "1050843",
+              "label": "MU-04 · mueble de pared · 1,84 × 0,60 × 1,00",
+              "box": [
+                0.8669,
+                0.4726,
+                0.9006,
+                0.5502
+              ]
+            },
+            {
+              "code": "VA-01",
+              "elementId": "1416664",
+              "label": "VA-01 · vanitorio · 1,93 × 0,60 × 0,30",
+              "box": [
+                0.5841,
+                0.0762,
+                0.6925,
+                0.1016
+              ]
+            },
+            {
+              "code": "VA-02",
+              "elementId": "890034",
+              "label": "VA-02 · vanitorio · 1,37 × 0,49 × 0,06",
+              "box": [
+                0.1588,
+                0.8019,
+                0.1866,
+                0.8597
+              ]
+            },
+            {
+              "code": "ME-01",
+              "elementId": "1436000",
+              "label": "ME-01 · bajomesada con cajones · 0,80 × 0,62 × 0,90",
+              "box": [
+                0.8658,
+                0.2294,
+                0.9008,
+                0.2632
+              ]
+            },
+            {
+              "code": "ME-02",
+              "elementId": "1443668",
+              "label": "ME-02 · mesada · 2,90 × 1,11 × 0,90",
+              "box": [
+                0.6924,
+                0.2337,
+                0.755,
+                0.3561
+              ]
+            },
+            {
+              "code": "ME-03",
+              "elementId": "2012888",
+              "label": "ME-03 · bajomesada con cajones · 0,80 × 0,62 × 0,90",
+              "box": [
+                0.8667,
+                0.2887,
+                0.9018,
+                0.3225
+              ]
+            },
+            {
+              "code": "ME-04",
+              "elementId": "733385",
+              "label": "ME-04 · bajomesada con cajones · 0,80 × 0,62 × 0,90",
+              "box": [
+                0.8658,
+                0.3223,
+                0.9008,
+                0.3561
+              ]
+            },
+            {
+              "code": "MA-01",
+              "elementId": "890033",
+              "label": "MA-01 · mampara · 1,66 × 0,07 × 1,95",
+              "box": [
+                0.0982,
+                0.8562,
+                0.1022,
+                0.9263
+              ]
+            },
+            {
+              "code": "EQ-01",
+              "elementId": "1460138",
+              "label": "EQ-01 · campana · 0,60 × 0,51 × 1,03",
+              "box": [
+                0.8732,
+                0.1915,
+                0.9017,
+                0.2167
+              ]
+            },
+            {
+              "code": "EQ-02",
+              "elementId": "1449400",
+              "label": "EQ-02 · cocina (horno + anafe) · 0,76 × 0,74 × 0,98",
+              "box": [
+                0.859,
+                0.1973,
+                0.9006,
+                0.2295
+              ]
+            },
+            {
+              "code": "EQ-03",
+              "elementId": "1442505",
+              "label": "EQ-03 · heladera · 0,91 × 0,65 × 1,80",
+              "box": [
+                0.7543,
+                0.3298,
+                0.8057,
+                0.3573
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EQ-F-LV-01",
+      "title": "Ficha · LV-01 lavadero",
+      "level": "00. Planta Baja",
+      "sector": "08 · Lavadero 08 · PB",
+      "kind": "element",
+      "element": "LV-01",
+      "elementId": "1040912",
+      "elementKind": "LV",
+      "note": null,
+      "sheetId": "2480153",
+      "pdf": "/casa-angel/rubros/equipamiento/EQ-F-LV-01.pdf",
+      "image": "/casa-angel/rubros/equipamiento/EQ-F-LV-01.svg.gz",
+      "preview": "/casa-angel/rubros/equipamiento/EQ-F-LV-01-preview.png",
+      "thumbnail": "/casa-angel/rubros/equipamiento/EQ-F-LV-01.png",
+      "views": [
+        {
+          "id": "2480097",
+          "name": "LV-01 · planta",
+          "label": "LV-01 · planta   1:10",
+          "scale": 10,
+          "kind": "plan",
+          "sector": "08 · Lavadero 08 · PB",
+          "roomLabel": "08 · Lavadero 08 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-LV-01-view-2480097.svg.gz",
+          "region": [
+            0.1341,
+            0.2246,
+            0.4026,
+            0.7576
+          ],
+          "tags": [
+            "LV-01"
+          ],
+          "dimensions": [
+            {
+              "label": "LV-01 en X",
+              "values_m": [
+                0.6
+              ],
+              "associative": false
+            },
+            {
+              "label": "LV-01 en Y",
+              "values_m": [
+                1.5984
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "LV-01",
+              "elementId": "1040912",
+              "label": "LV-01 · lavadero · 1,60 × 0,60 × 1,00",
+              "box": [
+                0.3791,
+                0.2704,
+                0.6209,
+                0.7296
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2480124",
+          "name": "LV-01 · alzado frontal",
+          "label": "LV-01 · alzado frontal   1:15",
+          "scale": 15,
+          "kind": "elevation",
+          "sector": "08 · Lavadero 08 · PB",
+          "roomLabel": "08 · Lavadero 08 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-LV-01-view-2480124.svg.gz",
+          "region": [
+            0.4619,
+            0.2198,
+            0.7453,
+            0.4164
+          ],
+          "tags": [
+            "LV-01"
+          ],
+          "dimensions": [
+            {
+              "label": "LV-01 ancho",
+              "values_m": [
+                1.5984
+              ],
+              "associative": false
+            },
+            {
+              "label": "LV-01 nivel + alto",
+              "values_m": [
+                1.0
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "LV-01",
+              "elementId": "1040912",
+              "label": "LV-01 · lavadero · 1,60 × 0,60 × 1,00",
+              "box": [
+                0.2966,
+                0.292,
+                0.7034,
+                0.812
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2480142",
+          "name": "LV-01 · axonométrica",
+          "label": "LV-01 · axonométrica   1:20",
+          "scale": 20,
+          "kind": "axo",
+          "sector": "08 · Lavadero 08 · PB",
+          "roomLabel": "08 · Lavadero 08 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-LV-01-view-2480142.svg.gz",
+          "region": [
+            0.5095,
+            0.52,
+            0.6976,
+            0.7623
+          ],
+          "tags": [
+            "LV-01"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "LV-01",
+              "elementId": "1040912",
+              "label": "LV-01 · lavadero · 1,60 × 0,60 × 1,00",
+              "box": [
+                0.2764,
+                0.2451,
+                0.7236,
+                0.7549
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EQ-F-LV-02",
+      "title": "Ficha · LV-02 lavadero",
+      "level": "00. Planta Baja",
+      "sector": "08 · Lavadero 08 · PB",
+      "kind": "element",
+      "element": "LV-02",
+      "elementId": "1150845",
+      "elementKind": "LV",
+      "note": null,
+      "sheetId": "2480234",
+      "pdf": "/casa-angel/rubros/equipamiento/EQ-F-LV-02.pdf",
+      "image": "/casa-angel/rubros/equipamiento/EQ-F-LV-02.svg.gz",
+      "preview": "/casa-angel/rubros/equipamiento/EQ-F-LV-02-preview.png",
+      "thumbnail": "/casa-angel/rubros/equipamiento/EQ-F-LV-02.png",
+      "views": [
+        {
+          "id": "2480178",
+          "name": "LV-02 · planta",
+          "label": "LV-02 · planta   1:10",
+          "scale": 10,
+          "kind": "plan",
+          "sector": "08 · Lavadero 08 · PB",
+          "roomLabel": "08 · Lavadero 08 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-LV-02-view-2480178.svg.gz",
+          "region": [
+            0.1341,
+            0.2246,
+            0.4026,
+            0.7576
+          ],
+          "tags": [
+            "LV-02"
+          ],
+          "dimensions": [
+            {
+              "label": "LV-02 en X",
+              "values_m": [
+                0.6
+              ],
+              "associative": false
+            },
+            {
+              "label": "LV-02 en Y",
+              "values_m": [
+                1.5984
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "LV-02",
+              "elementId": "1150845",
+              "label": "LV-02 · lavadero · 1,60 × 0,60 × 1,00",
+              "box": [
+                0.3791,
+                0.2704,
+                0.6209,
+                0.7296
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2480205",
+          "name": "LV-02 · alzado frontal",
+          "label": "LV-02 · alzado frontal   1:15",
+          "scale": 15,
+          "kind": "elevation",
+          "sector": "08 · Lavadero 08 · PB",
+          "roomLabel": "08 · Lavadero 08 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-LV-02-view-2480205.svg.gz",
+          "region": [
+            0.4619,
+            0.2198,
+            0.7453,
+            0.4164
+          ],
+          "tags": [
+            "LV-02"
+          ],
+          "dimensions": [
+            {
+              "label": "LV-02 ancho",
+              "values_m": [
+                1.5984
+              ],
+              "associative": false
+            },
+            {
+              "label": "LV-02 nivel + alto",
+              "values_m": [
+                1.0
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "LV-02",
+              "elementId": "1150845",
+              "label": "LV-02 · lavadero · 1,60 × 0,60 × 1,00",
+              "box": [
+                0.2966,
+                0.292,
+                0.7034,
+                0.812
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2480223",
+          "name": "LV-02 · axonométrica",
+          "label": "LV-02 · axonométrica   1:20",
+          "scale": 20,
+          "kind": "axo",
+          "sector": "08 · Lavadero 08 · PB",
+          "roomLabel": "08 · Lavadero 08 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-LV-02-view-2480223.svg.gz",
+          "region": [
+            0.5095,
+            0.52,
+            0.6976,
+            0.7623
+          ],
+          "tags": [
+            "LV-02"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "LV-02",
+              "elementId": "1150845",
+              "label": "LV-02 · lavadero · 1,60 × 0,60 × 1,00",
+              "box": [
+                0.2764,
+                0.2451,
+                0.7236,
+                0.7549
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EQ-F-ME-01",
+      "title": "Ficha · ME-01 bajomesada con cajones",
+      "level": "01. Planta Alta",
+      "sector": "07 · Cocina 07 · PA",
+      "kind": "element",
+      "element": "ME-01",
+      "elementId": "1436000",
+      "elementKind": "ME",
+      "note": null,
+      "sheetId": "2479748",
+      "pdf": "/casa-angel/rubros/equipamiento/EQ-F-ME-01.pdf",
+      "image": "/casa-angel/rubros/equipamiento/EQ-F-ME-01.svg.gz",
+      "preview": "/casa-angel/rubros/equipamiento/EQ-F-ME-01-preview.png",
+      "thumbnail": "/casa-angel/rubros/equipamiento/EQ-F-ME-01.png",
+      "views": [
+        {
+          "id": "2479692",
+          "name": "ME-01 · planta",
+          "label": "ME-01 · planta   1:10",
+          "scale": 10,
+          "kind": "plan",
+          "sector": "07 · Cocina 07 · PA",
+          "roomLabel": "07 · Cocina 07 · PA",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-ME-01-view-2479692.svg.gz",
+          "region": [
+            0.1328,
+            0.2857,
+            0.4039,
+            0.6965
+          ],
+          "tags": [
+            "ME-01"
+          ],
+          "dimensions": [
+            {
+              "label": "ME-01 en X",
+              "values_m": [
+                0.6232
+              ],
+              "associative": false
+            },
+            {
+              "label": "ME-01 en Y",
+              "values_m": [
+                0.8
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "ME-01",
+              "elementId": "1436000",
+              "label": "ME-01 · bajomesada con cajones · 0,80 × 0,62 × 0,90",
+              "box": [
+                0.3756,
+                0.3509,
+                0.6244,
+                0.6491
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2479719",
+          "name": "ME-01 · alzado frontal",
+          "label": "ME-01 · alzado frontal   1:15",
+          "scale": 15,
+          "kind": "elevation",
+          "sector": "07 · Cocina 07 · PA",
+          "roomLabel": "07 · Cocina 07 · PA",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-ME-01-view-2479719.svg.gz",
+          "region": [
+            0.495,
+            0.2121,
+            0.7122,
+            0.3984
+          ],
+          "tags": [
+            "ME-01"
+          ],
+          "dimensions": [
+            {
+              "label": "ME-01 ancho",
+              "values_m": [
+                0.8
+              ],
+              "associative": false
+            },
+            {
+              "label": "ME-01 nivel + alto",
+              "values_m": [
+                0.9
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "ME-01",
+              "elementId": "1436000",
+              "label": "ME-01 · bajomesada con cajones · 0,80 × 0,62 × 0,90",
+              "box": [
+                0.3472,
+                0.308,
+                0.6129,
+                0.8017
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2479737",
+          "name": "ME-01 · axonométrica",
+          "label": "ME-01 · axonométrica   1:15",
+          "scale": 15,
+          "kind": "axo",
+          "sector": "07 · Cocina 07 · PA",
+          "roomLabel": "07 · Cocina 07 · PA",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-ME-01-view-2479737.svg.gz",
+          "region": [
+            0.4994,
+            0.4865,
+            0.7077,
+            0.77
+          ],
+          "tags": [
+            "ME-01"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "ME-01",
+              "elementId": "1436000",
+              "label": "ME-01 · bajomesada con cajones · 0,80 × 0,62 × 0,90",
+              "box": [
+                0.3257,
+                0.2719,
+                0.6743,
+                0.7281
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EQ-F-ME-02",
+      "title": "Ficha · ME-02 mesada",
+      "level": "01. Planta Alta",
+      "sector": "07 · Cocina 07 · PA",
+      "kind": "element",
+      "element": "ME-02",
+      "elementId": "1443668",
+      "elementKind": "ME",
+      "note": null,
+      "sheetId": "2479829",
+      "pdf": "/casa-angel/rubros/equipamiento/EQ-F-ME-02.pdf",
+      "image": "/casa-angel/rubros/equipamiento/EQ-F-ME-02.svg.gz",
+      "preview": "/casa-angel/rubros/equipamiento/EQ-F-ME-02-preview.png",
+      "thumbnail": "/casa-angel/rubros/equipamiento/EQ-F-ME-02.png",
+      "views": [
+        {
+          "id": "2479773",
+          "name": "ME-02 · planta",
+          "label": "ME-02 · planta   1:15",
+          "scale": 15,
+          "kind": "plan",
+          "sector": "07 · Cocina 07 · PA",
+          "roomLabel": "07 · Cocina 07 · PA",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-ME-02-view-2479773.svg.gz",
+          "region": [
+            0.1186,
+            0.2448,
+            0.3376,
+            0.7373
+          ],
+          "tags": [
+            "ME-02"
+          ],
+          "dimensions": [
+            {
+              "label": "ME-02 en X",
+              "values_m": [
+                1.1124
+              ],
+              "associative": false
+            },
+            {
+              "label": "ME-02 en Y",
+              "values_m": [
+                2.9013
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "ME-02",
+              "elementId": "1443668",
+              "label": "ME-02 · mesada · 2,90 × 1,11 × 0,90",
+              "box": [
+                0.3168,
+                0.1993,
+                0.6832,
+                0.8007
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2479800",
+          "name": "ME-02 · alzado frontal",
+          "label": "ME-02 · alzado frontal   1:15",
+          "scale": 15,
+          "kind": "elevation",
+          "sector": "07 · Cocina 07 · PA",
+          "roomLabel": "07 · Cocina 07 · PA",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-ME-02-view-2479800.svg.gz",
+          "region": [
+            0.379,
+            0.2125,
+            0.7477,
+            0.399
+          ],
+          "tags": [
+            "ME-02"
+          ],
+          "dimensions": [
+            {
+              "label": "ME-02 ancho",
+              "values_m": [
+                2.9013
+              ],
+              "associative": false
+            },
+            {
+              "label": "ME-02 nivel + alto",
+              "values_m": [
+                0.9015
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "ME-02",
+              "elementId": "1443668",
+              "label": "ME-02 · mesada · 2,90 × 1,11 × 0,90",
+              "box": [
+                0.2045,
+                0.3078,
+                0.772,
+                0.8018
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2479818",
+          "name": "ME-02 · axonométrica",
+          "label": "ME-02 · axonométrica   1:20",
+          "scale": 20,
+          "kind": "axo",
+          "sector": "07 · Cocina 07 · PA",
+          "roomLabel": "07 · Cocina 07 · PA",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-ME-02-view-2479818.svg.gz",
+          "region": [
+            0.4346,
+            0.488,
+            0.6921,
+            0.7696
+          ],
+          "tags": [
+            "ME-02"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "ME-02",
+              "elementId": "1443668",
+              "label": "ME-02 · mesada · 2,90 × 1,11 × 0,90",
+              "box": [
+                0.2019,
+                0.2109,
+                0.7981,
+                0.7891
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EQ-F-ME-03",
+      "title": "Ficha · ME-03 bajomesada con cajones",
+      "level": "01. Planta Alta",
+      "sector": "07 · Cocina 07 · PA",
+      "kind": "element",
+      "element": "ME-03",
+      "elementId": "2012888",
+      "elementKind": "ME",
+      "note": null,
+      "sheetId": "2479910",
+      "pdf": "/casa-angel/rubros/equipamiento/EQ-F-ME-03.pdf",
+      "image": "/casa-angel/rubros/equipamiento/EQ-F-ME-03.svg.gz",
+      "preview": "/casa-angel/rubros/equipamiento/EQ-F-ME-03-preview.png",
+      "thumbnail": "/casa-angel/rubros/equipamiento/EQ-F-ME-03.png",
+      "views": [
+        {
+          "id": "2479854",
+          "name": "ME-03 · planta",
+          "label": "ME-03 · planta   1:10",
+          "scale": 10,
+          "kind": "plan",
+          "sector": "07 · Cocina 07 · PA",
+          "roomLabel": "07 · Cocina 07 · PA",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-ME-03-view-2479854.svg.gz",
+          "region": [
+            0.1328,
+            0.2857,
+            0.4039,
+            0.6965
+          ],
+          "tags": [
+            "ME-03"
+          ],
+          "dimensions": [
+            {
+              "label": "ME-03 en X",
+              "values_m": [
+                0.6232
+              ],
+              "associative": false
+            },
+            {
+              "label": "ME-03 en Y",
+              "values_m": [
+                0.8
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "ME-03",
+              "elementId": "2012888",
+              "label": "ME-03 · bajomesada con cajones · 0,80 × 0,62 × 0,90",
+              "box": [
+                0.3756,
+                0.3509,
+                0.6244,
+                0.6491
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2479881",
+          "name": "ME-03 · alzado frontal",
+          "label": "ME-03 · alzado frontal   1:15",
+          "scale": 15,
+          "kind": "elevation",
+          "sector": "07 · Cocina 07 · PA",
+          "roomLabel": "07 · Cocina 07 · PA",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-ME-03-view-2479881.svg.gz",
+          "region": [
+            0.495,
+            0.2121,
+            0.7122,
+            0.3984
+          ],
+          "tags": [
+            "ME-03"
+          ],
+          "dimensions": [
+            {
+              "label": "ME-03 ancho",
+              "values_m": [
+                0.8
+              ],
+              "associative": false
+            },
+            {
+              "label": "ME-03 nivel + alto",
+              "values_m": [
+                0.9
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "ME-03",
+              "elementId": "2012888",
+              "label": "ME-03 · bajomesada con cajones · 0,80 × 0,62 × 0,90",
+              "box": [
+                0.3472,
+                0.308,
+                0.6129,
+                0.8017
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2479899",
+          "name": "ME-03 · axonométrica",
+          "label": "ME-03 · axonométrica   1:15",
+          "scale": 15,
+          "kind": "axo",
+          "sector": "07 · Cocina 07 · PA",
+          "roomLabel": "07 · Cocina 07 · PA",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-ME-03-view-2479899.svg.gz",
+          "region": [
+            0.4994,
+            0.4865,
+            0.7077,
+            0.77
+          ],
+          "tags": [
+            "ME-03"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "ME-03",
+              "elementId": "2012888",
+              "label": "ME-03 · bajomesada con cajones · 0,80 × 0,62 × 0,90",
+              "box": [
+                0.3257,
+                0.2719,
+                0.6743,
+                0.7281
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EQ-F-ME-04",
+      "title": "Ficha · ME-04 bajomesada con cajones",
+      "level": "01. Planta Alta",
+      "sector": "07 · Cocina 07 · PA",
+      "kind": "element",
+      "element": "ME-04",
+      "elementId": "733385",
+      "elementKind": "ME",
+      "note": null,
+      "sheetId": "2479991",
+      "pdf": "/casa-angel/rubros/equipamiento/EQ-F-ME-04.pdf",
+      "image": "/casa-angel/rubros/equipamiento/EQ-F-ME-04.svg.gz",
+      "preview": "/casa-angel/rubros/equipamiento/EQ-F-ME-04-preview.png",
+      "thumbnail": "/casa-angel/rubros/equipamiento/EQ-F-ME-04.png",
+      "views": [
+        {
+          "id": "2479935",
+          "name": "ME-04 · planta",
+          "label": "ME-04 · planta   1:10",
+          "scale": 10,
+          "kind": "plan",
+          "sector": "07 · Cocina 07 · PA",
+          "roomLabel": "07 · Cocina 07 · PA",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-ME-04-view-2479935.svg.gz",
+          "region": [
+            0.1328,
+            0.2857,
+            0.4039,
+            0.6965
+          ],
+          "tags": [
+            "ME-04"
+          ],
+          "dimensions": [
+            {
+              "label": "ME-04 en X",
+              "values_m": [
+                0.6232
+              ],
+              "associative": false
+            },
+            {
+              "label": "ME-04 en Y",
+              "values_m": [
+                0.8
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "ME-04",
+              "elementId": "733385",
+              "label": "ME-04 · bajomesada con cajones · 0,80 × 0,62 × 0,90",
+              "box": [
+                0.3756,
+                0.3509,
+                0.6244,
+                0.6491
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2479962",
+          "name": "ME-04 · alzado frontal",
+          "label": "ME-04 · alzado frontal   1:15",
+          "scale": 15,
+          "kind": "elevation",
+          "sector": "07 · Cocina 07 · PA",
+          "roomLabel": "07 · Cocina 07 · PA",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-ME-04-view-2479962.svg.gz",
+          "region": [
+            0.495,
+            0.2121,
+            0.7122,
+            0.3984
+          ],
+          "tags": [
+            "ME-04"
+          ],
+          "dimensions": [
+            {
+              "label": "ME-04 ancho",
+              "values_m": [
+                0.8
+              ],
+              "associative": false
+            },
+            {
+              "label": "ME-04 nivel + alto",
+              "values_m": [
+                0.9
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "ME-04",
+              "elementId": "733385",
+              "label": "ME-04 · bajomesada con cajones · 0,80 × 0,62 × 0,90",
+              "box": [
+                0.3472,
+                0.308,
+                0.6129,
+                0.8017
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2479980",
+          "name": "ME-04 · axonométrica",
+          "label": "ME-04 · axonométrica   1:15",
+          "scale": 15,
+          "kind": "axo",
+          "sector": "07 · Cocina 07 · PA",
+          "roomLabel": "07 · Cocina 07 · PA",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-ME-04-view-2479980.svg.gz",
+          "region": [
+            0.4994,
+            0.4865,
+            0.7077,
+            0.77
+          ],
+          "tags": [
+            "ME-04"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "ME-04",
+              "elementId": "733385",
+              "label": "ME-04 · bajomesada con cajones · 0,80 × 0,62 × 0,90",
+              "box": [
+                0.3257,
+                0.2719,
+                0.6743,
+                0.7281
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EQ-F-ME-05",
+      "title": "Ficha · ME-05 mesada",
+      "level": "00. Planta Baja",
+      "sector": "12 · Quincho 12 · PB",
+      "kind": "element",
+      "element": "ME-05",
+      "elementId": "1048718",
+      "elementKind": "ME",
+      "note": null,
+      "sheetId": "2480072",
+      "pdf": "/casa-angel/rubros/equipamiento/EQ-F-ME-05.pdf",
+      "image": "/casa-angel/rubros/equipamiento/EQ-F-ME-05.svg.gz",
+      "preview": "/casa-angel/rubros/equipamiento/EQ-F-ME-05-preview.png",
+      "thumbnail": "/casa-angel/rubros/equipamiento/EQ-F-ME-05.png",
+      "views": [
+        {
+          "id": "2480016",
+          "name": "ME-05 · planta",
+          "label": "ME-05 · planta   1:15",
+          "scale": 15,
+          "kind": "plan",
+          "sector": "12 · Quincho 12 · PB",
+          "roomLabel": "12 · Quincho 12 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-ME-05-view-2480016.svg.gz",
+          "region": [
+            0.2083,
+            0.1877,
+            0.6905,
+            0.4455
+          ],
+          "tags": [
+            "ME-05"
+          ],
+          "dimensions": [
+            {
+              "label": "ME-05 en X",
+              "values_m": [
+                4.765
+              ],
+              "associative": false
+            },
+            {
+              "label": "ME-05 en Y",
+              "values_m": [
+                0.6
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "ME-05",
+              "elementId": "1048718",
+              "label": "ME-05 · mesada · 4,76 × 0,60 × 1,00",
+              "box": [
+                0.1438,
+                0.3811,
+                0.8562,
+                0.6189
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2480043",
+          "name": "ME-05 · alzado frontal",
+          "label": "ME-05 · alzado frontal   1:25",
+          "scale": 25,
+          "kind": "elevation",
+          "sector": "12 · Quincho 12 · PB",
+          "roomLabel": "12 · Quincho 12 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-ME-05-view-2480043.svg.gz",
+          "region": [
+            0.1164,
+            0.5781,
+            0.456,
+            0.7012
+          ],
+          "tags": [
+            "ME-05"
+          ],
+          "dimensions": [
+            {
+              "label": "ME-05 ancho",
+              "values_m": [
+                4.765
+              ],
+              "associative": false
+            },
+            {
+              "label": "ME-05 nivel + alto",
+              "values_m": [
+                1.0
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "ME-05",
+              "elementId": "1048718",
+              "label": "ME-05 · mesada · 4,76 × 0,60 × 1,00",
+              "box": [
+                0.1965,
+                0.3005,
+                0.8035,
+                0.7992
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2480061",
+          "name": "ME-05 · axonométrica",
+          "label": "ME-05 · axonométrica   1:25",
+          "scale": 25,
+          "kind": "axo",
+          "sector": "12 · Quincho 12 · PB",
+          "roomLabel": "12 · Quincho 12 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-ME-05-view-2480061.svg.gz",
+          "region": [
+            0.4969,
+            0.5093,
+            0.746,
+            0.77
+          ],
+          "tags": [
+            "ME-05"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "ME-05",
+              "elementId": "1048718",
+              "label": "ME-05 · mesada · 4,76 × 0,60 × 1,00",
+              "box": [
+                0.1705,
+                0.1871,
+                0.8295,
+                0.8129
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EQ-F-MU-01",
+      "title": "Ficha · MU-01 vinoteca",
+      "level": "01. Planta Alta",
+      "sector": "06 · Cava 06 · PA",
+      "kind": "element",
+      "element": "MU-01",
+      "elementId": "870143",
+      "elementKind": "MU",
+      "note": null,
+      "sheetId": "2478030",
+      "pdf": "/casa-angel/rubros/equipamiento/EQ-F-MU-01.pdf",
+      "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-01.svg.gz",
+      "preview": "/casa-angel/rubros/equipamiento/EQ-F-MU-01-preview.png",
+      "thumbnail": "/casa-angel/rubros/equipamiento/EQ-F-MU-01.png",
+      "views": [
+        {
+          "id": "2477974",
+          "name": "MU-01 · planta",
+          "label": "MU-01 · planta   1:15",
+          "scale": 15,
+          "kind": "plan",
+          "sector": "06 · Cava 06 · PA",
+          "roomLabel": "06 · Cava 06 · PA",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-01-view-2477974.svg.gz",
+          "region": [
+            0.1237,
+            0.2607,
+            0.4935,
+            0.7215
+          ],
+          "tags": [
+            "MU-01"
+          ],
+          "dimensions": [
+            {
+              "label": "MU-01 en X",
+              "values_m": [
+                3.205
+              ],
+              "associative": false
+            },
+            {
+              "label": "MU-01 en Y",
+              "values_m": [
+                2.5901
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "MU-01",
+              "elementId": "870143",
+              "label": "MU-01 · vinoteca · 3,20 × 2,59 × 1,00",
+              "box": [
+                0.1875,
+                0.2131,
+                0.8125,
+                0.7869
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2478001",
+          "name": "MU-01 · alzado frontal",
+          "label": "MU-01 · alzado frontal   1:20",
+          "scale": 20,
+          "kind": "elevation",
+          "sector": "06 · Cava 06 · PA",
+          "roomLabel": "06 · Cava 06 · PA",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-01-view-2478001.svg.gz",
+          "region": [
+            0.4882,
+            0.2245,
+            0.7994,
+            0.3752
+          ],
+          "tags": [
+            "MU-01"
+          ],
+          "dimensions": [
+            {
+              "label": "MU-01 ancho",
+              "values_m": [
+                3.205
+              ],
+              "associative": false
+            },
+            {
+              "label": "MU-01 nivel + alto",
+              "values_m": [
+                1.0
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "MU-01",
+              "elementId": "870143",
+              "label": "MU-01 · vinoteca · 3,20 × 2,59 × 1,00",
+              "box": [
+                0.2076,
+                0.2964,
+                0.7646,
+                0.8055
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2478019",
+          "name": "MU-01 · axonométrica",
+          "label": "MU-01 · axonométrica   1:25",
+          "scale": 25,
+          "kind": "axo",
+          "sector": "06 · Cava 06 · PA",
+          "roomLabel": "06 · Cava 06 · PA",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-01-view-2478019.svg.gz",
+          "region": [
+            0.5127,
+            0.4882,
+            0.775,
+            0.7576
+          ],
+          "tags": [
+            "MU-01"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "MU-01",
+              "elementId": "870143",
+              "label": "MU-01 · vinoteca · 3,20 × 2,59 × 1,00",
+              "box": [
+                0.162,
+                0.1811,
+                0.838,
+                0.8189
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EQ-F-MU-02",
+      "title": "Ficha · MU-02 vinoteca",
+      "level": "01. Planta Alta",
+      "sector": "06 · Cava 06 · PA",
+      "kind": "element",
+      "element": "MU-02",
+      "elementId": "1452870",
+      "elementKind": "MU",
+      "note": null,
+      "sheetId": "2478111",
+      "pdf": "/casa-angel/rubros/equipamiento/EQ-F-MU-02.pdf",
+      "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-02.svg.gz",
+      "preview": "/casa-angel/rubros/equipamiento/EQ-F-MU-02-preview.png",
+      "thumbnail": "/casa-angel/rubros/equipamiento/EQ-F-MU-02.png",
+      "views": [
+        {
+          "id": "2478055",
+          "name": "MU-02 · planta",
+          "label": "MU-02 · planta   1:10",
+          "scale": 10,
+          "kind": "plan",
+          "sector": "06 · Cava 06 · PA",
+          "roomLabel": "06 · Cava 06 · PA",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-02-view-2478055.svg.gz",
+          "region": [
+            0.1201,
+            0.3158,
+            0.4971,
+            0.6663
+          ],
+          "tags": [
+            "MU-02"
+          ],
+          "dimensions": [
+            {
+              "label": "MU-02 en X",
+              "values_m": [
+                1.6039
+              ],
+              "associative": false
+            },
+            {
+              "label": "MU-02 en Y",
+              "values_m": [
+                0.4056
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "MU-02",
+              "elementId": "1452870",
+              "label": "MU-02 · vinoteca · 1,60 × 0,41 × 1,00",
+              "box": [
+                0.27,
+                0.4114,
+                0.73,
+                0.5886
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2478082",
+          "name": "MU-02 · alzado frontal",
+          "label": "MU-02 · alzado frontal   1:15",
+          "scale": 15,
+          "kind": "elevation",
+          "sector": "06 · Cava 06 · PA",
+          "roomLabel": "06 · Cava 06 · PA",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-02-view-2478082.svg.gz",
+          "region": [
+            0.5062,
+            0.221,
+            0.7814,
+            0.4176
+          ],
+          "tags": [
+            "MU-02"
+          ],
+          "dimensions": [
+            {
+              "label": "MU-02 ancho",
+              "values_m": [
+                1.6039
+              ],
+              "associative": false
+            },
+            {
+              "label": "MU-02 nivel + alto",
+              "values_m": [
+                1.0
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "MU-02",
+              "elementId": "1452870",
+              "label": "MU-02 · vinoteca · 1,60 × 0,41 × 1,00",
+              "box": [
+                0.2741,
+                0.292,
+                0.6945,
+                0.812
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2478100",
+          "name": "MU-02 · axonométrica",
+          "label": "MU-02 · axonométrica   1:20",
+          "scale": 20,
+          "kind": "axo",
+          "sector": "06 · Cava 06 · PA",
+          "roomLabel": "06 · Cava 06 · PA",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-02-view-2478100.svg.gz",
+          "region": [
+            0.5533,
+            0.5236,
+            0.7343,
+            0.7611
+          ],
+          "tags": [
+            "MU-02"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "MU-02",
+              "elementId": "1452870",
+              "label": "MU-02 · vinoteca · 1,60 × 0,41 × 1,00",
+              "box": [
+                0.2875,
+                0.2501,
+                0.7125,
+                0.7499
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EQ-F-MU-03",
+      "title": "Ficha · MU-03 mueble de pared",
+      "level": "01. Planta Alta",
+      "sector": "08 · Comedor 08 · PA",
+      "kind": "element",
+      "element": "MU-03",
+      "elementId": "1050925",
+      "elementKind": "MU",
+      "note": null,
+      "sheetId": "2478192",
+      "pdf": "/casa-angel/rubros/equipamiento/EQ-F-MU-03.pdf",
+      "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-03.svg.gz",
+      "preview": "/casa-angel/rubros/equipamiento/EQ-F-MU-03-preview.png",
+      "thumbnail": "/casa-angel/rubros/equipamiento/EQ-F-MU-03.png",
+      "views": [
+        {
+          "id": "2478136",
+          "name": "MU-03 · planta",
+          "label": "MU-03 · planta   1:10",
+          "scale": 10,
+          "kind": "plan",
+          "sector": "08 · Comedor 08 · PA",
+          "roomLabel": "08 · Comedor 08 · PA",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-03-view-2478136.svg.gz",
+          "region": [
+            0.1341,
+            0.2504,
+            0.4026,
+            0.7317
+          ],
+          "tags": [
+            "MU-03"
+          ],
+          "dimensions": [
+            {
+              "label": "MU-03 en X",
+              "values_m": [
+                0.6
+              ],
+              "associative": false
+            },
+            {
+              "label": "MU-03 en Y",
+              "values_m": [
+                1.2608
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "MU-03",
+              "elementId": "1050925",
+              "label": "MU-03 · mueble de pared · 1,26 × 0,60 × 0,90",
+              "box": [
+                0.3791,
+                0.2994,
+                0.6209,
+                0.7006
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2478163",
+          "name": "MU-03 · alzado frontal",
+          "label": "MU-03 · alzado frontal   1:10",
+          "scale": 10,
+          "kind": "elevation",
+          "sector": "08 · Comedor 08 · PA",
+          "roomLabel": "08 · Comedor 08 · PA",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-03-view-2478163.svg.gz",
+          "region": [
+            0.434,
+            0.2152,
+            0.7731,
+            0.4883
+          ],
+          "tags": [
+            "MU-03"
+          ],
+          "dimensions": [
+            {
+              "label": "MU-03 ancho",
+              "values_m": [
+                1.2608
+              ],
+              "associative": false
+            },
+            {
+              "label": "MU-03 nivel + alto",
+              "values_m": [
+                0.9
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "MU-03",
+              "elementId": "1050925",
+              "label": "MU-03 · mueble de pared · 1,26 × 0,60 × 0,90",
+              "box": [
+                0.2862,
+                0.3036,
+                0.6883,
+                0.8086
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2478181",
+          "name": "MU-03 · axonométrica",
+          "label": "MU-03 · axonométrica   1:25",
+          "scale": 25,
+          "kind": "axo",
+          "sector": "08 · Comedor 08 · PA",
+          "roomLabel": "08 · Comedor 08 · PA",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-03-view-2478181.svg.gz",
+          "region": [
+            0.5326,
+            0.5827,
+            0.6746,
+            0.7669
+          ],
+          "tags": [
+            "MU-03"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "MU-03",
+              "elementId": "1050925",
+              "label": "MU-03 · mueble de pared · 1,26 × 0,60 × 0,90",
+              "box": [
+                0.2994,
+                0.265,
+                0.7006,
+                0.735
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EQ-F-MU-04",
+      "title": "Ficha · MU-04 mueble de pared",
+      "level": "01. Planta Alta",
+      "sector": "08 · Comedor 08 · PA",
+      "kind": "element",
+      "element": "MU-04",
+      "elementId": "1050843",
+      "elementKind": "MU",
+      "note": null,
+      "sheetId": "2478273",
+      "pdf": "/casa-angel/rubros/equipamiento/EQ-F-MU-04.pdf",
+      "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-04.svg.gz",
+      "preview": "/casa-angel/rubros/equipamiento/EQ-F-MU-04-preview.png",
+      "thumbnail": "/casa-angel/rubros/equipamiento/EQ-F-MU-04.png",
+      "views": [
+        {
+          "id": "2478217",
+          "name": "MU-04 · planta",
+          "label": "MU-04 · planta   1:10",
+          "scale": 10,
+          "kind": "plan",
+          "sector": "08 · Comedor 08 · PA",
+          "roomLabel": "08 · Comedor 08 · PA",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-04-view-2478217.svg.gz",
+          "region": [
+            0.1341,
+            0.2061,
+            0.4026,
+            0.776
+          ],
+          "tags": [
+            "MU-04"
+          ],
+          "dimensions": [
+            {
+              "label": "MU-04 en X",
+              "values_m": [
+                0.6
+              ],
+              "associative": false
+            },
+            {
+              "label": "MU-04 en Y",
+              "values_m": [
+                1.8392
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "MU-04",
+              "elementId": "1050843",
+              "label": "MU-04 · mueble de pared · 1,84 × 0,60 × 1,00",
+              "box": [
+                0.3791,
+                0.2529,
+                0.6209,
+                0.7471
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2478244",
+          "name": "MU-04 · alzado frontal",
+          "label": "MU-04 · alzado frontal   1:15",
+          "scale": 15,
+          "kind": "elevation",
+          "sector": "08 · Comedor 08 · PA",
+          "roomLabel": "08 · Comedor 08 · PA",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-04-view-2478244.svg.gz",
+          "region": [
+            0.4575,
+            0.2183,
+            0.7496,
+            0.4149
+          ],
+          "tags": [
+            "MU-04"
+          ],
+          "dimensions": [
+            {
+              "label": "MU-04 ancho",
+              "values_m": [
+                1.8392
+              ],
+              "associative": false
+            },
+            {
+              "label": "MU-04 nivel + alto",
+              "values_m": [
+                1.0
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "MU-04",
+              "elementId": "1050843",
+              "label": "MU-04 · mueble de pared · 1,84 × 0,60 × 1,00",
+              "box": [
+                0.2581,
+                0.292,
+                0.7122,
+                0.812
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2478262",
+          "name": "MU-04 · axonométrica",
+          "label": "MU-04 · axonométrica   1:20",
+          "scale": 20,
+          "kind": "axo",
+          "sector": "08 · Comedor 08 · PA",
+          "roomLabel": "08 · Comedor 08 · PA",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-04-view-2478262.svg.gz",
+          "region": [
+            0.5049,
+            0.5154,
+            0.7022,
+            0.7638
+          ],
+          "tags": [
+            "MU-04"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "MU-04",
+              "elementId": "1050843",
+              "label": "MU-04 · mueble de pared · 1,84 × 0,60 × 1,00",
+              "box": [
+                0.2635,
+                0.2391,
+                0.7365,
+                0.7609
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EQ-F-MU-05",
+      "title": "Ficha · MU-05 mesa de luz",
+      "level": "00. Planta Baja",
+      "sector": "09 · Hab. servicio 09 · PB",
+      "kind": "element",
+      "element": "MU-05",
+      "elementId": "871087",
+      "elementKind": "MU",
+      "note": null,
+      "sheetId": "2478355",
+      "pdf": "/casa-angel/rubros/equipamiento/EQ-F-MU-05.pdf",
+      "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-05.svg.gz",
+      "preview": "/casa-angel/rubros/equipamiento/EQ-F-MU-05-preview.png",
+      "thumbnail": "/casa-angel/rubros/equipamiento/EQ-F-MU-05.png",
+      "views": [
+        {
+          "id": "2478298",
+          "name": "MU-05 · planta",
+          "label": "MU-05 · planta   1:10",
+          "scale": 10,
+          "kind": "plan",
+          "sector": "09 · Hab. servicio 09 · PB",
+          "roomLabel": "09 · Hab. servicio 09 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-05-view-2478298.svg.gz",
+          "region": [
+            0.1341,
+            0.3142,
+            0.4026,
+            0.6679
+          ],
+          "tags": [
+            "MU-05"
+          ],
+          "dimensions": [
+            {
+              "label": "MU-05 en X",
+              "values_m": [
+                0.6
+              ],
+              "associative": false
+            },
+            {
+              "label": "MU-05 en Y",
+              "values_m": [
+                0.4264
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "MU-05",
+              "elementId": "871087",
+              "label": "MU-05 · mesa de luz · 0,60 × 0,43 × 0,20",
+              "box": [
+                0.3791,
+                0.4076,
+                0.6209,
+                0.5924
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2478325",
+          "name": "MU-05 · alzado frontal",
+          "label": "MU-05 · alzado frontal   1:10",
+          "scale": 10,
+          "kind": "elevation",
+          "sector": "09 · Hab. servicio 09 · PB",
+          "roomLabel": "09 · Hab. servicio 09 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-05-view-2478325.svg.gz",
+          "region": [
+            0.4697,
+            0.212,
+            0.7374,
+            0.378
+          ],
+          "tags": [
+            "MU-05"
+          ],
+          "dimensions": [
+            {
+              "label": "MU-05 ancho",
+              "values_m": [
+                0.6
+              ],
+              "associative": false
+            },
+            {
+              "label": "MU-05 nivel + alto",
+              "values_m": [
+                0.1,
+                0.2
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "MU-05",
+              "elementId": "871087",
+              "label": "MU-05 · mesa de luz · 0,60 × 0,43 × 0,20",
+              "box": [
+                0.3626,
+                0.5,
+                0.6051,
+                0.6848
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2478344",
+          "name": "MU-05 · axonométrica",
+          "label": "MU-05 · axonométrica   1:10",
+          "scale": 10,
+          "kind": "axo",
+          "sector": "09 · Hab. servicio 09 · PB",
+          "roomLabel": "09 · Hab. servicio 09 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-05-view-2478344.svg.gz",
+          "region": [
+            0.4648,
+            0.466,
+            0.7424,
+            0.7701
+          ],
+          "tags": [
+            "MU-05"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "MU-05",
+              "elementId": "871087",
+              "label": "MU-05 · mesa de luz · 0,60 × 0,43 × 0,20",
+              "box": [
+                0.3586,
+                0.3698,
+                0.6414,
+                0.6302
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EQ-F-MU-06",
+      "title": "Ficha · MU-06 mesa de luz",
+      "level": "00. Planta Baja",
+      "sector": "01 · Cuarto A Inv. 01 · PB",
+      "kind": "element",
+      "element": "MU-06",
+      "elementId": "781437",
+      "elementKind": "MU",
+      "note": null,
+      "sheetId": "2478437",
+      "pdf": "/casa-angel/rubros/equipamiento/EQ-F-MU-06.pdf",
+      "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-06.svg.gz",
+      "preview": "/casa-angel/rubros/equipamiento/EQ-F-MU-06-preview.png",
+      "thumbnail": "/casa-angel/rubros/equipamiento/EQ-F-MU-06.png",
+      "views": [
+        {
+          "id": "2478380",
+          "name": "MU-06 · planta",
+          "label": "MU-06 · planta   1:10",
+          "scale": 10,
+          "kind": "plan",
+          "sector": "01 · Cuarto A Inv. 01 · PB",
+          "roomLabel": "01 · Cuarto A Inv. 01 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-06-view-2478380.svg.gz",
+          "region": [
+            0.1234,
+            0.301,
+            0.3731,
+            0.6812
+          ],
+          "tags": [
+            "MU-06"
+          ],
+          "dimensions": [
+            {
+              "label": "MU-06 en X",
+              "values_m": [
+                0.4264
+              ],
+              "associative": false
+            },
+            {
+              "label": "MU-06 en Y",
+              "values_m": [
+                0.6
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "MU-06",
+              "elementId": "781437",
+              "label": "MU-06 · mesa de luz · 0,60 × 0,43 × 0,20",
+              "box": [
+                0.4076,
+                0.3791,
+                0.5924,
+                0.6209
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2478407",
+          "name": "MU-06 · alzado frontal",
+          "label": "MU-06 · alzado frontal   1:10",
+          "scale": 10,
+          "kind": "elevation",
+          "sector": "01 · Cuarto A Inv. 01 · PB",
+          "roomLabel": "01 · Cuarto A Inv. 01 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-06-view-2478407.svg.gz",
+          "region": [
+            0.4496,
+            0.212,
+            0.7173,
+            0.378
+          ],
+          "tags": [
+            "MU-06"
+          ],
+          "dimensions": [
+            {
+              "label": "MU-06 ancho",
+              "values_m": [
+                0.6
+              ],
+              "associative": false
+            },
+            {
+              "label": "MU-06 nivel + alto",
+              "values_m": [
+                0.1,
+                0.2
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "MU-06",
+              "elementId": "781437",
+              "label": "MU-06 · mesa de luz · 0,60 × 0,43 × 0,20",
+              "box": [
+                0.3626,
+                0.5,
+                0.6051,
+                0.6848
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2478426",
+          "name": "MU-06 · axonométrica",
+          "label": "MU-06 · axonométrica   1:10",
+          "scale": 10,
+          "kind": "axo",
+          "sector": "01 · Cuarto A Inv. 01 · PB",
+          "roomLabel": "01 · Cuarto A Inv. 01 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-06-view-2478426.svg.gz",
+          "region": [
+            0.4447,
+            0.466,
+            0.7223,
+            0.7701
+          ],
+          "tags": [
+            "MU-06"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "MU-06",
+              "elementId": "781437",
+              "label": "MU-06 · mesa de luz · 0,60 × 0,43 × 0,20",
+              "box": [
+                0.3586,
+                0.3698,
+                0.6414,
+                0.6302
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EQ-F-MU-07",
+      "title": "Ficha · MU-07 mesa de luz",
+      "level": "00. Planta Baja",
+      "sector": "03 · Cuarto B Inv. 03 · PB",
+      "kind": "element",
+      "element": "MU-07",
+      "elementId": "780985",
+      "elementKind": "MU",
+      "note": null,
+      "sheetId": "2478519",
+      "pdf": "/casa-angel/rubros/equipamiento/EQ-F-MU-07.pdf",
+      "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-07.svg.gz",
+      "preview": "/casa-angel/rubros/equipamiento/EQ-F-MU-07-preview.png",
+      "thumbnail": "/casa-angel/rubros/equipamiento/EQ-F-MU-07.png",
+      "views": [
+        {
+          "id": "2478462",
+          "name": "MU-07 · planta",
+          "label": "MU-07 · planta   1:10",
+          "scale": 10,
+          "kind": "plan",
+          "sector": "03 · Cuarto B Inv. 03 · PB",
+          "roomLabel": "03 · Cuarto B Inv. 03 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-07-view-2478462.svg.gz",
+          "region": [
+            0.1234,
+            0.301,
+            0.3731,
+            0.6812
+          ],
+          "tags": [
+            "MU-07"
+          ],
+          "dimensions": [
+            {
+              "label": "MU-07 en X",
+              "values_m": [
+                0.4264
+              ],
+              "associative": false
+            },
+            {
+              "label": "MU-07 en Y",
+              "values_m": [
+                0.6
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "MU-07",
+              "elementId": "780985",
+              "label": "MU-07 · mesa de luz · 0,60 × 0,43 × 0,20",
+              "box": [
+                0.4076,
+                0.3791,
+                0.5924,
+                0.6209
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2478489",
+          "name": "MU-07 · alzado frontal",
+          "label": "MU-07 · alzado frontal   1:10",
+          "scale": 10,
+          "kind": "elevation",
+          "sector": "03 · Cuarto B Inv. 03 · PB",
+          "roomLabel": "03 · Cuarto B Inv. 03 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-07-view-2478489.svg.gz",
+          "region": [
+            0.4496,
+            0.212,
+            0.7173,
+            0.378
+          ],
+          "tags": [
+            "MU-07"
+          ],
+          "dimensions": [
+            {
+              "label": "MU-07 ancho",
+              "values_m": [
+                0.6
+              ],
+              "associative": false
+            },
+            {
+              "label": "MU-07 nivel + alto",
+              "values_m": [
+                0.1,
+                0.2
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "MU-07",
+              "elementId": "780985",
+              "label": "MU-07 · mesa de luz · 0,60 × 0,43 × 0,20",
+              "box": [
+                0.3626,
+                0.5,
+                0.6051,
+                0.6848
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2478508",
+          "name": "MU-07 · axonométrica",
+          "label": "MU-07 · axonométrica   1:10",
+          "scale": 10,
+          "kind": "axo",
+          "sector": "03 · Cuarto B Inv. 03 · PB",
+          "roomLabel": "03 · Cuarto B Inv. 03 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-07-view-2478508.svg.gz",
+          "region": [
+            0.4447,
+            0.466,
+            0.7223,
+            0.7701
+          ],
+          "tags": [
+            "MU-07"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "MU-07",
+              "elementId": "780985",
+              "label": "MU-07 · mesa de luz · 0,60 × 0,43 × 0,20",
+              "box": [
+                0.3586,
+                0.3698,
+                0.6414,
+                0.6302
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EQ-F-MU-08",
+      "title": "Ficha · MU-08 mesa de luz",
+      "level": "00. Planta Baja",
+      "sector": "05 · Cuarto C Inv. 05 · PB",
+      "kind": "element",
+      "element": "MU-08",
+      "elementId": "1243451",
+      "elementKind": "MU",
+      "note": null,
+      "sheetId": "2478601",
+      "pdf": "/casa-angel/rubros/equipamiento/EQ-F-MU-08.pdf",
+      "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-08.svg.gz",
+      "preview": "/casa-angel/rubros/equipamiento/EQ-F-MU-08-preview.png",
+      "thumbnail": "/casa-angel/rubros/equipamiento/EQ-F-MU-08.png",
+      "views": [
+        {
+          "id": "2478544",
+          "name": "MU-08 · planta",
+          "label": "MU-08 · planta   1:10",
+          "scale": 10,
+          "kind": "plan",
+          "sector": "05 · Cuarto C Inv. 05 · PB",
+          "roomLabel": "05 · Cuarto C Inv. 05 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-08-view-2478544.svg.gz",
+          "region": [
+            0.1234,
+            0.301,
+            0.3731,
+            0.6812
+          ],
+          "tags": [
+            "MU-08"
+          ],
+          "dimensions": [
+            {
+              "label": "MU-08 en X",
+              "values_m": [
+                0.4264
+              ],
+              "associative": false
+            },
+            {
+              "label": "MU-08 en Y",
+              "values_m": [
+                0.6
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "MU-08",
+              "elementId": "1243451",
+              "label": "MU-08 · mesa de luz · 0,60 × 0,43 × 0,20",
+              "box": [
+                0.4076,
+                0.3791,
+                0.5924,
+                0.6209
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2478571",
+          "name": "MU-08 · alzado frontal",
+          "label": "MU-08 · alzado frontal   1:10",
+          "scale": 10,
+          "kind": "elevation",
+          "sector": "05 · Cuarto C Inv. 05 · PB",
+          "roomLabel": "05 · Cuarto C Inv. 05 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-08-view-2478571.svg.gz",
+          "region": [
+            0.4496,
+            0.212,
+            0.7173,
+            0.378
+          ],
+          "tags": [
+            "MU-08"
+          ],
+          "dimensions": [
+            {
+              "label": "MU-08 ancho",
+              "values_m": [
+                0.6
+              ],
+              "associative": false
+            },
+            {
+              "label": "MU-08 nivel + alto",
+              "values_m": [
+                0.1,
+                0.2
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "MU-08",
+              "elementId": "1243451",
+              "label": "MU-08 · mesa de luz · 0,60 × 0,43 × 0,20",
+              "box": [
+                0.3626,
+                0.5,
+                0.6051,
+                0.6848
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2478590",
+          "name": "MU-08 · axonométrica",
+          "label": "MU-08 · axonométrica   1:10",
+          "scale": 10,
+          "kind": "axo",
+          "sector": "05 · Cuarto C Inv. 05 · PB",
+          "roomLabel": "05 · Cuarto C Inv. 05 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-08-view-2478590.svg.gz",
+          "region": [
+            0.4447,
+            0.466,
+            0.7223,
+            0.7701
+          ],
+          "tags": [
+            "MU-08"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "MU-08",
+              "elementId": "1243451",
+              "label": "MU-08 · mesa de luz · 0,60 × 0,43 × 0,20",
+              "box": [
+                0.3586,
+                0.3698,
+                0.6414,
+                0.6302
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EQ-F-MU-09",
+      "title": "Ficha · MU-09 mueble TV",
+      "level": "00. Planta Baja",
+      "sector": "01 · Cuarto A Inv. 01 · PB",
+      "kind": "element",
+      "element": "MU-09",
+      "elementId": "781412",
+      "elementKind": "MU",
+      "note": null,
+      "sheetId": "2478683",
+      "pdf": "/casa-angel/rubros/equipamiento/EQ-F-MU-09.pdf",
+      "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-09.svg.gz",
+      "preview": "/casa-angel/rubros/equipamiento/EQ-F-MU-09-preview.png",
+      "thumbnail": "/casa-angel/rubros/equipamiento/EQ-F-MU-09.png",
+      "views": [
+        {
+          "id": "2478626",
+          "name": "MU-09 · planta",
+          "label": "MU-09 · planta   1:20",
+          "scale": 20,
+          "kind": "plan",
+          "sector": "01 · Cuarto A Inv. 01 · PB",
+          "roomLabel": "01 · Cuarto A Inv. 01 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-09-view-2478626.svg.gz",
+          "region": [
+            0.1209,
+            0.3545,
+            0.3354,
+            0.6276
+          ],
+          "tags": [
+            "MU-09"
+          ],
+          "dimensions": [
+            {
+              "label": "MU-09 en X",
+              "values_m": [
+                2.0
+              ],
+              "associative": false
+            },
+            {
+              "label": "MU-09 en Y",
+              "values_m": [
+                1.6
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "MU-09",
+              "elementId": "781412",
+              "label": "MU-09 · mueble TV · 2,00 × 1,60 × 0,25",
+              "box": [
+                0.2477,
+                0.2755,
+                0.7523,
+                0.7245
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2478653",
+          "name": "MU-09 · alzado frontal",
+          "label": "MU-09 · alzado frontal   1:10",
+          "scale": 10,
+          "kind": "elevation",
+          "sector": "01 · Cuarto A Inv. 01 · PB",
+          "roomLabel": "01 · Cuarto A Inv. 01 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-09-view-2478653.svg.gz",
+          "region": [
+            0.3539,
+            0.2115,
+            0.7728,
+            0.3851
+          ],
+          "tags": [
+            "MU-09"
+          ],
+          "dimensions": [
+            {
+              "label": "MU-09 ancho",
+              "values_m": [
+                2.0
+              ],
+              "associative": false
+            },
+            {
+              "label": "MU-09 nivel + alto",
+              "values_m": [
+                0.1,
+                0.25
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "MU-09",
+              "elementId": "781412",
+              "label": "MU-09 · mueble TV · 2,00 × 1,60 × 0,25",
+              "box": [
+                0.2316,
+                0.4779,
+                0.7478,
+                0.6987
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2478672",
+          "name": "MU-09 · axonométrica",
+          "label": "MU-09 · axonométrica   1:15",
+          "scale": 15,
+          "kind": "axo",
+          "sector": "01 · Cuarto A Inv. 01 · PB",
+          "roomLabel": "01 · Cuarto A Inv. 01 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-09-view-2478672.svg.gz",
+          "region": [
+            0.4037,
+            0.4721,
+            0.723,
+            0.7706
+          ],
+          "tags": [
+            "MU-09"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "MU-09",
+              "elementId": "781412",
+              "label": "MU-09 · mueble TV · 2,00 × 1,60 × 0,25",
+              "box": [
+                0.2125,
+                0.2582,
+                0.7875,
+                0.7418
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EQ-F-MU-10",
+      "title": "Ficha · MU-10 mueble TV",
+      "level": "00. Planta Baja",
+      "sector": "03 · Cuarto B Inv. 03 · PB",
+      "kind": "element",
+      "element": "MU-10",
+      "elementId": "780960",
+      "elementKind": "MU",
+      "note": null,
+      "sheetId": "2478765",
+      "pdf": "/casa-angel/rubros/equipamiento/EQ-F-MU-10.pdf",
+      "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-10.svg.gz",
+      "preview": "/casa-angel/rubros/equipamiento/EQ-F-MU-10-preview.png",
+      "thumbnail": "/casa-angel/rubros/equipamiento/EQ-F-MU-10.png",
+      "views": [
+        {
+          "id": "2478708",
+          "name": "MU-10 · planta",
+          "label": "MU-10 · planta   1:20",
+          "scale": 20,
+          "kind": "plan",
+          "sector": "03 · Cuarto B Inv. 03 · PB",
+          "roomLabel": "03 · Cuarto B Inv. 03 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-10-view-2478708.svg.gz",
+          "region": [
+            0.1209,
+            0.3545,
+            0.3354,
+            0.6276
+          ],
+          "tags": [
+            "MU-10"
+          ],
+          "dimensions": [
+            {
+              "label": "MU-10 en X",
+              "values_m": [
+                2.0
+              ],
+              "associative": false
+            },
+            {
+              "label": "MU-10 en Y",
+              "values_m": [
+                1.6
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "MU-10",
+              "elementId": "780960",
+              "label": "MU-10 · mueble TV · 2,00 × 1,60 × 0,25",
+              "box": [
+                0.2477,
+                0.2755,
+                0.7523,
+                0.7245
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2478735",
+          "name": "MU-10 · alzado frontal",
+          "label": "MU-10 · alzado frontal   1:10",
+          "scale": 10,
+          "kind": "elevation",
+          "sector": "03 · Cuarto B Inv. 03 · PB",
+          "roomLabel": "03 · Cuarto B Inv. 03 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-10-view-2478735.svg.gz",
+          "region": [
+            0.3539,
+            0.2115,
+            0.7728,
+            0.3851
+          ],
+          "tags": [
+            "MU-10"
+          ],
+          "dimensions": [
+            {
+              "label": "MU-10 ancho",
+              "values_m": [
+                2.0
+              ],
+              "associative": false
+            },
+            {
+              "label": "MU-10 nivel + alto",
+              "values_m": [
+                0.1,
+                0.25
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "MU-10",
+              "elementId": "780960",
+              "label": "MU-10 · mueble TV · 2,00 × 1,60 × 0,25",
+              "box": [
+                0.2316,
+                0.4779,
+                0.7478,
+                0.6987
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2478754",
+          "name": "MU-10 · axonométrica",
+          "label": "MU-10 · axonométrica   1:15",
+          "scale": 15,
+          "kind": "axo",
+          "sector": "03 · Cuarto B Inv. 03 · PB",
+          "roomLabel": "03 · Cuarto B Inv. 03 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-10-view-2478754.svg.gz",
+          "region": [
+            0.4037,
+            0.4721,
+            0.723,
+            0.7706
+          ],
+          "tags": [
+            "MU-10"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "MU-10",
+              "elementId": "780960",
+              "label": "MU-10 · mueble TV · 2,00 × 1,60 × 0,25",
+              "box": [
+                0.2125,
+                0.2582,
+                0.7875,
+                0.7418
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EQ-F-MU-11",
+      "title": "Ficha · MU-11 mueble TV",
+      "level": "00. Planta Baja",
+      "sector": "05 · Cuarto C Inv. 05 · PB",
+      "kind": "element",
+      "element": "MU-11",
+      "elementId": "1243426",
+      "elementKind": "MU",
+      "note": null,
+      "sheetId": "2478847",
+      "pdf": "/casa-angel/rubros/equipamiento/EQ-F-MU-11.pdf",
+      "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-11.svg.gz",
+      "preview": "/casa-angel/rubros/equipamiento/EQ-F-MU-11-preview.png",
+      "thumbnail": "/casa-angel/rubros/equipamiento/EQ-F-MU-11.png",
+      "views": [
+        {
+          "id": "2478790",
+          "name": "MU-11 · planta",
+          "label": "MU-11 · planta   1:20",
+          "scale": 20,
+          "kind": "plan",
+          "sector": "05 · Cuarto C Inv. 05 · PB",
+          "roomLabel": "05 · Cuarto C Inv. 05 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-11-view-2478790.svg.gz",
+          "region": [
+            0.1209,
+            0.3545,
+            0.3354,
+            0.6276
+          ],
+          "tags": [
+            "MU-11"
+          ],
+          "dimensions": [
+            {
+              "label": "MU-11 en X",
+              "values_m": [
+                2.0
+              ],
+              "associative": false
+            },
+            {
+              "label": "MU-11 en Y",
+              "values_m": [
+                1.6
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "MU-11",
+              "elementId": "1243426",
+              "label": "MU-11 · mueble TV · 2,00 × 1,60 × 0,25",
+              "box": [
+                0.2477,
+                0.2755,
+                0.7523,
+                0.7245
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2478817",
+          "name": "MU-11 · alzado frontal",
+          "label": "MU-11 · alzado frontal   1:10",
+          "scale": 10,
+          "kind": "elevation",
+          "sector": "05 · Cuarto C Inv. 05 · PB",
+          "roomLabel": "05 · Cuarto C Inv. 05 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-11-view-2478817.svg.gz",
+          "region": [
+            0.3539,
+            0.2115,
+            0.7728,
+            0.3851
+          ],
+          "tags": [
+            "MU-11"
+          ],
+          "dimensions": [
+            {
+              "label": "MU-11 ancho",
+              "values_m": [
+                2.0
+              ],
+              "associative": false
+            },
+            {
+              "label": "MU-11 nivel + alto",
+              "values_m": [
+                0.1,
+                0.25
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "MU-11",
+              "elementId": "1243426",
+              "label": "MU-11 · mueble TV · 2,00 × 1,60 × 0,25",
+              "box": [
+                0.2316,
+                0.4779,
+                0.7478,
+                0.6987
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2478836",
+          "name": "MU-11 · axonométrica",
+          "label": "MU-11 · axonométrica   1:15",
+          "scale": 15,
+          "kind": "axo",
+          "sector": "05 · Cuarto C Inv. 05 · PB",
+          "roomLabel": "05 · Cuarto C Inv. 05 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-11-view-2478836.svg.gz",
+          "region": [
+            0.4037,
+            0.4721,
+            0.723,
+            0.7706
+          ],
+          "tags": [
+            "MU-11"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "MU-11",
+              "elementId": "1243426",
+              "label": "MU-11 · mueble TV · 2,00 × 1,60 × 0,25",
+              "box": [
+                0.2125,
+                0.2582,
+                0.7875,
+                0.7418
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EQ-F-MU-12",
+      "title": "Ficha · MU-12 mesa de luz",
+      "level": "00. Planta Baja",
+      "sector": "01 · Cuarto A Inv. 01 · PB",
+      "kind": "element",
+      "element": "MU-12",
+      "elementId": "781424",
+      "elementKind": "MU",
+      "note": null,
+      "sheetId": "2478929",
+      "pdf": "/casa-angel/rubros/equipamiento/EQ-F-MU-12.pdf",
+      "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-12.svg.gz",
+      "preview": "/casa-angel/rubros/equipamiento/EQ-F-MU-12-preview.png",
+      "thumbnail": "/casa-angel/rubros/equipamiento/EQ-F-MU-12.png",
+      "views": [
+        {
+          "id": "2478872",
+          "name": "MU-12 · planta",
+          "label": "MU-12 · planta   1:10",
+          "scale": 10,
+          "kind": "plan",
+          "sector": "01 · Cuarto A Inv. 01 · PB",
+          "roomLabel": "01 · Cuarto A Inv. 01 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-12-view-2478872.svg.gz",
+          "region": [
+            0.1234,
+            0.301,
+            0.3731,
+            0.6812
+          ],
+          "tags": [
+            "MU-12"
+          ],
+          "dimensions": [
+            {
+              "label": "MU-12 en X",
+              "values_m": [
+                0.4264
+              ],
+              "associative": false
+            },
+            {
+              "label": "MU-12 en Y",
+              "values_m": [
+                0.6
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "MU-12",
+              "elementId": "781424",
+              "label": "MU-12 · mesa de luz · 0,60 × 0,43 × 0,20",
+              "box": [
+                0.4076,
+                0.3791,
+                0.5924,
+                0.6209
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2478899",
+          "name": "MU-12 · alzado frontal",
+          "label": "MU-12 · alzado frontal   1:10",
+          "scale": 10,
+          "kind": "elevation",
+          "sector": "01 · Cuarto A Inv. 01 · PB",
+          "roomLabel": "01 · Cuarto A Inv. 01 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-12-view-2478899.svg.gz",
+          "region": [
+            0.4496,
+            0.212,
+            0.7173,
+            0.378
+          ],
+          "tags": [
+            "MU-12"
+          ],
+          "dimensions": [
+            {
+              "label": "MU-12 ancho",
+              "values_m": [
+                0.6
+              ],
+              "associative": false
+            },
+            {
+              "label": "MU-12 nivel + alto",
+              "values_m": [
+                0.1,
+                0.2
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "MU-12",
+              "elementId": "781424",
+              "label": "MU-12 · mesa de luz · 0,60 × 0,43 × 0,20",
+              "box": [
+                0.3626,
+                0.5,
+                0.6051,
+                0.6848
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2478918",
+          "name": "MU-12 · axonométrica",
+          "label": "MU-12 · axonométrica   1:10",
+          "scale": 10,
+          "kind": "axo",
+          "sector": "01 · Cuarto A Inv. 01 · PB",
+          "roomLabel": "01 · Cuarto A Inv. 01 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-12-view-2478918.svg.gz",
+          "region": [
+            0.4447,
+            0.466,
+            0.7223,
+            0.7701
+          ],
+          "tags": [
+            "MU-12"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "MU-12",
+              "elementId": "781424",
+              "label": "MU-12 · mesa de luz · 0,60 × 0,43 × 0,20",
+              "box": [
+                0.3586,
+                0.3698,
+                0.6414,
+                0.6302
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EQ-F-MU-13",
+      "title": "Ficha · MU-13 mesa de luz",
+      "level": "00. Planta Baja",
+      "sector": "03 · Cuarto B Inv. 03 · PB",
+      "kind": "element",
+      "element": "MU-13",
+      "elementId": "780972",
+      "elementKind": "MU",
+      "note": null,
+      "sheetId": "2479011",
+      "pdf": "/casa-angel/rubros/equipamiento/EQ-F-MU-13.pdf",
+      "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-13.svg.gz",
+      "preview": "/casa-angel/rubros/equipamiento/EQ-F-MU-13-preview.png",
+      "thumbnail": "/casa-angel/rubros/equipamiento/EQ-F-MU-13.png",
+      "views": [
+        {
+          "id": "2478954",
+          "name": "MU-13 · planta",
+          "label": "MU-13 · planta   1:10",
+          "scale": 10,
+          "kind": "plan",
+          "sector": "03 · Cuarto B Inv. 03 · PB",
+          "roomLabel": "03 · Cuarto B Inv. 03 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-13-view-2478954.svg.gz",
+          "region": [
+            0.1234,
+            0.301,
+            0.3731,
+            0.6812
+          ],
+          "tags": [
+            "MU-13"
+          ],
+          "dimensions": [
+            {
+              "label": "MU-13 en X",
+              "values_m": [
+                0.4264
+              ],
+              "associative": false
+            },
+            {
+              "label": "MU-13 en Y",
+              "values_m": [
+                0.6
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "MU-13",
+              "elementId": "780972",
+              "label": "MU-13 · mesa de luz · 0,60 × 0,43 × 0,20",
+              "box": [
+                0.4076,
+                0.3791,
+                0.5924,
+                0.6209
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2478981",
+          "name": "MU-13 · alzado frontal",
+          "label": "MU-13 · alzado frontal   1:10",
+          "scale": 10,
+          "kind": "elevation",
+          "sector": "03 · Cuarto B Inv. 03 · PB",
+          "roomLabel": "03 · Cuarto B Inv. 03 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-13-view-2478981.svg.gz",
+          "region": [
+            0.4496,
+            0.212,
+            0.7173,
+            0.378
+          ],
+          "tags": [
+            "MU-13"
+          ],
+          "dimensions": [
+            {
+              "label": "MU-13 ancho",
+              "values_m": [
+                0.6
+              ],
+              "associative": false
+            },
+            {
+              "label": "MU-13 nivel + alto",
+              "values_m": [
+                0.1,
+                0.2
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "MU-13",
+              "elementId": "780972",
+              "label": "MU-13 · mesa de luz · 0,60 × 0,43 × 0,20",
+              "box": [
+                0.3626,
+                0.5,
+                0.6051,
+                0.6848
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2479000",
+          "name": "MU-13 · axonométrica",
+          "label": "MU-13 · axonométrica   1:10",
+          "scale": 10,
+          "kind": "axo",
+          "sector": "03 · Cuarto B Inv. 03 · PB",
+          "roomLabel": "03 · Cuarto B Inv. 03 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-13-view-2479000.svg.gz",
+          "region": [
+            0.4447,
+            0.466,
+            0.7223,
+            0.7701
+          ],
+          "tags": [
+            "MU-13"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "MU-13",
+              "elementId": "780972",
+              "label": "MU-13 · mesa de luz · 0,60 × 0,43 × 0,20",
+              "box": [
+                0.3586,
+                0.3698,
+                0.6414,
+                0.6302
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EQ-F-MU-14",
+      "title": "Ficha · MU-14 mesa de luz",
+      "level": "00. Planta Baja",
+      "sector": "05 · Cuarto C Inv. 05 · PB",
+      "kind": "element",
+      "element": "MU-14",
+      "elementId": "1243438",
+      "elementKind": "MU",
+      "note": null,
+      "sheetId": "2479093",
+      "pdf": "/casa-angel/rubros/equipamiento/EQ-F-MU-14.pdf",
+      "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-14.svg.gz",
+      "preview": "/casa-angel/rubros/equipamiento/EQ-F-MU-14-preview.png",
+      "thumbnail": "/casa-angel/rubros/equipamiento/EQ-F-MU-14.png",
+      "views": [
+        {
+          "id": "2479036",
+          "name": "MU-14 · planta",
+          "label": "MU-14 · planta   1:10",
+          "scale": 10,
+          "kind": "plan",
+          "sector": "05 · Cuarto C Inv. 05 · PB",
+          "roomLabel": "05 · Cuarto C Inv. 05 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-14-view-2479036.svg.gz",
+          "region": [
+            0.1234,
+            0.301,
+            0.3731,
+            0.6812
+          ],
+          "tags": [
+            "MU-14"
+          ],
+          "dimensions": [
+            {
+              "label": "MU-14 en X",
+              "values_m": [
+                0.4264
+              ],
+              "associative": false
+            },
+            {
+              "label": "MU-14 en Y",
+              "values_m": [
+                0.6
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "MU-14",
+              "elementId": "1243438",
+              "label": "MU-14 · mesa de luz · 0,60 × 0,43 × 0,20",
+              "box": [
+                0.4076,
+                0.3791,
+                0.5924,
+                0.6209
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2479063",
+          "name": "MU-14 · alzado frontal",
+          "label": "MU-14 · alzado frontal   1:10",
+          "scale": 10,
+          "kind": "elevation",
+          "sector": "05 · Cuarto C Inv. 05 · PB",
+          "roomLabel": "05 · Cuarto C Inv. 05 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-14-view-2479063.svg.gz",
+          "region": [
+            0.4496,
+            0.212,
+            0.7173,
+            0.378
+          ],
+          "tags": [
+            "MU-14"
+          ],
+          "dimensions": [
+            {
+              "label": "MU-14 ancho",
+              "values_m": [
+                0.6
+              ],
+              "associative": false
+            },
+            {
+              "label": "MU-14 nivel + alto",
+              "values_m": [
+                0.1,
+                0.2
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "MU-14",
+              "elementId": "1243438",
+              "label": "MU-14 · mesa de luz · 0,60 × 0,43 × 0,20",
+              "box": [
+                0.3626,
+                0.5,
+                0.6051,
+                0.6848
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2479082",
+          "name": "MU-14 · axonométrica",
+          "label": "MU-14 · axonométrica   1:10",
+          "scale": 10,
+          "kind": "axo",
+          "sector": "05 · Cuarto C Inv. 05 · PB",
+          "roomLabel": "05 · Cuarto C Inv. 05 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-MU-14-view-2479082.svg.gz",
+          "region": [
+            0.4447,
+            0.466,
+            0.7223,
+            0.7701
+          ],
+          "tags": [
+            "MU-14"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "MU-14",
+              "elementId": "1243438",
+              "label": "MU-14 · mesa de luz · 0,60 × 0,43 × 0,20",
+              "box": [
+                0.3586,
+                0.3698,
+                0.6414,
+                0.6302
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EQ-F-PL-01",
+      "title": "Ficha · PL-01 placard",
+      "level": "00. Planta Baja",
+      "sector": "13 · Cuarto ppal 13 · PB",
+      "kind": "element",
+      "element": "PL-01",
+      "elementId": "778835",
+      "elementKind": "PL",
+      "note": null,
+      "sheetId": "2477625",
+      "pdf": "/casa-angel/rubros/equipamiento/EQ-F-PL-01.pdf",
+      "image": "/casa-angel/rubros/equipamiento/EQ-F-PL-01.svg.gz",
+      "preview": "/casa-angel/rubros/equipamiento/EQ-F-PL-01-preview.png",
+      "thumbnail": "/casa-angel/rubros/equipamiento/EQ-F-PL-01.png",
+      "views": [
+        {
+          "id": "2477569",
+          "name": "PL-01 · planta",
+          "label": "PL-01 · planta   1:15",
+          "scale": 15,
+          "kind": "plan",
+          "sector": "13 · Cuarto ppal 13 · PB",
+          "roomLabel": "13 · Cuarto ppal 13 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-PL-01-view-2477569.svg.gz",
+          "region": [
+            0.1293,
+            0.3673,
+            0.4476,
+            0.6148
+          ],
+          "tags": [
+            "PL-01"
+          ],
+          "dimensions": [
+            {
+              "label": "PL-01 en X",
+              "values_m": [
+                2.49
+              ],
+              "associative": false
+            },
+            {
+              "label": "PL-01 en Y",
+              "values_m": [
+                0.5
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "PL-01",
+              "elementId": "778835",
+              "label": "PL-01 · placard · 2,49 × 0,50 × 1,93",
+              "box": [
+                0.2179,
+                0.3968,
+                0.7821,
+                0.6032
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2477596",
+          "name": "PL-01 · alzado frontal",
+          "label": "PL-01 · alzado frontal   1:20",
+          "scale": 20,
+          "kind": "elevation",
+          "sector": "13 · Cuarto ppal 13 · PB",
+          "roomLabel": "13 · Cuarto ppal 13 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-PL-01-view-2477596.svg.gz",
+          "region": [
+            0.4831,
+            0.219,
+            0.7643,
+            0.4404
+          ],
+          "tags": [
+            "PL-01"
+          ],
+          "dimensions": [
+            {
+              "label": "PL-01 ancho",
+              "values_m": [
+                2.49
+              ],
+              "associative": false
+            },
+            {
+              "label": "PL-01 nivel + alto",
+              "values_m": [
+                1.9251
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "PL-01",
+              "elementId": "778835",
+              "label": "PL-01 · placard · 2,49 × 0,50 × 1,93",
+              "box": [
+                0.2605,
+                0.2015,
+                0.7395,
+                0.8677
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2477614",
+          "name": "PL-01 · axonométrica",
+          "label": "PL-01 · axonométrica   1:30",
+          "scale": 30,
+          "kind": "axo",
+          "sector": "13 · Cuarto ppal 13 · PB",
+          "roomLabel": "13 · Cuarto ppal 13 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-PL-01-view-2477614.svg.gz",
+          "region": [
+            0.5494,
+            0.5423,
+            0.698,
+            0.7632
+          ],
+          "tags": [
+            "PL-01"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "PL-01",
+              "elementId": "778835",
+              "label": "PL-01 · placard · 2,49 × 0,50 × 1,93",
+              "box": [
+                0.2433,
+                0.1888,
+                0.7567,
+                0.8112
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EQ-F-PL-02",
+      "title": "Ficha · PL-02 placard",
+      "level": "00. Planta Baja",
+      "sector": "14 · Vestidor ppal 14 · PB",
+      "kind": "element",
+      "element": "PL-02",
+      "elementId": "786205",
+      "elementKind": "PL",
+      "note": null,
+      "sheetId": "2477706",
+      "pdf": "/casa-angel/rubros/equipamiento/EQ-F-PL-02.pdf",
+      "image": "/casa-angel/rubros/equipamiento/EQ-F-PL-02.svg.gz",
+      "preview": "/casa-angel/rubros/equipamiento/EQ-F-PL-02-preview.png",
+      "thumbnail": "/casa-angel/rubros/equipamiento/EQ-F-PL-02.png",
+      "views": [
+        {
+          "id": "2477650",
+          "name": "PL-02 · planta",
+          "label": "PL-02 · planta   1:25",
+          "scale": 25,
+          "kind": "plan",
+          "sector": "14 · Vestidor ppal 14 · PB",
+          "roomLabel": "14 · Vestidor ppal 14 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-PL-02-view-2477650.svg.gz",
+          "region": [
+            0.3113,
+            0.1878,
+            0.5874,
+            0.3421
+          ],
+          "tags": [
+            "PL-02"
+          ],
+          "dimensions": [
+            {
+              "label": "PL-02 en X",
+              "values_m": [
+                4.375
+              ],
+              "associative": false
+            },
+            {
+              "label": "PL-02 en Y",
+              "values_m": [
+                0.5106
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "PL-02",
+              "elementId": "786205",
+              "label": "PL-02 · placard · 4,38 × 0,51 × 2,70",
+              "box": [
+                0.1571,
+                0.3985,
+                0.8429,
+                0.6015
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2477677",
+          "name": "PL-02 · alzado frontal",
+          "label": "PL-02 · alzado frontal   1:25",
+          "scale": 25,
+          "kind": "elevation",
+          "sector": "14 · Vestidor ppal 14 · PB",
+          "roomLabel": "14 · Vestidor ppal 14 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-PL-02-view-2477677.svg.gz",
+          "region": [
+            0.1243,
+            0.4742,
+            0.4471,
+            0.7017
+          ],
+          "tags": [
+            "PL-02"
+          ],
+          "dimensions": [
+            {
+              "label": "PL-02 ancho",
+              "values_m": [
+                4.375
+              ],
+              "associative": false
+            },
+            {
+              "label": "PL-02 nivel + alto",
+              "values_m": [
+                2.7048
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "PL-02",
+              "elementId": "786205",
+              "label": "PL-02 · placard · 4,38 × 0,51 × 2,70",
+              "box": [
+                0.2068,
+                0.1624,
+                0.7932,
+                0.8915
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2477695",
+          "name": "PL-02 · axonométrica",
+          "label": "PL-02 · axonométrica   1:25",
+          "scale": 25,
+          "kind": "axo",
+          "sector": "14 · Vestidor ppal 14 · PB",
+          "roomLabel": "14 · Vestidor ppal 14 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-PL-02-view-2477695.svg.gz",
+          "region": [
+            0.5037,
+            0.4164,
+            0.7381,
+            0.7595
+          ],
+          "tags": [
+            "PL-02"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "PL-02",
+              "elementId": "786205",
+              "label": "PL-02 · placard · 4,38 × 0,51 × 2,70",
+              "box": [
+                0.1812,
+                0.1421,
+                0.8188,
+                0.8579
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EQ-F-PL-03",
+      "title": "Ficha · PL-03 placard",
+      "level": "00. Planta Baja",
+      "sector": "01 · Cuarto A Inv. 01 · PB",
+      "kind": "element",
+      "element": "PL-03",
+      "elementId": "781452",
+      "elementKind": "PL",
+      "note": null,
+      "sheetId": "2477787",
+      "pdf": "/casa-angel/rubros/equipamiento/EQ-F-PL-03.pdf",
+      "image": "/casa-angel/rubros/equipamiento/EQ-F-PL-03.svg.gz",
+      "preview": "/casa-angel/rubros/equipamiento/EQ-F-PL-03-preview.png",
+      "thumbnail": "/casa-angel/rubros/equipamiento/EQ-F-PL-03.png",
+      "views": [
+        {
+          "id": "2477731",
+          "name": "PL-03 · planta",
+          "label": "PL-03 · planta   1:20",
+          "scale": 20,
+          "kind": "plan",
+          "sector": "01 · Cuarto A Inv. 01 · PB",
+          "roomLabel": "01 · Cuarto A Inv. 01 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-PL-03-view-2477731.svg.gz",
+          "region": [
+            0.1185,
+            0.2933,
+            0.2573,
+            0.6888
+          ],
+          "tags": [
+            "PL-03"
+          ],
+          "dimensions": [
+            {
+              "label": "PL-03 en X",
+              "values_m": [
+                0.6
+              ],
+              "associative": false
+            },
+            {
+              "label": "PL-03 en Y",
+              "values_m": [
+                3.2
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "PL-03",
+              "elementId": "781452",
+              "label": "PL-03 · placard · 3,20 × 0,60 × 2,80",
+              "box": [
+                0.383,
+                0.1902,
+                0.617,
+                0.8098
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2477758",
+          "name": "PL-03 · alzado frontal",
+          "label": "PL-03 · alzado frontal   1:20",
+          "scale": 20,
+          "kind": "elevation",
+          "sector": "01 · Cuarto A Inv. 01 · PB",
+          "roomLabel": "01 · Cuarto A Inv. 01 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-PL-03-view-2477758.svg.gz",
+          "region": [
+            0.232,
+            0.3469,
+            0.5515,
+            0.6352
+          ],
+          "tags": [
+            "PL-03"
+          ],
+          "dimensions": [
+            {
+              "label": "PL-03 ancho",
+              "values_m": [
+                3.2
+              ],
+              "associative": false
+            },
+            {
+              "label": "PL-03 nivel + alto",
+              "values_m": [
+                2.8
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "PL-03",
+              "elementId": "781452",
+              "label": "PL-03 · placard · 3,20 × 0,60 × 2,80",
+              "box": [
+                0.2292,
+                0.1546,
+                0.7708,
+                0.8985
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2477776",
+          "name": "PL-03 · axonométrica",
+          "label": "PL-03 · axonométrica   1:20",
+          "scale": 20,
+          "kind": "axo",
+          "sector": "01 · Cuarto A Inv. 01 · PB",
+          "roomLabel": "01 · Cuarto A Inv. 01 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-PL-03-view-2477776.svg.gz",
+          "region": [
+            0.5286,
+            0.2888,
+            0.7779,
+            0.6933
+          ],
+          "tags": [
+            "PL-03"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "PL-03",
+              "elementId": "781452",
+              "label": "PL-03 · placard · 3,20 × 0,60 × 2,80",
+              "box": [
+                0.2085,
+                0.1467,
+                0.7915,
+                0.8533
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EQ-F-PL-04",
+      "title": "Ficha · PL-04 placard",
+      "level": "00. Planta Baja",
+      "sector": "03 · Cuarto B Inv. 03 · PB",
+      "kind": "element",
+      "element": "PL-04",
+      "elementId": "2143061",
+      "elementKind": "PL",
+      "note": null,
+      "sheetId": "2477868",
+      "pdf": "/casa-angel/rubros/equipamiento/EQ-F-PL-04.pdf",
+      "image": "/casa-angel/rubros/equipamiento/EQ-F-PL-04.svg.gz",
+      "preview": "/casa-angel/rubros/equipamiento/EQ-F-PL-04-preview.png",
+      "thumbnail": "/casa-angel/rubros/equipamiento/EQ-F-PL-04.png",
+      "views": [
+        {
+          "id": "2477812",
+          "name": "PL-04 · planta",
+          "label": "PL-04 · planta   1:20",
+          "scale": 20,
+          "kind": "plan",
+          "sector": "03 · Cuarto B Inv. 03 · PB",
+          "roomLabel": "03 · Cuarto B Inv. 03 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-PL-04-view-2477812.svg.gz",
+          "region": [
+            0.1187,
+            0.2933,
+            0.2571,
+            0.6888
+          ],
+          "tags": [
+            "PL-04"
+          ],
+          "dimensions": [
+            {
+              "label": "PL-04 en X",
+              "values_m": [
+                0.5916
+              ],
+              "associative": false
+            },
+            {
+              "label": "PL-04 en Y",
+              "values_m": [
+                3.2
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "PL-04",
+              "elementId": "2143061",
+              "label": "PL-04 · placard · 3,20 × 0,59 × 2,80",
+              "box": [
+                0.3843,
+                0.1902,
+                0.6157,
+                0.8098
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2477839",
+          "name": "PL-04 · alzado frontal",
+          "label": "PL-04 · alzado frontal   1:20",
+          "scale": 20,
+          "kind": "elevation",
+          "sector": "03 · Cuarto B Inv. 03 · PB",
+          "roomLabel": "03 · Cuarto B Inv. 03 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-PL-04-view-2477839.svg.gz",
+          "region": [
+            0.2321,
+            0.3469,
+            0.5516,
+            0.6352
+          ],
+          "tags": [
+            "PL-04"
+          ],
+          "dimensions": [
+            {
+              "label": "PL-04 ancho",
+              "values_m": [
+                3.2
+              ],
+              "associative": false
+            },
+            {
+              "label": "PL-04 nivel + alto",
+              "values_m": [
+                2.8
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "PL-04",
+              "elementId": "2143061",
+              "label": "PL-04 · placard · 3,20 × 0,59 × 2,80",
+              "box": [
+                0.2292,
+                0.1546,
+                0.7708,
+                0.8985
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2477857",
+          "name": "PL-04 · axonométrica",
+          "label": "PL-04 · axonométrica   1:20",
+          "scale": 20,
+          "kind": "axo",
+          "sector": "03 · Cuarto B Inv. 03 · PB",
+          "roomLabel": "03 · Cuarto B Inv. 03 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-PL-04-view-2477857.svg.gz",
+          "region": [
+            0.5288,
+            0.2889,
+            0.7778,
+            0.6932
+          ],
+          "tags": [
+            "PL-04"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "PL-04",
+              "elementId": "2143061",
+              "label": "PL-04 · placard · 3,20 × 0,59 × 2,80",
+              "box": [
+                0.2088,
+                0.1468,
+                0.7912,
+                0.8532
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EQ-F-PL-05",
+      "title": "Ficha · PL-05 placard",
+      "level": "00. Planta Baja",
+      "sector": "05 · Cuarto C Inv. 05 · PB",
+      "kind": "element",
+      "element": "PL-05",
+      "elementId": "1243563",
+      "elementKind": "PL",
+      "note": null,
+      "sheetId": "2477949",
+      "pdf": "/casa-angel/rubros/equipamiento/EQ-F-PL-05.pdf",
+      "image": "/casa-angel/rubros/equipamiento/EQ-F-PL-05.svg.gz",
+      "preview": "/casa-angel/rubros/equipamiento/EQ-F-PL-05-preview.png",
+      "thumbnail": "/casa-angel/rubros/equipamiento/EQ-F-PL-05.png",
+      "views": [
+        {
+          "id": "2477893",
+          "name": "PL-05 · planta",
+          "label": "PL-05 · planta   1:20",
+          "scale": 20,
+          "kind": "plan",
+          "sector": "05 · Cuarto C Inv. 05 · PB",
+          "roomLabel": "05 · Cuarto C Inv. 05 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-PL-05-view-2477893.svg.gz",
+          "region": [
+            0.1238,
+            0.2933,
+            0.252,
+            0.6888
+          ],
+          "tags": [
+            "PL-05"
+          ],
+          "dimensions": [
+            {
+              "label": "PL-05 en X",
+              "values_m": [
+                0.4051
+              ],
+              "associative": false
+            },
+            {
+              "label": "PL-05 en Y",
+              "values_m": [
+                3.2
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "PL-05",
+              "elementId": "1243563",
+              "label": "PL-05 · placard · 3,20 × 0,41 × 2,80",
+              "box": [
+                0.4145,
+                0.1902,
+                0.5855,
+                0.8098
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2477920",
+          "name": "PL-05 · alzado frontal",
+          "label": "PL-05 · alzado frontal   1:20",
+          "scale": 20,
+          "kind": "elevation",
+          "sector": "05 · Cuarto C Inv. 05 · PB",
+          "roomLabel": "05 · Cuarto C Inv. 05 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-PL-05-view-2477920.svg.gz",
+          "region": [
+            0.2339,
+            0.3469,
+            0.5534,
+            0.6352
+          ],
+          "tags": [
+            "PL-05"
+          ],
+          "dimensions": [
+            {
+              "label": "PL-05 ancho",
+              "values_m": [
+                3.2
+              ],
+              "associative": false
+            },
+            {
+              "label": "PL-05 nivel + alto",
+              "values_m": [
+                2.8
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "PL-05",
+              "elementId": "1243563",
+              "label": "PL-05 · placard · 3,20 × 0,41 × 2,80",
+              "box": [
+                0.2292,
+                0.1546,
+                0.7708,
+                0.8985
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2477938",
+          "name": "PL-05 · axonométrica",
+          "label": "PL-05 · axonométrica   1:20",
+          "scale": 20,
+          "kind": "axo",
+          "sector": "05 · Cuarto C Inv. 05 · PB",
+          "roomLabel": "05 · Cuarto C Inv. 05 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-PL-05-view-2477938.svg.gz",
+          "region": [
+            0.5342,
+            0.2912,
+            0.7761,
+            0.6909
+          ],
+          "tags": [
+            "PL-05"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "PL-05",
+              "elementId": "1243563",
+              "label": "PL-05 · placard · 3,20 × 0,41 × 2,80",
+              "box": [
+                0.2149,
+                0.1486,
+                0.7851,
+                0.8514
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EQ-F-VA-01",
+      "title": "Ficha · VA-01 vanitorio",
+      "level": "01. Planta Alta",
+      "sector": "05 · Toilette 05 · PA",
+      "kind": "element",
+      "element": "VA-01",
+      "elementId": "1416664",
+      "elementKind": "VA",
+      "note": null,
+      "sheetId": "2479175",
+      "pdf": "/casa-angel/rubros/equipamiento/EQ-F-VA-01.pdf",
+      "image": "/casa-angel/rubros/equipamiento/EQ-F-VA-01.svg.gz",
+      "preview": "/casa-angel/rubros/equipamiento/EQ-F-VA-01-preview.png",
+      "thumbnail": "/casa-angel/rubros/equipamiento/EQ-F-VA-01.png",
+      "views": [
+        {
+          "id": "2479118",
+          "name": "VA-01 · planta",
+          "label": "VA-01 · planta   1:15",
+          "scale": 15,
+          "kind": "plan",
+          "sector": "05 · Toilette 05 · PA",
+          "roomLabel": "05 · Toilette 05 · PA",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-VA-01-view-2479118.svg.gz",
+          "region": [
+            0.1295,
+            0.3622,
+            0.4072,
+            0.6199
+          ],
+          "tags": [
+            "VA-01"
+          ],
+          "dimensions": [
+            {
+              "label": "VA-01 en X",
+              "values_m": [
+                1.9273
+              ],
+              "associative": false
+            },
+            {
+              "label": "VA-01 en Y",
+              "values_m": [
+                0.6
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "VA-01",
+              "elementId": "1416664",
+              "label": "VA-01 · vanitorio · 1,93 × 0,60 × 0,30",
+              "box": [
+                0.2497,
+                0.3811,
+                0.7503,
+                0.6189
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2479145",
+          "name": "VA-01 · alzado frontal",
+          "label": "VA-01 · alzado frontal   1:10",
+          "scale": 10,
+          "kind": "elevation",
+          "sector": "05 · Toilette 05 · PA",
+          "roomLabel": "05 · Toilette 05 · PA",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-VA-01-view-2479145.svg.gz",
+          "region": [
+            0.43,
+            0.2176,
+            0.7772,
+            0.3988
+          ],
+          "tags": [
+            "VA-01"
+          ],
+          "dimensions": [
+            {
+              "label": "VA-01 ancho",
+              "values_m": [
+                1.9273
+              ],
+              "associative": false
+            },
+            {
+              "label": "VA-01 nivel + alto",
+              "values_m": [
+                0.4,
+                0.2998
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "VA-01",
+              "elementId": "1416664",
+              "label": "VA-01 · vanitorio · 1,93 × 0,60 × 0,30",
+              "box": [
+                0.1997,
+                0.4578,
+                0.8003,
+                0.7114
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2479164",
+          "name": "VA-01 · axonométrica",
+          "label": "VA-01 · axonométrica   1:15",
+          "scale": 15,
+          "kind": "axo",
+          "sector": "05 · Toilette 05 · PA",
+          "roomLabel": "05 · Toilette 05 · PA",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-VA-01-view-2479164.svg.gz",
+          "region": [
+            0.4713,
+            0.4978,
+            0.7359,
+            0.7646
+          ],
+          "tags": [
+            "VA-01"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "VA-01",
+              "elementId": "1416664",
+              "label": "VA-01 · vanitorio · 1,93 × 0,60 × 0,30",
+              "box": [
+                0.2564,
+                0.289,
+                0.7436,
+                0.711
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EQ-F-VA-02",
+      "title": "Ficha · VA-02 vanitorio",
+      "level": "01. Planta Alta",
+      "sector": "04 · Baño PA 04 · PA",
+      "kind": "element",
+      "element": "VA-02",
+      "elementId": "890034",
+      "elementKind": "VA",
+      "note": null,
+      "sheetId": "2479257",
+      "pdf": "/casa-angel/rubros/equipamiento/EQ-F-VA-02.pdf",
+      "image": "/casa-angel/rubros/equipamiento/EQ-F-VA-02.svg.gz",
+      "preview": "/casa-angel/rubros/equipamiento/EQ-F-VA-02-preview.png",
+      "thumbnail": "/casa-angel/rubros/equipamiento/EQ-F-VA-02.png",
+      "views": [
+        {
+          "id": "2479200",
+          "name": "VA-02 · planta",
+          "label": "VA-02 · planta   1:10",
+          "scale": 10,
+          "kind": "plan",
+          "sector": "04 · Baño PA 04 · PA",
+          "roomLabel": "04 · Baño PA 04 · PA",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-VA-02-view-2479200.svg.gz",
+          "region": [
+            0.1198,
+            0.2421,
+            0.3767,
+            0.74
+          ],
+          "tags": [
+            "VA-02"
+          ],
+          "dimensions": [
+            {
+              "label": "VA-02 en X",
+              "values_m": [
+                0.493
+              ],
+              "associative": false
+            },
+            {
+              "label": "VA-02 en Y",
+              "values_m": [
+                1.369
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "VA-02",
+              "elementId": "890034",
+              "label": "VA-02 · vanitorio · 1,37 × 0,49 × 0,06",
+              "box": [
+                0.3962,
+                0.2895,
+                0.6038,
+                0.7105
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2479227",
+          "name": "VA-02 · alzado frontal",
+          "label": "VA-02 · alzado frontal   1:10",
+          "scale": 10,
+          "kind": "elevation",
+          "sector": "04 · Baño PA 04 · PA",
+          "roomLabel": "04 · Baño PA 04 · PA",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-VA-02-view-2479227.svg.gz",
+          "region": [
+            0.4401,
+            0.2112,
+            0.7269,
+            0.3564
+          ],
+          "tags": [
+            "VA-02"
+          ],
+          "dimensions": [
+            {
+              "label": "VA-02 ancho",
+              "values_m": [
+                1.369
+              ],
+              "associative": false
+            },
+            {
+              "label": "VA-02 nivel + alto",
+              "values_m": [
+                1.0,
+                0.065
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "VA-02",
+              "elementId": "890034",
+              "label": "VA-02 · vanitorio · 1,37 × 0,49 × 0,06",
+              "box": [
+                0.2418,
+                0.5713,
+                0.7582,
+                0.6399
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2479246",
+          "name": "VA-02 · axonométrica",
+          "label": "VA-02 · axonométrica   1:10",
+          "scale": 10,
+          "kind": "axo",
+          "sector": "04 · Baño PA 04 · PA",
+          "roomLabel": "04 · Baño PA 04 · PA",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-VA-02-view-2479246.svg.gz",
+          "region": [
+            0.4127,
+            0.4427,
+            0.7542,
+            0.7709
+          ],
+          "tags": [
+            "VA-02"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "VA-02",
+              "elementId": "890034",
+              "label": "VA-02 · vanitorio · 1,37 × 0,49 × 0,06",
+              "box": [
+                0.2915,
+                0.3426,
+                0.7085,
+                0.6574
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EQ-F-VA-03",
+      "title": "Ficha · VA-03 vanitorio",
+      "level": "00. Planta Baja",
+      "sector": "07 · Toilette Servicio 07 · PB",
+      "kind": "element",
+      "element": "VA-03",
+      "elementId": "1421669",
+      "elementKind": "VA",
+      "note": null,
+      "sheetId": "2479339",
+      "pdf": "/casa-angel/rubros/equipamiento/EQ-F-VA-03.pdf",
+      "image": "/casa-angel/rubros/equipamiento/EQ-F-VA-03.svg.gz",
+      "preview": "/casa-angel/rubros/equipamiento/EQ-F-VA-03-preview.png",
+      "thumbnail": "/casa-angel/rubros/equipamiento/EQ-F-VA-03.png",
+      "views": [
+        {
+          "id": "2479282",
+          "name": "VA-03 · planta",
+          "label": "VA-03 · planta   1:10",
+          "scale": 10,
+          "kind": "plan",
+          "sector": "07 · Toilette Servicio 07 · PB",
+          "roomLabel": "07 · Toilette Servicio 07 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-VA-03-view-2479282.svg.gz",
+          "region": [
+            0.1341,
+            0.2187,
+            0.4026,
+            0.7634
+          ],
+          "tags": [
+            "VA-03"
+          ],
+          "dimensions": [
+            {
+              "label": "VA-03 en X",
+              "values_m": [
+                0.6
+              ],
+              "associative": false
+            },
+            {
+              "label": "VA-03 en Y",
+              "values_m": [
+                1.675
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "VA-03",
+              "elementId": "1421669",
+              "label": "VA-03 · vanitorio · 1,67 × 0,60 × 0,55",
+              "box": [
+                0.3791,
+                0.2646,
+                0.6209,
+                0.7354
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2479309",
+          "name": "VA-03 · alzado frontal",
+          "label": "VA-03 · alzado frontal   1:10",
+          "scale": 10,
+          "kind": "elevation",
+          "sector": "07 · Toilette Servicio 07 · PB",
+          "roomLabel": "07 · Toilette Servicio 07 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-VA-03-view-2479309.svg.gz",
+          "region": [
+            0.4073,
+            0.2213,
+            0.7998,
+            0.4406
+          ],
+          "tags": [
+            "VA-03"
+          ],
+          "dimensions": [
+            {
+              "label": "VA-03 ancho",
+              "values_m": [
+                1.675
+              ],
+              "associative": false
+            },
+            {
+              "label": "VA-03 nivel + alto",
+              "values_m": [
+                0.15,
+                0.549
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "VA-03",
+              "elementId": "1421669",
+              "label": "VA-03 · vanitorio · 1,67 × 0,60 × 0,55",
+              "box": [
+                0.2692,
+                0.3781,
+                0.7308,
+                0.7617
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2479328",
+          "name": "VA-03 · axonométrica",
+          "label": "VA-03 · axonométrica   1:20",
+          "scale": 20,
+          "kind": "axo",
+          "sector": "07 · Toilette Servicio 07 · PB",
+          "roomLabel": "07 · Toilette Servicio 07 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-VA-03-view-2479328.svg.gz",
+          "region": [
+            0.508,
+            0.5471,
+            0.6991,
+            0.7608
+          ],
+          "tags": [
+            "VA-03"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "VA-03",
+              "elementId": "1421669",
+              "label": "VA-03 · vanitorio · 1,67 × 0,60 × 0,55",
+              "box": [
+                0.2722,
+                0.2779,
+                0.7278,
+                0.7221
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EQ-F-VA-04",
+      "title": "Ficha · VA-04 vanitorio",
+      "level": "00. Planta Baja",
+      "sector": "15 · Baño ppal 15 · PB",
+      "kind": "element",
+      "element": "VA-04",
+      "elementId": "1250078",
+      "elementKind": "VA",
+      "note": null,
+      "sheetId": "2479421",
+      "pdf": "/casa-angel/rubros/equipamiento/EQ-F-VA-04.pdf",
+      "image": "/casa-angel/rubros/equipamiento/EQ-F-VA-04.svg.gz",
+      "preview": "/casa-angel/rubros/equipamiento/EQ-F-VA-04-preview.png",
+      "thumbnail": "/casa-angel/rubros/equipamiento/EQ-F-VA-04.png",
+      "views": [
+        {
+          "id": "2479364",
+          "name": "VA-04 · planta",
+          "label": "VA-04 · planta   1:15",
+          "scale": 15,
+          "kind": "plan",
+          "sector": "15 · Baño ppal 15 · PB",
+          "roomLabel": "15 · Baño ppal 15 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-VA-04-view-2479364.svg.gz",
+          "region": [
+            0.1192,
+            0.2379,
+            0.2968,
+            0.7442
+          ],
+          "tags": [
+            "VA-04"
+          ],
+          "dimensions": [
+            {
+              "label": "VA-04 en X",
+              "values_m": [
+                0.5383
+              ],
+              "associative": false
+            },
+            {
+              "label": "VA-04 en Y",
+              "values_m": [
+                3.0355
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "VA-04",
+              "elementId": "1250078",
+              "label": "VA-04 · vanitorio · 3,04 × 0,54 × 0,65",
+              "box": [
+                0.3907,
+                0.1939,
+                0.6093,
+                0.8061
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2479391",
+          "name": "VA-04 · alzado frontal",
+          "label": "VA-04 · alzado frontal   1:10",
+          "scale": 10,
+          "kind": "elevation",
+          "sector": "15 · Baño ppal 15 · PB",
+          "roomLabel": "15 · Baño ppal 15 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-VA-04-view-2479391.svg.gz",
+          "region": [
+            0.2778,
+            0.2197,
+            0.8087,
+            0.4538
+          ],
+          "tags": [
+            "VA-04"
+          ],
+          "dimensions": [
+            {
+              "label": "VA-04 ancho",
+              "values_m": [
+                3.0355
+              ],
+              "associative": false
+            },
+            {
+              "label": "VA-04 nivel + alto",
+              "values_m": [
+                0.4,
+                0.6454
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "VA-04",
+              "elementId": "1250078",
+              "label": "VA-04 · vanitorio · 3,04 × 0,54 × 0,65",
+              "box": [
+                0.199,
+                0.3542,
+                0.8173,
+                0.7767
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2479410",
+          "name": "VA-04 · axonométrica",
+          "label": "VA-04 · axonométrica   1:25",
+          "scale": 25,
+          "kind": "axo",
+          "sector": "15 · Baño ppal 15 · PB",
+          "roomLabel": "15 · Baño ppal 15 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-VA-04-view-2479410.svg.gz",
+          "region": [
+            0.446,
+            0.5573,
+            0.6404,
+            0.7624
+          ],
+          "tags": [
+            "VA-04"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "VA-04",
+              "elementId": "1250078",
+              "label": "VA-04 · vanitorio · 3,04 × 0,54 × 0,65",
+              "box": [
+                0.2186,
+                0.2378,
+                0.7814,
+                0.7622
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EQ-F-VA-05",
+      "title": "Ficha · VA-05 vanitorio",
+      "level": "00. Planta Baja",
+      "sector": "02 · Baño A Inv. 02 · PB",
+      "kind": "element",
+      "element": "VA-05",
+      "elementId": "1250920",
+      "elementKind": "VA",
+      "note": null,
+      "sheetId": "2479503",
+      "pdf": "/casa-angel/rubros/equipamiento/EQ-F-VA-05.pdf",
+      "image": "/casa-angel/rubros/equipamiento/EQ-F-VA-05.svg.gz",
+      "preview": "/casa-angel/rubros/equipamiento/EQ-F-VA-05-preview.png",
+      "thumbnail": "/casa-angel/rubros/equipamiento/EQ-F-VA-05.png",
+      "views": [
+        {
+          "id": "2479446",
+          "name": "VA-05 · planta",
+          "label": "VA-05 · planta   1:10",
+          "scale": 10,
+          "kind": "plan",
+          "sector": "02 · Baño A Inv. 02 · PB",
+          "roomLabel": "02 · Baño A Inv. 02 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-VA-05-view-2479446.svg.gz",
+          "region": [
+            0.1341,
+            0.2359,
+            0.4026,
+            0.7462
+          ],
+          "tags": [
+            "VA-05"
+          ],
+          "dimensions": [
+            {
+              "label": "VA-05 en X",
+              "values_m": [
+                0.6
+              ],
+              "associative": false
+            },
+            {
+              "label": "VA-05 en Y",
+              "values_m": [
+                1.45
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "VA-05",
+              "elementId": "1250920",
+              "label": "VA-05 · vanitorio · 1,45 × 0,60 × 0,60",
+              "box": [
+                0.3791,
+                0.2824,
+                0.6209,
+                0.7176
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2479473",
+          "name": "VA-05 · alzado frontal",
+          "label": "VA-05 · alzado frontal   1:10",
+          "scale": 10,
+          "kind": "elevation",
+          "sector": "02 · Baño A Inv. 02 · PB",
+          "roomLabel": "02 · Baño A Inv. 02 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-VA-05-view-2479473.svg.gz",
+          "region": [
+            0.4238,
+            0.2199,
+            0.7833,
+            0.447
+          ],
+          "tags": [
+            "VA-05"
+          ],
+          "dimensions": [
+            {
+              "label": "VA-05 ancho",
+              "values_m": [
+                1.45
+              ],
+              "associative": false
+            },
+            {
+              "label": "VA-05 nivel + alto",
+              "values_m": [
+                0.4,
+                0.6
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "VA-05",
+              "elementId": "1250920",
+              "label": "VA-05 · vanitorio · 1,45 × 0,60 × 0,60",
+              "box": [
+                0.2939,
+                0.3651,
+                0.7301,
+                0.7699
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2479492",
+          "name": "VA-05 · axonométrica",
+          "label": "VA-05 · axonométrica   1:20",
+          "scale": 20,
+          "kind": "axo",
+          "sector": "02 · Baño A Inv. 02 · PB",
+          "roomLabel": "02 · Baño A Inv. 02 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-VA-05-view-2479492.svg.gz",
+          "region": [
+            0.5123,
+            0.5507,
+            0.6948,
+            0.7622
+          ],
+          "tags": [
+            "VA-05"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "VA-05",
+              "elementId": "1250920",
+              "label": "VA-05 · vanitorio · 1,45 × 0,60 × 0,60",
+              "box": [
+                0.285,
+                0.2809,
+                0.715,
+                0.7191
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EQ-F-VA-06",
+      "title": "Ficha · VA-06 vanitorio",
+      "level": "00. Planta Baja",
+      "sector": "04 · Baño B Inv. 04 · PB",
+      "kind": "element",
+      "element": "VA-06",
+      "elementId": "1250902",
+      "elementKind": "VA",
+      "note": null,
+      "sheetId": "2479585",
+      "pdf": "/casa-angel/rubros/equipamiento/EQ-F-VA-06.pdf",
+      "image": "/casa-angel/rubros/equipamiento/EQ-F-VA-06.svg.gz",
+      "preview": "/casa-angel/rubros/equipamiento/EQ-F-VA-06-preview.png",
+      "thumbnail": "/casa-angel/rubros/equipamiento/EQ-F-VA-06.png",
+      "views": [
+        {
+          "id": "2479528",
+          "name": "VA-06 · planta",
+          "label": "VA-06 · planta   1:10",
+          "scale": 10,
+          "kind": "plan",
+          "sector": "04 · Baño B Inv. 04 · PB",
+          "roomLabel": "04 · Baño B Inv. 04 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-VA-06-view-2479528.svg.gz",
+          "region": [
+            0.1341,
+            0.2378,
+            0.4026,
+            0.7443
+          ],
+          "tags": [
+            "VA-06"
+          ],
+          "dimensions": [
+            {
+              "label": "VA-06 en X",
+              "values_m": [
+                0.6
+              ],
+              "associative": false
+            },
+            {
+              "label": "VA-06 en Y",
+              "values_m": [
+                1.425
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "VA-06",
+              "elementId": "1250902",
+              "label": "VA-06 · vanitorio · 1,42 × 0,60 × 0,60",
+              "box": [
+                0.3791,
+                0.2846,
+                0.6209,
+                0.7154
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2479555",
+          "name": "VA-06 · alzado frontal",
+          "label": "VA-06 · alzado frontal   1:10",
+          "scale": 10,
+          "kind": "elevation",
+          "sector": "04 · Baño B Inv. 04 · PB",
+          "roomLabel": "04 · Baño B Inv. 04 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-VA-06-view-2479555.svg.gz",
+          "region": [
+            0.4252,
+            0.22,
+            0.782,
+            0.4472
+          ],
+          "tags": [
+            "VA-06"
+          ],
+          "dimensions": [
+            {
+              "label": "VA-06 ancho",
+              "values_m": [
+                1.425
+              ],
+              "associative": false
+            },
+            {
+              "label": "VA-06 nivel + alto",
+              "values_m": [
+                0.4,
+                0.6
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "VA-06",
+              "elementId": "1250902",
+              "label": "VA-06 · vanitorio · 1,42 × 0,60 × 0,60",
+              "box": [
+                0.2962,
+                0.3651,
+                0.7281,
+                0.7699
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2479574",
+          "name": "VA-06 · axonométrica",
+          "label": "VA-06 · axonométrica   1:20",
+          "scale": 20,
+          "kind": "axo",
+          "sector": "04 · Baño B Inv. 04 · PB",
+          "roomLabel": "04 · Baño B Inv. 04 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-VA-06-view-2479574.svg.gz",
+          "region": [
+            0.5128,
+            0.5512,
+            0.6943,
+            0.7621
+          ],
+          "tags": [
+            "VA-06"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "VA-06",
+              "elementId": "1250902",
+              "label": "VA-06 · vanitorio · 1,42 × 0,60 × 0,60",
+              "box": [
+                0.2866,
+                0.2818,
+                0.7134,
+                0.7182
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EQ-F-VA-07",
+      "title": "Ficha · VA-07 vanitorio",
+      "level": "00. Planta Baja",
+      "sector": "06 · Baño C Inv. 06 · PB",
+      "kind": "element",
+      "element": "VA-07",
+      "elementId": "1250533",
+      "elementKind": "VA",
+      "note": null,
+      "sheetId": "2479667",
+      "pdf": "/casa-angel/rubros/equipamiento/EQ-F-VA-07.pdf",
+      "image": "/casa-angel/rubros/equipamiento/EQ-F-VA-07.svg.gz",
+      "preview": "/casa-angel/rubros/equipamiento/EQ-F-VA-07-preview.png",
+      "thumbnail": "/casa-angel/rubros/equipamiento/EQ-F-VA-07.png",
+      "views": [
+        {
+          "id": "2479610",
+          "name": "VA-07 · planta",
+          "label": "VA-07 · planta   1:10",
+          "scale": 10,
+          "kind": "plan",
+          "sector": "06 · Baño C Inv. 06 · PB",
+          "roomLabel": "06 · Baño C Inv. 06 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-VA-07-view-2479610.svg.gz",
+          "region": [
+            0.1341,
+            0.2359,
+            0.4026,
+            0.7462
+          ],
+          "tags": [
+            "VA-07"
+          ],
+          "dimensions": [
+            {
+              "label": "VA-07 en X",
+              "values_m": [
+                0.6
+              ],
+              "associative": false
+            },
+            {
+              "label": "VA-07 en Y",
+              "values_m": [
+                1.45
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "VA-07",
+              "elementId": "1250533",
+              "label": "VA-07 · vanitorio · 1,45 × 0,60 × 0,60",
+              "box": [
+                0.3791,
+                0.2824,
+                0.6209,
+                0.7176
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2479637",
+          "name": "VA-07 · alzado frontal",
+          "label": "VA-07 · alzado frontal   1:10",
+          "scale": 10,
+          "kind": "elevation",
+          "sector": "06 · Baño C Inv. 06 · PB",
+          "roomLabel": "06 · Baño C Inv. 06 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-VA-07-view-2479637.svg.gz",
+          "region": [
+            0.4238,
+            0.2199,
+            0.7833,
+            0.447
+          ],
+          "tags": [
+            "VA-07"
+          ],
+          "dimensions": [
+            {
+              "label": "VA-07 ancho",
+              "values_m": [
+                1.45
+              ],
+              "associative": false
+            },
+            {
+              "label": "VA-07 nivel + alto",
+              "values_m": [
+                0.4,
+                0.6
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "VA-07",
+              "elementId": "1250533",
+              "label": "VA-07 · vanitorio · 1,45 × 0,60 × 0,60",
+              "box": [
+                0.2939,
+                0.3651,
+                0.7301,
+                0.7699
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2479656",
+          "name": "VA-07 · axonométrica",
+          "label": "VA-07 · axonométrica   1:20",
+          "scale": 20,
+          "kind": "axo",
+          "sector": "06 · Baño C Inv. 06 · PB",
+          "roomLabel": "06 · Baño C Inv. 06 · PB",
+          "image": "/casa-angel/rubros/equipamiento/EQ-F-VA-07-view-2479656.svg.gz",
+          "region": [
+            0.5123,
+            0.5507,
+            0.6948,
+            0.7622
+          ],
+          "tags": [
+            "VA-07"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "VA-07",
+              "elementId": "1250533",
+              "label": "VA-07 · vanitorio · 1,45 × 0,60 × 0,60",
+              "box": [
+                0.285,
+                0.2809,
+                0.715,
+                0.7191
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "codes": [
+    {
+      "code": "PL-01",
+      "kind": "PL",
+      "label": "PL-01 · placard · 2,49 × 0,50 × 1,93",
+      "status": "13 · Cuarto ppal 13 · 00. Planta Baja · in situ",
+      "elementId": "778835",
+      "type": "Armario6",
+      "room": "13 · Cuarto ppal 13",
+      "level": "00. Planta Baja",
+      "width_m": 2.49,
+      "depth_m": 0.5,
+      "height_m": 1.925,
+      "bottom_m": 0.0,
+      "length_m": 2.49,
+      "area_m2": 4.794,
+      "inPlace": true,
+      "materials": []
+    },
+    {
+      "code": "PL-02",
+      "kind": "PL",
+      "label": "PL-02 · placard · 4,38 × 0,51 × 2,70",
+      "status": "14 · Vestidor ppal 14 · 00. Planta Baja · in situ",
+      "elementId": "786205",
+      "type": "Armario4",
+      "room": "14 · Vestidor ppal 14",
+      "level": "00. Planta Baja",
+      "width_m": 4.375,
+      "depth_m": 0.511,
+      "height_m": 2.705,
+      "bottom_m": 0.0,
+      "length_m": 4.375,
+      "area_m2": 11.834,
+      "inPlace": true,
+      "materials": []
+    },
+    {
+      "code": "PL-03",
+      "kind": "PL",
+      "label": "PL-03 · placard · 3,20 × 0,60 × 2,80",
+      "status": "01 · Cuarto A Inv. 01 · 00. Planta Baja · in situ",
+      "elementId": "781452",
+      "type": "Armario3",
+      "room": "01 · Cuarto A Inv. 01",
+      "level": "00. Planta Baja",
+      "width_m": 3.2,
+      "depth_m": 0.6,
+      "height_m": 2.8,
+      "bottom_m": 0.0,
+      "length_m": 3.2,
+      "area_m2": 8.96,
+      "inPlace": true,
+      "materials": []
+    },
+    {
+      "code": "PL-04",
+      "kind": "PL",
+      "label": "PL-04 · placard · 3,20 × 0,59 × 2,80",
+      "status": "03 · Cuarto B Inv. 03 · 00. Planta Baja · in situ",
+      "elementId": "2143061",
+      "type": "Armario1",
+      "room": "03 · Cuarto B Inv. 03",
+      "level": "00. Planta Baja",
+      "width_m": 3.2,
+      "depth_m": 0.592,
+      "height_m": 2.8,
+      "bottom_m": 0.0,
+      "length_m": 3.2,
+      "area_m2": 8.96,
+      "inPlace": true,
+      "materials": []
+    },
+    {
+      "code": "PL-05",
+      "kind": "PL",
+      "label": "PL-05 · placard · 3,20 × 0,41 × 2,80",
+      "status": "05 · Cuarto C Inv. 05 · 00. Planta Baja · in situ",
+      "elementId": "1243563",
+      "type": "Armario5",
+      "room": "05 · Cuarto C Inv. 05",
+      "level": "00. Planta Baja",
+      "width_m": 3.2,
+      "depth_m": 0.405,
+      "height_m": 2.8,
+      "bottom_m": 0.0,
+      "length_m": 3.2,
+      "area_m2": 8.96,
+      "inPlace": true,
+      "materials": []
+    },
+    {
+      "code": "MU-01",
+      "kind": "MU",
+      "label": "MU-01 · vinoteca · 3,20 × 2,59 × 1,00",
+      "status": "06 · Cava 06 · 01. Planta Alta · in situ",
+      "elementId": "870143",
+      "type": "Mueble Vinoteca2",
+      "room": "06 · Cava 06",
+      "level": "01. Planta Alta",
+      "width_m": 3.205,
+      "depth_m": 2.59,
+      "height_m": 1.0,
+      "bottom_m": -0.0,
+      "length_m": 3.205,
+      "area_m2": 3.205,
+      "inPlace": true,
+      "materials": []
+    },
+    {
+      "code": "MU-02",
+      "kind": "MU",
+      "label": "MU-02 · vinoteca · 1,60 × 0,41 × 1,00",
+      "status": "06 · Cava 06 · 01. Planta Alta · in situ",
+      "elementId": "1452870",
+      "type": "Mueble Vinoteca1",
+      "room": "06 · Cava 06",
+      "level": "01. Planta Alta",
+      "width_m": 1.604,
+      "depth_m": 0.406,
+      "height_m": 1.0,
+      "bottom_m": -0.0,
+      "length_m": 1.604,
+      "area_m2": 1.604,
+      "inPlace": true,
+      "materials": []
+    },
+    {
+      "code": "MU-03",
+      "kind": "MU",
+      "label": "MU-03 · mueble de pared · 1,26 × 0,60 × 0,90",
+      "status": "08 · Comedor 08 · 01. Planta Alta · in situ",
+      "elementId": "1050925",
+      "type": "Mueble Pared2 PA",
+      "room": "08 · Comedor 08",
+      "level": "01. Planta Alta",
+      "width_m": 1.261,
+      "depth_m": 0.6,
+      "height_m": 0.9,
+      "bottom_m": -0.0,
+      "length_m": 1.261,
+      "area_m2": 1.135,
+      "inPlace": true,
+      "materials": [
+        "Mueble Melamina PA"
+      ]
+    },
+    {
+      "code": "MU-04",
+      "kind": "MU",
+      "label": "MU-04 · mueble de pared · 1,84 × 0,60 × 1,00",
+      "status": "08 · Comedor 08 · 01. Planta Alta · in situ",
+      "elementId": "1050843",
+      "type": "Mueble Pared PA",
+      "room": "08 · Comedor 08",
+      "level": "01. Planta Alta",
+      "width_m": 1.839,
+      "depth_m": 0.6,
+      "height_m": 1.0,
+      "bottom_m": -0.0,
+      "length_m": 1.839,
+      "area_m2": 1.839,
+      "inPlace": true,
+      "materials": [
+        "Mueble Melamina PA"
+      ]
+    },
+    {
+      "code": "MU-05",
+      "kind": "MU",
+      "label": "MU-05 · mesa de luz · 0,60 × 0,43 × 0,20",
+      "status": "09 · Hab. servicio 09 · 00. Planta Baja · in situ",
+      "elementId": "871087",
+      "type": "Mesa de luz8",
+      "room": "09 · Hab. servicio 09",
+      "level": "00. Planta Baja",
+      "width_m": 0.6,
+      "depth_m": 0.426,
+      "height_m": 0.2,
+      "bottom_m": 0.1,
+      "length_m": 0.6,
+      "area_m2": 0.12,
+      "inPlace": true,
+      "materials": []
+    },
+    {
+      "code": "MU-06",
+      "kind": "MU",
+      "label": "MU-06 · mesa de luz · 0,60 × 0,43 × 0,20",
+      "status": "01 · Cuarto A Inv. 01 · 00. Planta Baja · in situ",
+      "elementId": "781437",
+      "type": "Mesa de luz6",
+      "room": "01 · Cuarto A Inv. 01",
+      "level": "00. Planta Baja",
+      "width_m": 0.6,
+      "depth_m": 0.426,
+      "height_m": 0.2,
+      "bottom_m": 0.1,
+      "length_m": 0.6,
+      "area_m2": 0.12,
+      "inPlace": true,
+      "materials": []
+    },
+    {
+      "code": "MU-07",
+      "kind": "MU",
+      "label": "MU-07 · mesa de luz · 0,60 × 0,43 × 0,20",
+      "status": "03 · Cuarto B Inv. 03 · 00. Planta Baja · in situ",
+      "elementId": "780985",
+      "type": "Mesa de luz4",
+      "room": "03 · Cuarto B Inv. 03",
+      "level": "00. Planta Baja",
+      "width_m": 0.6,
+      "depth_m": 0.426,
+      "height_m": 0.2,
+      "bottom_m": 0.1,
+      "length_m": 0.6,
+      "area_m2": 0.12,
+      "inPlace": true,
+      "materials": []
+    },
+    {
+      "code": "MU-08",
+      "kind": "MU",
+      "label": "MU-08 · mesa de luz · 0,60 × 0,43 × 0,20",
+      "status": "05 · Cuarto C Inv. 05 · 00. Planta Baja · in situ",
+      "elementId": "1243451",
+      "type": "Mesa de luz9",
+      "room": "05 · Cuarto C Inv. 05",
+      "level": "00. Planta Baja",
+      "width_m": 0.6,
+      "depth_m": 0.426,
+      "height_m": 0.2,
+      "bottom_m": 0.1,
+      "length_m": 0.6,
+      "area_m2": 0.12,
+      "inPlace": true,
+      "materials": []
+    },
+    {
+      "code": "MU-09",
+      "kind": "MU",
+      "label": "MU-09 · mueble TV · 2,00 × 1,60 × 0,25",
+      "status": "01 · Cuarto A Inv. 01 · 00. Planta Baja · in situ",
+      "elementId": "781412",
+      "type": "Armario/ tele3",
+      "room": "01 · Cuarto A Inv. 01",
+      "level": "00. Planta Baja",
+      "width_m": 2.0,
+      "depth_m": 1.6,
+      "height_m": 0.25,
+      "bottom_m": 0.1,
+      "length_m": 2.0,
+      "area_m2": 0.5,
+      "inPlace": true,
+      "materials": []
+    },
+    {
+      "code": "MU-10",
+      "kind": "MU",
+      "label": "MU-10 · mueble TV · 2,00 × 1,60 × 0,25",
+      "status": "03 · Cuarto B Inv. 03 · 00. Planta Baja · in situ",
+      "elementId": "780960",
+      "type": "Armario/ tele1",
+      "room": "03 · Cuarto B Inv. 03",
+      "level": "00. Planta Baja",
+      "width_m": 2.0,
+      "depth_m": 1.6,
+      "height_m": 0.25,
+      "bottom_m": 0.1,
+      "length_m": 2.0,
+      "area_m2": 0.5,
+      "inPlace": true,
+      "materials": []
+    },
+    {
+      "code": "MU-11",
+      "kind": "MU",
+      "label": "MU-11 · mueble TV · 2,00 × 1,60 × 0,25",
+      "status": "05 · Cuarto C Inv. 05 · 00. Planta Baja · in situ",
+      "elementId": "1243426",
+      "type": "Armario/ tele4",
+      "room": "05 · Cuarto C Inv. 05",
+      "level": "00. Planta Baja",
+      "width_m": 2.0,
+      "depth_m": 1.6,
+      "height_m": 0.25,
+      "bottom_m": 0.1,
+      "length_m": 2.0,
+      "area_m2": 0.5,
+      "inPlace": true,
+      "materials": []
+    },
+    {
+      "code": "MU-12",
+      "kind": "MU",
+      "label": "MU-12 · mesa de luz · 0,60 × 0,43 × 0,20",
+      "status": "01 · Cuarto A Inv. 01 · 00. Planta Baja · in situ",
+      "elementId": "781424",
+      "type": "Mesa de luz5",
+      "room": "01 · Cuarto A Inv. 01",
+      "level": "00. Planta Baja",
+      "width_m": 0.6,
+      "depth_m": 0.426,
+      "height_m": 0.2,
+      "bottom_m": 0.1,
+      "length_m": 0.6,
+      "area_m2": 0.12,
+      "inPlace": true,
+      "materials": []
+    },
+    {
+      "code": "MU-13",
+      "kind": "MU",
+      "label": "MU-13 · mesa de luz · 0,60 × 0,43 × 0,20",
+      "status": "03 · Cuarto B Inv. 03 · 00. Planta Baja · in situ",
+      "elementId": "780972",
+      "type": "Mesa de luz1",
+      "room": "03 · Cuarto B Inv. 03",
+      "level": "00. Planta Baja",
+      "width_m": 0.6,
+      "depth_m": 0.426,
+      "height_m": 0.2,
+      "bottom_m": 0.1,
+      "length_m": 0.6,
+      "area_m2": 0.12,
+      "inPlace": true,
+      "materials": []
+    },
+    {
+      "code": "MU-14",
+      "kind": "MU",
+      "label": "MU-14 · mesa de luz · 0,60 × 0,43 × 0,20",
+      "status": "05 · Cuarto C Inv. 05 · 00. Planta Baja · in situ",
+      "elementId": "1243438",
+      "type": "Mesa de luz7",
+      "room": "05 · Cuarto C Inv. 05",
+      "level": "00. Planta Baja",
+      "width_m": 0.6,
+      "depth_m": 0.426,
+      "height_m": 0.2,
+      "bottom_m": 0.1,
+      "length_m": 0.6,
+      "area_m2": 0.12,
+      "inPlace": true,
+      "materials": []
+    },
+    {
+      "code": "VA-01",
+      "kind": "VA",
+      "label": "VA-01 · vanitorio · 1,93 × 0,60 × 0,30",
+      "status": "05 · Toilette 05 · 01. Planta Alta · in situ",
+      "elementId": "1416664",
+      "type": "Bacha Baño Ppal1",
+      "room": "05 · Toilette 05",
+      "level": "01. Planta Alta",
+      "width_m": 1.927,
+      "depth_m": 0.6,
+      "height_m": 0.3,
+      "bottom_m": 0.4,
+      "length_m": 1.927,
+      "area_m2": 0.578,
+      "inPlace": true,
+      "materials": []
+    },
+    {
+      "code": "VA-02",
+      "kind": "VA",
+      "label": "VA-02 · vanitorio · 1,37 × 0,49 × 0,06",
+      "status": "04 · Baño PA 04 · 01. Planta Alta",
+      "elementId": "890034",
+      "type": "Bacha doble",
+      "room": "04 · Baño PA 04",
+      "level": "01. Planta Alta",
+      "width_m": 1.369,
+      "depth_m": 0.493,
+      "height_m": 0.065,
+      "bottom_m": 1.0,
+      "length_m": 1.369,
+      "area_m2": 0.089,
+      "inPlace": false,
+      "materials": [
+        "Laufen - LANI - 260 White matt"
+      ]
+    },
+    {
+      "code": "VA-03",
+      "kind": "VA",
+      "label": "VA-03 · vanitorio · 1,67 × 0,60 × 0,55",
+      "status": "07 · Toilette Servicio 07 · 00. Planta Baja · in situ",
+      "elementId": "1421669",
+      "type": "Bacha Baño Ppal4",
+      "room": "07 · Toilette Servicio 07",
+      "level": "00. Planta Baja",
+      "width_m": 1.675,
+      "depth_m": 0.6,
+      "height_m": 0.549,
+      "bottom_m": 0.15,
+      "length_m": 1.675,
+      "area_m2": 0.92,
+      "inPlace": true,
+      "materials": []
+    },
+    {
+      "code": "VA-04",
+      "kind": "VA",
+      "label": "VA-04 · vanitorio · 3,04 × 0,54 × 0,65",
+      "status": "15 · Baño ppal 15 · 00. Planta Baja · in situ",
+      "elementId": "1250078",
+      "type": "Bacha Baño Ppal",
+      "room": "15 · Baño ppal 15",
+      "level": "00. Planta Baja",
+      "width_m": 3.035,
+      "depth_m": 0.538,
+      "height_m": 0.645,
+      "bottom_m": 0.4,
+      "length_m": 3.035,
+      "area_m2": 1.959,
+      "inPlace": true,
+      "materials": []
+    },
+    {
+      "code": "VA-05",
+      "kind": "VA",
+      "label": "VA-05 · vanitorio · 1,45 × 0,60 × 0,60",
+      "status": "02 · Baño A Inv. 02 · 00. Planta Baja · in situ",
+      "elementId": "1250920",
+      "type": "Bacha Baño Ppal6",
+      "room": "02 · Baño A Inv. 02",
+      "level": "00. Planta Baja",
+      "width_m": 1.45,
+      "depth_m": 0.6,
+      "height_m": 0.6,
+      "bottom_m": 0.4,
+      "length_m": 1.45,
+      "area_m2": 0.87,
+      "inPlace": true,
+      "materials": []
+    },
+    {
+      "code": "VA-06",
+      "kind": "VA",
+      "label": "VA-06 · vanitorio · 1,42 × 0,60 × 0,60",
+      "status": "04 · Baño B Inv. 04 · 00. Planta Baja · in situ",
+      "elementId": "1250902",
+      "type": "Bacha Baño Ppal5",
+      "room": "04 · Baño B Inv. 04",
+      "level": "00. Planta Baja",
+      "width_m": 1.425,
+      "depth_m": 0.6,
+      "height_m": 0.6,
+      "bottom_m": 0.4,
+      "length_m": 1.425,
+      "area_m2": 0.855,
+      "inPlace": true,
+      "materials": []
+    },
+    {
+      "code": "VA-07",
+      "kind": "VA",
+      "label": "VA-07 · vanitorio · 1,45 × 0,60 × 0,60",
+      "status": "06 · Baño C Inv. 06 · 00. Planta Baja · in situ",
+      "elementId": "1250533",
+      "type": "Bacha Baño Ppal2",
+      "room": "06 · Baño C Inv. 06",
+      "level": "00. Planta Baja",
+      "width_m": 1.45,
+      "depth_m": 0.6,
+      "height_m": 0.6,
+      "bottom_m": 0.4,
+      "length_m": 1.45,
+      "area_m2": 0.87,
+      "inPlace": true,
+      "materials": []
+    },
+    {
+      "code": "ME-01",
+      "kind": "ME",
+      "label": "ME-01 · bajomesada con cajones · 0,80 × 0,62 × 0,90",
+      "status": "07 · Cocina 07 · 01. Planta Alta",
+      "elementId": "1436000",
+      "type": "Cajonera",
+      "room": "07 · Cocina 07",
+      "level": "01. Planta Alta",
+      "width_m": 0.8,
+      "depth_m": 0.623,
+      "height_m": 0.9,
+      "bottom_m": 0.0,
+      "length_m": 0.8,
+      "area_m2": 0.72,
+      "inPlace": false,
+      "materials": [
+        "Invita - Wood - Gra betong 600",
+        "Invita - Wood - White"
+      ]
+    },
+    {
+      "code": "ME-02",
+      "kind": "ME",
+      "label": "ME-02 · mesada · 2,90 × 1,11 × 0,90",
+      "status": "07 · Cocina 07 · 01. Planta Alta · in situ",
+      "elementId": "1443668",
+      "type": "Mesada",
+      "room": "07 · Cocina 07",
+      "level": "01. Planta Alta",
+      "width_m": 2.901,
+      "depth_m": 1.112,
+      "height_m": 0.901,
+      "bottom_m": 0.0,
+      "length_m": 2.901,
+      "area_m2": 2.615,
+      "inPlace": true,
+      "materials": []
+    },
+    {
+      "code": "ME-03",
+      "kind": "ME",
+      "label": "ME-03 · bajomesada con cajones · 0,80 × 0,62 × 0,90",
+      "status": "07 · Cocina 07 · 01. Planta Alta",
+      "elementId": "2012888",
+      "type": "Cajonera",
+      "room": "07 · Cocina 07",
+      "level": "01. Planta Alta",
+      "width_m": 0.8,
+      "depth_m": 0.623,
+      "height_m": 0.9,
+      "bottom_m": -0.0,
+      "length_m": 0.8,
+      "area_m2": 0.72,
+      "inPlace": false,
+      "materials": [
+        "Invita - Wood - Gra betong 600",
+        "Invita - Wood - White"
+      ]
+    },
+    {
+      "code": "ME-04",
+      "kind": "ME",
+      "label": "ME-04 · bajomesada con cajones · 0,80 × 0,62 × 0,90",
+      "status": "07 · Cocina 07 · 01. Planta Alta",
+      "elementId": "733385",
+      "type": "Cajonera",
+      "room": "07 · Cocina 07",
+      "level": "01. Planta Alta",
+      "width_m": 0.8,
+      "depth_m": 0.623,
+      "height_m": 0.9,
+      "bottom_m": 0.0,
+      "length_m": 0.8,
+      "area_m2": 0.72,
+      "inPlace": false,
+      "materials": [
+        "Invita - Wood - Gra betong 600",
+        "Invita - Wood - White"
+      ]
+    },
+    {
+      "code": "ME-05",
+      "kind": "ME",
+      "label": "ME-05 · mesada · 4,76 × 0,60 × 1,00",
+      "status": "12 · Quincho 12 · 00. Planta Baja · in situ",
+      "elementId": "1048718",
+      "type": "Mesada Quincho",
+      "room": "12 · Quincho 12",
+      "level": "00. Planta Baja",
+      "width_m": 4.765,
+      "depth_m": 0.6,
+      "height_m": 1.0,
+      "bottom_m": 0.0,
+      "length_m": 4.765,
+      "area_m2": 4.765,
+      "inPlace": true,
+      "materials": []
+    },
+    {
+      "code": "LV-01",
+      "kind": "LV",
+      "label": "LV-01 · lavadero · 1,60 × 0,60 × 1,00",
+      "status": "08 · Lavadero 08 · 00. Planta Baja · in situ",
+      "elementId": "1040912",
+      "type": "Lavadero",
+      "room": "08 · Lavadero 08",
+      "level": "00. Planta Baja",
+      "width_m": 1.598,
+      "depth_m": 0.6,
+      "height_m": 1.0,
+      "bottom_m": 0.0,
+      "length_m": 1.598,
+      "area_m2": 1.598,
+      "inPlace": true,
+      "materials": []
+    },
+    {
+      "code": "LV-02",
+      "kind": "LV",
+      "label": "LV-02 · lavadero · 1,60 × 0,60 × 1,00",
+      "status": "08 · Lavadero 08 · 00. Planta Baja · in situ",
+      "elementId": "1150845",
+      "type": "Lavadero1",
+      "room": "08 · Lavadero 08",
+      "level": "00. Planta Baja",
+      "width_m": 1.598,
+      "depth_m": 0.6,
+      "height_m": 1.0,
+      "bottom_m": 0.0,
+      "length_m": 1.598,
+      "area_m2": 1.598,
+      "inPlace": true,
+      "materials": []
+    },
+    {
+      "code": "MA-01",
+      "kind": "MA",
+      "label": "MA-01 · mampara · 1,66 × 0,07 × 1,95",
+      "status": "04 · Baño PA 04 · 01. Planta Alta",
+      "elementId": "890033",
+      "type": "Mamparas",
+      "room": "04 · Baño PA 04",
+      "level": "01. Planta Alta",
+      "width_m": 1.66,
+      "depth_m": 0.071,
+      "height_m": 1.952,
+      "bottom_m": 0.0,
+      "length_m": 1.66,
+      "area_m2": 3.24,
+      "inPlace": false,
+      "materials": [
+        "Roca - URA - 12M Clear glass with Maxiclean",
+        "Roca - URA - Silver"
+      ]
+    },
+    {
+      "code": "MA-02",
+      "kind": "MA",
+      "label": "MA-02 · mampara · 0,87 × 0,87 × 1,95",
+      "status": "07 · Toilette Servicio 07 · 00. Planta Baja",
+      "elementId": "1038623",
+      "type": "Mampara en esquina",
+      "room": "07 · Toilette Servicio 07",
+      "level": "00. Planta Baja",
+      "width_m": 0.865,
+      "depth_m": 0.865,
+      "height_m": 1.951,
+      "bottom_m": -0.0,
+      "length_m": 0.865,
+      "area_m2": 1.688,
+      "inPlace": false,
+      "materials": [
+        "Roca - VICTORIA - 12 Clear glass",
+        "Roca - VICTORIA - Polished silver"
+      ]
+    },
+    {
+      "code": "MA-03",
+      "kind": "MA",
+      "label": "MA-03 · mampara · 0,90 × 0,81 × 2,00",
+      "status": "15 · Baño ppal 15 · 00. Planta Baja",
+      "elementId": "2032440",
+      "type": "Sanitary_Shower-screens_Roca_M1973847D00XXNMN-Victoria-DF-Fixed-panel-for-shower",
+      "room": "15 · Baño ppal 15",
+      "level": "00. Planta Baja",
+      "width_m": 0.9,
+      "depth_m": 0.815,
+      "height_m": 2.002,
+      "bottom_m": 0.0,
+      "length_m": 0.9,
+      "area_m2": 1.801,
+      "inPlace": false,
+      "materials": [
+        "Roca - Victoria - 12 Polished silver",
+        "Roca - Victoria - Clear glass"
+      ]
+    },
+    {
+      "code": "MA-04",
+      "kind": "MA",
+      "label": "MA-04 · mampara · 0,90 × 0,81 × 2,00",
+      "status": "15 · Baño ppal 15 · 00. Planta Baja",
+      "elementId": "2031916",
+      "type": "Sanitary_Shower-screens_Roca_M1973847D00XXNMN-Victoria-DF-Fixed-panel-for-shower",
+      "room": "15 · Baño ppal 15",
+      "level": "00. Planta Baja",
+      "width_m": 0.9,
+      "depth_m": 0.815,
+      "height_m": 2.002,
+      "bottom_m": -0.0,
+      "length_m": 0.9,
+      "area_m2": 1.801,
+      "inPlace": false,
+      "materials": [
+        "Roca - Victoria - 12 Polished silver",
+        "Roca - Victoria - Clear glass"
+      ]
+    },
+    {
+      "code": "MA-05",
+      "kind": "MA",
+      "label": "MA-05 · mampara · 1,66 × 0,07 × 1,95",
+      "status": "02 · Baño A Inv. 02 · 00. Planta Baja",
+      "elementId": "1231883",
+      "type": "Mamparas",
+      "room": "02 · Baño A Inv. 02",
+      "level": "00. Planta Baja",
+      "width_m": 1.66,
+      "depth_m": 0.071,
+      "height_m": 1.952,
+      "bottom_m": 0.0,
+      "length_m": 1.66,
+      "area_m2": 3.24,
+      "inPlace": false,
+      "materials": [
+        "Roca - URA - 12M Clear glass with Maxiclean",
+        "Roca - URA - Silver"
+      ]
+    },
+    {
+      "code": "MA-06",
+      "kind": "MA",
+      "label": "MA-06 · mampara · 1,66 × 0,07 × 1,95",
+      "status": "04 · Baño B Inv. 04 · 00. Planta Baja",
+      "elementId": "2086385",
+      "type": "Mamparas",
+      "room": "04 · Baño B Inv. 04",
+      "level": "00. Planta Baja",
+      "width_m": 1.66,
+      "depth_m": 0.071,
+      "height_m": 1.952,
+      "bottom_m": 0.0,
+      "length_m": 1.66,
+      "area_m2": 3.24,
+      "inPlace": false,
+      "materials": [
+        "Roca - URA - 12M Clear glass with Maxiclean",
+        "Roca - URA - Silver"
+      ]
+    },
+    {
+      "code": "MA-07",
+      "kind": "MA",
+      "label": "MA-07 · mampara · 1,66 × 0,07 × 1,95",
+      "status": "06 · Baño C Inv. 06 · 00. Planta Baja",
+      "elementId": "2086418",
+      "type": "Mamparas",
+      "room": "06 · Baño C Inv. 06",
+      "level": "00. Planta Baja",
+      "width_m": 1.66,
+      "depth_m": 0.071,
+      "height_m": 1.952,
+      "bottom_m": 0.0,
+      "length_m": 1.66,
+      "area_m2": 3.24,
+      "inPlace": false,
+      "materials": [
+        "Roca - URA - 12M Clear glass with Maxiclean",
+        "Roca - URA - Silver"
+      ]
+    },
+    {
+      "code": "EQ-01",
+      "kind": "EQ",
+      "label": "EQ-01 · campana · 0,60 × 0,51 × 1,03",
+      "status": "07 · Cocina 07 · 01. Planta Alta",
+      "elementId": "1460138",
+      "type": "FP-Revit18-HC60DCEXB3-WallRangehood-0-NZ-AU-UK-IE-EU-SG-CN-ASIA-90001845Arfa",
+      "room": "07 · Cocina 07",
+      "level": "01. Planta Alta",
+      "width_m": 0.598,
+      "depth_m": 0.506,
+      "height_m": 1.035,
+      "bottom_m": 1.5,
+      "length_m": 0.598,
+      "area_m2": 0.619,
+      "inPlace": false,
+      "materials": [
+        "Fisher & Paykel - Aluminium",
+        "Fisher & Paykel - Bezel White",
+        "Fisher & Paykel - Glass, Black",
+        "Fisher & Paykel - Graphics Grey",
+        "Fisher & Paykel - Stainless Steel"
+      ]
+    },
+    {
+      "code": "EQ-02",
+      "kind": "EQ",
+      "label": "EQ-02 · cocina (horno + anafe) · 0,76 × 0,74 × 0,98",
+      "status": "07 · Cocina 07 · 01. Planta Alta",
+      "elementId": "1449400",
+      "type": "FP-Revit-RDV2-304-L-N-DualFuelRange-inches-CA-US-90001541A",
+      "room": "07 · Cocina 07",
+      "level": "01. Planta Alta",
+      "width_m": 0.762,
+      "depth_m": 0.74,
+      "height_m": 0.978,
+      "bottom_m": 0.0,
+      "length_m": 0.762,
+      "area_m2": 0.745,
+      "inPlace": false,
+      "materials": [
+        "Aluminium",
+        "BLACK",
+        "GRAY",
+        "Glass Black"
+      ]
+    },
+    {
+      "code": "EQ-03",
+      "kind": "EQ",
+      "label": "EQ-03 · heladera · 0,91 × 0,65 × 1,80",
+      "status": "07 · Cocina 07 · 01. Planta Alta",
+      "elementId": "1442505",
+      "type": "Heladera",
+      "room": "07 · Cocina 07",
+      "level": "01. Planta Alta",
+      "width_m": 0.914,
+      "depth_m": 0.65,
+      "height_m": 1.8,
+      "bottom_m": -0.0,
+      "length_m": 0.914,
+      "area_m2": 1.645,
+      "inPlace": false,
+      "materials": [
+        "Fisher & Paykel - Aluminium",
+        "Fisher & Paykel - Aluminium, Dark",
+        "Fisher & Paykel - Black",
+        "Fisher & Paykel - Grey",
+        "Fisher & Paykel - Stainless Steel",
+        "Fisher & Paykel - Steel, Chrome Plated",
+        "Fisher & Paykel - White"
+      ]
+    }
+  ],
+  "totals": [
+    {
+      "label": "Placares",
+      "value": 43.51,
+      "unit": "m²",
+      "detail": "5 placares · frente ancho × alto · 16,47 ml"
+    },
+    {
+      "label": "Muebles fijos",
+      "value": 14,
+      "unit": "u",
+      "detail": "2 vinoteca, 2 mueble de pared, 7 mesa de luz, 3 mueble TV"
+    },
+    {
+      "label": "Vanitorios",
+      "value": 12.33,
+      "unit": "ml",
+      "detail": "7 vanitorios"
+    },
+    {
+      "label": "Mesadas y bajomesadas",
+      "value": 10.07,
+      "unit": "ml",
+      "detail": "5 piezas"
+    },
+    {
+      "label": "Lavaderos",
+      "value": 2,
+      "unit": "u",
+      "detail": "3,20 ml"
+    },
+    {
+      "label": "Mamparas",
+      "value": 7,
+      "unit": "u",
+      "detail": "productos de catálogo"
+    },
+    {
+      "label": "Equipos de cocina",
+      "value": 3,
+      "unit": "u",
+      "detail": "campana, cocina (horno + anafe), heladera"
+    },
+    {
+      "label": "Equipamiento fijo",
+      "value": 43,
+      "unit": "u",
+      "detail": "33 fichas"
+    }
+  ],
+  "quantities": [
+    {
+      "label": "PL-01 · placard",
+      "group": "Placares · 00. Planta Baja",
+      "count": 1,
+      "value": 2.49,
+      "unit": "ml",
+      "detail": "2,49 × 0,50 × 1,93 · 13 · Cuarto ppal 13"
+    },
+    {
+      "label": "PL-02 · placard",
+      "group": "Placares · 00. Planta Baja",
+      "count": 1,
+      "value": 4.38,
+      "unit": "ml",
+      "detail": "4,38 × 0,51 × 2,70 · 14 · Vestidor ppal 14"
+    },
+    {
+      "label": "PL-03 · placard",
+      "group": "Placares · 00. Planta Baja",
+      "count": 1,
+      "value": 3.2,
+      "unit": "ml",
+      "detail": "3,20 × 0,60 × 2,80 · 01 · Cuarto A Inv. 01"
+    },
+    {
+      "label": "PL-04 · placard",
+      "group": "Placares · 00. Planta Baja",
+      "count": 1,
+      "value": 3.2,
+      "unit": "ml",
+      "detail": "3,20 × 0,59 × 2,80 · 03 · Cuarto B Inv. 03"
+    },
+    {
+      "label": "PL-05 · placard",
+      "group": "Placares · 00. Planta Baja",
+      "count": 1,
+      "value": 3.2,
+      "unit": "ml",
+      "detail": "3,20 × 0,41 × 2,80 · 05 · Cuarto C Inv. 05"
+    },
+    {
+      "label": "MU-01 · vinoteca",
+      "group": "Muebles fijos (TV, pared, vinoteca, mesas de luz) · 01. Planta Alta",
+      "count": 1,
+      "value": 3.2,
+      "unit": "ml",
+      "detail": "3,20 × 2,59 × 1,00 · 06 · Cava 06"
+    },
+    {
+      "label": "MU-02 · vinoteca",
+      "group": "Muebles fijos (TV, pared, vinoteca, mesas de luz) · 01. Planta Alta",
+      "count": 1,
+      "value": 1.6,
+      "unit": "ml",
+      "detail": "1,60 × 0,41 × 1,00 · 06 · Cava 06"
+    },
+    {
+      "label": "MU-03 · mueble de pared",
+      "group": "Muebles fijos (TV, pared, vinoteca, mesas de luz) · 01. Planta Alta",
+      "count": 1,
+      "value": 1.26,
+      "unit": "ml",
+      "detail": "1,26 × 0,60 × 0,90 · 08 · Comedor 08"
+    },
+    {
+      "label": "MU-04 · mueble de pared",
+      "group": "Muebles fijos (TV, pared, vinoteca, mesas de luz) · 01. Planta Alta",
+      "count": 1,
+      "value": 1.84,
+      "unit": "ml",
+      "detail": "1,84 × 0,60 × 1,00 · 08 · Comedor 08"
+    },
+    {
+      "label": "MU-05 · mesa de luz",
+      "group": "Muebles fijos (TV, pared, vinoteca, mesas de luz) · 00. Planta Baja",
+      "count": 1,
+      "value": 0.6,
+      "unit": "ml",
+      "detail": "0,60 × 0,43 × 0,20 · 09 · Hab. servicio 09"
+    },
+    {
+      "label": "MU-06 · mesa de luz",
+      "group": "Muebles fijos (TV, pared, vinoteca, mesas de luz) · 00. Planta Baja",
+      "count": 1,
+      "value": 0.6,
+      "unit": "ml",
+      "detail": "0,60 × 0,43 × 0,20 · 01 · Cuarto A Inv. 01"
+    },
+    {
+      "label": "MU-07 · mesa de luz",
+      "group": "Muebles fijos (TV, pared, vinoteca, mesas de luz) · 00. Planta Baja",
+      "count": 1,
+      "value": 0.6,
+      "unit": "ml",
+      "detail": "0,60 × 0,43 × 0,20 · 03 · Cuarto B Inv. 03"
+    },
+    {
+      "label": "MU-08 · mesa de luz",
+      "group": "Muebles fijos (TV, pared, vinoteca, mesas de luz) · 00. Planta Baja",
+      "count": 1,
+      "value": 0.6,
+      "unit": "ml",
+      "detail": "0,60 × 0,43 × 0,20 · 05 · Cuarto C Inv. 05"
+    },
+    {
+      "label": "MU-09 · mueble TV",
+      "group": "Muebles fijos (TV, pared, vinoteca, mesas de luz) · 00. Planta Baja",
+      "count": 1,
+      "value": 2.0,
+      "unit": "ml",
+      "detail": "2,00 × 1,60 × 0,25 · 01 · Cuarto A Inv. 01"
+    },
+    {
+      "label": "MU-10 · mueble TV",
+      "group": "Muebles fijos (TV, pared, vinoteca, mesas de luz) · 00. Planta Baja",
+      "count": 1,
+      "value": 2.0,
+      "unit": "ml",
+      "detail": "2,00 × 1,60 × 0,25 · 03 · Cuarto B Inv. 03"
+    },
+    {
+      "label": "MU-11 · mueble TV",
+      "group": "Muebles fijos (TV, pared, vinoteca, mesas de luz) · 00. Planta Baja",
+      "count": 1,
+      "value": 2.0,
+      "unit": "ml",
+      "detail": "2,00 × 1,60 × 0,25 · 05 · Cuarto C Inv. 05"
+    },
+    {
+      "label": "MU-12 · mesa de luz",
+      "group": "Muebles fijos (TV, pared, vinoteca, mesas de luz) · 00. Planta Baja",
+      "count": 1,
+      "value": 0.6,
+      "unit": "ml",
+      "detail": "0,60 × 0,43 × 0,20 · 01 · Cuarto A Inv. 01"
+    },
+    {
+      "label": "MU-13 · mesa de luz",
+      "group": "Muebles fijos (TV, pared, vinoteca, mesas de luz) · 00. Planta Baja",
+      "count": 1,
+      "value": 0.6,
+      "unit": "ml",
+      "detail": "0,60 × 0,43 × 0,20 · 03 · Cuarto B Inv. 03"
+    },
+    {
+      "label": "MU-14 · mesa de luz",
+      "group": "Muebles fijos (TV, pared, vinoteca, mesas de luz) · 00. Planta Baja",
+      "count": 1,
+      "value": 0.6,
+      "unit": "ml",
+      "detail": "0,60 × 0,43 × 0,20 · 05 · Cuarto C Inv. 05"
+    },
+    {
+      "label": "VA-01 · vanitorio",
+      "group": "Vanitorios · 01. Planta Alta",
+      "count": 1,
+      "value": 1.93,
+      "unit": "ml",
+      "detail": "1,93 × 0,60 × 0,30 · 05 · Toilette 05"
+    },
+    {
+      "label": "VA-02 · vanitorio",
+      "group": "Vanitorios · 01. Planta Alta",
+      "count": 1,
+      "value": 1.37,
+      "unit": "ml",
+      "detail": "1,37 × 0,49 × 0,06 · 04 · Baño PA 04"
+    },
+    {
+      "label": "VA-03 · vanitorio",
+      "group": "Vanitorios · 00. Planta Baja",
+      "count": 1,
+      "value": 1.67,
+      "unit": "ml",
+      "detail": "1,67 × 0,60 × 0,55 · 07 · Toilette Servicio 07"
+    },
+    {
+      "label": "VA-04 · vanitorio",
+      "group": "Vanitorios · 00. Planta Baja",
+      "count": 1,
+      "value": 3.04,
+      "unit": "ml",
+      "detail": "3,04 × 0,54 × 0,65 · 15 · Baño ppal 15"
+    },
+    {
+      "label": "VA-05 · vanitorio",
+      "group": "Vanitorios · 00. Planta Baja",
+      "count": 1,
+      "value": 1.45,
+      "unit": "ml",
+      "detail": "1,45 × 0,60 × 0,60 · 02 · Baño A Inv. 02"
+    },
+    {
+      "label": "VA-06 · vanitorio",
+      "group": "Vanitorios · 00. Planta Baja",
+      "count": 1,
+      "value": 1.42,
+      "unit": "ml",
+      "detail": "1,42 × 0,60 × 0,60 · 04 · Baño B Inv. 04"
+    },
+    {
+      "label": "VA-07 · vanitorio",
+      "group": "Vanitorios · 00. Planta Baja",
+      "count": 1,
+      "value": 1.45,
+      "unit": "ml",
+      "detail": "1,45 × 0,60 × 0,60 · 06 · Baño C Inv. 06"
+    },
+    {
+      "label": "ME-01 · bajomesada con cajones",
+      "group": "Mesadas y bajomesadas · 01. Planta Alta",
+      "count": 1,
+      "value": 0.8,
+      "unit": "ml",
+      "detail": "0,80 × 0,62 × 0,90 · 07 · Cocina 07"
+    },
+    {
+      "label": "ME-02 · mesada",
+      "group": "Mesadas y bajomesadas · 01. Planta Alta",
+      "count": 1,
+      "value": 2.9,
+      "unit": "ml",
+      "detail": "2,90 × 1,11 × 0,90 · 07 · Cocina 07"
+    },
+    {
+      "label": "ME-03 · bajomesada con cajones",
+      "group": "Mesadas y bajomesadas · 01. Planta Alta",
+      "count": 1,
+      "value": 0.8,
+      "unit": "ml",
+      "detail": "0,80 × 0,62 × 0,90 · 07 · Cocina 07"
+    },
+    {
+      "label": "ME-04 · bajomesada con cajones",
+      "group": "Mesadas y bajomesadas · 01. Planta Alta",
+      "count": 1,
+      "value": 0.8,
+      "unit": "ml",
+      "detail": "0,80 × 0,62 × 0,90 · 07 · Cocina 07"
+    },
+    {
+      "label": "ME-05 · mesada",
+      "group": "Mesadas y bajomesadas · 00. Planta Baja",
+      "count": 1,
+      "value": 4.76,
+      "unit": "ml",
+      "detail": "4,76 × 0,60 × 1,00 · 12 · Quincho 12"
+    },
+    {
+      "label": "LV-01 · lavadero",
+      "group": "Lavaderos · 00. Planta Baja",
+      "count": 1,
+      "value": 1.6,
+      "unit": "ml",
+      "detail": "1,60 × 0,60 × 1,00 · 08 · Lavadero 08"
+    },
+    {
+      "label": "LV-02 · lavadero",
+      "group": "Lavaderos · 00. Planta Baja",
+      "count": 1,
+      "value": 1.6,
+      "unit": "ml",
+      "detail": "1,60 × 0,60 × 1,00 · 08 · Lavadero 08"
+    },
+    {
+      "label": "MA-01 · mampara",
+      "group": "Mamparas · 01. Planta Alta",
+      "count": 1,
+      "value": 1.66,
+      "unit": "ml",
+      "detail": "1,66 × 0,07 × 1,95 · 04 · Baño PA 04"
+    },
+    {
+      "label": "MA-02 · mampara",
+      "group": "Mamparas · 00. Planta Baja",
+      "count": 1,
+      "value": 0.87,
+      "unit": "ml",
+      "detail": "0,87 × 0,87 × 1,95 · 07 · Toilette Servicio 07"
+    },
+    {
+      "label": "MA-03 · mampara",
+      "group": "Mamparas · 00. Planta Baja",
+      "count": 1,
+      "value": 0.9,
+      "unit": "ml",
+      "detail": "0,90 × 0,81 × 2,00 · 15 · Baño ppal 15"
+    },
+    {
+      "label": "MA-04 · mampara",
+      "group": "Mamparas · 00. Planta Baja",
+      "count": 1,
+      "value": 0.9,
+      "unit": "ml",
+      "detail": "0,90 × 0,81 × 2,00 · 15 · Baño ppal 15"
+    },
+    {
+      "label": "MA-05 · mampara",
+      "group": "Mamparas · 00. Planta Baja",
+      "count": 1,
+      "value": 1.66,
+      "unit": "ml",
+      "detail": "1,66 × 0,07 × 1,95 · 02 · Baño A Inv. 02"
+    },
+    {
+      "label": "MA-06 · mampara",
+      "group": "Mamparas · 00. Planta Baja",
+      "count": 1,
+      "value": 1.66,
+      "unit": "ml",
+      "detail": "1,66 × 0,07 × 1,95 · 04 · Baño B Inv. 04"
+    },
+    {
+      "label": "MA-07 · mampara",
+      "group": "Mamparas · 00. Planta Baja",
+      "count": 1,
+      "value": 1.66,
+      "unit": "ml",
+      "detail": "1,66 × 0,07 × 1,95 · 06 · Baño C Inv. 06"
+    },
+    {
+      "label": "EQ-01 · campana",
+      "group": "Equipos de cocina · 01. Planta Alta",
+      "count": 1,
+      "value": 0.6,
+      "unit": "ml",
+      "detail": "0,60 × 0,51 × 1,03 · 07 · Cocina 07"
+    },
+    {
+      "label": "EQ-02 · cocina (horno + anafe)",
+      "group": "Equipos de cocina · 01. Planta Alta",
+      "count": 1,
+      "value": 0.76,
+      "unit": "ml",
+      "detail": "0,76 × 0,74 × 0,98 · 07 · Cocina 07"
+    },
+    {
+      "label": "EQ-03 · heladera",
+      "group": "Equipos de cocina · 01. Planta Alta",
+      "count": 1,
+      "value": 0.91,
+      "unit": "ml",
+      "detail": "0,91 × 0,65 × 1,80 · 07 · Cocina 07"
+    },
+    {
+      "label": "Cama doble",
+      "group": "Mobiliario suelto (referencia)",
+      "count": 1,
+      "value": 1,
+      "unit": "u",
+      "detail": "no se computa como fijo"
+    },
+    {
+      "label": "Cama simple",
+      "group": "Mobiliario suelto (referencia)",
+      "count": 1,
+      "value": 1,
+      "unit": "u",
+      "detail": "no se computa como fijo"
+    },
+    {
+      "label": "Escritorio",
+      "group": "Mobiliario suelto (referencia)",
+      "count": 2,
+      "value": 2,
+      "unit": "u",
+      "detail": "no se computa como fijo"
+    },
+    {
+      "label": "Furniture_Chairs-Stools-Benches_Enea_Coma-Wood-medium-stool",
+      "group": "Mobiliario suelto (referencia)",
+      "count": 3,
+      "value": 3,
+      "unit": "u",
+      "detail": "no se computa como fijo"
+    },
+    {
+      "label": "Furniture_Sofas-Armchairs_Icons-of-Denmark_ EC1-Sofa_Configuration2",
+      "group": "Mobiliario suelto (referencia)",
+      "count": 1,
+      "value": 1,
+      "unit": "u",
+      "detail": "no se computa como fijo"
+    },
+    {
+      "label": "Furniture_Sofas-Armchairs_Icons-of-Denmark_ EC1-Sofa_Configuration4",
+      "group": "Mobiliario suelto (referencia)",
+      "count": 2,
+      "value": 2,
+      "unit": "u",
+      "detail": "no se computa como fijo"
+    },
+    {
+      "label": "Hans_J_Wenger_Wishbone_chair_14325",
+      "group": "Mobiliario suelto (referencia)",
+      "count": 16,
+      "value": 16,
+      "unit": "u",
+      "detail": "no se computa como fijo"
+    },
+    {
+      "label": "Mesa de pool",
+      "group": "Mobiliario suelto (referencia)",
+      "count": 1,
+      "value": 1,
+      "unit": "u",
+      "detail": "no se computa como fijo"
+    },
+    {
+      "label": "Mesa quincho",
+      "group": "Mobiliario suelto (referencia)",
+      "count": 1,
+      "value": 1,
+      "unit": "u",
+      "detail": "no se computa como fijo"
+    },
+    {
+      "label": "Mesa redonda",
+      "group": "Mobiliario suelto (referencia)",
+      "count": 1,
+      "value": 1,
+      "unit": "u",
+      "detail": "no se computa como fijo"
+    },
+    {
+      "label": "Silla Oficina",
+      "group": "Mobiliario suelto (referencia)",
+      "count": 1,
+      "value": 1,
+      "unit": "u",
+      "detail": "no se computa como fijo"
+    },
+    {
+      "label": "Sofa Playroom",
+      "group": "Mobiliario suelto (referencia)",
+      "count": 1,
+      "value": 1,
+      "unit": "u",
+      "detail": "no se computa como fijo"
+    }
+  ],
+  "quantityNote": "Medidas de caja envolvente del modelo (ancho × profundidad × alto). Placares: m² de frente (ancho × alto). Mobiliario suelto listado solo como referencia.",
+  "notModeled": [
+    "Muebles de cocina altos y despiece de bajomesadas (solo 3 cajoneras modeladas)",
+    "Interiores de placares (estantes, barrales, cajones)",
+    "Herrajes, materiales y terminaciones (las familias in situ no tienen material)",
+    "Bomba de pileta Grundfos: se documenta con Pileta"
+  ],
+  "decisions": [
+    "Fijo = familias in situ de carpintería + mamparas + equipos de cocina; el resto es mobiliario suelto (referencia).",
+    "Artefactos sanitarios quedan en Sanitarias; puertas del ascensor fuera del rubro.",
+    "Ficha por pieza de carpintería (planta, alzado frontal, axonométrica); mamparas y equipos solo en plantas.",
+    "Códigos PL/MU/VA/ME/LV/MA/EQ solo como anotación (no escritos en Mark)."
+  ],
+  "questions": [
+    "¿Las mesas de luz y muebles TV in situ son de obra / carpintería fija? Hoy se cuentan como fijos.",
+    "¿Qué muebles de cocina faltan (alacenas, columnas) y en qué material?",
+    "¿Material y terminación de placares y vanitorios (melamina, laqueado, madera)?",
+    "¿Escribimos los códigos de equipamiento en el modelo (Mark)?"
+  ]
+}
