@@ -32,7 +32,11 @@ def stats(d):
     by = lambda t: [r for r in rooms if r['docType'] == t]
     return {'rooms': rooms, 'RH': sum(r['total_m2'] for r in by('TC-01')), 'ST': sum(r['total_m2'] for r in by('TC-02')), 'existing': sum(r['existing_m2'] for r in rooms),
             'cp': sum(r['cp_m2'] for r in rooms), 'buna': sum(r['buna_ml'] for r in rooms), 'tapas': sum(r['tapas'] for r in rooms),
-            'vm': [r for r in rooms if r['underRoof']], 'dbl': [r for r in rooms if r['doubleHeight']], 'excluded': [r for r in d['rooms'] if r['excluded']]}
+            'vm': [r for r in rooms if r['underRoof']], 'dbl': [r for r in rooms if r['doubleHeight']], 'excluded': [r for r in d['rooms'] if r['excluded']],
+            'wood': [r for r in rooms if r.get('wood')], 'woodM2': sum(r.get('woodPlan_m2', 0) for r in rooms)}
+
+
+def wood_list(st): return ', '.join(f"{r['name']} {c2(r['woodPlan_m2'])}" for r in st['wood'])
 
 
 def main():
@@ -41,10 +45,10 @@ def main():
     if a.index_columns:
         comp = [f"TC-01 RH: {c2(st['RH'])} m² · TC-02 ST: {c2(st['ST'])} m²", f"Existente modelado: {c2(st['existing'])} m² · propuesto: {c2(st['cp'])} m²",
                 f"Buña perimetral Z 15: {c2(st['buna'])} ml · tapas 60×60: {st['tapas']} u", f"Pintura de cielorrasos: {c2(st['RH'] + st['ST'])} m²", ''] + \
-               [f"{r['code']} {r['name']}: {c2(r['cp_m2'])} m²" + (' (v. magnitud)' if r['underRoof'] else '') for r in st['rooms'] if r['cp']]
-        cols = [{'title': 'Propuesta a confirmar', 'lines': ['TC-01 placa RH: baños, toilettes, cocina, lavadero.', 'TC-02 placa ST: resto de los locales.', 'TC-03 "Plain" se reparte entre TC-01 y TC-02.', 'Parciales: se completa el resto del local.', 'Altura: la del cielorraso del local o vecino.', 'Bajo cubierta: verdadera magnitud.', 'Ascensor: sin cielorraso (pasadizo).', 'El modelo no se modificó.']},
+               [f"{r['code']} {r['name']}: {c2(r['cp_m2'])} m²" for r in st['rooms'] if r['cp']] + ['', f"Cubierta de madera vista (ver Cubierta): {c2(st['woodM2'])} m²"]
+        cols = [{'title': 'Propuesta confirmada (R29)', 'lines': ['TC-01 placa RH: baños, toilettes, cocina, lavadero.', 'TC-02 placa ST: resto de los locales.', 'TC-03 "Plain" se reparte entre TC-01 y TC-02.', 'Parciales: se completa el resto del local.', 'Altura: la del cielorraso del local o vecino.', 'Bajo la cubierta de madera: sin cielorraso,', 'machimbre visto (se computa en Cubierta).', 'Ascensor: sin cielorraso (pasadizo).', 'El modelo no se modificó.']},
                 {'title': 'Cómputo', 'lines': comp}, {'title': 'Láminas', 'lines': ['CIE-00  Índice', 'CIE-P-PB / PA / PE  Propuesta', 'CIE-D-01  Detalles', 'CIE-PB/PA/PE-01  Existente (R21)', 'CIE-F-TC-01..03  Tipos del modelo (R21)']},
-                {'title': 'A confirmar', 'lines': [f"Bajo cubierta inclinada: {', '.join(r['name'] for r in st['vm'])}.", f"Posible doble altura: {', '.join(r['name'] for r in st['dbl'])}.", 'Modelar los cielorrasos propuestos en Revit (OK).']}]
+                {'title': 'Machimbre visto (ver Cubierta)', 'lines': [f"{r['number']} {r['name']} ({r['levelCode']}): {c2(r['woodPlan_m2'])} m²" for r in st['wood']] + ['', 'Pendiente: modelar los cielorrasos en Revit (OK).']}]
         print(json.dumps(cols, ensure_ascii=True)); return
     sheets = records()
     if a.request:
@@ -74,6 +78,7 @@ def main():
                     if k in roomby:
                         rr = roomby[k]
                         lab = (f"{rr['number']} · {rr['name']} · sin cielorraso (pasadizo)" if rr['excluded'] else
+                               f"{rr['number']} · {rr['name']} · machimbre visto · ver Cubierta ({c2(rr['woodPlan_m2'])} m²)" + (f" · {rr['code']} TC-02 {c2(rr['cp_m2'])} m² bajo losa" if rr['cp'] else '') if rr.get('wood') else
                                f"{rr['code'] or rr['number']} · {rr['name']} · {rr['docType']} · total {c2(rr['total_m2'])} m²" + (f" (propuesto {c2(rr['cp_m2'])})" if rr['cp'] else ' (existente)') + ' · propuesta')
                         els.append({'code': rr['code'], 'elementId': k, 'room': True, 'label': lab, 'box': box})
                     elif k in exby:
@@ -92,17 +97,19 @@ def main():
     codes = [{'code': 'TC-01', 'kind': 'TC', 'label': 'TC-01 · ' + TYPES['TC-01'], 'status': 'Propuesta · perfilería galvanizada 35, velas c/1,00, buña Z 15', 'area_m2': round(st['RH'], 2)},
              {'code': 'TC-02', 'kind': 'TC', 'label': 'TC-02 · ' + TYPES['TC-02'], 'status': 'Propuesta · perfilería galvanizada 35, velas c/1,00, buña Z 15', 'area_m2': round(st['ST'], 2)},
              {'code': 'TC-03', 'kind': 'TC', 'label': 'TC-03 · "Plain" (genérico del modelo)', 'status': 'Disuelto en TC-01 / TC-02 (solo documentación)', 'area_m2': 0}]
-    codes += [{'code': e['code'], 'kind': 'CE', 'label': f"{e['code']} · {e['room']} · {c2(e['area_m2'])} m²", 'status': f"Existente · {e['docType']}" + (f" (modelo {e['modelType']}, reasignado en la documentación)" if e['changed'] else ''),
+    codes += [{'code': e['code'], 'kind': 'CE', 'label': f"{e['code']} · {e['room']} · {c2(e['area_m2'])} m²",
+               'status': ('Existente en el modelo, NO se computa: bajo la cubierta de madera va machimbre visto (ver Cubierta)' if e.get('wood') else f"Existente · {e['docType']}" + (f" (modelo {e['modelType']}, reasignado en la documentación)" if e['changed'] else '')), 'underWoodRoof': bool(e.get('wood')),
                'elementId': str(e['id']), 'typeCode': e['docType'], 'modelTypeCode': e['modelType'], 'area_m2': round(e['area_m2'], 2), 'height_m': round(e['height_m'], 2)} for e in d['existing']]
     codes += [{'code': r['code'], 'kind': 'CP', 'label': f"{r['code']} · {loc(r)} · {r['docType']} · {c2(r['cp_m2'])} m²", 'status': 'Propuesta a confirmar · ' + r['heightNote'], 'elementId': str(r['id']), 'room': loc(r), 'typeCode': r['docType'],
                'area_m2': round(r['cp_m2'], 2), 'planArea_m2': round(r['cpPlan_m2'], 2), 'height_m': None if r['underRoof'] else r['height_m'], 'slope_deg': r['slope_deg'] or None, 'trueMagnitude': r['underRoof'],
                'doubleHeight': r['doubleHeight'], 'perimeter_m': round(r['perimeter_m'], 2)} for r in st['rooms'] if r['cp']]
     quantities = [{'label': loc(r), 'group': f"Locales · {r['docType']}", 'count': 1, 'value': round(r['total_m2'], 2), 'unit': 'm²',
-                   'detail': (f"existente {c2(r['existing_m2'])} + " if r['existing_m2'] else '') + (f"propuesto {c2(r['cp_m2'])} ({r['code']})" if r['cp'] else 'sin propuesta') + f" · buña {c2(r['buna_ml'])} ml" + (f" · {r['tapas']} tapa" if r['tapas'] else '') + f" · {r['heightNote']}"} for r in st['rooms']]
+                   'detail': (f"existente {c2(r['existing_m2'])} + " if r['existing_m2'] else '') + (f"propuesto {c2(r['cp_m2'])} ({r['code']})" if r['cp'] else 'sin propuesta') + f" · buña {c2(r['buna_ml'])} ml" + (f" · {r['tapas']} tapa" if r['tapas'] else '') + f" · {r['heightNote']}"} for r in st['rooms'] if r['total_m2'] > 0]
+    quantities += [{'label': loc(r), 'group': 'Machimbre visto · ver Cubierta (no se suma)', 'count': 1, 'value': round(r['woodPlan_m2'], 2), 'unit': 'm²', 'detail': 'superficie en planta bajo la cubierta de madera' + (' (existente ' + ', '.join(e['code'] for e in d['existing'] if e['id'] in r['woodExisting']) + ' no se computa)' if r['woodExisting'] else '')} for r in st['wood']]
     quantities += [{'label': loc(r), 'group': 'Sin cielorraso (decisión)', 'count': 1, 'value': round(r['area_m2'], 2), 'unit': 'm²', 'detail': 'pasadizo del ascensor'} for r in st['excluded']]
     totals = [{'label': 'Placa RH (TC-01)', 'value': round(st['RH'], 2), 'unit': 'm²', 'detail': 'existente + propuesto'}, {'label': 'Placa ST (TC-02)', 'value': round(st['ST'], 2), 'unit': 'm²', 'detail': 'existente + propuesto'},
               {'label': 'Buña perimetral Z 15', 'value': round(st['buna'], 2), 'unit': 'ml', 'detail': 'perímetro de los locales'}, {'label': 'Tapas de inspección 60×60', 'value': st['tapas'], 'unit': 'u', 'detail': 'baños, toilettes y sala de máquinas'},
-              {'label': 'Existente modelado', 'value': round(st['existing'], 2), 'unit': 'm²', 'detail': f"{len(d['existing'])} cielorrasos"}, {'label': 'Propuesto (nuevo)', 'value': round(st['cp'], 2), 'unit': 'm²', 'detail': f"{len([r for r in st['rooms'] if r['cp']])} locales"},
+              {'label': 'Existente modelado', 'value': round(st['existing'], 2), 'unit': 'm²', 'detail': f"{len([e for e in d['existing'] if not e.get('wood')])} cielorrasos (sin los que quedan bajo la madera)"}, {'label': 'Propuesto (nuevo)', 'value': round(st['cp'], 2), 'unit': 'm²', 'detail': f"{len([r for r in st['rooms'] if r['cp']])} locales"},
               {'label': 'Cielorrasos (total propuesta)', 'value': round(st['RH'] + st['ST'], 2), 'unit': 'm²', 'detail': 'RH + ST'}]
     budget = [{'id': 'cielorraso-placa-rh', 'label': 'Placa RH 12,5 colocada con masillado (TC-01)', 'value': round(st['RH'], 2), 'unit': 'm²', 'detail': 'existente + propuesto; sin estructura ni pintura', 'informative': False},
               {'id': 'cielorraso-placa-st', 'label': 'Placa ST 12,5 colocada con masillado (TC-02)', 'value': round(st['ST'], 2), 'unit': 'm²', 'detail': 'existente + propuesto; sin estructura ni pintura', 'informative': False},
@@ -112,21 +119,24 @@ def main():
               {'id': 'cielorraso-pintura', 'label': 'Pintura de cielorrasos (látex; antihongos en RH)', 'value': round(st['RH'] + st['ST'], 2), 'unit': 'm²', 'detail': 'RH + ST', 'informative': False},
               {'id': 'cielorraso-total', 'label': 'Cielorrasos (total propuesta)', 'value': round(st['RH'] + st['ST'], 2), 'unit': 'm²', 'detail': 'referencia', 'informative': True},
               {'id': 'cielorraso-existente', 'label': 'Existente modelado', 'value': round(st['existing'], 2), 'unit': 'm²', 'detail': 'referencia', 'informative': True},
-              {'id': 'cielorraso-propuesto', 'label': 'Propuesto (nuevo)', 'value': round(st['cp'], 2), 'unit': 'm²', 'detail': 'referencia', 'informative': True}]
+              {'id': 'cielorraso-propuesto', 'label': 'Propuesto (nuevo)', 'value': round(st['cp'], 2), 'unit': 'm²', 'detail': 'referencia', 'informative': True},
+              {'id': 'cielorraso-madera-vista', 'label': 'Locales con cubierta de madera vista (ver Cubierta)', 'value': round(st['woodM2'], 2), 'unit': 'm²', 'detail': 'en planta: ' + wood_list(st) + ' · machimbre y aislaciones van en Cubierta', 'informative': True}]
+    totals.insert(-1, {'label': 'Cubierta de madera vista (ver Cubierta)', 'value': round(st['woodM2'], 2), 'unit': 'm²', 'detail': f"{len(st['wood'])} locales, no se suma"})
     vm = ', '.join(f"{r['name']} ({('%.1f' % r['slope_deg']).replace('.', ',')}°)" for r in st['vm']); dbl = ', '.join(r['name'] for r in st['dbl'])
     m = dict(old)
-    m.update({'title': 'Cielorrasos', 'revision': 'R28', 'status': 'propuesta', 'readAt': d['readAt'], 'kinds': KINDS, 'sheets': out, 'codes': codes, 'totals': totals, 'quantities': quantities,
-              'summary': f"PROPUESTA A CONFIRMAR: {c2(st['RH'] + st['ST'])} m² de cielorrasos suspendidos ({c2(st['RH'])} m² RH en zonas húmedas, {c2(st['ST'])} m² ST), de los que {c2(st['existing'])} m² ya están modelados y {c2(st['cp'])} m² se proponen; buña {c2(st['buna'])} ml, {st['tapas']} tapas de inspección. {len(out)} láminas.",
-              'quantityNote': f"Propuesta a confirmar. Área propuesta = local − cielorrasos existentes (geometría del modelo, límite Finish). Bajo cubierta inclinada se computa en verdadera magnitud: {vm}. Posible doble altura (escalera / puente), computado en planta: {dbl}. Ascensor excluido.",
-              'notModeled': ['Cielorrasos propuestos (CP): solo dibujados en 2D, no modelados', 'Buñas, tapas de inspección y perfilería', 'Pintura de cielorrasos'],
-              'decisions': ['Hipótesis: zonas húmedas TC-01 RH, resto TC-02 ST; TC-03 se reparte; parciales se completan; altura del local o del vecino.', 'Documentado con regiones y detalles 2D sobre plantas de cielorraso: no se tocaron geometría ni tipos.',
-                            'Códigos TC/CE/CP solo como anotación (no Mark).', 'Ascensor sin cielorraso (pasadizo).', f"Bajo cubierta en verdadera magnitud: {vm}."],
-              'questions': ['¿Confirmás la propuesta (húmedos placa RH, resto ST, buña perimetral Z 15, tapas 60×60)?',
-                            f"{vm.split(' (')[0] if vm else ''}… quedan bajo la cubierta inclinada: ¿cielorraso siguiendo la pendiente (como se computó) o plano a 2,70 m?",
-                            f"¿{dbl} son doble altura (escalera)? Hoy se computan en planta como cielorraso común.",
-                            '¿Modelamos los cielorrasos propuestos en Revit? (cambia el modelo: requiere tu OK)'],
-              'budget': {'revision': 'R28', 'note': 'Partidas sin solapes: la placa no incluye estructura ni pintura; informative = referencia.', 'lines': budget}})
-    m['questions'][1] = f"Comedor, Living, Playroom y la Planta Entrepiso quedan bajo la cubierta inclinada ({vm}): ¿cielorraso siguiendo la pendiente (como se computó) o plano?"
+    wex = [e for e in d['existing'] if e.get('wood')]
+    m.update({'title': 'Cielorrasos', 'revision': 'R29', 'status': 'propuesta', 'readAt': d['readAt'], 'kinds': KINDS, 'sheets': out, 'codes': codes, 'totals': totals, 'quantities': quantities,
+              'summary': f"PROPUESTA (confirmada por el usuario): {c2(st['RH'] + st['ST'])} m² de cielorrasos suspendidos ({c2(st['RH'])} m² RH en zonas húmedas, {c2(st['ST'])} m² ST), de los que {c2(st['existing'])} m² ya están modelados y {c2(st['cp'])} m² se proponen; buña {c2(st['buna'])} ml, {st['tapas']} tapas de inspección. Bajo la cubierta de madera ({c2(st['woodM2'])} m², {len(st['wood'])} locales) queda el machimbre a la vista: se computa en Cubierta. {len(out)} láminas.",
+              'quantityNote': "Área propuesta = local − cielorrasos existentes (geometría del modelo, límite Finish). Sectores bajo la cubierta de madera detectados con rayos verticales cada 0,50 m: sin cielorraso de yeso (machimbre visto, ver Cubierta); el Hall conserva TC-02 en el sector bajo losa. Ascensor excluido.",
+              'notModeled': ['Cielorrasos propuestos (CP): solo dibujados en 2D, no modelados', 'Buñas, tapas de inspección y perfilería', 'Pintura de cielorrasos', 'Machimbre visto y aislaciones bajo la cubierta de madera: rubro Cubierta'],
+              'decisions': ['Usuario: "confirmo" la propuesta (zonas húmedas TC-01 RH, resto TC-02 ST, buña perimetral Z 15, tapas 60×60; TC-03 se reparte; parciales se completan).',
+                            'Usuario: "en los sectores donde está la cubierta de madera no va cielorraso de yeso, queda el machimbre a la vista" → sin cielorraso en ' + ', '.join(r['name'] for r in st['wood']) + '.',
+                            'Usuario: Hall y Puente son doble altura, con la cubierta a la vista (el Hall conserva TC-02 solo en el sector bajo losa).',
+                            'Usuario: la cubierta de madera con su paquete de aislaciones se analiza en el rubro Cubierta, no como cielorraso.',
+                            'Misma regla aplicada a cielorrasos existentes bajo la madera: ' + ', '.join(f"{e['code']} ({e['room']})" for e in wex) + ' no se computan.',
+                            'Documentado con regiones y detalles 2D sobre plantas de cielorraso: no se tocaron geometría ni tipos. Códigos TC/CE/CP solo como anotación (no Mark).', 'Ascensor sin cielorraso (pasadizo).'],
+              'questions': ['¿Modelamos los cielorrasos propuestos en Revit? (cambia el modelo: requiere tu OK)'],
+              'budget': {'revision': 'R29', 'note': 'Partidas sin solapes: la placa no incluye estructura ni pintura; informative = referencia.', 'lines': budget}})
     (pub / 'manifest.json').write_text(json.dumps(m, ensure_ascii=False, indent=2), encoding='utf-8')
     print(json.dumps({'sheets': len(out), 'new': len(new), 'codes': len(codes), 'RH': round(st['RH'], 2), 'ST': round(st['ST'], 2), 'existing': round(st['existing'], 2), 'cp': round(st['cp'], 2), 'buna': round(st['buna'], 2), 'tapas': st['tapas']}))
 

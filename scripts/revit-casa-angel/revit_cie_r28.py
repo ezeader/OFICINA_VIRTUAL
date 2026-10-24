@@ -15,7 +15,7 @@ RUBRO = u'CIELORRASOS'
 PRE = 'ADER CIE R28 - '
 LEVELS = C.LEVELS
 WET = (u'Baño', u'Toilette', u'Cocina', u'Lavadero')
-FOOT = u'PROPUESTA A CONFIRMAR · Cielorrasos suspendidos de placa de yeso 12,5 mm sobre perfilería galvanizada: TC-01 placa RH en zonas húmedas (baños, toilettes, cocina, lavadero), TC-02 placa ST en el resto. Buña perimetral Z 15 mm; tapa de inspección 60×60 en baños, toilettes y sala de máquinas. Rayado: cielorraso propuesto (CP); sin rayado: existente en el modelo. El modelo no se modificó.'
+FOOT = u'PROPUESTA · Cielorrasos suspendidos de placa de yeso 12,5 sobre perfilería galvanizada: TC-01 RH en zonas húmedas, TC-02 ST en el resto; buña Z 15; tapas 60×60. Rayado: propuesto (CP); liso: existente. Bajo la cubierta de madera: machimbre visto (ver Cubierta). El modelo no se modificó.'
 
 def c2(x): return (u'%.2f' % (0.0 if abs(x) < .005 else x)).replace(u'.', u',')
 
@@ -125,12 +125,17 @@ def level_plan(doc, lid, lc, ln, d, ftype, solid):
     ces = [c for c in d['existing'] if c['levelId'] == lid]
     v = C.ceiling_plan(doc, level, [x for x in rels if x is not None] + [el(doc, c['id']) for c in ces], PRE + lc + ' - PROPUESTA')
     zz = v.Origin.Z
-    for c in ces:   # existing ceilings painted by their documentary type
-        C.paint(doc, v, el(doc, c['id']), FILL[c['docType']], solid)
+    for c in ces:   # existing ceilings painted by their documentary type; under the wooden roof they are not counted (grey)
+        C.paint(doc, v, el(doc, c['id']), (225, 225, 225) if c.get('wood') else FILL[c['docType']], solid)
     for r, re_ in zip(rooms, rels):
         if r['excluded']:
             L.tn(doc, v.Id, DB.XYZ(r['center'][0], r['center'][1], z), r['number'] + u' · ' + r['name'] + u' · sin cielorraso (pasadizo)', 'room'); continue
-        if r['cp']:
+        if r.get('wood'):
+            h = .25 / M   # sector under a flat slab: the 0,5 m probe cells
+            for x, y in r['slabCells'] if r['cp'] else []:
+                try: region(doc, v, [[[x - h, y - h], [x + h, y - h], [x + h, y + h], [x - h, y + h]]], zz, COL['TC-02'], ftype)
+                except Exception: pass
+        elif r['cp']:
             for lp in r['restLoops']:
                 try: region(doc, v, lp, zz, COL[r['docType']], ftype)
                 except Exception: pass
@@ -142,8 +147,8 @@ def level_plan(doc, lid, lc, ln, d, ftype, solid):
         L.tn(doc, v.Id, DB.XYZ(x0, p[1], z), r['tag'], 'tag')
     rh = sum(r['total_m2'] for r in rooms if r['docType'] == 'TC-01' and not r['excluded']); st = sum(r['total_m2'] for r in rooms if r['docType'] == 'TC-02' and not r['excluded'])
     cp = sum(r['cp_m2'] for r in rooms)
-    sub = u'PROPUESTA A CONFIRMAR · RH %s m² · ST %s m² · propuesto %s m² (rayado) · buña %s ml' % (c2(rh), c2(st), c2(cp), c2(sum(r['perimeter_m'] for r in rooms if not r['excluded'])))
-    lines = [u'Azul: TC-01 placa RH 12,5 (zonas húmedas).', u'Naranja: TC-02 placa ST 12,5.', u'Relleno liso: existente en el modelo. Rayado: propuesto (CP).', u'Buña Z 15 mm en todo el perímetro.']
+    sub = u'PROPUESTA · RH %s m² · ST %s m² · propuesto %s m² (rayado) · buña %s ml' % (c2(rh), c2(st), c2(cp), c2(sum(r['buna_ml'] for r in rooms if not r['excluded'])))
+    lines = [u'Azul: TC-01 placa RH 12,5 (zonas húmedas).', u'Naranja: TC-02 placa ST 12,5.', u'Relleno liso: existente en el modelo. Rayado: propuesto (CP).', u'Buña Z 15 mm en todo el perímetro.', u'Bajo la cubierta de madera: sin cielorraso,', u'machimbre visto (ver Cubierta); existente en gris no se computa.']
     it = C.item(v, v.CropBox, u'Cielorrasos propuestos · ' + ln, 'plan', ln, [r['code'] for r in rooms if r.get('code')], [], [r['id'] for r in rooms] + [c['id'] for c in ces], lines)
     return dict(S.lay_sheet(doc, 'CIE-P-' + lc, u'Propuesta de cielorrasos · ' + ln, sub, [it], FOOT, rubro=RUBRO, sheet_name=u'Cielorrasos · propuesta ' + lc), kind='general', level=ln, sector=ln)
 
@@ -231,6 +236,30 @@ def run(doc, uidoc, job):
     if part == 'probe':
         rows = probe(doc); R1.write(os.path.join(OUT, 'cp-probe.json'), {'readAt': L.now(), 'rooms': rows})
         return {'status': 'success', 'rooms': [(r['number'], r['name'], round(r['area_m2'], 2), round(r['rest_m2'], 2), [round(c[1], 2) for c in r['covered']], r['above'] and (r['above']['cat'], round(r['clear_m'], 2), round(r['above']['slope_deg'], 1)), r['aboveRest'] and (r['aboveRest']['cat'], round((r['aboveRest']['z'] - r['z']) * M, 2), round(r['aboveRest']['slope_deg'], 1))) for r in rows]}
+    if part == 'probe2':
+        # grid of upward rays (0,5 m) inside each room: what covers it — roof (wooden roof, exposed) or slab
+        v3 = next(v for v in DB.FilteredElementCollector(doc).OfClass(DB.View3D) if not v.IsTemplate and not v.IsPerspective)
+        out = []
+        for room in DB.FilteredElementCollector(doc).OfCategory(DB.BuiltInCategory.OST_Rooms).WhereElementIsNotElementType():
+            if room.Area <= 0 or eid(room) not in job['rooms']: continue
+            z = doc.GetElement(room.LevelId).Elevation; b = room.get_BoundingBox(None); step = .5 / M
+            cnt = {'roof': 0, 'slab': 0, 'none': 0}; pts = {'roof': [], 'slab': []}
+            x = b.Min.X + step / 2
+            while x < b.Max.X:
+                y = b.Min.Y + step / 2
+                while y < b.Max.Y:
+                    p = DB.XYZ(x, y, z + 1.2 / M)
+                    if room.IsPointInRoom(p):
+                        h = up_hit(doc, v3, p)
+                        k = 'none' if h is None else ('roof' if h['isRoof'] else 'slab')
+                        cnt[k] += 1
+                        if k in pts: pts[k].append([x, y, round((h['z'] - z) * M, 2)])
+                    y += step
+                x += step
+            out.append({'id': eid(room), 'name': u(name(room)), 'counts': cnt, 'slabPts': pts['slab'], 'roofClear': [min([q[2] for q in pts['roof']] or [0]), max([q[2] for q in pts['roof']] or [0])],
+                        'slabClear': sorted(set(q[2] for q in pts['slab']))[:6]})
+        R1.write(os.path.join(OUT, 'cp-probe2.json'), {'readAt': L.now(), 'rooms': out})
+        return {'status': 'success', 'rooms': [(r['name'], r['counts'], r['roofClear'], r['slabClear']) for r in out]}
     if part == 'export':
         opts = DB.PDFExportOptions(); opts.Combine = True; opts.PaperFormat = DB.ExportPaperFormat.ISO_A1
         opts.PaperOrientation = DB.PageOrientationType.Landscape; opts.ZoomType = DB.ZoomType.FitToPage; opts.ColorDepth = DB.ColorDepthType.Color; opts.StopOnError = True

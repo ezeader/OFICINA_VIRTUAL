@@ -26,6 +26,7 @@ def default_h(r):
 
 def main():
     probe = read(OUT / 'cp-probe.json'); cp = read(OUT / 'ceil-plan.json')
+    wood = {r['id']: r for r in read(OUT / 'cp-probe2.json')['rooms']}
     ce = {c['id']: c for c in cp['ceilings']}
     rooms = []; existing = []
     for r in probe['rooms']:
@@ -47,11 +48,26 @@ def main():
         r['heightNote'] = ('bajo cubierta, sigue la pendiente (%s°)' % ('%.1f' % r['slope_deg']).replace('.', ',')) if r['underRoof'] else ('posible doble altura: a confirmar' if r['doubleHeight'] else ('h ' + c2(r['height_m'])))
         r['tapas'] = 1 if (r['name'].startswith(('Baño', 'Toilette', 'Sala de Maquinas'))) else 0
         r['buna_ml'] = 0.0 if r['excluded'] else r['perimeter_m']
+        # R29 (user): under the wooden roof there is no gypsum ceiling — exposed tongue-and-groove, documented in Cubierta.
+        # Sectors under a flat slab keep TC-02 (drawn as the 0,5 m probe cells).
+        w = wood.get(r['id'])
+        r['wood'] = bool(w and w['counts']['roof'] > 0 and not r['excluded'])
+        if r['wood']:
+            n_ = sum(w['counts'].values()); fr = w['counts']['roof'] / n_
+            r['woodPlan_m2'] = r['area_m2'] * fr; r['slabCells'] = [[p[0], p[1]] for p in w['slabPts']]
+            r['woodExisting'] = [i for i, _ in cov]
+            slab = r['area_m2'] - r['woodPlan_m2']
+            r['underRoof'] = False; r['slope_deg'] = 0.0; r['factor'] = 1.0; r['doubleHeight'] = False
+            r['cpPlan_m2'] = slab; r['cp_m2'] = slab; r['existing_m2'] = 0.0; r['total_m2'] = slab
+            r['buna_ml'] = r['perimeter_m'] * (1 - fr); r['tapas'] = 0
+            r['heightNote'] = 'sector bajo losa (h %s)' % c2(w['slabClear'][0] - .5 if w['slabClear'] else r['height_m']) if slab > 0 else 'machimbre visto · ver Cubierta'
+        else:
+            r['woodPlan_m2'] = 0.0; r['slabCells'] = []; r['woodExisting'] = []
         rooms.append(r)
         for i, a in cov:
             c = ce.get(i)
             if c: existing.append({'id': i, 'code': c['code'], 'levelId': r['levelId'], 'modelType': c['typeCode'], 'docType': r['docType'], 'room': f"{r['number']} · {r['name']}", 'area_m2': c['area_m2'], 'height_m': c['height_m'],
-                                   'changed': c['typeCode'] != r['docType']})
+                                   'changed': c['typeCode'] != r['docType'], 'wood': r['wood']})
     rooms.sort(key=lambda r: (['PB', 'PA', 'PE'].index(r['levelCode']), r['number']))
     n = {}
     for r in rooms:
@@ -60,6 +76,8 @@ def main():
         else: r['code'] = None; r['cp'] = False
         ex = ', '.join(e['code'] + ('→' + e['docType'] if e['changed'] else '') for e in existing if e['id'] in [i for i, _ in r['covered']])
         if r['excluded']: r['tag'] = f"{r['number']} · {r['name']} · sin cielorraso (pasadizo)"
+        elif r['wood']:
+            r['tag'] = f"{r['number']} · {r['name']}\nmachimbre visto · ver Cubierta" + (f"\n{r['code']} · TC-02 {c2(r['cp_m2'])} m² bajo losa" if r['cp'] else '')
         elif r['cp']:
             vm = ' (v. magnitud)' if r['underRoof'] else ''
             r['tag'] = f"{r['code']} · {r['docType']} · propuesta\n{c2(r['cp_m2'])} m²{vm}\n{r['heightNote']}" + (f"\n+ existente {ex}" if ex else '')
