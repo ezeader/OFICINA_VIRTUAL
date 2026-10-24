@@ -24402,12 +24402,105 @@
     "Losas L01.00 de PA/PE: losa a confirmar (no se asume hormigón).",
     "Fundaciones: solo platea PB; resto no modelado / a definir.",
     "Parámetro Structural de los muros: sin cambios; se filtra por tipo \"Muro Hormigón 20cm\".",
-    "Códigos MH/VE/LO/PL: en láminas, manifest y en el parámetro Mark de los 72 elementos (aprobado por el usuario; respaldo previo del .rvt)."
+    "Códigos MH/VE/LO/PL: en láminas, manifest y en el parámetro Mark de los 72 elementos (aprobado por el usuario; respaldo previo del .rvt).",
+    "Usuario: toda la PB va sobre la platea; LO-PB-01 se documenta como paquete de piso sobre platea (pendiente: archivo DOC de Estructura).",
+    "Usuario: vigas de encuentro VE-PA-01 / VE-PE-01 son de hormigón.",
+    "Usuario: acero por cuantía de referencia hasta tener el cálculo estructural."
   ],
   "marksWritten": {
     "parameter": "Mark",
     "elements": 72,
     "approvedBy": "usuario (respuesta directa en la sesión Revit)",
     "backup": "outputs/casa-angel/backups/*-antes-mark.rvt"
+  },
+  "checks": {
+    "revision": "R31",
+    "readAt": "2026-10-24T16:15:23.171000Z",
+    "source": "lectura del modelo principal vinculado (sin cambios)",
+    "loPb01VsPlatea": {
+      "LO-PB-01": 714161,
+      "PL-01": 2287528,
+      "intersection_m2": 0.0,
+      "loPb01OutsidePlatea_m2": 124.125,
+      "levels_m": {
+        "LO-PB-01": [
+          -0.606,
+          -0.09
+        ],
+        "PL-01": [
+          -0.45,
+          -0.2
+        ]
+      },
+      "note": "No se superponen en planta: no hay hormigón contado dos veces. Para que toda la PB vaya sobre platea, PL-01 debe crecer 124,13 m² (huella de LO-PB-01)."
+    },
+    "overlaps": [
+      {
+        "a": "LO-PA-05",
+        "b": "LO-PA-06",
+        "ids": [
+          2156409,
+          2156920
+        ],
+        "intersection_m2": 0.006,
+        "note": "despreciable"
+      },
+      {
+        "a": "467187 Deck Terraza PA 05cm (madera)",
+        "b": "LO-PA-04",
+        "ids": [
+          467187,
+          2156155
+        ],
+        "intersection_m2": 7.797,
+        "note": "deck de madera sobre la losa: terminación, no hormigón"
+      },
+      {
+        "a": "467187 Deck Terraza PA 05cm (madera)",
+        "b": "LO-PA-05",
+        "ids": [
+          467187,
+          2156409
+        ],
+        "intersection_m2": 7.604,
+        "note": "idem"
+      },
+      {
+        "a": "734491 Calle (tierra)",
+        "b": "LO-PB-01",
+        "ids": [
+          734491,
+          714161
+        ],
+        "intersection_m2": 0.0,
+        "note": "sin superposición en planta (el caso de revisión era por caja envolvente)"
+      }
+    ],
+    "materials": {
+      "VE-PA-01": [
+        "Default Wall",
+        "Hormigon fachada",
+        "White Paint"
+      ],
+      "VE-PE-01": [
+        "Default Wall",
+        "Hormigon fachada",
+        "White Paint"
+      ],
+      "note": "Hormigón de fachada (confirmado por el usuario)"
+    },
+    "perimeters_m": {
+      "PL-01": 91.854,
+      "LO-PA-01": 16.265,
+      "LO-PA-02": 29.95,
+      "LO-PA-03": 21.8,
+      "LO-PA-04": 22.0,
+      "LO-PA-05": 21.614,
+      "LO-PA-06": 27.214,
+      "LO-PA-07": 7.356,
+      "LO-PA-08": 14.236,
+      "LO-PE-01": 16.265,
+      "LO-PE-02": 18.185
+    }
   }
 }
