@@ -53,3 +53,6 @@ test('the price sheet round-trips with comma decimals and rejects unknown ids',(
  assert.deepEqual(pricesFromRows([['id','precio_unitario'],['pisos:piso-madera','12.5']],known),{'pisos:piso-madera':12.5});
  assert.throws(()=>pricesFromRows([['id','precio_unitario'],['otro:x','1']],known),/desconocida/);
 });
+test('a published proposal is flagged as such, not as modeled',()=>{
+ assert.equal(manifestStatus({status:'propuesta',sheets:[1],totals:[1]}),'propuesta');
+});

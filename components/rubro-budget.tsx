@@ -15,7 +15,7 @@ const GOAL='fin de 2026';
 const KIND:Record<string,string>={Windows:'Ventana',Doors:'Puerta','Curtain Walls':'Muro cortina'};
 const n2=(n:number)=>n.toLocaleString('es-AR',{maximumFractionDigits:2});
 const pct=(n?:number)=>n==null?'—':(n*100).toLocaleString('es-AR',{maximumFractionDigits:1})+' %';
-const STATUS={modelado:'Modelado en Revit',estimacion:'Estimación (sin modelo)','sin-computo':'Sin cómputo'};
+const STATUS={modelado:'Modelado en Revit',propuesta:'Propuesta a confirmar',estimacion:'Estimación (sin modelo)','sin-computo':'Sin cómputo'};
 const get=<T,>(url:string)=>fetch(url).then(r=>r.ok?r.json() as Promise<T>:null).catch(()=>null);
 
 async function loadSources({base,sanitary}:{base:string;sanitary?:string}):Promise<RubroSource[]>{
@@ -65,7 +65,7 @@ export default function RubroBudget({project,projectName,value,disabled,onSave,o
  </tr>;
  const detail=open?result.rubros.find(r=>r.key===open):undefined;
  const panel=detail?<div className="pcPanel" aria-label={`Partidas de ${detail.name}`}>
-   <div className="pcSectionHead"><div><h3>{detail.name} · partidas</h3><p>{detail.note||STATUS[detail.status]}{detail.status==='estimacion'?' Cantidades estimadas: el rubro todavía no está modelado.':''}</p></div><button onClick={()=>setOpen('')}>Cerrar</button></div>
+   <div className="pcSectionHead"><div><h3>{detail.name} · partidas</h3><p>{detail.note||STATUS[detail.status]}{detail.status==='estimacion'?' Cantidades estimadas: el rubro todavía no está modelado.':detail.status==='propuesta'?' Cantidades de una propuesta que todavía tenés que confirmar.':''}</p></div><button onClick={()=>setOpen('')}>Cerrar</button></div>
    <div className="pcTableWrap"><table><thead><tr><th>Partida</th><th>Cantidad</th><th>Precio unitario</th><th>Subtotal</th><th>Se cotiza</th></tr></thead><tbody>
     <tr><td><b>Global del rubro</b><small>cotización cerrada; si se completa, reemplaza a las partidas</small></td><td>1 gl</td><td><input inputMode="decimal" aria-label={`Precio global de ${detail.name}`} placeholder={detail.global!=null?String(detail.global):'—'} value={draft[globalId(detail.key)]??''} onChange={e=>setDraft({...draft,[globalId(detail.key)]:e.target.value})}/></td><td>{detail.global!=null?money(detail.global):'—'}</td><td></td></tr>
     {detail.lines.map(l=><tr key={l.id} className={l.skipped?'rbSkipped':''}><td><b>{l.label}</b>{l.detail&&<small>{l.detail}</small>}</td><td>{n2(l.quantity)} {l.unit}</td><td>{l.skipped?<small>informativo</small>:<input inputMode="decimal" aria-label={`Precio unitario de ${l.label}`} placeholder={l.price!=null?String(l.price):'por cotizar'} value={draft[l.id]??''} onChange={e=>setDraft({...draft,[l.id]:e.target.value})}/>}</td><td>{l.amount!=null?money(l.amount):'—'}</td><td><input type="checkbox" aria-label={`Cotizar ${l.label}`} checked={!l.skipped} disabled={disabled} onChange={()=>save({...state,skip:{...state.skip,[l.id]:!l.skipped}},l.skipped?'La partida se cotiza.':'La partida queda como información.')}/></td></tr>)}

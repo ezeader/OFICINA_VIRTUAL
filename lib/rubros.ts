@@ -22,7 +22,8 @@ export const RUBROS:RubroInfo[]=[
 export const rubroByKey=(key:string)=>RUBROS.find(r=>r.key===key);
 
 export type RubroManifest={
- title?:string;summary?:string;model?:string;readAt?:string;revision?:string;
+ title?:string;summary?:string;status?:string; // 'propuesta' = diseño a confirmar por el estudio
+model?:string;readAt?:string;revision?:string;
  kinds?:Record<string,string>; // prefijo de código → nombre, p. ej. {"CU":"Faldón de tejas"}
  sheets?:import('../components/rubro-viewer').RubroSheet[];
  codes?:import('../components/rubro-viewer').RubroCode[];

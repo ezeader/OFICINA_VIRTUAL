@@ -4,7 +4,7 @@
 // Autocontenido (sin imports de otros lib) para poder testearlo con node --test.
 
 export type BudgetLine={id:string;label:string;quantity:number;unit:string;detail?:string;informative?:boolean};
-export type ComputeStatus='modelado'|'estimacion'|'sin-computo';
+export type ComputeStatus='modelado'|'propuesta'|'estimacion'|'sin-computo';
 export type RubroSource={key:string;name:string;status:ComputeStatus;lines:BudgetLine[];note?:string};
 // Lo que guarda el estudio por proyecto (workspace → procurement.rubroBudget[proyecto]).
 export type RubroBudgetState={currency?:'ARS'|'USD';prices?:Record<string,number>;optional?:Record<string,boolean>;skip?:Record<string,boolean>;updatedAt?:string};
@@ -25,10 +25,10 @@ export function linesFromManifest(rubro:string,m:{budget?:ManifestBudget;totals?
  const seen=new Set<string>();
  return (m.totals||[]).filter(t=>t.value>0).map(t=>{let id=lineId(rubro,t.label);while(seen.has(id))id+='-b';seen.add(id);return {id,label:t.label,quantity:t.value,unit:t.unit,detail:t.detail,informative:SUMMARY.test(t.label)}});
 }
-export function manifestStatus(m:{sheets?:unknown[];totals?:unknown[];budget?:ManifestBudget}|null|undefined):ComputeStatus{
+export function manifestStatus(m:{status?:string;sheets?:unknown[];totals?:unknown[];budget?:ManifestBudget}|null|undefined):ComputeStatus{
  if(!m)return 'sin-computo';
  const hasLines=!!(m.budget?.lines?.length||m.totals?.length);
- return !hasLines?'sin-computo':(m.sheets||[]).length?'modelado':'estimacion';
+ return !hasLines?'sin-computo':m.status==='propuesta'?'propuesta':(m.sheets||[]).length?'modelado':'estimacion';
 }
 
 // Sanitarias: cañerías del modelo agrupadas por sistema, tipo y diámetro (metros lineales reales de Revit).

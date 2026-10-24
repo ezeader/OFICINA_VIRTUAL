@@ -24,6 +24,7 @@ export default function RubroDesk({rubro}:{rubro:RubroInfo}){
  const shown=tabs.some(([t,,n])=>t===tab&&n)&&!(sheets.length===0&&tab==='laminas')?tab:sheets.length===0&&tabs[3][2]?'pendientes':(tabs.find(([,,n])=>n)?.[0]||'laminas');
  return <section className="openingsDesk sheetExplorer" aria-label={rubro.name}>
   <div className="sheetHeading"><div><p className="eyebrow">CASA ÁNGEL / {rubro.name.toUpperCase()}</p><h3>{data.title||rubro.name}</h3><p>{data.summary||`${sheets.length} láminas · ${codes.length} elementos con código.`}</p></div></div>
+  {data.status==='propuesta'&&<p className="openingPendingLine">✏️ Propuesta a confirmar: es un diseño para que lo revises; no es documentación de obra hasta que lo apruebes.</p>}
   {(data.questions||[]).length>0&&<p className="openingPendingLine">❓ {data.questions!.length===1?'Hay una pregunta para vos':`Hay ${data.questions!.length} preguntas para vos`} en «Qué falta definir».</p>}
   <div className="sheetTabs">{tabs.filter(([,,n])=>n).map(([t,label,n])=><button key={t} aria-pressed={shown===t} onClick={()=>setTab(t)}>{label} · {n}</button>)}</div>
   {shown==='laminas'&&(sheets.length?viewer.grid(groupRubroSheets(sheets,data.kinds)):<p className="openingPendingLine">Las láminas de este rubro se están preparando en Revit. Aparecen acá en cuanto se publiquen.</p>)}
