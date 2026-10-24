@@ -1,0 +1,2085 @@
+{
+  "title": "Exteriores",
+  "summary": "Terreno 5.290,8 m², calle 1.576,7 m², acceso con 6 escalones, escalera exterior de 10 alzadas, 51,91 ml de barandas y portón de 20,55 m². 7 láminas.",
+  "model": "Casa-Angel-piloto-documentacion.rvt",
+  "readAt": "2026-10-24T01:15:15.799000Z",
+  "revision": "R23",
+  "kinds": {
+    "TE": "Terreno (toposólidos)",
+    "CA": "Calle",
+    "AC": "Base de acceso",
+    "EA": "Escalones de acceso",
+    "EE": "Escalera exterior",
+    "BA": "Barandas exteriores",
+    "PO": "Portón (hojas)"
+  },
+  "sheets": [
+    {
+      "number": "EXT-00",
+      "title": "Índice y cómputo",
+      "level": "Exteriores",
+      "sector": "General",
+      "kind": "general",
+      "element": null,
+      "elementId": null,
+      "elementKind": null,
+      "note": null,
+      "sheetId": "2474376",
+      "pdf": "/casa-angel/rubros/exteriores/EXT-00.pdf",
+      "image": "/casa-angel/rubros/exteriores/EXT-00.svg.gz",
+      "preview": "/casa-angel/rubros/exteriores/EXT-00-preview.png",
+      "thumbnail": "/casa-angel/rubros/exteriores/EXT-00.png",
+      "views": []
+    },
+    {
+      "number": "EXT-01",
+      "title": "Implantación general",
+      "level": "00. Planta Baja",
+      "sector": "Exteriores · terreno",
+      "kind": "general",
+      "element": null,
+      "elementId": null,
+      "elementKind": null,
+      "note": null,
+      "sheetId": "2473937",
+      "pdf": "/casa-angel/rubros/exteriores/EXT-01.pdf",
+      "image": "/casa-angel/rubros/exteriores/EXT-01.svg.gz",
+      "preview": "/casa-angel/rubros/exteriores/EXT-01-preview.png",
+      "thumbnail": "/casa-angel/rubros/exteriores/EXT-01.png",
+      "views": [
+        {
+          "id": "2473917",
+          "name": "Implantación",
+          "label": "Implantación   1:250",
+          "scale": 250,
+          "kind": "plan",
+          "sector": "Exteriores · terreno",
+          "roomLabel": "Exteriores · terreno",
+          "image": "/casa-angel/rubros/exteriores/EXT-01-view-2473917.svg.gz",
+          "region": [
+            0.1723,
+            0.2254,
+            0.727,
+            0.7618
+          ],
+          "tags": [
+            "TE-01",
+            "TE-02",
+            "TE-03",
+            "TE-04",
+            "CA-01"
+          ],
+          "dimensions": [
+            {
+              "label": "Terreno modelado X",
+              "values_m": [
+                119.8701
+              ],
+              "associative": false
+            },
+            {
+              "label": "Terreno modelado Y",
+              "values_m": [
+                79.4629
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "TE-01",
+              "elementId": "1023311",
+              "label": "TE-01 · terreno · 4.371,2 m²",
+              "box": [
+                0.0331,
+                0.046,
+                0.9686,
+                0.954
+              ]
+            },
+            {
+              "code": "TE-02",
+              "elementId": "354442",
+              "label": "TE-02 · terreno · 814,0 m²",
+              "box": [
+                0.2151,
+                0.2856,
+                0.5873,
+                0.6107
+              ]
+            },
+            {
+              "code": "TE-03",
+              "elementId": "358856",
+              "label": "TE-03 · terreno · 87,7 m²",
+              "box": [
+                0.3076,
+                0.2997,
+                0.4078,
+                0.4303
+              ]
+            },
+            {
+              "code": "TE-04",
+              "elementId": "356624",
+              "label": "TE-04 · terreno · 17,9 m²",
+              "box": [
+                0.3391,
+                0.3448,
+                0.3798,
+                0.3948
+              ]
+            },
+            {
+              "code": "CA-01",
+              "elementId": "734491",
+              "label": "CA-01 · calle · 1.576,7 m²",
+              "box": [
+                0.0933,
+                0.046,
+                0.7965,
+                0.9532
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EXT-02",
+      "title": "Planta de exteriores · Planta Baja",
+      "level": "00. Planta Baja",
+      "sector": "Exteriores · 00. Planta Baja",
+      "kind": "general",
+      "element": null,
+      "elementId": null,
+      "elementKind": null,
+      "note": null,
+      "sheetId": "2473991",
+      "pdf": "/casa-angel/rubros/exteriores/EXT-02.pdf",
+      "image": "/casa-angel/rubros/exteriores/EXT-02.svg.gz",
+      "preview": "/casa-angel/rubros/exteriores/EXT-02-preview.png",
+      "thumbnail": "/casa-angel/rubros/exteriores/EXT-02.png",
+      "views": [
+        {
+          "id": "2473957",
+          "name": "Exteriores PB",
+          "label": "Exteriores PB   1:100",
+          "scale": 100,
+          "kind": "plan",
+          "sector": "Exteriores · 00. Planta Baja",
+          "roomLabel": "Exteriores · 00. Planta Baja",
+          "image": "/casa-angel/rubros/exteriores/EXT-02-view-2473957.svg.gz",
+          "region": [
+            0.2633,
+            0.2184,
+            0.6359,
+            0.7689
+          ],
+          "tags": [
+            "TE-01",
+            "TE-02",
+            "TE-03",
+            "TE-04",
+            "AC-01",
+            "EA-01",
+            "EA-02",
+            "EA-03",
+            "EA-04",
+            "EA-05",
+            "EA-06",
+            "EE-01",
+            "PO-01",
+            "PO-02",
+            "PO-03",
+            "PO-04",
+            "PO-05"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "TE-01",
+              "elementId": "1023311",
+              "label": "TE-01 · terreno · 4.371,2 m²",
+              "box": [
+                0.0,
+                0.0,
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "code": "TE-02",
+              "elementId": "354442",
+              "label": "TE-02 · terreno · 814,0 m²",
+              "box": [
+                0.0614,
+                0.0607,
+                1.0,
+                0.8527
+              ]
+            },
+            {
+              "code": "TE-03",
+              "elementId": "358856",
+              "label": "TE-03 · terreno · 87,7 m²",
+              "box": [
+                0.4057,
+                0.0951,
+                0.7786,
+                0.4131
+              ]
+            },
+            {
+              "code": "TE-04",
+              "elementId": "356624",
+              "label": "TE-04 · terreno · 17,9 m²",
+              "box": [
+                0.5229,
+                0.2049,
+                0.6745,
+                0.3267
+              ]
+            },
+            {
+              "code": "AC-01",
+              "elementId": "398391",
+              "label": "AC-01 · base de acceso · 28,84 m² · +1,00",
+              "box": [
+                0.6249,
+                0.596,
+                0.7934,
+                0.7631
+              ]
+            },
+            {
+              "code": "EA-01",
+              "elementId": "628255",
+              "label": "EA-01 · 2,00 × 1,00 · +0,80",
+              "box": [
+                0.6278,
+                0.7659,
+                0.6859,
+                0.7937
+              ]
+            },
+            {
+              "code": "EA-02",
+              "elementId": "628637",
+              "label": "EA-02 · 2,00 × 1,00 · +0,60",
+              "box": [
+                0.6714,
+                0.7798,
+                0.7005,
+                0.8355
+              ]
+            },
+            {
+              "code": "EA-03",
+              "elementId": "628772",
+              "label": "EA-03 · 2,00 × 1,00 · +0,40",
+              "box": [
+                0.6424,
+                0.8007,
+                0.7005,
+                0.8285
+              ]
+            },
+            {
+              "code": "EA-04",
+              "elementId": "629011",
+              "label": "EA-04 · 2,00 × 1,00 · +0,40",
+              "box": [
+                0.6859,
+                0.7728,
+                0.744,
+                0.8007
+              ]
+            },
+            {
+              "code": "EA-05",
+              "elementId": "628854",
+              "label": "EA-05 · 2,00 × 1,00 · +0,20",
+              "box": [
+                0.6569,
+                0.8215,
+                0.715,
+                0.8494
+              ]
+            },
+            {
+              "code": "EA-06",
+              "elementId": "629059",
+              "label": "EA-06 · 2,00 × 1,00 · +0,20",
+              "box": [
+                0.7297,
+                0.7659,
+                0.7587,
+                0.8215
+              ]
+            },
+            {
+              "code": "EE-01",
+              "elementId": "1028909",
+              "label": "EE-01 · escalera exterior · 10 alzadas de 0,25",
+              "box": [
+                0.4506,
+                0.1842,
+                0.5232,
+                0.262
+              ]
+            },
+            {
+              "code": "PO-01",
+              "elementId": "664505",
+              "label": "PO-01 · 1,44 × 3,00",
+              "box": [
+                0.7963,
+                0.3861,
+                0.7978,
+                0.4262
+              ]
+            },
+            {
+              "code": "PO-02",
+              "elementId": "664506",
+              "label": "PO-02 · 1,50 × 3,00",
+              "box": [
+                0.7978,
+                0.3455,
+                0.7992,
+                0.3873
+              ]
+            },
+            {
+              "code": "PO-03",
+              "elementId": "664507",
+              "label": "PO-03 · 1,50 × 3,00",
+              "box": [
+                0.7963,
+                0.3037,
+                0.7978,
+                0.3455
+              ]
+            },
+            {
+              "code": "PO-04",
+              "elementId": "664508",
+              "label": "PO-04 · 1,60 × 3,00",
+              "box": [
+                0.7978,
+                0.2592,
+                0.7992,
+                0.3037
+              ]
+            },
+            {
+              "code": "PO-05",
+              "elementId": "670378",
+              "label": "PO-05 · 1,50 × 2,80",
+              "box": [
+                0.7978,
+                0.4268,
+                0.8414,
+                0.4282
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EXT-03",
+      "title": "Barandas exteriores",
+      "level": "01. Planta Alta",
+      "sector": "Exteriores · 01. Planta Alta",
+      "kind": "general",
+      "element": null,
+      "elementId": null,
+      "elementKind": null,
+      "note": null,
+      "sheetId": "2474082",
+      "pdf": "/casa-angel/rubros/exteriores/EXT-03.pdf",
+      "image": "/casa-angel/rubros/exteriores/EXT-03.svg.gz",
+      "preview": "/casa-angel/rubros/exteriores/EXT-03-preview.png",
+      "thumbnail": "/casa-angel/rubros/exteriores/EXT-03.png",
+      "views": [
+        {
+          "id": "2474011",
+          "name": "Barandas exteriores · planta",
+          "label": "Barandas exteriores · planta   1:75",
+          "scale": 75,
+          "kind": "plan",
+          "sector": "Exteriores · 01. Planta Alta",
+          "roomLabel": "Exteriores · 01. Planta Alta",
+          "image": "/casa-angel/rubros/exteriores/EXT-03-view-2474011.svg.gz",
+          "region": [
+            0.1222,
+            0.2422,
+            0.4548,
+            0.74
+          ],
+          "tags": [
+            "BA-01",
+            "BA-02",
+            "BA-03",
+            "BA-04",
+            "BA-05"
+          ],
+          "dimensions": [
+            {
+              "label": "BA-01 tramo",
+              "values_m": [
+                1.2942
+              ],
+              "associative": false
+            },
+            {
+              "label": "BA-01 tramo",
+              "values_m": [
+                1.5
+              ],
+              "associative": false
+            },
+            {
+              "label": "BA-01 tramo",
+              "values_m": [
+                1.3789
+              ],
+              "associative": false
+            },
+            {
+              "label": "BA-01 tramo",
+              "values_m": [
+                9.1446
+              ],
+              "associative": false
+            },
+            {
+              "label": "BA-01 tramo",
+              "values_m": [
+                1.4849
+              ],
+              "associative": false
+            },
+            {
+              "label": "BA-01 tramo",
+              "values_m": [
+                9.94
+              ],
+              "associative": false
+            },
+            {
+              "label": "BA-02 tramo",
+              "values_m": [
+                11.75
+              ],
+              "associative": false
+            },
+            {
+              "label": "BA-03 tramo",
+              "values_m": [
+                4.35
+              ],
+              "associative": false
+            },
+            {
+              "label": "BA-04 tramo",
+              "values_m": [
+                1.12
+              ],
+              "associative": false
+            },
+            {
+              "label": "BA-04 tramo",
+              "values_m": [
+                2.5
+              ],
+              "associative": false
+            },
+            {
+              "label": "BA-05 tramo",
+              "values_m": [
+                1.12
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "BA-01",
+              "elementId": "682570",
+              "label": "BA-01 · 26,14 ml · h 0,90",
+              "box": [
+                0.0784,
+                0.1152,
+                0.5567,
+                0.6584
+              ]
+            },
+            {
+              "code": "BA-02",
+              "elementId": "884409",
+              "label": "BA-02 · 12,10 ml · h 0,90",
+              "box": [
+                0.0784,
+                0.9107,
+                0.5888,
+                0.9258
+              ]
+            },
+            {
+              "code": "BA-03",
+              "elementId": "885104",
+              "label": "BA-03 · 7,26 ml · h 0,90",
+              "box": [
+                0.8576,
+                0.4628,
+                0.9214,
+                0.6797
+              ]
+            },
+            {
+              "code": "BA-04",
+              "elementId": "1033525",
+              "label": "BA-04 · 4,29 ml · h 0,90",
+              "box": [
+                0.3375,
+                0.1152,
+                0.4457,
+                0.1885
+              ]
+            },
+            {
+              "code": "BA-05",
+              "elementId": "1034520",
+              "label": "BA-05 · 2,12 ml · h 0,90",
+              "box": [
+                0.3796,
+                0.0742,
+                0.3826,
+                0.1611
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2474071",
+          "name": "Barandas · axonométrica",
+          "label": "Barandas · axonométrica   1:125",
+          "scale": 125,
+          "kind": "axo",
+          "sector": "Exteriores · 01. Planta Alta",
+          "roomLabel": "Exteriores · 01. Planta Alta",
+          "image": "/casa-angel/rubros/exteriores/EXT-03-view-2474071.svg.gz",
+          "region": [
+            0.4886,
+            0.3762,
+            0.7588,
+            0.6059
+          ],
+          "tags": [
+            "BA-01",
+            "BA-02",
+            "BA-03",
+            "BA-04",
+            "BA-05"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "BA-01",
+              "elementId": "682570",
+              "label": "BA-01 · 26,14 ml · h 0,90",
+              "box": [
+                0.3828,
+                0.1797,
+                0.9327,
+                0.6513
+              ]
+            },
+            {
+              "code": "BA-02",
+              "elementId": "884409",
+              "label": "BA-02 · 12,10 ml · h 0,90",
+              "box": [
+                0.2184,
+                0.0644,
+                0.4934,
+                0.3215
+              ]
+            },
+            {
+              "code": "BA-03",
+              "elementId": "885104",
+              "label": "BA-03 · 7,26 ml · h 0,90",
+              "box": [
+                0.1805,
+                0.4882,
+                0.3337,
+                0.6502
+              ]
+            },
+            {
+              "code": "BA-04",
+              "elementId": "1033525",
+              "label": "BA-04 · 4,29 ml · h 0,90",
+              "box": [
+                0.7003,
+                0.5586,
+                0.7974,
+                0.724
+              ]
+            },
+            {
+              "code": "BA-05",
+              "elementId": "1034520",
+              "label": "BA-05 · 2,12 ml · h 0,90",
+              "box": [
+                0.7484,
+                0.5287,
+                0.7981,
+                0.6688
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EXT-F-ACCESO",
+      "title": "Ficha · acceso principal",
+      "level": "00. Planta Baja",
+      "sector": "Exteriores · acceso principal",
+      "kind": "element",
+      "element": "AC-01",
+      "elementId": "398391",
+      "elementKind": "AC",
+      "note": null,
+      "sheetId": "2474185",
+      "pdf": "/casa-angel/rubros/exteriores/EXT-F-ACCESO.pdf",
+      "image": "/casa-angel/rubros/exteriores/EXT-F-ACCESO.svg.gz",
+      "preview": "/casa-angel/rubros/exteriores/EXT-F-ACCESO-preview.png",
+      "thumbnail": "/casa-angel/rubros/exteriores/EXT-F-ACCESO.png",
+      "views": [
+        {
+          "id": "2474105",
+          "name": "Acceso · planta",
+          "label": "Acceso · planta   1:30",
+          "scale": 30,
+          "kind": "plan",
+          "sector": "Exteriores · acceso principal",
+          "roomLabel": "Exteriores · acceso principal",
+          "image": "/casa-angel/rubros/exteriores/EXT-F-ACCESO-view-2474105.svg.gz",
+          "region": [
+            0.1161,
+            0.1913,
+            0.4206,
+            0.7908
+          ],
+          "tags": [
+            "AC-01",
+            "EA-01",
+            "EA-02",
+            "EA-03",
+            "EA-04",
+            "EA-05",
+            "EA-06"
+          ],
+          "dimensions": [
+            {
+              "label": "Escalones en X",
+              "values_m": [
+                0.5,
+                0.5,
+                0.5,
+                0.5,
+                0.5,
+                0.5,
+                0.5055,
+                0.4945,
+                0.5055
+              ],
+              "associative": false
+            },
+            {
+              "label": "Escalones en Y",
+              "values_m": [
+                0.5,
+                0.25,
+                0.25,
+                0.75,
+                0.25,
+                0.5,
+                0.25,
+                0.25
+              ],
+              "associative": false
+            },
+            {
+              "label": "Acceso total X",
+              "values_m": [
+                5.8
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "AC-01",
+              "elementId": "398391",
+              "label": "AC-01 · base de acceso · 28,84 m² · +1,00",
+              "box": [
+                0.1567,
+                0.1126,
+                0.8433,
+                0.6234
+              ]
+            },
+            {
+              "code": "EA-01",
+              "elementId": "628255",
+              "label": "EA-01 · 2,00 × 1,00 · +0,80",
+              "box": [
+                0.1685,
+                0.632,
+                0.4053,
+                0.7171
+              ]
+            },
+            {
+              "code": "EA-02",
+              "elementId": "628637",
+              "label": "EA-02 · 2,00 × 1,00 · +0,60",
+              "box": [
+                0.3461,
+                0.6745,
+                0.4645,
+                0.8448
+              ]
+            },
+            {
+              "code": "EA-03",
+              "elementId": "628772",
+              "label": "EA-03 · 2,00 × 1,00 · +0,40",
+              "box": [
+                0.2277,
+                0.7384,
+                0.4645,
+                0.8235
+              ]
+            },
+            {
+              "code": "EA-04",
+              "elementId": "629011",
+              "label": "EA-04 · 2,00 × 1,00 · +0,40",
+              "box": [
+                0.4053,
+                0.6532,
+                0.6421,
+                0.7384
+              ]
+            },
+            {
+              "code": "EA-05",
+              "elementId": "628854",
+              "label": "EA-05 · 2,00 × 1,00 · +0,20",
+              "box": [
+                0.2869,
+                0.8022,
+                0.5237,
+                0.8874
+              ]
+            },
+            {
+              "code": "EA-06",
+              "elementId": "629059",
+              "label": "EA-06 · 2,00 × 1,00 · +0,20",
+              "box": [
+                0.5835,
+                0.632,
+                0.7019,
+                0.8022
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2474147",
+          "name": "Acceso · corte por escalones",
+          "label": "Acceso · corte por escalones   1:40",
+          "scale": 40,
+          "kind": "section",
+          "sector": "Exteriores · acceso principal",
+          "roomLabel": "Exteriores · acceso principal",
+          "image": "/casa-angel/rubros/exteriores/EXT-F-ACCESO-view-2474147.svg.gz",
+          "region": [
+            0.4181,
+            0.2253,
+            0.789,
+            0.3461
+          ],
+          "tags": [
+            "AC-01",
+            "EA-01",
+            "EA-02",
+            "EA-03",
+            "EA-04",
+            "EA-05",
+            "EA-06"
+          ],
+          "dimensions": [
+            {
+              "label": "Niveles de escalones",
+              "values_m": [
+                0.2,
+                0.2,
+                0.2,
+                0.2,
+                0.2
+              ],
+              "associative": false
+            },
+            {
+              "label": "Huellas en corte",
+              "values_m": [
+                0.75,
+                0.25,
+                0.75,
+                0.25,
+                1.0,
+                0.1,
+                6.0
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "AC-01",
+              "elementId": "398391",
+              "label": "AC-01 · base de acceso · 28,84 m² · +1,00",
+              "box": [
+                0.3943,
+                0.4399,
+                0.8317,
+                0.8209
+              ]
+            },
+            {
+              "code": "EA-01",
+              "elementId": "628255",
+              "label": "EA-01 · 2,00 × 1,00 · +0,80",
+              "box": [
+                0.3141,
+                0.5034,
+                0.387,
+                0.5351
+              ]
+            },
+            {
+              "code": "EA-02",
+              "elementId": "628637",
+              "label": "EA-02 · 2,00 × 1,00 · +0,60",
+              "box": [
+                0.2047,
+                0.5669,
+                0.3505,
+                0.5986
+              ]
+            },
+            {
+              "code": "EA-03",
+              "elementId": "628772",
+              "label": "EA-03 · 2,00 × 1,00 · +0,40",
+              "box": [
+                0.223,
+                0.6304,
+                0.2959,
+                0.6621
+              ]
+            },
+            {
+              "code": "EA-04",
+              "elementId": "629011",
+              "label": "EA-04 · 2,00 × 1,00 · +0,40",
+              "box": [
+                0.2959,
+                0.6304,
+                0.3688,
+                0.6621
+              ]
+            },
+            {
+              "code": "EA-05",
+              "elementId": "628854",
+              "label": "EA-05 · 2,00 × 1,00 · +0,20",
+              "box": [
+                0.1683,
+                0.6939,
+                0.2412,
+                0.7256
+              ]
+            },
+            {
+              "code": "EA-06",
+              "elementId": "629059",
+              "label": "EA-06 · 2,00 × 1,00 · +0,20",
+              "box": [
+                0.2412,
+                0.6939,
+                0.387,
+                0.7256
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2474174",
+          "name": "Acceso · axonométrica",
+          "label": "Acceso · axonométrica   1:40",
+          "scale": 40,
+          "kind": "axo",
+          "sector": "Exteriores · acceso principal",
+          "roomLabel": "Exteriores · acceso principal",
+          "image": "/casa-angel/rubros/exteriores/EXT-F-ACCESO-view-2474174.svg.gz",
+          "region": [
+            0.4329,
+            0.4611,
+            0.7742,
+            0.7564
+          ],
+          "tags": [
+            "AC-01",
+            "EA-01",
+            "EA-02",
+            "EA-03",
+            "EA-04",
+            "EA-05",
+            "EA-06"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "AC-01",
+              "elementId": "398391",
+              "label": "AC-01 · base de acceso · 28,84 m² · +1,00",
+              "box": [
+                0.2563,
+                0.2444,
+                0.9173,
+                0.8888
+              ]
+            },
+            {
+              "code": "EA-01",
+              "elementId": "628255",
+              "label": "EA-01 · 2,00 × 1,00 · +0,80",
+              "box": [
+                0.402,
+                0.2243,
+                0.57,
+                0.3647
+              ]
+            },
+            {
+              "code": "EA-02",
+              "elementId": "628637",
+              "label": "EA-02 · 2,00 × 1,00 · +0,60",
+              "box": [
+                0.2899,
+                0.2472,
+                0.458,
+                0.3876
+              ]
+            },
+            {
+              "code": "EA-03",
+              "elementId": "628772",
+              "label": "EA-03 · 2,00 × 1,00 · +0,40",
+              "box": [
+                0.3039,
+                0.2379,
+                0.472,
+                0.3783
+              ]
+            },
+            {
+              "code": "EA-04",
+              "elementId": "629011",
+              "label": "EA-04 · 2,00 × 1,00 · +0,40",
+              "box": [
+                0.2759,
+                0.3453,
+                0.444,
+                0.4857
+              ]
+            },
+            {
+              "code": "EA-05",
+              "elementId": "628854",
+              "label": "EA-05 · 2,00 × 1,00 · +0,20",
+              "box": [
+                0.2339,
+                0.2501,
+                0.402,
+                0.3904
+              ]
+            },
+            {
+              "code": "EA-06",
+              "elementId": "629059",
+              "label": "EA-06 · 2,00 × 1,00 · +0,20",
+              "box": [
+                0.2056,
+                0.4007,
+                0.3736,
+                0.5411
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EXT-F-EE-01",
+      "title": "Ficha · escalera exterior EE-01",
+      "level": "00. Planta Baja",
+      "sector": "Exteriores · patio pileta",
+      "kind": "element",
+      "element": "EE-01",
+      "elementId": "1028909",
+      "elementKind": "EE",
+      "note": null,
+      "sheetId": "2474256",
+      "pdf": "/casa-angel/rubros/exteriores/EXT-F-EE-01.pdf",
+      "image": "/casa-angel/rubros/exteriores/EXT-F-EE-01.svg.gz",
+      "preview": "/casa-angel/rubros/exteriores/EXT-F-EE-01-preview.png",
+      "thumbnail": "/casa-angel/rubros/exteriores/EXT-F-EE-01.png",
+      "views": [
+        {
+          "id": "2474210",
+          "name": "EE-01 · planta",
+          "label": "EE-01 · planta   1:30",
+          "scale": 30,
+          "kind": "plan",
+          "sector": "Exteriores · patio pileta",
+          "roomLabel": "Exteriores · patio pileta",
+          "image": "/casa-angel/rubros/exteriores/EXT-F-EE-01-view-2474210.svg.gz",
+          "region": [
+            0.1152,
+            0.3521,
+            0.3008,
+            0.63
+          ],
+          "tags": [
+            "EE-01",
+            "BA-04",
+            "BA-05"
+          ],
+          "dimensions": [
+            {
+              "label": "EE-01 ancho X",
+              "values_m": [
+                2.5
+              ],
+              "associative": false
+            },
+            {
+              "label": "EE-01 largo Y",
+              "values_m": [
+                2.7942
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "EE-01",
+              "elementId": "1028909",
+              "label": "EE-01 · escalera exterior · 10 alzadas de 0,25",
+              "box": [
+                0.2571,
+                0.2432,
+                0.7429,
+                0.7568
+              ]
+            },
+            {
+              "code": "BA-04",
+              "elementId": "1033525",
+              "label": "BA-04 · 4,29 ml · h 0,90",
+              "box": [
+                0.2582,
+                0.427,
+                0.7429,
+                0.7558
+              ]
+            },
+            {
+              "code": "BA-05",
+              "elementId": "1034520",
+              "label": "BA-05 · 2,12 ml · h 0,90",
+              "box": [
+                0.4466,
+                0.2432,
+                0.4602,
+                0.6329
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2474228",
+          "name": "EE-01 · corte",
+          "label": "EE-01 · corte   1:25",
+          "scale": 25,
+          "kind": "section",
+          "sector": "Exteriores · patio pileta",
+          "roomLabel": "Exteriores · patio pileta",
+          "image": "/casa-angel/rubros/exteriores/EXT-F-EE-01-view-2474228.svg.gz",
+          "region": [
+            0.2747,
+            0.3132,
+            0.5465,
+            0.6689
+          ],
+          "tags": [
+            "EE-01"
+          ],
+          "dimensions": [
+            {
+              "label": "EE-01 desarrollo",
+              "values_m": [
+                2.7942
+              ],
+              "associative": false
+            },
+            {
+              "label": "EE-01 base + altura",
+              "values_m": [
+                4.0
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "EE-01",
+              "elementId": "1028909",
+              "label": "EE-01 · escalera exterior · 10 alzadas de 0,25",
+              "box": [
+                0.2775,
+                0.2244,
+                0.7225,
+                0.9134
+              ]
+            },
+            {
+              "code": "BA-04",
+              "elementId": "1033525",
+              "label": "BA-04 · 4,29 ml · h 0,90",
+              "box": [
+                0.4368,
+                0.5,
+                0.7216,
+                0.8273
+              ]
+            },
+            {
+              "code": "BA-05",
+              "elementId": "1034520",
+              "label": "BA-05 · 2,12 ml · h 0,90",
+              "box": [
+                0.2775,
+                0.2847,
+                0.6151,
+                0.6552
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2474245",
+          "name": "EE-01 · axonométrica",
+          "label": "EE-01 · axonométrica   1:25",
+          "scale": 25,
+          "kind": "axo",
+          "sector": "Exteriores · patio pileta",
+          "roomLabel": "Exteriores · patio pileta",
+          "image": "/casa-angel/rubros/exteriores/EXT-F-EE-01-view-2474245.svg.gz",
+          "region": [
+            0.5285,
+            0.2803,
+            0.7754,
+            0.7018
+          ],
+          "tags": [
+            "EE-01",
+            "BA-04",
+            "BA-05"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "EE-01",
+              "elementId": "1028909",
+              "label": "EE-01 · escalera exterior · 10 alzadas de 0,25",
+              "box": [
+                0.172,
+                0.1157,
+                0.828,
+                0.8843
+              ]
+            },
+            {
+              "code": "BA-04",
+              "elementId": "1033525",
+              "label": "BA-04 · 4,29 ml · h 0,90",
+              "box": [
+                0.1727,
+                0.3217,
+                0.7034,
+                0.772
+              ]
+            },
+            {
+              "code": "BA-05",
+              "elementId": "1034520",
+              "label": "BA-05 · 2,12 ml · h 0,90",
+              "box": [
+                0.4358,
+                0.2401,
+                0.7071,
+                0.6217
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "EXT-F-PORTON",
+      "title": "Ficha · portón",
+      "level": "00. Planta Baja",
+      "sector": "Exteriores · portón",
+      "kind": "element",
+      "element": "PO",
+      "elementId": "664505",
+      "elementKind": "PO",
+      "note": null,
+      "sheetId": "2474351",
+      "pdf": "/casa-angel/rubros/exteriores/EXT-F-PORTON.pdf",
+      "image": "/casa-angel/rubros/exteriores/EXT-F-PORTON.svg.gz",
+      "preview": "/casa-angel/rubros/exteriores/EXT-F-PORTON-preview.png",
+      "thumbnail": "/casa-angel/rubros/exteriores/EXT-F-PORTON.png",
+      "views": [
+        {
+          "id": "2474281",
+          "name": "Portón · planta",
+          "label": "Portón · planta   1:40",
+          "scale": 40,
+          "kind": "plan",
+          "sector": "Exteriores · portón",
+          "roomLabel": "Exteriores · portón",
+          "image": "/casa-angel/rubros/exteriores/EXT-F-PORTON-view-2474281.svg.gz",
+          "region": [
+            0.1216,
+            0.2537,
+            0.3347,
+            0.7284
+          ],
+          "tags": [
+            "PO-01",
+            "PO-02",
+            "PO-03",
+            "PO-04",
+            "PO-05"
+          ],
+          "dimensions": [
+            {
+              "label": "PO-01 largo",
+              "values_m": [
+                1.44
+              ],
+              "associative": false
+            },
+            {
+              "label": "PO-02 largo",
+              "values_m": [
+                1.5
+              ],
+              "associative": false
+            },
+            {
+              "label": "PO-03 largo",
+              "values_m": [
+                1.5
+              ],
+              "associative": false
+            },
+            {
+              "label": "PO-04 largo",
+              "values_m": [
+                1.6
+              ],
+              "associative": false
+            },
+            {
+              "label": "PO-05 largo",
+              "values_m": [
+                1.5
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "PO-01",
+              "elementId": "664505",
+              "label": "PO-01 · 1,44 × 3,00",
+              "box": [
+                0.4016,
+                0.623,
+                0.408,
+                0.7391
+              ]
+            },
+            {
+              "code": "PO-02",
+              "elementId": "664506",
+              "label": "PO-02 · 1,50 × 3,00",
+              "box": [
+                0.408,
+                0.5052,
+                0.4143,
+                0.6262
+              ]
+            },
+            {
+              "code": "PO-03",
+              "elementId": "664507",
+              "label": "PO-03 · 1,50 × 3,00",
+              "box": [
+                0.4016,
+                0.3843,
+                0.408,
+                0.5052
+              ]
+            },
+            {
+              "code": "PO-04",
+              "elementId": "664508",
+              "label": "PO-04 · 1,60 × 3,00",
+              "box": [
+                0.408,
+                0.2552,
+                0.4143,
+                0.3843
+              ]
+            },
+            {
+              "code": "PO-05",
+              "elementId": "670378",
+              "label": "PO-05 · 1,50 × 2,80",
+              "box": [
+                0.408,
+                0.7408,
+                0.5984,
+                0.7448
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2474312",
+          "name": "Portón · alzado",
+          "label": "Portón · alzado   1:25",
+          "scale": 25,
+          "kind": "elevation",
+          "sector": "Exteriores · portón",
+          "roomLabel": "Exteriores · portón",
+          "image": "/casa-angel/rubros/exteriores/EXT-F-PORTON-view-2474312.svg.gz",
+          "region": [
+            0.3582,
+            0.2064,
+            0.7685,
+            0.4747
+          ],
+          "tags": [
+            "PO-01",
+            "PO-02",
+            "PO-03",
+            "PO-04"
+          ],
+          "dimensions": [
+            {
+              "label": "Hojas de portón",
+              "values_m": [
+                1.6,
+                1.5,
+                1.46,
+                0.04,
+                1.4
+              ],
+              "associative": false
+            },
+            {
+              "label": "Portón largo total",
+              "values_m": [
+                6.0
+              ],
+              "associative": false
+            },
+            {
+              "label": "Portón alto",
+              "values_m": [
+                3.0
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "PO-01",
+              "elementId": "664505",
+              "label": "PO-01 · 1,44 × 3,00",
+              "box": [
+                0.6645,
+                0.1996,
+                0.8163,
+                0.8851
+              ]
+            },
+            {
+              "code": "PO-02",
+              "elementId": "664506",
+              "label": "PO-02 · 1,50 × 3,00",
+              "box": [
+                0.5105,
+                0.1996,
+                0.6687,
+                0.8851
+              ]
+            },
+            {
+              "code": "PO-03",
+              "elementId": "664507",
+              "label": "PO-03 · 1,50 × 3,00",
+              "box": [
+                0.3524,
+                0.1996,
+                0.5105,
+                0.8851
+              ]
+            },
+            {
+              "code": "PO-04",
+              "elementId": "664508",
+              "label": "PO-04 · 1,60 × 3,00",
+              "box": [
+                0.1837,
+                0.1996,
+                0.3524,
+                0.8851
+              ]
+            },
+            {
+              "code": "PO-05",
+              "elementId": "670378",
+              "label": "PO-05 · 1,50 × 2,80",
+              "box": [
+                0.8184,
+                0.2453,
+                0.8237,
+                0.8851
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2474340",
+          "name": "Portón · axonométrica",
+          "label": "Portón · axonométrica   1:50",
+          "scale": 50,
+          "kind": "axo",
+          "sector": "Exteriores · portón",
+          "roomLabel": "Exteriores · portón",
+          "image": "/casa-angel/rubros/exteriores/EXT-F-PORTON-view-2474340.svg.gz",
+          "region": [
+            0.4816,
+            0.5567,
+            0.6451,
+            0.7704
+          ],
+          "tags": [
+            "PO-01",
+            "PO-02",
+            "PO-03",
+            "PO-04",
+            "PO-05"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "PO-01",
+              "elementId": "664505",
+              "label": "PO-01 · 1,44 × 3,00",
+              "box": [
+                0.2904,
+                0.1322,
+                0.4298,
+                0.5832
+              ]
+            },
+            {
+              "code": "PO-02",
+              "elementId": "664506",
+              "label": "PO-02 · 1,50 × 3,00",
+              "box": [
+                0.4167,
+                0.2011,
+                0.5618,
+                0.6549
+              ]
+            },
+            {
+              "code": "PO-03",
+              "elementId": "664507",
+              "label": "PO-03 · 1,50 × 3,00",
+              "box": [
+                0.5618,
+                0.27,
+                0.7068,
+                0.7238
+              ]
+            },
+            {
+              "code": "PO-04",
+              "elementId": "664508",
+              "label": "PO-04 · 1,60 × 3,00",
+              "box": [
+                0.6974,
+                0.3437,
+                0.8518,
+                0.8022
+              ]
+            },
+            {
+              "code": "PO-05",
+              "elementId": "670378",
+              "label": "PO-05 · 1,50 × 2,80",
+              "box": [
+                0.1435,
+                0.1566,
+                0.2885,
+                0.5851
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "codes": [
+    {
+      "code": "TE-01",
+      "kind": "TE",
+      "label": "TE-01 · terreno · 4.371,2 m²",
+      "status": "Toposólido \"Grassland - 1200mm\" (cota sup. 0,25 a 0,10 m)",
+      "elementId": "1023311",
+      "type": "Grassland - 1200mm",
+      "area_m2": 4371.175,
+      "volume_m3": 4589.737
+    },
+    {
+      "code": "TE-02",
+      "kind": "TE",
+      "label": "TE-02 · terreno · 814,0 m²",
+      "status": "Toposólido \"Grassland - 1200mm\" (cota sup. 0,15 a 0,50 m)",
+      "elementId": "354442",
+      "type": "Grassland - 1200mm",
+      "area_m2": 814.015,
+      "volume_m3": 703.069
+    },
+    {
+      "code": "TE-03",
+      "kind": "TE",
+      "label": "TE-03 · terreno · 87,7 m²",
+      "status": "Toposólido \"Grassland - 1200mm\" (cota sup. 0,15 a 0,30 m)",
+      "elementId": "358856",
+      "type": "Grassland - 1200mm",
+      "area_m2": 87.709,
+      "volume_m3": 73.044
+    },
+    {
+      "code": "TE-04",
+      "kind": "TE",
+      "label": "TE-04 · terreno · 17,9 m²",
+      "status": "Toposólido \"Grassland - 1200mm\" (cota sup. 0,15 a 0,14 m)",
+      "elementId": "356624",
+      "type": "Grassland - 1200mm",
+      "area_m2": 17.892,
+      "volume_m3": 12.854
+    },
+    {
+      "code": "CA-01",
+      "kind": "CA",
+      "label": "CA-01 · calle · 1.576,7 m²",
+      "status": "Piso \"Calle\" (1 m de tierra en el modelo)",
+      "elementId": "734491",
+      "type": "Calle",
+      "area_m2": 1576.656,
+      "volume_m3": 1576.656
+    },
+    {
+      "code": "AC-01",
+      "kind": "AC",
+      "label": "AC-01 · base de acceso · 28,84 m² · +1,00",
+      "status": "Piso \"Base Acceso\" (nivel 005. Acceso ppal)",
+      "elementId": "398391",
+      "type": "Base Acceso",
+      "area_m2": 28.841,
+      "volume_m3": 34.609,
+      "top_m": 1.0
+    },
+    {
+      "code": "EA-01",
+      "kind": "EA",
+      "label": "EA-01 · 2,00 × 1,00 · +0,80",
+      "status": "Escalón de acceso (piso \"Escalones acceso 2m x 1m\")",
+      "elementId": "628255",
+      "type": "Escalones acceso 2m x 1m",
+      "area_m2": 2.0,
+      "volume_m3": 0.2,
+      "top_m": 0.8
+    },
+    {
+      "code": "EA-02",
+      "kind": "EA",
+      "label": "EA-02 · 2,00 × 1,00 · +0,60",
+      "status": "Escalón de acceso (piso \"Escalones acceso 2m x 1m\")",
+      "elementId": "628637",
+      "type": "Escalones acceso 2m x 1m",
+      "area_m2": 2.0,
+      "volume_m3": 0.2,
+      "top_m": 0.6
+    },
+    {
+      "code": "EA-03",
+      "kind": "EA",
+      "label": "EA-03 · 2,00 × 1,00 · +0,40",
+      "status": "Escalón de acceso (piso \"Escalones acceso 2m x 1m\")",
+      "elementId": "628772",
+      "type": "Escalones acceso 2m x 1m",
+      "area_m2": 2.0,
+      "volume_m3": 0.2,
+      "top_m": 0.4
+    },
+    {
+      "code": "EA-04",
+      "kind": "EA",
+      "label": "EA-04 · 2,00 × 1,00 · +0,40",
+      "status": "Escalón de acceso (piso \"Escalones acceso 2m x 1m\")",
+      "elementId": "629011",
+      "type": "Escalones acceso 2m x 1m",
+      "area_m2": 2.0,
+      "volume_m3": 0.2,
+      "top_m": 0.4
+    },
+    {
+      "code": "EA-05",
+      "kind": "EA",
+      "label": "EA-05 · 2,00 × 1,00 · +0,20",
+      "status": "Escalón de acceso (piso \"Escalones acceso 2m x 1m\")",
+      "elementId": "628854",
+      "type": "Escalones acceso 2m x 1m",
+      "area_m2": 2.0,
+      "volume_m3": 0.2,
+      "top_m": 0.2
+    },
+    {
+      "code": "EA-06",
+      "kind": "EA",
+      "label": "EA-06 · 2,00 × 1,00 · +0,20",
+      "status": "Escalón de acceso (piso \"Escalones acceso 2m x 1m\")",
+      "elementId": "629059",
+      "type": "Escalones acceso 2m x 1m",
+      "area_m2": 2.0,
+      "volume_m3": 0.2,
+      "top_m": 0.2
+    },
+    {
+      "code": "EE-01",
+      "kind": "EE",
+      "label": "EE-01 · escalera exterior · 10 alzadas de 0,25",
+      "status": "Escalera \"Monolithic Stair\": huella 0,28, sube 4,00 m (de +0,00 a +4,00)",
+      "elementId": "1028909",
+      "type": "Monolithic Stair",
+      "height_m": 4.0,
+      "top_m": 4.0,
+      "risers": 10,
+      "riser_m": 0.25,
+      "tread_m": 0.28
+    },
+    {
+      "code": "BA-01",
+      "kind": "BA",
+      "label": "BA-01 · 26,14 ml · h 0,90",
+      "status": "Baranda \"BARANDA ESC. INT\" · Terraza PA (deck)",
+      "elementId": "682570",
+      "type": "BARANDA ESC. INT",
+      "length_m": 26.139,
+      "height_m": 0.9,
+      "sector": "Terraza PA (deck)"
+    },
+    {
+      "code": "BA-02",
+      "kind": "BA",
+      "label": "BA-02 · 12,10 ml · h 0,90",
+      "status": "Baranda \"BARANDA ESC. INT\" · Frente PA (balcón sobre acceso)",
+      "elementId": "884409",
+      "type": "BARANDA ESC. INT",
+      "length_m": 12.1,
+      "height_m": 0.9,
+      "sector": "Frente PA (balcón sobre acceso)"
+    },
+    {
+      "code": "BA-03",
+      "kind": "BA",
+      "label": "BA-03 · 7,26 ml · h 0,90",
+      "status": "Baranda \"BARANDA ESC. INT\" · Terraza PA este",
+      "elementId": "885104",
+      "type": "BARANDA ESC. INT",
+      "length_m": 7.26,
+      "height_m": 0.9,
+      "sector": "Terraza PA este"
+    },
+    {
+      "code": "BA-04",
+      "kind": "BA",
+      "label": "BA-04 · 4,29 ml · h 0,90",
+      "status": "Baranda \"BARANDA ESC. INT\" · Escalera exterior (patio pileta)",
+      "elementId": "1033525",
+      "type": "BARANDA ESC. INT",
+      "length_m": 4.294,
+      "height_m": 0.9,
+      "sector": "Escalera exterior (patio pileta)"
+    },
+    {
+      "code": "BA-05",
+      "kind": "BA",
+      "label": "BA-05 · 2,12 ml · h 0,90",
+      "status": "Baranda \"BARANDA ESC. INT\" · Escalera exterior (patio pileta)",
+      "elementId": "1034520",
+      "type": "BARANDA ESC. INT",
+      "length_m": 2.12,
+      "height_m": 0.9,
+      "sector": "Escalera exterior (patio pileta)"
+    },
+    {
+      "code": "PO-01",
+      "kind": "PO",
+      "label": "PO-01 · 1,44 × 3,00",
+      "status": "Hoja de portón (muro \"Hojas Portón 5cm\", e 5 cm)",
+      "elementId": "664505",
+      "type": "Hojas Portón 5cm",
+      "length_m": 1.44,
+      "area_m2": 4.032,
+      "height_m": 3.0
+    },
+    {
+      "code": "PO-02",
+      "kind": "PO",
+      "label": "PO-02 · 1,50 × 3,00",
+      "status": "Hoja de portón (muro \"Hojas Portón 5cm\", e 5 cm)",
+      "elementId": "664506",
+      "type": "Hojas Portón 5cm",
+      "length_m": 1.5,
+      "area_m2": 4.2,
+      "height_m": 3.0
+    },
+    {
+      "code": "PO-03",
+      "kind": "PO",
+      "label": "PO-03 · 1,50 × 3,00",
+      "status": "Hoja de portón (muro \"Hojas Portón 5cm\", e 5 cm)",
+      "elementId": "664507",
+      "type": "Hojas Portón 5cm",
+      "length_m": 1.5,
+      "area_m2": 4.2,
+      "height_m": 3.0
+    },
+    {
+      "code": "PO-04",
+      "kind": "PO",
+      "label": "PO-04 · 1,60 × 3,00",
+      "status": "Hoja de portón (muro \"Hojas Portón 5cm\", e 5 cm)",
+      "elementId": "664508",
+      "type": "Hojas Portón 5cm",
+      "length_m": 1.6,
+      "area_m2": 4.2,
+      "height_m": 3.0
+    },
+    {
+      "code": "PO-05",
+      "kind": "PO",
+      "label": "PO-05 · 1,50 × 2,80",
+      "status": "Hoja de portón (muro \"Hojas Portón 5cm\", e 5 cm)",
+      "elementId": "670378",
+      "type": "Hojas Portón 5cm",
+      "length_m": 1.5,
+      "area_m2": 3.92,
+      "height_m": 2.8
+    }
+  ],
+  "totals": [
+    {
+      "label": "Calle",
+      "value": 1576.66,
+      "unit": "m²",
+      "detail": "piso \"Calle\""
+    },
+    {
+      "label": "Base de acceso",
+      "value": 28.84,
+      "unit": "m²",
+      "detail": "+1,00"
+    },
+    {
+      "label": "Escalones de acceso",
+      "value": 6,
+      "unit": "u",
+      "detail": "12,00 m² · alzada 0,20"
+    },
+    {
+      "label": "Escalera exterior",
+      "value": 10,
+      "unit": "alzadas",
+      "detail": "alzada 0,25 · huella 0,28 · sube 4,00 m"
+    },
+    {
+      "label": "Barandas exteriores",
+      "value": 51.91,
+      "unit": "ml",
+      "detail": "5 barandas · h 0,90"
+    },
+    {
+      "label": "Portón",
+      "value": 20.55,
+      "unit": "m²",
+      "detail": "5 hojas · e 5 cm"
+    },
+    {
+      "label": "Terreno",
+      "value": 5290.79,
+      "unit": "m²",
+      "detail": "4 toposólidos"
+    }
+  ],
+  "quantities": [
+    {
+      "label": "TE-01",
+      "group": "Terreno (toposólidos)",
+      "count": 1,
+      "value": 4371.18,
+      "unit": "m²",
+      "detail": "TE-01 · terreno · 4.371,2 m²"
+    },
+    {
+      "label": "TE-02",
+      "group": "Terreno (toposólidos)",
+      "count": 1,
+      "value": 814.01,
+      "unit": "m²",
+      "detail": "TE-02 · terreno · 814,0 m²"
+    },
+    {
+      "label": "TE-03",
+      "group": "Terreno (toposólidos)",
+      "count": 1,
+      "value": 87.71,
+      "unit": "m²",
+      "detail": "TE-03 · terreno · 87,7 m²"
+    },
+    {
+      "label": "TE-04",
+      "group": "Terreno (toposólidos)",
+      "count": 1,
+      "value": 17.89,
+      "unit": "m²",
+      "detail": "TE-04 · terreno · 17,9 m²"
+    },
+    {
+      "label": "CA-01",
+      "group": "Calle",
+      "count": 1,
+      "value": 1576.66,
+      "unit": "m²",
+      "detail": "CA-01 · calle · 1.576,7 m²"
+    },
+    {
+      "label": "AC-01",
+      "group": "Base de acceso",
+      "count": 1,
+      "value": 28.84,
+      "unit": "m²",
+      "detail": "AC-01 · base de acceso · 28,84 m² · +1,00"
+    },
+    {
+      "label": "EA-01",
+      "group": "Escalones de acceso",
+      "count": 1,
+      "value": 2.0,
+      "unit": "m²",
+      "detail": "EA-01 · 2,00 × 1,00 · +0,80"
+    },
+    {
+      "label": "EA-02",
+      "group": "Escalones de acceso",
+      "count": 1,
+      "value": 2.0,
+      "unit": "m²",
+      "detail": "EA-02 · 2,00 × 1,00 · +0,60"
+    },
+    {
+      "label": "EA-03",
+      "group": "Escalones de acceso",
+      "count": 1,
+      "value": 2.0,
+      "unit": "m²",
+      "detail": "EA-03 · 2,00 × 1,00 · +0,40"
+    },
+    {
+      "label": "EA-04",
+      "group": "Escalones de acceso",
+      "count": 1,
+      "value": 2.0,
+      "unit": "m²",
+      "detail": "EA-04 · 2,00 × 1,00 · +0,40"
+    },
+    {
+      "label": "EA-05",
+      "group": "Escalones de acceso",
+      "count": 1,
+      "value": 2.0,
+      "unit": "m²",
+      "detail": "EA-05 · 2,00 × 1,00 · +0,20"
+    },
+    {
+      "label": "EA-06",
+      "group": "Escalones de acceso",
+      "count": 1,
+      "value": 2.0,
+      "unit": "m²",
+      "detail": "EA-06 · 2,00 × 1,00 · +0,20"
+    },
+    {
+      "label": "EE-01",
+      "group": "Escalera exterior",
+      "count": 1,
+      "value": 10,
+      "unit": "alzadas",
+      "detail": "EE-01 · escalera exterior · 10 alzadas de 0,25"
+    },
+    {
+      "label": "BA-01",
+      "group": "Barandas exteriores",
+      "count": 1,
+      "value": 26.14,
+      "unit": "ml",
+      "detail": "BA-01 · 26,14 ml · h 0,90"
+    },
+    {
+      "label": "BA-02",
+      "group": "Barandas exteriores",
+      "count": 1,
+      "value": 12.1,
+      "unit": "ml",
+      "detail": "BA-02 · 12,10 ml · h 0,90"
+    },
+    {
+      "label": "BA-03",
+      "group": "Barandas exteriores",
+      "count": 1,
+      "value": 7.26,
+      "unit": "ml",
+      "detail": "BA-03 · 7,26 ml · h 0,90"
+    },
+    {
+      "label": "BA-04",
+      "group": "Barandas exteriores",
+      "count": 1,
+      "value": 4.29,
+      "unit": "ml",
+      "detail": "BA-04 · 4,29 ml · h 0,90"
+    },
+    {
+      "label": "BA-05",
+      "group": "Barandas exteriores",
+      "count": 1,
+      "value": 2.12,
+      "unit": "ml",
+      "detail": "BA-05 · 2,12 ml · h 0,90"
+    },
+    {
+      "label": "PO-01",
+      "group": "Portón (hojas)",
+      "count": 1,
+      "value": 4.03,
+      "unit": "m²",
+      "detail": "PO-01 · 1,44 × 3,00"
+    },
+    {
+      "label": "PO-02",
+      "group": "Portón (hojas)",
+      "count": 1,
+      "value": 4.2,
+      "unit": "m²",
+      "detail": "PO-02 · 1,50 × 3,00"
+    },
+    {
+      "label": "PO-03",
+      "group": "Portón (hojas)",
+      "count": 1,
+      "value": 4.2,
+      "unit": "m²",
+      "detail": "PO-03 · 1,50 × 3,00"
+    },
+    {
+      "label": "PO-04",
+      "group": "Portón (hojas)",
+      "count": 1,
+      "value": 4.2,
+      "unit": "m²",
+      "detail": "PO-04 · 1,60 × 3,00"
+    },
+    {
+      "label": "PO-05",
+      "group": "Portón (hojas)",
+      "count": 1,
+      "value": 3.92,
+      "unit": "m²",
+      "detail": "PO-05 · 1,50 × 2,80"
+    }
+  ],
+  "quantityNote": "Áreas según Revit (cara superior para terreno, calle y acceso; una cara para el portón). Barandas: largo del recorrido. Deck, borde de pileta y aleros se computan en Pisos, Pileta y Cubierta.",
+  "notModeled": [
+    "Vegetación: 18 especies cargadas en el modelo, 0 colocadas",
+    "Solados exteriores, veredas y senderos",
+    "Cercos, medianeras y portón de calle",
+    "Riego e iluminación exterior",
+    "Terminación de escalones y herrajes / accionamiento del portón"
+  ],
+  "decisions": [
+    "Exteriores documentados con implantación general, planta PB, barandas y fichas (acceso, escalera, portón).",
+    "Barandas interiores (4, 20,31 ml, escalera y hall) quedan fuera de este rubro.",
+    "Códigos TE/CA/AC/EA/EE/BA/PO solo como anotación (no escritos en Mark)."
+  ],
+  "questions": [
+    "¿Qué vegetación va y dónde (árboles, césped, canteros)? Hoy no hay ninguna colocada.",
+    "¿Qué solado llevan veredas, acceso y patio de pileta?",
+    "¿Hay cerco perimetral o portón de calle a documentar?",
+    "¿Escribimos los códigos de exteriores en el modelo (Mark)?"
+  ]
+}
