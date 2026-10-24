@@ -28,6 +28,7 @@ export function concreteTotals(m:StructureManifest){
 export const STEEL_KG_M3={platea:80,muros:60,losas:90,vigas:110,base:50};
 export type StructureLine={id:string;label:string;quantity:number;unit:string;detail?:string;informative?:boolean};
 const list=(codes:string[])=>codes.length>4?`${codes[0]} a ${codes.at(-1)}`:codes.join(', ');
+// Toda la Planta Baja apoya sobre la platea (decisión del usuario 2026-10-24): LO-PB-01 queda como referencia.
 // Partidas para el presupuesto, sin solapes con otros rubros: cada elemento suma en una sola partida de hormigón,
 // el acero sale de la cuantía de su partida y el encofrado de las caras a moldear.
 // Muros de fachada y bajo escalera van en Albañilería, los del vaso en Pileta, la base de acceso en Exteriores
@@ -42,7 +43,7 @@ export function structureBudget(m:StructureManifest):StructureLine[]{
  const concreteLines=[
   {id:'platea',label:'Hormigón de platea',quantity:vol(platea),steel:STEEL_KG_M3.platea,detail:`${list(platea.map(s=>s.code))} · ${n(sum(platea,s=>s.area_m2))} m² · e ${n((platea[0]?.concreteLayer_m||0)*100)} cm`},
   {id:'muros',label:'Hormigón de muros (20 cm)',quantity:sum(walls,w=>w.volume_m3),steel:STEEL_KG_M3.muros,detail:`${walls.length} muros MH · ${n(sum(walls,w=>w.area_m2))} m²`},
-  ...onGround.map(s=>({id:s.code==='LO-PB-01'?'losa-pb':'base-acceso',label:s.code==='LO-PB-01'?'Hormigón de losa sobre terreno (PB)':'Hormigón de base de acceso (se cotiza en Exteriores)',informative:s.code!=='LO-PB-01',quantity:s.concreteVolume_m3||0,steel:s.code==='LO-PB-01'?STEEL_KG_M3.losas:STEEL_KG_M3.base,detail:`${s.code} · ${n(s.area_m2)} m² · e ${n((s.concreteLayer_m||0)*100)} cm`} as {id:string;label:string;quantity:number;steel:number;detail:string;informative?:boolean})),
+  ...onGround.map(s=>({id:s.code==='LO-PB-01'?'losa-pb':'base-acceso',label:s.code==='LO-PB-01'?'Losa PB (va sobre la platea, no se cotiza aparte)':'Hormigón de base de acceso (se cotiza en Exteriores)',informative:true,quantity:s.concreteVolume_m3||0,steel:s.code==='LO-PB-01'?STEEL_KG_M3.losas:STEEL_KG_M3.base,detail:`${s.code} · ${n(s.area_m2)} m² · e ${n((s.concreteLayer_m||0)*100)} cm`} as {id:string;label:string;quantity:number;steel:number;detail:string;informative?:boolean})),
   {id:'losas',label:'Hormigón de losas elevadas',quantity:vol(losas),steel:STEEL_KG_M3.losas,detail:`${losas.length} losas PA/PE · ${n(sum(losas,s=>s.area_m2))} m²`},
   {id:'vigas',label:'Hormigón de vigas de encadenado',quantity:sum(tie,b=>b.volume_m3||0),steel:STEEL_KG_M3.vigas,detail:`${list(tie.map(b=>b.code))} · ${n(sum(tie,b=>b.length_m||0))} m`},
   {id:'vigas-encuentro',label:'Hormigón de vigas de encuentro de techos',quantity:sum(meet,b=>b.volume_m3||0),steel:STEEL_KG_M3.muros,detail:`${list(meet.map(b=>b.code))} · ${n(sum(meet,b=>b.area_m2||0))} m²`},

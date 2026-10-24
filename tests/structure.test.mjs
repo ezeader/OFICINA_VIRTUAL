@@ -43,4 +43,5 @@ test('budget lines have stable unique ids and every concrete element counts once
  assert.ok(Math.abs(concrete-(m.concreteWalls.totals.volume_m3+slabs+beams))<0.01);
  assert.ok(lines.find(l=>l.id==='losas-a-confirmar')?.informative);
  assert.ok(lines.find(l=>l.id==='base-acceso')?.informative,'la base de acceso se cotiza en Exteriores');
+ assert.ok(lines.find(l=>l.id==='losa-pb')?.informative,'la PB va sobre la platea');
 });
