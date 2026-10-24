@@ -41,7 +41,8 @@ export function structureBudget(m:StructureManifest):StructureLine[]{
  const losas=concrete.filter(s=>!platea.includes(s)&&!onGround.includes(s)),pending=slabs.filter(s=>!s.concreteVolume_m3&&!/^LO-PB/.test(s.code));
  const walls=m.concreteWalls.elements,beams=(m.codes||[]).filter(c=>c.kind==='VE');
  const tie=beams.filter(b=>b.level?.startsWith('00')),meet=beams.filter(b=>!tie.includes(b));
- const grow=m.checks?.loPb01VsPlatea?.loPb01OutsidePlatea_m2||0,plateaE=platea[0]?.concreteLayer_m||0,perim=m.checks?.perimeters_m||{};
+ // Cuando Revit ya modeló la ampliación (otra pieza de platea), no se vuelve a sumar.
+ const grow=Math.max(0,(m.checks?.loPb01VsPlatea?.loPb01OutsidePlatea_m2||0)-sum(platea.slice(1),s=>s.area_m2)),plateaE=platea[0]?.concreteLayer_m||0,perim=m.checks?.perimeters_m||{};
  const concreteLines=[
   {id:'platea',label:'Hormigón de platea',quantity:vol(platea)+grow*plateaE,steel:STEEL_KG_M3.platea,detail:`${list(platea.map(s=>s.code))} · ${n(sum(platea,s=>s.area_m2)+grow)} m²${grow?` (incluye ${n(grow)} m² de LO-PB-01, a extender en el modelo)`:''} · e ${n(plateaE*100)} cm`},
   {id:'muros',label:'Hormigón de muros (20 cm)',quantity:sum(walls,w=>w.volume_m3),steel:STEEL_KG_M3.muros,detail:`${walls.length} muros MH · ${n(sum(walls,w=>w.area_m2))} m²`},
