@@ -871,6 +871,7 @@ def run(doc, uidoc, job):
     if action == 'r4_crop': return crop_job(doc, job['pairs'])
     if action == 'r4_arcs': return arc_probe(doc)
     if action == 'r4_reset': return reset_job(doc, job['key'])
+    if action == 'r25_pend': return imp.load_source('ader_pend_r25', os.path.join(ROOT, 'revit_pending_r25.py')).run(doc, uidoc, job)
     if action == 'r24_eq': return imp.load_source('ader_eq_r24', os.path.join(ROOT, 'revit_equip_r24.py')).run(doc, uidoc, job)
     if action == 'r23_ext': return imp.load_source('ader_ext_r23', os.path.join(ROOT, 'revit_ext_r23.py')).run(doc, uidoc, job)
     if action == 'r22_pil': return imp.load_source('ader_pil_r22', os.path.join(ROOT, 'revit_pileta_r22.py')).run(doc, uidoc, job)

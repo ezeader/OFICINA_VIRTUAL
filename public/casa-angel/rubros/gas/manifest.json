@@ -1,0 +1,43 @@
+{
+  "title": "Gas",
+  "summary": "Sin red de gas modelada ni sistemas de cañería de gas en el modelo. Único artefacto que podría usar gas: la cocina dual fuel (EQ-02).",
+  "model": "Casa-Angel-piloto-documentacion.rvt",
+  "readAt": "2026-10-24T02:32:37.999000Z",
+  "revision": "R25",
+  "kinds": {
+    "GA": "Artefactos a gas"
+  },
+  "sheets": [],
+  "codes": [
+    {
+      "code": "GA-01",
+      "kind": "GA",
+      "label": "GA-01 · cocina dual fuel (EQ-02)",
+      "status": "Equipamiento · Cocina PA",
+      "elementId": "1449400"
+    }
+  ],
+  "totals": [
+    {
+      "label": "Artefactos posibles a gas",
+      "value": 1,
+      "unit": "u",
+      "detail": "cocina dual fuel"
+    }
+  ],
+  "quantities": [],
+  "notModeled": [
+    "Acometida, medidor y regulador (o zeppelin GLP)",
+    "Cañerías y llaves de paso",
+    "Ventilaciones reglamentarias de locales con artefactos",
+    "Caldera / termotanque (el piso radiante no tiene fuente modelada)"
+  ],
+  "decisions": [
+    "Rubro sin láminas hasta definir si hay gas."
+  ],
+  "questions": [
+    "¿Hay gas natural en la calle o se usa GLP con zeppelin? ¿O la casa es todo eléctrica (recomendado si el piso radiante va con bomba de calor)?",
+    "¿Qué artefactos van a gas: cocina, caldera del piso radiante, termotanque, parrilla con encendido?",
+    "¿Dónde iría el medidor / zeppelin (retiro sobre la calle CA-01)?"
+  ]
+}

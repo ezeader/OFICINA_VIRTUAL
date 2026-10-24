@@ -1,0 +1,286 @@
+{
+  "title": "Eléctrica",
+  "summary": "Sin instalación eléctrica modelada: solo el tablero ABB (PE). Propuesta preliminar: 128 bocas en 29 locales, a validar con el proyecto eléctrico.",
+  "model": "Casa-Angel-piloto-documentacion.rvt",
+  "readAt": "2026-10-24T02:32:37.999000Z",
+  "revision": "R25",
+  "kinds": {
+    "TG": "Tablero",
+    "BO": "Bocas"
+  },
+  "sheets": [],
+  "codes": [
+    {
+      "code": "TG-01",
+      "kind": "TG",
+      "label": "TG-01 · tablero ABB Protecta Compact EPB25-304C",
+      "status": "Planta Entrepiso",
+      "elementId": "2403792",
+      "type": "EPB25-304C"
+    }
+  ],
+  "totals": [
+    {
+      "label": "Tableros",
+      "value": 1,
+      "unit": "u",
+      "detail": "ABB EPB25-304C (PE)"
+    },
+    {
+      "label": "Bocas (propuesta preliminar)",
+      "value": 128,
+      "unit": "bocas",
+      "detail": "1 iluminación cada 12 m² + 1 toma cada 6 m de perímetro"
+    }
+  ],
+  "quantities": [
+    {
+      "label": "01 · Cuarto A Inv. 01 · PB",
+      "group": "Propuesta de bocas · 00. Planta Baja",
+      "count": 4,
+      "value": 4,
+      "unit": "bocas",
+      "detail": "1 iluminación + 3 tomas (estimado por superficie y perímetro)"
+    },
+    {
+      "label": "02 · Baño A Inv. 02 · PB",
+      "group": "Propuesta de bocas · 00. Planta Baja",
+      "count": 3,
+      "value": 3,
+      "unit": "bocas",
+      "detail": "1 iluminación + 2 tomas (estimado por superficie y perímetro)"
+    },
+    {
+      "label": "03 · Cuarto B Inv. 03 · PB",
+      "group": "Propuesta de bocas · 00. Planta Baja",
+      "count": 5,
+      "value": 5,
+      "unit": "bocas",
+      "detail": "2 iluminación + 3 tomas (estimado por superficie y perímetro)"
+    },
+    {
+      "label": "04 · Baño B Inv. 04 · PB",
+      "group": "Propuesta de bocas · 00. Planta Baja",
+      "count": 3,
+      "value": 3,
+      "unit": "bocas",
+      "detail": "1 iluminación + 2 tomas (estimado por superficie y perímetro)"
+    },
+    {
+      "label": "05 · Cuarto C Inv. 05 · PB",
+      "group": "Propuesta de bocas · 00. Planta Baja",
+      "count": 4,
+      "value": 4,
+      "unit": "bocas",
+      "detail": "1 iluminación + 3 tomas (estimado por superficie y perímetro)"
+    },
+    {
+      "label": "06 · Baño C Inv. 06 · PB",
+      "group": "Propuesta de bocas · 00. Planta Baja",
+      "count": 3,
+      "value": 3,
+      "unit": "bocas",
+      "detail": "1 iluminación + 2 tomas (estimado por superficie y perímetro)"
+    },
+    {
+      "label": "07 · Toilette Servicio 07 · PB",
+      "group": "Propuesta de bocas · 00. Planta Baja",
+      "count": 3,
+      "value": 3,
+      "unit": "bocas",
+      "detail": "1 iluminación + 2 tomas (estimado por superficie y perímetro)"
+    },
+    {
+      "label": "08 · Lavadero 08 · PB",
+      "group": "Propuesta de bocas · 00. Planta Baja",
+      "count": 3,
+      "value": 3,
+      "unit": "bocas",
+      "detail": "1 iluminación + 2 tomas (estimado por superficie y perímetro)"
+    },
+    {
+      "label": "09 · Hab. servicio 09 · PB",
+      "group": "Propuesta de bocas · 00. Planta Baja",
+      "count": 3,
+      "value": 3,
+      "unit": "bocas",
+      "detail": "1 iluminación + 2 tomas (estimado por superficie y perímetro)"
+    },
+    {
+      "label": "10 · Acceso Servicio 10 · PB",
+      "group": "Propuesta de bocas · 00. Planta Baja",
+      "count": 3,
+      "value": 3,
+      "unit": "bocas",
+      "detail": "1 iluminación + 2 tomas (estimado por superficie y perímetro)"
+    },
+    {
+      "label": "12 · Quincho 12 · PB",
+      "group": "Propuesta de bocas · 00. Planta Baja",
+      "count": 9,
+      "value": 9,
+      "unit": "bocas",
+      "detail": "4 iluminación + 5 tomas (estimado por superficie y perímetro)"
+    },
+    {
+      "label": "13 · Cuarto ppal 13 · PB",
+      "group": "Propuesta de bocas · 00. Planta Baja",
+      "count": 5,
+      "value": 5,
+      "unit": "bocas",
+      "detail": "2 iluminación + 3 tomas (estimado por superficie y perímetro)"
+    },
+    {
+      "label": "14 · Vestidor ppal 14 · PB",
+      "group": "Propuesta de bocas · 00. Planta Baja",
+      "count": 4,
+      "value": 4,
+      "unit": "bocas",
+      "detail": "1 iluminación + 3 tomas (estimado por superficie y perímetro)"
+    },
+    {
+      "label": "15 · Baño ppal 15 · PB",
+      "group": "Propuesta de bocas · 00. Planta Baja",
+      "count": 4,
+      "value": 4,
+      "unit": "bocas",
+      "detail": "1 iluminación + 3 tomas (estimado por superficie y perímetro)"
+    },
+    {
+      "label": "16 · Pasillo 16 · PB",
+      "group": "Propuesta de bocas · 00. Planta Baja",
+      "count": 9,
+      "value": 9,
+      "unit": "bocas",
+      "detail": "3 iluminación + 6 tomas (estimado por superficie y perímetro)"
+    },
+    {
+      "label": "17 · Hall 17 · PB",
+      "group": "Propuesta de bocas · 00. Planta Baja",
+      "count": 7,
+      "value": 7,
+      "unit": "bocas",
+      "detail": "3 iluminación + 4 tomas (estimado por superficie y perímetro)"
+    },
+    {
+      "label": "01 · Sala de TV 01 · PA",
+      "group": "Propuesta de bocas · 01. Planta Alta",
+      "count": 5,
+      "value": 5,
+      "unit": "bocas",
+      "detail": "2 iluminación + 3 tomas (estimado por superficie y perímetro)"
+    },
+    {
+      "label": "02 · Sala de Maquinas 02 · PA",
+      "group": "Propuesta de bocas · 01. Planta Alta",
+      "count": 3,
+      "value": 3,
+      "unit": "bocas",
+      "detail": "1 iluminación + 2 tomas (estimado por superficie y perímetro)"
+    },
+    {
+      "label": "03 · Playroom 03 · PA",
+      "group": "Propuesta de bocas · 01. Planta Alta",
+      "count": 8,
+      "value": 8,
+      "unit": "bocas",
+      "detail": "3 iluminación + 5 tomas (estimado por superficie y perímetro)"
+    },
+    {
+      "label": "04 · Baño PA 04 · PA",
+      "group": "Propuesta de bocas · 01. Planta Alta",
+      "count": 3,
+      "value": 3,
+      "unit": "bocas",
+      "detail": "1 iluminación + 2 tomas (estimado por superficie y perímetro)"
+    },
+    {
+      "label": "05 · Toilette 05 · PA",
+      "group": "Propuesta de bocas · 01. Planta Alta",
+      "count": 3,
+      "value": 3,
+      "unit": "bocas",
+      "detail": "1 iluminación + 2 tomas (estimado por superficie y perímetro)"
+    },
+    {
+      "label": "06 · Cava 06 · PA",
+      "group": "Propuesta de bocas · 01. Planta Alta",
+      "count": 3,
+      "value": 3,
+      "unit": "bocas",
+      "detail": "1 iluminación + 2 tomas (estimado por superficie y perímetro)"
+    },
+    {
+      "label": "07 · Cocina 07 · PA",
+      "group": "Propuesta de bocas · 01. Planta Alta",
+      "count": 6,
+      "value": 6,
+      "unit": "bocas",
+      "detail": "2 iluminación + 4 tomas (estimado por superficie y perímetro)"
+    },
+    {
+      "label": "08 · Comedor 08 · PA",
+      "group": "Propuesta de bocas · 01. Planta Alta",
+      "count": 6,
+      "value": 6,
+      "unit": "bocas",
+      "detail": "2 iluminación + 4 tomas (estimado por superficie y perímetro)"
+    },
+    {
+      "label": "09 · Living 09 · PA",
+      "group": "Propuesta de bocas · 01. Planta Alta",
+      "count": 5,
+      "value": 5,
+      "unit": "bocas",
+      "detail": "2 iluminación + 3 tomas (estimado por superficie y perímetro)"
+    },
+    {
+      "label": "10 · Puente 10 · PA",
+      "group": "Propuesta de bocas · 01. Planta Alta",
+      "count": 3,
+      "value": 3,
+      "unit": "bocas",
+      "detail": "1 iluminación + 2 tomas (estimado por superficie y perímetro)"
+    },
+    {
+      "label": "01 · SM 01 · PE",
+      "group": "Propuesta de bocas · 02. Planta Entrepiso",
+      "count": 3,
+      "value": 3,
+      "unit": "bocas",
+      "detail": "1 iluminación + 2 tomas (estimado por superficie y perímetro)"
+    },
+    {
+      "label": "02 · Hall PE 02 · PE",
+      "group": "Propuesta de bocas · 02. Planta Entrepiso",
+      "count": 3,
+      "value": 3,
+      "unit": "bocas",
+      "detail": "1 iluminación + 2 tomas (estimado por superficie y perímetro)"
+    },
+    {
+      "label": "03 · Atelier 03 · PE",
+      "group": "Propuesta de bocas · 02. Planta Entrepiso",
+      "count": 5,
+      "value": 5,
+      "unit": "bocas",
+      "detail": "2 iluminación + 3 tomas (estimado por superficie y perímetro)"
+    }
+  ],
+  "quantityNote": "Bocas estimadas por superficie y perímetro de cada local (no es el cálculo reglamentario). Se reemplaza por el proyecto eléctrico.",
+  "notModeled": [
+    "Bocas, tomas, llaves y luminarias",
+    "Cañerías, cajas y circuitos",
+    "Puesta a tierra, acometida y medidor",
+    "Las 3 \"Electrical Fixtures\" del modelo son lavavajillas mal categorizados"
+  ],
+  "decisions": [
+    "Rubro sin láminas hasta tener el proyecto eléctrico."
+  ],
+  "questions": [
+    "¿Quién hace el proyecto eléctrico (instalador matriculado) y con qué grado de electrificación?",
+    "¿Iluminación: embutidos LED en cielorrasos, apliques, o ambos? ¿Exterior y pileta?",
+    "¿Tablero general en PE (donde está el ABB) o en PB junto al acceso? ¿Seccionales por planta?",
+    "¿Corregimos la categoría de los 3 lavavajillas en el modelo (cambio de modelo, requiere tu OK)?"
+  ]
+}
