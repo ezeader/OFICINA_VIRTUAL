@@ -46,9 +46,9 @@ test('budget lines have stable unique ids and every concrete element counts once
  assert.ok(lines.find(l=>l.id==='base-acceso')?.informative,'la base de acceso se cotiza en Exteriores');
  assert.ok(lines.find(l=>l.id==='losa-pb')?.informative,'la PB va sobre la platea');
 });
-test('platea extension is not counted twice once Revit models it',()=>{
- const plate=m.slabsAndFoundations.find(s=>/platea/i.test(s.role)),extra={...plate,id:'nuevo',area_m2:124.125,concreteVolume_m3:124.125*0.15};
- const before=structureBudget(m).find(l=>l.id==='platea').quantity;
- const after=structureBudget({...m,slabsAndFoundations:[...m.slabsAndFoundations,extra]}).find(l=>l.id==='platea').quantity;
- assert.ok(Math.abs(before-after)<0.01);
+test('platea counts every PL piece once, including the extension published only as a code',()=>{
+ const plates=m.codes.filter(c=>c.kind==='PL'),area=plates.reduce((n,c)=>n+c.area_m2,0);
+ const line=structureBudget(m).find(l=>l.id==='platea');
+ assert.ok(Math.abs(line.quantity-area*0.15)<0.01,'capa de 15 cm sobre toda la huella');
+ assert.ok(!/a modelar/.test(line.detail));
 });

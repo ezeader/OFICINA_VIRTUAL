@@ -37,14 +37,17 @@ const list=(codes:string[])=>codes.length>4?`${codes[0]} a ${codes.at(-1)}`:code
 export function structureBudget(m:StructureManifest):StructureLine[]{
  const code=new Map((m.codes||[]).map(c=>[c.id,c.code])),slabs=m.slabsAndFoundations.map(s=>({...s,code:code.get(s.id)||s.id}));
  const concrete=slabs.filter(s=>(s.concreteVolume_m3||0)>0),vol=(rows:{concreteVolume_m3:number|null}[])=>sum(rows,s=>s.concreteVolume_m3||0);
- const platea=concrete.filter(s=>/platea/i.test(s.role)),onGround=concrete.filter(s=>!/platea/i.test(s.role)&&/^LO-(PB|AC)/.test(s.code));
+ // Piezas de platea que solo figuran en los códigos (p. ej. la ampliación PL-02) toman la capa de hormigón de PL-01.
+ const plates=concrete.filter(s=>/platea/i.test(s.role)),e0=plates[0]?.concreteLayer_m||0;
+ const extraPlates=(m.codes||[]).filter(c=>c.kind==='PL'&&!slabs.some(s=>s.id===c.id)).map(c=>({...plates[0],id:c.id,code:c.code,area_m2:c.area_m2||0,concreteLayer_m:e0,concreteVolume_m3:(c.area_m2||0)*e0}));
+ const platea=[...plates,...extraPlates],onGround=concrete.filter(s=>!/platea/i.test(s.role)&&/^LO-(PB|AC)/.test(s.code));
  const losas=concrete.filter(s=>!platea.includes(s)&&!onGround.includes(s)),pending=slabs.filter(s=>!s.concreteVolume_m3&&!/^LO-PB/.test(s.code));
  const walls=m.concreteWalls.elements,beams=(m.codes||[]).filter(c=>c.kind==='VE');
  const tie=beams.filter(b=>b.level?.startsWith('00')),meet=beams.filter(b=>!tie.includes(b));
  // Cuando Revit ya modeló la ampliación (otra pieza de platea), no se vuelve a sumar.
  const grow=Math.max(0,(m.checks?.loPb01VsPlatea?.loPb01OutsidePlatea_m2||0)-sum(platea.slice(1),s=>s.area_m2)),plateaE=platea[0]?.concreteLayer_m||0,perim=m.checks?.perimeters_m||{};
  const concreteLines=[
-  {id:'platea',label:'Hormigón de platea',quantity:vol(platea)+grow*plateaE,steel:STEEL_KG_M3.platea,detail:`${list(platea.map(s=>s.code))} · ${n(sum(platea,s=>s.area_m2)+grow)} m²${grow?` (incluye ${n(grow)} m² de LO-PB-01, a extender en el modelo)`:''} · e ${n(plateaE*100)} cm`},
+  {id:'platea',label:'Hormigón de platea',quantity:vol(platea)+grow*plateaE,steel:STEEL_KG_M3.platea,detail:`${list(platea.map(s=>s.code))} · ${n(sum(platea,s=>s.area_m2)+grow)} m²${grow?` (incluye ${n(grow)} m² bajo LO-PB-01, a modelar)`:''} · e ${n(plateaE*100)} cm`},
   {id:'muros',label:'Hormigón de muros (20 cm)',quantity:sum(walls,w=>w.volume_m3),steel:STEEL_KG_M3.muros,detail:`${walls.length} muros MH · ${n(sum(walls,w=>w.area_m2))} m²`},
   ...onGround.map(s=>({id:s.code==='LO-PB-01'?'losa-pb':'base-acceso',label:s.code==='LO-PB-01'?'Losa PB (pasa a ser platea, no se cotiza aparte)':'Hormigón de base de acceso (se cotiza en Exteriores)',informative:true,quantity:s.concreteVolume_m3||0,steel:s.code==='LO-PB-01'?STEEL_KG_M3.losas:STEEL_KG_M3.base,detail:`${s.code} · ${n(s.area_m2)} m² · e ${n((s.concreteLayer_m||0)*100)} cm`} as {id:string;label:string;quantity:number;steel:number;detail:string;informative?:boolean})),
   {id:'losas',label:'Hormigón de losas elevadas',quantity:vol(losas),steel:STEEL_KG_M3.losas,detail:`${losas.length} losas PA/PE · ${n(sum(losas,s=>s.area_m2))} m²`},
