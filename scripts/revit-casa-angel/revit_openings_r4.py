@@ -872,6 +872,7 @@ def run(doc, uidoc, job):
     if action == 'r4_crop': return crop_job(doc, job['pairs'])
     if action == 'r4_arcs': return arc_probe(doc)
     if action == 'r4_reset': return reset_job(doc, job['key'])
+    if action == 'r30_cubdoc': return imp.load_source('ader_cubdoc_r30', os.path.join(ROOT, 'revit_cub_doc_r30.py')).run(doc, uidoc, job)
     if action == 'switch': return imp.load_source('ader_switch_doc', os.path.join(ROOT, 'revit_switch_doc.py')).run(doc, uidoc, job)
     if action == 'r32_cliconn': return imp.load_source('ader_cliconn_r32', os.path.join(ROOT, 'revit_clima_conn_r32.py')).run(doc, uidoc, job)
     if action == 'r31_platea': return imp.load_source('ader_platea_r31', os.path.join(ROOT, 'revit_platea_r31.py')).run(doc, uidoc, job)

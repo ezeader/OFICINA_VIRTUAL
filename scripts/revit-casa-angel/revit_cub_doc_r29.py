@@ -319,7 +319,7 @@ def project_info(doc, ld):
 
 def index_part(doc, job):
     sheet = DB.ViewSheet.Create(doc, DB.ElementId(Int64(L.TITLEBLOCK))); sheet.SheetNumber = 'CUB-00'; sheet.Name = u'Cubierta · índice'
-    head = u'CASA ÁNGEL · CUBIERTA · ÍNDICE Y CÓMPUTO (R29)'
+    head = u'CASA ÁNGEL · CUBIERTA · ÍNDICE Y CÓMPUTO (R30)'
     L.tn(doc, sheet.Id, DB.XYZ(L.X0 + .01, L.Y1 - .012, 0), head, 'title'); notes = [{'text': head, 'anchor': [L.X0 + .01, L.Y1 - .012]}]
     for k, col in enumerate(job['columns']):
         xx = L.X0 + .01 + k * (L.X1 - L.X0) / len(job['columns'])
