@@ -58,7 +58,7 @@ def main():
     if not any(c['code'] == 'PL-02' for c in codes):
         i = next(k for k, c in enumerate(codes) if c['code'] == 'PL-01')
         codes.insert(i + 1, {'id': '2488978', 'code': 'PL-02', 'kind': 'PL', 'level': '00. Planta Baja', 'label': f"PL-02 · {c2(pla['area_m2'])} m² · ampliación de platea R31", 'status': 'Modelado R31 (OK usuario) · tipo Platea PB 15CM bajo LO-PB-01',
-                                 'type': 'Platea PB 15CM', 'area_m2': pla['area_m2'], 'volume_m3': pla['volume_m3'], 'thickness_m': 0.15})
+                                 'type': 'Platea PB 15CM', 'area_m2': pla['area_m2'], 'volume_m3': round(pla['area_m2'] * .15, 3), 'concreteLayer_m': 0.15, 'thickness_m': 0.15, 'typeVolume_m3': pla['volume_m3']})
     tot_a = chk['2287528']['area_m2'] + pla['area_m2']
     m.setdefault('decisions', [])
     for t in [f"R31: platea ampliada (PL-02, {c2(pla['area_m2'])} m²) bajo toda la huella de LO-PB-01 con OK del usuario; platea total {c2(tot_a)} m².",
