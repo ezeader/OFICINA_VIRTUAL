@@ -42,10 +42,14 @@ def place(doc, v, anchor, text, placed, crop, key='tag', z=0.0, dirs=None):
     for r in (1.2, 2.0, 3.0, 4.0, 5.5, 7.0):
         for a in (dirs or (0, 45, 90, 135, 180, 225, 270, 315)):
             cands.append((r * math.cos(math.radians(a)) / M, r * math.sin(math.radians(a)) / M))
+    fb = None
     for dx, dy in cands:
         cx, cy = anchor.X + dx, anchor.Y + dy                      # label centre
         b = (cx - w / 2, cy - h / 2, cx + w / 2, cy + h / 2)
         if free(b, placed, crop): break
+        if fb is None and free(b, [], crop): fb = (dx, dy, b)
+    else:
+        if fb: dx, dy, b = fb                                       # no free slot: stay inside the crop
     placed.append(b)
     L.tn(doc, v.Id, DB.XYZ(b[0], b[3], z), text, key)
     if (dx, dy) != (0, 0):

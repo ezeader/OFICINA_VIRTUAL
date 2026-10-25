@@ -1,9 +1,9 @@
 {
   "title": "Climatización (piso radiante)",
-  "summary": "Piso radiante con 1399,51 ml de PEX Ø20 en 26 locales, colectores Norte y Sur, 11 cronotermostatos. 32 láminas: plantas de serpentines por nivel, fichas por circuito/local y por colector. Bomba de calor no modelada.",
+  "summary": "Climatización R32 (etapa 1): plantas CLI-P-PB/PA/PE con el trazado de cada serpentín por circuito y el colector que lo alimenta (14 circuitos a CO-N, 12 a CO-S; 6 asignados por cercanía). Láminas R19 como previas.",
   "model": "Casa-Angel-piloto-documentacion.rvt",
   "readAt": "2026-10-23T18:07:05.751000Z",
-  "revision": "R19",
+  "revision": "R32",
   "kinds": {
     "CI": "Circuitos de piso radiante por local",
     "DI": "Distribución y montantes",
@@ -15,20 +15,532 @@
   "sheets": [
     {
       "number": "CLI-00",
-      "title": "Índice, criterios y cómputo",
-      "level": "Climatización",
+      "title": "Índice",
+      "level": "General",
       "sector": "General",
       "kind": "general",
       "element": null,
       "elementId": null,
       "elementKind": null,
-      "note": null,
-      "sheetId": "2469524",
+      "note": "R32 · archivo Casa-Angel-DOC-Climatizacion.rvt",
+      "sheetId": "219487",
       "pdf": "/casa-angel/rubros/climatizacion/CLI-00.pdf",
       "image": "/casa-angel/rubros/climatizacion/CLI-00.svg.gz",
       "preview": "/casa-angel/rubros/climatizacion/CLI-00-preview.png",
       "thumbnail": "/casa-angel/rubros/climatizacion/CLI-00.png",
       "views": []
+    },
+    {
+      "number": "CLI-P-PA",
+      "title": "Piso radiante · trazado de serpentines · 01. Planta Alta",
+      "level": "01. Planta Alta",
+      "sector": "Piso radiante",
+      "kind": "general",
+      "element": null,
+      "elementId": null,
+      "elementKind": null,
+      "note": "R32 · archivo Casa-Angel-DOC-Climatizacion.rvt",
+      "sheetId": "219301",
+      "pdf": "/casa-angel/rubros/climatizacion/CLI-P-PA.pdf",
+      "image": "/casa-angel/rubros/climatizacion/CLI-P-PA.svg.gz",
+      "preview": "/casa-angel/rubros/climatizacion/CLI-P-PA-preview.png",
+      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-P-PA.png",
+      "views": [
+        {
+          "id": "218908",
+          "name": "Piso radiante · 01. Planta Alta",
+          "label": "Piso radiante · 01. Planta Alta   1:75",
+          "scale": 75,
+          "kind": "plan",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "image": "/casa-angel/rubros/climatizacion/CLI-P-PA-view-218908.svg.gz",
+          "region": [
+            0.1139,
+            0.2561,
+            0.4228,
+            0.726
+          ],
+          "tags": [
+            "CI-PA-01",
+            "CI-PA-02",
+            "CI-PA-03",
+            "CI-PA-04",
+            "CI-PA-05",
+            "CI-PA-06",
+            "CI-PA-07",
+            "CI-PA-08",
+            "CI-PA-09",
+            "CI-PA-10"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "CI-PA-01",
+              "elementId": "870167",
+              "room": true,
+              "label": "CI-PA-01 · Baño PA · 33,35 ml · 5,74 m/m²",
+              "box": [
+                0.2354,
+                0.7987,
+                0.3465,
+                0.9258
+              ]
+            },
+            {
+              "code": "CI-PA-02",
+              "elementId": "863864",
+              "room": true,
+              "label": "CI-PA-02 · Cava · 22,05 ml · 2,61 m/m²",
+              "box": [
+                0.7722,
+                0.0481,
+                0.9219,
+                0.1654
+              ]
+            },
+            {
+              "code": "CI-PA-03",
+              "elementId": "877992",
+              "room": true,
+              "label": "CI-PA-03 · Cocina · 73,20 ml · 3,51 m/m²",
+              "box": [
+                0.6962,
+                0.1654,
+                0.9403,
+                0.3436
+              ]
+            },
+            {
+              "code": "CI-PA-04",
+              "elementId": "869397",
+              "room": true,
+              "label": "CI-PA-04 · Comedor · 157,95 ml · 6,79 m/m²",
+              "box": [
+                0.7002,
+                0.3436,
+                0.9403,
+                0.5525
+              ]
+            },
+            {
+              "code": "CI-PA-05",
+              "elementId": "877995",
+              "room": true,
+              "label": "CI-PA-05 · Living · 14,92 ml · 0,92 m/m²",
+              "box": [
+                0.6962,
+                0.5391,
+                0.9172,
+                0.6912
+              ]
+            },
+            {
+              "code": "CI-PA-06",
+              "elementId": "870164",
+              "room": true,
+              "label": "CI-PA-06 · Playroom · 137,87 ml · 4,76 m/m²",
+              "box": [
+                0.2774,
+                0.7381,
+                0.6463,
+                0.9258
+              ]
+            },
+            {
+              "code": "CI-PA-07",
+              "elementId": "887814",
+              "room": true,
+              "label": "CI-PA-07 · Puente · 0,23 ml · 0,11 m/m²",
+              "box": [
+                0.6463,
+                0.6912,
+                0.7397,
+                0.7781
+              ]
+            },
+            {
+              "code": "CI-PA-08",
+              "elementId": "892788",
+              "room": true,
+              "label": "CI-PA-08 · Sala de Maquinas · 16,57 ml · 3,46 m/m²",
+              "box": [
+                0.0953,
+                0.8541,
+                0.2307,
+                0.9258
+              ]
+            },
+            {
+              "code": "CI-PA-09",
+              "elementId": "864264",
+              "room": true,
+              "label": "CI-PA-09 · Sala de TV · 73,70 ml · 4,92 m/m²",
+              "box": [
+                0.0953,
+                0.6738,
+                0.2681,
+                0.8498
+              ]
+            },
+            {
+              "code": "CI-PA-10",
+              "elementId": "863692",
+              "room": true,
+              "label": "CI-PA-10 · Toilette · 8,84 ml · 1,73 m/m²",
+              "box": [
+                0.6775,
+                0.0481,
+                0.7675,
+                0.1654
+              ]
+            }
+          ]
+        },
+        {
+          "id": "219290",
+          "name": "Cuadro de circuitos · PA",
+          "label": "Cuadro de circuitos · PA   1:10",
+          "scale": 10,
+          "kind": "detail",
+          "sector": "Detalles",
+          "roomLabel": "Detalles",
+          "image": "/casa-angel/rubros/climatizacion/CLI-P-PA-view-219290.svg.gz",
+          "region": [
+            0.5344,
+            0.33,
+            0.6727,
+            0.6521
+          ],
+          "tags": [],
+          "dimensions": [],
+          "elements": []
+        }
+      ]
+    },
+    {
+      "number": "CLI-P-PB",
+      "title": "Piso radiante · trazado de serpentines · 00. Planta Baja",
+      "level": "00. Planta Baja",
+      "sector": "Piso radiante",
+      "kind": "general",
+      "element": null,
+      "elementId": null,
+      "elementKind": null,
+      "note": "R32 · archivo Casa-Angel-DOC-Climatizacion.rvt",
+      "sheetId": "218886",
+      "pdf": "/casa-angel/rubros/climatizacion/CLI-P-PB.pdf",
+      "image": "/casa-angel/rubros/climatizacion/CLI-P-PB.svg.gz",
+      "preview": "/casa-angel/rubros/climatizacion/CLI-P-PB-preview.png",
+      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-P-PB.png",
+      "views": [
+        {
+          "id": "218331",
+          "name": "Piso radiante · 00. Planta Baja",
+          "label": "Piso radiante · 00. Planta Baja   1:75",
+          "scale": 75,
+          "kind": "plan",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/climatizacion/CLI-P-PB-view-218331.svg.gz",
+          "region": [
+            0.1288,
+            0.2474,
+            0.4481,
+            0.7347
+          ],
+          "tags": [
+            "CI-PB-01",
+            "CI-PB-02",
+            "CI-PB-03",
+            "CI-PB-04",
+            "CI-PB-05",
+            "CI-PB-06",
+            "CI-PB-07",
+            "CI-PB-08",
+            "CI-PB-09",
+            "CI-PB-10",
+            "CI-PB-11",
+            "CI-PB-12",
+            "CI-PB-13",
+            "CI-PB-14"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "CI-PB-01",
+              "elementId": "780810",
+              "room": true,
+              "label": "CI-PB-01 · Baño A Inv. · 7,10 ml · 1,34 m/m²",
+              "box": [
+                0.0832,
+                0.8769,
+                0.2503,
+                0.9368
+              ]
+            },
+            {
+              "code": "CI-PB-02",
+              "elementId": "780813",
+              "room": true,
+              "label": "CI-PB-02 · Baño B Inv. · 6,90 ml · 1,27 m/m²",
+              "box": [
+                0.2594,
+                0.8769,
+                0.431,
+                0.9368
+              ]
+            },
+            {
+              "code": "CI-PB-03",
+              "elementId": "780822",
+              "room": true,
+              "label": "CI-PB-03 · Baño C Inv. · 7,12 ml · 1,34 m/m²",
+              "box": [
+                0.44,
+                0.8769,
+                0.6071,
+                0.9368
+              ]
+            },
+            {
+              "code": "CI-PB-04",
+              "elementId": "780828",
+              "room": true,
+              "label": "CI-PB-04 · Baño ppal · 14,33 ml · 1,59 m/m²",
+              "box": [
+                0.8664,
+                0.4696,
+                0.9481,
+                0.6833
+              ]
+            },
+            {
+              "code": "CI-PB-05",
+              "elementId": "780807",
+              "room": true,
+              "label": "CI-PB-05 · Cuarto A Inv. · 27,41 ml · 2,31 m/m²",
+              "box": [
+                0.0832,
+                0.7376,
+                0.2503,
+                0.8719
+              ]
+            },
+            {
+              "code": "CI-PB-06",
+              "elementId": "780816",
+              "room": true,
+              "label": "CI-PB-06 · Cuarto B Inv. · 27,36 ml · 2,25 m/m²",
+              "box": [
+                0.2594,
+                0.7376,
+                0.431,
+                0.8719
+              ]
+            },
+            {
+              "code": "CI-PB-07",
+              "elementId": "780819",
+              "room": true,
+              "label": "CI-PB-07 · Cuarto C Inv. · 27,41 ml · 2,31 m/m²",
+              "box": [
+                0.44,
+                0.7376,
+                0.6071,
+                0.8719
+              ]
+            },
+            {
+              "code": "CI-PB-08",
+              "elementId": "780825",
+              "room": true,
+              "label": "CI-PB-08 · Cuarto ppal · 43,37 ml · 2,93 m/m²",
+              "box": [
+                0.6656,
+                0.4696,
+                0.8664,
+                0.6108
+              ]
+            },
+            {
+              "code": "CI-PB-09",
+              "elementId": "785697",
+              "room": true,
+              "label": "CI-PB-09 · Hab. servicio · 19,19 ml · 2,90 m/m²",
+              "box": [
+                0.6776,
+                0.0716,
+                0.7924,
+                0.1805
+              ]
+            },
+            {
+              "code": "CI-PB-10",
+              "elementId": "1041091",
+              "room": true,
+              "label": "CI-PB-10 · Lavadero · 23,26 ml · 3,50 m/m²",
+              "box": [
+                0.5608,
+                0.0684,
+                0.6733,
+                0.1837
+              ]
+            },
+            {
+              "code": "CI-PB-11",
+              "elementId": "788673",
+              "room": true,
+              "label": "CI-PB-11 · Pasillo · 133,58 ml · 5,12 m/m²",
+              "box": [
+                0.2594,
+                0.4665,
+                0.6613,
+                0.7336
+              ]
+            },
+            {
+              "code": "CI-PB-12",
+              "elementId": "783339",
+              "room": true,
+              "label": "CI-PB-12 · Quincho · 187,35 ml · 4,16 m/m²",
+              "box": [
+                0.5717,
+                0.1857,
+                0.8849,
+                0.4644
+              ]
+            },
+            {
+              "code": "CI-PB-13",
+              "elementId": "874173",
+              "room": true,
+              "label": "CI-PB-13 · Toilette Servicio · 14,46 ml · 2,32 m/m²",
+              "box": [
+                0.4445,
+                0.0716,
+                0.5518,
+                0.1837
+              ]
+            },
+            {
+              "code": "CI-PB-14",
+              "elementId": "1007176",
+              "room": true,
+              "label": "CI-PB-14 · Vestidor ppal · 15,99 ml · 2,11 m/m²",
+              "box": [
+                0.6656,
+                0.6108,
+                0.8632,
+                0.6833
+              ]
+            }
+          ]
+        },
+        {
+          "id": "218875",
+          "name": "Cuadro de circuitos · PB",
+          "label": "Cuadro de circuitos · PB   1:10",
+          "scale": 10,
+          "kind": "detail",
+          "sector": "Detalles",
+          "roomLabel": "Detalles",
+          "image": "/casa-angel/rubros/climatizacion/CLI-P-PB-view-218875.svg.gz",
+          "region": [
+            0.5545,
+            0.3149,
+            0.6929,
+            0.6672
+          ],
+          "tags": [],
+          "dimensions": [],
+          "elements": []
+        }
+      ]
+    },
+    {
+      "number": "CLI-P-PE",
+      "title": "Piso radiante · trazado de serpentines · 02. Planta Entrepiso",
+      "level": "02. Planta Entrepiso",
+      "sector": "Piso radiante",
+      "kind": "general",
+      "element": null,
+      "elementId": null,
+      "elementKind": null,
+      "note": "R32 · archivo Casa-Angel-DOC-Climatizacion.rvt",
+      "sheetId": "219465",
+      "pdf": "/casa-angel/rubros/climatizacion/CLI-P-PE.pdf",
+      "image": "/casa-angel/rubros/climatizacion/CLI-P-PE.svg.gz",
+      "preview": "/casa-angel/rubros/climatizacion/CLI-P-PE-preview.png",
+      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-P-PE.png",
+      "views": [
+        {
+          "id": "219323",
+          "name": "Piso radiante · 02. Planta Entrepiso",
+          "label": "Piso radiante · 02. Planta Entrepiso   1:50",
+          "scale": 50,
+          "kind": "plan",
+          "sector": "02. Planta Entrepiso",
+          "roomLabel": "02. Planta Entrepiso",
+          "image": "/casa-angel/rubros/climatizacion/CLI-P-PE-view-219323.svg.gz",
+          "region": [
+            0.1284,
+            0.3645,
+            0.3279,
+            0.6176
+          ],
+          "tags": [
+            "CI-PE-01",
+            "CI-PE-02"
+          ],
+          "dimensions": [],
+          "elements": [
+            {
+              "code": "CI-PE-01",
+              "elementId": "876161",
+              "room": true,
+              "label": "CI-PE-01 · Atelier · 94,62 ml · 4,89 m/m²",
+              "box": [
+                0.2832,
+                0.3384,
+                0.8359,
+                0.7984
+              ]
+            },
+            {
+              "code": "CI-PE-02",
+              "elementId": "876170",
+              "room": true,
+              "label": "CI-PE-02 · SM · 1,82 ml · 0,28 m/m²",
+              "box": [
+                0.2254,
+                0.0,
+                0.4992,
+                0.3142
+              ]
+            }
+          ]
+        },
+        {
+          "id": "219454",
+          "name": "Cuadro de circuitos · PE",
+          "label": "Cuadro de circuitos · PE   1:10",
+          "scale": 10,
+          "kind": "detail",
+          "sector": "Detalles",
+          "roomLabel": "Detalles",
+          "image": "/casa-angel/rubros/climatizacion/CLI-P-PE-view-219454.svg.gz",
+          "region": [
+            0.4942,
+            0.3603,
+            0.6325,
+            0.6218
+          ],
+          "tags": [],
+          "dimensions": [],
+          "elements": []
+        }
+      ]
     },
     {
       "number": "CLI-PA-01",
@@ -39,7 +551,7 @@
       "element": null,
       "elementId": null,
       "elementKind": null,
-      "note": null,
+      "note": "R19 · previo (se reemplaza en las etapas 2 y 3)",
       "sheetId": "2468092",
       "pdf": "/casa-angel/rubros/climatizacion/CLI-PA-01.pdf",
       "image": "/casa-angel/rubros/climatizacion/CLI-PA-01.svg.gz",
@@ -270,7 +782,7 @@
       "element": null,
       "elementId": null,
       "elementKind": null,
-      "note": null,
+      "note": "R19 · previo (se reemplaza en las etapas 2 y 3)",
       "sheetId": "2468046",
       "pdf": "/casa-angel/rubros/climatizacion/CLI-PB-01.pdf",
       "image": "/casa-angel/rubros/climatizacion/CLI-PB-01.svg.gz",
@@ -561,7 +1073,7 @@
       "element": null,
       "elementId": null,
       "elementKind": null,
-      "note": null,
+      "note": "R19 · previo (se reemplaza en las etapas 2 y 3)",
       "sheetId": "2468126",
       "pdf": "/casa-angel/rubros/climatizacion/CLI-PE-01.pdf",
       "image": "/casa-angel/rubros/climatizacion/CLI-PE-01.svg.gz",
@@ -648,7 +1160,7 @@
       "element": "CI-PA-01",
       "elementId": "870167",
       "elementKind": "CI",
-      "note": "Serpentín según el modelo; circuito por salida de colector a definir.",
+      "note": "R19 · previo (se reemplaza en las etapas 2 y 3)",
       "sheetId": "2468176",
       "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-01.pdf",
       "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-01.svg.gz",
@@ -747,7 +1259,7 @@
       "element": "CI-PA-02",
       "elementId": "863864",
       "elementKind": "CI",
-      "note": "Serpentín según el modelo; circuito por salida de colector a definir.",
+      "note": "R19 · previo (se reemplaza en las etapas 2 y 3)",
       "sheetId": "2468229",
       "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-02.pdf",
       "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-02.svg.gz",
@@ -846,7 +1358,7 @@
       "element": "CI-PA-03",
       "elementId": "877992",
       "elementKind": "CI",
-      "note": "Serpentín según el modelo; circuito por salida de colector a definir.",
+      "note": "R19 · previo (se reemplaza en las etapas 2 y 3)",
       "sheetId": "2468282",
       "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-03.pdf",
       "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-03.svg.gz",
@@ -945,7 +1457,7 @@
       "element": "CI-PA-04",
       "elementId": "869397",
       "elementKind": "CI",
-      "note": "Serpentín según el modelo; circuito por salida de colector a definir.",
+      "note": "R19 · previo (se reemplaza en las etapas 2 y 3)",
       "sheetId": "2468335",
       "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-04.pdf",
       "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-04.svg.gz",
@@ -1044,7 +1556,7 @@
       "element": "CI-PA-05",
       "elementId": "877995",
       "elementKind": "CI",
-      "note": "Serpentín según el modelo; circuito por salida de colector a definir.",
+      "note": "R19 · previo (se reemplaza en las etapas 2 y 3)",
       "sheetId": "2468388",
       "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-05.pdf",
       "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-05.svg.gz",
@@ -1143,7 +1655,7 @@
       "element": "CI-PA-06",
       "elementId": "870164",
       "elementKind": "CI",
-      "note": "Serpentín según el modelo; circuito por salida de colector a definir.",
+      "note": "R19 · previo (se reemplaza en las etapas 2 y 3)",
       "sheetId": "2468441",
       "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-06.pdf",
       "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-06.svg.gz",
@@ -1242,7 +1754,7 @@
       "element": "CI-PA-07",
       "elementId": "887814",
       "elementKind": "CI",
-      "note": "Serpentín según el modelo; circuito por salida de colector a definir.",
+      "note": "R19 · previo (se reemplaza en las etapas 2 y 3)",
       "sheetId": "2468494",
       "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-07.pdf",
       "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-07.svg.gz",
@@ -1341,7 +1853,7 @@
       "element": "CI-PA-08",
       "elementId": "892788",
       "elementKind": "CI",
-      "note": "Serpentín según el modelo; circuito por salida de colector a definir.",
+      "note": "R19 · previo (se reemplaza en las etapas 2 y 3)",
       "sheetId": "2468547",
       "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-08.pdf",
       "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-08.svg.gz",
@@ -1440,7 +1952,7 @@
       "element": "CI-PA-09",
       "elementId": "864264",
       "elementKind": "CI",
-      "note": "Serpentín según el modelo; circuito por salida de colector a definir.",
+      "note": "R19 · previo (se reemplaza en las etapas 2 y 3)",
       "sheetId": "2468600",
       "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-09.pdf",
       "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-09.svg.gz",
@@ -1539,7 +2051,7 @@
       "element": "CI-PA-10",
       "elementId": "863692",
       "elementKind": "CI",
-      "note": "Serpentín según el modelo; circuito por salida de colector a definir.",
+      "note": "R19 · previo (se reemplaza en las etapas 2 y 3)",
       "sheetId": "2468653",
       "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-10.pdf",
       "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-10.svg.gz",
@@ -1638,7 +2150,7 @@
       "element": "CI-PB-01",
       "elementId": "780810",
       "elementKind": "CI",
-      "note": "Serpentín según el modelo; circuito por salida de colector a definir.",
+      "note": "R19 · previo (se reemplaza en las etapas 2 y 3)",
       "sheetId": "2468706",
       "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-01.pdf",
       "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-01.svg.gz",
@@ -1737,7 +2249,7 @@
       "element": "CI-PB-02",
       "elementId": "780813",
       "elementKind": "CI",
-      "note": "Serpentín según el modelo; circuito por salida de colector a definir.",
+      "note": "R19 · previo (se reemplaza en las etapas 2 y 3)",
       "sheetId": "2468759",
       "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-02.pdf",
       "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-02.svg.gz",
@@ -1836,7 +2348,7 @@
       "element": "CI-PB-03",
       "elementId": "780822",
       "elementKind": "CI",
-      "note": "Serpentín según el modelo; circuito por salida de colector a definir.",
+      "note": "R19 · previo (se reemplaza en las etapas 2 y 3)",
       "sheetId": "2468812",
       "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-03.pdf",
       "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-03.svg.gz",
@@ -1935,7 +2447,7 @@
       "element": "CI-PB-04",
       "elementId": "780828",
       "elementKind": "CI",
-      "note": "Serpentín según el modelo; circuito por salida de colector a definir.",
+      "note": "R19 · previo (se reemplaza en las etapas 2 y 3)",
       "sheetId": "2468865",
       "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-04.pdf",
       "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-04.svg.gz",
@@ -2034,7 +2546,7 @@
       "element": "CI-PB-05",
       "elementId": "780807",
       "elementKind": "CI",
-      "note": "Serpentín según el modelo; circuito por salida de colector a definir.",
+      "note": "R19 · previo (se reemplaza en las etapas 2 y 3)",
       "sheetId": "2468918",
       "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-05.pdf",
       "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-05.svg.gz",
@@ -2133,7 +2645,7 @@
       "element": "CI-PB-06",
       "elementId": "780816",
       "elementKind": "CI",
-      "note": "Serpentín según el modelo; circuito por salida de colector a definir.",
+      "note": "R19 · previo (se reemplaza en las etapas 2 y 3)",
       "sheetId": "2468971",
       "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-06.pdf",
       "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-06.svg.gz",
@@ -2232,7 +2744,7 @@
       "element": "CI-PB-07",
       "elementId": "780819",
       "elementKind": "CI",
-      "note": "Serpentín según el modelo; circuito por salida de colector a definir.",
+      "note": "R19 · previo (se reemplaza en las etapas 2 y 3)",
       "sheetId": "2469024",
       "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-07.pdf",
       "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-07.svg.gz",
@@ -2331,7 +2843,7 @@
       "element": "CI-PB-08",
       "elementId": "780825",
       "elementKind": "CI",
-      "note": "Serpentín según el modelo; circuito por salida de colector a definir.",
+      "note": "R19 · previo (se reemplaza en las etapas 2 y 3)",
       "sheetId": "2469077",
       "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-08.pdf",
       "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-08.svg.gz",
@@ -2430,7 +2942,7 @@
       "element": "CI-PB-09",
       "elementId": "785697",
       "elementKind": "CI",
-      "note": "Serpentín según el modelo; circuito por salida de colector a definir.",
+      "note": "R19 · previo (se reemplaza en las etapas 2 y 3)",
       "sheetId": "2469130",
       "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-09.pdf",
       "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-09.svg.gz",
@@ -2529,7 +3041,7 @@
       "element": "CI-PB-10",
       "elementId": "1041091",
       "elementKind": "CI",
-      "note": "Serpentín según el modelo; circuito por salida de colector a definir.",
+      "note": "R19 · previo (se reemplaza en las etapas 2 y 3)",
       "sheetId": "2469183",
       "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-10.pdf",
       "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-10.svg.gz",
@@ -2628,7 +3140,7 @@
       "element": "CI-PB-11",
       "elementId": "788673",
       "elementKind": "CI",
-      "note": "Serpentín según el modelo; circuito por salida de colector a definir.",
+      "note": "R19 · previo (se reemplaza en las etapas 2 y 3)",
       "sheetId": "2469236",
       "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-11.pdf",
       "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-11.svg.gz",
@@ -2727,7 +3239,7 @@
       "element": "CI-PB-12",
       "elementId": "783339",
       "elementKind": "CI",
-      "note": "Serpentín según el modelo; circuito por salida de colector a definir.",
+      "note": "R19 · previo (se reemplaza en las etapas 2 y 3)",
       "sheetId": "2469289",
       "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-12.pdf",
       "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-12.svg.gz",
@@ -2826,7 +3338,7 @@
       "element": "CI-PB-13",
       "elementId": "874173",
       "elementKind": "CI",
-      "note": "Serpentín según el modelo; circuito por salida de colector a definir.",
+      "note": "R19 · previo (se reemplaza en las etapas 2 y 3)",
       "sheetId": "2469342",
       "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-13.pdf",
       "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-13.svg.gz",
@@ -2925,7 +3437,7 @@
       "element": "CI-PB-14",
       "elementId": "1007176",
       "elementKind": "CI",
-      "note": "Serpentín según el modelo; circuito por salida de colector a definir.",
+      "note": "R19 · previo (se reemplaza en las etapas 2 y 3)",
       "sheetId": "2469395",
       "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-14.pdf",
       "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-14.svg.gz",
@@ -3024,7 +3536,7 @@
       "element": "CI-PE-01",
       "elementId": "876161",
       "elementKind": "CI",
-      "note": "Serpentín según el modelo; circuito por salida de colector a definir.",
+      "note": "R19 · previo (se reemplaza en las etapas 2 y 3)",
       "sheetId": "2469448",
       "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PE-01.pdf",
       "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PE-01.svg.gz",
@@ -3123,7 +3635,7 @@
       "element": "CI-PE-02",
       "elementId": "876170",
       "elementKind": "CI",
-      "note": "Serpentín según el modelo; circuito por salida de colector a definir.",
+      "note": "R19 · previo (se reemplaza en las etapas 2 y 3)",
       "sheetId": "2469501",
       "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PE-02.pdf",
       "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PE-02.svg.gz",
@@ -3222,7 +3734,7 @@
       "element": "CO-N",
       "elementId": "2243525",
       "elementKind": "CO",
-      "note": null,
+      "note": "R19 · previo (se reemplaza en las etapas 2 y 3)",
       "sheetId": "2467872",
       "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CO-N.pdf",
       "image": "/casa-angel/rubros/climatizacion/CLI-F-CO-N.svg.gz",
@@ -3354,7 +3866,7 @@
       "element": "CO-S",
       "elementId": "2263387",
       "elementKind": "CO",
-      "note": null,
+      "note": "R19 · previo (se reemplaza en las etapas 2 y 3)",
       "sheetId": "2467937",
       "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CO-S.pdf",
       "image": "/casa-angel/rubros/climatizacion/CLI-F-CO-S.svg.gz",
@@ -3491,7 +4003,9 @@
       "level": "01. Planta Alta",
       "density_m_per_m2": 5.74,
       "supply_m": 22.22,
-      "return_m": 11.13
+      "return_m": 11.13,
+      "collector": "CO-S",
+      "collectorMethod": "conectividad"
     },
     {
       "code": "CI-PA-02",
@@ -3505,7 +4019,9 @@
       "level": "01. Planta Alta",
       "density_m_per_m2": 2.61,
       "supply_m": 10.03,
-      "return_m": 12.02
+      "return_m": 12.02,
+      "collector": "CO-N",
+      "collectorMethod": "conectividad"
     },
     {
       "code": "CI-PA-03",
@@ -3519,7 +4035,9 @@
       "level": "01. Planta Alta",
       "density_m_per_m2": 3.51,
       "supply_m": 45.4,
-      "return_m": 27.8
+      "return_m": 27.8,
+      "collector": "CO-N",
+      "collectorMethod": "conectividad"
     },
     {
       "code": "CI-PA-04",
@@ -3533,7 +4051,9 @@
       "level": "01. Planta Alta",
       "density_m_per_m2": 6.79,
       "supply_m": 89.26,
-      "return_m": 68.69
+      "return_m": 68.69,
+      "collector": "CO-N",
+      "collectorMethod": "conectividad"
     },
     {
       "code": "CI-PA-05",
@@ -3547,7 +4067,9 @@
       "level": "01. Planta Alta",
       "density_m_per_m2": 0.92,
       "supply_m": 6.63,
-      "return_m": 8.29
+      "return_m": 8.29,
+      "collector": "CO-N",
+      "collectorMethod": "conectividad"
     },
     {
       "code": "CI-PA-06",
@@ -3561,7 +4083,9 @@
       "level": "01. Planta Alta",
       "density_m_per_m2": 4.76,
       "supply_m": 100.34,
-      "return_m": 37.53
+      "return_m": 37.53,
+      "collector": "CO-S",
+      "collectorMethod": "conectividad"
     },
     {
       "code": "CI-PA-07",
@@ -3575,7 +4099,9 @@
       "level": "01. Planta Alta",
       "density_m_per_m2": 0.11,
       "supply_m": 0.23,
-      "return_m": 0
+      "return_m": 0,
+      "collector": "CO-S",
+      "collectorMethod": "asignado por cercanía"
     },
     {
       "code": "CI-PA-08",
@@ -3589,7 +4115,9 @@
       "level": "01. Planta Alta",
       "density_m_per_m2": 3.46,
       "supply_m": 8.05,
-      "return_m": 8.51
+      "return_m": 8.51,
+      "collector": "CO-S",
+      "collectorMethod": "conectividad"
     },
     {
       "code": "CI-PA-09",
@@ -3603,7 +4131,9 @@
       "level": "01. Planta Alta",
       "density_m_per_m2": 4.92,
       "supply_m": 39.96,
-      "return_m": 33.74
+      "return_m": 33.74,
+      "collector": "CO-S",
+      "collectorMethod": "conectividad"
     },
     {
       "code": "CI-PA-10",
@@ -3617,7 +4147,9 @@
       "level": "01. Planta Alta",
       "density_m_per_m2": 1.73,
       "supply_m": 3.72,
-      "return_m": 5.12
+      "return_m": 5.12,
+      "collector": "CO-N",
+      "collectorMethod": "conectividad"
     },
     {
       "code": "CI-PB-01",
@@ -3631,7 +4163,9 @@
       "level": "00. Planta Baja",
       "density_m_per_m2": 1.34,
       "supply_m": 4.23,
-      "return_m": 2.87
+      "return_m": 2.87,
+      "collector": "CO-S",
+      "collectorMethod": "conectividad"
     },
     {
       "code": "CI-PB-02",
@@ -3645,7 +4179,9 @@
       "level": "00. Planta Baja",
       "density_m_per_m2": 1.27,
       "supply_m": 4.03,
-      "return_m": 2.87
+      "return_m": 2.87,
+      "collector": "CO-S",
+      "collectorMethod": "asignado por cercanía"
     },
     {
       "code": "CI-PB-03",
@@ -3659,7 +4195,9 @@
       "level": "00. Planta Baja",
       "density_m_per_m2": 1.34,
       "supply_m": 4.23,
-      "return_m": 2.88
+      "return_m": 2.88,
+      "collector": "CO-S",
+      "collectorMethod": "conectividad"
     },
     {
       "code": "CI-PB-04",
@@ -3673,7 +4211,9 @@
       "level": "00. Planta Baja",
       "density_m_per_m2": 1.59,
       "supply_m": 9.54,
-      "return_m": 4.79
+      "return_m": 4.79,
+      "collector": "CO-N",
+      "collectorMethod": "conectividad"
     },
     {
       "code": "CI-PB-05",
@@ -3687,7 +4227,9 @@
       "level": "00. Planta Baja",
       "density_m_per_m2": 2.31,
       "supply_m": 14.83,
-      "return_m": 12.58
+      "return_m": 12.58,
+      "collector": "CO-S",
+      "collectorMethod": "conectividad"
     },
     {
       "code": "CI-PB-06",
@@ -3701,7 +4243,9 @@
       "level": "00. Planta Baja",
       "density_m_per_m2": 2.25,
       "supply_m": 14.78,
-      "return_m": 12.58
+      "return_m": 12.58,
+      "collector": "CO-S",
+      "collectorMethod": "asignado por cercanía"
     },
     {
       "code": "CI-PB-07",
@@ -3715,7 +4259,9 @@
       "level": "00. Planta Baja",
       "density_m_per_m2": 2.31,
       "supply_m": 14.83,
-      "return_m": 12.58
+      "return_m": 12.58,
+      "collector": "CO-S",
+      "collectorMethod": "conectividad"
     },
     {
       "code": "CI-PB-08",
@@ -3729,7 +4275,9 @@
       "level": "00. Planta Baja",
       "density_m_per_m2": 2.93,
       "supply_m": 28.85,
-      "return_m": 14.52
+      "return_m": 14.52,
+      "collector": "CO-N",
+      "collectorMethod": "conectividad"
     },
     {
       "code": "CI-PB-09",
@@ -3743,7 +4291,9 @@
       "level": "00. Planta Baja",
       "density_m_per_m2": 2.9,
       "supply_m": 10.9,
-      "return_m": 8.29
+      "return_m": 8.29,
+      "collector": "CO-N",
+      "collectorMethod": "asignado por cercanía"
     },
     {
       "code": "CI-PB-10",
@@ -3757,7 +4307,9 @@
       "level": "00. Planta Baja",
       "density_m_per_m2": 3.5,
       "supply_m": 9.34,
-      "return_m": 13.92
+      "return_m": 13.92,
+      "collector": "CO-N",
+      "collectorMethod": "asignado por cercanía"
     },
     {
       "code": "CI-PB-11",
@@ -3771,7 +4323,9 @@
       "level": "00. Planta Baja",
       "density_m_per_m2": 5.12,
       "supply_m": 63.56,
-      "return_m": 70.02
+      "return_m": 70.02,
+      "collector": "CO-S",
+      "collectorMethod": "conectividad"
     },
     {
       "code": "CI-PB-12",
@@ -3785,7 +4339,9 @@
       "level": "00. Planta Baja",
       "density_m_per_m2": 4.16,
       "supply_m": 111.11,
-      "return_m": 76.24
+      "return_m": 76.24,
+      "collector": "CO-N",
+      "collectorMethod": "conectividad"
     },
     {
       "code": "CI-PB-13",
@@ -3799,7 +4355,9 @@
       "level": "00. Planta Baja",
       "density_m_per_m2": 2.32,
       "supply_m": 5.09,
-      "return_m": 9.37
+      "return_m": 9.37,
+      "collector": "CO-N",
+      "collectorMethod": "asignado por cercanía"
     },
     {
       "code": "CI-PB-14",
@@ -3813,7 +4371,9 @@
       "level": "00. Planta Baja",
       "density_m_per_m2": 2.11,
       "supply_m": 11.09,
-      "return_m": 4.91
+      "return_m": 4.91,
+      "collector": "CO-N",
+      "collectorMethod": "conectividad"
     },
     {
       "code": "CI-PE-01",
@@ -3827,7 +4387,9 @@
       "level": "02. Planta Entrepiso",
       "density_m_per_m2": 4.89,
       "supply_m": 65.79,
-      "return_m": 28.84
+      "return_m": 28.84,
+      "collector": "CO-N",
+      "collectorMethod": "conectividad"
     },
     {
       "code": "CI-PE-02",
@@ -3841,7 +4403,9 @@
       "level": "02. Planta Entrepiso",
       "density_m_per_m2": 0.28,
       "supply_m": 0,
-      "return_m": 1.82
+      "return_m": 1.82,
+      "collector": "CO-N",
+      "collectorMethod": "conectividad"
     },
     {
       "code": "DI-PE",
@@ -4520,7 +5084,8 @@
   ],
   "decisions": [
     "Un código CI por local (serpentín), DI para distribución; códigos solo como anotación.",
-    "El inventario anterior (climatizacion/manifest.json) se mantiene; este manifest es el de la mesa de rubros."
+    "El inventario anterior (climatizacion/manifest.json) se mantiene; este manifest es el de la mesa de rubros.",
+    "R32 etapa 1: documentación en Casa-Angel-DOC-Climatizacion.rvt; colector de cada circuito por conectividad de tubos desde CO-N / CO-S (cercanía si no hay camino). Etapas 2 (colectores) y 3 (fichas por local) después del OK del usuario."
   ],
   "questions": [
     "¿Marca, modelo y potencia de la bomba de calor? ¿Dónde va la unidad exterior?",
@@ -4529,7 +5094,7 @@
     "¿Corregimos el sistema de los retornos a \"Hydronic Return\" en el modelo? (cambio de parámetros MEP, requiere OK)"
   ],
   "budget": {
-    "revision": "R27",
+    "revision": "R32",
     "note": "Partidas a cotizar sin solapes; informative = referencia (no se suma).",
     "lines": [
       {
