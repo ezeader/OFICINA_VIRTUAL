@@ -514,7 +514,7 @@
               "label": "CI-PE-02 · SM · 1,82 ml · 0,28 m/m²",
               "box": [
                 0.2254,
-                0.0,
+                0,
                 0.4992,
                 0.3142
               ]
@@ -546,7 +546,7 @@
       "number": "CLI-PA-01",
       "title": "Piso radiante · 01. Planta Alta",
       "level": "01. Planta Alta",
-      "sector": "01. Planta Alta",
+      "sector": "R19 previo · 01. Planta Alta",
       "kind": "general",
       "element": null,
       "elementId": null,
@@ -777,7 +777,7 @@
       "number": "CLI-PB-01",
       "title": "Piso radiante · 00. Planta Baja",
       "level": "00. Planta Baja",
-      "sector": "00. Planta Baja",
+      "sector": "R19 previo · 00. Planta Baja",
       "kind": "general",
       "element": null,
       "elementId": null,
@@ -1068,7 +1068,7 @@
       "number": "CLI-PE-01",
       "title": "Piso radiante · 02. Planta Entrepiso",
       "level": "02. Planta Entrepiso",
-      "sector": "02. Planta Entrepiso",
+      "sector": "R19 previo · 02. Planta Entrepiso",
       "kind": "general",
       "element": null,
       "elementId": null,
@@ -1241,7 +1241,7 @@
               "label": "CI-PA-01 · Baño PA · 33,35 ml · 5,74 m/m²",
               "box": [
                 0.1079,
-                0.0,
+                0,
                 0.8921,
                 0.8435
               ]
@@ -1340,7 +1340,7 @@
               "label": "CI-PA-02 · Cava · 22,05 ml · 2,61 m/m²",
               "box": [
                 0.1023,
-                0.0,
+                0,
                 0.8977,
                 0.8494
               ]
@@ -1439,7 +1439,7 @@
               "label": "CI-PA-03 · Cocina · 73,20 ml · 3,51 m/m²",
               "box": [
                 0.0723,
-                0.0,
+                0,
                 0.9277,
                 0.8837
               ]
@@ -1538,7 +1538,7 @@
               "label": "CI-PA-04 · Comedor · 157,95 ml · 6,79 m/m²",
               "box": [
                 0.0684,
-                0.0,
+                0,
                 0.9316,
                 0.8886
               ]
@@ -1637,7 +1637,7 @@
               "label": "CI-PA-05 · Living · 14,92 ml · 0,92 m/m²",
               "box": [
                 0.0804,
-                0.0,
+                0,
                 0.9196,
                 0.8739
               ]
@@ -1736,7 +1736,7 @@
               "label": "CI-PA-06 · Playroom · 137,87 ml · 4,76 m/m²",
               "box": [
                 0.0663,
-                0.0,
+                0,
                 0.9337,
                 0.8926
               ]
@@ -1783,14 +1783,14 @@
             {
               "label": "CI-PA-07 local X",
               "values_m": [
-                2.0
+                2
               ],
               "associative": false
             },
             {
               "label": "CI-PA-07 local Y",
               "values_m": [
-                2.0
+                2
               ],
               "associative": false
             }
@@ -1835,7 +1835,7 @@
               "label": "CI-PA-07 · Puente · 0,23 ml · 0,11 m/m²",
               "box": [
                 0.1376,
-                0.0,
+                0,
                 0.8624,
                 0.8161
               ]
@@ -1934,7 +1934,7 @@
               "label": "CI-PA-08 · Sala de Maquinas · 16,57 ml · 3,46 m/m²",
               "box": [
                 0.1287,
-                0.0,
+                0,
                 0.8713,
                 0.8238
               ]
@@ -2033,7 +2033,7 @@
               "label": "CI-PA-09 · Sala de TV · 73,70 ml · 4,92 m/m²",
               "box": [
                 0.0819,
-                0.0,
+                0,
                 0.9181,
                 0.8718
               ]
@@ -2132,7 +2132,7 @@
               "label": "CI-PA-10 · Toilette · 8,84 ml · 1,73 m/m²",
               "box": [
                 0.1199,
-                0.0,
+                0,
                 0.8801,
                 0.832
               ]
@@ -2231,7 +2231,7 @@
               "label": "CI-PB-01 · Baño A Inv. · 7,10 ml · 1,34 m/m²",
               "box": [
                 0.1142,
-                0.0,
+                0,
                 0.8858,
                 0.8374
               ]
@@ -2330,7 +2330,7 @@
               "label": "CI-PB-02 · Baño B Inv. · 6,90 ml · 1,27 m/m²",
               "box": [
                 0.1125,
-                0.0,
+                0,
                 0.8875,
                 0.839
               ]
@@ -2429,7 +2429,7 @@
               "label": "CI-PB-03 · Baño C Inv. · 7,12 ml · 1,34 m/m²",
               "box": [
                 0.1142,
-                0.0,
+                0,
                 0.8858,
                 0.8374
               ]
@@ -2528,7 +2528,7 @@
               "label": "CI-PB-04 · Baño ppal · 14,33 ml · 1,59 m/m²",
               "box": [
                 0.0872,
-                0.0,
+                0,
                 0.9128,
                 0.8655
               ]
@@ -2627,7 +2627,7 @@
               "label": "CI-PB-05 · Cuarto A Inv. · 27,41 ml · 2,31 m/m²",
               "box": [
                 0.0929,
-                0.0,
+                0,
                 0.9071,
                 0.8595
               ]
@@ -2726,7 +2726,7 @@
               "label": "CI-PB-06 · Cuarto B Inv. · 27,36 ml · 2,25 m/m²",
               "box": [
                 0.0919,
-                0.0,
+                0,
                 0.9081,
                 0.8607
               ]
@@ -2825,7 +2825,7 @@
               "label": "CI-PB-07 · Cuarto C Inv. · 27,41 ml · 2,31 m/m²",
               "box": [
                 0.0929,
-                0.0,
+                0,
                 0.9071,
                 0.8595
               ]
@@ -2924,7 +2924,7 @@
               "label": "CI-PB-08 · Cuarto ppal · 43,37 ml · 2,93 m/m²",
               "box": [
                 0.0839,
-                0.0,
+                0,
                 0.9161,
                 0.8697
               ]
@@ -3023,7 +3023,7 @@
               "label": "CI-PB-09 · Hab. servicio · 19,19 ml · 2,90 m/m²",
               "box": [
                 0.1173,
-                0.0,
+                0,
                 0.8827,
                 0.8344
               ]
@@ -3122,7 +3122,7 @@
               "label": "CI-PB-10 · Lavadero · 23,26 ml · 3,50 m/m²",
               "box": [
                 0.109,
-                0.0,
+                0,
                 0.891,
                 0.8425
               ]
@@ -3221,7 +3221,7 @@
               "label": "CI-PB-11 · Pasillo · 133,58 ml · 5,12 m/m²",
               "box": [
                 0.0545,
-                0.0,
+                0,
                 0.9455,
                 0.9086
               ]
@@ -3320,7 +3320,7 @@
               "label": "CI-PB-12 · Quincho · 187,35 ml · 4,16 m/m²",
               "box": [
                 0.0604,
-                0.0,
+                0,
                 0.9396,
                 0.9004
               ]
@@ -3419,7 +3419,7 @@
               "label": "CI-PB-13 · Toilette Servicio · 14,46 ml · 2,32 m/m²",
               "box": [
                 0.119,
-                0.0,
+                0,
                 0.881,
                 0.8328
               ]
@@ -3518,7 +3518,7 @@
               "label": "CI-PB-14 · Vestidor ppal · 15,99 ml · 2,11 m/m²",
               "box": [
                 0.0996,
-                0.0,
+                0,
                 0.9004,
                 0.8522
               ]
@@ -3617,7 +3617,7 @@
               "label": "CI-PE-01 · Atelier · 94,62 ml · 4,89 m/m²",
               "box": [
                 0.0776,
-                0.0,
+                0,
                 0.9224,
                 0.8774
               ]
@@ -3716,7 +3716,7 @@
               "label": "CI-PE-02 · SM · 1,82 ml · 0,28 m/m²",
               "box": [
                 0.1177,
-                0.0,
+                0,
                 0.8823,
                 0.834
               ]
