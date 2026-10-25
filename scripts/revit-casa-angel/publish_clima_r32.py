@@ -75,6 +75,11 @@ def main():
     for s in kept:
         s['note'] = 'R19 · previo (se reemplaza en la etapa 3)'
         if s['number'] in ('CLI-PB-01', 'CLI-PA-01', 'CLI-PE-01') and not str(s.get('sector', '')).startswith('R19 previo'): s['sector'] = 'R19 previo · ' + (s.get('level') or '')
+    for s in new:   # web groups (agreed with the Climatización session): plans / collectors as general sheets
+        if s['number'].startswith('CLI-P-'): s['sector'] = '1 · Plantas con serpentina'
+        if s['number'] in ('CLI-CO-N', 'CLI-CO-S'): s.update(sector='2 · Colectores', kind='general', element=None)
+    for s in kept:
+        if s['number'] in ('CLI-F-CO-N', 'CLI-F-CO-S'): s.update(kind='general', element=None, sector='R19 previo · colectores')
     m['sheets'] = sorted(new, key=lambda s: (s['number'] != 'CLI-00', s['number'])) + kept
     by = {c['code']: c for c in cs}
     for c in m['codes']:
