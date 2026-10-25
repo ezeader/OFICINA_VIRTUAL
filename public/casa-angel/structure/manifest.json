@@ -7,21 +7,21 @@
     {
       "name": "00. Planta Baja",
       "building": 1,
-      "elevation_m": -0.0,
+      "elevation_m": 0,
       "id": 311,
       "structural": 0
     },
     {
       "name": "01. Planta Alta",
       "building": 1,
-      "elevation_m": 3.0,
+      "elevation_m": 3,
       "id": 694,
       "structural": 0
     },
     {
       "name": "02. Planta Entrepiso",
       "building": 1,
-      "elevation_m": 6.0,
+      "elevation_m": 6,
       "id": 353988,
       "structural": 0
     },
@@ -35,7 +35,7 @@
     {
       "name": "005. Acceso ppal",
       "building": 1,
-      "elevation_m": 1.0,
+      "elevation_m": 1,
       "id": 398244,
       "structural": 0
     }
@@ -104,8 +104,8 @@
         "category": "Walls",
         "type": "Muro Hormigón 20cm",
         "level": "00. Planta Baja",
-        "length_m": 7.0,
-        "height_m": 3.0,
+        "length_m": 7,
+        "height_m": 3,
         "thickness_m": 0.2,
         "area_m2": 18.239,
         "volume_m3": 3.648,
@@ -162,7 +162,7 @@
         "type": "Muro Hormigón 20cm",
         "level": "00. Planta Baja",
         "length_m": 6.925,
-        "height_m": 3.0,
+        "height_m": 3,
         "thickness_m": 0.2,
         "area_m2": 20.304,
         "volume_m3": 4.019,
@@ -180,8 +180,8 @@
         "category": "Walls",
         "type": "Muro Hormigón 20cm",
         "level": "00. Planta Baja",
-        "length_m": 7.0,
-        "height_m": 3.0,
+        "length_m": 7,
+        "height_m": 3,
         "thickness_m": 0.2,
         "area_m2": 18.432,
         "volume_m3": 3.645,
@@ -200,10 +200,10 @@
         "type": "Muro Hormigón 20cm",
         "level": "00. Planta Baja",
         "length_m": 4.952,
-        "height_m": 3.0,
+        "height_m": 3,
         "thickness_m": 0.2,
-        "area_m2": 15.0,
-        "volume_m3": 3.0,
+        "area_m2": 15,
+        "volume_m3": 3,
         "topConstraint": "01. Planta Alta",
         "baseOffset_m": -0.2,
         "structuralFlag": false,
@@ -238,7 +238,7 @@
         "type": "Muro Hormigón 20cm",
         "level": "00. Planta Baja",
         "length_m": 6.33,
-        "height_m": 3.0,
+        "height_m": 3,
         "thickness_m": 0.2,
         "area_m2": 18.836,
         "volume_m3": 3.728,
@@ -281,7 +281,7 @@
         "area_m2": 23.913,
         "volume_m3": 4.782,
         "topConstraint": "01. Planta Alta",
-        "baseOffset_m": 0.0,
+        "baseOffset_m": 0,
         "structuralFlag": false,
         "mark": null,
         "materials": [
@@ -314,7 +314,7 @@
         "type": "Muro Hormigón 20cm",
         "level": "00. Planta Baja",
         "length_m": 0.628,
-        "height_m": 3.0,
+        "height_m": 3,
         "thickness_m": 0.2,
         "area_m2": 2.356,
         "volume_m3": 0.377,
@@ -332,7 +332,7 @@
         "category": "Walls",
         "type": "Muro Hormigón 20cm",
         "level": "00. Planta Baja",
-        "length_m": 2.0,
+        "length_m": 2,
         "height_m": 8.7,
         "thickness_m": 0.2,
         "area_m2": 10.697,
@@ -389,7 +389,7 @@
         "category": "Walls",
         "type": "Muro Hormigón 20cm",
         "level": "00. Planta Baja",
-        "length_m": 13.0,
+        "length_m": 13,
         "height_m": 3.2,
         "thickness_m": 0.2,
         "area_m2": 33.689,
@@ -414,7 +414,7 @@
         "area_m2": 3.351,
         "volume_m3": 0.66,
         "topConstraint": "03. Planta de Techos",
-        "baseOffset_m": 0.0,
+        "baseOffset_m": 0,
         "structuralFlag": false,
         "mark": null,
         "materials": [
@@ -452,7 +452,7 @@
         "area_m2": 2.041,
         "volume_m3": 0.408,
         "topConstraint": "02. Planta Entrepiso",
-        "baseOffset_m": 0.0,
+        "baseOffset_m": 0,
         "structuralFlag": false,
         "mark": null,
         "materials": [
@@ -471,7 +471,7 @@
         "area_m2": 7.719,
         "volume_m3": 1.544,
         "topConstraint": "02. Planta Entrepiso",
-        "baseOffset_m": 0.0,
+        "baseOffset_m": 0,
         "structuralFlag": false,
         "mark": null,
         "materials": [
@@ -490,7 +490,7 @@
         "area_m2": 2.041,
         "volume_m3": 0.408,
         "topConstraint": "02. Planta Entrepiso",
-        "baseOffset_m": 0.0,
+        "baseOffset_m": 0,
         "structuralFlag": false,
         "mark": null,
         "materials": [
@@ -504,12 +504,12 @@
         "type": "Muro Hormigón 20cm",
         "level": "01. Planta Alta",
         "length_m": 4.75,
-        "height_m": 3.0,
+        "height_m": 3,
         "thickness_m": 0.2,
         "area_m2": 15.577,
         "volume_m3": 3.091,
         "topConstraint": "02. Planta Entrepiso",
-        "baseOffset_m": 0.0,
+        "baseOffset_m": 0,
         "structuralFlag": false,
         "mark": null,
         "materials": [
@@ -523,12 +523,12 @@
         "type": "Muro Hormigón 20cm",
         "level": "01. Planta Alta",
         "length_m": 0.7,
-        "height_m": 3.0,
+        "height_m": 3,
         "thickness_m": 0.2,
         "area_m2": 2.346,
         "volume_m3": 0.462,
         "topConstraint": "02. Planta Entrepiso",
-        "baseOffset_m": 0.0,
+        "baseOffset_m": 0,
         "structuralFlag": false,
         "mark": null,
         "materials": [
@@ -542,12 +542,12 @@
         "type": "Muro Hormigón 20cm",
         "level": "01. Planta Alta",
         "length_m": 0.942,
-        "height_m": 3.0,
+        "height_m": 3,
         "thickness_m": 0.2,
         "area_m2": 3.646,
         "volume_m3": 0.617,
         "topConstraint": "02. Planta Entrepiso",
-        "baseOffset_m": 0.0,
+        "baseOffset_m": 0,
         "structuralFlag": false,
         "mark": null,
         "materials": [
@@ -561,12 +561,12 @@
         "type": "Muro Hormigón 20cm",
         "level": "01. Planta Alta",
         "length_m": 3.602,
-        "height_m": 3.0,
+        "height_m": 3,
         "thickness_m": 0.2,
         "area_m2": 12.035,
         "volume_m3": 2.372,
         "topConstraint": "02. Planta Entrepiso",
-        "baseOffset_m": 0.0,
+        "baseOffset_m": 0,
         "structuralFlag": false,
         "mark": null,
         "materials": [
@@ -579,13 +579,13 @@
         "category": "Walls",
         "type": "Muro Hormigón 20cm",
         "level": "01. Planta Alta",
-        "length_m": 3.0,
-        "height_m": 3.0,
+        "length_m": 3,
+        "height_m": 3,
         "thickness_m": 0.2,
         "area_m2": 7.599,
         "volume_m3": 1.49,
         "topConstraint": "02. Planta Entrepiso",
-        "baseOffset_m": 0.0,
+        "baseOffset_m": 0,
         "structuralFlag": false,
         "mark": null,
         "materials": [
@@ -599,12 +599,12 @@
         "type": "Muro Hormigón 20cm",
         "level": "01. Planta Alta",
         "length_m": 0.63,
-        "height_m": 3.0,
+        "height_m": 3,
         "thickness_m": 0.2,
         "area_m2": 2.361,
         "volume_m3": 0.378,
         "topConstraint": "02. Planta Entrepiso",
-        "baseOffset_m": 0.0,
+        "baseOffset_m": 0,
         "structuralFlag": false,
         "mark": null,
         "materials": [
@@ -618,12 +618,12 @@
         "type": "Muro Hormigón 20cm",
         "level": "01. Planta Alta",
         "length_m": 6.5,
-        "height_m": 3.0,
+        "height_m": 3,
         "thickness_m": 0.2,
         "area_m2": 14.502,
         "volume_m3": 2.901,
         "topConstraint": "02. Planta Entrepiso",
-        "baseOffset_m": 0.0,
+        "baseOffset_m": 0,
         "structuralFlag": false,
         "mark": null,
         "materials": [
@@ -637,12 +637,12 @@
         "type": "Muro Hormigón 20cm",
         "level": "01. Planta Alta",
         "length_m": 0.628,
-        "height_m": 3.0,
+        "height_m": 3,
         "thickness_m": 0.2,
         "area_m2": 2.356,
         "volume_m3": 0.377,
         "topConstraint": "02. Planta Entrepiso",
-        "baseOffset_m": 0.0,
+        "baseOffset_m": 0,
         "structuralFlag": false,
         "mark": null,
         "materials": [
@@ -655,13 +655,13 @@
         "category": "Walls",
         "type": "Muro Hormigón 20cm",
         "level": "01. Planta Alta",
-        "length_m": 2.0,
-        "height_m": 3.0,
+        "length_m": 2,
+        "height_m": 3,
         "thickness_m": 0.2,
-        "area_m2": 6.0,
+        "area_m2": 6,
         "volume_m3": 1.2,
         "topConstraint": "02. Planta Entrepiso",
-        "baseOffset_m": 0.0,
+        "baseOffset_m": 0,
         "structuralFlag": false,
         "mark": null,
         "materials": [
@@ -675,12 +675,12 @@
         "type": "Muro Hormigón 20cm",
         "level": "01. Planta Alta",
         "length_m": 0.63,
-        "height_m": 3.0,
+        "height_m": 3,
         "thickness_m": 0.2,
         "area_m2": 2.361,
         "volume_m3": 0.378,
         "topConstraint": "02. Planta Entrepiso",
-        "baseOffset_m": 0.0,
+        "baseOffset_m": 0,
         "structuralFlag": false,
         "mark": null,
         "materials": [
@@ -694,12 +694,12 @@
         "type": "Muro Hormigón 20cm",
         "level": "01. Planta Alta",
         "length_m": 0.628,
-        "height_m": 3.0,
+        "height_m": 3,
         "thickness_m": 0.2,
         "area_m2": 2.356,
         "volume_m3": 0.377,
         "topConstraint": "02. Planta Entrepiso",
-        "baseOffset_m": 0.0,
+        "baseOffset_m": 0,
         "structuralFlag": false,
         "mark": null,
         "materials": [
@@ -712,13 +712,13 @@
         "category": "Walls",
         "type": "Muro Hormigón 20cm",
         "level": "01. Planta Alta",
-        "length_m": 13.0,
-        "height_m": 3.0,
+        "length_m": 13,
+        "height_m": 3,
         "thickness_m": 0.2,
         "area_m2": 24.505,
         "volume_m3": 4.901,
         "topConstraint": "02. Planta Entrepiso",
-        "baseOffset_m": 0.0,
+        "baseOffset_m": 0,
         "structuralFlag": false,
         "mark": null,
         "materials": [
@@ -731,7 +731,7 @@
         "category": "Walls",
         "type": "Muro Hormigón 20cm",
         "level": "02. Planta Entrepiso",
-        "length_m": 9.0,
+        "length_m": 9,
         "height_m": 0.6,
         "thickness_m": 0.2,
         "area_m2": 5.34,
@@ -750,7 +750,7 @@
         "category": "Walls",
         "type": "Muro Hormigón 20cm",
         "level": "02. Planta Entrepiso",
-        "length_m": 9.0,
+        "length_m": 9,
         "height_m": 0.78,
         "thickness_m": 0.2,
         "area_m2": 2.756,
@@ -789,12 +789,12 @@
         "type": "Muro Hormigón 20cm",
         "level": "02. Planta Entrepiso",
         "length_m": 0.63,
-        "height_m": 3.0,
+        "height_m": 3,
         "thickness_m": 0.2,
         "area_m2": 1.408,
         "volume_m3": 0.231,
         "topConstraint": "03. Planta de Techos",
-        "baseOffset_m": 0.0,
+        "baseOffset_m": 0,
         "structuralFlag": false,
         "mark": null,
         "materials": [
@@ -808,12 +808,12 @@
         "type": "Muro Hormigón 20cm",
         "level": "02. Planta Entrepiso",
         "length_m": 0.628,
-        "height_m": 3.0,
+        "height_m": 3,
         "thickness_m": 0.2,
         "area_m2": 1.403,
         "volume_m3": 0.23,
         "topConstraint": "03. Planta de Techos",
-        "baseOffset_m": 0.0,
+        "baseOffset_m": 0,
         "structuralFlag": false,
         "mark": null,
         "materials": [
@@ -832,7 +832,7 @@
         "area_m2": 11.255,
         "volume_m3": 2.231,
         "topConstraint": "03. Planta de Techos",
-        "baseOffset_m": 0.0,
+        "baseOffset_m": 0,
         "structuralFlag": false,
         "mark": null,
         "materials": [
@@ -845,13 +845,13 @@
         "category": "Walls",
         "type": "Muro Hormigón 20cm",
         "level": "02. Planta Entrepiso",
-        "length_m": 2.0,
-        "height_m": 3.0,
+        "length_m": 2,
+        "height_m": 3,
         "thickness_m": 0.2,
         "area_m2": 3.804,
         "volume_m3": 0.738,
         "topConstraint": "03. Planta de Techos",
-        "baseOffset_m": 0.0,
+        "baseOffset_m": 0,
         "structuralFlag": false,
         "mark": null,
         "materials": [
@@ -865,12 +865,12 @@
         "type": "Muro Hormigón 20cm",
         "level": "02. Planta Entrepiso",
         "length_m": 0.63,
-        "height_m": 3.0,
+        "height_m": 3,
         "thickness_m": 0.2,
         "area_m2": 1.408,
         "volume_m3": 0.231,
         "topConstraint": "03. Planta de Techos",
-        "baseOffset_m": 0.0,
+        "baseOffset_m": 0,
         "structuralFlag": false,
         "mark": null,
         "materials": [
@@ -889,7 +889,7 @@
         "area_m2": 1.403,
         "volume_m3": 0.23,
         "topConstraint": "03. Planta de Techos",
-        "baseOffset_m": 0.0,
+        "baseOffset_m": 0,
         "structuralFlag": false,
         "mark": null,
         "materials": [
@@ -908,7 +908,7 @@
         "area_m2": 11.229,
         "volume_m3": 2.182,
         "topConstraint": "03. Planta de Techos",
-        "baseOffset_m": 0.0,
+        "baseOffset_m": 0,
         "structuralFlag": false,
         "mark": null,
         "materials": [
@@ -937,7 +937,7 @@
       "count": 1,
       "area_m2": 11.089,
       "volume_m3": 2.218,
-      "length_m": 5.0
+      "length_m": 5
     },
     {
       "key": "Muro Fachada ppal | 01. Planta Alta",
@@ -1011,7 +1011,7 @@
         {
           "material": "Film de Polietileno",
           "function": "Membrane",
-          "thickness_m": 0.0
+          "thickness_m": 0
         },
         {
           "material": "Contrapiso",
@@ -1045,7 +1045,7 @@
         {
           "material": "Grass",
           "function": "Structure",
-          "thickness_m": 1.0
+          "thickness_m": 1
         }
       ]
     },
@@ -1069,7 +1069,7 @@
         {
           "material": "Damp-proofing",
           "function": "Membrane",
-          "thickness_m": 0.0
+          "thickness_m": 0
         },
         {
           "material": "Concrete, Cast In Situ",
@@ -1137,7 +1137,7 @@
         {
           "material": "Film de Polietileno",
           "function": "Membrane",
-          "thickness_m": 0.0
+          "thickness_m": 0
         },
         {
           "material": "Contrapiso",
@@ -1186,7 +1186,7 @@
         {
           "material": "Film de Polietileno",
           "function": "Membrane",
-          "thickness_m": 0.0
+          "thickness_m": 0
         },
         {
           "material": "Contrapiso",
@@ -1235,7 +1235,7 @@
         {
           "material": "Film de Polietileno",
           "function": "Membrane",
-          "thickness_m": 0.0
+          "thickness_m": 0
         },
         {
           "material": "Contrapiso",
@@ -1284,7 +1284,7 @@
         {
           "material": "Film de Polietileno",
           "function": "Membrane",
-          "thickness_m": 0.0
+          "thickness_m": 0
         },
         {
           "material": "Contrapiso",
@@ -1333,7 +1333,7 @@
         {
           "material": "Film de Polietileno",
           "function": "Membrane",
-          "thickness_m": 0.0
+          "thickness_m": 0
         },
         {
           "material": "Contrapiso",
@@ -1382,7 +1382,7 @@
         {
           "material": "Film de Polietileno",
           "function": "Membrane",
-          "thickness_m": 0.0
+          "thickness_m": 0
         },
         {
           "material": "Contrapiso",
@@ -1445,7 +1445,7 @@
       "type": "L01.01 / 30cm",
       "level": "01. Planta Alta",
       "role": "Losa / estructura",
-      "area_m2": 28.0,
+      "area_m2": 28,
       "volume_m3": 8.4,
       "thickness_m": 0.3,
       "concreteLayer_m": 0.15,
@@ -1631,7 +1631,7 @@
         {
           "material": "Film de Polietileno",
           "function": "Membrane",
-          "thickness_m": 0.0
+          "thickness_m": 0
         },
         {
           "material": "Contrapiso",
@@ -1704,7 +1704,7 @@
         {
           "material": "Film de Polietileno",
           "function": "Membrane",
-          "thickness_m": 0.0
+          "thickness_m": 0
         },
         {
           "material": "Contrapiso",
@@ -1738,7 +1738,7 @@
         {
           "material": "Film de Polietileno",
           "function": "Membrane",
-          "thickness_m": 0.0
+          "thickness_m": 0
         },
         {
           "material": "Tosca Compactada",
@@ -1754,77 +1754,77 @@
       "count": 6,
       "area_m2": 190.502,
       "volume_m3": 38.1,
-      "length_m": 0.0
+      "length_m": 0
     },
     {
       "key": "005. Acceso ppal | Losa / estructura",
       "count": 1,
       "area_m2": 28.841,
       "volume_m3": 34.609,
-      "length_m": 0.0
+      "length_m": 0
     },
     {
       "key": "00. Planta Baja | Losa / estructura",
       "count": 1,
       "area_m2": 124.13,
       "volume_m3": 27.931,
-      "length_m": 0.0
+      "length_m": 0
     },
     {
       "key": "02. Planta Entrepiso | Losa / estructura",
       "count": 1,
       "area_m2": 20.37,
       "volume_m3": 4.074,
-      "length_m": 0.0
+      "length_m": 0
     },
     {
       "key": "01. Planta Alta | Paquete de piso (sin capa de hormigón)",
       "count": 2,
       "area_m2": 65.352,
       "volume_m3": 13.07,
-      "length_m": 0.0
+      "length_m": 0
     },
     {
       "key": "01. Planta Alta | Losa / estructura",
       "count": 6,
       "area_m2": 142.281,
       "volume_m3": 41.212,
-      "length_m": 0.0
+      "length_m": 0
     },
     {
       "key": "02. Planta Entrepiso | Paquete de piso (sin capa de hormigón)",
       "count": 1,
       "area_m2": 14.93,
       "volume_m3": 2.986,
-      "length_m": 0.0
+      "length_m": 0
     },
     {
       "key": "00. Planta Baja | Fundación (platea)",
       "count": 1,
       "area_m2": 249.917,
       "volume_m3": 62.479,
-      "length_m": 0.0
+      "length_m": 0
     }
   ],
   "framing": {
     "note": "Solo vigas y correas de madera de cubierta (familia Kerto LVL). No hay vigas de hormigón modeladas como Structural Framing.",
     "byType": [
       {
-        "area_m2": 0.0,
+        "area_m2": 0,
         "length_m": 376.798,
         "key": "Correas 15mm x 50mm",
         "count": 60,
         "volume_m3": 0.278
       },
       {
-        "area_m2": 0.0,
+        "area_m2": 0,
         "length_m": 182.43,
         "key": "Viga Cubierta 200mm x 60mm",
         "count": 34,
         "volume_m3": 2.177
       },
       {
-        "area_m2": 0.0,
+        "area_m2": 0,
         "length_m": 254.762,
         "key": "Viga Principal 3cm x 10cm",
         "count": 101,
@@ -1855,14 +1855,14 @@
       "count": 2,
       "area_m2": 160.222,
       "volume_m3": 3.185,
-      "length_m": 0.0
+      "length_m": 0
     },
     {
       "key": "Tejas 20mm | 03. Planta de Techos",
       "count": 1,
       "area_m2": 98.797,
       "volume_m3": 1.976,
-      "length_m": 0.0
+      "length_m": 0
     }
   ],
   "notModeled": [
@@ -2412,7 +2412,7 @@
             },
             {
               "values_m": [
-                6.0
+                6
               ],
               "associative": false,
               "label": "LO-AC-01 extensión Y"
@@ -2501,7 +2501,7 @@
           "dimensions": [
             {
               "values_m": [
-                6.0
+                6
               ],
               "associative": false,
               "label": "LO-AC-01 ancho corte B"
@@ -3000,7 +3000,7 @@
             },
             {
               "values_m": [
-                7.0
+                7
               ],
               "associative": false,
               "label": "LO-PA-03 extensión Y"
@@ -3089,7 +3089,7 @@
           "dimensions": [
             {
               "values_m": [
-                7.0
+                7
               ],
               "associative": false,
               "label": "LO-PA-03 ancho corte B"
@@ -3189,14 +3189,14 @@
           "dimensions": [
             {
               "values_m": [
-                4.0
+                4
               ],
               "associative": false,
               "label": "LO-PA-04 extensión X"
             },
             {
               "values_m": [
-                7.0
+                7
               ],
               "associative": false,
               "label": "LO-PA-04 extensión Y"
@@ -3237,7 +3237,7 @@
           "dimensions": [
             {
               "values_m": [
-                4.0
+                4
               ],
               "associative": false,
               "label": "LO-PA-04 ancho corte A"
@@ -3285,7 +3285,7 @@
           "dimensions": [
             {
               "values_m": [
-                7.0
+                7
               ],
               "associative": false,
               "label": "LO-PA-04 ancho corte B"
@@ -3385,7 +3385,7 @@
           "dimensions": [
             {
               "values_m": [
-                4.0
+                4
               ],
               "associative": false,
               "label": "LO-PA-05 extensión X"
@@ -3433,7 +3433,7 @@
           "dimensions": [
             {
               "values_m": [
-                4.0
+                4
               ],
               "associative": false,
               "label": "LO-PA-05 ancho corte A"
@@ -3777,14 +3777,14 @@
           "dimensions": [
             {
               "values_m": [
-                2.0
+                2
               ],
               "associative": false,
               "label": "LO-PA-07 extensión X"
             },
             {
               "values_m": [
-                2.0
+                2
               ],
               "associative": false,
               "label": "LO-PA-07 extensión Y"
@@ -3825,7 +3825,7 @@
           "dimensions": [
             {
               "values_m": [
-                2.0
+                2
               ],
               "associative": false,
               "label": "LO-PA-07 ancho corte A"
@@ -3873,7 +3873,7 @@
           "dimensions": [
             {
               "values_m": [
-                2.0
+                2
               ],
               "associative": false,
               "label": "LO-PA-07 ancho corte B"
@@ -5259,7 +5259,7 @@
           "dimensions": [
             {
               "values_m": [
-                7.0
+                7
               ],
               "associative": false,
               "label": "LO-PB-07 extensión X"
@@ -5307,7 +5307,7 @@
           "dimensions": [
             {
               "values_m": [
-                7.0
+                7
               ],
               "associative": false,
               "label": "LO-PB-07 ancho corte A"
@@ -5658,7 +5658,7 @@
             },
             {
               "values_m": [
-                4.0
+                4
               ],
               "associative": false,
               "label": "LO-PE-02 extensión Y"
@@ -5747,7 +5747,7 @@
           "dimensions": [
             {
               "values_m": [
-                4.0
+                4
               ],
               "associative": false,
               "label": "LO-PE-02 ancho corte B"
@@ -6181,7 +6181,7 @@
               "elementId": "372705",
               "box": [
                 0.4716,
-                0.0,
+                0,
                 0.5189,
                 0.8497
               ]
@@ -6999,7 +6999,7 @@
               "elementId": "373019",
               "box": [
                 0.1512,
-                0.0,
+                0,
                 0.7536,
                 0.9017
               ]
@@ -7045,7 +7045,7 @@
             },
             {
               "values_m": [
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PA-06 arranque + alto"
@@ -7057,7 +7057,7 @@
               "elementId": "373019",
               "box": [
                 0.4743,
-                0.0,
+                0,
                 0.5257,
                 0.8691
               ]
@@ -7251,7 +7251,7 @@
             },
             {
               "values_m": [
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PA-07 arranque + alto"
@@ -7457,7 +7457,7 @@
             },
             {
               "values_m": [
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PA-08 arranque + alto"
@@ -7663,7 +7663,7 @@
             },
             {
               "values_m": [
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PA-09 arranque + alto"
@@ -7756,7 +7756,7 @@
           "dimensions": [
             {
               "values_m": [
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PA-10 largo"
@@ -7869,7 +7869,7 @@
             },
             {
               "values_m": [
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PA-10 arranque + alto"
@@ -8075,7 +8075,7 @@
             },
             {
               "values_m": [
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PA-11 arranque + alto"
@@ -8297,7 +8297,7 @@
             },
             {
               "values_m": [
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PA-12 arranque + alto"
@@ -8503,7 +8503,7 @@
             },
             {
               "values_m": [
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PA-13 arranque + alto"
@@ -8596,7 +8596,7 @@
           "dimensions": [
             {
               "values_m": [
-                2.0
+                2
               ],
               "associative": false,
               "label": "MH-PA-14 largo"
@@ -8709,7 +8709,7 @@
             },
             {
               "values_m": [
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PA-14 arranque + alto"
@@ -8915,7 +8915,7 @@
             },
             {
               "values_m": [
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PA-15 arranque + alto"
@@ -9121,7 +9121,7 @@
             },
             {
               "values_m": [
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PA-16 arranque + alto"
@@ -9214,7 +9214,7 @@
           "dimensions": [
             {
               "values_m": [
-                13.0
+                13
               ],
               "associative": false,
               "label": "MH-PA-17 largo"
@@ -9333,7 +9333,7 @@
               "elementId": "1099181",
               "box": [
                 0.6344,
-                0.0,
+                0,
                 0.6614,
                 0.2736
               ]
@@ -9369,7 +9369,7 @@
             },
             {
               "values_m": [
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PA-17 arranque + alto"
@@ -9462,7 +9462,7 @@
           "dimensions": [
             {
               "values_m": [
-                7.0
+                7
               ],
               "associative": false,
               "label": "MH-PB-01 largo"
@@ -9816,7 +9816,7 @@
             {
               "values_m": [
                 0.2,
-                6.0
+                6
               ],
               "associative": false,
               "label": "MH-PB-02 arranque + alto"
@@ -10025,7 +10025,7 @@
             {
               "values_m": [
                 0.2,
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PB-03 arranque + alto"
@@ -10327,7 +10327,7 @@
           "dimensions": [
             {
               "values_m": [
-                7.0
+                7
               ],
               "associative": false,
               "label": "MH-PB-05 largo"
@@ -10928,7 +10928,7 @@
             {
               "values_m": [
                 0.2,
-                6.0
+                6
               ],
               "associative": false,
               "label": "MH-PB-07 arranque + alto"
@@ -11413,7 +11413,7 @@
             {
               "values_m": [
                 0.2,
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PB-09 arranque + alto"
@@ -11870,7 +11870,7 @@
             {
               "values_m": [
                 0.2,
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PB-11 arranque + alto"
@@ -12172,7 +12172,7 @@
           "dimensions": [
             {
               "values_m": [
-                2.0
+                2
               ],
               "associative": false,
               "label": "MH-PB-13 largo"
@@ -12524,7 +12524,7 @@
             {
               "values_m": [
                 0.2,
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PB-14 arranque + alto"
@@ -12733,7 +12733,7 @@
             {
               "values_m": [
                 0.2,
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PB-15 arranque + alto"
@@ -12826,7 +12826,7 @@
           "dimensions": [
             {
               "values_m": [
-                13.0
+                13
               ],
               "associative": false,
               "label": "MH-PB-16 largo"
@@ -12984,7 +12984,7 @@
             {
               "values_m": [
                 0.2,
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PB-16 arranque + alto"
@@ -13077,7 +13077,7 @@
           "dimensions": [
             {
               "values_m": [
-                9.0
+                9
               ],
               "associative": false,
               "label": "MH-PE-01 largo"
@@ -13286,7 +13286,7 @@
           "dimensions": [
             {
               "values_m": [
-                9.0
+                9
               ],
               "associative": false,
               "label": "MH-PE-02 largo"
@@ -13817,7 +13817,7 @@
             },
             {
               "values_m": [
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PE-04 arranque + alto"
@@ -14023,7 +14023,7 @@
             },
             {
               "values_m": [
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PE-05 arranque + alto"
@@ -14322,7 +14322,7 @@
           "dimensions": [
             {
               "values_m": [
-                2.0
+                2
               ],
               "associative": false,
               "label": "MH-PE-07 largo"
@@ -14435,7 +14435,7 @@
             },
             {
               "values_m": [
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PE-07 arranque + alto"
@@ -14641,7 +14641,7 @@
             },
             {
               "values_m": [
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PE-08 arranque + alto"
@@ -15061,7 +15061,7 @@
                 0.2987,
                 0.6534,
                 0.3456,
-                1.0
+                1
               ]
             }
           ]
@@ -15195,7 +15195,7 @@
             },
             {
               "values_m": [
-                21.0
+                21
               ],
               "associative": false,
               "label": "PL-01 extensión Y"
@@ -15284,7 +15284,7 @@
           "dimensions": [
             {
               "values_m": [
-                21.0
+                21
               ],
               "associative": false,
               "label": "PL-01 ancho corte B"
@@ -15449,7 +15449,7 @@
               ],
               "values_m": [
                 0.43564040899597467,
-                2.0,
+                2,
                 0.14738790262033039,
                 1.852612097379672,
                 0.14738790262032822,
@@ -15866,7 +15866,7 @@
           "dimensions": [
             {
               "values_m": [
-                6.0
+                6
               ],
               "associative": false,
               "label": "VE-PB-02 largo"
@@ -16690,7 +16690,7 @@
           "dimensions": [
             {
               "values_m": [
-                4.0
+                4
               ],
               "associative": false,
               "label": "VE-PB-06 largo"
@@ -17390,7 +17390,7 @@
           "dimensions": [
             {
               "values_m": [
-                5.0
+                5
               ],
               "associative": false,
               "label": "VE-PE-01 largo"
@@ -17800,7 +17800,7 @@
             },
             {
               "values_m": [
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PA-10 largo"
@@ -17828,7 +17828,7 @@
             },
             {
               "values_m": [
-                2.0
+                2
               ],
               "associative": false,
               "label": "MH-PA-14 largo"
@@ -17849,7 +17849,7 @@
             },
             {
               "values_m": [
-                13.0
+                13
               ],
               "associative": false,
               "label": "MH-PA-17 largo"
@@ -18194,7 +18194,7 @@
           "dimensions": [
             {
               "values_m": [
-                7.0
+                7
               ],
               "associative": false,
               "label": "MH-PB-01 largo"
@@ -18222,7 +18222,7 @@
             },
             {
               "values_m": [
-                7.0
+                7
               ],
               "associative": false,
               "label": "MH-PB-05 largo"
@@ -18278,7 +18278,7 @@
             },
             {
               "values_m": [
-                2.0
+                2
               ],
               "associative": false,
               "label": "MH-PB-13 largo"
@@ -18299,7 +18299,7 @@
             },
             {
               "values_m": [
-                13.0
+                13
               ],
               "associative": false,
               "label": "MH-PB-16 largo"
@@ -18313,7 +18313,7 @@
             },
             {
               "values_m": [
-                6.0
+                6
               ],
               "associative": false,
               "label": "VE-PB-02 largo"
@@ -18341,7 +18341,7 @@
             },
             {
               "values_m": [
-                4.0
+                4
               ],
               "associative": false,
               "label": "VE-PB-06 largo"
@@ -18723,14 +18723,14 @@
           "dimensions": [
             {
               "values_m": [
-                9.0
+                9
               ],
               "associative": false,
               "label": "MH-PE-01 largo"
             },
             {
               "values_m": [
-                9.0
+                9
               ],
               "associative": false,
               "label": "MH-PE-02 largo"
@@ -18765,7 +18765,7 @@
             },
             {
               "values_m": [
-                2.0
+                2
               ],
               "associative": false,
               "label": "MH-PE-07 largo"
@@ -18793,7 +18793,7 @@
             },
             {
               "values_m": [
-                5.0
+                5
               ],
               "associative": false,
               "label": "VE-PE-01 largo"
@@ -20565,7 +20565,7 @@
             },
             {
               "values_m": [
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PA-06 arranque + alto"
@@ -20577,7 +20577,7 @@
               "elementId": "373019",
               "box": [
                 0.1512,
-                0.0,
+                0,
                 0.7536,
                 0.9017
               ]
@@ -20638,7 +20638,7 @@
             },
             {
               "values_m": [
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PA-07 arranque + alto"
@@ -20686,7 +20686,7 @@
             },
             {
               "values_m": [
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PA-08 arranque + alto"
@@ -20734,7 +20734,7 @@
             },
             {
               "values_m": [
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PA-09 arranque + alto"
@@ -20790,14 +20790,14 @@
           "dimensions": [
             {
               "values_m": [
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PA-10 largo"
             },
             {
               "values_m": [
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PA-10 arranque + alto"
@@ -20845,7 +20845,7 @@
             },
             {
               "values_m": [
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PA-11 arranque + alto"
@@ -20902,7 +20902,7 @@
             },
             {
               "values_m": [
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PA-12 arranque + alto"
@@ -20965,7 +20965,7 @@
             },
             {
               "values_m": [
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PA-13 arranque + alto"
@@ -21006,14 +21006,14 @@
           "dimensions": [
             {
               "values_m": [
-                2.0
+                2
               ],
               "associative": false,
               "label": "MH-PA-14 largo"
             },
             {
               "values_m": [
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PA-14 arranque + alto"
@@ -21061,7 +21061,7 @@
             },
             {
               "values_m": [
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PA-15 arranque + alto"
@@ -21124,7 +21124,7 @@
             },
             {
               "values_m": [
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PA-16 arranque + alto"
@@ -21171,21 +21171,21 @@
                 0.5,
                 0.96,
                 0.5,
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PA-17 vanos"
             },
             {
               "values_m": [
-                13.0
+                13
               ],
               "associative": false,
               "label": "MH-PA-17 largo"
             },
             {
               "values_m": [
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PA-17 arranque + alto"
@@ -21217,7 +21217,7 @@
               "elementId": "1099181",
               "box": [
                 0.6496,
-                0.0,
+                0,
                 0.6788,
                 0.2601
               ]
@@ -21251,7 +21251,7 @@
             {
               "values_m": [
                 0.4356,
-                2.0,
+                2,
                 0.1474,
                 1.8526,
                 0.1474,
@@ -21378,7 +21378,7 @@
             },
             {
               "values_m": [
-                7.0
+                7
               ],
               "associative": false,
               "label": "MH-PB-01 largo"
@@ -21445,7 +21445,7 @@
             {
               "values_m": [
                 0.2,
-                6.0
+                6
               ],
               "associative": false,
               "label": "MH-PB-02 arranque + alto"
@@ -21494,7 +21494,7 @@
             {
               "values_m": [
                 0.2,
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PB-03 arranque + alto"
@@ -21595,7 +21595,7 @@
             },
             {
               "values_m": [
-                7.0
+                7
               ],
               "associative": false,
               "label": "MH-PB-05 largo"
@@ -21757,7 +21757,7 @@
             {
               "values_m": [
                 0.2,
-                6.0
+                6
               ],
               "associative": false,
               "label": "MH-PB-07 arranque + alto"
@@ -21887,7 +21887,7 @@
             {
               "values_m": [
                 0.2,
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PB-09 arranque + alto"
@@ -22052,7 +22052,7 @@
             {
               "values_m": [
                 0.2,
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PB-11 arranque + alto"
@@ -22144,7 +22144,7 @@
             {
               "values_m": [
                 0.5,
-                1.0,
+                1,
                 0.5
               ],
               "associative": false,
@@ -22152,7 +22152,7 @@
             },
             {
               "values_m": [
-                2.0
+                2
               ],
               "associative": false,
               "label": "MH-PB-13 largo"
@@ -22219,7 +22219,7 @@
             {
               "values_m": [
                 0.2,
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PB-14 arranque + alto"
@@ -22268,7 +22268,7 @@
             {
               "values_m": [
                 0.2,
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PB-15 arranque + alto"
@@ -22326,18 +22326,18 @@
           "dimensions": [
             {
               "values_m": [
-                3.0,
+                3,
                 0.5,
-                5.0,
+                5,
                 0.5,
-                4.0
+                4
               ],
               "associative": false,
               "label": "MH-PB-16 vanos"
             },
             {
               "values_m": [
-                13.0
+                13
               ],
               "associative": false,
               "label": "MH-PB-16 largo"
@@ -22345,7 +22345,7 @@
             {
               "values_m": [
                 0.2,
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PB-16 arranque + alto"
@@ -22454,7 +22454,7 @@
           "dimensions": [
             {
               "values_m": [
-                6.0
+                6
               ],
               "associative": false,
               "label": "VE-PB-02 largo"
@@ -22674,7 +22674,7 @@
             },
             {
               "values_m": [
-                4.0
+                4
               ],
               "associative": false,
               "label": "VE-PB-06 largo"
@@ -22885,7 +22885,7 @@
           "dimensions": [
             {
               "values_m": [
-                9.0
+                9
               ],
               "associative": false,
               "label": "MH-PE-01 largo"
@@ -22934,7 +22934,7 @@
           "dimensions": [
             {
               "values_m": [
-                9.0
+                9
               ],
               "associative": false,
               "label": "MH-PE-02 largo"
@@ -23039,7 +23039,7 @@
             },
             {
               "values_m": [
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PE-04 arranque + alto"
@@ -23087,7 +23087,7 @@
             },
             {
               "values_m": [
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PE-05 arranque + alto"
@@ -23191,14 +23191,14 @@
           "dimensions": [
             {
               "values_m": [
-                2.0
+                2
               ],
               "associative": false,
               "label": "MH-PE-07 largo"
             },
             {
               "values_m": [
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PE-07 arranque + alto"
@@ -23246,7 +23246,7 @@
             },
             {
               "values_m": [
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PE-08 arranque + alto"
@@ -23341,7 +23341,7 @@
                 0.5,
                 0.96,
                 0.5,
-                3.0
+                3
               ],
               "associative": false,
               "label": "MH-PE-10 vanos"
@@ -23389,7 +23389,7 @@
                 0.2891,
                 0.6638,
                 0.3392,
-                1.0
+                1
               ]
             }
           ]
@@ -23416,7 +23416,7 @@
           "dimensions": [
             {
               "values_m": [
-                5.0
+                5
               ],
               "associative": false,
               "label": "VE-PE-01 largo"
@@ -23454,8 +23454,8 @@
       "level": "00. Planta Baja",
       "label": "MH-PB-01 · 7,00 × 3,00 · e 20",
       "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
-      "length_m": 7.0,
-      "height_m": 3.0,
+      "length_m": 7,
+      "height_m": 3,
       "thickness_m": 0.2,
       "area_m2": 18.239,
       "volume_m3": 3.648
@@ -23494,7 +23494,7 @@
       "label": "MH-PB-04 · 6,92 × 3,00 · e 20",
       "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
       "length_m": 6.925,
-      "height_m": 3.0,
+      "height_m": 3,
       "thickness_m": 0.2,
       "area_m2": 20.304,
       "volume_m3": 4.019
@@ -23506,8 +23506,8 @@
       "level": "00. Planta Baja",
       "label": "MH-PB-05 · 7,00 × 3,00 · e 20",
       "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
-      "length_m": 7.0,
-      "height_m": 3.0,
+      "length_m": 7,
+      "height_m": 3,
       "thickness_m": 0.2,
       "area_m2": 18.432,
       "volume_m3": 3.645
@@ -23520,10 +23520,10 @@
       "label": "MH-PB-06 · 4,95 × 3,00 · e 20",
       "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
       "length_m": 4.952,
-      "height_m": 3.0,
+      "height_m": 3,
       "thickness_m": 0.2,
-      "area_m2": 15.0,
-      "volume_m3": 3.0
+      "area_m2": 15,
+      "volume_m3": 3
     },
     {
       "id": "369425",
@@ -23546,7 +23546,7 @@
       "label": "MH-PB-08 · 6,33 × 3,00 · e 20",
       "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
       "length_m": 6.33,
-      "height_m": 3.0,
+      "height_m": 3,
       "thickness_m": 0.2,
       "area_m2": 18.836,
       "volume_m3": 3.728
@@ -23598,7 +23598,7 @@
       "label": "MH-PB-12 · 0,63 × 3,00 · e 20",
       "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
       "length_m": 0.628,
-      "height_m": 3.0,
+      "height_m": 3,
       "thickness_m": 0.2,
       "area_m2": 2.356,
       "volume_m3": 0.377
@@ -23610,7 +23610,7 @@
       "level": "00. Planta Baja",
       "label": "MH-PB-13 · 2,00 × 8,70 · e 20",
       "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
-      "length_m": 2.0,
+      "length_m": 2,
       "height_m": 8.7,
       "thickness_m": 0.2,
       "area_m2": 10.697,
@@ -23649,7 +23649,7 @@
       "level": "00. Planta Baja",
       "label": "MH-PB-16 · 13,00 × 3,20 · e 20",
       "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
-      "length_m": 13.0,
+      "length_m": 13,
       "height_m": 3.2,
       "thickness_m": 0.2,
       "area_m2": 33.689,
@@ -23728,7 +23728,7 @@
       "label": "MH-PA-06 · 4,75 × 3,00 · e 20",
       "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
       "length_m": 4.75,
-      "height_m": 3.0,
+      "height_m": 3,
       "thickness_m": 0.2,
       "area_m2": 15.577,
       "volume_m3": 3.091
@@ -23741,7 +23741,7 @@
       "label": "MH-PA-07 · 0,70 × 3,00 · e 20",
       "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
       "length_m": 0.7,
-      "height_m": 3.0,
+      "height_m": 3,
       "thickness_m": 0.2,
       "area_m2": 2.346,
       "volume_m3": 0.462
@@ -23754,7 +23754,7 @@
       "label": "MH-PA-08 · 0,94 × 3,00 · e 20",
       "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
       "length_m": 0.942,
-      "height_m": 3.0,
+      "height_m": 3,
       "thickness_m": 0.2,
       "area_m2": 3.646,
       "volume_m3": 0.617
@@ -23767,7 +23767,7 @@
       "label": "MH-PA-09 · 3,60 × 3,00 · e 20",
       "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
       "length_m": 3.602,
-      "height_m": 3.0,
+      "height_m": 3,
       "thickness_m": 0.2,
       "area_m2": 12.035,
       "volume_m3": 2.372
@@ -23779,8 +23779,8 @@
       "level": "01. Planta Alta",
       "label": "MH-PA-10 · 3,00 × 3,00 · e 20",
       "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
-      "length_m": 3.0,
-      "height_m": 3.0,
+      "length_m": 3,
+      "height_m": 3,
       "thickness_m": 0.2,
       "area_m2": 7.599,
       "volume_m3": 1.49
@@ -23793,7 +23793,7 @@
       "label": "MH-PA-11 · 0,63 × 3,00 · e 20",
       "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
       "length_m": 0.63,
-      "height_m": 3.0,
+      "height_m": 3,
       "thickness_m": 0.2,
       "area_m2": 2.361,
       "volume_m3": 0.378
@@ -23806,7 +23806,7 @@
       "label": "MH-PA-12 · 6,50 × 3,00 · e 20",
       "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
       "length_m": 6.5,
-      "height_m": 3.0,
+      "height_m": 3,
       "thickness_m": 0.2,
       "area_m2": 14.502,
       "volume_m3": 2.901
@@ -23819,7 +23819,7 @@
       "label": "MH-PA-13 · 0,63 × 3,00 · e 20",
       "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
       "length_m": 0.628,
-      "height_m": 3.0,
+      "height_m": 3,
       "thickness_m": 0.2,
       "area_m2": 2.356,
       "volume_m3": 0.377
@@ -23831,10 +23831,10 @@
       "level": "01. Planta Alta",
       "label": "MH-PA-14 · 2,00 × 3,00 · e 20",
       "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
-      "length_m": 2.0,
-      "height_m": 3.0,
+      "length_m": 2,
+      "height_m": 3,
       "thickness_m": 0.2,
-      "area_m2": 6.0,
+      "area_m2": 6,
       "volume_m3": 1.2
     },
     {
@@ -23845,7 +23845,7 @@
       "label": "MH-PA-15 · 0,63 × 3,00 · e 20",
       "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
       "length_m": 0.63,
-      "height_m": 3.0,
+      "height_m": 3,
       "thickness_m": 0.2,
       "area_m2": 2.361,
       "volume_m3": 0.378
@@ -23858,7 +23858,7 @@
       "label": "MH-PA-16 · 0,63 × 3,00 · e 20",
       "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
       "length_m": 0.628,
-      "height_m": 3.0,
+      "height_m": 3,
       "thickness_m": 0.2,
       "area_m2": 2.356,
       "volume_m3": 0.377
@@ -23870,8 +23870,8 @@
       "level": "01. Planta Alta",
       "label": "MH-PA-17 · 13,00 × 3,00 · e 20",
       "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
-      "length_m": 13.0,
-      "height_m": 3.0,
+      "length_m": 13,
+      "height_m": 3,
       "thickness_m": 0.2,
       "area_m2": 24.505,
       "volume_m3": 4.901
@@ -23883,7 +23883,7 @@
       "level": "02. Planta Entrepiso",
       "label": "MH-PE-01 · 9,00 × 0,60 · e 20",
       "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
-      "length_m": 9.0,
+      "length_m": 9,
       "height_m": 0.6,
       "thickness_m": 0.2,
       "area_m2": 5.34,
@@ -23896,7 +23896,7 @@
       "level": "02. Planta Entrepiso",
       "label": "MH-PE-02 · 9,00 × 0,78 · e 20",
       "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
-      "length_m": 9.0,
+      "length_m": 9,
       "height_m": 0.78,
       "thickness_m": 0.2,
       "area_m2": 2.756,
@@ -23923,7 +23923,7 @@
       "label": "MH-PE-04 · 0,63 × 3,00 · e 20",
       "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
       "length_m": 0.63,
-      "height_m": 3.0,
+      "height_m": 3,
       "thickness_m": 0.2,
       "area_m2": 1.408,
       "volume_m3": 0.231
@@ -23936,7 +23936,7 @@
       "label": "MH-PE-05 · 0,63 × 3,00 · e 20",
       "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
       "length_m": 0.628,
-      "height_m": 3.0,
+      "height_m": 3,
       "thickness_m": 0.2,
       "area_m2": 1.403,
       "volume_m3": 0.23
@@ -23961,8 +23961,8 @@
       "level": "02. Planta Entrepiso",
       "label": "MH-PE-07 · 2,00 × 3,00 · e 20",
       "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
-      "length_m": 2.0,
-      "height_m": 3.0,
+      "length_m": 2,
+      "height_m": 3,
       "thickness_m": 0.2,
       "area_m2": 3.804,
       "volume_m3": 0.738
@@ -23975,7 +23975,7 @@
       "label": "MH-PE-08 · 0,63 × 3,00 · e 20",
       "status": "Hormigón armado (tipo Muro Hormigón 20cm)",
       "length_m": 0.63,
-      "height_m": 3.0,
+      "height_m": 3,
       "thickness_m": 0.2,
       "area_m2": 1.408,
       "volume_m3": 0.231
@@ -24238,12 +24238,14 @@
       "code": "PL-02",
       "kind": "PL",
       "level": "00. Planta Baja",
-      "label": "PL-02 · 124,12 m² · ampliación de platea R31",
+      "label": "PL-02 · 124,12 m² · H° e 15 · 18,62 m³ · ampliación R31",
       "status": "Modelado R31 (OK usuario) · tipo Platea PB 15CM bajo LO-PB-01",
       "type": "Platea PB 15CM",
       "area_m2": 124.125,
-      "volume_m3": 31.031,
-      "thickness_m": 0.15
+      "volume_m3": 18.619,
+      "thickness_m": 0.25,
+      "typeVolume_m3": 31.031,
+      "concreteLayer_m": 0.15
     },
     {
       "id": "398391",
@@ -24302,7 +24304,7 @@
       "status": "Losa con capa de hormigón 15 cm",
       "type": "L01.01 / 30cm",
       "thickness_m": 0.3,
-      "area_m2": 28.0,
+      "area_m2": 28,
       "concreteLayer_m": 0.15
     },
     {
@@ -24404,7 +24406,7 @@
     "loPb01VsPlatea": {
       "LO-PB-01": 714161,
       "PL-01": 2287528,
-      "intersection_m2": 0.0,
+      "intersection_m2": 0,
       "loPb01OutsidePlatea_m2": 124.125,
       "levels_m": {
         "LO-PB-01": [
@@ -24456,7 +24458,7 @@
           734491,
           714161
         ],
-        "intersection_m2": 0.0,
+        "intersection_m2": 0,
         "note": "sin superposición en planta (el caso de revisión era por caja envolvente)"
       }
     ],
@@ -24478,7 +24480,7 @@
       "LO-PA-01": 16.265,
       "LO-PA-02": 29.95,
       "LO-PA-03": 21.8,
-      "LO-PA-04": 22.0,
+      "LO-PA-04": 22,
       "LO-PA-05": 21.614,
       "LO-PA-06": 27.214,
       "LO-PA-07": 7.356,
