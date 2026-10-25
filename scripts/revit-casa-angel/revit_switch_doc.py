@@ -22,7 +22,17 @@ def run(doc, uidoc, job):
     assert os.path.exists(target), 'No existe: ' + target
     uiapp = uidoc.Application; app = uiapp.Application
     if os.path.normcase(doc.PathName) == os.path.normcase(target): return {'status': 'success', 'active': target, 'note': 'ya activo'}
-    new = uiapp.OpenAndActivateDocument(target).Document
+    unloaded = []   # a file loaded as a link in an open document cannot be opened as host: unload that link first
+    for d in list(app.Documents):
+        if d.IsLinked: continue
+        for lt in DB.FilteredElementCollector(d).OfClass(DB.RevitLinkType):
+            ext = lt.GetExternalFileReference()
+            p = DB.ModelPathUtils.ConvertModelPathToUserVisiblePath(ext.GetAbsolutePath()) if ext else ''
+            if os.path.normcase(os.path.abspath(p)) == os.path.normcase(target) and DB.RevitLinkType.IsLoaded(d, lt.Id):
+                lt.Unload(None); unloaded.append(DB.Element.Name.GetValue(lt))
+    ui = uiapp.OpenAndActivateDocument(target)
+    assert ui is not None, 'Revit no abrió ' + target + ' (¿diálogo abierto?)'
+    new = ui.Document
     closed = []
     # close every other casa-angel document (saving), so links to them can load; other projects are left alone
     for d in list(app.Documents):
