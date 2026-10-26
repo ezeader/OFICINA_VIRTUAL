@@ -4,16 +4,17 @@
 import {useEffect,useState} from 'react';
 import {FileText} from 'lucide-react';
 import {useRubroViewer} from './rubro-viewer';
-import {groupRubroSheets,type RubroManifest,type RubroInfo} from '../lib/rubros';
+import {groupRubroLevels,type RubroManifest,type RubroInfo} from '../lib/rubros';
 
 type Tab='laminas'|'computo'|'elementos'|'pendientes';
 const n2=(n:number)=>n.toLocaleString('es-AR',{minimumFractionDigits:2,maximumFractionDigits:2});
 
-export default function RubroDesk({rubro}:{rubro:RubroInfo}){
+// base y project permiten usar la misma mesa en otros proyectos (p. ej. /urbetrack/rubros, «Oficinas Urbetrack»).
+export default function RubroDesk({rubro,base='/casa-angel/rubros',project='Casa Ángel'}:{rubro:RubroInfo;base?:string;project?:string}){
  const [data,setData]=useState<RubroManifest|null>(),[tab,setTab]=useState<Tab>('laminas');
- useEffect(()=>{setData(undefined);const abort=new AbortController();fetch(`/casa-angel/rubros/${rubro.key}/manifest.json`,{signal:abort.signal}).then(r=>r.ok?r.json() as Promise<RubroManifest>:null).then(setData).catch(()=>{if(!abort.signal.aborted)setData(null)});return()=>abort.abort()},[rubro.key]);
+ useEffect(()=>{setData(undefined);const abort=new AbortController();fetch(`${base}/${rubro.key}/manifest.json`,{signal:abort.signal}).then(r=>r.ok?r.json() as Promise<RubroManifest>:null).then(setData).catch(()=>{if(!abort.signal.aborted)setData(null)});return()=>abort.abort()},[base,rubro.key]);
  const kindLabel=(code:string,kind?:string)=>(kind&&data?.kinds?.[kind])||'';
- const viewer=useRubroViewer({rubro:rubro.name,sheets:data?.sheets||[],codes:data?.codes||[],kindLabel});
+ const viewer=useRubroViewer({rubro:rubro.name,project,sheets:data?.sheets||[],codes:data?.codes||[],kindLabel});
  if(data===undefined)return <p className="sheetHint">Cargando {rubro.name.toLowerCase()}…</p>;
  if(data===null)return <section className="openingsDesk sheetExplorer"><div className="docPending"><FileText size={27}/><h3>{rubro.name} · por preparar</h3><p>{rubro.pending}</p></div></section>;
  if(viewer.page)return viewer.page;
@@ -23,11 +24,11 @@ export default function RubroDesk({rubro}:{rubro:RubroInfo}){
  // Sin láminas (rubro a definir) se abre en las preguntas: primero hay que decidir.
  const shown=tabs.some(([t,,n])=>t===tab&&n)&&!(sheets.length===0&&tab==='laminas')?tab:sheets.length===0&&tabs[3][2]?'pendientes':(tabs.find(([,,n])=>n)?.[0]||'laminas');
  return <section className="openingsDesk sheetExplorer" aria-label={rubro.name}>
-  <div className="sheetHeading"><div><p className="eyebrow">CASA ÁNGEL / {rubro.name.toUpperCase()}</p><h3>{data.title||rubro.name}</h3><p>{data.summary||`${sheets.length} láminas · ${codes.length} elementos con código.`}</p></div></div>
+  <div className="sheetHeading"><div><p className="eyebrow">{project.toUpperCase()} / {rubro.name.toUpperCase()}</p><h3>{data.title||rubro.name}</h3><p>{data.summary||`${sheets.length} láminas · ${codes.length} elementos con código.`}</p></div></div>
   {data.status==='propuesta'&&<p className="openingPendingLine">✏️ Propuesta a confirmar: es un diseño para que lo revises; no es documentación de obra hasta que lo apruebes.</p>}
   {(data.questions||[]).length>0&&<p className="openingPendingLine">❓ {data.questions!.length===1?'Hay una pregunta para vos':`Hay ${data.questions!.length} preguntas para vos`} en «Qué falta definir».</p>}
   <div className="sheetTabs">{tabs.filter(([,,n])=>n).map(([t,label,n])=><button key={t} aria-pressed={shown===t} onClick={()=>setTab(t)}>{label} · {n}</button>)}</div>
-  {shown==='laminas'&&(sheets.length?viewer.grid(groupRubroSheets(sheets,data.kinds)):<p className="openingPendingLine">Las láminas de este rubro se están preparando en Revit. Aparecen acá en cuanto se publiquen.</p>)}
+  {shown==='laminas'&&(sheets.length?viewer.levels(groupRubroLevels(sheets,data.kinds)):<p className="openingPendingLine">Las láminas de este rubro se están preparando en Revit. Aparecen acá en cuanto se publiquen.</p>)}
   {shown==='computo'&&<section className="openingBudget">
    {sheets.length===0&&<p className="openingAlert">⚠ Estimación previa: este rubro todavía no está modelado. Las cantidades son hipótesis para ordenar la decisión, no un cómputo.</p>}
    {(data.totals||[]).length>0&&<div className="openingTotals">{data.totals!.map((t,i)=><div key={t.label} className={i===data.totals!.length-1&&data.totals!.length>1?'total':''}><small>{t.label}</small><strong>{n2(t.value)} {t.unit}</strong>{t.detail&&<span>{t.detail}</span>}</div>)}</div>}

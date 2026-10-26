@@ -1,7 +1,8 @@
 'use client';
 import {useEffect,useMemo,useState} from 'react';
 import {useRubroViewer,type RubroSheet} from './rubro-viewer';
-import {concreteTotals,groupCases,groupStructureSheets,plainWarning,structureBudget,type StructureManifest,type Wall} from '../lib/structure';
+import {concreteTotals,groupCases,sheetGroup,plainWarning,structureBudget,type StructureManifest,type Wall} from '../lib/structure';
+import {groupRubroLevels} from '../lib/rubros';
 import './sanitary-sheets.css';
 import './openings-desk.css';
 
@@ -32,7 +33,7 @@ export default function StructureDesk(){
   <div className="sheetHeading"><div><p className="eyebrow">CASA ÁNGEL / ESTRUCTURA</p><h3>Estructura</h3><p>{data.concreteWalls.count} muros de hormigón · {n2(concrete)} m³ de hormigón · {data.reviewCases.length} casos para revisar.</p></div></div>
   <div className="sheetTabs">{TABS.map(([t,label])=><button key={t} aria-pressed={tab===t} onClick={()=>setTab(t)}>{label}</button>)}</div>
 
-  {tab==='laminas'&&(sheets.length?viewer.grid(groupStructureSheets(sheets as RubroSheet[]))
+  {tab==='laminas'&&(sheets.length?viewer.levels(groupRubroLevels(sheets as RubroSheet[],undefined,s=>s.level?sheetGroup(s).replace(/ · .*$/,'').replace('Índice, plantas y fundación','Fundación'):sheetGroup(s).replace('Índice, plantas y fundación','Índice y criterios')))
    :<><p className="openingPendingLine">Las láminas de estructura se están preparando en Revit con el mismo formato que Aberturas: cada muro con su código y medidas. Aparecen acá en cuanto se publiquen.</p>
     <div className="openingCards">{data.proposal.sheets.map(s=><article key={s.number} className="openingCard"><header><span className="openingTag">{s.number}</span><small>En preparación</small></header><strong>{s.title.split(' · ')[0]}</strong><p className="openingSub">{s.title.split(' · ').slice(1).join(' · ')}</p></article>)}</div></>)}
 

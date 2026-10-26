@@ -21,6 +21,20 @@ export const RUBROS:RubroInfo[]=[
 ];
 export const rubroByKey=(key:string)=>RUBROS.find(r=>r.key===key);
 
+// Oficinas Urbetrack: rubros de la carpeta técnica entregada (una lámina por página del PDF),
+// publicados en public/urbetrack/rubros/<clave>/manifest.json con el mismo contrato.
+export const URBE_RUBROS:RubroInfo[]=[
+ {key:'intro',name:'Intro',subtitle:'Memoria y diagramas',pending:'Sin láminas publicadas.'},
+ {key:'demolicion',name:'Demolición',subtitle:'Pisos 12 y 13',pending:'Sin láminas publicadas.'},
+ {key:'arquitectura',name:'Arquitectura',subtitle:'Plantas · axonometría · cortes',pending:'Sin láminas publicadas.'},
+ {key:'sanitarias',name:'Sanitarias',subtitle:'Planta integrada y detalles',pending:'Sin láminas publicadas.'},
+ {key:'electricas',name:'Eléctricas',subtitle:'Iluminación · tomas · datos',pending:'Sin láminas publicadas.'},
+ {key:'tableros',name:'Tableros',subtitle:'TS-IT · TS-PUESTOS · TS-AA',pending:'Sin láminas publicadas.'},
+ {key:'aire',name:'Aire acondicionado',subtitle:'Equipos y alimentación',pending:'Sin láminas publicadas.'},
+ {key:'tabiqueria',name:'Tabiquería vidriada',subtitle:'Plantas · planilla · pivotes',pending:'Sin láminas publicadas.'},
+ {key:'materialidad',name:'Materialidad',subtitle:'Terminaciones y equipamiento',pending:'Sin láminas publicadas.'},
+];
+
 export type RubroManifest={
  title?:string;summary?:string;status?:string; // 'propuesta' = diseño a confirmar por el estudio
 model?:string;readAt?:string;revision?:string;
@@ -40,3 +54,28 @@ export function groupRubroSheets<T extends {number:string;title:string;sector?:s
  for(const s of [...sheets].sort((a,b)=>a.number.localeCompare(b.number,'es',{numeric:true})))groups.set(groupOf(s),[...(groups.get(groupOf(s))||[]),s]);
  return [...groups].map(([title,rows])=>({title,sheets:rows})).sort((a,b)=>Number(a.title!=='General')-Number(b.title!=='General')||Number(a.title.startsWith('Fichas'))-Number(b.title.startsWith('Fichas'))||a.title.localeCompare(b.title,'es',{numeric:true}));
 }
+
+// Plano principal primero: cada nivel ("00. Planta Baja", "01. Planta Alta"…) abre con su planta completa y debajo
+// las demás láminas de ese nivel; lo que no es de un nivel (índice, cortes, detalles) va al final.
+const LEVEL=/^\d+\.\s/;
+export const levelName=(level:string)=>level.replace(LEVEL,'');
+type LevelSheet={number:string;title:string;sector?:string|null;level?:string|null;kind?:string;element?:string};
+export function groupRubroLevels<T extends LevelSheet>(sheets:T[],kinds?:Record<string,string>,subgroup?:(s:T)=>string){
+ const byNumber=(a:T,b:T)=>a.number.localeCompare(b.number,'es',{numeric:true});
+ const sorted=[...sheets].sort(byNumber),isElement=(s:T)=>s.kind==='element'||!!s.element;
+ const names=[...new Set(sorted.map(s=>s.level||'').filter(l=>LEVEL.test(l)))].sort((a,b)=>a.localeCompare(b,'es',{numeric:true}));
+ const bucket=(rows:T[],title:(s:T)=>string)=>{const m=new Map<string,T[]>();for(const s of rows)m.set(title(s),[...(m.get(title(s))||[]),s]);return [...m].map(([title,sheets])=>({title,sheets}))};
+ const kindGroup=(s:T)=>{const k=kinds?.[(s.element||'').split('-')[0]];return k?`Fichas · ${k}`:'Fichas'};
+ const levels=names.map(level=>{
+  const own=sorted.filter(s=>s.level===level),name=levelName(level).toLowerCase();
+  // La planta del nivel es la lámina general (no ficha, no versión previa) cuyo título nombra el nivel.
+  const general=own.filter(s=>!isElement(s)&&!/previo/i.test(s.sector||''));
+  const plan=general.find(s=>s.title.toLowerCase().includes(name))||general[0];
+  const title=subgroup||((s:T)=>isElement(s)?kindGroup(s):(s.sector||'').replace(level,'').replace(/^[\s·]+|[\s·]+$/g,'')||'Otras láminas del nivel');
+  const groups=bucket(own.filter(s=>s!==plan),title).sort((a,b)=>Number(/previo/i.test(a.title))-Number(/previo/i.test(b.title))||Number(a.title.startsWith('Fichas'))-Number(b.title.startsWith('Fichas'))||a.title.localeCompare(b.title,'es',{numeric:true}));
+  return {level,plan,groups};
+ });
+ const rest=sorted.filter(s=>!names.includes(s.level||'')),others=(subgroup?bucket(rest,subgroup):groupRubroSheets(rest,kinds)).sort((a,b)=>Number(/índice|general/i.test(a.title))-Number(/índice|general/i.test(b.title)));
+ return {levels,others};
+}
+export type RubroLevels<T>={levels:{level:string;plan?:T;groups:{title:string;sheets:T[]}[]}[];others:{title:string;sheets:T[]}[]};

@@ -108,3 +108,9 @@
 .carpSize{margin:2px 0 0;font-size:26px;color:#2b2a25}.carpSize small{font-size:19px;color:var(--muted)}
 .carpData{margin:0;font-size:16px;line-height:1.4;color:#4a463e}.carpData::first-letter{text-transform:uppercase}
 @media(max-width:480px){.carpGrid{grid-template-columns:1fr}.carpCode{font-size:34px}}
+.sheetExplorer .rubroLevelJump{display:flex;flex-direction:row;flex-wrap:wrap;gap:6px;margin:0 0 6px}.rubroLevelJump button{width:auto;border:1px solid var(--line);background:#fff;padding:8px 14px;font-size:12px}.rubroLevelJump button:hover{background:#ece7dd}
+.rubroLevel{border-top:1px solid var(--line);padding-top:4px}.rubroLevelPlan{display:grid;grid-template-columns:minmax(0,1fr);width:100%;padding:0;border:1px solid var(--line);background:#fff;text-align:left;cursor:pointer;margin-bottom:22px;transition:box-shadow .2s}.rubroLevelPlan:hover{box-shadow:0 8px 24px #302c2512}
+.rubroLevelDrawing{display:block;padding:14px}.rubroLevelDrawing .openingTrim{max-width:calc(70vh*var(--a,1.4));margin:0 auto}.rubroLevelDrawing img{display:block;width:100%;max-height:68vh;object-fit:contain}
+.rubroLevelCaption{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;padding:12px 16px;border-top:1px solid var(--line)}.rubroLevelCaption small{font-size:9px;letter-spacing:1px;color:var(--muted)}.rubroLevelCaption strong{font-size:18px;font-weight:500}.rubroLevelCaption em{font-style:normal;font-size:11px;color:#75664c;margin-left:auto}
+.rubroLevelGroup h5{font-size:15px;font-weight:500;margin:18px 0 10px;display:flex;align-items:baseline;gap:8px}.rubroLevelGroup h5 small{font-size:12px;color:var(--muted);font-weight:400}
+@media(max-width:600px){.rubroLevelDrawing{padding:6px}.rubroLevelCaption em{margin-left:0}}
