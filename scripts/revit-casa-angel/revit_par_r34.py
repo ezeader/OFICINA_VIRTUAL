@@ -18,8 +18,7 @@ IDS = {'PR-01': 743956, 'CH-01': 738025, 'CH-02': 745388}
 PRE = 'ADER PAR R34 - '
 RUBRO = u'PARRILLA'
 FOOT = (u'Parrilla R34 (archivo de documentación con el modelo principal vinculado). Parrilla de obra a medida en el Quincho: boca 1,50 m, hogar a +0,90, '
-        u'campana de ladrillo refractario visto hasta el cielorraso (+2,50), conducto Ø 35 cm por cubierta con sombrerete fijo. Modelada en 3D solo en este archivo: el modelo '
-        u'principal sigue con el equipo K42DB y 2 conductos Ø 25 (no se modificó). Cotas en metros.')
+        u'campana refractaria hasta +2,50, conducto Ø 35 con sombrerete fijo. Modelada en el modelo principal (OK 26/10): reemplaza al K42DB; cajón Durlock ampliado. Cotas en m.')
 
 # ---------------------------------------------------------------- design (metres). Local x from the west outer face, y from the wall face, z from NPT
 WALL_Y = 2.018          # inner face of the south H° wall (Muro Hormigón 20 cm, axis 1,918)
@@ -30,13 +29,19 @@ X0 = EAST_X - WIDTH                     # model x of the west outer face
 FONDO, HOGAR, FRENTE = .064, .60, .12
 DEPTH = FONDO + HOGAR + FRENTE          # 0,784
 Z_LOSA0, Z_LOSA1, Z_HOGAR, Z_BOCA, Z_CIELO, Z_LO0, Z_LO1 = .74, .84, .90, 1.50, 2.50, 2.80, 3.00
-CH_X, CH_Y = 3.92, 2.30                 # conducto axis (model)
+CH_X, CH_Y = 3.92, 2.30                 # conducto axis in PB (over the campana)
+CH_X2 = 4.388                           # axis in PA and roof: beside the hogar duct CH-02, 5 cm off the facade
+CH2 = (4.467, 2.823, .125)              # CH-02: existing duct of the PA hogar (Ø 25), untouched
+Z_OFF0 = 3.10; OFF_DEG = 30.0           # offset with 2 elbows at 30° from vertical, inside the cajón
+Z_OFF1 = Z_OFF0 + (CH_X2 - CH_X) / math.tan(math.radians(OFF_DEG))
+DIAG = (CH_X2 - CH_X) / math.sin(math.radians(OFF_DEG))
 CH_D, CH_DE = .35, .40                  # inner Ø / outer Ø double wall
 CAJON = (4.063, 1.882, 4.738, 3.232)    # Durlock box in the Comedor (walls 986634/986707/986754), top +4,00
-CAJON_NEW_X = CH_X - CH_DE / 2 - .06    # proposed west face
+CAJON_NEW_X = 3.645                     # new axis of the west Durlock wall (inner face 3,67: 5 cm to the Ø 40)
+WALLS_CJ = {'west': 986707, 'north': 986634, 'south': 986754}
 ROOF_RIDGE_X, ROOF_RIDGE_Z, ROOF_TAN = 2.085, 8.627, math.tan(math.radians(16.8))   # CU-03 (from the probe)
 def roof_z(x): return ROOF_RIDGE_Z - abs(x - ROOF_RIDGE_X) * ROOF_TAN
-Z_ROOF = roof_z(CH_X)
+Z_ROOF = roof_z(CH_X2)
 Z_TOP = 9.40                            # conducto top (= model CH top; ≥ cumbrera + 0,60)
 G0 = 1.90                               # garganta start: lateral slope (1,50 → Ø 35) ≤ 45° (R1001.8.1)
 Z_SOMB = Z_TOP + .20 + .15
@@ -55,11 +60,13 @@ PARTS = {   # code: label (hover / tags)
     'PR-GA': u'PR-GA · garganta chapa 2 mm + registro de tiro en el collar Ø %s' % c2(CH_D),
     'PR-PA': u'PR-PA · parrilla regulable acero inox 1,00 × 0,55 con elevación a manivela',
     'PR-BR': u'PR-BR · brasero (canasto) hierro 0,35 × 0,50',
-    'PR-LE': u'PR-LE · leñero abierto bajo la losa · %s × %s × %s' % (c2(BOCA), c2(DEPTH), c2(Z_LOSA0)),
+    'PR-LE': u'PR-LE · leñero con puertas bajo la losa · %s × %s × %s' % (c2(BOCA), c2(DEPTH), c2(Z_LOSA0)),
     'PR-AI': u'PR-AI · placa lana cerámica 25 mm contra el tabique · %s × %s m' % (c2(DEPTH), c2(Z_CIELO)),
-    'CH-01': u'CH-01 · conducto Ø %s acero inox · +%s a +%s · %s ml' % (c2(CH_D), c2(Z_CIELO), c2(Z_TOP), c2(Z_TOP - Z_CIELO)),
+    'CH-01': u'CH-01 · conducto Ø %s acero inox · +%s a +%s · %s ml · desvío 2 codos 30°' % (c2(CH_D), c2(Z_CIELO), c2(Z_TOP), c2((Z_LO1 - Z_CIELO) + (Z_OFF0 - Z_LO1) + DIAG + (Z_TOP - Z_OFF1))),
+    'CH-02': u'CH-02 · ducto del hogar de PA (existente, Ø 0,25)',
+    'PR-PU': u'PR-PU · puertas del leñero 2 hojas chapa N°18 con marco L 1" · %s × %s' % (c2(BOCA), c2(Z_LOSA0 - .05)),
     'CH-PA': u'CH-PA · pase en losa L01 0,50 × 0,50 (amplía el pase existente)',
-    'CH-CJ': u'CH-CJ · cajón Durlock del Comedor: ampliar al oeste hasta x %s y llevar hasta la cubierta (a confirmar)' % c2(CAJON_NEW_X),
+    'CH-CJ': u'CH-CJ · cajón Durlock del Comedor ampliado al oeste (eje x %s), alto +4,00: encierra el desvío' % c2(CAJON_NEW_X),
     'CH-BA': u'CH-BA · babeta / collar de cubierta + brochal entre cabios',
     'CH-SO': u'CH-SO · sombrerete fijo acero inox Ø 0,70 + malla antichispa',
 }
@@ -207,22 +214,25 @@ def plan_pb(doc):
     txt(doc, v, EAST_X + .15, CH_Y + .45, u'CH-01 Ø 35\n(encima, ver PA)', 'text')
     txt(doc, v, .5, 4.30, u'QUINCHO (12) · PB · NPT ±0,00', 'room')
     txt(doc, v, .5, 1.76, u'Muro H° 20 (exterior)', 'text'); txt(doc, v, EAST_X + .15, 3.55, u'Tabique 10', 'text')
-    txt(doc, v, .5, 3.95, u'Corte a +1,20 · oculto: campana\ny conducto encima · el K42DB y\nlos conductos Ø 25 del modelo\nquedan reemplazados', 'text')
+    txt(doc, v, .5, 3.95, u'Corte a +1,20 · oculto: campana\ny conducto encima · reemplaza\nal K42DB y su conducto Ø 25\n(modelo principal)', 'text')
     parts = [('PR-01', (xa, LY(0), EAST_X, LY(DEPTH))), ('CH-01', (CH_X - .15, CH_Y - .15, CH_X + .15, CH_Y + .15))]
     return pitem(v, box, u'Ubicación · Quincho · planta baja', u'00. Planta Baja', ['PR-01', 'CH-01'], dims, parts, [])
 
 def plan_pa(doc):
     box = (2.9, .9, 5.3, 4.1)
     v, lev = plan_view(doc, u'01. Planta Alta', PRE + 'CONDUCTO PA', box, 25)
-    for r_, w in ((CH_DE / 2, 4), (CH_D / 2, 2)): circ(doc, v, (CH_X, CH_Y), r_, w)
+    circ(doc, v, (CH_X, CH_Y), CH_DE / 2, 2, u'Oculto')                                 # enters at +3,00 inside the cajón
+    dl(doc, v, (CH_X, CH_Y), (CH_X2, CH_Y), 2, u'Oculto')                               # offset (2 elbows at 30°)
+    for r_, w in ((CH_DE / 2, 4), (CH_D / 2, 2)): circ(doc, v, (CH_X2, CH_Y), r_, w)   # exposed from +4,00
+    circ(doc, v, (CH2[0], CH2[1]), CH2[2], 4)
     x0, y0, x1, y1 = CAJON
-    C.poly(doc, v, [(CAJON_NEW_X, y0), (x0, y0)], 3); C.poly(doc, v, [(CAJON_NEW_X, y1), (x0, y1)], 3); dl(doc, v, (CAJON_NEW_X, y0), (CAJON_NEW_X, y1), 3)
-    dims = [chain_h(doc, v, u'Cajón: ampliación propuesta', [CAJON_NEW_X, x0], y1 + .35), chain_h(doc, v, u'Conducto: eje al cajón existente', [CH_X, x0], y0 - .35)]
-    txt(doc, v, 3.0, 3.95, u'COMEDOR (PA) · +3,00', 'room')
-    txt(doc, v, 3.0, 3.05, u'CH-01 doble pared\nØ 35 / 40 ext.', 'text')
-    txt(doc, v, 3.0, 1.45, u'Cajón Durlock existente: x 4,06–4,74, a +4,00\nEl conducto cae 0,34 m al oeste: ampliar\nel cajón (trazo negro) hasta el machimbre', 'text')
-    parts = [('CH-01', (CH_X - .175, CH_Y - .175, CH_X + .175, CH_Y + .175)), ('CH-CJ', (CAJON_NEW_X, y0, x1, y1))]
-    return pitem(v, box, u'Conducto por la planta alta · Comedor', u'01. Planta Alta', ['CH-01', 'CH-CJ'], dims, parts, [])
+    dims = [chain_h(doc, v, u'Cajón ampliado', [CAJON_NEW_X, x1], y1 + .12), chain_h(doc, v, u'Desvío del conducto', [CH_X, CH_X2], y0 - .30)]
+    txt(doc, v, 3.0, 4.05, u'COMEDOR (PA) · +3,00', 'room')
+    txt(doc, v, 3.0, 3.88, u'CH-01 doble pared Ø 35 / 40\na la vista desde +4,00', 'text')
+    txt(doc, v, 3.0, 3.64, u'CH-02 · ducto hogar PA (existente)', 'text')
+    txt(doc, v, 3.0, 1.40, u'Cajón Durlock ampliado (modelo): x 3,65–4,74\nhasta +4,00 · dentro: desvío a 30° (oculto)\ndesde +4,00 los dos ductos a la vista', 'text')
+    parts = [('CH-01', (CH_X2 - .2, CH_Y - .2, CH_X2 + .2, CH_Y + .2)), ('CH-02', (CH2[0] - CH2[2], CH2[1] - CH2[2], CH2[0] + CH2[2], CH2[1] + CH2[2])), ('CH-CJ', (CAJON_NEW_X, y0, x1, y1))]
+    return pitem(v, box, u'Conducto por la planta alta · Comedor', u'01. Planta Alta', ['CH-01', 'CH-02', 'CH-CJ'], dims, parts, [])
 
 def plan_roof(doc):
     box = (2.9, .9, 5.3, 4.1)
@@ -230,17 +240,18 @@ def plan_roof(doc):
     d = L.read('par34-probe'); fr = d['framing']; xs, ys = [], []
     for f in fr:
         (a, b) = f['bbox']; t = f['type']
-        if u'Cabio' in t and a[0] < CH_X < b[0] and box[1] < (a[1] + b[1]) / 2 < box[3]:
+        if u'Cabio' in t and a[0] < CH_X2 < b[0] and box[1] < (a[1] + b[1]) / 2 < box[3]:
             yc = (a[1] + b[1]) / 2; ys.append(yc); dl(doc, v, (box[0] + .05, yc), (box[2] - .05, yc), 2, u'Oculto')
         if u'List' in t and box[0] < (a[0] + b[0]) / 2 < box[2] and a[1] < CH_Y < b[1]:
             xc = (a[0] + b[0]) / 2; xs.append(xc); dl(doc, v, (xc, box[1] + .05), (xc, box[3] - .05), 1, u'Oculto')
-    for r_, w in ((CH_DE / 2, 4), (CH_D / 2, 2)): circ(doc, v, (CH_X, CH_Y), r_, w)
-    h = .25; C.poly(doc, v, [(CH_X - h, CH_Y - h), (CH_X + h, CH_Y - h), (CH_X + h, CH_Y + h), (CH_X - h, CH_Y + h)], 3)
+    for r_, w in ((CH_DE / 2, 4), (CH_D / 2, 2)): circ(doc, v, (CH_X2, CH_Y), r_, w)
+    h = .25; C.poly(doc, v, [(CH_X2 - h, CH_Y - h), (CH_X2 + h, CH_Y - h), (CH_X2 + h, CH_Y + h), (CH_X2 - h, CH_Y + h)], 3)
+    circ(doc, v, (CH2[0], CH2[1]), CH2[2], 3, u'Oculto')
     ys = sorted(ys); below = max([y for y in ys if y < CH_Y] or [CH_Y - .5]); above = min([y for y in ys if y > CH_Y] or [CH_Y + .5])
-    dims = [chain_v(doc, v, u'Cabios a ambos lados del conducto', [below, above], CH_X + .85), chain_v(doc, v, u'Pase entre cabios', [CH_Y - h, CH_Y + h], CH_X + .45)]
+    dims = [chain_v(doc, v, u'Cabios a ambos lados del conducto', [below, above], CH_X2 + .85), chain_v(doc, v, u'Pase entre cabios', [CH_Y - h, CH_Y + h], CH_X2 + .45)]
     txt(doc, v, 3.0, 3.95, u'CUBIERTA CU-03 · 16,8°', 'room')
     txt(doc, v, 3.0, 1.75, u'Pase 0,50 × 0,50 entre cabios c/0,96 (oculto)\ncon brochal: corta 1 listón, ningún cabio\nTecho en el conducto +%s · ver PAR-D-03' % c2(Z_ROOF), 'text')
-    parts = [('CH-BA', (CH_X - h, CH_Y - h, CH_X + h, CH_Y + h)), ('CH-SO', (CH_X - .3, CH_Y - .3, CH_X + .3, CH_Y + .3))]
+    parts = [('CH-02', (CH2[0] - CH2[2], CH2[1] - CH2[2], CH2[0] + CH2[2], CH2[1] + CH2[2])), ('CH-BA', (CH_X2 - h, CH_Y - h, CH_X2 + h, CH_Y + h)), ('CH-SO', (CH_X2 - .3, CH_Y - .3, CH_X2 + .3, CH_Y + .3))]
     return pitem(v, box, u'Cruce de cubierta · planta de techos', u'03. Planta de Techos', ['CH-BA', 'CH-SO'], dims, parts, [])
 
 # ---------------------------------------------------------------- PAR-D-01 (1:20)
@@ -281,7 +292,9 @@ def d_frente(doc):
     rect(doc, v, JA, Z_LOSA0, JA + BOCA, Z_LOSA1, 'hormigon', 3); rect(doc, v, JA, Z_LOSA1, JA + BOCA, Z_HOGAR, 'refractario', 2)
     rect(doc, v, JA, Z_BOCA - .064, JA + BOCA, Z_BOCA, 'acero', 2)                         # dintel L 2½"
     rect(doc, v, JA, 0, JA + BOCA, Z_LOSA0, None, 2)                                       # leñero
-    for i in range(4): rect(doc, v, JA + .15 + i * .33, .02, JA + .43 + i * .33, .16, None, 1)   # leña
+    hm = JA + BOCA / 2
+    for xa_, xb_ in ((JA + .01, hm - .005), (hm + .005, JA + BOCA - .01)): rect(doc, v, xa_, .03, xb_, Z_LOSA0 - .02, None, 3)   # puertas
+    for xx in (hm - .06, hm + .06): dl(doc, v, (xx, .30), (xx, .45), 4)                     # tiradores
     dl(doc, v, (JA + .46, Z_HOGAR + .22), (JA + 1.46, Z_HOGAR + .22), 4)                   # parrilla
     rect(doc, v, JA + .04, Z_HOGAR + .02, JA + .39, Z_HOGAR + .30, None, 2)                # brasero
     circ(doc, v, (W - .06, 1.30), .04, 3); dl(doc, v, (W - .06, 1.30), (W + .10, 1.30), 3)   # manivela
@@ -296,11 +309,11 @@ def d_frente(doc):
     pts = [((JA + .75, 2.0), u'PR-CA · frente de campana ladrillo refractario visto (junta tomada)'), ((JA + .7, Z_BOCA - .03), u'PR-DI · dintel 2 L 2½" × ¼" (frente y trasdós)'),
            ((JA + 1.0, Z_HOGAR + .22), u'PR-PA · parrilla regulable · regulación +1,00 a +1,30'), ((JA + .2, Z_HOGAR + .15), u'PR-BR · brasero'),
            ((JA + .9, Z_HOGAR - .03), u'PR-SO · solera refractaria (hogar +0,90)'), ((JA + .9, (Z_LOSA0 + Z_LOSA1) / 2), u'PR-LO · losa H°A° 10 cm sobre jambas'),
-           ((JA + .9, .40), u'PR-LE · leñero abierto'), ((W - .06, 1.30), u'Manivela de elevación (lateral derecho)'), ((cx, Z_LO1), u'CH-01 · conducto Ø 35 (sigue a cubierta)')]
+           ((JA + .3, .40), u'PR-PU · puertas del leñero 2 hojas chapa N°18 + marco L 1"'), ((W - .06, 1.30), u'Manivela de elevación (lateral derecho)'), ((cx, Z_LO1), u'CH-01 · conducto Ø 35 (sigue a cubierta)')]
     labels(doc, v, pts, W + .75, Z_CIELO + .35, .17)
     txt(doc, v, -.30, -.30, u'Vista frontal desde el Quincho · cotas en m', 'text')
     parts = [('PR-JA', (0, 0, JA, Z_CIELO)), ('PR-JA', (JA + BOCA, 0, W, Z_CIELO)), ('PR-CA', (JA, Z_BOCA, JA + BOCA, Z_CIELO)), ('PR-DI', (JA, Z_BOCA - .064, JA + BOCA, Z_BOCA)),
-             ('PR-SO', (JA, Z_LOSA1, JA + BOCA, Z_HOGAR)), ('PR-LO', (JA, Z_LOSA0, JA + BOCA, Z_LOSA1)), ('PR-LE', (JA, 0, JA + BOCA, Z_LOSA0)),
+             ('PR-SO', (JA, Z_LOSA1, JA + BOCA, Z_HOGAR)), ('PR-LO', (JA, Z_LOSA0, JA + BOCA, Z_LOSA1)), ('PR-PU', (JA, 0, JA + BOCA, Z_LOSA0)),
              ('PR-PA', (JA + .46, Z_HOGAR + .17, JA + 1.46, Z_HOGAR + .27)), ('PR-BR', (JA + .04, Z_HOGAR + .02, JA + .39, Z_HOGAR + .30))]
     return ditem(doc, v, u'D-01b · Vista frontal', ['PR-01'], dims, parts)
 
@@ -308,7 +321,7 @@ def d_corte(doc):
     ZCUR[0] = 0.0; v = C.drafting(doc, PRE + 'D-01 CORTE', 20); D = DEPTH
     rect(doc, v, -.20, 0, 0, Z_LO1, 'hormigon', 5)                                         # muro H°
     rect(doc, v, -.20, Z_LO0, D + .45, Z_LO1, 'hormigon', 4)                               # losa L01
-    dl(doc, v, (D, Z_CIELO), (D + .45, Z_CIELO), 3); txt(doc, v, D + .50, Z_CIELO + .05, u'Cielorraso +2,50', 'text')
+    dl(doc, v, (D, Z_CIELO), (D + .45, Z_CIELO), 3); txt(doc, v, -1.05, Z_CIELO + .10, u'Cielorraso +2,50', 'text')
     rect(doc, v, 0, Z_LOSA1, FONDO, Z_CIELO, 'refractario', 3)                             # fondo
     rect(doc, v, 0, Z_LOSA0, D, Z_LOSA1, 'hormigon', 3)                                    # losa base
     rect(doc, v, FONDO, Z_LOSA1, FONDO + HOGAR, Z_HOGAR, 'refractario', 2)                 # solera
@@ -321,6 +334,7 @@ def d_corte(doc):
     dl(doc, v, (FONDO + .025, Z_HOGAR + .22), (FONDO + .575, Z_HOGAR + .22), 4)           # parrilla
     rect(doc, v, FONDO + .02, Z_HOGAR + .02, FONDO + .58, Z_HOGAR + .05, None, 1)          # bandeja de grasa
     dl(doc, v, (-.40, 0), (D + .45, 0), 4); txt(doc, v, -.85, .10, u'NPT ±0,00', 'text')
+    rect(doc, v, D - .02, .03, D, Z_LOSA0 - .02, 'acero', 2)                               # puerta del leñero
     dims = [chain_v(doc, v, u'Corte: leñero · losa + solera · boca · campana', [0, Z_LOSA0, Z_HOGAR, Z_BOCA, Z_CIELO], D + .25),
             chain_h(doc, v, u'Fondo: hogar · frente', [FONDO, FONDO + HOGAR, D], -.20), chain_h(doc, v, u'Fondo total', [0, D], -.36),
             chain_h(doc, v, u'Collar del conducto', [cy - CH_D / 2, cy + CH_D / 2], Z_LO1 + .40)]
@@ -328,7 +342,7 @@ def d_corte(doc):
            ((.2, 2.3), u'PR-GA · garganta chapa 2 mm (de +1,90 al collar, ≤ 45°)'), ((cy, Z_CIELO + .13), u'Registro de tiro (mariposa) con comando exterior'),
            ((D - .06, 2.0), u'PR-CA · frente de campana 12 cm'), ((D - .06, Z_BOCA - .03), u'PR-DI · dintel 2 L 2½" × ¼"'),
            ((.35, Z_HOGAR + .22), u'PR-PA · parrilla regulable (+1,00 a +1,30)'), ((.35, Z_HOGAR + .035), u'Bandeja recolectora de grasa'),
-           ((.4, (Z_LOSA0 + Z_LOSA1) / 2), u'PR-LO · losa H°A° 10 cm'), ((.4, .4), u'PR-LE · leñero'), ((cy, Z_LO1 + .2), u'CH-01 · conducto Ø 35 → cubierta (PAR-D-02)')]
+           ((.4, (Z_LOSA0 + Z_LOSA1) / 2), u'PR-LO · losa H°A° 10 cm'), ((.4, .4), u'PR-LE · leñero con puertas (PR-PU)'), ((cy, Z_LO1 + .2), u'CH-01 · conducto Ø 35 → cubierta (PAR-D-02)')]
     labels(doc, v, pts, D + .75, Z_LO1 + .45, .17)
     txt(doc, v, -.40, -.50, u'Corte A-A por el eje del conducto · cotas en m', 'text')
     parts = [('PR-FO', (0, Z_LOSA1, FONDO, Z_CIELO)), ('PR-LO', (0, Z_LOSA0, D, Z_LOSA1)), ('PR-SO', (FONDO, Z_LOSA1, FONDO + HOGAR, Z_HOGAR)),
@@ -339,37 +353,46 @@ def d_corte(doc):
 # ---------------------------------------------------------------- PAR-D-02
 def d_conducto(doc):
     ZCUR[0] = 0.0; v = C.drafting(doc, PRE + 'D-02 CORTE CONDUCTO', 50)
-    ox = CH_X; fx = lambda x: x - ox                     # horizontal = model x relative to the conducto axis
+    ox = CH_X; fx = lambda x: x - ox                     # horizontal = model x relative to the PB axis
+    d = fx(CH_X2); r1, r2 = CH_D / 2, CH_DE / 2
     xl, xr = fx(1.70), fx(5.20)
-    for zz, lab in ((0, u'PB ±0,00'), (Z_CIELO, u'Cielorraso PB +2,50'), (Z_LO1, u'PA +3,00'), (4.00, u'Tope cajón existente +4,00'), (Z_TOP, u'Tope conducto +%s' % c2(Z_TOP))):
+    for zz, lab in ((0, u'PB ±0,00'), (Z_CIELO, u'Cielorraso PB +2,50'), (Z_LO1, u'PA +3,00'), (4.00, u'Tope cajón +4,00'), (Z_TOP, u'Tope conducto +%s' % c2(Z_TOP))):
         dl(doc, v, (xl, zz), (xr, zz), 1, u'Oculto' if zz not in (0, Z_LO1) else None); txt(doc, v, xl - 2.7, zz + .18, lab, 'text')
     rect(doc, v, xl, Z_LO0, xr, Z_LO1, 'hormigon', 3)
     pr0, pr1 = fx(X0), fx(EAST_X - LANA)
     C.poly(doc, v, [(pr0, 0), (pr0, Z_CIELO), (pr1, Z_CIELO), (pr1, 0)], 4, closed=False); txt(doc, v, pr0 + .05, 1.4, u'PR-01', 'tag')
-    rect(doc, v, -CH_D / 2, Z_CIELO, CH_D / 2, Z_LO1, None, 3)                                   # simple pared (plenum PB)
-    rect(doc, v, -CH_DE / 2, Z_LO1, CH_DE / 2, Z_TOP, None, 4)                                   # doble pared
-    dl(doc, v, (-CH_D / 2, Z_LO1), (-CH_D / 2, Z_TOP), 1); dl(doc, v, (CH_D / 2, Z_LO1), (CH_D / 2, Z_TOP), 1)
+    rect(doc, v, -r1, Z_CIELO, r1, Z_LO1, None, 3)                                               # simple pared (plenum PB)
+    for sgn, w in ((-1, 4), (1, 4)):                                                              # doble pared con desvío
+        k = sgn * r2 / math.cos(math.radians(OFF_DEG))
+        C.poly(doc, v, [(sgn * r2, Z_LO1), (sgn * r2, Z_OFF0 + (sgn * r2 - k) * 0), (k, Z_OFF0), (d + k, Z_OFF1), (d + sgn * r2, Z_OFF1), (d + sgn * r2, Z_TOP)], w, closed=False)
+    C.poly(doc, v, [(-r2, Z_TOP), (-r2, Z_TOP)], 1, closed=False)
+    dl(doc, v, (d - r2, Z_TOP), (d + r2, Z_TOP), 4)
+    cx2 = fx(CH2[0])
+    for xx in (cx2 - CH2[2], cx2 + CH2[2]): dl(doc, v, (xx, 3.34), (xx, Z_TOP), 1, u'Oculto')    # CH-02 behind
     cj0 = fx(CAJON_NEW_X); cj1 = fx(CAJON[2])
-    for xx in (cj0, cj1): dl(doc, v, (xx, Z_LO1), (xx, roof_z(xx + ox) - .34), 2, u'Oculto')
-    dl(doc, v, (fx(CAJON[0]), Z_LO1), (fx(CAJON[0]), 4.0), 3)
+    C.poly(doc, v, [(cj0, Z_LO1), (cj0, 4.0), (cj1, 4.0)], 3, closed=False)
     rx = [fx(x) for x in (1.70, ROOF_RIDGE_X, 5.20)]
     for off, w in ((0, 4), (-.33, 2)):
         C.poly(doc, v, [(rx[0], roof_z(1.70) + off), (rx[1], ROOF_RIDGE_Z + off), (rx[2], roof_z(5.20) + off)], w, closed=False)
     zs = Z_TOP + .25
-    for s in (-1, 1): dl(doc, v, (s * CH_DE / 2, Z_TOP), (s * CH_DE / 2, zs), 2)
-    C.poly(doc, v, [(-.35, zs), (0, zs + .15), (.35, zs), (-.35, zs)], 4, closed=False)
-    dims = [chain_v(doc, v, u'Conducto: simple pared · doble pared', [Z_CIELO, Z_LO1, Z_TOP], xr + .40),
+    for sg in (-1, 1): dl(doc, v, (d + sg * r2, Z_TOP), (d + sg * r2, zs), 2)
+    C.poly(doc, v, [(d - .35, zs), (d, zs + .15), (d + .35, zs), (d - .35, zs)], 4, closed=False)
+    dims = [chain_v(doc, v, u'Conducto: simple · doble con desvío · vertical', [Z_CIELO, Z_LO1, Z_OFF1, Z_TOP], xr + .40),
             chain_v(doc, v, u'Remate sobre la cumbrera', [ROOF_RIDGE_Z, Z_TOP], fx(ROOF_RIDGE_X) - .30),
             chain_v(doc, v, u'Remate sobre el techo en el conducto', [Z_ROOF, Z_TOP], -.70),
-            chain_h(doc, v, u'Distancia conducto – cumbrera', [fx(ROOF_RIDGE_X), 0], ROOF_RIDGE_Z + 1.30)]
-    pts = [((0, 2.75), u'CH-01 · Ø 35 simple pared en el plenum (0,50 ml)'), ((fx(CH_X), Z_LO1 - .10), u'CH-PA · pase en losa L01 0,50 × 0,50'),
-           ((0, 6.0), u'CH-01 · Ø 35 doble pared aislado de +3,00 a +%s (%s ml)' % (c2(Z_TOP), c2(Z_TOP - Z_LO1))),
-           ((cj0, 5.5), u'CH-CJ · cajón Durlock ampliado hasta el machimbre (a confirmar)'), ((0, Z_ROOF - .1), u'CH-BA · babeta / collar + brochal entre cabios'),
-           ((0, zs + .1), u'CH-SO · sombrerete fijo'), ((fx(ROOF_RIDGE_X), ROOF_RIDGE_Z), u'Cumbrera CU-03 +%s' % c2(ROOF_RIDGE_Z))]
+            chain_h(doc, v, u'Distancia conducto – cumbrera', [fx(ROOF_RIDGE_X), d], ROOF_RIDGE_Z + 1.30),
+            chain_h(doc, v, u'Desvío', [0, d], 4.35)]
+    ml2 = (Z_OFF0 - Z_LO1) + DIAG + (Z_TOP - Z_OFF1)
+    pts = [((0, 2.75), u'CH-01 · Ø 35 simple pared en el plenum (%s ml)' % c2(Z_LO1 - Z_CIELO)), ((0, Z_LO1 - .10), u'CH-PA · pase en losa L01 0,50 × 0,50'),
+           ((d / 2, (Z_OFF0 + Z_OFF1) / 2), u'CH-01 · desvío 2 codos a 30° dentro del cajón (%s m)' % c2(CH_X2 - CH_X)),
+           ((d, 6.0), u'CH-01 · doble pared aislado a la vista desde +4,00 (%s ml desde +3,00)' % c2(ml2)),
+           ((cj0, 3.6), u'CH-CJ · cajón Durlock ampliado, alto +4,00'), ((cx2, 7.0), u'CH-02 · ducto del hogar de PA (existente, detrás)'),
+           ((d, Z_ROOF - .1), u'CH-BA · babeta / collar + brochal entre cabios'), ((d, zs + .1), u'CH-SO · sombrerete fijo'),
+           ((fx(ROOF_RIDGE_X), ROOF_RIDGE_Z), u'Cumbrera CU-03 +%s' % c2(ROOF_RIDGE_Z))]
     labels(doc, v, pts, xr + 1.20, 9.6, .55)
     txt(doc, v, xl, -.45, u'Corte esquemático este-oeste por el eje del conducto\nRemate ≥ 0,60 sobre la cumbrera a menos de 3 m · cotas en m', 'text')
-    parts = [('PR-01', (pr0, 0, pr1, Z_CIELO)), ('CH-01', (-CH_DE / 2, Z_CIELO, CH_DE / 2, Z_TOP)), ('CH-PA', (-.20, Z_LO0, .20, Z_LO1)), ('CH-CJ', (cj0, Z_LO1, cj1, roof_z(cj0 + ox) - .34)),
-             ('CH-BA', (-.30, Z_ROOF - .40, .30, Z_ROOF + .10)), ('CH-SO', (-.35, Z_TOP, .35, zs + .15))]
+    parts = [('PR-01', (pr0, 0, pr1, Z_CIELO)), ('CH-01', (-r2, Z_CIELO, d + r2, Z_TOP)), ('CH-PA', (-.25, Z_LO0, .25, Z_LO1)), ('CH-CJ', (cj0, Z_LO1, cj1, 4.0)),
+             ('CH-02', (cx2 - CH2[2], 3.34, cx2 + CH2[2], Z_TOP)), ('CH-BA', (d - .30, Z_ROOF - .40, d + .30, Z_ROOF + .10)), ('CH-SO', (d - .35, Z_TOP, d + .35, zs + .15))]
     return ditem(doc, v, u'D-02a · Conducto: corte esquemático', ['CH-01'], dims, parts)
 
 def d_pase(doc):
@@ -461,6 +484,12 @@ def cyl(cx, cy, r, z0, z1):
     cl.Append(DB.Arc.Create(c, r / M, 0, math.pi, DB.XYZ.BasisX, DB.XYZ.BasisY)); cl.Append(DB.Arc.Create(c, r / M, math.pi, 2 * math.pi, DB.XYZ.BasisX, DB.XYZ.BasisY))
     return DB.GeometryCreationUtilities.CreateExtrusionGeometry(List[DB.CurveLoop]([cl]), DB.XYZ.BasisZ, (z1 - z0) / M)
 
+def slant(cx, cy, r, z0):
+    c = DB.XYZ(cx / M, cy / M, z0 / M); cl = DB.CurveLoop()
+    cl.Append(DB.Arc.Create(c, r / M, 0, math.pi, DB.XYZ.BasisX, DB.XYZ.BasisY)); cl.Append(DB.Arc.Create(c, r / M, math.pi, 2 * math.pi, DB.XYZ.BasisX, DB.XYZ.BasisY))
+    dv = DB.XYZ(math.sin(math.radians(OFF_DEG)), 0, math.cos(math.radians(OFF_DEG)))
+    return DB.GeometryCreationUtilities.CreateExtrusionGeometry(List[DB.CurveLoop]([cl]), dv, DIAG / M)
+
 def model_parts():
     xi0, xi1 = LX(JA), LX(JA + BOCA); yd = LY(DEPTH)
     px0, px1 = LX(JA + .46), LX(JA + 1.46)
@@ -473,8 +502,9 @@ def model_parts():
             ('PR-DI', [box(xi0, LY(DEPTH - FRENTE), Z_BOCA - .064, xi1, yd, Z_BOCA)]),
             ('PR-PA', [box(px0, LY(FONDO + .025), Z_HOGAR + .20, px1, LY(FONDO + .575), Z_HOGAR + .22)]),
             ('PR-BR', [box(LX(JA + .04), LY(FONDO + .06), Z_HOGAR + .02, LX(JA + .39), LY(FONDO + .56), Z_HOGAR + .30)]),
-            ('CH-01', [cyl(CH_X, CH_Y, CH_D / 2, Z_CIELO, Z_LO1), cyl(CH_X, CH_Y, CH_DE / 2, Z_LO1, Z_TOP)]),
-            ('CH-SO', [cyl(CH_X, CH_Y, .35, Z_TOP + .25, Z_TOP + .30)])]
+            ('PR-PU', [box(xi0 + .01, yd - .02, .03, xi1 - .01, yd, Z_LOSA0 - .02)]),
+            ('CH-01', [cyl(CH_X, CH_Y, CH_D / 2, Z_CIELO, Z_LO1), cyl(CH_X, CH_Y, CH_DE / 2, Z_LO1, Z_OFF0), slant(CH_X, CH_Y, CH_DE / 2, Z_OFF0), cyl(CH_X2, CH_Y, CH_DE / 2, Z_OFF1, Z_TOP)]),
+            ('CH-SO', [cyl(CH_X2, CH_Y, .35, Z_TOP + .25, Z_TOP + .30)])]
 
 def model_part(doc):
     out = []
@@ -494,12 +524,11 @@ def axo(doc, model):
     eye = DB.XYZ((CH_X - 5.0) / M, (WALL_Y + 8.0) / M, 8.0 / M); tgt = DB.XYZ(3.3 / M, 2.4 / M, 4.4 / M)
     fwd = (tgt - eye).Normalize(); right = fwd.CrossProduct(DB.XYZ.BasisZ).Normalize(); up = right.CrossProduct(fwd)
     v.SetOrientation(DB.ViewOrientation3D(eye, up, fwd))
-    bx = DB.BoundingBoxXYZ(); bx.Min = DB.XYZ(1.9 / M, (WALL_Y + .01) / M, -.3 / M); bx.Max = DB.XYZ((EAST_X + .005) / M, 3.3 / M, 10.0 / M)
+    bx = DB.BoundingBoxXYZ(); bx.Min = DB.XYZ(1.9 / M, (WALL_Y + .01) / M, -.3 / M); bx.Max = DB.XYZ(4.64 / M, 3.3 / M, 10.0 / M)
     v.IsSectionBoxActive = True; v.SetSectionBox(bx)
     try: v.DisplayStyle = DB.DisplayStyle.ShadingWithEdges
     except Exception: pass
-    for cat in (DB.BuiltInCategory.OST_Furniture, DB.BuiltInCategory.OST_PlumbingFixtures, DB.BuiltInCategory.OST_SpecialityEquipment, DB.BuiltInCategory.OST_DuctCurves,
-                DB.BuiltInCategory.OST_DuctFitting, DB.BuiltInCategory.OST_Casework, DB.BuiltInCategory.OST_Windows, DB.BuiltInCategory.OST_Doors, DB.BuiltInCategory.OST_Ceilings,
+    for cat in (DB.BuiltInCategory.OST_Furniture, DB.BuiltInCategory.OST_PlumbingFixtures, DB.BuiltInCategory.OST_SpecialityEquipment, DB.BuiltInCategory.OST_Casework, DB.BuiltInCategory.OST_Windows, DB.BuiltInCategory.OST_Doors, DB.BuiltInCategory.OST_Ceilings,
                 DB.BuiltInCategory.OST_Levels, DB.BuiltInCategory.OST_SectionBox):
         try: v.SetCategoryHidden(DB.ElementId(cat), True)
         except Exception: pass
@@ -524,8 +553,8 @@ def checks():
                                          u'Relación 1/%s ≥ 1/12 (conducto redondo) · CUMPLE' % (u'%.1f' % (area / fl)).replace(u'.', u','), u'(el Ø 30 previo daba 1/13,8: no cumplía)']),
             (u'2. Garganta y campana', [u'Garganta a +%s: %s sobre el dintel (≥ 0,20) · CUMPLE' % (c2(G0), c2(G0 - Z_BOCA)), u'Paredes de la campana: lateral %d°, frente %d° (≤ 45° de la vertical) · CUMPLE' % (round(lat), round(fr)),
                                        u'Altura de la cámara %s ≤ ancho de boca %s · CUMPLE' % (c2(Z_CIELO - G0), c2(BOCA)), u'Registro de tiro (mariposa) en el collar']),
-            (u'3. Altura y recorrido', [u'Tiraje: hogar +%s a tope +%s = %s m, recto, sin codos' % (c2(Z_HOGAR), c2(Z_TOP), c2(Z_TOP - Z_HOGAR)), u'Sección constante Ø %s en todo el recorrido' % c2(CH_D)]),
-            (u'4. Remate', [u'≥ 0,90 sobre el techo en el pase: +%s ≤ +%s · CUMPLE' % (c2(roof_ok), c2(Z_TOP)), u'≥ 0,60 sobre la cumbrera a < 3 m (%s m): +%s ≤ +%s · CUMPLE' % (c2(CH_X - ROOF_RIDGE_X), c2(ridge_ok), c2(Z_TOP)),
+            (u'3. Altura y recorrido', [u'Tiraje: hogar +%s a tope +%s = %s m' % (c2(Z_HOGAR), c2(Z_TOP), c2(Z_TOP - Z_HOGAR)), u'1 desvío de %s m con 2 codos a 30° de la vertical (≤ 30°), dentro del cajón' % c2(CH_X2 - CH_X), u'Sección constante Ø %s en todo el recorrido' % c2(CH_D)]),
+            (u'4. Remate', [u'≥ 0,90 sobre el techo en el pase: +%s ≤ +%s · CUMPLE' % (c2(roof_ok), c2(Z_TOP)), u'≥ 0,60 sobre la cumbrera a < 3 m (%s m): +%s ≤ +%s · CUMPLE' % (c2(CH_X2 - ROOF_RIDGE_X), c2(ridge_ok), c2(Z_TOP)),
                             u'Sombrerete fijo Ø 0,70, salida libre 0,25']),
             (u'5. Hogar y combustibles', [u'Fondo del hogar %s ≥ 0,51 · refractario 6,4 cm ≥ 5 cm · CUMPLE' % c2(HOGAR), u'Separación a madera / Durlock ≥ 5 cm (doble pared aislado) · CUMPLE',
                                          u'Aire de reposición: el Quincho tiene portón; no cerrar herméticamente']),
@@ -536,9 +565,44 @@ def d_tiraje(doc):
     C.legend(doc, v, 0, 0, 0, checks(), [])
     return ditem(doc, v, u'D-04b · Verificación del tiraje', ['CH-01'], [], [])
 
+def ds_cat(doc, code):
+    bic = DB.BuiltInCategory.OST_SpecialityEquipment if code.startswith('PR') else DB.BuiltInCategory.OST_GenericModel
+    return DB.ElementId(bic) if DB.DirectShape.IsValidCategoryId(DB.ElementId(bic), doc) else DB.ElementId(DB.BuiltInCategory.OST_GenericModel)
+
+def pilot_part(doc):
+    assert os.path.basename(doc.PathName).lower() == 'casa-angel-piloto-documentacion.rvt', 'Abrir el modelo principal'
+    k42 = doc.GetElement(DB.ElementId(Int64(IDS['PR-01']))); ch1 = doc.GetElement(DB.ElementId(Int64(IDS['CH-01'])))
+    out = {'deleted': [], 'created': [], 'walls': []}
+    def body():
+        if k42 is not None:
+            assert u(k42.Symbol.FamilyName) == u'Parrilla', 'PR-01 no es la familia Parrilla'; doc.Delete(k42.Id); out['deleted'].append(IDS['PR-01'])
+        if ch1 is not None:
+            assert isinstance(ch1, DB.Mechanical.Duct), 'CH-01 no es un conducto'; doc.Delete(ch1.Id); out['deleted'].append(IDS['CH-01'])
+        for code, solids in model_parts():
+            ds = DB.DirectShape.CreateElement(doc, ds_cat(doc, code)); ds.SetShape(List[DB.GeometryObject]([x for x in solids])); ds.SetName(u'ADER Parrilla R34 ' + code)
+            pm = ds.get_Parameter(DB.BuiltInParameter.ALL_MODEL_MARK)
+            if pm is not None: pm.Set(code)
+            pc = ds.get_Parameter(DB.BuiltInParameter.ALL_MODEL_INSTANCE_COMMENTS)
+            if pc is not None: pc.Set(PARTS[code])
+            out['created'].append({'code': code, 'id': eid(ds), 'category': u(ds.Category.Name)})
+        x0, y0, x1, y1 = CAJON
+        target = {'west': ((CAJON_NEW_X, y1), (CAJON_NEW_X, y0)), 'north': ((x1, y1), (CAJON_NEW_X, y1)), 'south': ((CAJON_NEW_X, y0), (x1, y0))}
+        for key in ('west', 'north', 'south'):
+            w = doc.GetElement(DB.ElementId(Int64(WALLS_CJ[key]))); lc = w.Location; c = lc.Curve; z = c.GetEndPoint(0).Z
+            a, b = target[key]
+            before = [mx(c.GetEndPoint(0)), mx(c.GetEndPoint(1))]
+            lc.Curve = DB.Line.CreateBound(DB.XYZ(a[0] / M, a[1] / M, z), DB.XYZ(b[0] / M, b[1] / M, z)); doc.Regenerate()
+            c2_ = w.Location.Curve
+            out['walls'].append({'id': WALLS_CJ[key], 'side': key, 'before': before, 'after': [mx(c2_.GetEndPoint(0)), mx(c2_.GetEndPoint(1))]})
+        return out
+    B.plain(doc, u'ADER Parrilla R34 - reemplazo K42DB y cajón (OK usuario)', body)
+    R1.write(os.path.join(OUT, 'par34-pilot.json'), dict(out, readAt=L.now())); doc.Save()
+    return dict(out, status='success')
+
 def run(doc, uidoc, job):
     L.assert_pilot(doc)
     part = job['part']
+    if part == 'pilot': return pilot_part(doc)
     if part == 'probe':
         r = probe(doc)
         return {'status': 'success', 'PR-01': r['PR-01'], 'rooms': r['rooms'], 'roofs': r['roofs'], 'framing': len(r['framing'])}
