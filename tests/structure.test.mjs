@@ -12,9 +12,9 @@ test('concrete walls add up to the Revit totals, level by level',()=>{
  assert.deepEqual(t.wallsByLevel.map(l=>l.level),[...t.wallsByLevel.map(l=>l.level)].sort((a,b)=>a.localeCompare(b,'es',{numeric:true})));
 });
 test('slabs only count their concrete layer and floor build-ups without concrete stay out',()=>{
- const t=concreteTotals(m),withConcrete=m.slabsAndFoundations.filter(s=>s.concreteVolume_m3>0);
+ const t=concreteTotals(m),withConcrete=m.slabsAndFoundations.filter(s=>s.concreteVolume_m3>0&&s.concreteLayer_m!==0);
  assert.ok(Math.abs(t.parts.losas+t.parts.platea-withConcrete.reduce((n,s)=>n+s.concreteVolume_m3,0))<1e-9);
- assert.equal(t.withoutConcrete.count,m.slabsAndFoundations.filter(s=>!s.concreteVolume_m3).length);
+ assert.equal(t.withoutConcrete.count,m.slabsAndFoundations.length-withConcrete.length);
  assert.ok(Math.abs(t.total-(t.parts.walls+t.parts.losas+t.parts.platea))<1e-9);
 });
 test('review cases are grouped and Revit warnings read in plain Spanish',()=>{
@@ -39,12 +39,12 @@ test('budget lines have stable unique ids and every concrete element counts once
  assert.equal(new Set(ids).size,ids.length);
  for(const id of ['platea','muros','losas','vigas','acero','encofrado-muros','encofrado-losas'])assert.ok(ids.includes(id),id);
  const concrete=lines.filter(l=>l.unit==='m³').reduce((n,l)=>n+l.quantity,0);
- const slabs=m.slabsAndFoundations.reduce((n,s)=>n+(s.concreteVolume_m3||0),0),beams=m.codes.filter(c=>c.kind==='VE').reduce((n,c)=>n+c.volume_m3,0);
- const grow=(m.checks?.loPb01VsPlatea?.loPb01OutsidePlatea_m2||0)*0.15;
- assert.ok(Math.abs(concrete-(m.concreteWalls.totals.volume_m3+slabs+beams+grow))<0.01,'cada elemento una vez, más la platea extendida bajo LO-PB-01');
+ const slabs=m.slabsAndFoundations.filter(s=>s.concreteLayer_m!==0).reduce((n,s)=>n+(s.concreteVolume_m3||0),0),beams=m.codes.filter(c=>c.kind==='VE').reduce((n,c)=>n+c.volume_m3,0);
+ const plates=m.codes.filter(c=>c.kind==='PL'&&!m.slabsAndFoundations.some(s=>s.id===c.id)).reduce((n,c)=>n+c.area_m2*0.15,0);
+ assert.ok(Math.abs(concrete-(m.concreteWalls.totals.volume_m3+slabs+beams+plates))<0.01,'cada elemento una vez, con la ampliación PL-02');
  assert.ok(lines.find(l=>l.id==='losas-a-confirmar')?.informative);
  assert.ok(lines.find(l=>l.id==='base-acceso')?.informative,'la base de acceso se cotiza en Exteriores');
- assert.ok(lines.find(l=>l.id==='losa-pb')?.informative,'la PB va sobre la platea');
+ assert.ok(!lines.some(l=>l.id==='losa-pb'),'LO-PB-01 es paquete de piso sobre la platea, sin hormigón');
 });
 test('platea counts every PL piece once, including the extension published only as a code',()=>{
  const plates=m.codes.filter(c=>c.kind==='PL'),area=plates.reduce((n,c)=>n+c.area_m2,0);

@@ -11,13 +11,15 @@ export type StructureManifest={model:string;readAt:string;revision:string;status
 const byLevel=(a:string,b:string)=>a.localeCompare(b,'es',{numeric:true});
 const sum=<T,>(rows:T[],f:(r:T)=>number)=>rows.reduce((n,r)=>n+(f(r)||0),0);
 
+// Un piso tiene hormigón si Revit le da volumen y su capa de hormigón no es 0 (p. ej. LO-PB-01, paquete sobre platea).
+const hasConcrete=(s:Slab)=>(s.concreteVolume_m3||0)>0&&s.concreteLayer_m!==0;
 // Hormigón por partida y por nivel. Las losas solo cuentan su capa de hormigón; los paquetes de piso sin capa no suman.
 export function concreteTotals(m:StructureManifest){
  const walls=m.concreteWalls.elements,levels=[...new Set(walls.map(w=>w.level))].sort(byLevel);
  const wallsByLevel=levels.map(level=>{const rows=walls.filter(w=>w.level===level);return {level,count:rows.length,length:sum(rows,w=>w.length_m),area:sum(rows,w=>w.area_m2),volume:sum(rows,w=>w.volume_m3)}});
- const slabs=m.slabsAndFoundations.filter(s=>s.concreteVolume_m3!=null&&s.concreteVolume_m3>0);
+ const slabs=m.slabsAndFoundations.filter(hasConcrete);
  const platea=slabs.filter(s=>/platea/i.test(s.role)),losas=slabs.filter(s=>!/platea/i.test(s.role));
- const withoutConcrete=m.slabsAndFoundations.filter(s=>!s.concreteVolume_m3);
+ const withoutConcrete=m.slabsAndFoundations.filter(s=>!hasConcrete(s));
  const losasByLevel=[...new Set(losas.map(s=>s.level))].sort(byLevel).map(level=>{const rows=losas.filter(s=>s.level===level);return {level,count:rows.length,area:sum(rows,s=>s.area_m2),volume:sum(rows,s=>s.concreteVolume_m3||0)}});
  const parts={walls:sum(walls,w=>w.volume_m3),losas:sum(losas,s=>s.concreteVolume_m3||0),platea:sum(platea,s=>s.concreteVolume_m3||0)};
  return {wallsByLevel,losasByLevel,platea:{area:sum(platea,s=>s.area_m2),volume:parts.platea},parts,total:parts.walls+parts.losas+parts.platea,withoutConcrete:{count:withoutConcrete.length,area:sum(withoutConcrete,s=>s.area_m2)}};
@@ -36,12 +38,12 @@ const list=(codes:string[])=>codes.length>4?`${codes[0]} a ${codes.at(-1)}`:code
 // y la madera del techo en Cubierta.
 export function structureBudget(m:StructureManifest):StructureLine[]{
  const code=new Map((m.codes||[]).map(c=>[c.id,c.code])),slabs=m.slabsAndFoundations.map(s=>({...s,code:code.get(s.id)||s.id}));
- const concrete=slabs.filter(s=>(s.concreteVolume_m3||0)>0),vol=(rows:{concreteVolume_m3:number|null}[])=>sum(rows,s=>s.concreteVolume_m3||0);
+ const concrete=slabs.filter(hasConcrete),vol=(rows:{concreteVolume_m3:number|null}[])=>sum(rows,s=>s.concreteVolume_m3||0);
  // Piezas de platea que solo figuran en los códigos (p. ej. la ampliación PL-02) toman la capa de hormigón de PL-01.
  const plates=concrete.filter(s=>/platea/i.test(s.role)),e0=plates[0]?.concreteLayer_m||0;
  const extraPlates=(m.codes||[]).filter(c=>c.kind==='PL'&&!slabs.some(s=>s.id===c.id)).map(c=>({...plates[0],id:c.id,code:c.code,area_m2:c.area_m2||0,concreteLayer_m:e0,concreteVolume_m3:(c.area_m2||0)*e0}));
  const platea=[...plates,...extraPlates],onGround=concrete.filter(s=>!/platea/i.test(s.role)&&/^LO-(PB|AC)/.test(s.code));
- const losas=concrete.filter(s=>!platea.includes(s)&&!onGround.includes(s)),pending=slabs.filter(s=>!s.concreteVolume_m3&&!/^LO-PB/.test(s.code));
+ const losas=concrete.filter(s=>!platea.includes(s)&&!onGround.includes(s)),pending=slabs.filter(s=>!hasConcrete(s)&&!/^LO-PB/.test(s.code));
  const walls=m.concreteWalls.elements,beams=(m.codes||[]).filter(c=>c.kind==='VE');
  const tie=beams.filter(b=>b.level?.startsWith('00')),meet=beams.filter(b=>!tie.includes(b));
  // Cuando Revit ya modeló la ampliación (otra pieza de platea), no se vuelve a sumar.
