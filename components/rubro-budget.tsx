@@ -1,4 +1,5 @@
 'use client';
+import QuantityExport,{offerColumns} from './quantity-export';
 // Presupuesto por rubro: lee los cómputos que publica Revit para el proyecto (manifest por rubro),
 // los cruza con los precios unitarios que carga el estudio o un proveedor y arma base + opcionales.
 import {useEffect,useMemo,useState} from 'react';
@@ -71,6 +72,8 @@ export default function RubroBudget({project,projectName,value,disabled,onSave,o
    <div className="pcActions"><button className="primary" disabled={disabled||!Object.keys(draft).some(k=>k.startsWith(detail.key+':'))} onClick={()=>savePrices(detail.key)}>Guardar precios de {detail.name}</button><small>Precio por unidad, sin separador de miles. Para quitar un precio, borralo y guardá.</small></div>
   </div>:null;
  return <div className="rbBudget">
+  <QuantityExport project={{id:project,name:projectName}} label="Partidas por rubro" scope="Obra base y opcionales en el orden visible. Partidas informativas excluidas de la cotización. Datos y cantidades de las fuentes publicadas; revisar notas de alcance de cada rubro. Las columnas de oferta quedan para completar." sheets={[...result.base,...result.optional].map(r=>({name:r.name,columns:['Rubro','Alcance','Partida','Cantidad','Unidad','Detalle','Estado de partida','Nota del rubro',...offerColumns],rows:r.lines.map(l=>[r.name,r.optional?'Opcional':'Obra base',l.label,l.quantity,l.unit,l.detail,l.skipped?'Informativa / excluida':'A cotizar',r.note])}))}/>
+
   <div className="rbVision" aria-label="Del modelo al presupuesto">{[['1','Modelo de Revit','publica cada rubro'],['2','Cómputo por rubro',`${p.withCompute} de ${p.rubros} rubros (${p.modeled} modelados)`],['3','Precios unitarios',`${p.pricedLines} de ${p.lines} partidas`],['4','Presupuesto por rubro',`${p.priced} de ${p.rubros} con precio`],['5','Total para el cliente','base + opcionales']].map(([n,t,s])=><span key={n}><b>{n}</b>{t}<small>{s}</small></span>)}</div>
   <p className="pcHint">Meta: cómputo y presupuesto casi completo de {projectName} a {GOAL}. Ningún monto se inventa: cada precio lo carga el estudio o un proveedor.</p>
   {error&&<p className="pcError" role="alert">{error}<button onClick={()=>setError('')}>Cerrar</button></p>}

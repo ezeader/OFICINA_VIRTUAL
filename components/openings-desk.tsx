@@ -1,4 +1,5 @@
 'use client';
+import QuantityExport,{offerColumns} from './quantity-export';
 import {useCallback,useEffect,useMemo,useState} from 'react';
 import {ArrowLeft,Download} from 'lucide-react';
 import VectorImage from './compressed-drawing';
@@ -8,13 +9,13 @@ import {TrimmedDrawing,DimensionedDrawing,type Crop} from './opening-drawings';
 import {openingsHref} from '../lib/documentation-route';
 import {NOTE_KEY,correctionFor,pendingForRevit,setCorrection,type OpeningsReview} from '../lib/openings-review';
 import {buildSheets,codeTargets,groupSheets,sheetIndex,sheetSchedule,dimensionText,CATEGORY_GROUP,type SheetCard,type SheetView} from '../lib/openings-sheets';
-import {budgetCsv,budgetTotals,sizeOf,scheduleSpecs} from '../lib/openings-budget';
+import {budgetTotals,sizeOf,scheduleSpecs,surveySpecs} from '../lib/openings-budget';
 import './sanitary-sheets.css';
 import './project-sanitary.css';
 import './openings-desk.css';
 
 type Item={id:string;uid:string;code:string;category:string;family:string;type:string;rooms:number[];width?:string;height?:string;sill?:string;head?:string;materials:string[];warnings:string[];panelCount?:number;parameters:{name:string;value:string;scope:string}[]};
-type Data={items:Item[];rooms:unknown[];counts:{windows:number;doors:number;curtainWalls:number;unassigned:number};reviewCases?:{code:string;elementId:string;title:string;observation:string;proposedCorrection:string}[]};
+type Data={items:Item[];rooms:{id:number;number:string;name:string}[];counts:{windows:number;doors:number;curtainWalls:number;unassigned:number};reviewCases?:{code:string;elementId:string;title:string;observation:string;proposedCorrection:string}[]};
 type Tab=SheetCard['tab']|'computo'|'indice';
 const SHEET_ASPECT=2383.94/1683.78;
 const TABS:[Tab,string][]=[['locales','Por local'],['aberturas','Por abertura'],['revision','Revisión pendiente'],['computo','Cómputo para presupuesto'],['indice','Índice de láminas']];
@@ -78,7 +79,10 @@ export default function OpeningsDesk({mode='documentation',caseCode,review,onSav
   {other.length>0&&<div className="openingLinks">{other.map(c=><button key={c.key} onClick={()=>open(c.key)}>{c.tab==='locales'?'Ver lámina de '+c.name.split(' · ').slice(1).join(' · '):'Ver lámina de la abertura'} ↗</button>)}</div>}
  </article>};
 
- if(mode==='quantities')return <section className="openingsDesk"><div className="sheetHeading"><div><p className="eyebrow">CASA ÁNGEL / ABERTURAS</p><h3>{data.items.length} aberturas únicas</h3><p>{data.counts.windows} ventanas · {data.counts.doors} puertas · {data.counts.curtainWalls} muros cortina</p></div></div>{Object.entries(CATEGORY_GROUP).map(([cat,title])=><section key={cat}><h4 className="openingGroupTitle">{title}</h4><div className="openingCards">{data.items.filter(i=>i.category===cat).map(i=>elementCard(i))}</div></section>)}</section>;
+ const exportItems=Object.keys(CATEGORY_GROUP).flatMap(cat=>data.items.filter(i=>i.category===cat));
+ const exportDetail=(rows:Item[])=>({name:'Elementos y especificaciones',columns:['Código','Categoría','Tipo','Familia','Locales','Ancho según modelo','Alto según modelo','Antepecho','Dintel','Materiales','Marca según modelo','Cantidad','Unidad','Especificaciones / accesorios','Observaciones',...offerColumns],rows:rows.map(i=>[i.code,KIND[i.category],i.type,i.family,i.rooms.map(id=>{const r=data.rooms.find(r=>r.id===id);return r?`${r.number} ${r.name}`:String(id)}).join(' · '),i.width,i.height,i.sill,i.head,i.materials.join(' · '),i.parameters.find(p=>/^(Manufacturer|Fabricante|Marca)$/i.test(p.name))?.value,1,'un.',surveySpecs(i).map(p=>`${p.label}: ${p.value||'por definir'}`).join(' · '),i.warnings.map(plainWarning).join(' · ')])});
+ const exportInventory=<QuantityExport label="Aberturas por elemento" scope="Inventario por categoría, en el orden visible. Revisar observaciones y especificaciones antes de fabricar. No incluye desperdicios." sheets={[exportDetail(exportItems)]}/>;
+ if(mode==='quantities')return <section className="openingsDesk"><div className="sheetHeading"><div><p className="eyebrow">CASA ÁNGEL / ABERTURAS</p><h3>{data.items.length} aberturas únicas</h3><p>{data.counts.windows} ventanas · {data.counts.doors} puertas · {data.counts.curtainWalls} muros cortina</p></div></div>{exportInventory}{Object.entries(CATEGORY_GROUP).map(([cat,title])=><section key={cat}><h4 className="openingGroupTitle">{title}</h4><div className="openingCards">{data.items.filter(i=>i.category===cat).map(i=>elementCard(i))}</div></section>)}</section>;
 
  if(!sheet){
   const count=(t:Tab)=>t==='computo'?data.items.length:t==='indice'?cards.length:cards.filter(c=>c.tab===t).length;
@@ -87,7 +91,6 @@ export default function OpeningsDesk({mode='documentation',caseCode,review,onSav
   // Arriba de cada nivel: su planta general con los códigos (si Revit la exporta) o el listado de códigos por local.
   const levelOverview=(title:string,sheets:SheetCard[])=>{const plan=levels.find(l=>l.level===title),general=sheets.filter(s=>!s.details);return <div className={'openingLevel'+(plan?.preview||plan?.image?' withPlan':'')}>{plan?.preview||plan?.image?<div className="openingLevelPlan" style={{aspectRatio:String(plan.aspect||1.414)}}>{plan.preview?<img src={plan.preview} alt={'Planta general '+title}/>:<VectorImage src={plan.image} alt={'Planta general '+title}/>}{plan.rooms?.map(room=>{const card=general.find(c=>c.roomId===room.roomId);return card?<button key={room.roomId} className="openingLevelRoom" title={'Ir a '+room.label} aria-label={'Ir a la lámina de '+room.label} style={{left:`${room.box[0]*100}%`,top:`${room.box[1]*100}%`,width:`${(room.box[2]-room.box[0])*100}%`,height:`${(room.box[3]-room.box[1])*100}%`}} onClick={()=>open(card.key)}/>:null})}{plan.elements?.map(e=>{const key=targets.get(e.code);return <button key={e.code} className="openingLevelCode" style={{left:`${e.box[0]*100}%`,top:`${e.box[1]*100}%`,width:`${(e.box[2]-e.box[0])*100}%`,height:`${(e.box[3]-e.box[1])*100}%`}} onClick={()=>key&&open(key)}><b>{e.code}</b></button>})}</div>:null}<div className="openingLevelList"><p>{plan?'Tocá un código en la planta o en la lista para ir a su lámina.':'Aberturas de este nivel por local. Tocá un código para ir a su lámina.'}</p>{general.map(s=><div key={s.key}><span>{s.name}</span>{s.itemIds.map(id=>byId.get(id)?.code).filter((c):c is string=>!!c).map(codeChip)}</div>)}</div></div>};
   const budget=budgetTotals(data.items);
-  const download=()=>{const url=URL.createObjectURL(new Blob(['\ufeff'+budgetCsv(budget.rows)],{type:'text/csv;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download='casa-angel-aberturas-computo.csv';a.click();URL.revokeObjectURL(url)};
   return <section className="openingsDesk sheetExplorer" aria-label="Láminas de aberturas">
    <div className="sheetHeading"><div><p className="eyebrow">CASA ÁNGEL / ABERTURAS</p><h3>Láminas de aberturas</h3><p>{cards.length} láminas · {data.counts.windows} ventanas · {data.counts.doors} puertas · {data.counts.curtainWalls} muros cortina. Elegí una lámina para ver sus dibujos.</p></div></div>
    {pending.length>0&&<p className="openingPendingLine">✎ {pending.length} {pending.length===1?'nota':'notas'} para corregir en Revit <button onClick={copyPending}>Copiar lista</button>{copied&&<small> {copied}</small>}</p>}
@@ -96,7 +99,7 @@ export default function OpeningsDesk({mode='documentation',caseCode,review,onSav
     <div className="openingTotals">{([['Ventanas',budget.windows],['Puertas',budget.doors],['Muros cortina',budget.curtainWalls],['Total',budget.total]] as const).map(([label,t])=><div key={label} className={label==='Total'?'total':''}><small>{label} · {t.count}</small><strong>{n2(t.area)} m²</strong><span>{n2(t.perimeter)} m lineales de marco</span></div>)}</div>
     {budget.glass>0&&<p className="openingGlass">Vidrio según Revit: <b>{n2(budget.glass)} m²</b>{budget.profiles>0?<> · montantes de muros cortina: <b>{n2(budget.profiles)} m</b></>:null}</p>}
     <p className="openingSub">Superficie = ancho × alto de cada abertura (muros cortina: largo × alto del conjunto). Metros lineales = contorno exterior del marco, sin montantes intermedios. Valores de Revit, sin desperdicio.</p>
-    <button className="openingDownload" onClick={download}>Descargar planilla para proveedores (CSV)</button>
+    <QuantityExport label="Aberturas" scope="Orden del cómputo visible. Superficie = ancho × alto; marco = contorno exterior, sin montantes. No sumar el resumen con el desglose. Revisar observaciones antes de fabricar." sheets={[{name:'Cómputo agrupado',columns:['Tipo','Categoría','Códigos','Medida','Cantidad','Unidad','Área unitaria m²','Área total m²','Contorno de marco m',...offerColumns],rows:budget.rows.map(r=>[r.type,KIND[r.category],r.codes.join(' · '),r.size,r.count,'un.',r.unitArea,r.area,r.perimeter])},exportDetail(budget.rows.flatMap(r=>r.codes.map(c=>byCode.get(c)!).filter(Boolean)))]}/>
     <table className="openingBudgetTable"><thead><tr><th>Tipo</th><th>Medida</th><th>Cant.</th><th>m² c/u</th><th>m² total</th><th>m marco</th></tr></thead><tbody>{budget.rows.map(r=><tr key={r.key}><td><b>{r.type}</b><small>{KIND[r.category]} · {r.codes.join(' · ')}</small></td><td>{r.size.replace(/\./g,',')}</td><td>{r.count}</td><td>{n2(r.unitArea)}</td><td><b>{n2(r.area)}</b></td><td>{n2(r.perimeter)}</td></tr>)}</tbody></table>
     {(data.reviewCases||[]).length>0&&<p className="openingAlert">⚠ En revisión, pueden cambiar el cómputo: {(data.reviewCases||[]).map(c=>`${c.code} (${c.title})`).join(' · ')}.</p>}
    </section>}

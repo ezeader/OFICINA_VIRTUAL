@@ -1,6 +1,7 @@
 'use client';
 // Mesa estándar de un rubro de documentación. Lee /casa-angel/rubros/<clave>/manifest.json (contrato en lib/rubros.ts)
 // y lo muestra con el formato de Sanitarias: láminas, cómputo, elementos y lo que falta definir.
+import QuantityExport,{offerColumns} from './quantity-export';
 import {useEffect,useState} from 'react';
 import {FileText} from 'lucide-react';
 import {useRubroViewer} from './rubro-viewer';
@@ -30,6 +31,11 @@ export default function RubroDesk({rubro,base='/casa-angel/rubros',project='Casa
   <div className="sheetTabs">{tabs.filter(([,,n])=>n).map(([t,label,n])=><button key={t} aria-pressed={shown===t} onClick={()=>setTab(t)}>{label} · {n}</button>)}</div>
   {shown==='laminas'&&(sheets.length?viewer.levels(groupRubroLevels(sheets,data.kinds)):<p className="openingPendingLine">Las láminas de este rubro se están preparando en Revit. Aparecen acá en cuanto se publiquen.</p>)}
   {shown==='computo'&&<section className="openingBudget">
+   <QuantityExport project={{id:base.startsWith('/urbetrack')?'urbe':'angel',name:project}} label={rubro.name} scope={`${data.revision||''} · ${data.status||''} · ${data.quantityNote||''} · ${!sheets.length?'Estimación: rubro sin láminas.':''}`} sheets={[
+    {name:'Resumen (no sumar al detalle)',columns:['Partida','Cantidad','Unidad','Detalle'],rows:(data.totals||[]).map(t=>[t.label,t.value,t.unit,t.detail])},
+    {name:'Partidas',columns:['Partida','Sector','Cantidad de elementos','Cantidad','Unidad','Especificación',...offerColumns],rows:(data.quantities||[]).map(q=>[q.label,q.group,q.count,q.value,q.unit,q.detail])}
+   ]}/>
+
    {sheets.length===0&&<p className="openingAlert">⚠ Estimación previa: este rubro todavía no está modelado. Las cantidades son hipótesis para ordenar la decisión, no un cómputo.</p>}
    {(data.totals||[]).length>0&&<div className="openingTotals">{data.totals!.map((t,i)=><div key={t.label} className={i===data.totals!.length-1&&data.totals!.length>1?'total':''}><small>{t.label}</small><strong>{n2(t.value)} {t.unit}</strong>{t.detail&&<span>{t.detail}</span>}</div>)}</div>}
    {data.quantityNote&&<p className="openingSub">{data.quantityNote}</p>}

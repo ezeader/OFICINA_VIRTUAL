@@ -1,4 +1,5 @@
 'use client';
+import QuantityExport,{offerColumns} from './quantity-export';
 import {useEffect,useMemo,useState} from 'react';
 import {useRubroViewer,type RubroSheet} from './rubro-viewer';
 import {concreteTotals,groupCases,sheetGroup,plainWarning,structureBudget,type StructureManifest,type Wall} from '../lib/structure';
@@ -38,6 +39,8 @@ export default function StructureDesk(){
     <div className="openingCards">{data.proposal.sheets.map(s=><article key={s.number} className="openingCard"><header><span className="openingTag">{s.number}</span><small>En preparación</small></header><strong>{s.title.split(' · ')[0]}</strong><p className="openingSub">{s.title.split(' · ').slice(1).join(' · ')}</p></article>)}</div></>)}
 
   {tab==='computo'&&<section className="openingBudget">
+   <QuantityExport label="Estructura" scope="Mismo orden de las partidas. Acero estimado: reemplazar por planilla del calculista. Las filas informativas no se cotizan." sheets={[{name:'Partidas',columns:['Partida','Cantidad','Unidad','Detalle','Alcance',...offerColumns],rows:lines.map(l=>[l.label,l.quantity,l.unit,l.detail,l.informative?'Referencia, no cotizar':'Partida'])},{name:'Muros (desglose)',columns:['Código','Nivel','Longitud m','Altura m','Espesor m','Volumen m³'],rows:walls.map(w=>[w.code,w.level,w.length_m,w.height_m,w.thickness_m,w.volume_m3])}]}/>
+
    <h4 className="openingGroupTitle">Partidas para el presupuesto <small>van a Presupuesto por rubro con estos ids</small></h4>
    <table className="openingBudgetTable"><thead><tr><th>Partida</th><th>Cantidad</th><th>Detalle</th></tr></thead><tbody>
     {lines.map(l=><tr key={l.id}><td><b>{l.label}</b><small>estructura:{l.id}{l.informative?' · referencia, no se cotiza':''}</small></td><td><b>{n2(l.quantity)} {l.unit}</b></td><td><small>{l.detail}</small></td></tr>)}
