@@ -71,7 +71,7 @@ def section_detail(doc, sfx, blocks=()):
     f = L.AxisFrame(v, DB.XYZ.Zero, DB.XYZ.BasisX, DB.XYZ.BasisY)
     dims.append(L.tick_dim(doc, f, u'Niveles', [-.45 / M, -.30 / M, -.20 / M, -.09 / M, 0], False, -.08 / M, tick=.02 / M))
     dims.append(L.tick_dim(doc, f, u'Platea + paquete', [-.45 / M, 0], False, -.20 / M, tick=.02 / M))
-    L.tn(doc, v.Id, C.V((0, -.65)), u'Niveles del modelo: platea −0,45 / −0,20 (tipo «Platea PB 15CM»: tosca + film + H°) · LO-PB-01 −0,61 / −0,09 · NPT ±0,00', 'text')
+    L.tn(doc, v.Id, C.V((0, -.65)), u'Niveles del modelo: platea −0,45 / −0,20 (tipo «Platea PB 15CM»: tosca + film + H°) · LO-PB-01 −0,20 / −0,09 (R31) · NPT ±0,00', 'text')
     return C.item(doc, v, u'Corte tipo · platea y paquete de piso', [u'PL-01', u'PL-02', u'LO-PB-01'], dims)
 
 def lay(doc, number, title, sub, items, sheet_name, scales=None, plan_region=False):
@@ -114,10 +114,26 @@ def sheet_lo(doc, ld):
     C.place(doc, v, DB.XYZ(cx, cy, z), u'LO-PB-01 · paquete de piso\n%s m² · sobre platea PL-02' % c2(a), placed, crop, 'tag', z)
     dims = ext_dims(doc, v, ps, z, u'LO-PB-01')
     lines = [u'Verde: LO-PB-01 (paquete de piso)', u'Naranja: platea PL-02 debajo (misma huella)', u'Área %s m² · perímetro %s m' % (c2(a), c2(per)),
-             u'En el modelo sigue como «Insitu Concrete 225mm»', u'(−0,61 / −0,09): se superpone con la platea;', u'se documenta como paquete, sin H° propio.', u'Cambiar el tipo en el modelo: con OK del usuario.']
+             u'Tipo R31: «ADER Paquete de piso sobre platea 11cm»', u'membrana hidrófuga + carpeta 11 cm, no estructural', u'−0,20 / −0,09: apoya sobre la platea, sin superposición', u'Antes: «Insitu Concrete 225mm» dentro de la platea', u'(cambio aprobado por el usuario, R31)']
     it = X.item(v, v.CropBox, u'LO-PB-01 · planta', 'plan', u'00. Planta Baja', ['LO-PB-01'], dims, [IDS['LO-PB-01']])
     s = lay(doc, 'EST-F-LO-PB-01', u'Ficha LO-PB-01 · paquete de piso sobre platea', u'LO-PB-01 no es losa de hormigón: aislación hidrófuga + carpeta sobre la platea PL-02 · ver EST-FU-01', [it, section_detail(doc, 'LO-PB-01', [(u'LO-PB-01', lines)])], u'Estructura · LO-PB-01', plan_region=True)
     return dict(s, kind='element', element=u'LO-PB-01', elementId=str(IDS['LO-PB-01']), elementKind='LO', level=u'00. Planta Baja', sector=u'Sector: 00. Planta Baja')
+
+def sheet_pl2(doc, ld):
+    e, lo = outline(ld, IDS['PL-02']); ps = pts_of(lo)
+    v, lev = plan(doc, u'00. Planta Baja', PRE + 'PL-02 PLATEA', ps, 1.5); z = lev.Elevation
+    crop = C.crop_of(v); placed = []
+    draw_outline(doc, v, lo, z, COL['PL-02'], 9)
+    a, vol, per = area_vol(e); hc = a * .15
+    cx = sum(p.X for p in ps) / len(ps); cy = sum(p.Y for p in ps) / len(ps)
+    C.place(doc, v, DB.XYZ(cx, cy, z), u'PL-02 · platea H°A° e 15\n%s m² · H° %s m³' % (c2(a), c2(hc)), placed, crop, 'tag', z)
+    dims = ext_dims(doc, v, ps, z, u'PL-02')
+    lines = [u'Naranja: PL-02 ampliación de platea (R31)', u'Tipo «Platea PB 15CM»: tosca + film + H°A° 15', u'Nivel superior −0,20 · fondo −0,45',
+             u'Área %s m² · perímetro %s m' % (c2(a), c2(per)), u'Hormigón: %s m² × 0,15 = %s m³' % (c2(a), c2(hc)), u'Volumen del tipo (0,25 total): %s m³' % c2(vol),
+             u'Encima: LO-PB-01 paquete de piso 11 cm (sin H°)', u'Armadura: malla sup. e inf. por cuantía de referencia']
+    it = X.item(v, v.CropBox, u'PL-02 · planta', 'plan', u'00. Planta Baja', ['PL-02'], dims, [IDS['PL-02']])
+    s = lay(doc, 'EST-F-PL-02', u'Ficha PL-02 · ampliación de platea', u'PL-02: platea H°A° 15 cm bajo LO-PB-01 · %s m² · H° %s m³ · ver EST-FU-01' % (c2(a), c2(hc)), [it, section_detail(doc, 'PL-02', [(u'PL-02', lines)])], u'Estructura · PL-02', plan_region=True)
+    return dict(s, kind='element', element=u'PL-02', elementId=str(IDS['PL-02']), elementKind='PL', level=u'00. Planta Baja', sector=u'Sector: 00. Planta Baja')
 
 def run(doc, uidoc, job):
     L.assert_pilot(doc)
@@ -144,7 +160,7 @@ def run(doc, uidoc, job):
     L.register_font()
     def body():
         if part == 'info': B.project_info(doc, ld); return []
-        if part == 'sheets': return [sheet_fu(doc, ld), sheet_lo(doc, ld)]
+        if part == 'sheets': return [sheet_fu(doc, ld), sheet_lo(doc, ld), sheet_pl2(doc, ld)]
     sheets = B.plain(doc, 'ADER EST R31 - ' + part, body)
     for sh in sheets:
         for x in sh['views']: x.pop('view', None)

@@ -1051,13 +1051,13 @@
     },
     {
       "id": "714161",
-      "type": "Insitu Concrete 225mm",
+      "type": "ADER Paquete de piso sobre platea 11cm",
       "level": "00. Planta Baja",
       "role": "Losa / estructura",
       "area_m2": 124.13,
-      "volume_m3": 27.931,
-      "thickness_m": 0.225,
-      "concreteLayer_m": 0.225,
+      "volume_m3": 13.654,
+      "thickness_m": 0.11,
+      "concreteLayer_m": 0,
       "concreteVolume_m3": 27.929,
       "structuralFlag": false,
       "layers": [
@@ -1076,7 +1076,9 @@
           "function": "Structure",
           "thickness_m": 0.175
         }
-      ]
+      ],
+      "structural": false,
+      "offset_m": -0.09
     },
     {
       "id": "875093",
@@ -1764,10 +1766,10 @@
       "length_m": 0
     },
     {
-      "key": "00. Planta Baja | Losa / estructura",
+      "key": "00. Planta Baja | Paquete de piso (sin capa de hormigón) · LO-PB-01",
       "count": 1,
       "area_m2": 124.13,
-      "volume_m3": 27.931,
+      "volume_m3": 13.654,
       "length_m": 0
     },
     {
@@ -2348,8 +2350,7 @@
     "Losas L01.00 de PA/PE (LO-PA-01, LO-PA-02, LO-PE-01): documentadas como losa a confirmar (respuesta: no asumir hormigón).",
     "¿Hay fundaciones además de la platea (vigas de fundación, pilotes, zapatas)?",
     "¿Activamos el parámetro Structural en los 43 muros de hormigón y marcamos niveles estructurales? Es un cambio de parámetros del modelo (no documentación): requiere su OK.",
-    "¿Confirmamos la numeración MH-/LO-/PL-/VE- y que se escriba en Mark?",
-    "¿Cambiamos en el modelo el tipo de LO-PB-01 (hoy «Insitu Concrete 225mm», −0,61/−0,09) por un paquete de piso sin hormigón? Hoy se superpone en volumen con la platea ampliada; es un cambio de modelo: requiere su OK."
+    "¿Confirmamos la numeración MH-/LO-/PL-/VE- y que se escriba en Mark?"
   ],
   "sheets": [
     {
@@ -4137,7 +4138,7 @@
       "sector": "Sector: 00. Planta Baja",
       "kind": "element",
       "note": "R31 · archivo Casa-Angel-DOC-Estructura.rvt",
-      "sheetId": "217747",
+      "sheetId": "218100",
       "pdf": "/casa-angel/structure/EST-F-LO-PB-01.pdf",
       "image": "/casa-angel/structure/EST-F-LO-PB-01.svg.gz",
       "preview": "/casa-angel/structure/EST-F-LO-PB-01-preview.png",
@@ -4145,7 +4146,7 @@
       "outsideCrop": [],
       "views": [
         {
-          "id": "217592",
+          "id": "217945",
           "name": "LO-PB-01 · planta",
           "label": "LO-PB-01 · planta   1:75",
           "scale": 75,
@@ -4153,7 +4154,7 @@
           "sector": "00. Planta Baja",
           "roomLabel": "00. Planta Baja",
           "caseId": null,
-          "image": "/casa-angel/structure/EST-F-LO-PB-01-view-217592.svg.gz",
+          "image": "/casa-angel/structure/EST-F-LO-PB-01-view-217945.svg.gz",
           "region": [
             0.1167,
             0.2248,
@@ -4193,7 +4194,7 @@
           ]
         },
         {
-          "id": "217657",
+          "id": "218010",
           "name": "Corte tipo · platea y paquete de piso",
           "label": "Corte tipo · platea y paquete de piso   1:10",
           "scale": 10,
@@ -4201,12 +4202,12 @@
           "sector": "Detalles",
           "roomLabel": "Detalles",
           "caseId": null,
-          "image": "/casa-angel/structure/EST-F-LO-PB-01-view-217657.svg.gz",
+          "image": "/casa-angel/structure/EST-F-LO-PB-01-view-218010.svg.gz",
           "region": [
             0.4807,
-            0.3736,
+            0.3697,
             0.7667,
-            0.6086
+            0.6124
           ],
           "tags": [
             "PL-01",
@@ -17567,7 +17568,7 @@
       "sector": "Fundación",
       "kind": "general",
       "note": "R31 · archivo Casa-Angel-DOC-Estructura.rvt",
-      "sheetId": "217570",
+      "sheetId": "217923",
       "pdf": "/casa-angel/structure/EST-FU-01.pdf",
       "image": "/casa-angel/structure/EST-FU-01.svg.gz",
       "preview": "/casa-angel/structure/EST-FU-01-preview.png",
@@ -17575,7 +17576,7 @@
       "outsideCrop": [],
       "views": [
         {
-          "id": "217416",
+          "id": "217769",
           "name": "Platea PB · contorno",
           "label": "Platea PB · contorno   1:150",
           "scale": 150,
@@ -17583,7 +17584,7 @@
           "sector": "00. Planta Baja",
           "roomLabel": "00. Planta Baja",
           "caseId": null,
-          "image": "/casa-angel/structure/EST-FU-01-view-217416.svg.gz",
+          "image": "/casa-angel/structure/EST-FU-01-view-217769.svg.gz",
           "region": [
             0.1337,
             0.3497,
@@ -17634,7 +17635,7 @@
           ]
         },
         {
-          "id": "217478",
+          "id": "217831",
           "name": "Corte tipo · platea y paquete de piso",
           "label": "Corte tipo · platea y paquete de piso   1:10",
           "scale": 10,
@@ -17642,7 +17643,7 @@
           "sector": "Detalles",
           "roomLabel": "Detalles",
           "caseId": null,
-          "image": "/casa-angel/structure/EST-FU-01-view-217478.svg.gz",
+          "image": "/casa-angel/structure/EST-FU-01-view-217831.svg.gz",
           "region": [
             0.481,
             0.3043,
@@ -23444,6 +23445,116 @@
           ]
         }
       ]
+    },
+    {
+      "number": "EST-F-PL-02",
+      "title": "Ficha PL-02 · ampliación de platea",
+      "level": "00. Planta Baja",
+      "sector": "Sector: 00. Planta Baja",
+      "kind": "element",
+      "note": "R31 · archivo Casa-Angel-DOC-Estructura.rvt",
+      "sheetId": "218253",
+      "pdf": "/casa-angel/structure/EST-F-PL-02.pdf",
+      "image": "/casa-angel/structure/EST-F-PL-02.svg.gz",
+      "preview": "/casa-angel/structure/EST-F-PL-02-preview.png",
+      "thumbnail": "/casa-angel/structure/EST-F-PL-02.png",
+      "outsideCrop": [],
+      "views": [
+        {
+          "id": "218122",
+          "name": "PL-02 · planta",
+          "label": "PL-02 · planta   1:75",
+          "scale": 75,
+          "kind": "plan",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-F-PL-02-view-218122.svg.gz",
+          "region": [
+            0.1167,
+            0.2248,
+            0.4602,
+            0.7573
+          ],
+          "tags": [
+            "PL-02"
+          ],
+          "dimensions": [
+            {
+              "label": "PL-02 extensión X",
+              "values_m": [
+                20.198
+              ],
+              "associative": false
+            },
+            {
+              "label": "PL-02 extensión Y",
+              "values_m": [
+                22.4626
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "PL-02",
+              "elementId": "2488978",
+              "box": [
+                0.0671,
+                0.0606,
+                0.9241,
+                0.9343
+              ]
+            }
+          ]
+        },
+        {
+          "id": "218163",
+          "name": "Corte tipo · platea y paquete de piso",
+          "label": "Corte tipo · platea y paquete de piso   1:10",
+          "scale": 10,
+          "kind": "detail",
+          "sector": "Detalles",
+          "roomLabel": "Detalles",
+          "caseId": null,
+          "image": "/casa-angel/structure/EST-F-PL-02-view-218163.svg.gz",
+          "region": [
+            0.4807,
+            0.3697,
+            0.7667,
+            0.6124
+          ],
+          "tags": [
+            "PL-01",
+            "PL-02",
+            "LO-PB-01"
+          ],
+          "dimensions": [
+            {
+              "label": "Niveles",
+              "values_m": [
+                0.15,
+                0.1,
+                0.11,
+                0.09
+              ],
+              "associative": false
+            },
+            {
+              "label": "Platea + paquete",
+              "values_m": [
+                0.45
+              ],
+              "associative": false
+            }
+          ],
+          "elements": []
+        }
+      ],
+      "element": "PL-02",
+      "elementId": "2488978",
+      "elementKind": "PL",
+      "rebar": "Malla superior e inferior por cuantía de referencia hasta el cálculo."
     }
   ],
   "codes": [
@@ -24141,13 +24252,16 @@
       "code": "LO-PB-01",
       "kind": "LO",
       "level": "00. Planta Baja",
-      "label": "LO-PB-01 · 124,13 m² · paquete de piso sobre PL-02",
-      "status": "Paquete de piso sobre platea (no losa de H°) · R31",
-      "type": "Insitu Concrete 225mm",
-      "thickness_m": 0.225,
+      "label": "LO-PB-01 · 124,13 m² · paquete de piso 11 cm sobre PL-02",
+      "status": "Paquete de piso sobre platea (no losa de H°) · R31 · cambiado en el modelo",
+      "type": "ADER Paquete de piso sobre platea 11cm",
+      "thickness_m": 0.11,
       "area_m2": 124.13,
       "concreteLayer_m": 0,
-      "note": "En el modelo sigue como «Insitu Concrete 225mm» (−0,61/−0,09) y se superpone con la platea ampliada; documentado como paquete, fuera del cómputo de H°."
+      "note": "R31 (OK usuario): tipo «ADER Paquete de piso sobre platea 11cm» (membrana hidrófuga + carpeta 11 cm, no estructural), desfase −0,30 → −0,09: -0,20 / -0,09, apoya sobre la platea (−0,20) sin superposición. Fuera del cómputo de H°.",
+      "structural": false,
+      "top_m": -0.09,
+      "bottom_m": -0.2
     },
     {
       "id": "2068259",
@@ -24391,7 +24505,9 @@
     "Usuario: vigas de encuentro VE-PA-01 / VE-PE-01 son de hormigón.",
     "Usuario: acero por cuantía de referencia hasta tener el cálculo estructural.",
     "R31: platea ampliada (PL-02, 124,12 m²) bajo toda la huella de LO-PB-01 con OK del usuario; platea total 374,04 m².",
-    "R31: LO-PB-01 documentado como paquete de piso sobre platea (EST-F-LO-PB-01, corte tipo en EST-FU-01)."
+    "R31: LO-PB-01 documentado como paquete de piso sobre platea (EST-F-LO-PB-01, corte tipo en EST-FU-01).",
+    "R31 (OK usuario): LO-PB-01 cambiado en el modelo a «ADER Paquete de piso sobre platea 11cm» y subido a −0,20 / −0,09; el hormigón de PB se computa solo en la platea (PL-01 + PL-02).",
+    "R31: ficha EST-F-PL-02 (ampliación de platea, H° e 15)."
   ],
   "marksWritten": {
     "parameter": "Mark",
