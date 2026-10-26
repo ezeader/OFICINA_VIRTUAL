@@ -18,6 +18,10 @@ SOURCE = 'California Residential Code 2025, cap. 10 (R1001 hogares de mamposter�
 JA, BOCA, LANA, FONDO, HOGAR, FRENTE = .12, 1.50, .025, .064, .60, .12
 WIDTH = 2 * JA + BOCA + LANA; DEPTH = FONDO + HOGAR + FRENTE
 Z_LOSA1, Z_BOCA, Z_CIELO, Z_LO1, Z_TOP = .84, 1.50, 2.50, 3.00, 9.40
+import math
+CH_X, CH_X2, Z_OFF0, OFF_DEG = 3.92, 4.388, 3.10, 30.0
+Z_OFF1 = Z_OFF0 + (CH_X2 - CH_X) / math.tan(math.radians(OFF_DEG)); DIAG = (CH_X2 - CH_X) / math.sin(math.radians(OFF_DEG))
+CAJON_NEW_X, CAJON = 3.645, (4.063, 1.882, 4.738, 3.232)
 
 
 def c2(v): return ('%.2f' % v).replace('.', ',')
@@ -29,7 +33,8 @@ def compute():
     ladrillos = round((canto * 55 + plano * 33) * 1.10 / 10) * 10
     return {'jambas': jambas, 'frente': frente, 'canto': canto, 'fondo': fondo, 'solera': solera, 'plano': plano, 'ladrillos': ladrillos,
             'mortero_kg': round(ladrillos / 90 + .49) * 25, 'losa': BOCA * DEPTH * .10, 'dintel': 2 * (WIDTH - LANA), 'lana': DEPTH * Z_CIELO,
-            'ch_simple': Z_LO1 - Z_CIELO, 'ch_doble': Z_TOP - Z_LO1}
+            'ch_simple': Z_LO1 - Z_CIELO, 'ch_doble': (Z_OFF0 - Z_LO1) + DIAG + (Z_TOP - Z_OFF1),
+            'cajon': ((CAJON[3] - CAJON[1]) + 2 * (CAJON[0] - CAJON_NEW_X)) * 1.0}
 
 
 def budget(q):
@@ -42,15 +47,17 @@ def budget(q):
          ('parrilla-brasero', 'Brasero (canasto) de hierro 0,35 × 0,50', 1, 'u', ''),
          ('parrilla-garganta', 'Garganta de chapa 2 mm + registro de tiro (mariposa) en el collar Ø 35', 1, 'u', 'de +1,90 al collar, paredes ≤ 45°'),
          ('conducto-humos', 'Conducto Ø 35 acero inox simple pared (plenum PB)', q['ch_simple'], 'ml', f"+{c2(Z_CIELO)} a +{c2(Z_LO1)}"),
-         ('conducto-humos-doble', 'Conducto Ø 35 doble pared aislado (PA, cruce de cubierta y remate)', q['ch_doble'], 'ml', f"+{c2(Z_LO1)} a +{c2(Z_TOP)}"),
+         ('conducto-humos-doble', 'Conducto Ø 35 doble pared aislado (PA a la vista, cruce de cubierta y remate)', q['ch_doble'], 'ml', f"+{c2(Z_LO1)} a +{c2(Z_TOP)} · incluye desvío {c2(DIAG)} ml"),
+         ('conducto-codos', 'Codos 30° doble pared Ø 35', 2, 'u', 'desvío de 0,47 m dentro del cajón'),
+         ('parrilla-puertas-lenero', 'Puertas del leñero 2 hojas chapa N°18 con marco L 1"', 1, 'u', f'{c2(BOCA)} × 0,69 · bisagras y tiradores'),
+         ('parrilla-cajon-durlock', 'Ampliación del cajón Durlock del Comedor (placa RF)', q['cajon'], 'm²', 'tabique 0,42 m al oeste, de +3,00 a +4,00 (modelado)'),
          ('conducto-pase-losa', 'Pase en losa L01 0,50 × 0,50 (amplía el pase existente)', 1, 'u', 'a coordinar con Estructura'),
          ('conducto-babeta', 'Babeta / collar de cubierta + brochal entre cabios', 1, 'u', 'CU-03 · pase 0,50 × 0,50'),
          ('conducto-sombrerete', 'Sombrerete fijo acero inox Ø 0,70 con malla antichispa', 1, 'u', '')]
     lines = [{'id': i, 'label': l, 'value': round(v, 3 if u == 'm³' else 2), 'unit': u, 'detail': d, 'informative': False} for i, l, v, u, d in L]
     lines += [{'id': 'parrilla-ladrillos', 'label': 'Ladrillos refractarios 23 × 11,4 × 6,4 (referencia)', 'value': q['ladrillos'], 'unit': 'u', 'detail': '55 u/m² de canto · 33 u/m² de plano · +10 % · ya incluidos en las partidas de mampostería', 'informative': True},
               {'id': 'parrilla-mortero', 'label': 'Mortero refractario (referencia)', 'value': q['mortero_kg'], 'unit': 'kg', 'detail': '≈ 1 bolsa de 25 kg cada 90 ladrillos', 'informative': True},
-              {'id': 'parrilla-cajon-durlock', 'label': 'Ampliación del cajón Durlock del Comedor hasta la cubierta (a confirmar)', 'value': round((1.35 + 2 * (.675 + .34)) * 3.73 + (1.35 + 2 * .34) * 1.0, 2), 'unit': 'm²', 'detail': 'estimado: 3 caras, 0,34 m al oeste y de +4,00 al machimbre (≈ +7,73); va en Albañilería/Cielorrasos si se confirma', 'informative': True},
-              {'id': 'parrilla-k42db', 'label': 'Equipo K42DB modelado (reemplazado por la parrilla de obra)', 'value': 0, 'unit': 'u', 'detail': 'no se compra', 'informative': True}]
+              {'id': 'parrilla-k42db', 'label': 'Equipo K42DB modelado (reemplazado por la parrilla de obra)', 'value': 0, 'unit': 'u', 'detail': 'borrado del modelo (OK del usuario 26/10)', 'informative': True}]
     return lines
 
 
@@ -58,10 +65,10 @@ def index_columns():
     q = compute(); b = budget(q)
     comp = [f"{l['label'].split(' (')[0]}: {c2(l['value'])} {l['unit']}" for l in b if not l['informative']]
     return [{'title': 'Diseño (decisión del usuario 26/10)', 'lines': ['Parrilla de obra a medida en el Quincho', 'Boca 1,50 · hogar +0,90 · boca alta 0,60', 'Campana de ladrillo refractario visto hasta el cielorraso +2,50',
-                                                                  'Conducto Ø 35 por cubierta, remate +9,40', 'Sombrerete fijo con malla antichispa', f"Medida exterior {c2(WIDTH)} × {c2(DEPTH)} m"]},
+                                                                  'Conducto Ø 35 por cubierta, remate +9,40', 'En PA: a la vista desde +4,00 junto al ducto del hogar', 'Leñero con puertas de 2 hojas', 'Sombrerete fijo con malla antichispa', f"Medida exterior {c2(WIDTH)} × {c2(DEPTH)} m"]},
             {'title': 'Cómputo', 'lines': comp[:7]}, {'title': 'Cómputo (cont.)', 'lines': comp[7:] + [f"Ladrillos refractarios ≈ {q['ladrillos']} u", f"Mortero refractario ≈ {q['mortero_kg']} kg"]},
             {'title': 'Láminas R34', 'lines': ['PAR-00  Índice y cómputo', 'PAR-P-01  Ubicación PB · PA · techo', 'PAR-D-01  Planta, vista y corte 1:20', 'PAR-D-02  Conducto: corte esquemático', 'PAR-D-03  Cruce de cubierta y sombrerete', 'PAR-D-04  Tiraje: verificación + 3D',
-                                               '', 'A confirmar: cajón Durlock del Comedor;', 'reemplazo del K42DB en el modelo (OK).']}]
+                                               '', 'Modelo principal: K42DB reemplazado,', 'cajón ampliado (OK del usuario 26/10).']}]
 
 
 def main():
@@ -96,24 +103,23 @@ def main():
     for s in new:
         for v in s['views']:
             for e in v['elements']: parts.setdefault(e['code'], e['label'])
-    codes = [{'code': k, 'kind': k[:2], 'label': lab, 'status': 'Diseño R34 (dibujado en el archivo DOC, no modelado)', 'elementId': None} for k, lab in sorted(parts.items())]
-    codes += [{'code': 'K42DB', 'kind': 'PR', 'label': 'K42DB · equipo modelado (reemplazado)', 'status': 'Familia "Parrilla" (Quincho, PB) · queda en el modelo hasta el OK', 'elementId': '743956', 'type': 'Parrilla K42DB'},
-              {'code': 'CH-Ø25', 'kind': 'CH', 'label': '2 conductos Ø 25 modelados (12,87 ml, reemplazados)', 'status': 'Conductos redondos "Parrilla" 738025 / 745388', 'elementId': '738025'}]
+    pil = read(OUT / 'par34-pilot.json'); ids = {c['code']: str(c['id']) for c in pil['created']}
+    codes = [{'code': k, 'kind': k[:2], 'label': lab, 'status': 'Modelado R34 en el modelo principal (DirectShape)' if k in ids else ('Existente (hogar de PA)' if k == 'CH-02' else 'Documentado R34'), 'elementId': ids.get(k)} for k, lab in sorted(parts.items())]
+    codes += [{'code': 'K42DB', 'kind': 'PR', 'label': 'K42DB · equipo borrado del modelo (reemplazado)', 'status': 'Borrado 26/10 con OK del usuario (era 743956; conducto Ø 25 738025)', 'elementId': None}]
     m = dict(old)
-    m.update({'revision': 'R34', 'status': 'propuesta', 'readAt': read(OUT / 'par34-details.json')['readAt'], 'kinds': {'PR': 'Parrilla', 'CH': 'Conducto de humos'},
+    m.update({'revision': 'R34', 'status': 'modelado', 'readAt': read(OUT / 'par34-details.json')['readAt'], 'kinds': {'PR': 'Parrilla', 'CH': 'Conducto de humos'},
               'sheets': sorted(new, key=lambda s: (s['number'] != 'PAR-00', s['number'])), 'codes': codes,
-              'summary': f"Parrilla de obra a medida en el Quincho (decisión del usuario): boca 1,50, hogar a +0,90, campana de ladrillo refractario visto hasta el cielorraso, parrilla regulable inox + brasero, leñero; conducto Ø 35 ({c2(q['ch_simple'] + q['ch_doble'])} ml) por el Comedor y la cubierta CU-03 con sombrerete fijo. 6 láminas (incluye verificación del tiraje y 3D) en Casa-Angel-DOC-Parrilla.rvt; el modelo principal no se modificó.",
+              'summary': f"Parrilla de obra a medida en el Quincho (decisión del usuario): boca 1,50, hogar a +0,90, campana de ladrillo refractario visto hasta el cielorraso, parrilla regulable inox + brasero, leñero; conducto Ø 35 ({c2(q['ch_simple'] + q['ch_doble'])} ml) por el Comedor y la cubierta CU-03 con sombrerete fijo. en PA sube a la vista junto al ducto del hogar. Modelada en el modelo principal (reemplaza al K42DB; cajón Durlock ampliado) y documentada en 6 láminas en Casa-Angel-DOC-Parrilla.rvt.",
               'totals': [{'label': l['label'], 'value': l['value'], 'unit': l['unit'], 'detail': l['detail']} for l in lines if l['id'] in ('parrilla-refractario-visto', 'parrilla-refractario-plano', 'conducto-humos', 'conducto-humos-doble', 'parrilla-ladrillos')],
               'quantities': [{'label': l['label'], 'group': 'Conducto' if l['id'].startswith('conducto') else 'Parrilla', 'count': 1, 'value': l['value'], 'unit': l['unit'], 'detail': l['detail']} for l in lines if not l['informative']],
-              'quantityNote': 'Cómputo del diseño R34 (dibujado, no modelado): superficies de mampostería por cara, conducto por cotas de nivel (cielorraso +2,50, PA +3,00, remate +9,40 ≥ cumbrera +8,63 + 0,60).',
-              'notModeled': ['La parrilla de obra y el conducto Ø 35 están modelados solo en el archivo DOC (DirectShape); el modelo principal sigue con el K42DB y 2 conductos Ø 25', 'Ampliación del cajón Durlock del Comedor', 'Mesada vecina (existente, Equipamiento)'],
+              'quantityNote': 'Cómputo del diseño R34 (modelado con DirectShape): superficies de mampostería por cara, conducto por cotas de nivel (cielorraso +2,50, PA +3,00, remate +9,40 ≥ cumbrera +8,63 + 0,60).',
+              'notModeled': ['Garganta de chapa y registro de tiro (solo en láminas)', 'Babeta, brochal y pase de losa (solo en láminas)', 'Mesada vecina (existente, Equipamiento)'],
               'decisions': ['Usuario (26/10): parrilla de obra a medida (no el K42DB).', 'Usuario: boca 1,50 m y campana hasta el cielorraso.', 'Usuario: ladrillo refractario visto.', 'Usuario: conducto por cubierta con sombrerete fijo.',
                             'Tiraje (R1003.15, conducto redondo ≥ 1/12 de la boca): boca 1,50 × 0,60 = 0,90 m² → Ø 35 = 0,096 m² = 1/9,4 (el Ø 30 previo daba 1/13,8 sobre boca 0,65: insuficiente). Conducto simple pared en el plenum de PB, doble pared aislado desde la PA por el Comedor (madera vista) y la cubierta.',
-                            'Conducto contra la jamba este (eje x 3,92 · y 2,30): pasa entre cabios c/0,96 (corta 1 listón, con brochal); remate +9,40 ≥ cumbrera +8,63 + 0,60 y ≥ techo +8,06 + 0,90 (R1003.9). Garganta desde +1,90 para que las paredes de la campana queden ≤ 45° (R1001.8.1).', 'Criterio de tiraje tomado de ' + SOURCE + ' · verificar con normativa local.', 'Usuario (vía sesión Documentación): parrilla estándar de mampostería hecha in situ; lo crítico es el tiraje. Modelada en 3D en el archivo DOC (DirectShape, Generic Models); no se descargó ninguna familia (las encontradas requieren cuenta).',
+                            'Conducto contra la jamba este (eje x 3,92 · y 2,30): pasa entre cabios c/0,96 (corta 1 listón, con brochal); remate +9,40 ≥ cumbrera +8,63 + 0,60 y ≥ techo +8,06 + 0,90 (R1003.9). Garganta desde +1,90 para que las paredes de la campana queden ≤ 45° (R1001.8.1).', 'Criterio de tiraje tomado de ' + SOURCE + ' · verificar con normativa local.', 'Usuario (26/10): ampliar el cajón, reemplazar el K42DB en el modelo y leñero con puertas; el conducto sube a la vista en PA junto al ducto del hogar (CH-02): desvío de 0,47 m con 2 codos a 30° dentro del cajón.', 'Usuario (vía sesión Documentación): parrilla estándar de mampostería hecha in situ; lo crítico es el tiraje. Modelada en 3D en el archivo DOC (DirectShape, Generic Models); no se descargó ninguna familia (las encontradas requieren cuenta).',
                             'Documentación en archivo propio Casa-Angel-DOC-Parrilla.rvt que vincula el modelo principal (criterio del usuario).'],
-              'questions': ['El conducto cae 0,34 m al oeste del cajón Durlock del Comedor (x 4,06–4,74, llega a +4,00). ¿Ampliar el cajón y llevarlo hasta el machimbre (recomendado) o dejar el conducto doble pared visto desde +4,00?',
-                            '¿Reemplazo en el modelo principal el K42DB y los 2 conductos Ø 25 por la parrilla de obra y un conducto Ø 35? (cambio de modelo: necesita tu OK)',
-                            '¿Leñero abierto bajo la losa (recomendado) o con puertas?'],
+              'questions': ['El pase existente en la losa L01 (0,30 × 0,57, x 3,93–4,23) no coincide con el conducto (eje x 3,92 · y 2,30): ¿lo ajusto en el modelo a 0,50 × 0,50? (Estructura)',
+                            'El conducto a la vista y el del hogar pasan delante de la ventana del Comedor (x 4,54–4,89, +4,13 a +5,27): ¿ok así?'],
               'budget': {'revision': 'R34', 'note': 'Partidas del diseño R34; informative = referencia (no se suma).', 'lines': lines}})
     (pub / 'manifest.json').write_text(json.dumps(m, ensure_ascii=False, indent=2), encoding='utf-8')
     print(json.dumps({'sheets': [s['number'] for s in m['sheets']], 'views': sum(len(s['views']) for s in new), 'lines': len(lines)}, ensure_ascii=False))
