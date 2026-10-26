@@ -1,55 +1,102 @@
 {
   "title": "Gas",
-  "summary": "Sin red de gas modelada ni sistemas de cañería de gas en el modelo. Único artefacto que podría usar gas: la cocina dual fuel (EQ-02).",
+  "status": "propuesta",
+  "summary": "Criterio aprobado (etapa 1): GLP a granel con zeppelin de 2 m³ en el retiro de frente sobre CA-01; cañería dimensionada para gas natural. 5 artefactos: cocina EQ-02 (anafe y horno a gas), anafe y encendido de parrilla en el Quincho, encendedor del hogar a leña de PA y climatizador de la pileta. Total ≈ 55.000 kcal/h (4,6 kg/h GLP). La losa radiante va con bomba de calor (sin gas). Trazado en planta pendiente (etapa 2).",
   "model": "Casa-Angel-piloto-documentacion.rvt",
   "readAt": "2026-10-24T02:32:37.999000Z",
   "revision": "R25",
   "kinds": {
-    "GA": "Artefactos a gas"
+    "GA": "Artefactos a gas",
+    "AL": "Almacenaje y regulación"
   },
   "sheets": [],
   "codes": [
     {
       "code": "GA-01",
       "kind": "GA",
-      "label": "GA-01 · cocina dual fuel (EQ-02)",
-      "status": "Equipamiento · Cocina PA",
-      "elementId": "1449400"
+      "label": "GA-01 · cocina EQ-02 · anafe + horno a gas · 10.000 kcal/h",
+      "status": "Equipamiento · Cocina PA · modelado (elementId 1449400)"
+    },
+    {
+      "code": "GA-02",
+      "kind": "GA",
+      "label": "GA-02 · anafe del Quincho · 2 hornallas · 4.000 kcal/h",
+      "status": "Quincho · a modelar"
+    },
+    {
+      "code": "GA-03",
+      "kind": "GA",
+      "label": "GA-03 · encendedor de parrilla · 3.000 kcal/h",
+      "status": "Quincho · parrilla a leña R34d · a modelar"
+    },
+    {
+      "code": "GA-04",
+      "kind": "GA",
+      "label": "GA-04 · encendedor del hogar a leña · 3.000 kcal/h",
+      "status": "Hogar PA (ducto CH-02) · a modelar"
+    },
+    {
+      "code": "GA-05",
+      "kind": "GA",
+      "label": "GA-05 · climatizador de pileta · 35.000 kcal/h",
+      "status": "Pileta 35,81 m³ · junto al equipo de filtrado · a modelar"
+    },
+    {
+      "code": "AL-01",
+      "kind": "AL",
+      "label": "AL-01 · zeppelin GLP 2 m³ + regulador 1ª etapa",
+      "status": "Retiro de frente sobre CA-01 · a modelar"
     }
   ],
   "totals": [
     {
-      "label": "Artefactos posibles a gas",
-      "value": 1,
+      "label": "Artefactos a gas",
+      "value": 5,
       "unit": "u",
-      "detail": "cocina dual fuel"
+      "detail": "cocina, anafe quincho, 2 encendedores, climatizador pileta"
+    },
+    {
+      "label": "Consumo total",
+      "value": 55000,
+      "unit": "kcal/h",
+      "detail": "sin simultaneidad · 4,6 kg/h GLP · 5,9 m³/h GN (medidor G6)"
+    },
+    {
+      "label": "Zeppelin GLP",
+      "value": 2,
+      "unit": "m³",
+      "detail": "≈ 840 kg útiles al 80 %"
     }
   ],
   "quantities": [],
   "notModeled": [
-    "Acometida, medidor y regulador (o zeppelin GLP)",
-    "Cañerías y llaves de paso",
-    "Ventilaciones reglamentarias de locales con artefactos",
-    "Caldera / termotanque (el piso radiante no tiene fuente modelada)"
+    "Zeppelin, reguladores y llave general",
+    "Cañería (PEAD enterrada con vaina + epoxi/termofusión de gas en la casa) y llaves de paso por artefacto",
+    "Artefactos GA-02 a GA-05",
+    "Rejillas de ventilación de la Cocina PA"
   ],
   "decisions": [
-    "Rubro sin láminas hasta definir si hay gas."
+    "Fuente GLP a granel: la planilla catastral no confirma red de gas. Cañería dimensionada para gas natural, para poder pasar a red cambiando solo el regulador.",
+    "Zeppelin 2 m³ en el retiro de frente sobre CA-01 (OK usuario): accesible al camión, ≈ 3 m de aberturas, medianeras, línea municipal y Quincho (a confirmar con el distribuidor).",
+    "Artefactos (OK usuario): cocina EQ-02 con horno a gas, anafe del Quincho, encendido de parrilla, hogar a leña con encendedor a gas, climatizador de pileta.",
+    "Losa radiante con bomba de calor (rubro Climatización): sin caldera a gas. El agua caliente sanitaria no va a gas.",
+    "Consumos estimados (kcal/h): cocina 10.000 · anafe quincho 4.000 · encendedor parrilla 3.000 · encendedor hogar 3.000 · climatizador pileta 35.000 (≈ 1°C/h sobre 35,81 m³). Total 55.000.",
+    "Ventilaciones NAG-200: Cocina PA rejilla permanente superior e inferior; Quincho abierto; encendedor del hogar descarga por CH-02; climatizador de pileta a la intemperie o en local ventilado.",
+    "Normativa: NAG-200 (ENARGAS) y normas de GLP a granel; plano y ejecución por gasista matriculado."
   ],
   "questions": [
-    "¿Hay gas natural en la calle o se usa GLP con zeppelin? ¿O la casa es todo eléctrica (recomendado si el piso radiante va con bomba de calor)?",
-    "¿Qué artefactos van a gas: cocina, caldera del piso radiante, termotanque, parrilla con encendido?",
-    "¿Dónde iría el medidor / zeppelin (retiro sobre la calle CA-01)?"
+    "Etapa 2: ¿dónde está el equipo de filtrado de la pileta (para ubicar el climatizador GA-05)?"
   ],
   "budget": {
-    "revision": "R27",
-    "note": "Partidas a cotizar sin solapes; informative = referencia (no se suma).",
+    "revision": "R25",
+    "note": "Partidas a cotizar sin solapes; informative = referencia (no se suma). Cómputo en la etapa 3.",
     "lines": [
       {
         "id": "artefactos-gas",
-        "label": "Artefactos posibles a gas",
-        "value": 1,
+        "label": "Artefactos a gas",
+        "value": 5,
         "unit": "u",
-        "detail": "cocina dual fuel; red de gas sin definir",
+        "detail": "criterio aprobado; cañería y zeppelin a computar en etapa 3",
         "informative": true
       }
     ]
