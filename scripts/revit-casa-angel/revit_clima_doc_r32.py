@@ -37,10 +37,10 @@ def collector_for(ld, x, cc, co_pts):
     if p is None: return (c.get('collector') or u'?'), u'sin ubicación'
     k = min(co_pts, key=lambda k: co_pts[k].DistanceTo(p)); return k, u'asignado por cercanía'
 
-def plan_view(doc, lvname, vname, pts, scale):
+def plan_view(doc, lvname, vname, pts, scale, pad=1.5):
     lev = next(l for l in DB.FilteredElementCollector(doc).OfClass(DB.Level) if name(l) == lvname)
     v = DB.ViewPlan.Create(doc, DB.ElementId(Int64(L.PLAN_VFT)), lev.Id); L.setup_view(doc, v); v.Name = vname; v.Scale = scale
-    pad = 1.5 / M; bx = DB.BoundingBoxXYZ()
+    pad = pad / M; bx = DB.BoundingBoxXYZ()
     bx.Min = DB.XYZ(min(p.X for p in pts) - pad, min(p.Y for p in pts) - pad, lev.Elevation - 5 / M); bx.Max = DB.XYZ(max(p.X for p in pts) + pad, max(p.Y for p in pts) + pad, lev.Elevation + 5 / M)
     v.CropBox = bx; v.CropBoxActive = True; v.CropBoxVisible = False
     v.get_Parameter(DB.BuiltInParameter.VIEWER_ANNOTATION_CROP_ACTIVE).Set(1)
@@ -89,6 +89,13 @@ def level_sheet(doc, ld, code, lvname, scale, plan, cc, curves, co_pts):
             if not c: continue
             if not seg(doc, v, c, z, style(doc, 'DI', (70, 70, 70), 3, dash)) and abs(c[5] - c[2]) > .3 / M:     # vertical riser
                 q = DB.XYZ(c[0], c[1], z); B.circle(doc, v, q, .10 / M, (70, 70, 70))
+    pre = dict((x['code'], collector_for(ld, x, cc, co_pts)[0]) for x in cis)
+    for x in plan:
+        if x['kind'] != 'CO' or x.get('level') != lvname: continue
+        p = loc(ld, x['id'])
+        if p is None: continue
+        q = DB.XYZ(p.X, p.Y, z); B.circle(doc, v, q, .18 / M, (0, 0, 0))
+        C.place(doc, v, q, u'%s · colector\n%d circuitos de este nivel' % (x['code'], len([1 for c in pre.values() if c == x['code']])), placed, crop, 'tag', z)
     for k, x in enumerate(cis):
         col = PAL[k % len(PAL)]
         for p in x['pipeIds']:
@@ -103,7 +110,7 @@ def level_sheet(doc, ld, code, lvname, scale, plan, cc, curves, co_pts):
                 u' (cercanía)' if how != u'conectividad' else u'', st), placed, crop, 'tag', z)
         rows.append((x, co, how, st)); elements.append(x['roomId'])
     for x in plan:
-        if x['kind'] not in ('CO', 'TE'): continue
+        if x['kind'] != 'TE': continue   # collectors were placed first
         p = loc(ld, x['id'])
         if p is None: continue
         lvok = x.get('level') == lvname or (x['kind'] == 'TE' and x.get('room') and any(r[0]['room'] == x['room'] for r in rows))

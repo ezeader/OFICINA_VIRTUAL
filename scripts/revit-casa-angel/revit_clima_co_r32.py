@@ -26,7 +26,7 @@ def outlets(plan, cc, sheets_circ, co):
 
 def plan_around(doc, ld, co_el, lvname, vname, plan, rows, curves):
     p = P.loc(ld, co_el['id'])
-    v, lev = P.plan_view(doc, lvname, vname, [DB.XYZ(p.X - .7 / M, p.Y - .7 / M, 0), DB.XYZ(p.X + .7 / M, p.Y + .7 / M, 0)], 20)   # + 1,5 m pad of plan_view
+    v, lev = P.plan_view(doc, lvname, vname, [DB.XYZ(p.X - .7 / M, p.Y - .7 / M, 0), DB.XYZ(p.X + .7 / M, p.Y + .7 / M, 0)], 20, pad=.3)   # crop ±1,0 m: cabinet and first metres of each outlet
     v.DetailLevel = DB.ViewDetailLevel.Fine; z = lev.Elevation; cr = C.crop_of(v); placed = []
     inside = lambda c: any(cr[0] < q[0] < cr[2] and cr[1] < q[1] < cr[3] for q in ((c[0], c[1]), (c[3], c[4])))
     for k, (sn, x, c, _) in enumerate(rows):
@@ -105,8 +105,11 @@ def sheet(doc, ld, co, plan, cc, curves, circ):
     rooms = set(x['room'] for _, x, _, _ in rows)
     tes = [u'%s · %s' % (x['code'], R1.clean(x['room'])) for x in plan if x['kind'] == 'TE' and x.get('room') in rooms]
     lvn = co_el['level']; dis = [x for x in plan if x['kind'] == 'DI']
-    risers = [u'%s · %d tramos verticales' % (x['code'], len([1 for pid in x['pipeIds'] for cv in [curves.get(str(pid))] if cv and abs(cv[5] - cv[2]) > .3 / M and abs(cv[0] - cv[3]) + abs(cv[1] - cv[4]) < .05 / M]))
-              for x in dis]
+    cp = P.loc(ld, co_el['id']); risers = []   # only risers arriving at this collector: vertical DI segments within 1,5 m of it
+    for x in dis:
+        n = len([1 for pid in x['pipeIds'] for cv in [curves.get(str(pid))] if cv and abs(cv[5] - cv[2]) > .3 / M and abs(cv[0] - cv[3]) + abs(cv[1] - cv[4]) < .05 / M
+                 and math.hypot(cv[0] - cp.X, cv[1] - cp.Y) < 1.5 / M])
+        if n: risers.append(u'%s · %d tramos verticales junto al colector' % (x['code'], n))
     its = [plan_around(doc, ld, co_el, lvn, PRE + co + ' PLANTA', plan, rows, curves), elevation(doc, ld, co_el, ga_el, PRE + co + ' ALZADO', rows), scheme(doc, co_el, rows, tes, risers, PRE + co + ' ESQUEMA')]
     old = list(L.SCALES); L.SCALES[:] = [10, 20, 25]
     try: s = S.lay_sheet(doc, 'CLI-' + co, u'Colector %s · detalle' % co, u'%s · %s · %d circuitos · planta, alzado con gabinete y esquema de salidas' % (co_el['label'], lvn, len(rows)), its, P.FOOT, plan_region=True, rubro=P.RUBRO, sheet_name=u'Climatización · ' + co)

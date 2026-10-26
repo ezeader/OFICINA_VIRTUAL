@@ -1,6 +1,6 @@
 {
   "title": "Climatización (piso radiante)",
-  "summary": "Climatización R32 (etapas 1 y 2): detalle de los colectores CLI-CO-N / CLI-CO-S (planta 1:20, alzado con gabinete, esquema de salidas S01..) y plantas CLI-P-PB/PA/PE con el trazado de cada serpentín por circuito y el colector que lo alimenta (14 circuitos a CO-N, 12 a CO-S; 6 asignados por cercanía). Láminas R19 como previas.",
+  "summary": "Climatización R32 (etapas 1, 2 y 3): fichas por local CLI-F-CI-xx (planta 1:20 con el serpentín, ml, m², densidad, paso equivalente, colector y salida, termostato, estado); detalle de los colectores CLI-CO-N / CLI-CO-S (planta 1:20, alzado con gabinete, esquema de salidas S01..) y plantas CLI-P-PB/PA/PE con el trazado de cada serpentín por circuito y el colector que lo alimenta (14 circuitos a CO-N, 12 a CO-S; 6 asignados por cercanía). Láminas R19 como previas.",
   "model": "Casa-Angel-piloto-documentacion.rvt",
   "readAt": "2026-10-23T18:07:05.751000Z",
   "revision": "R32",
@@ -23,8 +23,9 @@
       "elementId": null,
       "elementKind": null,
       "outlets": null,
+      "circuit": null,
       "note": "R32 · archivo Casa-Angel-DOC-Climatizacion.rvt",
-      "sheetId": "223338",
+      "sheetId": "227158",
       "pdf": "/casa-angel/rubros/climatizacion/CLI-00.pdf",
       "image": "/casa-angel/rubros/climatizacion/CLI-00.svg.gz",
       "preview": "/casa-angel/rubros/climatizacion/CLI-00-preview.png",
@@ -35,9 +36,9 @@
       "number": "CLI-CO-N",
       "title": "Colector CO-N · detalle",
       "level": "02. Planta Entrepiso",
-      "sector": "Colector",
-      "kind": "element",
-      "element": "CO-N",
+      "sector": "2 · Colectores",
+      "kind": "general",
+      "element": null,
       "elementId": "2243525",
       "elementKind": "CO",
       "outlets": [
@@ -140,27 +141,28 @@
           "method": "asignado por cercanía"
         }
       ],
+      "circuit": null,
       "note": "R32 · archivo Casa-Angel-DOC-Climatizacion.rvt",
-      "sheetId": "223082",
+      "sheetId": "226929",
       "pdf": "/casa-angel/rubros/climatizacion/CLI-CO-N.pdf",
       "image": "/casa-angel/rubros/climatizacion/CLI-CO-N.svg.gz",
       "preview": "/casa-angel/rubros/climatizacion/CLI-CO-N-preview.png",
       "thumbnail": "/casa-angel/rubros/climatizacion/CLI-CO-N.png",
       "views": [
         {
-          "id": "222744",
+          "id": "226684",
           "name": "CO-N · planta",
-          "label": "CO-N · planta   1:20",
-          "scale": 20,
+          "label": "CO-N · planta   1:10",
+          "scale": 10,
           "kind": "plan",
           "sector": "02. Planta Entrepiso",
           "roomLabel": "02. Planta Entrepiso",
-          "image": "/casa-angel/rubros/climatizacion/CLI-CO-N-view-222744.svg.gz",
+          "image": "/casa-angel/rubros/climatizacion/CLI-CO-N-view-226684.svg.gz",
           "region": [
-            0.1248,
-            0.3163,
-            0.3717,
-            0.6658
+            0.1155,
+            0.3316,
+            0.3408,
+            0.6505
           ],
           "tags": [
             "CO-N"
@@ -172,28 +174,28 @@
               "elementId": "2243525",
               "label": "CO-N · Colector Norte · SM",
               "box": [
-                0.3865,
-                0.4995,
-                0.5618,
-                0.5257
+                0.2512,
+                0.4988,
+                0.6354,
+                0.5564
               ]
             }
           ]
         },
         {
-          "id": "222944",
+          "id": "226791",
           "name": "CO-N · alzado frontal con gabinete",
           "label": "CO-N · alzado frontal con gabinete   1:20",
           "scale": 20,
           "kind": "section",
           "sector": "Colector",
           "roomLabel": "Colector",
-          "image": "/casa-angel/rubros/climatizacion/CLI-CO-N-view-222944.svg.gz",
+          "image": "/casa-angel/rubros/climatizacion/CLI-CO-N-view-226791.svg.gz",
           "region": [
-            0.5303,
-            0.2131,
-            0.6367,
-            0.3145
+            0.5102,
+            0.2146,
+            0.6165,
+            0.316
           ],
           "tags": [
             "CO-N",
@@ -241,19 +243,19 @@
           ]
         },
         {
-          "id": "222995",
+          "id": "226842",
           "name": "CO-N · esquema de salidas",
           "label": "CO-N · esquema de salidas   1:25",
           "scale": 25,
           "kind": "detail",
           "sector": "Detalles",
           "roomLabel": "Detalles",
-          "image": "/casa-angel/rubros/climatizacion/CLI-CO-N-view-222995.svg.gz",
+          "image": "/casa-angel/rubros/climatizacion/CLI-CO-N-view-226842.svg.gz",
           "region": [
-            0.4217,
-            0.4068,
-            0.7452,
-            0.7668
+            0.4016,
+            0.4123,
+            0.7251,
+            0.7644
           ],
           "tags": [
             "CI-PB-12",
@@ -280,9 +282,9 @@
       "number": "CLI-CO-S",
       "title": "Colector CO-S · detalle",
       "level": "01. Planta Alta",
-      "sector": "Colector",
-      "kind": "element",
-      "element": "CO-S",
+      "sector": "2 · Colectores",
+      "kind": "general",
+      "element": null,
       "elementId": "2263387",
       "elementKind": "CO",
       "outlets": [
@@ -371,27 +373,28 @@
           "method": "asignado por cercanía"
         }
       ],
+      "circuit": null,
       "note": "R32 · archivo Casa-Angel-DOC-Climatizacion.rvt",
-      "sheetId": "223314",
+      "sheetId": "227134",
       "pdf": "/casa-angel/rubros/climatizacion/CLI-CO-S.pdf",
       "image": "/casa-angel/rubros/climatizacion/CLI-CO-S.svg.gz",
       "preview": "/casa-angel/rubros/climatizacion/CLI-CO-S-preview.png",
       "thumbnail": "/casa-angel/rubros/climatizacion/CLI-CO-S.png",
       "views": [
         {
-          "id": "223106",
+          "id": "226953",
           "name": "CO-S · planta",
-          "label": "CO-S · planta   1:20",
-          "scale": 20,
+          "label": "CO-S · planta   1:10",
+          "scale": 10,
           "kind": "plan",
           "sector": "01. Planta Alta",
           "roomLabel": "01. Planta Alta",
-          "image": "/casa-angel/rubros/climatizacion/CLI-CO-S-view-223106.svg.gz",
+          "image": "/casa-angel/rubros/climatizacion/CLI-CO-S-view-226953.svg.gz",
           "region": [
-            0.1248,
-            0.3163,
-            0.3717,
-            0.6658
+            0.1155,
+            0.3316,
+            0.3408,
+            0.6505
           ],
           "tags": [
             "CO-S"
@@ -403,28 +406,28 @@
               "elementId": "2263387",
               "label": "CO-S · Colector Sur · Sala de Maquinas",
               "box": [
-                0.4743,
-                0.3865,
-                0.5005,
-                0.5618
+                0.4436,
+                0.2512,
+                0.5012,
+                0.6354
               ]
             }
           ]
         },
         {
-          "id": "223188",
+          "id": "227008",
           "name": "CO-S · alzado frontal con gabinete",
           "label": "CO-S · alzado frontal con gabinete   1:20",
           "scale": 20,
           "kind": "section",
           "sector": "Colector",
           "roomLabel": "Colector",
-          "image": "/casa-angel/rubros/climatizacion/CLI-CO-S-view-223188.svg.gz",
+          "image": "/casa-angel/rubros/climatizacion/CLI-CO-S-view-227008.svg.gz",
           "region": [
-            0.5303,
-            0.2161,
-            0.6367,
-            0.3175
+            0.5102,
+            0.2192,
+            0.6165,
+            0.3206
           ],
           "tags": [
             "CO-S",
@@ -472,19 +475,19 @@
           ]
         },
         {
-          "id": "223235",
+          "id": "227055",
           "name": "CO-S · esquema de salidas",
           "label": "CO-S · esquema de salidas   1:25",
           "scale": 25,
           "kind": "detail",
           "sector": "Detalles",
           "roomLabel": "Detalles",
-          "image": "/casa-angel/rubros/climatizacion/CLI-CO-S-view-223235.svg.gz",
+          "image": "/casa-angel/rubros/climatizacion/CLI-CO-S-view-227055.svg.gz",
           "region": [
-            0.446,
-            0.4159,
-            0.7209,
-            0.7638
+            0.4259,
+            0.4268,
+            0.7008,
+            0.7591
           ],
           "tags": [
             "CI-PA-01",
@@ -506,31 +509,2515 @@
       ]
     },
     {
+      "number": "CLI-F-CI-PA-01",
+      "title": "Ficha CI-PA-01 · Baño PA",
+      "level": "01. Planta Alta",
+      "sector": "3 · Fichas por local",
+      "kind": "element",
+      "element": "CI-PA-01",
+      "elementId": "870167",
+      "elementKind": "CI",
+      "outlets": null,
+      "circuit": {
+        "pitch_m": 0.174,
+        "status": "completo",
+        "thermostats": [],
+        "outlet": "S01",
+        "collector": "CO-S",
+        "method": "conectividad"
+      },
+      "note": "R32 · archivo Casa-Angel-DOC-Climatizacion.rvt",
+      "sheetId": "223553",
+      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-01.pdf",
+      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-01.svg.gz",
+      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-01-preview.png",
+      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-01.png",
+      "views": [
+        {
+          "id": "223512",
+          "name": "CI-PA-01 · planta",
+          "label": "CI-PA-01 · planta   1:25",
+          "scale": 25,
+          "kind": "plan",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-01-view-223512.svg.gz",
+          "region": [
+            0.1289,
+            0.3399,
+            0.5687,
+            0.6423
+          ],
+          "tags": [
+            "CI-PA-01"
+          ],
+          "dimensions": [
+            {
+              "label": "Serpentín extensión X",
+              "values_m": [
+                8.3593
+              ],
+              "associative": false
+            },
+            {
+              "label": "Serpentín extensión Y",
+              "values_m": [
+                3.1292
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "CI-PA-01",
+              "elementId": "870167",
+              "label": "CI-PA-01 · Baño PA · 33,35 ml · 5,74 m/m²",
+              "box": [
+                0.3859,
+                0.2446,
+                0.62,
+                0.8373
+              ],
+              "room": true
+            }
+          ]
+        },
+        {
+          "id": "223542",
+          "name": "Datos del circuito",
+          "label": "Datos del circuito   1:10",
+          "scale": 10,
+          "kind": "detail",
+          "sector": "Detalles",
+          "roomLabel": "Detalles",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-01-view-223542.svg.gz",
+          "region": [
+            0.6216,
+            0.3529,
+            0.7465,
+            0.6292
+          ],
+          "tags": [],
+          "dimensions": [],
+          "elements": []
+        }
+      ]
+    },
+    {
+      "number": "CLI-F-CI-PA-02",
+      "title": "Ficha CI-PA-02 · Cava",
+      "level": "01. Planta Alta",
+      "sector": "3 · Fichas por local",
+      "kind": "element",
+      "element": "CI-PA-02",
+      "elementId": "863864",
+      "elementKind": "CI",
+      "outlets": null,
+      "circuit": {
+        "pitch_m": 0.383,
+        "status": "incompleto",
+        "thermostats": [
+          "TE-01"
+        ],
+        "outlet": "S05",
+        "collector": "CO-N",
+        "method": "conectividad"
+      },
+      "note": "R32 · archivo Casa-Angel-DOC-Climatizacion.rvt",
+      "sheetId": "223628",
+      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-02.pdf",
+      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-02.svg.gz",
+      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-02-preview.png",
+      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-02.png",
+      "views": [
+        {
+          "id": "223575",
+          "name": "CI-PA-02 · planta",
+          "label": "CI-PA-02 · planta   1:10",
+          "scale": 10,
+          "kind": "plan",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-02-view-223575.svg.gz",
+          "region": [
+            0.1157,
+            0.2153,
+            0.5819,
+            0.7668
+          ],
+          "tags": [
+            "CI-PA-02"
+          ],
+          "dimensions": [
+            {
+              "label": "Serpentín extensión X",
+              "values_m": [
+                2.629
+              ],
+              "associative": false
+            },
+            {
+              "label": "Serpentín extensión Y",
+              "values_m": [
+                1.9193
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "CI-PA-02",
+              "elementId": "863864",
+              "label": "CI-PA-02 · Cava · 22,05 ml · 2,61 m/m²",
+              "box": [
+                0.0928,
+                0.0391,
+                0.8362,
+                0.7888
+              ],
+              "room": true
+            }
+          ]
+        },
+        {
+          "id": "223617",
+          "name": "Datos del circuito",
+          "label": "Datos del circuito   1:10",
+          "scale": 10,
+          "kind": "detail",
+          "sector": "Detalles",
+          "roomLabel": "Detalles",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-02-view-223617.svg.gz",
+          "region": [
+            0.6216,
+            0.3529,
+            0.7465,
+            0.6292
+          ],
+          "tags": [],
+          "dimensions": [],
+          "elements": []
+        }
+      ]
+    },
+    {
+      "number": "CLI-F-CI-PA-03",
+      "title": "Ficha CI-PA-03 · Cocina",
+      "level": "01. Planta Alta",
+      "sector": "3 · Fichas por local",
+      "kind": "element",
+      "element": "CI-PA-03",
+      "elementId": "877992",
+      "elementKind": "CI",
+      "outlets": null,
+      "circuit": {
+        "pitch_m": 0.285,
+        "status": "incompleto",
+        "thermostats": [
+          "TE-09"
+        ],
+        "outlet": "S02",
+        "collector": "CO-N",
+        "method": "conectividad"
+      },
+      "note": "R32 · archivo Casa-Angel-DOC-Climatizacion.rvt",
+      "sheetId": "223739",
+      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-03.pdf",
+      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-03.svg.gz",
+      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-03-preview.png",
+      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-03.png",
+      "views": [
+        {
+          "id": "223650",
+          "name": "CI-PA-03 · planta",
+          "label": "CI-PA-03 · planta   1:20",
+          "scale": 20,
+          "kind": "plan",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-03-view-223650.svg.gz",
+          "region": [
+            0.1273,
+            0.1966,
+            0.4496,
+            0.7856
+          ],
+          "tags": [
+            "CI-PA-03"
+          ],
+          "dimensions": [
+            {
+              "label": "Serpentín extensión X",
+              "values_m": [
+                4.195
+              ],
+              "associative": false
+            },
+            {
+              "label": "Serpentín extensión Y",
+              "values_m": [
+                5.929
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "CI-PA-03",
+              "elementId": "877992",
+              "label": "CI-PA-03 · Cocina · 73,20 ml · 3,51 m/m²",
+              "box": [
+                0.109,
+                0.3653,
+                0.9862,
+                0.8983
+              ],
+              "room": true
+            }
+          ]
+        },
+        {
+          "id": "223728",
+          "name": "Datos del circuito",
+          "label": "Datos del circuito   1:10",
+          "scale": 10,
+          "kind": "detail",
+          "sector": "Detalles",
+          "roomLabel": "Detalles",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-03-view-223728.svg.gz",
+          "region": [
+            0.5612,
+            0.3529,
+            0.6862,
+            0.6292
+          ],
+          "tags": [],
+          "dimensions": [],
+          "elements": []
+        }
+      ]
+    },
+    {
+      "number": "CLI-F-CI-PA-04",
+      "title": "Ficha CI-PA-04 · Comedor",
+      "level": "01. Planta Alta",
+      "sector": "3 · Fichas por local",
+      "kind": "element",
+      "element": "CI-PA-04",
+      "elementId": "869397",
+      "elementKind": "CI",
+      "outlets": null,
+      "circuit": {
+        "pitch_m": 0.147,
+        "status": "completo",
+        "thermostats": [
+          "TE-10"
+        ],
+        "outlet": "S07",
+        "collector": "CO-N",
+        "method": "conectividad"
+      },
+      "note": "R32 · archivo Casa-Angel-DOC-Climatizacion.rvt",
+      "sheetId": "223830",
+      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-04.pdf",
+      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-04.svg.gz",
+      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-04-preview.png",
+      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-04.png",
+      "views": [
+        {
+          "id": "223761",
+          "name": "CI-PA-04 · planta",
+          "label": "CI-PA-04 · planta   1:50",
+          "scale": 50,
+          "kind": "plan",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-04-view-223761.svg.gz",
+          "region": [
+            0.1206,
+            0.3313,
+            0.2551,
+            0.6508
+          ],
+          "tags": [
+            "CI-PA-04"
+          ],
+          "dimensions": [
+            {
+              "label": "Serpentín extensión X",
+              "values_m": [
+                4.2
+              ],
+              "associative": false
+            },
+            {
+              "label": "Serpentín extensión Y",
+              "values_m": [
+                8.4175
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "CI-PA-04",
+              "elementId": "869397",
+              "label": "CI-PA-04 · Comedor · 157,95 ml · 6,79 m/m²",
+              "box": [
+                0.1381,
+                0.0953,
+                0.9661,
+                0.5563
+              ],
+              "room": true
+            }
+          ]
+        },
+        {
+          "id": "223819",
+          "name": "Datos del circuito",
+          "label": "Datos del circuito   1:10",
+          "scale": 10,
+          "kind": "detail",
+          "sector": "Detalles",
+          "roomLabel": "Detalles",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-04-view-223819.svg.gz",
+          "region": [
+            0.4606,
+            0.3529,
+            0.5856,
+            0.6292
+          ],
+          "tags": [],
+          "dimensions": [],
+          "elements": []
+        }
+      ]
+    },
+    {
+      "number": "CLI-F-CI-PA-05",
+      "title": "Ficha CI-PA-05 · Living",
+      "level": "01. Planta Alta",
+      "sector": "3 · Fichas por local",
+      "kind": "element",
+      "element": "CI-PA-05",
+      "elementId": "877995",
+      "elementKind": "CI",
+      "outlets": null,
+      "circuit": {
+        "pitch_m": 1.087,
+        "status": "incompleto",
+        "thermostats": [],
+        "outlet": "S08",
+        "collector": "CO-N",
+        "method": "conectividad"
+      },
+      "note": "R32 · archivo Casa-Angel-DOC-Climatizacion.rvt",
+      "sheetId": "223889",
+      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-05.pdf",
+      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-05.svg.gz",
+      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-05-preview.png",
+      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-05.png",
+      "views": [
+        {
+          "id": "223852",
+          "name": "CI-PA-05 · planta",
+          "label": "CI-PA-05 · planta   1:20",
+          "scale": 20,
+          "kind": "plan",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-05-view-223852.svg.gz",
+          "region": [
+            0.1325,
+            0.3622,
+            0.4042,
+            0.6199
+          ],
+          "tags": [
+            "CI-PA-05"
+          ],
+          "dimensions": [
+            {
+              "label": "Serpentín extensión X",
+              "values_m": [
+                3.258
+              ],
+              "associative": false
+            },
+            {
+              "label": "Serpentín extensión Y",
+              "values_m": [
+                1.6
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "CI-PA-05",
+              "elementId": "877995",
+              "label": "CI-PA-05 · Living · 14,92 ml · 0,92 m/m²",
+              "box": [
+                0.0,
+                0.0,
+                0.8982,
+                0.7675
+              ],
+              "room": true
+            }
+          ]
+        },
+        {
+          "id": "223878",
+          "name": "Datos del circuito",
+          "label": "Datos del circuito   1:10",
+          "scale": 10,
+          "kind": "detail",
+          "sector": "Detalles",
+          "roomLabel": "Detalles",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-05-view-223878.svg.gz",
+          "region": [
+            0.5411,
+            0.3529,
+            0.6661,
+            0.6292
+          ],
+          "tags": [],
+          "dimensions": [],
+          "elements": []
+        }
+      ]
+    },
+    {
+      "number": "CLI-F-CI-PA-06",
+      "title": "Ficha CI-PA-06 · Playroom",
+      "level": "01. Planta Alta",
+      "sector": "3 · Fichas por local",
+      "kind": "element",
+      "element": "CI-PA-06",
+      "elementId": "870164",
+      "elementKind": "CI",
+      "outlets": null,
+      "circuit": {
+        "pitch_m": 0.21,
+        "status": "completo",
+        "thermostats": [
+          "TE-11"
+        ],
+        "outlet": "S02",
+        "collector": "CO-S",
+        "method": "conectividad"
+      },
+      "note": "R32 · archivo Casa-Angel-DOC-Climatizacion.rvt",
+      "sheetId": "223999",
+      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-06.pdf",
+      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-06.svg.gz",
+      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-06-preview.png",
+      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-06.png",
+      "views": [
+        {
+          "id": "223911",
+          "name": "CI-PA-06 · planta",
+          "label": "CI-PA-06 · planta   1:25",
+          "scale": 25,
+          "kind": "plan",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-06-view-223911.svg.gz",
+          "region": [
+            0.1454,
+            0.1905,
+            0.7533,
+            0.5462
+          ],
+          "tags": [
+            "CI-PA-06"
+          ],
+          "dimensions": [
+            {
+              "label": "Serpentín extensión X",
+              "values_m": [
+                12.2484
+              ],
+              "associative": false
+            },
+            {
+              "label": "Serpentín extensión Y",
+              "values_m": [
+                4.0002
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "CI-PA-06",
+              "elementId": "870164",
+              "label": "CI-PA-06 · Playroom · 137,87 ml · 4,76 m/m²",
+              "box": [
+                0.3431,
+                0.1176,
+                0.9052,
+                0.8617
+              ],
+              "room": true
+            }
+          ]
+        },
+        {
+          "id": "223988",
+          "name": "Datos del circuito",
+          "label": "Datos del circuito   1:20",
+          "scale": 20,
+          "kind": "detail",
+          "sector": "Detalles",
+          "roomLabel": "Detalles",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-06-view-223988.svg.gz",
+          "region": [
+            0.3869,
+            0.6116,
+            0.5119,
+            0.7711
+          ],
+          "tags": [],
+          "dimensions": [],
+          "elements": []
+        }
+      ]
+    },
+    {
+      "number": "CLI-F-CI-PA-07",
+      "title": "Ficha CI-PA-07 · Puente",
+      "level": "01. Planta Alta",
+      "sector": "3 · Fichas por local",
+      "kind": "element",
+      "element": "CI-PA-07",
+      "elementId": "887814",
+      "elementKind": "CI",
+      "outlets": null,
+      "circuit": {
+        "pitch_m": 9.091,
+        "status": "incompleto",
+        "thermostats": [],
+        "outlet": "S06",
+        "collector": "CO-S",
+        "method": "asignado por cercanía"
+      },
+      "note": "R32 · archivo Casa-Angel-DOC-Climatizacion.rvt",
+      "sheetId": "224053",
+      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-07.pdf",
+      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-07.svg.gz",
+      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-07-preview.png",
+      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-07.png",
+      "views": [
+        {
+          "id": "224021",
+          "name": "CI-PA-07 · planta",
+          "label": "CI-PA-07 · planta   1:10",
+          "scale": 10,
+          "kind": "plan",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-07-view-224021.svg.gz",
+          "region": [
+            0.1256,
+            0.2605,
+            0.4513,
+            0.7216
+          ],
+          "tags": [
+            "CI-PA-07"
+          ],
+          "dimensions": [
+            {
+              "label": "Serpentín extensión X",
+              "values_m": [
+                1.329
+              ],
+              "associative": false
+            },
+            {
+              "label": "Serpentín extensión Y",
+              "values_m": [
+                1.3288
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "CI-PA-07",
+              "elementId": "887814",
+              "label": "CI-PA-07 · Puente · 0,23 ml · 0,11 m/m²",
+              "box": [
+                0.1133,
+                0.1133,
+                0.7775,
+                0.7775
+              ],
+              "room": true
+            }
+          ]
+        },
+        {
+          "id": "224042",
+          "name": "Datos del circuito",
+          "label": "Datos del circuito   1:10",
+          "scale": 10,
+          "kind": "detail",
+          "sector": "Detalles",
+          "roomLabel": "Detalles",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-07-view-224042.svg.gz",
+          "region": [
+            0.5612,
+            0.3529,
+            0.6862,
+            0.6292
+          ],
+          "tags": [],
+          "dimensions": [],
+          "elements": []
+        }
+      ]
+    },
+    {
+      "number": "CLI-F-CI-PA-08",
+      "title": "Ficha CI-PA-08 · Sala de Maquinas",
+      "level": "01. Planta Alta",
+      "sector": "3 · Fichas por local",
+      "kind": "element",
+      "element": "CI-PA-08",
+      "elementId": "892788",
+      "elementKind": "CI",
+      "outlets": null,
+      "circuit": {
+        "pitch_m": 0.289,
+        "status": "incompleto",
+        "thermostats": [],
+        "outlet": "S07",
+        "collector": "CO-S",
+        "method": "conectividad"
+      },
+      "note": "R32 · archivo Casa-Angel-DOC-Climatizacion.rvt",
+      "sheetId": "224114",
+      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-08.pdf",
+      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-08.svg.gz",
+      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-08-preview.png",
+      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-08.png",
+      "views": [
+        {
+          "id": "224075",
+          "name": "CI-PA-08 · planta",
+          "label": "CI-PA-08 · planta   1:20",
+          "scale": 20,
+          "kind": "plan",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-08-view-224075.svg.gz",
+          "region": [
+            0.1229,
+            0.3944,
+            0.4541,
+            0.5877
+          ],
+          "tags": [
+            "CI-PA-08"
+          ],
+          "dimensions": [
+            {
+              "label": "Serpentín extensión X",
+              "values_m": [
+                4.3593
+              ],
+              "associative": false
+            },
+            {
+              "label": "Serpentín extensión Y",
+              "values_m": [
+                0.758
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "CI-PA-08",
+              "elementId": "892788",
+              "label": "CI-PA-08 · Sala de Maquinas · 16,57 ml · 3,46 m/m²",
+              "box": [
+                0.1472,
+                0.0639,
+                0.6208,
+                0.7181
+              ],
+              "room": true
+            }
+          ]
+        },
+        {
+          "id": "224103",
+          "name": "Datos del circuito",
+          "label": "Datos del circuito   1:10",
+          "scale": 10,
+          "kind": "detail",
+          "sector": "Detalles",
+          "roomLabel": "Detalles",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-08-view-224103.svg.gz",
+          "region": [
+            0.5612,
+            0.3529,
+            0.6862,
+            0.6292
+          ],
+          "tags": [],
+          "dimensions": [],
+          "elements": []
+        }
+      ]
+    },
+    {
+      "number": "CLI-F-CI-PA-09",
+      "title": "Ficha CI-PA-09 · Sala de TV",
+      "level": "01. Planta Alta",
+      "sector": "3 · Fichas por local",
+      "kind": "element",
+      "element": "CI-PA-09",
+      "elementId": "864264",
+      "elementKind": "CI",
+      "outlets": null,
+      "circuit": {
+        "pitch_m": 0.203,
+        "status": "completo",
+        "thermostats": [],
+        "outlet": "S05",
+        "collector": "CO-S",
+        "method": "conectividad"
+      },
+      "note": "R32 · archivo Casa-Angel-DOC-Climatizacion.rvt",
+      "sheetId": "224205",
+      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-09.pdf",
+      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-09.svg.gz",
+      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-09-preview.png",
+      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-09.png",
+      "views": [
+        {
+          "id": "224136",
+          "name": "CI-PA-09 · planta",
+          "label": "CI-PA-09 · planta   1:20",
+          "scale": 20,
+          "kind": "plan",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-09-view-224136.svg.gz",
+          "region": [
+            0.1255,
+            0.2352,
+            0.4112,
+            0.7469
+          ],
+          "tags": [
+            "CI-PA-09"
+          ],
+          "dimensions": [
+            {
+              "label": "Serpentín extensión X",
+              "values_m": [
+                3.5193
+              ],
+              "associative": false
+            },
+            {
+              "label": "Serpentín extensión Y",
+              "values_m": [
+                4.919
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "CI-PA-09",
+              "elementId": "864264",
+              "label": "CI-PA-09 · Sala de TV · 73,70 ml · 4,92 m/m²",
+              "box": [
+                0.1706,
+                0.1095,
+                0.8709,
+                0.7155
+              ],
+              "room": true
+            }
+          ]
+        },
+        {
+          "id": "224194",
+          "name": "Datos del circuito",
+          "label": "Datos del circuito   1:10",
+          "scale": 10,
+          "kind": "detail",
+          "sector": "Detalles",
+          "roomLabel": "Detalles",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-09-view-224194.svg.gz",
+          "region": [
+            0.5411,
+            0.3529,
+            0.6661,
+            0.6292
+          ],
+          "tags": [],
+          "dimensions": [],
+          "elements": []
+        }
+      ]
+    },
+    {
+      "number": "CLI-F-CI-PA-10",
+      "title": "Ficha CI-PA-10 · Toilette",
+      "level": "01. Planta Alta",
+      "sector": "3 · Fichas por local",
+      "kind": "element",
+      "element": "CI-PA-10",
+      "elementId": "863692",
+      "elementKind": "CI",
+      "outlets": null,
+      "circuit": {
+        "pitch_m": 0.578,
+        "status": "incompleto",
+        "thermostats": [],
+        "outlet": "S03",
+        "collector": "CO-N",
+        "method": "conectividad"
+      },
+      "note": "R32 · archivo Casa-Angel-DOC-Climatizacion.rvt",
+      "sheetId": "224267",
+      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-10.pdf",
+      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-10.svg.gz",
+      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-10-preview.png",
+      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-10.png",
+      "views": [
+        {
+          "id": "224227",
+          "name": "CI-PA-10 · planta",
+          "label": "CI-PA-10 · planta   1:20",
+          "scale": 20,
+          "kind": "plan",
+          "sector": "01. Planta Alta",
+          "roomLabel": "01. Planta Alta",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-10-view-224227.svg.gz",
+          "region": [
+            0.1149,
+            0.3267,
+            0.3011,
+            0.6555
+          ],
+          "tags": [
+            "CI-PA-10"
+          ],
+          "dimensions": [
+            {
+              "label": "Serpentín extensión X",
+              "values_m": [
+                1.6773
+              ],
+              "associative": false
+            },
+            {
+              "label": "Serpentín extensión Y",
+              "values_m": [
+                2.5287
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "CI-PA-10",
+              "elementId": "863692",
+              "label": "CI-PA-10 · Toilette · 8,84 ml · 1,73 m/m²",
+              "box": [
+                0.22,
+                0.0423,
+                0.78,
+                0.6713
+              ],
+              "room": true
+            }
+          ]
+        },
+        {
+          "id": "224256",
+          "name": "Datos del circuito",
+          "label": "Datos del circuito   1:10",
+          "scale": 10,
+          "kind": "detail",
+          "sector": "Detalles",
+          "roomLabel": "Detalles",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-10-view-224256.svg.gz",
+          "region": [
+            0.4808,
+            0.3529,
+            0.6057,
+            0.6292
+          ],
+          "tags": [],
+          "dimensions": [],
+          "elements": []
+        }
+      ]
+    },
+    {
+      "number": "CLI-F-CI-PB-01",
+      "title": "Ficha CI-PB-01 · Baño A Inv.",
+      "level": "00. Planta Baja",
+      "sector": "3 · Fichas por local",
+      "kind": "element",
+      "element": "CI-PB-01",
+      "elementId": "780810",
+      "elementKind": "CI",
+      "outlets": null,
+      "circuit": {
+        "pitch_m": 0.746,
+        "status": "incompleto",
+        "thermostats": [
+          "TE-06"
+        ],
+        "outlet": "S08",
+        "collector": "CO-S",
+        "method": "conectividad"
+      },
+      "note": "R32 · archivo Casa-Angel-DOC-Climatizacion.rvt",
+      "sheetId": "224335",
+      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-01.pdf",
+      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-01.svg.gz",
+      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-01-preview.png",
+      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-01.png",
+      "views": [
+        {
+          "id": "224289",
+          "name": "CI-PB-01 · planta",
+          "label": "CI-PB-01 · planta   1:10",
+          "scale": 10,
+          "kind": "plan",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-01-view-224289.svg.gz",
+          "region": [
+            0.1285,
+            0.2796,
+            0.5289,
+            0.7025
+          ],
+          "tags": [
+            "CI-PB-01"
+          ],
+          "dimensions": [
+            {
+              "label": "Serpentín extensión X",
+              "values_m": [
+                2.02
+              ],
+              "associative": false
+            },
+            {
+              "label": "Serpentín extensión Y",
+              "values_m": [
+                1.079
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "CI-PB-01",
+              "elementId": "780810",
+              "label": "CI-PB-01 · Baño A Inv. · 7,10 ml · 1,34 m/m²",
+              "box": [
+                0.0975,
+                0.2861,
+                1.0,
+                0.804
+              ],
+              "room": true
+            }
+          ]
+        },
+        {
+          "id": "224324",
+          "name": "Datos del circuito",
+          "label": "Datos del circuito   1:10",
+          "scale": 10,
+          "kind": "detail",
+          "sector": "Detalles",
+          "roomLabel": "Detalles",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-01-view-224324.svg.gz",
+          "region": [
+            0.6014,
+            0.3529,
+            0.7264,
+            0.6292
+          ],
+          "tags": [],
+          "dimensions": [],
+          "elements": []
+        }
+      ]
+    },
+    {
+      "number": "CLI-F-CI-PB-02",
+      "title": "Ficha CI-PB-02 · Baño B Inv.",
+      "level": "00. Planta Baja",
+      "sector": "3 · Fichas por local",
+      "kind": "element",
+      "element": "CI-PB-02",
+      "elementId": "780813",
+      "elementKind": "CI",
+      "outlets": null,
+      "circuit": {
+        "pitch_m": 0.787,
+        "status": "incompleto",
+        "thermostats": [
+          "TE-07"
+        ],
+        "outlet": "S11",
+        "collector": "CO-S",
+        "method": "asignado por cercanía"
+      },
+      "note": "R32 · archivo Casa-Angel-DOC-Climatizacion.rvt",
+      "sheetId": "224402",
+      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-02.pdf",
+      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-02.svg.gz",
+      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-02-preview.png",
+      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-02.png",
+      "views": [
+        {
+          "id": "224357",
+          "name": "CI-PB-02 · planta",
+          "label": "CI-PB-02 · planta   1:10",
+          "scale": 10,
+          "kind": "plan",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-02-view-224357.svg.gz",
+          "region": [
+            0.1323,
+            0.2857,
+            0.5251,
+            0.6965
+          ],
+          "tags": [
+            "CI-PB-02"
+          ],
+          "dimensions": [
+            {
+              "label": "Serpentín extensión X",
+              "values_m": [
+                1.949
+              ],
+              "associative": false
+            },
+            {
+              "label": "Serpentín extensión Y",
+              "values_m": [
+                1.0
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "CI-PB-02",
+              "elementId": "780813",
+              "label": "CI-PB-02 · Baño B Inv. · 6,90 ml · 1,27 m/m²",
+              "box": [
+                0.0799,
+                0.2651,
+                1.0,
+                0.7983
+              ],
+              "room": true
+            }
+          ]
+        },
+        {
+          "id": "224391",
+          "name": "Datos del circuito",
+          "label": "Datos del circuito   1:10",
+          "scale": 10,
+          "kind": "detail",
+          "sector": "Detalles",
+          "roomLabel": "Detalles",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-02-view-224391.svg.gz",
+          "region": [
+            0.6014,
+            0.3529,
+            0.7264,
+            0.6292
+          ],
+          "tags": [],
+          "dimensions": [],
+          "elements": []
+        }
+      ]
+    },
+    {
+      "number": "CLI-F-CI-PB-03",
+      "title": "Ficha CI-PB-03 · Baño C Inv.",
+      "level": "00. Planta Baja",
+      "sector": "3 · Fichas por local",
+      "kind": "element",
+      "element": "CI-PB-03",
+      "elementId": "780822",
+      "elementKind": "CI",
+      "outlets": null,
+      "circuit": {
+        "pitch_m": 0.746,
+        "status": "incompleto",
+        "thermostats": [
+          "TE-08"
+        ],
+        "outlet": "S03",
+        "collector": "CO-S",
+        "method": "conectividad"
+      },
+      "note": "R32 · archivo Casa-Angel-DOC-Climatizacion.rvt",
+      "sheetId": "224470",
+      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-03.pdf",
+      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-03.svg.gz",
+      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-03-preview.png",
+      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-03.png",
+      "views": [
+        {
+          "id": "224424",
+          "name": "CI-PB-03 · planta",
+          "label": "CI-PB-03 · planta   1:10",
+          "scale": 10,
+          "kind": "plan",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-03-view-224424.svg.gz",
+          "region": [
+            0.1285,
+            0.2796,
+            0.5289,
+            0.7025
+          ],
+          "tags": [
+            "CI-PB-03"
+          ],
+          "dimensions": [
+            {
+              "label": "Serpentín extensión X",
+              "values_m": [
+                2.0195
+              ],
+              "associative": false
+            },
+            {
+              "label": "Serpentín extensión Y",
+              "values_m": [
+                1.079
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "CI-PB-03",
+              "elementId": "780822",
+              "label": "CI-PB-03 · Baño C Inv. · 7,12 ml · 1,34 m/m²",
+              "box": [
+                0.0974,
+                0.2861,
+                1.0,
+                0.804
+              ],
+              "room": true
+            }
+          ]
+        },
+        {
+          "id": "224459",
+          "name": "Datos del circuito",
+          "label": "Datos del circuito   1:10",
+          "scale": 10,
+          "kind": "detail",
+          "sector": "Detalles",
+          "roomLabel": "Detalles",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-03-view-224459.svg.gz",
+          "region": [
+            0.6014,
+            0.3529,
+            0.7264,
+            0.6292
+          ],
+          "tags": [],
+          "dimensions": [],
+          "elements": []
+        }
+      ]
+    },
+    {
+      "number": "CLI-F-CI-PB-04",
+      "title": "Ficha CI-PB-04 · Baño ppal",
+      "level": "00. Planta Baja",
+      "sector": "3 · Fichas por local",
+      "kind": "element",
+      "element": "CI-PB-04",
+      "elementId": "780828",
+      "elementKind": "CI",
+      "outlets": null,
+      "circuit": {
+        "pitch_m": 0.629,
+        "status": "incompleto",
+        "thermostats": [],
+        "outlet": "S09",
+        "collector": "CO-N",
+        "method": "conectividad"
+      },
+      "note": "R32 · archivo Casa-Angel-DOC-Climatizacion.rvt",
+      "sheetId": "224535",
+      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-04.pdf",
+      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-04.svg.gz",
+      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-04-preview.png",
+      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-04.png",
+      "views": [
+        {
+          "id": "224492",
+          "name": "CI-PB-04 · planta",
+          "label": "CI-PB-04 · planta   1:20",
+          "scale": 20,
+          "kind": "plan",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-04-view-224492.svg.gz",
+          "region": [
+            0.1332,
+            0.3163,
+            0.2828,
+            0.6658
+          ],
+          "tags": [
+            "CI-PB-04"
+          ],
+          "dimensions": [
+            {
+              "label": "Serpentín extensión X",
+              "values_m": [
+                1.0
+              ],
+              "associative": false
+            },
+            {
+              "label": "Serpentín extensión Y",
+              "values_m": [
+                2.8
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "CI-PB-04",
+              "elementId": "780828",
+              "label": "CI-PB-04 · Baño ppal · 14,33 ml · 1,59 m/m²",
+              "box": [
+                0.2649,
+                0.0,
+                0.9196,
+                1.0
+              ],
+              "room": true
+            }
+          ]
+        },
+        {
+          "id": "224524",
+          "name": "Datos del circuito",
+          "label": "Datos del circuito   1:10",
+          "scale": 10,
+          "kind": "detail",
+          "sector": "Detalles",
+          "roomLabel": "Detalles",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-04-view-224524.svg.gz",
+          "region": [
+            0.4808,
+            0.3529,
+            0.6057,
+            0.6292
+          ],
+          "tags": [],
+          "dimensions": [],
+          "elements": []
+        }
+      ]
+    },
+    {
+      "number": "CLI-F-CI-PB-05",
+      "title": "Ficha CI-PB-05 · Cuarto A Inv.",
+      "level": "00. Planta Baja",
+      "sector": "3 · Fichas por local",
+      "kind": "element",
+      "element": "CI-PB-05",
+      "elementId": "780807",
+      "elementKind": "CI",
+      "outlets": null,
+      "circuit": {
+        "pitch_m": 0.433,
+        "status": "incompleto",
+        "thermostats": [],
+        "outlet": "S09",
+        "collector": "CO-S",
+        "method": "conectividad"
+      },
+      "note": "R32 · archivo Casa-Angel-DOC-Climatizacion.rvt",
+      "sheetId": "224606",
+      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-05.pdf",
+      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-05.svg.gz",
+      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-05-preview.png",
+      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-05.png",
+      "views": [
+        {
+          "id": "224557",
+          "name": "CI-PB-05 · planta",
+          "label": "CI-PB-05 · planta   1:20",
+          "scale": 20,
+          "kind": "plan",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-05-view-224557.svg.gz",
+          "region": [
+            0.1302,
+            0.3163,
+            0.3663,
+            0.6658
+          ],
+          "tags": [
+            "CI-PB-05"
+          ],
+          "dimensions": [
+            {
+              "label": "Serpentín extensión X",
+              "values_m": [
+                2.6
+              ],
+              "associative": false
+            },
+            {
+              "label": "Serpentín extensión Y",
+              "values_m": [
+                2.8
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "CI-PB-05",
+              "elementId": "780807",
+              "label": "CI-PB-05 · Cuarto A Inv. · 27,41 ml · 2,31 m/m²",
+              "box": [
+                0.0417,
+                0.1374,
+                0.8895,
+                0.8396
+              ],
+              "room": true
+            }
+          ]
+        },
+        {
+          "id": "224595",
+          "name": "Datos del circuito",
+          "label": "Datos del circuito   1:10",
+          "scale": 10,
+          "kind": "detail",
+          "sector": "Detalles",
+          "roomLabel": "Detalles",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-05-view-224595.svg.gz",
+          "region": [
+            0.521,
+            0.3529,
+            0.6459,
+            0.6292
+          ],
+          "tags": [],
+          "dimensions": [],
+          "elements": []
+        }
+      ]
+    },
+    {
+      "number": "CLI-F-CI-PB-06",
+      "title": "Ficha CI-PB-06 · Cuarto B Inv.",
+      "level": "00. Planta Baja",
+      "sector": "3 · Fichas por local",
+      "kind": "element",
+      "element": "CI-PB-06",
+      "elementId": "780816",
+      "elementKind": "CI",
+      "outlets": null,
+      "circuit": {
+        "pitch_m": 0.444,
+        "status": "incompleto",
+        "thermostats": [],
+        "outlet": "S12",
+        "collector": "CO-S",
+        "method": "asignado por cercanía"
+      },
+      "note": "R32 · archivo Casa-Angel-DOC-Climatizacion.rvt",
+      "sheetId": "224676",
+      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-06.pdf",
+      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-06.svg.gz",
+      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-06-preview.png",
+      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-06.png",
+      "views": [
+        {
+          "id": "224628",
+          "name": "CI-PB-06 · planta",
+          "label": "CI-PB-06 · planta   1:20",
+          "scale": 20,
+          "kind": "plan",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-06-view-224628.svg.gz",
+          "region": [
+            0.1302,
+            0.3163,
+            0.3663,
+            0.6658
+          ],
+          "tags": [
+            "CI-PB-06"
+          ],
+          "dimensions": [
+            {
+              "label": "Serpentín extensión X",
+              "values_m": [
+                2.6
+              ],
+              "associative": false
+            },
+            {
+              "label": "Serpentín extensión Y",
+              "values_m": [
+                2.8
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "CI-PB-06",
+              "elementId": "780816",
+              "label": "CI-PB-06 · Cuarto B Inv. · 27,36 ml · 2,25 m/m²",
+              "box": [
+                0.0417,
+                0.1374,
+                0.9124,
+                0.8396
+              ],
+              "room": true
+            }
+          ]
+        },
+        {
+          "id": "224665",
+          "name": "Datos del circuito",
+          "label": "Datos del circuito   1:10",
+          "scale": 10,
+          "kind": "detail",
+          "sector": "Detalles",
+          "roomLabel": "Detalles",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-06-view-224665.svg.gz",
+          "region": [
+            0.521,
+            0.3529,
+            0.6459,
+            0.6292
+          ],
+          "tags": [],
+          "dimensions": [],
+          "elements": []
+        }
+      ]
+    },
+    {
+      "number": "CLI-F-CI-PB-07",
+      "title": "Ficha CI-PB-07 · Cuarto C Inv.",
+      "level": "00. Planta Baja",
+      "sector": "3 · Fichas por local",
+      "kind": "element",
+      "element": "CI-PB-07",
+      "elementId": "780819",
+      "elementKind": "CI",
+      "outlets": null,
+      "circuit": {
+        "pitch_m": 0.433,
+        "status": "incompleto",
+        "thermostats": [],
+        "outlet": "S04",
+        "collector": "CO-S",
+        "method": "conectividad"
+      },
+      "note": "R32 · archivo Casa-Angel-DOC-Climatizacion.rvt",
+      "sheetId": "224747",
+      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-07.pdf",
+      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-07.svg.gz",
+      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-07-preview.png",
+      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-07.png",
+      "views": [
+        {
+          "id": "224698",
+          "name": "CI-PB-07 · planta",
+          "label": "CI-PB-07 · planta   1:20",
+          "scale": 20,
+          "kind": "plan",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-07-view-224698.svg.gz",
+          "region": [
+            0.1302,
+            0.3163,
+            0.3663,
+            0.6658
+          ],
+          "tags": [
+            "CI-PB-07"
+          ],
+          "dimensions": [
+            {
+              "label": "Serpentín extensión X",
+              "values_m": [
+                2.6
+              ],
+              "associative": false
+            },
+            {
+              "label": "Serpentín extensión Y",
+              "values_m": [
+                2.8
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "CI-PB-07",
+              "elementId": "780819",
+              "label": "CI-PB-07 · Cuarto C Inv. · 27,41 ml · 2,31 m/m²",
+              "box": [
+                0.0417,
+                0.1374,
+                0.8895,
+                0.8396
+              ],
+              "room": true
+            }
+          ]
+        },
+        {
+          "id": "224736",
+          "name": "Datos del circuito",
+          "label": "Datos del circuito   1:10",
+          "scale": 10,
+          "kind": "detail",
+          "sector": "Detalles",
+          "roomLabel": "Detalles",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-07-view-224736.svg.gz",
+          "region": [
+            0.521,
+            0.3529,
+            0.6459,
+            0.6292
+          ],
+          "tags": [],
+          "dimensions": [],
+          "elements": []
+        }
+      ]
+    },
+    {
+      "number": "CLI-F-CI-PB-08",
+      "title": "Ficha CI-PB-08 · Cuarto ppal",
+      "level": "00. Planta Baja",
+      "sector": "3 · Fichas por local",
+      "kind": "element",
+      "element": "CI-PB-08",
+      "elementId": "780825",
+      "elementKind": "CI",
+      "outlets": null,
+      "circuit": {
+        "pitch_m": 0.341,
+        "status": "incompleto",
+        "thermostats": [
+          "TE-04"
+        ],
+        "outlet": "S10",
+        "collector": "CO-N",
+        "method": "conectividad"
+      },
+      "note": "R32 · archivo Casa-Angel-DOC-Climatizacion.rvt",
+      "sheetId": "224875",
+      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-08.pdf",
+      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-08.svg.gz",
+      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-08-preview.png",
+      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-08.png",
+      "views": [
+        {
+          "id": "224769",
+          "name": "CI-PB-08 · planta",
+          "label": "CI-PB-08 · planta   1:20",
+          "scale": 20,
+          "kind": "plan",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-08-view-224769.svg.gz",
+          "region": [
+            0.1319,
+            0.2563,
+            0.4852,
+            0.7258
+          ],
+          "tags": [
+            "CI-PB-08"
+          ],
+          "dimensions": [
+            {
+              "label": "Serpentín extensión X",
+              "values_m": [
+                4.769
+              ],
+              "associative": false
+            },
+            {
+              "label": "Serpentín extensión Y",
+              "values_m": [
+                4.3674
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "CI-PB-08",
+              "elementId": "780825",
+              "label": "CI-PB-08 · Cuarto ppal · 43,37 ml · 2,93 m/m²",
+              "box": [
+                0.1121,
+                0.136,
+                0.7924,
+                0.6857
+              ],
+              "room": true
+            }
+          ]
+        },
+        {
+          "id": "224864",
+          "name": "Datos del circuito",
+          "label": "Datos del circuito   1:10",
+          "scale": 10,
+          "kind": "detail",
+          "sector": "Detalles",
+          "roomLabel": "Detalles",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-08-view-224864.svg.gz",
+          "region": [
+            0.5813,
+            0.3529,
+            0.7063,
+            0.6292
+          ],
+          "tags": [],
+          "dimensions": [],
+          "elements": []
+        }
+      ]
+    },
+    {
+      "number": "CLI-F-CI-PB-09",
+      "title": "Ficha CI-PB-09 · Hab. servicio",
+      "level": "00. Planta Baja",
+      "sector": "3 · Fichas por local",
+      "kind": "element",
+      "element": "CI-PB-09",
+      "elementId": "785697",
+      "elementKind": "CI",
+      "outlets": null,
+      "circuit": {
+        "pitch_m": 0.345,
+        "status": "incompleto",
+        "thermostats": [],
+        "outlet": "S12",
+        "collector": "CO-N",
+        "method": "asignado por cercanía"
+      },
+      "note": "R32 · archivo Casa-Angel-DOC-Climatizacion.rvt",
+      "sheetId": "224942",
+      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-09.pdf",
+      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-09.svg.gz",
+      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-09-preview.png",
+      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-09.png",
+      "views": [
+        {
+          "id": "224897",
+          "name": "CI-PB-09 · planta",
+          "label": "CI-PB-09 · planta   1:20",
+          "scale": 20,
+          "kind": "plan",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-09-view-224897.svg.gz",
+          "region": [
+            0.1245,
+            0.3316,
+            0.372,
+            0.6505
+          ],
+          "tags": [
+            "CI-PB-09"
+          ],
+          "dimensions": [
+            {
+              "label": "Serpentín extensión X",
+              "values_m": [
+                2.8113
+              ],
+              "associative": false
+            },
+            {
+              "label": "Serpentín extensión Y",
+              "values_m": [
+                2.4
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "CI-PB-09",
+              "elementId": "785697",
+              "label": "CI-PB-09 · Hab. servicio · 19,19 ml · 2,90 m/m²",
+              "box": [
+                0.2958,
+                0.1878,
+                0.8515,
+                0.8122
+              ],
+              "room": true
+            }
+          ]
+        },
+        {
+          "id": "224931",
+          "name": "Datos del circuito",
+          "label": "Datos del circuito   1:10",
+          "scale": 10,
+          "kind": "detail",
+          "sector": "Detalles",
+          "roomLabel": "Detalles",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-09-view-224931.svg.gz",
+          "region": [
+            0.521,
+            0.3529,
+            0.6459,
+            0.6292
+          ],
+          "tags": [],
+          "dimensions": [],
+          "elements": []
+        }
+      ]
+    },
+    {
+      "number": "CLI-F-CI-PB-10",
+      "title": "Ficha CI-PB-10 · Lavadero",
+      "level": "00. Planta Baja",
+      "sector": "3 · Fichas por local",
+      "kind": "element",
+      "element": "CI-PB-10",
+      "elementId": "1041091",
+      "elementKind": "CI",
+      "outlets": null,
+      "circuit": {
+        "pitch_m": 0.286,
+        "status": "incompleto",
+        "thermostats": [
+          "TE-02"
+        ],
+        "outlet": "S13",
+        "collector": "CO-N",
+        "method": "asignado por cercanía"
+      },
+      "note": "R32 · archivo Casa-Angel-DOC-Climatizacion.rvt",
+      "sheetId": "225012",
+      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-10.pdf",
+      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-10.svg.gz",
+      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-10-preview.png",
+      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-10.png",
+      "views": [
+        {
+          "id": "224964",
+          "name": "CI-PB-10 · planta",
+          "label": "CI-PB-10 · planta   1:20",
+          "scale": 20,
+          "kind": "plan",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-10-view-224964.svg.gz",
+          "region": [
+            0.1211,
+            0.3392,
+            0.5765,
+            0.6429
+          ],
+          "tags": [
+            "CI-PB-10"
+          ],
+          "dimensions": [
+            {
+              "label": "Serpentín extensión X",
+              "values_m": [
+                6.658
+              ],
+              "associative": false
+            },
+            {
+              "label": "Serpentín extensión Y",
+              "values_m": [
+                2.2
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "CI-PB-10",
+              "elementId": "1041091",
+              "label": "CI-PB-10 · Lavadero · 23,26 ml · 3,50 m/m²",
+              "box": [
+                0.3189,
+                0.1279,
+                0.6146,
+                0.8216
+              ],
+              "room": true
+            }
+          ]
+        },
+        {
+          "id": "225001",
+          "name": "Datos del circuito",
+          "label": "Datos del circuito   1:10",
+          "scale": 10,
+          "kind": "detail",
+          "sector": "Detalles",
+          "roomLabel": "Detalles",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-10-view-225001.svg.gz",
+          "region": [
+            0.6216,
+            0.3529,
+            0.7465,
+            0.6292
+          ],
+          "tags": [],
+          "dimensions": [],
+          "elements": []
+        }
+      ]
+    },
+    {
+      "number": "CLI-F-CI-PB-11",
+      "title": "Ficha CI-PB-11 · Pasillo",
+      "level": "00. Planta Baja",
+      "sector": "3 · Fichas por local",
+      "kind": "element",
+      "element": "CI-PB-11",
+      "elementId": "788673",
+      "elementKind": "CI",
+      "outlets": null,
+      "circuit": {
+        "pitch_m": 0.195,
+        "status": "completo",
+        "thermostats": [],
+        "outlet": "S10",
+        "collector": "CO-S",
+        "method": "conectividad"
+      },
+      "note": "R32 · archivo Casa-Angel-DOC-Climatizacion.rvt",
+      "sheetId": "225103",
+      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-11.pdf",
+      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-11.svg.gz",
+      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-11-preview.png",
+      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-11.png",
+      "views": [
+        {
+          "id": "225034",
+          "name": "CI-PB-11 · planta",
+          "label": "CI-PB-11 · planta   1:50",
+          "scale": 50,
+          "kind": "plan",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-11-view-225034.svg.gz",
+          "region": [
+            0.1333,
+            0.3683,
+            0.4436,
+            0.6138
+          ],
+          "tags": [
+            "CI-PB-11"
+          ],
+          "dimensions": [
+            {
+              "label": "Serpentín extensión X",
+              "values_m": [
+                12.329
+              ],
+              "associative": false
+            },
+            {
+              "label": "Serpentín extensión Y",
+              "values_m": [
+                6.0
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "CI-PB-11",
+              "elementId": "788673",
+              "label": "CI-PB-11 · Pasillo · 133,58 ml · 5,12 m/m²",
+              "box": [
+                0.3162,
+                0.0912,
+                0.9369,
+                0.887
+              ],
+              "room": true
+            }
+          ]
+        },
+        {
+          "id": "225092",
+          "name": "Datos del circuito",
+          "label": "Datos del circuito   1:10",
+          "scale": 10,
+          "kind": "detail",
+          "sector": "Detalles",
+          "roomLabel": "Detalles",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-11-view-225092.svg.gz",
+          "region": [
+            0.5612,
+            0.3529,
+            0.6862,
+            0.6292
+          ],
+          "tags": [],
+          "dimensions": [],
+          "elements": []
+        }
+      ]
+    },
+    {
+      "number": "CLI-F-CI-PB-12",
+      "title": "Ficha CI-PB-12 · Quincho",
+      "level": "00. Planta Baja",
+      "sector": "3 · Fichas por local",
+      "kind": "element",
+      "element": "CI-PB-12",
+      "elementId": "783339",
+      "elementKind": "CI",
+      "outlets": null,
+      "circuit": {
+        "pitch_m": 0.24,
+        "status": "completo",
+        "thermostats": [
+          "TE-03"
+        ],
+        "outlet": "S01",
+        "collector": "CO-N",
+        "method": "conectividad"
+      },
+      "note": "R32 · archivo Casa-Angel-DOC-Climatizacion.rvt",
+      "sheetId": "225252",
+      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-12.pdf",
+      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-12.svg.gz",
+      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-12-preview.png",
+      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-12.png",
+      "views": [
+        {
+          "id": "225125",
+          "name": "CI-PB-12 · planta",
+          "label": "CI-PB-12 · planta   1:20",
+          "scale": 20,
+          "kind": "plan",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-12-view-225125.svg.gz",
+          "region": [
+            0.1227,
+            0.1879,
+            0.5749,
+            0.7942
+          ],
+          "tags": [
+            "CI-PB-12"
+          ],
+          "dimensions": [
+            {
+              "label": "Serpentín extensión X",
+              "values_m": [
+                6.6
+              ],
+              "associative": false
+            },
+            {
+              "label": "Serpentín extensión Y",
+              "values_m": [
+                6.1554
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "CI-PB-12",
+              "elementId": "783339",
+              "label": "CI-PB-12 · Quincho · 187,35 ml · 4,16 m/m²",
+              "box": [
+                0.0876,
+                0.0894,
+                0.9167,
+                0.9291
+              ],
+              "room": true
+            }
+          ]
+        },
+        {
+          "id": "225241",
+          "name": "Datos del circuito",
+          "label": "Datos del circuito   1:10",
+          "scale": 10,
+          "kind": "detail",
+          "sector": "Detalles",
+          "roomLabel": "Detalles",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-12-view-225241.svg.gz",
+          "region": [
+            0.6216,
+            0.3529,
+            0.7465,
+            0.6292
+          ],
+          "tags": [],
+          "dimensions": [],
+          "elements": []
+        }
+      ]
+    },
+    {
+      "number": "CLI-F-CI-PB-13",
+      "title": "Ficha CI-PB-13 · Toilette Servicio",
+      "level": "00. Planta Baja",
+      "sector": "3 · Fichas por local",
+      "kind": "element",
+      "element": "CI-PB-13",
+      "elementId": "874173",
+      "elementKind": "CI",
+      "outlets": null,
+      "circuit": {
+        "pitch_m": 0.431,
+        "status": "incompleto",
+        "thermostats": [],
+        "outlet": "S14",
+        "collector": "CO-N",
+        "method": "asignado por cercanía"
+      },
+      "note": "R32 · archivo Casa-Angel-DOC-Climatizacion.rvt",
+      "sheetId": "225317",
+      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-13.pdf",
+      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-13.svg.gz",
+      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-13-preview.png",
+      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-13.png",
+      "views": [
+        {
+          "id": "225274",
+          "name": "CI-PB-13 · planta",
+          "label": "CI-PB-13 · planta   1:20",
+          "scale": 20,
+          "kind": "plan",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-13-view-225274.svg.gz",
+          "region": [
+            0.1267,
+            0.3343,
+            0.3698,
+            0.6478
+          ],
+          "tags": [
+            "CI-PB-13"
+          ],
+          "dimensions": [
+            {
+              "label": "Serpentín extensión X",
+              "values_m": [
+                2.729
+              ],
+              "associative": false
+            },
+            {
+              "label": "Serpentín extensión Y",
+              "values_m": [
+                2.329
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "CI-PB-13",
+              "elementId": "874173",
+              "label": "CI-PB-13 · Toilette Servicio · 14,46 ml · 2,32 m/m²",
+              "box": [
+                0.0405,
+                0.1911,
+                0.5691,
+                0.8446
+              ],
+              "room": true
+            }
+          ]
+        },
+        {
+          "id": "225306",
+          "name": "Datos del circuito",
+          "label": "Datos del circuito   1:10",
+          "scale": 10,
+          "kind": "detail",
+          "sector": "Detalles",
+          "roomLabel": "Detalles",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-13-view-225306.svg.gz",
+          "region": [
+            0.521,
+            0.3529,
+            0.6459,
+            0.6292
+          ],
+          "tags": [],
+          "dimensions": [],
+          "elements": []
+        }
+      ]
+    },
+    {
+      "number": "CLI-F-CI-PB-14",
+      "title": "Ficha CI-PB-14 · Vestidor ppal",
+      "level": "00. Planta Baja",
+      "sector": "3 · Fichas por local",
+      "kind": "element",
+      "element": "CI-PB-14",
+      "elementId": "1007176",
+      "elementKind": "CI",
+      "outlets": null,
+      "circuit": {
+        "pitch_m": 0.474,
+        "status": "incompleto",
+        "thermostats": [],
+        "outlet": "S11",
+        "collector": "CO-N",
+        "method": "conectividad"
+      },
+      "note": "R32 · archivo Casa-Angel-DOC-Climatizacion.rvt",
+      "sheetId": "225398",
+      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-14.pdf",
+      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-14.svg.gz",
+      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-14-preview.png",
+      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-14.png",
+      "views": [
+        {
+          "id": "225339",
+          "name": "CI-PB-14 · planta",
+          "label": "CI-PB-14 · planta   1:20",
+          "scale": 20,
+          "kind": "plan",
+          "sector": "00. Planta Baja",
+          "roomLabel": "00. Planta Baja",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-14-view-225339.svg.gz",
+          "region": [
+            0.1318,
+            0.3613,
+            0.4451,
+            0.6209
+          ],
+          "tags": [
+            "CI-PB-14"
+          ],
+          "dimensions": [
+            {
+              "label": "Serpentín extensión X",
+              "values_m": [
+                4.028
+              ],
+              "associative": false
+            },
+            {
+              "label": "Serpentín extensión Y",
+              "values_m": [
+                1.624
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "CI-PB-14",
+              "elementId": "1007176",
+              "label": "CI-PB-14 · Vestidor ppal · 15,99 ml · 2,11 m/m²",
+              "box": [
+                0.1141,
+                0.4102,
+                0.8695,
+                0.9208
+              ],
+              "room": true
+            }
+          ]
+        },
+        {
+          "id": "225387",
+          "name": "Datos del circuito",
+          "label": "Datos del circuito   1:10",
+          "scale": 10,
+          "kind": "detail",
+          "sector": "Detalles",
+          "roomLabel": "Detalles",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-14-view-225387.svg.gz",
+          "region": [
+            0.5612,
+            0.3529,
+            0.6862,
+            0.6292
+          ],
+          "tags": [],
+          "dimensions": [],
+          "elements": []
+        }
+      ]
+    },
+    {
+      "number": "CLI-F-CI-PE-01",
+      "title": "Ficha CI-PE-01 · Atelier",
+      "level": "02. Planta Entrepiso",
+      "sector": "3 · Fichas por local",
+      "kind": "element",
+      "element": "CI-PE-01",
+      "elementId": "876161",
+      "elementKind": "CI",
+      "outlets": null,
+      "circuit": {
+        "pitch_m": 0.204,
+        "status": "completo",
+        "thermostats": [],
+        "outlet": "S04",
+        "collector": "CO-N",
+        "method": "conectividad"
+      },
+      "note": "R32 · archivo Casa-Angel-DOC-Climatizacion.rvt",
+      "sheetId": "225512",
+      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PE-01.pdf",
+      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PE-01.svg.gz",
+      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PE-01-preview.png",
+      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PE-01.png",
+      "views": [
+        {
+          "id": "225420",
+          "name": "CI-PE-01 · planta",
+          "label": "CI-PE-01 · planta   1:20",
+          "scale": 20,
+          "kind": "plan",
+          "sector": "02. Planta Entrepiso",
+          "roomLabel": "02. Planta Entrepiso",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PE-01-view-225420.svg.gz",
+          "region": [
+            0.1311,
+            0.2769,
+            0.4861,
+            0.7052
+          ],
+          "tags": [
+            "CI-PE-01"
+          ],
+          "dimensions": [
+            {
+              "label": "Serpentín extensión X",
+              "values_m": [
+                4.8
+              ],
+              "associative": false
+            },
+            {
+              "label": "Serpentín extensión Y",
+              "values_m": [
+                3.829
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "CI-PE-01",
+              "elementId": "876161",
+              "label": "CI-PE-01 · Atelier · 94,62 ml · 4,89 m/m²",
+              "box": [
+                0.1188,
+                0.17,
+                0.8949,
+                0.8494
+              ],
+              "room": true
+            }
+          ]
+        },
+        {
+          "id": "225501",
+          "name": "Datos del circuito",
+          "label": "Datos del circuito   1:10",
+          "scale": 10,
+          "kind": "detail",
+          "sector": "Detalles",
+          "roomLabel": "Detalles",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PE-01-view-225501.svg.gz",
+          "region": [
+            0.5813,
+            0.3529,
+            0.7063,
+            0.6292
+          ],
+          "tags": [],
+          "dimensions": [],
+          "elements": []
+        }
+      ]
+    },
+    {
+      "number": "CLI-F-CI-PE-02",
+      "title": "Ficha CI-PE-02 · SM",
+      "level": "02. Planta Entrepiso",
+      "sector": "3 · Fichas por local",
+      "kind": "element",
+      "element": "CI-PE-02",
+      "elementId": "876170",
+      "elementKind": "CI",
+      "outlets": null,
+      "circuit": {
+        "pitch_m": 3.571,
+        "status": "incompleto",
+        "thermostats": [],
+        "outlet": "S06",
+        "collector": "CO-N",
+        "method": "conectividad"
+      },
+      "note": "R32 · archivo Casa-Angel-DOC-Climatizacion.rvt",
+      "sheetId": "225560",
+      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PE-02.pdf",
+      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PE-02.svg.gz",
+      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PE-02-preview.png",
+      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PE-02.png",
+      "views": [
+        {
+          "id": "225534",
+          "name": "CI-PE-02 · planta",
+          "label": "CI-PE-02 · planta   1:10",
+          "scale": 10,
+          "kind": "plan",
+          "sector": "02. Planta Entrepiso",
+          "roomLabel": "02. Planta Entrepiso",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PE-02-view-225534.svg.gz",
+          "region": [
+            0.117,
+            0.2231,
+            0.299,
+            0.7591
+          ],
+          "tags": [
+            "CI-PE-02"
+          ],
+          "dimensions": [
+            {
+              "label": "Serpentín extensión Y",
+              "values_m": [
+                1.818
+              ],
+              "associative": false
+            }
+          ],
+          "elements": [
+            {
+              "code": "CI-PE-02",
+              "elementId": "876170",
+              "label": "CI-PE-02 · SM · 1,82 ml · 0,28 m/m²",
+              "box": [
+                0.0,
+                0.02,
+                0.575,
+                0.7628
+              ],
+              "room": true
+            }
+          ]
+        },
+        {
+          "id": "225549",
+          "name": "Datos del circuito",
+          "label": "Datos del circuito   1:10",
+          "scale": 10,
+          "kind": "detail",
+          "sector": "Detalles",
+          "roomLabel": "Detalles",
+          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PE-02-view-225549.svg.gz",
+          "region": [
+            0.4808,
+            0.3529,
+            0.6057,
+            0.6292
+          ],
+          "tags": [],
+          "dimensions": [],
+          "elements": []
+        }
+      ]
+    },
+    {
       "number": "CLI-P-PA",
       "title": "Piso radiante · trazado de serpentines · 01. Planta Alta",
       "level": "01. Planta Alta",
-      "sector": "Piso radiante",
+      "sector": "1 · Plantas con serpentina",
       "kind": "general",
       "element": null,
       "elementId": null,
       "elementKind": null,
       "outlets": null,
+      "circuit": null,
       "note": "R32 · archivo Casa-Angel-DOC-Climatizacion.rvt",
-      "sheetId": "219301",
+      "sheetId": "226502",
       "pdf": "/casa-angel/rubros/climatizacion/CLI-P-PA.pdf",
       "image": "/casa-angel/rubros/climatizacion/CLI-P-PA.svg.gz",
       "preview": "/casa-angel/rubros/climatizacion/CLI-P-PA-preview.png",
       "thumbnail": "/casa-angel/rubros/climatizacion/CLI-P-PA.png",
       "views": [
         {
-          "id": "218908",
+          "id": "226129",
           "name": "Piso radiante · 01. Planta Alta",
           "label": "Piso radiante · 01. Planta Alta   1:75",
           "scale": 75,
           "kind": "plan",
           "sector": "01. Planta Alta",
           "roomLabel": "01. Planta Alta",
-          "image": "/casa-angel/rubros/climatizacion/CLI-P-PA-view-218908.svg.gz",
+          "image": "/casa-angel/rubros/climatizacion/CLI-P-PA-view-226129.svg.gz",
           "region": [
             0.1139,
             0.2561,
@@ -674,14 +3161,14 @@
           ]
         },
         {
-          "id": "219290",
+          "id": "226491",
           "name": "Cuadro de circuitos · PA",
           "label": "Cuadro de circuitos · PA   1:10",
           "scale": 10,
           "kind": "detail",
           "sector": "Detalles",
           "roomLabel": "Detalles",
-          "image": "/casa-angel/rubros/climatizacion/CLI-P-PA-view-219290.svg.gz",
+          "image": "/casa-angel/rubros/climatizacion/CLI-P-PA-view-226491.svg.gz",
           "region": [
             0.5344,
             0.33,
@@ -698,28 +3185,29 @@
       "number": "CLI-P-PB",
       "title": "Piso radiante · trazado de serpentines · 00. Planta Baja",
       "level": "00. Planta Baja",
-      "sector": "Piso radiante",
+      "sector": "1 · Plantas con serpentina",
       "kind": "general",
       "element": null,
       "elementId": null,
       "elementKind": null,
       "outlets": null,
+      "circuit": null,
       "note": "R32 · archivo Casa-Angel-DOC-Climatizacion.rvt",
-      "sheetId": "218886",
+      "sheetId": "226107",
       "pdf": "/casa-angel/rubros/climatizacion/CLI-P-PB.pdf",
       "image": "/casa-angel/rubros/climatizacion/CLI-P-PB.svg.gz",
       "preview": "/casa-angel/rubros/climatizacion/CLI-P-PB-preview.png",
       "thumbnail": "/casa-angel/rubros/climatizacion/CLI-P-PB.png",
       "views": [
         {
-          "id": "218331",
+          "id": "225582",
           "name": "Piso radiante · 00. Planta Baja",
           "label": "Piso radiante · 00. Planta Baja   1:75",
           "scale": 75,
           "kind": "plan",
           "sector": "00. Planta Baja",
           "roomLabel": "00. Planta Baja",
-          "image": "/casa-angel/rubros/climatizacion/CLI-P-PB-view-218331.svg.gz",
+          "image": "/casa-angel/rubros/climatizacion/CLI-P-PB-view-225582.svg.gz",
           "region": [
             0.1288,
             0.2474,
@@ -915,14 +3403,14 @@
           ]
         },
         {
-          "id": "218875",
+          "id": "226096",
           "name": "Cuadro de circuitos · PB",
           "label": "Cuadro de circuitos · PB   1:10",
           "scale": 10,
           "kind": "detail",
           "sector": "Detalles",
           "roomLabel": "Detalles",
-          "image": "/casa-angel/rubros/climatizacion/CLI-P-PB-view-218875.svg.gz",
+          "image": "/casa-angel/rubros/climatizacion/CLI-P-PB-view-226096.svg.gz",
           "region": [
             0.5545,
             0.3149,
@@ -939,28 +3427,29 @@
       "number": "CLI-P-PE",
       "title": "Piso radiante · trazado de serpentines · 02. Planta Entrepiso",
       "level": "02. Planta Entrepiso",
-      "sector": "Piso radiante",
+      "sector": "1 · Plantas con serpentina",
       "kind": "general",
       "element": null,
       "elementId": null,
       "elementKind": null,
       "outlets": null,
+      "circuit": null,
       "note": "R32 · archivo Casa-Angel-DOC-Climatizacion.rvt",
-      "sheetId": "219465",
+      "sheetId": "226662",
       "pdf": "/casa-angel/rubros/climatizacion/CLI-P-PE.pdf",
       "image": "/casa-angel/rubros/climatizacion/CLI-P-PE.svg.gz",
       "preview": "/casa-angel/rubros/climatizacion/CLI-P-PE-preview.png",
       "thumbnail": "/casa-angel/rubros/climatizacion/CLI-P-PE.png",
       "views": [
         {
-          "id": "219323",
+          "id": "226524",
           "name": "Piso radiante · 02. Planta Entrepiso",
           "label": "Piso radiante · 02. Planta Entrepiso   1:50",
           "scale": 50,
           "kind": "plan",
           "sector": "02. Planta Entrepiso",
           "roomLabel": "02. Planta Entrepiso",
-          "image": "/casa-angel/rubros/climatizacion/CLI-P-PE-view-219323.svg.gz",
+          "image": "/casa-angel/rubros/climatizacion/CLI-P-PE-view-226524.svg.gz",
           "region": [
             0.1284,
             0.3645,
@@ -1000,14 +3489,14 @@
           ]
         },
         {
-          "id": "219454",
+          "id": "226651",
           "name": "Cuadro de circuitos · PE",
           "label": "Cuadro de circuitos · PE   1:10",
           "scale": 10,
           "kind": "detail",
           "sector": "Detalles",
           "roomLabel": "Detalles",
-          "image": "/casa-angel/rubros/climatizacion/CLI-P-PE-view-219454.svg.gz",
+          "image": "/casa-angel/rubros/climatizacion/CLI-P-PE-view-226651.svg.gz",
           "region": [
             0.4942,
             0.3603,
@@ -1029,7 +3518,7 @@
       "element": null,
       "elementId": null,
       "elementKind": null,
-      "note": "R19 · previo (se reemplaza en la etapa 3)",
+      "note": "R19 · previo",
       "sheetId": "2468092",
       "pdf": "/casa-angel/rubros/climatizacion/CLI-PA-01.pdf",
       "image": "/casa-angel/rubros/climatizacion/CLI-PA-01.svg.gz",
@@ -1260,7 +3749,7 @@
       "element": null,
       "elementId": null,
       "elementKind": null,
-      "note": "R19 · previo (se reemplaza en la etapa 3)",
+      "note": "R19 · previo",
       "sheetId": "2468046",
       "pdf": "/casa-angel/rubros/climatizacion/CLI-PB-01.pdf",
       "image": "/casa-angel/rubros/climatizacion/CLI-PB-01.svg.gz",
@@ -1551,7 +4040,7 @@
       "element": null,
       "elementId": null,
       "elementKind": null,
-      "note": "R19 · previo (se reemplaza en la etapa 3)",
+      "note": "R19 · previo",
       "sheetId": "2468126",
       "pdf": "/casa-angel/rubros/climatizacion/CLI-PE-01.pdf",
       "image": "/casa-angel/rubros/climatizacion/CLI-PE-01.svg.gz",
@@ -1630,2589 +4119,15 @@
       ]
     },
     {
-      "number": "CLI-F-CI-PA-01",
-      "title": "Circuito CI-PA-01 · Baño PA",
-      "level": "01. Planta Alta",
-      "sector": "Local Baño PA · 01. Planta Alta",
-      "kind": "element",
-      "element": "CI-PA-01",
-      "elementId": "870167",
-      "elementKind": "CI",
-      "note": "R19 · previo (se reemplaza en la etapa 3)",
-      "sheetId": "2468176",
-      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-01.pdf",
-      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-01.svg.gz",
-      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-01-preview.png",
-      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-01.png",
-      "views": [
-        {
-          "id": "2468146",
-          "name": "CI-PA-01 · planta",
-          "label": "CI-PA-01 · planta   1:15",
-          "scale": 15,
-          "kind": "plan",
-          "sector": "Local Baño PA · 01. Planta Alta",
-          "roomLabel": "Local Baño PA · 01. Planta Alta",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-01-view-2468146.svg.gz",
-          "region": [
-            0.1147,
-            0.2743,
-            0.382,
-            0.7083
-          ],
-          "tags": [
-            "CI-PA-01"
-          ],
-          "dimensions": [
-            {
-              "label": "CI-PA-01 local X",
-              "values_m": [
-                2.38
-              ],
-              "associative": false
-            },
-            {
-              "label": "CI-PA-01 local Y",
-              "values_m": [
-                2.925
-              ],
-              "associative": false
-            }
-          ],
-          "elements": [
-            {
-              "code": "CI-PA-01",
-              "elementId": "870167",
-              "label": "CI-PA-01 · Baño PA · 33,35 ml · 5,74 m/m²",
-              "box": [
-                0.1787,
-                0.1557,
-                0.8213,
-                0.8443
-              ]
-            }
-          ]
-        },
-        {
-          "id": "2468166",
-          "name": "CI-PA-01 · axonométrica",
-          "label": "CI-PA-01 · axonométrica   1:15",
-          "scale": 15,
-          "kind": "axo",
-          "sector": "Local Baño PA · 01. Planta Alta",
-          "roomLabel": "Local Baño PA · 01. Planta Alta",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-01-view-2468166.svg.gz",
-          "region": [
-            0.4112,
-            0.2731,
-            0.7564,
-            0.7095
-          ],
-          "tags": [
-            "CI-PA-01"
-          ],
-          "dimensions": [],
-          "elements": [
-            {
-              "code": "CI-PA-01",
-              "elementId": "870167",
-              "label": "CI-PA-01 · Baño PA · 33,35 ml · 5,74 m/m²",
-              "box": [
-                0.1079,
-                0.0,
-                0.8921,
-                0.8435
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "number": "CLI-F-CI-PA-02",
-      "title": "Circuito CI-PA-02 · Cava",
-      "level": "01. Planta Alta",
-      "sector": "Local Cava · 01. Planta Alta",
-      "kind": "element",
-      "element": "CI-PA-02",
-      "elementId": "863864",
-      "elementKind": "CI",
-      "note": "R19 · previo (se reemplaza en la etapa 3)",
-      "sheetId": "2468229",
-      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-02.pdf",
-      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-02.svg.gz",
-      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-02-preview.png",
-      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-02.png",
-      "views": [
-        {
-          "id": "2468199",
-          "name": "CI-PA-02 · planta",
-          "label": "CI-PA-02 · planta   1:15",
-          "scale": 15,
-          "kind": "plan",
-          "sector": "Local Cava · 01. Planta Alta",
-          "roomLabel": "Local Cava · 01. Planta Alta",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-02-view-2468199.svg.gz",
-          "region": [
-            0.1252,
-            0.2862,
-            0.4517,
-            0.697
-          ],
-          "tags": [
-            "CI-PA-02"
-          ],
-          "dimensions": [
-            {
-              "label": "CI-PA-02 local X",
-              "values_m": [
-                3.205
-              ],
-              "associative": false
-            },
-            {
-              "label": "CI-PA-02 local Y",
-              "values_m": [
-                2.7
-              ],
-              "associative": false
-            }
-          ],
-          "elements": [
-            {
-              "code": "CI-PA-02",
-              "elementId": "863864",
-              "label": "CI-PA-02 · Cava · 22,05 ml · 2,61 m/m²",
-              "box": [
-                0.1461,
-                0.1644,
-                0.8539,
-                0.8356
-              ]
-            }
-          ]
-        },
-        {
-          "id": "2468219",
-          "name": "CI-PA-02 · axonométrica",
-          "label": "CI-PA-02 · axonométrica   1:20",
-          "scale": 20,
-          "kind": "axo",
-          "sector": "Local Cava · 01. Planta Alta",
-          "roomLabel": "Local Cava · 01. Planta Alta",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-02-view-2468219.svg.gz",
-          "region": [
-            0.4817,
-            0.3164,
-            0.7657,
-            0.6667
-          ],
-          "tags": [
-            "CI-PA-02"
-          ],
-          "dimensions": [],
-          "elements": [
-            {
-              "code": "CI-PA-02",
-              "elementId": "863864",
-              "label": "CI-PA-02 · Cava · 22,05 ml · 2,61 m/m²",
-              "box": [
-                0.1023,
-                0.0,
-                0.8977,
-                0.8494
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "number": "CLI-F-CI-PA-03",
-      "title": "Circuito CI-PA-03 · Cocina",
-      "level": "01. Planta Alta",
-      "sector": "Local Cocina · 01. Planta Alta",
-      "kind": "element",
-      "element": "CI-PA-03",
-      "elementId": "877992",
-      "elementKind": "CI",
-      "note": "R19 · previo (se reemplaza en la etapa 3)",
-      "sheetId": "2468282",
-      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-03.pdf",
-      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-03.svg.gz",
-      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-03-preview.png",
-      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-03.png",
-      "views": [
-        {
-          "id": "2468252",
-          "name": "CI-PA-03 · planta",
-          "label": "CI-PA-03 · planta   1:25",
-          "scale": 25,
-          "kind": "plan",
-          "sector": "Local Cocina · 01. Planta Alta",
-          "roomLabel": "Local Cocina · 01. Planta Alta",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-03-view-2468252.svg.gz",
-          "region": [
-            0.1248,
-            0.3229,
-            0.4119,
-            0.6602
-          ],
-          "tags": [
-            "CI-PA-03"
-          ],
-          "dimensions": [
-            {
-              "label": "CI-PA-03 local X",
-              "values_m": [
-                5.2275
-              ],
-              "associative": false
-            },
-            {
-              "label": "CI-PA-03 local Y",
-              "values_m": [
-                4.1
-              ],
-              "associative": false
-            }
-          ],
-          "elements": [
-            {
-              "code": "CI-PA-03",
-              "elementId": "877992",
-              "label": "CI-PA-03 · Cocina · 73,20 ml · 3,51 m/m²",
-              "box": [
-                0.1059,
-                0.1276,
-                0.8941,
-                0.8724
-              ]
-            }
-          ]
-        },
-        {
-          "id": "2468272",
-          "name": "CI-PA-03 · axonométrica",
-          "label": "CI-PA-03 · axonométrica   1:25",
-          "scale": 25,
-          "kind": "axo",
-          "sector": "Local Cocina · 01. Planta Alta",
-          "roomLabel": "Local Cocina · 01. Planta Alta",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-03-view-2468272.svg.gz",
-          "region": [
-            0.4368,
-            0.3047,
-            0.7704,
-            0.6784
-          ],
-          "tags": [
-            "CI-PA-03"
-          ],
-          "dimensions": [],
-          "elements": [
-            {
-              "code": "CI-PA-03",
-              "elementId": "877992",
-              "label": "CI-PA-03 · Cocina · 73,20 ml · 3,51 m/m²",
-              "box": [
-                0.0723,
-                0.0,
-                0.9277,
-                0.8837
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "number": "CLI-F-CI-PA-04",
-      "title": "Circuito CI-PA-04 · Comedor",
-      "level": "01. Planta Alta",
-      "sector": "Local Comedor · 01. Planta Alta",
-      "kind": "element",
-      "element": "CI-PA-04",
-      "elementId": "869397",
-      "elementKind": "CI",
-      "note": "R19 · previo (se reemplaza en la etapa 3)",
-      "sheetId": "2468335",
-      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-04.pdf",
-      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-04.svg.gz",
-      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-04-preview.png",
-      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-04.png",
-      "views": [
-        {
-          "id": "2468305",
-          "name": "CI-PA-04 · planta",
-          "label": "CI-PA-04 · planta   1:25",
-          "scale": 25,
-          "kind": "plan",
-          "sector": "Local Comedor · 01. Planta Alta",
-          "roomLabel": "Local Comedor · 01. Planta Alta",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-04-view-2468305.svg.gz",
-          "region": [
-            0.1267,
-            0.3012,
-            0.41,
-            0.6819
-          ],
-          "tags": [
-            "CI-PA-04"
-          ],
-          "dimensions": [
-            {
-              "label": "CI-PA-04 local X",
-              "values_m": [
-                5.1425
-              ],
-              "associative": false
-            },
-            {
-              "label": "CI-PA-04 local Y",
-              "values_m": [
-                4.8079
-              ],
-              "associative": false
-            }
-          ],
-          "elements": [
-            {
-              "code": "CI-PA-04",
-              "elementId": "869397",
-              "label": "CI-PA-04 · Comedor · 157,95 ml · 6,79 m/m²",
-              "box": [
-                0.1073,
-                0.1131,
-                0.8927,
-                0.8869
-              ]
-            }
-          ]
-        },
-        {
-          "id": "2468325",
-          "name": "CI-PA-04 · axonométrica",
-          "label": "CI-PA-04 · axonométrica   1:25",
-          "scale": 25,
-          "kind": "axo",
-          "sector": "Local Comedor · 01. Planta Alta",
-          "roomLabel": "Local Comedor · 01. Planta Alta",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-04-view-2468325.svg.gz",
-          "region": [
-            0.4273,
-            0.2964,
-            0.7799,
-            0.6867
-          ],
-          "tags": [
-            "CI-PA-04"
-          ],
-          "dimensions": [],
-          "elements": [
-            {
-              "code": "CI-PA-04",
-              "elementId": "869397",
-              "label": "CI-PA-04 · Comedor · 157,95 ml · 6,79 m/m²",
-              "box": [
-                0.0684,
-                0.0,
-                0.9316,
-                0.8886
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "number": "CLI-F-CI-PA-05",
-      "title": "Circuito CI-PA-05 · Living",
-      "level": "01. Planta Alta",
-      "sector": "Local Living · 01. Planta Alta",
-      "kind": "element",
-      "element": "CI-PA-05",
-      "elementId": "877995",
-      "elementKind": "CI",
-      "note": "R19 · previo (se reemplaza en la etapa 3)",
-      "sheetId": "2468388",
-      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-05.pdf",
-      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-05.svg.gz",
-      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-05-preview.png",
-      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-05.png",
-      "views": [
-        {
-          "id": "2468358",
-          "name": "CI-PA-05 · planta",
-          "label": "CI-PA-05 · planta   1:20",
-          "scale": 20,
-          "kind": "plan",
-          "sector": "Local Living · 01. Planta Alta",
-          "roomLabel": "Local Living · 01. Planta Alta",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-05-view-2468358.svg.gz",
-          "region": [
-            0.1236,
-            0.3053,
-            0.4533,
-            0.6778
-          ],
-          "tags": [
-            "CI-PA-05"
-          ],
-          "dimensions": [
-            {
-              "label": "CI-PA-05 local X",
-              "values_m": [
-                4.7325
-              ],
-              "associative": false
-            },
-            {
-              "label": "CI-PA-05 local Y",
-              "values_m": [
-                3.5
-              ],
-              "associative": false
-            }
-          ],
-          "elements": [
-            {
-              "code": "CI-PA-05",
-              "elementId": "877995",
-              "label": "CI-PA-05 · Living · 14,92 ml · 0,92 m/m²",
-              "box": [
-                0.1119,
-                0.1402,
-                0.8881,
-                0.8598
-              ]
-            }
-          ]
-        },
-        {
-          "id": "2468378",
-          "name": "CI-PA-05 · axonométrica",
-          "label": "CI-PA-05 · axonométrica   1:25",
-          "scale": 25,
-          "kind": "axo",
-          "sector": "Local Living · 01. Planta Alta",
-          "roomLabel": "Local Living · 01. Planta Alta",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-05-view-2468378.svg.gz",
-          "region": [
-            0.4736,
-            0.3192,
-            0.7738,
-            0.6639
-          ],
-          "tags": [
-            "CI-PA-05"
-          ],
-          "dimensions": [],
-          "elements": [
-            {
-              "code": "CI-PA-05",
-              "elementId": "877995",
-              "label": "CI-PA-05 · Living · 14,92 ml · 0,92 m/m²",
-              "box": [
-                0.0804,
-                0.0,
-                0.9196,
-                0.8739
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "number": "CLI-F-CI-PA-06",
-      "title": "Circuito CI-PA-06 · Playroom",
-      "level": "01. Planta Alta",
-      "sector": "Local Playroom · 01. Planta Alta",
-      "kind": "element",
-      "element": "CI-PA-06",
-      "elementId": "870164",
-      "elementKind": "CI",
-      "note": "R19 · previo (se reemplaza en la etapa 3)",
-      "sheetId": "2468441",
-      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-06.pdf",
-      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-06.svg.gz",
-      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-06-preview.png",
-      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-06.png",
-      "views": [
-        {
-          "id": "2468411",
-          "name": "CI-PA-06 · planta",
-          "label": "CI-PA-06 · planta   1:25",
-          "scale": 25,
-          "kind": "plan",
-          "sector": "Local Playroom · 01. Planta Alta",
-          "roomLabel": "Local Playroom · 01. Planta Alta",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-06-view-2468411.svg.gz",
-          "region": [
-            0.1274,
-            0.3162,
-            0.53,
-            0.667
-          ],
-          "tags": [
-            "CI-PA-06"
-          ],
-          "dimensions": [
-            {
-              "label": "CI-PA-06 local X",
-              "values_m": [
-                7.9
-              ],
-              "associative": false
-            },
-            {
-              "label": "CI-PA-06 local Y",
-              "values_m": [
-                4.32
-              ],
-              "associative": false
-            }
-          ],
-          "elements": [
-            {
-              "code": "CI-PA-06",
-              "elementId": "870164",
-              "label": "CI-PA-06 · Playroom · 137,87 ml · 4,76 m/m²",
-              "box": [
-                0.0755,
-                0.1227,
-                0.9245,
-                0.8773
-              ]
-            }
-          ]
-        },
-        {
-          "id": "2468431",
-          "name": "CI-PA-06 · axonométrica",
-          "label": "CI-PA-06 · axonométrica   1:50",
-          "scale": 50,
-          "kind": "axo",
-          "sector": "Local Playroom · 01. Planta Alta",
-          "roomLabel": "Local Playroom · 01. Planta Alta",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-06-view-2468431.svg.gz",
-          "region": [
-            0.5561,
-            0.3757,
-            0.7717,
-            0.6074
-          ],
-          "tags": [
-            "CI-PA-06"
-          ],
-          "dimensions": [],
-          "elements": [
-            {
-              "code": "CI-PA-06",
-              "elementId": "870164",
-              "label": "CI-PA-06 · Playroom · 137,87 ml · 4,76 m/m²",
-              "box": [
-                0.0663,
-                0.0,
-                0.9337,
-                0.8926
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "number": "CLI-F-CI-PA-07",
-      "title": "Circuito CI-PA-07 · Puente",
-      "level": "01. Planta Alta",
-      "sector": "Local Puente · 01. Planta Alta",
-      "kind": "element",
-      "element": "CI-PA-07",
-      "elementId": "887814",
-      "elementKind": "CI",
-      "note": "R19 · previo (se reemplaza en la etapa 3)",
-      "sheetId": "2468494",
-      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-07.pdf",
-      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-07.svg.gz",
-      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-07-preview.png",
-      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-07.png",
-      "views": [
-        {
-          "id": "2468464",
-          "name": "CI-PA-07 · planta",
-          "label": "CI-PA-07 · planta   1:10",
-          "scale": 10,
-          "kind": "plan",
-          "sector": "Local Puente · 01. Planta Alta",
-          "roomLabel": "Local Puente · 01. Planta Alta",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-07-view-2468464.svg.gz",
-          "region": [
-            0.1311,
-            0.2402,
-            0.4861,
-            0.7429
-          ],
-          "tags": [
-            "CI-PA-07"
-          ],
-          "dimensions": [
-            {
-              "label": "CI-PA-07 local X",
-              "values_m": [
-                2.0
-              ],
-              "associative": false
-            },
-            {
-              "label": "CI-PA-07 local Y",
-              "values_m": [
-                2.0
-              ],
-              "associative": false
-            }
-          ],
-          "elements": [
-            {
-              "code": "CI-PA-07",
-              "elementId": "887814",
-              "label": "CI-PA-07 · Puente · 0,23 ml · 0,11 m/m²",
-              "box": [
-                0.1953,
-                0.1953,
-                0.8047,
-                0.8047
-              ]
-            }
-          ]
-        },
-        {
-          "id": "2468484",
-          "name": "CI-PA-07 · axonométrica",
-          "label": "CI-PA-07 · axonométrica   1:20",
-          "scale": 20,
-          "kind": "axo",
-          "sector": "Local Puente · 01. Planta Alta",
-          "roomLabel": "Local Puente · 01. Planta Alta",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-07-view-2468484.svg.gz",
-          "region": [
-            0.5382,
-            0.3481,
-            0.7494,
-            0.635
-          ],
-          "tags": [
-            "CI-PA-07"
-          ],
-          "dimensions": [],
-          "elements": [
-            {
-              "code": "CI-PA-07",
-              "elementId": "887814",
-              "label": "CI-PA-07 · Puente · 0,23 ml · 0,11 m/m²",
-              "box": [
-                0.1376,
-                0.0,
-                0.8624,
-                0.8161
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "number": "CLI-F-CI-PA-08",
-      "title": "Circuito CI-PA-08 · Sala de Maquinas",
-      "level": "01. Planta Alta",
-      "sector": "Local Sala de Maquinas · 01. Planta Alta",
-      "kind": "element",
-      "element": "CI-PA-08",
-      "elementId": "892788",
-      "elementKind": "CI",
-      "note": "R19 · previo (se reemplaza en la etapa 3)",
-      "sheetId": "2468547",
-      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-08.pdf",
-      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-08.svg.gz",
-      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-08-preview.png",
-      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-08.png",
-      "views": [
-        {
-          "id": "2468517",
-          "name": "CI-PA-08 · planta",
-          "label": "CI-PA-08 · planta   1:10",
-          "scale": 10,
-          "kind": "plan",
-          "sector": "Local Sala de Maquinas · 01. Planta Alta",
-          "roomLabel": "Local Sala de Maquinas · 01. Planta Alta",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-08-view-2468517.svg.gz",
-          "region": [
-            0.1227,
-            0.267,
-            0.5749,
-            0.7161
-          ],
-          "tags": [
-            "CI-PA-08"
-          ],
-          "dimensions": [
-            {
-              "label": "CI-PA-08 local X",
-              "values_m": [
-                2.9
-              ],
-              "associative": false
-            },
-            {
-              "label": "CI-PA-08 local Y",
-              "values_m": [
-                1.65
-              ],
-              "associative": false
-            }
-          ],
-          "elements": [
-            {
-              "code": "CI-PA-08",
-              "elementId": "892788",
-              "label": "CI-PA-08 · Sala de Maquinas · 16,57 ml · 3,46 m/m²",
-              "box": [
-                0.1533,
-                0.2186,
-                0.8467,
-                0.7814
-              ]
-            }
-          ]
-        },
-        {
-          "id": "2468537",
-          "name": "CI-PA-08 · axonométrica",
-          "label": "CI-PA-08 · axonométrica   1:25",
-          "scale": 25,
-          "kind": "axo",
-          "sector": "Local Sala de Maquinas · 01. Planta Alta",
-          "roomLabel": "Local Sala de Maquinas · 01. Planta Alta",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-08-view-2468537.svg.gz",
-          "region": [
-            0.5903,
-            0.3682,
-            0.7778,
-            0.6149
-          ],
-          "tags": [
-            "CI-PA-08"
-          ],
-          "dimensions": [],
-          "elements": [
-            {
-              "code": "CI-PA-08",
-              "elementId": "892788",
-              "label": "CI-PA-08 · Sala de Maquinas · 16,57 ml · 3,46 m/m²",
-              "box": [
-                0.1287,
-                0.0,
-                0.8713,
-                0.8238
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "number": "CLI-F-CI-PA-09",
-      "title": "Circuito CI-PA-09 · Sala de TV",
-      "level": "01. Planta Alta",
-      "sector": "Local Sala de TV · 01. Planta Alta",
-      "kind": "element",
-      "element": "CI-PA-09",
-      "elementId": "864264",
-      "elementKind": "CI",
-      "note": "R19 · previo (se reemplaza en la etapa 3)",
-      "sheetId": "2468600",
-      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-09.pdf",
-      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-09.svg.gz",
-      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-09-preview.png",
-      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-09.png",
-      "views": [
-        {
-          "id": "2468570",
-          "name": "CI-PA-09 · planta",
-          "label": "CI-PA-09 · planta   1:20",
-          "scale": 20,
-          "kind": "plan",
-          "sector": "Local Sala de TV · 01. Planta Alta",
-          "roomLabel": "Local Sala de TV · 01. Planta Alta",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-09-view-2468570.svg.gz",
-          "region": [
-            0.1314,
-            0.2842,
-            0.4053,
-            0.6989
-          ],
-          "tags": [
-            "CI-PA-09"
-          ],
-          "dimensions": [
-            {
-              "label": "CI-PA-09 local X",
-              "values_m": [
-                3.7
-              ],
-              "associative": false
-            },
-            {
-              "label": "CI-PA-09 local Y",
-              "values_m": [
-                4.05
-              ],
-              "associative": false
-            }
-          ],
-          "elements": [
-            {
-              "code": "CI-PA-09",
-              "elementId": "864264",
-              "label": "CI-PA-09 · Sala de TV · 73,70 ml · 4,92 m/m²",
-              "box": [
-                0.1347,
-                0.126,
-                0.8653,
-                0.874
-              ]
-            }
-          ]
-        },
-        {
-          "id": "2468590",
-          "name": "CI-PA-09 · axonométrica",
-          "label": "CI-PA-09 · axonométrica   1:20",
-          "scale": 20,
-          "kind": "axo",
-          "sector": "Local Sala de TV · 01. Planta Alta",
-          "roomLabel": "Local Sala de TV · 01. Planta Alta",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-09-view-2468590.svg.gz",
-          "region": [
-            0.4264,
-            0.2858,
-            0.7808,
-            0.6973
-          ],
-          "tags": [
-            "CI-PA-09"
-          ],
-          "dimensions": [],
-          "elements": [
-            {
-              "code": "CI-PA-09",
-              "elementId": "864264",
-              "label": "CI-PA-09 · Sala de TV · 73,70 ml · 4,92 m/m²",
-              "box": [
-                0.0819,
-                0.0,
-                0.9181,
-                0.8718
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "number": "CLI-F-CI-PA-10",
-      "title": "Circuito CI-PA-10 · Toilette",
-      "level": "01. Planta Alta",
-      "sector": "Local Toilette · 01. Planta Alta",
-      "kind": "element",
-      "element": "CI-PA-10",
-      "elementId": "863692",
-      "elementKind": "CI",
-      "note": "R19 · previo (se reemplaza en la etapa 3)",
-      "sheetId": "2468653",
-      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-10.pdf",
-      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-10.svg.gz",
-      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-10-preview.png",
-      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-10.png",
-      "views": [
-        {
-          "id": "2468623",
-          "name": "CI-PA-10 · planta",
-          "label": "CI-PA-10 · planta   1:10",
-          "scale": 10,
-          "kind": "plan",
-          "sector": "Local Toilette · 01. Planta Alta",
-          "roomLabel": "Local Toilette · 01. Planta Alta",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-10-view-2468623.svg.gz",
-          "region": [
-            0.1149,
-            0.1862,
-            0.4623,
-            0.7964
-          ],
-          "tags": [
-            "CI-PA-10"
-          ],
-          "dimensions": [
-            {
-              "label": "CI-PA-10 local X",
-              "values_m": [
-                1.9273
-              ],
-              "associative": false
-            },
-            {
-              "label": "CI-PA-10 local Y",
-              "values_m": [
-                2.7
-              ],
-              "associative": false
-            }
-          ],
-          "elements": [
-            {
-              "code": "CI-PA-10",
-              "elementId": "863692",
-              "label": "CI-PA-10 · Toilette · 8,84 ml · 1,73 m/m²",
-              "box": [
-                0.1997,
-                0.161,
-                0.8003,
-                0.839
-              ]
-            }
-          ]
-        },
-        {
-          "id": "2468643",
-          "name": "CI-PA-10 · axonométrica",
-          "label": "CI-PA-10 · axonométrica   1:15",
-          "scale": 15,
-          "kind": "axo",
-          "sector": "Local Toilette · 01. Planta Alta",
-          "roomLabel": "Local Toilette · 01. Planta Alta",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PA-10-view-2468643.svg.gz",
-          "region": [
-            0.4687,
-            0.2881,
-            0.7794,
-            0.6945
-          ],
-          "tags": [
-            "CI-PA-10"
-          ],
-          "dimensions": [],
-          "elements": [
-            {
-              "code": "CI-PA-10",
-              "elementId": "863692",
-              "label": "CI-PA-10 · Toilette · 8,84 ml · 1,73 m/m²",
-              "box": [
-                0.1199,
-                0.0,
-                0.8801,
-                0.832
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "number": "CLI-F-CI-PB-01",
-      "title": "Circuito CI-PB-01 · Baño A Inv.",
-      "level": "00. Planta Baja",
-      "sector": "Local Baño A Inv. · 00. Planta Baja",
-      "kind": "element",
-      "element": "CI-PB-01",
-      "elementId": "780810",
-      "elementKind": "CI",
-      "note": "R19 · previo (se reemplaza en la etapa 3)",
-      "sheetId": "2468706",
-      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-01.pdf",
-      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-01.svg.gz",
-      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-01-preview.png",
-      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-01.png",
-      "views": [
-        {
-          "id": "2468676",
-          "name": "CI-PB-01 · planta",
-          "label": "CI-PB-01 · planta   1:15",
-          "scale": 15,
-          "kind": "plan",
-          "sector": "Local Baño A Inv. · 00. Planta Baja",
-          "roomLabel": "Local Baño A Inv. · 00. Planta Baja",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-01-view-2468676.svg.gz",
-          "region": [
-            0.1275,
-            0.3509,
-            0.4897,
-            0.6322
-          ],
-          "tags": [
-            "CI-PB-01"
-          ],
-          "dimensions": [
-            {
-              "label": "CI-PB-01 local X",
-              "values_m": [
-                3.7
-              ],
-              "associative": false
-            },
-            {
-              "label": "CI-PB-01 local Y",
-              "values_m": [
-                1.43
-              ],
-              "associative": false
-            }
-          ],
-          "elements": [
-            {
-              "code": "CI-PB-01",
-              "elementId": "780810",
-              "label": "CI-PB-01 · Baño A Inv. · 7,10 ml · 1,34 m/m²",
-              "box": [
-                0.1317,
-                0.2403,
-                0.8683,
-                0.7597
-              ]
-            }
-          ]
-        },
-        {
-          "id": "2468696",
-          "name": "CI-PB-01 · axonométrica",
-          "label": "CI-PB-01 · axonométrica   1:20",
-          "scale": 20,
-          "kind": "axo",
-          "sector": "Local Baño A Inv. · 00. Planta Baja",
-          "roomLabel": "Local Baño A Inv. · 00. Planta Baja",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-01-view-2468696.svg.gz",
-          "region": [
-            0.5167,
-            0.3293,
-            0.771,
-            0.6538
-          ],
-          "tags": [
-            "CI-PB-01"
-          ],
-          "dimensions": [],
-          "elements": [
-            {
-              "code": "CI-PB-01",
-              "elementId": "780810",
-              "label": "CI-PB-01 · Baño A Inv. · 7,10 ml · 1,34 m/m²",
-              "box": [
-                0.1142,
-                0.0,
-                0.8858,
-                0.8374
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "number": "CLI-F-CI-PB-02",
-      "title": "Circuito CI-PB-02 · Baño B Inv.",
-      "level": "00. Planta Baja",
-      "sector": "Local Baño B Inv. · 00. Planta Baja",
-      "kind": "element",
-      "element": "CI-PB-02",
-      "elementId": "780813",
-      "elementKind": "CI",
-      "note": "R19 · previo (se reemplaza en la etapa 3)",
-      "sheetId": "2468759",
-      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-02.pdf",
-      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-02.svg.gz",
-      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-02-preview.png",
-      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-02.png",
-      "views": [
-        {
-          "id": "2468729",
-          "name": "CI-PB-02 · planta",
-          "label": "CI-PB-02 · planta   1:15",
-          "scale": 15,
-          "kind": "plan",
-          "sector": "Local Baño B Inv. · 00. Planta Baja",
-          "roomLabel": "Local Baño B Inv. · 00. Planta Baja",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-02-view-2468729.svg.gz",
-          "region": [
-            0.1239,
-            0.3509,
-            0.4933,
-            0.6322
-          ],
-          "tags": [
-            "CI-PB-02"
-          ],
-          "dimensions": [
-            {
-              "label": "CI-PB-02 local X",
-              "values_m": [
-                3.8
-              ],
-              "associative": false
-            },
-            {
-              "label": "CI-PB-02 local Y",
-              "values_m": [
-                1.43
-              ],
-              "associative": false
-            }
-          ],
-          "elements": [
-            {
-              "code": "CI-PB-02",
-              "elementId": "780813",
-              "label": "CI-PB-02 · Baño B Inv. · 6,90 ml · 1,27 m/m²",
-              "box": [
-                0.1291,
-                0.2403,
-                0.8709,
-                0.7597
-              ]
-            }
-          ]
-        },
-        {
-          "id": "2468749",
-          "name": "CI-PB-02 · axonométrica",
-          "label": "CI-PB-02 · axonométrica   1:20",
-          "scale": 20,
-          "kind": "axo",
-          "sector": "Local Baño B Inv. · 00. Planta Baja",
-          "roomLabel": "Local Baño B Inv. · 00. Planta Baja",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-02-view-2468749.svg.gz",
-          "region": [
-            0.5147,
-            0.3277,
-            0.7729,
-            0.6555
-          ],
-          "tags": [
-            "CI-PB-02"
-          ],
-          "dimensions": [],
-          "elements": [
-            {
-              "code": "CI-PB-02",
-              "elementId": "780813",
-              "label": "CI-PB-02 · Baño B Inv. · 6,90 ml · 1,27 m/m²",
-              "box": [
-                0.1125,
-                0.0,
-                0.8875,
-                0.839
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "number": "CLI-F-CI-PB-03",
-      "title": "Circuito CI-PB-03 · Baño C Inv.",
-      "level": "00. Planta Baja",
-      "sector": "Local Baño C Inv. · 00. Planta Baja",
-      "kind": "element",
-      "element": "CI-PB-03",
-      "elementId": "780822",
-      "elementKind": "CI",
-      "note": "R19 · previo (se reemplaza en la etapa 3)",
-      "sheetId": "2468812",
-      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-03.pdf",
-      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-03.svg.gz",
-      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-03-preview.png",
-      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-03.png",
-      "views": [
-        {
-          "id": "2468782",
-          "name": "CI-PB-03 · planta",
-          "label": "CI-PB-03 · planta   1:15",
-          "scale": 15,
-          "kind": "plan",
-          "sector": "Local Baño C Inv. · 00. Planta Baja",
-          "roomLabel": "Local Baño C Inv. · 00. Planta Baja",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-03-view-2468782.svg.gz",
-          "region": [
-            0.1275,
-            0.3509,
-            0.4897,
-            0.6322
-          ],
-          "tags": [
-            "CI-PB-03"
-          ],
-          "dimensions": [
-            {
-              "label": "CI-PB-03 local X",
-              "values_m": [
-                3.7
-              ],
-              "associative": false
-            },
-            {
-              "label": "CI-PB-03 local Y",
-              "values_m": [
-                1.43
-              ],
-              "associative": false
-            }
-          ],
-          "elements": [
-            {
-              "code": "CI-PB-03",
-              "elementId": "780822",
-              "label": "CI-PB-03 · Baño C Inv. · 7,12 ml · 1,34 m/m²",
-              "box": [
-                0.1317,
-                0.2403,
-                0.8683,
-                0.7597
-              ]
-            }
-          ]
-        },
-        {
-          "id": "2468802",
-          "name": "CI-PB-03 · axonométrica",
-          "label": "CI-PB-03 · axonométrica   1:20",
-          "scale": 20,
-          "kind": "axo",
-          "sector": "Local Baño C Inv. · 00. Planta Baja",
-          "roomLabel": "Local Baño C Inv. · 00. Planta Baja",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-03-view-2468802.svg.gz",
-          "region": [
-            0.5167,
-            0.3293,
-            0.771,
-            0.6538
-          ],
-          "tags": [
-            "CI-PB-03"
-          ],
-          "dimensions": [],
-          "elements": [
-            {
-              "code": "CI-PB-03",
-              "elementId": "780822",
-              "label": "CI-PB-03 · Baño C Inv. · 7,12 ml · 1,34 m/m²",
-              "box": [
-                0.1142,
-                0.0,
-                0.8858,
-                0.8374
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "number": "CLI-F-CI-PB-04",
-      "title": "Circuito CI-PB-04 · Baño ppal",
-      "level": "00. Planta Baja",
-      "sector": "Local Baño ppal · 00. Planta Baja",
-      "kind": "element",
-      "element": "CI-PB-04",
-      "elementId": "780828",
-      "elementKind": "CI",
-      "note": "R19 · previo (se reemplaza en la etapa 3)",
-      "sheetId": "2468865",
-      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-04.pdf",
-      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-04.svg.gz",
-      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-04-preview.png",
-      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-04.png",
-      "views": [
-        {
-          "id": "2468835",
-          "name": "CI-PB-04 · planta",
-          "label": "CI-PB-04 · planta   1:20",
-          "scale": 20,
-          "kind": "plan",
-          "sector": "Local Baño ppal · 00. Planta Baja",
-          "roomLabel": "Local Baño ppal · 00. Planta Baja",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-04-view-2468835.svg.gz",
-          "region": [
-            0.1221,
-            0.2441,
-            0.2939,
-            0.739
-          ],
-          "tags": [
-            "CI-PB-04"
-          ],
-          "dimensions": [
-            {
-              "label": "CI-PB-04 local X",
-              "values_m": [
-                1.81
-              ],
-              "associative": false
-            },
-            {
-              "label": "CI-PB-04 local Y",
-              "values_m": [
-                5.1
-              ],
-              "associative": false
-            }
-          ],
-          "elements": [
-            {
-              "code": "CI-PB-04",
-              "elementId": "780828",
-              "label": "CI-PB-04 · Baño ppal · 14,33 ml · 1,59 m/m²",
-              "box": [
-                0.2149,
-                0.1055,
-                0.7851,
-                0.8945
-              ]
-            }
-          ]
-        },
-        {
-          "id": "2468855",
-          "name": "CI-PB-04 · axonométrica",
-          "label": "CI-PB-04 · axonométrica   1:15",
-          "scale": 15,
-          "kind": "axo",
-          "sector": "Local Baño ppal · 00. Planta Baja",
-          "roomLabel": "Local Baño ppal · 00. Planta Baja",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-04-view-2468855.svg.gz",
-          "region": [
-            0.3299,
-            0.238,
-            0.7566,
-            0.7451
-          ],
-          "tags": [
-            "CI-PB-04"
-          ],
-          "dimensions": [],
-          "elements": [
-            {
-              "code": "CI-PB-04",
-              "elementId": "780828",
-              "label": "CI-PB-04 · Baño ppal · 14,33 ml · 1,59 m/m²",
-              "box": [
-                0.0872,
-                0.0,
-                0.9128,
-                0.8655
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "number": "CLI-F-CI-PB-05",
-      "title": "Circuito CI-PB-05 · Cuarto A Inv.",
-      "level": "00. Planta Baja",
-      "sector": "Local Cuarto A Inv. · 00. Planta Baja",
-      "kind": "element",
-      "element": "CI-PB-05",
-      "elementId": "780807",
-      "elementKind": "CI",
-      "note": "R19 · previo (se reemplaza en la etapa 3)",
-      "sheetId": "2468918",
-      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-05.pdf",
-      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-05.svg.gz",
-      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-05-preview.png",
-      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-05.png",
-      "views": [
-        {
-          "id": "2468888",
-          "name": "CI-PB-05 · planta",
-          "label": "CI-PB-05 · planta   1:15",
-          "scale": 15,
-          "kind": "plan",
-          "sector": "Local Cuarto A Inv. · 00. Planta Baja",
-          "roomLabel": "Local Cuarto A Inv. · 00. Planta Baja",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-05-view-2468888.svg.gz",
-          "region": [
-            0.1275,
-            0.2604,
-            0.4897,
-            0.7227
-          ],
-          "tags": [
-            "CI-PB-05"
-          ],
-          "dimensions": [
-            {
-              "label": "CI-PB-05 local X",
-              "values_m": [
-                3.7
-              ],
-              "associative": false
-            },
-            {
-              "label": "CI-PB-05 local Y",
-              "values_m": [
-                3.205
-              ],
-              "associative": false
-            }
-          ],
-          "elements": [
-            {
-              "code": "CI-PB-05",
-              "elementId": "780807",
-              "label": "CI-PB-05 · Cuarto A Inv. · 27,41 ml · 2,31 m/m²",
-              "box": [
-                0.1317,
-                0.1461,
-                0.8683,
-                0.8539
-              ]
-            }
-          ]
-        },
-        {
-          "id": "2468908",
-          "name": "CI-PB-05 · axonométrica",
-          "label": "CI-PB-05 · axonométrica   1:25",
-          "scale": 25,
-          "kind": "axo",
-          "sector": "Local Cuarto A Inv. · 00. Planta Baja",
-          "roomLabel": "Local Cuarto A Inv. · 00. Planta Baja",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-05-view-2468908.svg.gz",
-          "region": [
-            0.514,
-            0.3369,
-            0.7736,
-            0.6462
-          ],
-          "tags": [
-            "CI-PB-05"
-          ],
-          "dimensions": [],
-          "elements": [
-            {
-              "code": "CI-PB-05",
-              "elementId": "780807",
-              "label": "CI-PB-05 · Cuarto A Inv. · 27,41 ml · 2,31 m/m²",
-              "box": [
-                0.0929,
-                0.0,
-                0.9071,
-                0.8595
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "number": "CLI-F-CI-PB-06",
-      "title": "Circuito CI-PB-06 · Cuarto B Inv.",
-      "level": "00. Planta Baja",
-      "sector": "Local Cuarto B Inv. · 00. Planta Baja",
-      "kind": "element",
-      "element": "CI-PB-06",
-      "elementId": "780816",
-      "elementKind": "CI",
-      "note": "R19 · previo (se reemplaza en la etapa 3)",
-      "sheetId": "2468971",
-      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-06.pdf",
-      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-06.svg.gz",
-      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-06-preview.png",
-      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-06.png",
-      "views": [
-        {
-          "id": "2468941",
-          "name": "CI-PB-06 · planta",
-          "label": "CI-PB-06 · planta   1:15",
-          "scale": 15,
-          "kind": "plan",
-          "sector": "Local Cuarto B Inv. · 00. Planta Baja",
-          "roomLabel": "Local Cuarto B Inv. · 00. Planta Baja",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-06-view-2468941.svg.gz",
-          "region": [
-            0.1239,
-            0.2604,
-            0.4933,
-            0.7227
-          ],
-          "tags": [
-            "CI-PB-06"
-          ],
-          "dimensions": [
-            {
-              "label": "CI-PB-06 local X",
-              "values_m": [
-                3.8
-              ],
-              "associative": false
-            },
-            {
-              "label": "CI-PB-06 local Y",
-              "values_m": [
-                3.205
-              ],
-              "associative": false
-            }
-          ],
-          "elements": [
-            {
-              "code": "CI-PB-06",
-              "elementId": "780816",
-              "label": "CI-PB-06 · Cuarto B Inv. · 27,36 ml · 2,25 m/m²",
-              "box": [
-                0.1291,
-                0.1461,
-                0.8709,
-                0.8539
-              ]
-            }
-          ]
-        },
-        {
-          "id": "2468961",
-          "name": "CI-PB-06 · axonométrica",
-          "label": "CI-PB-06 · axonométrica   1:25",
-          "scale": 25,
-          "kind": "axo",
-          "sector": "Local Cuarto B Inv. · 00. Planta Baja",
-          "roomLabel": "Local Cuarto B Inv. · 00. Planta Baja",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-06-view-2468961.svg.gz",
-          "region": [
-            0.5125,
-            0.3356,
-            0.7751,
-            0.6476
-          ],
-          "tags": [
-            "CI-PB-06"
-          ],
-          "dimensions": [],
-          "elements": [
-            {
-              "code": "CI-PB-06",
-              "elementId": "780816",
-              "label": "CI-PB-06 · Cuarto B Inv. · 27,36 ml · 2,25 m/m²",
-              "box": [
-                0.0919,
-                0.0,
-                0.9081,
-                0.8607
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "number": "CLI-F-CI-PB-07",
-      "title": "Circuito CI-PB-07 · Cuarto C Inv.",
-      "level": "00. Planta Baja",
-      "sector": "Local Cuarto C Inv. · 00. Planta Baja",
-      "kind": "element",
-      "element": "CI-PB-07",
-      "elementId": "780819",
-      "elementKind": "CI",
-      "note": "R19 · previo (se reemplaza en la etapa 3)",
-      "sheetId": "2469024",
-      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-07.pdf",
-      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-07.svg.gz",
-      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-07-preview.png",
-      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-07.png",
-      "views": [
-        {
-          "id": "2468994",
-          "name": "CI-PB-07 · planta",
-          "label": "CI-PB-07 · planta   1:15",
-          "scale": 15,
-          "kind": "plan",
-          "sector": "Local Cuarto C Inv. · 00. Planta Baja",
-          "roomLabel": "Local Cuarto C Inv. · 00. Planta Baja",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-07-view-2468994.svg.gz",
-          "region": [
-            0.1275,
-            0.2604,
-            0.4897,
-            0.7227
-          ],
-          "tags": [
-            "CI-PB-07"
-          ],
-          "dimensions": [
-            {
-              "label": "CI-PB-07 local X",
-              "values_m": [
-                3.7
-              ],
-              "associative": false
-            },
-            {
-              "label": "CI-PB-07 local Y",
-              "values_m": [
-                3.205
-              ],
-              "associative": false
-            }
-          ],
-          "elements": [
-            {
-              "code": "CI-PB-07",
-              "elementId": "780819",
-              "label": "CI-PB-07 · Cuarto C Inv. · 27,41 ml · 2,31 m/m²",
-              "box": [
-                0.1317,
-                0.1461,
-                0.8683,
-                0.8539
-              ]
-            }
-          ]
-        },
-        {
-          "id": "2469014",
-          "name": "CI-PB-07 · axonométrica",
-          "label": "CI-PB-07 · axonométrica   1:25",
-          "scale": 25,
-          "kind": "axo",
-          "sector": "Local Cuarto C Inv. · 00. Planta Baja",
-          "roomLabel": "Local Cuarto C Inv. · 00. Planta Baja",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-07-view-2469014.svg.gz",
-          "region": [
-            0.514,
-            0.3369,
-            0.7736,
-            0.6462
-          ],
-          "tags": [
-            "CI-PB-07"
-          ],
-          "dimensions": [],
-          "elements": [
-            {
-              "code": "CI-PB-07",
-              "elementId": "780819",
-              "label": "CI-PB-07 · Cuarto C Inv. · 27,41 ml · 2,31 m/m²",
-              "box": [
-                0.0929,
-                0.0,
-                0.9071,
-                0.8595
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "number": "CLI-F-CI-PB-08",
-      "title": "Circuito CI-PB-08 · Cuarto ppal",
-      "level": "00. Planta Baja",
-      "sector": "Local Cuarto ppal · 00. Planta Baja",
-      "kind": "element",
-      "element": "CI-PB-08",
-      "elementId": "780825",
-      "elementKind": "CI",
-      "note": "R19 · previo (se reemplaza en la etapa 3)",
-      "sheetId": "2469077",
-      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-08.pdf",
-      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-08.svg.gz",
-      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-08-preview.png",
-      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-08.png",
-      "views": [
-        {
-          "id": "2469047",
-          "name": "CI-PB-08 · planta",
-          "label": "CI-PB-08 · planta   1:20",
-          "scale": 20,
-          "kind": "plan",
-          "sector": "Local Cuarto ppal · 00. Planta Baja",
-          "roomLabel": "Local Cuarto ppal · 00. Planta Baja",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-08-view-2469047.svg.gz",
-          "region": [
-            0.1314,
-            0.3103,
-            0.4456,
-            0.6728
-          ],
-          "tags": [
-            "CI-PB-08"
-          ],
-          "dimensions": [
-            {
-              "label": "CI-PB-08 local X",
-              "values_m": [
-                4.445
-              ],
-              "associative": false
-            },
-            {
-              "label": "CI-PB-08 local Y",
-              "values_m": [
-                3.37
-              ],
-              "associative": false
-            }
-          ],
-          "elements": [
-            {
-              "code": "CI-PB-08",
-              "elementId": "780825",
-              "label": "CI-PB-08 · Cuarto ppal · 43,37 ml · 2,93 m/m²",
-              "box": [
-                0.1174,
-                0.1441,
-                0.8826,
-                0.8559
-              ]
-            }
-          ]
-        },
-        {
-          "id": "2469067",
-          "name": "CI-PB-08 · axonométrica",
-          "label": "CI-PB-08 · axonométrica   1:25",
-          "scale": 25,
-          "kind": "axo",
-          "sector": "Local Cuarto ppal · 00. Planta Baja",
-          "roomLabel": "Local Cuarto ppal · 00. Planta Baja",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-08-view-2469067.svg.gz",
-          "region": [
-            0.48,
-            0.3248,
-            0.7674,
-            0.6583
-          ],
-          "tags": [
-            "CI-PB-08"
-          ],
-          "dimensions": [],
-          "elements": [
-            {
-              "code": "CI-PB-08",
-              "elementId": "780825",
-              "label": "CI-PB-08 · Cuarto ppal · 43,37 ml · 2,93 m/m²",
-              "box": [
-                0.0839,
-                0.0,
-                0.9161,
-                0.8697
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "number": "CLI-F-CI-PB-09",
-      "title": "Circuito CI-PB-09 · Hab. servicio",
-      "level": "00. Planta Baja",
-      "sector": "Local Hab. servicio · 00. Planta Baja",
-      "kind": "element",
-      "element": "CI-PB-09",
-      "elementId": "785697",
-      "elementKind": "CI",
-      "note": "R19 · previo (se reemplaza en la etapa 3)",
-      "sheetId": "2469130",
-      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-09.pdf",
-      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-09.svg.gz",
-      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-09-preview.png",
-      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-09.png",
-      "views": [
-        {
-          "id": "2469100",
-          "name": "CI-PB-09 · planta",
-          "label": "CI-PB-09 · planta   1:10",
-          "scale": 10,
-          "kind": "plan",
-          "sector": "Local Hab. servicio · 00. Planta Baja",
-          "roomLabel": "Local Hab. servicio · 00. Planta Baja",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-09-view-2469100.svg.gz",
-          "region": [
-            0.1219,
-            0.1943,
-            0.5355,
-            0.7888
-          ],
-          "tags": [
-            "CI-PB-09"
-          ],
-          "dimensions": [
-            {
-              "label": "CI-PB-09 local X",
-              "values_m": [
-                2.5425
-              ],
-              "associative": false
-            },
-            {
-              "label": "CI-PB-09 local Y",
-              "values_m": [
-                2.6
-              ],
-              "associative": false
-            }
-          ],
-          "elements": [
-            {
-              "code": "CI-PB-09",
-              "elementId": "785697",
-              "label": "CI-PB-09 · Hab. servicio · 19,19 ml · 2,90 m/m²",
-              "box": [
-                0.1676,
-                0.1651,
-                0.8324,
-                0.8349
-              ]
-            }
-          ]
-        },
-        {
-          "id": "2469120",
-          "name": "CI-PB-09 · axonométrica",
-          "label": "CI-PB-09 · axonométrica   1:25",
-          "scale": 25,
-          "kind": "axo",
-          "sector": "Local Hab. servicio · 00. Planta Baja",
-          "roomLabel": "Local Hab. servicio · 00. Planta Baja",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-09-view-2469120.svg.gz",
-          "region": [
-            0.5611,
-            0.3603,
-            0.7667,
-            0.6228
-          ],
-          "tags": [
-            "CI-PB-09"
-          ],
-          "dimensions": [],
-          "elements": [
-            {
-              "code": "CI-PB-09",
-              "elementId": "785697",
-              "label": "CI-PB-09 · Hab. servicio · 19,19 ml · 2,90 m/m²",
-              "box": [
-                0.1173,
-                0.0,
-                0.8827,
-                0.8344
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "number": "CLI-F-CI-PB-10",
-      "title": "Circuito CI-PB-10 · Lavadero",
-      "level": "00. Planta Baja",
-      "sector": "Local Lavadero · 00. Planta Baja",
-      "kind": "element",
-      "element": "CI-PB-10",
-      "elementId": "1041091",
-      "elementKind": "CI",
-      "note": "R19 · previo (se reemplaza en la etapa 3)",
-      "sheetId": "2469183",
-      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-10.pdf",
-      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-10.svg.gz",
-      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-10-preview.png",
-      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-10.png",
-      "views": [
-        {
-          "id": "2469153",
-          "name": "CI-PB-10 · planta",
-          "label": "CI-PB-10 · planta   1:15",
-          "scale": 15,
-          "kind": "plan",
-          "sector": "Local Lavadero · 00. Planta Baja",
-          "roomLabel": "Local Lavadero · 00. Planta Baja",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-10-view-2469153.svg.gz",
-          "region": [
-            0.1308,
-            0.2831,
-            0.4059,
-            0.699
-          ],
-          "tags": [
-            "CI-PB-10"
-          ],
-          "dimensions": [
-            {
-              "label": "CI-PB-10 local X",
-              "values_m": [
-                2.49
-              ],
-              "associative": false
-            },
-            {
-              "label": "CI-PB-10 local Y",
-              "values_m": [
-                2.75
-              ],
-              "associative": false
-            }
-          ],
-          "elements": [
-            {
-              "code": "CI-PB-10",
-              "elementId": "1041091",
-              "label": "CI-PB-10 · Lavadero · 23,26 ml · 3,50 m/m²",
-              "box": [
-                0.1735,
-                0.1624,
-                0.8265,
-                0.8376
-              ]
-            }
-          ]
-        },
-        {
-          "id": "2469173",
-          "name": "CI-PB-10 · axonométrica",
-          "label": "CI-PB-10 · axonométrica   1:15",
-          "scale": 15,
-          "kind": "axo",
-          "sector": "Local Lavadero · 00. Planta Baja",
-          "roomLabel": "Local Lavadero · 00. Planta Baja",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-10-view-2469173.svg.gz",
-          "region": [
-            0.4328,
-            0.2745,
-            0.7744,
-            0.7077
-          ],
-          "tags": [
-            "CI-PB-10"
-          ],
-          "dimensions": [],
-          "elements": [
-            {
-              "code": "CI-PB-10",
-              "elementId": "1041091",
-              "label": "CI-PB-10 · Lavadero · 23,26 ml · 3,50 m/m²",
-              "box": [
-                0.109,
-                0.0,
-                0.891,
-                0.8425
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "number": "CLI-F-CI-PB-11",
-      "title": "Circuito CI-PB-11 · Pasillo",
-      "level": "00. Planta Baja",
-      "sector": "Local Pasillo · 00. Planta Baja",
-      "kind": "element",
-      "element": "CI-PB-11",
-      "elementId": "788673",
-      "elementKind": "CI",
-      "note": "R19 · previo (se reemplaza en la etapa 3)",
-      "sheetId": "2469236",
-      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-11.pdf",
-      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-11.svg.gz",
-      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-11-preview.png",
-      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-11.png",
-      "views": [
-        {
-          "id": "2469206",
-          "name": "CI-PB-11 · planta",
-          "label": "CI-PB-11 · planta   1:30",
-          "scale": 30,
-          "kind": "plan",
-          "sector": "Local Pasillo · 00. Planta Baja",
-          "roomLabel": "Local Pasillo · 00. Planta Baja",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-11-view-2469206.svg.gz",
-          "region": [
-            0.1221,
-            0.2919,
-            0.4951,
-            0.6912
-          ],
-          "tags": [
-            "CI-PB-11"
-          ],
-          "dimensions": [
-            {
-              "label": "CI-PB-11 local X",
-              "values_m": [
-                8.9
-              ],
-              "associative": false
-            },
-            {
-              "label": "CI-PB-11 local Y",
-              "values_m": [
-                6.375
-              ],
-              "associative": false
-            }
-          ],
-          "elements": [
-            {
-              "code": "CI-PB-11",
-              "elementId": "788673",
-              "label": "CI-PB-11 · Pasillo · 133,58 ml · 5,12 m/m²",
-              "box": [
-                0.0699,
-                0.0925,
-                0.9301,
-                0.9075
-              ]
-            }
-          ]
-        },
-        {
-          "id": "2469226",
-          "name": "CI-PB-11 · axonométrica",
-          "label": "CI-PB-11 · axonométrica   1:50",
-          "scale": 50,
-          "kind": "axo",
-          "sector": "Local Pasillo · 00. Planta Baja",
-          "roomLabel": "Local Pasillo · 00. Planta Baja",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-11-view-2469226.svg.gz",
-          "region": [
-            0.5127,
-            0.3554,
-            0.7749,
-            0.6277
-          ],
-          "tags": [
-            "CI-PB-11"
-          ],
-          "dimensions": [],
-          "elements": [
-            {
-              "code": "CI-PB-11",
-              "elementId": "788673",
-              "label": "CI-PB-11 · Pasillo · 133,58 ml · 5,12 m/m²",
-              "box": [
-                0.0545,
-                0.0,
-                0.9455,
-                0.9086
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "number": "CLI-F-CI-PB-12",
-      "title": "Circuito CI-PB-12 · Quincho",
-      "level": "00. Planta Baja",
-      "sector": "Local Quincho · 00. Planta Baja",
-      "kind": "element",
-      "element": "CI-PB-12",
-      "elementId": "783339",
-      "elementKind": "CI",
-      "note": "R19 · previo (se reemplaza en la etapa 3)",
-      "sheetId": "2469289",
-      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-12.pdf",
-      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-12.svg.gz",
-      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-12-preview.png",
-      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-12.png",
-      "views": [
-        {
-          "id": "2469259",
-          "name": "CI-PB-12 · planta",
-          "label": "CI-PB-12 · planta   1:25",
-          "scale": 25,
-          "kind": "plan",
-          "sector": "Local Quincho · 00. Planta Baja",
-          "roomLabel": "Local Quincho · 00. Planta Baja",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-12-view-2469259.svg.gz",
-          "region": [
-            0.1282,
-            0.2448,
-            0.489,
-            0.7383
-          ],
-          "tags": [
-            "CI-PB-12"
-          ],
-          "dimensions": [
-            {
-              "label": "CI-PB-12 local X",
-              "values_m": [
-                6.935
-              ],
-              "associative": false
-            },
-            {
-              "label": "CI-PB-12 local Y",
-              "values_m": [
-                6.65
-              ],
-              "associative": false
-            }
-          ],
-          "elements": [
-            {
-              "code": "CI-PB-12",
-              "elementId": "783339",
-              "label": "CI-PB-12 · Quincho · 187,35 ml · 4,16 m/m²",
-              "box": [
-                0.0842,
-                0.0872,
-                0.9158,
-                0.9128
-              ]
-            }
-          ]
-        },
-        {
-          "id": "2469279",
-          "name": "CI-PB-12 · axonométrica",
-          "label": "CI-PB-12 · axonométrica   1:50",
-          "scale": 50,
-          "kind": "axo",
-          "sector": "Local Quincho · 00. Planta Baja",
-          "roomLabel": "Local Quincho · 00. Planta Baja",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-12-view-2469279.svg.gz",
-          "region": [
-            0.5256,
-            0.3666,
-            0.762,
-            0.6165
-          ],
-          "tags": [
-            "CI-PB-12"
-          ],
-          "dimensions": [],
-          "elements": [
-            {
-              "code": "CI-PB-12",
-              "elementId": "783339",
-              "label": "CI-PB-12 · Quincho · 187,35 ml · 4,16 m/m²",
-              "box": [
-                0.0604,
-                0.0,
-                0.9396,
-                0.9004
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "number": "CLI-F-CI-PB-13",
-      "title": "Circuito CI-PB-13 · Toilette Servicio",
-      "level": "00. Planta Baja",
-      "sector": "Local Toilette Servicio · 00. Planta Baja",
-      "kind": "element",
-      "element": "CI-PB-13",
-      "elementId": "874173",
-      "elementKind": "CI",
-      "note": "R19 · previo (se reemplaza en la etapa 3)",
-      "sheetId": "2469342",
-      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-13.pdf",
-      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-13.svg.gz",
-      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-13-preview.png",
-      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-13.png",
-      "views": [
-        {
-          "id": "2469312",
-          "name": "CI-PB-13 · planta",
-          "label": "CI-PB-13 · planta   1:10",
-          "scale": 10,
-          "kind": "plan",
-          "sector": "Local Toilette Servicio · 00. Planta Baja",
-          "roomLabel": "Local Toilette Servicio · 00. Planta Baja",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-13-view-2469312.svg.gz",
-          "region": [
-            0.1309,
-            0.1886,
-            0.5265,
-            0.7945
-          ],
-          "tags": [
-            "CI-PB-13"
-          ],
-          "dimensions": [
-            {
-              "label": "CI-PB-13 local X",
-              "values_m": [
-                2.375
-              ],
-              "associative": false
-            },
-            {
-              "label": "CI-PB-13 local Y",
-              "values_m": [
-                2.675
-              ],
-              "associative": false
-            }
-          ],
-          "elements": [
-            {
-              "code": "CI-PB-13",
-              "elementId": "874173",
-              "label": "CI-PB-13 · Toilette Servicio · 14,46 ml · 2,32 m/m²",
-              "box": [
-                0.1753,
-                0.162,
-                0.8247,
-                0.838
-              ]
-            }
-          ]
-        },
-        {
-          "id": "2469332",
-          "name": "CI-PB-13 · axonométrica",
-          "label": "CI-PB-13 · axonométrica   1:25",
-          "scale": 25,
-          "kind": "axo",
-          "sector": "Local Toilette Servicio · 00. Planta Baja",
-          "roomLabel": "Local Toilette Servicio · 00. Planta Baja",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-13-view-2469332.svg.gz",
-          "region": [
-            0.5625,
-            0.3615,
-            0.7653,
-            0.6216
-          ],
-          "tags": [
-            "CI-PB-13"
-          ],
-          "dimensions": [],
-          "elements": [
-            {
-              "code": "CI-PB-13",
-              "elementId": "874173",
-              "label": "CI-PB-13 · Toilette Servicio · 14,46 ml · 2,32 m/m²",
-              "box": [
-                0.119,
-                0.0,
-                0.881,
-                0.8328
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "number": "CLI-F-CI-PB-14",
-      "title": "Circuito CI-PB-14 · Vestidor ppal",
-      "level": "00. Planta Baja",
-      "sector": "Local Vestidor ppal · 00. Planta Baja",
-      "kind": "element",
-      "element": "CI-PB-14",
-      "elementId": "1007176",
-      "elementKind": "CI",
-      "note": "R19 · previo (se reemplaza en la etapa 3)",
-      "sheetId": "2469395",
-      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-14.pdf",
-      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-14.svg.gz",
-      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-14-preview.png",
-      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-14.png",
-      "views": [
-        {
-          "id": "2469365",
-          "name": "CI-PB-14 · planta",
-          "label": "CI-PB-14 · planta   1:20",
-          "scale": 20,
-          "kind": "plan",
-          "sector": "Local Vestidor ppal · 00. Planta Baja",
-          "roomLabel": "Local Vestidor ppal · 00. Planta Baja",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-14-view-2469365.svg.gz",
-          "region": [
-            0.1333,
-            0.373,
-            0.4437,
-            0.6101
-          ],
-          "tags": [
-            "CI-PB-14"
-          ],
-          "dimensions": [
-            {
-              "label": "CI-PB-14 local X",
-              "values_m": [
-                4.375
-              ],
-              "associative": false
-            },
-            {
-              "label": "CI-PB-14 local Y",
-              "values_m": [
-                1.73
-              ],
-              "associative": false
-            }
-          ],
-          "elements": [
-            {
-              "code": "CI-PB-14",
-              "elementId": "1007176",
-              "label": "CI-PB-14 · Vestidor ppal · 15,99 ml · 2,11 m/m²",
-              "box": [
-                0.1189,
-                0.2204,
-                0.8811,
-                0.7796
-              ]
-            }
-          ]
-        },
-        {
-          "id": "2469385",
-          "name": "CI-PB-14 · axonométrica",
-          "label": "CI-PB-14 · axonométrica   1:20",
-          "scale": 20,
-          "kind": "axo",
-          "sector": "Local Vestidor ppal · 00. Planta Baja",
-          "roomLabel": "Local Vestidor ppal · 00. Planta Baja",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PB-14-view-2469385.svg.gz",
-          "region": [
-            0.4779,
-            0.3131,
-            0.7695,
-            0.67
-          ],
-          "tags": [
-            "CI-PB-14"
-          ],
-          "dimensions": [],
-          "elements": [
-            {
-              "code": "CI-PB-14",
-              "elementId": "1007176",
-              "label": "CI-PB-14 · Vestidor ppal · 15,99 ml · 2,11 m/m²",
-              "box": [
-                0.0996,
-                0.0,
-                0.9004,
-                0.8522
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "number": "CLI-F-CI-PE-01",
-      "title": "Circuito CI-PE-01 · Atelier",
-      "level": "02. Planta Entrepiso",
-      "sector": "Local Atelier · 02. Planta Entrepiso",
-      "kind": "element",
-      "element": "CI-PE-01",
-      "elementId": "876161",
-      "elementKind": "CI",
-      "note": "R19 · previo (se reemplaza en la etapa 3)",
-      "sheetId": "2469448",
-      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PE-01.pdf",
-      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PE-01.svg.gz",
-      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PE-01-preview.png",
-      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PE-01.png",
-      "views": [
-        {
-          "id": "2469418",
-          "name": "CI-PE-01 · planta",
-          "label": "CI-PE-01 · planta   1:20",
-          "scale": 20,
-          "kind": "plan",
-          "sector": "Local Atelier · 02. Planta Entrepiso",
-          "roomLabel": "Local Atelier · 02. Planta Entrepiso",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PE-01-view-2469418.svg.gz",
-          "region": [
-            0.1339,
-            0.2938,
-            0.4832,
-            0.6893
-          ],
-          "tags": [
-            "CI-PE-01"
-          ],
-          "dimensions": [
-            {
-              "label": "CI-PE-01 local X",
-              "values_m": [
-                5.095
-              ],
-              "associative": false
-            },
-            {
-              "label": "CI-PE-01 local Y",
-              "values_m": [
-                3.8
-              ],
-              "associative": false
-            }
-          ],
-          "elements": [
-            {
-              "code": "CI-PE-01",
-              "elementId": "876161",
-              "label": "CI-PE-01 · Atelier · 94,62 ml · 4,89 m/m²",
-              "box": [
-                0.1056,
-                0.1321,
-                0.8944,
-                0.8679
-              ]
-            }
-          ]
-        },
-        {
-          "id": "2469438",
-          "name": "CI-PE-01 · axonométrica",
-          "label": "CI-PE-01 · axonométrica   1:30",
-          "scale": 30,
-          "kind": "axo",
-          "sector": "Local Atelier · 02. Planta Entrepiso",
-          "roomLabel": "Local Atelier · 02. Planta Entrepiso",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PE-01-view-2469438.svg.gz",
-          "region": [
-            0.5096,
-            0.3396,
-            0.7781,
-            0.6436
-          ],
-          "tags": [
-            "CI-PE-01"
-          ],
-          "dimensions": [],
-          "elements": [
-            {
-              "code": "CI-PE-01",
-              "elementId": "876161",
-              "label": "CI-PE-01 · Atelier · 94,62 ml · 4,89 m/m²",
-              "box": [
-                0.0776,
-                0.0,
-                0.9224,
-                0.8774
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "number": "CLI-F-CI-PE-02",
-      "title": "Circuito CI-PE-02 · SM",
-      "level": "02. Planta Entrepiso",
-      "sector": "Local SM · 02. Planta Entrepiso",
-      "kind": "element",
-      "element": "CI-PE-02",
-      "elementId": "876170",
-      "elementKind": "CI",
-      "note": "R19 · previo (se reemplaza en la etapa 3)",
-      "sheetId": "2469501",
-      "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CI-PE-02.pdf",
-      "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PE-02.svg.gz",
-      "preview": "/casa-angel/rubros/climatizacion/CLI-F-CI-PE-02-preview.png",
-      "thumbnail": "/casa-angel/rubros/climatizacion/CLI-F-CI-PE-02.png",
-      "views": [
-        {
-          "id": "2469471",
-          "name": "CI-PE-02 · planta",
-          "label": "CI-PE-02 · planta   1:10",
-          "scale": 10,
-          "kind": "plan",
-          "sector": "Local SM · 02. Planta Entrepiso",
-          "roomLabel": "Local SM · 02. Planta Entrepiso",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PE-02-view-2469471.svg.gz",
-          "region": [
-            0.1229,
-            0.1943,
-            0.5345,
-            0.7888
-          ],
-          "tags": [
-            "CI-PE-02"
-          ],
-          "dimensions": [
-            {
-              "label": "CI-PE-02 local X",
-              "values_m": [
-                2.5235
-              ],
-              "associative": false
-            },
-            {
-              "label": "CI-PE-02 local Y",
-              "values_m": [
-                2.6
-              ],
-              "associative": false
-            }
-          ],
-          "elements": [
-            {
-              "code": "CI-PE-02",
-              "elementId": "876170",
-              "label": "CI-PE-02 · SM · 1,82 ml · 0,28 m/m²",
-              "box": [
-                0.1685,
-                0.1651,
-                0.8315,
-                0.8349
-              ]
-            }
-          ]
-        },
-        {
-          "id": "2469491",
-          "name": "CI-PE-02 · axonométrica",
-          "label": "CI-PE-02 · axonométrica   1:25",
-          "scale": 25,
-          "kind": "axo",
-          "sector": "Local SM · 02. Planta Entrepiso",
-          "roomLabel": "Local SM · 02. Planta Entrepiso",
-          "image": "/casa-angel/rubros/climatizacion/CLI-F-CI-PE-02-view-2469491.svg.gz",
-          "region": [
-            0.5614,
-            0.3606,
-            0.7665,
-            0.6225
-          ],
-          "tags": [
-            "CI-PE-02"
-          ],
-          "dimensions": [],
-          "elements": [
-            {
-              "code": "CI-PE-02",
-              "elementId": "876170",
-              "label": "CI-PE-02 · SM · 1,82 ml · 0,28 m/m²",
-              "box": [
-                0.1177,
-                0.0,
-                0.8823,
-                0.834
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "number": "CLI-F-CO-N",
       "title": "Colector CO-N",
       "level": "02. Planta Entrepiso",
-      "sector": "Colector Norte · SM",
-      "kind": "element",
-      "element": "CO-N",
+      "sector": "R19 previo · colectores",
+      "kind": "general",
+      "element": null,
       "elementId": "2243525",
       "elementKind": "CO",
-      "note": "R19 · previo (se reemplaza en la etapa 3)",
+      "note": "R19 · previo",
       "sheetId": "2467872",
       "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CO-N.pdf",
       "image": "/casa-angel/rubros/climatizacion/CLI-F-CO-N.svg.gz",
@@ -4339,12 +4254,12 @@
       "number": "CLI-F-CO-S",
       "title": "Colector CO-S",
       "level": "01. Planta Alta",
-      "sector": "Colector Sur · Sala de Maquinas",
-      "kind": "element",
-      "element": "CO-S",
+      "sector": "R19 previo · colectores",
+      "kind": "general",
+      "element": null,
       "elementId": "2263387",
       "elementKind": "CO",
-      "note": "R19 · previo (se reemplaza en la etapa 3)",
+      "note": "R19 · previo",
       "sheetId": "2467937",
       "pdf": "/casa-angel/rubros/climatizacion/CLI-F-CO-S.pdf",
       "image": "/casa-angel/rubros/climatizacion/CLI-F-CO-S.svg.gz",
@@ -5564,7 +5479,8 @@
     "Un código CI por local (serpentín), DI para distribución; códigos solo como anotación.",
     "El inventario anterior (climatizacion/manifest.json) se mantiene; este manifest es el de la mesa de rubros.",
     "R32 etapa 1: documentación en Casa-Angel-DOC-Climatizacion.rvt; colector de cada circuito por conectividad de tubos desde CO-N / CO-S (cercanía si no hay camino). Etapas 2 (colectores) y 3 (fichas por local) después del OK del usuario.",
-    "R32 etapa 2: una lámina por colector (CLI-CO-N, CLI-CO-S); salidas S01.. ordenadas por el conector del colector; el gabinete Hidroflex no tiene geometría en corte, el alzado dibuja su contorno (0,80 × 0,50) y las barras de ida y retorno."
+    "R32 etapa 2: una lámina por colector (CLI-CO-N, CLI-CO-S); salidas S01.. ordenadas por el conector del colector; el gabinete Hidroflex no tiene geometría en corte, el alzado dibuja su contorno (0,80 × 0,50) y las barras de ida y retorno.",
+    "R32 etapa 3: una ficha CLI-F-CI-xx por circuito en el grupo «3 · Fichas por local» (element = CI-xx), reemplaza las fichas R19; paso equivalente = 1 / densidad."
   ],
   "questions": [
     "¿Marca, modelo y potencia de la bomba de calor? ¿Dónde va la unidad exterior?",
