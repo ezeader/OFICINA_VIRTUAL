@@ -3,7 +3,7 @@
   "summary": "Cubierta R29: 3 techos con paquete modelado (machimbre visto, barrera de vapor, EPS 75, membrana, cámara ventilada, teja) en 248,44 m²; cabios LVL 5×15 c/0,96 (275,69 ml), vigas VC 6×20 (192,79 ml), CU-02 con estructura. 49 láminas (documentación en Casa-Angel-DOC-Cubierta.rvt).",
   "model": "Casa-Angel-piloto-documentacion.rvt",
   "readAt": "2026-10-24T16:07:56.258000Z",
-  "revision": "R30",
+  "revision": "R31",
   "kinds": {
     "CU": "Techos (faldones de tejas)",
     "VC": "Vigas de cubierta 6×20",
@@ -23,7 +23,7 @@
       "element": null,
       "elementId": null,
       "elementKind": null,
-      "note": "R30 · archivo Casa-Angel-DOC-Cubierta.rvt",
+      "note": "R31 · archivo Casa-Angel-DOC-Cubierta.rvt",
       "sheetId": "224346",
       "pdf": "/casa-angel/rubros/cubierta/CUB-00.pdf",
       "image": "/casa-angel/rubros/cubierta/CUB-00.svg.gz",
@@ -40,7 +40,7 @@
       "element": null,
       "elementId": null,
       "elementKind": null,
-      "note": "R30 · archivo Casa-Angel-DOC-Cubierta.rvt",
+      "note": "R31 · archivo Casa-Angel-DOC-Cubierta.rvt",
       "sheetId": "218196",
       "pdf": "/casa-angel/rubros/cubierta/CUB-C-01.pdf",
       "image": "/casa-angel/rubros/cubierta/CUB-C-01.svg.gz",
@@ -202,26 +202,26 @@
       "element": null,
       "elementId": null,
       "elementKind": null,
-      "note": "R30 · archivo Casa-Angel-DOC-Cubierta.rvt",
-      "sheetId": "222698",
+      "note": "R31 · archivo Casa-Angel-DOC-Cubierta.rvt",
+      "sheetId": "224779",
       "pdf": "/casa-angel/rubros/cubierta/CUB-D-01.pdf",
       "image": "/casa-angel/rubros/cubierta/CUB-D-01.svg.gz",
       "preview": "/casa-angel/rubros/cubierta/CUB-D-01-preview.png",
       "thumbnail": "/casa-angel/rubros/cubierta/CUB-D-01.png",
       "views": [
         {
-          "id": "222298",
+          "id": "224371",
           "name": "D-01a · Paquete · corte perpendicular a la pendiente",
           "label": "D-01a · Paquete · corte perpendicular a la pendiente   1:5",
           "scale": 5,
           "kind": "detail",
           "sector": "Detalles",
           "roomLabel": "Detalles",
-          "image": "/casa-angel/rubros/cubierta/CUB-D-01-view-222298.svg.gz",
+          "image": "/casa-angel/rubros/cubierta/CUB-D-01-view-224371.svg.gz",
           "region": [
-            0.227,
+            0.2248,
             0.2323,
-            0.6718,
+            0.6739,
             0.4557
           ],
           "tags": [
@@ -229,15 +229,43 @@
           ],
           "dimensions": [
             {
-              "label": "Capas",
+              "label": "Cabio",
               "values_m": [
-                0.15,
-                0.019,
-                0.002,
-                0.075,
-                0.002,
-                0.025,
-                0.025,
+                0.15
+              ],
+              "associative": false
+            },
+            {
+              "label": "Machimbre",
+              "values_m": [
+                0.019
+              ],
+              "associative": false
+            },
+            {
+              "label": "EPS",
+              "values_m": [
+                0.075
+              ],
+              "associative": false
+            },
+            {
+              "label": "Cámara",
+              "values_m": [
+                0.025
+              ],
+              "associative": false
+            },
+            {
+              "label": "Listón",
+              "values_m": [
+                0.025
+              ],
+              "associative": false
+            },
+            {
+              "label": "Teja",
+              "values_m": [
                 0.02
               ],
               "associative": false
@@ -260,14 +288,14 @@
           "elements": []
         },
         {
-          "id": "222514",
+          "id": "224595",
           "name": "D-01b · Paquete · corte paralelo a la pendiente",
           "label": "D-01b · Paquete · corte paralelo a la pendiente   1:10",
           "scale": 10,
           "kind": "detail",
           "sector": "Detalles",
           "roomLabel": "Detalles",
-          "image": "/casa-angel/rubros/cubierta/CUB-D-01-view-222514.svg.gz",
+          "image": "/casa-angel/rubros/cubierta/CUB-D-01-view-224595.svg.gz",
           "region": [
             0.3142,
             0.5731,
@@ -306,22 +334,22 @@
       "element": null,
       "elementId": null,
       "elementKind": null,
-      "note": "R30 · archivo Casa-Angel-DOC-Cubierta.rvt",
-      "sheetId": "223803",
+      "note": "R31 · archivo Casa-Angel-DOC-Cubierta.rvt",
+      "sheetId": "225884",
       "pdf": "/casa-angel/rubros/cubierta/CUB-D-02.pdf",
       "image": "/casa-angel/rubros/cubierta/CUB-D-02.svg.gz",
       "preview": "/casa-angel/rubros/cubierta/CUB-D-02-preview.png",
       "thumbnail": "/casa-angel/rubros/cubierta/CUB-D-02.png",
       "views": [
         {
-          "id": "223099",
+          "id": "225180",
           "name": "D-02a · Alero con canaleta y entrada de aire",
           "label": "D-02a · Alero con canaleta y entrada de aire   1:10",
           "scale": 10,
           "kind": "detail",
           "sector": "Detalles",
           "roomLabel": "Detalles",
-          "image": "/casa-angel/rubros/cubierta/CUB-D-02-view-223099.svg.gz",
+          "image": "/casa-angel/rubros/cubierta/CUB-D-02-view-225180.svg.gz",
           "region": [
             0.3398,
             0.2508,
@@ -343,14 +371,14 @@
           "elements": []
         },
         {
-          "id": "223270",
+          "id": "225351",
           "name": "D-02b · Cumbrera ventilada",
           "label": "D-02b · Cumbrera ventilada   1:10",
           "scale": 10,
           "kind": "detail",
           "sector": "Detalles",
           "roomLabel": "Detalles",
-          "image": "/casa-angel/rubros/cubierta/CUB-D-02-view-223270.svg.gz",
+          "image": "/casa-angel/rubros/cubierta/CUB-D-02-view-225351.svg.gz",
           "region": [
             0.1476,
             0.5683,
@@ -364,14 +392,14 @@
           "elements": []
         },
         {
-          "id": "223538",
+          "id": "225619",
           "name": "D-02c · Limatesa",
           "label": "D-02c · Limatesa   1:10",
           "scale": 10,
           "kind": "detail",
           "sector": "Detalles",
           "roomLabel": "Detalles",
-          "image": "/casa-angel/rubros/cubierta/CUB-D-02-view-223538.svg.gz",
+          "image": "/casa-angel/rubros/cubierta/CUB-D-02-view-225619.svg.gz",
           "region": [
             0.4889,
             0.5643,
@@ -395,22 +423,22 @@
       "element": null,
       "elementId": null,
       "elementKind": null,
-      "note": "R30 · archivo Casa-Angel-DOC-Cubierta.rvt",
-      "sheetId": "223075",
+      "note": "R31 · archivo Casa-Angel-DOC-Cubierta.rvt",
+      "sheetId": "225156",
       "pdf": "/casa-angel/rubros/cubierta/CUB-D-03.pdf",
       "image": "/casa-angel/rubros/cubierta/CUB-D-03.svg.gz",
       "preview": "/casa-angel/rubros/cubierta/CUB-D-03-preview.png",
       "thumbnail": "/casa-angel/rubros/cubierta/CUB-D-03.png",
       "views": [
         {
-          "id": "222720",
+          "id": "224801",
           "name": "D-01c · Apoyo de cabio sobre muro (MH)",
           "label": "D-01c · Apoyo de cabio sobre muro (MH)   1:10",
           "scale": 10,
           "kind": "detail",
           "sector": "Detalles",
           "roomLabel": "Detalles",
-          "image": "/casa-angel/rubros/cubierta/CUB-D-03-view-222720.svg.gz",
+          "image": "/casa-angel/rubros/cubierta/CUB-D-03-view-224801.svg.gz",
           "region": [
             0.2878,
             0.2191,
@@ -432,14 +460,14 @@
           "elements": []
         },
         {
-          "id": "222966",
+          "id": "225047",
           "name": "D-01d · Apoyo de cabio sobre viga VC",
           "label": "D-01d · Apoyo de cabio sobre viga VC   1:10",
           "scale": 10,
           "kind": "detail",
           "sector": "Detalles",
           "roomLabel": "Detalles",
-          "image": "/casa-angel/rubros/cubierta/CUB-D-03-view-222966.svg.gz",
+          "image": "/casa-angel/rubros/cubierta/CUB-D-03-view-225047.svg.gz",
           "region": [
             0.1551,
             0.6025,
@@ -461,14 +489,14 @@
           "elements": []
         },
         {
-          "id": "223025",
+          "id": "225106",
           "name": "D-01e · Unión cabio \\u2013 VC (colgador)",
           "label": "D-01e · Unión cabio \\u2013 VC (colgador)   1:10",
           "scale": 10,
           "kind": "detail",
           "sector": "Detalles",
           "roomLabel": "Detalles",
-          "image": "/casa-angel/rubros/cubierta/CUB-D-03-view-223025.svg.gz",
+          "image": "/casa-angel/rubros/cubierta/CUB-D-03-view-225106.svg.gz",
           "region": [
             0.4888,
             0.6225,
@@ -500,22 +528,22 @@
       "element": null,
       "elementId": null,
       "elementKind": null,
-      "note": "R30 · archivo Casa-Angel-DOC-Cubierta.rvt",
-      "sheetId": "224322",
+      "note": "R31 · archivo Casa-Angel-DOC-Cubierta.rvt",
+      "sheetId": "226403",
       "pdf": "/casa-angel/rubros/cubierta/CUB-D-04.pdf",
       "image": "/casa-angel/rubros/cubierta/CUB-D-04.svg.gz",
       "preview": "/casa-angel/rubros/cubierta/CUB-D-04-preview.png",
       "thumbnail": "/casa-angel/rubros/cubierta/CUB-D-04.png",
       "views": [
         {
-          "id": "223827",
+          "id": "225908",
           "name": "D-02d · Limahoya",
           "label": "D-02d · Limahoya   1:10",
           "scale": 10,
           "kind": "detail",
           "sector": "Detalles",
           "roomLabel": "Detalles",
-          "image": "/casa-angel/rubros/cubierta/CUB-D-04-view-223827.svg.gz",
+          "image": "/casa-angel/rubros/cubierta/CUB-D-04-view-225908.svg.gz",
           "region": [
             0.3167,
             0.24,
@@ -529,14 +557,14 @@
           "elements": []
         },
         {
-          "id": "224085",
+          "id": "226166",
           "name": "D-02e · Babeta contra muro",
           "label": "D-02e · Babeta contra muro   1:10",
           "scale": 10,
           "kind": "detail",
           "sector": "Detalles",
           "roomLabel": "Detalles",
-          "image": "/casa-angel/rubros/cubierta/CUB-D-04-view-224085.svg.gz",
+          "image": "/casa-angel/rubros/cubierta/CUB-D-04-view-226166.svg.gz",
           "region": [
             0.1768,
             0.5509,
@@ -550,14 +578,14 @@
           "elements": []
         },
         {
-          "id": "224247",
+          "id": "226328",
           "name": "D-02f · Bajada pluvial",
           "label": "D-02f · Bajada pluvial   1:10",
           "scale": 10,
           "kind": "detail",
           "sector": "Detalles",
           "roomLabel": "Detalles",
-          "image": "/casa-angel/rubros/cubierta/CUB-D-04-view-224247.svg.gz",
+          "image": "/casa-angel/rubros/cubierta/CUB-D-04-view-226328.svg.gz",
           "region": [
             0.5461,
             0.5422,
@@ -589,7 +617,7 @@
       "element": null,
       "elementId": null,
       "elementKind": null,
-      "note": "R30 · archivo Casa-Angel-DOC-Cubierta.rvt",
+      "note": "R31 · archivo Casa-Angel-DOC-Cubierta.rvt",
       "sheetId": "218038",
       "pdf": "/casa-angel/rubros/cubierta/CUB-P-01.pdf",
       "image": "/casa-angel/rubros/cubierta/CUB-P-01.svg.gz",
@@ -832,7 +860,7 @@
       "element": null,
       "elementId": null,
       "elementKind": null,
-      "note": "R30 · archivo Casa-Angel-DOC-Cubierta.rvt",
+      "note": "R31 · archivo Casa-Angel-DOC-Cubierta.rvt",
       "sheetId": "218131",
       "pdf": "/casa-angel/rubros/cubierta/CUB-P-02.pdf",
       "image": "/casa-angel/rubros/cubierta/CUB-P-02.svg.gz",
@@ -15153,7 +15181,7 @@
   ],
   "questions": [],
   "budget": {
-    "revision": "R30",
+    "revision": "R31",
     "note": "Partidas sin solapes; existente + propuesto en el mismo id; informative = referencia.",
     "lines": [
       {

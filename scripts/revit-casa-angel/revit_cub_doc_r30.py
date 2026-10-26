@@ -272,10 +272,12 @@ def d_perp(doc):
                        ((W - .05, .286), u'Listón 2,5×5 en vista'), ((W - .05, .308), LABELS['teja'])]
     labels_column(doc, v, tgt, x, .50, .045)
     o = (0, 0); d = (1, 0); n = (0, 1)
-    dims.append(dimv(doc, v, u'Capas', o, d, n, [0, .15, .169, .171, .246, .248, .273, .298, .318], -.06))
-    dims.append(dimv(doc, v, u'Paquete total', o, d, n, [0, .318], -.16))
+    # R31: partial dims staggered in two columns so texts never stack; layers < 1 cm (barrera, membrana) only by their label
+    for k, (lab, a, b) in enumerate([(u'Cabio', 0, .15), (u'Machimbre', .15, .169), (u'EPS', .171, .246), (u'Cámara', .248, .273), (u'Listón', .273, .298), (u'Teja', .298, .318)]):
+        dims.append(dimv(doc, v, lab, o, d, n, [a, b], -.05 if k % 2 == 0 else -.11))
+    dims.append(dimv(doc, v, u'Paquete total', o, d, n, [0, .318], -.18))
     dims.append(dimh(doc, v, u'Separación de cabios', o, d, n, [c1 + .025, c2_ + .025], -.07))
-    L.tn(doc, v.Id, V((0, -.13)), u'Corte perpendicular a la pendiente · cotas en m', 'text')
+    L.tn(doc, v.Id, V((0, -.13)), u'Corte perpendicular a la pendiente · cotas en m · barrera de vapor y membrana (< 1 cm) indicadas en su rótulo', 'text')
     return item(doc, v, u'D-01a · Paquete · corte perpendicular a la pendiente', [u'PAQUETE'], dims)
 
 def d_par(doc):
