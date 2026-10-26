@@ -51,7 +51,7 @@ def index_columns(st):
             f"Vigas VC 6×20: {c2(st['VC'])} ml · listones CR: {c2(st['CR'])} ml", f"Madera total: {c2(st['vol'])} m³", f"Cumbreras {c2(e['cumbrera'])} · limatesas {c2(e['limatesa'])} · limahoyas {c2(e['limahoya'] + e['limahoya horizontal'])} ml",
             f"Canaletas {c2(e['alero'])} ml · bajadas {st['bajadas']} u · babetas {c2(e['muro'])} ml", f"Machimbre visto sobre locales: {c2(sum(w['true_m2'] for w in st['wood']))} m²"]
     return [{'title': 'Paquete (confirmado, modelado)', 'lines': ['Teja cerámica apta baja pendiente', 'Cámara ventilada 25 (contraclavaderas)', 'Membrana hidrófuga respirable', 'EPS 75 mm entre clavaderas (sobre cabios)', 'Barrera de vapor PE 200 µm', 'Machimbre pino 3/4" visto', 'Cabios LVL 5×15 c/0,96 · VC 6×20 (calculista)']},
-            {'title': 'Cómputo', 'lines': comp}, {'title': 'Láminas R30', 'lines': ['CUB-00  Índice', 'CUB-P-01  Planta de techos por faldón', 'CUB-P-02  Estructura', 'CUB-C-01  Cortes CU-01/02/03', 'CUB-D-01  Paquete a escala real (1:5)', 'CUB-D-02  Alero, cumbrera, limatesa', 'CUB-D-03  Apoyos y uniones (1:10)', 'CUB-D-04  Limahoya, babeta, bajada', 'R16: planta, cortes y fichas (modelo previo)']},
+            {'title': 'Cómputo', 'lines': comp}, {'title': 'Láminas R30', 'lines': ['CUB-00  Índice', 'CUB-P-01  Planta de techos por faldón', 'CUB-P-02  Estructura', 'CUB-C-01  Cortes CU-01/02/03', 'CUB-D-01  Paquete a escala real (1:5)', 'CUB-D-02  Alero, cumbrera, limatesa', 'CUB-D-03  Apoyos y uniones (1:10)', 'CUB-D-04  Limahoya, babeta, bajada']},
             {'title': 'Notas', 'lines': ['Archivo: Casa-Angel-DOC-Cubierta.rvt (vincula el modelo).', 'CU-03 a 16,8°: teja apta baja pendiente + membrana continua.', 'Encuentros horizontales bajos: limahoya / canaleta interna a verificar.', 'Secciones VC a verificar por calculista.']}]
 
 
@@ -100,8 +100,7 @@ def main():
         pdf.close()
         new.append({'number': n, 'title': s['title'], 'level': s.get('level'), 'sector': s.get('sector'), 'kind': s.get('kind', 'general'), 'element': None, 'elementId': None, 'elementKind': None,
                     'note': 'R31 · archivo Casa-Angel-DOC-Cubierta.rvt', 'sheetId': str(s['sheetId']), 'pdf': BASE + f'{n}.pdf', 'image': BASE + f'{n}.svg.gz', 'preview': BASE + f'{n}-preview.png', 'thumbnail': BASE + f'{n}.png', 'views': views})
-    kept = [s for s in old['sheets'] if s['number'] != 'CUB-00' and s['number'] not in [x['number'] for x in new]]
-    for s in kept: s['note'] = 'R16 · modelo previo al paquete R29 (secciones de cabios 3×10)'
+    kept = []   # R31 (OK usuario): R16 sheets (modelo previo) removed from the office and from the main model
     out = sorted(new + kept, key=lambda s: (s['number'] != 'CUB-00', s['number'].startswith('CUB-F'), not s['number'].startswith(('CUB-P', 'CUB-C', 'CUB-D')), s['number']))
     e = st['edges']; A = st['area']; lima = e['limahoya'] + e['limahoya horizontal']
     codes = [{'code': x['code'], 'kind': x['kind'], 'label': f"{x['code']} · {x['type']} · {c2(x['len_m'])} ml", 'status': ('Nuevo R29 (CU-02)' if x.get('new') else 'Modelado') + f" · {c2(x['w_m'] * 100).replace(',00', '')}×{c2(x['h_m'] * 100).replace(',00', '')}",
