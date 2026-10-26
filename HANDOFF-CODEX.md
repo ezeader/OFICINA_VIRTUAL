@@ -1,15 +1,15 @@
 # Handoff a Codex — Ader Oficina · Casa Ángel
 
-Estado al 26/10/2026, 09:50 (-03). No contiene credenciales. No se descartó ningún cambio pendiente.
+Estado al 26/10/2026, 10:01 (-03). No contiene credenciales. No se descartó ningún cambio pendiente.
 
 ## 1. Proyecto y repositorio
 
 | | |
 |---|---|
 | Repo | `https://github.com/ezeader/OFICINA_VIRTUAL` (rama base `main`, `2d9dca4`) |
-| Checkout principal | `C:\Users\ezead\Desktop\OFICINA_VIRTUAL` → rama `claude/office-efficiency` @ `2d9dca4` (sin cambios de código; `.gitignore` modificado con `respaldos/`, sin commitear) |
-| Worktree web (integración) | `C:\Users\ezead\Desktop\OFICINA_VIRTUAL\.claude\worktrees\aberturas-oficina-354ffd` → `claude/aberturas-oficina-354ffd` @ `2a85e1c` (4 commits por delante de `origin`, sin push) |
-| Worktree Revit (rubros) | `C:\Users\ezead\Desktop\OFICINA_VIRTUAL\.claude\worktrees\revit-rubros-d67c29` → `claude/revit-rubros-d67c29` @ `b62eea2` (sin upstream, sin push) |
+| Checkout principal | `C:\Users\ezead\Desktop\OFICINA_VIRTUAL` → rama `claude/office-efficiency` (pusheada; trae este handoff; `.gitignore` modificado con `respaldos/`, sin commitear) |
+| Worktree web (integración) | `C:\Users\ezead\Desktop\OFICINA_VIRTUAL\.claude\worktrees\aberturas-oficina-354ffd` → `claude/aberturas-oficina-354ffd` @ `10e4bd7` (pusheada, al día con `origin`) |
+| Worktree Revit (rubros) | `C:\Users\ezead\Desktop\OFICINA_VIRTUAL\.claude\worktrees\revit-rubros-d67c29` → `claude/revit-rubros-d67c29` @ `1a69dcf` (pusheada, al día con `origin`) |
 | Carpeta Revit / scripts | `C:\Users\ezead\Documents\Codex\2026-10-20\c-users-ezead-documents-codex-2026\` (`work\casa-angel-dimensioning`, `outputs\casa-angel`) |
 
 Flujo de ramas: la rama Revit genera manifests y láminas (`public/casa-angel/rubros/**`) y se mergea en `claude/aberturas-oficina-354ffd`, que es la que sirve la oficina. Nada está en `main` ni hay PR abierto.
@@ -34,7 +34,7 @@ Todo lo de esta tabla está commiteado y publicado en la oficina de 5180.
 | Aberturas | Planilla de carpinterías por sector con dibujo acotado y código; sin hover. | `#documentacion/angel/aberturas` |
 | Revestimientos | **Propuesta a confirmar** (13 láminas, 137 m² de cerámica, 507 m² de pintura). Esperan respuestas del usuario. | `#documentacion/angel/revestimientos` |
 | Cielorrasos R30 | Terminado. 23 cielorrasos modelados. RH 69,45 m², ST 166,79 m², buña 290,15 ml, 7 tapas. 5 láminas. | `#documentacion/angel/cielorrasos` |
-| Cubierta R30 | Textos sin superposición y detalles D-01…D-04. El presupuesto suma herrajes (226 u) y peine anti-pájaros (90,29 ml). | `#documentacion/angel/cubierta` |
+| Cubierta R30–R31 | Textos sin superposición y detalles D-01…D-04; CUB-D-01a con cotas parciales escalonadas, total y cabio aparte (R31). El presupuesto suma herrajes (226 u) y peine anti-pájaros (90,29 ml). | `#documentacion/angel/cubierta` |
 | Estructura R31 | Platea PL-01 + ampliación PL-02 (374 m²). LO-PB-01 pasó a paquete de piso de 11 cm sin hormigón (−0,20/−0,09, sobre la platea). Ficha EST-F-PL-02 hecha. | `#documentacion/angel/estructura` |
 | Climatización R32 | Etapas 1 (plantas con serpentina, 14 circuitos a CO-N y 12 a CO-S) y 2 (colectores CLI-CO-N/S) hechas. | `#documentacion/angel/climatizacion` |
 | Presupuesto | 94+ partidas sin doble cómputo, todavía sin precios. | `#presupuesto/angel` |
@@ -80,7 +80,7 @@ Antes de publicar en ChatGPT Sites hay que pasar todo a `main`; todavía no se h
 
 ## 6. Próximas tareas
 
-1. Revit: cotas de CUB-D-01, que pidió la sesión de Cubierta.
+1. ~~Revit: cotas de CUB-D-01~~ — hecho en `1a69dcf`; falta que la sesión de Cubierta lo revise.
 2. Climatización etapa 3: fichas por local. Las etapas siguen el orden pedido; el usuario aprobó continuar.
 3. Terminar y commitear la exportación a PDF (sección 4) y verificarla en la oficina.
 4. Decidir qué hacer con los 99 `.svg.gz` de Equipamiento.
@@ -97,7 +97,7 @@ Antes de publicar en ChatGPT Sites hay que pasar todo a `main`; todavía no se h
 - Un vínculo no permite colorear elementos sueltos. Los DOC resaltan con regiones o líneas y traducen ids a través del vínculo.
 - CRLF/LF rompe `document-assets --check`. Ver sección 2.
 - El plugin MCP de GitHub no conecta porque la cabecera de autorización es inválida. Usar `git`/`gh`.
-- La rama Revit no tiene upstream: hacer `git push -u` solo si el usuario lo pide.
+- Las tres ramas están pusheadas; no hay PR abierto.
 
 ## 8. Reglas del usuario
 
