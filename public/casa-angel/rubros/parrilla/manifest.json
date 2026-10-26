@@ -1,8 +1,8 @@
 {
   "title": "Parrilla",
-  "summary": "Parrilla de obra a medida en el Quincho (decisión del usuario): boca 1,50, hogar a +0,90, campana de ladrillo refractario visto hasta el cielorraso, parrilla regulable inox + brasero, leñero; conducto Ø 35 (7,03 ml) por el Comedor y la cubierta CU-03 con sombrerete fijo. en PA sube a la vista junto al ducto del hogar. Modelada en el modelo principal (reemplaza al K42DB; cajón Durlock ampliado) y documentada en 6 láminas en Casa-Angel-DOC-Parrilla.rvt.",
+  "summary": "Parrilla de obra a medida en el Quincho (decisión del usuario): boca 1,50, hogar a +0,90, campana de ladrillo refractario visto hasta el cielorraso, parrilla regulable inox + brasero, leñero; conducto Ø 35 (6,90 ml) por el Comedor y la cubierta CU-03 con sombrerete fijo. en PA sube recto y a la vista junto al cajón del hogar. Modelada en el modelo principal (reemplaza al K42DB) y documentada en 6 láminas en Casa-Angel-DOC-Parrilla.rvt.",
   "model": "Casa-Angel-piloto-documentacion.rvt",
-  "readAt": "2026-10-26T14:55:10.640000Z",
+  "readAt": "2026-10-26T15:38:37.386000Z",
   "revision": "R34",
   "kinds": {
     "PR": "Parrilla",
@@ -19,7 +19,7 @@
       "elementId": null,
       "elementKind": null,
       "note": "R34 · archivo Casa-Angel-DOC-Parrilla.rvt",
-      "sheetId": "224310",
+      "sheetId": "226586",
       "pdf": "/casa-angel/rubros/parrilla/PAR-00.pdf",
       "image": "/casa-angel/rubros/parrilla/PAR-00.svg.gz",
       "preview": "/casa-angel/rubros/parrilla/PAR-00-preview.png",
@@ -36,21 +36,21 @@
       "elementId": null,
       "elementKind": null,
       "note": "R34 · archivo Casa-Angel-DOC-Parrilla.rvt",
-      "sheetId": "224818",
+      "sheetId": "226032",
       "pdf": "/casa-angel/rubros/parrilla/PAR-D-01.pdf",
       "image": "/casa-angel/rubros/parrilla/PAR-D-01.svg.gz",
       "preview": "/casa-angel/rubros/parrilla/PAR-D-01-preview.png",
       "thumbnail": "/casa-angel/rubros/parrilla/PAR-D-01.png",
       "views": [
         {
-          "id": "224335",
+          "id": "225556",
           "name": "D-01a · Planta de la parrilla",
           "label": "D-01a · Planta de la parrilla   1:20",
           "scale": 20,
           "kind": "detail",
           "sector": "Detalles",
           "roomLabel": "Detalles",
-          "image": "/casa-angel/rubros/parrilla/PAR-D-01-view-224335.svg.gz",
+          "image": "/casa-angel/rubros/parrilla/PAR-D-01-view-225556.svg.gz",
           "region": [
             0.338,
             0.2169,
@@ -171,14 +171,14 @@
           ]
         },
         {
-          "id": "224495",
+          "id": "225716",
           "name": "D-01b · Vista frontal",
           "label": "D-01b · Vista frontal   1:25",
           "scale": 25,
           "kind": "detail",
           "sector": "Detalles",
           "roomLabel": "Detalles",
-          "image": "/casa-angel/rubros/parrilla/PAR-D-01-view-224495.svg.gz",
+          "image": "/casa-angel/rubros/parrilla/PAR-D-01-view-225716.svg.gz",
           "region": [
             0.159,
             0.5111,
@@ -278,8 +278,8 @@
               ]
             },
             {
-              "code": "PR-PU",
-              "label": "PR-PU · puertas del leñero 2 hojas chapa N°18 con marco L 1\" · 1,50 × 0,69",
+              "code": "PR-LE",
+              "label": "PR-LE · leñero abierto bajo la losa · 1,50 × 0,78 × 0,74",
               "box": [
                 0.2472,
                 0.6797,
@@ -310,14 +310,14 @@
           ]
         },
         {
-          "id": "224654",
+          "id": "225881",
           "name": "D-01c · Corte A-A",
           "label": "D-01c · Corte A-A   1:25",
           "scale": 25,
           "kind": "detail",
           "sector": "Detalles",
           "roomLabel": "Detalles",
-          "image": "/casa-angel/rubros/parrilla/PAR-D-01-view-224654.svg.gz",
+          "image": "/casa-angel/rubros/parrilla/PAR-D-01-view-225881.svg.gz",
           "region": [
             0.5275,
             0.4951,
@@ -414,7 +414,7 @@
             },
             {
               "code": "CH-01",
-              "label": "CH-01 · conducto Ø 0,35 acero inox · +2,50 a +9,40 · 7,03 ml · desvío 2 codos 30°",
+              "label": "CH-01 · conducto Ø 0,35 acero inox · +2,50 a +9,40 · 6,90 ml · recto, a la vista en PA",
               "box": [
                 0.2822,
                 0.0567,
@@ -424,7 +424,7 @@
             },
             {
               "code": "PR-LE",
-              "label": "PR-LE · leñero con puertas bajo la losa · 1,50 × 0,78 × 0,74",
+              "label": "PR-LE · leñero abierto bajo la losa · 1,50 × 0,78 × 0,74",
               "box": [
                 0.257,
                 0.6692,
@@ -446,25 +446,25 @@
       "elementId": null,
       "elementKind": null,
       "note": "R34 · archivo Casa-Angel-DOC-Parrilla.rvt",
-      "sheetId": "224940",
+      "sheetId": "226140",
       "pdf": "/casa-angel/rubros/parrilla/PAR-D-02.pdf",
       "image": "/casa-angel/rubros/parrilla/PAR-D-02.svg.gz",
       "preview": "/casa-angel/rubros/parrilla/PAR-D-02-preview.png",
       "thumbnail": "/casa-angel/rubros/parrilla/PAR-D-02.png",
       "views": [
         {
-          "id": "224842",
+          "id": "226056",
           "name": "D-02a · Conducto: corte esquemático",
           "label": "D-02a · Conducto: corte esquemático   1:50",
           "scale": 50,
           "kind": "detail",
           "sector": "Detalles",
           "roomLabel": "Detalles",
-          "image": "/casa-angel/rubros/parrilla/PAR-D-02-view-224842.svg.gz",
+          "image": "/casa-angel/rubros/parrilla/PAR-D-02-view-226056.svg.gz",
           "region": [
-            0.3087,
+            0.3175,
             0.3131,
-            0.5906,
+            0.5818,
             0.674
           ],
           "tags": [
@@ -472,11 +472,10 @@
           ],
           "dimensions": [
             {
-              "label": "Conducto: simple · doble con desvío · vertical",
+              "label": "Conducto: simple · doble pared",
               "values_m": [
                 0.5,
-                0.9106,
-                5.4894
+                6.4
               ],
               "associative": false
             },
@@ -490,21 +489,14 @@
             {
               "label": "Remate sobre el techo en el conducto",
               "values_m": [
-                1.4683
+                1.2863
               ],
               "associative": false
             },
             {
               "label": "Distancia conducto \\u2013 cumbrera",
               "values_m": [
-                2.303
-              ],
-              "associative": false
-            },
-            {
-              "label": "Desvío",
-              "values_m": [
-                0.468
+                1.7
               ],
               "associative": false
             }
@@ -514,19 +506,19 @@
               "code": "PR-01",
               "label": "PR-01 · parrilla de obra · 1,77 × 0,78 · boca 1,50",
               "box": [
-                0.284,
+                0.3034,
                 0.6839,
-                0.422,
+                0.4509,
                 0.904
               ]
             },
             {
               "code": "CH-01",
-              "label": "CH-01 · conducto Ø 0,35 acero inox · +2,50 a +9,40 · 7,03 ml · desvío 2 codos 30°",
+              "label": "CH-01 · conducto Ø 0,35 acero inox · +2,50 a +9,40 · 6,90 ml · recto, a la vista en PA",
               "box": [
-                0.3825,
+                0.3973,
                 0.0765,
-                0.4514,
+                0.4312,
                 0.6839
               ]
             },
@@ -534,19 +526,19 @@
               "code": "CH-PA",
               "label": "CH-PA · pase en losa L01 0,50 × 0,50 (amplía el pase existente)",
               "box": [
-                0.3786,
+                0.393,
                 0.6399,
-                0.4182,
+                0.4354,
                 0.6575
               ]
             },
             {
               "code": "CH-CJ",
-              "label": "CH-CJ · cajón Durlock del Comedor ampliado al oeste (eje x 3,65), alto +4,00: encierra el desvío",
+              "label": "CH-CJ · cajón Durlock del Comedor existente (sin cambios) · el conducto pasa a 5 cm de su cara oeste",
               "box": [
-                0.3766,
+                0.4378,
                 0.5518,
-                0.4633,
+                0.495,
                 0.6399
               ]
             },
@@ -554,9 +546,9 @@
               "code": "CH-02",
               "label": "CH-02 · ducto del hogar de PA (existente, Ø 0,25)",
               "box": [
-                0.4319,
+                0.4614,
                 0.0765,
-                0.4517,
+                0.4826,
                 0.6099
               ]
             },
@@ -564,19 +556,19 @@
               "code": "CH-BA",
               "label": "CH-BA · babeta / collar de cubierta + brochal entre cabios",
               "box": [
-                0.4117,
-                0.1969,
-                0.4593,
-                0.241
+                0.3888,
+                0.1809,
+                0.4396,
+                0.2249
               ]
             },
             {
               "code": "CH-SO",
               "label": "CH-SO · sombrerete fijo acero inox Ø 0,70 + malla antichispa",
               "box": [
-                0.4078,
+                0.3845,
                 0.0413,
-                0.4633,
+                0.4439,
                 0.0765
               ]
             }
@@ -594,21 +586,21 @@
       "elementId": null,
       "elementKind": null,
       "note": "R34 · archivo Casa-Angel-DOC-Parrilla.rvt",
-      "sheetId": "225312",
+      "sheetId": "226512",
       "pdf": "/casa-angel/rubros/parrilla/PAR-D-03.pdf",
       "image": "/casa-angel/rubros/parrilla/PAR-D-03.svg.gz",
       "preview": "/casa-angel/rubros/parrilla/PAR-D-03-preview.png",
       "thumbnail": "/casa-angel/rubros/parrilla/PAR-D-03.png",
       "views": [
         {
-          "id": "224960",
+          "id": "226160",
           "name": "D-02b · Pase de cubierta y babeta",
           "label": "D-02b · Pase de cubierta y babeta   1:10",
           "scale": 10,
           "kind": "detail",
           "sector": "Detalles",
           "roomLabel": "Detalles",
-          "image": "/casa-angel/rubros/parrilla/PAR-D-03-view-224960.svg.gz",
+          "image": "/casa-angel/rubros/parrilla/PAR-D-03-view-226160.svg.gz",
           "region": [
             0.1341,
             0.3466,
@@ -639,7 +631,7 @@
           "elements": [
             {
               "code": "CH-01",
-              "label": "CH-01 · conducto Ø 0,35 acero inox · +2,50 a +9,40 · 7,03 ml · desvío 2 codos 30°",
+              "label": "CH-01 · conducto Ø 0,35 acero inox · +2,50 a +9,40 · 6,90 ml · recto, a la vista en PA",
               "box": [
                 0.2387,
                 0.1565,
@@ -660,14 +652,14 @@
           ]
         },
         {
-          "id": "225244",
+          "id": "226444",
           "name": "D-02c · Sombrerete fijo",
           "label": "D-02c · Sombrerete fijo   1:10",
           "scale": 10,
           "kind": "detail",
           "sector": "Detalles",
           "roomLabel": "Detalles",
-          "image": "/casa-angel/rubros/parrilla/PAR-D-03-view-225244.svg.gz",
+          "image": "/casa-angel/rubros/parrilla/PAR-D-03-view-226444.svg.gz",
           "region": [
             0.5323,
             0.3691,
@@ -713,7 +705,7 @@
             },
             {
               "code": "CH-01",
-              "label": "CH-01 · conducto Ø 0,35 acero inox · +2,50 a +9,40 · 7,03 ml · desvío 2 codos 30°",
+              "label": "CH-01 · conducto Ø 0,35 acero inox · +2,50 a +9,40 · 6,90 ml · recto, a la vista en PA",
               "box": [
                 0.2507,
                 0.452,
@@ -735,26 +727,26 @@
       "elementId": null,
       "elementKind": null,
       "note": "R34 · archivo Casa-Angel-DOC-Parrilla.rvt",
-      "sheetId": "225364",
+      "sheetId": "226564",
       "pdf": "/casa-angel/rubros/parrilla/PAR-D-04.pdf",
       "image": "/casa-angel/rubros/parrilla/PAR-D-04.svg.gz",
       "preview": "/casa-angel/rubros/parrilla/PAR-D-04-preview.png",
       "thumbnail": "/casa-angel/rubros/parrilla/PAR-D-04.png",
       "views": [
         {
-          "id": "225336",
+          "id": "226536",
           "name": "D-04a · Axonometría (modelo en el archivo DOC)",
           "label": "D-04a · Axonometría (modelo en el archivo DOC)   1:50",
           "scale": 50,
           "kind": "axo",
           "sector": "Tiraje",
           "roomLabel": "Tiraje",
-          "image": "/casa-angel/rubros/parrilla/PAR-D-04-view-225336.svg.gz",
+          "image": "/casa-angel/rubros/parrilla/PAR-D-04-view-226536.svg.gz",
           "region": [
-            0.2044,
-            0.2919,
-            0.3592,
-            0.6903
+            0.2035,
+            0.2922,
+            0.36,
+            0.6899
           ],
           "tags": [
             "PR-01",
@@ -764,14 +756,14 @@
           "elements": []
         },
         {
-          "id": "225345",
+          "id": "226545",
           "name": "D-04b · Verificación del tiraje",
           "label": "D-04b · Verificación del tiraje   1:50",
           "scale": 50,
           "kind": "detail",
           "sector": "Detalles",
           "roomLabel": "Detalles",
-          "image": "/casa-angel/rubros/parrilla/PAR-D-04-view-225345.svg.gz",
+          "image": "/casa-angel/rubros/parrilla/PAR-D-04-view-226545.svg.gz",
           "region": [
             0.551,
             0.3146,
@@ -796,21 +788,21 @@
       "elementId": null,
       "elementKind": null,
       "note": "R34 · archivo Casa-Angel-DOC-Parrilla.rvt",
-      "sheetId": "223235",
+      "sheetId": "225532",
       "pdf": "/casa-angel/rubros/parrilla/PAR-P-01.pdf",
       "image": "/casa-angel/rubros/parrilla/PAR-P-01.svg.gz",
       "preview": "/casa-angel/rubros/parrilla/PAR-P-01-preview.png",
       "thumbnail": "/casa-angel/rubros/parrilla/PAR-P-01.png",
       "views": [
         {
-          "id": "223095",
+          "id": "225397",
           "name": "Ubicación · Quincho · planta baja",
           "label": "Ubicación · Quincho · planta baja   1:25",
           "scale": 25,
           "kind": "plan",
           "sector": "00. Planta Baja",
           "roomLabel": "00. Planta Baja",
-          "image": "/casa-angel/rubros/parrilla/PAR-P-01-view-223095.svg.gz",
+          "image": "/casa-angel/rubros/parrilla/PAR-P-01-view-225397.svg.gz",
           "region": [
             0.3367,
             0.2297,
@@ -857,25 +849,25 @@
             },
             {
               "code": "CH-01",
-              "label": "CH-01 · conducto Ø 0,35 acero inox · +2,50 a +9,40 · 7,03 ml · desvío 2 codos 30°",
+              "label": "CH-01 · conducto Ø 0,35 acero inox · +2,50 a +9,40 · 6,90 ml · recto, a la vista en PA",
               "box": [
-                0.674,
+                0.647,
                 0.6552,
-                0.734,
+                0.707,
                 0.7586
               ]
             }
           ]
         },
         {
-          "id": "223177",
+          "id": "225479",
           "name": "Conducto por la planta alta · Comedor",
           "label": "Conducto por la planta alta · Comedor   1:25",
           "scale": 25,
           "kind": "plan",
           "sector": "01. Planta Alta",
           "roomLabel": "01. Planta Alta",
-          "image": "/casa-angel/rubros/parrilla/PAR-P-01-view-223177.svg.gz",
+          "image": "/casa-angel/rubros/parrilla/PAR-P-01-view-225479.svg.gz",
           "region": [
             0.2253,
             0.5436,
@@ -889,16 +881,9 @@
           ],
           "dimensions": [
             {
-              "label": "Cajón ampliado",
+              "label": "Conducto: eje a la cara oeste del cajón",
               "values_m": [
-                1.093
-              ],
-              "associative": false
-            },
-            {
-              "label": "Desvío del conducto",
-              "values_m": [
-                0.468
+                0.253
               ],
               "associative": false
             }
@@ -906,11 +891,11 @@
           "elements": [
             {
               "code": "CH-01",
-              "label": "CH-01 · conducto Ø 0,35 acero inox · +2,50 a +9,40 · 7,03 ml · desvío 2 codos 30°",
+              "label": "CH-01 · conducto Ø 0,35 acero inox · +2,50 a +9,40 · 6,90 ml · recto, a la vista en PA",
               "box": [
-                0.5367,
+                0.2854,
                 0.5,
-                0.7033,
+                0.4521,
                 0.625
               ]
             },
@@ -926,9 +911,9 @@
             },
             {
               "code": "CH-CJ",
-              "label": "CH-CJ · cajón Durlock del Comedor ampliado al oeste (eje x 3,65), alto +4,00: encierra el desvío",
+              "label": "CH-CJ · cajón Durlock del Comedor existente (sin cambios) · el conducto pasa a 5 cm de su cara oeste",
               "box": [
-                0.3104,
+                0.4846,
                 0.2712,
                 0.7658,
                 0.6931
@@ -937,14 +922,14 @@
           ]
         },
         {
-          "id": "223202",
+          "id": "225499",
           "name": "Cruce de cubierta · planta de techos",
           "label": "Cruce de cubierta · planta de techos   1:25",
           "scale": 25,
           "kind": "plan",
           "sector": "03. Planta de Techos",
           "roomLabel": "03. Planta de Techos",
-          "image": "/casa-angel/rubros/parrilla/PAR-P-01-view-223202.svg.gz",
+          "image": "/casa-angel/rubros/parrilla/PAR-P-01-view-225499.svg.gz",
           "region": [
             0.5606,
             0.5436,
@@ -986,9 +971,9 @@
               "code": "CH-BA",
               "label": "CH-BA · babeta / collar de cubierta + brochal entre cabios",
               "box": [
-                0.5158,
+                0.2646,
                 0.4844,
-                0.7242,
+                0.4729,
                 0.6406
               ]
             },
@@ -996,9 +981,9 @@
               "code": "CH-SO",
               "label": "CH-SO · sombrerete fijo acero inox Ø 0,70 + malla antichispa",
               "box": [
-                0.495,
+                0.2438,
                 0.4688,
-                0.745,
+                0.4938,
                 0.6563
               ]
             }
@@ -1011,9 +996,9 @@
     {
       "code": "CH-01",
       "kind": "CH",
-      "label": "CH-01 · conducto Ø 0,35 acero inox · +2,50 a +9,40 · 7,03 ml · desvío 2 codos 30°",
+      "label": "CH-01 · conducto Ø 0,35 acero inox · +2,50 a +9,40 · 6,90 ml · recto, a la vista en PA",
       "status": "Modelado R34 en el modelo principal (DirectShape)",
-      "elementId": "2489065"
+      "elementId": "2489076"
     },
     {
       "code": "CH-02",
@@ -1032,7 +1017,7 @@
     {
       "code": "CH-CJ",
       "kind": "CH",
-      "label": "CH-CJ · cajón Durlock del Comedor ampliado al oeste (eje x 3,65), alto +4,00: encierra el desvío",
+      "label": "CH-CJ · cajón Durlock del Comedor existente (sin cambios) · el conducto pasa a 5 cm de su cara oeste",
       "status": "Documentado R34",
       "elementId": null
     },
@@ -1048,7 +1033,7 @@
       "kind": "CH",
       "label": "CH-SO · sombrerete fijo acero inox Ø 0,70 + malla antichispa",
       "status": "Modelado R34 en el modelo principal (DirectShape)",
-      "elementId": "2489066"
+      "elementId": "2489077"
     },
     {
       "code": "PR-01",
@@ -1062,35 +1047,35 @@
       "kind": "PR",
       "label": "PR-AI · placa lana cerámica 25 mm contra el tabique · 0,78 × 2,50 m",
       "status": "Modelado R34 en el modelo principal (DirectShape)",
-      "elementId": "2489056"
+      "elementId": "2489068"
     },
     {
       "code": "PR-BR",
       "kind": "PR",
       "label": "PR-BR · brasero (canasto) hierro 0,35 × 0,50",
       "status": "Modelado R34 en el modelo principal (DirectShape)",
-      "elementId": "2489063"
+      "elementId": "2489075"
     },
     {
       "code": "PR-CA",
       "kind": "PR",
       "label": "PR-CA · frente de campana ladrillo refractario visto · 1,50 × 1,00 m",
       "status": "Modelado R34 en el modelo principal (DirectShape)",
-      "elementId": "2489060"
+      "elementId": "2489072"
     },
     {
       "code": "PR-DI",
       "kind": "PR",
       "label": "PR-DI · dintel 2 L 2½\" × ¼\" · 1,74 ml c/u",
       "status": "Modelado R34 en el modelo principal (DirectShape)",
-      "elementId": "2489061"
+      "elementId": "2489073"
     },
     {
       "code": "PR-FO",
       "kind": "PR",
       "label": "PR-FO · fondo refractario de plano 6,4 cm · 1,50 × 1,66 m",
       "status": "Modelado R34 en el modelo principal (DirectShape)",
-      "elementId": "2489057"
+      "elementId": "2489069"
     },
     {
       "code": "PR-GA",
@@ -1104,12 +1089,12 @@
       "kind": "PR",
       "label": "PR-JA · jambas ladrillo refractario visto 12 cm · 0,78 × 2,50 m (2)",
       "status": "Modelado R34 en el modelo principal (DirectShape)",
-      "elementId": "2489055"
+      "elementId": "2489067"
     },
     {
       "code": "PR-LE",
       "kind": "PR",
-      "label": "PR-LE · leñero con puertas bajo la losa · 1,50 × 0,78 × 0,74",
+      "label": "PR-LE · leñero abierto bajo la losa · 1,50 × 0,78 × 0,74",
       "status": "Documentado R34",
       "elementId": null
     },
@@ -1118,28 +1103,21 @@
       "kind": "PR",
       "label": "PR-LO · losa base H°A° 10 cm · 1,50 × 0,78 m",
       "status": "Modelado R34 en el modelo principal (DirectShape)",
-      "elementId": "2489058"
+      "elementId": "2489070"
     },
     {
       "code": "PR-PA",
       "kind": "PR",
       "label": "PR-PA · parrilla regulable acero inox 1,00 × 0,55 con elevación a manivela",
       "status": "Modelado R34 en el modelo principal (DirectShape)",
-      "elementId": "2489062"
-    },
-    {
-      "code": "PR-PU",
-      "kind": "PR",
-      "label": "PR-PU · puertas del leñero 2 hojas chapa N°18 con marco L 1\" · 1,50 × 0,69",
-      "status": "Modelado R34 en el modelo principal (DirectShape)",
-      "elementId": "2489064"
+      "elementId": "2489074"
     },
     {
       "code": "PR-SO",
       "kind": "PR",
       "label": "PR-SO · solera refractaria de plano · 1,50 × 0,60 m · hogar +0,90",
       "status": "Modelado R34 en el modelo principal (DirectShape)",
-      "elementId": "2489059"
+      "elementId": "2489071"
     },
     {
       "code": "K42DB",
@@ -1169,10 +1147,10 @@
       "detail": "+2,50 a +3,00"
     },
     {
-      "label": "Conducto Ø 35 doble pared aislado (PA a la vista, cruce de cubierta y remate)",
-      "value": 6.53,
+      "label": "Conducto Ø 35 doble pared aislado (a la vista en PA, cruce de cubierta y remate)",
+      "value": 6.4,
       "unit": "ml",
-      "detail": "+3,00 a +9,40 · incluye desvío 0,94 ml"
+      "detail": "+3,00 a +9,40 · recto"
     },
     {
       "label": "Ladrillos refractarios 23 × 11,4 × 6,4 (referencia)",
@@ -1255,36 +1233,12 @@
       "detail": "+2,50 a +3,00"
     },
     {
-      "label": "Conducto Ø 35 doble pared aislado (PA a la vista, cruce de cubierta y remate)",
+      "label": "Conducto Ø 35 doble pared aislado (a la vista en PA, cruce de cubierta y remate)",
       "group": "Conducto",
       "count": 1,
-      "value": 6.53,
+      "value": 6.4,
       "unit": "ml",
-      "detail": "+3,00 a +9,40 · incluye desvío 0,94 ml"
-    },
-    {
-      "label": "Codos 30° doble pared Ø 35",
-      "group": "Conducto",
-      "count": 1,
-      "value": 2,
-      "unit": "u",
-      "detail": "desvío de 0,47 m dentro del cajón"
-    },
-    {
-      "label": "Puertas del leñero 2 hojas chapa N°18 con marco L 1\"",
-      "group": "Parrilla",
-      "count": 1,
-      "value": 1,
-      "unit": "u",
-      "detail": "1,50 × 0,69 · bisagras y tiradores"
-    },
-    {
-      "label": "Ampliación del cajón Durlock del Comedor (placa RF)",
-      "group": "Parrilla",
-      "count": 1,
-      "value": 2.19,
-      "unit": "m²",
-      "detail": "tabique 0,42 m al oeste, de +3,00 a +4,00 (modelado)"
+      "detail": "+3,00 a +9,40 · recto"
     },
     {
       "label": "Pase en losa L01 0,50 × 0,50 (amplía el pase existente)",
@@ -1322,15 +1276,14 @@
     "Usuario: ladrillo refractario visto.",
     "Usuario: conducto por cubierta con sombrerete fijo.",
     "Tiraje (R1003.15, conducto redondo ≥ 1/12 de la boca): boca 1,50 × 0,60 = 0,90 m² → Ø 35 = 0,096 m² = 1/9,4 (el Ø 30 previo daba 1/13,8 sobre boca 0,65: insuficiente). Conducto simple pared en el plenum de PB, doble pared aislado desde la PA por el Comedor (madera vista) y la cubierta.",
-    "Conducto contra la jamba este (eje x 3,92 · y 2,30): pasa entre cabios c/0,96 (corta 1 listón, con brochal); remate +9,40 ≥ cumbrera +8,63 + 0,60 y ≥ techo +8,06 + 0,90 (R1003.9). Garganta desde +1,90 para que las paredes de la campana queden ≤ 45° (R1001.8.1).",
+    "Conducto recto (eje x 3,785 · y 2,30), a 5 cm de la cara oeste del cajón Durlock: pasa entre cabios c/0,96 (corta 1 listón, con brochal); remate +9,40 ≥ cumbrera +8,63 + 0,60 y ≥ techo +8,06 + 0,90 (R1003.9). Garganta desde +1,90 para que las paredes de la campana queden ≤ 45° (R1001.8.1).",
     "Criterio de tiraje tomado de California Residential Code 2025, cap. 10 (R1001 hogares de mampostería, R1003 chimeneas): https://gocodebook.com/es/library/us/ca/ca-residential-code/chapter-10-chimneys-and-fireplaces/section-r1003-masonry-chimneys · verificar con normativa local.",
-    "Usuario (26/10): ampliar el cajón, reemplazar el K42DB en el modelo y leñero con puertas; el conducto sube a la vista en PA junto al ducto del hogar (CH-02): desvío de 0,47 m con 2 codos a 30° dentro del cajón.",
+    "Usuario (26/10, final): cajón Durlock original (se revirtió la ampliación de R34c), leñero abierto, reemplazo del K42DB OK; el conducto sube recto y a la vista en PA (eje x 3,785, a 5 cm del cajón), sin codos.",
     "Usuario (vía sesión Documentación): parrilla estándar de mampostería hecha in situ; lo crítico es el tiraje. Modelada en 3D en el archivo DOC (DirectShape, Generic Models); no se descargó ninguna familia (las encontradas requieren cuenta).",
     "Documentación en archivo propio Casa-Angel-DOC-Parrilla.rvt que vincula el modelo principal (criterio del usuario)."
   ],
   "questions": [
-    "El pase existente en la losa L01 (0,30 × 0,57, x 3,93–4,23) no coincide con el conducto (eje x 3,92 · y 2,30): ¿lo ajusto en el modelo a 0,50 × 0,50? (Estructura)",
-    "El conducto a la vista y el del hogar pasan delante de la ventana del Comedor (x 4,54–4,89, +4,13 a +5,27): ¿ok así?"
+    "El pase existente en la losa L01 (0,30 × 0,57, x 3,93–4,23) no coincide con el conducto (eje x 3,785 · y 2,30): ¿lo ajusto en el modelo a 0,50 × 0,50? (Estructura)"
   ],
   "budget": {
     "revision": "R34",
@@ -1410,34 +1363,10 @@
       },
       {
         "id": "conducto-humos-doble",
-        "label": "Conducto Ø 35 doble pared aislado (PA a la vista, cruce de cubierta y remate)",
-        "value": 6.53,
+        "label": "Conducto Ø 35 doble pared aislado (a la vista en PA, cruce de cubierta y remate)",
+        "value": 6.4,
         "unit": "ml",
-        "detail": "+3,00 a +9,40 · incluye desvío 0,94 ml",
-        "informative": false
-      },
-      {
-        "id": "conducto-codos",
-        "label": "Codos 30° doble pared Ø 35",
-        "value": 2,
-        "unit": "u",
-        "detail": "desvío de 0,47 m dentro del cajón",
-        "informative": false
-      },
-      {
-        "id": "parrilla-puertas-lenero",
-        "label": "Puertas del leñero 2 hojas chapa N°18 con marco L 1\"",
-        "value": 1,
-        "unit": "u",
-        "detail": "1,50 × 0,69 · bisagras y tiradores",
-        "informative": false
-      },
-      {
-        "id": "parrilla-cajon-durlock",
-        "label": "Ampliación del cajón Durlock del Comedor (placa RF)",
-        "value": 2.19,
-        "unit": "m²",
-        "detail": "tabique 0,42 m al oeste, de +3,00 a +4,00 (modelado)",
+        "detail": "+3,00 a +9,40 · recto",
         "informative": false
       },
       {
