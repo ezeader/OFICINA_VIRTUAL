@@ -14,6 +14,14 @@ def allowed(p):
     if p == PILOT: return True
     return os.path.dirname(p) == DOCDIR and os.path.basename(p).startswith('casa-angel-doc-') and p.endswith('.rvt')
 
+def docs(app):
+    out = []
+    for d in list(app.Documents):
+        try:
+            if d.IsValidObject and not d.IsLinked: out.append(d)
+        except Exception: pass   # stale handle of a document closed earlier
+    return out
+
 def run(doc, uidoc, job):
     target = job['target']
     if not os.path.isabs(target): target = os.path.join(BASE, target)
@@ -23,8 +31,7 @@ def run(doc, uidoc, job):
     uiapp = uidoc.Application; app = uiapp.Application
     if os.path.normcase(doc.PathName) == os.path.normcase(target): return {'status': 'success', 'active': target, 'note': 'ya activo'}
     unloaded = []   # a file loaded as a link in an open document cannot be opened as host: unload that link first
-    for d in list(app.Documents):
-        if d.IsLinked: continue
+    for d in docs(app):
         for lt in DB.FilteredElementCollector(d).OfClass(DB.RevitLinkType):
             ext = lt.GetExternalFileReference()
             p = DB.ModelPathUtils.ConvertModelPathToUserVisiblePath(ext.GetAbsolutePath()) if ext else ''
@@ -35,8 +42,8 @@ def run(doc, uidoc, job):
     new = ui.Document
     closed = []
     # close every other casa-angel document (saving), so links to them can load; other projects are left alone
-    for d in list(app.Documents):
-        if d.IsLinked or d.Equals(new) or not allowed(d.PathName): continue
+    for d in docs(app):
+        if d.Equals(new) or not allowed(d.PathName): continue
         n = os.path.basename(d.PathName); d.Close(True); closed.append(n)
     reloaded = []
     for lt in DB.FilteredElementCollector(new).OfClass(DB.RevitLinkType):
