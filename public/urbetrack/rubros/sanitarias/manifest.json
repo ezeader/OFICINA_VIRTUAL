@@ -1,0 +1,60 @@
+{
+ "title": "Sanitarias",
+ "summary": "Planta integrada, detalles comunes y axonométrica de los pisos 12 y 13. 4 láminas de la carpeta técnica.",
+ "model": "Urbetrack · Carpeta técnica.pdf",
+ "revision": "Entrega de documentación de obra",
+ "sheets": [
+  {
+   "number": "13 · URBE / SAN",
+   "title": "Carátula",
+   "sector": "Láminas de la carpeta técnica",
+   "kind": "general",
+   "note": "Lámina 13 de la carpeta técnica · URBE / SAN",
+   "pdf": "/urbetrack/rubros/sanitarias/13.pdf",
+   "aspect": 0.7075630252100841,
+   "image": "/urbetrack/rubros/sanitarias/13.jpg",
+   "preview": "/urbetrack/rubros/sanitarias/13-thumb.jpg",
+   "thumbnail": "/urbetrack/rubros/sanitarias/13-thumb.jpg",
+   "views": []
+  },
+  {
+   "number": "14 · URB_PT_SAN_01",
+   "title": "Planta integrada · Pisos 12 y 13",
+   "sector": "Láminas de la carpeta técnica",
+   "kind": "general",
+   "note": "Lámina 14 de la carpeta técnica · URB_PT_SAN_01",
+   "pdf": "/urbetrack/rubros/sanitarias/14.pdf",
+   "aspect": 0.7075630252100841,
+   "image": "/urbetrack/rubros/sanitarias/14.jpg",
+   "preview": "/urbetrack/rubros/sanitarias/14-thumb.jpg",
+   "thumbnail": "/urbetrack/rubros/sanitarias/14-thumb.jpg",
+   "views": []
+  },
+  {
+   "number": "15 · URB_DET_SAN_01",
+   "title": "Detalles comunes · Pisos 12 y 13",
+   "sector": "Láminas de la carpeta técnica",
+   "kind": "general",
+   "note": "Lámina 15 de la carpeta técnica · URB_DET_SAN_01",
+   "pdf": "/urbetrack/rubros/sanitarias/15.pdf",
+   "aspect": 0.7075630252100841,
+   "image": "/urbetrack/rubros/sanitarias/15.jpg",
+   "preview": "/urbetrack/rubros/sanitarias/15-thumb.jpg",
+   "thumbnail": "/urbetrack/rubros/sanitarias/15-thumb.jpg",
+   "views": []
+  },
+  {
+   "number": "16 · URB_AXO_SAN_01",
+   "title": "Axonométrica · Pisos 12 y 13",
+   "sector": "Láminas de la carpeta técnica",
+   "kind": "general",
+   "note": "Lámina 16 de la carpeta técnica · URB_AXO_SAN_01",
+   "pdf": "/urbetrack/rubros/sanitarias/16.pdf",
+   "aspect": 0.7075630252100841,
+   "image": "/urbetrack/rubros/sanitarias/16.jpg",
+   "preview": "/urbetrack/rubros/sanitarias/16-thumb.jpg",
+   "thumbnail": "/urbetrack/rubros/sanitarias/16-thumb.jpg",
+   "views": []
+  }
+ ]
+}

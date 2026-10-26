@@ -1,0 +1,60 @@
+{
+ "title": "Intro",
+ "summary": "Portada, índice, memoria descriptiva y diagramas del proyecto. 4 láminas de la carpeta técnica.",
+ "model": "Urbetrack · Carpeta técnica.pdf",
+ "revision": "Entrega de documentación de obra",
+ "sheets": [
+  {
+   "number": "00 · URBE / PORTADA",
+   "title": "Portada · Pisos 11, 12 y 13",
+   "sector": "Láminas de la carpeta técnica",
+   "kind": "general",
+   "note": "Lámina 00 de la carpeta técnica · URBE / PORTADA",
+   "pdf": "/urbetrack/rubros/intro/00.pdf",
+   "aspect": 0.7075630252100841,
+   "image": "/urbetrack/rubros/intro/00.jpg",
+   "preview": "/urbetrack/rubros/intro/00-thumb.jpg",
+   "thumbnail": "/urbetrack/rubros/intro/00-thumb.jpg",
+   "views": []
+  },
+  {
+   "number": "01 · INTRO / IND",
+   "title": "Índice · Pisos 11, 12 y 13",
+   "sector": "Láminas de la carpeta técnica",
+   "kind": "general",
+   "note": "Lámina 01 de la carpeta técnica · INTRO / IND",
+   "pdf": "/urbetrack/rubros/intro/01.pdf",
+   "aspect": 0.7075630252100841,
+   "image": "/urbetrack/rubros/intro/01.jpg",
+   "preview": "/urbetrack/rubros/intro/01-thumb.jpg",
+   "thumbnail": "/urbetrack/rubros/intro/01-thumb.jpg",
+   "views": []
+  },
+  {
+   "number": "02 · INTRO / MEM",
+   "title": "Memoria descriptiva · Pisos 11, 12 y 13",
+   "sector": "Láminas de la carpeta técnica",
+   "kind": "general",
+   "note": "Lámina 02 de la carpeta técnica · INTRO / MEM",
+   "pdf": "/urbetrack/rubros/intro/02.pdf",
+   "aspect": 0.7075630252100841,
+   "image": "/urbetrack/rubros/intro/02.jpg",
+   "preview": "/urbetrack/rubros/intro/02-thumb.jpg",
+   "thumbnail": "/urbetrack/rubros/intro/02-thumb.jpg",
+   "views": []
+  },
+  {
+   "number": "03 · INTRO / DIA",
+   "title": "Diagramas · Pisos 11, 12 y 13",
+   "sector": "Láminas de la carpeta técnica",
+   "kind": "general",
+   "note": "Lámina 03 de la carpeta técnica · INTRO / DIA",
+   "pdf": "/urbetrack/rubros/intro/03.pdf",
+   "aspect": 0.7075630252100841,
+   "image": "/urbetrack/rubros/intro/03.jpg",
+   "preview": "/urbetrack/rubros/intro/03-thumb.jpg",
+   "thumbnail": "/urbetrack/rubros/intro/03-thumb.jpg",
+   "views": []
+  }
+ ]
+}

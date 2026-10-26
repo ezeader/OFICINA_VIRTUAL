@@ -1,0 +1,60 @@
+{
+ "title": "Materialidad",
+ "summary": "Terminaciones, mobiliario y equipamiento, baños y cocina. 4 láminas de la carpeta técnica.",
+ "model": "Urbetrack · Carpeta técnica.pdf",
+ "revision": "Entrega de documentación de obra",
+ "sheets": [
+  {
+   "number": "44 · URBE / MAT",
+   "title": "Carátula",
+   "sector": "Láminas de la carpeta técnica",
+   "kind": "general",
+   "note": "Lámina 44 de la carpeta técnica · URBE / MAT",
+   "pdf": "/urbetrack/rubros/materialidad/44.pdf",
+   "aspect": 0.7075630252100841,
+   "image": "/urbetrack/rubros/materialidad/44.jpg",
+   "preview": "/urbetrack/rubros/materialidad/44-thumb.jpg",
+   "thumbnail": "/urbetrack/rubros/materialidad/44-thumb.jpg",
+   "views": []
+  },
+  {
+   "number": "45 · MAT / TER",
+   "title": "Terminaciones · Pisos 11, 12 y 13",
+   "sector": "Láminas de la carpeta técnica",
+   "kind": "general",
+   "note": "Lámina 45 de la carpeta técnica · MAT / TER",
+   "pdf": "/urbetrack/rubros/materialidad/45.pdf",
+   "aspect": 0.7075630252100841,
+   "image": "/urbetrack/rubros/materialidad/45.jpg",
+   "preview": "/urbetrack/rubros/materialidad/45-thumb.jpg",
+   "thumbnail": "/urbetrack/rubros/materialidad/45-thumb.jpg",
+   "views": []
+  },
+  {
+   "number": "46 · MAT / MYE",
+   "title": "Mobiliario y equipamiento · Pisos 11, 12 y 13",
+   "sector": "Láminas de la carpeta técnica",
+   "kind": "general",
+   "note": "Lámina 46 de la carpeta técnica · MAT / MYE",
+   "pdf": "/urbetrack/rubros/materialidad/46.pdf",
+   "aspect": 0.7075630252100841,
+   "image": "/urbetrack/rubros/materialidad/46.jpg",
+   "preview": "/urbetrack/rubros/materialidad/46-thumb.jpg",
+   "thumbnail": "/urbetrack/rubros/materialidad/46-thumb.jpg",
+   "views": []
+  },
+  {
+   "number": "47 · MAT / BYC",
+   "title": "Baños y cocina · Pisos 11, 12 y 13",
+   "sector": "Láminas de la carpeta técnica",
+   "kind": "general",
+   "note": "Lámina 47 de la carpeta técnica · MAT / BYC",
+   "pdf": "/urbetrack/rubros/materialidad/47.pdf",
+   "aspect": 0.7075630252100841,
+   "image": "/urbetrack/rubros/materialidad/47.jpg",
+   "preview": "/urbetrack/rubros/materialidad/47-thumb.jpg",
+   "thumbnail": "/urbetrack/rubros/materialidad/47-thumb.jpg",
+   "views": []
+  }
+ ]
+}

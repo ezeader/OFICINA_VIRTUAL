@@ -1,0 +1,47 @@
+{
+ "title": "Demolición",
+ "summary": "Escenario existente a demoler en los pisos 12 y 13. 3 láminas de la carpeta técnica.",
+ "model": "Urbetrack · Carpeta técnica.pdf",
+ "revision": "Entrega de documentación de obra",
+ "sheets": [
+  {
+   "number": "04 · URBE / DEM",
+   "title": "Carátula",
+   "sector": "Láminas de la carpeta técnica",
+   "kind": "general",
+   "note": "Lámina 04 de la carpeta técnica · URBE / DEM",
+   "pdf": "/urbetrack/rubros/demolicion/04.pdf",
+   "aspect": 0.7075630252100841,
+   "image": "/urbetrack/rubros/demolicion/04.jpg",
+   "preview": "/urbetrack/rubros/demolicion/04-thumb.jpg",
+   "thumbnail": "/urbetrack/rubros/demolicion/04-thumb.jpg",
+   "views": []
+  },
+  {
+   "number": "05 · URB_P12_DEM_01",
+   "title": "Escenario existente · Piso 12",
+   "sector": "Láminas de la carpeta técnica",
+   "kind": "general",
+   "note": "Lámina 05 de la carpeta técnica · URB_P12_DEM_01",
+   "pdf": "/urbetrack/rubros/demolicion/05.pdf",
+   "aspect": 0.7075630252100841,
+   "image": "/urbetrack/rubros/demolicion/05.jpg",
+   "preview": "/urbetrack/rubros/demolicion/05-thumb.jpg",
+   "thumbnail": "/urbetrack/rubros/demolicion/05-thumb.jpg",
+   "views": []
+  },
+  {
+   "number": "06 · URB_P13_DEM_01",
+   "title": "Escenario existente · Piso 13",
+   "sector": "Láminas de la carpeta técnica",
+   "kind": "general",
+   "note": "Lámina 06 de la carpeta técnica · URB_P13_DEM_01",
+   "pdf": "/urbetrack/rubros/demolicion/06.pdf",
+   "aspect": 0.7075630252100841,
+   "image": "/urbetrack/rubros/demolicion/06.jpg",
+   "preview": "/urbetrack/rubros/demolicion/06-thumb.jpg",
+   "thumbnail": "/urbetrack/rubros/demolicion/06-thumb.jpg",
+   "views": []
+  }
+ ]
+}

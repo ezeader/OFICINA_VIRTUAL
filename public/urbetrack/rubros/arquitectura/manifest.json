@@ -1,0 +1,86 @@
+{
+ "title": "Arquitectura",
+ "summary": "Plantas de los pisos 11, 12 y 13, axonometría y cortes fugados. 6 láminas de la carpeta técnica.",
+ "model": "Urbetrack · Carpeta técnica.pdf",
+ "revision": "Entrega de documentación de obra",
+ "sheets": [
+  {
+   "number": "07 · URBE / ARQ",
+   "title": "Carátula",
+   "sector": "Láminas de la carpeta técnica",
+   "kind": "general",
+   "note": "Lámina 07 de la carpeta técnica · URBE / ARQ",
+   "pdf": "/urbetrack/rubros/arquitectura/07.pdf",
+   "aspect": 0.7075630252100841,
+   "image": "/urbetrack/rubros/arquitectura/07.jpg",
+   "preview": "/urbetrack/rubros/arquitectura/07-thumb.jpg",
+   "thumbnail": "/urbetrack/rubros/arquitectura/07-thumb.jpg",
+   "views": []
+  },
+  {
+   "number": "08 · URB_P11_ARQ_01",
+   "title": "Planta · Piso 11",
+   "sector": "Láminas de la carpeta técnica",
+   "kind": "general",
+   "note": "Lámina 08 de la carpeta técnica · URB_P11_ARQ_01",
+   "pdf": "/urbetrack/rubros/arquitectura/08.pdf",
+   "aspect": 0.7075630252100841,
+   "image": "/urbetrack/rubros/arquitectura/08.jpg",
+   "preview": "/urbetrack/rubros/arquitectura/08-thumb.jpg",
+   "thumbnail": "/urbetrack/rubros/arquitectura/08-thumb.jpg",
+   "views": []
+  },
+  {
+   "number": "09 · URB_P12_ARQ_01",
+   "title": "Planta · Piso 12",
+   "sector": "Láminas de la carpeta técnica",
+   "kind": "general",
+   "note": "Lámina 09 de la carpeta técnica · URB_P12_ARQ_01",
+   "pdf": "/urbetrack/rubros/arquitectura/09.pdf",
+   "aspect": 0.7075630252100841,
+   "image": "/urbetrack/rubros/arquitectura/09.jpg",
+   "preview": "/urbetrack/rubros/arquitectura/09-thumb.jpg",
+   "thumbnail": "/urbetrack/rubros/arquitectura/09-thumb.jpg",
+   "views": []
+  },
+  {
+   "number": "10 · URB_P13_ARQ_01",
+   "title": "Planta · Piso 13",
+   "sector": "Láminas de la carpeta técnica",
+   "kind": "general",
+   "note": "Lámina 10 de la carpeta técnica · URB_P13_ARQ_01",
+   "pdf": "/urbetrack/rubros/arquitectura/10.pdf",
+   "aspect": 0.7075630252100841,
+   "image": "/urbetrack/rubros/arquitectura/10.jpg",
+   "preview": "/urbetrack/rubros/arquitectura/10-thumb.jpg",
+   "thumbnail": "/urbetrack/rubros/arquitectura/10-thumb.jpg",
+   "views": []
+  },
+  {
+   "number": "11 · URB_AXO_ARQ_01",
+   "title": "Axonometría · Pisos 11, 12 y 13",
+   "sector": "Láminas de la carpeta técnica",
+   "kind": "general",
+   "note": "Lámina 11 de la carpeta técnica · URB_AXO_ARQ_01",
+   "pdf": "/urbetrack/rubros/arquitectura/11.pdf",
+   "aspect": 0.7075630252100841,
+   "image": "/urbetrack/rubros/arquitectura/11.jpg",
+   "preview": "/urbetrack/rubros/arquitectura/11-thumb.jpg",
+   "thumbnail": "/urbetrack/rubros/arquitectura/11-thumb.jpg",
+   "views": []
+  },
+  {
+   "number": "12 · URB_COR_FUG_01",
+   "title": "Cortes fugados · Pisos 11, 12 y 13",
+   "sector": "Láminas de la carpeta técnica",
+   "kind": "general",
+   "note": "Lámina 12 de la carpeta técnica · URB_COR_FUG_01",
+   "pdf": "/urbetrack/rubros/arquitectura/12.pdf",
+   "aspect": 0.7075630252100841,
+   "image": "/urbetrack/rubros/arquitectura/12.jpg",
+   "preview": "/urbetrack/rubros/arquitectura/12-thumb.jpg",
+   "thumbnail": "/urbetrack/rubros/arquitectura/12-thumb.jpg",
+   "views": []
+  }
+ ]
+}

@@ -1,0 +1,86 @@
+{
+ "title": "Tabiquería vidriada",
+ "summary": "Plantas de los pisos 11, 12 y 13, planilla y detalles, cubículos y pivotes. 6 láminas de la carpeta técnica.",
+ "model": "Urbetrack · Carpeta técnica.pdf",
+ "revision": "Entrega de documentación de obra",
+ "sheets": [
+  {
+   "number": "38 · URBE / TV",
+   "title": "Carátula",
+   "sector": "Láminas de la carpeta técnica",
+   "kind": "general",
+   "note": "Lámina 38 de la carpeta técnica · URBE / TV",
+   "pdf": "/urbetrack/rubros/tabiqueria/38.pdf",
+   "aspect": 0.7075630252100841,
+   "image": "/urbetrack/rubros/tabiqueria/38.jpg",
+   "preview": "/urbetrack/rubros/tabiqueria/38-thumb.jpg",
+   "thumbnail": "/urbetrack/rubros/tabiqueria/38-thumb.jpg",
+   "views": []
+  },
+  {
+   "number": "39 · URB_P11_TV_01",
+   "title": "Planta · Piso 11",
+   "sector": "Láminas de la carpeta técnica",
+   "kind": "general",
+   "note": "Lámina 39 de la carpeta técnica · URB_P11_TV_01",
+   "pdf": "/urbetrack/rubros/tabiqueria/39.pdf",
+   "aspect": 0.7075630252100841,
+   "image": "/urbetrack/rubros/tabiqueria/39.jpg",
+   "preview": "/urbetrack/rubros/tabiqueria/39-thumb.jpg",
+   "thumbnail": "/urbetrack/rubros/tabiqueria/39-thumb.jpg",
+   "views": []
+  },
+  {
+   "number": "40 · URB_P12_TV_01",
+   "title": "Planta · Piso 12",
+   "sector": "Láminas de la carpeta técnica",
+   "kind": "general",
+   "note": "Lámina 40 de la carpeta técnica · URB_P12_TV_01",
+   "pdf": "/urbetrack/rubros/tabiqueria/40.pdf",
+   "aspect": 0.7075630252100841,
+   "image": "/urbetrack/rubros/tabiqueria/40.jpg",
+   "preview": "/urbetrack/rubros/tabiqueria/40-thumb.jpg",
+   "thumbnail": "/urbetrack/rubros/tabiqueria/40-thumb.jpg",
+   "views": []
+  },
+  {
+   "number": "41 · URB_P13_TV_01",
+   "title": "Planta · Piso 13",
+   "sector": "Láminas de la carpeta técnica",
+   "kind": "general",
+   "note": "Lámina 41 de la carpeta técnica · URB_P13_TV_01",
+   "pdf": "/urbetrack/rubros/tabiqueria/41.pdf",
+   "aspect": 0.7075630252100841,
+   "image": "/urbetrack/rubros/tabiqueria/41.jpg",
+   "preview": "/urbetrack/rubros/tabiqueria/41-thumb.jpg",
+   "thumbnail": "/urbetrack/rubros/tabiqueria/41-thumb.jpg",
+   "views": []
+  },
+  {
+   "number": "42 · URB_PLAN_TV_01",
+   "title": "Planilla y detalles · Pisos 11, 12 y 13",
+   "sector": "Láminas de la carpeta técnica",
+   "kind": "general",
+   "note": "Lámina 42 de la carpeta técnica · URB_PLAN_TV_01",
+   "pdf": "/urbetrack/rubros/tabiqueria/42.pdf",
+   "aspect": 0.7075630252100841,
+   "image": "/urbetrack/rubros/tabiqueria/42.jpg",
+   "preview": "/urbetrack/rubros/tabiqueria/42-thumb.jpg",
+   "thumbnail": "/urbetrack/rubros/tabiqueria/42-thumb.jpg",
+   "views": []
+  },
+  {
+   "number": "43 · URB_CUB_TV_01",
+   "title": "Cubículos y pivotes · Pisos 12 y 13",
+   "sector": "Láminas de la carpeta técnica",
+   "kind": "general",
+   "note": "Lámina 43 de la carpeta técnica · URB_CUB_TV_01",
+   "pdf": "/urbetrack/rubros/tabiqueria/43.pdf",
+   "aspect": 0.7075630252100841,
+   "image": "/urbetrack/rubros/tabiqueria/43.jpg",
+   "preview": "/urbetrack/rubros/tabiqueria/43-thumb.jpg",
+   "thumbnail": "/urbetrack/rubros/tabiqueria/43-thumb.jpg",
+   "views": []
+  }
+ ]
+}

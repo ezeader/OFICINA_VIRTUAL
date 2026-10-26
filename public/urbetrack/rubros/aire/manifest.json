@@ -1,0 +1,86 @@
+{
+ "title": "Aire acondicionado",
+ "summary": "Equipos de los pisos 11, 12 y 13 y alimentación eléctrica de los pisos 12 y 13. 6 láminas de la carpeta técnica.",
+ "model": "Urbetrack · Carpeta técnica.pdf",
+ "revision": "Entrega de documentación de obra",
+ "sheets": [
+  {
+   "number": "32 · URBE / AA",
+   "title": "Carátula",
+   "sector": "Láminas de la carpeta técnica",
+   "kind": "general",
+   "note": "Lámina 32 de la carpeta técnica · URBE / AA",
+   "pdf": "/urbetrack/rubros/aire/32.pdf",
+   "aspect": 0.7075630252100841,
+   "image": "/urbetrack/rubros/aire/32.jpg",
+   "preview": "/urbetrack/rubros/aire/32-thumb.jpg",
+   "thumbnail": "/urbetrack/rubros/aire/32-thumb.jpg",
+   "views": []
+  },
+  {
+   "number": "33 · URB_P11_AA.EQ_01",
+   "title": "Equipos · Piso 11",
+   "sector": "Láminas de la carpeta técnica",
+   "kind": "general",
+   "note": "Lámina 33 de la carpeta técnica · URB_P11_AA.EQ_01",
+   "pdf": "/urbetrack/rubros/aire/33.pdf",
+   "aspect": 0.7075630252100841,
+   "image": "/urbetrack/rubros/aire/33.jpg",
+   "preview": "/urbetrack/rubros/aire/33-thumb.jpg",
+   "thumbnail": "/urbetrack/rubros/aire/33-thumb.jpg",
+   "views": []
+  },
+  {
+   "number": "34 · URB_P12_AA.EQ_01",
+   "title": "Equipos · Piso 12",
+   "sector": "Láminas de la carpeta técnica",
+   "kind": "general",
+   "note": "Lámina 34 de la carpeta técnica · URB_P12_AA.EQ_01",
+   "pdf": "/urbetrack/rubros/aire/34.pdf",
+   "aspect": 0.7075630252100841,
+   "image": "/urbetrack/rubros/aire/34.jpg",
+   "preview": "/urbetrack/rubros/aire/34-thumb.jpg",
+   "thumbnail": "/urbetrack/rubros/aire/34-thumb.jpg",
+   "views": []
+  },
+  {
+   "number": "35 · URB_P12_AA.ELE_01",
+   "title": "Alimentación eléctrica · Piso 12",
+   "sector": "Láminas de la carpeta técnica",
+   "kind": "general",
+   "note": "Lámina 35 de la carpeta técnica · URB_P12_AA.ELE_01",
+   "pdf": "/urbetrack/rubros/aire/35.pdf",
+   "aspect": 0.7075630252100841,
+   "image": "/urbetrack/rubros/aire/35.jpg",
+   "preview": "/urbetrack/rubros/aire/35-thumb.jpg",
+   "thumbnail": "/urbetrack/rubros/aire/35-thumb.jpg",
+   "views": []
+  },
+  {
+   "number": "36 · URB_P13_AA.EQ_01",
+   "title": "Equipos · Piso 13",
+   "sector": "Láminas de la carpeta técnica",
+   "kind": "general",
+   "note": "Lámina 36 de la carpeta técnica · URB_P13_AA.EQ_01",
+   "pdf": "/urbetrack/rubros/aire/36.pdf",
+   "aspect": 0.7075630252100841,
+   "image": "/urbetrack/rubros/aire/36.jpg",
+   "preview": "/urbetrack/rubros/aire/36-thumb.jpg",
+   "thumbnail": "/urbetrack/rubros/aire/36-thumb.jpg",
+   "views": []
+  },
+  {
+   "number": "37 · URB_P13_AA.ELE_01",
+   "title": "Alimentación eléctrica · Piso 13",
+   "sector": "Láminas de la carpeta técnica",
+   "kind": "general",
+   "note": "Lámina 37 de la carpeta técnica · URB_P13_AA.ELE_01",
+   "pdf": "/urbetrack/rubros/aire/37.pdf",
+   "aspect": 0.7075630252100841,
+   "image": "/urbetrack/rubros/aire/37.jpg",
+   "preview": "/urbetrack/rubros/aire/37-thumb.jpg",
+   "thumbnail": "/urbetrack/rubros/aire/37-thumb.jpg",
+   "views": []
+  }
+ ]
+}

@@ -11,3 +11,17 @@
 .docDesk .docRubrics button.active{background:#37462f;color:#fff;border-color:#37462f}
 @media(max-width:1100px){.docDesk .docRubrics{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:600px){.docDesk .docRubrics{grid-template-columns:repeat(2,minmax(0,1fr))}.psOpeningsShortcut{width:100%}.docDesk .docRubrics button{padding:12px 10px}.docDesk .docRubrics button strong{font-size:14px}}
+
+/* Exportar láminas a PDF */
+.docExportButton{display:inline-flex;align-items:center;gap:8px;border:1px solid #302c25;background:#302c25;color:#fff;padding:10px 14px;font-size:12px;margin-top:12px;margin-right:8px}
+.docExportBack{position:fixed;inset:0;z-index:60;background:#1d1b1766;display:flex;align-items:center;justify-content:center;padding:16px}
+.docExportDialog{background:#fbfaf7;color:#302c25;width:min(520px,100%);max-height:90vh;overflow:auto;padding:22px;border:1px solid #e2ded6;display:flex;flex-direction:column;gap:14px}
+.docExportDialog header{display:flex;justify-content:space-between;align-items:center}.docExportDialog h3{font-size:22px;margin:0}
+.docExportHint{font-size:12px;color:#807a70;line-height:1.6}
+.docExportQuick{display:flex;gap:6px}.docExportQuick button{font-size:11px;padding:6px 10px;border:1px solid #e2ded6}
+.docExportList{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 14px}.docExportList label{display:flex;gap:9px;align-items:center;font-size:13px;padding:7px 0;cursor:pointer}.docExportList input{width:17px;height:17px;accent-color:#302c25}
+.docExportMode{display:flex;gap:6px}.docExportMode button{flex:1;border:1px solid #e2ded6;padding:10px;font-size:12px}.docExportMode button[aria-pressed=true]{background:#302c25;color:#fff;border-color:#302c25}
+.docExportStatus{font-size:12px;background:#f2efe8;padding:10px 12px;border-left:3px solid #9a8459}
+.docExportGo{display:inline-flex;justify-content:center;align-items:center;gap:8px;background:#302c25;color:#fff;padding:12px;font-size:13px}.docExportGo:disabled{opacity:.45}
+.docExports{margin:14px 0 22px}.docExportActions{display:flex;gap:8px;margin-top:8px}.docExportActions button{display:inline-flex;align-items:center;gap:6px;font-size:11px;padding:7px 10px;border:1px solid #e2ded6}
+@media(max-width:480px){.docExportList{grid-template-columns:1fr}.docExportMode{flex-direction:column}}

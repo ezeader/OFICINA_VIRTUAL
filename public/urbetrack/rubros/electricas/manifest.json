@@ -1,0 +1,112 @@
+{
+ "title": "Eléctricas",
+ "summary": "Iluminación, tomacorrientes y datos de los pisos 12 y 13, con referencias y detalles. 8 láminas de la carpeta técnica.",
+ "model": "Urbetrack · Carpeta técnica.pdf",
+ "revision": "Entrega de documentación de obra",
+ "sheets": [
+  {
+   "number": "17 · URBE / ELE",
+   "title": "Carátula",
+   "sector": "Láminas de la carpeta técnica",
+   "kind": "general",
+   "note": "Lámina 17 de la carpeta técnica · URBE / ELE",
+   "pdf": "/urbetrack/rubros/electricas/17.pdf",
+   "aspect": 0.7075630252100841,
+   "image": "/urbetrack/rubros/electricas/17.jpg",
+   "preview": "/urbetrack/rubros/electricas/17-thumb.jpg",
+   "thumbnail": "/urbetrack/rubros/electricas/17-thumb.jpg",
+   "views": []
+  },
+  {
+   "number": "18 · URB_P12_ELE.ILU_01",
+   "title": "Iluminación · Piso 12",
+   "sector": "Láminas de la carpeta técnica",
+   "kind": "general",
+   "note": "Lámina 18 de la carpeta técnica · URB_P12_ELE.ILU_01",
+   "pdf": "/urbetrack/rubros/electricas/18.pdf",
+   "aspect": 0.7075630252100841,
+   "image": "/urbetrack/rubros/electricas/18.jpg",
+   "preview": "/urbetrack/rubros/electricas/18-thumb.jpg",
+   "thumbnail": "/urbetrack/rubros/electricas/18-thumb.jpg",
+   "views": []
+  },
+  {
+   "number": "19 · URB_P13_ELE.ILU_01",
+   "title": "Iluminación · Piso 13",
+   "sector": "Láminas de la carpeta técnica",
+   "kind": "general",
+   "note": "Lámina 19 de la carpeta técnica · URB_P13_ELE.ILU_01",
+   "pdf": "/urbetrack/rubros/electricas/19.pdf",
+   "aspect": 0.7075630252100841,
+   "image": "/urbetrack/rubros/electricas/19.jpg",
+   "preview": "/urbetrack/rubros/electricas/19-thumb.jpg",
+   "thumbnail": "/urbetrack/rubros/electricas/19-thumb.jpg",
+   "views": []
+  },
+  {
+   "number": "20 · URB_P12_ELE.TOM_01",
+   "title": "Tomacorrientes · Piso 12",
+   "sector": "Láminas de la carpeta técnica",
+   "kind": "general",
+   "note": "Lámina 20 de la carpeta técnica · URB_P12_ELE.TOM_01",
+   "pdf": "/urbetrack/rubros/electricas/20.pdf",
+   "aspect": 0.7075630252100841,
+   "image": "/urbetrack/rubros/electricas/20.jpg",
+   "preview": "/urbetrack/rubros/electricas/20-thumb.jpg",
+   "thumbnail": "/urbetrack/rubros/electricas/20-thumb.jpg",
+   "views": []
+  },
+  {
+   "number": "21 · URB_P13_ELE.TOM_01",
+   "title": "Tomacorrientes · Piso 13",
+   "sector": "Láminas de la carpeta técnica",
+   "kind": "general",
+   "note": "Lámina 21 de la carpeta técnica · URB_P13_ELE.TOM_01",
+   "pdf": "/urbetrack/rubros/electricas/21.pdf",
+   "aspect": 0.7075630252100841,
+   "image": "/urbetrack/rubros/electricas/21.jpg",
+   "preview": "/urbetrack/rubros/electricas/21-thumb.jpg",
+   "thumbnail": "/urbetrack/rubros/electricas/21-thumb.jpg",
+   "views": []
+  },
+  {
+   "number": "22 · URB_DET_ELE_01",
+   "title": "Referencias y detalles · Pisos 12 y 13",
+   "sector": "Láminas de la carpeta técnica",
+   "kind": "general",
+   "note": "Lámina 22 de la carpeta técnica · URB_DET_ELE_01",
+   "pdf": "/urbetrack/rubros/electricas/22.pdf",
+   "aspect": 0.7075630252100841,
+   "image": "/urbetrack/rubros/electricas/22.jpg",
+   "preview": "/urbetrack/rubros/electricas/22-thumb.jpg",
+   "thumbnail": "/urbetrack/rubros/electricas/22-thumb.jpg",
+   "views": []
+  },
+  {
+   "number": "23 · URB_P12_ELE.DAT_01",
+   "title": "Datos · Piso 12",
+   "sector": "Láminas de la carpeta técnica",
+   "kind": "general",
+   "note": "Lámina 23 de la carpeta técnica · URB_P12_ELE.DAT_01",
+   "pdf": "/urbetrack/rubros/electricas/23.pdf",
+   "aspect": 0.7075630252100841,
+   "image": "/urbetrack/rubros/electricas/23.jpg",
+   "preview": "/urbetrack/rubros/electricas/23-thumb.jpg",
+   "thumbnail": "/urbetrack/rubros/electricas/23-thumb.jpg",
+   "views": []
+  },
+  {
+   "number": "24 · URB_P13_ELE.DAT_01",
+   "title": "Datos · Piso 13",
+   "sector": "Láminas de la carpeta técnica",
+   "kind": "general",
+   "note": "Lámina 24 de la carpeta técnica · URB_P13_ELE.DAT_01",
+   "pdf": "/urbetrack/rubros/electricas/24.pdf",
+   "aspect": 0.7075630252100841,
+   "image": "/urbetrack/rubros/electricas/24.jpg",
+   "preview": "/urbetrack/rubros/electricas/24-thumb.jpg",
+   "thumbnail": "/urbetrack/rubros/electricas/24-thumb.jpg",
+   "views": []
+  }
+ ]
+}

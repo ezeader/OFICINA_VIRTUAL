@@ -1,0 +1,99 @@
+{
+ "title": "Tableros",
+ "summary": "Tableros seccionales TS-IT, TS-PUESTOS y TS-AA de los pisos 12 y 13. 7 láminas de la carpeta técnica.",
+ "model": "Urbetrack · Carpeta técnica.pdf",
+ "revision": "Entrega de documentación de obra",
+ "sheets": [
+  {
+   "number": "25 · URBE / TAB",
+   "title": "Carátula",
+   "sector": "Láminas de la carpeta técnica",
+   "kind": "general",
+   "note": "Lámina 25 de la carpeta técnica · URBE / TAB",
+   "pdf": "/urbetrack/rubros/tableros/25.pdf",
+   "aspect": 0.7075630252100841,
+   "image": "/urbetrack/rubros/tableros/25.jpg",
+   "preview": "/urbetrack/rubros/tableros/25-thumb.jpg",
+   "thumbnail": "/urbetrack/rubros/tableros/25-thumb.jpg",
+   "views": []
+  },
+  {
+   "number": "26 · URB_P12_TAB.IT_01",
+   "title": "TS-IT · Iluminación y tomas · Piso 12",
+   "sector": "Láminas de la carpeta técnica",
+   "kind": "general",
+   "note": "Lámina 26 de la carpeta técnica · URB_P12_TAB.IT_01",
+   "pdf": "/urbetrack/rubros/tableros/26.pdf",
+   "aspect": 0.7075630252100841,
+   "image": "/urbetrack/rubros/tableros/26.jpg",
+   "preview": "/urbetrack/rubros/tableros/26-thumb.jpg",
+   "thumbnail": "/urbetrack/rubros/tableros/26-thumb.jpg",
+   "views": []
+  },
+  {
+   "number": "27 · URB_P12_TAB.PUE_01",
+   "title": "TS-PUESTOS · Puestos · Piso 12",
+   "sector": "Láminas de la carpeta técnica",
+   "kind": "general",
+   "note": "Lámina 27 de la carpeta técnica · URB_P12_TAB.PUE_01",
+   "pdf": "/urbetrack/rubros/tableros/27.pdf",
+   "aspect": 0.7075630252100841,
+   "image": "/urbetrack/rubros/tableros/27.jpg",
+   "preview": "/urbetrack/rubros/tableros/27-thumb.jpg",
+   "thumbnail": "/urbetrack/rubros/tableros/27-thumb.jpg",
+   "views": []
+  },
+  {
+   "number": "28 · URB_P12_TAB.AA_01",
+   "title": "TS-AA · Aire acondicionado · Piso 12",
+   "sector": "Láminas de la carpeta técnica",
+   "kind": "general",
+   "note": "Lámina 28 de la carpeta técnica · URB_P12_TAB.AA_01",
+   "pdf": "/urbetrack/rubros/tableros/28.pdf",
+   "aspect": 0.7075630252100841,
+   "image": "/urbetrack/rubros/tableros/28.jpg",
+   "preview": "/urbetrack/rubros/tableros/28-thumb.jpg",
+   "thumbnail": "/urbetrack/rubros/tableros/28-thumb.jpg",
+   "views": []
+  },
+  {
+   "number": "29 · URB_P13_TAB.IT_01",
+   "title": "TS-IT · Iluminación y tomas · Piso 13",
+   "sector": "Láminas de la carpeta técnica",
+   "kind": "general",
+   "note": "Lámina 29 de la carpeta técnica · URB_P13_TAB.IT_01",
+   "pdf": "/urbetrack/rubros/tableros/29.pdf",
+   "aspect": 0.7075630252100841,
+   "image": "/urbetrack/rubros/tableros/29.jpg",
+   "preview": "/urbetrack/rubros/tableros/29-thumb.jpg",
+   "thumbnail": "/urbetrack/rubros/tableros/29-thumb.jpg",
+   "views": []
+  },
+  {
+   "number": "30 · URB_P13_TAB.PUE_01",
+   "title": "TS-PUESTOS · Puestos · Piso 13",
+   "sector": "Láminas de la carpeta técnica",
+   "kind": "general",
+   "note": "Lámina 30 de la carpeta técnica · URB_P13_TAB.PUE_01",
+   "pdf": "/urbetrack/rubros/tableros/30.pdf",
+   "aspect": 0.7075630252100841,
+   "image": "/urbetrack/rubros/tableros/30.jpg",
+   "preview": "/urbetrack/rubros/tableros/30-thumb.jpg",
+   "thumbnail": "/urbetrack/rubros/tableros/30-thumb.jpg",
+   "views": []
+  },
+  {
+   "number": "31 · URB_P13_TAB.AA_01",
+   "title": "TS-AA · Aire acondicionado · Piso 13",
+   "sector": "Láminas de la carpeta técnica",
+   "kind": "general",
+   "note": "Lámina 31 de la carpeta técnica · URB_P13_TAB.AA_01",
+   "pdf": "/urbetrack/rubros/tableros/31.pdf",
+   "aspect": 0.7075630252100841,
+   "image": "/urbetrack/rubros/tableros/31.jpg",
+   "preview": "/urbetrack/rubros/tableros/31-thumb.jpg",
+   "thumbnail": "/urbetrack/rubros/tableros/31-thumb.jpg",
+   "views": []
+  }
+ ]
+}
