@@ -141,10 +141,10 @@
     "Colectores solares térmicos (agua caliente / pileta)"
   ],
   "decisions": [
-    "Rubro sin láminas hasta definir sistema y potencia."
+    "Rubro sin láminas hasta definir sistema y potencia.",
+    "Sistema: fotovoltaico (electricidad), dirección provisoria. Térmico descartado por ahora; se revisa al final junto con Gas (posible red natural). El resto del rubro se define al final."
   ],
   "questions": [
-    "¿Fotovoltaico (electricidad), térmico (agua caliente / pileta) o ambos?",
     "¿Potencia o consumo objetivo? Propuesta: 5 kWp on-grid (≈ 25 m² de paneles).",
     "¿Qué aguas miran al norte? El modelo no tiene orientación verdadera cargada.",
     "¿Paneles sobre tejas con estructura o integrados?"
