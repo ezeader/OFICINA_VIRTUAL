@@ -66,7 +66,7 @@ PARTS = {   # code: label (hover / tags)
     'CH-01': u'CH-01 · conducto Ø %s doble pared, exterior negro mate alta temperatura · +%s a +%s · %s ml · recto' % (c2(CH_D), c2(Z_CIELO), c2(Z_TOP), c2(Z_TOP - Z_CIELO)),
     'CH-02': u'CH-02 · ducto del hogar de PA (existente, Ø 0,25)',
     'PR-PU': u'PR-PU · puertas del leñero 2 hojas chapa N°18 con marco L 1" · %s × %s' % (c2(BOCA), c2(Z_LOSA0 - .05)),
-    'CH-PA': u'CH-PA · pase en losa L01 0,50 × 0,50 (amplía el pase existente)',
+    'CH-PA': u'CH-PA · pase en losa L01 0,50 × 0,50 (modelado, abertura en la losa)',
     'CH-CJ': u'CH-CJ · cajón Durlock del Comedor existente (sin cambios) · el conducto pasa a 5 cm de su cara oeste',
     'CH-BA': u'CH-BA · babeta / collar de cubierta + brochal entre cabios',
     'CH-SO': u'CH-SO · sombrerete fijo acero inox Ø 0,70 + malla antichispa',
