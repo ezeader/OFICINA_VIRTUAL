@@ -2072,7 +2072,7 @@
   "quantityNote": "Áreas según Revit (cara superior para terreno, calle y acceso; una cara para el portón). Barandas: largo del recorrido. Deck, borde de pileta y aleros se computan en Pisos, Pileta y Cubierta.",
   "notModeled": [
     "Vegetación: 18 especies cargadas, 0 colocadas · paisajismo a definir al final",
-    "Solados exteriores, veredas y senderos",
+    "Solado del acceso vehicular (lajas de piedra con junta de mortero): falta dibujar la superficie",
     "Cercos, medianeras y portón de calle",
     "Riego e iluminación exterior",
     "Terminación de escalones y herrajes / accionamiento del portón"
@@ -2082,10 +2082,10 @@
     "Barandas interiores (4, 20,31 ml, escalera y hall) quedan fuera de este rubro.",
     "Códigos TE/CA/AC/EA/EE/BA/PO solo como anotación (no escritos en Mark).",
     "Vegetación: según plano de agrimensura hay 52 pinos relevados. Sobre la implantación de la casa caen 10 seguros + 2 sobre el borde → extracción de 12 pinos (23 %, dentro del tope municipal de 25 %). Verificar con la huella final del modelo.",
-    "Paisajismo (especies, césped, canteros y reposición de árboles) se define al final; queda como partida a definir."
+    "Paisajismo (especies, césped, canteros y reposición de árboles) se define al final; queda como partida a definir.",
+    "Solados: no hay vereda. Acceso vehicular en piedras grandes (lajas) una junto a otra con juntas tomadas con mortero — superficie a dibujar en el modelo. Acceso peatonal: escalinata de hormigón (6 escalones EA + base +1,00). Solárium: deck de madera en la parte de paso (computado en Pisos, 81,54 m²) y baldosa atérmica antideslizante alrededor de la pileta (borde/solárium 38,15 m², computado en Pileta)."
   ],
   "questions": [
-    "¿Qué solado llevan veredas, acceso y patio de pileta?",
     "¿Hay cerco perimetral o portón de calle a documentar?",
     "¿Escribimos los códigos de exteriores en el modelo (Mark)?"
   ],
@@ -2098,7 +2098,7 @@
         "label": "Base de acceso",
         "value": 28.84,
         "unit": "m²",
-        "detail": "+1,00",
+        "detail": "+1,00 · escalinata de hormigón",
         "informative": false
       },
       {
@@ -2106,7 +2106,7 @@
         "label": "Escalones de acceso",
         "value": 6,
         "unit": "u",
-        "detail": "12,00 m² · alzada 0,20",
+        "detail": "hormigón · 12,00 m² · alzada 0,20",
         "informative": false
       },
       {
