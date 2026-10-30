@@ -1147,10 +1147,10 @@
       "detail": "+2,50 a +3,00"
     },
     {
-      "label": "Conducto Ø 35 doble pared aislado (a la vista en PA, cruce de cubierta y remate)",
+      "label": "Conducto Ø 35 doble pared aislado, exterior negro mate (pintura alta temperatura)",
       "value": 6.4,
       "unit": "ml",
-      "detail": "+3,00 a +9,40 · recto"
+      "detail": "+3,00 a +9,40 · recto · a la vista en la doble altura del living comedor"
     },
     {
       "label": "Ladrillos refractarios 23 × 11,4 × 6,4 (referencia)",
@@ -1233,12 +1233,12 @@
       "detail": "+2,50 a +3,00"
     },
     {
-      "label": "Conducto Ø 35 doble pared aislado (a la vista en PA, cruce de cubierta y remate)",
+      "label": "Conducto Ø 35 doble pared aislado, exterior negro mate (pintura alta temperatura)",
       "group": "Conducto",
       "count": 1,
       "value": 6.4,
       "unit": "ml",
-      "detail": "+3,00 a +9,40 · recto"
+      "detail": "+3,00 a +9,40 · recto · a la vista en la doble altura del living comedor"
     },
     {
       "label": "Pase en losa L01 0,50 × 0,50 (amplía el pase existente)",
@@ -1279,6 +1279,7 @@
     "Conducto recto (eje x 3,785 · y 2,30), a 5 cm de la cara oeste del cajón Durlock: pasa entre cabios c/0,96 (corta 1 listón, con brochal); remate +9,40 ≥ cumbrera +8,63 + 0,60 y ≥ techo +8,06 + 0,90 (R1003.9). Garganta desde +1,90 para que las paredes de la campana queden ≤ 45° (R1001.8.1).",
     "Criterio de tiraje tomado de California Residential Code 2025, cap. 10 (R1001 hogares de mampostería, R1003 chimeneas): https://gocodebook.com/es/library/us/ca/ca-residential-code/chapter-10-chimneys-and-fireplaces/section-r1003-masonry-chimneys · verificar con normativa local.",
     "Usuario (26/10, final): cajón Durlock original (se revirtió la ampliación de R34c), leñero abierto, reemplazo del K42DB OK; el conducto sube recto y a la vista en PA (eje x 3,785, a 5 cm del cajón), sin codos.",
+    "Usuario (30/10): los dos ductos a la vista en la doble altura del living comedor (parrilla y salamandra) circulares, paralelos y negro mate con pintura para alta temperatura; para que no quemen al tocarlos, doble pared aislado (exterior a baja temperatura) + pintura siliconada ≥ 600 °C. Pase de losa L01 a 0,50 × 0,50: OK (pendiente de aplicar en Revit).",
     "Usuario (vía sesión Documentación): parrilla estándar de mampostería hecha in situ; lo crítico es el tiraje. Modelada en 3D en el archivo DOC (DirectShape, Generic Models); no se descargó ninguna familia (las encontradas requieren cuenta).",
     "Documentación en archivo propio Casa-Angel-DOC-Parrilla.rvt que vincula el modelo principal (criterio del usuario)."
   ],
@@ -1363,10 +1364,10 @@
       },
       {
         "id": "conducto-humos-doble",
-        "label": "Conducto Ø 35 doble pared aislado (a la vista en PA, cruce de cubierta y remate)",
+        "label": "Conducto Ø 35 doble pared aislado, exterior negro mate (pintura alta temperatura)",
         "value": 6.4,
         "unit": "ml",
-        "detail": "+3,00 a +9,40 · recto",
+        "detail": "+3,00 a +9,40 · recto · a la vista en la doble altura del living comedor",
         "informative": false
       },
       {
@@ -1407,6 +1408,14 @@
         "value": 125,
         "unit": "kg",
         "detail": "≈ 1 bolsa de 25 kg cada 90 ladrillos",
+        "informative": true
+      },
+      {
+        "id": "conducto-salamandra",
+        "label": "Conducto de la salamandra Ø 15 doble pared negro mate, paralelo al de la parrilla (referencia)",
+        "value": 0,
+        "unit": "ml",
+        "detail": "a confirmar diámetro con el fabricante; se computa con la salamandra",
         "informative": true
       },
       {
