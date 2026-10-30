@@ -18,8 +18,8 @@ export type RubroQuotes={suppliers:QuoteSupplier[];quotes:Quote[];negotiation:Ne
 export type QuotesData=Record<string,Record<string,RubroQuotes>>;
 
 export const NEGOTIATION_KINDS:NegotiationKind[]=['consulta del proveedor','pregunta mano de obra','pregunta materiales','marcas','contraoferta','acuerdo','nota'];
-export const QUOTE_RUBROS:{key:string;name:string;sheet?:string}[]=[
- {key:'sanitaria',name:'Instalación sanitaria',sheet:'/casa-angel/cotizacion/sanitaria-R13.json'},
+export const QUOTE_RUBROS:{key:string;name:string}[]=[
+ {key:'sanitaria',name:'Instalación sanitaria'},
 ];
 export const emptyRubroQuotes=():RubroQuotes=>({suppliers:[],quotes:[],negotiation:[]});
 export const TARGET_QUOTES=3;

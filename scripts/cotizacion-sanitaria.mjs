@@ -1,13 +1,13 @@
 // Cómputo para cotizar la instalación sanitaria de Casa Ángel.
 // Fuente: registro único R13 (public/casa-angel/r13/project.json.gz): cada elemento físico una sola vez.
-// Salida: public/casa-angel/cotizacion/sanitaria-R13.json (lo lee la oficina) y el Excel para proveedores.
+// Salida: data/cotizacion/sanitaria-R13.json (la oficina lo importa en el código) y el Excel para proveedores.
 // Uso: node scripts/cotizacion-sanitaria.mjs
 import {readFileSync,writeFileSync,mkdirSync} from 'node:fs';
 import {gunzipSync} from 'node:zlib';
 import {workbook,ref,S} from './xlsx-lite.mjs';
 
 const project=JSON.parse(gunzipSync(readFileSync('public/casa-angel/r13/project.json.gz')));
-const OUT='public/casa-angel/cotizacion';
+const OUT='data/cotizacion';
 const DATE='30/10/2026';
 
 // Orden por sistema. RV y VM se mantienen aparte, como en la oficina: no se reasignan a otro sistema.

@@ -9,7 +9,7 @@ const sheet={rubro:'sanitaria',name:'Instalación sanitaria',project:'Casa Ánge
 const q=(o)=>({id:'q',supplier:'s1',date:'2026-11-01',reference:'A',currency:'ARS',taxesIncluded:true,scope:'materiales + mano de obra',validUntil:'2026-12-01',delivery:'',zone:'',zoneViable:'sí',freight:0,lines:{},...o});
 
 test('el cómputo publicado no repite códigos ni descripciones dentro de un sistema',()=>{
- const s=JSON.parse(readFileSync('public/casa-angel/cotizacion/sanitaria-R13.json','utf8'));
+ const s=JSON.parse(readFileSync('data/cotizacion/sanitaria-R13.json','utf8'));
  const codes=s.systems.flatMap(x=>x.items.map(i=>i.code));
  assert.equal(new Set(codes).size,codes.length);
  for(const x of s.systems)assert.equal(new Set(x.items.map(i=>i.description)).size,x.items.length,x.key);

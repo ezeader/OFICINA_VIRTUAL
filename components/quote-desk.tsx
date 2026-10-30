@@ -1,10 +1,14 @@
 'use client';
-import {useEffect,useMemo,useState} from 'react';
+import {useMemo,useState} from 'react';
 import {RUBROS} from '@/lib/rubros';
 import {QUOTE_RUBROS,NEGOTIATION_KINDS,TARGET_QUOTES,FOLLOW_UP_DAYS,compareQuote,emptyRubroQuotes,followUp,latestQuotes,linesFromRows,needsLabor,needsMaterial,priceHistory,requestMail,
  type NegotiationEntry,type Quote,type QuoteLine,type QuoteSheet,type QuoteSupplier,type RubroQuotes,type SupplierKind} from '@/lib/quotes';
 import {conditionsFromRows,readFirstSheet} from '@/lib/xlsx-read';
 import './quote-desk.css';
+// El cómputo y el Excel van en el código (data/cotizacion): se actualizan sin reiniciar el servidor ni publicar documentos.
+import sanitariaSheet from '@/data/cotizacion/sanitaria-R13.json';
+import sanitariaXlsx from '@/data/cotizacion/Casa-Angel-Sanitaria-cotizacion-R13.xlsx?url';
+const SHEETS:Record<string,{sheet:QuoteSheet;xlsx:string;file:string}>={sanitaria:{sheet:sanitariaSheet as QuoteSheet,xlsx:sanitariaXlsx,file:'Casa-Angel-Sanitaria-cotizacion-R13.xlsx'}};
 
 const TABS=['Cómputo','Proveedores','Mails','Comparación','Negociaciones'] as const;
 const KINDS:SupplierKind[]=['materiales','materiales + mano de obra','mano de obra'];
@@ -23,11 +27,8 @@ export default function QuoteDesk({value,disabled,onSave}:{value?:Record<string,
  // #presupuesto/<proyecto>/cotizaciones/tutorial abre la guía directamente.
  const [guide,setGuide]=useState<number|null>(()=>typeof window!=='undefined'&&window.location.hash.endsWith('/tutorial')?0:null);
  const [rubro,setRubro]=useState('sanitaria'),[tab,setTab]=useState<typeof TABS[number]>('Cómputo');
- const [loaded,setLoaded]=useState<Record<string,QuoteSheet|{error:string}>>({});
- const info=QUOTE_RUBROS.find(r=>r.key===rubro);
  const data=value?.[rubro]||emptyRubroQuotes();
- const url=info?.sheet,entry=url?loaded[url]:undefined,sheet=entry&&!('error' in entry)?entry:null,loadError=entry&&'error' in entry?entry.error:'';
- useEffect(()=>{if(!url||loaded[url])return;fetch(url).then(r=>{if(!r.ok)throw Error('No se pudo leer el cómputo ('+r.status+').');return r.json() as Promise<QuoteSheet>}).then(s=>setLoaded(m=>({...m,[url]:s})),e=>setLoaded(m=>({...m,[url]:{error:(e as Error).message}})))},[url,loaded]);
+ const pack=SHEETS[rubro],sheet=pack?.sheet;
  const save=(next:RubroQuotes,text:string)=>onSave({...value,[rubro]:next},text);
  const supplierName=(id:string)=>data.suppliers.find(s=>s.id===id)?.name||'Proveedor';
  const fu=followUp(data);
@@ -35,7 +36,7 @@ export default function QuoteDesk({value,disabled,onSave}:{value?:Record<string,
  return <section className="qd">
   <div className="qdRubros" aria-label="Rubros a cotizar">{QUOTE_RUBROS.map(r=><button key={r.key} className={rubro===r.key?'active':''} onClick={()=>setRubro(r.key)}>{r.name}</button>)}
    {RUBROS.map(r=><button key={r.key} disabled title="Todavía sin planilla de cotización">{r.name}</button>)}</div>
-  {!info?.sheet?<div className="pcEmpty"><p>Este rubro todavía no tiene planilla de cotización.</p></div>:loadError?<p className="pcError" role="alert">{loadError}</p>:!sheet?<p className="pcHint">Cargando cómputo…</p>:<>
+  {!pack||!sheet?<div className="pcEmpty"><p>Este rubro todavía no tiene planilla de cotización.</p></div>:<>
   <div className="qdStatus">
    <span><b>{fu.answered}/{TARGET_QUOTES}</b> presupuestos recibidos</span>
    <span><b>{aptos.length}</b> proveedores aptos · {data.suppliers.filter(s=>s.apto==='pendiente').length} esperan tu OK</span>
@@ -45,9 +46,9 @@ export default function QuoteDesk({value,disabled,onSave}:{value?:Record<string,
   </div>
   {guide!==null&&<QuoteGuide step={guide} onStep={n=>{setGuide(n);setTab(GUIDE[n].tab)}} onClose={()=>setGuide(null)}/>}
   <div className="qdTabs" aria-label="Cotización">{TABS.map(t=><button key={t} aria-pressed={tab===t} className={tab===t?'active':''} onClick={()=>{setTab(t);setGuide(null)}}>{t}</button>)}</div>
-  {tab==='Cómputo'&&<Computo sheet={sheet}/>}
+  {tab==='Cómputo'&&<Computo sheet={sheet} xlsx={pack.xlsx} file={pack.file}/>}
   {tab==='Proveedores'&&<Suppliers data={data} disabled={disabled} save={save}/>}
-  {tab==='Mails'&&<Mails sheet={sheet} data={data} disabled={disabled} save={save}/>}
+  {tab==='Mails'&&<Mails sheet={sheet} file={pack.file} data={data} disabled={disabled} save={save}/>}
   {tab==='Comparación'&&<Comparison sheet={sheet} data={data} disabled={disabled} save={save} supplierName={supplierName}/>}
   {tab==='Negociaciones'&&<Negotiations sheet={sheet} data={data} disabled={disabled} save={save}/>}
   </>}
@@ -79,11 +80,10 @@ function QuoteGuide({step,onStep,onClose}:{step:number;onStep:(n:number)=>void;o
   <small>La guía solo cambia de pestaña: no guarda ni envía nada. La pestaña de cada paso queda abierta debajo.</small></aside>;
 }
 
-function Computo({sheet}:{sheet:QuoteSheet}){
- const xlsx=`/casa-angel/cotizacion/Casa-Angel-${sheet.rubro[0].toUpperCase()+sheet.rubro.slice(1)}-cotizacion-${sheet.revision}.xlsx`;
+function Computo({sheet,xlsx,file}:{sheet:QuoteSheet;xlsx:string;file:string}){
  return <>
   <div className="pcSectionHead"><div><h2>{sheet.name} · cómputo {sheet.revision}</h2><p>{sheet.count} ítems ordenados por sistema, cada uno una sola vez. Material y mano de obra se cotizan por separado. {sheet.basis}</p></div>
-   <div className="qdDocs"><a className="primary" href={xlsx} download>Excel para cotizar ↓</a>{sheet.documents.map(d=><a key={d.url} href={d.url} target="_blank" rel="noreferrer">{d.name} ↗</a>)}</div></div>
+   <div className="qdDocs"><a className="primary" href={xlsx} download={file}>Excel para cotizar ↓</a>{sheet.documents.map(d=><a key={d.url} href={d.url} target="_blank" rel="noreferrer">{d.name} ↗</a>)}</div></div>
   {sheet.systems.map(s=><details key={s.key} className="qdSystem"><summary><b>{s.name}</b><span>{s.items.length} ítems</span></summary>
    <div className="pcTableWrap"><table><thead><tr><th>Código</th><th>Descripción</th><th>Cantidad</th></tr></thead><tbody>{s.items.map(i=><tr key={i.code}><td>{i.code}</td><td>{i.description}{i.materialOptional&&<small>Material opcional</small>}</td><td>{qty(i.quantity)} {i.unit}</td></tr>)}</tbody></table></div></details>)}
   <div className="pcPanel"><h3>No incluido en este pedido</h3><ul>{sheet.excluded.map(e=><li key={e}>{e}</li>)}</ul></div>
@@ -124,15 +124,14 @@ function Suppliers({data,disabled,save}:{data:RubroQuotes;disabled:boolean;save:
  </>;
 }
 
-function Mails({sheet,data,disabled,save}:{sheet:QuoteSheet;data:RubroQuotes;disabled:boolean;save:(v:RubroQuotes,t:string)=>Promise<boolean>}){
+function Mails({sheet,file,data,disabled,save}:{sheet:QuoteSheet;file:string;data:RubroQuotes;disabled:boolean;save:(v:RubroQuotes,t:string)=>Promise<boolean>}){
  const [deadline,setDeadline]=useState(plusDays(7)),[copied,setCopied]=useState('');
  const aptos=data.suppliers.filter(s=>s.apto==='apto'),targets=aptos.length?aptos:[{id:'modelo',name:'[proveedor]',kind:'materiales + mano de obra' as SupplierKind}];
- const xlsx=`Casa-Angel-${sheet.rubro[0].toUpperCase()+sheet.rubro.slice(1)}-cotizacion-${sheet.revision}.xlsx`;
  async function copy(id:string,text:string){try{await navigator.clipboard.writeText(text);setCopied(id)}catch{setCopied('')}}
  return <>
   <div className="pcSectionHead"><div><h2>Borradores de mail</h2><p>Solo borradores: la oficina no envía nada. Cuando apruebes proveedores, texto y adjuntos, se envían por el medio que elijas y se marca “enviado” en Proveedores.</p></div>
    <label>Fecha límite de respuesta<input type="date" value={deadline} onChange={e=>setDeadline(e.target.value)}/></label></div>
-  <div className="pcPanel"><h3>Adjuntos</h3><ul><li>{xlsx} (Excel de cómputo)</li>{sheet.documents.map(d=><li key={d.url}>{d.url.split('/').pop()} · {d.name}</li>)}</ul></div>
+  <div className="pcPanel"><h3>Adjuntos</h3><ul><li>{file} (Excel de cómputo)</li>{sheet.documents.map(d=><li key={d.url}>{d.url.split('/').pop()} · {d.name}</li>)}</ul></div>
   {!aptos.length&&<p className="pcHint">Todavía no marcaste proveedores aptos. Abajo, el modelo del mail.</p>}
   {targets.map(s=>{const m=requestMail(sheet,s,dmy(deadline)),full=`Asunto: ${m.subject}\n\n${m.body}`;const sup=data.suppliers.find(x=>x.id===s.id);
    return <article key={s.id} className="pcPanel qdMail"><div className="qdMailHead"><div><b>{s.name}</b>{sup&&<small>{sup.contact}</small>}</div><span className="pcBadge">{sup?.requestedAt?'Enviado '+dmy(sup.requestedAt):'Borrador · sin enviar'}</span></div>
