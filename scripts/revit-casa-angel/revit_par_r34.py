@@ -63,7 +63,7 @@ PARTS = {   # code: label (hover / tags)
     'PR-BR': u'PR-BR · brasero (canasto) hierro 0,35 × 0,50',
     'PR-LE': u'PR-LE · leñero abierto bajo la losa · %s × %s × %s' % (c2(BOCA), c2(DEPTH), c2(Z_LOSA0)),
     'PR-AI': u'PR-AI · placa lana cerámica 25 mm contra el tabique · %s × %s m' % (c2(DEPTH), c2(Z_CIELO)),
-    'CH-01': u'CH-01 · conducto Ø %s acero inox · +%s a +%s · %s ml · recto, a la vista en PA' % (c2(CH_D), c2(Z_CIELO), c2(Z_TOP), c2(Z_TOP - Z_CIELO)),
+    'CH-01': u'CH-01 · conducto Ø %s doble pared, exterior negro mate alta temperatura · +%s a +%s · %s ml · recto' % (c2(CH_D), c2(Z_CIELO), c2(Z_TOP), c2(Z_TOP - Z_CIELO)),
     'CH-02': u'CH-02 · ducto del hogar de PA (existente, Ø 0,25)',
     'PR-PU': u'PR-PU · puertas del leñero 2 hojas chapa N°18 con marco L 1" · %s × %s' % (c2(BOCA), c2(Z_LOSA0 - .05)),
     'CH-PA': u'CH-PA · pase en losa L01 0,50 × 0,50 (amplía el pase existente)',
