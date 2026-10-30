@@ -145,7 +145,8 @@ def run(doc,uidoc):
     job=read(os.path.join(ROOT,'openings-job.json'));action=job['action']
     if job.get('revision')=='r4':
         import imp
-        return imp.load_source('ader_openings_r4',os.path.join(ROOT,'revit_openings_r4.py')).run(doc,uidoc,job)
+        fs=imp.load_source('ader_failsafe_r37',os.path.join(ROOT,'failsafe_r37.py'))   # R37: no job waits on a Revit dialog
+        return fs.during(doc.Application,lambda:imp.load_source('ader_openings_r4',os.path.join(ROOT,'revit_openings_r4.py')).run(doc,uidoc,job))
     if job.get('revision')=='r2':
         import imp
         module=imp.load_source('ader_openings_r2',os.path.join(ROOT,'revit_openings_r2.py'))
