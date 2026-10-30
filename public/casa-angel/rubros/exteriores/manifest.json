@@ -202,10 +202,10 @@
               "elementId": "1023311",
               "label": "TE-01 · terreno · 4.371,2 m²",
               "box": [
-                0.0,
-                0.0,
-                1.0,
-                1.0
+                0,
+                0,
+                1,
+                1
               ]
             },
             {
@@ -215,7 +215,7 @@
               "box": [
                 0.0614,
                 0.0607,
-                1.0,
+                1,
                 0.8527
               ]
             },
@@ -847,9 +847,9 @@
                 0.25,
                 0.75,
                 0.25,
-                1.0,
+                1,
                 0.1,
-                6.0
+                6
               ],
               "associative": false
             }
@@ -1158,7 +1158,7 @@
             {
               "label": "EE-01 base + altura",
               "values_m": [
-                4.0
+                4
               ],
               "associative": false
             }
@@ -1427,14 +1427,14 @@
             {
               "label": "Portón largo total",
               "values_m": [
-                6.0
+                6
               ],
               "associative": false
             },
             {
               "label": "Portón alto",
               "values_m": [
-                3.0
+                3
               ],
               "associative": false
             }
@@ -1641,7 +1641,7 @@
       "type": "Base Acceso",
       "area_m2": 28.841,
       "volume_m3": 34.609,
-      "top_m": 1.0
+      "top_m": 1
     },
     {
       "code": "EA-01",
@@ -1650,7 +1650,7 @@
       "status": "Escalón de acceso (piso \"Escalones acceso 2m x 1m\")",
       "elementId": "628255",
       "type": "Escalones acceso 2m x 1m",
-      "area_m2": 2.0,
+      "area_m2": 2,
       "volume_m3": 0.2,
       "top_m": 0.8
     },
@@ -1661,7 +1661,7 @@
       "status": "Escalón de acceso (piso \"Escalones acceso 2m x 1m\")",
       "elementId": "628637",
       "type": "Escalones acceso 2m x 1m",
-      "area_m2": 2.0,
+      "area_m2": 2,
       "volume_m3": 0.2,
       "top_m": 0.6
     },
@@ -1672,7 +1672,7 @@
       "status": "Escalón de acceso (piso \"Escalones acceso 2m x 1m\")",
       "elementId": "628772",
       "type": "Escalones acceso 2m x 1m",
-      "area_m2": 2.0,
+      "area_m2": 2,
       "volume_m3": 0.2,
       "top_m": 0.4
     },
@@ -1683,7 +1683,7 @@
       "status": "Escalón de acceso (piso \"Escalones acceso 2m x 1m\")",
       "elementId": "629011",
       "type": "Escalones acceso 2m x 1m",
-      "area_m2": 2.0,
+      "area_m2": 2,
       "volume_m3": 0.2,
       "top_m": 0.4
     },
@@ -1694,7 +1694,7 @@
       "status": "Escalón de acceso (piso \"Escalones acceso 2m x 1m\")",
       "elementId": "628854",
       "type": "Escalones acceso 2m x 1m",
-      "area_m2": 2.0,
+      "area_m2": 2,
       "volume_m3": 0.2,
       "top_m": 0.2
     },
@@ -1705,7 +1705,7 @@
       "status": "Escalón de acceso (piso \"Escalones acceso 2m x 1m\")",
       "elementId": "629059",
       "type": "Escalones acceso 2m x 1m",
-      "area_m2": 2.0,
+      "area_m2": 2,
       "volume_m3": 0.2,
       "top_m": 0.2
     },
@@ -1716,8 +1716,8 @@
       "status": "Escalera \"Monolithic Stair\": huella 0,28, sube 4,00 m (de +0,00 a +4,00)",
       "elementId": "1028909",
       "type": "Monolithic Stair",
-      "height_m": 4.0,
-      "top_m": 4.0,
+      "height_m": 4,
+      "top_m": 4,
       "risers": 10,
       "riser_m": 0.25,
       "tread_m": 0.28
@@ -1786,7 +1786,7 @@
       "type": "Hojas Portón 5cm",
       "length_m": 1.44,
       "area_m2": 4.032,
-      "height_m": 3.0
+      "height_m": 3
     },
     {
       "code": "PO-02",
@@ -1797,7 +1797,7 @@
       "type": "Hojas Portón 5cm",
       "length_m": 1.5,
       "area_m2": 4.2,
-      "height_m": 3.0
+      "height_m": 3
     },
     {
       "code": "PO-03",
@@ -1808,7 +1808,7 @@
       "type": "Hojas Portón 5cm",
       "length_m": 1.5,
       "area_m2": 4.2,
-      "height_m": 3.0
+      "height_m": 3
     },
     {
       "code": "PO-04",
@@ -1819,7 +1819,7 @@
       "type": "Hojas Portón 5cm",
       "length_m": 1.6,
       "area_m2": 4.2,
-      "height_m": 3.0
+      "height_m": 3
     },
     {
       "code": "PO-05",
@@ -1875,6 +1875,12 @@
       "value": 5290.79,
       "unit": "m²",
       "detail": "4 toposólidos"
+    },
+    {
+      "label": "Pinos a extraer",
+      "value": 12,
+      "unit": "u",
+      "detail": "de 52 relevados · 23 %"
     }
   ],
   "quantities": [
@@ -1930,7 +1936,7 @@
       "label": "EA-01",
       "group": "Escalones de acceso",
       "count": 1,
-      "value": 2.0,
+      "value": 2,
       "unit": "m²",
       "detail": "EA-01 · 2,00 × 1,00 · +0,80"
     },
@@ -1938,7 +1944,7 @@
       "label": "EA-02",
       "group": "Escalones de acceso",
       "count": 1,
-      "value": 2.0,
+      "value": 2,
       "unit": "m²",
       "detail": "EA-02 · 2,00 × 1,00 · +0,60"
     },
@@ -1946,7 +1952,7 @@
       "label": "EA-03",
       "group": "Escalones de acceso",
       "count": 1,
-      "value": 2.0,
+      "value": 2,
       "unit": "m²",
       "detail": "EA-03 · 2,00 × 1,00 · +0,40"
     },
@@ -1954,7 +1960,7 @@
       "label": "EA-04",
       "group": "Escalones de acceso",
       "count": 1,
-      "value": 2.0,
+      "value": 2,
       "unit": "m²",
       "detail": "EA-04 · 2,00 × 1,00 · +0,40"
     },
@@ -1962,7 +1968,7 @@
       "label": "EA-05",
       "group": "Escalones de acceso",
       "count": 1,
-      "value": 2.0,
+      "value": 2,
       "unit": "m²",
       "detail": "EA-05 · 2,00 × 1,00 · +0,20"
     },
@@ -1970,7 +1976,7 @@
       "label": "EA-06",
       "group": "Escalones de acceso",
       "count": 1,
-      "value": 2.0,
+      "value": 2,
       "unit": "m²",
       "detail": "EA-06 · 2,00 × 1,00 · +0,20"
     },
@@ -2065,7 +2071,7 @@
   ],
   "quantityNote": "Áreas según Revit (cara superior para terreno, calle y acceso; una cara para el portón). Barandas: largo del recorrido. Deck, borde de pileta y aleros se computan en Pisos, Pileta y Cubierta.",
   "notModeled": [
-    "Vegetación: 18 especies cargadas en el modelo, 0 colocadas",
+    "Vegetación: 18 especies cargadas, 0 colocadas · paisajismo a definir al final",
     "Solados exteriores, veredas y senderos",
     "Cercos, medianeras y portón de calle",
     "Riego e iluminación exterior",
@@ -2074,10 +2080,11 @@
   "decisions": [
     "Exteriores documentados con implantación general, planta PB, barandas y fichas (acceso, escalera, portón).",
     "Barandas interiores (4, 20,31 ml, escalera y hall) quedan fuera de este rubro.",
-    "Códigos TE/CA/AC/EA/EE/BA/PO solo como anotación (no escritos en Mark)."
+    "Códigos TE/CA/AC/EA/EE/BA/PO solo como anotación (no escritos en Mark).",
+    "Vegetación: según plano de agrimensura hay 52 pinos relevados. Sobre la implantación de la casa caen 10 seguros + 2 sobre el borde → extracción de 12 pinos (23 %, dentro del tope municipal de 25 %). Verificar con la huella final del modelo.",
+    "Paisajismo (especies, césped, canteros y reposición de árboles) se define al final; queda como partida a definir."
   ],
   "questions": [
-    "¿Qué vegetación va y dónde (árboles, césped, canteros)? Hoy no hay ninguna colocada.",
     "¿Qué solado llevan veredas, acceso y patio de pileta?",
     "¿Hay cerco perimetral o portón de calle a documentar?",
     "¿Escribimos los códigos de exteriores en el modelo (Mark)?"
@@ -2124,6 +2131,14 @@
         "value": 20.55,
         "unit": "m²",
         "detail": "5 hojas · e 5 cm",
+        "informative": false
+      },
+      {
+        "id": "extraccion-pinos",
+        "label": "Extracción de pinos",
+        "value": 12,
+        "unit": "u",
+        "detail": "52 pinos relevados (agrimensura) · 10 en huella + 2 en borde · 23 %",
         "informative": false
       },
       {
