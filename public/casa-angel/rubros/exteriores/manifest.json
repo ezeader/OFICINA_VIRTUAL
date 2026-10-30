@@ -2092,16 +2092,14 @@
   "decisions": [
     "Exteriores documentados con implantación general, planta PB, barandas y fichas (acceso, escalera, portón).",
     "Barandas interiores (4, 20,31 ml, escalera y hall) quedan fuera de este rubro.",
-    "Códigos TE/CA/AC/EA/EE/BA/PO solo como anotación (no escritos en Mark).",
+    "Códigos TE/CA/AC/EA/EE/BA/PO solo como etiqueta en láminas (no escritos en Mark) — confirmado por el usuario.",
     "Vegetación: según plano de agrimensura hay 52 pinos relevados. Sobre la implantación de la casa caen 10 seguros + 2 sobre el borde → extracción de 12 pinos (23 %, dentro del tope municipal de 25 %). Verificar con la huella final del modelo.",
     "Paisajismo (especies, césped, canteros y reposición de árboles) se define al final; queda como partida a definir.",
     "Solados: no hay vereda. Acceso vehicular en piedras grandes (lajas) una junto a otra con juntas tomadas con mortero — superficie a dibujar en el modelo. Acceso peatonal: escalinata de hormigón (6 escalones EA + base +1,00). Solárium: deck de madera en la parte de paso (computado en Pisos, 81,54 m²) y baldosa atérmica antideslizante alrededor de la pileta (borde/solárium 38,15 m², computado en Pileta).",
     "Cerco perimetral: en medianeras (26,51 + 47,74 = 74,25 ml según agrimensura) alambrado camuflado de 1,00 m + cerco vivo hasta 2,00 m. Diseño final de especies con el paisajismo.",
     "Acceso vehicular sobre línea municipal: tranquera (ancho de referencia 4,00 m) además del portón interior hacia el quincho."
   ],
-  "questions": [
-    "¿Escribimos los códigos de exteriores en el modelo (Mark)?"
-  ],
+  "questions": [],
   "budget": {
     "revision": "R27",
     "note": "Partidas a cotizar sin solapes; informative = referencia (no se suma).",
