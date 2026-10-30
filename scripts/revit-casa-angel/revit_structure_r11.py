@@ -107,7 +107,7 @@ def wall_elevation(doc, e, row, open_codes, vname=None):
     dims = []; tags = [row['code']]; elems = [eid(e)]
     edges = []
     for iid in e.FindInserts(True, False, True, True):
-        ins = doc.GetElement(iid)
+        ins = e.Document.GetElement(iid)   # R38: inserts live in the wall's document (link in DOC files)
         if ins is None or ins.get_BoundingBox(None) is None: continue
         try: ia, ib, iz0, iz1, _ = L.extents(doc, ins)
         except Exception: continue

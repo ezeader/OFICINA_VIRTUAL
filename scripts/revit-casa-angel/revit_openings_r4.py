@@ -139,7 +139,7 @@ def setup(doc):
 
 # ---------------------------------------------------------------- geometry helpers
 
-def level_of(doc, e): return doc.GetElement(e.LevelId)
+def level_of(doc, e): return e.Document.GetElement(e.LevelId)   # R38: the element's own document (linked elements in DOC files)
 
 def extents(doc, e):
     """Element extents: horizontal axis (2 XYZ ends), base z, top z, normal."""
@@ -875,6 +875,22 @@ def run(doc, uidoc, job):
     if action == 'r30_cubdoc': return imp.load_source('ader_cubdoc_r30', os.path.join(ROOT, 'revit_cub_doc_r30.py')).run(doc, uidoc, job)
     if action == 'r31_estdoc': return imp.load_source('ader_estdoc_r31', os.path.join(ROOT, 'revit_est_doc_r31.py')).run(doc, uidoc, job)
     if action == 'r32_clidoc': return imp.load_source('ader_clidoc_r32', os.path.join(ROOT, 'revit_clima_doc_r32.py')).run(doc, uidoc, job)
+    if action == 'r31_lopbchk': return imp.load_source('ader_lopbchk_r31', os.path.join(ROOT, 'revit_lopb_check_r31.py')).run(doc, uidoc, job)
+    if action == 'r31_lopboff': return imp.load_source('ader_lopboff_r31', os.path.join(ROOT, 'revit_lopb_offset_r31.py')).run(doc, uidoc, job)
+    if action == 'r31_lopb': return imp.load_source('ader_lopb_r31', os.path.join(ROOT, 'revit_lopb_r31.py')).run(doc, uidoc, job)
+    if action == 'r32_clifi': return imp.load_source('ader_clifi_r32', os.path.join(ROOT, 'revit_clima_fi_r32.py')).run(doc, uidoc, job)
+    if action == 'r33_inv': return imp.load_source('ader_inv_r33', os.path.join(ROOT, 'revit_inventory_r33.py')).run(doc, uidoc, job)
+    if action == 'r33_clean': return imp.load_source('ader_clean_r33', os.path.join(ROOT, 'revit_cleanup_r33.py')).run(doc, uidoc, job)
+    if action == 'r33_compact': return imp.load_source('ader_compact_r33', os.path.join(ROOT, 'revit_compact_r33.py')).run(doc, uidoc, job)
+    if action == 'r35_dommodel': return imp.load_source('ader_dommodel_r35', os.path.join(ROOT, 'revit_dom_model_r35.py')).run(doc, uidoc, job)
+    if action == 'r35_domdoc': return imp.load_source('ader_domdoc_r35', os.path.join(ROOT, 'revit_dom_doc_r35.py')).run(doc, uidoc, job)
+    if action == 'r36_asccheck': return imp.load_source('ader_asccheck_r36', os.path.join(ROOT, 'revit_asc_check_r36.py')).run(doc, uidoc, job)
+    if action == 'r36_asccheck2': return imp.load_source('ader_asccheck2_r36', os.path.join(ROOT, 'revit_asc_check2_r36.py')).run(doc, uidoc, job)
+    if action == 'r38_alb': return imp.load_source('ader_alb_r38', os.path.join(ROOT, 'revit_alb_r38.py')).run(doc, uidoc, job)
+    if action == 'r39_asccheck3': return imp.load_source('ader_asccheck3_r39', os.path.join(ROOT, 'revit_asc_check3_r39.py')).run(doc, uidoc, job)
+    if action == 'r32_clico': return imp.load_source('ader_clico_r32', os.path.join(ROOT, 'revit_clima_co_r32.py')).run(doc, uidoc, job)
+    if action == 'r34_pase': return imp.load_source('ader_pase_r34', os.path.join(ROOT, 'revit_par_pase_r34.py')).run(doc, uidoc, job)
+    if action == 'r34_par': return imp.load_source('ader_par_r34', os.path.join(ROOT, 'revit_par_r34.py')).run(doc, uidoc, job)
     if action == 'switch': return imp.load_source('ader_switch_doc', os.path.join(ROOT, 'revit_switch_doc.py')).run(doc, uidoc, job)
     if action == 'r32_cliconn': return imp.load_source('ader_cliconn_r32', os.path.join(ROOT, 'revit_clima_conn_r32.py')).run(doc, uidoc, job)
     if action == 'r31_platea': return imp.load_source('ader_platea_r31', os.path.join(ROOT, 'revit_platea_r31.py')).run(doc, uidoc, job)
