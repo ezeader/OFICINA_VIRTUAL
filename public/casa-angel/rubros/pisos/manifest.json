@@ -964,9 +964,9 @@
               "code": "PI-PA-02",
               "elementId": "1011940",
               "box": [
-                0.0,
+                0,
                 0.3731,
-                1.0,
+                1,
                 0.7115
               ]
             }
@@ -1132,9 +1132,9 @@
               "code": "PI-PA-04",
               "elementId": "2156060",
               "box": [
-                0.0,
+                0,
                 0.3191,
-                1.0,
+                1,
                 0.7532
               ]
             }
@@ -1263,9 +1263,9 @@
               "code": "PI-PE-02",
               "elementId": "875093",
               "box": [
-                0.0,
+                0,
                 0.3731,
-                1.0,
+                1,
                 0.7115
               ]
             }
@@ -1398,9 +1398,9 @@
               "code": "PI-PB-15",
               "elementId": "2144958",
               "box": [
-                0.0,
+                0,
                 0.3731,
-                1.0,
+                1,
                 0.7115
               ]
             }
@@ -1533,9 +1533,9 @@
               "code": "PI-PB-16",
               "elementId": "2151436",
               "box": [
-                0.0,
+                0,
                 0.3731,
-                1.0,
+                1,
                 0.7115
               ]
             }
@@ -1664,9 +1664,9 @@
               "code": "PI-PA-08",
               "elementId": "2156600",
               "box": [
-                0.0,
+                0,
                 0.3731,
-                1.0,
+                1,
                 0.7115
               ]
             }
@@ -1799,9 +1799,9 @@
               "code": "PI-PB-17",
               "elementId": "2153042",
               "box": [
-                0.0,
+                0,
                 0.3731,
-                1.0,
+                1,
                 0.7115
               ]
             }
@@ -1934,9 +1934,9 @@
               "code": "PI-PB-18",
               "elementId": "2154191",
               "box": [
-                0.0,
+                0,
                 0.3731,
-                1.0,
+                1,
                 0.7115
               ]
             }
@@ -2065,9 +2065,9 @@
               "code": "PI-PA-09",
               "elementId": "2157972",
               "box": [
-                0.0,
+                0,
                 0.3731,
-                1.0,
+                1,
                 0.7115
               ]
             }
@@ -2195,9 +2195,9 @@
               "code": "PI-PA-01",
               "elementId": "467187",
               "box": [
-                0.0,
+                0,
                 0.5,
-                1.0,
+                1,
                 0.6134
               ]
             }
@@ -2543,9 +2543,9 @@
               "code": "PI-PB-07",
               "elementId": "628255",
               "box": [
-                0.0,
+                0,
                 0.4793,
-                1.0,
+                1,
                 0.6717
               ]
             }
@@ -2656,7 +2656,7 @@
             {
               "label": "TP-13 capas",
               "values_m": [
-                1.0,
+                1,
                 0.2
               ],
               "associative": false
@@ -2674,9 +2674,9 @@
               "code": "PI-PB-01",
               "elementId": "398391",
               "box": [
-                0.0,
+                0,
                 0.1477,
-                1.0,
+                1,
                 0.8829
               ]
             }
@@ -2751,7 +2751,7 @@
         {
           "material": "Film de Polietileno",
           "function": "Membrane",
-          "thickness_m": 0.0
+          "thickness_m": 0
         },
         {
           "material": "Contrapiso",
@@ -2862,7 +2862,7 @@
         {
           "material": "Film de Polietileno",
           "function": "Membrane",
-          "thickness_m": 0.0
+          "thickness_m": 0
         },
         {
           "material": "Contrapiso",
@@ -2909,7 +2909,7 @@
         {
           "material": "Film de Polietileno",
           "function": "Membrane",
-          "thickness_m": 0.0
+          "thickness_m": 0
         },
         {
           "material": "Contrapiso",
@@ -2978,7 +2978,7 @@
         {
           "material": "Film de Polietileno",
           "function": "Membrane",
-          "thickness_m": 0.0
+          "thickness_m": 0
         },
         {
           "material": "Contrapiso",
@@ -3025,7 +3025,7 @@
         {
           "material": "Film de Polietileno",
           "function": "Membrane",
-          "thickness_m": 0.0
+          "thickness_m": 0
         },
         {
           "material": "Contrapiso",
@@ -3100,7 +3100,7 @@
       "kind": "TP",
       "label": "TP-12 · Escalones acceso 2m x 1m · hormigón negro · 12,00 m²",
       "status": "Paquete: hormigón negro 10 cm",
-      "area_m2": 12.0,
+      "area_m2": 12,
       "thickness_m": 0.1,
       "finish": "hormigón negro",
       "type": "Escalones acceso 2m x 1m",
@@ -3180,7 +3180,7 @@
       "label": "PI-PA-05 · TP-02 · 28,00 m²",
       "status": "L01.01 / 30cm · alfombra",
       "elementId": "2156155",
-      "area_m2": 28.0,
+      "area_m2": 28,
       "level": "01. Planta Alta",
       "typeCode": "TP-02"
     },
@@ -3290,7 +3290,7 @@
       "label": "PI-PB-07 · TP-12 · 2,00 m²",
       "status": "Escalones acceso 2m x 1m · hormigón negro",
       "elementId": "628255",
-      "area_m2": 2.0,
+      "area_m2": 2,
       "level": "00. Planta Baja",
       "typeCode": "TP-12"
     },
@@ -3300,7 +3300,7 @@
       "label": "PI-PB-08 · TP-12 · 2,00 m²",
       "status": "Escalones acceso 2m x 1m · hormigón negro",
       "elementId": "628637",
-      "area_m2": 2.0,
+      "area_m2": 2,
       "level": "00. Planta Baja",
       "typeCode": "TP-12"
     },
@@ -3310,7 +3310,7 @@
       "label": "PI-PB-09 · TP-12 · 2,00 m²",
       "status": "Escalones acceso 2m x 1m · hormigón negro",
       "elementId": "628772",
-      "area_m2": 2.0,
+      "area_m2": 2,
       "level": "00. Planta Baja",
       "typeCode": "TP-12"
     },
@@ -3320,7 +3320,7 @@
       "label": "PI-PB-10 · TP-12 · 2,00 m²",
       "status": "Escalones acceso 2m x 1m · hormigón negro",
       "elementId": "628854",
-      "area_m2": 2.0,
+      "area_m2": 2,
       "level": "00. Planta Baja",
       "typeCode": "TP-12"
     },
@@ -3330,7 +3330,7 @@
       "label": "PI-PB-11 · TP-12 · 2,00 m²",
       "status": "Escalones acceso 2m x 1m · hormigón negro",
       "elementId": "629011",
-      "area_m2": 2.0,
+      "area_m2": 2,
       "level": "00. Planta Baja",
       "typeCode": "TP-12"
     },
@@ -3340,7 +3340,7 @@
       "label": "PI-PB-12 · TP-12 · 2,00 m²",
       "status": "Escalones acceso 2m x 1m · hormigón negro",
       "elementId": "629059",
-      "area_m2": 2.0,
+      "area_m2": 2,
       "level": "00. Planta Baja",
       "typeCode": "TP-12"
     },
@@ -3438,7 +3438,7 @@
       "label": "ZO-02 · 4,00 ml",
       "status": "Zócalo modelado (Wall Sweep \"Zocalo\")",
       "elementId": "2392381",
-      "length_m": 4.0
+      "length_m": 4
     },
     {
       "code": "ZO-03",
@@ -3498,7 +3498,7 @@
     },
     {
       "label": "Piso hormigón negro",
-      "value": 12.0,
+      "value": 12,
       "unit": "m²",
       "detail": "por terminación"
     },
@@ -3614,7 +3614,7 @@
       "label": "TP-12 · Escalones acceso 2m x 1m",
       "group": "Tipos de piso",
       "count": 6,
-      "value": 12.0,
+      "value": 12,
       "unit": "m²",
       "detail": "hormigón negro · 00. Planta Baja"
     },
@@ -3878,7 +3878,7 @@
       "label": "ZO-02",
       "group": "Zócalos modelados",
       "count": 1,
-      "value": 4.0,
+      "value": 4,
       "unit": "ml",
       "detail": "PB"
     },
@@ -3916,11 +3916,11 @@
   ],
   "decisions": [
     "Códigos TP/PI/ZO solo como anotación (no escritos en Mark).",
-    "Cada tipo de piso del modelo es un TP con ficha y corte de paquete a 1:5."
+    "Cada tipo de piso del modelo es un TP con ficha y corte de paquete a 1:5.",
+    "Lógica de pisos por categoría antes que por material: A húmedo privado, B húmedo público, C seco privado, D seco público, E exterior. Locales húmedos con porcelanato (A y B con tipos distintos); material y modelo concretos a definir sobre plantas coloreadas por categoría."
   ],
   "questions": [
-    "¿Los baños de PB van con piso vinílico (TP-01, TP-04, TP-05)? ¿Y el Baño PA con alfombra (TP-02)? Parece un tipo de piso provisorio.",
-    "¿El Hall está bien sobre \"Base Acceso\" (hormigón 20 cm + 1 m de césped)? ¿Cuál es su piso terminado?",
+    "¿Confirmás la clasificación de cada local en A–E? (propuesta en el chat del rubro)",
     "¿Qué zócalo lleva cada local (material y altura)? Solo hay 5 tramos modelados.",
     "¿Escribimos los códigos TP/PI en el modelo (Mark)?"
   ],
@@ -3971,7 +3971,7 @@
       {
         "id": "piso-hormigon-negro",
         "label": "Piso hormigón negro",
-        "value": 12.0,
+        "value": 12,
         "unit": "m²",
         "detail": "por terminación",
         "informative": false
