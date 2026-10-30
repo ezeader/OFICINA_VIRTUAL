@@ -718,7 +718,7 @@
             {
               "label": "LV-01 nivel + alto",
               "values_m": [
-                1.0
+                1
               ],
               "associative": false
             }
@@ -865,7 +865,7 @@
             {
               "label": "LV-02 nivel + alto",
               "values_m": [
-                1.0
+                1
               ],
               "associative": false
             }
@@ -1600,7 +1600,7 @@
             {
               "label": "ME-05 nivel + alto",
               "values_m": [
-                1.0
+                1
               ],
               "associative": false
             }
@@ -1747,7 +1747,7 @@
             {
               "label": "MU-01 nivel + alto",
               "values_m": [
-                1.0
+                1
               ],
               "associative": false
             }
@@ -1894,7 +1894,7 @@
             {
               "label": "MU-02 nivel + alto",
               "values_m": [
-                1.0
+                1
               ],
               "associative": false
             }
@@ -2188,7 +2188,7 @@
             {
               "label": "MU-04 nivel + alto",
               "values_m": [
-                1.0
+                1
               ],
               "associative": false
             }
@@ -2872,7 +2872,7 @@
             {
               "label": "MU-09 en X",
               "values_m": [
-                2.0
+                2
               ],
               "associative": false
             },
@@ -2920,7 +2920,7 @@
             {
               "label": "MU-09 ancho",
               "values_m": [
-                2.0
+                2
               ],
               "associative": false
             },
@@ -3020,7 +3020,7 @@
             {
               "label": "MU-10 en X",
               "values_m": [
-                2.0
+                2
               ],
               "associative": false
             },
@@ -3068,7 +3068,7 @@
             {
               "label": "MU-10 ancho",
               "values_m": [
-                2.0
+                2
               ],
               "associative": false
             },
@@ -3168,7 +3168,7 @@
             {
               "label": "MU-11 en X",
               "values_m": [
-                2.0
+                2
               ],
               "associative": false
             },
@@ -3216,7 +3216,7 @@
             {
               "label": "MU-11 ancho",
               "values_m": [
-                2.0
+                2
               ],
               "associative": false
             },
@@ -4698,7 +4698,7 @@
             {
               "label": "VA-02 nivel + alto",
               "values_m": [
-                1.0,
+                1,
                 0.065
               ],
               "associative": false
@@ -5507,7 +5507,7 @@
       "width_m": 2.49,
       "depth_m": 0.5,
       "height_m": 1.925,
-      "bottom_m": 0.0,
+      "bottom_m": 0,
       "length_m": 2.49,
       "area_m2": 4.794,
       "inPlace": true,
@@ -5525,7 +5525,7 @@
       "width_m": 4.375,
       "depth_m": 0.511,
       "height_m": 2.705,
-      "bottom_m": 0.0,
+      "bottom_m": 0,
       "length_m": 4.375,
       "area_m2": 11.834,
       "inPlace": true,
@@ -5543,7 +5543,7 @@
       "width_m": 3.2,
       "depth_m": 0.6,
       "height_m": 2.8,
-      "bottom_m": 0.0,
+      "bottom_m": 0,
       "length_m": 3.2,
       "area_m2": 8.96,
       "inPlace": true,
@@ -5561,7 +5561,7 @@
       "width_m": 3.2,
       "depth_m": 0.592,
       "height_m": 2.8,
-      "bottom_m": 0.0,
+      "bottom_m": 0,
       "length_m": 3.2,
       "area_m2": 8.96,
       "inPlace": true,
@@ -5579,7 +5579,7 @@
       "width_m": 3.2,
       "depth_m": 0.405,
       "height_m": 2.8,
-      "bottom_m": 0.0,
+      "bottom_m": 0,
       "length_m": 3.2,
       "area_m2": 8.96,
       "inPlace": true,
@@ -5596,8 +5596,8 @@
       "level": "01. Planta Alta",
       "width_m": 3.205,
       "depth_m": 2.59,
-      "height_m": 1.0,
-      "bottom_m": -0.0,
+      "height_m": 1,
+      "bottom_m": 0,
       "length_m": 3.205,
       "area_m2": 3.205,
       "inPlace": true,
@@ -5614,8 +5614,8 @@
       "level": "01. Planta Alta",
       "width_m": 1.604,
       "depth_m": 0.406,
-      "height_m": 1.0,
-      "bottom_m": -0.0,
+      "height_m": 1,
+      "bottom_m": 0,
       "length_m": 1.604,
       "area_m2": 1.604,
       "inPlace": true,
@@ -5633,7 +5633,7 @@
       "width_m": 1.261,
       "depth_m": 0.6,
       "height_m": 0.9,
-      "bottom_m": -0.0,
+      "bottom_m": 0,
       "length_m": 1.261,
       "area_m2": 1.135,
       "inPlace": true,
@@ -5652,8 +5652,8 @@
       "level": "01. Planta Alta",
       "width_m": 1.839,
       "depth_m": 0.6,
-      "height_m": 1.0,
-      "bottom_m": -0.0,
+      "height_m": 1,
+      "bottom_m": 0,
       "length_m": 1.839,
       "area_m2": 1.839,
       "inPlace": true,
@@ -5742,11 +5742,11 @@
       "type": "Armario/ tele3",
       "room": "01 · Cuarto A Inv. 01",
       "level": "00. Planta Baja",
-      "width_m": 2.0,
+      "width_m": 2,
       "depth_m": 1.6,
       "height_m": 0.25,
       "bottom_m": 0.1,
-      "length_m": 2.0,
+      "length_m": 2,
       "area_m2": 0.5,
       "inPlace": true,
       "materials": []
@@ -5760,11 +5760,11 @@
       "type": "Armario/ tele1",
       "room": "03 · Cuarto B Inv. 03",
       "level": "00. Planta Baja",
-      "width_m": 2.0,
+      "width_m": 2,
       "depth_m": 1.6,
       "height_m": 0.25,
       "bottom_m": 0.1,
-      "length_m": 2.0,
+      "length_m": 2,
       "area_m2": 0.5,
       "inPlace": true,
       "materials": []
@@ -5778,11 +5778,11 @@
       "type": "Armario/ tele4",
       "room": "05 · Cuarto C Inv. 05",
       "level": "00. Planta Baja",
-      "width_m": 2.0,
+      "width_m": 2,
       "depth_m": 1.6,
       "height_m": 0.25,
       "bottom_m": 0.1,
-      "length_m": 2.0,
+      "length_m": 2,
       "area_m2": 0.5,
       "inPlace": true,
       "materials": []
@@ -5871,7 +5871,7 @@
       "width_m": 1.369,
       "depth_m": 0.493,
       "height_m": 0.065,
-      "bottom_m": 1.0,
+      "bottom_m": 1,
       "length_m": 1.369,
       "area_m2": 0.089,
       "inPlace": false,
@@ -5981,7 +5981,7 @@
       "width_m": 0.8,
       "depth_m": 0.623,
       "height_m": 0.9,
-      "bottom_m": 0.0,
+      "bottom_m": 0,
       "length_m": 0.8,
       "area_m2": 0.72,
       "inPlace": false,
@@ -6002,7 +6002,7 @@
       "width_m": 2.901,
       "depth_m": 1.112,
       "height_m": 0.901,
-      "bottom_m": 0.0,
+      "bottom_m": 0,
       "length_m": 2.901,
       "area_m2": 2.615,
       "inPlace": true,
@@ -6020,7 +6020,7 @@
       "width_m": 0.8,
       "depth_m": 0.623,
       "height_m": 0.9,
-      "bottom_m": -0.0,
+      "bottom_m": 0,
       "length_m": 0.8,
       "area_m2": 0.72,
       "inPlace": false,
@@ -6041,7 +6041,7 @@
       "width_m": 0.8,
       "depth_m": 0.623,
       "height_m": 0.9,
-      "bottom_m": 0.0,
+      "bottom_m": 0,
       "length_m": 0.8,
       "area_m2": 0.72,
       "inPlace": false,
@@ -6061,8 +6061,8 @@
       "level": "00. Planta Baja",
       "width_m": 4.765,
       "depth_m": 0.6,
-      "height_m": 1.0,
-      "bottom_m": 0.0,
+      "height_m": 1,
+      "bottom_m": 0,
       "length_m": 4.765,
       "area_m2": 4.765,
       "inPlace": true,
@@ -6079,8 +6079,8 @@
       "level": "00. Planta Baja",
       "width_m": 1.598,
       "depth_m": 0.6,
-      "height_m": 1.0,
-      "bottom_m": 0.0,
+      "height_m": 1,
+      "bottom_m": 0,
       "length_m": 1.598,
       "area_m2": 1.598,
       "inPlace": true,
@@ -6097,8 +6097,8 @@
       "level": "00. Planta Baja",
       "width_m": 1.598,
       "depth_m": 0.6,
-      "height_m": 1.0,
-      "bottom_m": 0.0,
+      "height_m": 1,
+      "bottom_m": 0,
       "length_m": 1.598,
       "area_m2": 1.598,
       "inPlace": true,
@@ -6116,7 +6116,7 @@
       "width_m": 1.66,
       "depth_m": 0.071,
       "height_m": 1.952,
-      "bottom_m": 0.0,
+      "bottom_m": 0,
       "length_m": 1.66,
       "area_m2": 3.24,
       "inPlace": false,
@@ -6137,7 +6137,7 @@
       "width_m": 0.865,
       "depth_m": 0.865,
       "height_m": 1.951,
-      "bottom_m": -0.0,
+      "bottom_m": 0,
       "length_m": 0.865,
       "area_m2": 1.688,
       "inPlace": false,
@@ -6158,7 +6158,7 @@
       "width_m": 0.9,
       "depth_m": 0.815,
       "height_m": 2.002,
-      "bottom_m": 0.0,
+      "bottom_m": 0,
       "length_m": 0.9,
       "area_m2": 1.801,
       "inPlace": false,
@@ -6179,7 +6179,7 @@
       "width_m": 0.9,
       "depth_m": 0.815,
       "height_m": 2.002,
-      "bottom_m": -0.0,
+      "bottom_m": 0,
       "length_m": 0.9,
       "area_m2": 1.801,
       "inPlace": false,
@@ -6200,7 +6200,7 @@
       "width_m": 1.66,
       "depth_m": 0.071,
       "height_m": 1.952,
-      "bottom_m": 0.0,
+      "bottom_m": 0,
       "length_m": 1.66,
       "area_m2": 3.24,
       "inPlace": false,
@@ -6221,7 +6221,7 @@
       "width_m": 1.66,
       "depth_m": 0.071,
       "height_m": 1.952,
-      "bottom_m": 0.0,
+      "bottom_m": 0,
       "length_m": 1.66,
       "area_m2": 3.24,
       "inPlace": false,
@@ -6242,7 +6242,7 @@
       "width_m": 1.66,
       "depth_m": 0.071,
       "height_m": 1.952,
-      "bottom_m": 0.0,
+      "bottom_m": 0,
       "length_m": 1.66,
       "area_m2": 3.24,
       "inPlace": false,
@@ -6287,7 +6287,7 @@
       "width_m": 0.762,
       "depth_m": 0.74,
       "height_m": 0.978,
-      "bottom_m": 0.0,
+      "bottom_m": 0,
       "length_m": 0.762,
       "area_m2": 0.745,
       "inPlace": false,
@@ -6310,7 +6310,7 @@
       "width_m": 0.914,
       "depth_m": 0.65,
       "height_m": 1.8,
-      "bottom_m": -0.0,
+      "bottom_m": 0,
       "length_m": 0.914,
       "area_m2": 1.645,
       "inPlace": false,
@@ -6333,7 +6333,7 @@
       "detail": "5 placares · frente ancho × alto · 16,47 ml"
     },
     {
-      "label": "Muebles fijos",
+      "label": "Muebles fijos (carpintería)",
       "value": 14,
       "unit": "u",
       "detail": "2 vinoteca, 2 mueble de pared, 7 mesa de luz, 3 racks de TV"
@@ -6345,10 +6345,10 @@
       "detail": "7 vanitorios"
     },
     {
-      "label": "Mesadas y bajomesadas",
-      "value": 10.07,
+      "label": "Cocina y quincho (carpintería)",
+      "value": 7.66,
       "unit": "ml",
-      "detail": "5 piezas"
+      "detail": "bajomesadas 2,90 + quincho 4,76 ml · alacenas 2,90 ml estimadas"
     },
     {
       "label": "Lavaderos",
@@ -6484,7 +6484,7 @@
       "label": "MU-09 · rack de TV",
       "group": "Muebles fijos (TV, pared, vinoteca, mesas de luz) · 00. Planta Baja",
       "count": 1,
-      "value": 2.0,
+      "value": 2,
       "unit": "ml",
       "detail": "2,00 × 1,60 × 0,25 · 01 · Cuarto A Inv. 01"
     },
@@ -6492,7 +6492,7 @@
       "label": "MU-10 · rack de TV",
       "group": "Muebles fijos (TV, pared, vinoteca, mesas de luz) · 00. Planta Baja",
       "count": 1,
-      "value": 2.0,
+      "value": 2,
       "unit": "ml",
       "detail": "2,00 × 1,60 × 0,25 · 03 · Cuarto B Inv. 03"
     },
@@ -6500,7 +6500,7 @@
       "label": "MU-11 · rack de TV",
       "group": "Muebles fijos (TV, pared, vinoteca, mesas de luz) · 00. Planta Baja",
       "count": 1,
-      "value": 2.0,
+      "value": 2,
       "unit": "ml",
       "detail": "2,00 × 1,60 × 0,25 · 05 · Cuarto C Inv. 05"
     },
@@ -6819,7 +6819,7 @@
   ],
   "quantityNote": "Medidas de caja envolvente del modelo (ancho × profundidad × alto). Placares: m² de frente (ancho × alto). Mobiliario suelto listado solo como referencia.",
   "notModeled": [
-    "Muebles de cocina altos y despiece de bajomesadas (solo 3 cajoneras modeladas)",
+    "Alacenas y despiece de bajomesadas (se cotizan por ml de mesada; solo 3 cajoneras modeladas)",
     "Interiores de placares (estantes, barrales, cajones)",
     "Herrajes, materiales y terminaciones (las familias in situ no tienen material)",
     "Bomba de pileta Grundfos: se documenta con Pileta"
@@ -6829,20 +6829,21 @@
     "Artefactos sanitarios quedan en Sanitarias; puertas del ascensor fuera del rubro.",
     "Ficha por pieza de carpintería (planta, alzado frontal, axonométrica); mamparas y equipos solo en plantas.",
     "Códigos PL/MU/VA/ME/LV/MA/EQ solo como anotación (no escritos en Mark).",
-    "Mesas de luz y racks de TV (antes muebles TV) son carpintería fija: se cuentan en el rubro."
+    "Mesas de luz y racks de TV (antes muebles TV) son carpintería fija: se cuentan en el rubro.",
+    "Cocina (bajomesadas, cajoneras, alacenas), mesas de luz, racks, placares y muebles de vanitorio/lavadero van en Carpintería; alacenas y bajomesadas se cotizan por ml de mesada, sin modelar.",
+    "Las mesadas de mármol/piedra (cocina, quincho, vanitorios, lavadero) se cotizan aparte, en el rubro Mesadas."
   ],
   "questions": [
-    "¿Qué muebles de cocina faltan (alacenas, columnas) y en qué material?",
     "¿Material y terminación de placares y vanitorios (melamina, laqueado, madera)?",
     "¿Escribimos los códigos de equipamiento en el modelo (Mark)?"
   ],
   "budget": {
     "revision": "R27",
-    "note": "Partidas a cotizar sin solapes; informative = referencia (no se suma).",
+    "note": "Partidas a cotizar sin solapes; informative = referencia (no se suma). Las mesadas de mármol/piedra se cotizan en el rubro Mesadas.",
     "lines": [
       {
         "id": "placares",
-        "label": "Placares",
+        "label": "Carpintería · placares",
         "value": 43.51,
         "unit": "m²",
         "detail": "5 placares · frente ancho × alto · 16,47 ml",
@@ -6850,7 +6851,7 @@
       },
       {
         "id": "muebles-mesa-de-luz",
-        "label": "Muebles fijos · mesa de luz",
+        "label": "Carpintería · mesas de luz",
         "value": 7,
         "unit": "u",
         "detail": "MU-05, MU-06, MU-07, MU-08, MU-12, MU-13, MU-14",
@@ -6858,7 +6859,7 @@
       },
       {
         "id": "muebles-rack-de-tv",
-        "label": "Muebles fijos · rack de TV",
+        "label": "Carpintería · racks de TV",
         "value": 3,
         "unit": "u",
         "detail": "MU-09, MU-10, MU-11",
@@ -6866,7 +6867,7 @@
       },
       {
         "id": "muebles-mueble-de-pared",
-        "label": "Muebles fijos · mueble de pared",
+        "label": "Carpintería · muebles de pared",
         "value": 2,
         "unit": "u",
         "detail": "MU-03, MU-04",
@@ -6874,34 +6875,50 @@
       },
       {
         "id": "muebles-vinoteca",
-        "label": "Muebles fijos · vinoteca",
+        "label": "Carpintería · vinotecas",
         "value": 2,
         "unit": "u",
         "detail": "MU-01, MU-02",
         "informative": false
       },
       {
-        "id": "vanitorios",
-        "label": "Vanitorios",
-        "value": 12.33,
+        "id": "cocina-bajomesadas",
+        "label": "Carpintería · cocina · bajomesadas y cajoneras",
+        "value": 2.9,
         "unit": "ml",
-        "detail": "7 vanitorios",
+        "detail": "largo de mesada ME-02 (incluye cajoneras ME-01, ME-03, ME-04)",
         "informative": false
       },
       {
-        "id": "mesadas",
-        "label": "Mesadas y bajomesadas",
-        "value": 10.07,
+        "id": "cocina-alacenas",
+        "label": "Carpintería · cocina · alacenas",
+        "value": 2.9,
         "unit": "ml",
-        "detail": "5 piezas",
+        "detail": "estimado = largo de mesada de cocina (no modeladas)",
+        "informative": false
+      },
+      {
+        "id": "quincho-bajomesada",
+        "label": "Carpintería · quincho · bajomesada",
+        "value": 4.76,
+        "unit": "ml",
+        "detail": "largo de mesada ME-05",
+        "informative": false
+      },
+      {
+        "id": "vanitorios",
+        "label": "Carpintería · muebles de vanitorio",
+        "value": 12.33,
+        "unit": "ml",
+        "detail": "7 vanitorios (VA-01 a VA-07); la mesada va en Mesadas",
         "informative": false
       },
       {
         "id": "lavaderos",
-        "label": "Lavaderos",
-        "value": 2,
-        "unit": "u",
-        "detail": "3,20 ml",
+        "label": "Carpintería · bajomesadas de lavadero",
+        "value": 3.2,
+        "unit": "ml",
+        "detail": "LV-01, LV-02; la mesada va en Mesadas",
         "informative": false
       },
       {

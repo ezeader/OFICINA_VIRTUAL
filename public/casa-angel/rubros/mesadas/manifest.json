@@ -1,0 +1,180 @@
+{
+ "title": "Mesadas",
+ "summary": "Mesadas de mármol / piedra: 11 piezas, 23,19 ml. Medidas de las fichas de Equipamiento; se cotiza aparte de la carpintería.",
+ "model": "Casa-Angel-piloto-documentacion.rvt",
+ "readAt": "2026-10-24T02:07:49.360000Z",
+ "revision": "R24",
+ "kinds": {},
+ "sheets": [],
+ "codes": [],
+ "totals": [
+  {
+   "label": "Mesada de cocina",
+   "value": 2.9,
+   "unit": "ml",
+   "detail": "ME-02 · 2,90 × 1,11 m · Cocina 07"
+  },
+  {
+   "label": "Mesada de quincho",
+   "value": 4.76,
+   "unit": "ml",
+   "detail": "ME-05 · 4,76 × 0,60 m · Quincho 12"
+  },
+  {
+   "label": "Mesadas de vanitorio",
+   "value": 12.33,
+   "unit": "ml",
+   "detail": "7 vanitorios (VA-01 a VA-07) con bacha"
+  },
+  {
+   "label": "Mesadas de lavadero",
+   "value": 3.2,
+   "unit": "ml",
+   "detail": "LV-01, LV-02 · Lavadero 08"
+  },
+  {
+   "label": "Mesadas (todas)",
+   "value": 23.19,
+   "unit": "ml",
+   "detail": "11 piezas · 15,07 m²"
+  }
+ ],
+ "quantities": [
+  {
+   "label": "ME-02 · mesada · 2,90 × 1,11 × 0,90",
+   "group": "Cocina y quincho",
+   "value": 2.9,
+   "unit": "ml",
+   "detail": "2,90 × 1,11 m · 07 · Cocina 07 · 01. Planta Alta · ver ficha en Equipamiento"
+  },
+  {
+   "label": "ME-05 · mesada · 4,76 × 0,60 × 1,00",
+   "group": "Cocina y quincho",
+   "value": 4.76,
+   "unit": "ml",
+   "detail": "4,76 × 0,60 m · 12 · Quincho 12 · 00. Planta Baja · ver ficha en Equipamiento"
+  },
+  {
+   "label": "VA-01 · vanitorio · 1,93 × 0,60 × 0,30",
+   "group": "Vanitorios",
+   "value": 1.93,
+   "unit": "ml",
+   "detail": "1,93 × 0,60 m · 05 · Toilette 05 · 01. Planta Alta · ver ficha en Equipamiento"
+  },
+  {
+   "label": "VA-02 · vanitorio · 1,37 × 0,49 × 0,06",
+   "group": "Vanitorios",
+   "value": 1.37,
+   "unit": "ml",
+   "detail": "1,37 × 0,49 m · 04 · Baño PA 04 · 01. Planta Alta · ver ficha en Equipamiento"
+  },
+  {
+   "label": "VA-03 · vanitorio · 1,67 × 0,60 × 0,55",
+   "group": "Vanitorios",
+   "value": 1.68,
+   "unit": "ml",
+   "detail": "1,68 × 0,60 m · 07 · Toilette Servicio 07 · 00. Planta Baja · ver ficha en Equipamiento"
+  },
+  {
+   "label": "VA-04 · vanitorio · 3,04 × 0,54 × 0,65",
+   "group": "Vanitorios",
+   "value": 3.04,
+   "unit": "ml",
+   "detail": "3,04 × 0,54 m · 15 · Baño ppal 15 · 00. Planta Baja · ver ficha en Equipamiento"
+  },
+  {
+   "label": "VA-05 · vanitorio · 1,45 × 0,60 × 0,60",
+   "group": "Vanitorios",
+   "value": 1.45,
+   "unit": "ml",
+   "detail": "1,45 × 0,60 m · 02 · Baño A Inv. 02 · 00. Planta Baja · ver ficha en Equipamiento"
+  },
+  {
+   "label": "VA-06 · vanitorio · 1,42 × 0,60 × 0,60",
+   "group": "Vanitorios",
+   "value": 1.43,
+   "unit": "ml",
+   "detail": "1,43 × 0,60 m · 04 · Baño B Inv. 04 · 00. Planta Baja · ver ficha en Equipamiento"
+  },
+  {
+   "label": "VA-07 · vanitorio · 1,45 × 0,60 × 0,60",
+   "group": "Vanitorios",
+   "value": 1.45,
+   "unit": "ml",
+   "detail": "1,45 × 0,60 m · 06 · Baño C Inv. 06 · 00. Planta Baja · ver ficha en Equipamiento"
+  },
+  {
+   "label": "LV-01 · lavadero · 1,60 × 0,60 × 1,00",
+   "group": "Lavadero",
+   "value": 1.6,
+   "unit": "ml",
+   "detail": "1,60 × 0,60 m · 08 · Lavadero 08 · 00. Planta Baja · ver ficha en Equipamiento"
+  },
+  {
+   "label": "LV-02 · lavadero · 1,60 × 0,60 × 1,00",
+   "group": "Lavadero",
+   "value": 1.6,
+   "unit": "ml",
+   "detail": "1,60 × 0,60 m · 08 · Lavadero 08 · 00. Planta Baja · ver ficha en Equipamiento"
+  }
+ ],
+ "quantityNote": "Largo y profundidad de la caja envolvente de cada pieza en el modelo. Las láminas están en Equipamiento (fichas ME, VA, LV).",
+ "notModeled": [
+  "Material, espesor y terminación de la piedra",
+  "Zócalos / traforos de bachas y anafe",
+  "Frentines y regruesos"
+ ],
+ "decisions": [
+  "Rubro separado de Equipamiento: las mesadas de piedra se cotizan aparte de la carpintería.",
+  "Se cotiza por ml de mesada; la superficie en m² queda como referencia."
+ ],
+ "questions": [
+  "¿Qué piedra y espesor (mármol, granito, cuarzo; 2 cm)?"
+ ],
+ "budget": {
+  "revision": "R27",
+  "note": "Partidas a cotizar sin solapes; informative = referencia (no se suma).",
+  "lines": [
+   {
+    "id": "cocina",
+    "label": "Mesada de cocina",
+    "value": 2.9,
+    "unit": "ml",
+    "detail": "ME-02 · 2,90 × 1,11 m · Cocina 07",
+    "informative": false
+   },
+   {
+    "id": "quincho",
+    "label": "Mesada de quincho",
+    "value": 4.76,
+    "unit": "ml",
+    "detail": "ME-05 · 4,76 × 0,60 m · Quincho 12",
+    "informative": false
+   },
+   {
+    "id": "vanitorios",
+    "label": "Mesadas de vanitorio",
+    "value": 12.33,
+    "unit": "ml",
+    "detail": "7 vanitorios (VA-01 a VA-07) con bacha",
+    "informative": false
+   },
+   {
+    "id": "lavaderos",
+    "label": "Mesadas de lavadero",
+    "value": 3.2,
+    "unit": "ml",
+    "detail": "LV-01, LV-02 · Lavadero 08",
+    "informative": false
+   },
+   {
+    "id": "superficie",
+    "label": "Superficie total de piedra",
+    "value": 15.07,
+    "unit": "m²",
+    "detail": "ancho × profundidad de cada pieza (referencia)",
+    "informative": true
+   }
+  ]
+ }
+}
