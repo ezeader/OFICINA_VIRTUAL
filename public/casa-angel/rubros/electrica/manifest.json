@@ -275,10 +275,12 @@
     "Las 3 \"Electrical Fixtures\" del modelo son lavavajillas mal categorizados"
   ],
   "decisions": [
-    "Rubro sin láminas hasta tener el proyecto eléctrico."
+    "Proyecto eléctrico propio: lo diseñamos en conjunto sobre la base que pasa el comitente y se modela en Revit (archivo aparte del rubro).",
+    "Alcance: iluminación, tomas y datos (internet y artefactos vinculados a domótica).",
+    "Cableado y trazado de cañerías (incluidos los de domótica) se cotizan en Eléctrica; los equipos de domótica se cotizan en Domótica.",
+    "Rubro sin láminas hasta recibir la base y modelarla."
   ],
   "questions": [
-    "¿Quién hace el proyecto eléctrico (instalador matriculado) y con qué grado de electrificación?",
     "¿Iluminación: embutidos LED en cielorrasos, apliques, o ambos? ¿Exterior y pileta?",
     "¿Tablero general en PE (donde está el ABB) o en PB junto al acceso? ¿Seccionales por planta?",
     "¿Corregimos la categoría de los 3 lavavajillas en el modelo (cambio de modelo, requiere tu OK)?"
