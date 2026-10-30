@@ -40,7 +40,7 @@ export default function QuoteDesk({value,disabled,onSave}:{value?:Record<string,
    <span><b>{data.suppliers.filter(s=>s.requestedAt).length}</b> pedidos enviados</span>
    {fu.searchMore&&<span className="qdAlert">{fu.late.length} sin respuesta hace {FOLLOW_UP_DAYS}+ días: sumar proveedores</span>}
   </div>
-  <nav className="qdTabs" aria-label="Cotización">{TABS.map(t=><button key={t} className={tab===t?'active':''} onClick={()=>setTab(t)}>{t}</button>)}</nav>
+  <div className="qdTabs" aria-label="Cotización">{TABS.map(t=><button key={t} aria-pressed={tab===t} className={tab===t?'active':''} onClick={()=>setTab(t)}>{t}</button>)}</div>
   {tab==='Cómputo'&&<Computo sheet={sheet}/>}
   {tab==='Proveedores'&&<Suppliers data={data} disabled={disabled} save={save}/>}
   {tab==='Mails'&&<Mails sheet={sheet} data={data} disabled={disabled} save={save}/>}
@@ -69,7 +69,7 @@ function Suppliers({data,disabled,save}:{data:RubroQuotes;disabled:boolean;save:
    const list=JSON.parse(bulk);if(!Array.isArray(list))throw Error('Pegá un listado (array JSON).');
    const known=new Set(data.suppliers.map(s=>s.name.trim().toLowerCase()));
    const add:QuoteSupplier[]=list.filter(x=>x?.name&&!known.has(String(x.name).trim().toLowerCase())).map(x=>({...blankSupplier(),name:String(x.name),kind:KINDS.includes(x.kind)?x.kind:'materiales',group:x.group in GROUPS?x.group:'local',
-    contact:[x.contact,x.phone,x.email,x.web].filter(Boolean).filter((v,i,a)=>a.indexOf(v)===i).join(' · '),location:String(x.location||''),zone:String(x.zone||'no informado'),source:x.source?String(x.source):undefined,notes:x.notes?String(x.notes):undefined}));
+    contact:[x.email,x.contact||x.phone,x.web].filter(Boolean).filter((v,i,a)=>a.indexOf(v)===i).join(' · '),location:String(x.location||''),zone:String(x.zone||'no informado'),source:x.source?String(x.source):undefined,notes:[x.notes,x.scope].filter(Boolean).join(' · ')||undefined}));
    if(await save({...data,suppliers:[...data.suppliers,...add]},`${add.length} proveedores agregados; ${list.length-add.length} ya estaban.`))setBulk('');
   }catch(e){setError((e as Error).message)}
  }
@@ -160,7 +160,7 @@ function Comparison({sheet,data,disabled,save,supplierName}:{sheet:QuoteSheet;da
     <p className="qdTotal">{money(r.total,q.currency)}{r.total===cheapest&&chosen.length>1&&<em> menor</em>}</p>
     <small>Material {money(r.material,q.currency)} · M.O. {money(r.labor,q.currency)}{q.laborGlobal!=null?' (global)':''} · flete {money(r.freight,q.currency)}</small>
     <small>{q.currency} · {q.taxesIncluded?'con IVA':'sin IVA'} · vigencia {dmy(q.validUntil)}{q.validUntil<today()?' (vencida)':''} · {q.delivery||'entrega sin informar'}</small>
-    <p><b>{r.covered}/{r.count}</b> ítems completos{r.partial.length?` · ${r.partial.length} parciales`:''}{r.missing.length?` · ${r.missing.length} faltan`:''}</p>
+    <p><b>{r.covered}/{r.count}</b> ítems completos{r.partial.length?` · ${r.partial.length} parciales`:''}{r.missing.length?` · ${r.missing.length} ${r.missing.length===1?'falta':'faltan'}`:''}</p>
     {r.missing.length>0&&<details><summary>Faltan {r.missing.length}</summary><ul>{r.missing.map(m=><li key={m.code}>{m.code} · {m.description}</li>)}</ul></details>}
     {q.notes&&<small>{q.notes}</small>}
     <button disabled={disabled} onClick={()=>{setEdit(structuredClone(q));setError('')}}>Editar</button></article>})}</div>

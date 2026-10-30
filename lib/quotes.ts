@@ -75,7 +75,8 @@ export function followUp(data:RubroQuotes,today=new Date()){
 
 /** Borrador del pedido de cotización. Solo texto: enviar es una acción aparte que el usuario aprueba. */
 export function requestMail(sheet:QuoteSheet,supplier:Pick<QuoteSupplier,'name'|'kind'>,deadline:string){
- const sys=sheet.systems.map(s=>s.name.toLowerCase().replace(/ \(.*\)$/,'')).join(', ');
+ const main=sheet.systems.filter(s=>!['VM','RV'].includes(s.key)).map(s=>s.name.toLowerCase());
+ const sys=main.slice(0,-1).join(', ')+' y '+main.at(-1)+(main.length<sheet.systems.length?', más algunos elementos a confirmar':'');
  const scope=supplier.kind==='materiales'
   ?'Precio unitario de materiales. Si también hacen o recomiendan la mano de obra, cotizarla en su columna; si no, dejarla vacía.'
   :supplier.kind==='mano de obra'
