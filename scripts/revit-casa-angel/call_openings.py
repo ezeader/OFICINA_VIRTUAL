@@ -1,7 +1,7 @@
 import json,urllib.request,sys
 from pathlib import Path
 R=Path(__file__).parent
-job=json.loads(sys.argv[1]);(R/'openings-job.json').write_text(json.dumps(job),encoding='utf8')
+job=json.loads(sys.argv[1])
 (R/'openings-r1.flag').write_text('active',encoding='utf8')
 port=None
 for p in (48884,48885,48886):
@@ -13,6 +13,7 @@ for p in (48884,48885,48886):
   if dp==str(target.resolve()).lower() or (job.get('action')=='switch' and dp.startswith(str((R/'../../outputs/casa-angel').resolve()).lower())):port=p;break
  except Exception:pass
 if not port:raise RuntimeError('Working copy not available')
+(R/'openings-job.json').write_text(json.dumps(job),encoding='utf8')   # R37: written only once Revit answered, so a busy Revit never gets another session's job swapped in
 r=urllib.request.Request(f'http://127.0.0.1:{port}/revit-mcp-v1/ader/sanitary-documentation',b'{"action":"inspect"}',{'Content-Type':'application/json'})
 try:
  with urllib.request.urlopen(r,timeout=240) as f:d=json.load(f)
