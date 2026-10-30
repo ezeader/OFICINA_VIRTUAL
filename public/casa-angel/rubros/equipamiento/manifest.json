@@ -197,7 +197,7 @@
             {
               "code": "MU-09",
               "elementId": "781412",
-              "label": "MU-09 · mueble TV · 2,00 × 1,60 × 0,25",
+              "label": "MU-09 · rack de TV · 2,00 × 1,60 × 0,25",
               "box": [
                 0.1522,
                 0.7603,
@@ -208,7 +208,7 @@
             {
               "code": "MU-10",
               "elementId": "780960",
-              "label": "MU-10 · mueble TV · 2,00 × 1,60 × 0,25",
+              "label": "MU-10 · rack de TV · 2,00 × 1,60 × 0,25",
               "box": [
                 0.3289,
                 0.7603,
@@ -219,7 +219,7 @@
             {
               "code": "MU-11",
               "elementId": "1243426",
-              "label": "MU-11 · mueble TV · 2,00 × 1,60 × 0,25",
+              "label": "MU-11 · rack de TV · 2,00 × 1,60 × 0,25",
               "box": [
                 0.5055,
                 0.7603,
@@ -2836,7 +2836,7 @@
     },
     {
       "number": "EQ-F-MU-09",
-      "title": "Ficha · MU-09 mueble TV",
+      "title": "Ficha · MU-09 rack de TV",
       "level": "00. Planta Baja",
       "sector": "01 · Cuarto A Inv. 01 · PB",
       "kind": "element",
@@ -2888,7 +2888,7 @@
             {
               "code": "MU-09",
               "elementId": "781412",
-              "label": "MU-09 · mueble TV · 2,00 × 1,60 × 0,25",
+              "label": "MU-09 · rack de TV · 2,00 × 1,60 × 0,25",
               "box": [
                 0.2477,
                 0.2755,
@@ -2937,7 +2937,7 @@
             {
               "code": "MU-09",
               "elementId": "781412",
-              "label": "MU-09 · mueble TV · 2,00 × 1,60 × 0,25",
+              "label": "MU-09 · rack de TV · 2,00 × 1,60 × 0,25",
               "box": [
                 0.2316,
                 0.4779,
@@ -2970,7 +2970,7 @@
             {
               "code": "MU-09",
               "elementId": "781412",
-              "label": "MU-09 · mueble TV · 2,00 × 1,60 × 0,25",
+              "label": "MU-09 · rack de TV · 2,00 × 1,60 × 0,25",
               "box": [
                 0.2125,
                 0.2582,
@@ -2984,7 +2984,7 @@
     },
     {
       "number": "EQ-F-MU-10",
-      "title": "Ficha · MU-10 mueble TV",
+      "title": "Ficha · MU-10 rack de TV",
       "level": "00. Planta Baja",
       "sector": "03 · Cuarto B Inv. 03 · PB",
       "kind": "element",
@@ -3036,7 +3036,7 @@
             {
               "code": "MU-10",
               "elementId": "780960",
-              "label": "MU-10 · mueble TV · 2,00 × 1,60 × 0,25",
+              "label": "MU-10 · rack de TV · 2,00 × 1,60 × 0,25",
               "box": [
                 0.2477,
                 0.2755,
@@ -3085,7 +3085,7 @@
             {
               "code": "MU-10",
               "elementId": "780960",
-              "label": "MU-10 · mueble TV · 2,00 × 1,60 × 0,25",
+              "label": "MU-10 · rack de TV · 2,00 × 1,60 × 0,25",
               "box": [
                 0.2316,
                 0.4779,
@@ -3118,7 +3118,7 @@
             {
               "code": "MU-10",
               "elementId": "780960",
-              "label": "MU-10 · mueble TV · 2,00 × 1,60 × 0,25",
+              "label": "MU-10 · rack de TV · 2,00 × 1,60 × 0,25",
               "box": [
                 0.2125,
                 0.2582,
@@ -3132,7 +3132,7 @@
     },
     {
       "number": "EQ-F-MU-11",
-      "title": "Ficha · MU-11 mueble TV",
+      "title": "Ficha · MU-11 rack de TV",
       "level": "00. Planta Baja",
       "sector": "05 · Cuarto C Inv. 05 · PB",
       "kind": "element",
@@ -3184,7 +3184,7 @@
             {
               "code": "MU-11",
               "elementId": "1243426",
-              "label": "MU-11 · mueble TV · 2,00 × 1,60 × 0,25",
+              "label": "MU-11 · rack de TV · 2,00 × 1,60 × 0,25",
               "box": [
                 0.2477,
                 0.2755,
@@ -3233,7 +3233,7 @@
             {
               "code": "MU-11",
               "elementId": "1243426",
-              "label": "MU-11 · mueble TV · 2,00 × 1,60 × 0,25",
+              "label": "MU-11 · rack de TV · 2,00 × 1,60 × 0,25",
               "box": [
                 0.2316,
                 0.4779,
@@ -3266,7 +3266,7 @@
             {
               "code": "MU-11",
               "elementId": "1243426",
-              "label": "MU-11 · mueble TV · 2,00 × 1,60 × 0,25",
+              "label": "MU-11 · rack de TV · 2,00 × 1,60 × 0,25",
               "box": [
                 0.2125,
                 0.2582,
@@ -5736,7 +5736,7 @@
     {
       "code": "MU-09",
       "kind": "MU",
-      "label": "MU-09 · mueble TV · 2,00 × 1,60 × 0,25",
+      "label": "MU-09 · rack de TV · 2,00 × 1,60 × 0,25",
       "status": "01 · Cuarto A Inv. 01 · 00. Planta Baja · in situ",
       "elementId": "781412",
       "type": "Armario/ tele3",
@@ -5754,7 +5754,7 @@
     {
       "code": "MU-10",
       "kind": "MU",
-      "label": "MU-10 · mueble TV · 2,00 × 1,60 × 0,25",
+      "label": "MU-10 · rack de TV · 2,00 × 1,60 × 0,25",
       "status": "03 · Cuarto B Inv. 03 · 00. Planta Baja · in situ",
       "elementId": "780960",
       "type": "Armario/ tele1",
@@ -5772,7 +5772,7 @@
     {
       "code": "MU-11",
       "kind": "MU",
-      "label": "MU-11 · mueble TV · 2,00 × 1,60 × 0,25",
+      "label": "MU-11 · rack de TV · 2,00 × 1,60 × 0,25",
       "status": "05 · Cuarto C Inv. 05 · 00. Planta Baja · in situ",
       "elementId": "1243426",
       "type": "Armario/ tele4",
@@ -6336,7 +6336,7 @@
       "label": "Muebles fijos",
       "value": 14,
       "unit": "u",
-      "detail": "2 vinoteca, 2 mueble de pared, 7 mesa de luz, 3 mueble TV"
+      "detail": "2 vinoteca, 2 mueble de pared, 7 mesa de luz, 3 racks de TV"
     },
     {
       "label": "Vanitorios",
@@ -6481,7 +6481,7 @@
       "detail": "0,60 × 0,43 × 0,20 · 05 · Cuarto C Inv. 05"
     },
     {
-      "label": "MU-09 · mueble TV",
+      "label": "MU-09 · rack de TV",
       "group": "Muebles fijos (TV, pared, vinoteca, mesas de luz) · 00. Planta Baja",
       "count": 1,
       "value": 2.0,
@@ -6489,7 +6489,7 @@
       "detail": "2,00 × 1,60 × 0,25 · 01 · Cuarto A Inv. 01"
     },
     {
-      "label": "MU-10 · mueble TV",
+      "label": "MU-10 · rack de TV",
       "group": "Muebles fijos (TV, pared, vinoteca, mesas de luz) · 00. Planta Baja",
       "count": 1,
       "value": 2.0,
@@ -6497,7 +6497,7 @@
       "detail": "2,00 × 1,60 × 0,25 · 03 · Cuarto B Inv. 03"
     },
     {
-      "label": "MU-11 · mueble TV",
+      "label": "MU-11 · rack de TV",
       "group": "Muebles fijos (TV, pared, vinoteca, mesas de luz) · 00. Planta Baja",
       "count": 1,
       "value": 2.0,
@@ -6828,10 +6828,10 @@
     "Fijo = familias in situ de carpintería + mamparas + equipos de cocina; el resto es mobiliario suelto (referencia).",
     "Artefactos sanitarios quedan en Sanitarias; puertas del ascensor fuera del rubro.",
     "Ficha por pieza de carpintería (planta, alzado frontal, axonométrica); mamparas y equipos solo en plantas.",
-    "Códigos PL/MU/VA/ME/LV/MA/EQ solo como anotación (no escritos en Mark)."
+    "Códigos PL/MU/VA/ME/LV/MA/EQ solo como anotación (no escritos en Mark).",
+    "Mesas de luz y racks de TV (antes muebles TV) son carpintería fija: se cuentan en el rubro."
   ],
   "questions": [
-    "¿Las mesas de luz y muebles TV in situ son de obra / carpintería fija? Hoy se cuentan como fijos.",
     "¿Qué muebles de cocina faltan (alacenas, columnas) y en qué material?",
     "¿Material y terminación de placares y vanitorios (melamina, laqueado, madera)?",
     "¿Escribimos los códigos de equipamiento en el modelo (Mark)?"
@@ -6857,8 +6857,8 @@
         "informative": false
       },
       {
-        "id": "muebles-mueble-tv",
-        "label": "Muebles fijos · mueble TV",
+        "id": "muebles-rack-de-tv",
+        "label": "Muebles fijos · rack de TV",
         "value": 3,
         "unit": "u",
         "detail": "MU-09, MU-10, MU-11",

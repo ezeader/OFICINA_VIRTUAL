@@ -80,7 +80,7 @@ def inventory(doc):
         what = NAMES[r['kind']]
         if r['kind'] == 'EQ': what = [v for k2, v in EQN.items() if k2 in r['family']][0]
         if r['kind'] == 'MU':
-            what = u'mesa de luz' if u'Mesa de luz' in r['family'] else (u'vinoteca' if u'Vinoteca' in r['family'] else (u'mueble TV' if u'tele' in r['family'] else u'mueble de pared'))
+            what = u'mesa de luz' if u'Mesa de luz' in r['family'] else (u'vinoteca' if u'Vinoteca' in r['family'] else (u'rack de TV' if u'tele' in r['family'] else u'mueble de pared'))
         if r['kind'] == 'ME' and r['family'] == u'Cajonera': what = u'bajomesada con cajones'
         r['what'] = what
         r['label'] = u'%s · %s · %s × %s × %s' % (r['code'], what, c2(r['width_m']), c2(r['depth_m']), c2(r['height_m']))
