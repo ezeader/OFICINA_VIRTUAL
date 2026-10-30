@@ -11,7 +11,6 @@ import {computeBudget,budgetSheet,globalId,linesFromManifest,manifestStatus,pric
 
 // Dónde publica cada proyecto sus cómputos. Un proyecto nuevo solo necesita su carpeta con el mismo contrato.
 export const PROJECT_SOURCES:Record<string,{base:string;sanitary?:string}>={angel:{base:'/casa-angel',sanitary:'Casa-Angel-sanitarias-R02-datos.json'}};
-const GOAL='fin de 2026';
 const KIND:Record<string,string>={Windows:'Ventana',Doors:'Puerta','Curtain Walls':'Muro cortina'};
 const n2=(n:number)=>n.toLocaleString('es-AR',{maximumFractionDigits:2});
 const pct=(n?:number)=>n==null?'—':(n*100).toLocaleString('es-AR',{maximumFractionDigits:1})+' %';
@@ -71,8 +70,7 @@ export default function RubroBudget({project,projectName,value,disabled,onSave,o
    <div className="pcActions"><button className="primary" disabled={disabled||!Object.keys(draft).some(k=>k.startsWith(detail.key+':'))} onClick={()=>savePrices(detail.key)}>Guardar precios de {detail.name}</button><small>Precio por unidad, sin separador de miles. Para quitar un precio, borralo y guardá.</small></div>
   </div>:null;
  return <div className="rbBudget">
-  <div className="rbVision" aria-label="Del modelo al presupuesto">{[['1','Modelo de Revit','publica cada rubro'],['2','Cómputo por rubro',`${p.withCompute} de ${p.rubros} rubros (${p.modeled} modelados)`],['3','Precios unitarios',`${p.pricedLines} de ${p.lines} partidas`],['4','Presupuesto por rubro',`${p.priced} de ${p.rubros} con precio`],['5','Total para el cliente','base + opcionales']].map(([n,t,s])=><span key={n}><b>{n}</b>{t}<small>{s}</small></span>)}</div>
-  <p className="pcHint">Meta: cómputo y presupuesto casi completo de {projectName} a {GOAL}. Ningún monto se inventa: cada precio lo carga el estudio o un proveedor.</p>
+  <p className="rbProgress"><b>{p.pricedLines} de {p.lines}</b> partidas con precio · <b>{p.priced} de {p.rubros}</b> rubros completos. Cada precio lo carga el estudio o sale de un presupuesto: ninguno se inventa.</p>
   {error&&<p className="pcError" role="alert">{error}<button onClick={()=>setError('')}>Cerrar</button></p>}
   <div className="pcStats">
    <div><small>Obra base · para arrancar</small><strong>{result.baseTotal>0?money(result.baseTotal):'Por cotizar'}</strong><small>{result.baseComplete?'Todos los rubros base tienen precio.':`${result.base.filter(r=>!r.complete).length} de ${result.base.length} rubros base sin precio completo`}</small></div>
