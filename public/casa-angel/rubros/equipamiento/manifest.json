@@ -6831,11 +6831,13 @@
     "Códigos PL/MU/VA/ME/LV/MA/EQ solo como anotación (no escritos en Mark).",
     "Mesas de luz y racks de TV (antes muebles TV) son carpintería fija: se cuentan en el rubro.",
     "Cocina (bajomesadas, cajoneras, alacenas), mesas de luz, racks, placares y muebles de vanitorio/lavadero van en Carpintería; alacenas y bajomesadas se cotizan por ml de mesada, sin modelar.",
-    "Las mesadas de mármol/piedra (cocina, quincho, vanitorios, lavadero) se cotizan aparte, en el rubro Mesadas."
+    "Las mesadas de mármol/piedra (cocina, quincho, vanitorios, lavadero) se cotizan aparte, en el rubro Mesadas.",
+    "Carpintería en melamina 18 mm (base económica); 25 mm y terminación se definen al cotizar.",
+    "En los cuartos, placares y racks de TV van integrados con diseño propio: se detalla pieza por pieza al cotizar.",
+    "Códigos de equipamiento: confirmado que no se escriben en Mark (solo anotación en láminas); no hace falta tocar el modelo."
   ],
   "questions": [
-    "¿Material y terminación de placares y vanitorios (melamina, laqueado, madera)?",
-    "¿Escribimos los códigos de equipamiento en el modelo (Mark)?"
+    "Al cotizar: terminación de la melamina (laqueada, enchapada u otra) y diseño de placares integrados con racks de TV en cada cuarto (diseño del arquitecto, a cargar)."
   ],
   "budget": {
     "revision": "R27",
@@ -6846,7 +6848,7 @@
         "label": "Carpintería · placares",
         "value": 43.51,
         "unit": "m²",
-        "detail": "5 placares · frente ancho × alto · 16,47 ml",
+        "detail": "5 placares · frente ancho × alto · 16,47 ml · melamina 18 mm",
         "informative": false
       },
       {
@@ -6854,7 +6856,7 @@
         "label": "Carpintería · mesas de luz",
         "value": 7,
         "unit": "u",
-        "detail": "MU-05, MU-06, MU-07, MU-08, MU-12, MU-13, MU-14",
+        "detail": "MU-05, MU-06, MU-07, MU-08, MU-12, MU-13, MU-14 · melamina 18 mm",
         "informative": false
       },
       {
@@ -6862,7 +6864,7 @@
         "label": "Carpintería · racks de TV",
         "value": 3,
         "unit": "u",
-        "detail": "MU-09, MU-10, MU-11",
+        "detail": "MU-09, MU-10, MU-11 · melamina 18 mm",
         "informative": false
       },
       {
@@ -6870,7 +6872,7 @@
         "label": "Carpintería · muebles de pared",
         "value": 2,
         "unit": "u",
-        "detail": "MU-03, MU-04",
+        "detail": "MU-03, MU-04 · melamina 18 mm",
         "informative": false
       },
       {
@@ -6878,7 +6880,7 @@
         "label": "Carpintería · vinotecas",
         "value": 2,
         "unit": "u",
-        "detail": "MU-01, MU-02",
+        "detail": "MU-01, MU-02 · melamina 18 mm",
         "informative": false
       },
       {
@@ -6886,7 +6888,7 @@
         "label": "Carpintería · cocina · bajomesadas y cajoneras",
         "value": 2.9,
         "unit": "ml",
-        "detail": "largo de mesada ME-02 (incluye cajoneras ME-01, ME-03, ME-04)",
+        "detail": "largo de mesada ME-02 (incluye cajoneras ME-01, ME-03, ME-04) · melamina 18 mm",
         "informative": false
       },
       {
@@ -6894,7 +6896,7 @@
         "label": "Carpintería · cocina · alacenas",
         "value": 2.9,
         "unit": "ml",
-        "detail": "estimado = largo de mesada de cocina (no modeladas)",
+        "detail": "estimado = largo de mesada de cocina (no modeladas) · melamina 18 mm",
         "informative": false
       },
       {
@@ -6902,7 +6904,7 @@
         "label": "Carpintería · quincho · bajomesada",
         "value": 4.76,
         "unit": "ml",
-        "detail": "largo de mesada ME-05",
+        "detail": "largo de mesada ME-05 · melamina 18 mm",
         "informative": false
       },
       {
@@ -6910,7 +6912,7 @@
         "label": "Carpintería · muebles de vanitorio",
         "value": 12.33,
         "unit": "ml",
-        "detail": "7 vanitorios (VA-01 a VA-07); la mesada va en Mesadas",
+        "detail": "7 vanitorios (VA-01 a VA-07); la mesada va en Mesadas · melamina 18 mm",
         "informative": false
       },
       {
@@ -6918,7 +6920,7 @@
         "label": "Carpintería · bajomesadas de lavadero",
         "value": 3.2,
         "unit": "ml",
-        "detail": "LV-01, LV-02; la mesada va en Mesadas",
+        "detail": "LV-01, LV-02; la mesada va en Mesadas · melamina 18 mm",
         "informative": false
       },
       {
