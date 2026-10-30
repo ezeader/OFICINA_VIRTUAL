@@ -1,6 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {parseDocumentationRoute,openingsHref} from '../lib/documentation-route.ts';
+import {registerHooks} from 'node:module';
+// lib/documentation-route.ts importa './rubros' sin extensión (estilo Vite); en Node se resuelve a .ts.
+registerHooks({resolve:(spec,ctx,next)=>{try{return next(spec,ctx)}catch(e){if(spec.startsWith('.')&&!/\.\w+$/.test(spec))return next(spec+'.ts',ctx);throw e}}});
+const {parseDocumentationRoute,openingsHref,rubricHref}=await import('../lib/documentation-route.ts');
 
 test('direct opening links retain the project, rubric and pending case on reload',()=>{
  assert.deepEqual(parseDocumentationRoute('#documentacion/angel/aberturas'),{projectId:'angel',rubric:'Aberturas',caseCode:undefined});
@@ -14,7 +17,6 @@ test('the structure desk has its own direct link',()=>{
  assert.deepEqual(parseDocumentationRoute('#documentacion/angel/estructura'),{projectId:'angel',rubric:'Estructura'});
  assert.equal(parseDocumentationRoute('#documentacion/angel/estructura/x'),null);
 });
-import {rubricHref} from '../lib/documentation-route.ts';
 test('every documentation rubric has a direct link that round-trips',()=>{
  for(const name of ['Cubierta','Albañilería','Paneles solares','Sanitaria','Estructura'])assert.equal(parseDocumentationRoute(rubricHref(name)).rubric,name);
  assert.equal(parseDocumentationRoute('#documentacion/angel/inventado'),null);
