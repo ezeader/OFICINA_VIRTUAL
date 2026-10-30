@@ -2,7 +2,7 @@
   "title": "Parrilla",
   "summary": "Parrilla de obra a medida en el Quincho (decisión del usuario): boca 1,50, hogar a +0,90, campana de ladrillo refractario visto hasta el cielorraso, parrilla regulable inox + brasero, leñero; conducto Ø 35 (6,90 ml) por el Comedor y la cubierta CU-03 con sombrerete fijo. en PA sube recto y a la vista junto al cajón del hogar. Modelada en el modelo principal (reemplaza al K42DB) y documentada en 6 láminas en Casa-Angel-DOC-Parrilla.rvt.",
   "model": "Casa-Angel-piloto-documentacion.rvt",
-  "readAt": "2026-10-26T15:38:37.386000Z",
+  "readAt": "2026-10-30T19:32:23.682000Z",
   "revision": "R34",
   "kinds": {
     "PR": "Parrilla",
@@ -19,7 +19,7 @@
       "elementId": null,
       "elementKind": null,
       "note": "R34 · archivo Casa-Angel-DOC-Parrilla.rvt",
-      "sheetId": "226586",
+      "sheetId": "227800",
       "pdf": "/casa-angel/rubros/parrilla/PAR-00.pdf",
       "image": "/casa-angel/rubros/parrilla/PAR-00.svg.gz",
       "preview": "/casa-angel/rubros/parrilla/PAR-00-preview.png",
@@ -36,21 +36,21 @@
       "elementId": null,
       "elementKind": null,
       "note": "R34 · archivo Casa-Angel-DOC-Parrilla.rvt",
-      "sheetId": "226032",
+      "sheetId": "227246",
       "pdf": "/casa-angel/rubros/parrilla/PAR-D-01.pdf",
       "image": "/casa-angel/rubros/parrilla/PAR-D-01.svg.gz",
       "preview": "/casa-angel/rubros/parrilla/PAR-D-01-preview.png",
       "thumbnail": "/casa-angel/rubros/parrilla/PAR-D-01.png",
       "views": [
         {
-          "id": "225556",
+          "id": "226770",
           "name": "D-01a · Planta de la parrilla",
           "label": "D-01a · Planta de la parrilla   1:20",
           "scale": 20,
           "kind": "detail",
           "sector": "Detalles",
           "roomLabel": "Detalles",
-          "image": "/casa-angel/rubros/parrilla/PAR-D-01-view-225556.svg.gz",
+          "image": "/casa-angel/rubros/parrilla/PAR-D-01-view-226770.svg.gz",
           "region": [
             0.338,
             0.2169,
@@ -171,14 +171,14 @@
           ]
         },
         {
-          "id": "225716",
+          "id": "226930",
           "name": "D-01b · Vista frontal",
           "label": "D-01b · Vista frontal   1:25",
           "scale": 25,
           "kind": "detail",
           "sector": "Detalles",
           "roomLabel": "Detalles",
-          "image": "/casa-angel/rubros/parrilla/PAR-D-01-view-225716.svg.gz",
+          "image": "/casa-angel/rubros/parrilla/PAR-D-01-view-226930.svg.gz",
           "region": [
             0.159,
             0.5111,
@@ -310,14 +310,14 @@
           ]
         },
         {
-          "id": "225881",
+          "id": "227095",
           "name": "D-01c · Corte A-A",
           "label": "D-01c · Corte A-A   1:25",
           "scale": 25,
           "kind": "detail",
           "sector": "Detalles",
           "roomLabel": "Detalles",
-          "image": "/casa-angel/rubros/parrilla/PAR-D-01-view-225881.svg.gz",
+          "image": "/casa-angel/rubros/parrilla/PAR-D-01-view-227095.svg.gz",
           "region": [
             0.5275,
             0.4951,
@@ -414,7 +414,7 @@
             },
             {
               "code": "CH-01",
-              "label": "CH-01 · conducto Ø 0,35 acero inox · +2,50 a +9,40 · 6,90 ml · recto, a la vista en PA",
+              "label": "CH-01 · conducto Ø 0,35 doble pared, exterior negro mate alta temperatura · +2,50 a +9,40 · 6,90 ml · recto",
               "box": [
                 0.2822,
                 0.0567,
@@ -446,21 +446,21 @@
       "elementId": null,
       "elementKind": null,
       "note": "R34 · archivo Casa-Angel-DOC-Parrilla.rvt",
-      "sheetId": "226140",
+      "sheetId": "227354",
       "pdf": "/casa-angel/rubros/parrilla/PAR-D-02.pdf",
       "image": "/casa-angel/rubros/parrilla/PAR-D-02.svg.gz",
       "preview": "/casa-angel/rubros/parrilla/PAR-D-02-preview.png",
       "thumbnail": "/casa-angel/rubros/parrilla/PAR-D-02.png",
       "views": [
         {
-          "id": "226056",
+          "id": "227270",
           "name": "D-02a · Conducto: corte esquemático",
           "label": "D-02a · Conducto: corte esquemático   1:50",
           "scale": 50,
           "kind": "detail",
           "sector": "Detalles",
           "roomLabel": "Detalles",
-          "image": "/casa-angel/rubros/parrilla/PAR-D-02-view-226056.svg.gz",
+          "image": "/casa-angel/rubros/parrilla/PAR-D-02-view-227270.svg.gz",
           "region": [
             0.3175,
             0.3131,
@@ -514,7 +514,7 @@
             },
             {
               "code": "CH-01",
-              "label": "CH-01 · conducto Ø 0,35 acero inox · +2,50 a +9,40 · 6,90 ml · recto, a la vista en PA",
+              "label": "CH-01 · conducto Ø 0,35 doble pared, exterior negro mate alta temperatura · +2,50 a +9,40 · 6,90 ml · recto",
               "box": [
                 0.3973,
                 0.0765,
@@ -524,7 +524,7 @@
             },
             {
               "code": "CH-PA",
-              "label": "CH-PA · pase en losa L01 0,50 × 0,50 (amplía el pase existente)",
+              "label": "CH-PA · pase en losa L01 0,50 × 0,50 (modelado, abertura en la losa)",
               "box": [
                 0.393,
                 0.6399,
@@ -586,21 +586,21 @@
       "elementId": null,
       "elementKind": null,
       "note": "R34 · archivo Casa-Angel-DOC-Parrilla.rvt",
-      "sheetId": "226512",
+      "sheetId": "227726",
       "pdf": "/casa-angel/rubros/parrilla/PAR-D-03.pdf",
       "image": "/casa-angel/rubros/parrilla/PAR-D-03.svg.gz",
       "preview": "/casa-angel/rubros/parrilla/PAR-D-03-preview.png",
       "thumbnail": "/casa-angel/rubros/parrilla/PAR-D-03.png",
       "views": [
         {
-          "id": "226160",
+          "id": "227374",
           "name": "D-02b · Pase de cubierta y babeta",
           "label": "D-02b · Pase de cubierta y babeta   1:10",
           "scale": 10,
           "kind": "detail",
           "sector": "Detalles",
           "roomLabel": "Detalles",
-          "image": "/casa-angel/rubros/parrilla/PAR-D-03-view-226160.svg.gz",
+          "image": "/casa-angel/rubros/parrilla/PAR-D-03-view-227374.svg.gz",
           "region": [
             0.1341,
             0.3466,
@@ -631,7 +631,7 @@
           "elements": [
             {
               "code": "CH-01",
-              "label": "CH-01 · conducto Ø 0,35 acero inox · +2,50 a +9,40 · 6,90 ml · recto, a la vista en PA",
+              "label": "CH-01 · conducto Ø 0,35 doble pared, exterior negro mate alta temperatura · +2,50 a +9,40 · 6,90 ml · recto",
               "box": [
                 0.2387,
                 0.1565,
@@ -652,14 +652,14 @@
           ]
         },
         {
-          "id": "226444",
+          "id": "227658",
           "name": "D-02c · Sombrerete fijo",
           "label": "D-02c · Sombrerete fijo   1:10",
           "scale": 10,
           "kind": "detail",
           "sector": "Detalles",
           "roomLabel": "Detalles",
-          "image": "/casa-angel/rubros/parrilla/PAR-D-03-view-226444.svg.gz",
+          "image": "/casa-angel/rubros/parrilla/PAR-D-03-view-227658.svg.gz",
           "region": [
             0.5323,
             0.3691,
@@ -705,7 +705,7 @@
             },
             {
               "code": "CH-01",
-              "label": "CH-01 · conducto Ø 0,35 acero inox · +2,50 a +9,40 · 6,90 ml · recto, a la vista en PA",
+              "label": "CH-01 · conducto Ø 0,35 doble pared, exterior negro mate alta temperatura · +2,50 a +9,40 · 6,90 ml · recto",
               "box": [
                 0.2507,
                 0.452,
@@ -727,21 +727,21 @@
       "elementId": null,
       "elementKind": null,
       "note": "R34 · archivo Casa-Angel-DOC-Parrilla.rvt",
-      "sheetId": "226564",
+      "sheetId": "227778",
       "pdf": "/casa-angel/rubros/parrilla/PAR-D-04.pdf",
       "image": "/casa-angel/rubros/parrilla/PAR-D-04.svg.gz",
       "preview": "/casa-angel/rubros/parrilla/PAR-D-04-preview.png",
       "thumbnail": "/casa-angel/rubros/parrilla/PAR-D-04.png",
       "views": [
         {
-          "id": "226536",
+          "id": "227750",
           "name": "D-04a · Axonometría (modelo en el archivo DOC)",
           "label": "D-04a · Axonometría (modelo en el archivo DOC)   1:50",
           "scale": 50,
           "kind": "axo",
           "sector": "Tiraje",
           "roomLabel": "Tiraje",
-          "image": "/casa-angel/rubros/parrilla/PAR-D-04-view-226536.svg.gz",
+          "image": "/casa-angel/rubros/parrilla/PAR-D-04-view-227750.svg.gz",
           "region": [
             0.2035,
             0.2922,
@@ -756,14 +756,14 @@
           "elements": []
         },
         {
-          "id": "226545",
+          "id": "227759",
           "name": "D-04b · Verificación del tiraje",
           "label": "D-04b · Verificación del tiraje   1:50",
           "scale": 50,
           "kind": "detail",
           "sector": "Detalles",
           "roomLabel": "Detalles",
-          "image": "/casa-angel/rubros/parrilla/PAR-D-04-view-226545.svg.gz",
+          "image": "/casa-angel/rubros/parrilla/PAR-D-04-view-227759.svg.gz",
           "region": [
             0.551,
             0.3146,
@@ -788,21 +788,21 @@
       "elementId": null,
       "elementKind": null,
       "note": "R34 · archivo Casa-Angel-DOC-Parrilla.rvt",
-      "sheetId": "225532",
+      "sheetId": "226746",
       "pdf": "/casa-angel/rubros/parrilla/PAR-P-01.pdf",
       "image": "/casa-angel/rubros/parrilla/PAR-P-01.svg.gz",
       "preview": "/casa-angel/rubros/parrilla/PAR-P-01-preview.png",
       "thumbnail": "/casa-angel/rubros/parrilla/PAR-P-01.png",
       "views": [
         {
-          "id": "225397",
+          "id": "226611",
           "name": "Ubicación · Quincho · planta baja",
           "label": "Ubicación · Quincho · planta baja   1:25",
           "scale": 25,
           "kind": "plan",
           "sector": "00. Planta Baja",
           "roomLabel": "00. Planta Baja",
-          "image": "/casa-angel/rubros/parrilla/PAR-P-01-view-225397.svg.gz",
+          "image": "/casa-angel/rubros/parrilla/PAR-P-01-view-226611.svg.gz",
           "region": [
             0.3367,
             0.2297,
@@ -849,7 +849,7 @@
             },
             {
               "code": "CH-01",
-              "label": "CH-01 · conducto Ø 0,35 acero inox · +2,50 a +9,40 · 6,90 ml · recto, a la vista en PA",
+              "label": "CH-01 · conducto Ø 0,35 doble pared, exterior negro mate alta temperatura · +2,50 a +9,40 · 6,90 ml · recto",
               "box": [
                 0.647,
                 0.6552,
@@ -860,14 +860,14 @@
           ]
         },
         {
-          "id": "225479",
+          "id": "226693",
           "name": "Conducto por la planta alta · Comedor",
           "label": "Conducto por la planta alta · Comedor   1:25",
           "scale": 25,
           "kind": "plan",
           "sector": "01. Planta Alta",
           "roomLabel": "01. Planta Alta",
-          "image": "/casa-angel/rubros/parrilla/PAR-P-01-view-225479.svg.gz",
+          "image": "/casa-angel/rubros/parrilla/PAR-P-01-view-226693.svg.gz",
           "region": [
             0.2253,
             0.5436,
@@ -891,7 +891,7 @@
           "elements": [
             {
               "code": "CH-01",
-              "label": "CH-01 · conducto Ø 0,35 acero inox · +2,50 a +9,40 · 6,90 ml · recto, a la vista en PA",
+              "label": "CH-01 · conducto Ø 0,35 doble pared, exterior negro mate alta temperatura · +2,50 a +9,40 · 6,90 ml · recto",
               "box": [
                 0.2854,
                 0.5,
@@ -922,14 +922,14 @@
           ]
         },
         {
-          "id": "225499",
+          "id": "226713",
           "name": "Cruce de cubierta · planta de techos",
           "label": "Cruce de cubierta · planta de techos   1:25",
           "scale": 25,
           "kind": "plan",
           "sector": "03. Planta de Techos",
           "roomLabel": "03. Planta de Techos",
-          "image": "/casa-angel/rubros/parrilla/PAR-P-01-view-225499.svg.gz",
+          "image": "/casa-angel/rubros/parrilla/PAR-P-01-view-226713.svg.gz",
           "region": [
             0.5606,
             0.5436,
@@ -996,7 +996,7 @@
     {
       "code": "CH-01",
       "kind": "CH",
-      "label": "CH-01 · conducto Ø 0,35 acero inox · +2,50 a +9,40 · 6,90 ml · recto, a la vista en PA",
+      "label": "CH-01 · conducto Ø 0,35 doble pared, exterior negro mate alta temperatura · +2,50 a +9,40 · 6,90 ml · recto",
       "status": "Modelado R34 en el modelo principal (DirectShape)",
       "elementId": "2489076"
     },
@@ -1024,7 +1024,7 @@
     {
       "code": "CH-PA",
       "kind": "CH",
-      "label": "CH-PA · pase en losa L01 0,50 × 0,50 (amplía el pase existente)",
+      "label": "CH-PA · pase en losa L01 0,50 × 0,50 (modelado, abertura en la losa)",
       "status": "Documentado R34",
       "elementId": null
     },
@@ -1241,12 +1241,12 @@
       "detail": "+3,00 a +9,40 · recto · a la vista en la doble altura del living comedor"
     },
     {
-      "label": "Pase en losa L01 0,50 × 0,50 (amplía el pase existente)",
+      "label": "Pase en losa L01 0,50 × 0,50",
       "group": "Conducto",
       "count": 1,
       "value": 1,
       "unit": "u",
-      "detail": "a coordinar con Estructura"
+      "detail": "modelado 30/10 (abertura 2489084) · a coordinar con Estructura"
     },
     {
       "label": "Babeta / collar de cubierta + brochal entre cabios",
@@ -1279,12 +1279,12 @@
     "Conducto recto (eje x 3,785 · y 2,30), a 5 cm de la cara oeste del cajón Durlock: pasa entre cabios c/0,96 (corta 1 listón, con brochal); remate +9,40 ≥ cumbrera +8,63 + 0,60 y ≥ techo +8,06 + 0,90 (R1003.9). Garganta desde +1,90 para que las paredes de la campana queden ≤ 45° (R1001.8.1).",
     "Criterio de tiraje tomado de California Residential Code 2025, cap. 10 (R1001 hogares de mampostería, R1003 chimeneas): https://gocodebook.com/es/library/us/ca/ca-residential-code/chapter-10-chimneys-and-fireplaces/section-r1003-masonry-chimneys · verificar con normativa local.",
     "Usuario (26/10, final): cajón Durlock original (se revirtió la ampliación de R34c), leñero abierto, reemplazo del K42DB OK; el conducto sube recto y a la vista en PA (eje x 3,785, a 5 cm del cajón), sin codos.",
-    "Usuario (30/10): los dos ductos a la vista en la doble altura del living comedor (parrilla y salamandra) circulares, paralelos y negro mate con pintura para alta temperatura; para que no quemen al tocarlos, doble pared aislado (exterior a baja temperatura) + pintura siliconada ≥ 600 °C. Pase de losa L01 a 0,50 × 0,50: OK (pendiente de aplicar en Revit).",
+    "Usuario (30/10): los dos ductos a la vista en la doble altura del living comedor (parrilla y salamandra) circulares, paralelos y negro mate con pintura para alta temperatura; para que no quemen al tocarlos, doble pared aislado (exterior a baja temperatura) + pintura siliconada ≥ 600 °C. Pase de losa L01 0,50 × 0,50: modelado 30/10 como abertura en la losa (el Pase_Rectangular 0,19 × 0,14 del muro H° no es de la losa y queda).",
     "Usuario (vía sesión Documentación): parrilla estándar de mampostería hecha in situ; lo crítico es el tiraje. Modelada en 3D en el archivo DOC (DirectShape, Generic Models); no se descargó ninguna familia (las encontradas requieren cuenta).",
     "Documentación en archivo propio Casa-Angel-DOC-Parrilla.rvt que vincula el modelo principal (criterio del usuario)."
   ],
   "questions": [
-    "El pase existente en la losa L01 (0,30 × 0,57, x 3,93–4,23) no coincide con el conducto (eje x 3,785 · y 2,30): ¿lo ajusto en el modelo a 0,50 × 0,50? (Estructura)"
+    "¿El conducto de la salamandra es Ø 15 cm (doble pared, exterior Ø 20)? Si no, pasar la medida del fabricante."
   ],
   "budget": {
     "revision": "R34",
@@ -1372,10 +1372,10 @@
       },
       {
         "id": "conducto-pase-losa",
-        "label": "Pase en losa L01 0,50 × 0,50 (amplía el pase existente)",
+        "label": "Pase en losa L01 0,50 × 0,50",
         "value": 1,
         "unit": "u",
-        "detail": "a coordinar con Estructura",
+        "detail": "modelado 30/10 (abertura 2489084) · a coordinar con Estructura",
         "informative": false
       },
       {
