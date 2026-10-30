@@ -1,0 +1,891 @@
+{
+ "project": "Casa Ángel",
+ "location": "Pinamar Norte, provincia de Buenos Aires",
+ "rubro": "sanitaria",
+ "name": "Instalación sanitaria",
+ "revision": "R13",
+ "source": "Registro único R13 del modelo Casa-Angel-piloto-documentacion.rvt (22/10/2026): 692 caños, 676 accesorios, 32 artefactos y equipos.",
+ "date": "30/10/2026",
+ "basis": "Longitudes de eje del modelo, sin desperdicio ni recortes comerciales. Cada elemento físico se cuenta una sola vez aunque aparezca en varias láminas.",
+ "systems": [
+  {
+   "key": "AF",
+   "name": "Agua fría",
+   "items": [
+    {
+     "code": "AF.01",
+     "description": "Caño PPR termofusión agua fría Ø90 mm (ref. Amanco Wavin Fusión PN12,5)",
+     "unit": "m",
+     "quantity": 52.3,
+     "elements": 16,
+     "kind": "pipe"
+    },
+    {
+     "code": "AF.02",
+     "description": "Caño PPR termofusión agua fría Ø63 mm (ref. Amanco Wavin Fusión PN12,5)",
+     "unit": "m",
+     "quantity": 3.2,
+     "elements": 1,
+     "kind": "pipe"
+    },
+    {
+     "code": "AF.03",
+     "description": "Caño PPR termofusión agua fría Ø50 mm (ref. Amanco Wavin Fusión PN12,5)",
+     "unit": "m",
+     "quantity": 62.7,
+     "elements": 77,
+     "kind": "pipe"
+    },
+    {
+     "code": "AF.04",
+     "description": "Caño PPR termofusión agua fría Ø40 mm (ref. Amanco Wavin Fusión PN12,5)",
+     "unit": "m",
+     "quantity": 2.3,
+     "elements": 2,
+     "kind": "pipe"
+    },
+    {
+     "code": "AF.05",
+     "description": "Caño PPR termofusión agua fría Ø32 mm (ref. Amanco Wavin Fusión PN12,5)",
+     "unit": "m",
+     "quantity": 101.9,
+     "elements": 157,
+     "kind": "pipe"
+    },
+    {
+     "code": "AF.06",
+     "description": "Buje de reducción PPR con inserto metálico Ø90×76,2",
+     "unit": "u",
+     "quantity": 1,
+     "elements": 1,
+     "kind": "fitting"
+    },
+    {
+     "code": "AF.07",
+     "description": "Canilla de servicio 3/4\" con manija mariposa",
+     "unit": "u",
+     "quantity": 1,
+     "elements": 1,
+     "kind": "fitting"
+    },
+    {
+     "code": "AF.08",
+     "description": "Canilla de servicio 3/4\" con manija palanca",
+     "unit": "u",
+     "quantity": 8,
+     "elements": 8,
+     "kind": "fitting"
+    },
+    {
+     "code": "AF.09",
+     "description": "Codo 90° PPR Ø32",
+     "unit": "u",
+     "quantity": 93,
+     "elements": 93,
+     "kind": "fitting"
+    },
+    {
+     "code": "AF.10",
+     "description": "Codo 90° PPR Ø32×19,1",
+     "unit": "u",
+     "quantity": 5,
+     "elements": 5,
+     "kind": "fitting"
+    },
+    {
+     "code": "AF.11",
+     "description": "Codo 90° PPR Ø32×25",
+     "unit": "u",
+     "quantity": 1,
+     "elements": 1,
+     "kind": "fitting"
+    },
+    {
+     "code": "AF.12",
+     "description": "Codo 90° PPR Ø40",
+     "unit": "u",
+     "quantity": 1,
+     "elements": 1,
+     "kind": "fitting"
+    },
+    {
+     "code": "AF.13",
+     "description": "Codo 90° PPR Ø40×32",
+     "unit": "u",
+     "quantity": 1,
+     "elements": 1,
+     "kind": "fitting"
+    },
+    {
+     "code": "AF.14",
+     "description": "Codo 90° PPR Ø50",
+     "unit": "u",
+     "quantity": 38,
+     "elements": 38,
+     "kind": "fitting"
+    },
+    {
+     "code": "AF.15",
+     "description": "Codo 90° PPR Ø50×32",
+     "unit": "u",
+     "quantity": 4,
+     "elements": 4,
+     "kind": "fitting"
+    },
+    {
+     "code": "AF.16",
+     "description": "Codo 90° PPR Ø50×40",
+     "unit": "u",
+     "quantity": 1,
+     "elements": 1,
+     "kind": "fitting"
+    },
+    {
+     "code": "AF.17",
+     "description": "Codo 90° PPR Ø90",
+     "unit": "u",
+     "quantity": 12,
+     "elements": 12,
+     "kind": "fitting"
+    },
+    {
+     "code": "AF.18",
+     "description": "Codo 90° PPR Ø90×63",
+     "unit": "u",
+     "quantity": 2,
+     "elements": 2,
+     "kind": "fitting"
+    },
+    {
+     "code": "AF.19",
+     "description": "Codo 90° PPR Ø90×76,2",
+     "unit": "u",
+     "quantity": 1,
+     "elements": 1,
+     "kind": "fitting"
+    },
+    {
+     "code": "AF.20",
+     "description": "Tapa PPR Ø32",
+     "unit": "u",
+     "quantity": 2,
+     "elements": 2,
+     "kind": "fitting"
+    },
+    {
+     "code": "AF.21",
+     "description": "Tapa PPR Ø50",
+     "unit": "u",
+     "quantity": 5,
+     "elements": 5,
+     "kind": "fitting"
+    },
+    {
+     "code": "AF.22",
+     "description": "Tapa PPR Ø90",
+     "unit": "u",
+     "quantity": 2,
+     "elements": 2,
+     "kind": "fitting"
+    },
+    {
+     "code": "AF.23",
+     "description": "Tee PPR Ø32",
+     "unit": "u",
+     "quantity": 16,
+     "elements": 16,
+     "kind": "fitting"
+    },
+    {
+     "code": "AF.24",
+     "description": "Tee PPR Ø50",
+     "unit": "u",
+     "quantity": 11,
+     "elements": 11,
+     "kind": "fitting"
+    },
+    {
+     "code": "AF.25",
+     "description": "Tee PPR Ø50×32",
+     "unit": "u",
+     "quantity": 11,
+     "elements": 11,
+     "kind": "fitting"
+    },
+    {
+     "code": "AF.26",
+     "description": "Válvula esférica unión-fusión PPR Ø32",
+     "unit": "u",
+     "quantity": 9,
+     "elements": 9,
+     "kind": "fitting"
+    },
+    {
+     "code": "AF.27",
+     "description": "Válvula esférica unión-fusión PPR Ø50",
+     "unit": "u",
+     "quantity": 11,
+     "elements": 11,
+     "kind": "fitting"
+    }
+   ]
+  },
+  {
+   "key": "AC",
+   "name": "Agua caliente",
+   "items": [
+    {
+     "code": "AC.01",
+     "description": "Caño PPR termofusión agua caliente Ø50 mm (ref. Amanco Wavin Fusión; indicar PN)",
+     "unit": "m",
+     "quantity": 60.5,
+     "elements": 66,
+     "kind": "pipe"
+    },
+    {
+     "code": "AC.02",
+     "description": "Caño PPR termofusión agua caliente Ø40 mm (ref. Amanco Wavin Fusión; indicar PN)",
+     "unit": "m",
+     "quantity": 2.4,
+     "elements": 4,
+     "kind": "pipe"
+    },
+    {
+     "code": "AC.03",
+     "description": "Caño PPR termofusión agua caliente Ø32 mm (ref. Amanco Wavin Fusión; indicar PN)",
+     "unit": "m",
+     "quantity": 94.1,
+     "elements": 133,
+     "kind": "pipe"
+    },
+    {
+     "code": "AC.04",
+     "description": "Canilla de servicio 3/4\" con manija palanca",
+     "unit": "u",
+     "quantity": 6,
+     "elements": 6,
+     "kind": "fitting"
+    },
+    {
+     "code": "AC.05",
+     "description": "Codo 45° PPR Ø50",
+     "unit": "u",
+     "quantity": 4,
+     "elements": 4,
+     "kind": "fitting"
+    },
+    {
+     "code": "AC.06",
+     "description": "Codo 90° PPR Ø32",
+     "unit": "u",
+     "quantity": 96,
+     "elements": 96,
+     "kind": "fitting"
+    },
+    {
+     "code": "AC.07",
+     "description": "Codo 90° PPR Ø32×25",
+     "unit": "u",
+     "quantity": 1,
+     "elements": 1,
+     "kind": "fitting"
+    },
+    {
+     "code": "AC.08",
+     "description": "Codo 90° PPR Ø40×32",
+     "unit": "u",
+     "quantity": 1,
+     "elements": 1,
+     "kind": "fitting"
+    },
+    {
+     "code": "AC.09",
+     "description": "Codo 90° PPR Ø50",
+     "unit": "u",
+     "quantity": 29,
+     "elements": 29,
+     "kind": "fitting"
+    },
+    {
+     "code": "AC.10",
+     "description": "Codo 90° PPR Ø50×32",
+     "unit": "u",
+     "quantity": 6,
+     "elements": 6,
+     "kind": "fitting"
+    },
+    {
+     "code": "AC.11",
+     "description": "Codo 90° PPR Ø50×40",
+     "unit": "u",
+     "quantity": 1,
+     "elements": 1,
+     "kind": "fitting"
+    },
+    {
+     "code": "AC.12",
+     "description": "Tapa PPR Ø32",
+     "unit": "u",
+     "quantity": 2,
+     "elements": 2,
+     "kind": "fitting"
+    },
+    {
+     "code": "AC.13",
+     "description": "Tapa PPR Ø50",
+     "unit": "u",
+     "quantity": 4,
+     "elements": 4,
+     "kind": "fitting"
+    },
+    {
+     "code": "AC.14",
+     "description": "Tee PPR Ø32",
+     "unit": "u",
+     "quantity": 13,
+     "elements": 13,
+     "kind": "fitting"
+    },
+    {
+     "code": "AC.15",
+     "description": "Tee PPR Ø32×25",
+     "unit": "u",
+     "quantity": 1,
+     "elements": 1,
+     "kind": "fitting"
+    },
+    {
+     "code": "AC.16",
+     "description": "Tee PPR Ø40×32",
+     "unit": "u",
+     "quantity": 1,
+     "elements": 1,
+     "kind": "fitting"
+    },
+    {
+     "code": "AC.17",
+     "description": "Tee PPR Ø50",
+     "unit": "u",
+     "quantity": 13,
+     "elements": 13,
+     "kind": "fitting"
+    },
+    {
+     "code": "AC.18",
+     "description": "Tee PPR Ø50×32",
+     "unit": "u",
+     "quantity": 7,
+     "elements": 7,
+     "kind": "fitting"
+    },
+    {
+     "code": "AC.19",
+     "description": "Válvula esférica unión-fusión PPR Ø32",
+     "unit": "u",
+     "quantity": 9,
+     "elements": 9,
+     "kind": "fitting"
+    },
+    {
+     "code": "AC.20",
+     "description": "Válvula esférica unión-fusión PPR Ø50",
+     "unit": "u",
+     "quantity": 12,
+     "elements": 12,
+     "kind": "fitting"
+    }
+   ]
+  },
+  {
+   "key": "CP",
+   "name": "Cloacal primario",
+   "items": [
+    {
+     "code": "CP.01",
+     "description": "Caño PVC cloacal Ø110 mm (ref. Amanco Wavin)",
+     "unit": "m",
+     "quantity": 61,
+     "elements": 43,
+     "kind": "pipe"
+    },
+    {
+     "code": "CP.02",
+     "description": "Caño PVC cloacal Ø63 mm (ref. Amanco Wavin)",
+     "unit": "m",
+     "quantity": 10.3,
+     "elements": 31,
+     "kind": "pipe"
+    },
+    {
+     "code": "CP.03",
+     "description": "Caño PVC cloacal Ø40 mm (ref. Amanco Wavin)",
+     "unit": "m",
+     "quantity": 8.4,
+     "elements": 17,
+     "kind": "pipe"
+    },
+    {
+     "code": "CP.04",
+     "description": "Boca de acceso PVC Ø63×40 con tapa ciega 10×10 cm",
+     "unit": "u",
+     "quantity": 3,
+     "elements": 3,
+     "kind": "fitting"
+    },
+    {
+     "code": "CP.05",
+     "description": "Codo 45° PVC Ø40",
+     "unit": "u",
+     "quantity": 2,
+     "elements": 2,
+     "kind": "fitting"
+    },
+    {
+     "code": "CP.06",
+     "description": "Codo 45° PVC Ø63",
+     "unit": "u",
+     "quantity": 13,
+     "elements": 13,
+     "kind": "fitting"
+    },
+    {
+     "code": "CP.07",
+     "description": "Codo 45° PVC Ø110",
+     "unit": "u",
+     "quantity": 13,
+     "elements": 13,
+     "kind": "fitting"
+    },
+    {
+     "code": "CP.08",
+     "description": "Codo 90° PVC Ø40",
+     "unit": "u",
+     "quantity": 9,
+     "elements": 9,
+     "kind": "fitting"
+    },
+    {
+     "code": "CP.09",
+     "description": "Codo 90° PVC Ø50",
+     "unit": "u",
+     "quantity": 9,
+     "elements": 9,
+     "kind": "fitting"
+    },
+    {
+     "code": "CP.10",
+     "description": "Codo 90° PVC Ø63",
+     "unit": "u",
+     "quantity": 9,
+     "elements": 9,
+     "kind": "fitting"
+    },
+    {
+     "code": "CP.11",
+     "description": "Codo 90° PVC Ø110",
+     "unit": "u",
+     "quantity": 15,
+     "elements": 15,
+     "kind": "fitting"
+    },
+    {
+     "code": "CP.12",
+     "description": "Ramal 45° PVC Ø63×40",
+     "unit": "u",
+     "quantity": 1,
+     "elements": 1,
+     "kind": "fitting"
+    },
+    {
+     "code": "CP.13",
+     "description": "Ramal 45° PVC Ø110",
+     "unit": "u",
+     "quantity": 1,
+     "elements": 1,
+     "kind": "fitting"
+    },
+    {
+     "code": "CP.14",
+     "description": "Ramal 45° PVC Ø110×63",
+     "unit": "u",
+     "quantity": 1,
+     "elements": 1,
+     "kind": "fitting"
+    },
+    {
+     "code": "CP.15",
+     "description": "Ramal 90° PVC Ø40",
+     "unit": "u",
+     "quantity": 2,
+     "elements": 2,
+     "kind": "fitting"
+    },
+    {
+     "code": "CP.16",
+     "description": "Ramal 90° PVC Ø110",
+     "unit": "u",
+     "quantity": 5,
+     "elements": 5,
+     "kind": "fitting"
+    },
+    {
+     "code": "CP.17",
+     "description": "Ramal 90° PVC Ø110×40",
+     "unit": "u",
+     "quantity": 2,
+     "elements": 2,
+     "kind": "fitting"
+    },
+    {
+     "code": "CP.18",
+     "description": "Ramal 90° PVC Ø110×63",
+     "unit": "u",
+     "quantity": 7,
+     "elements": 7,
+     "kind": "fitting"
+    },
+    {
+     "code": "CP.19",
+     "description": "Reducción PVC Ø50×40",
+     "unit": "u",
+     "quantity": 4,
+     "elements": 4,
+     "kind": "fitting"
+    },
+    {
+     "code": "CP.20",
+     "description": "Reducción PVC Ø63×40",
+     "unit": "u",
+     "quantity": 1,
+     "elements": 1,
+     "kind": "fitting"
+    },
+    {
+     "code": "CP.21",
+     "description": "Reducción PVC Ø110×63",
+     "unit": "u",
+     "quantity": 2,
+     "elements": 2,
+     "kind": "fitting"
+    }
+   ]
+  },
+  {
+   "key": "CS",
+   "name": "Cloacal secundario",
+   "items": [
+    {
+     "code": "CS.01",
+     "description": "Caño PVC cloacal secundario Ø40 mm (ref. Amanco Wavin)",
+     "unit": "m",
+     "quantity": 50.5,
+     "elements": 120,
+     "kind": "pipe"
+    },
+    {
+     "code": "CS.02",
+     "description": "Codo 45° PVC Ø40",
+     "unit": "u",
+     "quantity": 9,
+     "elements": 9,
+     "kind": "fitting"
+    },
+    {
+     "code": "CS.03",
+     "description": "Codo 90° PVC Ø40",
+     "unit": "u",
+     "quantity": 70,
+     "elements": 70,
+     "kind": "fitting"
+    },
+    {
+     "code": "CS.04",
+     "description": "Desagüe lineal con sifón 90 cm, PVC blanco",
+     "unit": "u",
+     "quantity": 4,
+     "elements": 4,
+     "kind": "fitting"
+    },
+    {
+     "code": "CS.05",
+     "description": "Pileta de patio de 3 entradas Ø63×40",
+     "unit": "u",
+     "quantity": 5,
+     "elements": 5,
+     "kind": "fitting"
+    },
+    {
+     "code": "CS.06",
+     "description": "Ramal 45° PVC Ø40",
+     "unit": "u",
+     "quantity": 6,
+     "elements": 6,
+     "kind": "fitting"
+    },
+    {
+     "code": "CS.07",
+     "description": "Ramal 90° PVC Ø40",
+     "unit": "u",
+     "quantity": 10,
+     "elements": 10,
+     "kind": "fitting"
+    },
+    {
+     "code": "CS.08",
+     "description": "Receptáculo de ducha Ø40",
+     "unit": "u",
+     "quantity": 6,
+     "elements": 6,
+     "kind": "fitting"
+    }
+   ]
+  },
+  {
+   "key": "EQ",
+   "name": "Artefactos y equipos",
+   "items": [
+    {
+     "code": "EQ.01",
+     "description": "Bacha de vanitorio: conexión (la bacha se provee con Mesadas)",
+     "unit": "u",
+     "quantity": 9,
+     "elements": 9,
+     "kind": "equipment",
+     "materialOptional": true
+    },
+    {
+     "code": "EQ.02",
+     "description": "Bidet: conexión y colocación",
+     "unit": "u",
+     "quantity": 7,
+     "elements": 7,
+     "kind": "equipment",
+     "materialOptional": true
+    },
+    {
+     "code": "EQ.03",
+     "description": "Bomba centrífuga (en el modelo, Grundfos NK; función y modelo a confirmar)",
+     "unit": "u",
+     "quantity": 1,
+     "elements": 1,
+     "kind": "equipment"
+    },
+    {
+     "code": "EQ.04",
+     "description": "Columna de ducha: conexión y colocación",
+     "unit": "u",
+     "quantity": 1,
+     "elements": 1,
+     "kind": "equipment",
+     "materialOptional": true
+    },
+    {
+     "code": "EQ.05",
+     "description": "Flor de ducha de techo o pared: conexión y colocación",
+     "unit": "u",
+     "quantity": 4,
+     "elements": 4,
+     "kind": "equipment",
+     "materialOptional": true
+    },
+    {
+     "code": "EQ.06",
+     "description": "Inodoro: conexión y colocación",
+     "unit": "u",
+     "quantity": 7,
+     "elements": 7,
+     "kind": "equipment",
+     "materialOptional": true
+    },
+    {
+     "code": "EQ.07",
+     "description": "Pileta de cocina / lavadero: conexión",
+     "unit": "u",
+     "quantity": 3,
+     "elements": 3,
+     "kind": "equipment",
+     "materialOptional": true
+    }
+   ]
+  },
+  {
+   "key": "VM",
+   "name": "Sistema VM (según modelo, a confirmar)",
+   "items": [
+    {
+     "code": "VM.01",
+     "description": "Caño Ø25 mm sistema VM (material según modelo: acero al carbono; a confirmar)",
+     "unit": "m",
+     "quantity": 9.8,
+     "elements": 13,
+     "kind": "pipe"
+    },
+    {
+     "code": "VM.02",
+     "description": "Caño Ø20 mm sistema VM (material según modelo: acero al carbono; a confirmar)",
+     "unit": "m",
+     "quantity": 2.4,
+     "elements": 3,
+     "kind": "pipe"
+    },
+    {
+     "code": "VM.03",
+     "description": "Codo 90° PPR Ø20",
+     "unit": "u",
+     "quantity": 2,
+     "elements": 2,
+     "kind": "fitting"
+    },
+    {
+     "code": "VM.04",
+     "description": "Codo 90° PPR Ø25",
+     "unit": "u",
+     "quantity": 9,
+     "elements": 9,
+     "kind": "fitting"
+    },
+    {
+     "code": "VM.05",
+     "description": "Tee PPR Ø32×25",
+     "unit": "u",
+     "quantity": 3,
+     "elements": 3,
+     "kind": "fitting"
+    },
+    {
+     "code": "VM.06",
+     "description": "Tee PPR Ø32×25×20",
+     "unit": "u",
+     "quantity": 1,
+     "elements": 1,
+     "kind": "fitting"
+    },
+    {
+     "code": "VM.07",
+     "description": "Válvula metálica 3/4\" (ref. Amanco Premium)",
+     "unit": "u",
+     "quantity": 1,
+     "elements": 1,
+     "kind": "fitting"
+    }
+   ]
+  },
+  {
+   "key": "RV",
+   "name": "Clasificación por revisar en el modelo",
+   "items": [
+    {
+     "code": "RV.01",
+     "description": "Boca de acceso PVC Ø63×40 con tapa ciega 10×10 cm",
+     "unit": "u",
+     "quantity": 1,
+     "elements": 1,
+     "kind": "fitting"
+    },
+    {
+     "code": "RV.02",
+     "description": "Desagüe lineal con sifón 90 cm, PVC blanco",
+     "unit": "u",
+     "quantity": 1,
+     "elements": 1,
+     "kind": "fitting"
+    },
+    {
+     "code": "RV.03",
+     "description": "Pileta de patio de 3 entradas Ø63×40",
+     "unit": "u",
+     "quantity": 1,
+     "elements": 1,
+     "kind": "fitting"
+    },
+    {
+     "code": "RV.04",
+     "description": "Receptáculo de ducha Ø40",
+     "unit": "u",
+     "quantity": 3,
+     "elements": 3,
+     "kind": "fitting"
+    },
+    {
+     "code": "RV.05",
+     "description": "Reducción PVC Ø63×40",
+     "unit": "u",
+     "quantity": 1,
+     "elements": 1,
+     "kind": "fitting"
+    },
+    {
+     "code": "RV.06",
+     "description": "Válvula metálica 3/4\" (ref. Amanco Premium)",
+     "unit": "u",
+     "quantity": 2,
+     "elements": 2,
+     "kind": "fitting"
+    }
+   ]
+  }
+ ],
+ "locales": {
+  "Compartidos / ambiente por confirmar": {
+   "Bidet": 1,
+   "Columna de ducha": 1,
+   "Bomba centrífuga": 1,
+   "Bacha de vanitorio": 1,
+   "Pileta de cocina / lavadero": 1,
+   "Inodoro": 1
+  },
+  "Toilette PA": {
+   "Bacha de vanitorio": 1,
+   "Inodoro": 1,
+   "Bidet": 1
+  },
+  "Baño PA": {
+   "Inodoro": 1,
+   "Bidet": 1,
+   "Bacha de vanitorio": 2
+  },
+  "Baño principal": {
+   "Inodoro": 1,
+   "Bidet": 1,
+   "Bacha de vanitorio": 2,
+   "Flor de ducha de techo o pared": 1
+  },
+  "Baño invitados": {
+   "Inodoro": 3,
+   "Bacha de vanitorio": 3,
+   "Bidet": 3,
+   "Flor de ducha de techo o pared": 3
+  },
+  "Lavadero": {
+   "Pileta de cocina / lavadero": 1
+  },
+  "Distribución general / sin detalle de ambiente": {
+   "Pileta de cocina / lavadero": 1
+  }
+ },
+ "transitions": [
+  "AF · Caño PPR termofusión agua fría Ø76 mm (ref. Amanco Wavin Fusión PN12,5): 0,07 m en 1 tramo(s)",
+  "AC · Caño PPR termofusión agua caliente Ø25 mm (ref. Amanco Wavin Fusión; indicar PN): 0,06 m en 2 tramo(s)",
+  "CP · Caño PVC cloacal Ø50 mm (ref. Amanco Wavin): 0,08 m en 3 tramo(s)",
+  "CS · Caño PVC cloacal secundario Ø50 mm (ref. Amanco Wavin): 0,10 m en 3 tramo(s)"
+ ],
+ "excluded": [
+  "Canaletas, limahoyas y bajadas pluviales: se cotizan en Cubierta.",
+  "Desagüe pluvial en terreno: no está modelado.",
+  "Bachas de vanitorio: se proveen con Mesadas.",
+  "Calefacción por piso radiante: Climatización. Gas: rubro Gas.",
+  "Canaleteado, amurado y reparación de muros y pisos: Albañilería.",
+  "Tanques de reserva, conexión a red de agua y cloaca o sistema propio, y producción de agua caliente: no están modelados; se definen aparte."
+ ],
+ "documents": [
+  {
+   "name": "Planos de instalación sanitaria (16 láminas)",
+   "url": "/casa-angel/Documentacion-Sanitarias-original.pdf"
+  },
+  {
+   "name": "Plantas generales R12",
+   "url": "/casa-angel/r12/Casa-Angel-plantas-generales-R12.pdf"
+  }
+ ],
+ "count": 96
+}
