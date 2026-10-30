@@ -142,7 +142,7 @@
             {
               "label": "AB-PA-09 largo",
               "values_m": [
-                4.0
+                4
               ],
               "associative": false
             },
@@ -764,7 +764,7 @@
             {
               "label": "AB-PB-28 largo",
               "values_m": [
-                4.0
+                4
               ],
               "associative": false
             },
@@ -799,7 +799,7 @@
             {
               "label": "AB-PB-33 largo",
               "values_m": [
-                4.0
+                4
               ],
               "associative": false
             },
@@ -1460,9 +1460,9 @@
               "label": "AB-PA-15 · TM-01 · 3,90 × 3,30 · e 10",
               "box": [
                 0.5655,
-                0.0,
+                0,
                 0.6857,
-                1.0
+                1
               ]
             }
           ]
@@ -1657,9 +1657,9 @@
               "label": "AB-PB-24 · TM-02 · 2,80 × 2,80 · e 20",
               "box": [
                 0.5426,
-                0.0,
+                0,
                 0.6739,
-                1.0
+                1
               ]
             }
           ]
@@ -1987,9 +1987,9 @@
               "label": "AB-PB-08 · TM-03 · 0,55 × 1,10 · e 5",
               "box": [
                 0.546,
-                0.0,
+                0,
                 0.604,
-                1.0
+                1
               ]
             }
           ]
@@ -2023,7 +2023,7 @@
             {
               "label": "AB-PB-08 arranque + alto",
               "values_m": [
-                1.0,
+                1,
                 0.1
               ],
               "associative": false
@@ -2038,7 +2038,7 @@
                 0.3118,
                 0.801,
                 0.4761,
-                1.0
+                1
               ]
             }
           ]
@@ -2214,9 +2214,9 @@
               "label": "AB-PB-03 · TM-04 · 2,74 × 2,70 · e 10",
               "box": [
                 0.5874,
-                0.0,
+                0,
                 0.6794,
-                1.0
+                1
               ]
             }
           ]
@@ -2460,9 +2460,9 @@
               "label": "AB-PB-15 · TM-05 · 5,30 × 2,80 · e 15",
               "box": [
                 0.5616,
-                0.0,
+                0,
                 0.6935,
-                1.0
+                1
               ]
             }
           ]
@@ -2602,7 +2602,7 @@
             {
               "label": "AB-PA-09 largo",
               "values_m": [
-                4.0
+                4
               ],
               "associative": false
             },
@@ -2717,9 +2717,9 @@
               "label": "AB-PA-09 · TM-06 · 4,00 × 2,50 · e 10",
               "box": [
                 0.5369,
-                0.0,
+                0,
                 0.651,
-                1.0
+                1
               ]
             }
           ]
@@ -2867,7 +2867,7 @@
             {
               "label": "AB-PB-28 largo",
               "values_m": [
-                4.0
+                4
               ],
               "associative": false
             },
@@ -3030,9 +3030,9 @@
               "label": "AB-PB-27 · TM-07 · 5,20 × 2,80 · e 9,5",
               "box": [
                 0.5664,
-                0.0,
+                0,
                 0.6507,
-                1.0
+                1
               ]
             }
           ]
@@ -3179,7 +3179,7 @@
             {
               "label": "AB-PB-33 largo",
               "values_m": [
-                4.0
+                4
               ],
               "associative": false
             },
@@ -3290,9 +3290,9 @@
               "label": "AB-PB-35 · TM-08 · 4,98 × 3,00 · e 12",
               "box": [
                 0.5527,
-                0.0,
+                0,
                 0.6566,
-                1.0
+                1
               ]
             }
           ]
@@ -3516,9 +3516,9 @@
               "label": "AB-PA-07 · TM-09 · 1,35 × 1,00 · e 5",
               "box": [
                 0.577,
-                0.0,
+                0,
                 0.6383,
-                1.0
+                1
               ]
             }
           ]
@@ -3552,7 +3552,7 @@
             {
               "label": "AB-PA-07 arranque + alto",
               "values_m": [
-                1.0
+                1
               ],
               "associative": false
             }
@@ -3877,7 +3877,7 @@
       "code": "TM-01",
       "kind": "TM",
       "label": "TM-01 · mampostería interior 10 cm · 77,11 m²",
-      "status": "Composición genérica · Capas: pintura (genérico) 10 cm",
+      "status": "Categoría: Interior–interior · Composición genérica · Capas: pintura (genérico) 10 cm",
       "area_m2": 77.11,
       "length_m": 27.55,
       "volume_m3": 7.668,
@@ -3895,7 +3895,7 @@
       "code": "TM-02",
       "kind": "TM",
       "label": "TM-02 · mampostería interior 20 cm · 5,16 m²",
-      "status": "Composición genérica · Capas: pintura (genérico) 20 cm",
+      "status": "Categoría: Interior–interior · Composición genérica · Capas: pintura (genérico) 20 cm",
       "area_m2": 5.16,
       "length_m": 2.8,
       "volume_m3": 0.716,
@@ -3913,7 +3913,7 @@
       "code": "TM-03",
       "kind": "TM",
       "label": "TM-03 · bloque de hormigón 5 cm · 3,08 m²",
-      "status": "Capas: bloque de hormigón 5 cm",
+      "status": "Categoría: Interior–interior · Capas: bloque de hormigón 5 cm",
       "area_m2": 3.08,
       "length_m": 4.4,
       "volume_m3": 0.154,
@@ -3931,7 +3931,7 @@
       "code": "TM-04",
       "kind": "TM",
       "label": "TM-04 · tabique bajo escalera (hormigón 10 cm) · 8,81 m²",
-      "status": "Capas: hormigón 10 cm",
+      "status": "Categoría: H° visto · Capas: hormigón 10 cm",
       "area_m2": 8.81,
       "length_m": 6.94,
       "volume_m3": 0.881,
@@ -3949,7 +3949,7 @@
       "code": "TM-05",
       "kind": "TM",
       "label": "TM-05 · muro de fachada (eje) · 34,59 m²",
-      "status": "Capas: pintura (genérico) 14 / hormigón 1 cm",
+      "status": "Categoría: Exterior–interior · Capas: pintura (genérico) 14 / hormigón 1 cm",
       "area_m2": 34.59,
       "length_m": 16.89,
       "volume_m3": 5.114,
@@ -3972,7 +3972,7 @@
       "code": "TM-06",
       "kind": "TM",
       "label": "TM-06 · muro de fachada principal (hormigón visto 8 cm) · 47,37 m²",
-      "status": "Capas: pintura (genérico) 2 / hormigón de fachada 8 cm",
+      "status": "Categoría: H° visto · Capas: pintura (genérico) 2 / hormigón de fachada 8 cm",
       "area_m2": 47.37,
       "length_m": 15.7,
       "volume_m3": 4.701,
@@ -3995,7 +3995,7 @@
       "code": "TM-07",
       "kind": "TM",
       "label": "TM-07 · Durlock W111: 1 placa ST por cara, montante 70 · 54,16 m²",
-      "status": "Capas: placa Knauf ST 12,5 1,2 / montantes y soleras 70 7 / placa Knauf ST 12,5 1,2 cm",
+      "status": "Categoría: Interior–interior · Capas: placa Knauf ST 12,5 1,2 / montantes y soleras 70 7 / placa Knauf ST 12,5 1,2 cm",
       "area_m2": 54.16,
       "length_m": 29.7,
       "volume_m3": 5.145,
@@ -4023,7 +4023,7 @@
       "code": "TM-08",
       "kind": "TM",
       "label": "TM-08 · Durlock W112: 2 placas por cara (ST / RH), montante 70 · 52,72 m²",
-      "status": "Capas: placa Knauf ST 12,5 1,2 / placa Knauf ST 12,5 1,2 / montantes y soleras 70 7 / placa Knauf RH 12,5 1,2 / placa Knauf RH 12,5 1,2 cm",
+      "status": "Categoría: Interior–interior · Capas: placa Knauf ST 12,5 1,2 / placa Knauf ST 12,5 1,2 / montantes y soleras 70 7 / placa Knauf RH 12,5 1,2 / placa Knauf RH 12,5 1,2 cm",
       "area_m2": 52.72,
       "length_m": 21.46,
       "volume_m3": 5.818,
@@ -4061,7 +4061,7 @@
       "code": "TM-09",
       "kind": "TM",
       "label": "TM-09 · revestimiento de chimenea (piedra 5 cm) · 2,50 m²",
-      "status": "Capas: piedra 5 cm",
+      "status": "Categoría: Otros (no es muro) · Capas: piedra 5 cm",
       "area_m2": 2.5,
       "length_m": 2.7,
       "volume_m3": 0.125,
@@ -4079,7 +4079,7 @@
       "code": "TM-10",
       "kind": "TM",
       "label": "TM-10 · cierre de cielorraso (2 cm) · 7,06 m²",
-      "status": "Composición genérica · Capas: genérico blanco 2 cm",
+      "status": "Categoría: Otros (no es muro) · Composición genérica · Capas: genérico blanco 2 cm",
       "area_m2": 7.06,
       "length_m": 26.41,
       "volume_m3": 0.141,
@@ -4102,7 +4102,7 @@
       "typeCode": "TM-10",
       "level": "01. Planta Alta",
       "length_m": 2.4,
-      "height_m": 3.0,
+      "height_m": 3,
       "area_m2": 0.56,
       "volume_m3": 0.011
     },
@@ -4115,7 +4115,7 @@
       "typeCode": "TM-10",
       "level": "01. Planta Alta",
       "length_m": 1.587,
-      "height_m": 3.0,
+      "height_m": 3,
       "area_m2": 0.39,
       "volume_m3": 0.008
     },
@@ -4167,7 +4167,7 @@
       "typeCode": "TM-09",
       "level": "01. Planta Alta",
       "length_m": 0.675,
-      "height_m": 1.0,
+      "height_m": 1,
       "area_m2": 0.6,
       "volume_m3": 0.03
     },
@@ -4180,7 +4180,7 @@
       "typeCode": "TM-09",
       "level": "01. Planta Alta",
       "length_m": 1.35,
-      "height_m": 1.0,
+      "height_m": 1,
       "area_m2": 1.35,
       "volume_m3": 0.068
     },
@@ -4193,7 +4193,7 @@
       "typeCode": "TM-09",
       "level": "01. Planta Alta",
       "length_m": 0.675,
-      "height_m": 1.0,
+      "height_m": 1,
       "area_m2": 0.55,
       "volume_m3": 0.028
     },
@@ -4205,7 +4205,7 @@
       "elementId": "623954",
       "typeCode": "TM-06",
       "level": "01. Planta Alta",
-      "length_m": 4.0,
+      "length_m": 4,
       "height_m": 2.5,
       "area_m2": 12.06,
       "volume_m3": 1.196
@@ -4310,7 +4310,7 @@
       "typeCode": "TM-01",
       "level": "01. Planta Alta",
       "length_m": 2.8,
-      "height_m": 3.0,
+      "height_m": 3,
       "area_m2": 3.83,
       "volume_m3": 0.357
     },
@@ -4415,7 +4415,7 @@
       "level": "00. Planta Baja",
       "length_m": 2.45,
       "height_m": 1.25,
-      "area_m2": 3.0,
+      "area_m2": 3,
       "volume_m3": 0.3
     },
     {
@@ -4596,7 +4596,7 @@
       "typeCode": "TM-05",
       "level": "00. Planta Baja",
       "length_m": 3.895,
-      "height_m": 3.0,
+      "height_m": 3,
       "area_m2": 7.75,
       "volume_m3": 1.162
     },
@@ -4609,7 +4609,7 @@
       "typeCode": "TM-05",
       "level": "00. Planta Baja",
       "length_m": 3.799,
-      "height_m": 3.0,
+      "height_m": 3,
       "area_m2": 7.48,
       "volume_m3": 1.122
     },
@@ -4622,7 +4622,7 @@
       "typeCode": "TM-05",
       "level": "00. Planta Baja",
       "length_m": 3.9,
-      "height_m": 3.0,
+      "height_m": 3,
       "area_m2": 7.48,
       "volume_m3": 1.122
     },
@@ -4635,7 +4635,7 @@
       "typeCode": "TM-01",
       "level": "00. Planta Baja",
       "length_m": 2.8,
-      "height_m": 3.0,
+      "height_m": 3,
       "area_m2": 3.83,
       "volume_m3": 0.383
     },
@@ -4648,7 +4648,7 @@
       "typeCode": "TM-01",
       "level": "005. Acceso ppal",
       "length_m": 2.049,
-      "height_m": 5.0,
+      "height_m": 5,
       "area_m2": 11.13,
       "volume_m3": 1.108
     },
@@ -4661,8 +4661,8 @@
       "typeCode": "TM-01",
       "level": "005. Acceso ppal",
       "length_m": 1.9,
-      "height_m": 5.0,
-      "area_m2": 8.0,
+      "height_m": 5,
+      "area_m2": 8,
       "volume_m3": 0.8
     },
     {
@@ -4726,7 +4726,7 @@
       "typeCode": "TM-07",
       "level": "00. Planta Baja",
       "length_m": 2.8,
-      "height_m": 3.0,
+      "height_m": 3,
       "area_m2": 7.28,
       "volume_m3": 0.692
     },
@@ -4751,7 +4751,7 @@
       "elementId": "645730",
       "typeCode": "TM-07",
       "level": "00. Planta Baja",
-      "length_m": 4.0,
+      "length_m": 4,
       "height_m": 2.8,
       "area_m2": 7.04,
       "volume_m3": 0.669
@@ -4816,7 +4816,7 @@
       "elementId": "645731",
       "typeCode": "TM-08",
       "level": "00. Planta Baja",
-      "length_m": 4.0,
+      "length_m": 4,
       "height_m": 2.8,
       "area_m2": 8.52,
       "volume_m3": 0.854
@@ -4843,7 +4843,7 @@
       "typeCode": "TM-08",
       "level": "00. Planta Baja",
       "length_m": 4.982,
-      "height_m": 3.0,
+      "height_m": 3,
       "area_m2": 11.53,
       "volume_m3": 1.384
     },
@@ -4856,8 +4856,8 @@
       "typeCode": "TM-01",
       "level": "02. Planta Entrepiso",
       "length_m": 2.8,
-      "height_m": 3.0,
-      "area_m2": 2.0,
+      "height_m": 3,
+      "area_m2": 2,
       "volume_m3": 0.2
     },
     {
@@ -4876,22 +4876,28 @@
   ],
   "totals": [
     {
-      "label": "Mampostería y tabiques interiores",
-      "value": 94.16,
+      "label": "Muros de H° visto",
+      "value": 56.18,
       "unit": "m²",
-      "detail": "TM-01 a TM-04"
+      "detail": "TM-04, TM-06 · hormigón a la vista"
     },
     {
-      "label": "Durlock (W111 + W112)",
-      "value": 106.88,
+      "label": "Muros exterior–interior",
+      "value": 34.59,
       "unit": "m²",
-      "detail": "placas Knauf ST/RH + montantes 70"
+      "detail": "TM-05 · tipo constructivo a definir"
     },
     {
-      "label": "Muros de fachada",
-      "value": 81.96,
+      "label": "Muros interior–interior",
+      "value": 192.23,
       "unit": "m²",
-      "detail": "TM-05, TM-06"
+      "detail": "TM-01, TM-02, TM-03, TM-07, TM-08 · tipo constructivo a definir"
+    },
+    {
+      "label": "Chimenea y cierres de cielorraso",
+      "value": 9.56,
+      "unit": "m²",
+      "detail": "TM-09, TM-10 · piedra de chimenea + cierres 2 cm"
     },
     {
       "label": "Muros y tabiques (todos)",
@@ -4901,6 +4907,38 @@
     }
   ],
   "quantities": [
+    {
+      "label": "Muros de H° visto",
+      "group": "Por categoría",
+      "count": 7,
+      "value": 56.18,
+      "unit": "m²",
+      "detail": "TM-04, TM-06"
+    },
+    {
+      "label": "Muros exterior–interior",
+      "group": "Por categoría",
+      "count": 4,
+      "value": 34.59,
+      "unit": "m²",
+      "detail": "TM-05"
+    },
+    {
+      "label": "Muros interior–interior",
+      "group": "Por categoría",
+      "count": 38,
+      "value": 192.23,
+      "unit": "m²",
+      "detail": "TM-01, TM-02, TM-03, TM-07, TM-08"
+    },
+    {
+      "label": "Chimenea y cierres de cielorraso",
+      "group": "Por categoría",
+      "count": 11,
+      "value": 9.56,
+      "unit": "m²",
+      "detail": "TM-09, TM-10"
+    },
     {
       "label": "TM-01 · Muro Interior 10cm",
       "group": "Tipos de muro",
@@ -5014,40 +5052,48 @@
   ],
   "decisions": [
     "Muros de hormigón y encadenados se documentan en Estructura; muros cortina, portón y \"Puerta Arco\" en Aberturas.",
-    "Códigos TM/AB solo como anotación (no escritos en Mark)."
+    "Códigos TM/AB solo como anotación (no escritos en Mark).",
+    "Muros en 3 categorías: H° visto (TM-04, TM-06), exterior–interior (TM-05) e interior–interior (TM-01, 02, 03, 07, 08). TM-09 (chimenea) y TM-10 (cierre de cielorraso) no son muros de albañilería. Categoría por tipo; falta verificar muro por muro."
   ],
   "questions": [
-    "¿De qué son los muros interiores de 10 y 20 cm (ladrillo hueco, común, bloque)? Hoy son una capa genérica de \"pintura\".",
+    "¿Qué tipo constructivo usamos para los muros exterior–interior y los interior–interior (ladrillo hueco, ladrillo común, doble muro, steel frame, Durlock)? Ver comparación en las notas del rubro.",
     "¿Qué revoques y terminaciones llevan (grueso + fino, yeso, enduido)?",
-    "¿Los muros de fachada llevan aislación térmica?",
-    "¿Escribimos los códigos TM/AB en el modelo (Mark)?"
+    "¿Los muros de fachada llevan aislación térmica?"
   ],
   "budget": {
-    "revision": "R27",
-    "note": "Partidas a cotizar sin solapes; informative = referencia (no se suma).",
+    "revision": "R28",
+    "note": "Partidas por categoría de muro; el tipo constructivo de exterior–interior e interior–interior queda a elegir. informative = referencia (no se suma).",
     "lines": [
       {
-        "id": "mamposteria-interior",
-        "label": "Mampostería y tabiques interiores",
-        "value": 94.16,
+        "id": "muros-hormigon-visto",
+        "label": "Muros de H° visto",
+        "value": 56.18,
         "unit": "m²",
-        "detail": "TM-01 a TM-04",
+        "detail": "TM-04, TM-06 · hormigón a la vista",
         "informative": false
       },
       {
-        "id": "durlock",
-        "label": "Durlock (W111 + W112)",
-        "value": 106.88,
+        "id": "muros-exterior-interior",
+        "label": "Muros exterior–interior",
+        "value": 34.59,
         "unit": "m²",
-        "detail": "placas Knauf ST/RH + montantes 70",
+        "detail": "TM-05 · tipo constructivo a definir",
         "informative": false
       },
       {
-        "id": "muros-fachada",
-        "label": "Muros de fachada",
-        "value": 81.96,
+        "id": "muros-interior-interior",
+        "label": "Muros interior–interior",
+        "value": 192.23,
         "unit": "m²",
-        "detail": "TM-05, TM-06",
+        "detail": "TM-01, TM-02, TM-03, TM-07, TM-08 · tipo constructivo a definir",
+        "informative": false
+      },
+      {
+        "id": "chimenea-cierres",
+        "label": "Chimenea y cierres de cielorraso",
+        "value": 9.56,
+        "unit": "m²",
+        "detail": "TM-09, TM-10 · piedra de chimenea + cierres 2 cm",
         "informative": false
       },
       {
