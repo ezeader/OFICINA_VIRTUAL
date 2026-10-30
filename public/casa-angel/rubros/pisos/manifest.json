@@ -3917,10 +3917,10 @@
   "decisions": [
     "Códigos TP/PI/ZO solo como anotación (no escritos en Mark).",
     "Cada tipo de piso del modelo es un TP con ficha y corte de paquete a 1:5.",
-    "Locales húmedos con piso de porcelanato: Baños A, B y C Inv., Baño ppal, Toilette Servicio, Lavadero (PB), Baño PA y Toilette PA. Los demás locales mantienen su piso. Pendiente: cambiar el tipo de piso en el modelo."
+    "Lógica de pisos por categoría antes que por material: A húmedo privado, B húmedo público, C seco privado, D seco público, E exterior. Locales húmedos con porcelanato (A y B con tipos distintos); material y modelo concretos a definir sobre plantas coloreadas por categoría."
   ],
   "questions": [
-    "¿El Hall está bien sobre \"Base Acceso\" (hormigón 20 cm + 1 m de césped)? ¿Cuál es su piso terminado?",
+    "¿Confirmás la clasificación de cada local en A–E? (propuesta en el chat del rubro)",
     "¿Qué zócalo lleva cada local (material y altura)? Solo hay 5 tramos modelados.",
     "¿Escribimos los códigos TP/PI en el modelo (Mark)?"
   ],
