@@ -20,6 +20,8 @@ const blankSupplier=():QuoteSupplier=>({id:uid(),name:'',kind:'materiales',group
 const blankQuote=(supplier=''):Quote=>({id:uid(),supplier,date:today(),reference:'',currency:'ARS',taxesIncluded:true,scope:'materiales + mano de obra',validUntil:'',delivery:'',zone:'',zoneViable:'a confirmar',freight:0,lines:{}});
 
 export default function QuoteDesk({value,disabled,onSave}:{value?:Record<string,RubroQuotes>;disabled:boolean;onSave:(v:Record<string,RubroQuotes>,text:string)=>Promise<boolean>}){
+ // #presupuesto/<proyecto>/cotizaciones/tutorial abre la guía directamente.
+ const [guide,setGuide]=useState<number|null>(()=>typeof window!=='undefined'&&window.location.hash.endsWith('/tutorial')?0:null);
  const [rubro,setRubro]=useState('sanitaria'),[tab,setTab]=useState<typeof TABS[number]>('Cómputo');
  const [loaded,setLoaded]=useState<Record<string,QuoteSheet|{error:string}>>({});
  const info=QUOTE_RUBROS.find(r=>r.key===rubro);
@@ -39,8 +41,10 @@ export default function QuoteDesk({value,disabled,onSave}:{value?:Record<string,
    <span><b>{aptos.length}</b> proveedores aptos · {data.suppliers.filter(s=>s.apto==='pendiente').length} esperan tu OK</span>
    <span><b>{data.suppliers.filter(s=>s.requestedAt).length}</b> pedidos enviados</span>
    {fu.searchMore&&<span className="qdAlert">{fu.late.length} sin respuesta hace {FOLLOW_UP_DAYS}+ días: sumar proveedores</span>}
+   <button className="qdHelp" onClick={()=>{setGuide(0);setTab(GUIDE[0].tab)}}>Cómo se usa</button>
   </div>
-  <div className="qdTabs" aria-label="Cotización">{TABS.map(t=><button key={t} aria-pressed={tab===t} className={tab===t?'active':''} onClick={()=>setTab(t)}>{t}</button>)}</div>
+  {guide!==null&&<QuoteGuide step={guide} onStep={n=>{setGuide(n);setTab(GUIDE[n].tab)}} onClose={()=>setGuide(null)}/>}
+  <div className="qdTabs" aria-label="Cotización">{TABS.map(t=><button key={t} aria-pressed={tab===t} className={tab===t?'active':''} onClick={()=>{setTab(t);setGuide(null)}}>{t}</button>)}</div>
   {tab==='Cómputo'&&<Computo sheet={sheet}/>}
   {tab==='Proveedores'&&<Suppliers data={data} disabled={disabled} save={save}/>}
   {tab==='Mails'&&<Mails sheet={sheet} data={data} disabled={disabled} save={save}/>}
@@ -48,6 +52,31 @@ export default function QuoteDesk({value,disabled,onSave}:{value?:Record<string,
   {tab==='Negociaciones'&&<Negotiations sheet={sheet} data={data} disabled={disabled} save={save}/>}
   </>}
  </section>;
+}
+
+const GUIDE:{tab:typeof TABS[number];title:string;goal:string;steps:string[];result:string;note:string}[]=[
+ {tab:'Cómputo',title:'1. Qué se cotiza',goal:'El paquete que recibe cada proveedor: el Excel de cómputo y los planos en PDF.',
+  steps:['Abrí cada sistema (agua fría, agua caliente, cloacal, artefactos…) para ver sus ítems y cantidades.','Descargá “Excel para cotizar”: es el archivo que se adjunta. El proveedor completa solo las celdas amarillas: material y mano de obra por separado, y las condiciones al pie.','Los dos PDF de la derecha (planos sanitarios y plantas generales) van adjuntos junto al Excel.','Al pie, “No incluido en este pedido” dice qué se cotiza en otros rubros o falta definir.'],
+  result:'Un único listado: cada caño, accesorio y artefacto aparece una sola vez, así nadie cotiza dos veces lo mismo.',note:'Las cantidades salen del modelo R13 (longitud de eje, sin desperdicio). Si el modelo cambia, se regenera el Excel.'},
+ {tab:'Proveedores',title:'2. A quién pedir precio',goal:'Elegir los proveedores aptos de la lista investigada.',
+  steps:['Revisá cada fila: tipo (materiales o mano de obra), contacto, ubicación, zona donde trabaja y la nota con dudas. “fuente ↗” abre de dónde salió el dato.','Marcá “Apto” a los que querés pedirles presupuesto, “No” a los descartados. “?” queda pendiente.','“Agregar proveedor” suma uno que ya conozcas; “Editar” corrige sus datos.','“Importar listado” sirve cuando te paso una lista nueva (por ejemplo, si hay que buscar más).'],
+  result:'La lista de aptos, que define a quién se le arma el mail.',note:'Los datos son públicos y algunos están marcados como dudosos: confirmalos antes de enviar. Se guardan en tu oficina, no en el código.'},
+ {tab:'Mails',title:'3. Enviar el pedido',goal:'Un borrador por proveedor apto, listo para copiar.',
+  steps:['Elegí la fecha límite de respuesta (por defecto, una semana).','Leé el borrador de cada proveedor: pide material y mano de obra por separado, validez, plazos y zona. Cambia según sea de materiales o de mano de obra.','“Copiar texto” y pegalo en tu mail o WhatsApp. Adjuntá el Excel y los dos PDF de la lista “Adjuntos”.','Después de enviarlo, tocá “Marcar enviado”: desde ese día la oficina cuenta los días sin respuesta.'],
+  result:'Pedidos enviados y registrados con fecha.',note:'La oficina no envía nada sola. Si a los 5 días hay pedidos sin respuesta y menos de 3 presupuestos, aparece un aviso arriba: avisame y busco más proveedores.'},
+ {tab:'Comparación',title:'4. Cargar y comparar lo que llega',goal:'Cada presupuesto se mide contra el mismo cómputo.',
+  steps:['Tocá “Cargar presupuesto recibido”, elegí el proveedor y completá referencia, fecha y vigencia.','Si devolvió nuestro Excel, “Leer la planilla devuelta” carga solos los precios, la moneda, el IVA, los plazos y la zona.','Si mandó otro formato (PDF, foto), cargá los precios en “Precios por ítem”, o la mano de obra en un solo número en “Mano de obra global”.','Indicá el alcance (solo materiales o materiales + mano de obra) y si la zona es viable para Pinamar Norte. Guardá.','Arriba, hasta 3 tarjetas lado a lado: total, material, mano de obra, flete, ítems completos y los que faltan. La tabla de abajo muestra ítem por ítem; “solo ítems con faltantes” filtra lo que falta cotizar.'],
+  result:'Ves quién es más barato y quién cotizó todo, sin mezclar presupuestos de solo materiales con los completos.',note:'Si un proveedor manda una versión nueva, cargala como presupuesto nuevo: se compara la última y las anteriores quedan en el historial.'},
+ {tab:'Negociaciones',title:'5. Negociar hasta cerrar',goal:'La conversación con cada proveedor y cómo se mueve el número.',
+  steps:['Elegí el proveedor arriba a la derecha.','Registrá cada intercambio: quién habló (proveedor o Ader), el tipo (consulta, pregunta de mano de obra o materiales, marcas, contraoferta, acuerdo) y el detalle.','Si cambia el precio, poné el monto: se suma a “Evolución del número” con la diferencia en $ y %.','Las consultas quedan abiertas hasta que tocás “Marcar resuelta”.'],
+  result:'La historia completa de cada negociación, del primer presupuesto al número final.',note:'Nada de esto se envía al proveedor: es tu registro.'},
+];
+function QuoteGuide({step,onStep,onClose}:{step:number;onStep:(n:number)=>void;onClose:()=>void}){
+ const s=GUIDE[step],last=step===GUIDE.length-1;
+ return <aside className="pcGuide" aria-label="Tutorial de Presupuestos"><div className="pcSectionHead"><div><small>TUTORIAL · PASO {step+1} DE {GUIDE.length} · pestaña {s.tab}</small><h2>{s.title}</h2><p>{s.goal}</p></div><button onClick={onClose}>Cerrar guía</button></div>
+  <ol>{s.steps.map(t=><li key={t}>{t}</li>)}</ol><p><strong>Qué obtenés: </strong>{s.result}</p><p className="pcHint">{s.note}</p>
+  <div className="pcActions"><button disabled={step===0} onClick={()=>onStep(step-1)}>← Anterior</button><span>{step+1} / {GUIDE.length}</span><button className="primary" onClick={()=>last?onClose():onStep(step+1)}>{last?'Terminar tutorial':'Siguiente paso →'}</button></div>
+  <small>La guía solo cambia de pestaña: no guarda ni envía nada. La pestaña de cada paso queda abierta debajo.</small></aside>;
 }
 
 function Computo({sheet}:{sheet:QuoteSheet}){

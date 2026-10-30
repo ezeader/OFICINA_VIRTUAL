@@ -18,3 +18,4 @@
 .qdNego{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(260px,1fr);gap:16px;align-items:start}@media (max-width:820px){.qdNego{grid-template-columns:1fr}}
 .qdLog{list-style:none;padding:0;display:grid;gap:8px}.qdLog li{border:1px solid var(--pc-line);padding:10px 12px;background:#fff;margin-right:12%}.qdLog li.qdAder{margin:0 0 0 12%;background:#f2f1eb}.qdLog p{margin:4px 0}
 .qdSteps{padding-left:18px}.qdSteps li{margin-bottom:8px}.qdSteps b{display:block}.qdSteps em{font-style:normal;font-size:12px}.qdSteps em.down{color:var(--qd-ok)}.qdSteps em.up{color:var(--qd-bad)}
+.qdHelp{margin-left:auto;padding:5px 12px;font-size:12px;border:1px solid #73775a;background:#fff}
