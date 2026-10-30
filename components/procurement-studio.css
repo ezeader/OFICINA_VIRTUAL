@@ -9,3 +9,8 @@
 
 .rbVision{display:grid;grid-template-columns:repeat(5,1fr);border:1px solid var(--pc-line);background:#f2f1eb;margin-bottom:10px}.rbVision span{padding:14px 16px;font-size:14px;color:#34362d}.rbVision span+span{border-left:1px solid var(--pc-line)}.rbVision b{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:#292d22;color:white;font-size:11px;margin-right:8px}.rbVision small{margin:6px 0 0 30px}.procurement .pcLink{padding:0;border:0;background:none;text-decoration:underline;text-underline-offset:3px;font-size:14px}.rbBudget .pcTableWrap{max-height:none}.rbBudget .pcStats select{padding:4px 8px;margin-left:6px}.rbSkipped td{color:var(--pc-muted);background:#f7f6f1}@media(max-width:800px){.rbVision{grid-template-columns:1fr}.rbVision span+span{border-left:0;border-top:1px solid var(--pc-line)}}
 .rbProgress{padding:12px 16px;background:#f2f1eb;border:1px solid var(--pc-line);margin:0 0 14px;font-size:14px}
+.pcHelp{border:1px solid var(--pc-line);background:#fff;padding:6px 12px;font-size:12px;border-radius:999px}.pcHelp[aria-pressed=true]{background:#292b25;color:#fff}
+.pcGuide{position:fixed;right:20px;bottom:20px;width:min(340px,calc(100vw - 32px));z-index:30;background:#fff;border:1px solid #d6d4c5;box-shadow:0 8px 28px rgba(0,0,0,.12);padding:14px 16px;margin:0;border-radius:10px;font-size:13px}
+.pcGuide header{display:flex;align-items:center;gap:10px}.pcGuide header b{flex:1;font-size:14px}.pcGuide header button{border:0;background:none;font-size:18px;padding:0 4px}
+.pcGuide ul{padding-left:18px;margin:10px 0;line-height:1.55}.pcGuide li{padding:2px 0}
+.pcGuide footer{display:flex;justify-content:space-between}

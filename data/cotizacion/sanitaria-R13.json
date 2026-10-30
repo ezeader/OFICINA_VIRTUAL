@@ -14,7 +14,8 @@
    "items": [
     {
      "code": "AF.01",
-     "description": "Caño PPR termofusión agua fría Ø90 mm (ref. Amanco Wavin Fusión PN12,5)",
+     "description": "Caño PPR termofusión agua fría Ø90 mm",
+     "ref": "Amanco Wavin Fusión PN12,5",
      "unit": "m",
      "quantity": 52.3,
      "elements": 16,
@@ -22,7 +23,8 @@
     },
     {
      "code": "AF.02",
-     "description": "Caño PPR termofusión agua fría Ø63 mm (ref. Amanco Wavin Fusión PN12,5)",
+     "description": "Caño PPR termofusión agua fría Ø63 mm",
+     "ref": "Amanco Wavin Fusión PN12,5",
      "unit": "m",
      "quantity": 3.2,
      "elements": 1,
@@ -30,7 +32,8 @@
     },
     {
      "code": "AF.03",
-     "description": "Caño PPR termofusión agua fría Ø50 mm (ref. Amanco Wavin Fusión PN12,5)",
+     "description": "Caño PPR termofusión agua fría Ø50 mm",
+     "ref": "Amanco Wavin Fusión PN12,5",
      "unit": "m",
      "quantity": 62.7,
      "elements": 77,
@@ -38,7 +41,8 @@
     },
     {
      "code": "AF.04",
-     "description": "Caño PPR termofusión agua fría Ø40 mm (ref. Amanco Wavin Fusión PN12,5)",
+     "description": "Caño PPR termofusión agua fría Ø40 mm",
+     "ref": "Amanco Wavin Fusión PN12,5",
      "unit": "m",
      "quantity": 2.3,
      "elements": 2,
@@ -46,7 +50,8 @@
     },
     {
      "code": "AF.05",
-     "description": "Caño PPR termofusión agua fría Ø32 mm (ref. Amanco Wavin Fusión PN12,5)",
+     "description": "Caño PPR termofusión agua fría Ø32 mm",
+     "ref": "Amanco Wavin Fusión PN12,5",
      "unit": "m",
      "quantity": 101.9,
      "elements": 157,
@@ -236,7 +241,8 @@
    "items": [
     {
      "code": "AC.01",
-     "description": "Caño PPR termofusión agua caliente Ø50 mm (ref. Amanco Wavin Fusión; indicar PN)",
+     "description": "Caño PPR termofusión agua caliente Ø50 mm (indicar PN)",
+     "ref": "Amanco Wavin Fusión",
      "unit": "m",
      "quantity": 60.5,
      "elements": 66,
@@ -244,7 +250,8 @@
     },
     {
      "code": "AC.02",
-     "description": "Caño PPR termofusión agua caliente Ø40 mm (ref. Amanco Wavin Fusión; indicar PN)",
+     "description": "Caño PPR termofusión agua caliente Ø40 mm (indicar PN)",
+     "ref": "Amanco Wavin Fusión",
      "unit": "m",
      "quantity": 2.4,
      "elements": 4,
@@ -252,7 +259,8 @@
     },
     {
      "code": "AC.03",
-     "description": "Caño PPR termofusión agua caliente Ø32 mm (ref. Amanco Wavin Fusión; indicar PN)",
+     "description": "Caño PPR termofusión agua caliente Ø32 mm (indicar PN)",
+     "ref": "Amanco Wavin Fusión",
      "unit": "m",
      "quantity": 94.1,
      "elements": 133,
@@ -402,7 +410,8 @@
    "items": [
     {
      "code": "CP.01",
-     "description": "Caño PVC cloacal Ø110 mm (ref. Amanco Wavin)",
+     "description": "Caño PVC cloacal Ø110 mm",
+     "ref": "Amanco Wavin",
      "unit": "m",
      "quantity": 61,
      "elements": 43,
@@ -410,7 +419,8 @@
     },
     {
      "code": "CP.02",
-     "description": "Caño PVC cloacal Ø63 mm (ref. Amanco Wavin)",
+     "description": "Caño PVC cloacal Ø63 mm",
+     "ref": "Amanco Wavin",
      "unit": "m",
      "quantity": 10.3,
      "elements": 31,
@@ -418,7 +428,8 @@
     },
     {
      "code": "CP.03",
-     "description": "Caño PVC cloacal Ø40 mm (ref. Amanco Wavin)",
+     "description": "Caño PVC cloacal Ø40 mm",
+     "ref": "Amanco Wavin",
      "unit": "m",
      "quantity": 8.4,
      "elements": 17,
@@ -576,7 +587,8 @@
    "items": [
     {
      "code": "CS.01",
-     "description": "Caño PVC cloacal secundario Ø40 mm (ref. Amanco Wavin)",
+     "description": "Caño PVC cloacal secundario Ø40 mm",
+     "ref": "Amanco Wavin",
      "unit": "m",
      "quantity": 50.5,
      "elements": 120,
@@ -762,7 +774,8 @@
     },
     {
      "code": "VM.07",
-     "description": "Válvula metálica 3/4\" (ref. Amanco Premium)",
+     "description": "Válvula metálica 3/4\"",
+     "ref": "Amanco Premium",
      "unit": "u",
      "quantity": 1,
      "elements": 1,
@@ -816,7 +829,8 @@
     },
     {
      "code": "RV.06",
-     "description": "Válvula metálica 3/4\" (ref. Amanco Premium)",
+     "description": "Válvula metálica 3/4\"",
+     "ref": "Amanco Premium",
      "unit": "u",
      "quantity": 2,
      "elements": 2,
@@ -881,10 +895,6 @@
   {
    "name": "Planos de instalación sanitaria (16 láminas)",
    "url": "/casa-angel/Documentacion-Sanitarias-original.pdf"
-  },
-  {
-   "name": "Plantas generales R12",
-   "url": "/casa-angel/r12/Casa-Angel-plantas-generales-R12.pdf"
   }
  ],
  "count": 96

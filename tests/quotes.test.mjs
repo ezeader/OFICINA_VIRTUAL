@@ -1,7 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {compareQuote,followUp,latestQuotes,linesFromRows,priceHistory,requestMail} from '../lib/quotes.ts';
+import {compareQuote,contactLinks,followUp,latestQuotes,linesFromRows,matchSupplier,priceHistory,quoteFromSheet,requestMail} from '../lib/quotes.ts';
+import {quoteWorkbook} from '../lib/quote-xlsx.ts';
 
 const sheet={rubro:'sanitaria',name:'Instalación sanitaria',project:'Casa Ángel',location:'Pinamar Norte, provincia de Buenos Aires',revision:'R13',date:'',basis:'',count:3,excluded:[],locales:{},
  documents:[{name:'Planos',url:'/p.pdf'}],
@@ -45,4 +46,28 @@ test('el mail pide materiales y MO por separado, validez, plazos y zona',()=>{
  const m=requestMail(sheet,{name:'X',kind:'materiales + mano de obra'},'06/11/2026');
  for(const w of ['mano de obra','Validez','Plazo de entrega','Zona','06/11/2026','Estudio Ader'])assert.ok(m.body.includes(w),w);
  assert.match(m.subject,/Casa Ángel/);
+});
+test('la planilla devuelta se carga sola: alcance, validez, moneda, IVA, plazos y zona',()=>{
+ const rows=[{A:'AF.01',E:'100',G:'50'},{A:'AF.02',E:'10'}];
+ const cond={'Empresa / responsable':'Banchero','Moneda (ARS o USD)':'ARS','¿Los precios incluyen IVA?':'No','¿Cotiza materiales, mano de obra o ambos?':'Ambos','Validez de la oferta (días)':'15 días','Plazo de entrega de materiales en obra':'10 días','Zona de trabajo (localidades que atiende)':'Pinamar','Flete a Pinamar Norte (incluido o importe)':'incluido'};
+ const {quote,company}=quoteFromSheet(sheet,rows,cond,'Banchero-sanitaria.xlsx','materiales',new Date('2026-11-01T12:00:00Z'));
+ assert.equal(company,'Banchero');assert.equal(quote.file,'Banchero-sanitaria.xlsx');assert.equal(quote.scope,'materiales + mano de obra');
+ assert.equal(quote.validUntil,'2026-11-16');assert.equal(quote.taxesIncluded,false);assert.equal(quote.zone,'Pinamar');assert.equal(quote.freight,0);assert.match(quote.notes,/Flete: incluido/);
+ const solo=quoteFromSheet(sheet,[{A:'AF.01',G:'5'}],{},'x.xlsx').quote;assert.equal(solo.scope,'mano de obra');
+});
+test('reconoce al proveedor por lo que escribió o por el nombre del archivo',()=>{
+ const sup=[{id:'b',name:'Banchero Sanitarios'},{id:'m',name:'Martínez Gas-Plomería'},{id:'s',name:'Sanimat'}];
+ assert.equal(matchSupplier(sup,'BANCHERO S.A.')?.id,'b');assert.equal(matchSupplier(sup,'','presupuesto martinez.xlsx')?.id,'m');assert.equal(matchSupplier(sup,'Sanitarios del Sur'),undefined);
+});
+test('links de pedido: Gmail con el borrador, WhatsApp con el texto',()=>{
+ const a=contactLinks('ventas@banchero.com.ar · WhatsApp +54 9 11 3295-1439','Asunto','Cuerpo','studio@x.com');
+ assert.match(a.gmail,/^https:\/\/mail\.google\.com\/mail\/\?view=cm/);assert.match(a.gmail,/to=ventas%40banchero\.com\.ar/);assert.match(a.whatsapp,/^https:\/\/wa\.me\/5491132951439\?text=/);
+ assert.equal(contactLinks('WA 2246 51-8305','a','b').whatsapp?.startsWith('https://wa.me/5492246518305'),true);
+ assert.equal(contactLinks('Facebook: fb.com/x','a','b').gmail,undefined);
+});
+test('el Excel lleva la marca elegida y es un zip válido',()=>{
+ const bytes=Buffer.from(quoteWorkbook(sheet,{'AF.01':'Acqua System'}));
+ assert.equal(bytes.readUInt32LE(0),0x04034b50);
+ const xml=[];let p=0;while(bytes.readUInt32LE(p)===0x04034b50){const size=bytes.readUInt32LE(p+18),n=bytes.readUInt16LE(p+26),start=p+30+n;xml.push(bytes.subarray(start,start+size).toString('utf8'));p=start+size}
+ const s1=xml.find(x=>x.includes('<worksheet')&&x.includes('AF.01'));assert.ok(s1.includes('Marca pedida: Acqua System'));
 });
