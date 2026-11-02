@@ -20,8 +20,8 @@ S.COLORS['AB'] = (196, 98, 16)
 RUBRO = u'ALBAÑILERÍA'
 LVC = {u'00. Planta Baja': 'PB', u'005. Acceso ppal': 'PB', u'01. Planta Alta': 'PA', u'02. Planta Entrepiso': 'PE'}
 LVN = {'PB': u'00. Planta Baja', 'PA': u'01. Planta Alta', 'PE': u'02. Planta Entrepiso'}
-CAT = {'HV': (u'H° visto', (128, 128, 128)), 'EI': (u'Exterior – interior', (200, 90, 40)), 'II': (u'Interior – interior', (60, 120, 200)), 'OT': (u'Otros (no es muro de albañilería)', (205, 205, 205))}
-II_SHADES = {'TM-01': (60, 120, 200), 'TM-02': (30, 80, 160), 'TM-03': (90, 150, 220), 'TM-07': (110, 170, 120), 'TM-08': (60, 140, 90)}
+CAT = {'HV': (u'H° visto', (85, 85, 85)), 'EI': (u'Exterior – interior', (235, 90, 0)), 'II': (u'Interior – interior', (0, 90, 230)), 'OT': (u'Otros (no es muro de albañilería)', (200, 200, 200))}
+II_SHADES = {'TM-01': (0, 90, 230), 'TM-02': (0, 40, 150), 'TM-03': (0, 175, 240), 'TM-07': (0, 165, 60), 'TM-08': (0, 100, 40)}
 TYPECAT = {'TM-04': 'HV', 'TM-06': 'HV', 'TM-05': 'EI', 'TM-01': 'II', 'TM-02': 'II', 'TM-03': 'II', 'TM-07': 'II', 'TM-08': 'II', 'TM-09': 'OT', 'TM-10': 'OT'}
 SKIP = (u'Hojas Portón', u'Puerta Arco')
 FOOT = u'Albañilería R38 (archivo de documentación con el modelo principal vinculado, sin modificarlo). Color por categoría de muro; los muros de H° se computan en Estructura. ' \
@@ -82,7 +82,7 @@ def model(doc, ld):
 # ---------------------------------------------------------------- drawing helpers
 _FRT = {}
 def frt(doc, key, rgb):
-    nm_ = u'ADER ALB R38 ' + key
+    nm_ = u'ADER ALB R38b ' + key
     if nm_ in _FRT: return _FRT[nm_]
     t = next((x for x in DB.FilteredElementCollector(doc).OfClass(DB.FilledRegionType) if nm(x) == nm_), None)
     if t is None:
@@ -90,6 +90,8 @@ def frt(doc, key, rgb):
         t = base.Duplicate(nm_)
         solid = next(p for p in DB.FilteredElementCollector(doc).OfClass(DB.FillPatternElement) if p.GetFillPattern().IsSolidFill)
         t.ForegroundPatternId = solid.Id; t.ForegroundPatternColor = DB.Color(*rgb)
+        try: t.LineWeight = 5                      # heavy outline: the cut reads as a solid band
+        except Exception: pass
         try: t.BackgroundPatternId = DB.ElementId.InvalidElementId
         except Exception: pass
     _FRT[nm_] = t; return t
@@ -138,6 +140,9 @@ def master(doc, ld, lv, walls, rooms):
     for r in rooms:
         if LVC.get(r['level']) != lv: continue
         C.place(doc, v, DB.XYZ(r['c'][0] / M, r['c'][1] / M, z), r['name'], placed, crop, 'room', z)
+    for w in ws:      # wall bands are obstacles for the code labels
+        xs = [p[0] for p in w['pts']]; ys = [p[1] for p in w['pts']]; h = w['thickness_m'] / 2 + .05
+        placed.append(((min(xs) - h) / M, (min(ys) - h) / M, (max(xs) + h) / M, (max(ys) + h) / M))
     for w in sorted([w for w in ws if w['code']], key=lambda w: w['code']):
         q = DB.XYZ(w['mid'][0] / M, w['mid'][1] / M, z)
         C.place(doc, v, q, w['code'], placed, crop, 'tag', z)
@@ -149,21 +154,25 @@ def master(doc, ld, lv, walls, rooms):
     leg = [u'Gris: %s (se computa en Estructura)' % CAT['HV'][0], u'Naranja: %s (TM-05)' % CAT['EI'][0], u'Azules/verdes: %s · TM-01/02/03 mampostería, TM-07/08 Durlock' % CAT['II'][0],
            u'Gris claro: %s (TM-09 chimenea, TM-10 cierre de cielorraso), sin código' % CAT['OT'][0], u'Medidas: largo × alto × espesor (m)']
     its = [X.item(v, v.CropBox, u'Planta · ' + LVN[lv], 'plan', LVN[lv], [w['code'] for w in coded], [], [])]
-    oldx = L.X1; L.X1 = L.X1 - .56          # right-hand strip for legend + measures table (sheet text): the plan gets the rest
+    oldx = L.X1; L.X1 = L.X1 - .62          # right-hand strip for legend + measures table (sheet text): the plan gets the rest
     old = list(L.SCALES); L.SCALES[:] = [50, 75, 100, 125]
     try: s = S.lay_sheet(doc, 'ALB-%s-01' % lv, u'Plano maestro de muros · ' + LVN[lv], u'%d muros codificados · color por categoría · medidas en el cuadro' % len(coded), its, FOOT, rubro=RUBRO, sheet_name=u'Albañilería · %s-01' % lv)
     finally: L.SCALES[:] = old; L.X1 = oldx
-    sh = doc.GetElement(DB.ElementId(Int64(int(s['sheetId'])))); x = L.X1 - .54; y = L.TOP
-    for t, ls in [(u'Referencias', leg), (u'Muros %s · largo × alto × espesor (m)' % lv, rows)]:
-        L.tn(doc, sh.Id, DB.XYZ(x, y, 0), t, 'sub'); s['notes'].append({'text': t, 'anchor': [x, y]}); y -= .024
-        L.tn(doc, sh.Id, DB.XYZ(x, y, 0), u'\n'.join(ls), 'text'); y -= .0128 * len(ls) + .03
-    # colour swatches next to the legend lines
-    for k, key in enumerate(['HV', 'EI', 'II', 'OT']):
-        yy = L.TOP - .024 - .0128 * k - .004; t_ = frt(doc, 'SW ' + key, CAT[key][1]); lp = DB.CurveLoop()
-        q = [DB.XYZ(x - .03, yy - .007, 0), DB.XYZ(x - .008, yy - .007, 0), DB.XYZ(x - .008, yy, 0), DB.XYZ(x - .03, yy, 0)]
-        for i in range(4): lp.Append(DB.Line.CreateBound(q[i], q[(i + 1) % 4]))
-        try: DB.FilledRegion.Create(doc, t_.Id, sh.Id, List[DB.CurveLoop]([lp]))
-        except Exception: pass
+    sh = doc.GetElement(DB.ElementId(Int64(int(s['sheetId'])))); x = L.X1 - .60; y = L.TOP
+    L.tn(doc, sh.Id, DB.XYZ(x, y, 0), u'Referencias', 'sub'); s['notes'].append({'text': u'Referencias', 'anchor': [x, y]}); y -= .028
+    for key in ['HV', 'EI', 'II', 'OT']:
+        sty = P.style(doc, 'ALB muestra2 ' + key, CAT[key][1], 9)
+        for k in range(3):
+            yy = y - .007 - k * .002
+            dc = doc.Create.NewDetailCurve(sh, DB.Line.CreateBound(DB.XYZ(x + .005, yy, 0), DB.XYZ(x + .05, yy, 0))); dc.LineStyle = sty
+        txt = {'HV': u'H° visto (se computa en Estructura)', 'EI': u'Exterior – interior (TM-05)', 'II': u'Interior – interior: TM-01/02/03 mampostería · TM-07/08 Durlock', 'OT': u'Otros: TM-09 chimenea · TM-10 cierre de cielorraso (sin código)'}[key]
+        L.tn(doc, sh.Id, DB.XYZ(x + .065, y + .002, 0), txt, 'text'); y -= .024
+    y -= .015
+    t2 = u'Muros %s · largo × alto × espesor (m)' % lv
+    L.tn(doc, sh.Id, DB.XYZ(x, y, 0), t2, 'sub'); s['notes'].append({'text': t2, 'anchor': [x, y]}); y -= .028
+    half = (len(rows) + 1) // 2 if len(rows) > 26 else len(rows)
+    for k, chunk in enumerate([rows[:half], rows[half:]] if half < len(rows) else [rows]):
+        L.tn(doc, sh.Id, DB.XYZ(x + k * .31, y, 0), u'\n'.join(chunk), 'room')
     doc.Regenerate()
     s['views'][0]['albElements'] = sheet_boxes(doc, v, s['views'][0], boxes)
     return dict(s, kind='general', level=LVN[lv], sector=u'Planos maestros')
@@ -198,12 +207,29 @@ def details(doc, ld, lv, walls, per=4, only=None):
             t = {'code': w['code'], 'layers': w['layers'] or [{'material': u'(genérico)', 'thickness_m': w['thickness_m']}]}
             vs, bxs, ds = A20.wall_layers_section(doc, t, e, PRE + w['code'] + ' CORTE')
             cuts.append(A20.item(vs, bxs, u'%s · corte (capas)' % w['code'], 'section', LVN[lv], [w['code']], ds, [w['id']]))
-        its += cuts   # elevations first, the layer sections together in the last row so they keep a large scale
-        old = list(L.SCALES); L.SCALES[:] = [10, 20, 25, 50, 75]
-        try: s = S.lay_sheet(doc, num, u'Muros %s a %s · vista y corte' % (g[0]['code'], g[-1]['code']), u'%s · %d muros · alzado con vanos y medidas + corte con capas' % (LVN[lv], len(g)), its, FOOT, rubro=RUBRO, sheet_name=u'Albañilería · %s-%02d' % (lv, k + 2))
-        finally: L.SCALES[:] = old
+        s = lay_rows(doc, num, u'Muros %s a %s · vista y corte' % (g[0]['code'], g[-1]['code']), u'%s · %d muros · alzado con vanos y medidas + corte con capas 1:10' % (LVN[lv], len(g)),
+                     list(zip(its, cuts)), u'Albañilería · %s-%02d' % (lv, k + 2))
         out.append(dict(s, kind='general', level=LVN[lv], sector=u'Detalle de muros · ' + lv, walls=[w['code'] for w in g]))
     return out
+
+VSC = [20, 25, 50, 75, 100]
+def lay_rows(doc, number, title, sub, pairs, sheet_name):
+    """one row per wall: elevation (largest scale that fits) on the left, layer section always at 1:10 on the right."""
+    sheet = DB.ViewSheet.Create(doc, DB.ElementId(Int64(L.TITLEBLOCK))); sheet.SheetNumber = number; sheet.Name = sheet_name
+    head = u'CASA ÁNGEL · ' + RUBRO + u' · ' + title.upper(); notes = [{'text': head, 'anchor': [L.X0 + .01, L.Y1 - .012]}]
+    L.tn(doc, sheet.Id, DB.XYZ(L.X0 + .01, L.Y1 - .012, 0), head, 'title')
+    sy = L.Y1 - .075; L.tn(doc, sheet.Id, DB.XYZ(L.X0 + .01, sy, 0), sub, 'sub'); notes.append({'text': sub, 'anchor': [L.X0 + .01, sy]})
+    L.tn(doc, sheet.Id, DB.XYZ(L.X0 + .01, L.Y0 + .05, 0), FOOT, 'text'); notes.append({'text': FOOT, 'anchor': [L.X0 + .01, L.Y0 + .05]})
+    vpt = S.vptype(doc); views = []; n = max(len(pairs), 4)
+    top = L.TOP - .02; bot = L.BOTTOM; rh = (top - bot) / n; xs = L.X0 + .01; xm = L.X0 + (L.X1 - L.X0) * .68
+    for k, (ev, cut) in enumerate(pairs):
+        y1 = top - k * rh; y0 = y1 - rh
+        w_, h_ = L.sheet_size(ev['box'], 1)
+        sc = next((c for c in VSC if w_ / c <= (xm - xs) - .04 and h_ / c <= rh - L.TITLE_H - .03), VSC[-1])
+        for it, cell, scale in ((ev, (xs, y0, xm, y1), sc), (cut, (xm, y0, L.X1 - .01, y1), 10)):
+            vp, meta = L.place(doc, sheet, it['view'], scale, (cell[0], cell[1] - L.DATA_H, cell[2], cell[3]), it['title'], vpt)
+            meta.update(kind=it['kind'], sector=it['sector'], tags=it['tags'], dims=it['dims'], elements=it['elements']); views.append(meta)
+    return {'sheetId': eid(sheet), 'number': number, 'title': title, 'views': views, 'notes': notes}
 
 # ---------------------------------------------------------------- run
 def run(doc, uidoc, job):

@@ -33,8 +33,7 @@ def run(doc, uidoc, job):
     for e in DB.FilteredElementCollector(ld).OfCategory(DB.BuiltInCategory.OST_StructuralFraming).WhereElementIsNotElementType().WherePasses(DB.BoundingBoxIntersectsFilter(o)):
         c = e.Location.Curve if isinstance(e.Location, DB.LocationCurve) else None
         fr.append({'id': e.Id.IntegerValue, 'type': nm(e.Symbol), 'family': u(e.Symbol.FamilyName), 'a': p3(c.GetEndPoint(0)) if c else None, 'b': p3(c.GetEndPoint(1)) if c else None,
-                   'level': nm(ld.GetElement(e.LevelId)) if e.LevelId.IntegerValue > 0 else None, 'host': e.Host.Id.IntegerValue if e.Host else None,
-                   'joinedEnds': [DB.StructuralFramingUtils.IsJoinAllowedAtEnd(e, 0), DB.StructuralFramingUtils.IsJoinAllowedAtEnd(e, 1)]})
+                   'level': nm(ld.GetElement(e.LevelId)) if e.LevelId.IntegerValue > 0 else None, 'host': e.Host.Id.IntegerValue if e.Host else None})
     def sk(i):
         e = ld.GetElement(DB.ElementId(Int64(i)))
         s = ld.GetElement(e.SketchId) if e is not None and hasattr(e, 'SketchId') else None
